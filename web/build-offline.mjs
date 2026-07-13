@@ -130,7 +130,7 @@ writeFileSync(join(DIST, 'index.html'), `<!doctype html>
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>JazzMap NYC — live jazz tonight</title>
+<title>nycjazzcal.com — live jazz in NYC tonight</title>
 <link rel="stylesheet" href="/styles.css" />
 </head>
 <body>

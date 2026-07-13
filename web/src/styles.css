@@ -24,6 +24,7 @@ button { font: inherit; cursor: pointer; }
 .topbar { display: flex; align-items: center; justify-content: space-between; gap: 16px; margin-bottom: 14px; }
 .brand { font-size: 26px; font-weight: 700; letter-spacing: 0.5px; }
 .brand-note { color: var(--accent); }
+.brand-accent { color: var(--accent); }
 .brand-nyc { color: var(--muted); font-weight: 300; }
 .view-toggle { display: flex; border: 1px solid var(--line); border-radius: 8px; overflow: hidden; }
 .view-toggle button {
