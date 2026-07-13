@@ -1,0 +1,20 @@
+{
+  "name": "jazzmap",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Aggregator for live jazz shows across NYC clubs",
+  "type": "module",
+  "workspaces": [
+    "crawler",
+    "server",
+    "web"
+  ],
+  "scripts": {
+    "crawl": "node crawler/index.js",
+    "crawl:club": "node crawler/index.js --club",
+    "serve": "node server/index.js",
+    "dev:web": "npm run dev -w web",
+    "build:web": "npm run build -w web",
+    "start": "npm run crawl && npm run build:web && npm run serve"
+  }
+}
