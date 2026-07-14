@@ -125,12 +125,25 @@ rmSync(DIST, { recursive: true, force: true });
 mkdirSync(DIST, { recursive: true });
 writeFileSync(join(DIST, 'bundle.js'), out);
 copyFileSync(join(SRC, 'styles.css'), join(DIST, 'styles.css'));
+const PUB = join(__dirname, 'public');
+if (existsSync(PUB)) for (const f of readdirSync(PUB)) copyFileSync(join(PUB, f), join(DIST, f));
 writeFileSync(join(DIST, 'index.html'), `<!doctype html>
 <html lang="en">
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta name="theme-color" content="#101014" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Limelight&display=swap" rel="stylesheet" />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%23101014'/%3E%3Ctext x='50' y='72' font-size='64' text-anchor='middle' fill='%23d4a545'%3E%E2%99%AB%3C/text%3E%3C/svg%3E" />
+<meta name="description" content="Every jazz show in New York City, one calendar. Village Vanguard, Blue Note, Smalls, Mezzrow, Birdland, Dizzy's Club, and The Jazz Gallery — updated every few hours." />
+<meta property="og:title" content="Jazz Lineup — live jazz in NYC tonight" />
+<meta property="og:description" content="Every jazz show in New York City, one calendar. Updated every few hours." />
+<meta property="og:url" content="https://jazzlineup.com/" />
+<meta property="og:type" content="website" />
+<meta property="og:image" content="https://jazzlineup.com/og.png" />
+<meta name="twitter:card" content="summary_large_image" />
 <title>Jazz Lineup — live jazz in NYC tonight</title>
 <link rel="stylesheet" href="/styles.css" />
 </head>

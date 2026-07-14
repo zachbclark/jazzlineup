@@ -1,5 +1,6 @@
 import React, { useEffect, useMemo, useRef, useState } from 'react';
 import { fmtSets, fmtDateHeading, mainArtist } from '../api';
+import Personnel from './Personnel';
 
 const MONTHS = ['January', 'February', 'March', 'April', 'May', 'June',
   'July', 'August', 'September', 'October', 'November', 'December'];
@@ -58,6 +59,9 @@ export default function MonthGrid({ events, clubById, cursor, onCursor, today, c
         <button onClick={() => nav(1)} aria-label="next month">&rarr;</button>
       </div>
 
+      {events.length === 0 && (
+        <div className="empty-list">No clubs selected — tap a club above to see shows.</div>
+      )}
       <div className="grid dow-row">
         {DOW.map((d) => <div key={d} className="dow">{compact ? d[0] : d}</div>)}
       </div>
@@ -77,7 +81,9 @@ export default function MonthGrid({ events, clubById, cursor, onCursor, today, c
                       <span className="badge" style={{ background: club?.color }}>{club?.shortName}</span>
                       <span className="row-title">
                         {e.title}
-                        {e.details && <span className="row-details">{e.details}</span>}
+                        {e.personnel?.length
+                          ? <span className="row-details"><Personnel personnel={e.personnel} /></span>
+                          : e.details && <span className="row-details">{e.details}</span>}
                       </span>
                       <span className="row-sets">{fmtSets(e.sets)}</span>
                     </a>

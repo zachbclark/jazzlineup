@@ -22,7 +22,10 @@ button { font: inherit; cursor: pointer; }
 
 /* header */
 .topbar { display: flex; align-items: center; justify-content: space-between; gap: 16px; margin-bottom: 14px; }
-.brand { font-size: 26px; font-weight: 700; letter-spacing: 0.5px; }
+.brand {
+  font-family: 'Limelight', Helvetica, Arial, sans-serif;
+  font-size: 27px; font-weight: 400; letter-spacing: 0.5px;
+}
 .brand-note { color: var(--accent); }
 .brand-accent { color: var(--accent); }
 .brand-nyc { color: var(--muted); font-weight: 300; }
@@ -52,7 +55,10 @@ button { font: inherit; cursor: pointer; }
 
 /* month grid */
 .monthnav { display: flex; align-items: center; gap: 14px; margin-bottom: 10px; }
-.monthnav h2 { margin: 0; font-size: 19px; font-weight: 600; min-width: 170px; text-align: center; }
+.monthnav h2 {
+  font-family: 'Limelight', Helvetica, Arial, sans-serif;
+  margin: 0; font-size: 18px; font-weight: 400; min-width: 170px; text-align: center; letter-spacing: 1px;
+}
 .monthnav button {
   background: var(--panel); color: var(--text); border: 1px solid var(--line);
   border-radius: 7px; padding: 5px 13px;
@@ -187,3 +193,10 @@ button.cell { text-align: left; border: 1px solid var(--line); font: inherit; co
 @media (min-width: 761px) {
   .jump-tonight { display: none; }
 }
+
+/* personnel (concert-program style) */
+.personnel .p-inst { color: var(--accent); opacity: 0.75; font-style: italic; font-size: 0.92em; }
+.personnel .p-sep { color: var(--line); }
+.personnel.grouped { display: block; }
+.personnel.grouped .p-section { display: block; padding-left: 10px; line-height: 1.5; }
+.personnel.grouped .p-inst { display: inline-block; min-width: 90px; font-style: italic; }
