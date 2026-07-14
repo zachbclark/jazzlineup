@@ -152,7 +152,8 @@ export function extractTimes(str) {
 // --- event shape --------------------------------------------------------------
 
 // Every crawler returns events via makeEvent():
-// { id, clubId, title, date 'YYYY-MM-DD', sets ['19:00',...], url, details, priceText }
+// { id, clubId, title, date 'YYYY-MM-DD', sets ['19:00',...], url, details,
+//   personnel [{name, instrument}] | null, priceText }
 export function makeEvent(e) {
   if (!e.clubId || !e.title || !/^\d{4}-\d{2}-\d{2}$/.test(e.date ?? '')) {
     throw new Error(`bad event: ${JSON.stringify(e)}`);
@@ -165,6 +166,7 @@ export function makeEvent(e) {
     sets: [...new Set((e.sets ?? []).filter(Boolean))].sort(),
     url: e.url ?? null,
     details: e.details ? cleanText(e.details).slice(0, 500) : null,
+    personnel: Array.isArray(e.personnel) && e.personnel.length ? e.personnel : null,
     priceText: e.priceText ? cleanText(e.priceText) : null,
   };
 }
@@ -185,4 +187,70 @@ export async function textFromFixtureOrLive(fixtureName, url, opts) {
     return readFile(join(process.env.FIXTURES, fixtureName), 'utf8');
   }
   return fetchText(url, opts);
+}
+
+// --- personnel ---------------------------------------------------------------
+
+// Instrument lexicon for splitting "Name - instrument Name - instrument" runs.
+const INSTRUMENTS = new Set([
+  'guitar', 'guitars', 'bass', 'drums', 'piano', 'keys', 'keyboard', 'keyboards',
+  'saxophone', 'saxophones', 'sax', 'alto', 'tenor', 'soprano', 'baritone',
+  'trumpet', 'flugelhorn', 'cornet', 'trombone', 'tuba', 'euphonium', 'horn',
+  'voice', 'vocals', 'vocal', 'vibraphone', 'vibes', 'marimba', 'organ',
+  'flute', 'clarinet', 'oboe', 'bassoon', 'cello', 'violin', 'viola', 'strings',
+  'percussion', 'harmonica', 'accordion', 'banjo', 'mandolin', 'harp', 'oud',
+  'synth', 'synthesizer', 'electronics', 'turntables', 'dj', 'composer',
+  'conductor', 'arranger', 'leader', 'electric', 'acoustic', 'upright',
+]);
+const isInstrumentWord = (w) => INSTRUMENTS.has(w.toLowerCase().replace(/[^a-z]/gi, ''));
+
+// Promo / boilerplate that pollutes event descriptions.
+const PROMO_RE = /\b(?:FREE WITH SUMMERPASS|SUMMERPASS|TICKETS\s*(?:&|and)\s*MORE INFO|GET (?:YOUR )?TICKETS?|MORE INFO|BUY TICKETS?|LIVESTREAM|SOLD OUT)\b[.!]?/gi;
+
+export function stripPromo(text) {
+  return cleanText(String(text).replace(PROMO_RE, ' '));
+}
+
+// Parse a personnel run like:
+//   "Miles Okazaki - guitar Caroline Davis - alto saxophone Dan Weiss - drums"
+//   "Bill Frisell – Guitar Greg Tardy – Saxophone"
+// into [{ name, instrument }]. Returns [] if the text doesn't look like a roster.
+export function parsePersonnel(text) {
+  const t = stripPromo(String(text))
+    .replace(/\bsets? at [^.]*$/i, '') // trailing "Sets at 7pm + 9pm ET"
+    .trim();
+  // Split on dashes that have whitespace on both sides (name/instrument seams).
+  const parts = t.split(/\s+[-–—]\s+/);
+  if (parts.length < 2) return [];
+
+  const personnel = [];
+  let name = lastNameRun(parts[0]);
+  for (let i = 1; i < parts.length; i++) {
+    const tokens = parts[i].split(/\s+/);
+    // Leading tokens that are instrument-ish belong to the current player...
+    const instr = [];
+    let j = 0;
+    while (j < tokens.length && (isInstrumentWord(tokens[j]) || /^(?:&|and|\/|,)$/i.test(tokens[j]))) {
+      instr.push(tokens[j]);
+      j++;
+    }
+    if (name && instr.length) {
+      personnel.push({ name: cleanText(name), instrument: cleanText(instr.join(' ').toLowerCase()) });
+    }
+    // ...and the rest is the next player's name.
+    name = lastNameRun(tokens.slice(j).join(' '));
+  }
+  return personnel.length >= 2 ? personnel : [];
+}
+
+// From trailing text, take the final run of capitalized-ish tokens (a name).
+function lastNameRun(text) {
+  const tokens = cleanText(text).split(/\s+/).filter(Boolean);
+  let start = tokens.length;
+  for (let i = tokens.length - 1; i >= 0; i--) {
+    if (/^[A-Z(“"']/.test(tokens[i]) && !isInstrumentWord(tokens[i])) start = i;
+    else break;
+  }
+  const run = tokens.slice(start).join(' ');
+  return run.length >= 3 && start >= tokens.length - 4 ? run : '';
 }

@@ -4,6 +4,7 @@
 // Sets are 8:00 PM & 10:00 PM nightly (house standard, confirmed via ticketing).
 import {
   fetchText, makeEvent, htmlToText, monthNum, inferYear, isoDate,
+  parsePersonnel, stripPromo,
 } from '../lib.js';
 
 const URL_ = 'https://villagevanguard.com/';
@@ -31,7 +32,9 @@ export function parse(html, today = new Date()) {
 
     const tixM = section.match(/href="(https?:\/\/vv\.squadup\.com[^"]*)"/);
     const url = tixM ? tixM[1].split('?')[0] : URL_;
-    const personnel = htmlToText(section).match(/^([\s\S]{0,300}?)(?:TICKETS|$)/)?.[1]?.trim() ?? null;
+    const blurb = htmlToText(section).match(/^([\s\S]{0,300}?)(?:TICKETS|$)/)?.[1]?.trim() ?? '';
+    const personnel = parsePersonnel(blurb);
+    const details = personnel.length ? null : stripPromo(blurb).slice(0, 300) || null;
 
     if (/vanguard jazz orchestra/i.test(title) || /every monday/i.test(section)) {
       // Weekly residency: emit the next 8 Mondays (including today if Monday).
@@ -44,7 +47,7 @@ export function parse(html, today = new Date()) {
           date: isoDate(d.getFullYear(), d.getMonth() + 1, d.getDate()),
           sets: SETS,
           url,
-          details: 'Every Monday night. ' + (personnel ?? ''),
+          details: 'The legendary 16-piece big band — every Monday night',
         }));
         d.setDate(d.getDate() + 7);
       }
@@ -64,7 +67,7 @@ export function parse(html, today = new Date()) {
     const end = isoDate(y2, m2, Number(dr[4]));
 
     for (const date of datesBetween(start, end)) {
-      events.push(makeEvent({ clubId: 'vanguard', title, date, sets: SETS, url, details: personnel }));
+      events.push(makeEvent({ clubId: 'vanguard', title, date, sets: SETS, url, details, personnel }));
     }
   }
   return events;

@@ -1,6 +1,9 @@
 // The Jazz Gallery — Squarespace site; /calendar?format=json returns the
 // events collection as JSON. Cleanest source of the bunch.
-import { fetchText, makeEvent, extractTimes, htmlToText, isoDate } from '../lib.js';
+import {
+  fetchText, makeEvent, extractTimes, htmlToText, isoDate,
+  parsePersonnel, stripPromo,
+} from '../lib.js';
 
 const URL_ = 'https://jazzgallery.org/calendar?format=json';
 
@@ -35,6 +38,12 @@ export function parse(jsonText) {
     const sets = setsM ? extractTimes(setsM[1].replace(/(\d{1,2}(?::\d{2})?)(?=\s*[+&])/g, '$1pm')) : [];
     // "7pm + 9pm": the second time carries pm; ensure the first does too (handled above).
 
+    // Structured band roster; when it parses, details would only duplicate it.
+    const personnel = parsePersonnel(excerpt);
+    const details = personnel.length
+      ? null
+      : stripPromo(excerpt).replace(/\bsets? at [^.]*$/i, '').slice(0, 400) || null;
+
     for (let d = start, i = 0; d <= end && i < span; d = addDays(d, 1), i++) {
       events.push(makeEvent({
         clubId: 'jazzgallery',
@@ -42,7 +51,8 @@ export function parse(jsonText) {
         date: d,
         sets,
         url: 'https://jazzgallery.org' + (it.fullUrl ?? '/calendar'),
-        details: excerpt.slice(0, 400) || null,
+        details,
+        personnel,
       }));
     }
   }

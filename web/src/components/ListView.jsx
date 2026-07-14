@@ -1,5 +1,6 @@
 import React, { useEffect, useMemo, useState } from 'react';
 import { fmtSets, fmtDateHeading } from '../api';
+import Personnel from './Personnel';
 
 export default function ListView({ events, clubById, today }) {
   const [showJump, setShowJump] = useState(false);
@@ -38,7 +39,9 @@ export default function ListView({ events, clubById, today }) {
                 <span className="badge" style={{ background: club?.color }}>{club?.shortName}</span>
                 <span className="row-title">
                   {e.title}
-                  {e.details && <span className="row-details">{e.details}</span>}
+                  {e.personnel?.length
+                    ? <span className="row-details"><Personnel personnel={e.personnel} /></span>
+                    : e.details && <span className="row-details">{e.details}</span>}
                 </span>
                 <span className="row-sets">{fmtSets(e.sets)}</span>
               </a>
