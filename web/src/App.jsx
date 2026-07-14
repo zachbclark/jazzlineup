@@ -60,7 +60,8 @@ export default function App() {
         clubs={clubs}
         active={active}
         onToggle={toggleClub}
-        onAll={() => setActive(null)}
+        // "All clubs" toggles: everything on <-> everything off
+        onAll={() => setActive((prev) => (prev === null ? new Set() : null))}
       />
 
       {error && <div className="error">Couldn&rsquo;t load shows: {error}</div>}

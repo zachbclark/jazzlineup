@@ -58,6 +58,9 @@ export default function MonthGrid({ events, clubById, cursor, onCursor, today, c
         <button onClick={() => nav(1)} aria-label="next month">&rarr;</button>
       </div>
 
+      {events.length === 0 && (
+        <div className="empty-list">No clubs selected — tap a club above to see shows.</div>
+      )}
       <div className="grid dow-row">
         {DOW.map((d) => <div key={d} className="dow">{compact ? d[0] : d}</div>)}
       </div>
