@@ -15,11 +15,9 @@ is parser maintenance, so invest in sanity checks + alerting, not infra).
       last good data instead of shipping garbage
 - [ ] Add `city` + `timezone` fields to the club registry NOW (trivial today,
       painful after 30 clubs; dates are currently NY-local)
-- [ ] Pick + register domain (shortlist checked available 2026-07-13:
-      jazzlineup.com ★, thejazzcal.com, myjazzcal.com, jazzmarquee.com,
-      tonightsbill.com, setlistnyc.com, nycjazzcal.com, findthegig.com;
-      jazzcal.com is taken/parked)
-- [ ] Rebrand app to the final name
+- [x] Name chosen: **jazzlineup.com** (2026-07-14)
+- [ ] Register jazzlineup.com (Zach — registrar of choice; ~$10/yr)
+- [x] Rebrand app to Jazz Lineup · NYC
 
 ## Phase 1 — Mobile + ship NYC
 - [ ] **Mobile-first pass (ESSENTIAL):** list/agenda view default on small

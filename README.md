@@ -1,4 +1,4 @@
-# nycjazzcal.com 🎷
+# jazzlineup.com 🎷
 
 One calendar for live jazz in New York. Crawls the schedules of six NYC jazz
 clubs, normalizes them into a single feed, and serves a filterable
@@ -89,7 +89,7 @@ Run the crawler on a schedule. On macOS the simplest is cron:
 ```bash
 crontab -e
 # every 3 hours:
-0 */3 * * * cd ~/github/nycjazzcal && /usr/local/bin/node crawler/index.js >> /tmp/nycjazzcal-crawl.log 2>&1
+0 */3 * * * cd ~/github/jazzlineup && /usr/local/bin/node crawler/index.js >> /tmp/jazzlineup-crawl.log 2>&1
 ```
 
 Reloading the site or changing filters always reflects the latest completed

@@ -85,4 +85,4 @@ const server = createServer(async (req, res) => {
   }
 });
 
-server.listen(PORT, () => console.log(`nycjazzcal.com listening on http://localhost:${PORT}`));
+server.listen(PORT, () => console.log(`jazzlineup.com listening on http://localhost:${PORT}`));

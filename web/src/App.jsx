@@ -43,7 +43,8 @@ export default function App() {
     <div className="app">
       <header className="topbar">
         <div className="brand">
-          <span className="brand-note">&#9835;</span> nycjazz<span className="brand-accent">cal</span><span className="brand-nyc">.com</span>
+          <span className="brand-note">&#9835;</span> Jazz<span className="brand-accent">Lineup</span>
+          <span className="city-badge">NYC</span>
         </div>
         <div className="view-toggle" role="tablist">
           <button className={view === 'month' ? 'on' : ''} onClick={() => setView('month')}>Calendar</button>

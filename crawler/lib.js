@@ -2,7 +2,7 @@
 // parsers work from JSON APIs, JSON-LD blocks, and targeted HTML extraction,
 // so the whole crawler runs on bare Node >= 20.
 const UA =
-  'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36 nycjazzcal-bot/0.1 (+https://nycjazzcal.com; polite crawler)';
+  'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36 jazzlineup-bot/0.1 (+https://jazzlineup.com; polite crawler)';
 
 export async function fetchText(url, opts = {}) {
   const res = await fetch(url, {

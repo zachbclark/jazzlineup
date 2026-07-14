@@ -26,6 +26,12 @@ button { font: inherit; cursor: pointer; }
 .brand-note { color: var(--accent); }
 .brand-accent { color: var(--accent); }
 .brand-nyc { color: var(--muted); font-weight: 300; }
+.city-badge {
+  display: inline-block; vertical-align: 4px; margin-left: 9px;
+  font-size: 11px; font-weight: 700; letter-spacing: 1.5px;
+  color: var(--accent); border: 1px solid var(--accent);
+  border-radius: 5px; padding: 2px 7px;
+}
 .view-toggle { display: flex; border: 1px solid var(--line); border-radius: 8px; overflow: hidden; }
 .view-toggle button {
   background: transparent; color: var(--muted); border: none; padding: 7px 16px;
