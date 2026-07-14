@@ -352,6 +352,20 @@ for (const line of JG.split('\n')) {
   }
 }
 
+// ---- demo personnel (from live excerpts, so the UI shows rosters pre-crawl) ---
+const OKAZAKI = [
+  ['Miles Okazaki','guitar'],['Caroline Davis','alto saxophone'],['Jon Irabagon','tenor saxophone'],
+  ['Anna Webber','tenor saxophone'],['Jacob Garchik','trombone'],['Zekkereya El-Magharbel','trombone'],
+  ['Hannah Marks','bass'],['Chris Tordini','bass'],['Matt Mitchell','piano'],['Dan Weiss','drums'],
+].map(([name, instrument]) => ({ name, instrument }));
+const FRISELL4 = [
+  ['Bill Frisell','guitar'],['Greg Tardy','saxophone'],['Gerald Clayton','piano'],['Johnathan Blake','drums'],
+].map(([name, instrument]) => ({ name, instrument }));
+for (const e of events) {
+  if (/okazaki/i.test(e.title)) e.personnel = OKAZAKI;
+  if (/frisell four/i.test(e.title)) e.personnel = FRISELL4;
+}
+
 // ---- write ------------------------------------------------------------------
 const byId = new Map(events.map((e) => [e.id, e]));
 const sorted = [...byId.values()].sort(

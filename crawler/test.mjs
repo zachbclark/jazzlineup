@@ -10,11 +10,13 @@ import { parse as dzParse, parseDateRange } from './clubs/dizzys.js';
 import { parseMonth as bnParse } from './clubs/bluenote.js';
 
 const TODAY = new Date(2026, 6, 13); // Mon Jul 13 2026
-let passed = 0;
+let passed = 0, total = 0;
 function ok(name, fn) {
+  total++;
   try { fn(); passed++; console.log(`ok   ${name}`); }
   catch (e) { console.error(`FAIL ${name}: ${e.message}`); process.exitCode = 1; }
 }
+process.on('exit', () => console.log(`\n${passed}/${total} test groups passed`));
 
 // --- Jazz Gallery ------------------------------------------------------------
 ok('jazzgallery: expands 2-day run, parses sets from excerpt', () => {
@@ -187,4 +189,38 @@ ok('bluenote: parses single-quoted markup, filters Sony Hall + private events', 
   assert.equal(evs[0].title, 'Wyatt Waddell');
 });
 
-console.log(`\n${passed}/6 test groups passed`);
+
+
+// --- personnel parsing --------------------------------------------------------
+import { parsePersonnel, stripPromo } from './lib.js';
+ok('personnel: parses rosters, strips promo, rejects prose', () => {
+  const jg = parsePersonnel(
+    'Miles Okazaki - guitar Caroline Davis - alto saxophone Anna Webber - tenor saxophone ' +
+    'Zekkereya El-Magharbel - trombone Matt Mitchell - piano Dan Weiss - drums ' +
+    'Sets at 7pm + 9pm ET FREE WITH SUMMERPASS TICKETS & MORE INFO'
+  );
+  assert.equal(jg.length, 6);
+  assert.deepEqual(jg[0], { name: 'Miles Okazaki', instrument: 'guitar' });
+  assert.deepEqual(jg[3], { name: 'Zekkereya El-Magharbel', instrument: 'trombone' });
+
+  const vv = parsePersonnel('Bill Frisell – Guitar Greg Tardy – Saxophone Gerald Clayton – Piano Johnathan Blake – Drums');
+  assert.equal(vv.length, 4);
+  assert.equal(vv[1].instrument, 'saxophone');
+
+  assert.deepEqual(parsePersonnel('A powerful story brought to life through big band jazz'), []);
+  assert.deepEqual(parsePersonnel('Jean-Michel at the Cafe - special guest'), []);
+  assert.equal(stripPromo('Great band! FREE WITH SUMMERPASS GET TICKETS'), 'Great band!');
+});
+
+ok('personnel: survives makeEvent end-to-end (jazzgallery)', () => {
+  const fixture = JSON.stringify({ upcoming: [{
+    title: 'Test Band', startDate: 1784156400605, endDate: 1784156400605,
+    fullUrl: '/calendar/test',
+    excerpt: 'Alice Smith - piano Bob Jones - drums Sets at 7pm + 9pm ET',
+  }]});
+  const evs = jgParse(fixture);
+  assert.equal(evs.length, 1);
+  assert.equal(evs[0].personnel?.length, 2, 'personnel must survive makeEvent');
+  assert.deepEqual(evs[0].personnel[0], { name: 'Alice Smith', instrument: 'piano' });
+  assert.equal(evs[0].details, null);
+});
