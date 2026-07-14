@@ -1,14 +1,11 @@
-export async function fetchClubs() {
-  const r = await fetch('/api/clubs');
-  if (!r.ok) throw new Error('clubs fetch failed');
-  return (await r.json()).clubs;
-}
-
-export async function fetchEvents(params = {}) {
-  const q = new URLSearchParams(params).toString();
-  const r = await fetch('/api/events' + (q ? `?${q}` : ''));
+// In production the site is fully static: the crawler Lambda writes
+// events.json to S3 and the frontend fetches it as a plain file (clubs are
+// embedded in the same payload). The local dev server serves the same shape
+// at the same path.
+export async function fetchData() {
+  const r = await fetch('/events.json');
   if (!r.ok) throw new Error('events fetch failed');
-  return r.json();
+  return r.json(); // { generatedAt, clubs, errors, events }
 }
 
 export function fmtTime(hhmm) {

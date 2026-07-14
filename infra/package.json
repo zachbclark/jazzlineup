@@ -1,0 +1,17 @@
+{
+  "name": "@jazzlineup/infra",
+  "version": "0.1.0",
+  "private": true,
+  "description": "CDK stack: S3 + CloudFront + ACM + crawler Lambda + EventBridge",
+  "scripts": {
+    "cdk": "cdk",
+    "synth": "cdk synth",
+    "deploy": "cdk deploy",
+    "destroy": "cdk destroy"
+  },
+  "devDependencies": {
+    "aws-cdk": "^2.1000.0",
+    "aws-cdk-lib": "^2.170.0",
+    "constructs": "^10.4.0"
+  }
+}

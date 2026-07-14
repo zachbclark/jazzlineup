@@ -43,6 +43,11 @@ function sendJson(res, status, body) {
 const server = createServer(async (req, res) => {
   const url = new URL(req.url, `http://${req.headers.host}`);
 
+  // Mirrors production, where events.json is a static file on CloudFront.
+  if (url.pathname === '/events.json') {
+    return sendJson(res, 200, await loadData());
+  }
+
   if (url.pathname === '/api/events') {
     const data = await loadData();
     let events = data.events;

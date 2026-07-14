@@ -26,6 +26,11 @@ npm run dev:web    # Vite dev server on :5173, proxies /api -> :3000 (terminal 2
 The repo ships with a `data/events.json` snapshot of real shows (captured
 July 13, 2026) so the UI works before your first crawl.
 
+**Deploying to AWS:** see [DEPLOY.md](DEPLOY.md) — CDK stack in `infra/`
+(S3 + CloudFront + scheduled crawler Lambda; <$1/mo). In production the
+frontend fetches `/events.json` as a static file; the Node server below is
+for local dev.
+
 ## Architecture
 
 ```

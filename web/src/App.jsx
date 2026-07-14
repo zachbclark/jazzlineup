@@ -1,5 +1,5 @@
 import React, { useEffect, useMemo, useState } from 'react';
-import { fetchClubs, fetchEvents, todayIso } from './api';
+import { fetchData, todayIso } from './api';
 import FilterBar from './components/FilterBar';
 import MonthGrid from './components/MonthGrid';
 import ListView from './components/ListView';
@@ -15,11 +15,11 @@ export default function App() {
   const [cursor, setCursor] = useState({ y: now.getFullYear(), m: now.getMonth() + 1 });
 
   useEffect(() => {
-    Promise.all([fetchClubs(), fetchEvents()])
-      .then(([cs, ev]) => {
-        setClubs(cs);
-        setEvents(ev.events);
-        setGeneratedAt(ev.generatedAt);
+    fetchData()
+      .then((d) => {
+        setClubs(d.clubs);
+        setEvents(d.events);
+        setGeneratedAt(d.generatedAt);
       })
       .catch((e) => setError(String(e.message ?? e)));
   }, []);
