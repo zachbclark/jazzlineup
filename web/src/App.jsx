@@ -1,6 +1,6 @@
 import React, { useEffect, useMemo, useState } from 'react';
 import { fetchData, todayIso } from './api';
-import { useIsMobile, isMobileNow } from './useIsMobile';
+import { useIsMobile } from './useIsMobile';
 import FilterBar from './components/FilterBar';
 import MonthGrid from './components/MonthGrid';
 import ListView from './components/ListView';
@@ -11,8 +11,9 @@ export default function App() {
   const [generatedAt, setGeneratedAt] = useState(null);
   const [error, setError] = useState(null);
   const [active, setActive] = useState(null); // null = all clubs; else Set of ids
-  // Phones open straight into the list (tonight first); desktop gets the month grid.
-  const [view, setView] = useState(() => (isMobileNow() ? 'list' : 'month'));
+  // Everyone lands on the calendar; today is pre-selected so tonight's
+  // lineup shows in the day drawer immediately.
+  const [view, setView] = useState('month');
   const isMobile = useIsMobile();
   const now = new Date();
   const [cursor, setCursor] = useState({ y: now.getFullYear(), m: now.getMonth() + 1 });
