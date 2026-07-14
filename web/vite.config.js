@@ -6,6 +6,7 @@ export default defineConfig({
   server: {
     proxy: {
       '/api': 'http://localhost:3000',
+      '/events.json': 'http://localhost:3000',
     },
   },
   build: {
