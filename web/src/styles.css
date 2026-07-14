@@ -5,7 +5,7 @@
   --line: #2a2a34;
   --text: #e8e6e1;
   --muted: #9a97a0;
-  --accent: #d4a545;
+  --accent: #d6a071;
 }
 
 * { box-sizing: border-box; }
@@ -23,7 +23,7 @@ button { font: inherit; cursor: pointer; }
 /* header */
 .topbar { display: flex; align-items: center; justify-content: space-between; gap: 16px; margin-bottom: 14px; }
 .brand {
-  font-family: 'Limelight', Helvetica, Arial, sans-serif;
+  font-family: 'Abril Fatface', Georgia, serif;
   font-size: 27px; font-weight: 400; letter-spacing: 0.5px;
 }
 .brand-note { color: var(--accent); }
@@ -56,7 +56,7 @@ button { font: inherit; cursor: pointer; }
 /* month grid */
 .monthnav { display: flex; align-items: center; gap: 14px; margin-bottom: 10px; }
 .monthnav h2 {
-  font-family: 'Limelight', Helvetica, Arial, sans-serif;
+  font-family: 'Abril Fatface', Georgia, serif;
   margin: 0; font-size: 18px; font-weight: 400; min-width: 170px; text-align: center; letter-spacing: 1px;
 }
 .monthnav button {
@@ -104,7 +104,7 @@ button { font: inherit; cursor: pointer; }
   border-radius: 9px;
   animation: panel-in 0.16s ease;
 }
-.daypanel.inline h3 { margin-top: 10px; border-bottom-color: rgba(212, 165, 69, 0.35); }
+.daypanel.inline h3 { margin-top: 10px; border-bottom-color: rgba(214, 160, 113, 0.35); }
 @keyframes panel-in {
   from { opacity: 0; transform: translateY(-5px); }
   to { opacity: 1; transform: none; }
@@ -142,7 +142,7 @@ button.cell { text-align: left; border: 1px solid var(--line); font: inherit; co
 .cell.has-events { cursor: pointer; }
 .cell.open {
   border-color: var(--accent);
-  background: rgba(212, 165, 69, 0.14);
+  background: rgba(214, 160, 113, 0.14);
   box-shadow: 0 0 0 1px var(--accent);
 }
 .dotrow { display: flex; flex-wrap: wrap; gap: 3px; align-items: center; margin-top: 2px; }
