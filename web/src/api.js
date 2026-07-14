@@ -33,3 +33,21 @@ export function todayIso() {
   const d = new Date();
   return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
 }
+
+// Reduce a show title to its lead artist for tight spaces (calendar cells).
+// "Miles Okazaki's “Boomtown” — Album Release" -> "Miles Okazaki"
+// "Karen Akers in Come With Me To Paris" -> "Karen Akers"
+// "Ari Hoenig Trio" -> "Ari Hoenig Trio" (already concise)
+export function mainArtist(title) {
+  let t = String(title).trim();
+  t = t.replace(/^an evening with\s+/i, '');
+  // possessive followed by a quoted work: "Artist's “Album” ..." -> Artist
+  const poss = t.match(/^(.{2,40}?)['’]s\s+["'“‘]/);
+  if (poss) return poss[1];
+  // cut at the first strong delimiter
+  let cut = t.split(/[:—–]/)[0]; // colon, em dash, en dash
+  cut = cut.split(/\s+(?:w\/|with|feat\.?|ft\.?|featuring|presents|in)\s+/i)[0];
+  t = (cut || t).replace(/\s*-\s.*$/, '').trim();
+  if (t.length > 30) t = t.slice(0, 28).replace(/\s+\S*$/, '') + '…';
+  return t || String(title).slice(0, 28);
+}
