@@ -155,26 +155,33 @@ ok("dizzys: date ranges incl. cross-month, Sunday set times", () => {
 });
 
 // --- Blue Note ---------------------------------------------------------------------
-ok('bluenote: parses calendar table, skips private events', () => {
+// NB: the live site serves SINGLE-quoted attributes (class='day') — this
+// fixture mirrors that (caught in production on 2026-07-14: the original
+// double-quote-only parser returned 0 events). Sony Hall shows share the
+// calendar and must be filtered out by venue.
+ok('bluenote: parses single-quoted markup, filters Sony Hall + private events', () => {
   const html = `
   <table><tbody><tr>
-    <td class="past"><div class="inner"><div class="day">15</div>
-      <div class="day-wrap single-show">
-        <a class="img-wrap" href="https://www.bluenotejazz.com/nyc/tm-event/wyatt-waddell/" title="Wyatt Waddell"><img alt="Wyatt Waddell" src="x.jpg"/></a>
-        <div class="showtimes">8:00 PM &amp; 10:30 PM</div>
-        <div class="venue">Blue Note Jazz Club</div>
+    <td class='past'><div class='inner'><div class='day'>15</div>
+      <div class='day-wrap single-show'>
+        <a class='img-wrap' href='https://www.bluenotejazz.com/nyc/tm-event/wyatt-waddell/'><div class='the-image' data-src='x.jpg'></div></a>
+        <h3><a href='https://www.bluenotejazz.com/nyc/tm-event/wyatt-waddell/'>Wyatt Waddell</a></h3>
+        <div class='showtimes'><a href='#'><time>8:00 PM</time> &amp; <time>10:30 PM</time></a><div class='venue'>Blue Note Jazz Club</div></div>
+      </div>
+      <div class='day-wrap '>
+        <h3><a href='/nyc/tm-event/other-band/'>Somebody Else</a></h3>
+        <div class='showtimes'><time>7:00 PM</time><div class='venue'>Sony Hall</div></div>
       </div>
     </div></td>
-    <td><div class="inner"><div class="day">29</div>
-      <div class="day-wrap single-show">
-        <a class="img-wrap" href="/nyc/tm-event/closed/" title="Closed for Private Event"></a>
-        <div class="showtimes">8:00 PM</div>
-        <div class="venue">Blue Note Jazz Club</div>
+    <td><div class='inner'><div class='day'>29</div>
+      <div class='day-wrap single-show'>
+        <h3><a href='/nyc/tm-event/closed/'>Closed for Private Event</a></h3>
+        <div class='showtimes'><time>8:00 PM</time><div class='venue'>Blue Note Jazz Club</div></div>
       </div>
     </div></td>
   </tr></tbody></table>`;
   const evs = bnParse(html, 2026, 7);
-  assert.equal(evs.length, 1);
+  assert.equal(evs.length, 1, `expected 1 event (no Sony Hall, no private), got ${evs.length}`);
   assert.equal(evs[0].date, '2026-07-15');
   assert.deepEqual(evs[0].sets, ['20:00', '22:30']);
   assert.equal(evs[0].title, 'Wyatt Waddell');

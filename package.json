@@ -10,6 +10,8 @@
     "web"
   ],
   "scripts": {
+    "test": "node crawler/test.mjs",
+    "seed": "node scripts/seed-from-capture.mjs",
     "crawl": "node crawler/index.js",
     "crawl:club": "node crawler/index.js --club",
     "serve": "node server/index.js",

@@ -49,6 +49,14 @@ async function main() {
   for (const r of results) {
     if (r.status === 'fulfilled') {
       const events = r.value.events.filter((e) => targetIds.has(e.clubId));
+      // Sanity check: a crawler that returns zero events almost certainly
+      // means the site changed its markup, not that the club went dark.
+      // Treat it as a failure so the previous data is kept and it's loud.
+      if (events.length === 0) {
+        errors.push(`${r.value.mod}: returned 0 events (markup change? keeping previous data)`);
+        console.error(`SUSPECT ${r.value.mod}: 0 events — keeping previous data`);
+        continue;
+      }
       for (const e of events) crawledClubIds.add(e.clubId);
       fresh.push(...events);
       console.log(`ok   ${r.value.mod}: ${events.length} events`);
