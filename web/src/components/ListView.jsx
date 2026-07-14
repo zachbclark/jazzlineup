@@ -1,7 +1,9 @@
-import React, { useMemo } from 'react';
+import React, { useEffect, useMemo, useState } from 'react';
 import { fmtSets, fmtDateHeading } from '../api';
 
 export default function ListView({ events, clubById, today }) {
+  const [showJump, setShowJump] = useState(false);
+
   const groups = useMemo(() => {
     const m = new Map();
     for (const e of events) {
@@ -11,6 +13,13 @@ export default function ListView({ events, clubById, today }) {
     }
     return [...m.entries()].sort((a, b) => a[0].localeCompare(b[0]));
   }, [events, today]);
+
+  // Floating "Tonight" button appears once the user has scrolled away.
+  useEffect(() => {
+    const onScroll = () => setShowJump(window.scrollY > 500);
+    window.addEventListener('scroll', onScroll, { passive: true });
+    return () => window.removeEventListener('scroll', onScroll);
+  }, []);
 
   if (!groups.length) return <div className="empty-list">No upcoming shows match the current filters.</div>;
 
@@ -37,6 +46,11 @@ export default function ListView({ events, clubById, today }) {
           })}
         </section>
       ))}
+      {showJump && (
+        <button className="jump-tonight" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
+          &#9835; Tonight
+        </button>
+      )}
     </div>
   );
 }

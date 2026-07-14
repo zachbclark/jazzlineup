@@ -64,12 +64,13 @@ button { font: inherit; cursor: pointer; }
 .dow { text-align: center; color: var(--muted); font-size: 12px; text-transform: uppercase; letter-spacing: 1px; padding: 4px 0; }
 .cell {
   background: var(--panel); border: 1px solid var(--line); border-radius: 9px;
-  min-height: 108px; padding: 6px; display: flex; flex-direction: column; gap: 3px;
+  min-height: 116px; padding: 6px 6px 12px; display: flex; flex-direction: column; gap: 4px;
 }
 .cell.empty { background: transparent; border-color: transparent; }
 .cell.past { opacity: 0.45; }
-.cell.today { border-color: var(--accent); box-shadow: 0 0 0 1px var(--accent); }
-.daynum { font-size: 12px; color: var(--muted); margin-bottom: 2px; }
+/* "today" is a fact: marked only by the gold day number (see .daynum rule).
+   "selected" is the action state and owns the strong border + fill. */
+.daynum { font-size: 12px; color: var(--muted); padding: 3px 2px 10px; } /* generous non-link click zone for opening the day */
 .cell.today .daynum { color: var(--accent); font-weight: 700; }
 
 .ev {
@@ -87,6 +88,21 @@ button { font: inherit; cursor: pointer; }
 
 /* day panel + list rows */
 .daypanel, .listview { margin-top: 18px; }
+/* inline variant: lives inside the month grid, spanning the full week row */
+.daypanel.inline {
+  grid-column: 1 / -1;
+  margin: 1px 0 5px;
+  padding: 4px 10px 10px;
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 9px;
+  animation: panel-in 0.16s ease;
+}
+.daypanel.inline h3 { margin-top: 10px; border-bottom-color: rgba(212, 165, 69, 0.35); }
+@keyframes panel-in {
+  from { opacity: 0; transform: translateY(-5px); }
+  to { opacity: 1; transform: none; }
+}
 .daypanel h3, .daygroup h3 {
   font-size: 14px; text-transform: uppercase; letter-spacing: 1.5px;
   color: var(--accent); border-bottom: 1px solid var(--line);
@@ -115,9 +131,59 @@ button { font: inherit; cursor: pointer; }
 .foot { margin-top: 30px; color: var(--muted); font-size: 12.5px; display: flex; gap: 8px; }
 .foot-sep { color: var(--line); }
 
+/* compact calendar (phone) */
+button.cell { text-align: left; border: 1px solid var(--line); font: inherit; color: inherit; }
+.cell.has-events { cursor: pointer; }
+.cell.open {
+  border-color: var(--accent);
+  background: rgba(212, 165, 69, 0.14);
+  box-shadow: 0 0 0 1px var(--accent);
+}
+.dotrow { display: flex; flex-wrap: wrap; gap: 3px; align-items: center; margin-top: 2px; }
+.dot-sm { width: 7px; height: 7px; border-radius: 50%; display: inline-block; }
+.dot-extra { color: var(--muted); font-size: 10px; line-height: 1; }
+
+/* floating "back to tonight" button (list view, phones) */
+.jump-tonight {
+  position: fixed; right: 16px; bottom: 18px; z-index: 10;
+  background: var(--accent); color: #14100a; font-weight: 700; font-size: 14px;
+  border: none; border-radius: 999px; padding: 13px 20px;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.55);
+}
+
+/* ---------- mobile ---------- */
 @media (max-width: 760px) {
+  body { font-size: 16px; } /* >=16px inputs/text prevents iOS auto-zoom */
+  .app { padding: 14px 12px 32px; }
+
+  .topbar { flex-wrap: wrap; gap: 10px; }
+  .brand { font-size: 21px; }
+  .view-toggle button { padding: 11px 18px; } /* thumb-sized */
+
+  /* filter chips: one horizontally scrollable row */
+  .filterbar {
+    flex-wrap: nowrap; overflow-x: auto; -webkit-overflow-scrolling: touch;
+    margin-left: -12px; margin-right: -12px; padding: 2px 12px 8px;
+    scrollbar-width: none;
+  }
+  .filterbar::-webkit-scrollbar { display: none; }
+  .chip { flex: 0 0 auto; padding: 10px 15px; font-size: 14px; }
+
+  /* compact month grid */
   .grid { gap: 3px; }
-  .cell { min-height: 70px; padding: 4px; }
-  .ev { font-size: 10px; }
-  .badge { min-width: 58px; }
+  .cell { min-height: 52px; padding: 5px; border-radius: 7px; }
+  .daynum { font-size: 12px; }
+  .monthnav h2 { min-width: 130px; font-size: 17px; }
+  .monthnav button { padding: 9px 16px; }
+
+  /* list rows: bigger targets, sets under the title */
+  .row { flex-wrap: wrap; padding: 11px 8px; row-gap: 2px; }
+  .badge { min-width: 62px; font-size: 10px; padding: 3px 7px; }
+  .row-title { flex: 1 1 60%; }
+  .row-sets { flex: 0 0 auto; margin-left: auto; }
+  .daygroup h3 { position: sticky; top: 0; background: var(--bg); z-index: 5; padding-top: 8px; margin-top: 14px; }
+}
+
+@media (min-width: 761px) {
+  .jump-tonight { display: none; }
 }

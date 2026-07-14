@@ -16,19 +16,19 @@ is parser maintenance, so invest in sanity checks + alerting, not infra).
 - [ ] Add `city` + `timezone` fields to the club registry NOW (trivial today,
       painful after 30 clubs; dates are currently NY-local)
 - [x] Name chosen: **jazzlineup.com** (2026-07-14)
-- [ ] Register jazzlineup.com (Zach — registrar of choice; ~$10/yr)
+- [x] Registered jazzlineup.com (Cloudflare)
 - [x] Rebrand app to Jazz Lineup · NYC
 
 ## Phase 1 — Mobile + ship NYC
-- [ ] **Mobile-first pass (ESSENTIAL):** list/agenda view default on small
-      screens (month grid is hostile on phones), swipeable week strip,
-      44px touch targets, horizontally scrollable filter chips,
-      sticky "Tonight" jump button
+- [x] **Mobile-first pass (2026-07-14):** list view (tonight first) is the
+      default on phones; month grid becomes a compact tappable dot-calendar;
+      thumb-sized targets; horizontally scrollable filter chips; floating
+      "Tonight" jump button; calendar cells show concise main-artist names
 - [ ] Test real widths (iPhone SE → Pro Max, Android); Lighthouse mobile pass
-- [ ] Tap a day in calendar mode → full-day panel incl. band personnel
-- [ ] Deploy: S3 + CloudFront + domain + HTTPS; crawler Lambda on EventBridge
-      (`rate(4 hours)`), events.json served as a static file (no API server
-      needed in prod — frontend filters client-side)
+- [x] Tap a day in calendar mode → full-day panel incl. band personnel (auto-scrolls into view)
+- [x] **DEPLOYED 2026-07-14: https://jazzlineup.com is live.** S3 + CloudFront
+      + ACM TLS; crawler Lambda on EventBridge every 4h; 565 events on first
+      production crawl, 0 errors. CDK stack in `infra/`, runbook in DEPLOY.md
 - [ ] Lightweight privacy-friendly analytics
 
 ## Phase 2 — Depth: filtering that scales
