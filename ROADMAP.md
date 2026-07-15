@@ -156,8 +156,13 @@ times from description text; verify against reality after first live crawl.
       covered by the Phase 0 registry fields)
 
 ## Ongoing
-- [ ] Markup-drift alerting: notify (email/webhook) after N consecutive failed
-      or suspect crawls for a club
+- [x] **Monitoring (2026-07-16):** CloudWatch dashboard "jazzlineup" (requests,
+      bytes, 4xx/5xx, crawler invocations/errors/duration) + email alarms
+      (crawler fails 2 runs in a row; site >5% 5xx) + CloudFront access logs
+      to S3 (90-day retention) — all in CDK, all free tier
+- [ ] Markup-drift alerting at CLUB level: notify after N consecutive failed
+      or suspect crawls for a single club (Lambda-level alarm exists; per-club
+      needs a custom metric emitted from the crawl summary)
 - [ ] Crawler politeness: descriptive UA, delays, cache/etag use where possible
 
 ## Brand simmer (open, non-blocking)

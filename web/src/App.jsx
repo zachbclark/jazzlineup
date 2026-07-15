@@ -7,6 +7,9 @@ import FilterBar from './components/FilterBar';
 import MonthGrid from './components/MonthGrid';
 import ListView from './components/ListView';
 
+// Tip jar — "buy me a drink"
+const TIP_URL = 'https://ko-fi.com/jazzlineup';
+
 export default function App() {
   const [clubs, setClubs] = useState([]);
   const [events, setEvents] = useState([]);
@@ -178,6 +181,11 @@ export default function App() {
         {generatedAt && <span>Data crawled {new Date(generatedAt).toLocaleString()}</span>}
         <span className="foot-sep">&middot;</span>
         <span>{visible.length} shows across {shownClubCount} clubs</span>
+        <span className="foot-sep">&middot;</span>
+        <a className="tip-jar" href={TIP_URL} target="_blank" rel="noreferrer"
+          title="Enjoying the site? Buy me a drink.">
+          &#9835; tip jar
+        </a>
       </footer>
     </div>
   );

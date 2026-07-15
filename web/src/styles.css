@@ -198,8 +198,14 @@ button { font: inherit; cursor: pointer; }
 .empty-list, .error { color: var(--muted); padding: 40px 0; text-align: center; }
 .error { color: #e07a6a; }
 
-.foot { margin-top: 30px; color: var(--muted); font-size: 12.5px; display: flex; gap: 8px; }
+.foot { margin-top: 30px; color: var(--muted); font-size: 12.5px; display: flex; gap: 8px; flex-wrap: wrap; }
 .foot-sep { color: var(--line); }
+/* the tip jar whispers; it glows only when someone reaches for it */
+.tip-jar { color: var(--muted); transition: all .2s ease; }
+.tip-jar:hover {
+  color: var(--accent);
+  text-shadow: 0 0 10px rgba(232, 180, 88, 0.55);
+}
 
 /* compact calendar (phone) */
 button.cell { text-align: left; border: 1px solid var(--line); font: inherit; color: inherit; }

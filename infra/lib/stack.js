@@ -17,9 +17,14 @@ const lambda = require('aws-cdk-lib/aws-lambda');
 const events = require('aws-cdk-lib/aws-events');
 const targets = require('aws-cdk-lib/aws-events-targets');
 const logs = require('aws-cdk-lib/aws-logs');
+const cloudwatch = require('aws-cdk-lib/aws-cloudwatch');
+const cwActions = require('aws-cdk-lib/aws-cloudwatch-actions');
+const sns = require('aws-cdk-lib/aws-sns');
+const snsSubs = require('aws-cdk-lib/aws-sns-subscriptions');
 const { Construct } = require('constructs');
 
 const DOMAIN = 'jazzlineup.com';
+const ALERT_EMAIL = 'zachbclark@gmail.com'; // SNS sends a confirm link on first deploy
 
 class JazzLineupStack extends cdk.Stack {
   constructor(scope, id, props) {
@@ -40,8 +45,23 @@ class JazzLineupStack extends cdk.Stack {
       validation: acm.CertificateValidation.fromDns(), // manual DNS validation
     });
 
+    // --- CloudFront access logs (the raw "network traffic" record) ----------
+    // Standard logs: one gzipped file per batch of requests — IP, path, status,
+    // bytes, referrer, user-agent. Costs pennies; expires after 90 days.
+    const logBucket = new s3.Bucket(this, 'AccessLogBucket', {
+      blockPublicAccess: s3.BlockPublicAccess.BLOCK_ALL,
+      encryption: s3.BucketEncryption.S3_MANAGED,
+      objectOwnership: s3.ObjectOwnership.BUCKET_OWNER_PREFERRED, // CloudFront logs need ACLs
+      lifecycleRules: [{ expiration: cdk.Duration.days(90) }],
+      removalPolicy: cdk.RemovalPolicy.DESTROY,
+      autoDeleteObjects: true,
+    });
+
     // --- CloudFront ----------------------------------------------------------
     const distribution = new cloudfront.Distribution(this, 'Distribution', {
+      enableLogging: true,
+      logBucket,
+      logFilePrefix: 'cf/',
       defaultBehavior: {
         origin: origins.S3BucketOrigin.withOriginAccessControl(bucket),
         viewerProtocolPolicy: cloudfront.ViewerProtocolPolicy.REDIRECT_TO_HTTPS,
@@ -89,7 +109,78 @@ class JazzLineupStack extends cdk.Stack {
       targets: [new targets.LambdaFunction(crawler, { retryAttempts: 1 })],
     });
 
+    // --- Monitoring: dashboard + email alarms --------------------------------
+    // Free tier covers all of this (3 dashboards, 10 alarms, email SNS).
+    const alerts = new sns.Topic(this, 'Alerts', { displayName: 'jazzlineup alerts' });
+    alerts.addSubscription(new snsSubs.EmailSubscription(ALERT_EMAIL));
+
+    // Crawler failed twice in a row (~8h of stale data) -> email.
+    const crawlerErrors = crawler.metricErrors({ period: cdk.Duration.hours(4), statistic: 'Sum' });
+    const crawlerAlarm = new cloudwatch.Alarm(this, 'CrawlerFailing', {
+      metric: crawlerErrors,
+      threshold: 1,
+      evaluationPeriods: 2,
+      comparisonOperator: cloudwatch.ComparisonOperator.GREATER_THAN_OR_EQUAL_TO_THRESHOLD,
+      treatMissingData: cloudwatch.TreatMissingData.NOT_BREACHING,
+      alarmDescription: 'jazzlineup crawler Lambda errored on 2 consecutive runs',
+    });
+    crawlerAlarm.addAlarmAction(new cwActions.SnsAction(alerts));
+
+    // Site serving errors: >5% of requests 5xx for 15 min -> email.
+    const cfError5xx = distribution.metric5xxErrorRate({ period: cdk.Duration.minutes(5), statistic: 'Average' });
+    const siteAlarm = new cloudwatch.Alarm(this, 'SiteErrors', {
+      metric: cfError5xx,
+      threshold: 5,
+      evaluationPeriods: 3,
+      comparisonOperator: cloudwatch.ComparisonOperator.GREATER_THAN_THRESHOLD,
+      treatMissingData: cloudwatch.TreatMissingData.NOT_BREACHING,
+      alarmDescription: 'jazzlineup.com is serving >5% 5xx responses',
+    });
+    siteAlarm.addAlarmAction(new cwActions.SnsAction(alerts));
+
+    // One dashboard: visitor traffic on top, crawler health below.
+    const dash = new cloudwatch.Dashboard(this, 'Dashboard', { dashboardName: 'jazzlineup' });
+    dash.addWidgets(
+      new cloudwatch.GraphWidget({
+        title: 'Requests (visitors hitting the site)',
+        left: [distribution.metricRequests({ period: cdk.Duration.hours(1), statistic: 'Sum' })],
+        width: 12,
+      }),
+      new cloudwatch.GraphWidget({
+        title: 'Bytes served',
+        left: [distribution.metricBytesDownloaded({ period: cdk.Duration.hours(1), statistic: 'Sum' })],
+        width: 12,
+      }),
+    );
+    dash.addWidgets(
+      new cloudwatch.GraphWidget({
+        title: 'Error rates (%)',
+        left: [
+          distribution.metric4xxErrorRate({ period: cdk.Duration.hours(1), statistic: 'Average' }),
+          distribution.metric5xxErrorRate({ period: cdk.Duration.hours(1), statistic: 'Average' }),
+        ],
+        width: 12,
+      }),
+      new cloudwatch.GraphWidget({
+        title: 'Crawler: invocations, errors, duration',
+        left: [
+          crawler.metricInvocations({ period: cdk.Duration.hours(4), statistic: 'Sum' }),
+          crawler.metricErrors({ period: cdk.Duration.hours(4), statistic: 'Sum' }),
+        ],
+        right: [crawler.metricDuration({ period: cdk.Duration.hours(4), statistic: 'Average' })],
+        width: 12,
+      }),
+    );
+
     // --- Outputs ---------------------------------------------------------------
+    new cdk.CfnOutput(this, 'DashboardUrl', {
+      value: `https://console.aws.amazon.com/cloudwatch/home?region=${this.region}#dashboards:name=jazzlineup`,
+      description: 'Traffic + crawler health dashboard',
+    });
+    new cdk.CfnOutput(this, 'AccessLogBucketName', {
+      value: logBucket.bucketName,
+      description: 'Raw CloudFront access logs (gzipped, 90-day retention)',
+    });
     new cdk.CfnOutput(this, 'CloudFrontDomain', {
       value: distribution.distributionDomainName,
       description: 'Point Cloudflare CNAMEs (@ and www, DNS-only) at this',
