@@ -126,15 +126,34 @@ try {
     assert.equal(after[2], before[0], 'dragged chip should land at position 3');
     const count = Number((await pd.textContent('.foot')).match(/(\d+) shows/)[1]);
     assert.ok(count > 0, 'drop must not toggle the chip off');
-    const stored = await pd.evaluate(() => localStorage.getItem('jl.order.nyc'));
+    const stored = await pd.evaluate(() => localStorage.getItem('jl.order.nyc.all'));
     assert.ok(stored && JSON.parse(stored).length > 5, 'order not persisted');
     await pd.reload({ waitUntil: 'networkidle' });
     await pd.waitForTimeout(600);
     const reloaded = await chipNames();
     assert.deepEqual(reloaded.slice(0, 3), after.slice(0, 3), 'order lost after reload');
-    await pd.evaluate(() => localStorage.removeItem('jl.order.nyc'));
+    await pd.evaluate(() => localStorage.removeItem('jl.order.nyc.all'));
     await pd.reload({ waitUntil: 'networkidle' });
     await pd.waitForTimeout(600);
+  });
+
+  await test('chip selection persists across reload (saved off stays off)', async () => {
+    const count = async () => Number((await pd.textContent('.foot')).match(/(\d+) shows/)[1]);
+    const initial = await count();
+    await pd.click('.chip:not(.chip-all)'); // toggle first venue off
+    await pd.waitForTimeout(250);
+    const toggled = await count();
+    assert.ok(toggled < initial, 'toggle did not reduce count');
+    await pd.reload({ waitUntil: 'networkidle' });
+    await pd.waitForTimeout(600);
+    assert.equal(await count(), toggled, 'saved selection did not survive reload');
+    const saved = await pd.evaluate(() => localStorage.getItem('jl.active.nyc'));
+    assert.ok(saved && JSON.parse(saved).length > 0, 'selection not in localStorage');
+    await pd.click('.chip:not(.chip-all)'); // toggle back on -> null -> key removed
+    await pd.waitForTimeout(250);
+    assert.equal(await count(), initial);
+    const cleared = await pd.evaluate(() => localStorage.getItem('jl.active.nyc'));
+    assert.equal(cleared, null, 'all-on selection should clear the storage key');
   });
 
   await test('borough filter narrows chips and counts, then clears', async () => {

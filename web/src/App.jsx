@@ -30,11 +30,12 @@ export default function App() {
         setClubs(d.clubs);
         setEvents(d.events);
         setGeneratedAt(d.generatedAt);
-        setActive(null); // filters reset when the city changes
         setBorough(null);
+        // restore this city's saved chip selection (null = everything on)
         try {
-          setOrder(JSON.parse(localStorage.getItem(`jl.order.${city}`)) ?? null);
-        } catch { setOrder(null); }
+          const saved = JSON.parse(localStorage.getItem(`jl.active.${city}`));
+          setActive(Array.isArray(saved) ? new Set(saved) : null);
+        } catch { setActive(null); }
       })
       .catch((e) => setError(String(e.message ?? e)));
   }, [city]);
@@ -43,6 +44,22 @@ export default function App() {
     setCity(id);
     localStorage.setItem('jl.city', id);
     window.history.pushState({}, '', '/' + id);
+  };
+
+  // Chip order is saved per (city, borough scope): each of All / Manhattan /
+  // Brooklyn / Queens keeps its own arrangement.
+  const orderKey = `jl.order.${city}.${borough ?? 'all'}`;
+  useEffect(() => {
+    try {
+      const saved = JSON.parse(localStorage.getItem(orderKey))
+        ?? (borough === null ? JSON.parse(localStorage.getItem(`jl.order.${city}`)) : null); // pre-borough legacy key
+      setOrder(Array.isArray(saved) ? saved : null);
+    } catch { setOrder(null); }
+  }, [orderKey]); // eslint-disable-line react-hooks/exhaustive-deps
+
+  const persistActive = (val) => {
+    if (val === null) localStorage.removeItem(`jl.active.${city}`);
+    else localStorage.setItem(`jl.active.${city}`, JSON.stringify([...val]));
   };
 
   const clubById = useMemo(() => Object.fromEntries(clubs.map((c) => [c.id, c])), [clubs]);
@@ -72,12 +89,13 @@ export default function App() {
   // persist once, when the drag ends (not on every crossing)
   const persistOrder = () => {
     setOrder((ids) => {
-      if (ids) localStorage.setItem(`jl.order.${city}`, JSON.stringify(ids));
+      if (ids) localStorage.setItem(orderKey, JSON.stringify(ids));
       return ids;
     });
   };
   const resetOrder = () => {
-    localStorage.removeItem(`jl.order.${city}`);
+    localStorage.removeItem(orderKey);
+    if (borough === null) localStorage.removeItem(`jl.order.${city}`); // legacy key
     setOrder(null);
   };
 
@@ -104,7 +122,9 @@ export default function App() {
     setActive((prev) => {
       const next = new Set(prev ?? clubs.map((c) => c.id));
       if (next.has(id)) next.delete(id); else next.add(id);
-      return next.size === clubs.length ? null : next;
+      const result = next.size === clubs.length ? null : next;
+      persistActive(result);
+      return result;
     });
   };
 
@@ -132,7 +152,11 @@ export default function App() {
         hasCustomOrder={order !== null}
         onResetOrder={resetOrder}
         // "All clubs" toggles: everything on <-> everything off
-        onAll={() => setActive((prev) => (prev === null ? new Set() : null))}
+        onAll={() => setActive((prev) => {
+          const result = prev === null ? new Set() : null;
+          persistActive(result);
+          return result;
+        })}
       />
 
       {error && <div className="error">Couldn&rsquo;t load shows: {error}</div>}
