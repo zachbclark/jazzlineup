@@ -9,6 +9,7 @@ export const CLUBS = [
     url: 'https://villagevanguard.com',
     address: '178 7th Ave S, New York, NY 10014',
     city: 'nyc',
+    borough: 'manhattan',
     timezone: 'America/New_York',
     neighborhood: 'West Village',
     color: '#ff453a', // the red neon sign on 7th Ave
@@ -21,6 +22,7 @@ export const CLUBS = [
     url: 'https://www.bluenotejazz.com/nyc',
     address: '131 W 3rd St, New York, NY 10012',
     city: 'nyc',
+    borough: 'manhattan',
     timezone: 'America/New_York',
     neighborhood: 'Greenwich Village',
     color: '#4d9bff', // the name — azure, brightened from their navy
@@ -33,6 +35,7 @@ export const CLUBS = [
     url: 'https://www.smallslive.com',
     address: '183 W 10th St, New York, NY 10014',
     city: 'nyc',
+    borough: 'manhattan',
     timezone: 'America/New_York',
     neighborhood: 'West Village',
     color: '#e8355f', // SmallsLive brand crimson #d21535, glow-tuned
@@ -45,6 +48,7 @@ export const CLUBS = [
     url: 'https://www.smallslive.com',
     address: '163 W 10th St, New York, NY 10014',
     city: 'nyc',
+    borough: 'manhattan',
     timezone: 'America/New_York',
     neighborhood: 'West Village',
     color: '#f1bb53', // SmallsLive brand gold, kept as-is
@@ -57,6 +61,7 @@ export const CLUBS = [
     url: 'https://birdlandjazz.com',
     address: '315 W 44th St, New York, NY 10036',
     city: 'nyc',
+    borough: 'manhattan',
     timezone: 'America/New_York',
     neighborhood: 'Theater District',
     color: '#f2788c', // birdlandjazz.com brand rose #e7737f
@@ -69,6 +74,7 @@ export const CLUBS = [
     url: 'https://jazz.org/dizzys',
     address: '10 Columbus Cir, New York, NY 10019',
     city: 'nyc',
+    borough: 'manhattan',
     timezone: 'America/New_York',
     neighborhood: 'Columbus Circle',
     color: '#ffa042', // the amber room + sunset behind the stage glass
@@ -81,6 +87,7 @@ export const CLUBS = [
     url: 'https://www.jazzcultural.com',
     address: '184 W 10th St, New York, NY 10014',
     city: 'nyc',
+    borough: 'manhattan',
     timezone: 'America/New_York',
     neighborhood: 'West Village',
     color: '#4a6ff5', // SmallsLive brand royal blue #1055c9, brightened
@@ -93,6 +100,7 @@ export const CLUBS = [
     url: 'https://www.smokejazz.com',
     address: '2751 Broadway, New York, NY 10025',
     city: 'nyc',
+    borough: 'manhattan',
     timezone: 'America/New_York',
     neighborhood: 'Upper West Side',
     color: '#9fb6c9', // the name; NB their site brand is red #c51403 if Zach prefers
@@ -105,6 +113,7 @@ export const CLUBS = [
     url: 'https://nublu.net/program151',
     address: '151 Avenue C, New York, NY 10009',
     city: 'nyc',
+    borough: 'manhattan',
     timezone: 'America/New_York',
     neighborhood: 'Alphabet City',
     color: '#35d0e0', // the famous blue light over the unmarked door
@@ -117,6 +126,7 @@ export const CLUBS = [
     url: 'https://www.barlunatico.com/music',
     address: '486 Halsey St, Brooklyn, NY 11233',
     city: 'nyc',
+    borough: 'brooklyn',
     timezone: 'America/New_York',
     neighborhood: 'Bed-Stuy',
     color: '#45c4b5', // barlunatico.com brand teal #4c948b, brightened
@@ -129,10 +139,155 @@ export const CLUBS = [
     url: 'https://jazzgallery.org',
     address: '1158 Broadway, 5th Fl, New York, NY 10001',
     city: 'nyc',
+    borough: 'manhattan',
     timezone: 'America/New_York',
     neighborhood: 'NoMad',
     color: '#c96a4a', // their brand dark red #941100 shifted to rust (Vanguard owns red)
     module: './clubs/jazzgallery.js',
+  },
+  {
+    id: 'django',
+    name: 'The Django',
+    shortName: 'Django',
+    url: 'https://www.thedjangonyc.com',
+    address: '2 6th Ave (Roxy Hotel cellar), New York, NY 10013',
+    city: 'nyc',
+    borough: 'manhattan',
+    timezone: 'America/New_York',
+    neighborhood: 'Tribeca',
+    color: '#8e4ec6', // Parisian-cellar violet — quick read, refine later
+    module: './clubs/django.js',
+  },
+  {
+    id: 'cellardog',
+    name: 'Cellar Dog',
+    shortName: 'Cellar Dog',
+    url: 'https://www.cellardog.net',
+    address: '75 Christopher St, New York, NY 10014',
+    city: 'nyc',
+    borough: 'manhattan',
+    timezone: 'America/New_York',
+    neighborhood: 'West Village',
+    color: '#e07b39', // warm basement-lamp orange — quick read
+    module: './clubs/cellardog.js',
+  },
+  {
+    id: 'arthurs',
+    name: "Arthur's Tavern",
+    shortName: "Arthur's",
+    url: 'https://www.arthurstavernnyc.com',
+    address: '57 Grove St, New York, NY 10014',
+    city: 'nyc',
+    borough: 'manhattan',
+    timezone: 'America/New_York',
+    neighborhood: 'West Village',
+    color: '#59d95f', // the green neon sign on Grove St
+    module: './clubs/arthurs.js',
+  },
+  {
+    id: 'zincbar',
+    name: 'Zinc Bar',
+    shortName: 'Zinc',
+    url: 'https://www.zincbar.com', // NOT zincjazz.com — that domain is hijacked
+
+    address: '82 W 3rd St, New York, NY 10012',
+    city: 'nyc',
+    borough: 'manhattan',
+    timezone: 'America/New_York',
+    neighborhood: 'Greenwich Village',
+    color: '#aab9cf', // zinc metal — steel-blue grey, quick read
+    module: './clubs/zincbar.js',
+  },
+  {
+    id: 'pocket',
+    name: 'The Pocket',
+    shortName: 'Pocket',
+    url: 'https://thepocketnyc.com',
+    address: '130 W 46th St, New York, NY 10036',
+    city: 'nyc',
+    borough: 'manhattan',
+    timezone: 'America/New_York',
+    neighborhood: 'Theater District',
+    color: '#d3e05a', // their chartreuse-on-green brand accent — quick read
+    module: './clubs/pocket.js',
+  },
+  {
+    id: 'closeup',
+    name: 'Close Up',
+    shortName: 'Close Up',
+    url: 'https://www.closeupnyc.com',
+    address: '154 Orchard St, New York, NY 10002',
+    city: 'nyc',
+    borough: 'manhattan',
+    timezone: 'America/New_York',
+    neighborhood: 'Lower East Side',
+    color: '#ece5c3', // their cream-on-black calendar palette (FAF9DB), dimmed
+    module: './clubs/closeup.js',
+  },
+  {
+    id: 'billsplace',
+    name: "Bill's Place",
+    shortName: "Bill's Place",
+    url: 'https://billsplaceharlem.com',
+    address: '148 W 133rd St, New York, NY 10030',
+    city: 'nyc',
+    borough: 'manhattan',
+    timezone: 'America/New_York',
+    neighborhood: 'Harlem',
+    color: '#a9744f', // speakeasy whiskey brown — quick read
+    module: './clubs/billsplace.js',
+  },
+  {
+    id: 'barbes',
+    name: 'Barbès',
+    shortName: 'Barbès',
+    url: 'https://www.barbesbrooklyn.com',
+    address: '376 9th St, Brooklyn, NY 11215',
+    city: 'nyc',
+    borough: 'brooklyn',
+    timezone: 'America/New_York',
+    neighborhood: 'Park Slope',
+    color: '#b04a3d', // their dark-red calendar accent (#850505), glow-tuned
+    module: './clubs/barbes.js',
+  },
+  {
+    id: 'ornithology',
+    name: 'Ornithology Jazz Club',
+    shortName: 'Ornithology',
+    url: 'https://ornithologyjazzclub.com',
+    address: '6 Suydam St, Brooklyn, NY 11221',
+    city: 'nyc',
+    borough: 'brooklyn',
+    timezone: 'America/New_York',
+    neighborhood: 'Bushwick',
+    color: '#3fae7f', // Bird — emerald plumage, quick read
+    module: './clubs/ornithology.js',
+  },
+  {
+    id: 'ornithologycafe',
+    name: 'Ornithology Cafe',
+    shortName: 'Orni. Cafe',
+    url: 'https://cafeornithology.com',
+    address: '1037 Broadway, Brooklyn, NY 11221',
+    city: 'nyc',
+    borough: 'brooklyn',
+    timezone: 'America/New_York',
+    neighborhood: 'Bushwick',
+    color: '#8fd6a8', // sage — lighter sibling of the club's emerald
+    module: './clubs/ornithology.js', // same SpotHopper platform, both rooms
+  },
+  {
+    id: 'barbayeux',
+    name: 'Bar Bayeux',
+    shortName: 'Bayeux',
+    url: 'https://www.barbayeux.com/jazz',
+    address: '1066 Nostrand Ave, Brooklyn, NY 11225',
+    city: 'nyc',
+    borough: 'brooklyn',
+    timezone: 'America/New_York',
+    neighborhood: 'Prospect-Lefferts',
+    color: '#7d9fe0', // tapestry-thread french blue — quick read
+    module: './clubs/barbayeux.js',
   },
 ];
 

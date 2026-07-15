@@ -6,6 +6,8 @@ const UA =
 
 export async function fetchText(url, opts = {}) {
   const res = await fetch(url, {
+    method: opts.method ?? 'GET',
+    body: opts.body ?? undefined,
     headers: { 'user-agent': UA, accept: 'text/html,application/json;q=0.9,*/*;q=0.8', ...opts.headers },
     redirect: 'follow',
     signal: AbortSignal.timeout(opts.timeoutMs ?? 30000),
@@ -116,6 +118,24 @@ export function isoDate(y, m, d) {
   return `${y}-${String(m).padStart(2, '0')}-${String(d).padStart(2, '0')}`;
 }
 
+export function prevDay(iso) {
+  const [y, m, d] = iso.split('-').map(Number);
+  const dt = new Date(Date.UTC(y, m - 1, d - 1));
+  return isoDate(dt.getUTCFullYear(), dt.getUTCMonth() + 1, dt.getUTCDate());
+}
+
+// Night attribution: a show that STARTS after midnight (12:00–4:59am)
+// belongs to the previous evening. Only for crawlers whose dates come from
+// exact datetimes — sources that list by night (SmallsLive) already do this.
+export function applyLateNight(draft) {
+  const first = (draft.sets ?? [])[0];
+  if (first && first < '05:00') {
+    draft.date = prevDay(draft.date);
+    draft.late = true;
+  }
+  return draft;
+}
+
 // "2026-07-15T19:00:00-04:00" or "2026-07-15 19:00" -> { date, time }
 export function splitIso(iso) {
   const m = String(iso).match(/^(\d{4}-\d{2}-\d{2})[T ](\d{2}:\d{2})/);
@@ -167,6 +187,9 @@ export function makeEvent(e) {
     url: e.url ?? null,
     details: e.details ? cleanText(e.details).slice(0, 500) : null,
     personnel: Array.isArray(e.personnel) && e.personnel.length ? e.personnel : null,
+    // "late" = shifted after-midnight start (applyLateNight) OR a same-day
+    // start at 11pm or later — both wear the tag; only the former moves days.
+    late: e.late === true || ((e.sets ?? []).slice().sort()[0] ?? '') >= '23:00' || undefined,
     priceText: e.priceText ? cleanText(e.priceText) : null,
   };
 }
@@ -257,16 +280,24 @@ function lastNameRun(text) {
 
 // --- timezone helpers ---------------------------------------------------------
 
-// Epoch ms or ISO string -> 'YYYY-MM-DD' in America/New_York.
-export function nyDate(input) {
+// Epoch ms or ISO string -> 'YYYY-MM-DD' in the given IANA timezone.
+export function tzDate(input, tz) {
   return new Intl.DateTimeFormat('en-CA', {
-    timeZone: 'America/New_York', year: 'numeric', month: '2-digit', day: '2-digit',
+    timeZone: tz, year: 'numeric', month: '2-digit', day: '2-digit',
   }).format(new Date(input));
 }
 
-// Epoch ms or ISO string -> 'HH:MM' (24h) in America/New_York.
-export function nyTime(input) {
+// Epoch ms or ISO string -> 'HH:MM' (24h) in the given IANA timezone.
+export function tzTime(input, tz) {
   return new Intl.DateTimeFormat('en-GB', {
-    timeZone: 'America/New_York', hour: '2-digit', minute: '2-digit', hour12: false,
+    timeZone: tz, hour: '2-digit', minute: '2-digit', hour12: false,
   }).format(new Date(input));
 }
+
+// NYC conveniences (existing crawlers use these).
+export const nyDate = (input) => tzDate(input, 'America/New_York');
+export const nyTime = (input) => tzTime(input, 'America/New_York');
+
+// LA conveniences (for the LA crawlers).
+export const laDate = (input) => tzDate(input, 'America/Los_Angeles');
+export const laTime = (input) => tzTime(input, 'America/Los_Angeles');

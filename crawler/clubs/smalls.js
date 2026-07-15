@@ -6,7 +6,7 @@
 //   .venue-group > .day-event > .text-grey (times) + .day_event_title + <a href>
 import {
   fetchText, makeEvent, matchBlocks, htmlToText, extractTimes,
-  monthNum, inferYear, isoDate, sleep,
+  monthNum, inferYear, isoDate, sleep, cleanText,
 } from '../lib.js';
 
 const BASE = 'https://www.smallslive.com';
@@ -40,16 +40,70 @@ export function parsePage(templateHtml, today = new Date()) {
         const title = htmlToText(matchBlocks(ev, 'div', /class="[^"]*\bday_event_title\b/)[0] ?? '');
         if (!title) continue;
         const href = (ev.match(/href="([^"]+)"/) ?? [])[1];
+        // "6:00 PM & 7:30 PM"  -> two sets
+        // "11:45 PM - 4:00 AM" -> ONE set at the start; the end becomes
+        // "until 4:00 AM" (otherwise the end time pollutes sets and sorts
+        // the event to the top of the day).
+        const range = timeText.match(/^(.+?)\s*[-–]\s*(.+)$/);
+        const sets = range ? extractTimes(range[1]) : extractTimes(timeText);
+        const details = range ? `until ${range[2].trim()}` : null;
         events.push(makeEvent({
           clubId,
           title,
           date,
-          sets: extractTimes(timeText),
+          sets,
           url: href ? BASE + href.split('?')[0] : BASE,
-          details: timeText || null,
+          details,
         }));
       }
     }
+  }
+  return events;
+}
+
+// Each event page lists the band as <a class="artist-link">Name / Instrument</a>
+// inside <div class="event-band">.
+export function parseEventPersonnel(pageHtml) {
+  const band = matchBlocks(pageHtml, 'div', /class="[^"]*\bevent-band\b/)[0] ?? '';
+  const personnel = [];
+  for (const m of band.matchAll(/<a[^>]*class="[^"]*artist-link[^"]*"[^>]*>([\s\S]*?)<\/a>/g)) {
+    const [name, instrument] = htmlToText(m[1]).split('/').map((x) => cleanText(x));
+    if (name && instrument) personnel.push({ name, instrument: instrument.toLowerCase() });
+  }
+  return personnel;
+}
+
+// Fetch event pages (near-term events only, limited concurrency) to enrich
+// events with personnel. Failures are silently skipped — the calendar data
+// stands on its own.
+const ENRICH_DAYS = 12;
+const ENRICH_CONCURRENCY = 4;
+const ENRICH_MAX_PAGES = 90;
+
+async function enrichPersonnel(events, today = new Date()) {
+  const horizon = new Date(today.getTime() + ENRICH_DAYS * 86400000).toISOString().slice(0, 10);
+  const urls = [...new Set(
+    events
+      .filter((e) => e.date <= horizon && e.url?.includes('/events/'))
+      .map((e) => e.url)
+  )].slice(0, ENRICH_MAX_PAGES);
+
+  const byUrl = new Map();
+  let i = 0;
+  await Promise.all(Array.from({ length: ENRICH_CONCURRENCY }, async () => {
+    while (i < urls.length) {
+      const url = urls[i++];
+      try {
+        const personnel = parseEventPersonnel(await fetchText(url));
+        if (personnel.length) byUrl.set(url, personnel);
+      } catch { /* skip */ }
+      await sleep(150);
+    }
+  }));
+
+  for (const e of events) {
+    const p = byUrl.get(e.url);
+    if (p) e.personnel = p;
   }
   return events;
 }
@@ -66,5 +120,5 @@ export async function crawl() {
     events.push(...parsePage(j.template ?? ''));
     await sleep(500); // be polite
   }
-  return events;
+  return enrichPersonnel(events);
 }

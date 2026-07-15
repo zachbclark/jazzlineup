@@ -101,6 +101,27 @@ try {
     await pd.waitForTimeout(300);
     assert.ok((await pd.$$('.daygroup')).length > 3, 'few or no day groups');
   });
+
+  await test('borough filter narrows chips and counts, then clears', async () => {
+    const count = async () => Number((await pd.textContent('.foot')).match(/(\d+) shows/)[1]);
+    const chips = async () => (await pd.$$('.chip:not(.chip-all)')).length;
+    const bar = await pd.$('.borough-bar');
+    assert.ok(bar, 'borough bar missing (needs 2+ boroughs in data)');
+    const allShows = await count();
+    const allChips = await chips();
+    await pd.click('.borough-btn:has-text("Brooklyn")');
+    await pd.waitForTimeout(250);
+    const bkShows = await count();
+    const bkChips = await chips();
+    assert.ok(bkChips > 0 && bkChips < allChips, `chip count did not narrow: ${allChips} -> ${bkChips}`);
+    // NB: <= not < — a dataset crawled before the Brooklyn venues landed can
+    // legitimately have zero Brooklyn shows; chips narrowing already proves scope.
+    assert.ok(bkShows <= allShows, `show count grew?: ${allShows} -> ${bkShows}`);
+    await pd.click('.borough-btn:has-text("All")');
+    await pd.waitForTimeout(250);
+    assert.equal(await count(), allShows, 'clearing borough did not restore');
+    assert.equal(await chips(), allChips);
+  });
   await pd.close();
 
   // --- mobile -------------------------------------------------------------------

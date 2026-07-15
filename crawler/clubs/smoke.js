@@ -3,7 +3,7 @@
 //   GET /api/performance/?booking=true&pagination=false
 // -> [{ id, datetime (UTC ISO), show_id, show: { id, name, price_per_person, ... } }]
 // One record per SET; we group by (NY date, show) into events with sets[].
-import { fetchText, makeEvent, nyDate, nyTime } from '../lib.js';
+import { fetchText, makeEvent, nyDate, nyTime, applyLateNight } from '../lib.js';
 
 const BASE = 'https://tickets.smokejazz.com';
 const API = `${BASE}/api/performance/?booking=true&pagination=false`;
@@ -28,7 +28,7 @@ export function parse(jsonText) {
     }
     grouped.get(key).sets.push(nyTime(p.datetime));
   }
-  return [...grouped.values()].map(makeEvent);
+  return [...grouped.values()].map((d) => makeEvent(applyLateNight(d)));
 }
 
 export async function crawl() {

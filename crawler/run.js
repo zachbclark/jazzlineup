@@ -3,10 +3,11 @@
 // no filesystem or network beyond the club crawlers themselves.
 import { CLUBS } from './clubs.js';
 
-export async function runCrawl({ previousEvents = [], clubIds = null } = {}) {
-  const targets = clubIds ? CLUBS.filter((c) => clubIds.includes(c.id)) : CLUBS;
+export async function runCrawl({ previousEvents = [], clubIds = null, city = null } = {}) {
+  let targets = city ? CLUBS.filter((c) => c.city === city) : CLUBS;
+  if (clubIds) targets = targets.filter((c) => clubIds.includes(c.id));
   if (targets.length === 0) {
-    throw new Error(`no clubs matched ${clubIds}; known: ${CLUBS.map((c) => c.id).join(', ')}`);
+    throw new Error(`no clubs matched (city=${city}, ids=${clubIds}); known: ${CLUBS.map((c) => c.id).join(', ')}`);
   }
 
   // Modules can be shared by clubs (Smalls + Mezzrow) — crawl each once.
@@ -55,18 +56,35 @@ export function mergeCrawlResults(results, { previousEvents = [], targetIds }) {
 
   const byId = new Map();
   for (const e of [...kept, ...fresh]) byId.set(e.id, e);
+  // Late-night events (attributed to the previous evening) sort after
+  // everything else that night: treat 12:45am as hour 24:45.
+  const sortTime = (e) => {
+    const t = e.sets?.[0] ?? '99';
+    // only SHIFTED late events (after-midnight starts) roll past 24h;
+    // an 11:30pm late-tagged show sorts at its natural position.
+    if (!e.late || t >= '05:00') return t;
+    const [h, m] = t.split(':').map(Number);
+    return `${h + 24}:${String(m ?? 0).padStart(2, '0')}`;
+  };
   const events = [...byId.values()].sort(
-    (a, b) => a.date.localeCompare(b.date) || (a.sets[0] ?? '99').localeCompare(b.sets[0] ?? '99')
+    (a, b) => a.date.localeCompare(b.date) || sortTime(a).localeCompare(sortTime(b))
   );
 
   return { events, errors, log, freshCount: fresh.length, keptCount: kept.length };
 }
 
-export function buildOutput({ events, errors }) {
+export function buildOutput({ events, errors, city = null }) {
+  const clubs = (city ? CLUBS.filter((c) => c.city === city) : CLUBS).map(({ module, ...pub }) => pub);
   return {
     generatedAt: new Date().toISOString(),
-    clubs: CLUBS.map(({ module, ...pub }) => pub),
+    city,
+    clubs,
     errors,
     events,
   };
+}
+
+// Distinct city ids present in the registry, e.g. ['nyc', 'la'].
+export function cities() {
+  return [...new Set(CLUBS.map((c) => c.city))];
 }

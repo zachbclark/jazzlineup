@@ -40,10 +40,13 @@ export default function ListView({ events, clubById, today }) {
                 <span className="row-title">
                   {e.title}
                   {e.personnel?.length
-                    ? <span className="row-details"><Personnel personnel={e.personnel} /></span>
-                    : e.details && <span className="row-details">{e.details}</span>}
+                    ? <span className="row-details roster"><Personnel personnel={e.personnel} /></span>
+                    : e.details && <span className="row-details prose">{e.details}</span>}
                 </span>
-                <span className="row-sets">{fmtSets(e.sets)}</span>
+                <span className="row-sets">
+                  {e.late && <span className="late-tag">late</span>}
+                  {fmtSets(e.sets)}
+                </span>
               </a>
             );
           })}

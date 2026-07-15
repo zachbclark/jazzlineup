@@ -1,11 +1,23 @@
 // In production the site is fully static: the crawler Lambda writes
-// events.json to S3 and the frontend fetches it as a plain file (clubs are
-// embedded in the same payload). The local dev server serves the same shape
-// at the same path.
-export async function fetchData() {
-  const r = await fetch('/events.json');
+// events-<city>.json files to S3 and the frontend fetches them as plain
+// files (each city's clubs are embedded in its payload).
+export const CITIES = [
+  { id: 'nyc', label: 'NYC' },
+  { id: 'la', label: 'LA' },
+];
+
+export function initialCity() {
+  const fromPath = window.location.pathname.replace(/^\//, '').toLowerCase();
+  if (CITIES.some((c) => c.id === fromPath)) return fromPath;
+  const saved = localStorage.getItem('jl.city');
+  if (CITIES.some((c) => c.id === saved)) return saved;
+  return 'nyc';
+}
+
+export async function fetchData(city = 'nyc') {
+  const r = await fetch(`/events-${city}.json`);
   if (!r.ok) throw new Error('events fetch failed');
-  return r.json(); // { generatedAt, clubs, errors, events }
+  return r.json(); // { generatedAt, city, clubs, errors, events }
 }
 
 export function fmtTime(hhmm) {

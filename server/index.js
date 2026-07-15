@@ -8,7 +8,8 @@ import { join, extname, normalize, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
-const DATA = join(__dirname, '..', 'data', 'events.json');
+const DATA_DIR = join(__dirname, '..', 'data');
+const DATA = join(DATA_DIR, 'events.json'); // legacy alias (nyc)
 const STATIC = join(__dirname, '..', 'web', 'dist');
 const PORT = process.env.PORT ?? 3000;
 
@@ -23,12 +24,14 @@ const MIME = {
   '.woff2': 'font/woff2',
 };
 
-async function loadData() {
-  try {
-    return JSON.parse(await readFile(DATA, 'utf8'));
-  } catch {
-    return { generatedAt: null, clubs: [], events: [], errors: ['no data yet — run: npm run crawl'] };
+async function loadData(city = null) {
+  const candidates = city
+    ? [join(DATA_DIR, `events-${city}.json`)]
+    : [join(DATA_DIR, 'events-nyc.json'), DATA];
+  for (const p of candidates) {
+    try { return JSON.parse(await readFile(p, 'utf8')); } catch { /* next */ }
   }
+  return { generatedAt: null, city, clubs: [], events: [], errors: ['no data yet — run: npm run crawl'] };
 }
 
 function sendJson(res, status, body) {
@@ -43,9 +46,10 @@ function sendJson(res, status, body) {
 const server = createServer(async (req, res) => {
   const url = new URL(req.url, `http://${req.headers.host}`);
 
-  // Mirrors production, where events.json is a static file on CloudFront.
-  if (url.pathname === '/events.json') {
-    return sendJson(res, 200, await loadData());
+  // Mirrors production, where these are static files on CloudFront.
+  const cityFile = url.pathname.match(/^\/events(?:-([a-z]{2,10}))?\.json$/);
+  if (cityFile) {
+    return sendJson(res, 200, await loadData(cityFile[1] ?? null));
   }
 
   if (url.pathname === '/api/events') {

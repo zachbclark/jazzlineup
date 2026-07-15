@@ -4,6 +4,9 @@ Live jazz aggregator — NYC first, then LA, Paris, Berlin. Mobile is essential.
 
 ## Design principles (Zach, 2026-07-15)
 
+- **NYC TAKES PRIORITY, ALWAYS.** Other cities and genres are expansions;
+  NYC data quality and polish come first in any tradeoff.
+
 - **CLEAN UI IS PARAMOUNT.** Black + gold, meaningful club colors, beauty in
   simplicity. No images under artist names (considered, rejected).
 - Save space everywhere on mobile; dots not names on phones (names maybe at
@@ -51,13 +54,52 @@ is parser maintenance, so invest in sanity checks + alerting, not infra).
       must flow compactly on small screens
 - [ ] Architecture diagrams generated from the actual code (system,
       data-flow, per-crawler map) — good pre-Brian onboarding doc
-- [ ] Late-night attribution: shift after-midnight starts (12:00–4:59am) to
-      the previous day with a "late" marker (DECIDE: Zach floated 11pm too;
-      Claude recommends midnight cutoff only)
+- [x] Late-night attribution (2026-07-15): after-midnight starts (12:00–4:59am)
+      shift to the previous evening with a "late" tag, sorted to the end of
+      the night. Applies to exact-datetime sources (Smoke, LunÀtico);
+      night-grouped sources (SmallsLive) already attribute correctly.
+      Midnight cutoff chosen (11pm shows stay on their own evening)
 - [ ] Footer: "Updated Xh ago" (smaller, relative time), version stamp
 
+## THE NYC JAZZ APP — venue build-out (greenlit 2026-07-15)
+
+Goal: the definitive NYC jazz listing. ~30 venues. Borough field added to the
+registry (manhattan / brooklyn / queens / harlem as its own world); Phase 2
+filter tiles group by borough.
+
+North star for curation (Zach, 2026-07-15): **the young generation carries
+jazz** — track where players like Paul Cornish, Immanuel Wilkins, Chris
+Fishman, Mark Turner, Walter Smith III, Ben Street, Harish Raghavan actually
+play: musician-run rooms (Close Up), Jazz Gallery, the Vanguard, the schools.
+
+Tier 1 — DONE 2026-07-15 (11 crawlers, site now 22 clubs):
+- [x] The Django (Tribeca) · Cellar Dog (W Vil) · Arthur's Tavern (W Vil)
+- [x] Zinc Bar (Village) · Barbès (Park Slope) · Ornithology club + cafe (Bushwick)
+- [x] Bar Bayeux (Prospect Lefferts) · The Pocket (46th St — Zach's add)
+- [x] Close Up (LES — the young-scene room) · Bill's Place (Harlem residency)
+- Closed venues verified & dropped: Minton's, The Owl, Room 623 (all
+  permanently closed); Soapbox Gallery dormant (one monthly series — recheck)
+- [x] Borough filter UI: All · Manhattan · Brooklyn above the venue chips
+
+Conservatory calendars (START IN SEPTEMBER — summer break now, seasons launch
+Sep; structures are crawlable):
+- [ ] Juilliard Jazz (Drupal views rows) · Manhattan School of Music ·
+      The New School / The Stone series — filter to jazz-only
+
+Tier 2 (standing checklist):
+- [ ] Harlem: Showmans (would give Bill's Place company uptown) · Silvana
+- [ ] Brooklyn: Sistas' Place · IBeam · Roulette · Lowlands
+- [ ] Manhattan: Swing 46 · Tomi Jazz · The Ear Inn (Sun) · Iridium ·
+      Marjorie Eliot's Parlor Jazz (Sun, Washington Heights)
+- [ ] Queens: Terraza 7 · Flushing Town Hall series
+
+Tier 3 (needs per-event genre tagging first): LPR · Joe's Pub · JALC big halls
+
+Zinc Bar follow-up: tribe API start_date is often midnight — parser mines set
+times from description text; verify against reality after first live crawl.
+
 ## Phase 2 — Depth: filtering that scales
-- [ ] +5–10 NYC clubs (Smoke, Ornithology, Bar Bayeux, Zinc Bar, The Stone…)
+- [x] +11 NYC clubs (2026-07-15 Tier 1 batch — see venue build-out above)
 - [ ] Venue-first navigation concepts (from the "Bandstand" notes): favorite
       venues as the organizing principle; venue search; maybe a venue map
       per city. NAME "Bandstand"/"Venyou"/"Encore" considered and PARKED —

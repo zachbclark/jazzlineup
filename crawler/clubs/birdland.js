@@ -25,7 +25,9 @@ export function parsePage(html, today = new Date()) {
     const date = isoDate(inferYear(mo, Number(dm[2]), today), mo, Number(dm[2]));
 
     const showTime = htmlToText(matchBlocks(sec, 'span', /class="[^"]*\btw-event-time\b/)[0] ?? '');
-    const doorTime = htmlToText(matchBlocks(sec, 'span', /class="[^"]*\btw-event-door-time\b/)[0] ?? '');
+    const doorRaw = htmlToText(matchBlocks(sec, 'span', /class="[^"]*\btw-event-door-time\b/)[0] ?? '');
+    // site text arrives as "Doors @ 7:30PM /" — extract just the time
+    const doorTime = (doorRaw.match(/\d{1,2}(?::\d{2})?\s*[AP]\.?M\.?/i) ?? [])[0] ?? null;
     const venue = htmlToText(matchBlocks(sec, 'span', /class="[^"]*\btw-venue-name\b/)[0] ?? '');
     const theater = /theater/i.test(venue);
 
@@ -35,7 +37,7 @@ export function parsePage(html, today = new Date()) {
       date,
       sets: extractTimes(showTime),
       url: href ? (href.startsWith('http') ? href : BASE + href) : BASE,
-      details: [venue, doorTime && `Doors ${doorTime}`].filter(Boolean).join(' — ') || null,
+      details: [venue, doorTime && `Doors @ ${doorTime}`].filter(Boolean).join(' — ') || null,
     }));
   }
   return events;

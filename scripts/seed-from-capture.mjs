@@ -9,7 +9,7 @@ import { makeEvent, extractTimes, monthNum, isoDate } from '../crawler/lib.js';
 import { CLUBS } from '../crawler/clubs.js';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
-const OUT = join(__dirname, '..', 'data', 'events.json');
+const OUT_DIR = join(__dirname, '..', 'data');
 const YEAR = 2026;
 
 const events = [];
@@ -17,7 +17,10 @@ const push = (e) => events.push(makeEvent(e));
 
 // ---- helpers ---------------------------------------------------------------
 const iso = (mon, day) => isoDate(YEAR, monthNum(mon), day);
-const t = (s) => extractTimes(String(s).replace(/(\d)(?::(\d{2}))?p\b/g, '$1:$2 pm').replace(/(\d)(?::(\d{2}))?a\b/g, '$1:$2 am').replace(/:undefined|:\s/g, ':00 '));
+const t = (s) => {
+  const first = String(s).split(/[-–]/)[0]; // ranges: start time only
+  return extractTimes(first.replace(/(\d)(?::(\d{2}))?p\b/g, '$1:$2 pm').replace(/(\d)(?::(\d{2}))?a\b/g, '$1:$2 am').replace(/:undefined|:\s/g, ':00 '));
+};
 const range = (mon1, d1, mon2, d2, fn) => {
   let d = new Date(Date.UTC(YEAR, monthNum(mon1) - 1, d1));
   const end = new Date(Date.UTC(YEAR, monthNum(mon2) - 1, d2));
@@ -371,13 +374,20 @@ const byId = new Map(events.map((e) => [e.id, e]));
 const sorted = [...byId.values()].sort(
   (a, b) => a.date.localeCompare(b.date) || (a.sets[0] ?? '99').localeCompare(b.sets[0] ?? '99')
 );
-const out = {
-  generatedAt: new Date().toISOString(),
-  source: 'bootstrap snapshot captured 2026-07-13 — run `npm run crawl` for live data',
-  clubs: CLUBS.map(({ module, ...pub }) => pub),
-  errors: [],
-  events: sorted,
-};
-await mkdir(dirname(OUT), { recursive: true });
-await writeFile(OUT, JSON.stringify(out, null, 2));
-console.log(`seeded ${sorted.length} events -> ${OUT}`);
+await mkdir(OUT_DIR, { recursive: true });
+const cities = [...new Set(CLUBS.map((c) => c.city))];
+for (const city of cities) {
+  const cityClubs = CLUBS.filter((c) => c.city === city);
+  const ids = new Set(cityClubs.map((c) => c.id));
+  const out = {
+    generatedAt: new Date().toISOString(),
+    source: 'bootstrap snapshot captured 2026-07-13 — run `npm run crawl` for live data',
+    city,
+    clubs: cityClubs.map(({ module, ...pub }) => pub),
+    errors: [],
+    events: sorted.filter((e) => ids.has(e.clubId)),
+  };
+  await writeFile(join(OUT_DIR, `events-${city}.json`), JSON.stringify(out, null, 2));
+  if (city === 'nyc') await writeFile(join(OUT_DIR, 'events.json'), JSON.stringify(out, null, 2));
+  console.log(`seeded ${out.events.length} events -> events-${city}.json`);
+}
