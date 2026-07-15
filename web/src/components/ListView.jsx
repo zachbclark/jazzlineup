@@ -5,7 +5,8 @@ import Personnel from './Personnel';
 const DAYS_PER_PAGE = 21; // day-windowed rendering: the full list at 1500+
                           // events makes filter toggles janky on phones
 
-export default function ListView({ events, clubById, today }) {
+// memo: skip re-rendering the (long) list when a chip drag re-renders App
+function ListView({ events, clubById, today }) {
   const [showJump, setShowJump] = useState(false);
   const [shownDays, setShownDays] = useState(DAYS_PER_PAGE);
 
@@ -71,3 +72,5 @@ export default function ListView({ events, clubById, today }) {
     </div>
   );
 }
+
+export default React.memo(ListView);

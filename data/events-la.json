@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-15T04:50:53.832Z",
+  "generatedAt": "2026-07-15T04:59:59.377Z",
   "city": "la",
   "clubs": [
     {
@@ -13,6 +13,18 @@
       "timezone": "America/Los_Angeles",
       "neighborhood": "Westchester / LAX",
       "color": "#e0524d"
+    },
+    {
+      "id": "lacma",
+      "name": "Jazz at LACMA",
+      "shortName": "LACMA",
+      "url": "https://www.lacma.org/programs/music",
+      "address": "5905 Wilshire Blvd, Los Angeles, CA 90036",
+      "city": "la",
+      "borough": null,
+      "timezone": "America/Los_Angeles",
+      "neighborhood": "Miracle Mile",
+      "color": "#f0d98c"
     },
     {
       "id": "catalina",
@@ -49,18 +61,6 @@
       "timezone": "America/Los_Angeles",
       "neighborhood": "Leimert Park",
       "color": "#4fc46a"
-    },
-    {
-      "id": "lacma",
-      "name": "Jazz at LACMA",
-      "shortName": "LACMA",
-      "url": "https://www.lacma.org/programs/music",
-      "address": "5905 Wilshire Blvd, Los Angeles, CA 90036",
-      "city": "la",
-      "borough": null,
-      "timezone": "America/Los_Angeles",
-      "neighborhood": "Miracle Mile",
-      "color": "#f0d98c"
     },
     {
       "id": "mint",

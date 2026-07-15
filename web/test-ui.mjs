@@ -102,6 +102,41 @@ try {
     assert.ok((await pd.$$('.daygroup')).length > 3, 'few or no day groups');
   });
 
+  await test('drag a chip to reorder; order persists in localStorage + reload', async () => {
+    const chipNames = async () =>
+      Promise.all((await pd.$$('.chip:not(.chip-all)')).map((c) => c.textContent()));
+    const before = await chipNames();
+    const chips = await pd.$$('.chip:not(.chip-all)');
+    const a = await chips[0].boundingBox();
+    const b = await chips[2].boundingBox();
+    await pd.mouse.move(a.x + a.width / 2, a.y + a.height / 2);
+    await pd.mouse.down();
+    // the anti-thrash cooldown (180ms) means a drag lands one hop per pause —
+    // move, let the glide settle, nudge again (like a human would)
+    await pd.mouse.move(b.x + b.width * 0.9, b.y + b.height / 2, { steps: 8 });
+    await pd.waitForTimeout(250);
+    await pd.mouse.move(b.x + b.width * 0.9 + 1, b.y + b.height / 2, { steps: 2 });
+    await pd.waitForTimeout(250);
+    await pd.mouse.move(b.x + b.width * 0.9, b.y + b.height / 2, { steps: 2 });
+    await pd.waitForTimeout(250);
+    await pd.mouse.up();
+    await pd.waitForTimeout(250);
+    const after = await chipNames();
+    assert.notEqual(after[0], before[0], 'first chip did not move');
+    assert.equal(after[2], before[0], 'dragged chip should land at position 3');
+    const count = Number((await pd.textContent('.foot')).match(/(\d+) shows/)[1]);
+    assert.ok(count > 0, 'drop must not toggle the chip off');
+    const stored = await pd.evaluate(() => localStorage.getItem('jl.order.nyc'));
+    assert.ok(stored && JSON.parse(stored).length > 5, 'order not persisted');
+    await pd.reload({ waitUntil: 'networkidle' });
+    await pd.waitForTimeout(600);
+    const reloaded = await chipNames();
+    assert.deepEqual(reloaded.slice(0, 3), after.slice(0, 3), 'order lost after reload');
+    await pd.evaluate(() => localStorage.removeItem('jl.order.nyc'));
+    await pd.reload({ waitUntil: 'networkidle' });
+    await pd.waitForTimeout(600);
+  });
+
   await test('borough filter narrows chips and counts, then clears', async () => {
     const count = async () => Number((await pd.textContent('.foot')).match(/(\d+) shows/)[1]);
     const chips = async () => (await pd.$$('.chip:not(.chip-all)')).length;
@@ -143,6 +178,20 @@ try {
     if (!section) return; // no big band visible today — not a failure
     const display = await section.evaluate((el) => getComputedStyle(el).display);
     assert.equal(display, 'inline', `grouped section display=${display} on mobile`);
+  });
+
+  await test('mobile: chip panel collapses to ~2 lines and expands in place', async () => {
+    const toggle = await pm.$('.chips-toggle');
+    assert.ok(toggle, 'expand strip missing (24 venues must overflow 2 lines)');
+    const h1 = await pm.$eval('.filterbar', (el) => el.clientHeight);
+    await toggle.click();
+    await pm.waitForTimeout(250);
+    const h2 = await pm.$eval('.filterbar', (el) => el.clientHeight);
+    assert.ok(h2 > h1 * 1.5, `panel did not expand: ${h1} -> ${h2}`);
+    await pm.click('.chips-toggle');
+    await pm.waitForTimeout(250);
+    const h3 = await pm.$eval('.filterbar', (el) => el.clientHeight);
+    assert.equal(h3, h1, 'panel did not collapse back');
   });
 
   await test('mobile: no horizontal overflow', async () => {

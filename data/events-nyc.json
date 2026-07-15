@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-15T04:50:51.261Z",
+  "generatedAt": "2026-07-15T04:59:56.782Z",
   "city": "nyc",
   "clubs": [
     {
@@ -63,6 +63,18 @@
       "color": "#f2788c"
     },
     {
+      "id": "jazzgallery",
+      "name": "The Jazz Gallery",
+      "shortName": "Jazz Gallery",
+      "url": "https://jazzgallery.org",
+      "address": "1158 Broadway, 5th Fl, New York, NY 10001",
+      "city": "nyc",
+      "borough": "manhattan",
+      "timezone": "America/New_York",
+      "neighborhood": "NoMad",
+      "color": "#c96a4a"
+    },
+    {
       "id": "dizzys",
       "name": "Dizzy's Club",
       "shortName": "Dizzy's",
@@ -121,18 +133,6 @@
       "timezone": "America/New_York",
       "neighborhood": "Bed-Stuy",
       "color": "#45c4b5"
-    },
-    {
-      "id": "jazzgallery",
-      "name": "The Jazz Gallery",
-      "shortName": "Jazz Gallery",
-      "url": "https://jazzgallery.org",
-      "address": "1158 Broadway, 5th Fl, New York, NY 10001",
-      "city": "nyc",
-      "borough": "manhattan",
-      "timezone": "America/New_York",
-      "neighborhood": "NoMad",
-      "color": "#c96a4a"
     },
     {
       "id": "django",
@@ -1405,33 +1405,6 @@
       "priceText": null
     },
     {
-      "id": "dizzys:2026-07-15:john-ellis-heroes-quintet",
-      "clubId": "dizzys",
-      "title": "John Ellis Heroes Quintet",
-      "date": "2026-07-15",
-      "sets": [
-        "19:00",
-        "21:00"
-      ],
-      "url": "https://ticketing.jazz.org/21133/",
-      "details": null,
-      "personnel": null,
-      "priceText": null
-    },
-    {
-      "id": "nublu:2026-07-15:masta-ace-disposable-arts",
-      "clubId": "nublu",
-      "title": "Masta Ace \"Disposable Arts\"",
-      "date": "2026-07-15",
-      "sets": [
-        "19:00"
-      ],
-      "url": "https://posh.vip/e/masta-ace-disposable-art",
-      "details": null,
-      "personnel": null,
-      "priceText": null
-    },
-    {
       "id": "jazzgallery:2026-07-15:miles-okazaki-s-boomtown-album-release-show",
       "clubId": "jazzgallery",
       "title": "Miles Okazaki's \"Boomtown\" - Album Release Show",
@@ -1484,6 +1457,33 @@
           "instrument": "drums"
         }
       ],
+      "priceText": null
+    },
+    {
+      "id": "dizzys:2026-07-15:john-ellis-heroes-quintet",
+      "clubId": "dizzys",
+      "title": "John Ellis Heroes Quintet",
+      "date": "2026-07-15",
+      "sets": [
+        "19:00",
+        "21:00"
+      ],
+      "url": "https://ticketing.jazz.org/21133/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "nublu:2026-07-15:masta-ace-disposable-arts",
+      "clubId": "nublu",
+      "title": "Masta Ace \"Disposable Arts\"",
+      "date": "2026-07-15",
+      "sets": [
+        "19:00"
+      ],
+      "url": "https://posh.vip/e/masta-ace-disposable-art",
+      "details": null,
+      "personnel": null,
       "priceText": null
     },
     {
@@ -2151,33 +2151,6 @@
       "priceText": null
     },
     {
-      "id": "dizzys:2026-07-16:yuhan-su-sextet-101st-cal-tjader-birthday-celebration",
-      "clubId": "dizzys",
-      "title": "Yuhan Su Sextet: 101st Cal Tjader Birthday Celebration",
-      "date": "2026-07-16",
-      "sets": [
-        "19:00",
-        "21:00"
-      ],
-      "url": "https://ticketing.jazz.org/21398/",
-      "details": null,
-      "personnel": null,
-      "priceText": null
-    },
-    {
-      "id": "nublu:2026-07-16:bossa-nova-night-ramsay-rawson-s-paris-bossa-nova-live-trio-",
-      "clubId": "nublu",
-      "title": "Bossa Nova Night RAMSAY RAWSON'S PARIS BOSSA NOVA LIVE TRIO & Ilhan Ersahin, Yusuke Yamamo",
-      "date": "2026-07-16",
-      "sets": [
-        "19:00"
-      ],
-      "url": "https://posh.vip/e/paris-bossa-nova",
-      "details": null,
-      "personnel": null,
-      "priceText": null
-    },
-    {
       "id": "jazzgallery:2026-07-16:miles-okazaki-s-boomtown-album-release-show",
       "clubId": "jazzgallery",
       "title": "Miles Okazaki's \"Boomtown\" - Album Release Show",
@@ -2230,6 +2203,33 @@
           "instrument": "drums"
         }
       ],
+      "priceText": null
+    },
+    {
+      "id": "dizzys:2026-07-16:yuhan-su-sextet-101st-cal-tjader-birthday-celebration",
+      "clubId": "dizzys",
+      "title": "Yuhan Su Sextet: 101st Cal Tjader Birthday Celebration",
+      "date": "2026-07-16",
+      "sets": [
+        "19:00",
+        "21:00"
+      ],
+      "url": "https://ticketing.jazz.org/21398/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "nublu:2026-07-16:bossa-nova-night-ramsay-rawson-s-paris-bossa-nova-live-trio-",
+      "clubId": "nublu",
+      "title": "Bossa Nova Night RAMSAY RAWSON'S PARIS BOSSA NOVA LIVE TRIO & Ilhan Ersahin, Yusuke Yamamo",
+      "date": "2026-07-16",
+      "sets": [
+        "19:00"
+      ],
+      "url": "https://posh.vip/e/paris-bossa-nova",
+      "details": null,
+      "personnel": null,
       "priceText": null
     },
     {
@@ -2980,33 +2980,6 @@
       "priceText": null
     },
     {
-      "id": "dizzys:2026-07-17:charles-mcpherson-quintet",
-      "clubId": "dizzys",
-      "title": "Charles McPherson Quintet",
-      "date": "2026-07-17",
-      "sets": [
-        "19:00",
-        "21:00"
-      ],
-      "url": "https://ticketing.jazz.org/21136/",
-      "details": null,
-      "personnel": null,
-      "priceText": null
-    },
-    {
-      "id": "nublu:2026-07-17:emily-rose-burnett",
-      "clubId": "nublu",
-      "title": "Emily Rose Burnett",
-      "date": "2026-07-17",
-      "sets": [
-        "19:00"
-      ],
-      "url": "https://posh.vip/e/emily-rose-burnett",
-      "details": null,
-      "personnel": null,
-      "priceText": null
-    },
-    {
       "id": "jazzgallery:2026-07-17:tyler-bullock-trio",
       "clubId": "jazzgallery",
       "title": "Tyler Bullock Trio",
@@ -3031,6 +3004,33 @@
           "instrument": "drums"
         }
       ],
+      "priceText": null
+    },
+    {
+      "id": "dizzys:2026-07-17:charles-mcpherson-quintet",
+      "clubId": "dizzys",
+      "title": "Charles McPherson Quintet",
+      "date": "2026-07-17",
+      "sets": [
+        "19:00",
+        "21:00"
+      ],
+      "url": "https://ticketing.jazz.org/21136/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "nublu:2026-07-17:emily-rose-burnett",
+      "clubId": "nublu",
+      "title": "Emily Rose Burnett",
+      "date": "2026-07-17",
+      "sets": [
+        "19:00"
+      ],
+      "url": "https://posh.vip/e/emily-rose-burnett",
+      "details": null,
+      "personnel": null,
       "priceText": null
     },
     {
@@ -3708,33 +3708,6 @@
       "priceText": null
     },
     {
-      "id": "dizzys:2026-07-18:charles-mcpherson-quintet",
-      "clubId": "dizzys",
-      "title": "Charles McPherson Quintet",
-      "date": "2026-07-18",
-      "sets": [
-        "19:00",
-        "21:00"
-      ],
-      "url": "https://ticketing.jazz.org/21136/",
-      "details": null,
-      "personnel": null,
-      "priceText": null
-    },
-    {
-      "id": "nublu:2026-07-18:drinkabir-meltykyss-bus-boy-abbatya",
-      "clubId": "nublu",
-      "title": "Drinkabir, Meltykyss, Bus Boy, Abbatya",
-      "date": "2026-07-18",
-      "sets": [
-        "19:00"
-      ],
-      "url": "https://posh.vip/e/drinkabir-meltykyss-bus-boy-abbatya",
-      "details": null,
-      "personnel": null,
-      "priceText": null
-    },
-    {
       "id": "jazzgallery:2026-07-18:alexandra-ridout-quartet",
       "clubId": "jazzgallery",
       "title": "Alexandra Ridout Quartet",
@@ -3763,6 +3736,33 @@
           "instrument": "drums"
         }
       ],
+      "priceText": null
+    },
+    {
+      "id": "dizzys:2026-07-18:charles-mcpherson-quintet",
+      "clubId": "dizzys",
+      "title": "Charles McPherson Quintet",
+      "date": "2026-07-18",
+      "sets": [
+        "19:00",
+        "21:00"
+      ],
+      "url": "https://ticketing.jazz.org/21136/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "nublu:2026-07-18:drinkabir-meltykyss-bus-boy-abbatya",
+      "clubId": "nublu",
+      "title": "Drinkabir, Meltykyss, Bus Boy, Abbatya",
+      "date": "2026-07-18",
+      "sets": [
+        "19:00"
+      ],
+      "url": "https://posh.vip/e/drinkabir-meltykyss-bus-boy-abbatya",
+      "details": null,
+      "personnel": null,
       "priceText": null
     },
     {
@@ -6240,20 +6240,6 @@
       "priceText": null
     },
     {
-      "id": "dizzys:2026-07-22:brandon-woody-quartet",
-      "clubId": "dizzys",
-      "title": "Brandon Woody Quartet",
-      "date": "2026-07-22",
-      "sets": [
-        "19:00",
-        "21:00"
-      ],
-      "url": "https://ticketing.jazz.org/21149/",
-      "details": null,
-      "personnel": null,
-      "priceText": null
-    },
-    {
       "id": "jazzgallery:2026-07-22:ben-sherman-quartet",
       "clubId": "jazzgallery",
       "title": "Ben Sherman Quartet",
@@ -6282,6 +6268,20 @@
           "instrument": "drums"
         }
       ],
+      "priceText": null
+    },
+    {
+      "id": "dizzys:2026-07-22:brandon-woody-quartet",
+      "clubId": "dizzys",
+      "title": "Brandon Woody Quartet",
+      "date": "2026-07-22",
+      "sets": [
+        "19:00",
+        "21:00"
+      ],
+      "url": "https://ticketing.jazz.org/21149/",
+      "details": null,
+      "personnel": null,
       "priceText": null
     },
     {
@@ -6854,33 +6854,6 @@
       "priceText": null
     },
     {
-      "id": "dizzys:2026-07-23:jon-faddis-quartet-73rd-birthday-celebration",
-      "clubId": "dizzys",
-      "title": "Jon Faddis Quartet: 73rd Birthday Celebration",
-      "date": "2026-07-23",
-      "sets": [
-        "19:00",
-        "21:00"
-      ],
-      "url": "https://ticketing.jazz.org/21152/",
-      "details": null,
-      "personnel": null,
-      "priceText": null
-    },
-    {
-      "id": "nublu:2026-07-23:billy-martin-matt-glassmeyer-jonathan-goldberger",
-      "clubId": "nublu",
-      "title": "Billy Martin, Matt Glassmeyer, Jonathan Goldberger",
-      "date": "2026-07-23",
-      "sets": [
-        "19:00"
-      ],
-      "url": "https://posh.vip/e/billy-martin-matt-glassmeyer-jonathan-goldberger",
-      "details": null,
-      "personnel": null,
-      "priceText": null
-    },
-    {
       "id": "jazzgallery:2026-07-23:william-hill-iii-trio",
       "clubId": "jazzgallery",
       "title": "William Hill III Trio",
@@ -6905,6 +6878,33 @@
           "instrument": "drums"
         }
       ],
+      "priceText": null
+    },
+    {
+      "id": "dizzys:2026-07-23:jon-faddis-quartet-73rd-birthday-celebration",
+      "clubId": "dizzys",
+      "title": "Jon Faddis Quartet: 73rd Birthday Celebration",
+      "date": "2026-07-23",
+      "sets": [
+        "19:00",
+        "21:00"
+      ],
+      "url": "https://ticketing.jazz.org/21152/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "nublu:2026-07-23:billy-martin-matt-glassmeyer-jonathan-goldberger",
+      "clubId": "nublu",
+      "title": "Billy Martin, Matt Glassmeyer, Jonathan Goldberger",
+      "date": "2026-07-23",
+      "sets": [
+        "19:00"
+      ],
+      "url": "https://posh.vip/e/billy-martin-matt-glassmeyer-jonathan-goldberger",
+      "details": null,
+      "personnel": null,
       "priceText": null
     },
     {
@@ -7550,33 +7550,6 @@
       "priceText": null
     },
     {
-      "id": "dizzys:2026-07-24:jon-faddis-quartet-73rd-birthday-celebration",
-      "clubId": "dizzys",
-      "title": "Jon Faddis Quartet: 73rd Birthday Celebration",
-      "date": "2026-07-24",
-      "sets": [
-        "19:00",
-        "21:00"
-      ],
-      "url": "https://ticketing.jazz.org/21152/",
-      "details": null,
-      "personnel": null,
-      "priceText": null
-    },
-    {
-      "id": "nublu:2026-07-24:ella-blue-the-projections-sarah-michelle-lee-questa",
-      "clubId": "nublu",
-      "title": "ELLA BLUE, THE PROJECTIONS, SARAH MICHELLE LEE, QUESTA",
-      "date": "2026-07-24",
-      "sets": [
-        "19:00"
-      ],
-      "url": "https://posh.vip/e/ella-blue-the-projections-sarah-michelle-lee-questa",
-      "details": null,
-      "personnel": null,
-      "priceText": null
-    },
-    {
       "id": "jazzgallery:2026-07-24:noah-garabedian-quintet",
       "clubId": "jazzgallery",
       "title": "Noah Garabedian Quintet",
@@ -7609,6 +7582,33 @@
           "instrument": "drums"
         }
       ],
+      "priceText": null
+    },
+    {
+      "id": "dizzys:2026-07-24:jon-faddis-quartet-73rd-birthday-celebration",
+      "clubId": "dizzys",
+      "title": "Jon Faddis Quartet: 73rd Birthday Celebration",
+      "date": "2026-07-24",
+      "sets": [
+        "19:00",
+        "21:00"
+      ],
+      "url": "https://ticketing.jazz.org/21152/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "nublu:2026-07-24:ella-blue-the-projections-sarah-michelle-lee-questa",
+      "clubId": "nublu",
+      "title": "ELLA BLUE, THE PROJECTIONS, SARAH MICHELLE LEE, QUESTA",
+      "date": "2026-07-24",
+      "sets": [
+        "19:00"
+      ],
+      "url": "https://posh.vip/e/ella-blue-the-projections-sarah-michelle-lee-questa",
+      "details": null,
+      "personnel": null,
       "priceText": null
     },
     {
@@ -8207,33 +8207,6 @@
       "priceText": null
     },
     {
-      "id": "dizzys:2026-07-25:jon-faddis-quartet-73rd-birthday-celebration",
-      "clubId": "dizzys",
-      "title": "Jon Faddis Quartet: 73rd Birthday Celebration",
-      "date": "2026-07-25",
-      "sets": [
-        "19:00",
-        "21:00"
-      ],
-      "url": "https://ticketing.jazz.org/21152/",
-      "details": null,
-      "personnel": null,
-      "priceText": null
-    },
-    {
-      "id": "nublu:2026-07-25:charlie-blasberg-the-immortals-dap-the-contract",
-      "clubId": "nublu",
-      "title": "Charlie Blasberg & The Immortals Dap The Contract",
-      "date": "2026-07-25",
-      "sets": [
-        "19:00"
-      ],
-      "url": "https://posh.vip/e/charlie-blasberg-the-immortals-dap-the-contract",
-      "details": null,
-      "personnel": null,
-      "priceText": null
-    },
-    {
       "id": "jazzgallery:2026-07-25:morgan-guerin",
       "clubId": "jazzgallery",
       "title": "Morgan Guerin",
@@ -8262,6 +8235,33 @@
           "instrument": "drums"
         }
       ],
+      "priceText": null
+    },
+    {
+      "id": "dizzys:2026-07-25:jon-faddis-quartet-73rd-birthday-celebration",
+      "clubId": "dizzys",
+      "title": "Jon Faddis Quartet: 73rd Birthday Celebration",
+      "date": "2026-07-25",
+      "sets": [
+        "19:00",
+        "21:00"
+      ],
+      "url": "https://ticketing.jazz.org/21152/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "nublu:2026-07-25:charlie-blasberg-the-immortals-dap-the-contract",
+      "clubId": "nublu",
+      "title": "Charlie Blasberg & The Immortals Dap The Contract",
+      "date": "2026-07-25",
+      "sets": [
+        "19:00"
+      ],
+      "url": "https://posh.vip/e/charlie-blasberg-the-immortals-dap-the-contract",
+      "details": null,
+      "personnel": null,
       "priceText": null
     },
     {
@@ -10108,20 +10108,6 @@
       "priceText": null
     },
     {
-      "id": "dizzys:2026-07-29:jazz-samba-duduka-da-fonseca-maucha-adnet-helio-alves",
-      "clubId": "dizzys",
-      "title": "Jazz Samba: Duduka Da Fonseca, Maucha Adnet, Helio Alves",
-      "date": "2026-07-29",
-      "sets": [
-        "19:00",
-        "21:00"
-      ],
-      "url": "https://ticketing.jazz.org/21166/",
-      "details": null,
-      "personnel": null,
-      "priceText": null
-    },
-    {
       "id": "jazzgallery:2026-07-29:jazz-composers-showcase-vol-22",
       "clubId": "jazzgallery",
       "title": "Jazz Composers' Showcase Vol. 22",
@@ -10146,6 +10132,20 @@
           "instrument": "bass"
         }
       ],
+      "priceText": null
+    },
+    {
+      "id": "dizzys:2026-07-29:jazz-samba-duduka-da-fonseca-maucha-adnet-helio-alves",
+      "clubId": "dizzys",
+      "title": "Jazz Samba: Duduka Da Fonseca, Maucha Adnet, Helio Alves",
+      "date": "2026-07-29",
+      "sets": [
+        "19:00",
+        "21:00"
+      ],
+      "url": "https://ticketing.jazz.org/21166/",
+      "details": null,
+      "personnel": null,
       "priceText": null
     },
     {
@@ -10619,6 +10619,33 @@
       "priceText": null
     },
     {
+      "id": "jazzgallery:2026-07-30:luke-marantz-trio",
+      "clubId": "jazzgallery",
+      "title": "Luke Marantz Trio",
+      "date": "2026-07-30",
+      "sets": [
+        "19:00",
+        "21:00"
+      ],
+      "url": "https://jazzgallery.org/calendar/luke-marantz-trio-jul-30-2026",
+      "details": null,
+      "personnel": [
+        {
+          "name": "Luke Marantz",
+          "instrument": "piano"
+        },
+        {
+          "name": "Thomas Morgan",
+          "instrument": "bass"
+        },
+        {
+          "name": "JK Kim",
+          "instrument": "drums"
+        }
+      ],
+      "priceText": null
+    },
+    {
       "id": "dizzys:2026-07-30:king-seiko-presents-seiko-summer-jazz-camp-all-stars",
       "clubId": "dizzys",
       "title": "King Seiko Presents “Seiko Summer Jazz Camp All Stars”",
@@ -10657,33 +10684,6 @@
       "url": "https://posh.vip/e/talk-radio-pet-dot-come",
       "details": null,
       "personnel": null,
-      "priceText": null
-    },
-    {
-      "id": "jazzgallery:2026-07-30:luke-marantz-trio",
-      "clubId": "jazzgallery",
-      "title": "Luke Marantz Trio",
-      "date": "2026-07-30",
-      "sets": [
-        "19:00",
-        "21:00"
-      ],
-      "url": "https://jazzgallery.org/calendar/luke-marantz-trio-jul-30-2026",
-      "details": null,
-      "personnel": [
-        {
-          "name": "Luke Marantz",
-          "instrument": "piano"
-        },
-        {
-          "name": "Thomas Morgan",
-          "instrument": "bass"
-        },
-        {
-          "name": "JK Kim",
-          "instrument": "drums"
-        }
-      ],
       "priceText": null
     },
     {
@@ -11241,33 +11241,6 @@
       "priceText": null
     },
     {
-      "id": "dizzys:2026-07-31:jazz-samba-duduka-da-fonseca-maucha-adnet-helio-alves",
-      "clubId": "dizzys",
-      "title": "Jazz Samba: Duduka Da Fonseca, Maucha Adnet, Helio Alves",
-      "date": "2026-07-31",
-      "sets": [
-        "19:00",
-        "21:00"
-      ],
-      "url": "https://ticketing.jazz.org/21166/",
-      "details": null,
-      "personnel": null,
-      "priceText": null
-    },
-    {
-      "id": "nublu:2026-07-31:marlon-craft-with-live-band",
-      "clubId": "nublu",
-      "title": "Marlon Craft with Live Band",
-      "date": "2026-07-31",
-      "sets": [
-        "19:00"
-      ],
-      "url": "https://posh.vip/e/marlon-craft-with-live-band-4",
-      "details": null,
-      "personnel": null,
-      "priceText": null
-    },
-    {
       "id": "jazzgallery:2026-07-31:charles-altura-quintet",
       "clubId": "jazzgallery",
       "title": "Charles Altura Quintet",
@@ -11304,6 +11277,33 @@
           "instrument": "drums"
         }
       ],
+      "priceText": null
+    },
+    {
+      "id": "dizzys:2026-07-31:jazz-samba-duduka-da-fonseca-maucha-adnet-helio-alves",
+      "clubId": "dizzys",
+      "title": "Jazz Samba: Duduka Da Fonseca, Maucha Adnet, Helio Alves",
+      "date": "2026-07-31",
+      "sets": [
+        "19:00",
+        "21:00"
+      ],
+      "url": "https://ticketing.jazz.org/21166/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "nublu:2026-07-31:marlon-craft-with-live-band",
+      "clubId": "nublu",
+      "title": "Marlon Craft with Live Band",
+      "date": "2026-07-31",
+      "sets": [
+        "19:00"
+      ],
+      "url": "https://posh.vip/e/marlon-craft-with-live-band-4",
+      "details": null,
+      "personnel": null,
       "priceText": null
     },
     {
@@ -11794,20 +11794,6 @@
       "priceText": null
     },
     {
-      "id": "dizzys:2026-08-01:jazz-samba-duduka-da-fonseca-maucha-adnet-helio-alves",
-      "clubId": "dizzys",
-      "title": "Jazz Samba: Duduka Da Fonseca, Maucha Adnet, Helio Alves",
-      "date": "2026-08-01",
-      "sets": [
-        "19:00",
-        "21:00"
-      ],
-      "url": "https://ticketing.jazz.org/21166/",
-      "details": null,
-      "personnel": null,
-      "priceText": null
-    },
-    {
       "id": "jazzgallery:2026-08-01:charles-altura-quintet",
       "clubId": "jazzgallery",
       "title": "Charles Altura Quintet",
@@ -11844,6 +11830,20 @@
           "instrument": "drums"
         }
       ],
+      "priceText": null
+    },
+    {
+      "id": "dizzys:2026-08-01:jazz-samba-duduka-da-fonseca-maucha-adnet-helio-alves",
+      "clubId": "dizzys",
+      "title": "Jazz Samba: Duduka Da Fonseca, Maucha Adnet, Helio Alves",
+      "date": "2026-08-01",
+      "sets": [
+        "19:00",
+        "21:00"
+      ],
+      "url": "https://ticketing.jazz.org/21166/",
+      "details": null,
+      "personnel": null,
       "priceText": null
     },
     {
@@ -13376,20 +13376,6 @@
       "priceText": null
     },
     {
-      "id": "dizzys:2026-08-05:nicole-zuraitis-the-devil-i-knew-album-release",
-      "clubId": "dizzys",
-      "title": "Nicole Zuraitis: The Devil I Knew Album Release",
-      "date": "2026-08-05",
-      "sets": [
-        "19:00",
-        "21:00"
-      ],
-      "url": "https://ticketing.jazz.org/21189/",
-      "details": null,
-      "personnel": null,
-      "priceText": null
-    },
-    {
       "id": "jazzgallery:2026-08-05:the-trap-music-orchestra",
       "clubId": "jazzgallery",
       "title": "The Trap Music Orchestra",
@@ -13399,6 +13385,20 @@
         "21:00"
       ],
       "url": "https://jazzgallery.org/calendar/trap-music-orchestra-aug-5-2026",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "dizzys:2026-08-05:nicole-zuraitis-the-devil-i-knew-album-release",
+      "clubId": "dizzys",
+      "title": "Nicole Zuraitis: The Devil I Knew Album Release",
+      "date": "2026-08-05",
+      "sets": [
+        "19:00",
+        "21:00"
+      ],
+      "url": "https://ticketing.jazz.org/21189/",
       "details": null,
       "personnel": null,
       "priceText": null
@@ -13795,6 +13795,20 @@
       "priceText": null
     },
     {
+      "id": "jazzgallery:2026-08-06:roy-hargrove-big-band-monthly-residency",
+      "clubId": "jazzgallery",
+      "title": "Roy Hargrove Big Band Monthly Residency",
+      "date": "2026-08-06",
+      "sets": [
+        "19:00",
+        "21:00"
+      ],
+      "url": "https://jazzgallery.org/calendar/rhbb-august-6-2026",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
       "id": "dizzys:2026-08-06:ben-wolfe-quartet",
       "clubId": "dizzys",
       "title": "Ben Wolfe Quartet",
@@ -13817,20 +13831,6 @@
         "19:00"
       ],
       "url": "https://nublu.net/program151",
-      "details": null,
-      "personnel": null,
-      "priceText": null
-    },
-    {
-      "id": "jazzgallery:2026-08-06:roy-hargrove-big-band-monthly-residency",
-      "clubId": "jazzgallery",
-      "title": "Roy Hargrove Big Band Monthly Residency",
-      "date": "2026-08-06",
-      "sets": [
-        "19:00",
-        "21:00"
-      ],
-      "url": "https://jazzgallery.org/calendar/rhbb-august-6-2026",
       "details": null,
       "personnel": null,
       "priceText": null
@@ -15514,33 +15514,6 @@
       "priceText": null
     },
     {
-      "id": "dizzys:2026-08-11:steve-nelson-the-art-of-the-vibraphone",
-      "clubId": "dizzys",
-      "title": "Steve Nelson: The Art of the Vibraphone",
-      "date": "2026-08-11",
-      "sets": [
-        "19:00",
-        "21:00"
-      ],
-      "url": "https://ticketing.jazz.org/21205/",
-      "details": null,
-      "personnel": null,
-      "priceText": null
-    },
-    {
-      "id": "nublu:2026-08-11:dizzie-the-trio-w-akamm-angel-chrisztina",
-      "clubId": "nublu",
-      "title": "Dizzie The Trio w/ Akamm & Angel Chrisztina",
-      "date": "2026-08-11",
-      "sets": [
-        "19:00"
-      ],
-      "url": "https://nublu.net/program151",
-      "details": null,
-      "personnel": null,
-      "priceText": null
-    },
-    {
       "id": "jazzgallery:2026-08-11:cosmo-lieberman",
       "clubId": "jazzgallery",
       "title": "Cosmo Lieberman",
@@ -15565,6 +15538,33 @@
           "instrument": "bass"
         }
       ],
+      "priceText": null
+    },
+    {
+      "id": "dizzys:2026-08-11:steve-nelson-the-art-of-the-vibraphone",
+      "clubId": "dizzys",
+      "title": "Steve Nelson: The Art of the Vibraphone",
+      "date": "2026-08-11",
+      "sets": [
+        "19:00",
+        "21:00"
+      ],
+      "url": "https://ticketing.jazz.org/21205/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "nublu:2026-08-11:dizzie-the-trio-w-akamm-angel-chrisztina",
+      "clubId": "nublu",
+      "title": "Dizzie The Trio w/ Akamm & Angel Chrisztina",
+      "date": "2026-08-11",
+      "sets": [
+        "19:00"
+      ],
+      "url": "https://nublu.net/program151",
+      "details": null,
+      "personnel": null,
       "priceText": null
     },
     {
@@ -16137,6 +16137,29 @@
       "priceText": null
     },
     {
+      "id": "jazzgallery:2026-08-13:sylvie-courvoisier-alden-hellmuth",
+      "clubId": "jazzgallery",
+      "title": "Sylvie Courvoisier & Alden Hellmuth",
+      "date": "2026-08-13",
+      "sets": [
+        "19:00",
+        "21:00"
+      ],
+      "url": "https://jazzgallery.org/calendar/alden-hellmuth-aug-13-2026",
+      "details": null,
+      "personnel": [
+        {
+          "name": "Sylvie Courvoisier",
+          "instrument": "piano"
+        },
+        {
+          "name": "Alden Hellmuth",
+          "instrument": "saxophone"
+        }
+      ],
+      "priceText": null
+    },
+    {
       "id": "dizzys:2026-08-13:warren-wolf-with-alex-brown-and-strings-perform-chick-corea-",
       "clubId": "dizzys",
       "title": "Warren Wolf with Alex Brown and Strings perform Chick Corea's Lyric Suite for Sextet",
@@ -16161,29 +16184,6 @@
       "url": "https://posh.vip/e/adh-feat-the-aura-collectiv-ballet-f-sa",
       "details": null,
       "personnel": null,
-      "priceText": null
-    },
-    {
-      "id": "jazzgallery:2026-08-13:sylvie-courvoisier-alden-hellmuth",
-      "clubId": "jazzgallery",
-      "title": "Sylvie Courvoisier & Alden Hellmuth",
-      "date": "2026-08-13",
-      "sets": [
-        "19:00",
-        "21:00"
-      ],
-      "url": "https://jazzgallery.org/calendar/alden-hellmuth-aug-13-2026",
-      "details": null,
-      "personnel": [
-        {
-          "name": "Sylvie Courvoisier",
-          "instrument": "piano"
-        },
-        {
-          "name": "Alden Hellmuth",
-          "instrument": "saxophone"
-        }
-      ],
       "priceText": null
     },
     {
@@ -16505,20 +16505,6 @@
       "priceText": null
     },
     {
-      "id": "dizzys:2026-08-14:warren-wolf-with-alex-brown-and-strings-perform-chick-corea-",
-      "clubId": "dizzys",
-      "title": "Warren Wolf with Alex Brown and Strings perform Chick Corea's Lyric Suite for Sextet",
-      "date": "2026-08-14",
-      "sets": [
-        "19:00",
-        "21:00"
-      ],
-      "url": "https://ticketing.jazz.org/21211/",
-      "details": null,
-      "personnel": null,
-      "priceText": null
-    },
-    {
       "id": "jazzgallery:2026-08-14:jonathan-paik",
       "clubId": "jazzgallery",
       "title": "Jonathan Paik",
@@ -16528,6 +16514,20 @@
         "21:00"
       ],
       "url": "https://jazzgallery.org/calendar/jonathan-paik-aug-14-2026",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "dizzys:2026-08-14:warren-wolf-with-alex-brown-and-strings-perform-chick-corea-",
+      "clubId": "dizzys",
+      "title": "Warren Wolf with Alex Brown and Strings perform Chick Corea's Lyric Suite for Sextet",
+      "date": "2026-08-14",
+      "sets": [
+        "19:00",
+        "21:00"
+      ],
+      "url": "https://ticketing.jazz.org/21211/",
       "details": null,
       "personnel": null,
       "priceText": null
@@ -17577,20 +17577,6 @@
       "priceText": null
     },
     {
-      "id": "dizzys:2026-08-18:marius-van-den-brink-the-bird-sings-album-release-show",
-      "clubId": "dizzys",
-      "title": "Marius Van Den Brink: “The Bird Sings” Album Release Show",
-      "date": "2026-08-18",
-      "sets": [
-        "19:00",
-        "21:00"
-      ],
-      "url": "https://ticketing.jazz.org/21226/",
-      "details": null,
-      "personnel": null,
-      "priceText": null
-    },
-    {
       "id": "jazzgallery:2026-08-18:tomoko-omura-roots-quintet",
       "clubId": "jazzgallery",
       "title": "Tomoko Omura Roots Quintet",
@@ -17623,6 +17609,20 @@
           "instrument": "drums"
         }
       ],
+      "priceText": null
+    },
+    {
+      "id": "dizzys:2026-08-18:marius-van-den-brink-the-bird-sings-album-release-show",
+      "clubId": "dizzys",
+      "title": "Marius Van Den Brink: “The Bird Sings” Album Release Show",
+      "date": "2026-08-18",
+      "sets": [
+        "19:00",
+        "21:00"
+      ],
+      "url": "https://ticketing.jazz.org/21226/",
+      "details": null,
+      "personnel": null,
       "priceText": null
     },
     {
@@ -17861,34 +17861,6 @@
       "priceText": null
     },
     {
-      "id": "dizzys:2026-08-19:lolivone-de-la-rosa-jewels-album-release",
-      "clubId": "dizzys",
-      "title": "Lolivone de la Rosa: Jewels Album Release",
-      "date": "2026-08-19",
-      "sets": [
-        "19:00",
-        "21:00"
-      ],
-      "url": "https://ticketing.jazz.org/21229/",
-      "details": null,
-      "personnel": null,
-      "priceText": null
-    },
-    {
-      "id": "dizzys:2026-08-19:dida-pelled-i-wish-you-would",
-      "clubId": "dizzys",
-      "title": "Dida Pelled: I Wish You Would",
-      "date": "2026-08-19",
-      "sets": [
-        "19:00",
-        "21:00"
-      ],
-      "url": "https://ticketing.jazz.org/21231/",
-      "details": null,
-      "personnel": null,
-      "priceText": null
-    },
-    {
       "id": "jazzgallery:2026-08-19:chris-morrissey-sans-vox-quintet",
       "clubId": "jazzgallery",
       "title": "Chris Morrissey Sans Vox Quintet",
@@ -17921,6 +17893,34 @@
           "instrument": "trumpet"
         }
       ],
+      "priceText": null
+    },
+    {
+      "id": "dizzys:2026-08-19:lolivone-de-la-rosa-jewels-album-release",
+      "clubId": "dizzys",
+      "title": "Lolivone de la Rosa: Jewels Album Release",
+      "date": "2026-08-19",
+      "sets": [
+        "19:00",
+        "21:00"
+      ],
+      "url": "https://ticketing.jazz.org/21229/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "dizzys:2026-08-19:dida-pelled-i-wish-you-would",
+      "clubId": "dizzys",
+      "title": "Dida Pelled: I Wish You Would",
+      "date": "2026-08-19",
+      "sets": [
+        "19:00",
+        "21:00"
+      ],
+      "url": "https://ticketing.jazz.org/21231/",
+      "details": null,
+      "personnel": null,
       "priceText": null
     },
     {
@@ -18198,33 +18198,6 @@
       "priceText": null
     },
     {
-      "id": "dizzys:2026-08-20:shenel-johns-album-release",
-      "clubId": "dizzys",
-      "title": "Shenel Johns Album Release",
-      "date": "2026-08-20",
-      "sets": [
-        "19:00",
-        "21:00"
-      ],
-      "url": "https://ticketing.jazz.org/21233/",
-      "details": null,
-      "personnel": null,
-      "priceText": null
-    },
-    {
-      "id": "nublu:2026-08-20:okra-juice-michael-sarian-s-esquina-planetary-people",
-      "clubId": "nublu",
-      "title": "Okra Juice, Michael Sarian's Esquina, Planetary People",
-      "date": "2026-08-20",
-      "sets": [
-        "19:00"
-      ],
-      "url": "https://posh.vip/e/okra-juice-michael-sarians-esquina-planetary-people",
-      "details": null,
-      "personnel": null,
-      "priceText": null
-    },
-    {
       "id": "jazzgallery:2026-08-20:mike-moreno",
       "clubId": "jazzgallery",
       "title": "Mike Moreno",
@@ -18257,6 +18230,33 @@
           "instrument": "drums"
         }
       ],
+      "priceText": null
+    },
+    {
+      "id": "dizzys:2026-08-20:shenel-johns-album-release",
+      "clubId": "dizzys",
+      "title": "Shenel Johns Album Release",
+      "date": "2026-08-20",
+      "sets": [
+        "19:00",
+        "21:00"
+      ],
+      "url": "https://ticketing.jazz.org/21233/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "nublu:2026-08-20:okra-juice-michael-sarian-s-esquina-planetary-people",
+      "clubId": "nublu",
+      "title": "Okra Juice, Michael Sarian's Esquina, Planetary People",
+      "date": "2026-08-20",
+      "sets": [
+        "19:00"
+      ],
+      "url": "https://posh.vip/e/okra-juice-michael-sarians-esquina-planetary-people",
+      "details": null,
+      "personnel": null,
       "priceText": null
     },
     {
@@ -18594,33 +18594,6 @@
       "priceText": null
     },
     {
-      "id": "dizzys:2026-08-21:marilyn-maye",
-      "clubId": "dizzys",
-      "title": "Marilyn Maye",
-      "date": "2026-08-21",
-      "sets": [
-        "19:00",
-        "21:00"
-      ],
-      "url": "https://ticketing.jazz.org/21236/",
-      "details": null,
-      "personnel": null,
-      "priceText": null
-    },
-    {
-      "id": "nublu:2026-08-21:marlon-craft-with-live-band",
-      "clubId": "nublu",
-      "title": "Marlon Craft with Live Band",
-      "date": "2026-08-21",
-      "sets": [
-        "19:00"
-      ],
-      "url": "https://posh.vip/e/marlon-craft-with-live-band-5",
-      "details": null,
-      "personnel": null,
-      "priceText": null
-    },
-    {
       "id": "jazzgallery:2026-08-21:mike-moreno",
       "clubId": "jazzgallery",
       "title": "Mike Moreno",
@@ -18653,6 +18626,33 @@
           "instrument": "drums"
         }
       ],
+      "priceText": null
+    },
+    {
+      "id": "dizzys:2026-08-21:marilyn-maye",
+      "clubId": "dizzys",
+      "title": "Marilyn Maye",
+      "date": "2026-08-21",
+      "sets": [
+        "19:00",
+        "21:00"
+      ],
+      "url": "https://ticketing.jazz.org/21236/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "nublu:2026-08-21:marlon-craft-with-live-band",
+      "clubId": "nublu",
+      "title": "Marlon Craft with Live Band",
+      "date": "2026-08-21",
+      "sets": [
+        "19:00"
+      ],
+      "url": "https://posh.vip/e/marlon-craft-with-live-band-5",
+      "details": null,
+      "personnel": null,
       "priceText": null
     },
     {
@@ -18940,20 +18940,6 @@
       "priceText": null
     },
     {
-      "id": "dizzys:2026-08-22:marilyn-maye",
-      "clubId": "dizzys",
-      "title": "Marilyn Maye",
-      "date": "2026-08-22",
-      "sets": [
-        "19:00",
-        "21:00"
-      ],
-      "url": "https://ticketing.jazz.org/21236/",
-      "details": null,
-      "personnel": null,
-      "priceText": null
-    },
-    {
       "id": "jazzgallery:2026-08-22:joel-ross-friends",
       "clubId": "jazzgallery",
       "title": "Joel Ross & Friends",
@@ -18990,6 +18976,20 @@
           "instrument": "drums"
         }
       ],
+      "priceText": null
+    },
+    {
+      "id": "dizzys:2026-08-22:marilyn-maye",
+      "clubId": "dizzys",
+      "title": "Marilyn Maye",
+      "date": "2026-08-22",
+      "sets": [
+        "19:00",
+        "21:00"
+      ],
+      "url": "https://ticketing.jazz.org/21236/",
+      "details": null,
+      "personnel": null,
       "priceText": null
     },
     {

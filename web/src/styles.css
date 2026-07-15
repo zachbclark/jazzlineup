@@ -71,13 +71,27 @@ button { font: inherit; cursor: pointer; }
 
 /* filter chips */
 .filterbar { display: flex; flex-wrap: wrap; gap: 8px; margin: 6px 0 18px; }
+/* the expand strip is a phone affordance; desktop wraps fully, always */
+.chips-toggle { display: none; }
+@media (min-width: 761px) {
+  .filterbar.collapsed { max-height: none; overflow: visible; }
+}
 .chip {
   display: inline-flex; align-items: center; gap: 7px;
   background: var(--panel); color: var(--muted);
   border: 1px solid var(--line); border-radius: 999px; padding: 6px 13px;
   transition: all .15s ease; opacity: 0.55;
+  user-select: none; -webkit-user-select: none;
 }
 .chip.on { color: var(--text); opacity: 1; }
+.chip.dragging {
+  opacity: 0.4; transform: scale(1.06);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.5) !important;
+  cursor: grabbing;
+  transition: none; /* the FLIP glide belongs to the displaced chips, not this one */
+}
+.chip-reset { border-style: dashed; opacity: 0.4; font-size: 12.5px; }
+.chip-reset:hover { opacity: 0.9; color: var(--text); }
 .chip-all.on { border-color: var(--accent); color: var(--accent); }
 .dot { width: 9px; height: 9px; border-radius: 50%; display: inline-block; }
 
@@ -216,17 +230,18 @@ button.cell { text-align: left; border: 1px solid var(--line); font: inherit; co
   .brand { font-size: 21px; }
   .view-toggle button { padding: 11px 18px; } /* thumb-sized */
 
-  /* filter chips: two-row scrollable rail — one line stopped scaling past
-     ~15 venues; two rows halve the scroll distance without hiding colors */
-  .filterbar {
-    display: grid; grid-auto-flow: column; grid-template-rows: repeat(2, auto);
-    grid-auto-columns: max-content; justify-content: start; align-items: start;
-    column-gap: 8px; row-gap: 8px;
-    overflow-x: auto; -webkit-overflow-scrolling: touch;
-    margin-left: -12px; margin-right: -12px; padding: 2px 12px 8px;
-    scrollbar-width: none;
+  /* filter chips: wrapped grid, no sideways scrolling (scroll rails at 24
+     venues felt weird — Zach 2026-07-15). Collapsed = first two lines; the
+     slim strip below expands the full wrap in place. */
+  .filterbar { margin-bottom: 4px; }
+  .filterbar.collapsed { max-height: 98px; overflow: hidden; }
+  .chips-toggle {
+    display: block; width: 100%; margin: 0 0 12px;
+    background: none; border: none; color: var(--muted);
+    font-size: 12.5px; letter-spacing: 1px; text-transform: uppercase;
+    padding: 8px 0 10px; text-align: left;
   }
-  .filterbar::-webkit-scrollbar { display: none; }
+  .chips-toggle:active { color: var(--accent); }
   .chip { padding: 10px 15px; font-size: 14px; }
   .borough-btn { padding: 8px 12px; font-size: 13px; } /* thumb-sized */
 

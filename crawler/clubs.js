@@ -68,6 +68,19 @@ export const CLUBS = [
     module: './clubs/birdland.js',
   },
   {
+    id: 'jazzgallery',
+    name: 'The Jazz Gallery',
+    shortName: 'Jazz Gallery',
+    url: 'https://jazzgallery.org',
+    address: '1158 Broadway, 5th Fl, New York, NY 10001',
+    city: 'nyc',
+    borough: 'manhattan',
+    timezone: 'America/New_York',
+    neighborhood: 'NoMad',
+    color: '#c96a4a', // their brand dark red #941100 shifted to rust (Vanguard owns red)
+    module: './clubs/jazzgallery.js',
+  },
+  {
     id: 'dizzys',
     name: "Dizzy's Club",
     shortName: "Dizzy's",
@@ -131,19 +144,6 @@ export const CLUBS = [
     neighborhood: 'Bed-Stuy',
     color: '#45c4b5', // barlunatico.com brand teal #4c948b, brightened
     module: './clubs/lunatico.js',
-  },
-  {
-    id: 'jazzgallery',
-    name: 'The Jazz Gallery',
-    shortName: 'Jazz Gallery',
-    url: 'https://jazzgallery.org',
-    address: '1158 Broadway, 5th Fl, New York, NY 10001',
-    city: 'nyc',
-    borough: 'manhattan',
-    timezone: 'America/New_York',
-    neighborhood: 'NoMad',
-    color: '#c96a4a', // their brand dark red #941100 shifted to rust (Vanguard owns red)
-    module: './clubs/jazzgallery.js',
   },
   {
     id: 'django',
@@ -331,6 +331,19 @@ export const CLUBS = [
     module: './clubs/samfirst.js',
   },
   {
+    id: 'lacma',
+    name: 'Jazz at LACMA',
+    shortName: 'LACMA',
+    url: 'https://www.lacma.org/programs/music',
+    address: '5905 Wilshire Blvd, Los Angeles, CA 90036',
+    city: 'la',
+    borough: null,
+    timezone: 'America/Los_Angeles',
+    neighborhood: 'Miracle Mile',
+    color: '#f0d98c', // Urban Light lamps at dusk — quick read
+    module: './clubs/lacma.js',
+  },
+  {
     id: 'catalina',
     name: 'Catalina Jazz Club',
     shortName: 'Catalina',
@@ -370,19 +383,6 @@ export const CLUBS = [
     module: './clubs/worldstage.js',
   },
   {
-    id: 'lacma',
-    name: 'Jazz at LACMA',
-    shortName: 'LACMA',
-    url: 'https://www.lacma.org/programs/music',
-    address: '5905 Wilshire Blvd, Los Angeles, CA 90036',
-    city: 'la',
-    borough: null,
-    timezone: 'America/Los_Angeles',
-    neighborhood: 'Miracle Mile',
-    color: '#f0d98c', // Urban Light lamps at dusk — quick read
-    module: './clubs/lacma.js',
-  },
-  {
     id: 'mint',
     name: 'The Mint',
     shortName: 'Mint',
@@ -398,7 +398,7 @@ export const CLUBS = [
   {
     id: 'hollywoodbowl',
     name: 'Hollywood Bowl',
-    shortName: 'The Bowl',
+    shortName: 'Hollywood Bowl',
     url: 'https://www.hollywoodbowl.com',
     address: '2301 N Highland Ave, Los Angeles, CA 90068',
     city: 'la',

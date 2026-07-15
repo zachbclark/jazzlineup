@@ -8,7 +8,9 @@ const DOW = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
 const MAX_PER_CELL = 4;
 const MAX_DOTS = 6;
 
-export default function MonthGrid({ events, clubById, cursor, onCursor, today, compact = false }) {
+// memo (at the bottom): chip reordering re-renders App on every drag
+// crossing — the grid's props are unchanged then, so skip rebuilding cells
+function MonthGrid({ events, clubById, cursor, onCursor, today, compact = false }) {
   const [openDay, setOpenDay] = useState(null);
   const userTapped = useRef(false); // guards the one-time auto-select of today
 
@@ -155,3 +157,5 @@ export default function MonthGrid({ events, clubById, cursor, onCursor, today, c
           );
   }
 }
+
+export default React.memo(MonthGrid);
