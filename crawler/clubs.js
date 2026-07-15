@@ -90,7 +90,7 @@ export const CLUBS = [
     borough: 'manhattan',
     timezone: 'America/New_York',
     neighborhood: 'Columbus Circle',
-    color: '#ff8929', // the amber room + sunset behind the stage glass
+    color: '#ff8929', // the amber room + sunset, deepened clear of Mezzrow's gold
     module: './clubs/dizzys.js',
   },
   {
@@ -103,7 +103,7 @@ export const CLUBS = [
     borough: 'manhattan',
     timezone: 'America/New_York',
     neighborhood: 'West Village',
-    color: '#3d55e0', // SmallsLive brand royal blue #1055c9, brightened
+    color: '#3d55e0', // SmallsLive brand royal blue #1055c9 — indigo, clear of Blue Note
     module: './clubs/smalls.js', // same SmallsLive feed as Smalls/Mezzrow
   },
   {
@@ -116,7 +116,7 @@ export const CLUBS = [
     borough: 'manhattan',
     timezone: 'America/New_York',
     neighborhood: 'Upper West Side',
-    color: '#b83226', // the name; NB their site brand is red #c51403 if Zach prefers
+    color: '#b83226', // their brand red #c51403 deepened to brick (Vanguard keeps bright red)
     module: './clubs/smoke.js',
   },
   {
@@ -142,7 +142,7 @@ export const CLUBS = [
     borough: 'brooklyn',
     timezone: 'America/New_York',
     neighborhood: 'Bed-Stuy',
-    color: '#2fa88c', // barlunatico.com brand teal #4c948b, brightened
+    color: '#2fa88c', // barlunatico.com brand teal, deepened sea-green clear of Nublu
     module: './clubs/lunatico.js',
   },
   {
@@ -231,10 +231,10 @@ export const CLUBS = [
     url: 'https://billsplaceharlem.com',
     address: '148 W 133rd St, New York, NY 10030',
     city: 'nyc',
-    borough: 'manhattan',
+    borough: 'harlem',
     timezone: 'America/New_York',
     neighborhood: 'Harlem',
-    color: '#8a5a3a', // speakeasy whiskey brown — quick read
+    color: '#8a5a3a', // speakeasy walnut — darker, clear of Jazz Gallery's rust
     module: './clubs/billsplace.js',
   },
   {
@@ -247,7 +247,7 @@ export const CLUBS = [
     borough: 'brooklyn',
     timezone: 'America/New_York',
     neighborhood: 'Park Slope',
-    color: '#93323c', // their dark-red calendar accent (#850505), glow-tuned
+    color: '#93323c', // their dark-red calendar accent (#850505) — deep claret
     module: './clubs/barbes.js',
   },
   {
@@ -314,6 +314,71 @@ export const CLUBS = [
     neighborhood: 'Jamaica',
     color: '#c2439a', // arts-center magenta — quick read
     module: './clubs/jcal.js',
+  },
+  {
+    id: 'silvana',
+    name: 'Silvana',
+    shortName: 'Silvana',
+    url: 'https://silvana-nyc.com/calendar.php',
+    address: '300 W 116th St, New York, NY 10026',
+    city: 'nyc',
+    borough: 'harlem',
+    timezone: 'America/New_York',
+    neighborhood: 'Harlem',
+    color: '#ff6ec7', // the basement stage lights — hot pink, audit-cleared
+    module: './clubs/silvana.js',
+  },
+  {
+    id: 'shrine',
+    name: 'Shrine World Music Venue',
+    shortName: 'Shrine',
+    url: 'https://shrinenyc.com/calendar.php',
+    address: '2271 Adam Clayton Powell Jr Blvd, New York, NY 10030',
+    city: 'nyc',
+    borough: 'harlem',
+    timezone: 'America/New_York',
+    neighborhood: 'Harlem',
+    color: '#265c8c', // world-stage deep blue — audit-cleared
+    module: './clubs/silvana.js', // same homegrown calendar as sister venue Silvana
+  },
+  {
+    id: 'sistasplace',
+    name: "Sistas' Place",
+    shortName: "Sistas' Place",
+    url: 'https://sistasplace.org',
+    address: '456 Nostrand Ave, Brooklyn, NY 11216',
+    city: 'nyc',
+    borough: 'brooklyn',
+    timezone: 'America/New_York',
+    neighborhood: 'Bed-Stuy',
+    color: '#2e8c5a', // liberation green — true to the movement institution
+    module: './clubs/sistasplace.js',
+  },
+  {
+    id: 'terraza7',
+    name: 'Terraza 7',
+    shortName: 'Terraza 7',
+    url: 'https://www.terraza7.com/events',
+    address: '40-19 Gleane St, Elmhurst, NY 11373',
+    city: 'nyc',
+    borough: 'queens',
+    timezone: 'America/New_York',
+    neighborhood: 'Elmhurst',
+    color: '#7ce8d5', // Andean turquoise — audit-cleared
+    module: './clubs/terraza7.js',
+  },
+  {
+    id: 'marjorie',
+    name: "Marjorie Eliot's Parlor Jazz",
+    shortName: "Marjorie's",
+    url: 'https://en.wikipedia.org/wiki/Marjorie_Eliot',
+    address: '555 Edgecombe Ave Apt 3F, New York, NY 10032',
+    city: 'nyc',
+    borough: 'harlem',
+    timezone: 'America/New_York',
+    neighborhood: 'Sugar Hill',
+    color: '#e8a0b8', // Sunday-dress parlor rose — audit-cleared
+    module: './clubs/marjorie.js',
   },
 
   // ---------------------------------------------------------------- LA ----
@@ -406,7 +471,46 @@ export const CLUBS = [
     timezone: 'America/Los_Angeles',
     neighborhood: 'Hollywood Hills',
     color: '#e8e4d8', // the white bandshell arcs — quick read
-    module: './clubs/hollywoodbowl.js',
+    module: './clubs/laphil.js', // one LA Phil feed serves Bowl + Disney Hall + Ford
+  },
+  {
+    id: 'disneyhall',
+    name: 'Walt Disney Concert Hall',
+    shortName: 'Disney Hall',
+    url: 'https://www.laphil.com',
+    address: '111 S Grand Ave, Los Angeles, CA 90012',
+    city: 'la',
+    borough: null,
+    timezone: 'America/Los_Angeles',
+    neighborhood: 'Downtown',
+    color: '#b8c4d4', // Gehry's stainless-steel curves — audit-cleared
+    module: './clubs/laphil.js',
+  },
+  {
+    id: 'theford',
+    name: 'The Ford',
+    shortName: 'The Ford',
+    url: 'https://www.theford.com',
+    address: '2580 Cahuenga Blvd E, Los Angeles, CA 90068',
+    city: 'la',
+    borough: null,
+    timezone: 'America/Los_Angeles',
+    neighborhood: 'Cahuenga Pass',
+    color: '#a0522d', // canyon-rock sienna — audit-cleared
+    module: './clubs/laphil.js',
+  },
+  {
+    id: 'golddiggers',
+    name: 'Gold-Diggers',
+    shortName: 'Gold-Diggers',
+    url: 'https://gold-diggers.com/pages/drink',
+    address: '5632 Santa Monica Blvd, Los Angeles, CA 90038',
+    city: 'la',
+    borough: null,
+    timezone: 'America/Los_Angeles',
+    neighborhood: 'East Hollywood',
+    color: '#b8901f', // antique gold, naturally — audit-cleared
+    module: './clubs/golddiggers.js',
   },
   {
     id: 'twentytwotwenty',
@@ -418,7 +522,7 @@ export const CLUBS = [
     borough: null,
     timezone: 'America/Los_Angeles',
     neighborhood: 'Historic Filipinotown',
-    color: '#d62a72', // their red-on-black poster language — quick read
+    color: '#d62a72', // their red-on-black poster language, pushed magenta clear of Sam First
     module: './clubs/twentytwotwenty.js',
   },
   {
@@ -444,7 +548,7 @@ export const CLUBS = [
     borough: null,
     timezone: 'America/Los_Angeles',
     neighborhood: 'Santa Monica',
-    color: '#b34d7a', // red-velvet wine, 1931 speakeasy — quick read
+    color: '#b34d7a', // red-velvet wine, brightened to read on black
     module: './clubs/harvelles.js',
   },
 ];

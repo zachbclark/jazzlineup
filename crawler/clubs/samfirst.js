@@ -5,30 +5,14 @@
 // for arrays of { title, slug, scheduling:{ config:{ startDate (UTC ISO),
 // timeZoneId 'America/Los_Angeles' } }, description }.
 import { fetchText, makeEvent, laDate, laTime, applyLateNight, htmlToText, stripPromo, parsePersonnel } from '../lib.js';
+import { wixWarmupEvents } from './_wixevents.js';
 
 const BASE = 'https://www.samfirstbar.com';
 const URL_ = `${BASE}/upcoming-shows`;
 
 export function parse(html) {
-  const m = html.match(/<script[^>]*id="wix-warmup-data"[^>]*>([\s\S]*?)<\/script>/);
-  if (!m) return [];
-  let data;
-  try { data = JSON.parse(m[1]); } catch { return []; }
-
-  // Find the first array of event-shaped objects anywhere in the tree.
-  let found = null;
-  (function walk(o) {
-    if (!o || typeof o !== 'object' || found) return;
-    if (Array.isArray(o)) {
-      if (o.length && o[0] && typeof o[0] === 'object' && o[0].scheduling && o[0].title) { found = o; return; }
-      o.forEach(walk);
-      return;
-    }
-    Object.values(o).forEach(walk);
-  })(data);
-
   const events = [];
-  for (const ev of found ?? []) {
+  for (const ev of wixWarmupEvents(html)) {
     const start = ev.scheduling?.config?.startDate;
     if (!start || !ev.title) continue;
     const desc = htmlToText(ev.description ?? ev.about ?? '');

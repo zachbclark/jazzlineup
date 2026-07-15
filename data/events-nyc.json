@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-15T19:32:19.916Z",
+  "generatedAt": "2026-07-15T20:44:19.784Z",
   "city": "nyc",
   "clubs": [
     {
@@ -213,7 +213,7 @@
       "url": "https://billsplaceharlem.com",
       "address": "148 W 133rd St, New York, NY 10030",
       "city": "nyc",
-      "borough": "manhattan",
+      "borough": "harlem",
       "timezone": "America/New_York",
       "neighborhood": "Harlem",
       "color": "#8a5a3a"
@@ -289,6 +289,66 @@
       "timezone": "America/New_York",
       "neighborhood": "Jamaica",
       "color": "#c2439a"
+    },
+    {
+      "id": "silvana",
+      "name": "Silvana",
+      "shortName": "Silvana",
+      "url": "https://silvana-nyc.com/calendar.php",
+      "address": "300 W 116th St, New York, NY 10026",
+      "city": "nyc",
+      "borough": "harlem",
+      "timezone": "America/New_York",
+      "neighborhood": "Harlem",
+      "color": "#ff6ec7"
+    },
+    {
+      "id": "shrine",
+      "name": "Shrine World Music Venue",
+      "shortName": "Shrine",
+      "url": "https://shrinenyc.com/calendar.php",
+      "address": "2271 Adam Clayton Powell Jr Blvd, New York, NY 10030",
+      "city": "nyc",
+      "borough": "harlem",
+      "timezone": "America/New_York",
+      "neighborhood": "Harlem",
+      "color": "#265c8c"
+    },
+    {
+      "id": "sistasplace",
+      "name": "Sistas' Place",
+      "shortName": "Sistas' Place",
+      "url": "https://sistasplace.org",
+      "address": "456 Nostrand Ave, Brooklyn, NY 11216",
+      "city": "nyc",
+      "borough": "brooklyn",
+      "timezone": "America/New_York",
+      "neighborhood": "Bed-Stuy",
+      "color": "#2e8c5a"
+    },
+    {
+      "id": "terraza7",
+      "name": "Terraza 7",
+      "shortName": "Terraza 7",
+      "url": "https://www.terraza7.com/events",
+      "address": "40-19 Gleane St, Elmhurst, NY 11373",
+      "city": "nyc",
+      "borough": "queens",
+      "timezone": "America/New_York",
+      "neighborhood": "Elmhurst",
+      "color": "#7ce8d5"
+    },
+    {
+      "id": "marjorie",
+      "name": "Marjorie Eliot's Parlor Jazz",
+      "shortName": "Marjorie's",
+      "url": "https://en.wikipedia.org/wiki/Marjorie_Eliot",
+      "address": "555 Edgecombe Ave Apt 3F, New York, NY 10032",
+      "city": "nyc",
+      "borough": "harlem",
+      "timezone": "America/New_York",
+      "neighborhood": "Sugar Hill",
+      "color": "#e8a0b8"
     }
   ],
   "errors": [],
@@ -1373,6 +1433,19 @@
       "priceText": null
     },
     {
+      "id": "silvana:2026-07-15:junho-lee",
+      "clubId": "silvana",
+      "title": "Junho Lee",
+      "date": "2026-07-15",
+      "sets": [
+        "19:00"
+      ],
+      "url": "https://silvana-nyc.com/calendar.php",
+      "details": "Jazz Guitarist — Junho Lee is a guitarist based in new york with 10 years of experience. Heavily influenced in Jazz, rock, folk, and mainly guitar music. Has worked professionaly in musical theater, cover bands, wedding bands. Perforemd various venues in NY",
+      "personnel": null,
+      "priceText": null
+    },
+    {
       "id": "closeup:2026-07-15:kevin-oliver-jr-maki-niento-devon-gates-gary-jones-iii",
       "clubId": "closeup",
       "title": "KEVIN OLIVER JR. - Maki Niento - Devon Gates - Gary Jones iii",
@@ -1594,6 +1667,19 @@
       "priceText": null
     },
     {
+      "id": "silvana:2026-07-15:kevin-du-and-connor-sturge-duo",
+      "clubId": "silvana",
+      "title": "Kevin Du and Connor Sturge Duo",
+      "date": "2026-07-15",
+      "sets": [
+        "21:00"
+      ],
+      "url": "https://silvana-nyc.com/calendar.php",
+      "details": "Jazz Fusion — Kevin Du and Connor Sturge are New York-based keyboardist and drummer duo. They create a diverse palette of sounds that come from their jazz background, as well as sonic explorations that feature samples, synthesizers and key bass.",
+      "personnel": null,
+      "priceText": null
+    },
+    {
       "id": "birdland:2026-07-15:stella-cole",
       "clubId": "birdland",
       "title": "Stella Cole",
@@ -1797,6 +1883,19 @@
         }
       ],
       "late": true,
+      "priceText": null
+    },
+    {
+      "id": "shrine:2026-07-16:dj-alino",
+      "clubId": "shrine",
+      "title": "DJ Alino",
+      "date": "2026-07-16",
+      "sets": [
+        "00:00"
+      ],
+      "url": "https://shrinenyc.com/calendar.php",
+      "details": "One of the best DJs in town, playing Afrobeats, Afro-fusion, Reggae, Reggaeton, Latin, Ethiopian, and Old School Hip Hop. Come join the dance party!",
+      "personnel": null,
       "priceText": null
     },
     {
@@ -2149,6 +2248,19 @@
       "priceText": null
     },
     {
+      "id": "silvana:2026-07-16:the-entertainment",
+      "clubId": "silvana",
+      "title": "The Entertainment",
+      "date": "2026-07-16",
+      "sets": [
+        "19:00"
+      ],
+      "url": "https://silvana-nyc.com/calendar.php",
+      "details": "Latin / Jazz / Bluegrass Duo — A multi genre guitar and violin duo based in New York City with a sound that is a unique blend of jazz, Latin Fusion, ragtime and bluegrass.",
+      "personnel": null,
+      "priceText": null
+    },
+    {
       "id": "closeup:2026-07-16:angelica-sanchez-taylor-ho-bynum-noah-jarrett-hamir-atwal",
       "clubId": "closeup",
       "title": "ANGELICA SANCHEZ - Taylor Ho Bynum - Noah Jarrett - Hamir Atwal",
@@ -2206,6 +2318,20 @@
       "priceText": null
     },
     {
+      "id": "terraza7:2026-07-16:sebasti-n-cruz-quartet-new-colombian-songwriting",
+      "clubId": "terraza7",
+      "title": "Sebastián Cruz Quartet | New Colombian Songwriting",
+      "date": "2026-07-16",
+      "sets": [
+        "19:30",
+        "21:30"
+      ],
+      "url": "https://www.terraza7.com/events",
+      "details": "Sebastian Cruz, a trailblazer in new Colombian music, blends traditional rhythms with rock and jazz elements. His latest project, the Sebastian Cruz Quartet, showcases this fusion with their debut \"El Prisma,\" exemplifying his innovative and eclectic musical style",
+      "personnel": null,
+      "priceText": null
+    },
+    {
       "id": "bluenote:2026-07-16:ms-lisa-fischer-ft-orrin-evans-trio-with-james-genus-and-mar",
       "clubId": "bluenote",
       "title": "Ms. Lisa Fischer ft. Orrin Evans Trio with James Genus and Mark Whitfield, Jr.",
@@ -2229,6 +2355,32 @@
       ],
       "url": "https://www.barbayeux.com/jazz/z63pt232xlmbzmm-lf3tb-5yewh-m6x68-p26t7-nldmr-r7jah-cs8kl-fsgfe-4k7be-mrn73-tlf9t-4ncdr-rheb4-y9mwa-hlsr5-5p4hn-9mn2k-tg8s9-5ampf-mb7ch-3pbw6-a4wfm-z2jjd-em2ra-nal2n-j4ppt-jse6l-ebhae-9xkne",
       "details": "Steve Cardenas w/Adam Kolker, Jeremy Stratton, George Schuller",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "silvana:2026-07-16:emy-castro",
+      "clubId": "silvana",
+      "title": "Emy Castro",
+      "date": "2026-07-16",
+      "sets": [
+        "20:00"
+      ],
+      "url": "https://silvana-nyc.com/calendar.php",
+      "details": "Afro-Peruvian — Emy Castro is a Peruvian vocalist who blends Afro-Peruvian traditions, jazz, and contemporary Latin American sounds. Through her voice, she shares the richness of Peruvian culture, rhythm, and soul with audiences around the world. Her band",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "shrine:2026-07-16:kid-java",
+      "clubId": "shrine",
+      "title": "Kid Java",
+      "date": "2026-07-16",
+      "sets": [
+        "20:00"
+      ],
+      "url": "https://shrinenyc.com/calendar.php",
+      "details": "Electric Blues — Kid Java is an NYC-based four-piece electric blues band. They play blues-n-rhythm and swing material—what they call urban roots music.",
       "personnel": null,
       "priceText": null
     },
@@ -2565,6 +2717,19 @@
         }
       ],
       "late": true,
+      "priceText": null
+    },
+    {
+      "id": "shrine:2026-07-17:dj-willimbo",
+      "clubId": "shrine",
+      "title": "DJ Willimbo",
+      "date": "2026-07-17",
+      "sets": [
+        "00:00"
+      ],
+      "url": "https://shrinenyc.com/calendar.php",
+      "details": "Afro Fusion — A true connoisseur of good music, DJ Wilimbo has been weaving and masterfully transitioning different genres of music with a special keen interest in Afrobeats, Amapiano, Dancehall, Soca, Hip Hop and R&B. Hailing from the humble roots of Ni",
+      "personnel": null,
       "priceText": null
     },
     {
@@ -2941,7 +3106,7 @@
         "19:00",
         "21:30"
       ],
-      "url": "https://billsplaceharlem.com",
+      "url": "https://billsplaceharlem.com/products/bill-saxton-the-harlem-all-stars",
       "details": "Harlem speakeasy sets in the parlor — BYOB, reserve ahead",
       "personnel": [
         {
@@ -2949,6 +3114,19 @@
           "instrument": "tenor sax"
         }
       ],
+      "priceText": null
+    },
+    {
+      "id": "silvana:2026-07-17:soukis",
+      "clubId": "silvana",
+      "title": "SOUKIS",
+      "date": "2026-07-17",
+      "sets": [
+        "19:00"
+      ],
+      "url": "https://silvana-nyc.com/calendar.php",
+      "details": "Blues / Rock — Spiros Soukis is a guitarist, singer, and songwriter whose roots run from Athens to New York. Growing up with the sound of British blues and the great American players, he shaped a style that mixes blues, rock, and the spirit of the ’60s an",
+      "personnel": null,
       "priceText": null
     },
     {
@@ -3067,6 +3245,19 @@
       "priceText": null
     },
     {
+      "id": "silvana:2026-07-17:the-dirts",
+      "clubId": "silvana",
+      "title": "The Dirts",
+      "date": "2026-07-17",
+      "sets": [
+        "20:00"
+      ],
+      "url": "https://silvana-nyc.com/calendar.php",
+      "details": "Rock / Soul — The DIRTS are a hard-driving NYC cover band that brings a tasty mix of Funk, Blues and Soul from the 60s to the present! Join us for DANCEABLE grooves folks simply can't resist.",
+      "personnel": null,
+      "priceText": null
+    },
+    {
       "id": "mezzrow:2026-07-17:cameron-campbell-on-air-band",
       "clubId": "mezzrow",
       "title": "Cameron Campbell ON AIR! Band",
@@ -3181,6 +3372,19 @@
       "priceText": null
     },
     {
+      "id": "shrine:2026-07-17:hudson-river",
+      "clubId": "shrine",
+      "title": "Hudson River",
+      "date": "2026-07-17",
+      "sets": [
+        "21:00"
+      ],
+      "url": "https://shrinenyc.com/calendar.php",
+      "details": "Fusion — Artist, percussionist, vibraphonist, jamming to orginals and your hip-hop and R&B faves.",
+      "personnel": null,
+      "priceText": null
+    },
+    {
       "id": "birdland:2026-07-17:allan-harris-harlem-after-dark-featuring-maya-azucena-ac-lin",
       "clubId": "birdland",
       "title": "Allan Harris: Harlem After Dark featuring Maya Azucena & AC Lincoln (Theater)",
@@ -3242,6 +3446,19 @@
       ],
       "url": "https://www.viewcy.com/event/zemog_el_gallo_bueno_17",
       "details": "ZEMOG TRIO Puerto-Rican born Peruvian guitarist Abraham Gomez-Delgado leads Zemog, a LatinX-perimental band from Brooklyn, NY that draws draws from Afro-Puerto Rican, Cuban and South American Rhythms. The music is also inspired by German Cosmic music, Japanese Butoh Dance, Psych Rock, Classical Mini",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "silvana:2026-07-17:dafina-roots",
+      "clubId": "silvana",
+      "title": "Dafina Roots",
+      "date": "2026-07-17",
+      "sets": [
+        "22:00"
+      ],
+      "url": "https://silvana-nyc.com/calendar.php",
+      "details": "Afro Fusion — Dafina is a dynamic roots band led by singer and percussionist Mamoudou Konate Simbo, who brings the rich ancestral songs of Burkina Faso to life. With an eclectic mix of musicians from the African diaspora and jazz artists, Dafina creates",
       "personnel": null,
       "priceText": null
     },
@@ -3406,6 +3623,32 @@
         }
       ],
       "late": true,
+      "priceText": null
+    },
+    {
+      "id": "shrine:2026-07-18:dj-birane",
+      "clubId": "shrine",
+      "title": "Dj Birane",
+      "date": "2026-07-18",
+      "sets": [
+        "00:00"
+      ],
+      "url": "https://shrinenyc.com/calendar.php",
+      "details": "Afro Fusion — Come enjoy our dance party Saturday with the world renowned Dj Birane. Combing elements of music from all over the world, DJ Birane will have you on your feet!!",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "shrine:2026-07-18:dj-millie-bass",
+      "clubId": "shrine",
+      "title": "DJ Millie Bass",
+      "date": "2026-07-18",
+      "sets": [
+        "00:00"
+      ],
+      "url": "https://shrinenyc.com/calendar.php",
+      "details": "Afro Fusion",
+      "personnel": null,
       "priceText": null
     },
     {
@@ -3763,7 +4006,7 @@
         "19:00",
         "21:30"
       ],
-      "url": "https://billsplaceharlem.com",
+      "url": "https://billsplaceharlem.com/products/bill-saxton-the-harlem-all-stars",
       "details": "Harlem speakeasy sets in the parlor — BYOB, reserve ahead",
       "personnel": [
         {
@@ -3889,6 +4132,33 @@
       ],
       "url": "https://www.barbayeux.com/jazz/8nr3zbphrp75e5k-3s5ml-h7ca5-syapg-t6xwm-whbzx-ccm8b-x3hj6-aye58-4psyn-3zkbd-74yln-2m7an-s36sk-hl2jc-hdptg-3slgm-eklny-a4mp4-crpp2-l8pkr-w3ft8-ddssg-hz3yr-kxhbe-3lych-pnwjs-af83b-x2lls-kykak",
       "details": "Meron • Menares • Macbride: Live at The Sound Room Release Show w/Daniel Meron, Pablo Menares, Jimmy Macbride",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "silvana:2026-07-18:michael-morgan-group",
+      "clubId": "silvana",
+      "title": "Michael Morgan Group",
+      "date": "2026-07-18",
+      "sets": [
+        "20:00"
+      ],
+      "url": "https://silvana-nyc.com/calendar.php",
+      "details": "Soul / Jazz — A jazz vocalist rooted in the Philadelphia scene, they’ve been active in New York since 2018, performing at venues like Silvana, Shrine, and Minton’s while studying at BMCC and with Denise King, delivering jazz standards and blues with a st",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "sistasplace:2026-07-18:reggie-woods-quintet",
+      "clubId": "sistasplace",
+      "title": "Reggie Woods Quintet",
+      "date": "2026-07-18",
+      "sets": [
+        "20:00",
+        "21:30"
+      ],
+      "url": "https://sistasplace.org/reggie-woods-quintet-3/",
+      "details": "Doors 7:30 pm",
       "personnel": null,
       "priceText": null
     },
@@ -4291,6 +4561,19 @@
       "priceText": null
     },
     {
+      "id": "marjorie:2026-07-19:marjorie-eliot-s-parlor-jazz",
+      "clubId": "marjorie",
+      "title": "Marjorie Eliot's Parlor Jazz",
+      "date": "2026-07-19",
+      "sets": [
+        "15:30"
+      ],
+      "url": "https://en.wikipedia.org/wiki/Marjorie_Eliot",
+      "details": "Free concert in her Sugar Hill parlor, Apt 3F — every Sunday since 1992. Arrive early.",
+      "personnel": null,
+      "priceText": "Free"
+    },
+    {
       "id": "dizzys:2026-07-19:charles-mcpherson-quintet",
       "clubId": "dizzys",
       "title": "Charles McPherson Quintet",
@@ -4591,6 +4874,33 @@
       "priceText": null
     },
     {
+      "id": "silvana:2026-07-19:sariyah-idan",
+      "clubId": "silvana",
+      "title": "Sariyah Idan",
+      "date": "2026-07-19",
+      "sets": [
+        "20:00"
+      ],
+      "url": "https://silvana-nyc.com/calendar.php",
+      "details": "Acoustic Soul — Sariyah Idan is a New Orleans based acoustic soul singer-songwriter originally from Woodstock NY. Her influences extend into jazz, latin, flamenco, klezmer, reggae, and hip-hop weaving unique sonics while her poetic lyrics address struggle,",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "terraza7:2026-07-19:tango-jazz-jam",
+      "clubId": "terraza7",
+      "title": "Tango Jazz & Jam",
+      "date": "2026-07-19",
+      "sets": [
+        "20:00",
+        "21:30"
+      ],
+      "url": "https://www.terraza7.com/events",
+      "details": "Experience a monthly Tango Jazz Jam in Queens, New York, hosted by pianist Emilio Teubal and his house band. Musicians of all levels are invited to join, perform, and explore the meeting point between tango and jazz through improvisation and collaboration. And yes—don’t forget your bandoneón.",
+      "personnel": null,
+      "priceText": null
+    },
+    {
       "id": "mezzrow:2026-07-19:naama-trio",
       "clubId": "mezzrow",
       "title": "Naama Trio",
@@ -4747,6 +5057,32 @@
       ],
       "url": "https://www.viewcy.com/event/aquarium_solarium_2",
       "details": "Aquarium Solarium is a new original project from Jason Loughlin that draws from Latin music, Exotic, 1950's Hollywood film scores and Surf. The band features Tom Beckham on vibraphone, Dave Speranza on bass and Dan Rieser on drums. $20 suggested Pay now online or that day in person",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "silvana:2026-07-19:eric-plaks-trio",
+      "clubId": "silvana",
+      "title": "Eric Plaks Trio",
+      "date": "2026-07-19",
+      "sets": [
+        "22:00"
+      ],
+      "url": "https://silvana-nyc.com/calendar.php",
+      "details": "Jazz — With Zach Swanson and Leonid Galaganov - Born and raised in Princeton, New Jersey, Eric has split his adult life between playing jazz and teaching elementary school students in Harlem, and, recently, the South Bronx, where he helped to foun",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "shrine:2026-07-19:verde-floresta",
+      "clubId": "shrine",
+      "title": "Verde Floresta",
+      "date": "2026-07-19",
+      "sets": [
+        "22:00"
+      ],
+      "url": "https://shrinenyc.com/calendar.php",
+      "details": "Fernando Augusto is a Brazilian musician, composer, and writer from São Paulo and the creator of Verde Floresta. A cavaco player influenced by samba, choro, and MPB traditions, he develops music that connects Brazilian rhythms with elements of jazz and improvisation. He is also the author of the poe",
       "personnel": null,
       "priceText": null
     },
@@ -5067,6 +5403,19 @@
       "priceText": null
     },
     {
+      "id": "silvana:2026-07-20:quddus-quartet",
+      "clubId": "silvana",
+      "title": "Quddus Quartet",
+      "date": "2026-07-20",
+      "sets": [
+        "19:00"
+      ],
+      "url": "https://silvana-nyc.com/calendar.php",
+      "details": "Jazz — The Quddus Quartet is an esteemed quartet founded by Joshua Quddus, featuring Israel Stahl (trumpet), Zev Vestel (drums), and Sedge Green (bass).",
+      "personnel": null,
+      "priceText": null
+    },
+    {
       "id": "closeup:2026-07-20:noah-halpern-charles-altura-joe-block-gervis-myles-alon-benj",
       "clubId": "closeup",
       "title": "NOAH HALPERN - Charles Altura - Joe Block - Gervis Myles - Alon Benjamini",
@@ -5293,6 +5642,19 @@
       ],
       "url": "https://www.viewcy.com/event/tropical_vortex_prese_237",
       "details": "TROPICAL VORTEX is Barbès long-running series showcasing all manners of tropical styles from Latinolandia with live band and DJs playing cumbia, chicha, guaguanco, mambo, plena, Sanjuanitos and other styles of vintage or not so vintage styles. Past artists include Combo Chimbita, Chicha Libre, Los C",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "silvana:2026-07-20:louisa-lee-poster",
+      "clubId": "silvana",
+      "title": "Louisa Lee Poster",
+      "date": "2026-07-20",
+      "sets": [
+        "21:00"
+      ],
+      "url": "https://silvana-nyc.com/calendar.php",
+      "details": "Jazz — As befits an octogenarian, jazz Girl Singer, Louisa Lee Poster is known for singing some of the great old Tin Pan Alley songs that are at least as old as she is. She first learned these songs when her father whistled them and her mother pla",
       "personnel": null,
       "priceText": null
     },
@@ -5686,6 +6048,19 @@
       ],
       "url": "https://www.viewcy.com/event/tamar_korn__a_kornuc_29",
       "details": "Tamar Korn , she of Brain Cloud and Cangelosi Cards fame, has been dazzling us for over a decade, surprising us at every turn with her choice of repertoire, hopscotching, in one set, from early jazz, Western swing and American roots music to Yiddish songs, vocal solos and unexpected recitatives invo",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "silvana:2026-07-21:joe-wagner",
+      "clubId": "silvana",
+      "title": "Joe Wagner",
+      "date": "2026-07-21",
+      "sets": [
+        "19:00"
+      ],
+      "url": "https://silvana-nyc.com/calendar.php",
+      "details": "Jazz — Joe Wagner was born to a musical family on June 5, 1976 in Saratoga Springs, NY. He started playing the alto saxophone at the age of 10 and quickly fell in love with the music of Charlie Parker. He studied jazz and frequented many jazz club",
       "personnel": null,
       "priceText": null
     },
@@ -6300,6 +6675,20 @@
       "priceText": null
     },
     {
+      "id": "terraza7:2026-07-22:the-pedro-giraudo-quartet-contemporary-tango",
+      "clubId": "terraza7",
+      "title": "The Pedro Giraudo Quartet — Contemporary Tango",
+      "date": "2026-07-22",
+      "sets": [
+        "19:00",
+        "21:00"
+      ],
+      "url": "https://www.terraza7.com/events",
+      "details": "The Pedro Giraudo Quartet opens the evening with contemporary tango led by Latin GRAMMY Award–winning bassist and composer Pedro Giraudo, blending Argentine tradition with modern energy, lyrical depth, and expressive improvisation.",
+      "personnel": null,
+      "priceText": null
+    },
+    {
       "id": "vanguard:2026-07-22:kris-davis-tyshawn-sorey-ingrid-laubrock",
       "clubId": "vanguard",
       "title": "KRIS DAVIS | TYSHAWN SOREY | INGRID LAUBROCK",
@@ -6363,6 +6752,32 @@
       ],
       "url": "https://www.barbayeux.com/jazz/33sxrd9ynk6pjzn-325ns-shjkp-4l7y4-er5kz-pfmt7-la9zt-hgezc-z5h28-s33sy-982jt-yttmk-x8h75-wrm8y-te9t8-zl2wj-m73r6-jbbct-brymc-6zgj3-xbsff-9pyta-8d82d-pw27n-lrrc8-edfbd",
       "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "silvana:2026-07-22:the-conclave",
+      "clubId": "silvana",
+      "title": "The Conclave",
+      "date": "2026-07-22",
+      "sets": [
+        "20:00"
+      ],
+      "url": "https://silvana-nyc.com/calendar.php",
+      "details": "Folk / Blues / Indie — The Monthly Singer/Songwriter Conclave is a showcase of 4-6 acts rotating from a group of 20 musicians, drawn from the tri-state area. We love Silvana! This month's set will feature: 8pm Carol Lester https://youtu.be/E16K9KxjjDM?si=-Uohaugq",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "shrine:2026-07-22:tony-santos-band",
+      "clubId": "shrine",
+      "title": "Tony Santos Band",
+      "date": "2026-07-22",
+      "sets": [
+        "20:00"
+      ],
+      "url": "https://shrinenyc.com/calendar.php",
+      "details": "Blues — Veteran of the New York Rock and Blues Scene Tony Santos has now formed his own band: The Tony Santos Band which features songs that he has written over over 30 year career. Tony has released 4 CDs , Iguana Man, That's what I am talking abo",
       "personnel": null,
       "priceText": null
     },
@@ -6542,6 +6957,19 @@
       "priceText": null
     },
     {
+      "id": "shrine:2026-07-22:lawson-gardner-and-joy",
+      "clubId": "shrine",
+      "title": "Lawson Gardner and Joy",
+      "date": "2026-07-22",
+      "sets": [
+        "22:00"
+      ],
+      "url": "https://shrinenyc.com/calendar.php",
+      "details": "“Joy” is Lawson Gardner’s quartet consisting of Lawson Gardner on trombone and electronics, Henry Berberi on alto sax, Daniel Basilio on bass, and Drew Hoschar on drums.",
+      "personnel": null,
+      "priceText": null
+    },
+    {
       "id": "django:2026-07-22:philippe-lemm-organ-trio",
       "clubId": "django",
       "title": "Philippe Lemm Organ Trio",
@@ -6609,6 +7037,20 @@
       "priceText": null
     },
     {
+      "id": "shrine:2026-07-22:theo-stone-supergroup",
+      "clubId": "shrine",
+      "title": "Theo Stone Supergroup",
+      "date": "2026-07-22",
+      "sets": [
+        "23:00"
+      ],
+      "url": "https://shrinenyc.com/calendar.php",
+      "details": "Jazz — Theo Stone - Trombone Nicolo Boselli - Alto Sax Brahm Sasner - Piano Ben Halle - Bass Joe Mintz - Drums",
+      "personnel": null,
+      "late": true,
+      "priceText": null
+    },
+    {
       "id": "mezzrow:2026-07-22:vinyl-after-hours",
       "clubId": "mezzrow",
       "title": "Vinyl After Hours",
@@ -6655,6 +7097,19 @@
         }
       ],
       "late": true,
+      "priceText": null
+    },
+    {
+      "id": "shrine:2026-07-23:dj-alino",
+      "clubId": "shrine",
+      "title": "DJ Alino",
+      "date": "2026-07-23",
+      "sets": [
+        "00:00"
+      ],
+      "url": "https://shrinenyc.com/calendar.php",
+      "details": "One of the best DJs in town, playing Afrobeats, Afro-fusion, Reggae, Reggaeton, Latin, Ethiopian, and Old School Hip Hop. Come join the dance party!",
+      "personnel": null,
       "priceText": null
     },
     {
@@ -7265,6 +7720,19 @@
       "priceText": null
     },
     {
+      "id": "shrine:2026-07-24:dj-birane",
+      "clubId": "shrine",
+      "title": "Dj Birane",
+      "date": "2026-07-24",
+      "sets": [
+        "00:00"
+      ],
+      "url": "https://shrinenyc.com/calendar.php",
+      "details": "Afro Fusion — Come enjoy our dance party Saturday with the world renowned Dj Birane. Combing elements of music from all over the world, DJ Birane will have you on your feet!!",
+      "personnel": null,
+      "priceText": null
+    },
+    {
       "id": "django:2026-07-24:jc-hopkins-biggish-band",
       "clubId": "django",
       "title": "JC Hopkins Biggish Band",
@@ -7625,7 +8093,7 @@
         "19:00",
         "21:30"
       ],
-      "url": "https://billsplaceharlem.com",
+      "url": "https://billsplaceharlem.com/products/bill-saxton-the-harlem-all-stars",
       "details": "Harlem speakeasy sets in the parlor — BYOB, reserve ahead",
       "personnel": [
         {
@@ -7690,6 +8158,20 @@
           "instrument": "bass"
         }
       ],
+      "priceText": null
+    },
+    {
+      "id": "terraza7:2026-07-24:trio-universal-brazilian-jazz",
+      "clubId": "terraza7",
+      "title": "Trio Universal | Brazilian Jazz",
+      "date": "2026-07-24",
+      "sets": [
+        "19:30",
+        "21:30"
+      ],
+      "url": "https://www.terraza7.com/events",
+      "details": "Duduka Da Fonseca, Vinicius Gomes & Gili Lopes create a dynamic Brazilian Jazz experience, blending samba rhythms and bossa nova grooves with modern jazz improvisation for a rich, sophisticated sound",
+      "personnel": null,
       "priceText": null
     },
     {
@@ -7907,6 +8389,19 @@
       "priceText": null
     },
     {
+      "id": "silvana:2026-07-24:charlie-sub-sound-dogs",
+      "clubId": "silvana",
+      "title": "Charlie Sub & Sound Dogs",
+      "date": "2026-07-24",
+      "sets": [
+        "22:00"
+      ],
+      "url": "https://silvana-nyc.com/calendar.php",
+      "details": "Rock / Blues / Funk — Founded in 2014, this indie-rock band has played dozens of local clubs playing all originals with a rock and blues dynamic!",
+      "personnel": null,
+      "priceText": null
+    },
+    {
       "id": "jazzcultural:2026-07-24:abraham-burton-quartet",
       "clubId": "jazzcultural",
       "title": "Abraham Burton Quartet",
@@ -8034,6 +8529,19 @@
       "details": "until 4:00 AM",
       "personnel": null,
       "late": true,
+      "priceText": null
+    },
+    {
+      "id": "shrine:2026-07-25:dj-birane",
+      "clubId": "shrine",
+      "title": "Dj Birane",
+      "date": "2026-07-25",
+      "sets": [
+        "00:00"
+      ],
+      "url": "https://shrinenyc.com/calendar.php",
+      "details": "Afro Fusion — Come enjoy our dance party Saturday with the world renowned Dj Birane. Combing elements of music from all over the world, DJ Birane will have you on your feet!!",
+      "personnel": null,
       "priceText": null
     },
     {
@@ -8292,7 +8800,7 @@
         "19:00",
         "21:30"
       ],
-      "url": "https://billsplaceharlem.com",
+      "url": "https://billsplaceharlem.com/products/bill-saxton-the-harlem-all-stars",
       "details": "Harlem speakeasy sets in the parlor — BYOB, reserve ahead",
       "personnel": [
         {
@@ -8300,6 +8808,19 @@
           "instrument": "tenor sax"
         }
       ],
+      "priceText": null
+    },
+    {
+      "id": "silvana:2026-07-25:winterfisch-trio-latin-jazz-funk",
+      "clubId": "silvana",
+      "title": "Winterfisch Trio- Latin Jazz / Funk",
+      "date": "2026-07-25",
+      "sets": [
+        "19:00"
+      ],
+      "url": "https://silvana-nyc.com/calendar.php",
+      "details": "Following a successful concerts in the past years, Winterfisch is now gearing up for gigs starting from March this year. The band, though relatively new on the scene, has exclusively showcased in New York City. Andy Winter’s “Winterfisch\" takes pride in its repertoire, consisting solely of original",
+      "personnel": null,
       "priceText": null
     },
     {
@@ -8444,6 +8965,19 @@
       "priceText": null
     },
     {
+      "id": "shrine:2026-07-25:mitchell-trio",
+      "clubId": "shrine",
+      "title": "Mitchell Trio",
+      "date": "2026-07-25",
+      "sets": [
+        "21:00"
+      ],
+      "url": "https://shrinenyc.com/calendar.php",
+      "details": "Rock / Blues — Robert Mitchell has been a performing, touring, recording artist since 1980. Performing in all original bands: GLASS HOUSE and WILDLIFE and RAJA and CINEMATIK, Mitchell also played as a sideman with numerous NYC and Boston bands. Currently",
+      "personnel": null,
+      "priceText": null
+    },
+    {
       "id": "birdland:2026-07-25:dan-wilson-peter-bernstein-quartet-theater",
       "clubId": "birdland",
       "title": "Dan Wilson & Peter Bernstein Quartet (Theater)",
@@ -8519,6 +9053,20 @@
       "url": "https://www.birdlandjazz.com/tm-event/gerry-gibbs-dream-band-ft-gary-bartz-randy-brecker-buster-williams-cyrus-chestnut-10/",
       "details": "Birdland Jazz Club — Doors @ 10:00PM",
       "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "silvana:2026-07-25:steam-down",
+      "clubId": "silvana",
+      "title": "Steam Down",
+      "date": "2026-07-25",
+      "sets": [
+        "23:00"
+      ],
+      "url": "https://silvana-nyc.com/calendar.php",
+      "details": "Afro-Fusion — The Sounds of the Diaspora is a live musical journey curated by Steam Down and conducted in real time by Steam Down’s founder, celebrating the rhythms, stories and sonic traditions that connect communities across the African diaspora. Blend",
+      "personnel": null,
+      "late": true,
       "priceText": null
     },
     {
@@ -8656,6 +9204,19 @@
       "details": "Fernanda Silveira leads a weekly Choro jam in our front room with Regional Samauma and special guests. A casual affair with virtuosos. Fernanda Silveira is a cavaquinho player specializing in the Brazilian practices of choro and traditional samba. She is a disciple of Luciana Rabello and has accompa",
       "personnel": null,
       "priceText": null
+    },
+    {
+      "id": "marjorie:2026-07-26:marjorie-eliot-s-parlor-jazz",
+      "clubId": "marjorie",
+      "title": "Marjorie Eliot's Parlor Jazz",
+      "date": "2026-07-26",
+      "sets": [
+        "15:30"
+      ],
+      "url": "https://en.wikipedia.org/wiki/Marjorie_Eliot",
+      "details": "Free concert in her Sugar Hill parlor, Apt 3F — every Sunday since 1992. Arrive early.",
+      "personnel": null,
+      "priceText": "Free"
     },
     {
       "id": "dizzys:2026-07-26:jon-faddis-quartet-73rd-birthday-celebration",
@@ -9021,6 +9582,32 @@
       ],
       "url": "https://www.arthurstavernnyc.com/performances.html",
       "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "silvana:2026-07-26:john-colonna-quartet",
+      "clubId": "silvana",
+      "title": "John Colonna Quartet",
+      "date": "2026-07-26",
+      "sets": [
+        "22:00"
+      ],
+      "url": "https://silvana-nyc.com/calendar.php",
+      "details": "The compositions of bandleader and pianist John Colonna are jumping off points for beautiful excursions into melodic and harmonic fantasy, while always maintaining a danceable and driving groove. Featuring John Colonna on piano, Kenji Tokunaga on bass, and Ji Kim on drums.",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "shrine:2026-07-26:omar-edwards-the-new-york-jazz-gypsies",
+      "clubId": "shrine",
+      "title": "Omar Edwards& the New York Jazz Gypsies",
+      "date": "2026-07-26",
+      "sets": [
+        "22:00"
+      ],
+      "url": "https://shrinenyc.com/calendar.php",
+      "details": "Through a pool of sounds from Jazz to Funk and back again, virtuoso rhythm Tap-dancer Omar Edwards and his band, the New York Jazz Gypsies take patrons on a journey through sound. The driving percussion of Omar's Tap-shoes combined with the instrumentation of band members provide a unique experience",
       "personnel": null,
       "priceText": null
     },
@@ -9839,6 +10426,19 @@
       "priceText": null
     },
     {
+      "id": "shrine:2026-07-28:dennis-mitcheltree-trio",
+      "clubId": "shrine",
+      "title": "Dennis Mitcheltree Trio",
+      "date": "2026-07-28",
+      "sets": [
+        "21:00"
+      ],
+      "url": "https://shrinenyc.com/calendar.php",
+      "details": "Jazz — Dennis Mitcheltree, tenor saxophone Jesse Crawford, bass Bill McClellan, drums",
+      "personnel": null,
+      "priceText": null
+    },
+    {
       "id": "jazzcultural:2026-07-28:jam-in-the-cafe",
       "clubId": "jazzcultural",
       "title": "Jam in the Cafe",
@@ -10154,6 +10754,19 @@
       "priceText": null
     },
     {
+      "id": "shrine:2026-07-29:dave-kardas-band",
+      "clubId": "shrine",
+      "title": "Dave Kardas Band",
+      "date": "2026-07-29",
+      "sets": [
+        "19:00"
+      ],
+      "url": "https://shrinenyc.com/calendar.php",
+      "details": "Soul / Funk — Dave Kardas band plays Blues/Jazz/Fusion and will be performing music from their album \"Fire and Ice\" as well as new releases like \"Living in the Moment\" and \"Joyride\". DKB has played all around NYC, Ct and Texas.",
+      "personnel": null,
+      "priceText": null
+    },
+    {
       "id": "django:2026-07-29:al-carty-group",
       "clubId": "django",
       "title": "Al Carty Group",
@@ -10264,6 +10877,19 @@
       "priceText": null
     },
     {
+      "id": "shrine:2026-07-29:saints-and-sinners-rock-blues",
+      "clubId": "shrine",
+      "title": "Saints and Sinners- Rock / Blues",
+      "date": "2026-07-29",
+      "sets": [
+        "20:00"
+      ],
+      "url": "https://shrinenyc.com/calendar.php",
+      "details": "Saints and Sinners is a band with more than one flavor. Thereâ€™s the down and dirty blues of their Chicago and Mississippi inspirations, the hedonistic excess of â€˜70s rock and funk, plus the here and now â€“ trying to create something new and stir things up.",
+      "personnel": null,
+      "priceText": null
+    },
+    {
       "id": "mezzrow:2026-07-29:james-austin-trio",
       "clubId": "mezzrow",
       "title": "James Austin Trio",
@@ -10353,6 +10979,19 @@
       "priceText": null
     },
     {
+      "id": "silvana:2026-07-29:zachariah-lambert-quartet",
+      "clubId": "silvana",
+      "title": "Zachariah Lambert Quartet",
+      "date": "2026-07-29",
+      "sets": [
+        "21:00"
+      ],
+      "url": "https://silvana-nyc.com/calendar.php",
+      "details": "Jazz — The music of promising young NYC guitarist/composer Zachariah Lambert traverses a wide range of influences while maintaining sturdy roots in the jazz idiom. His compositions reveal a keen knack for melody while providing ample opportunities",
+      "personnel": null,
+      "priceText": null
+    },
+    {
       "id": "arthurs:2026-07-29:alyson-williams-w-arthur-s-house-band",
       "clubId": "arthurs",
       "title": "Alyson Williams/w Arthur's House Band",
@@ -10375,6 +11014,19 @@
       ],
       "url": "https://www.viewcy.com/event/mamady_kouyates_mand_274",
       "details": "Mamady Kouyate and his Mandingo Ambassadors. Every Wednesday. Mamady Kouyate is one of Guinea's better known guitarist. The heir to a long line of griots, he was first taught by his father who was one of the first guinean griots to introduce the guitar. Kouyate senior specialized in transcribing tra",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "shrine:2026-07-29:althea-pettigrew-and-friends",
+      "clubId": "shrine",
+      "title": "Althea Pettigrew and Friends",
+      "date": "2026-07-29",
+      "sets": [
+        "22:00"
+      ],
+      "url": "https://shrinenyc.com/calendar.php",
+      "details": "Soul — Althea Pettigrew is a Harlemite who sings and plays all the great Standards of Jazz/Blues/R&B. She expresses soulful music for the soul.",
       "personnel": null,
       "priceText": null
     },
@@ -10484,6 +11136,19 @@
       "details": "until 4:00 AM",
       "personnel": null,
       "late": true,
+      "priceText": null
+    },
+    {
+      "id": "shrine:2026-07-30:dj-alino",
+      "clubId": "shrine",
+      "title": "DJ Alino",
+      "date": "2026-07-30",
+      "sets": [
+        "00:00"
+      ],
+      "url": "https://shrinenyc.com/calendar.php",
+      "details": "One of the best DJs in town, playing Afrobeats, Afro-fusion, Reggae, Reggaeton, Latin, Ethiopian, and Old School Hip Hop. Come join the dance party!",
+      "personnel": null,
       "priceText": null
     },
     {
@@ -10692,6 +11357,19 @@
       "priceText": null
     },
     {
+      "id": "shrine:2026-07-30:cold-fujon",
+      "clubId": "shrine",
+      "title": "Cold Fujon",
+      "date": "2026-07-30",
+      "sets": [
+        "19:00"
+      ],
+      "url": "https://shrinenyc.com/calendar.php",
+      "details": "Funk — COLD FUJON is a New York-based Funk/Jazz ensemble featuring touring artists coming together to perform up-tempo and hard-hitting fusion jazz with a driving beat. Horns and rhythm section combine with the full force of funk!",
+      "personnel": null,
+      "priceText": null
+    },
+    {
       "id": "closeup:2026-07-30:tony-malaby-jacob-sacks-sean-conly-dan-weiss",
       "clubId": "closeup",
       "title": "TONY MALABY - Jacob Sacks - Sean Conly - Dan Weiss",
@@ -10874,6 +11552,32 @@
       "priceText": null
     },
     {
+      "id": "silvana:2026-07-30:antoine-dowdell-group",
+      "clubId": "silvana",
+      "title": "Antoine Dowdell Group",
+      "date": "2026-07-30",
+      "sets": [
+        "21:00"
+      ],
+      "url": "https://silvana-nyc.com/calendar.php",
+      "details": "Jazz — Antoine Dowdell is a Bronx-born musician who began piano at age ten and went on to study classical piano, music theory, and voice at The Riverdale School of Music and Music & Art High School before continuing his training with private instr",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "shrine:2026-07-30:bees-deluxe-blues-jazz-funk",
+      "clubId": "shrine",
+      "title": "Bees Deluxe- Blues / Jazz / Funk",
+      "date": "2026-07-30",
+      "sets": [
+        "21:00"
+      ],
+      "url": "https://shrinenyc.com/calendar.php",
+      "details": "Bees Deluxe is a blues-rooted, jazz-inspired, funk-infused band from Boston, on a mission to drag the music of Chicago in the 60s and the Blue Note catalog kicking and screaming into the 21st century.",
+      "personnel": null,
+      "priceText": null
+    },
+    {
       "id": "nublu:2026-07-30:djavaneio",
       "clubId": "nublu",
       "title": "DJAVANEIO",
@@ -10935,6 +11639,19 @@
       ],
       "url": "https://www.viewcy.com/event/the_arntzen_family_",
       "details": "The Arntzen family is tied together by music, and have been so for several generations. Traditional Jazz has been the first love for many in this clan, and it still runs strong. Think music inspired by Louis Armstrong, Jelly Roll Morton, Baby Dodds, Sydney Bechet. However, other genres may bubble up",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "silvana:2026-07-30:tim-picard-trio",
+      "clubId": "silvana",
+      "title": "Tim Picard Trio",
+      "date": "2026-07-30",
+      "sets": [
+        "22:00"
+      ],
+      "url": "https://silvana-nyc.com/calendar.php",
+      "details": "Tim is a 2024 graduate of Oberlin Conservatory and has performed with Dominick Farinacci, Chris Coles, Tommy Lehman, Bobby Slevagggio, and Thomas Schinabeck. Tim Picard - guitar Graeham Guerin - Bass Sam Rossi - Drums",
       "personnel": null,
       "priceText": null
     },
@@ -11048,6 +11765,19 @@
       "details": "until 4:00 AM",
       "personnel": null,
       "late": true,
+      "priceText": null
+    },
+    {
+      "id": "shrine:2026-07-31:dj-birane",
+      "clubId": "shrine",
+      "title": "Dj Birane",
+      "date": "2026-07-31",
+      "sets": [
+        "00:00"
+      ],
+      "url": "https://shrinenyc.com/calendar.php",
+      "details": "Afro Fusion — Come enjoy our dance party Saturday with the world renowned Dj Birane. Combing elements of music from all over the world, DJ Birane will have you on your feet!!",
+      "personnel": null,
       "priceText": null
     },
     {
@@ -11320,7 +12050,7 @@
         "19:00",
         "21:30"
       ],
-      "url": "https://billsplaceharlem.com",
+      "url": "https://billsplaceharlem.com/products/bill-saxton-the-harlem-all-stars",
       "details": "Harlem speakeasy sets in the parlor — BYOB, reserve ahead",
       "personnel": [
         {
@@ -11649,6 +12379,19 @@
       "priceText": null
     },
     {
+      "id": "shrine:2026-08-01:dj-birane",
+      "clubId": "shrine",
+      "title": "Dj Birane",
+      "date": "2026-08-01",
+      "sets": [
+        "00:00"
+      ],
+      "url": "https://shrinenyc.com/calendar.php",
+      "details": "Afro Fusion — Come enjoy our dance party Saturday with the world renowned Dj Birane. Combing elements of music from all over the world, DJ Birane will have you on your feet!!",
+      "personnel": null,
+      "priceText": null
+    },
+    {
       "id": "django:2026-08-01:ron-jackson-quartet",
       "clubId": "django",
       "title": "Ron Jackson Quartet",
@@ -11860,7 +12603,7 @@
         "19:00",
         "21:30"
       ],
-      "url": "https://billsplaceharlem.com",
+      "url": "https://billsplaceharlem.com/products/bill-saxton-the-harlem-all-stars",
       "details": "Harlem speakeasy sets in the parlor — BYOB, reserve ahead",
       "personnel": [
         {
@@ -11868,6 +12611,19 @@
           "instrument": "tenor sax"
         }
       ],
+      "priceText": null
+    },
+    {
+      "id": "silvana:2026-08-01:klaire-jazz-blues-pop",
+      "clubId": "silvana",
+      "title": "Klaire- Jazz / Blues / Pop",
+      "date": "2026-08-01",
+      "sets": [
+        "19:00"
+      ],
+      "url": "https://silvana-nyc.com/calendar.php",
+      "details": "Klaire is a versatile jazz vocalist, pianist, and composer from Hamburg, Germany. With artistic roots in jazz, blues, and pop, she studied Jazz Vocals at the University of the Arts Bremen and completed her Master’s degree in the international New York Jazz program at the Prins Claus Conservatory in",
+      "personnel": null,
       "priceText": null
     },
     {
@@ -11990,6 +12746,19 @@
       "priceText": null
     },
     {
+      "id": "shrine:2026-08-01:niu-raza-r-b-afropop",
+      "clubId": "shrine",
+      "title": "Niu Raza- R&B / AfroPop",
+      "date": "2026-08-01",
+      "sets": [
+        "20:00"
+      ],
+      "url": "https://shrinenyc.com/calendar.php",
+      "details": "Hailing from Madagascar, singer-songwriter and Malagasy award winner Niu Raza has performed with the likes of Nigerian record producer, singer-songwriter, and musician Don Jazzy, as well as Grammy Awardâ€“winning Hugh Masekela and singer-songwriter Vusi Mahlaseka. Blending huge jazzy vocals with sou",
+      "personnel": null,
+      "priceText": null
+    },
+    {
       "id": "mezzrow:2026-08-01:william-hill-iii-trio",
       "clubId": "mezzrow",
       "title": "William Hill III Trio",
@@ -12040,6 +12809,19 @@
       ],
       "url": "https://www.viewcy.com/event/super_yamba_16",
       "details": "Brooklyn’s Super Yamba takes it’s cues from 70s/80s West-African Afrobeat and Psychedelic Funk - they look back to artists such as Orchestre Poly-Rythmo, Super Djata Band, Ebo Taylor and of course Fela Kuti for inspiration. Super Yamba also collaborates regularly with legendary Afrobeat and Juju gui",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "silvana:2026-08-01:cody-west-and-the-unlimited-soul-band-blues-soul",
+      "clubId": "silvana",
+      "title": "Cody West and the Unlimited Soul Band- Blues / Soul",
+      "date": "2026-08-01",
+      "sets": [
+        "22:00"
+      ],
+      "url": "https://silvana-nyc.com/calendar.php",
+      "details": "Calvin \"Cody West\" Johnson is a Guitarist, Singer/Songwriter and ready for star greatness. his band Cody West, Unlimited Soul Next Level Band, will Rock you. Come see them perform you will have great time.",
       "personnel": null,
       "priceText": null
     },
@@ -12160,6 +12942,19 @@
       "details": "Fernanda Silveira leads a weekly Choro jam in our front room with Regional Samauma and special guests. A casual affair with virtuosos. Fernanda Silveira is a cavaquinho player specializing in the Brazilian practices of choro and traditional samba. She is a disciple of Luciana Rabello and has accompa",
       "personnel": null,
       "priceText": null
+    },
+    {
+      "id": "marjorie:2026-08-02:marjorie-eliot-s-parlor-jazz",
+      "clubId": "marjorie",
+      "title": "Marjorie Eliot's Parlor Jazz",
+      "date": "2026-08-02",
+      "sets": [
+        "15:30"
+      ],
+      "url": "https://en.wikipedia.org/wiki/Marjorie_Eliot",
+      "details": "Free concert in her Sugar Hill parlor, Apt 3F — every Sunday since 1992. Arrive early.",
+      "personnel": null,
+      "priceText": "Free"
     },
     {
       "id": "dizzys:2026-08-02:jazz-samba-duduka-da-fonseca-maucha-adnet-helio-alves",
@@ -12440,6 +13235,19 @@
       "priceText": null
     },
     {
+      "id": "shrine:2026-08-02:the-shrine-big-band",
+      "clubId": "shrine",
+      "title": "The Shrine Big Band",
+      "date": "2026-08-02",
+      "sets": [
+        "20:00"
+      ],
+      "url": "https://shrinenyc.com/calendar.php",
+      "details": "Jazz — The Shrine Big Band Returns! A 16-piece big band, with three trumpets, three trombones, four saxes, flute, piano, guitar, bass, and drums. Come and experience the experimental and hard-swinging sounds every first Sunday of the month.",
+      "personnel": null,
+      "priceText": null
+    },
+    {
       "id": "mezzrow:2026-08-02:noa-lee-chait-trio",
       "clubId": "mezzrow",
       "title": "Noa Lee Chait Trio",
@@ -12548,6 +13356,19 @@
           "instrument": "bass and"
         }
       ],
+      "priceText": null
+    },
+    {
+      "id": "shrine:2026-08-02:quddus-quintet",
+      "clubId": "shrine",
+      "title": "Quddus Quintet",
+      "date": "2026-08-02",
+      "sets": [
+        "22:00"
+      ],
+      "url": "https://shrinenyc.com/calendar.php",
+      "details": "Jazz — Josh Quddus leads his Quintet in a performance of his own original suite. Joshua Quddus - alto saxophone Gibson McAssey - piano/nord Zev Vestel - drums Lucas Giordano - bass Ezra Moran - guitar",
+      "personnel": null,
       "priceText": null
     },
     {
@@ -13067,6 +13888,32 @@
       "priceText": null
     },
     {
+      "id": "silvana:2026-08-04:danica",
+      "clubId": "silvana",
+      "title": "Danica",
+      "date": "2026-08-04",
+      "sets": [
+        "19:00"
+      ],
+      "url": "https://silvana-nyc.com/calendar.php",
+      "details": "Jazz — Audrey Silver's voice is like pure sterling. Her phrasing is exquisite, her clarity and enunciation on par with the great Jo Stafford and her breath control is a talent so often, and so wrongfully overlooked rivals Sinatra's.",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "shrine:2026-08-04:klaire",
+      "clubId": "shrine",
+      "title": "Klaire",
+      "date": "2026-08-04",
+      "sets": [
+        "19:00"
+      ],
+      "url": "https://shrinenyc.com/calendar.php",
+      "details": "Jazz / Blues / Pop — Klaire is a versatile jazz vocalist, pianist, and composer from Hamburg, Germany. With artistic roots in jazz, blues, and pop, she studied Jazz Vocals at the University of the Arts Bremen and completed her Master’s degree in the internation",
+      "personnel": null,
+      "priceText": null
+    },
+    {
       "id": "vanguard:2026-08-04:andrew-cyrille-quartet",
       "clubId": "vanguard",
       "title": "ANDREW CYRILLE QUARTET",
@@ -13108,6 +13955,19 @@
       ],
       "url": "https://www.bluenotejazz.com/nyc/tm-event/talib-kweli/",
       "details": "Blue Note Jazz Club",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "shrine:2026-08-04:paul-austerlitz-band",
+      "clubId": "shrine",
+      "title": "Paul Austerlitz Band",
+      "date": "2026-08-04",
+      "sets": [
+        "20:00"
+      ],
+      "url": "https://shrinenyc.com/calendar.php",
+      "details": "Afro-Caribbean Jazz — Paul Austerlitz brings his distinctive vodou horn sound to Shrine! This performance includes drums, bass, keys, tied together to create funky harmonies and energetic rhythms.",
       "personnel": null,
       "priceText": null
     },
@@ -13591,6 +14451,19 @@
       "priceText": null
     },
     {
+      "id": "shrine:2026-08-05:newman-kassey",
+      "clubId": "shrine",
+      "title": "Newman Kassey",
+      "date": "2026-08-05",
+      "sets": [
+        "22:00"
+      ],
+      "url": "https://shrinenyc.com/calendar.php",
+      "details": "Quartet — Gabe Newman and Max Kassoy are jazz musicians from Brooklyn. They have played together many times over the past three years, mostly as a duet. They started this band in order to play some of their original compositions and to expand on what",
+      "personnel": null,
+      "priceText": null
+    },
+    {
       "id": "django:2026-08-05:allan-bezama-group",
       "clubId": "django",
       "title": "Allan Bezama Group",
@@ -13660,6 +14533,19 @@
       "details": "until 4:00 AM",
       "personnel": null,
       "late": true,
+      "priceText": null
+    },
+    {
+      "id": "shrine:2026-08-06:dj-alino",
+      "clubId": "shrine",
+      "title": "DJ Alino",
+      "date": "2026-08-06",
+      "sets": [
+        "00:00"
+      ],
+      "url": "https://shrinenyc.com/calendar.php",
+      "details": "One of the best DJs in town, playing Afrobeats, Afro-fusion, Reggae, Reggaeton, Latin, Ethiopian, and Old School Hip Hop. Come join the dance party!",
+      "personnel": null,
       "priceText": null
     },
     {
@@ -13941,6 +14827,19 @@
       "priceText": null
     },
     {
+      "id": "silvana:2026-08-06:henry-ivie-gardner-shogo-yamagishi-and-evan-furrow",
+      "clubId": "silvana",
+      "title": "Henry Ivie-Gardner, Shogo Yamagishi and Evan Furrow -",
+      "date": "2026-08-06",
+      "sets": [
+        "21:00"
+      ],
+      "url": "https://silvana-nyc.com/calendar.php",
+      "details": "Join Portland based guitarist, Henry Ivie-Gardner and his trio with Shogo Yamagishi on bass and Evan Furrow on drums as they explore free music, 60’s avant-garde, and swing.",
+      "personnel": null,
+      "priceText": null
+    },
+    {
       "id": "barbes:2026-08-06:imal-gnawa",
       "clubId": "barbes",
       "title": "IMAL GNAWA",
@@ -14019,6 +14918,19 @@
       "details": "until 4:00 AM",
       "personnel": null,
       "late": true,
+      "priceText": null
+    },
+    {
+      "id": "shrine:2026-08-07:dj-birane",
+      "clubId": "shrine",
+      "title": "Dj Birane",
+      "date": "2026-08-07",
+      "sets": [
+        "00:00"
+      ],
+      "url": "https://shrinenyc.com/calendar.php",
+      "details": "Afro Fusion — Come enjoy our dance party Saturday with the world renowned Dj Birane. Combing elements of music from all over the world, DJ Birane will have you on your feet!!",
+      "personnel": null,
       "priceText": null
     },
     {
@@ -14195,7 +15107,7 @@
         "19:00",
         "21:30"
       ],
-      "url": "https://billsplaceharlem.com",
+      "url": "https://billsplaceharlem.com/products/bill-saxton-the-harlem-all-stars",
       "details": "Harlem speakeasy sets in the parlor — BYOB, reserve ahead",
       "personnel": [
         {
@@ -14203,6 +15115,19 @@
           "instrument": "tenor sax"
         }
       ],
+      "priceText": null
+    },
+    {
+      "id": "silvana:2026-08-07:press-play",
+      "clubId": "silvana",
+      "title": "Press Play",
+      "date": "2026-08-07",
+      "sets": [
+        "19:00"
+      ],
+      "url": "https://silvana-nyc.com/calendar.php",
+      "details": "Jazz Duo — Press Play is an exciting Jazz duo, with Lara Starr Rigores on Vocals and George Gonzales on guitar. The duo has been playing together since 2021 and has played a variety of NYC venues, including \"Cafe Noi Due\" on the Upper West Side and \"B",
+      "personnel": null,
       "priceText": null
     },
     {
@@ -14297,6 +15222,19 @@
       ],
       "url": "https://www.barbayeux.com/jazz/bsg4lz3rhzc3egx-mfjnz-47sjb-4e67s-xt5a5-6bjcx-cbrpj-e2s8z-ajbg8-ctpzs-c8mfg-727m7-zdpbx-42jss-xlx9x-zhw76-lns7p-fjc6n-ywrkk-gmdbj",
       "details": "VEN Trio w/Vinicius Gomes, Noah Garabedian, Ele Howell",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "silvana:2026-08-07:tony-santos-band",
+      "clubId": "silvana",
+      "title": "Tony Santos Band",
+      "date": "2026-08-07",
+      "sets": [
+        "20:00"
+      ],
+      "url": "https://silvana-nyc.com/calendar.php",
+      "details": "Blues Rock — Tony Santos has been active on the NY Music scene since the 1980s playing in several bands and performing at CBGB, Gildersleeves, The Bitter End, Stone Pony .",
       "personnel": null,
       "priceText": null
     },
@@ -14420,6 +15358,19 @@
       "sets": [],
       "url": "https://jazzgallery.org/calendar/nomad-jazz-festival-aug7-8-2026",
       "details": "Free Event; Presented by The NoMad Alliance in partnership with The Jazz Gallery , Flatiron NoMad Partnership , and Madison Square Park Conservancy .",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "shrine:2026-08-08:dj-birane",
+      "clubId": "shrine",
+      "title": "Dj Birane",
+      "date": "2026-08-08",
+      "sets": [
+        "00:00"
+      ],
+      "url": "https://shrinenyc.com/calendar.php",
+      "details": "Afro Fusion — Come enjoy our dance party Saturday with the world renowned Dj Birane. Combing elements of music from all over the world, DJ Birane will have you on your feet!!",
       "personnel": null,
       "priceText": null
     },
@@ -14555,7 +15506,7 @@
         "19:00",
         "21:30"
       ],
-      "url": "https://billsplaceharlem.com",
+      "url": "https://billsplaceharlem.com/products/bill-saxton-the-harlem-all-stars",
       "details": "Harlem speakeasy sets in the parlor — BYOB, reserve ahead",
       "personnel": [
         {
@@ -14669,6 +15620,19 @@
       "priceText": null
     },
     {
+      "id": "silvana:2026-08-08:good-company",
+      "clubId": "silvana",
+      "title": "Good Company",
+      "date": "2026-08-08",
+      "sets": [
+        "20:00"
+      ],
+      "url": "https://silvana-nyc.com/calendar.php",
+      "details": "RnB / Rock — Born in Brooklyn, ready for the world! Inspired by the energy of Brooklyn, GOOD COMPANY brings together musicians from diverse backgrounds and influences to create an original sound that is as vibrant as the city itself. Blending the soul o",
+      "personnel": null,
+      "priceText": null
+    },
+    {
       "id": "mezzrow:2026-08-08:victor-gould-trio",
       "clubId": "mezzrow",
       "title": "Victor Gould Trio",
@@ -14693,6 +15657,19 @@
       ],
       "url": "https://www.smallslive.com/events/33252-diego-urcola-quartet/",
       "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "silvana:2026-08-08:orange-burn",
+      "clubId": "silvana",
+      "title": "Orange Burn",
+      "date": "2026-08-08",
+      "sets": [
+        "22:00"
+      ],
+      "url": "https://silvana-nyc.com/calendar.php",
+      "details": "Funk / Soul / Rock — Orange Burn ignites the NYC scene with a fusion of funk, rock, and soul built for maximum groove. Powered by Adam Marr’s bass and a lineup of veteran players, their explosive percussion, gritty guitar, lush keys, and powerhouse vocals hit w",
       "personnel": null,
       "priceText": null
     },
@@ -14810,6 +15787,19 @@
       "details": "Fernanda Silveira leads a weekly Choro jam in our front room with Regional Samauma and special guests. A casual affair with virtuosos. Fernanda Silveira is a cavaquinho player specializing in the Brazilian practices of choro and traditional samba. She is a disciple of Luciana Rabello and has accompa",
       "personnel": null,
       "priceText": null
+    },
+    {
+      "id": "marjorie:2026-08-09:marjorie-eliot-s-parlor-jazz",
+      "clubId": "marjorie",
+      "title": "Marjorie Eliot's Parlor Jazz",
+      "date": "2026-08-09",
+      "sets": [
+        "15:30"
+      ],
+      "url": "https://en.wikipedia.org/wiki/Marjorie_Eliot",
+      "details": "Free concert in her Sugar Hill parlor, Apt 3F — every Sunday since 1992. Arrive early.",
+      "personnel": null,
+      "priceText": "Free"
     },
     {
       "id": "dizzys:2026-08-09:songbook-sundays-the-tony-bennett-centennial",
@@ -15041,6 +16031,19 @@
       ],
       "url": "https://www.smallslive.com/events/33257-sam-dillonandrew-gould-quintet/",
       "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "silvana:2026-08-09:casey-rabito-trio",
+      "clubId": "silvana",
+      "title": "Casey Rabito Trio",
+      "date": "2026-08-09",
+      "sets": [
+        "21:00"
+      ],
+      "url": "https://silvana-nyc.com/calendar.php",
+      "details": "Rock / Funk — The Casey Rabito Trio is a jazz fusion trio composed of guitarist Casey Rabito, bassist Aidan Riess, and drummer Joe McCaffrey. The groups composition draws from various influences and styles including jazz, rock, funk, and psychedelic rock",
       "personnel": null,
       "priceText": null
     },
@@ -15610,6 +16613,19 @@
       "priceText": null
     },
     {
+      "id": "silvana:2026-08-11:the-brian-resnick-jazz-machine",
+      "clubId": "silvana",
+      "title": "The Brian Resnick Jazz Machine",
+      "date": "2026-08-11",
+      "sets": [
+        "20:00"
+      ],
+      "url": "https://silvana-nyc.com/calendar.php",
+      "details": "Jazz artist, Brian Resnick, has performed drums and percussion with such luminaries as Art Garfunkel, Bobby McFerrin, Ornette Coleman, Don McLean, and Olivia Newton-John; as well as the Saturday Night Live House Band with Lenny Pickett.",
+      "personnel": null,
+      "priceText": null
+    },
+    {
       "id": "mezzrow:2026-08-11:ray-gallon-trio",
       "clubId": "mezzrow",
       "title": "Ray Gallon Trio",
@@ -15660,6 +16676,19 @@
       ],
       "url": "https://www.smallslive.com/events/33556-jam-in-the-cafe/",
       "details": "until 12:00 AM",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "shrine:2026-08-11:soulmates",
+      "clubId": "shrine",
+      "title": "Soulmates",
+      "date": "2026-08-11",
+      "sets": [
+        "22:00"
+      ],
+      "url": "https://shrinenyc.com/calendar.php",
+      "details": "Jazz — Soulmates are an instrumental jazz quartet — Dan Schnapp (keys), Ross Brooks (guitar), Jeremy Portwood (drums), and Emek Rave (bass) — playing contemporary jazz and reimagined standards with a deep groove.",
       "personnel": null,
       "priceText": null
     },
@@ -16005,6 +17034,19 @@
       "priceText": null
     },
     {
+      "id": "shrine:2026-08-13:dj-alino",
+      "clubId": "shrine",
+      "title": "DJ Alino",
+      "date": "2026-08-13",
+      "sets": [
+        "00:00"
+      ],
+      "url": "https://shrinenyc.com/calendar.php",
+      "details": "One of the best DJs in town, playing Afrobeats, Afro-fusion, Reggae, Reggaeton, Latin, Ethiopian, and Old School Hip Hop. Come join the dance party!",
+      "personnel": null,
+      "priceText": null
+    },
+    {
       "id": "jazzcultural:2026-08-13:afternoon-jam-in-the-cafe",
       "clubId": "jazzcultural",
       "title": "Afternoon Jam in the Cafe",
@@ -16166,6 +17208,19 @@
       "priceText": null
     },
     {
+      "id": "shrine:2026-08-13:russell-james-hughes-band",
+      "clubId": "shrine",
+      "title": "Russell James Hughes Band",
+      "date": "2026-08-13",
+      "sets": [
+        "19:00"
+      ],
+      "url": "https://shrinenyc.com/calendar.php",
+      "details": "Rock Trio — Russell James Hughes crafts vocal melodies and guitar hooks that echo in your head long after his songs end. Meshing classic rock, indie, and alternative, the Austin, TX-native’s music strikes an instinctive balance between vintage nostalgi",
+      "personnel": null,
+      "priceText": null
+    },
+    {
       "id": "closeup:2026-08-13:two-miles-a-day-eivind-opsvik-jacob-sacks-hery-paz-billy-min",
       "clubId": "closeup",
       "title": "TWO MILES A DAY - Eivind Opsvik - Jacob Sacks - Hery Paz - Billy Mintz",
@@ -16264,6 +17319,19 @@
       "priceText": null
     },
     {
+      "id": "shrine:2026-08-13:kid-java",
+      "clubId": "shrine",
+      "title": "Kid Java",
+      "date": "2026-08-13",
+      "sets": [
+        "20:00"
+      ],
+      "url": "https://shrinenyc.com/calendar.php",
+      "details": "Electric Blues — Kid Java is an NYC-based four-piece electric blues band. They play blues-n-rhythm and swing material—what they call urban roots music.",
+      "personnel": null,
+      "priceText": null
+    },
+    {
       "id": "mezzrow:2026-08-13:fima-chupakhin-trio",
       "clubId": "mezzrow",
       "title": "Fima Chupakhin Trio",
@@ -16301,6 +17369,19 @@
       ],
       "url": "https://www.viewcy.com/event/jack_grace_band_13",
       "details": "Jerry Lee Lewis once dubbed Jack Grace “that Cash kid, but good” and Jack has enjoyed a long and varied career. The singer, songwriter, and guitarist has been touring and recording for over 25 years. His duet with Norah Jones, “Bad Wind Blowing” was a standout tune on his last recording, Everything",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "shrine:2026-08-13:radio-exp",
+      "clubId": "shrine",
+      "title": "RADIO EXP",
+      "date": "2026-08-13",
+      "sets": [
+        "22:00"
+      ],
+      "url": "https://shrinenyc.com/calendar.php",
+      "details": "Blues / Raggae / Rock — RADIO EXP is a high-energy blend of rock, blues, and reggae infused originals with hits inspired by the Summer of Love 1967 including The Doors, Beatles, Otis Redding, Jimi Hendrix, Sly & the Family Stone and more!",
       "personnel": null,
       "priceText": null
     },
@@ -16357,6 +17438,19 @@
       "details": "until 4:00 AM",
       "personnel": null,
       "late": true,
+      "priceText": null
+    },
+    {
+      "id": "shrine:2026-08-14:dj-birane",
+      "clubId": "shrine",
+      "title": "Dj Birane",
+      "date": "2026-08-14",
+      "sets": [
+        "00:00"
+      ],
+      "url": "https://shrinenyc.com/calendar.php",
+      "details": "Afro Fusion — Come enjoy our dance party Saturday with the world renowned Dj Birane. Combing elements of music from all over the world, DJ Birane will have you on your feet!!",
+      "personnel": null,
       "priceText": null
     },
     {
@@ -16512,6 +17606,20 @@
       "priceText": null
     },
     {
+      "id": "terraza7:2026-08-14:luisito-quintero-3rd-element-latin-jazz",
+      "clubId": "terraza7",
+      "title": "Luisito Quintero & 3rd Element - Latin Jazz /",
+      "date": "2026-08-14",
+      "sets": [
+        "19:30",
+        "21:30"
+      ],
+      "url": "https://www.terraza7.com/events",
+      "details": "Luisito Quintero, a Venezuelan percussion marvel from Caracas, began his journey under his father's tutelage. By 8, he performed with \"The New Generation\" and joined \"El Trabuco Venezolano\" at 12. In NYC since 1992, he's acclaimed in Latin and Jazz, winning over 60 Grammy and Latin Grammy Awards. Hi",
+      "personnel": null,
+      "priceText": null
+    },
+    {
       "id": "vanguard:2026-08-14:bill-frisell-trio",
       "clubId": "vanguard",
       "title": "Bill Frisell Trio",
@@ -16580,6 +17688,19 @@
       "priceText": null
     },
     {
+      "id": "shrine:2026-08-14:hard-bargain",
+      "clubId": "shrine",
+      "title": "Hard Bargain",
+      "date": "2026-08-14",
+      "sets": [
+        "20:00"
+      ],
+      "url": "https://shrinenyc.com/calendar.php",
+      "details": "Blues — Hard Bargain performed on the NYC scene for over a decade, and produced two well-received CDs, featuring passionate soulful singer Arthur Canady and a tight backup band complete with the “Hot Sauce Horns” and thick R&B grooves. This legenda",
+      "personnel": null,
+      "priceText": null
+    },
+    {
       "id": "mezzrow:2026-08-14:david-berkman-trio",
       "clubId": "mezzrow",
       "title": "David Berkman Trio",
@@ -16608,6 +17729,32 @@
       "priceText": null
     },
     {
+      "id": "silvana:2026-08-14:lala-su-rez",
+      "clubId": "silvana",
+      "title": "Lala Suárez",
+      "date": "2026-08-14",
+      "sets": [
+        "21:00"
+      ],
+      "url": "https://silvana-nyc.com/calendar.php",
+      "details": "Latin / R&B — Lala Suárez is a Colombian-born singer and songwriter creating vibrant pop fusion with a soulful voice and heartfelt lyricism. Born and raised in Colombia, she has spent nearly a decade in the U.S., first in Boston and now in New York City,",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "shrine:2026-08-14:infrastructure",
+      "clubId": "shrine",
+      "title": "Infrastructure",
+      "date": "2026-08-14",
+      "sets": [
+        "21:00"
+      ],
+      "url": "https://shrinenyc.com/calendar.php",
+      "details": "Fusion — Infrastructure plays soulful, \"sax-tinged American rock\" with \"big Hold Steady vibes\". The band's name refers to the bones of American music: blues, jazz, soul, funk, rock. Our five members combine backgrounds ranging across those genres (p",
+      "personnel": null,
+      "priceText": null
+    },
+    {
       "id": "barbes:2026-08-14:yotoco",
       "clubId": "barbes",
       "title": "YOTOCO",
@@ -16617,6 +17764,32 @@
       ],
       "url": "https://www.viewcy.com/event/yotoco_33",
       "details": "Yotoco is a dynamic 5-member band from Brooklyn, NY vibrantly blending the sounds of the Puerto Rican Cuatro with Afro-Caribbean Folklore, Son Cubano, Cumbia, Salsa, and Plena. YOTOCO's soulful harmonies, original lyrics, and pulsating rhythms pioneer a refreshing sound in Latin music, promising an",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "silvana:2026-08-14:dafina-roots",
+      "clubId": "silvana",
+      "title": "Dafina Roots",
+      "date": "2026-08-14",
+      "sets": [
+        "22:00"
+      ],
+      "url": "https://silvana-nyc.com/calendar.php",
+      "details": "Afro Fusion — Dafina is a dynamic roots band led by singer and percussionist Mamoudou Konate Simbo, who brings the rich ancestral songs of Burkina Faso to life. With an eclectic mix of musicians from the African diaspora and jazz artists, Dafina creates",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "shrine:2026-08-14:moon-sugar",
+      "clubId": "shrine",
+      "title": "Moon Sugar",
+      "date": "2026-08-14",
+      "sets": [
+        "22:00"
+      ],
+      "url": "https://shrinenyc.com/calendar.php",
+      "details": "Jazz Rock — Moon Sugar is an instrumental fusion act blending funk, rock, and jazz into high-energy performances that mix improvisation and composition, in the spirit of Herbie Hancock and Chick Corea Elektric Band",
       "personnel": null,
       "priceText": null
     },
@@ -16646,6 +17819,19 @@
       "details": "until 4:00 AM",
       "personnel": null,
       "late": true,
+      "priceText": null
+    },
+    {
+      "id": "shrine:2026-08-15:dj-birane",
+      "clubId": "shrine",
+      "title": "Dj Birane",
+      "date": "2026-08-15",
+      "sets": [
+        "00:00"
+      ],
+      "url": "https://shrinenyc.com/calendar.php",
+      "details": "Afro Fusion — Come enjoy our dance party Saturday with the world renowned Dj Birane. Combing elements of music from all over the world, DJ Birane will have you on your feet!!",
+      "personnel": null,
       "priceText": null
     },
     {
@@ -16913,6 +18099,19 @@
       "priceText": null
     },
     {
+      "id": "shrine:2026-08-15:hudson-river",
+      "clubId": "shrine",
+      "title": "Hudson River",
+      "date": "2026-08-15",
+      "sets": [
+        "21:00"
+      ],
+      "url": "https://shrinenyc.com/calendar.php",
+      "details": "Fusion — Artist, percussionist, vibraphonist, jamming to orginals and your hip-hop and R&B faves.",
+      "personnel": null,
+      "priceText": null
+    },
+    {
       "id": "barbes:2026-08-15:rana-santacruz",
       "clubId": "barbes",
       "title": "RANA SANTACRUZ",
@@ -17015,6 +18214,19 @@
       "details": "Fernanda Silveira leads a weekly Choro jam in our front room with Regional Samauma and special guests. A casual affair with virtuosos. Fernanda Silveira is a cavaquinho player specializing in the Brazilian practices of choro and traditional samba. She is a disciple of Luciana Rabello and has accompa",
       "personnel": null,
       "priceText": null
+    },
+    {
+      "id": "marjorie:2026-08-16:marjorie-eliot-s-parlor-jazz",
+      "clubId": "marjorie",
+      "title": "Marjorie Eliot's Parlor Jazz",
+      "date": "2026-08-16",
+      "sets": [
+        "15:30"
+      ],
+      "url": "https://en.wikipedia.org/wiki/Marjorie_Eliot",
+      "details": "Free concert in her Sugar Hill parlor, Apt 3F — every Sunday since 1992. Arrive early.",
+      "personnel": null,
+      "priceText": "Free"
     },
     {
       "id": "dizzys:2026-08-16:warren-wolf-with-alex-brown-and-strings-perform-chick-corea-",
@@ -19154,6 +20366,19 @@
       "priceText": null
     },
     {
+      "id": "marjorie:2026-08-23:marjorie-eliot-s-parlor-jazz",
+      "clubId": "marjorie",
+      "title": "Marjorie Eliot's Parlor Jazz",
+      "date": "2026-08-23",
+      "sets": [
+        "15:30"
+      ],
+      "url": "https://en.wikipedia.org/wiki/Marjorie_Eliot",
+      "details": "Free concert in her Sugar Hill parlor, Apt 3F — every Sunday since 1992. Arrive early.",
+      "personnel": null,
+      "priceText": "Free"
+    },
+    {
       "id": "dizzys:2026-08-23:marilyn-maye",
       "clubId": "dizzys",
       "title": "Marilyn Maye",
@@ -21165,6 +22390,19 @@
       "priceText": null
     },
     {
+      "id": "marjorie:2026-08-30:marjorie-eliot-s-parlor-jazz",
+      "clubId": "marjorie",
+      "title": "Marjorie Eliot's Parlor Jazz",
+      "date": "2026-08-30",
+      "sets": [
+        "15:30"
+      ],
+      "url": "https://en.wikipedia.org/wiki/Marjorie_Eliot",
+      "details": "Free concert in her Sugar Hill parlor, Apt 3F — every Sunday since 1992. Arrive early.",
+      "personnel": null,
+      "priceText": "Free"
+    },
+    {
       "id": "dizzys:2026-08-30:gerald-clayton",
       "clubId": "dizzys",
       "title": "Gerald Clayton",
@@ -21867,6 +23105,19 @@
       "details": "Fernanda Silveira leads a weekly Choro jam in our front room with Regional Samauma and special guests. A casual affair with virtuosos. Fernanda Silveira is a cavaquinho player specializing in the Brazilian practices of choro and traditional samba. She is a disciple of Luciana Rabello and has accompa",
       "personnel": null,
       "priceText": null
+    },
+    {
+      "id": "marjorie:2026-09-06:marjorie-eliot-s-parlor-jazz",
+      "clubId": "marjorie",
+      "title": "Marjorie Eliot's Parlor Jazz",
+      "date": "2026-09-06",
+      "sets": [
+        "15:30"
+      ],
+      "url": "https://en.wikipedia.org/wiki/Marjorie_Eliot",
+      "details": "Free concert in her Sugar Hill parlor, Apt 3F — every Sunday since 1992. Arrive early.",
+      "personnel": null,
+      "priceText": "Free"
     },
     {
       "id": "dizzys:2026-09-06:ann-hampton-callaway-i-get-a-kick-out-of-cole",
@@ -23794,6 +25045,19 @@
       "priceText": null
     },
     {
+      "id": "roulette:2026-10-15:the-art-of-solo-james-brandon-lewis-nicole-mitchell-janel-le",
+      "clubId": "roulette",
+      "title": "The Art of Solo: James Brandon Lewis, Nicole Mitchell, Janel Leppin, Jenna Camille, Kalia Vandever, and Val Jeanty",
+      "date": "2026-10-15",
+      "sets": [
+        "20:00"
+      ],
+      "url": "https://roulette.org/event/james-brandon-lewis-art-of-solo/",
+      "details": "Jazz Generations Initiative Continuum Fellow presents a three night residency featuring poets, musicians, and artists across generations.",
+      "personnel": null,
+      "priceText": "$25"
+    },
+    {
       "id": "barbes:2026-10-15:the-arntzen-family-friends",
       "clubId": "barbes",
       "title": "THE ARNTZEN FAMILY & FRIENDS",
@@ -24245,6 +25509,19 @@
       "details": null,
       "personnel": null,
       "priceText": null
+    },
+    {
+      "id": "roulette:2026-10-28:live-processing-paint-and-sound-liz-phillips-and-heidi-howar",
+      "clubId": "roulette",
+      "title": "Live Processing Paint and Sound: Liz Phillips and Heidi Howard",
+      "date": "2026-10-28",
+      "sets": [
+        "20:00"
+      ],
+      "url": "https://roulette.org/event/live-processing-paint-sound-liz-phillips-heidi-howard/",
+      "details": "Interactive sound art pioneer + painter/sculptor celebrate Harvestworks’ 50th, plus a convo with e-flux Performance Curator Sanna Almajedi.",
+      "personnel": null,
+      "priceText": "$25"
     },
     {
       "id": "zincbar:2026-10-29:axel-tosca-s-cuban-jam",

@@ -91,12 +91,19 @@ Round 2 — DONE 2026-07-15 (NYC 24 clubs, boroughs now M/BK/Q):
 - [x] JCAL Jamaica Center (QUEENS — first queens venue; mixed arts center,
       jazz-keyword filtered)
 
-Tier 2 (standing checklist):
-- [ ] Harlem: Showmans (would give Bill's Place company uptown) · Silvana
-- [ ] Brooklyn: Sistas' Place · IBeam · Lowlands
-- [ ] Manhattan: Swing 46 · Tomi Jazz · The Ear Inn (Sun) · Iridium ·
-      Marjorie Eliot's Parlor Jazz (Sun, Washington Heights)
-- [ ] Queens: Terraza 7 · Flushing Town Hall series
+Tier 2 round 1 — DONE 2026-07-16 (NYC 29 clubs):
+- [x] Harlem: Silvana + Shrine (shared homegrown calendar.php, jazz-filtered)
+- [x] Sugar Hill: Marjorie Eliot's Parlor Jazz (generator — Sundays 3:30,
+      free, no website since 1992 and proud of it)
+- [x] Bed-Stuy: Sistas' Place (homepage featured-event widget; Saturdays)
+- [x] Queens: Terraza 7 (Wix events warmup, shared extractor with Sam First)
+- Verified closed, dropped: Showman's (1942–, Yelp: permanently closed;
+  domain hijacked by a French content farm — 2nd stolen jazz domain this week)
+
+Tier 2 remaining:
+- [ ] Brooklyn: IBeam · Lowlands
+- [ ] Manhattan: Swing 46 · Tomi Jazz · The Ear Inn (Sun) · Iridium
+- [ ] Queens: Flushing Town Hall series
 
 Tier 3 (needs per-event genre tagging first): LPR · Joe's Pub · JALC big halls
 
@@ -155,6 +162,19 @@ times from description text; verify against reality after first live crawl.
   ticket products since April; the room itself is alive, find their real
   listing source) · Mr Musichead (events page stale/2025; check their
   Eventbrite organizer for Sunset Sessions)
+- **bluewhale WATCH (Zach, 2026-07-16): the revival is reportedly coming —
+  day-one add the moment a calendar exists.** Also watch: UCLA CAP season
+  (fall, genre-tagged) · Angel City Jazz Festival (Sept, multi-venue)
+- LA round 2 — DONE 2026-07-16 (LA 13 venues): The Ford + Disney Hall
+  (laphil.com feed serves all three LA Phil venues incl. Bowl — one module) ·
+  Gold-Diggers (DICE partners, shared helper with Zebulon, jazz-filtered).
+  Pip's on La Brea verified dead (brand pivoted to a Cathedral City festival).
+- LA round 3 candidates: Verse (Toluca Lake) · Feinstein's at Vitello's ·
+  Lodge Room (keyword-filtered)
+- TABLED (Zach, 2026-07-16): mixed-venue curation tightening — add jazz
+  filters to 2220 + Terraza 7, run a 20-event precision spot-check on
+  filtered venues, maybe a mixed-venue registry flag. Principle stands:
+  we curate jazz EVENTS, not jazz venues
 - [ ] Paris/Berlin repeat the LA playbook (timezone correctness matters here —
       covered by the Phase 0 registry fields)
 
@@ -175,8 +195,11 @@ times from description text; verify against reality after first live crawl.
       modern font question stays open — current: Abril Fatface + brass #d6a071
 - [ ] Dim ornate f-hole curves (like a bass) as corner/border ornament —
       prototype as SVG, pairs with commissioned-art item
-- [ ] Venue colors: Zach to review each venue's color individually
-      (first-pass palette is researched + commented in crawler/clubs.js)
+- [x] Venue colors (2026-07-16): live-mixer review with Zach — 8 recolors
+      baked (Smoke brick per brand red, Dizzy's deeper orange, Barbès claret,
+      Bill's Place walnut, LunÀtico sea-green, Jazz Cultural indigo, 2220
+      magenta, Harvelle's brightened). Zinc kept steel; Smoke/Zinc twin
+      resolved. Future venues: run the collision audit before picking
 
 ## With Brian (second admin)
 

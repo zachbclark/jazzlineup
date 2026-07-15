@@ -7,12 +7,17 @@
 import { fetchText, makeEvent, isoDate } from '../lib.js';
 
 const URL_ = 'https://billsplaceharlem.com';
+// their Shopify ticket product — the useful landing page for a show click
+const TICKETS = `${URL_}/products/bill-saxton-the-harlem-all-stars`;
 const SETS = ['19:00', '21:30'];
 const WEEKS_AHEAD = 4;
 
 export function parse(html, today = new Date()) {
   // Residency confirmation: the site still advertises Fri/Sat shows.
   if (!/FRIDAY|SATURDAY/i.test(html) || !/SAXTON/i.test(html)) return [];
+  // Prefer the live ticket link from the page; fall back to the known one.
+  const tixM = html.match(/href="(\/products\/[^"]+)"/i);
+  const url = tixM ? URL_ + tixM[1] : TICKETS;
   const events = [];
   const base = new Date(today.getFullYear(), today.getMonth(), today.getDate());
   for (let i = 0; i < 7 * WEEKS_AHEAD; i++) {
@@ -24,7 +29,7 @@ export function parse(html, today = new Date()) {
       title: 'Bill Saxton & the Harlem All-Stars',
       date: isoDate(d.getFullYear(), d.getMonth() + 1, d.getDate()),
       sets: SETS,
-      url: URL_,
+      url,
       details: 'Harlem speakeasy sets in the parlor — BYOB, reserve ahead',
       personnel: [{ name: 'Bill Saxton', instrument: 'tenor sax' }],
     }));

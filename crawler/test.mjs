@@ -277,7 +277,9 @@ ok('smoke: groups performances into events with NY-time sets', () => {
   const jane = evs.find((e) => /Monheit/.test(e.title));
   assert.equal(jane.date, '2026-07-15');
   assert.deepEqual(jane.sets, ['18:30', '20:30']);
-  assert.match(jane.url, /\/shows\/11747\//);
+  // ?date= is load-bearing: without it Smoke's Show Detail page can't
+  // resolve the night (bug found by Zach clicking through, 2026-07-16)
+  assert.equal(jane.url, 'https://tickets.smokejazz.com/shows/11747/?date=2026-07-15');
   const late = evs.find((e) => /Late Night/.test(e.title));
   assert.equal(late.date, '2026-07-16'); // 02:00Z = 10pm ET on the 16th
   assert.deepEqual(late.sets, ['22:00']);
@@ -754,9 +756,9 @@ ok('mint: jazz listings kept, pop dropped, YYYYMMDD parsed', () => {
   assert.equal(evs[0].priceText, '$20');
 });
 
-// --- Hollywood Bowl -------------------------------------------------------------------------
-import { parse as hbParse } from './clubs/hollywoodbowl.js';
-ok('hollywoodbowl: Jazz/Blues genre kept, classical + past dropped', () => {
+// --- LA Phil family (Bowl + Disney Hall + Ford, one feed) ---------------------------------
+import { parse as lpParse } from './clubs/laphil.js';
+ok('laphil: Jazz/Blues kept per venue; classical + past dropped', () => {
   const fixture = JSON.stringify([
     { is_past: false, program: { name: 'Smooth Summer Jazz' },
       supporting_artists: 'The Commodores • Boney James <br> Sheila E.',
@@ -766,17 +768,38 @@ ok('hollywoodbowl: Jazz/Blues genre kept, classical + past dropped', () => {
     { is_past: false, program: { name: 'Jazz at The Ford' },
       start_time: '2026-08-01T20:00:00-07:00', genres: [{ id: 10, name: 'Jazz/Blues' }],
       venue: { id: 2, name: 'The Ford' } },
+    { is_past: false, program: { name: 'WDCH Jazz: Brad Mehldau' },
+      start_time: '2026-11-14T20:00:00-08:00', genres: [{ id: 10, name: 'Jazz/Blues' }],
+      venue: { id: 3, name: 'Walt Disney Concert Hall' } },
     { is_past: false, program: { name: 'Tchaikovsky & Beethoven' },
       start_time: '2026-07-14T20:00:00-07:00', genres: [{ id: 1, name: 'Classical' }], venue: 'Hollywood Bowl' },
     { is_past: true, program: { name: 'Old Jazz Night' },
       start_time: '2026-06-01T20:00:00-07:00', genres: [{ id: 10, name: 'Jazz/Blues' }], venue: 'Hollywood Bowl' },
   ]);
-  const evs = hbParse(fixture);
-  assert.equal(evs.length, 1, 'object-venue must parse; The Ford + classical + past must drop');
-  assert.equal(evs[0].title, 'Smooth Summer Jazz');
-  assert.equal(evs[0].date, '2026-08-30');
-  assert.deepEqual(evs[0].sets, ['18:30']);
-  assert.match(evs[0].details, /Commodores.*Sheila E\./);
+  const evs = lpParse(fixture);
+  assert.equal(evs.length, 3, 'three venues in, classical + past out');
+  const bowl = evs.find((e) => e.clubId === 'hollywoodbowl');
+  assert.equal(bowl.title, 'Smooth Summer Jazz');
+  assert.deepEqual(bowl.sets, ['18:30']);
+  assert.match(bowl.details, /Commodores.*Sheila E\./);
+  assert.equal(evs.find((e) => e.clubId === 'theford').date, '2026-08-01');
+  assert.equal(evs.find((e) => e.clubId === 'disneyhall').date, '2026-11-14');
+});
+
+// --- Gold-Diggers (DICE partners, shared with Zebulon) --------------------------------------
+import { parse as gdParse } from './clubs/golddiggers.js';
+ok('golddiggers: jazz keyword filter via shared DICE helper', () => {
+  const fixture = JSON.stringify({ data: [
+    { name: 'very good mondays', date: '2026-07-21T02:00:00Z', timezone: 'America/Los_Angeles',
+      url: 'https://link.dice.fm/vgm', description: 'Weekly improvised jazz hang with rotating quartet.' },
+    { name: 'Cherry Blonde, Adam Casanova', date: '2026-07-22T03:00:00Z',
+      timezone: 'America/Los_Angeles', url: 'https://link.dice.fm/cb', description: 'Indie rock night.' },
+  ]});
+  const evs = gdParse(fixture);
+  assert.equal(evs.length, 1, 'indie rock must be filtered out');
+  assert.equal(evs[0].clubId, 'golddiggers');
+  assert.equal(evs[0].date, '2026-07-20'); // 02:00Z = 7pm PT the previous day
+  assert.deepEqual(evs[0].sets, ['19:00']);
 });
 
 // --- 2220 Arts (DICE venue page) --------------------------------------------------------------
@@ -833,6 +856,89 @@ ok("harvelles: date cells -> events with show times", () => {
   assert.deepEqual(evs[0].sets, ['21:00']);
   assert.match(evs[0].url, /harvelles\.com\/events\/137965/);
   assert.deepEqual(evs[1].sets, ['20:00', '22:30']);
+});
+
+// --- Silvana + Shrine (shared Harlem calendar.php) --------------------------------
+import { parsePage as svParse } from './clubs/silvana.js';
+ok('silvana/shrine: day cells -> jazz acts only, genre kept as detail', () => {
+  const html = `
+  <td><span class="wh">July 15</span>
+    <p><a href onclick="return popCal(1);" id="t1">HAPPY HOUR! 6pm-8pm</a></p>
+    <div class="hid" id="x1">Happy Hours with wings and drinks</div>
+    <p><a href onclick="return popCal(2);" id="t2">7pm-8pm: Junho Lee - Jazz Guitarist</a></p>
+    <div class="hid" id="x2">Junho Lee is a guitarist based in NYC.</div>
+    <p><a href onclick="return popCal(3);" id="t3">8pm-9pm: George Karos - Songwriter</a></p>
+    <div class="hid" id="x3">Acoustic pop originals.</div>
+  </td>
+  <td><span class="dy">July 16</span>
+    <p><a href onclick="return popCal(4);" id="t4">9pm-11pm: Kevin Du Duo - Jazz Fusion</a></p>
+  </td>`;
+  const evs = svParse(html, 'silvana', TODAY);
+  assert.equal(evs.length, 2, 'happy hour + songwriter must be filtered');
+  assert.equal(evs[0].title, 'Junho Lee');
+  assert.equal(evs[0].date, '2026-07-15');
+  assert.deepEqual(evs[0].sets, ['19:00']);
+  assert.match(evs[0].details, /Jazz Guitarist/);
+  assert.equal(evs[1].date, '2026-07-16');
+  assert.deepEqual(evs[1].sets, ['21:00']);
+  const sh = svParse(html, 'shrine', TODAY);
+  assert.equal(sh[0].clubId, 'shrine');
+});
+
+// --- Sistas' Place -------------------------------------------------------------------
+import { parse as spParse } from './clubs/sistasplace.js';
+ok("sistasplace: featured-event article -> Saturday two-set show", () => {
+  const html = `
+  <article class="post-4851 category-event category-featured" aria-label="Reggie Woods Quintet">
+    <a href="https://sistasplace.org/reggie-woods-quintet-3/"><img src="x.jpg"/></a>
+    <p>Sat., July 18, 2026, Doors Open: 7:30 pm, 1st Show: 8 pm, 2nd Show: 9:30 pm.
+    Sistas&#8217; Place, 456 Nostrand Avenue, Brooklyn NY.</p>
+  </article>
+  <article class="post-100 category-event" aria-label="Old Show">
+    <p>Sat., March 22, 2025, 1st Show: 8 pm</p>
+  </article>`;
+  const evs = spParse(html, TODAY);
+  assert.equal(evs.length, 1, 'stale featured posts must be dropped');
+  assert.equal(evs[0].title, 'Reggie Woods Quintet');
+  assert.equal(evs[0].date, '2026-07-18');
+  assert.deepEqual(evs[0].sets, ['20:00', '21:30']);
+  assert.match(evs[0].url, /reggie-woods/);
+  assert.match(evs[0].details, /Doors 7:30/);
+});
+
+// --- Terraza 7 (Wix events, set-merging) ------------------------------------------------
+import { parse as t7Parse } from './clubs/terraza7.js';
+ok('terraza7: warmup events; First/Second Set merge into one show', () => {
+  const warmup = { deep: { list: [
+    { title: 'Sebastián Cruz Quartet | New Colombian Sounds',
+      scheduling: { config: { startDate: '2026-07-16T23:30:00.000Z', timeZoneId: 'America/New_York' } },
+      description: 'New Colombian music.' },
+    { title: 'Tango Jazz ~ Jam | First Set',
+      scheduling: { config: { startDate: '2026-07-20T00:00:00.000Z' } } },
+    { title: 'Tango Jazz ~ Jam | Second Set',
+      scheduling: { config: { startDate: '2026-07-20T02:00:00.000Z' } } },
+  ] } };
+  const html = `<script type="application/json" id="wix-warmup-data">${JSON.stringify(warmup)}</script>`;
+  const evs = t7Parse(html);
+  assert.equal(evs.length, 2, 'two sets must merge');
+  const cruz = evs.find((e) => /Cruz/.test(e.title));
+  assert.equal(cruz.date, '2026-07-16');
+  assert.deepEqual(cruz.sets, ['19:30']);
+  const tango = evs.find((e) => /Tango/.test(e.title));
+  assert.equal(tango.title, 'Tango Jazz ~ Jam');
+  assert.equal(tango.date, '2026-07-19'); // 00:00Z/02:00Z = 8pm/10pm ET on the 19th
+  assert.deepEqual(tango.sets, ['20:00', '22:00']);
+});
+
+// --- Marjorie Eliot's ---------------------------------------------------------------------
+import { parse as meParse } from './clubs/marjorie.js';
+ok("marjorie: generator emits 8 Sundays at 3:30, free", () => {
+  const evs = meParse(TODAY); // Mon Jul 13 2026
+  assert.equal(evs.length, 8);
+  assert.equal(evs[0].date, '2026-07-19'); // first Sunday after Mon Jul 13
+  assert.deepEqual(evs[0].sets, ['15:30']);
+  assert.equal(evs[0].priceText, 'Free');
+  assert.ok(evs.every((e) => new Date(e.date + 'T12:00:00').getDay() === 0));
 });
 
 // --- crawl merge integration (failure isolation rules) --------------------------

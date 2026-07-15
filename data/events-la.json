@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-15T19:32:24.371Z",
+  "generatedAt": "2026-07-15T20:44:21.932Z",
   "city": "la",
   "clubs": [
     {
@@ -85,6 +85,42 @@
       "timezone": "America/Los_Angeles",
       "neighborhood": "Hollywood Hills",
       "color": "#e8e4d8"
+    },
+    {
+      "id": "disneyhall",
+      "name": "Walt Disney Concert Hall",
+      "shortName": "Disney Hall",
+      "url": "https://www.laphil.com",
+      "address": "111 S Grand Ave, Los Angeles, CA 90012",
+      "city": "la",
+      "borough": null,
+      "timezone": "America/Los_Angeles",
+      "neighborhood": "Downtown",
+      "color": "#b8c4d4"
+    },
+    {
+      "id": "theford",
+      "name": "The Ford",
+      "shortName": "The Ford",
+      "url": "https://www.theford.com",
+      "address": "2580 Cahuenga Blvd E, Los Angeles, CA 90068",
+      "city": "la",
+      "borough": null,
+      "timezone": "America/Los_Angeles",
+      "neighborhood": "Cahuenga Pass",
+      "color": "#a0522d"
+    },
+    {
+      "id": "golddiggers",
+      "name": "Gold-Diggers",
+      "shortName": "Gold-Diggers",
+      "url": "https://gold-diggers.com/pages/drink",
+      "address": "5632 Santa Monica Blvd, Los Angeles, CA 90038",
+      "city": "la",
+      "borough": null,
+      "timezone": "America/Los_Angeles",
+      "neighborhood": "East Hollywood",
+      "color": "#b8901f"
     },
     {
       "id": "twentytwotwenty",
@@ -1153,6 +1189,19 @@
       "priceText": null
     },
     {
+      "id": "golddiggers:2026-07-16:mr-dinkles-the-anti-groupies-derek-day",
+      "clubId": "golddiggers",
+      "title": "Mr. Dinkles, The Anti Groupies, Derek Day",
+      "date": "2026-07-16",
+      "sets": [
+        "19:00"
+      ],
+      "url": "https://link.dice.fm/H91625585592",
+      "details": "Mr. Dinkles The Anti Groupies Derek Day- LA-based singer, songwriter, and multi-instrumentalist Derek Day exists in the gap between technical mastery and beautiful madness. He is a fusion of Prince, Freddie Mercury, and David Bowie, with performances so addictive and infused with rock and roll, art-",
+      "personnel": null,
+      "priceText": null
+    },
+    {
       "id": "samfirst:2026-07-16:kcrw-presents-third-thursdays-with-miles-lennox-quartet-with",
       "clubId": "samfirst",
       "title": "KCRW Presents: \"Third Thursdays\" with Miles Lennox Quartet with Nic Gelin, Nolan Nwachukwu & John Davis",
@@ -1428,6 +1477,19 @@
       "priceText": null
     },
     {
+      "id": "theford:2026-07-19:john-beasley-s-unlimited-miles-miles-davis-at-100",
+      "clubId": "theford",
+      "title": "John Beasley’s UNLIMITED MILES: MILES DAVIS AT 100",
+      "date": "2026-07-19",
+      "sets": [
+        "19:30"
+      ],
+      "url": "https://www.theford.com/events/performances/4854/2026-07-19/john-beasleys-unlimited-miles-miles-davis-at-100",
+      "details": "Produced in partnership with Leimert Park Jazz Festival",
+      "personnel": null,
+      "priceText": null
+    },
+    {
       "id": "harvelles:2026-07-19:the-toledo-show",
       "clubId": "harvelles",
       "title": "THE TOLEDO SHOW",
@@ -1452,6 +1514,19 @@
       "details": "Playing the music of Steely Dan Shows: 6:30pm & 9pm Reserve Now",
       "personnel": null,
       "late": true,
+      "priceText": null
+    },
+    {
+      "id": "golddiggers:2026-07-20:very-good-mondays",
+      "clubId": "golddiggers",
+      "title": "very good mondays",
+      "date": "2026-07-20",
+      "sets": [
+        "19:00"
+      ],
+      "url": "https://link.dice.fm/Q90d78b8373e",
+      "details": "Alex Wasily's very good™ mondays is LA's weekly powerhouse jazz jam you just can't miss. Enjoy featured performances by a rotating cast of slayers, GRAMMY winners, session legends, and special guests~ Performers TBA This is a night of improvised play among some of the most talented musicians in Los",
+      "personnel": null,
       "priceText": null
     },
     {
@@ -1574,6 +1649,19 @@
       "priceText": null
     },
     {
+      "id": "golddiggers:2026-07-23:norwood-fisher-s-blackened-sabbath-the-lolly-bombs",
+      "clubId": "golddiggers",
+      "title": "Norwood Fisher's Blackened Sabbath, The Lolly Bombs",
+      "date": "2026-07-23",
+      "sets": [
+        "19:00"
+      ],
+      "url": "https://link.dice.fm/K6d06b7416bb",
+      "details": "Blackened Sabbath Classic Black Sabbath Reimagined in the Ultra-Funkiest Way What if Sly and the Family Stone, Funkadelic, Larry Graham, or Chuck Brown had written the songs of Black Sabbath? Blackened Sabbath answers that question with a bold, groove-heavy reinvention of heavy rock's most iconic ca",
+      "personnel": null,
+      "priceText": null
+    },
+    {
       "id": "samfirst:2026-07-23:tim-rachbach-group-ft-mark-turner-with-adam-ratner-adam-hers",
       "clubId": "samfirst",
       "title": "Tim Rachbach Group ft. Mark Turner with Adam Ratner, Adam Hersh & Graeham Guerin",
@@ -1638,6 +1726,19 @@
       "details": "Free outdoor concert — Smidt Welcome Plaza",
       "personnel": null,
       "priceText": "Free"
+    },
+    {
+      "id": "golddiggers:2026-07-24:alex-bone-presents-future-funk-la-edition",
+      "clubId": "golddiggers",
+      "title": "Alex Bone presents Future Funk: LA Edition",
+      "date": "2026-07-24",
+      "sets": [
+        "19:00"
+      ],
+      "url": "https://link.dice.fm/xc94ff0b6f92",
+      "details": "Alex Bone grew up in Darlington, UK, living two musical lives at once. One revolved around instruments. He was at the piano before he could walk and picked up the saxophone soon after. The other revolved around dance music: his first Fatboy Slim record, stacks of Ministry of Sound compilations, and",
+      "personnel": null,
+      "priceText": null
     },
     {
       "id": "samfirst:2026-07-24:jane-monheit-duo-with-max-haymer",
@@ -1785,6 +1886,19 @@
       "priceText": "Tickets from $15.00"
     },
     {
+      "id": "golddiggers:2026-07-26:cherry-blonde-adam-casanova-salter-boko",
+      "clubId": "golddiggers",
+      "title": "Cherry Blonde, Adam Casanova, Salter, Boko",
+      "date": "2026-07-26",
+      "sets": [
+        "19:00"
+      ],
+      "url": "https://link.dice.fm/Td9fbe20260c",
+      "details": "Salt and Pepper Productions present: Cherry Blonde + Adam Casanova + Salter + Boko Cherry Blonde admits he has a split personality. Crowd Hype Man and Sad Boy Crooner. Depending on his mood he’s both. As the lead singer for the pop jazz alt rock fusion band, Honeyboys, he’s jumped around stages up a",
+      "personnel": null,
+      "priceText": null
+    },
+    {
       "id": "catalina:2026-07-26:kat-edmonson-award-winning-singer-songwriter",
       "clubId": "catalina",
       "title": "KAT EDMONSON (Award-winning Singer & Songwriter)",
@@ -1822,6 +1936,19 @@
       "details": "Four legal professionals in harmony performing music from swing and jazz to pop and the Great American Songbook Show: 7:30 pm Reserve Now",
       "personnel": null,
       "late": true,
+      "priceText": null
+    },
+    {
+      "id": "golddiggers:2026-07-27:very-good-mondays",
+      "clubId": "golddiggers",
+      "title": "very good mondays",
+      "date": "2026-07-27",
+      "sets": [
+        "19:00"
+      ],
+      "url": "https://link.dice.fm/J9c05825be6a",
+      "details": "Alex Wasily's very good™ mondays is LA's weekly powerhouse jazz jam you just can't miss. Enjoy featured performances by a rotating cast of slayers, GRAMMY winners, session legends, and special guests~ Performers TBA This is a night of improvised play among some of the most talented musicians in Los",
+      "personnel": null,
       "priceText": null
     },
     {
@@ -2181,6 +2308,19 @@
       "priceText": "Tickets from $15.00"
     },
     {
+      "id": "golddiggers:2026-08-02:young-bull",
+      "clubId": "golddiggers",
+      "title": "Young Bull",
+      "date": "2026-08-02",
+      "sets": [
+        "19:00"
+      ],
+      "url": "https://link.dice.fm/zb4327ddc7e6",
+      "details": "Young Bull is a southern musical superduo known for their soulful sound, musicianship, and powerful live performances. A nod to their hometown’s nickname, “Bull City,” the group is composed of Durham, North Carolina natives *Mique* (Tahmique Cameron) and *Solomon Fox* (Gabe Fox-Peck). The two have s",
+      "personnel": null,
+      "priceText": null
+    },
+    {
       "id": "catalina:2026-08-02:paris-chansons-french-band-with-an-eastern-european-gypsy-tw",
       "clubId": "catalina",
       "title": "PARIS CHANSONS (French Band with an Eastern-European Gypsy Twist!)",
@@ -2271,6 +2411,19 @@
       "details": "A powerhouse contemporary big band delivering high-energy swing, rich arrangements, and soulful vocals led by Nicole Kubis Show: 7:30pm Reserve Now",
       "personnel": null,
       "late": true,
+      "priceText": null
+    },
+    {
+      "id": "golddiggers:2026-08-05:aaron-goldberg-improvised-loops-live-animations-ft-pendleton",
+      "clubId": "golddiggers",
+      "title": "Aaron Goldberg: Improvised Loops & Live Animations ft Pendleton Ward",
+      "date": "2026-08-05",
+      "sets": [
+        "19:00"
+      ],
+      "url": "https://link.dice.fm/ie5ed0105ff0",
+      "details": "Join us at Gold Diggers, your new home for this one-of-a-kind monthly show of live improvised loops and animation~ Aaron Goldberg is a multi instrumentalist who focuses on improvisation. Utilizing a loop pedal to make new music for every show, he brings you into the creative process. Pendleton Ward",
+      "personnel": null,
       "priceText": null
     },
     {
@@ -2612,6 +2765,19 @@
       "priceText": null
     },
     {
+      "id": "theford:2026-08-12:ani-difranco",
+      "clubId": "theford",
+      "title": "Ani DiFranco",
+      "date": "2026-08-12",
+      "sets": [
+        "20:00"
+      ],
+      "url": "https://www.theford.com/events/performances/4861/2026-08-12/ani-difranco",
+      "details": "with Special Guest Valerie June",
+      "personnel": null,
+      "priceText": null
+    },
+    {
       "id": "harvelles:2026-08-12:come-sing-with-the-band-live-band-karaoke",
       "clubId": "harvelles",
       "title": "COME SING WITH the BAND - Live Band Karaoke",
@@ -2721,6 +2887,19 @@
       ],
       "url": "https://santamonica.harvelles.com/events/139988",
       "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "golddiggers:2026-08-14:priyanka-presents-india-mapiano-los-angeles",
+      "clubId": "golddiggers",
+      "title": "Priyanka Presents: India-mapiano Los Angeles",
+      "date": "2026-08-14",
+      "sets": [
+        "22:30"
+      ],
+      "url": "https://link.dice.fm/o30ff0095e27",
+      "details": "Inspired by her viral YouTube mixes, PRIYANKA brings INDIA-MAPIANO to life as an immersive, live experience. INDIA-MAPIANO is a powerful fusion of Indian and Afro-inspired sounds — blending Amapiano and Afrobeats with Bollywood anthems and classical Indian elements into one cohesive sonic journey. R",
       "personnel": null,
       "priceText": null
     },
@@ -2936,6 +3115,19 @@
       "priceText": null
     },
     {
+      "id": "golddiggers:2026-08-20:mel-mu-iz",
+      "clubId": "golddiggers",
+      "title": "Mel Muñiz",
+      "date": "2026-08-20",
+      "sets": [
+        "19:00"
+      ],
+      "url": "https://link.dice.fm/Bdb8f73e2881",
+      "details": "Argentine singer-songwriter Mel Muñiz revives the profound emotion of classic Latin music for contemporary audiences. Her sound is a captivating fusion where the timeless warmth of old Latin orchestras meets modern storytelling and dramatic, heartfelt lyrics. Winds, strings, boleros, danzones, rumba",
+      "personnel": null,
+      "priceText": null
+    },
+    {
       "id": "harvelles:2026-08-20:better-daze",
       "clubId": "harvelles",
       "title": "BETTER DAZE",
@@ -3060,9 +3252,9 @@
       "priceText": null
     },
     {
-      "id": "mint:2026-08-23:jazz-sunday-izaak-weatherwax-quintet-the-kevin-kanner-jam",
+      "id": "mint:2026-08-23:jazz-sunday-izaak-weatherwax-quartet-the-kevin-kanner-jam",
       "clubId": "mint",
-      "title": "Jazz Sunday: Izaak Weatherwax Quintet & The Kevin Kanner Jam",
+      "title": "Jazz Sunday: Izaak Weatherwax Quartet & The Kevin Kanner Jam",
       "date": "2026-08-23",
       "sets": [
         "19:00"
@@ -3265,6 +3457,19 @@
       ],
       "url": "https://www.hollywoodbowl.com/events/performances/4252/2026-08-30/smooth-summer-jazz",
       "details": "The Commodores • Boney James · Sheila E.",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "theford:2026-08-30:element-band-pyur",
+      "clubId": "theford",
+      "title": "Element Band: Pyur",
+      "date": "2026-08-30",
+      "sets": [
+        "19:30"
+      ],
+      "url": "https://www.theford.com/events/performances/4865/2026-08-30/element-band-pyur",
+      "details": null,
       "personnel": null,
       "priceText": null
     },
@@ -3540,6 +3745,19 @@
       "priceText": null
     },
     {
+      "id": "golddiggers:2026-09-26:the-saxophones-ft-simians",
+      "clubId": "golddiggers",
+      "title": "The Saxophones Ft. Simians",
+      "date": "2026-09-26",
+      "sets": [
+        "19:00"
+      ],
+      "url": "https://link.dice.fm/T8a595aeee34",
+      "details": "Blending the darkness and melancholy of 1950s balladry with intimate woodwind, synth, and percussion arrangements, The Saxophones—led by Alexi Erenkov and Alison Alderdice—forge a uniquely hypnotic and personal sound. Formed in the California Bay Area in 2017, the husband-and-wife duo’s minimalist a",
+      "personnel": null,
+      "priceText": null
+    },
+    {
       "id": "hollywoodbowl:2026-09-27:jon-batiste",
       "clubId": "hollywoodbowl",
       "title": "Jon Batiste",
@@ -3575,6 +3793,19 @@
       ],
       "url": "https://dice.fm/event/ryk7l5-xiu-xiu-eraserhead-xiu-xiu-2nd-oct-2220-arts-archives-los-angeles-tickets",
       "details": "Black Editions Presents two nights of *Eraserhead Xiu Xiu* Live In 2016, with the blessing of David Lynch and Angelo Badalamenti, Xiu Xiu released and toured the surprisingly successful album and concert, *Plays the Music of Twin Peaks*. Out of respect and deference to the beloved series, the band d",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "theford:2026-10-03:america-the-beautiful-with-aja-monet-marc-bamuthi-joseph-xiu",
+      "clubId": "theford",
+      "title": "AMERICA(!) THE BEAUTIFUL(?) With aja monet, Marc Bamuthi Joseph, Xiuhtezcatl, Kai the Universe",
+      "date": "2026-10-03",
+      "sets": [
+        "20:00"
+      ],
+      "url": "https://www.theford.com/events/performances/4873/2026-10-03/america-the-beautiful-with-aja-monet-marc-bamuthi-joseph-xiuhtezcatl-kai-the-universe",
+      "details": "Produced in partnership with For Freedoms",
       "personnel": null,
       "priceText": null
     },
@@ -3640,6 +3871,32 @@
       ],
       "url": "https://link.dice.fm/dfcd367ccbd6",
       "details": "Casa Sueño (mike baggetta :: john herndon :: mike watt) Casa Sueño is a new band from guitarist Mike Baggetta (mssv, Psychic Temple), drummer John Herndon (Tortoise, Isotope 217) and bassist mike watt (Minutemen, Stooges). Formed in late 2025 to record their first 7-inch release House Of Dreams on N",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "theford:2026-10-11:jacob-collier",
+      "clubId": "theford",
+      "title": "Jacob Collier",
+      "date": "2026-10-11",
+      "sets": [
+        "19:30"
+      ],
+      "url": "https://www.theford.com/events/performances/4535/2026-10-11/jacob-collier",
+      "details": "The Light For Days Tour · A Series of Solo Performances in Intimate Spaces",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "theford:2026-10-12:jacob-collier",
+      "clubId": "theford",
+      "title": "Jacob Collier",
+      "date": "2026-10-12",
+      "sets": [
+        "20:00"
+      ],
+      "url": "https://www.theford.com/events/performances/4536/2026-10-12/jacob-collier",
+      "details": "The Light For Days Tour · A Series of Solo Performances in Intimate Spaces",
       "personnel": null,
       "priceText": null
     },
@@ -3731,6 +3988,58 @@
       ],
       "url": "https://link.dice.fm/E8306cb03642",
       "details": "REZN - Cycles in the Infinite Dream Tour Over the last decade, Chicago quartet REZN have carved out a unique place in the landscape of heavy music, chiseling away at the crude formations of the topography, mining the most concentrated metallic ore from the dirt, and shaping it all into something mon",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "disneyhall:2026-11-14:jorge-drexler",
+      "clubId": "disneyhall",
+      "title": "Jorge Drexler",
+      "date": "2026-11-14",
+      "sets": [
+        "20:00"
+      ],
+      "url": "https://www.laphil.com/events/performances/4503/2026-11-14/jorge-drexler",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "disneyhall:2026-12-08:kamasi-washington",
+      "clubId": "disneyhall",
+      "title": "Kamasi Washington",
+      "date": "2026-12-08",
+      "sets": [
+        "20:00"
+      ],
+      "url": "https://www.laphil.com/events/performances/4404/2026-12-08/kamasi-washington",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "disneyhall:2027-02-19:miles-davis-100-cool-beyond",
+      "clubId": "disneyhall",
+      "title": "Miles Davis 100: Cool & Beyond",
+      "date": "2027-02-19",
+      "sets": [
+        "20:00"
+      ],
+      "url": "https://www.laphil.com/events/performances/4375/2027-02-19/miles-davis-100-cool-beyond",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "disneyhall:2027-03-26:herbie-hancock",
+      "clubId": "disneyhall",
+      "title": "Herbie Hancock",
+      "date": "2027-03-26",
+      "sets": [
+        "20:00"
+      ],
+      "url": "https://www.laphil.com/events/performances/4464/2027-03-26/herbie-hancock",
+      "details": null,
       "personnel": null,
       "priceText": null
     }
