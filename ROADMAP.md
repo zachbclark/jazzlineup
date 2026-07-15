@@ -175,8 +175,16 @@ times from description text; verify against reality after first live crawl.
   filters to 2220 + Terraza 7, run a 20-event precision spot-check on
   filtered venues, maybe a mixed-venue registry flag. Principle stands:
   we curate jazz EVENTS, not jazz venues
+- [ ] **Chicago — city 3 (greenlit 2026-07-16):** America's jazz triangle.
+      Tier 1: Green Mill · Jazz Showcase · Constellation · Andy's ·
+      Hungry Brain · Elastic Arts · Winter's · Dorian's
+- [ ] San Francisco — city 4 candidate (Zach loves seeing jazz there):
+      SFJAZZ · Black Cat (the young-scene room) · Keys Jazz Bistro ·
+      Mr. Tipple's · Bird & Beckett · Yoshi's (Oakland). West Coast pair w/ LA
 - [ ] Paris/Berlin repeat the LA playbook (timezone correctness matters here —
       covered by the Phase 0 registry fields)
+- [ ] Tokyo — the endgame (strongest scene on earth; blocked on real i18n:
+      Japanese titles break the personnel lexicon + romaji search)
 
 ## Ongoing
 - [x] **Monitoring (2026-07-16):** CloudWatch dashboard "jazzlineup" (requests,

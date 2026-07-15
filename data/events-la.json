@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-15T20:44:21.932Z",
+  "generatedAt": "2026-07-15T22:33:51.933Z",
   "city": "la",
   "clubs": [
     {
@@ -2480,6 +2480,19 @@
       "priceText": null
     },
     {
+      "id": "samfirst:2026-08-06:pritesh-walia-henry-godfrey-big-band-presents-journey-to-now",
+      "clubId": "samfirst",
+      "title": "Pritesh Walia & Henry Godfrey Big Band presents \"Journey to Nowhere\"",
+      "date": "2026-08-06",
+      "sets": [
+        "19:30"
+      ],
+      "url": "https://www.samfirstbar.com/events/pritesh-walia-henry-godfrey-big-band-presents-journey-to-nowhere",
+      "details": "Pritesh Walia and Henry Godfrey celebrate the release of their new big band album with a 17-piece ensemble. Blending contemporary jazz, cinematic textures, and electronic influences, the performance showcases the power and versatility of the modern jazz orchestra.",
+      "personnel": null,
+      "priceText": null
+    },
+    {
       "id": "twentytwotwenty:2026-08-06:the-signal-tour-f-mph-lionmilk-kitsune-kawai-janet",
       "clubId": "twentytwotwenty",
       "title": "The Signal Tour: f.mph, Lionmilk, Kitsune Kawai, JANET",
@@ -2623,19 +2636,6 @@
       "details": "Free outdoor concert — Smidt Welcome Plaza",
       "personnel": null,
       "priceText": "Free"
-    },
-    {
-      "id": "samfirst:2026-08-08:nicole-mccabe-quartet-live-album-recording-for-sam-first-rec",
-      "clubId": "samfirst",
-      "title": "Nicole McCabe Quartet Live Album Recording for Sam First Records feat. Gerald Clayton, Justin Brown & Logan Kane",
-      "date": "2026-08-08",
-      "sets": [
-        "19:30"
-      ],
-      "url": "https://www.samfirstbar.com/events/nicole-mccabe-quartet-live-album-recording-for-sam-first-records-feat-gerald-clayton-justin-brown-logan-kane-1",
-      "details": "Nicole McCabe is a Los Angeles-based saxophonist and composer whose genre-defying sound blends jazz tradition with modern experimentation. McCabe has assembled a group of stellar, like-minded musicians for this very special live recording for Sam First Records.",
-      "personnel": null,
-      "priceText": null
     },
     {
       "id": "catalina:2026-08-08:gordon-goodwin-s-big-phat-band-album-release-of-25-years-of-",

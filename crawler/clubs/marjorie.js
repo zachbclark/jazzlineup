@@ -6,7 +6,7 @@
 import { makeEvent, isoDate } from '../lib.js';
 
 const WEEKS_AHEAD = 8;
-const INFO_URL = 'https://en.wikipedia.org/wiki/Marjorie_Eliot'; // no venue site exists
+const INFO_URL = 'https://www.facebook.com/pages/Marjorie-Elliots-Parlor-Jazz/488061981215540'; // no venue site; the FB page carries updates and cancellations
 
 export function parse(today = new Date()) {
   const events = [];

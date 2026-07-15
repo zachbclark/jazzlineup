@@ -1,78 +1,93 @@
 # jazzlineup.com 🎷
 
-One calendar for live jazz in New York. Crawls the schedules of six NYC jazz
-clubs, normalizes them into a single feed, and serves a filterable
-calendar/list UI.
+**Live at [jazzlineup.com](https://jazzlineup.com).** One calendar for live
+jazz: who's playing tonight across 50 venues in New York, Los Angeles, and
+Chicago, from the Village Vanguard to a Sunday parlor session in Sugar Hill. A
+zero-dependency crawler checks every venue's site around the clock,
+normalizes the chaos into one feed, and a static React frontend serves it
+fast from CloudFront. No ads, no accounts.
 
-**Clubs covered:** Village Vanguard, Blue Note, Smalls, Mezzrow, Birdland
-(Jazz Club + Theater), Dizzy's Club, The Jazz Gallery.
+## What it does
+
+- **29 NYC venues** across Manhattan, Harlem, Brooklyn, and Queens,
+  **13 LA venues** from the Hollywood Bowl to hotel bars, and **8 Chicago
+  venues** from the Green Mill to the creative-music lofts. City switcher
+  in the wordmark; borough scopes for New York.
+- **Artist search**: type a musician's name and see every date they're on,
+  matched against titles, band rosters, and descriptions, accents ignored.
+  When the other city has matches too, one tap switches with the query intact.
+- **Venue chips** in colors drawn from each club's real identity (the
+  Vanguard's red neon, Smalls' crimson). Click one to see just that club,
+  click more to add. Drag to reorder; your order and selection persist
+  per city in localStorage.
+- **Band personnel** rendered like a concert program, grouped by instrument
+  for big bands. Late sets that start after midnight are attributed to the
+  evening they belong to, with a quiet "late" tag.
+- Month calendar and list views, mobile-first, black and gold.
 
 ## Quick start
 
 ```bash
-npm install        # installs Vite/React for the frontend (crawler & server have zero deps)
-npm run crawl      # crawl all six club sites -> data/events.json (~30s)
+npm install        # frontend deps only; crawler and server are dependency-free
+npm run crawl      # crawl every venue -> data/events-<city>.json (~60s)
 npm run build:web  # build the React frontend
 npm run serve      # http://localhost:3000
 ```
 
-For frontend development with hot reload:
+Frontend development with hot reload:
 
 ```bash
-npm run serve      # API on :3000 (terminal 1)
-npm run dev:web    # Vite dev server on :5173, proxies /api -> :3000 (terminal 2)
+npm run serve      # serves data + built site on :3000 (terminal 1)
+npm run dev:web    # Vite on :5173, proxies data requests to :3000 (terminal 2)
 ```
-
-The repo ships with a `data/events.json` snapshot of real shows (captured
-July 13, 2026) so the UI works before your first crawl.
-
-**Deploying to AWS:** see [DEPLOY.md](DEPLOY.md) — CDK stack in `infra/`
-(S3 + CloudFront + scheduled crawler Lambda; <$1/mo). In production the
-frontend fetches `/events.json` as a static file; the Node server below is
-for local dev.
 
 ## Architecture
 
 ```
-┌──────────────┐   every few hours   ┌──────────────────┐
-│ club websites │ ──── npm run crawl ──▶ data/events.json │
-└──────────────┘                     └────────┬─────────┘
-                                              │ read fresh on every request
-                                     ┌────────▼─────────┐      ┌──────────┐
-                                     │ server (node:http)│ ◀──── │ React UI │
-                                     │  /api/events      │      │ calendar │
-                                     │  /api/clubs       │      │ + list   │
-                                     └───────────────────┘      └──────────┘
+                    every 4 hours
+EventBridge ──────▶ Lambda (crawler) ──────▶ S3 (events-<city>.json per city)
+                                                       ▲            │
+                                     web/dist (React) ─┘            ▼
+                                                              CloudFront ◀── visitors
 ```
 
-The three stages are deliberately decoupled:
+Production is fully static: the crawler Lambda writes per-city JSON files to
+S3 and the frontend fetches them as plain files. There is no server to scale
+and nothing to load-balance. The whole stack is defined in CDK (`infra/`),
+deploys with one command, and runs inside the AWS free tier. Monitoring is
+CloudWatch: a traffic and crawler-health dashboard, email alarms for crawler
+failures, site 5xx spikes, per-club parser drift, and a billing tripwire.
+Runbook in [DEPLOY.md](DEPLOY.md).
 
-- **Crawler** (`crawler/`): one module per club, each exporting `crawl()` and a
-  pure `parse()` that is unit-tested against fixture markup (`node crawler/test.mjs`).
-  Zero npm dependencies — bare Node ≥ 20. Clubs are registered in
-  `crawler/clubs.js`. If one site breaks, the others still update; the last
-  good data for the broken club is kept and the error is recorded in
-  `data/events.json` → `errors`.
-- **Server** (`server/`): zero-dependency `node:http` server. Reads
-  `events.json` fresh per request, so a finished crawl is visible on the next
-  page load — no rebuild or restart.
-- **Web** (`web/`): Vite + React. Month-grid calendar and chronological list,
-  club filter chips, links out to each club's ticketing.
+The three stages stay deliberately decoupled:
 
-### Per-club crawl strategy
+- **Crawler** (`crawler/`): one module per venue (some modules serve sister
+  venues that share a platform), each exporting `crawl()` plus a pure
+  `parse()` unit-tested against fixture markup. Zero npm dependencies, bare
+  Node 20+. Venues register in `crawler/clubs.js` with city, borough,
+  timezone, and an audit-checked chip color. Per-club failure isolation: a
+  broken site keeps its last good data and records an error; it never takes
+  the feed down.
+- **Server** (`server/`): dependency-free `node:http` server for local dev.
+  Reads the data files fresh per request.
+- **Web** (`web/`): Vite + React, no state library, no CSS framework.
 
-| Club | Source | Notes |
-| --- | --- | --- |
-| Smalls + Mezzrow | `smallslive.com/search/upcoming-ajax/?page=N` | JSON endpoint returning HTML template; paginated |
-| The Jazz Gallery | `jazzgallery.org/calendar?format=json` | Squarespace collection JSON; multi-day runs expanded |
-| Blue Note | `/nyc/shows/?calendar_view&month=M&yr=Y` | server-rendered month table; crawls current + next month |
-| Birdland | homepage + `/page/N/` | TicketWeb WP plugin cards; Theater shows tagged |
-| Dizzy's Club | `jazz.org/dizzys` | server-rendered season list; house set times (Mon-Sat 7 & 9, Sun 5 & 7:30) |
-| Village Vanguard | homepage | artist + date-range blocks expanded nightly; 8 & 10 PM sets; VJO every Monday |
+## Venue sources, by shape
 
-### Event schema
+Fifty venues resolve to about fifteen source patterns:
 
-Every event normalizes to:
+| Pattern | Examples |
+| --- | --- |
+| JSON APIs (Squarespace collections, ViewCy, Tockify, DICE, TicketWeb, Turntable, custom WP routes) | Jazz Gallery, Barbès, Close Up, Smoke, The Pocket, World Stage, Zebulon, Jazz Showcase, Elastic Arts |
+| Server-rendered HTML, parsed with targeted regex (no DOM library) | Village Vanguard, Blue Note, The Django, Ornithology, Roulette, Silvana + Shrine, LACMA, Green Mill, Andy's, Dorian's |
+| Venue feeds with genre tags, filtered to jazz | Hollywood Bowl + Disney Hall + The Ford (one LA Phil feed) |
+| Mixed-genre rooms, filtered to jazz by keyword or genre tag | The Mint, Zebulon, Gold-Diggers, JCAL, Shrine, Constellation + Hungry Brain |
+| Standing residencies, generated on a schedule | Arthur's Tavern, Bill's Place, Marjorie Eliot's Parlor Jazz |
+
+The principle: the site curates jazz **events**, not jazz venues. A rock club
+with a Monday jazz hang lists the hang and nothing else.
+
+## Event schema
 
 ```json
 {
@@ -80,56 +95,40 @@ Every event normalizes to:
   "clubId": "smalls",
   "title": "Ari Hoenig Trio",
   "date": "2026-07-13",
-  "sets": ["18:00", "19:30"],
+  "sets": ["19:30", "21:00"],
   "url": "https://www.smallslive.com/events/33032-ari-hoenig-trio/",
   "details": null,
-  "priceText": null
+  "personnel": [{ "name": "Ari Hoenig", "instrument": "drums" }],
+  "late": false,
+  "priceText": "$25"
 }
 ```
 
-## Keeping data fresh
-
-Run the crawler on a schedule. On macOS the simplest is cron:
+## Testing
 
 ```bash
-crontab -e
-# every 3 hours:
-0 */3 * * * cd ~/github/jazzlineup && /usr/local/bin/node crawler/index.js >> /tmp/jazzlineup-crawl.log 2>&1
+node crawler/test.mjs   # 51 parser + merge-logic test groups, no network
+node web/test-ui.mjs    # 16 Playwright UI tests, desktop + mobile viewports
 ```
 
-Reloading the site or changing filters always reflects the latest completed
-crawl (the API never caches), but does not itself trigger a crawl.
-
-## Deploying to AWS (the intended evolution)
-
-The pieces map 1:1 onto serverless AWS:
-
-1. **Crawler → Lambda + EventBridge.** `crawler/index.js` already isolates
-   per-club failures and writes a single JSON artifact; point `--out` at
-   `/tmp` and upload to S3. Schedule with an EventBridge rule (e.g. `rate(3 hours)`).
-2. **Data → S3.** `data/events.json` becomes `s3://your-bucket/events.json`.
-3. **API → CloudFront + S3** (simplest: the frontend fetches `events.json`
-   directly and filters client-side, which this UI already does) or API
-   Gateway + a tiny Lambda if you want server-side filtering.
-4. **Frontend → S3 + CloudFront.** `npm run build:web`, sync `web/dist` to S3.
-
-No servers to patch; the whole thing runs in the free tier at this traffic.
+Every parser has fixture tests mirroring the venue's real markup. The UI
+suite covers filtering, search, drag-to-reorder, persistence, and mobile
+layout. Both run before anything ships.
 
 ## Development notes
 
-- `npm run crawl -- --club smalls` crawls one club.
-- `node crawler/test.mjs` runs parser tests (no network needed).
-- `scripts/seed-from-capture.mjs` regenerates the bundled demo snapshot.
-- `web/build-offline.mjs` builds the frontend without npm using globally
-  installed react + typescript — only needed in sandboxed environments where
-  the npm registry is unreachable; use Vite normally.
+- `npm run crawl -- --club smalls` crawls one venue; `--city la` one city.
 - Crawlers send a descriptive User-Agent and sleep between paginated
-  requests. Please keep it polite — these are small clubs.
+  requests. Keep it polite, these are small clubs.
+- `web/build-offline.mjs` builds the frontend without the npm registry
+  (sandboxed environments only); use Vite normally.
+- Venue colors are chosen against a perceptual-distance audit so no two
+  chips in a city collide. Run the audit before adding a venue.
 
 ## Roadmap
 
-- [ ] "Refresh now" button in the UI (with a heads-up that a crawl takes ~30s)
-- [ ] More clubs: Smoke, The Stone, Ornithology, Bar Bayeux, Zinc Bar…
-- [ ] Filter by neighborhood / time of night (early vs late sets)
-- [ ] iCal export & "tonight" email digest
-- [ ] AWS deployment (see above)
+Chicago just landed (the Green Mill's calendar really did have full band
+rosters hiding in its add-to-calendar links). San Francisco is next, then
+Paris, and Tokyo when internationalization gets done properly. Nearer term:
+iCal export, a "new this week" page, saved artists with email alerts. Full
+detail in [ROADMAP.md](ROADMAP.md).

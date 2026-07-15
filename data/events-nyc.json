@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-15T20:44:19.784Z",
+  "generatedAt": "2026-07-15T22:33:48.957Z",
   "city": "nyc",
   "clubs": [
     {
@@ -342,7 +342,7 @@
       "id": "marjorie",
       "name": "Marjorie Eliot's Parlor Jazz",
       "shortName": "Marjorie's",
-      "url": "https://en.wikipedia.org/wiki/Marjorie_Eliot",
+      "url": "https://www.facebook.com/pages/Marjorie-Elliots-Parlor-Jazz/488061981215540",
       "address": "555 Edgecombe Ave Apt 3F, New York, NY 10032",
       "city": "nyc",
       "borough": "harlem",
@@ -1114,33 +1114,8 @@
         {
           "name": "John Webber",
           "instrument": "guitar"
-        },
-        {
-          "name": "George Papageorge",
-          "instrument": "organ"
-        },
-        {
-          "name": "Pete Smith",
-          "instrument": "guitar"
-        },
-        {
-          "name": "Brian Floody",
-          "instrument": "drums"
         }
       ],
-      "priceText": null
-    },
-    {
-      "id": "barbes:2026-07-15:world-cup-game",
-      "clubId": "barbes",
-      "title": "WORLD CUP GAME",
-      "date": "2026-07-15",
-      "sets": [
-        "15:00"
-      ],
-      "url": "https://www.viewcy.com/event/world_cup_game_4",
-      "details": "We will stream all the remaining World Club games. On a 32\" tv in our front room As well as on our screen in the backroom when not conflicting with live music.",
-      "personnel": null,
       "priceText": null
     },
     {
@@ -1190,6 +1165,18 @@
         {
           "name": "Sam Yahel",
           "instrument": "piano"
+        },
+        {
+          "name": "Jihee Heo",
+          "instrument": "piano"
+        },
+        {
+          "name": "Ahmed McLemore",
+          "instrument": "bass"
+        },
+        {
+          "name": "Chris Beck",
+          "instrument": "drums"
         }
       ],
       "priceText": null
@@ -1224,6 +1211,22 @@
         },
         {
           "name": "Vinnie Sperrazza",
+          "instrument": "drums"
+        },
+        {
+          "name": "Adam Niewood",
+          "instrument": "tenor sax"
+        },
+        {
+          "name": "Eric Lewis",
+          "instrument": "piano"
+        },
+        {
+          "name": "Sean Conly",
+          "instrument": "bass"
+        },
+        {
+          "name": "Ben Perowsky",
           "instrument": "drums"
         }
       ],
@@ -1526,9 +1529,9 @@
       "priceText": null
     },
     {
-      "id": "barbayeux:2026-07-15:9-30-morgan-guerin",
+      "id": "barbayeux:2026-07-15:amp-9-30-morgan-guerin",
       "clubId": "barbayeux",
-      "title": "& 9:30 Morgan Guerin",
+      "title": "amp; 9:30 Morgan Guerin",
       "date": "2026-07-15",
       "sets": [
         "20:00"
@@ -2346,9 +2349,9 @@
       "priceText": null
     },
     {
-      "id": "barbayeux:2026-07-16:9-30",
+      "id": "barbayeux:2026-07-16:amp-9-30",
       "clubId": "barbayeux",
-      "title": "& 9:30",
+      "title": "amp; 9:30",
       "date": "2026-07-16",
       "sets": [
         "20:00"
@@ -3232,9 +3235,9 @@
       "priceText": null
     },
     {
-      "id": "barbayeux:2026-07-17:9-30-jerome-sabbagh",
+      "id": "barbayeux:2026-07-17:amp-9-30-jerome-sabbagh",
       "clubId": "barbayeux",
-      "title": "& 9:30 - Jerome Sabbagh",
+      "title": "amp; 9:30 - Jerome Sabbagh",
       "date": "2026-07-17",
       "sets": [
         "20:00"
@@ -3809,7 +3812,7 @@
     {
       "id": "barbayeux:2026-07-18:duet-set-s-w-leo-genovese-and-adam-kolker",
       "clubId": "barbayeux",
-      "title": "- Duet Set(s) w/Leo Genovese and Adam Kolker",
+      "title": "Duet Set(s) w/Leo Genovese and Adam Kolker",
       "date": "2026-07-18",
       "sets": [
         "18:00"
@@ -4061,6 +4064,20 @@
       "priceText": null
     },
     {
+      "id": "terraza7:2026-07-18:elisabet-torras-nueva-york-flamenco-city",
+      "clubId": "terraza7",
+      "title": "Elisabet Torras & Nueva York Flamenco City",
+      "date": "2026-07-18",
+      "sets": [
+        "19:30",
+        "21:30"
+      ],
+      "url": "https://www.terraza7.com/events",
+      "details": "Join us for \"Elisabet and NY Flamenco City,\" a vibrant showcase of flamenco's passion. Witness Elisabet's mesmerizing dance as she embodies the spirit of flamenco, accompanied by the rhythms of the city's finest musicians. An evening of fiery dance and soulful music awaits!",
+      "personnel": null,
+      "priceText": null
+    },
+    {
       "id": "bluenote:2026-07-18:ms-lisa-fischer-ft-orrin-evans-trio-with-james-genus-and-mar",
       "clubId": "bluenote",
       "title": "Ms. Lisa Fischer ft. Orrin Evans Trio with James Genus and Mark Whitfield, Jr.",
@@ -4123,9 +4140,9 @@
       "priceText": null
     },
     {
-      "id": "barbayeux:2026-07-18:9-30",
+      "id": "barbayeux:2026-07-18:amp-9-30",
       "clubId": "barbayeux",
-      "title": "& 9:30",
+      "title": "amp; 9:30",
       "date": "2026-07-18",
       "sets": [
         "20:00"
@@ -4568,7 +4585,7 @@
       "sets": [
         "15:30"
       ],
-      "url": "https://en.wikipedia.org/wiki/Marjorie_Eliot",
+      "url": "https://www.facebook.com/pages/Marjorie-Elliots-Parlor-Jazz/488061981215540",
       "details": "Free concert in her Sugar Hill parlor, Apt 3F — every Sunday since 1992. Arrive early.",
       "personnel": null,
       "priceText": "Free"
@@ -5501,6 +5518,19 @@
       ],
       "url": "https://www.bluenotejazz.com/nyc/tm-event/dizzy-gillespie-afro-latin-experience/",
       "details": "Blue Note Jazz Club",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "terraza7:2026-07-20:rom-n-d-az-la-rumba-de-los-lunes",
+      "clubId": "terraza7",
+      "title": "Román Díaz & La Rumba de los Lunes",
+      "date": "2026-07-20",
+      "sets": [
+        "20:00"
+      ],
+      "url": "https://www.terraza7.com/events",
+      "details": "Cuban-born master percussionist Román Díaz —a “living repository” of Afro-Cuban culture— leads La Rumba Cubana de Queens at Terraza 7, a powerful weekly gathering where tradition, improvisation, and community come together every Monday.",
       "personnel": null,
       "priceText": null
     },
@@ -6743,9 +6773,9 @@
       "priceText": null
     },
     {
-      "id": "barbayeux:2026-07-22:9-30-elsa-nilsson-band-of-pulses-liminal-album-release-conce",
+      "id": "barbayeux:2026-07-22:amp-9-30-elsa-nilsson-band-of-pulses-liminal-album-release-c",
       "clubId": "barbayeux",
-      "title": "& 9:30 Elsa Nilsson Band of Pulses, Liminal Album Release concert",
+      "title": "amp; 9:30 Elsa Nilsson Band of Pulses, Liminal Album Release concert",
       "date": "2026-07-22",
       "sets": [
         "20:00"
@@ -7378,6 +7408,19 @@
       "priceText": null
     },
     {
+      "id": "terraza7:2026-07-23:queens-college-jazz-jam-series-at-terraza-7",
+      "clubId": "terraza7",
+      "title": "Queens College Jazz Jam Series at Terraza 7",
+      "date": "2026-07-23",
+      "sets": [
+        "19:30"
+      ],
+      "url": "https://www.terraza7.com/events",
+      "details": "Join us for the monthly Queens College - Terraza Jam, a collaboration between Queens College and Terraza 7, where up-and-coming jazz musicians gather for an unforgettable night of improvisation! Queens College jazz students enjoy free admission, making this an evening of inspiration and community.",
+      "personnel": null,
+      "priceText": null
+    },
+    {
       "id": "vanguard:2026-07-23:kris-davis-tyshawn-sorey-ingrid-laubrock",
       "clubId": "vanguard",
       "title": "KRIS DAVIS | TYSHAWN SOREY | INGRID LAUBROCK",
@@ -7432,9 +7475,9 @@
       "priceText": null
     },
     {
-      "id": "barbayeux:2026-07-23:9-30-julian-shore-w-adam-kolker-jeremy-stratton-jochen-rueck",
+      "id": "barbayeux:2026-07-23:amp-9-30-julian-shore-w-adam-kolker-jeremy-stratton-jochen-r",
       "clubId": "barbayeux",
-      "title": "& 9:30 Julian Shore w/Adam Kolker, Jeremy Stratton, Jochen Rueckert",
+      "title": "amp; 9:30 Julian Shore w/Adam Kolker, Jeremy Stratton, Jochen Rueckert",
       "date": "2026-07-23",
       "sets": [
         "20:00"
@@ -8256,9 +8299,9 @@
       "priceText": null
     },
     {
-      "id": "barbayeux:2026-07-24:9-30-kazemde-george-w-tyrone-allen-ii-and-kayvon-gordon",
+      "id": "barbayeux:2026-07-24:amp-9-30-kazemde-george-w-tyrone-allen-ii-and-kayvon-gordon",
       "clubId": "barbayeux",
-      "title": "& 9:30 - Kazemde George w/Tyrone Allen II and Kayvon Gordon",
+      "title": "amp; 9:30 - Kazemde George w/Tyrone Allen II and Kayvon Gordon",
       "date": "2026-07-24",
       "sets": [
         "20:00"
@@ -8838,6 +8881,20 @@
       "priceText": null
     },
     {
+      "id": "terraza7:2026-07-25:ricardo-osorio-el-ni-o-flamenco",
+      "clubId": "terraza7",
+      "title": "Ricardo Osorio “El Niño” | Flamenco",
+      "date": "2026-07-25",
+      "sets": [
+        "19:30",
+        "21:30"
+      ],
+      "url": "https://www.terraza7.com/events",
+      "details": "Experience an enchanting evening of flamenco featuring acclaimed dancer Ricardo Osorio alongside outstanding flamenco musicians. This captivating performance celebrates the passion, rhythm, and artistry of flamenco, bringing its vibrant traditions to life through powerful dance, music, and song.",
+      "personnel": null,
+      "priceText": null
+    },
+    {
       "id": "vanguard:2026-07-25:kris-davis-tyshawn-sorey-ingrid-laubrock",
       "clubId": "vanguard",
       "title": "KRIS DAVIS | TYSHAWN SOREY | INGRID LAUBROCK",
@@ -8910,9 +8967,9 @@
       "priceText": null
     },
     {
-      "id": "barbayeux:2026-07-25:9-30",
+      "id": "barbayeux:2026-07-25:amp-9-30",
       "clubId": "barbayeux",
-      "title": "& 9:30",
+      "title": "amp; 9:30",
       "date": "2026-07-25",
       "sets": [
         "20:00"
@@ -9213,7 +9270,7 @@
       "sets": [
         "15:30"
       ],
-      "url": "https://en.wikipedia.org/wiki/Marjorie_Eliot",
+      "url": "https://www.facebook.com/pages/Marjorie-Elliots-Parlor-Jazz/488061981215540",
       "details": "Free concert in her Sugar Hill parlor, Apt 3F — every Sunday since 1992. Arrive early.",
       "personnel": null,
       "priceText": "Free"
@@ -10864,9 +10921,9 @@
       "priceText": null
     },
     {
-      "id": "barbayeux:2026-07-29:9-30-marty-ehrlich-quartet-expanse-w-jacob-sacks-matt-pavolk",
+      "id": "barbayeux:2026-07-29:amp-9-30-marty-ehrlich-quartet-expanse-w-jacob-sacks-matt-pa",
       "clubId": "barbayeux",
-      "title": "& 9:30 Marty Ehrlich Quartet Expanse w/Jacob Sacks, Matt Pavolka, Steven Crammer",
+      "title": "amp; 9:30 Marty Ehrlich Quartet Expanse w/Jacob Sacks, Matt Pavolka, Steven Crammer",
       "date": "2026-07-29",
       "sets": [
         "20:00"
@@ -11471,9 +11528,9 @@
       "priceText": null
     },
     {
-      "id": "barbayeux:2026-07-30:9-30-ben-monder-w-adam-kolker-jeremy-stratton-tom-rainey",
+      "id": "barbayeux:2026-07-30:amp-9-30-ben-monder-w-adam-kolker-jeremy-stratton-tom-rainey",
       "clubId": "barbayeux",
-      "title": "& 9:30 Ben Monder w/Adam Kolker, Jeremy Stratton, Tom Rainey",
+      "title": "amp; 9:30 Ben Monder w/Adam Kolker, Jeremy Stratton, Tom Rainey",
       "date": "2026-07-30",
       "sets": [
         "20:00"
@@ -12203,9 +12260,9 @@
       "priceText": null
     },
     {
-      "id": "barbayeux:2026-07-31:9-30",
+      "id": "barbayeux:2026-07-31:amp-9-30",
       "clubId": "barbayeux",
-      "title": "& 9:30",
+      "title": "amp; 9:30",
       "date": "2026-07-31",
       "sets": [
         "20:00"
@@ -12733,9 +12790,9 @@
       "priceText": null
     },
     {
-      "id": "barbayeux:2026-08-01:9-30-alec-goldfarb",
+      "id": "barbayeux:2026-08-01:amp-9-30-alec-goldfarb",
       "clubId": "barbayeux",
-      "title": "& 9:30 - Alec Goldfarb",
+      "title": "amp; 9:30 - Alec Goldfarb",
       "date": "2026-08-01",
       "sets": [
         "20:00"
@@ -12951,7 +13008,7 @@
       "sets": [
         "15:30"
       ],
-      "url": "https://en.wikipedia.org/wiki/Marjorie_Eliot",
+      "url": "https://www.facebook.com/pages/Marjorie-Elliots-Parlor-Jazz/488061981215540",
       "details": "Free concert in her Sugar Hill parlor, Apt 3F — every Sunday since 1992. Arrive early.",
       "personnel": null,
       "priceText": "Free"
@@ -14384,9 +14441,9 @@
       "priceText": null
     },
     {
-      "id": "barbayeux:2026-08-05:9-30-yvonne-rogers-trio-w-kanoa-mendenhall-jonas-esser",
+      "id": "barbayeux:2026-08-05:amp-9-30-yvonne-rogers-trio-w-kanoa-mendenhall-jonas-esser",
       "clubId": "barbayeux",
-      "title": "& 9:30 Yvonne Rogers Trio w/Kanoa Mendenhall, Jonas Esser",
+      "title": "amp; 9:30 Yvonne Rogers Trio w/Kanoa Mendenhall, Jonas Esser",
       "date": "2026-08-05",
       "sets": [
         "20:00"
@@ -14786,9 +14843,9 @@
       "priceText": null
     },
     {
-      "id": "barbayeux:2026-08-06:9-30-jeff-williams-w-chet-doxas-adam-kolker-jeremy-stratton",
+      "id": "barbayeux:2026-08-06:amp-9-30-jeff-williams-w-chet-doxas-adam-kolker-jeremy-strat",
       "clubId": "barbayeux",
-      "title": "& 9:30 Jeff Williams w/Chet Doxas, Adam Kolker, Jeremy Stratton",
+      "title": "amp; 9:30 Jeff Williams w/Chet Doxas, Adam Kolker, Jeremy Stratton",
       "date": "2026-08-06",
       "sets": [
         "20:00"
@@ -15213,9 +15270,9 @@
       "priceText": null
     },
     {
-      "id": "barbayeux:2026-08-07:9-30",
+      "id": "barbayeux:2026-08-07:amp-9-30",
       "clubId": "barbayeux",
-      "title": "& 9:30",
+      "title": "amp; 9:30",
       "date": "2026-08-07",
       "sets": [
         "20:00"
@@ -15607,9 +15664,9 @@
       "priceText": null
     },
     {
-      "id": "barbayeux:2026-08-08:9-30",
+      "id": "barbayeux:2026-08-08:amp-9-30",
       "clubId": "barbayeux",
-      "title": "& 9:30",
+      "title": "amp; 9:30",
       "date": "2026-08-08",
       "sets": [
         "20:00"
@@ -15796,7 +15853,7 @@
       "sets": [
         "15:30"
       ],
-      "url": "https://en.wikipedia.org/wiki/Marjorie_Eliot",
+      "url": "https://www.facebook.com/pages/Marjorie-Elliots-Parlor-Jazz/488061981215540",
       "details": "Free concert in her Sugar Hill parlor, Apt 3F — every Sunday since 1992. Arrive early.",
       "personnel": null,
       "priceText": "Free"
@@ -16914,9 +16971,9 @@
       "priceText": null
     },
     {
-      "id": "barbayeux:2026-08-12:9-30-gilad-hekselman-trio-w-harish-raghavan-kendrick-scott",
+      "id": "barbayeux:2026-08-12:amp-9-30-gilad-hekselman-trio-w-harish-raghavan-kendrick-sco",
       "clubId": "barbayeux",
-      "title": "& 9:30 Gilad Hekselman Trio w/Harish Raghavan, Kendrick Scott",
+      "title": "amp; 9:30 Gilad Hekselman Trio w/Harish Raghavan, Kendrick Scott",
       "date": "2026-08-12",
       "sets": [
         "20:00"
@@ -17306,9 +17363,9 @@
       "priceText": null
     },
     {
-      "id": "barbayeux:2026-08-13:9-30-david-berkman-w-adam-kolker-jeremy-stratton",
+      "id": "barbayeux:2026-08-13:amp-9-30-david-berkman-w-adam-kolker-jeremy-stratton",
       "clubId": "barbayeux",
-      "title": "& 9:30 David Berkman w/Adam Kolker, Jeremy Stratton,",
+      "title": "amp; 9:30 David Berkman w/Adam Kolker, Jeremy Stratton,",
       "date": "2026-08-13",
       "sets": [
         "20:00"
@@ -17564,9 +17621,9 @@
       "priceText": null
     },
     {
-      "id": "jazzgallery:2026-08-14:jonathan-paik",
+      "id": "jazzgallery:2026-08-14:jonathan-paik-presents-fugitive",
       "clubId": "jazzgallery",
-      "title": "Jonathan Paik",
+      "title": "Jonathan Paik presents FUGITIVE",
       "date": "2026-08-14",
       "sets": [
         "19:00",
@@ -17574,7 +17631,24 @@
       ],
       "url": "https://jazzgallery.org/calendar/jonathan-paik-aug-14-2026",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Jonathan Paik",
+          "instrument": "piano"
+        },
+        {
+          "name": "Harrison Clark",
+          "instrument": "vocals"
+        },
+        {
+          "name": "Shogo Yamagishi",
+          "instrument": "bass"
+        },
+        {
+          "name": "Mark Valdes",
+          "instrument": "drums"
+        }
+      ],
       "priceText": null
     },
     {
@@ -17675,9 +17749,9 @@
       "priceText": null
     },
     {
-      "id": "barbayeux:2026-08-14:9-30",
+      "id": "barbayeux:2026-08-14:amp-9-30",
       "clubId": "barbayeux",
-      "title": "& 9:30",
+      "title": "amp; 9:30",
       "date": "2026-08-14",
       "sets": [
         "20:00"
@@ -18058,9 +18132,9 @@
       "priceText": null
     },
     {
-      "id": "barbayeux:2026-08-15:9-30-george-schuller",
+      "id": "barbayeux:2026-08-15:amp-9-30-george-schuller",
       "clubId": "barbayeux",
-      "title": "& 9:30 - George Schuller",
+      "title": "amp; 9:30 - George Schuller",
       "date": "2026-08-15",
       "sets": [
         "20:00"
@@ -18223,7 +18297,7 @@
       "sets": [
         "15:30"
       ],
-      "url": "https://en.wikipedia.org/wiki/Marjorie_Eliot",
+      "url": "https://www.facebook.com/pages/Marjorie-Elliots-Parlor-Jazz/488061981215540",
       "details": "Free concert in her Sugar Hill parlor, Apt 3F — every Sunday since 1992. Arrive early.",
       "personnel": null,
       "priceText": "Free"
@@ -19170,9 +19244,9 @@
       "priceText": null
     },
     {
-      "id": "barbayeux:2026-08-19:9-30-ralph-alessi-and-escalation-w-matt-mitchell-john-hebert",
+      "id": "barbayeux:2026-08-19:amp-9-30-ralph-alessi-and-escalation-w-matt-mitchell-john-he",
       "clubId": "barbayeux",
-      "title": "& 9:30 Ralph Alessi and Escalation w/Matt Mitchell, John Hebert, Ches Smith",
+      "title": "amp; 9:30 Ralph Alessi and Escalation w/Matt Mitchell, John Hebert, Ches Smith",
       "date": "2026-08-19",
       "sets": [
         "20:00"
@@ -19940,9 +20014,9 @@
       "priceText": null
     },
     {
-      "id": "barbayeux:2026-08-21:9-30-kaz-takemura",
+      "id": "barbayeux:2026-08-21:amp-9-30-kaz-takemura",
       "clubId": "barbayeux",
-      "title": "& 9:30 - Kaz Takemura",
+      "title": "amp; 9:30 - Kaz Takemura",
       "date": "2026-08-21",
       "sets": [
         "20:00"
@@ -20226,9 +20300,9 @@
       "priceText": null
     },
     {
-      "id": "barbayeux:2026-08-22:9-30-martin-nevin",
+      "id": "barbayeux:2026-08-22:amp-9-30-martin-nevin",
       "clubId": "barbayeux",
-      "title": "& 9:30 - Martin Nevin",
+      "title": "amp; 9:30 - Martin Nevin",
       "date": "2026-08-22",
       "sets": [
         "20:00"
@@ -20373,7 +20447,7 @@
       "sets": [
         "15:30"
       ],
-      "url": "https://en.wikipedia.org/wiki/Marjorie_Eliot",
+      "url": "https://www.facebook.com/pages/Marjorie-Elliots-Parlor-Jazz/488061981215540",
       "details": "Free concert in her Sugar Hill parlor, Apt 3F — every Sunday since 1992. Arrive early.",
       "personnel": null,
       "priceText": "Free"
@@ -21328,9 +21402,9 @@
       "priceText": null
     },
     {
-      "id": "barbayeux:2026-08-26:9-30-tyrone-allen-ii-quartet-w-neta-raanan-lex-korten-kayvon",
+      "id": "barbayeux:2026-08-26:amp-9-30-tyrone-allen-ii-quartet-w-neta-raanan-lex-korten-ka",
       "clubId": "barbayeux",
-      "title": "& 9:30 Tyrone Allen II Quartet w/Neta Raanan, Lex Korten, Kayvon Gordon",
+      "title": "amp; 9:30 Tyrone Allen II Quartet w/Neta Raanan, Lex Korten, Kayvon Gordon",
       "date": "2026-08-26",
       "sets": [
         "20:00"
@@ -21955,9 +22029,9 @@
       "priceText": null
     },
     {
-      "id": "barbayeux:2026-08-28:9-30",
+      "id": "barbayeux:2026-08-28:amp-9-30",
       "clubId": "barbayeux",
-      "title": "& 9:30",
+      "title": "amp; 9:30",
       "date": "2026-08-28",
       "sets": [
         "20:00"
@@ -22259,9 +22333,9 @@
       "priceText": null
     },
     {
-      "id": "barbayeux:2026-08-29:9-30-tim-norton",
+      "id": "barbayeux:2026-08-29:amp-9-30-tim-norton",
       "clubId": "barbayeux",
-      "title": "& 9:30 - Tim Norton",
+      "title": "amp; 9:30 - Tim Norton",
       "date": "2026-08-29",
       "sets": [
         "20:00"
@@ -22397,7 +22471,7 @@
       "sets": [
         "15:30"
       ],
-      "url": "https://en.wikipedia.org/wiki/Marjorie_Eliot",
+      "url": "https://www.facebook.com/pages/Marjorie-Elliots-Parlor-Jazz/488061981215540",
       "details": "Free concert in her Sugar Hill parlor, Apt 3F — every Sunday since 1992. Arrive early.",
       "personnel": null,
       "priceText": "Free"
@@ -23114,7 +23188,7 @@
       "sets": [
         "15:30"
       ],
-      "url": "https://en.wikipedia.org/wiki/Marjorie_Eliot",
+      "url": "https://www.facebook.com/pages/Marjorie-Elliots-Parlor-Jazz/488061981215540",
       "details": "Free concert in her Sugar Hill parlor, Apt 3F — every Sunday since 1992. Arrive early.",
       "personnel": null,
       "priceText": "Free"

@@ -301,3 +301,7 @@ export const nyTime = (input) => tzTime(input, 'America/New_York');
 // LA conveniences (for the LA crawlers).
 export const laDate = (input) => tzDate(input, 'America/Los_Angeles');
 export const laTime = (input) => tzTime(input, 'America/Los_Angeles');
+
+// Chicago conveniences (for the Chicago crawlers).
+export const chiDate = (input) => tzDate(input, 'America/Chicago');
+export const chiTime = (input) => tzTime(input, 'America/Chicago');

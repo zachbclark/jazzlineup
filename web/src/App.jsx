@@ -1,5 +1,5 @@
 import React, { useEffect, useMemo, useState } from 'react';
-import { fetchData, initialCity, todayIso, relTime, searchNorm, eventMatches } from './api';
+import { CITIES, fetchData, initialCity, todayIso, relTime, searchNorm, eventMatches } from './api';
 import SearchBox from './components/SearchBox';
 import { useIsMobile } from './useIsMobile';
 import CitySwitcher from './components/CitySwitcher';
@@ -20,6 +20,7 @@ export default function App() {
   const [borough, setBorough] = useState(null); // null = all boroughs
   const [order, setOrder] = useState(null); // saved chip order (array of ids) per city
   const [query, setQuery] = useState(''); // artist search
+  const [otherCityEvents, setOtherCityEvents] = useState({}); // cityId -> events (lazy, for cross-city hint)
   const [city, setCity] = useState(initialCity);
   // Everyone lands on the calendar; today is pre-selected so tonight's
   // lineup shows in the day drawer immediately.
@@ -47,7 +48,7 @@ export default function App() {
 
   // Keep the browser tab honest when switching cities (was stuck on NYC).
   useEffect(() => {
-    document.title = `Jazz Lineup — live jazz in ${city === 'nyc' ? 'NYC' : city.toUpperCase()} tonight`;
+    document.title = `Jazz Lineup: live jazz in ${city.toUpperCase()} tonight`;
   }, [city]);
 
   const changeCity = (id) => {
@@ -141,6 +142,27 @@ export default function App() {
     ? new Set(results.map((e) => e.clubId)).size
     : scopedClubs.filter((c) => active === null || active.has(c.id)).length;
 
+  // Cross-city hint: while searching, quietly check every OTHER city too and
+  // offer a one-tap switch per city with matches (touring artists play all).
+  useEffect(() => {
+    if (!searching) return;
+    for (const oc of CITIES) {
+      if (oc.id === city || otherCityEvents[oc.id]) continue;
+      fetchData(oc.id)
+        .then((d) => setOtherCityEvents((prev) => ({ ...prev, [oc.id]: d.events })))
+        .catch(() => { /* hint is best-effort; searching here still works */ });
+    }
+  }, [searching, city, otherCityEvents]);
+  const otherMatches = useMemo(() => {
+    if (!searching) return [];
+    return CITIES.filter((c) => c.id !== city)
+      .map((c) => ({
+        city: c,
+        count: (otherCityEvents[c.id] ?? []).filter((e) => eventMatches(e, normQuery, null)).length,
+      }))
+      .filter((x) => x.count > 0);
+  }, [searching, normQuery, city, otherCityEvents]);
+
   // Selection model: from "all on", the first click selects ONLY that club;
   // further clicks add/remove clubs; removing the last one returns to all.
   const toggleClub = (id) => {
@@ -167,16 +189,27 @@ export default function App() {
         </div>
         <SearchBox query={query} onChange={setQuery} />
         <div className="view-toggle" role="tablist">
-          <button className={view === 'month' ? 'on' : ''} onClick={() => setView('month')}>Calendar</button>
-          <button className={view === 'list' ? 'on' : ''} onClick={() => setView('list')}>List</button>
+          <button className={view === 'month' ? 'on' : ''} onClick={() => setView('month')} aria-label="Calendar view">
+            <span className="vt-icon" aria-hidden="true">&#9638;</span>
+            <span className="vt-label">Calendar</span>
+          </button>
+          <button className={view === 'list' ? 'on' : ''} onClick={() => setView('list')} aria-label="List view">
+            <span className="vt-icon" aria-hidden="true">&#9776;</span>
+            <span className="vt-label">List</span>
+          </button>
         </div>
       </header>
 
       {searching && (
         <div className="search-summary">
           {results.length
-            ? <>{results.length} show{results.length === 1 ? '' : 's'} match <strong>&ldquo;{query.trim()}&rdquo;</strong> across all {city.toUpperCase()} venues</>
-            : <>Nothing matches <strong>&ldquo;{query.trim()}&rdquo;</strong> in {city.toUpperCase()} — try the other city?</>}
+            ? <><strong>{results.length}</strong> show{results.length === 1 ? '' : 's'} across all {city.toUpperCase()} venues</>
+            : <>No matches in {city.toUpperCase()}</>}
+          {otherMatches.map(({ city: oc, count }) => (
+            <button key={oc.id} className="other-city" onClick={() => changeCity(oc.id)}>
+              {count} in {oc.label} &rarr;
+            </button>
+          ))}
         </div>
       )}
 

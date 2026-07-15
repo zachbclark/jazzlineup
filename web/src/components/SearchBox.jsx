@@ -19,6 +19,8 @@ export default function SearchBox({ query, onChange }) {
       />
       {query && (
         <button className="search-clear" aria-label="clear search"
+          onMouseDown={(e) => e.preventDefault()} // don't blur the input: a blur
+          // mid-click resizes the box and slides this button away (2-click bug)
           onClick={() => { onChange(''); ref.current?.focus(); }}>
           &times;
         </button>

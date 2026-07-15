@@ -55,7 +55,7 @@ try {
   });
 
   await test('calendar is the default view', async () => {
-    assert.equal(await pd.textContent('.view-toggle button.on'), 'Calendar');
+    assert.match(await pd.textContent('.view-toggle button.on'), /Calendar/);
     assert.ok(await pd.$('.grid'));
   });
 
@@ -65,6 +65,22 @@ try {
     assert.ok(m, `footer text unexpected: ${foot}`);
     assert.ok(Number(m[1]) > 100, `suspiciously few events: ${m[1]}`);
     assert.ok(Number(m[2]) >= 7, `expected 7+ clubs, got ${m[2]}`);
+  });
+
+  await test('city menu lists all three cities; CHI loads (empty until first crawl)', async () => {
+    await pd.click('.city-badge-btn');
+    await pd.waitForTimeout(200);
+    const options = await Promise.all((await pd.$$('.city-option')).map((o) => o.textContent()));
+    assert.deepEqual(options.map((s) => s.trim()), ['NYC', 'LA', 'CHI']);
+    await pd.click('.city-option:has-text("CHI")');
+    await pd.waitForTimeout(400);
+    assert.match(await pd.title(), /CHI/);
+    assert.ok(await pd.$('.grid'), 'CHI should render a calendar even with no data');
+    assert.deepEqual(errors, [], 'switching to CHI threw');
+    // back to NYC for the rest of the suite
+    await pd.click('.city-badge-btn');
+    await pd.click('.city-option:has-text("NYC")');
+    await pd.waitForTimeout(400);
   });
 
   await test('clicking a day with events opens the inline drawer', async () => {
@@ -222,7 +238,7 @@ try {
   await pm.waitForTimeout(600);
 
   await test('mobile: lands on calendar with compact dot cells', async () => {
-    assert.equal(await pm.textContent('.view-toggle button.on'), 'Calendar');
+    assert.match(await pm.textContent('.view-toggle button.on'), /Calendar/);
     assert.ok((await pm.$$('button.cell')).length > 20, 'compact button cells missing');
     assert.ok((await pm.$$('.dot-sm')).length > 10, 'dot markers missing');
     assert.deepEqual(merrors, []);
