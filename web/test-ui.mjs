@@ -75,25 +75,38 @@ try {
     assert.ok((await pd.$$('.daypanel.inline .row')).length > 0, 'drawer has no rows');
   });
 
-  await test('"All clubs" toggles everything off and back on', async () => {
+  await test('click from All selects ONLY that club; more clicks add; All resets', async () => {
     const count = async () => Number((await pd.textContent('.foot')).match(/(\d+) shows/)[1]);
+    const clubCount = async () => Number((await pd.textContent('.foot')).match(/across (\d+) clubs/)[1]);
     const initial = await count();
-    await pd.click('.chip-all');
-    await pd.waitForTimeout(250);
-    assert.equal(await count(), 0, 'deselect-all did not zero the count');
-    await pd.click('.chip-all');
-    await pd.waitForTimeout(250);
-    assert.equal(await count(), initial, 'select-all did not restore');
-  });
-
-  await test('toggling one club changes the count', async () => {
-    const count = async () => Number((await pd.textContent('.foot')).match(/(\d+) shows/)[1]);
-    const initial = await count();
+    const allClubs = await clubCount();
+    // first click: exclusive select
     await pd.click('.chip:not(.chip-all)');
     await pd.waitForTimeout(250);
-    const after = await count();
-    assert.ok(after < initial && after >= 0, `count did not drop: ${initial} -> ${after}`);
-    await pd.click('.chip:not(.chip-all)'); // restore
+    assert.equal(await clubCount(), 1, 'first click must select only that club');
+    const solo = await count();
+    assert.ok(solo > 0 && solo < initial, `count should be one club's shows: ${solo}`);
+    // second click on another chip: additive
+    await pd.click('.chip:not(.chip-all):nth-of-type(3)');
+    await pd.waitForTimeout(250);
+    assert.equal(await clubCount(), 2, 'second click must add');
+    assert.ok(await count() > solo, 'adding a club must add shows');
+    // "All clubs" resets everything on
+    await pd.click('.chip-all');
+    await pd.waitForTimeout(250);
+    assert.equal(await count(), initial, 'All clubs did not reset');
+    assert.equal(await clubCount(), allClubs);
+  });
+
+  await test('deselecting the last selected club returns to All', async () => {
+    const clubCount = async () => Number((await pd.textContent('.foot')).match(/across (\d+) clubs/)[1]);
+    const allClubs = await clubCount();
+    await pd.click('.chip:not(.chip-all)'); // only this club
+    await pd.waitForTimeout(250);
+    assert.equal(await clubCount(), 1);
+    await pd.click('.chip:not(.chip-all)'); // deselect the last one -> all
+    await pd.waitForTimeout(250);
+    assert.equal(await clubCount(), allClubs, 'empty selection should flow back to All');
   });
 
   await test('list view renders grouped days', async () => {

@@ -121,11 +121,18 @@ export default function App() {
   }, [events, active, scopedIdSet]);
   const shownClubCount = scopedClubs.filter((c) => active === null || active.has(c.id)).length;
 
+  // Selection model: from "all on", the first click selects ONLY that club;
+  // further clicks add/remove clubs; removing the last one returns to all.
   const toggleClub = (id) => {
     setActive((prev) => {
-      const next = new Set(prev ?? clubs.map((c) => c.id));
-      if (next.has(id)) next.delete(id); else next.add(id);
-      const result = next.size === clubs.length ? null : next;
+      let result;
+      if (prev === null) {
+        result = new Set([id]);
+      } else {
+        const next = new Set(prev);
+        if (next.has(id)) next.delete(id); else next.add(id);
+        result = (next.size === 0 || next.size === clubs.length) ? null : next;
+      }
       persistActive(result);
       return result;
     });
@@ -154,12 +161,11 @@ export default function App() {
         onReorderEnd={persistOrder}
         hasCustomOrder={order !== null}
         onResetOrder={resetOrder}
-        // "All clubs" toggles: everything on <-> everything off
-        onAll={() => setActive((prev) => {
-          const result = prev === null ? new Set() : null;
-          persistActive(result);
-          return result;
-        })}
+        // "All clubs" is a reset: everything back on
+        onAll={() => {
+          persistActive(null);
+          setActive(null);
+        }}
       />
 
       {error && <div className="error">Couldn&rsquo;t load shows: {error}</div>}

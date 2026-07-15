@@ -41,15 +41,18 @@ export default function FilterBar({
     return () => el.removeEventListener('touchmove', block);
   }, []);
 
-  // FLIP: after every render, glide any chip whose position changed.
+  // FLIP: glide chips displaced by an ACTIVE DRAG only. Any other layout
+  // change (borough switch, toggles, reset) must snap — animating those made
+  // chips slide around the bar like furniture (Zach, 2026-07-16).
   useLayoutEffect(() => {
     const bar = barRef.current;
     if (!bar) return;
+    const animate = drag.current.active;
     for (const el of bar.querySelectorAll('[data-chip-id]')) {
       const id = el.getAttribute('data-chip-id');
       const r = el.getBoundingClientRect();
       const p = rects.current.get(id);
-      if (p && (p.left !== r.left || p.top !== r.top) && !el.classList.contains('dragging')) {
+      if (animate && p && (p.left !== r.left || p.top !== r.top) && !el.classList.contains('dragging')) {
         el.style.transition = 'none';
         el.style.transform = `translate(${p.left - r.left}px, ${p.top - r.top}px)`;
         requestAnimationFrame(() => {
@@ -57,6 +60,9 @@ export default function FilterBar({
           el.style.transform = '';
           setTimeout(() => { el.style.transition = ''; }, 100);
         });
+      } else if (!animate && el.style.transform) {
+        el.style.transition = '';
+        el.style.transform = '';
       }
       rects.current.set(id, { left: r.left, top: r.top });
     }

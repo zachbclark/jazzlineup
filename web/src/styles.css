@@ -200,11 +200,14 @@ button { font: inherit; cursor: pointer; }
 
 .foot { margin-top: 30px; color: var(--muted); font-size: 12.5px; display: flex; gap: 8px; flex-wrap: wrap; }
 .foot-sep { color: var(--line); }
-/* the tip jar whispers; it glows only when someone reaches for it */
-.tip-jar { color: var(--muted); transition: all .2s ease; }
+/* the tip jar wears gold — the footer's one invitation; halo on hover only */
+.tip-jar {
+  color: var(--accent); opacity: 0.9; font-weight: 600; letter-spacing: 0.3px;
+  transition: all .2s ease;
+}
 .tip-jar:hover {
-  color: var(--accent);
-  text-shadow: 0 0 10px rgba(232, 180, 88, 0.55);
+  opacity: 1;
+  text-shadow: 0 0 12px rgba(232, 180, 88, 0.6);
 }
 
 /* compact calendar (phone) */
