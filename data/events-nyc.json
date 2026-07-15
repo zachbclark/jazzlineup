@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-15T22:33:48.957Z",
+  "generatedAt": "2026-07-15T23:42:03.238Z",
   "city": "nyc",
   "clubs": [
     {
@@ -1244,7 +1244,7 @@
       "url": "https://tickets.smokejazz.com/shows/11747/?date=2026-07-15",
       "details": null,
       "personnel": null,
-      "priceText": "25.00,65.00"
+      "priceText": "$25-65"
     },
     {
       "id": "ornithology:2026-07-15:earlybird-show",
@@ -1529,12 +1529,13 @@
       "priceText": null
     },
     {
-      "id": "barbayeux:2026-07-15:amp-9-30-morgan-guerin",
+      "id": "barbayeux:2026-07-15:morgan-guerin",
       "clubId": "barbayeux",
-      "title": "amp; 9:30 Morgan Guerin",
+      "title": "Morgan Guerin",
       "date": "2026-07-15",
       "sets": [
-        "20:00"
+        "20:00",
+        "21:30"
       ],
       "url": "https://www.barbayeux.com/jazz/33sxrd9ynk6pjzn-325ns-shjkp-4l7y4-er5kz-pfmt7-la9zt-hgezc-z5h28-s33sy-982jt-yttmk-x8h75-wrm8y-te9t8-zl2wj-m73r6-jbbct-brymc-6zgj3-xbsff-9pyta-8d82d-pw27n-lrrc8",
       "details": null,
@@ -2025,7 +2026,7 @@
       "url": "https://tickets.smokejazz.com/shows/11747/?date=2026-07-16",
       "details": null,
       "personnel": null,
-      "priceText": "25.00,65.00"
+      "priceText": "$25-65"
     },
     {
       "id": "ornithology:2026-07-16:earlybird-show",
@@ -2349,15 +2350,16 @@
       "priceText": null
     },
     {
-      "id": "barbayeux:2026-07-16:amp-9-30",
+      "id": "barbayeux:2026-07-16:steve-cardenas-w-adam-kolker-jeremy-stratton-george-schuller",
       "clubId": "barbayeux",
-      "title": "amp; 9:30",
+      "title": "Steve Cardenas w/Adam Kolker, Jeremy Stratton, George Schuller",
       "date": "2026-07-16",
       "sets": [
-        "20:00"
+        "20:00",
+        "21:30"
       ],
       "url": "https://www.barbayeux.com/jazz/z63pt232xlmbzmm-lf3tb-5yewh-m6x68-p26t7-nldmr-r7jah-cs8kl-fsgfe-4k7be-mrn73-tlf9t-4ncdr-rheb4-y9mwa-hlsr5-5p4hn-9mn2k-tg8s9-5ampf-mb7ch-3pbw6-a4wfm-z2jjd-em2ra-nal2n-j4ppt-jse6l-ebhae-9xkne",
-      "details": "Steve Cardenas w/Adam Kolker, Jeremy Stratton, George Schuller",
+      "details": null,
       "personnel": null,
       "priceText": null
     },
@@ -2939,7 +2941,7 @@
       "url": "https://tickets.smokejazz.com/shows/11747/?date=2026-07-17",
       "details": null,
       "personnel": null,
-      "priceText": "25.00,65.00"
+      "priceText": "$25-65"
     },
     {
       "id": "ornithology:2026-07-17:earlybird-show",
@@ -3235,12 +3237,13 @@
       "priceText": null
     },
     {
-      "id": "barbayeux:2026-07-17:amp-9-30-jerome-sabbagh",
+      "id": "barbayeux:2026-07-17:jerome-sabbagh",
       "clubId": "barbayeux",
-      "title": "amp; 9:30 - Jerome Sabbagh",
+      "title": "Jerome Sabbagh",
       "date": "2026-07-17",
       "sets": [
-        "20:00"
+        "20:00",
+        "21:30"
       ],
       "url": "https://www.barbayeux.com/jazz/bsg4lz3rhzc3egx-mfjnz-47sjb-4e67s-xt5a5-6bjcx-cbrpj-e2s8z-ajbg8-ctpzs-c8mfg-727m7-zdpbx-42jss-xlx9x-zhw76-lns7p",
       "details": null,
@@ -3835,7 +3838,7 @@
       "url": "https://tickets.smokejazz.com/shows/11747/?date=2026-07-18",
       "details": null,
       "personnel": null,
-      "priceText": "25.00,65.00"
+      "priceText": "$25-65"
     },
     {
       "id": "ornithology:2026-07-18:earlybird-show",
@@ -4140,15 +4143,16 @@
       "priceText": null
     },
     {
-      "id": "barbayeux:2026-07-18:amp-9-30",
+      "id": "barbayeux:2026-07-18:meron-menares-macbride-live-at-the-sound-room-release-show-w",
       "clubId": "barbayeux",
-      "title": "amp; 9:30",
+      "title": "Meron • Menares • Macbride: Live at The Sound Room Release Show w/Daniel Meron, Pablo Menares, Jimmy Macbride",
       "date": "2026-07-18",
       "sets": [
-        "20:00"
+        "20:00",
+        "21:30"
       ],
       "url": "https://www.barbayeux.com/jazz/8nr3zbphrp75e5k-3s5ml-h7ca5-syapg-t6xwm-whbzx-ccm8b-x3hj6-aye58-4psyn-3zkbd-74yln-2m7an-s36sk-hl2jc-hdptg-3slgm-eklny-a4mp4-crpp2-l8pkr-w3ft8-ddssg-hz3yr-kxhbe-3lych-pnwjs-af83b-x2lls-kykak",
-      "details": "Meron • Menares • Macbride: Live at The Sound Room Release Show w/Daniel Meron, Pablo Menares, Jimmy Macbride",
+      "details": null,
       "personnel": null,
       "priceText": null
     },
@@ -4728,7 +4732,7 @@
       "url": "https://tickets.smokejazz.com/shows/11747/?date=2026-07-19",
       "details": null,
       "personnel": null,
-      "priceText": "25.00,65.00"
+      "priceText": "$25-65"
     },
     {
       "id": "django:2026-07-19:brian-charette-trio",
@@ -6542,7 +6546,7 @@
       "url": "https://tickets.smokejazz.com/shows/11828/?date=2026-07-22",
       "details": null,
       "personnel": null,
-      "priceText": "25.00,65.00"
+      "priceText": "$25-65"
     },
     {
       "id": "ornithology:2026-07-22:earlybird-show",
@@ -6773,12 +6777,13 @@
       "priceText": null
     },
     {
-      "id": "barbayeux:2026-07-22:amp-9-30-elsa-nilsson-band-of-pulses-liminal-album-release-c",
+      "id": "barbayeux:2026-07-22:elsa-nilsson-band-of-pulses-liminal-album-release-concert",
       "clubId": "barbayeux",
-      "title": "amp; 9:30 Elsa Nilsson Band of Pulses, Liminal Album Release concert",
+      "title": "Elsa Nilsson Band of Pulses, Liminal Album Release concert",
       "date": "2026-07-22",
       "sets": [
-        "20:00"
+        "20:00",
+        "21:30"
       ],
       "url": "https://www.barbayeux.com/jazz/33sxrd9ynk6pjzn-325ns-shjkp-4l7y4-er5kz-pfmt7-la9zt-hgezc-z5h28-s33sy-982jt-yttmk-x8h75-wrm8y-te9t8-zl2wj-m73r6-jbbct-brymc-6zgj3-xbsff-9pyta-8d82d-pw27n-lrrc8-edfbd",
       "details": null,
@@ -7262,7 +7267,7 @@
       "url": "https://tickets.smokejazz.com/shows/11828/?date=2026-07-23",
       "details": null,
       "personnel": null,
-      "priceText": "25.00,65.00"
+      "priceText": "$25-65"
     },
     {
       "id": "jazzcultural:2026-07-23:leo-genovese-quintet",
@@ -7475,12 +7480,13 @@
       "priceText": null
     },
     {
-      "id": "barbayeux:2026-07-23:amp-9-30-julian-shore-w-adam-kolker-jeremy-stratton-jochen-r",
+      "id": "barbayeux:2026-07-23:julian-shore-w-adam-kolker-jeremy-stratton-jochen-rueckert",
       "clubId": "barbayeux",
-      "title": "amp; 9:30 Julian Shore w/Adam Kolker, Jeremy Stratton, Jochen Rueckert",
+      "title": "Julian Shore w/Adam Kolker, Jeremy Stratton, Jochen Rueckert",
       "date": "2026-07-23",
       "sets": [
-        "20:00"
+        "20:00",
+        "21:30"
       ],
       "url": "https://www.barbayeux.com/jazz/z63pt232xlmbzmm-lf3tb-5yewh-m6x68-p26t7-nldmr-r7jah-cs8kl-fsgfe-4k7be-mrn73-tlf9t-4ncdr-rheb4-y9mwa-hlsr5-5p4hn-9mn2k-tg8s9-5ampf-mb7ch-3pbw6-a4wfm-z2jjd-em2ra-nal2n-j4ppt-jse6l-ebhae-g2tp6",
       "details": null,
@@ -7942,7 +7948,28 @@
       ],
       "url": "https://www.smallslive.com/events/32992-eric-person-quintet/",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Eric Person",
+          "instrument": "alto sax"
+        },
+        {
+          "name": "Ingrid Jensen",
+          "instrument": "trumpet"
+        },
+        {
+          "name": "Matt King",
+          "instrument": "piano"
+        },
+        {
+          "name": "Adam Armstrong",
+          "instrument": "bass"
+        },
+        {
+          "name": "Jason Tiemann",
+          "instrument": "drums"
+        }
+      ],
       "priceText": null
     },
     {
@@ -7958,7 +7985,7 @@
       "url": "https://tickets.smokejazz.com/shows/11828/?date=2026-07-24",
       "details": null,
       "personnel": null,
-      "priceText": "25.00,65.00"
+      "priceText": "$25-65"
     },
     {
       "id": "ornithology:2026-07-24:earlybird-show",
@@ -8299,12 +8326,13 @@
       "priceText": null
     },
     {
-      "id": "barbayeux:2026-07-24:amp-9-30-kazemde-george-w-tyrone-allen-ii-and-kayvon-gordon",
+      "id": "barbayeux:2026-07-24:kazemde-george-w-tyrone-allen-ii-and-kayvon-gordon",
       "clubId": "barbayeux",
-      "title": "amp; 9:30 - Kazemde George w/Tyrone Allen II and Kayvon Gordon",
+      "title": "Kazemde George w/Tyrone Allen II and Kayvon Gordon",
       "date": "2026-07-24",
       "sets": [
-        "20:00"
+        "20:00",
+        "21:30"
       ],
       "url": "https://www.barbayeux.com/jazz/bsg4lz3rhzc3egx-mfjnz-47sjb-4e67s-xt5a5-6bjcx-cbrpj-e2s8z-ajbg8-ctpzs-c8mfg-727m7-zdpbx-42jss-xlx9x-zhw76-lns7p-fjc6n",
       "details": null,
@@ -8349,7 +8377,32 @@
       ],
       "url": "https://www.smallslive.com/events/32994-manuel-valera-new-cuban-express/",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Manuel Valera",
+          "instrument": "piano"
+        },
+        {
+          "name": "Alex Norris",
+          "instrument": "trumpet"
+        },
+        {
+          "name": "Joel Frahm",
+          "instrument": "tenor sax"
+        },
+        {
+          "name": "Hamish Smith",
+          "instrument": "bass"
+        },
+        {
+          "name": "Jimmy Macbride",
+          "instrument": "drums"
+        },
+        {
+          "name": "Samuel Torres",
+          "instrument": "percussion"
+        }
+      ],
       "priceText": null
     },
     {
@@ -8570,7 +8623,24 @@
       ],
       "url": "https://www.smallslive.com/events/33081-ken-fowser-quintet/",
       "details": "until 4:00 AM",
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Ken Fowser",
+          "instrument": "tenor sax"
+        },
+        {
+          "name": "Anthony Wonsey",
+          "instrument": "piano"
+        },
+        {
+          "name": "Joseph Ranieri",
+          "instrument": "bass"
+        },
+        {
+          "name": "Michael Camacho",
+          "instrument": "drums"
+        }
+      ],
       "late": true,
       "priceText": null
     },
@@ -8611,7 +8681,12 @@
       ],
       "url": "https://www.smallslive.com/events/33197-afternoon-jam-in-the-cafe/",
       "details": "until 6:00 PM",
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Samuel Lerner",
+          "instrument": "piano"
+        }
+      ],
       "priceText": null
     },
     {
@@ -8624,7 +8699,24 @@
       ],
       "url": "https://www.smallslive.com/events/33312-smalls-afternoon-jam-session-hosted-by-tyler-mitchell/",
       "details": "until 5:15 PM",
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Tyler Mitchell",
+          "instrument": "bass"
+        },
+        {
+          "name": "Nicoletta Manzini",
+          "instrument": "alto sax"
+        },
+        {
+          "name": "Ilya Lushtak",
+          "instrument": "guitar"
+        },
+        {
+          "name": "Adam Ray",
+          "instrument": "drums"
+        }
+      ],
       "priceText": null
     },
     {
@@ -8664,7 +8756,20 @@
       ],
       "url": "https://www.smallslive.com/events/33444-jon-thomas-trio/",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Jonathan Thomas",
+          "instrument": "piano"
+        },
+        {
+          "name": "Felix Moseholm",
+          "instrument": "bass"
+        },
+        {
+          "name": "Drew Hoschar",
+          "instrument": "drums"
+        }
+      ],
       "priceText": null
     },
     {
@@ -8678,7 +8783,28 @@
       ],
       "url": "https://www.smallslive.com/events/32993-eric-person-quintet/",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Eric Person",
+          "instrument": "alto sax"
+        },
+        {
+          "name": "Ingrid Jensen",
+          "instrument": "trumpet"
+        },
+        {
+          "name": "Matt King",
+          "instrument": "piano"
+        },
+        {
+          "name": "Adam Armstrong",
+          "instrument": "bass"
+        },
+        {
+          "name": "Jason Tiemann",
+          "instrument": "drums"
+        }
+      ],
       "priceText": null
     },
     {
@@ -8720,7 +8846,7 @@
       "url": "https://tickets.smokejazz.com/shows/11828/?date=2026-07-25",
       "details": null,
       "personnel": null,
-      "priceText": "25.00,65.00"
+      "priceText": "$25-65"
     },
     {
       "id": "jazzcultural:2026-07-25:steve-wilson-quintet-enduring-sonance",
@@ -8733,7 +8859,28 @@
       ],
       "url": "https://www.smallslive.com/events/33114-steve-wilson-quintet-enduring-sonance/",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Steve Wilson",
+          "instrument": "alto sax"
+        },
+        {
+          "name": "Joe Locke",
+          "instrument": "vibraphone"
+        },
+        {
+          "name": "Helen Sung",
+          "instrument": "piano"
+        },
+        {
+          "name": "Jay Anderson",
+          "instrument": "bass"
+        },
+        {
+          "name": "Adam Cruz",
+          "instrument": "drums"
+        }
+      ],
       "priceText": null
     },
     {
@@ -8967,15 +9114,16 @@
       "priceText": null
     },
     {
-      "id": "barbayeux:2026-07-25:amp-9-30",
+      "id": "barbayeux:2026-07-25:melissa-aldana-w-alexandra-ridout-pablo-menares-colin-strana",
       "clubId": "barbayeux",
-      "title": "amp; 9:30",
+      "title": "Melissa Aldana w/Alexandra Ridout, Pablo Menares, Colin Stranahan",
       "date": "2026-07-25",
       "sets": [
-        "20:00"
+        "20:00",
+        "21:30"
       ],
       "url": "https://www.barbayeux.com/jazz/8nr3zbphrp75e5k-3s5ml-h7ca5-syapg-t6xwm-whbzx-ccm8b-x3hj6-aye58-4psyn-3zkbd-74yln-2m7an-s36sk-hl2jc-hdptg-3slgm-eklny-a4mp4-crpp2-l8pkr-w3ft8-ddssg-hz3yr-kxhbe-3lych-pnwjs-af83b-x2lls-kykak-tnals",
-      "details": "Melissa Aldana w/Alexandra Ridout, Pablo Menares, Colin Stranahan",
+      "details": null,
       "personnel": null,
       "priceText": null
     },
@@ -8990,7 +9138,20 @@
       ],
       "url": "https://www.smallslive.com/events/33326-eden-ladin-trio/",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Eden Ladin",
+          "instrument": "piano"
+        },
+        {
+          "name": "Joe Martin",
+          "instrument": "bass"
+        },
+        {
+          "name": "Adam Arruda",
+          "instrument": "drums"
+        }
+      ],
       "priceText": null
     },
     {
@@ -9004,7 +9165,32 @@
       ],
       "url": "https://www.smallslive.com/events/32995-manuel-valera-new-cuban-express/",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Manuel Valera",
+          "instrument": "piano"
+        },
+        {
+          "name": "Alex Norris",
+          "instrument": "trumpet"
+        },
+        {
+          "name": "Joel Frahm",
+          "instrument": "tenor sax"
+        },
+        {
+          "name": "Hamish Smith",
+          "instrument": "bass"
+        },
+        {
+          "name": "Jimmy Macbride",
+          "instrument": "drums"
+        },
+        {
+          "name": "Samuel Torres",
+          "instrument": "percussion"
+        }
+      ],
       "priceText": null
     },
     {
@@ -9096,7 +9282,24 @@
       ],
       "url": "https://www.smallslive.com/events/33318-abraham-burton-quartet/",
       "details": "until 12:00 AM",
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Abraham Burton",
+          "instrument": "tenor sax"
+        },
+        {
+          "name": "David Virelles",
+          "instrument": "piano"
+        },
+        {
+          "name": "Gervis Myles",
+          "instrument": "bass"
+        },
+        {
+          "name": "Eric McPherson",
+          "instrument": "drums"
+        }
+      ],
       "priceText": null
     },
     {
@@ -9181,7 +9384,12 @@
       ],
       "url": "https://www.smallslive.com/events/33449-round-midnight-solo-piano-with-john-di-martino/",
       "details": "until 1:00 AM",
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "John Di Martino",
+          "instrument": "piano"
+        }
+      ],
       "late": true,
       "priceText": null
     },
@@ -9195,7 +9403,24 @@
       ],
       "url": "https://www.smallslive.com/events/33082-matt-martinez-quartet/",
       "details": "until 4:00 AM",
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Matt Martinez",
+          "instrument": "alto sax"
+        },
+        {
+          "name": "Miki Yamanaka",
+          "instrument": "piano"
+        },
+        {
+          "name": "Leighton Harrell",
+          "instrument": "bass"
+        },
+        {
+          "name": "Jimmy Macbride",
+          "instrument": "drums"
+        }
+      ],
       "late": true,
       "priceText": null
     },
@@ -9233,7 +9458,12 @@
       ],
       "url": "https://www.smallslive.com/events/33198-afternoon-jam-in-the-cafe/",
       "details": "until 6:00 PM",
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "katie Cosco",
+          "instrument": "piano"
+        }
+      ],
       "priceText": null
     },
     {
@@ -9246,7 +9476,24 @@
       ],
       "url": "https://www.smallslive.com/events/33302-smalls-afternoon-jam-session-hosted-by-ryo-sasaki/",
       "details": "until 5:15 PM",
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Ryo Sasaki",
+          "instrument": "trumpet"
+        },
+        {
+          "name": "Steve Ash",
+          "instrument": "piano"
+        },
+        {
+          "name": "Bill Crow",
+          "instrument": "bass"
+        },
+        {
+          "name": "Steve Little",
+          "instrument": "drums"
+        }
+      ],
       "priceText": null
     },
     {
@@ -9328,7 +9575,20 @@
       ],
       "url": "https://www.smallslive.com/events/32996-alyssa-allgood-trio/",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Alyssa Allgood",
+          "instrument": "vocalist"
+        },
+        {
+          "name": "Adam Birnbaum",
+          "instrument": "piano"
+        },
+        {
+          "name": "John Sims",
+          "instrument": "bass"
+        }
+      ],
       "priceText": null
     },
     {
@@ -9342,7 +9602,24 @@
       ],
       "url": "https://www.smallslive.com/events/33009-tad-shull-quartet/",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Tad Shull",
+          "instrument": "tenor sax"
+        },
+        {
+          "name": "Ray Gallon",
+          "instrument": "piano"
+        },
+        {
+          "name": "Paul Gill",
+          "instrument": "bass"
+        },
+        {
+          "name": "Joe Strasser",
+          "instrument": "drums"
+        }
+      ],
       "priceText": null
     },
     {
@@ -9370,7 +9647,7 @@
       "url": "https://tickets.smokejazz.com/shows/11828/?date=2026-07-26",
       "details": null,
       "personnel": null,
-      "priceText": "25.00,65.00"
+      "priceText": "$25-65"
     },
     {
       "id": "django:2026-07-26:conrad-korsch-trio",
@@ -9397,7 +9674,28 @@
       ],
       "url": "https://www.smallslive.com/events/33115-steve-wilson-quintet-enduring-sonance/",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Steve Wilson",
+          "instrument": "alto sax"
+        },
+        {
+          "name": "Joe Locke",
+          "instrument": "vibraphone"
+        },
+        {
+          "name": "Helen Sung",
+          "instrument": "piano"
+        },
+        {
+          "name": "Jay Anderson",
+          "instrument": "bass"
+        },
+        {
+          "name": "Adam Cruz",
+          "instrument": "drums"
+        }
+      ],
       "priceText": null
     },
     {
@@ -9545,7 +9843,12 @@
       ],
       "url": "https://www.smallslive.com/events/32997-lucy-wijnands-quartet/",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Lucy Wijnands",
+          "instrument": "vocalist"
+        }
+      ],
       "priceText": null
     },
     {
@@ -9559,7 +9862,12 @@
       ],
       "url": "https://www.smallslive.com/events/33010-todd-herbert-quartet/",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Todd Herbert",
+          "instrument": "tenor sax"
+        }
+      ],
       "priceText": null
     },
     {
@@ -9613,7 +9921,12 @@
       ],
       "url": "https://www.smallslive.com/events/33209-jam-in-the-cafe/",
       "details": "until 12:00 AM",
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Marc Devine",
+          "instrument": "piano"
+        }
+      ],
       "priceText": null
     },
     {
@@ -9721,7 +10034,12 @@
       ],
       "url": "https://www.smallslive.com/events/33382-saul-rubin-quartet/",
       "details": "until 4:00 AM",
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Saul Rubin",
+          "instrument": "guitar"
+        }
+      ],
       "late": true,
       "priceText": null
     },
@@ -9735,7 +10053,12 @@
       ],
       "url": "https://www.smallslive.com/events/33199-afternoon-jam-in-the-cafe/",
       "details": "until 6:00 PM",
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Saul Rubin",
+          "instrument": "guitar"
+        }
+      ],
       "priceText": null
     },
     {
@@ -9776,7 +10099,20 @@
       ],
       "url": "https://www.smallslive.com/events/33440-alan-broadbent-trio/",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Alan Broadbent",
+          "instrument": "piano"
+        },
+        {
+          "name": "Harvie S",
+          "instrument": "bass"
+        },
+        {
+          "name": "Billy Mintz",
+          "instrument": "drums"
+        }
+      ],
       "priceText": null
     },
     {
@@ -9790,7 +10126,28 @@
       ],
       "url": "https://www.smallslive.com/events/33059-matt-pavolkas-new-quintet/",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Matt Pavolka",
+          "instrument": "bass"
+        },
+        {
+          "name": "David Smith",
+          "instrument": "trumpet"
+        },
+        {
+          "name": "Jason Rigby",
+          "instrument": "tenor sax"
+        },
+        {
+          "name": "Jacob Sacks",
+          "instrument": "piano"
+        },
+        {
+          "name": "Steven Crammer",
+          "instrument": "drums"
+        }
+      ],
       "priceText": null
     },
     {
@@ -9804,7 +10161,12 @@
       ],
       "url": "https://www.smallslive.com/events/33168-eric-alexander-quartet/",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Eric Alexander",
+          "instrument": "tenor sax"
+        }
+      ],
       "priceText": null
     },
     {
@@ -9967,7 +10329,20 @@
       ],
       "url": "https://www.smallslive.com/events/33441-jesse-green-trio/",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Jesse Green",
+          "instrument": "piano"
+        },
+        {
+          "name": "Chip Jackson",
+          "instrument": "bass"
+        },
+        {
+          "name": "Jerad Lippi",
+          "instrument": "drums"
+        }
+      ],
       "priceText": null
     },
     {
@@ -9981,7 +10356,12 @@
       ],
       "url": "https://www.smallslive.com/events/33058-mike-ledonne-quartet/",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Mike Ledonne",
+          "instrument": "piano"
+        }
+      ],
       "priceText": null
     },
     {
@@ -10038,7 +10418,12 @@
       ],
       "url": "https://www.smallslive.com/events/33214-jam-in-the-cafe/",
       "details": "until 12:00 AM",
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Wilfie Williams",
+          "instrument": "piano"
+        }
+      ],
       "priceText": null
     },
     {
@@ -10122,7 +10507,12 @@
       ],
       "url": "https://www.smallslive.com/events/33087-jam-session-hosted-by-adam-ray/",
       "details": "until 4:00 AM",
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Adam Ray",
+          "instrument": "drums"
+        }
+      ],
       "late": true,
       "priceText": null
     },
@@ -10136,7 +10526,12 @@
       ],
       "url": "https://www.smallslive.com/events/33392-barry-harris-institute-presents-free-piano-lesson-jam-session/",
       "details": "until 6:00 PM",
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Richard Clements",
+          "instrument": "piano"
+        }
+      ],
       "priceText": null
     },
     {
@@ -10165,7 +10560,16 @@
       ],
       "url": "https://www.smallslive.com/events/33124-harvey-diamond-cameron-brown/",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Harvey Diamond",
+          "instrument": "piano"
+        },
+        {
+          "name": "Cameron Brown",
+          "instrument": "bass"
+        }
+      ],
       "priceText": null
     },
     {
@@ -10179,7 +10583,28 @@
       ],
       "url": "https://www.smallslive.com/events/33321-lafayette-harris-quintet/",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Lafayette Harris",
+          "instrument": "piano"
+        },
+        {
+          "name": "Antoine Drye",
+          "instrument": "trumpet"
+        },
+        {
+          "name": "Caleb Curtis",
+          "instrument": "alto sax"
+        },
+        {
+          "name": "Kenny Davis",
+          "instrument": "bass"
+        },
+        {
+          "name": "Jerome Jennings",
+          "instrument": "drums"
+        }
+      ],
       "priceText": null
     },
     {
@@ -10227,7 +10652,20 @@
       ],
       "url": "https://www.smallslive.com/events/33169-victor-gould-trio/",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Victor Gould",
+          "instrument": "piano"
+        },
+        {
+          "name": "Ahmed McLemore",
+          "instrument": "bass"
+        },
+        {
+          "name": "Samuel Bolduc",
+          "instrument": "drums"
+        }
+      ],
       "priceText": null
     },
     {
@@ -10426,7 +10864,20 @@
       ],
       "url": "https://www.smallslive.com/events/33125-gabrielle-stravelli-trio/",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Gabrielle Stravelli",
+          "instrument": "vocalist"
+        },
+        {
+          "name": "Joshua Richman",
+          "instrument": "piano"
+        },
+        {
+          "name": "Pat O'Leary",
+          "instrument": "bass"
+        }
+      ],
       "priceText": null
     },
     {
@@ -10440,7 +10891,24 @@
       ],
       "url": "https://www.smallslive.com/events/33323-david-gibson-quartet/",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "David Gibson",
+          "instrument": "trombone"
+        },
+        {
+          "name": "Cameron Campbell",
+          "instrument": "piano"
+        },
+        {
+          "name": "Ruby Farmer",
+          "instrument": "bass"
+        },
+        {
+          "name": "Jay Sawyer",
+          "instrument": "drums"
+        }
+      ],
       "priceText": null
     },
     {
@@ -10505,7 +10973,12 @@
       ],
       "url": "https://www.smallslive.com/events/33218-jam-in-the-cafe/",
       "details": "until 12:00 AM",
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Yago Vazquez",
+          "instrument": "piano"
+        }
+      ],
       "priceText": null
     },
     {
@@ -10599,7 +11072,12 @@
       ],
       "url": "https://www.smallslive.com/events/33091-jam-session-hosted-by-jason-clotter/",
       "details": "until 4:00 AM",
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Jason Maximo Clotter",
+          "instrument": "bass"
+        }
+      ],
       "late": true,
       "priceText": null
     },
@@ -10613,7 +11091,12 @@
       ],
       "url": "https://www.smallslive.com/events/33201-afternoon-jam-in-the-cafe/",
       "details": "until 6:00 PM",
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "John Webber",
+          "instrument": "guitar"
+        }
+      ],
       "priceText": null
     },
     {
@@ -10658,7 +11141,20 @@
       ],
       "url": "https://www.smallslive.com/events/33060-elsa-nilsson-trio/",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Elsa Nilsson",
+          "instrument": "flute"
+        },
+        {
+          "name": "Steve Cardenas",
+          "instrument": "guitar"
+        },
+        {
+          "name": "Pablo Menares",
+          "instrument": "bass"
+        }
+      ],
       "priceText": null
     },
     {
@@ -10672,7 +11168,32 @@
       ],
       "url": "https://www.smallslive.com/events/33062-itai-kriss-and-telavana/",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Itai Kriss",
+          "instrument": "flute"
+        },
+        {
+          "name": "Noah Halpern",
+          "instrument": "trumpet"
+        },
+        {
+          "name": "Camila Cortina Bello",
+          "instrument": "piano"
+        },
+        {
+          "name": "Tamir Shmerling",
+          "instrument": "bass"
+        },
+        {
+          "name": "Samuel Torres",
+          "instrument": "percussion"
+        },
+        {
+          "name": "Samvel Sarkisyan",
+          "instrument": "drums"
+        }
+      ],
       "priceText": null
     },
     {
@@ -10687,7 +11208,7 @@
       "url": "https://tickets.smokejazz.com/shows/11749/?date=2026-07-29",
       "details": null,
       "personnel": null,
-      "priceText": "25.00,65.00"
+      "priceText": "$25-65"
     },
     {
       "id": "ornithology:2026-07-29:earlybird-show",
@@ -10726,7 +11247,28 @@
       ],
       "url": "https://www.smallslive.com/events/33170-jerry-weldon-quintet/",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Jerry Weldon",
+          "instrument": "tenor sax"
+        },
+        {
+          "name": "Philip Harper",
+          "instrument": "trumpet"
+        },
+        {
+          "name": "Charlie Sigler",
+          "instrument": "guitar"
+        },
+        {
+          "name": "Kyle Koehler",
+          "instrument": "organ"
+        },
+        {
+          "name": "Winard Harper",
+          "instrument": "drums"
+        }
+      ],
       "priceText": null
     },
     {
@@ -10921,12 +11463,13 @@
       "priceText": null
     },
     {
-      "id": "barbayeux:2026-07-29:amp-9-30-marty-ehrlich-quartet-expanse-w-jacob-sacks-matt-pa",
+      "id": "barbayeux:2026-07-29:marty-ehrlich-quartet-expanse-w-jacob-sacks-matt-pavolka-ste",
       "clubId": "barbayeux",
-      "title": "amp; 9:30 Marty Ehrlich Quartet Expanse w/Jacob Sacks, Matt Pavolka, Steven Crammer",
+      "title": "Marty Ehrlich Quartet Expanse w/Jacob Sacks, Matt Pavolka, Steven Crammer",
       "date": "2026-07-29",
       "sets": [
-        "20:00"
+        "20:00",
+        "21:30"
       ],
       "url": "https://www.barbayeux.com/jazz/33sxrd9ynk6pjzn-325ns-shjkp-4l7y4-er5kz-pfmt7-la9zt-hgezc-z5h28-s33sy-982jt-yttmk-x8h75-wrm8y-te9t8-zl2wj-m73r6-jbbct-brymc-6zgj3-xbsff-9pyta-8d82d-pw27n-lrrc8-edfbd-c72lj",
       "details": null,
@@ -10957,7 +11500,12 @@
       ],
       "url": "https://www.smallslive.com/events/33061-james-austin-trio/",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "James Austin",
+          "instrument": "piano"
+        }
+      ],
       "priceText": null
     },
     {
@@ -10971,7 +11519,24 @@
       ],
       "url": "https://www.smallslive.com/events/33063-will-lyle-quartet/",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Will Lyle",
+          "instrument": "bass"
+        },
+        {
+          "name": "Eric Alexander",
+          "instrument": "tenor sax"
+        },
+        {
+          "name": "Bijan Taghavi",
+          "instrument": "piano"
+        },
+        {
+          "name": "Peter Van Nostrand",
+          "instrument": "drums"
+        }
+      ],
       "priceText": null
     },
     {
@@ -11097,7 +11662,24 @@
       ],
       "url": "https://www.smallslive.com/events/33379-nick-hempton-organ-band-and-invitational-jam-session/",
       "details": "until 12:00 AM",
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Nick Hempton",
+          "instrument": "tenor sax"
+        },
+        {
+          "name": "Kyle Koehler",
+          "instrument": "organ"
+        },
+        {
+          "name": "Charlie Sigler",
+          "instrument": "guitar"
+        },
+        {
+          "name": "Fukushi Tainaka",
+          "instrument": "drums"
+        }
+      ],
       "priceText": null
     },
     {
@@ -11191,7 +11773,28 @@
       ],
       "url": "https://www.smallslive.com/events/33096-jam-session-hosted-by-carlos-abadie/",
       "details": "until 4:00 AM",
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Carlos Abadie",
+          "instrument": "trumpet"
+        },
+        {
+          "name": "Matt Knoegel",
+          "instrument": "tenor sax"
+        },
+        {
+          "name": "Manuel Valera",
+          "instrument": "piano"
+        },
+        {
+          "name": "Raul Reyes",
+          "instrument": "bass"
+        },
+        {
+          "name": "Julian Miltenberger",
+          "instrument": "drums"
+        }
+      ],
       "late": true,
       "priceText": null
     },
@@ -11218,7 +11821,12 @@
       ],
       "url": "https://www.smallslive.com/events/33202-afternoon-jam-in-the-cafe/",
       "details": "until 6:00 PM",
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Steve Nelson",
+          "instrument": "guitar"
+        }
+      ],
       "priceText": null
     },
     {
@@ -11260,7 +11868,16 @@
       ],
       "url": "https://www.smallslive.com/events/33064-kuni-mikami-trio/",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Kuni Mikami",
+          "instrument": "piano"
+        },
+        {
+          "name": "Ray Daike",
+          "instrument": "guitar"
+        }
+      ],
       "priceText": null
     },
     {
@@ -11274,7 +11891,32 @@
       ],
       "url": "https://www.smallslive.com/events/33066-arthur-kell-speculation-sextet/",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Arthur Kell",
+          "instrument": "bass"
+        },
+        {
+          "name": "Alfredo Colon",
+          "instrument": "alto sax"
+        },
+        {
+          "name": "Alden Hellmuth",
+          "instrument": "alto sax"
+        },
+        {
+          "name": "Nate Radley",
+          "instrument": "guitar"
+        },
+        {
+          "name": "Guilherme Monteiro",
+          "instrument": "guitar"
+        },
+        {
+          "name": "Allan Mednard",
+          "instrument": "drums"
+        }
+      ],
       "priceText": null
     },
     {
@@ -11289,7 +11931,7 @@
       "url": "https://tickets.smokejazz.com/shows/11749/?date=2026-07-30",
       "details": null,
       "personnel": null,
-      "priceText": "25.00,65.00"
+      "priceText": "$25-65"
     },
     {
       "id": "jazzcultural:2026-07-30:rudresh-mahanthappa-hero-trio",
@@ -11302,7 +11944,20 @@
       ],
       "url": "https://www.smallslive.com/events/33171-rudresh-mahanthappa-hero-trio/",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Rudresh Mahanthappa",
+          "instrument": "alto sax"
+        },
+        {
+          "name": "Francois Moutin",
+          "instrument": "bass"
+        },
+        {
+          "name": "Timothy Angulo",
+          "instrument": "drums"
+        }
+      ],
       "priceText": null
     },
     {
@@ -11528,12 +12183,13 @@
       "priceText": null
     },
     {
-      "id": "barbayeux:2026-07-30:amp-9-30-ben-monder-w-adam-kolker-jeremy-stratton-tom-rainey",
+      "id": "barbayeux:2026-07-30:ben-monder-w-adam-kolker-jeremy-stratton-tom-rainey",
       "clubId": "barbayeux",
-      "title": "amp; 9:30 Ben Monder w/Adam Kolker, Jeremy Stratton, Tom Rainey",
+      "title": "Ben Monder w/Adam Kolker, Jeremy Stratton, Tom Rainey",
       "date": "2026-07-30",
       "sets": [
-        "20:00"
+        "20:00",
+        "21:30"
       ],
       "url": "https://www.barbayeux.com/jazz/z63pt232xlmbzmm-lf3tb-5yewh-m6x68-p26t7-nldmr-r7jah-cs8kl-fsgfe-4k7be-mrn73-tlf9t-4ncdr-rheb4-y9mwa-hlsr5-5p4hn-9mn2k-tg8s9-5ampf-mb7ch-3pbw6-a4wfm-z2jjd-em2ra-nal2n-j4ppt-jse6l-ebhae-g2tp6-rh6g9",
       "details": null,
@@ -11551,7 +12207,12 @@
       ],
       "url": "https://www.smallslive.com/events/33065-dan-kaufman-trio/",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Dan Kaufman",
+          "instrument": "piano"
+        }
+      ],
       "priceText": null
     },
     {
@@ -11565,7 +12226,28 @@
       ],
       "url": "https://www.smallslive.com/events/33067-josh-lawrence-quintet/",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Josh Lawrence",
+          "instrument": "trumpet"
+        },
+        {
+          "name": "Gosia Maj",
+          "instrument": "vocalist"
+        },
+        {
+          "name": "Ben O’Neill",
+          "instrument": "guitar"
+        },
+        {
+          "name": "Jordan McBride",
+          "instrument": "bass"
+        },
+        {
+          "name": "Sunceray Tabler",
+          "instrument": "drums"
+        }
+      ],
       "priceText": null
     },
     {
@@ -11736,7 +12418,24 @@
       ],
       "url": "https://www.smallslive.com/events/33172-josh-evans-quartet/",
       "details": "until 12:00 AM",
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Josh Evans",
+          "instrument": "trumpet"
+        },
+        {
+          "name": "Stacy Dillard",
+          "instrument": "tenor sax"
+        },
+        {
+          "name": "Davis Whitfield",
+          "instrument": "piano"
+        },
+        {
+          "name": "Conway Campbell",
+          "instrument": "bass"
+        }
+      ],
       "priceText": null
     },
     {
@@ -11820,7 +12519,24 @@
       ],
       "url": "https://www.smallslive.com/events/33101-jam-session-hosted-by-greg-glassman/",
       "details": "until 4:00 AM",
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Greg Glassman",
+          "instrument": "trumpet"
+        },
+        {
+          "name": "Miki Yamanaka",
+          "instrument": "piano"
+        },
+        {
+          "name": "Danton Boller",
+          "instrument": "bass"
+        },
+        {
+          "name": "Jason Brown",
+          "instrument": "drums"
+        }
+      ],
       "late": true,
       "priceText": null
     },
@@ -11861,7 +12577,12 @@
       ],
       "url": "https://www.smallslive.com/events/33203-afternoon-jam-in-the-cafe/",
       "details": "until 6:00 PM",
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Panas Athanatos",
+          "instrument": "guitar"
+        }
+      ],
       "priceText": null
     },
     {
@@ -11874,7 +12595,20 @@
       ],
       "url": "https://www.smallslive.com/events/33307-smalls-afternoon-jam-session-hosted-by-ilya-lushtak/",
       "details": "until 5:15 PM",
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Ilya Lushtak",
+          "instrument": "guitar"
+        },
+        {
+          "name": "Yuma Takagi",
+          "instrument": "bass"
+        },
+        {
+          "name": "Robert Rucker",
+          "instrument": "drums"
+        }
+      ],
       "priceText": null
     },
     {
@@ -11946,7 +12680,16 @@
       ],
       "url": "https://www.smallslive.com/events/33068-brandon-goldberg-buster-williams/",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Brandon Goldberg",
+          "instrument": "piano"
+        },
+        {
+          "name": "Buster Williams",
+          "instrument": "bass"
+        }
+      ],
       "priceText": null
     },
     {
@@ -11960,7 +12703,28 @@
       ],
       "url": "https://www.smallslive.com/events/32998-chuck-zeuren-quintet/",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Chuck Zeuren",
+          "instrument": "drums"
+        },
+        {
+          "name": "George Garzone",
+          "instrument": "tenor sax"
+        },
+        {
+          "name": "Ralph Lalama",
+          "instrument": "tenor sax"
+        },
+        {
+          "name": "Allen Farnham",
+          "instrument": "piano"
+        },
+        {
+          "name": "David Kingsnorth",
+          "instrument": "bass"
+        }
+      ],
       "priceText": null
     },
     {
@@ -11976,7 +12740,7 @@
       "url": "https://tickets.smokejazz.com/shows/11749/?date=2026-07-31",
       "details": null,
       "personnel": null,
-      "priceText": "25.00,65.00"
+      "priceText": "$25-65"
     },
     {
       "id": "jazzcultural:2026-07-31:primary-influences-band",
@@ -11989,7 +12753,32 @@
       ],
       "url": "https://www.smallslive.com/events/33116-primary-influences-band/",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Steve Davis",
+          "instrument": "trombone"
+        },
+        {
+          "name": "Jaleel Shaw",
+          "instrument": "alto sax"
+        },
+        {
+          "name": "Steve Nelson",
+          "instrument": "vibraphone"
+        },
+        {
+          "name": "David Hazeltine",
+          "instrument": "piano"
+        },
+        {
+          "name": "David Williams",
+          "instrument": "bass"
+        },
+        {
+          "name": "Byron Landham",
+          "instrument": "drums"
+        }
+      ],
       "priceText": null
     },
     {
@@ -12260,15 +13049,16 @@
       "priceText": null
     },
     {
-      "id": "barbayeux:2026-07-31:amp-9-30",
+      "id": "barbayeux:2026-07-31:stephan-crump-w-darius-jones-eric-mcpherson",
       "clubId": "barbayeux",
-      "title": "amp; 9:30",
+      "title": "Stephan Crump w/Darius Jones, Eric Mcpherson",
       "date": "2026-07-31",
       "sets": [
-        "20:00"
+        "20:00",
+        "21:30"
       ],
       "url": "https://www.barbayeux.com/jazz/bsg4lz3rhzc3egx-mfjnz-47sjb-4e67s-xt5a5-6bjcx-cbrpj-e2s8z-ajbg8-ctpzs-c8mfg-727m7-zdpbx-42jss-xlx9x-zhw76-lns7p-fjc6n-ywrkk",
-      "details": "Stephan Crump w/Darius Jones, Eric Mcpherson",
+      "details": null,
       "personnel": null,
       "priceText": null
     },
@@ -12283,7 +13073,12 @@
       ],
       "url": "https://www.smallslive.com/events/33072-william-hill-iii-trio/",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "William Hill III",
+          "instrument": "piano"
+        }
+      ],
       "priceText": null
     },
     {
@@ -12297,7 +13092,24 @@
       ],
       "url": "https://www.smallslive.com/events/33000-jochen-rueckert-quartet/",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Jochen Rueckert",
+          "instrument": "drums"
+        },
+        {
+          "name": "Alexandra Ridout",
+          "instrument": "trumpet"
+        },
+        {
+          "name": "Kevin Sun",
+          "instrument": "tenor sax"
+        },
+        {
+          "name": "Hamish Smith",
+          "instrument": "bass"
+        }
+      ],
       "priceText": null
     },
     {
@@ -12376,7 +13188,24 @@
       ],
       "url": "https://www.smallslive.com/events/33371-chris-beck-quartet/",
       "details": "until 12:00 AM",
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Chris Beck",
+          "instrument": "drums"
+        },
+        {
+          "name": "Jon Beshay",
+          "instrument": "tenor sax"
+        },
+        {
+          "name": "Wilfie Williams",
+          "instrument": "piano"
+        },
+        {
+          "name": "Ryan Berg",
+          "instrument": "bass"
+        }
+      ],
       "priceText": null
     },
     {
@@ -12417,7 +13246,12 @@
       ],
       "url": "https://www.smallslive.com/events/33297-round-midnight-solo-piano-with-jill-mccarron/",
       "details": "until 1:00 AM",
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Jill McCarron",
+          "instrument": "piano"
+        }
+      ],
       "late": true,
       "priceText": null
     },
@@ -12431,7 +13265,12 @@
       ],
       "url": "https://www.smallslive.com/events/33083-philip-harper-quartet/",
       "details": "until 4:00 AM",
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Philip Harper",
+          "instrument": "trumpet"
+        }
+      ],
       "late": true,
       "priceText": null
     },
@@ -12472,7 +13311,12 @@
       ],
       "url": "https://www.smallslive.com/events/33540-afternoon-jam-in-the-cafe/",
       "details": "until 6:00 PM",
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Samuel Lerner",
+          "instrument": "piano"
+        }
+      ],
       "priceText": null
     },
     {
@@ -12485,7 +13329,12 @@
       ],
       "url": "https://www.smallslive.com/events/33568-smalls-afternoon-jam-session-hosted-by-marc-devine/",
       "details": "until 5:15 PM",
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Marc Devine",
+          "instrument": "piano"
+        }
+      ],
       "priceText": null
     },
     {
@@ -12512,7 +13361,16 @@
       ],
       "url": "https://www.smallslive.com/events/33069-brandon-goldberg-buster-williams/",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Brandon Goldberg",
+          "instrument": "piano"
+        },
+        {
+          "name": "Buster Williams",
+          "instrument": "bass"
+        }
+      ],
       "priceText": null
     },
     {
@@ -12526,7 +13384,28 @@
       ],
       "url": "https://www.smallslive.com/events/32999-chuck-zeuren-quintet/",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Chuck Zeuren",
+          "instrument": "drums"
+        },
+        {
+          "name": "George Garzone",
+          "instrument": "tenor sax"
+        },
+        {
+          "name": "Ralph Lalama",
+          "instrument": "tenor sax"
+        },
+        {
+          "name": "Allen Farnham",
+          "instrument": "piano"
+        },
+        {
+          "name": "David Kingsnorth",
+          "instrument": "bass"
+        }
+      ],
       "priceText": null
     },
     {
@@ -12542,7 +13421,7 @@
       "url": "https://tickets.smokejazz.com/shows/11749/?date=2026-08-01",
       "details": null,
       "personnel": null,
-      "priceText": "25.00,65.00"
+      "priceText": "$25-65"
     },
     {
       "id": "jazzcultural:2026-08-01:primary-influences-band",
@@ -12555,7 +13434,32 @@
       ],
       "url": "https://www.smallslive.com/events/33117-primary-influences-band/",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Steve Davis",
+          "instrument": "trombone"
+        },
+        {
+          "name": "Jaleel Shaw",
+          "instrument": "alto sax"
+        },
+        {
+          "name": "Steve Nelson",
+          "instrument": "vibraphone"
+        },
+        {
+          "name": "David Hazeltine",
+          "instrument": "piano"
+        },
+        {
+          "name": "David Williams",
+          "instrument": "bass"
+        },
+        {
+          "name": "Byron Landham",
+          "instrument": "drums"
+        }
+      ],
       "priceText": null
     },
     {
@@ -12790,12 +13694,13 @@
       "priceText": null
     },
     {
-      "id": "barbayeux:2026-08-01:amp-9-30-alec-goldfarb",
+      "id": "barbayeux:2026-08-01:alec-goldfarb",
       "clubId": "barbayeux",
-      "title": "amp; 9:30 - Alec Goldfarb",
+      "title": "Alec Goldfarb",
       "date": "2026-08-01",
       "sets": [
-        "20:00"
+        "20:00",
+        "21:30"
       ],
       "url": "https://www.barbayeux.com/jazz/f4pnrttfkdgyck9",
       "details": null,
@@ -12826,7 +13731,12 @@
       ],
       "url": "https://www.smallslive.com/events/33073-william-hill-iii-trio/",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "William Hill III",
+          "instrument": "piano"
+        }
+      ],
       "priceText": null
     },
     {
@@ -12840,7 +13750,24 @@
       ],
       "url": "https://www.smallslive.com/events/33001-jochen-rueckert-quartet/",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Jochen Rueckert",
+          "instrument": "drums"
+        },
+        {
+          "name": "Alexandra Ridout",
+          "instrument": "trumpet"
+        },
+        {
+          "name": "Kevin Sun",
+          "instrument": "tenor sax"
+        },
+        {
+          "name": "Hamish Smith",
+          "instrument": "bass"
+        }
+      ],
       "priceText": null
     },
     {
@@ -12892,7 +13819,24 @@
       ],
       "url": "https://www.smallslive.com/events/33372-chris-beck-quartet/",
       "details": "until 12:00 AM",
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Chris Beck",
+          "instrument": "drums"
+        },
+        {
+          "name": "Jon Beshay",
+          "instrument": "tenor sax"
+        },
+        {
+          "name": "Wilfie Williams",
+          "instrument": "piano"
+        },
+        {
+          "name": "Ryan Berg",
+          "instrument": "bass"
+        }
+      ],
       "priceText": null
     },
     {
@@ -12919,7 +13863,12 @@
       ],
       "url": "https://www.smallslive.com/events/33298-round-midnight-solo-piano-with-jill-mccarron/",
       "details": "until 1:00 AM",
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Jill McCarron",
+          "instrument": "piano"
+        }
+      ],
       "late": true,
       "priceText": null
     },
@@ -12933,7 +13882,12 @@
       ],
       "url": "https://www.smallslive.com/events/33229-anthony-wonsey-quintet/",
       "details": "until 4:00 AM",
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Anthony Wonsey",
+          "instrument": "piano"
+        }
+      ],
       "late": true,
       "priceText": null
     },
@@ -12971,7 +13925,12 @@
       ],
       "url": "https://www.smallslive.com/events/33545-afternoon-jam-in-the-cafe/",
       "details": "until 6:00 PM",
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "katie Cosco",
+          "instrument": "piano"
+        }
+      ],
       "priceText": null
     },
     {
@@ -12984,7 +13943,24 @@
       ],
       "url": "https://www.smallslive.com/events/33417-smalls-afternoon-jam-session-hosted-by-ryo-sasaki/",
       "details": "until 5:15 PM",
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Ryo Sasaki",
+          "instrument": "trumpet"
+        },
+        {
+          "name": "Steve Ash",
+          "instrument": "piano"
+        },
+        {
+          "name": "Bill Crow",
+          "instrument": "bass"
+        },
+        {
+          "name": "Steve Little",
+          "instrument": "drums"
+        }
+      ],
       "priceText": null
     },
     {
@@ -13053,7 +14029,24 @@
       ],
       "url": "https://www.smallslive.com/events/33308-katie-collins-quartet/",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Katie Collins",
+          "instrument": "vocalist"
+        },
+        {
+          "name": "Raphael D'Lugoff",
+          "instrument": "piano"
+        },
+        {
+          "name": "Stephanie Grieg",
+          "instrument": "bass"
+        },
+        {
+          "name": "Takashi Inoue",
+          "instrument": "drums"
+        }
+      ],
       "priceText": null
     },
     {
@@ -13067,7 +14060,24 @@
       ],
       "url": "https://www.smallslive.com/events/33231-woody-witt-quartet/",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Woody Witt",
+          "instrument": "tenor sax"
+        },
+        {
+          "name": "Larry Ham",
+          "instrument": "piano"
+        },
+        {
+          "name": "Adam Cote",
+          "instrument": "bass"
+        },
+        {
+          "name": "Tom Melito",
+          "instrument": "drums"
+        }
+      ],
       "priceText": null
     },
     {
@@ -13095,7 +14105,7 @@
       "url": "https://tickets.smokejazz.com/shows/11749/?date=2026-08-02",
       "details": null,
       "personnel": null,
-      "priceText": "25.00,65.00"
+      "priceText": "$25-65"
     },
     {
       "id": "django:2026-08-02:matt-chertkoff-trio",
@@ -13122,7 +14132,32 @@
       ],
       "url": "https://www.smallslive.com/events/33118-primary-influences-band/",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Steve Davis",
+          "instrument": "trombone"
+        },
+        {
+          "name": "Jaleel Shaw",
+          "instrument": "alto sax"
+        },
+        {
+          "name": "Steve Nelson",
+          "instrument": "vibraphone"
+        },
+        {
+          "name": "David Hazeltine",
+          "instrument": "piano"
+        },
+        {
+          "name": "David Williams",
+          "instrument": "bass"
+        },
+        {
+          "name": "Byron Landham",
+          "instrument": "drums"
+        }
+      ],
       "priceText": null
     },
     {
@@ -13315,7 +14350,12 @@
       ],
       "url": "https://www.smallslive.com/events/33230-noa-lee-chait-trio/",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Noa Chait",
+          "instrument": "vocalist"
+        }
+      ],
       "priceText": null
     },
     {
@@ -13329,7 +14369,28 @@
       ],
       "url": "https://www.smallslive.com/events/33384-willy-rodriguez-quintet/",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Willy Rodriguez",
+          "instrument": "drums"
+        },
+        {
+          "name": "Adam Siegel",
+          "instrument": "alto sax"
+        },
+        {
+          "name": "Matt Knoegel",
+          "instrument": "tenor sax"
+        },
+        {
+          "name": "Victor Gould",
+          "instrument": "piano"
+        },
+        {
+          "name": "Tamir Shmerling",
+          "instrument": "bass"
+        }
+      ],
       "priceText": null
     },
     {
@@ -13356,7 +14417,12 @@
       ],
       "url": "https://www.smallslive.com/events/33210-jam-in-the-cafe/",
       "details": "until 12:00 AM",
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Marc Devine",
+          "instrument": "piano"
+        }
+      ],
       "priceText": null
     },
     {
@@ -13438,7 +14504,16 @@
       ],
       "url": "https://www.smallslive.com/events/33519-afternoon-jam-in-the-cafe/",
       "details": "until 6:00 PM",
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Saul Rubin",
+          "instrument": "guitar"
+        },
+        {
+          "name": "Miles Wick",
+          "instrument": "bass"
+        }
+      ],
       "priceText": null
     },
     {
@@ -13467,7 +14542,20 @@
       ],
       "url": "https://www.smallslive.com/events/33502-sasha-dobson-quartet/",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Sasha Dobson",
+          "instrument": "vocalist"
+        },
+        {
+          "name": "Peter Bernstein",
+          "instrument": "guitar"
+        },
+        {
+          "name": "Neal Miner",
+          "instrument": "bass"
+        }
+      ],
       "priceText": null
     },
     {
@@ -13481,7 +14569,24 @@
       ],
       "url": "https://www.smallslive.com/events/33233-mike-clark-quartet/",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Mike Clark",
+          "instrument": "drums"
+        },
+        {
+          "name": "Craig Handy",
+          "instrument": "tenor sax"
+        },
+        {
+          "name": "Mike Ledonne",
+          "instrument": "piano"
+        },
+        {
+          "name": "Nori Naraoka",
+          "instrument": "bass"
+        }
+      ],
       "priceText": null
     },
     {
@@ -13542,7 +14647,24 @@
       ],
       "url": "https://www.smallslive.com/events/33450-ari-hoenig-quartet/",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Ari Hoenig",
+          "instrument": "drums"
+        },
+        {
+          "name": "Gilad Hekselman",
+          "instrument": "guitar"
+        },
+        {
+          "name": "Gadi Lehavi",
+          "instrument": "piano"
+        },
+        {
+          "name": "Ben Tiberio",
+          "instrument": "bass"
+        }
+      ],
       "priceText": null
     },
     {
@@ -13683,7 +14805,12 @@
       ],
       "url": "https://www.smallslive.com/events/33503-ed-cherry-trio/",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Ed Cherry",
+          "instrument": "guitar"
+        }
+      ],
       "priceText": null
     },
     {
@@ -13697,7 +14824,28 @@
       ],
       "url": "https://www.smallslive.com/events/33234-owen-howard-quintet/",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Owen Howard",
+          "instrument": "drums"
+        },
+        {
+          "name": "John Ellis",
+          "instrument": "tenor sax"
+        },
+        {
+          "name": "David Smith",
+          "instrument": "trumpet"
+        },
+        {
+          "name": "David Cook",
+          "instrument": "piano"
+        },
+        {
+          "name": "Matt Pavolka",
+          "instrument": "bass"
+        }
+      ],
       "priceText": null
     },
     {
@@ -13710,7 +14858,12 @@
       ],
       "url": "https://www.smallslive.com/events/33550-jam-in-the-cafe/",
       "details": "until 12:00 AM",
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Wilfie Williams",
+          "instrument": "piano"
+        }
+      ],
       "priceText": null
     },
     {
@@ -13790,7 +14943,12 @@
       ],
       "url": "https://www.smallslive.com/events/33425-jam-session-hosted-by-adam-ray/",
       "details": "until 4:00 AM",
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Adam Ray",
+          "instrument": "drums"
+        }
+      ],
       "late": true,
       "priceText": null
     },
@@ -13804,7 +14962,12 @@
       ],
       "url": "https://www.smallslive.com/events/33524-barry-harris-institute-presents-free-piano-lesson-jam-session/",
       "details": "until 6:00 PM",
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Richard Clements",
+          "instrument": "piano"
+        }
+      ],
       "priceText": null
     },
     {
@@ -13833,7 +14996,24 @@
       ],
       "url": "https://www.smallslive.com/events/33586-dylan-band-quartet/",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Dylan Band",
+          "instrument": "tenor sax"
+        },
+        {
+          "name": "Lex Korten",
+          "instrument": "piano"
+        },
+        {
+          "name": "Mike Migliore",
+          "instrument": "bass"
+        },
+        {
+          "name": "Miguel Marcel Russel",
+          "instrument": "drums"
+        }
+      ],
       "priceText": null
     },
     {
@@ -13847,7 +15027,20 @@
       ],
       "url": "https://www.smallslive.com/events/33451-caelan-cardello-trio/",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Caelan Cardello",
+          "instrument": "piano"
+        },
+        {
+          "name": "Jonathon Muir-Cotton",
+          "instrument": "bass"
+        },
+        {
+          "name": "Domo Branch",
+          "instrument": "drums"
+        }
+      ],
       "priceText": null
     },
     {
@@ -14039,7 +15232,20 @@
       ],
       "url": "https://www.smallslive.com/events/33505-steve-ash-trio/",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Steve Ash",
+          "instrument": "piano"
+        },
+        {
+          "name": "David Wong",
+          "instrument": "bass"
+        },
+        {
+          "name": "Aaron Kimmel",
+          "instrument": "drums"
+        }
+      ],
       "priceText": null
     },
     {
@@ -14053,7 +15259,12 @@
       ],
       "url": "https://www.smallslive.com/events/33236-thomas-linger-quartet/",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Thomas Linger",
+          "instrument": "piano"
+        }
+      ],
       "priceText": null
     },
     {
@@ -14079,7 +15290,12 @@
       ],
       "url": "https://www.smallslive.com/events/33555-jam-in-the-cafe/",
       "details": "until 12:00 AM",
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Yago Vazquez",
+          "instrument": "piano"
+        }
+      ],
       "priceText": null
     },
     {
@@ -14169,7 +15385,12 @@
       ],
       "url": "https://www.smallslive.com/events/33427-jam-session-hosted-by-kyle-colina/",
       "details": "until 4:00 AM",
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Kyle Colina",
+          "instrument": "bass"
+        }
+      ],
       "late": true,
       "priceText": null
     },
@@ -14183,7 +15404,12 @@
       ],
       "url": "https://www.smallslive.com/events/33528-afternoon-jam-in-the-cafe/",
       "details": "until 6:00 PM",
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "John Webber",
+          "instrument": "guitar"
+        }
+      ],
       "priceText": null
     },
     {
@@ -14212,7 +15438,20 @@
       ],
       "url": "https://www.smallslive.com/events/33237-nate-radley-trio/",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Nate Radley",
+          "instrument": "guitar"
+        },
+        {
+          "name": "Ugonna Okegwo",
+          "instrument": "bass"
+        },
+        {
+          "name": "Adam Nussbaum",
+          "instrument": "drums"
+        }
+      ],
       "priceText": null
     },
     {
@@ -14226,7 +15465,24 @@
       ],
       "url": "https://www.smallslive.com/events/33239-alex-apolo-ayala-2nd-language-quartet/",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Alex \"Apolo\" Ayala",
+          "instrument": "bass"
+        },
+        {
+          "name": "Matt Estabrook",
+          "instrument": "tenor sax"
+        },
+        {
+          "name": "Juan Diego Villalobos",
+          "instrument": "vibraphone"
+        },
+        {
+          "name": "E.J. Strickland",
+          "instrument": "drums"
+        }
+      ],
       "priceText": null
     },
     {
@@ -14241,7 +15497,7 @@
       "url": "https://tickets.smokejazz.com/shows/12068/?date=2026-08-05",
       "details": null,
       "personnel": null,
-      "priceText": "25.00,65.00"
+      "priceText": "$25-65"
     },
     {
       "id": "jazzcultural:2026-08-05:mike-ledonne-groover-quartet",
@@ -14254,7 +15510,24 @@
       ],
       "url": "https://www.smallslive.com/events/33452-mike-ledonne-groover-quartet/",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Mike Ledonne",
+          "instrument": "organ"
+        },
+        {
+          "name": "Eric Alexander",
+          "instrument": "tenor sax"
+        },
+        {
+          "name": "Peter Bernstein",
+          "instrument": "guitar"
+        },
+        {
+          "name": "Joe Farnsworth",
+          "instrument": "drums"
+        }
+      ],
       "priceText": null
     },
     {
@@ -14441,12 +15714,13 @@
       "priceText": null
     },
     {
-      "id": "barbayeux:2026-08-05:amp-9-30-yvonne-rogers-trio-w-kanoa-mendenhall-jonas-esser",
+      "id": "barbayeux:2026-08-05:yvonne-rogers-trio-w-kanoa-mendenhall-jonas-esser",
       "clubId": "barbayeux",
-      "title": "amp; 9:30 Yvonne Rogers Trio w/Kanoa Mendenhall, Jonas Esser",
+      "title": "Yvonne Rogers Trio w/Kanoa Mendenhall, Jonas Esser",
       "date": "2026-08-05",
       "sets": [
-        "20:00"
+        "20:00",
+        "21:30"
       ],
       "url": "https://www.barbayeux.com/jazz/33sxrd9ynk6pjzn-325ns-shjkp-4l7y4-er5kz-pfmt7-la9zt-hgezc-z5h28-s33sy-982jt-yttmk-x8h75-wrm8y-te9t8-zl2wj-m73r6-jbbct-brymc-6zgj3-xbsff-9pyta-8d82d-pw27n-lrrc8-edfbd-c72lj-x7arx",
       "details": null,
@@ -14464,7 +15738,20 @@
       ],
       "url": "https://www.smallslive.com/events/33238-trifon-dimitrov-trio/",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Trifon Dimitrov",
+          "instrument": "bass"
+        },
+        {
+          "name": "Ray Gallon",
+          "instrument": "piano"
+        },
+        {
+          "name": "Jerome Jennings",
+          "instrument": "drums"
+        }
+      ],
       "priceText": null
     },
     {
@@ -14478,7 +15765,28 @@
       ],
       "url": "https://www.smallslive.com/events/33240-jamie-reynolds-quintet/",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Jamie Reynolds",
+          "instrument": "piano"
+        },
+        {
+          "name": "David Smith",
+          "instrument": "trumpet"
+        },
+        {
+          "name": "Jason Rigby",
+          "instrument": "tenor sax"
+        },
+        {
+          "name": "Gary Wang",
+          "instrument": "bass"
+        },
+        {
+          "name": "Jay Sawyer",
+          "instrument": "drums"
+        }
+      ],
       "priceText": null
     },
     {
@@ -14588,7 +15896,12 @@
       ],
       "url": "https://www.smallslive.com/events/33431-jam-session-hosted-by-carlos-abadie/",
       "details": "until 4:00 AM",
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Carlos Abadie",
+          "instrument": "trumpet"
+        }
+      ],
       "late": true,
       "priceText": null
     },
@@ -14615,7 +15928,12 @@
       ],
       "url": "https://www.smallslive.com/events/33532-afternoon-jam-in-the-cafe/",
       "details": "until 6:00 PM",
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Steve Nelson",
+          "instrument": "guitar"
+        }
+      ],
       "priceText": null
     },
     {
@@ -14657,7 +15975,24 @@
       ],
       "url": "https://www.smallslive.com/events/33241-milton-suggs-quartet/",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Milton Suggs",
+          "instrument": "vocalist"
+        },
+        {
+          "name": "Jordan Williams",
+          "instrument": "piano"
+        },
+        {
+          "name": "Dezron Douglas",
+          "instrument": "bass"
+        },
+        {
+          "name": "E.J. Strickland",
+          "instrument": "drums"
+        }
+      ],
       "priceText": null
     },
     {
@@ -14671,7 +16006,12 @@
       ],
       "url": "https://www.smallslive.com/events/33243-roni-ben-hur-quartet/",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Roni Ben-Hur",
+          "instrument": "guitar"
+        }
+      ],
       "priceText": null
     },
     {
@@ -14686,7 +16026,7 @@
       "url": "https://tickets.smokejazz.com/shows/12068/?date=2026-08-06",
       "details": null,
       "personnel": null,
-      "priceText": "25.00,65.00"
+      "priceText": "$25-65"
     },
     {
       "id": "jazzcultural:2026-08-06:theo-hill-quartet",
@@ -14699,7 +16039,24 @@
       ],
       "url": "https://www.smallslive.com/events/33453-theo-hill-quartet/",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Theo Hill",
+          "instrument": "piano"
+        },
+        {
+          "name": "Mark Shim",
+          "instrument": "tenor sax"
+        },
+        {
+          "name": "Conway Campbell",
+          "instrument": "bass"
+        },
+        {
+          "name": "Damion Reid",
+          "instrument": "drums"
+        }
+      ],
       "priceText": null
     },
     {
@@ -14843,12 +16200,13 @@
       "priceText": null
     },
     {
-      "id": "barbayeux:2026-08-06:amp-9-30-jeff-williams-w-chet-doxas-adam-kolker-jeremy-strat",
+      "id": "barbayeux:2026-08-06:jeff-williams-w-chet-doxas-adam-kolker-jeremy-stratton",
       "clubId": "barbayeux",
-      "title": "amp; 9:30 Jeff Williams w/Chet Doxas, Adam Kolker, Jeremy Stratton",
+      "title": "Jeff Williams w/Chet Doxas, Adam Kolker, Jeremy Stratton",
       "date": "2026-08-06",
       "sets": [
-        "20:00"
+        "20:00",
+        "21:30"
       ],
       "url": "https://www.barbayeux.com/jazz/ddgdt9jhczp92g6-6ct2g",
       "details": null,
@@ -14866,7 +16224,12 @@
       ],
       "url": "https://www.smallslive.com/events/33242-yuval-amihai-trio/",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Yuval Amihai",
+          "instrument": "guitar"
+        }
+      ],
       "priceText": null
     },
     {
@@ -14880,7 +16243,24 @@
       ],
       "url": "https://www.smallslive.com/events/33244-troy-roberts-quartet/",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Troy Roberts",
+          "instrument": "tenor sax"
+        },
+        {
+          "name": "Glenn Zaleski",
+          "instrument": "piano"
+        },
+        {
+          "name": "Des White",
+          "instrument": "bass"
+        },
+        {
+          "name": "Jochen Rueckert",
+          "instrument": "drums"
+        }
+      ],
       "priceText": null
     },
     {
@@ -14973,7 +16353,12 @@
       ],
       "url": "https://www.smallslive.com/events/33397-jam-session-hosted-by-ben-barnett/",
       "details": "until 4:00 AM",
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Ben Barnett",
+          "instrument": "trombone"
+        }
+      ],
       "late": true,
       "priceText": null
     },
@@ -15014,7 +16399,12 @@
       ],
       "url": "https://www.smallslive.com/events/33536-afternoon-jam-in-the-cafe/",
       "details": "until 6:00 PM",
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Panas Athanatos",
+          "instrument": "guitar"
+        }
+      ],
       "priceText": null
     },
     {
@@ -15027,7 +16417,12 @@
       ],
       "url": "https://www.smallslive.com/events/33569-smalls-afternoon-jam-session-hosted-by-andrew-kushnir/",
       "details": "until 5:15 PM",
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Andrew Kushnir",
+          "instrument": "drums"
+        }
+      ],
       "priceText": null
     },
     {
@@ -15056,7 +16451,20 @@
       ],
       "url": "https://www.smallslive.com/events/33245-lex-korten-trio/",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Lex Korten",
+          "instrument": "piano"
+        },
+        {
+          "name": "Dean Torrey",
+          "instrument": "bass"
+        },
+        {
+          "name": "Nasheet Waits",
+          "instrument": "drums"
+        }
+      ],
       "priceText": null
     },
     {
@@ -15070,7 +16478,24 @@
       ],
       "url": "https://www.smallslive.com/events/33249-ricky-ford-quartet/",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Ricky Ford",
+          "instrument": "tenor sax"
+        },
+        {
+          "name": "Mark Soskin",
+          "instrument": "piano"
+        },
+        {
+          "name": "Jerome Harris",
+          "instrument": "bass"
+        },
+        {
+          "name": "Barry Altschul",
+          "instrument": "drums"
+        }
+      ],
       "priceText": null
     },
     {
@@ -15099,7 +16524,7 @@
       "url": "https://tickets.smokejazz.com/shows/12068/?date=2026-08-07",
       "details": null,
       "personnel": null,
-      "priceText": "25.00,65.00"
+      "priceText": "$25-65"
     },
     {
       "id": "jazzcultural:2026-08-07:ethan-iverson-sextet",
@@ -15112,7 +16537,32 @@
       ],
       "url": "https://www.smallslive.com/events/33467-ethan-iverson-sextet/",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Ethan Iverson",
+          "instrument": "piano"
+        },
+        {
+          "name": "Jonathan Finlayson",
+          "instrument": "trumpet"
+        },
+        {
+          "name": "Sam Newsome",
+          "instrument": "soprano sax"
+        },
+        {
+          "name": "Jacob Garchik",
+          "instrument": "trombone"
+        },
+        {
+          "name": "Peter Washington",
+          "instrument": "bass"
+        },
+        {
+          "name": "Kush Abadey",
+          "instrument": "drums"
+        }
+      ],
       "priceText": null
     },
     {
@@ -15270,15 +16720,16 @@
       "priceText": null
     },
     {
-      "id": "barbayeux:2026-08-07:amp-9-30",
+      "id": "barbayeux:2026-08-07:ven-trio-w-vinicius-gomes-noah-garabedian-ele-howell",
       "clubId": "barbayeux",
-      "title": "amp; 9:30",
+      "title": "VEN Trio w/Vinicius Gomes, Noah Garabedian, Ele Howell",
       "date": "2026-08-07",
       "sets": [
-        "20:00"
+        "20:00",
+        "21:30"
       ],
       "url": "https://www.barbayeux.com/jazz/bsg4lz3rhzc3egx-mfjnz-47sjb-4e67s-xt5a5-6bjcx-cbrpj-e2s8z-ajbg8-ctpzs-c8mfg-727m7-zdpbx-42jss-xlx9x-zhw76-lns7p-fjc6n-ywrkk-gmdbj",
-      "details": "VEN Trio w/Vinicius Gomes, Noah Garabedian, Ele Howell",
+      "details": null,
       "personnel": null,
       "priceText": null
     },
@@ -15306,7 +16757,20 @@
       ],
       "url": "https://www.smallslive.com/events/33247-victor-gould-trio/",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Victor Gould",
+          "instrument": "piano"
+        },
+        {
+          "name": "Tamir Shmerling",
+          "instrument": "bass"
+        },
+        {
+          "name": "Samuel Bolduc",
+          "instrument": "drums"
+        }
+      ],
       "priceText": null
     },
     {
@@ -15320,7 +16784,24 @@
       ],
       "url": "https://www.smallslive.com/events/33251-diego-urcola-quartet/",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Diego Urcola",
+          "instrument": "trumpet"
+        },
+        {
+          "name": "Alex Brown",
+          "instrument": "piano"
+        },
+        {
+          "name": "Hamish Smith",
+          "instrument": "bass"
+        },
+        {
+          "name": "Julian Miltenberger",
+          "instrument": "drums"
+        }
+      ],
       "priceText": null
     },
     {
@@ -15376,7 +16857,24 @@
       ],
       "url": "https://www.smallslive.com/events/33470-corey-wallace-duborganisms/",
       "details": "until 12:00 AM",
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Corey Wallace",
+          "instrument": "trombone"
+        },
+        {
+          "name": "Flavio Silva",
+          "instrument": "guitar"
+        },
+        {
+          "name": "Pat Bianchi",
+          "instrument": "organ"
+        },
+        {
+          "name": "E.J. Strickland",
+          "instrument": "drums"
+        }
+      ],
       "priceText": null
     },
     {
@@ -15403,7 +16901,12 @@
       ],
       "url": "https://www.smallslive.com/events/33253-eric-wyatt-quartet/",
       "details": "until 4:00 AM",
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Eric Wyatt",
+          "instrument": "tenor sax"
+        }
+      ],
       "late": true,
       "priceText": null
     },
@@ -15441,7 +16944,12 @@
       ],
       "url": "https://www.smallslive.com/events/33541-afternoon-jam-in-the-cafe/",
       "details": "until 6:00 PM",
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Samuel Lerner",
+          "instrument": "piano"
+        }
+      ],
       "priceText": null
     },
     {
@@ -15454,7 +16962,12 @@
       ],
       "url": "https://www.smallslive.com/events/33570-smalls-afternoon-jam-session-hosted-by-steve-nelson/",
       "details": "until 5:15 PM",
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Steve Nelson",
+          "instrument": "guitar"
+        }
+      ],
       "priceText": null
     },
     {
@@ -15468,7 +16981,20 @@
       ],
       "url": "https://www.smallslive.com/events/33246-lex-korten-trio/",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Lex Korten",
+          "instrument": "piano"
+        },
+        {
+          "name": "Carmen Quill",
+          "instrument": "bass"
+        },
+        {
+          "name": "Dan Weiss",
+          "instrument": "drums"
+        }
+      ],
       "priceText": null
     },
     {
@@ -15482,7 +17008,24 @@
       ],
       "url": "https://www.smallslive.com/events/33250-ricky-ford-quartet/",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Ricky Ford",
+          "instrument": "tenor sax"
+        },
+        {
+          "name": "Mark Soskin",
+          "instrument": "piano"
+        },
+        {
+          "name": "Jerome Harris",
+          "instrument": "bass"
+        },
+        {
+          "name": "Barry Altschul",
+          "instrument": "drums"
+        }
+      ],
       "priceText": null
     },
     {
@@ -15511,7 +17054,7 @@
       "url": "https://tickets.smokejazz.com/shows/12068/?date=2026-08-08",
       "details": null,
       "personnel": null,
-      "priceText": "25.00,65.00"
+      "priceText": "$25-65"
     },
     {
       "id": "jazzcultural:2026-08-08:ethan-iverson-sextet",
@@ -15524,7 +17067,32 @@
       ],
       "url": "https://www.smallslive.com/events/33468-ethan-iverson-sextet/",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Ethan Iverson",
+          "instrument": "piano"
+        },
+        {
+          "name": "Jonathan Finlayson",
+          "instrument": "trumpet"
+        },
+        {
+          "name": "Sam Newsome",
+          "instrument": "soprano sax"
+        },
+        {
+          "name": "Jacob Garchik",
+          "instrument": "trombone"
+        },
+        {
+          "name": "Peter Washington",
+          "instrument": "bass"
+        },
+        {
+          "name": "Kush Abadey",
+          "instrument": "drums"
+        }
+      ],
       "priceText": null
     },
     {
@@ -15664,15 +17232,16 @@
       "priceText": null
     },
     {
-      "id": "barbayeux:2026-08-08:amp-9-30",
+      "id": "barbayeux:2026-08-08:jon-cowherd-quartet-w-steve-cardenas-tony-scherr-adam-cruz",
       "clubId": "barbayeux",
-      "title": "amp; 9:30",
+      "title": "Jon Cowherd Quartet w/Steve Cardenas, Tony Scherr, Adam Cruz",
       "date": "2026-08-08",
       "sets": [
-        "20:00"
+        "20:00",
+        "21:30"
       ],
       "url": "https://www.barbayeux.com/jazz/f4pnrttfkdgyck9-ckf4t",
-      "details": "Jon Cowherd Quartet w/Steve Cardenas, Tony Scherr, Adam Cruz",
+      "details": null,
       "personnel": null,
       "priceText": null
     },
@@ -15700,7 +17269,20 @@
       ],
       "url": "https://www.smallslive.com/events/33248-victor-gould-trio/",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Victor Gould",
+          "instrument": "piano"
+        },
+        {
+          "name": "Tamir Shmerling",
+          "instrument": "bass"
+        },
+        {
+          "name": "Samuel Bolduc",
+          "instrument": "drums"
+        }
+      ],
       "priceText": null
     },
     {
@@ -15714,7 +17296,24 @@
       ],
       "url": "https://www.smallslive.com/events/33252-diego-urcola-quartet/",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Diego Urcola",
+          "instrument": "trumpet"
+        },
+        {
+          "name": "Alex Brown",
+          "instrument": "piano"
+        },
+        {
+          "name": "Hamish Smith",
+          "instrument": "bass"
+        },
+        {
+          "name": "Julian Miltenberger",
+          "instrument": "drums"
+        }
+      ],
       "priceText": null
     },
     {
@@ -15740,7 +17339,24 @@
       ],
       "url": "https://www.smallslive.com/events/33471-corey-wallace-dubtet/",
       "details": "until 12:00 AM",
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Corey Wallace",
+          "instrument": "trombone"
+        },
+        {
+          "name": "Arcoiris Sandoval",
+          "instrument": "piano"
+        },
+        {
+          "name": "Jonathon Muir-Cotton",
+          "instrument": "bass"
+        },
+        {
+          "name": "Brian Richburg Jr",
+          "instrument": "drums"
+        }
+      ],
       "priceText": null
     },
     {
@@ -15767,7 +17383,12 @@
       ],
       "url": "https://www.smallslive.com/events/33265-justin-robinson-quartet/",
       "details": "until 4:00 AM",
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Justin Robinson",
+          "instrument": "alto sax"
+        }
+      ],
       "late": true,
       "priceText": null
     },
@@ -15816,7 +17437,12 @@
       ],
       "url": "https://www.smallslive.com/events/33546-afternoon-jam-in-the-cafe/",
       "details": "until 6:00 PM",
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "katie Cosco",
+          "instrument": "piano"
+        }
+      ],
       "priceText": null
     },
     {
@@ -15829,7 +17455,24 @@
       ],
       "url": "https://www.smallslive.com/events/33418-smalls-afternoon-jam-session-hosted-by-ryo-sasaki/",
       "details": "until 5:15 PM",
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Ryo Sasaki",
+          "instrument": "trumpet"
+        },
+        {
+          "name": "Steve Ash",
+          "instrument": "piano"
+        },
+        {
+          "name": "Bill Crow",
+          "instrument": "bass"
+        },
+        {
+          "name": "Steve Little",
+          "instrument": "drums"
+        }
+      ],
       "priceText": null
     },
     {
@@ -15898,7 +17541,24 @@
       ],
       "url": "https://www.smallslive.com/events/32556-declan-cashman-quartet/",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Declan Cashman",
+          "instrument": "vocalist"
+        },
+        {
+          "name": "Silas Irvine",
+          "instrument": "piano"
+        },
+        {
+          "name": "Graham Kozak",
+          "instrument": "bass"
+        },
+        {
+          "name": "Justin Bowden",
+          "instrument": "drums"
+        }
+      ],
       "priceText": null
     },
     {
@@ -15912,7 +17572,24 @@
       ],
       "url": "https://www.smallslive.com/events/33256-craig-wuepper-quartet/",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Craig Wuepper",
+          "instrument": "drums"
+        },
+        {
+          "name": "Josh Evans",
+          "instrument": "trumpet"
+        },
+        {
+          "name": "Paul Odeh",
+          "instrument": "piano"
+        },
+        {
+          "name": "Tom DiCarlo",
+          "instrument": "bass"
+        }
+      ],
       "priceText": null
     },
     {
@@ -15927,7 +17604,7 @@
       "url": "https://tickets.smokejazz.com/shows/12068/?date=2026-08-09",
       "details": null,
       "personnel": null,
-      "priceText": "25.00,65.00"
+      "priceText": "$25-65"
     },
     {
       "id": "django:2026-08-09:sarah-jane-cion-trio",
@@ -15954,7 +17631,32 @@
       ],
       "url": "https://www.smallslive.com/events/33469-ethan-iverson-sextet/",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Ethan Iverson",
+          "instrument": "piano"
+        },
+        {
+          "name": "Jonathan Finlayson",
+          "instrument": "trumpet"
+        },
+        {
+          "name": "Sam Newsome",
+          "instrument": "soprano sax"
+        },
+        {
+          "name": "Jacob Garchik",
+          "instrument": "trombone"
+        },
+        {
+          "name": "Peter Washington",
+          "instrument": "bass"
+        },
+        {
+          "name": "Kush Abadey",
+          "instrument": "drums"
+        }
+      ],
       "priceText": null
     },
     {
@@ -16074,7 +17776,12 @@
       ],
       "url": "https://www.smallslive.com/events/33255-vanisha-gould-quartet/",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Vanisha Gould",
+          "instrument": "vocalist"
+        }
+      ],
       "priceText": null
     },
     {
@@ -16088,7 +17795,28 @@
       ],
       "url": "https://www.smallslive.com/events/33257-sam-dillonandrew-gould-quintet/",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Sam Dillon",
+          "instrument": "tenor sax"
+        },
+        {
+          "name": "Andrew Gould",
+          "instrument": "alto sax"
+        },
+        {
+          "name": "Steven Feifke",
+          "instrument": "piano"
+        },
+        {
+          "name": "Luques Curtis",
+          "instrument": "bass"
+        },
+        {
+          "name": "Jared Schonig",
+          "instrument": "drums"
+        }
+      ],
       "priceText": null
     },
     {
@@ -16128,7 +17856,12 @@
       ],
       "url": "https://www.smallslive.com/events/33559-jam-in-the-cafe/",
       "details": "until 12:00 AM",
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Marc Devine",
+          "instrument": "piano"
+        }
+      ],
       "priceText": null
     },
     {
@@ -16163,7 +17896,16 @@
       ],
       "url": "https://www.smallslive.com/events/33520-afternoon-jam-in-the-cafe/",
       "details": "until 6:00 PM",
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Saul Rubin",
+          "instrument": "guitar"
+        },
+        {
+          "name": "Miles Wick",
+          "instrument": "bass"
+        }
+      ],
       "priceText": null
     },
     {
@@ -16213,7 +17955,12 @@
       ],
       "url": "https://www.smallslive.com/events/33334-jerome-jennings-quartet/",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Jerome Jennings",
+          "instrument": "drums"
+        }
+      ],
       "priceText": null
     },
     {
@@ -16227,7 +17974,24 @@
       ],
       "url": "https://www.smallslive.com/events/33459-brad-mehldau-quartet/",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Brad Mehldau",
+          "instrument": "piano"
+        },
+        {
+          "name": "Peter Bernstein",
+          "instrument": "guitar"
+        },
+        {
+          "name": "John Webber",
+          "instrument": "bass"
+        },
+        {
+          "name": "Gregory Hutchinson",
+          "instrument": "drums"
+        }
+      ],
       "priceText": null
     },
     {
@@ -16364,7 +18128,24 @@
       ],
       "url": "https://www.smallslive.com/events/33335-eviatar-slivnik-quartet/",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Ben Solomon",
+          "instrument": "tenor sax"
+        },
+        {
+          "name": "Eden Ladin",
+          "instrument": "piano"
+        },
+        {
+          "name": "Felix Moseholm",
+          "instrument": "bass"
+        },
+        {
+          "name": "Eviatar Slivnik",
+          "instrument": "drums"
+        }
+      ],
       "priceText": null
     },
     {
@@ -16377,7 +18158,12 @@
       ],
       "url": "https://www.smallslive.com/events/33551-jam-in-the-cafe/",
       "details": "until 12:00 AM",
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Wilfie Williams",
+          "instrument": "piano"
+        }
+      ],
       "priceText": null
     },
     {
@@ -16448,7 +18234,12 @@
       ],
       "url": "https://www.smallslive.com/events/33422-jam-session-hosted-by-mike-boone/",
       "details": "until 4:00 AM",
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Mike Boone",
+          "instrument": "bass"
+        }
+      ],
       "late": true,
       "priceText": null
     },
@@ -16462,7 +18253,12 @@
       ],
       "url": "https://www.smallslive.com/events/33525-barry-harris-institute-presents-free-piano-lesson-jam-session/",
       "details": "until 6:00 PM",
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Richard Clements",
+          "instrument": "piano"
+        }
+      ],
       "priceText": null
     },
     {
@@ -16507,7 +18303,20 @@
       ],
       "url": "https://www.smallslive.com/events/33336-greg-skaff-trio/",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Greg Skaff",
+          "instrument": "guitar"
+        },
+        {
+          "name": "Ugonna Okegwo",
+          "instrument": "bass"
+        },
+        {
+          "name": "Mark Whitfield Jr",
+          "instrument": "drums"
+        }
+      ],
       "priceText": null
     },
     {
@@ -16521,7 +18330,12 @@
       ],
       "url": "https://www.smallslive.com/events/33338-jordan-young-quartet/",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Jordan Young",
+          "instrument": "alto sax"
+        }
+      ],
       "priceText": null
     },
     {
@@ -16535,7 +18349,24 @@
       ],
       "url": "https://www.smallslive.com/events/33460-brad-mehldau-quartet/",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Brad Mehldau",
+          "instrument": "piano"
+        },
+        {
+          "name": "Peter Bernstein",
+          "instrument": "guitar"
+        },
+        {
+          "name": "John Webber",
+          "instrument": "bass"
+        },
+        {
+          "name": "Gregory Hutchinson",
+          "instrument": "drums"
+        }
+      ],
       "priceText": null
     },
     {
@@ -16693,7 +18524,20 @@
       ],
       "url": "https://www.smallslive.com/events/33337-ray-gallon-trio/",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Ray Gallon",
+          "instrument": "piano"
+        },
+        {
+          "name": "Peter Washington",
+          "instrument": "bass"
+        },
+        {
+          "name": "Kenny Washington",
+          "instrument": "drums"
+        }
+      ],
       "priceText": null
     },
     {
@@ -16707,7 +18551,12 @@
       ],
       "url": "https://www.smallslive.com/events/33339-jared-gold-trio/",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Jared Gold",
+          "instrument": "organ"
+        }
+      ],
       "priceText": null
     },
     {
@@ -16733,7 +18582,12 @@
       ],
       "url": "https://www.smallslive.com/events/33556-jam-in-the-cafe/",
       "details": "until 12:00 AM",
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Yago Vazquez",
+          "instrument": "piano"
+        }
+      ],
       "priceText": null
     },
     {
@@ -16787,7 +18641,12 @@
       ],
       "url": "https://www.smallslive.com/events/33429-jam-session-hosted-by-jason-clotter/",
       "details": "until 4:00 AM",
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Jason Maximo Clotter",
+          "instrument": "bass"
+        }
+      ],
       "late": true,
       "priceText": null
     },
@@ -16801,7 +18660,12 @@
       ],
       "url": "https://www.smallslive.com/events/33529-afternoon-jam-in-the-cafe/",
       "details": "until 6:00 PM",
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "John Webber",
+          "instrument": "guitar"
+        }
+      ],
       "priceText": null
     },
     {
@@ -16829,7 +18693,20 @@
       ],
       "url": "https://www.smallslive.com/events/33340-angelina-miers-trio/",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Angelina Miers",
+          "instrument": "vocalist"
+        },
+        {
+          "name": "Brandon Goldberg",
+          "instrument": "piano"
+        },
+        {
+          "name": "Joseph Ranieri",
+          "instrument": "bass"
+        }
+      ],
       "priceText": null
     },
     {
@@ -16843,7 +18720,24 @@
       ],
       "url": "https://www.smallslive.com/events/33342-pete-zimmer-quartet/",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Pete Zimmer",
+          "instrument": "drums"
+        },
+        {
+          "name": "Stacy Dillard",
+          "instrument": "tenor sax"
+        },
+        {
+          "name": "Toru Dodo",
+          "instrument": "piano"
+        },
+        {
+          "name": "Tom DiCarlo",
+          "instrument": "bass"
+        }
+      ],
       "priceText": null
     },
     {
@@ -16858,7 +18752,7 @@
       "url": "https://tickets.smokejazz.com/shows/12070/?date=2026-08-12",
       "details": null,
       "personnel": null,
-      "priceText": "25.00,65.00"
+      "priceText": "$25-65"
     },
     {
       "id": "jazzcultural:2026-08-12:bill-heid-trio",
@@ -16871,7 +18765,20 @@
       ],
       "url": "https://www.smallslive.com/events/33454-bill-heid-trio/",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Bill Heid",
+          "instrument": "organ"
+        },
+        {
+          "name": "Ralph Tope",
+          "instrument": "guitar"
+        },
+        {
+          "name": "Byron Landham",
+          "instrument": "drums"
+        }
+      ],
       "priceText": null
     },
     {
@@ -16971,12 +18878,13 @@
       "priceText": null
     },
     {
-      "id": "barbayeux:2026-08-12:amp-9-30-gilad-hekselman-trio-w-harish-raghavan-kendrick-sco",
+      "id": "barbayeux:2026-08-12:gilad-hekselman-trio-w-harish-raghavan-kendrick-scott",
       "clubId": "barbayeux",
-      "title": "amp; 9:30 Gilad Hekselman Trio w/Harish Raghavan, Kendrick Scott",
+      "title": "Gilad Hekselman Trio w/Harish Raghavan, Kendrick Scott",
       "date": "2026-08-12",
       "sets": [
-        "20:00"
+        "20:00",
+        "21:30"
       ],
       "url": "https://www.barbayeux.com/jazz/33sxrd9ynk6pjzn-325ns-shjkp-4l7y4-er5kz-pfmt7-la9zt-hgezc-z5h28-s33sy-982jt-yttmk-x8h75-wrm8y-te9t8-zl2wj-m73r6-jbbct-brymc-6zgj3-xbsff-9pyta-8d82d-pw27n-lrrc8-edfbd-c72lj-x7arx-9jcna",
       "details": null,
@@ -16994,7 +18902,24 @@
       ],
       "url": "https://www.smallslive.com/events/33343-mikey-migliore-quartet/",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Mike Migliore",
+          "instrument": "bass"
+        },
+        {
+          "name": "Leo Larratt",
+          "instrument": "guitar"
+        },
+        {
+          "name": "Jeb Patton",
+          "instrument": "piano"
+        },
+        {
+          "name": "Michael Camacho",
+          "instrument": "drums"
+        }
+      ],
       "priceText": null
     },
     {
@@ -17086,7 +19011,12 @@
       ],
       "url": "https://www.smallslive.com/events/33432-jam-session-hosted-by-carlos-abadie/",
       "details": "until 4:00 AM",
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Carlos Abadie",
+          "instrument": "trumpet"
+        }
+      ],
       "late": true,
       "priceText": null
     },
@@ -17113,7 +19043,12 @@
       ],
       "url": "https://www.smallslive.com/events/33533-afternoon-jam-in-the-cafe/",
       "details": "until 6:00 PM",
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Steve Nelson",
+          "instrument": "guitar"
+        }
+      ],
       "priceText": null
     },
     {
@@ -17155,7 +19090,20 @@
       ],
       "url": "https://www.smallslive.com/events/33344-will-sellenraad-trio/",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Will Sellenraad",
+          "instrument": "guitar"
+        },
+        {
+          "name": "Solomon Gottfried",
+          "instrument": "bass"
+        },
+        {
+          "name": "Eric McPherson",
+          "instrument": "drums"
+        }
+      ],
       "priceText": null
     },
     {
@@ -17169,7 +19117,28 @@
       ],
       "url": "https://www.smallslive.com/events/33346-fabien-mary-quintet/",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Fabien Mary",
+          "instrument": "trumpet"
+        },
+        {
+          "name": "Frank Basile",
+          "instrument": "baritone sax"
+        },
+        {
+          "name": "Steve Ash",
+          "instrument": "piano"
+        },
+        {
+          "name": "Paul Sikivie",
+          "instrument": "bass"
+        },
+        {
+          "name": "Peter Van Nostrand",
+          "instrument": "drums"
+        }
+      ],
       "priceText": null
     },
     {
@@ -17184,7 +19153,7 @@
       "url": "https://tickets.smokejazz.com/shows/12070/?date=2026-08-13",
       "details": null,
       "personnel": null,
-      "priceText": "25.00,65.00"
+      "priceText": "$25-65"
     },
     {
       "id": "jazzcultural:2026-08-13:imani-rousselle-quartet",
@@ -17197,7 +19166,24 @@
       ],
       "url": "https://www.smallslive.com/events/33455-imani-rousselle-quartet/",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Imani Rousselle",
+          "instrument": "vocalist"
+        },
+        {
+          "name": "Willerm Delisfort",
+          "instrument": "piano"
+        },
+        {
+          "name": "Jared Beckstead-Craan",
+          "instrument": "bass"
+        },
+        {
+          "name": "Gary Jones III",
+          "instrument": "drums"
+        }
+      ],
       "priceText": null
     },
     {
@@ -17363,12 +19349,13 @@
       "priceText": null
     },
     {
-      "id": "barbayeux:2026-08-13:amp-9-30-david-berkman-w-adam-kolker-jeremy-stratton",
+      "id": "barbayeux:2026-08-13:david-berkman-w-adam-kolker-jeremy-stratton",
       "clubId": "barbayeux",
-      "title": "amp; 9:30 David Berkman w/Adam Kolker, Jeremy Stratton,",
+      "title": "David Berkman w/Adam Kolker, Jeremy Stratton,",
       "date": "2026-08-13",
       "sets": [
-        "20:00"
+        "20:00",
+        "21:30"
       ],
       "url": "https://www.barbayeux.com/jazz/ddgdt9jhczp92g6",
       "details": null,
@@ -17399,7 +19386,20 @@
       ],
       "url": "https://www.smallslive.com/events/33345-fima-chupakhin-trio/",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Fima Chupakhin",
+          "instrument": "piano"
+        },
+        {
+          "name": "James Robbins",
+          "instrument": "bass"
+        },
+        {
+          "name": "Corey Garcia",
+          "instrument": "drums"
+        }
+      ],
       "priceText": null
     },
     {
@@ -17413,7 +19413,28 @@
       ],
       "url": "https://www.smallslive.com/events/33347-jonathan-saraga-quintet/",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Jonathan Saraga",
+          "instrument": "trumpet"
+        },
+        {
+          "name": "Marvin Carter",
+          "instrument": "alto sax"
+        },
+        {
+          "name": "Arcoiris Sandoval",
+          "instrument": "piano"
+        },
+        {
+          "name": "Nick Jozwiak",
+          "instrument": "bass"
+        },
+        {
+          "name": "Kenneth Salters",
+          "instrument": "drums"
+        }
+      ],
       "priceText": null
     },
     {
@@ -17493,7 +19514,24 @@
       ],
       "url": "https://www.smallslive.com/events/33398-jam-session-hosted-by-matt-snow/",
       "details": "until 4:00 AM",
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Matt Snow",
+          "instrument": "bass"
+        },
+        {
+          "name": "Luke Glavanovits",
+          "instrument": "vibraphone"
+        },
+        {
+          "name": "Ben Turner",
+          "instrument": "guitar"
+        },
+        {
+          "name": "Rintaro Mikami",
+          "instrument": "drums"
+        }
+      ],
       "late": true,
       "priceText": null
     },
@@ -17520,7 +19558,12 @@
       ],
       "url": "https://www.smallslive.com/events/33537-afternoon-jam-in-the-cafe/",
       "details": "until 6:00 PM",
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Panas Athanatos",
+          "instrument": "guitar"
+        }
+      ],
       "priceText": null
     },
     {
@@ -17533,7 +19576,12 @@
       ],
       "url": "https://www.smallslive.com/events/33571-smalls-afternoon-jam-session-hosted-by-david-sandman/",
       "details": "until 5:15 PM",
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "David Sandman",
+          "instrument": "guitar"
+        }
+      ],
       "priceText": null
     },
     {
@@ -17561,7 +19609,20 @@
       ],
       "url": "https://www.smallslive.com/events/33508-ehud-asherie-trio/",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Ehud Asherie",
+          "instrument": "piano"
+        },
+        {
+          "name": "Paul Sikivie",
+          "instrument": "bass"
+        },
+        {
+          "name": "Bryan Carter",
+          "instrument": "drums"
+        }
+      ],
       "priceText": null
     },
     {
@@ -17575,7 +19636,24 @@
       ],
       "url": "https://www.smallslive.com/events/33260-scott-robinsons-call-of-the-tarogato/",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Scott Robinson",
+          "instrument": "tenor sax"
+        },
+        {
+          "name": "Matyas Bartha",
+          "instrument": "piano"
+        },
+        {
+          "name": "Danny Ziemann",
+          "instrument": "bass"
+        },
+        {
+          "name": "Christian Salfellner",
+          "instrument": "drums"
+        }
+      ],
       "priceText": null
     },
     {
@@ -17604,7 +19682,7 @@
       "url": "https://tickets.smokejazz.com/shows/12070/?date=2026-08-14",
       "details": null,
       "personnel": null,
-      "priceText": "25.00,65.00"
+      "priceText": "$25-65"
     },
     {
       "id": "jazzcultural:2026-08-14:patrick-bartley-quartet",
@@ -17617,7 +19695,24 @@
       ],
       "url": "https://www.smallslive.com/events/33472-patrick-bartley-quartet/",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Patrick Bartley Jr",
+          "instrument": "alto sax"
+        },
+        {
+          "name": "William Hill III",
+          "instrument": "piano"
+        },
+        {
+          "name": "Barry Stephenson",
+          "instrument": "bass"
+        },
+        {
+          "name": "Charles Goold",
+          "instrument": "drums"
+        }
+      ],
       "priceText": null
     },
     {
@@ -17749,15 +19844,16 @@
       "priceText": null
     },
     {
-      "id": "barbayeux:2026-08-14:amp-9-30",
+      "id": "barbayeux:2026-08-14:carmen-quill-w-jacob-sacks-billy-hart",
       "clubId": "barbayeux",
-      "title": "amp; 9:30",
+      "title": "Carmen Quill w/Jacob Sacks, Billy Hart",
       "date": "2026-08-14",
       "sets": [
-        "20:00"
+        "20:00",
+        "21:30"
       ],
       "url": "https://www.barbayeux.com/jazz/bsg4lz3rhzc3egx-mfjnz-47sjb-4e67s-xt5a5-6bjcx-cbrpj-e2s8z-ajbg8-ctpzs-c8mfg-727m7-zdpbx-42jss-xlx9x-zhw76-lns7p-fjc6n-ywrkk-gmdbj-j45j2",
-      "details": "Carmen Quill w/Jacob Sacks, Billy Hart",
+      "details": null,
       "personnel": null,
       "priceText": null
     },
@@ -17785,7 +19881,12 @@
       ],
       "url": "https://www.smallslive.com/events/33577-david-berkman-trio/",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "David Berkman",
+          "instrument": "piano"
+        }
+      ],
       "priceText": null
     },
     {
@@ -17799,7 +19900,24 @@
       ],
       "url": "https://www.smallslive.com/events/33262-mark-sherman-quartet/",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Mark Sherman",
+          "instrument": "vibraphone"
+        },
+        {
+          "name": "Jim Ridl",
+          "instrument": "piano"
+        },
+        {
+          "name": "Ugonna Okegwo",
+          "instrument": "bass"
+        },
+        {
+          "name": "Bernd Reiter",
+          "instrument": "drums"
+        }
+      ],
       "priceText": null
     },
     {
@@ -17891,7 +20009,12 @@
       ],
       "url": "https://www.smallslive.com/events/33289-matt-martinez-quartet/",
       "details": "until 4:00 AM",
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Matt Martinez",
+          "instrument": "alto sax"
+        }
+      ],
       "late": true,
       "priceText": null
     },
@@ -17932,7 +20055,12 @@
       ],
       "url": "https://www.smallslive.com/events/33542-afternoon-jam-in-the-cafe/",
       "details": "until 6:00 PM",
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Samuel Lerner",
+          "instrument": "piano"
+        }
+      ],
       "priceText": null
     },
     {
@@ -17945,7 +20073,12 @@
       ],
       "url": "https://www.smallslive.com/events/33572-smalls-afternoon-jam-session-hosted-by-tyler-mitchell/",
       "details": "until 5:15 PM",
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Tyler Mitchell",
+          "instrument": "bass"
+        }
+      ],
       "priceText": null
     },
     {
@@ -17959,7 +20092,20 @@
       ],
       "url": "https://www.smallslive.com/events/33509-ehud-asherie-trio/",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Ehud Asherie",
+          "instrument": "piano"
+        },
+        {
+          "name": "Paul Sikivie",
+          "instrument": "bass"
+        },
+        {
+          "name": "Bryan Carter",
+          "instrument": "drums"
+        }
+      ],
       "priceText": null
     },
     {
@@ -17973,7 +20119,24 @@
       ],
       "url": "https://www.smallslive.com/events/33261-scott-robinsons-call-of-the-tarogato/",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Scott Robinson",
+          "instrument": "tenor sax"
+        },
+        {
+          "name": "Matyas Bartha",
+          "instrument": "piano"
+        },
+        {
+          "name": "Danny Ziemann",
+          "instrument": "bass"
+        },
+        {
+          "name": "Christian Salfellner",
+          "instrument": "drums"
+        }
+      ],
       "priceText": null
     },
     {
@@ -18002,7 +20165,7 @@
       "url": "https://tickets.smokejazz.com/shows/12070/?date=2026-08-15",
       "details": null,
       "personnel": null,
-      "priceText": "25.00,65.00"
+      "priceText": "$25-65"
     },
     {
       "id": "jazzcultural:2026-08-15:patrick-bartley-quartet",
@@ -18015,7 +20178,24 @@
       ],
       "url": "https://www.smallslive.com/events/33473-patrick-bartley-quartet/",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Patrick Bartley Jr",
+          "instrument": "alto sax"
+        },
+        {
+          "name": "William Hill III",
+          "instrument": "piano"
+        },
+        {
+          "name": "Barry Stephenson",
+          "instrument": "bass"
+        },
+        {
+          "name": "Charles Goold",
+          "instrument": "drums"
+        }
+      ],
       "priceText": null
     },
     {
@@ -18132,12 +20312,13 @@
       "priceText": null
     },
     {
-      "id": "barbayeux:2026-08-15:amp-9-30-george-schuller",
+      "id": "barbayeux:2026-08-15:george-schuller",
       "clubId": "barbayeux",
-      "title": "amp; 9:30 - George Schuller",
+      "title": "George Schuller",
       "date": "2026-08-15",
       "sets": [
-        "20:00"
+        "20:00",
+        "21:30"
       ],
       "url": "https://www.barbayeux.com/jazz/f4pnrttfkdgyck9-ckf4t-y85ap",
       "details": null,
@@ -18155,7 +20336,12 @@
       ],
       "url": "https://www.smallslive.com/events/33578-david-berkman-trio/",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "David Berkman",
+          "instrument": "piano"
+        }
+      ],
       "priceText": null
     },
     {
@@ -18169,7 +20355,24 @@
       ],
       "url": "https://www.smallslive.com/events/33263-mark-sherman-quartet/",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Mark Sherman",
+          "instrument": "vibraphone"
+        },
+        {
+          "name": "Jim Ridl",
+          "instrument": "piano"
+        },
+        {
+          "name": "Ugonna Okegwo",
+          "instrument": "bass"
+        },
+        {
+          "name": "Bernd Reiter",
+          "instrument": "drums"
+        }
+      ],
       "priceText": null
     },
     {
@@ -18222,7 +20425,12 @@
       ],
       "url": "https://www.smallslive.com/events/33254-stacy-dillard-quintet/",
       "details": "until 4:00 AM",
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Stacy Dillard",
+          "instrument": "tenor sax"
+        }
+      ],
       "late": true,
       "priceText": null
     },
@@ -18260,7 +20468,12 @@
       ],
       "url": "https://www.smallslive.com/events/33547-afternoon-jam-in-the-cafe/",
       "details": "until 6:00 PM",
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "katie Cosco",
+          "instrument": "piano"
+        }
+      ],
       "priceText": null
     },
     {
@@ -18273,7 +20486,24 @@
       ],
       "url": "https://www.smallslive.com/events/33419-smalls-afternoon-jam-session-hosted-by-ryo-sasaki/",
       "details": "until 5:15 PM",
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Ryo Sasaki",
+          "instrument": "trumpet"
+        },
+        {
+          "name": "Steve Ash",
+          "instrument": "piano"
+        },
+        {
+          "name": "Bill Crow",
+          "instrument": "bass"
+        },
+        {
+          "name": "Steve Little",
+          "instrument": "drums"
+        }
+      ],
       "priceText": null
     },
     {
@@ -18342,7 +20572,24 @@
       ],
       "url": "https://www.smallslive.com/events/33266-tamuz-nissim-quartet/",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Tamuz Nissim",
+          "instrument": "vocalist"
+        },
+        {
+          "name": "George Nazos",
+          "instrument": "guitar"
+        },
+        {
+          "name": "Dan Asher",
+          "instrument": "bass"
+        },
+        {
+          "name": "Joe Abba",
+          "instrument": "drums"
+        }
+      ],
       "priceText": null
     },
     {
@@ -18379,7 +20626,7 @@
       "url": "https://tickets.smokejazz.com/shows/12070/?date=2026-08-16",
       "details": null,
       "personnel": null,
-      "priceText": "25.00,65.00"
+      "priceText": "$25-65"
     },
     {
       "id": "django:2026-08-16:david-janeway-trio",
@@ -18406,7 +20653,24 @@
       ],
       "url": "https://www.smallslive.com/events/33474-patrick-bartley-quartet/",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Patrick Bartley Jr",
+          "instrument": "alto sax"
+        },
+        {
+          "name": "William Hill III",
+          "instrument": "piano"
+        },
+        {
+          "name": "Barry Stephenson",
+          "instrument": "bass"
+        },
+        {
+          "name": "Charles Goold",
+          "instrument": "drums"
+        }
+      ],
       "priceText": null
     },
     {
@@ -18505,7 +20769,12 @@
       ],
       "url": "https://www.smallslive.com/events/33291-naama-trio/",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Naama Gheber",
+          "instrument": "vocalist"
+        }
+      ],
       "priceText": null
     },
     {
@@ -18519,7 +20788,24 @@
       ],
       "url": "https://www.smallslive.com/events/33268-joe-barna-quartet/",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Joe Barna",
+          "instrument": "drums"
+        },
+        {
+          "name": "Stacy Dillard",
+          "instrument": "tenor sax"
+        },
+        {
+          "name": "Fima Chupakhin",
+          "instrument": "piano"
+        },
+        {
+          "name": "James Robbins",
+          "instrument": "bass"
+        }
+      ],
       "priceText": null
     },
     {
@@ -18546,7 +20832,12 @@
       ],
       "url": "https://www.smallslive.com/events/33560-jam-in-the-cafe/",
       "details": "until 12:00 AM",
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Marc Devine",
+          "instrument": "piano"
+        }
+      ],
       "priceText": null
     },
     {
@@ -18572,7 +20863,16 @@
       ],
       "url": "https://www.smallslive.com/events/33521-afternoon-jam-in-the-cafe/",
       "details": "until 6:00 PM",
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Saul Rubin",
+          "instrument": "guitar"
+        },
+        {
+          "name": "Miles Wick",
+          "instrument": "bass"
+        }
+      ],
       "priceText": null
     },
     {
@@ -18600,7 +20900,24 @@
       ],
       "url": "https://www.smallslive.com/events/33563-paul-bollenback-quartet/",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Paul Bollenback",
+          "instrument": "guitar"
+        },
+        {
+          "name": "Jon Davis",
+          "instrument": "piano"
+        },
+        {
+          "name": "Boris Kozlov",
+          "instrument": "bass"
+        },
+        {
+          "name": "Tommy Campbell",
+          "instrument": "drums"
+        }
+      ],
       "priceText": null
     },
     {
@@ -18711,7 +21028,24 @@
       ],
       "url": "https://www.smallslive.com/events/33348-brandon-suarez-quintet/",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Brandon Suarez",
+          "instrument": "tenor sax"
+        },
+        {
+          "name": "Tyler Henderson",
+          "instrument": "piano"
+        },
+        {
+          "name": "Caleb Tobocman",
+          "instrument": "bass"
+        },
+        {
+          "name": "Jacob Smith",
+          "instrument": "drums"
+        }
+      ],
       "priceText": null
     },
     {
@@ -18724,7 +21058,12 @@
       ],
       "url": "https://www.smallslive.com/events/33552-jam-in-the-cafe/",
       "details": "until 12:00 AM",
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Wilfie Williams",
+          "instrument": "piano"
+        }
+      ],
       "priceText": null
     },
     {
@@ -18765,7 +21104,12 @@
       ],
       "url": "https://www.smallslive.com/events/33423-jam-session-hosted-by-mike-boone/",
       "details": "until 4:00 AM",
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Mike Boone",
+          "instrument": "bass"
+        }
+      ],
       "late": true,
       "priceText": null
     },
@@ -18779,7 +21123,12 @@
       ],
       "url": "https://www.smallslive.com/events/33526-barry-harris-institute-presents-free-piano-lesson-jam-session/",
       "details": "until 6:00 PM",
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Richard Clements",
+          "instrument": "piano"
+        }
+      ],
       "priceText": null
     },
     {
@@ -18824,7 +21173,20 @@
       ],
       "url": "https://www.smallslive.com/events/33350-tardo-hammer-trio/",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Tardo Hammer",
+          "instrument": "piano"
+        },
+        {
+          "name": "Lee Hudson",
+          "instrument": "bass"
+        },
+        {
+          "name": "Keith Balla",
+          "instrument": "drums"
+        }
+      ],
       "priceText": null
     },
     {
@@ -18838,7 +21200,20 @@
       ],
       "url": "https://www.smallslive.com/events/33456-brandon-mccune-trio/",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Brandon McCune",
+          "instrument": "piano"
+        },
+        {
+          "name": "Danton Boller",
+          "instrument": "bass"
+        },
+        {
+          "name": "Alvester Garnett",
+          "instrument": "drums"
+        }
+      ],
       "priceText": null
     },
     {
@@ -18956,7 +21331,24 @@
       ],
       "url": "https://www.smallslive.com/events/33351-pucci-amanda-jhones-quartet/",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Pucci Amanda Jhones",
+          "instrument": "vocalist"
+        },
+        {
+          "name": "Joe Vincent Tranchina",
+          "instrument": "piano"
+        },
+        {
+          "name": "Hillard Greene",
+          "instrument": "bass"
+        },
+        {
+          "name": "Bobby Sanabria",
+          "instrument": "drums"
+        }
+      ],
       "priceText": null
     },
     {
@@ -18970,7 +21362,24 @@
       ],
       "url": "https://www.smallslive.com/events/33352-ben-sherman-quartet/",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Ben Sherman",
+          "instrument": "tenor sax"
+        },
+        {
+          "name": "Roman Goron",
+          "instrument": "piano"
+        },
+        {
+          "name": "Daniel Song",
+          "instrument": "bass"
+        },
+        {
+          "name": "Isaiah Bravo",
+          "instrument": "drums"
+        }
+      ],
       "priceText": null
     },
     {
@@ -18996,7 +21405,12 @@
       ],
       "url": "https://www.smallslive.com/events/33557-jam-in-the-cafe/",
       "details": "until 12:00 AM",
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Yago Vazquez",
+          "instrument": "piano"
+        }
+      ],
       "priceText": null
     },
     {
@@ -19037,7 +21451,12 @@
       ],
       "url": "https://www.smallslive.com/events/33428-jam-session-hosted-by-kyle-colina/",
       "details": "until 4:00 AM",
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Kyle Colina",
+          "instrument": "bass"
+        }
+      ],
       "late": true,
       "priceText": null
     },
@@ -19051,7 +21470,12 @@
       ],
       "url": "https://www.smallslive.com/events/33530-afternoon-jam-in-the-cafe/",
       "details": "until 6:00 PM",
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "John Webber",
+          "instrument": "guitar"
+        }
+      ],
       "priceText": null
     },
     {
@@ -19080,7 +21504,16 @@
       ],
       "url": "https://www.smallslive.com/events/33353-jay-rattman-billy-test/",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Jay Rattman",
+          "instrument": "alto sax"
+        },
+        {
+          "name": "Billy Test",
+          "instrument": "piano"
+        }
+      ],
       "priceText": null
     },
     {
@@ -19094,7 +21527,24 @@
       ],
       "url": "https://www.smallslive.com/events/33354-jakob-dreyer-quartet/",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Jakob Dreyer",
+          "instrument": "bass"
+        },
+        {
+          "name": "John Ellis",
+          "instrument": "tenor sax"
+        },
+        {
+          "name": "Sasha Berliner",
+          "instrument": "vibraphone"
+        },
+        {
+          "name": "Kenneth Salters",
+          "instrument": "drums"
+        }
+      ],
       "priceText": null
     },
     {
@@ -19109,7 +21559,7 @@
       "url": "https://tickets.smokejazz.com/shows/12073/?date=2026-08-19",
       "details": null,
       "personnel": null,
-      "priceText": "25.00,65.00"
+      "priceText": "$25-65"
     },
     {
       "id": "jazzcultural:2026-08-19:mel-davis-quartet",
@@ -19122,7 +21572,24 @@
       ],
       "url": "https://www.smallslive.com/events/33481-mel-davis-quartet/",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Mel Davis",
+          "instrument": "organ"
+        },
+        {
+          "name": "Tommy Morimoto",
+          "instrument": "tenor sax"
+        },
+        {
+          "name": "Mark Bowers",
+          "instrument": "guitar"
+        },
+        {
+          "name": "Tommy Campbell",
+          "instrument": "drums"
+        }
+      ],
       "priceText": null
     },
     {
@@ -19244,12 +21711,13 @@
       "priceText": null
     },
     {
-      "id": "barbayeux:2026-08-19:amp-9-30-ralph-alessi-and-escalation-w-matt-mitchell-john-he",
+      "id": "barbayeux:2026-08-19:ralph-alessi-and-escalation-w-matt-mitchell-john-hebert-ches",
       "clubId": "barbayeux",
-      "title": "amp; 9:30 Ralph Alessi and Escalation w/Matt Mitchell, John Hebert, Ches Smith",
+      "title": "Ralph Alessi and Escalation w/Matt Mitchell, John Hebert, Ches Smith",
       "date": "2026-08-19",
       "sets": [
-        "20:00"
+        "20:00",
+        "21:30"
       ],
       "url": "https://www.barbayeux.com/jazz/33sxrd9ynk6pjzn-325ns-shjkp-4l7y4-er5kz-pfmt7-la9zt-hgezc-z5h28-s33sy-982jt-yttmk-x8h75-wrm8y-te9t8-zl2wj-m73r6-jbbct-brymc-6zgj3-xbsff-9pyta-8d82d-pw27n-lrrc8-edfbd-c72lj-x7arx-9jcna-hxh7l",
       "details": null,
@@ -19267,7 +21735,12 @@
       ],
       "url": "https://www.smallslive.com/events/33482-tom-pietrycha-trio/",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Tom Pietrycha",
+          "instrument": "bass"
+        }
+      ],
       "priceText": null
     },
     {
@@ -19281,7 +21754,28 @@
       ],
       "url": "https://www.smallslive.com/events/33355-simon-mogul-quintet/",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Simon Mogul",
+          "instrument": "tenor sax"
+        },
+        {
+          "name": "Wallace Roney Jr",
+          "instrument": "trumpet"
+        },
+        {
+          "name": "Marc Payne",
+          "instrument": "piano"
+        },
+        {
+          "name": "Jason Maximo Clotter",
+          "instrument": "bass"
+        },
+        {
+          "name": "Jacob Smith",
+          "instrument": "drums"
+        }
+      ],
       "priceText": null
     },
     {
@@ -19361,7 +21855,12 @@
       ],
       "url": "https://www.smallslive.com/events/33433-jam-session-hosted-by-carlos-abadie/",
       "details": "until 4:00 AM",
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Carlos Abadie",
+          "instrument": "trumpet"
+        }
+      ],
       "late": true,
       "priceText": null
     },
@@ -19375,7 +21874,12 @@
       ],
       "url": "https://www.smallslive.com/events/33534-afternoon-jam-in-the-cafe/",
       "details": "until 6:00 PM",
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Steve Nelson",
+          "instrument": "guitar"
+        }
+      ],
       "priceText": null
     },
     {
@@ -19417,7 +21921,20 @@
       ],
       "url": "https://www.smallslive.com/events/33357-david-morgan-trio/",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "David Morgan",
+          "instrument": "piano"
+        },
+        {
+          "name": "Neal Miner",
+          "instrument": "bass"
+        },
+        {
+          "name": "Eric Halvorson",
+          "instrument": "drums"
+        }
+      ],
       "priceText": null
     },
     {
@@ -19431,7 +21948,24 @@
       ],
       "url": "https://www.smallslive.com/events/33075-jazz-de-barro/",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Su Terry",
+          "instrument": "alto sax"
+        },
+        {
+          "name": "Lucas Bravo",
+          "instrument": "piano"
+        },
+        {
+          "name": "Christian Torres",
+          "instrument": "bass"
+        },
+        {
+          "name": "Raúl Molina",
+          "instrument": "drums"
+        }
+      ],
       "priceText": null
     },
     {
@@ -19446,7 +21980,7 @@
       "url": "https://tickets.smokejazz.com/shows/12073/?date=2026-08-20",
       "details": null,
       "personnel": null,
-      "priceText": "25.00,65.00"
+      "priceText": "$25-65"
     },
     {
       "id": "jazzcultural:2026-08-20:alex-norris-quintet",
@@ -19459,7 +21993,28 @@
       ],
       "url": "https://www.smallslive.com/events/33457-alex-norris-quintet/",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Alex Norris",
+          "instrument": "trumpet"
+        },
+        {
+          "name": "Ari Ambrose",
+          "instrument": "tenor sax"
+        },
+        {
+          "name": "Jeremy Manasia",
+          "instrument": "piano"
+        },
+        {
+          "name": "Paul Gill",
+          "instrument": "bass"
+        },
+        {
+          "name": "Brian Floody",
+          "instrument": "drums"
+        }
+      ],
       "priceText": null
     },
     {
@@ -19637,7 +22192,20 @@
       ],
       "url": "https://www.smallslive.com/events/33356-dave-baron-trio/",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Dave Baron",
+          "instrument": "bass"
+        },
+        {
+          "name": "Gary Versace",
+          "instrument": "piano"
+        },
+        {
+          "name": "Billy Drummond",
+          "instrument": "drums"
+        }
+      ],
       "priceText": null
     },
     {
@@ -19651,7 +22219,28 @@
       ],
       "url": "https://www.smallslive.com/events/33358-ted-chubb-quintet/",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Ted Chubb",
+          "instrument": "trumpet"
+        },
+        {
+          "name": "Bruce Williams",
+          "instrument": "alto sax"
+        },
+        {
+          "name": "Oscar Perez",
+          "instrument": "piano"
+        },
+        {
+          "name": "Tom DiCarlo",
+          "instrument": "bass"
+        },
+        {
+          "name": "Carmen Intorre Jr",
+          "instrument": "drums"
+        }
+      ],
       "priceText": null
     },
     {
@@ -19718,7 +22307,24 @@
       ],
       "url": "https://www.smallslive.com/events/33400-jam-session-hosted-by-greg-glassman/",
       "details": "until 4:00 AM",
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Greg Glassman",
+          "instrument": "trumpet"
+        },
+        {
+          "name": "Eric Lewis",
+          "instrument": "piano"
+        },
+        {
+          "name": "Danton Boller",
+          "instrument": "bass"
+        },
+        {
+          "name": "Alvester Garnett",
+          "instrument": "drums"
+        }
+      ],
       "late": true,
       "priceText": null
     },
@@ -19757,7 +22363,12 @@
       ],
       "url": "https://www.smallslive.com/events/33538-afternoon-jam-in-the-cafe/",
       "details": "until 6:00 PM",
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Panas Athanatos",
+          "instrument": "guitar"
+        }
+      ],
       "priceText": null
     },
     {
@@ -19770,7 +22381,12 @@
       ],
       "url": "https://www.smallslive.com/events/33573-smalls-afternoon-jam-session-hosted-by-andrew-kushnir/",
       "details": "until 5:15 PM",
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Andrew Kushnir",
+          "instrument": "drums"
+        }
+      ],
       "priceText": null
     },
     {
@@ -19799,7 +22415,12 @@
       ],
       "url": "https://www.smallslive.com/events/33270-gilad-hekselman-trio/",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Gilad Hekselman",
+          "instrument": "guitar"
+        }
+      ],
       "priceText": null
     },
     {
@@ -19813,7 +22434,24 @@
       ],
       "url": "https://www.smallslive.com/events/33275-aaron-goldberg-quartet/",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Aaron Goldberg",
+          "instrument": "piano"
+        },
+        {
+          "name": "Mark Turner",
+          "instrument": "tenor sax"
+        },
+        {
+          "name": "TBA",
+          "instrument": "bass"
+        },
+        {
+          "name": "Kush Abadey",
+          "instrument": "drums"
+        }
+      ],
       "priceText": null
     },
     {
@@ -19842,7 +22480,7 @@
       "url": "https://tickets.smokejazz.com/shows/12073/?date=2026-08-21",
       "details": null,
       "personnel": null,
-      "priceText": "25.00,65.00"
+      "priceText": "$25-65"
     },
     {
       "id": "jazzcultural:2026-08-21:dezron-douglas-quintet",
@@ -19855,7 +22493,28 @@
       ],
       "url": "https://www.smallslive.com/events/33499-dezron-douglas-quintet/",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Dezron Douglas",
+          "instrument": "bass"
+        },
+        {
+          "name": "SILKA .",
+          "instrument": "vocalist"
+        },
+        {
+          "name": "Jaleel Shaw",
+          "instrument": "alto sax"
+        },
+        {
+          "name": "George Burton",
+          "instrument": "piano"
+        },
+        {
+          "name": "Darrell Green",
+          "instrument": "drums"
+        }
+      ],
       "priceText": null
     },
     {
@@ -20014,12 +22673,13 @@
       "priceText": null
     },
     {
-      "id": "barbayeux:2026-08-21:amp-9-30-kaz-takemura",
+      "id": "barbayeux:2026-08-21:kaz-takemura",
       "clubId": "barbayeux",
-      "title": "amp; 9:30 - Kaz Takemura",
+      "title": "Kaz Takemura",
       "date": "2026-08-21",
       "sets": [
-        "20:00"
+        "20:00",
+        "21:30"
       ],
       "url": "https://www.barbayeux.com/jazz/bsg4lz3rhzc3egx-mfjnz-47sjb-4e67s-xt5a5-6bjcx-cbrpj-e2s8z-ajbg8-ctpzs-c8mfg-727m7-zdpbx-42jss-xlx9x-zhw76-lns7p-fjc6n-ywrkk-gmdbj-j45j2-9cgah",
       "details": null,
@@ -20037,7 +22697,20 @@
       ],
       "url": "https://www.smallslive.com/events/33273-art-hirahara-trio/",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Art Hirahara",
+          "instrument": "piano"
+        },
+        {
+          "name": "Gary Wang",
+          "instrument": "bass"
+        },
+        {
+          "name": "Jay Sawyer",
+          "instrument": "drums"
+        }
+      ],
       "priceText": null
     },
     {
@@ -20051,7 +22724,12 @@
       ],
       "url": "https://www.smallslive.com/events/33579-charlie-porter-quintet/",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Charlie Porter",
+          "instrument": "trumpet"
+        }
+      ],
       "priceText": null
     },
     {
@@ -20077,7 +22755,24 @@
       ],
       "url": "https://www.smallslive.com/events/33477-greg-glassman-quartet/",
       "details": "until 12:00 AM",
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Greg Glassman",
+          "instrument": "trumpet"
+        },
+        {
+          "name": "Eric Lewis",
+          "instrument": "piano"
+        },
+        {
+          "name": "Danton Boller",
+          "instrument": "bass"
+        },
+        {
+          "name": "Alvester Garnett",
+          "instrument": "drums"
+        }
+      ],
       "priceText": null
     },
     {
@@ -20090,7 +22785,12 @@
       ],
       "url": "https://www.smallslive.com/events/33264-philip-harper-quartet/",
       "details": "until 4:00 AM",
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Philip Harper",
+          "instrument": "trumpet"
+        }
+      ],
       "late": true,
       "priceText": null
     },
@@ -20118,7 +22818,12 @@
       ],
       "url": "https://www.smallslive.com/events/33543-afternoon-jam-in-the-cafe/",
       "details": "until 6:00 PM",
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Samuel Lerner",
+          "instrument": "piano"
+        }
+      ],
       "priceText": null
     },
     {
@@ -20131,7 +22836,12 @@
       ],
       "url": "https://www.smallslive.com/events/33574-smalls-afternoon-jam-session-hosted-by-marc-devine/",
       "details": "until 5:15 PM",
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Marc Devine",
+          "instrument": "piano"
+        }
+      ],
       "priceText": null
     },
     {
@@ -20145,7 +22855,12 @@
       ],
       "url": "https://www.smallslive.com/events/33271-gilad-hekselman-trio/",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Gilad Hekselman",
+          "instrument": "guitar"
+        }
+      ],
       "priceText": null
     },
     {
@@ -20159,7 +22874,24 @@
       ],
       "url": "https://www.smallslive.com/events/33276-aaron-goldberg-quartet/",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Aaron Goldberg",
+          "instrument": "piano"
+        },
+        {
+          "name": "John Ellis",
+          "instrument": "tenor sax"
+        },
+        {
+          "name": "Matt Brewer",
+          "instrument": "bass"
+        },
+        {
+          "name": "Kush Abadey",
+          "instrument": "drums"
+        }
+      ],
       "priceText": null
     },
     {
@@ -20188,7 +22920,7 @@
       "url": "https://tickets.smokejazz.com/shows/12073/?date=2026-08-22",
       "details": null,
       "personnel": null,
-      "priceText": "25.00,65.00"
+      "priceText": "$25-65"
     },
     {
       "id": "jazzcultural:2026-08-22:dezron-douglas-quintet",
@@ -20201,7 +22933,28 @@
       ],
       "url": "https://www.smallslive.com/events/33500-dezron-douglas-quintet/",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Dezron Douglas",
+          "instrument": "bass"
+        },
+        {
+          "name": "SILKA .",
+          "instrument": "vocalist"
+        },
+        {
+          "name": "Jaleel Shaw",
+          "instrument": "alto sax"
+        },
+        {
+          "name": "George Burton",
+          "instrument": "piano"
+        },
+        {
+          "name": "Darrell Green",
+          "instrument": "drums"
+        }
+      ],
       "priceText": null
     },
     {
@@ -20300,12 +23053,13 @@
       "priceText": null
     },
     {
-      "id": "barbayeux:2026-08-22:amp-9-30-martin-nevin",
+      "id": "barbayeux:2026-08-22:martin-nevin",
       "clubId": "barbayeux",
-      "title": "amp; 9:30 - Martin Nevin",
+      "title": "Martin Nevin",
       "date": "2026-08-22",
       "sets": [
-        "20:00"
+        "20:00",
+        "21:30"
       ],
       "url": "https://www.barbayeux.com/jazz/f4pnrttfkdgyck9-ckf4t-y85ap-gd2aj",
       "details": null,
@@ -20323,7 +23077,20 @@
       ],
       "url": "https://www.smallslive.com/events/33274-art-hirahara-trio/",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Art Hirahara",
+          "instrument": "piano"
+        },
+        {
+          "name": "Gary Wang",
+          "instrument": "bass"
+        },
+        {
+          "name": "Jay Sawyer",
+          "instrument": "drums"
+        }
+      ],
       "priceText": null
     },
     {
@@ -20337,7 +23104,12 @@
       ],
       "url": "https://www.smallslive.com/events/33580-charlie-porter-quintet/",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Charlie Porter",
+          "instrument": "trumpet"
+        }
+      ],
       "priceText": null
     },
     {
@@ -20350,7 +23122,24 @@
       ],
       "url": "https://www.smallslive.com/events/33478-greg-glassman-quartet/",
       "details": "until 12:00 AM",
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Greg Glassman",
+          "instrument": "trumpet"
+        },
+        {
+          "name": "Eric Lewis",
+          "instrument": "piano"
+        },
+        {
+          "name": "Danton Boller",
+          "instrument": "bass"
+        },
+        {
+          "name": "Alvester Garnett",
+          "instrument": "drums"
+        }
+      ],
       "priceText": null
     },
     {
@@ -20423,7 +23212,24 @@
       ],
       "url": "https://www.smallslive.com/events/33420-smalls-afternoon-jam-session-hosted-by-ryo-sasaki/",
       "details": "until 5:15 PM",
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Ryo Sasaki",
+          "instrument": "trumpet"
+        },
+        {
+          "name": "Steve Ash",
+          "instrument": "piano"
+        },
+        {
+          "name": "Bill Crow",
+          "instrument": "bass"
+        },
+        {
+          "name": "Steve Little",
+          "instrument": "drums"
+        }
+      ],
       "priceText": null
     },
     {
@@ -20492,7 +23298,20 @@
       ],
       "url": "https://www.smallslive.com/events/33281-yaala-ballin-quartet/",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Yaala Ballin",
+          "instrument": "vocalist"
+        },
+        {
+          "name": "Ari Roland",
+          "instrument": "bass"
+        },
+        {
+          "name": "Keith Balla",
+          "instrument": "drums"
+        }
+      ],
       "priceText": null
     },
     {
@@ -20507,7 +23326,7 @@
       "url": "https://tickets.smokejazz.com/shows/12073/?date=2026-08-23",
       "details": null,
       "personnel": null,
-      "priceText": "25.00,65.00"
+      "priceText": "$25-65"
     },
     {
       "id": "django:2026-08-23:alexander-claffy-quartet",
@@ -20534,7 +23353,28 @@
       ],
       "url": "https://www.smallslive.com/events/33501-dezron-douglas-quartet/",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Dezron Douglas",
+          "instrument": "bass"
+        },
+        {
+          "name": "SILKA .",
+          "instrument": "vocalist"
+        },
+        {
+          "name": "Jaleel Shaw",
+          "instrument": "alto sax"
+        },
+        {
+          "name": "George Burton",
+          "instrument": "piano"
+        },
+        {
+          "name": "Darrell Green",
+          "instrument": "drums"
+        }
+      ],
       "priceText": null
     },
     {
@@ -20633,7 +23473,12 @@
       ],
       "url": "https://www.smallslive.com/events/33282-lucy-wijnands-quartet/",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Lucy Wijnands",
+          "instrument": "vocalist"
+        }
+      ],
       "priceText": null
     },
     {
@@ -20647,7 +23492,12 @@
       ],
       "url": "https://www.smallslive.com/events/33269-chris-byars-octet/",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Chris Byars",
+          "instrument": "alto sax"
+        }
+      ],
       "priceText": null
     },
     {
@@ -20674,7 +23524,12 @@
       ],
       "url": "https://www.smallslive.com/events/33561-jam-in-the-cafe/",
       "details": "until 12:00 AM",
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Marc Devine",
+          "instrument": "piano"
+        }
+      ],
       "priceText": null
     },
     {
@@ -20687,7 +23542,16 @@
       ],
       "url": "https://www.smallslive.com/events/33522-afternoon-jam-in-the-cafe/",
       "details": "until 6:00 PM",
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Saul Rubin",
+          "instrument": "guitar"
+        },
+        {
+          "name": "Miles Wick",
+          "instrument": "bass"
+        }
+      ],
       "priceText": null
     },
     {
@@ -20715,7 +23579,24 @@
       ],
       "url": "https://www.smallslive.com/events/33359-wayne-tucker-and-the-bad-mothas/",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Wayne Tucker",
+          "instrument": "trumpet"
+        },
+        {
+          "name": "David Linard",
+          "instrument": "piano"
+        },
+        {
+          "name": "Tamir Shmerling",
+          "instrument": "bass"
+        },
+        {
+          "name": "Anwar Marshall",
+          "instrument": "drums"
+        }
+      ],
       "priceText": null
     },
     {
@@ -20833,7 +23714,12 @@
       ],
       "url": "https://www.smallslive.com/events/33553-jam-in-the-cafe/",
       "details": "until 12:00 AM",
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Wilfie Williams",
+          "instrument": "piano"
+        }
+      ],
       "priceText": null
     },
     {
@@ -20887,7 +23773,12 @@
       ],
       "url": "https://www.smallslive.com/events/33426-jam-session-hosted-by-adam-ray/",
       "details": "until 4:00 AM",
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Adam Ray",
+          "instrument": "drums"
+        }
+      ],
       "late": true,
       "priceText": null
     },
@@ -20901,7 +23792,12 @@
       ],
       "url": "https://www.smallslive.com/events/33527-barry-harris-institute-presents-free-piano-lesson-jam-session/",
       "details": "until 6:00 PM",
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Richard Clements",
+          "instrument": "piano"
+        }
+      ],
       "priceText": null
     },
     {
@@ -20943,7 +23839,20 @@
       ],
       "url": "https://www.smallslive.com/events/33587-earl-sauls-trio/",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Earl Sauls",
+          "instrument": "bass"
+        },
+        {
+          "name": "Rob Reich",
+          "instrument": "guitar"
+        },
+        {
+          "name": "Billy Mintz",
+          "instrument": "drums"
+        }
+      ],
       "priceText": null
     },
     {
@@ -20957,7 +23866,28 @@
       ],
       "url": "https://www.smallslive.com/events/33461-kurt-rosenwinkel-riptet/",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Kurt Rosenwinkel",
+          "instrument": "guitar"
+        },
+        {
+          "name": "Aidan McKeon",
+          "instrument": "tenor sax"
+        },
+        {
+          "name": "Joe Block",
+          "instrument": "piano"
+        },
+        {
+          "name": "Alexander Claffy",
+          "instrument": "bass"
+        },
+        {
+          "name": "Ofri Nehemya",
+          "instrument": "drums"
+        }
+      ],
       "priceText": null
     },
     {
@@ -21106,7 +24036,12 @@
       ],
       "url": "https://www.smallslive.com/events/33565-michael-kanan-trio/",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Michael Kanan",
+          "instrument": "piano"
+        }
+      ],
       "priceText": null
     },
     {
@@ -21120,7 +24055,12 @@
       ],
       "url": "https://www.smallslive.com/events/33585-mejedi-owusu-quintet/",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Mejedi Owusu",
+          "instrument": "trumpet"
+        }
+      ],
       "priceText": null
     },
     {
@@ -21146,7 +24086,12 @@
       ],
       "url": "https://www.smallslive.com/events/33558-jam-in-the-cafe/",
       "details": "until 12:00 AM",
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Yago Vazquez",
+          "instrument": "piano"
+        }
+      ],
       "priceText": null
     },
     {
@@ -21187,7 +24132,12 @@
       ],
       "url": "https://www.smallslive.com/events/33430-jam-session-hosted-by-jason-clotter/",
       "details": "until 4:00 AM",
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Jason Maximo Clotter",
+          "instrument": "bass"
+        }
+      ],
       "late": true,
       "priceText": null
     },
@@ -21201,7 +24151,12 @@
       ],
       "url": "https://www.smallslive.com/events/33531-afternoon-jam-in-the-cafe/",
       "details": "until 6:00 PM",
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "John Webber",
+          "instrument": "guitar"
+        }
+      ],
       "priceText": null
     },
     {
@@ -21243,7 +24198,20 @@
       ],
       "url": "https://www.smallslive.com/events/33363-bill-moring-trio/",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Bill Moring",
+          "instrument": "bass"
+        },
+        {
+          "name": "Allen Farnham",
+          "instrument": "piano"
+        },
+        {
+          "name": "Vanderlei Pereira",
+          "instrument": "drums"
+        }
+      ],
       "priceText": null
     },
     {
@@ -21257,7 +24225,24 @@
       ],
       "url": "https://www.smallslive.com/events/33364-caleb-tobocman-quartet/",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Caleb Tobocman",
+          "instrument": "bass"
+        },
+        {
+          "name": "Peter Bernstein",
+          "instrument": "guitar"
+        },
+        {
+          "name": "Tyler Henderson",
+          "instrument": "piano"
+        },
+        {
+          "name": "Aleksi Heinola",
+          "instrument": "drums"
+        }
+      ],
       "priceText": null
     },
     {
@@ -21272,7 +24257,7 @@
       "url": "https://tickets.smokejazz.com/shows/12074/?date=2026-08-26",
       "details": null,
       "personnel": null,
-      "priceText": "25.00,65.00"
+      "priceText": "$25-65"
     },
     {
       "id": "jazzcultural:2026-08-26:kurt-rosenwinkel-riptet",
@@ -21285,7 +24270,28 @@
       ],
       "url": "https://www.smallslive.com/events/33462-kurt-rosenwinkel-riptet/",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Kurt Rosenwinkel",
+          "instrument": "guitar"
+        },
+        {
+          "name": "Aidan McKeon",
+          "instrument": "tenor sax"
+        },
+        {
+          "name": "Joe Block",
+          "instrument": "piano"
+        },
+        {
+          "name": "Alexander Claffy",
+          "instrument": "bass"
+        },
+        {
+          "name": "Ofri Nehemya",
+          "instrument": "drums"
+        }
+      ],
       "priceText": null
     },
     {
@@ -21402,12 +24408,13 @@
       "priceText": null
     },
     {
-      "id": "barbayeux:2026-08-26:amp-9-30-tyrone-allen-ii-quartet-w-neta-raanan-lex-korten-ka",
+      "id": "barbayeux:2026-08-26:tyrone-allen-ii-quartet-w-neta-raanan-lex-korten-kayvon-gord",
       "clubId": "barbayeux",
-      "title": "amp; 9:30 Tyrone Allen II Quartet w/Neta Raanan, Lex Korten, Kayvon Gordon",
+      "title": "Tyrone Allen II Quartet w/Neta Raanan, Lex Korten, Kayvon Gordon",
       "date": "2026-08-26",
       "sets": [
-        "20:00"
+        "20:00",
+        "21:30"
       ],
       "url": "https://www.barbayeux.com/jazz/33sxrd9ynk6pjzn-325ns-shjkp-4l7y4-er5kz-pfmt7-la9zt-hgezc-z5h28-s33sy-982jt-yttmk-x8h75-wrm8y-te9t8-zl2wj-m73r6-jbbct-brymc-6zgj3-xbsff-9pyta-8d82d-pw27n-lrrc8-edfbd-c72lj-x7arx-9jcna-hxh7l-xrfnb",
       "details": null,
@@ -21425,7 +24432,24 @@
       ],
       "url": "https://www.smallslive.com/events/33365-joel-forrester-quartet/",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Joel Forrester",
+          "instrument": "piano"
+        },
+        {
+          "name": "Vito Dieterle",
+          "instrument": "tenor sax"
+        },
+        {
+          "name": "David Hofstra",
+          "instrument": "bass"
+        },
+        {
+          "name": "Matt Garrity",
+          "instrument": "drums"
+        }
+      ],
       "priceText": null
     },
     {
@@ -21439,7 +24463,24 @@
       ],
       "url": "https://www.smallslive.com/events/33366-dan-wilkins-quartet/",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Dan Wilkins",
+          "instrument": "tenor sax"
+        },
+        {
+          "name": "Jon Ballantyne",
+          "instrument": "piano"
+        },
+        {
+          "name": "Samuel Harris",
+          "instrument": "bass"
+        },
+        {
+          "name": "Byron Landham",
+          "instrument": "drums"
+        }
+      ],
       "priceText": null
     },
     {
@@ -21519,7 +24560,12 @@
       ],
       "url": "https://www.smallslive.com/events/33434-jam-session-hosted-by-carlos-abadie/",
       "details": "until 4:00 AM",
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Carlos Abadie",
+          "instrument": "trumpet"
+        }
+      ],
       "late": true,
       "priceText": null
     },
@@ -21533,7 +24579,12 @@
       ],
       "url": "https://www.smallslive.com/events/33535-afternoon-jam-in-the-cafe/",
       "details": "until 6:00 PM",
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Steve Nelson",
+          "instrument": "guitar"
+        }
+      ],
       "priceText": null
     },
     {
@@ -21575,7 +24626,20 @@
       ],
       "url": "https://www.smallslive.com/events/33367-nitzan-gavrieli-trio/",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Nitzan Gavrieli",
+          "instrument": "piano"
+        },
+        {
+          "name": "Rick Rosato",
+          "instrument": "bass"
+        },
+        {
+          "name": "Eviatar Slivnik",
+          "instrument": "drums"
+        }
+      ],
       "priceText": null
     },
     {
@@ -21589,7 +24653,24 @@
       ],
       "url": "https://www.smallslive.com/events/33369-tim-lin-quartet/",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Tim Lin",
+          "instrument": "tenor sax"
+        },
+        {
+          "name": "David Kikoski",
+          "instrument": "piano"
+        },
+        {
+          "name": "Ed Howard",
+          "instrument": "bass"
+        },
+        {
+          "name": "Adam Nussbaum",
+          "instrument": "drums"
+        }
+      ],
       "priceText": null
     },
     {
@@ -21604,7 +24685,7 @@
       "url": "https://tickets.smokejazz.com/shows/12074/?date=2026-08-27",
       "details": null,
       "personnel": null,
-      "priceText": "25.00,65.00"
+      "priceText": "$25-65"
     },
     {
       "id": "jazzcultural:2026-08-27:kurt-rosenwinkel-riptet",
@@ -21617,7 +24698,28 @@
       ],
       "url": "https://www.smallslive.com/events/33463-kurt-rosenwinkel-riptet/",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Kurt Rosenwinkel",
+          "instrument": "guitar"
+        },
+        {
+          "name": "Aidan McKeon",
+          "instrument": "tenor sax"
+        },
+        {
+          "name": "Joe Block",
+          "instrument": "piano"
+        },
+        {
+          "name": "Alexander Claffy",
+          "instrument": "bass"
+        },
+        {
+          "name": "Ofri Nehemya",
+          "instrument": "drums"
+        }
+      ],
       "priceText": null
     },
     {
@@ -21758,7 +24860,28 @@
       ],
       "url": "https://www.smallslive.com/events/33370-caleb-wheeler-curtis-undercurrents/",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Caleb Wheeler Curtis",
+          "instrument": "alto sax"
+        },
+        {
+          "name": "David Adewumi",
+          "instrument": "trumpet"
+        },
+        {
+          "name": "Colson Jimenez",
+          "instrument": "bass"
+        },
+        {
+          "name": "Rogerio Boccato",
+          "instrument": "percussion"
+        },
+        {
+          "name": "Mark Whitfield Jr",
+          "instrument": "drums"
+        }
+      ],
       "priceText": null
     },
     {
@@ -21799,7 +24922,24 @@
       ],
       "url": "https://www.smallslive.com/events/33399-jam-session-hosted-by-matt-snow/",
       "details": "until 4:00 AM",
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Matt Snow",
+          "instrument": "bass"
+        },
+        {
+          "name": "Chris Hemingway",
+          "instrument": "alto sax"
+        },
+        {
+          "name": "Keigo Hirakawa",
+          "instrument": "piano"
+        },
+        {
+          "name": "Wayne Smith Jr",
+          "instrument": "drums"
+        }
+      ],
       "late": true,
       "priceText": null
     },
@@ -21827,7 +24967,12 @@
       ],
       "url": "https://www.smallslive.com/events/33539-afternoon-jam-in-the-cafe/",
       "details": "until 6:00 PM",
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Panas Athanatos",
+          "instrument": "guitar"
+        }
+      ],
       "priceText": null
     },
     {
@@ -21840,7 +24985,12 @@
       ],
       "url": "https://www.smallslive.com/events/33575-smalls-afternoon-jam-session-hosted-by-carol-morgan/",
       "details": "until 5:15 PM",
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Carol Morgan",
+          "instrument": "trumpet"
+        }
+      ],
       "priceText": null
     },
     {
@@ -21869,7 +25019,12 @@
       ],
       "url": "https://www.smallslive.com/events/33284-miki-yamanaka-quartet/",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Miki Yamanaka",
+          "instrument": "piano"
+        }
+      ],
       "priceText": null
     },
     {
@@ -21898,7 +25053,7 @@
       "url": "https://tickets.smokejazz.com/shows/12074/?date=2026-08-28",
       "details": null,
       "personnel": null,
-      "priceText": "25.00,65.00"
+      "priceText": "$25-65"
     },
     {
       "id": "jazzcultural:2026-08-28:kurt-rosenwinkel-next-step-band",
@@ -21911,7 +25066,24 @@
       ],
       "url": "https://www.smallslive.com/events/33464-kurt-rosenwinkel-next-step-band/",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Kurt Rosenwinkel",
+          "instrument": "guitar"
+        },
+        {
+          "name": "Mark Turner",
+          "instrument": "tenor sax"
+        },
+        {
+          "name": "Ben Street",
+          "instrument": "bass"
+        },
+        {
+          "name": "Jeff Ballard",
+          "instrument": "drums"
+        }
+      ],
       "priceText": null
     },
     {
@@ -22029,15 +25201,16 @@
       "priceText": null
     },
     {
-      "id": "barbayeux:2026-08-28:amp-9-30",
+      "id": "barbayeux:2026-08-28:tal-yahalom-mirror-image-w-ledah-finck-daniel-hass-david-leo",
       "clubId": "barbayeux",
-      "title": "amp; 9:30",
+      "title": "Tal Yahalom \"Mirror Image\" w/Ledah Finck, Daniel Hass, David Leon, Rogerio Boccato",
       "date": "2026-08-28",
       "sets": [
-        "20:00"
+        "20:00",
+        "21:30"
       ],
       "url": "https://www.barbayeux.com/jazz/bsg4lz3rhzc3egx-mfjnz-47sjb-4e67s-xt5a5-6bjcx-cbrpj-e2s8z-ajbg8-ctpzs-c8mfg-727m7-zdpbx-42jss-xlx9x-zhw76-lns7p-fjc6n-ywrkk-gmdbj-j45j2-9cgah-dbegz",
-      "details": "Tal Yahalom \"Mirror Image\" w/Ledah Finck, Daniel Hass, David Leon, Rogerio Boccato",
+      "details": null,
       "personnel": null,
       "priceText": null
     },
@@ -22052,7 +25225,24 @@
       ],
       "url": "https://www.smallslive.com/events/33286-duduka-da-fonseca-quadrilogy/",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Duduka da Fonseca",
+          "instrument": "drums"
+        },
+        {
+          "name": "Vinicius Gomes",
+          "instrument": "guitar"
+        },
+        {
+          "name": "Manuel Valera",
+          "instrument": "piano"
+        },
+        {
+          "name": "Eduardo Belo",
+          "instrument": "bass"
+        }
+      ],
       "priceText": null
     },
     {
@@ -22078,7 +25268,24 @@
       ],
       "url": "https://www.smallslive.com/events/33479-mike-dirubbo-quartet/",
       "details": "until 12:00 AM",
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Mike DiRubbo",
+          "instrument": "alto sax"
+        },
+        {
+          "name": "Caili O'Doherty",
+          "instrument": "piano"
+        },
+        {
+          "name": "Ugonna Okegwo",
+          "instrument": "bass"
+        },
+        {
+          "name": "Adam Arruda",
+          "instrument": "drums"
+        }
+      ],
       "priceText": null
     },
     {
@@ -22091,7 +25298,12 @@
       ],
       "url": "https://www.smallslive.com/events/33512-round-midnight-solo-piano-with-caelan-cardello/",
       "details": "until 1:00 AM",
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Caelan Cardello",
+          "instrument": "piano"
+        }
+      ],
       "late": true,
       "priceText": null
     },
@@ -22105,7 +25317,12 @@
       ],
       "url": "https://www.smallslive.com/events/33288-ken-fowser-sextet/",
       "details": "until 4:00 AM",
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Ken Fowser",
+          "instrument": "tenor sax"
+        }
+      ],
       "late": true,
       "priceText": null
     },
@@ -22146,7 +25363,12 @@
       ],
       "url": "https://www.smallslive.com/events/33544-afternoon-jam-in-the-cafe/",
       "details": "until 6:00 PM",
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Samuel Lerner",
+          "instrument": "piano"
+        }
+      ],
       "priceText": null
     },
     {
@@ -22159,7 +25381,12 @@
       ],
       "url": "https://www.smallslive.com/events/33576-smalls-afternoon-jam-session-hosted-by-steve-nelson/",
       "details": "until 5:15 PM",
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Steve Nelson",
+          "instrument": "guitar"
+        }
+      ],
       "priceText": null
     },
     {
@@ -22173,7 +25400,12 @@
       ],
       "url": "https://www.smallslive.com/events/33285-miki-yamanaka-quartet/",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Miki Yamanaka",
+          "instrument": "piano"
+        }
+      ],
       "priceText": null
     },
     {
@@ -22202,7 +25434,7 @@
       "url": "https://tickets.smokejazz.com/shows/12074/?date=2026-08-29",
       "details": null,
       "personnel": null,
-      "priceText": "25.00,65.00"
+      "priceText": "$25-65"
     },
     {
       "id": "jazzcultural:2026-08-29:kurt-rosenwinkel-next-step-band",
@@ -22215,7 +25447,24 @@
       ],
       "url": "https://www.smallslive.com/events/33465-kurt-rosenwinkel-next-step-band/",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Kurt Rosenwinkel",
+          "instrument": "guitar"
+        },
+        {
+          "name": "Mark Turner",
+          "instrument": "tenor sax"
+        },
+        {
+          "name": "Ben Street",
+          "instrument": "bass"
+        },
+        {
+          "name": "Jeff Ballard",
+          "instrument": "drums"
+        }
+      ],
       "priceText": null
     },
     {
@@ -22333,12 +25582,13 @@
       "priceText": null
     },
     {
-      "id": "barbayeux:2026-08-29:amp-9-30-tim-norton",
+      "id": "barbayeux:2026-08-29:tim-norton",
       "clubId": "barbayeux",
-      "title": "amp; 9:30 - Tim Norton",
+      "title": "Tim Norton",
       "date": "2026-08-29",
       "sets": [
-        "20:00"
+        "20:00",
+        "21:30"
       ],
       "url": "https://www.barbayeux.com/jazz/f4pnrttfkdgyck9-ckf4t-ca2m4",
       "details": null,
@@ -22356,7 +25606,24 @@
       ],
       "url": "https://www.smallslive.com/events/33287-duduka-da-fonseca-quadrilogy/",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Duduka da Fonseca",
+          "instrument": "drums"
+        },
+        {
+          "name": "Vinicius Gomes",
+          "instrument": "guitar"
+        },
+        {
+          "name": "Manuel Valera",
+          "instrument": "piano"
+        },
+        {
+          "name": "Eduardo Belo",
+          "instrument": "bass"
+        }
+      ],
       "priceText": null
     },
     {
@@ -22369,7 +25636,24 @@
       ],
       "url": "https://www.smallslive.com/events/33480-mike-dirubbo-quartet/",
       "details": "until 12:00 AM",
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Mike DiRubbo",
+          "instrument": "alto sax"
+        },
+        {
+          "name": "Caili O'Doherty",
+          "instrument": "piano"
+        },
+        {
+          "name": "Ugonna Okegwo",
+          "instrument": "bass"
+        },
+        {
+          "name": "Adam Arruda",
+          "instrument": "drums"
+        }
+      ],
       "priceText": null
     },
     {
@@ -22382,7 +25666,12 @@
       ],
       "url": "https://www.smallslive.com/events/33513-round-midnight-solo-piano-with-caelan-cardello/",
       "details": "until 1:00 AM",
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Caelan Cardello",
+          "instrument": "piano"
+        }
+      ],
       "late": true,
       "priceText": null
     },
@@ -22396,7 +25685,12 @@
       ],
       "url": "https://www.smallslive.com/events/33280-chris-beck-quartet/",
       "details": "until 4:00 AM",
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Chris Beck",
+          "instrument": "drums"
+        }
+      ],
       "late": true,
       "priceText": null
     },
@@ -22434,7 +25728,12 @@
       ],
       "url": "https://www.smallslive.com/events/33549-afternoon-jam-in-the-cafe/",
       "details": "until 6:00 PM",
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "katie Cosco",
+          "instrument": "piano"
+        }
+      ],
       "priceText": null
     },
     {
@@ -22447,7 +25746,24 @@
       ],
       "url": "https://www.smallslive.com/events/33421-smalls-afternoon-jam-session-hosted-by-ryo-sasaki/",
       "details": "until 5:15 PM",
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Ryo Sasaki",
+          "instrument": "trumpet"
+        },
+        {
+          "name": "Steve Ash",
+          "instrument": "piano"
+        },
+        {
+          "name": "Bill Crow",
+          "instrument": "bass"
+        },
+        {
+          "name": "Steve Little",
+          "instrument": "drums"
+        }
+      ],
       "priceText": null
     },
     {
@@ -22516,7 +25832,24 @@
       ],
       "url": "https://www.smallslive.com/events/33387-dan-aran-quartet/",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Dan Aran",
+          "instrument": "drums"
+        },
+        {
+          "name": "Glenn Zaleski",
+          "instrument": "piano"
+        },
+        {
+          "name": "Matt Clohesy",
+          "instrument": "bass"
+        },
+        {
+          "name": "Daniel Sadownick",
+          "instrument": "percussion"
+        }
+      ],
       "priceText": null
     },
     {
@@ -22531,7 +25864,7 @@
       "url": "https://tickets.smokejazz.com/shows/12074/?date=2026-08-30",
       "details": null,
       "personnel": null,
-      "priceText": "25.00,65.00"
+      "priceText": "$25-65"
     },
     {
       "id": "django:2026-08-30:conrad-korsch-trio",
@@ -22558,7 +25891,24 @@
       ],
       "url": "https://www.smallslive.com/events/33466-kurt-rosenwinkel-next-step-band/",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Kurt Rosenwinkel",
+          "instrument": "guitar"
+        },
+        {
+          "name": "Mark Turner",
+          "instrument": "tenor sax"
+        },
+        {
+          "name": "Ben Street",
+          "instrument": "bass"
+        },
+        {
+          "name": "Jeff Ballard",
+          "instrument": "drums"
+        }
+      ],
       "priceText": null
     },
     {
@@ -22644,7 +25994,24 @@
       ],
       "url": "https://www.smallslive.com/events/33267-jamile-quartet/",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Jamile Staevie Ayres",
+          "instrument": "vocalist"
+        },
+        {
+          "name": "Miki Yamanaka",
+          "instrument": "piano"
+        },
+        {
+          "name": "Simón Willson",
+          "instrument": "bass"
+        },
+        {
+          "name": "Jimmy Macbride",
+          "instrument": "drums"
+        }
+      ],
       "priceText": null
     },
     {
@@ -22658,7 +26025,32 @@
       ],
       "url": "https://www.smallslive.com/events/33292-nick-biello-sextet/",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Nick Biello",
+          "instrument": "alto sax"
+        },
+        {
+          "name": "Charlie Porter",
+          "instrument": "trumpet"
+        },
+        {
+          "name": "Tony Davis",
+          "instrument": "guitar"
+        },
+        {
+          "name": "Chris McCarthy",
+          "instrument": "piano"
+        },
+        {
+          "name": "Alex Tremblay",
+          "instrument": "bass"
+        },
+        {
+          "name": "Peter Kronreif",
+          "instrument": "drums"
+        }
+      ],
       "priceText": null
     },
     {
@@ -22685,7 +26077,12 @@
       ],
       "url": "https://www.smallslive.com/events/33562-jam-in-the-cafe/",
       "details": "until 12:00 AM",
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Marc Devine",
+          "instrument": "piano"
+        }
+      ],
       "priceText": null
     },
     {
@@ -22698,7 +26095,16 @@
       ],
       "url": "https://www.smallslive.com/events/33523-afternoon-jam-in-the-cafe/",
       "details": "until 6:00 PM",
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Saul Rubin",
+          "instrument": "guitar"
+        },
+        {
+          "name": "Miles Wick",
+          "instrument": "bass"
+        }
+      ],
       "priceText": null
     },
     {
@@ -22727,7 +26133,24 @@
       ],
       "url": "https://www.smallslive.com/events/33458-joe-farnsworth-quartet/",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Joe Farnsworth",
+          "instrument": "drums"
+        },
+        {
+          "name": "Jaleel Shaw",
+          "instrument": "alto sax"
+        },
+        {
+          "name": "Micah Thomas",
+          "instrument": "piano"
+        },
+        {
+          "name": "Peter Washington",
+          "instrument": "bass"
+        }
+      ],
       "priceText": null
     },
     {
@@ -22809,7 +26232,12 @@
       ],
       "url": "https://www.smallslive.com/events/33554-jam-in-the-cafe/",
       "details": "until 12:00 AM",
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Wilfie Williams",
+          "instrument": "piano"
+        }
+      ],
       "priceText": null
     },
     {
@@ -22836,7 +26264,12 @@
       ],
       "url": "https://www.smallslive.com/events/33424-jam-session-hosted-by-mike-boone/",
       "details": "until 4:00 AM",
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Mike Boone",
+          "instrument": "bass"
+        }
+      ],
       "late": true,
       "priceText": null
     },

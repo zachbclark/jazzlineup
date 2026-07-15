@@ -1,8 +1,9 @@
 # jazzlineup.com 🎷
 
 **Live at [jazzlineup.com](https://jazzlineup.com).** One calendar for live
-jazz: who's playing tonight across 50 venues in New York, Los Angeles, and
-Chicago, from the Village Vanguard to a Sunday parlor session in Sugar Hill. A
+jazz: who's playing tonight across 58 venues in New York, Los Angeles,
+Chicago, and the Bay Area, from the Village Vanguard to a Sunday parlor
+session in Sugar Hill. A
 zero-dependency crawler checks every venue's site around the clock,
 normalizes the chaos into one feed, and a static React frontend serves it
 fast from CloudFront. No ads, no accounts.
@@ -10,9 +11,10 @@ fast from CloudFront. No ads, no accounts.
 ## What it does
 
 - **29 NYC venues** across Manhattan, Harlem, Brooklyn, and Queens,
-  **13 LA venues** from the Hollywood Bowl to hotel bars, and **8 Chicago
-  venues** from the Green Mill to the creative-music lofts. City switcher
-  in the wordmark; borough scopes for New York.
+  **13 LA venues** from the Hollywood Bowl to hotel bars, **9 Chicago
+  venues** from the Green Mill to the creative-music lofts, and **7 Bay
+  Area venues** from SFJAZZ to a Glen Park bookshop. City switcher in the
+  wordmark; borough scopes for New York.
 - **Artist search**: type a musician's name and see every date they're on,
   matched against titles, band rosters, and descriptions, accents ignored.
   When the other city has matches too, one tap switches with the query intact.
@@ -74,15 +76,15 @@ The three stages stay deliberately decoupled:
 
 ## Venue sources, by shape
 
-Fifty venues resolve to about fifteen source patterns:
+Fifty-eight venues resolve to about fifteen source patterns:
 
 | Pattern | Examples |
 | --- | --- |
-| JSON APIs (Squarespace collections, ViewCy, Tockify, DICE, TicketWeb, Turntable, custom WP routes) | Jazz Gallery, Barbès, Close Up, Smoke, The Pocket, World Stage, Zebulon, Jazz Showcase, Elastic Arts |
-| Server-rendered HTML, parsed with targeted regex (no DOM library) | Village Vanguard, Blue Note, The Django, Ornithology, Roulette, Silvana + Shrine, LACMA, Green Mill, Andy's, Dorian's |
+| JSON APIs (Squarespace collections, ViewCy, Tockify, DICE, TicketWeb, Turntable, tribe REST, custom WP routes) | Jazz Gallery, Barbès, Close Up, Smoke, The Pocket, World Stage, Zebulon, Jazz Showcase, Elastic Arts, Black Cat, Keys, Mr. Tipple's, SFJAZZ |
+| Server-rendered HTML, parsed with targeted regex (no DOM library) | Village Vanguard, Blue Note, The Django, Ornithology, Roulette, Silvana + Shrine, LACMA, Green Mill, Andy's, Dorian's, Yoshi's |
 | Venue feeds with genre tags, filtered to jazz | Hollywood Bowl + Disney Hall + The Ford (one LA Phil feed) |
-| Mixed-genre rooms, filtered to jazz by keyword or genre tag | The Mint, Zebulon, Gold-Diggers, JCAL, Shrine, Constellation + Hungry Brain |
-| Standing residencies, generated on a schedule | Arthur's Tavern, Bill's Place, Marjorie Eliot's Parlor Jazz |
+| Mixed-genre rooms, filtered to jazz by keyword or genre tag | The Mint, Zebulon, Gold-Diggers, JCAL, Shrine, Constellation + Hungry Brain, SPACE, Freight & Salvage |
+| Standing residencies, generated on a schedule | Arthur's Tavern, Bill's Place, Marjorie Eliot's Parlor Jazz, Bird & Beckett |
 
 The principle: the site curates jazz **events**, not jazz venues. A rock club
 with a Monday jazz hang lists the hang and nothing else.
@@ -107,7 +109,7 @@ with a Monday jazz hang lists the hang and nothing else.
 ## Testing
 
 ```bash
-node crawler/test.mjs   # 51 parser + merge-logic test groups, no network
+node crawler/test.mjs   # 60 parser + merge-logic test groups, no network
 node web/test-ui.mjs    # 16 Playwright UI tests, desktop + mobile viewports
 ```
 
@@ -127,8 +129,8 @@ layout. Both run before anything ships.
 
 ## Roadmap
 
-Chicago just landed (the Green Mill's calendar really did have full band
-rosters hiding in its add-to-calendar links). San Francisco is next, then
-Paris, and Tokyo when internationalization gets done properly. Nearer term:
-iCal export, a "new this week" page, saved artists with email alerts. Full
-detail in [ROADMAP.md](ROADMAP.md).
+Chicago and San Francisco landed the same week (the Green Mill's calendar
+really did have full band rosters hiding in its add-to-calendar links).
+Paris is next, and Tokyo when internationalization gets done properly.
+Nearer term: iCal export, a "new this week" page, saved artists with email
+alerts. Full detail in [ROADMAP.md](ROADMAP.md).

@@ -73,18 +73,37 @@ export function parseEventPersonnel(pageHtml) {
   return personnel;
 }
 
-// Fetch event pages (near-term events only, limited concurrency) to enrich
-// events with personnel. Failures are silently skipped — the calendar data
-// stands on its own.
-const ENRICH_DAYS = 12;
+// Personnel come from event detail pages, which is expensive — so reuse
+// first, fetch second:
+//  1. copy personnel from the PREVIOUS crawl for events whose id already
+//     had them (ids are stable: clubId:date:slug)
+//  2. fetch pages only for events still missing personnel, nearest dates
+//     first, capped per crawl — over a few 4-hour cycles the whole listing
+//     window converges to fully enriched, with steady-state fetches limited
+//     to newly announced shows.
+// Regression that drove this (2026-07-16): Mark Turner in Kurt Rosenwinkel's
+// Next Step Band was invisible to search because his date sat beyond the old
+// 12-day enrichment horizon.
 const ENRICH_CONCURRENCY = 4;
-const ENRICH_MAX_PAGES = 90;
+const ENRICH_MAX_PAGES = 120;
+const LISTING_MAX_PAGES = 8; // paginated month listing, not event pages
 
-async function enrichPersonnel(events, today = new Date()) {
-  const horizon = new Date(today.getTime() + ENRICH_DAYS * 86400000).toISOString().slice(0, 10);
+// Pure + exported for tests: copy prior personnel onto matching event ids.
+export function reusePersonnel(events, previousEvents = []) {
+  const prior = new Map(
+    previousEvents.filter((e) => e.personnel?.length).map((e) => [e.id, e.personnel])
+  );
+  for (const e of events) {
+    if (!e.personnel && prior.has(e.id)) e.personnel = prior.get(e.id);
+  }
+  return events;
+}
+
+async function enrichPersonnel(events) {
   const urls = [...new Set(
     events
-      .filter((e) => e.date <= horizon && e.url?.includes('/events/'))
+      .filter((e) => !e.personnel && e.url?.includes('/events/'))
+      .sort((a, b) => a.date.localeCompare(b.date)) // nearest nights first
       .map((e) => e.url)
   )].slice(0, ENRICH_MAX_PAGES);
 
@@ -108,10 +127,10 @@ async function enrichPersonnel(events, today = new Date()) {
   return events;
 }
 
-export async function crawl() {
+export async function crawl(ctx = {}) {
   const events = [];
   let pageRange = [1];
-  for (let page = 1; page <= Math.min(4, Math.max(...pageRange)); page++) {
+  for (let page = 1; page <= Math.min(LISTING_MAX_PAGES, Math.max(...pageRange)); page++) {
     const body = await fetchText(`${BASE}/search/upcoming-ajax/?page=${page}`, {
       headers: { 'x-requested-with': 'XMLHttpRequest', accept: 'application/json' },
     });
@@ -120,5 +139,5 @@ export async function crawl() {
     events.push(...parsePage(j.template ?? ''));
     await sleep(500); // be polite
   }
-  return enrichPersonnel(events);
+  return enrichPersonnel(reusePersonnel(events, ctx.previousEvents ?? []));
 }

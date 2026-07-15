@@ -19,5 +19,6 @@ export async function crawl() {
     venueFilter: 'Gold-Diggers',
     fallbackUrl: SITE,
     jazzRe: JAZZ_RE,
+    fallbackKey: 'xZmANx1OMy3oAfHleuczK3GcnYKlQ8Oj4w5drpon', // seen 2026-07-15
   });
 }

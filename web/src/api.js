@@ -5,6 +5,7 @@ export const CITIES = [
   { id: 'nyc', label: 'NYC' },
   { id: 'la', label: 'LA' },
   { id: 'chi', label: 'CHI' },
+  { id: 'sf', label: 'SF' },
 ];
 
 export function initialCity() {

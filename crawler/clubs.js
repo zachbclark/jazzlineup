@@ -670,6 +670,99 @@ export const CLUBS = [
     color: '#3fb8af', // cocktail-glass teal behind the record bins — audit-cleared
     module: './clubs/dorians.js',
   },
+
+  // ----------------------------------------------------- San Francisco ----
+  {
+    id: 'sfjazz',
+    name: 'SFJAZZ',
+    shortName: 'SFJAZZ',
+    url: 'https://www.sfjazz.org',
+    address: '201 Franklin St, San Francisco, CA 94102',
+    city: 'sf',
+    borough: null,
+    timezone: 'America/Los_Angeles',
+    neighborhood: 'Hayes Valley',
+    color: '#ff6a3d', // their poster orange, glow-tuned for black
+    module: './clubs/sfjazz.js',
+  },
+  {
+    id: 'blackcat',
+    name: 'Black Cat',
+    shortName: 'Black Cat',
+    url: 'https://blackcatsf.com',
+    address: '400 Eddy St, San Francisco, CA 94109',
+    city: 'sf',
+    borough: null,
+    timezone: 'America/Los_Angeles',
+    neighborhood: 'Tenderloin',
+    color: '#f1c04f', // cat-eye gold on black, their own palette
+    module: './clubs/blackcat.js',
+  },
+  {
+    id: 'keys',
+    name: 'Keys Jazz Bistro',
+    shortName: 'Keys',
+    url: 'https://keysjazzbistro.com',
+    address: '498 Broadway, San Francisco, CA 94133',
+    city: 'sf',
+    borough: null,
+    timezone: 'America/Los_Angeles',
+    neighborhood: 'North Beach',
+    color: '#c92f4c', // Broadway-corridor neon crimson — audit-cleared
+    module: './clubs/keys.js',
+  },
+  {
+    id: 'mrtipples',
+    name: "Mr. Tipple's",
+    shortName: "Tipple's",
+    url: 'https://mrtipplessf.com',
+    address: '39 Fell St, San Francisco, CA 94102',
+    city: 'sf',
+    borough: null,
+    timezone: 'America/Los_Angeles',
+    neighborhood: 'Civic Center',
+    color: '#9b59d0', // low-lit cocktail-den violet — audit-cleared
+    module: './clubs/mrtipples.js',
+  },
+  {
+    id: 'birdbeckett',
+    name: 'Bird & Beckett',
+    shortName: 'Bird & Beckett',
+    url: 'https://birdbeckett.com',
+    address: '653 Chenery St, San Francisco, CA 94131',
+    city: 'sf',
+    borough: null,
+    timezone: 'America/Los_Angeles',
+    neighborhood: 'Glen Park',
+    color: '#8fbf6f', // bookshop-shelf sage — audit-cleared
+    module: './clubs/birdbeckett.js',
+  },
+  {
+    id: 'freight',
+    name: 'Freight & Salvage',
+    shortName: 'Freight',
+    url: 'https://thefreight.org',
+    address: '2020 Addison St, Berkeley, CA 94704',
+    city: 'sf',
+    borough: null,
+    timezone: 'America/Los_Angeles',
+    neighborhood: 'Downtown Berkeley',
+    color: '#45c4bc', // workshop-patina teal — audit-cleared
+    module: './clubs/freight.js',
+  },
+  {
+    id: 'yoshis',
+    name: "Yoshi's",
+    shortName: "Yoshi's",
+    url: 'https://yoshis.com',
+    address: '510 Embarcadero W, Oakland, CA 94607',
+    city: 'sf',
+    borough: null,
+    timezone: 'America/Los_Angeles',
+    neighborhood: 'Jack London Square, Oakland',
+    color: '#4a90d9', // harbor-water blue — audit-cleared
+    module: './clubs/yoshis.js',
+  },
 ];
 
 export function clubById(id) {

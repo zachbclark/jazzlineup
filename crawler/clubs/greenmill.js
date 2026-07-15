@@ -64,7 +64,8 @@ export function parseMonth(html) {
   return events;
 }
 
-export async function crawl(today = new Date()) {
+export async function crawl(ctx = {}) {
+  const today = ctx.today ?? new Date();
   const out = [];
   const y = today.getFullYear();
   const mo = today.getMonth() + 1;

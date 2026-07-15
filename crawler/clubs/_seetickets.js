@@ -52,9 +52,9 @@ export function parseSeeTickets(html, clubId, { jazzRe = /jazz/i, fallbackUrl, t
 }
 
 export function makeSeeTicketsCrawler({ clubId, calendarUrl, jazzRe }) {
-  return async function crawl(today = new Date()) {
+  return async function crawl(ctx = {}) {
     return parseSeeTickets(await fetchText(calendarUrl), clubId, {
-      jazzRe, fallbackUrl: calendarUrl, today,
+      jazzRe, fallbackUrl: calendarUrl, today: ctx.today ?? new Date(),
     });
   };
 }

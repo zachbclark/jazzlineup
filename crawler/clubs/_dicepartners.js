@@ -29,9 +29,17 @@ export function parseDiceEvents(jsonText, clubId, { fallbackUrl, jazzRe = null }
   return events;
 }
 
-export async function crawlDiceVenue({ clubId, keyPage, venueFilter, fallbackUrl, jazzRe }) {
-  const page = await fetchText(keyPage);
-  const key = page.match(KEY_RE)?.[1];
+export async function crawlDiceVenue({ clubId, keyPage, venueFilter, fallbackUrl, jazzRe, fallbackKey = null }) {
+  // The venue page is only visited to read the widget's apiKey. Venue sites
+  // sometimes bot-challenge AWS IPs (Zebulon and Gold-Diggers both did on
+  // 2026-07-15) — so a failed or keyless page falls back to the last known
+  // key rather than failing the whole club; the DICE API itself doesn't block.
+  let key = null;
+  try {
+    const page = await fetchText(keyPage);
+    key = page.match(KEY_RE)?.[1] ?? null;
+  } catch { /* fall through to fallbackKey */ }
+  key = key ?? fallbackKey;
   if (!key) throw new Error(`${clubId}: DICE widget apiKey not found on ${keyPage}`);
   const api = `https://partners-endpoint.dice.fm/api/v2/events?page%5Bsize%5D=100&filter%5Bvenues%5D%5B%5D=${encodeURIComponent(venueFilter)}`;
   const body = await fetchText(api, { headers: { 'x-api-key': key, accept: 'application/json' } });

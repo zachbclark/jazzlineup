@@ -18,5 +18,6 @@ export async function crawl() {
     venueFilter: 'Zebulon',
     fallbackUrl: SITE,
     jazzRe: JAZZ_RE,
+    fallbackKey: 'Z9798C68BR4guDOGqSyFn1oHZfXtL0gW3rU1YZUv', // seen 2026-07-15
   });
 }
