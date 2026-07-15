@@ -40,8 +40,29 @@ is parser maintenance, so invest in sanity checks + alerting, not infra).
 - [ ] Lightweight privacy-friendly analytics — also decides an open question:
       is list mode used enough to keep, or does it move behind a settings icon?
 
+## Quality & Testing (Zach's priority 2026-07-15: "everything looks right and has good testing")
+
+- [ ] UI test suite (Playwright): loads, calendar default, day drawer opens,
+      filters change counts, mobile list/dots render — `npm run test:ui`
+- [ ] Integration tests for the crawl merge (zero-guard, failure keeps
+      previous data, dedupe, sort) — pure-function refactor of run.js
+- [ ] UI formatting audit at phone width — first finding: Jazz Gallery
+      big-band personnel (10 players) breaks mobile layout; grouped roster
+      must flow compactly on small screens
+- [ ] Architecture diagrams generated from the actual code (system,
+      data-flow, per-crawler map) — good pre-Brian onboarding doc
+- [ ] Late-night attribution: shift after-midnight starts (12:00–4:59am) to
+      the previous day with a "late" marker (DECIDE: Zach floated 11pm too;
+      Claude recommends midnight cutoff only)
+- [ ] Footer: "Updated Xh ago" (smaller, relative time), version stamp
+
 ## Phase 2 — Depth: filtering that scales
 - [ ] +5–10 NYC clubs (Smoke, Ornithology, Bar Bayeux, Zinc Bar, The Stone…)
+- [ ] Venue-first navigation concepts (from the "Bandstand" notes): favorite
+      venues as the organizing principle; venue search; maybe a venue map
+      per city. NAME "Bandstand"/"Venyou"/"Encore" considered and PARKED —
+      jazzlineup.com stands; revisit only if the venue-first pivot deepens
+- [ ] Venue/question submission form (needs SES from Phase 3)
 - [ ] **Filter UI for scale (tile concept):** club tiles with a favorite
       star, drag-and-drop ordering (inline or in a dropdown), favorites
       pinned first; dropdown checkbox list with select-all/deselect-all as
@@ -79,6 +100,15 @@ is parser maintenance, so invest in sanity checks + alerting, not infra).
 - [ ] Markup-drift alerting: notify (email/webhook) after N consecutive failed
       or suspect crawls for a club
 - [ ] Crawler politeness: descriptive UA, delays, cache/etag use where possible
+
+## Brand simmer (open, non-blocking)
+
+- [ ] "More metallic / horn-like" color treatment (gradient wordmark?);
+      modern font question stays open — current: Abril Fatface + brass #d6a071
+- [ ] Dim ornate f-hole curves (like a bass) as corner/border ornament —
+      prototype as SVG, pairs with commissioned-art item
+- [ ] Venue colors: Zach to review each venue's color individually
+      (first-pass palette is researched + commented in crawler/clubs.js)
 
 ## With Brian (second admin)
 

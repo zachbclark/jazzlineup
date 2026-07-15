@@ -20,6 +20,16 @@ export async function runCrawl({ previousEvents = [], clubIds = null } = {}) {
     })
   );
 
+  return mergeCrawlResults(results, { previousEvents, targetIds });
+}
+
+// Pure merge of settled crawl results — separated from runCrawl so the
+// failure-isolation rules are unit-testable without any network:
+//  - a module returning 0 events is SUSPECT: its previous data is kept
+//  - a rejected module keeps its previous data
+//  - fresh events replace previous ones for successfully-crawled clubs
+//  - de-dupe by id, sort by date then first set time
+export function mergeCrawlResults(results, { previousEvents = [], targetIds }) {
   const fresh = [];
   const crawledClubIds = new Set();
   const errors = [];
@@ -27,8 +37,6 @@ export async function runCrawl({ previousEvents = [], clubIds = null } = {}) {
   for (const r of results) {
     if (r.status === 'fulfilled') {
       const events = r.value.events.filter((e) => targetIds.has(e.clubId));
-      // Sanity check: zero events almost certainly means the site changed its
-      // markup, not that the club went dark. Fail loudly, keep previous data.
       if (events.length === 0) {
         errors.push(`${r.value.mod}: returned 0 events (markup change? keeping previous data)`);
         log.push(`SUSPECT ${r.value.mod}: 0 events — keeping previous data`);
@@ -43,10 +51,8 @@ export async function runCrawl({ previousEvents = [], clubIds = null } = {}) {
     }
   }
 
-  // Keep previous events for clubs that failed this run (or weren't targeted).
   const kept = previousEvents.filter((e) => !crawledClubIds.has(e.clubId));
 
-  // De-dupe by id, sort by date then first set time.
   const byId = new Map();
   for (const e of [...kept, ...fresh]) byId.set(e.id, e);
   const events = [...byId.values()].sort(

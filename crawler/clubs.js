@@ -11,7 +11,7 @@ export const CLUBS = [
     city: 'nyc',
     timezone: 'America/New_York',
     neighborhood: 'West Village',
-    color: '#c0392b',
+    color: '#ff453a', // the red neon sign on 7th Ave
     module: './clubs/vanguard.js',
   },
   {
@@ -23,7 +23,7 @@ export const CLUBS = [
     city: 'nyc',
     timezone: 'America/New_York',
     neighborhood: 'Greenwich Village',
-    color: '#2c5f9e',
+    color: '#4d9bff', // the name — azure, brightened from their navy
     module: './clubs/bluenote.js',
   },
   {
@@ -35,7 +35,7 @@ export const CLUBS = [
     city: 'nyc',
     timezone: 'America/New_York',
     neighborhood: 'West Village',
-    color: '#8e44ad',
+    color: '#e8355f', // SmallsLive brand crimson #d21535, glow-tuned
     module: './clubs/smalls.js',
   },
   {
@@ -47,7 +47,7 @@ export const CLUBS = [
     city: 'nyc',
     timezone: 'America/New_York',
     neighborhood: 'West Village',
-    color: '#b07cc6',
+    color: '#f1bb53', // SmallsLive brand gold, kept as-is
     module: './clubs/smalls.js', // same source feed as Smalls
   },
   {
@@ -59,7 +59,7 @@ export const CLUBS = [
     city: 'nyc',
     timezone: 'America/New_York',
     neighborhood: 'Theater District',
-    color: '#27ae60',
+    color: '#f2788c', // birdlandjazz.com brand rose #e7737f
     module: './clubs/birdland.js',
   },
   {
@@ -71,8 +71,56 @@ export const CLUBS = [
     city: 'nyc',
     timezone: 'America/New_York',
     neighborhood: 'Columbus Circle',
-    color: '#e67e22',
+    color: '#ffa042', // the amber room + sunset behind the stage glass
     module: './clubs/dizzys.js',
+  },
+  {
+    id: 'jazzcultural',
+    name: 'Jazz Cultural Theater',
+    shortName: 'Jazz Cultural',
+    url: 'https://www.jazzcultural.com',
+    address: '184 W 10th St, New York, NY 10014',
+    city: 'nyc',
+    timezone: 'America/New_York',
+    neighborhood: 'West Village',
+    color: '#4a6ff5', // SmallsLive brand royal blue #1055c9, brightened
+    module: './clubs/smalls.js', // same SmallsLive feed as Smalls/Mezzrow
+  },
+  {
+    id: 'smoke',
+    name: 'Smoke Jazz Club',
+    shortName: 'Smoke',
+    url: 'https://www.smokejazz.com',
+    address: '2751 Broadway, New York, NY 10025',
+    city: 'nyc',
+    timezone: 'America/New_York',
+    neighborhood: 'Upper West Side',
+    color: '#9fb6c9', // the name; NB their site brand is red #c51403 if Zach prefers
+    module: './clubs/smoke.js',
+  },
+  {
+    id: 'nublu',
+    name: 'Nublu 151',
+    shortName: 'Nublu',
+    url: 'https://nublu.net/program151',
+    address: '151 Avenue C, New York, NY 10009',
+    city: 'nyc',
+    timezone: 'America/New_York',
+    neighborhood: 'Alphabet City',
+    color: '#35d0e0', // the famous blue light over the unmarked door
+    module: './clubs/nublu.js',
+  },
+  {
+    id: 'lunatico',
+    name: 'Bar LunÀtico',
+    shortName: 'LunÀtico',
+    url: 'https://www.barlunatico.com/music',
+    address: '486 Halsey St, Brooklyn, NY 11233',
+    city: 'nyc',
+    timezone: 'America/New_York',
+    neighborhood: 'Bed-Stuy',
+    color: '#45c4b5', // barlunatico.com brand teal #4c948b, brightened
+    module: './clubs/lunatico.js',
   },
   {
     id: 'jazzgallery',
@@ -83,7 +131,7 @@ export const CLUBS = [
     city: 'nyc',
     timezone: 'America/New_York',
     neighborhood: 'NoMad',
-    color: '#16a085',
+    color: '#c96a4a', // their brand dark red #941100 shifted to rust (Vanguard owns red)
     module: './clubs/jazzgallery.js',
   },
 ];

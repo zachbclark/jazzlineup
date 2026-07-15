@@ -14,7 +14,8 @@ const BASE = 'https://www.smallslive.com';
 function venueOf(groupHtml) {
   if (/smalls-color/.test(groupHtml)) return 'smalls';
   if (/mezzrow-color/.test(groupHtml)) return 'mezzrow';
-  return null; // e.g. Jazzcultural Theater — not tracked
+  if (/jazzcultural-color/.test(groupHtml)) return 'jazzcultural';
+  return null;
 }
 
 export function parsePage(templateHtml, today = new Date()) {

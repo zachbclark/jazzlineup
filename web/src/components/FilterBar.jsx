@@ -12,7 +12,12 @@ export default function FilterBar({ clubs, active, onToggle, onAll }) {
           <button
             key={c.id}
             className={'chip' + (on ? ' on' : '')}
-            style={on ? { borderColor: c.color, background: c.color + '22' } : undefined}
+            style={on ? {
+              borderColor: c.color,
+              background: c.color + '22',
+              // the one glow tier: active venue chips halo in their own color
+              boxShadow: `0 0 12px ${c.color}55`,
+            } : undefined}
             onClick={() => onToggle(c.id)}
             title={`${c.name} — ${c.neighborhood}`}
           >

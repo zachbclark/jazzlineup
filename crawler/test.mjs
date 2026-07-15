@@ -66,7 +66,8 @@ ok('smalls: parses day/venue/event template', () => {
     </div>
   </div>`;
   const evs = smParse(tpl, TODAY);
-  assert.equal(evs.length, 2, `expected 2 (jazzcultural excluded), got ${evs.length}`);
+  assert.equal(evs.length, 3, `expected 3 (incl. jazzcultural), got ${evs.length}`);
+  assert.equal(evs[2].clubId, 'jazzcultural');
   assert.equal(evs[0].clubId, 'smalls');
   assert.equal(evs[0].date, '2026-07-13');
   assert.deepEqual(evs[0].sets, ['18:00', '19:30']);
@@ -223,4 +224,114 @@ ok('personnel: survives makeEvent end-to-end (jazzgallery)', () => {
   assert.equal(evs[0].personnel?.length, 2, 'personnel must survive makeEvent');
   assert.deepEqual(evs[0].personnel[0], { name: 'Alice Smith', instrument: 'piano' });
   assert.equal(evs[0].details, null);
+});
+
+// --- Smoke ---------------------------------------------------------------------
+import { parse as smokeParse } from './clubs/smoke.js';
+ok('smoke: groups performances into events with NY-time sets', () => {
+  const fixture = JSON.stringify([
+    { id: 1, datetime: '2026-07-15T22:30:00Z', show_id: 11747, show: { id: 11747, name: 'Jane Monheit', price_per_person: '$45' } },
+    { id: 2, datetime: '2026-07-16T00:30:00Z', show_id: 11747, show: { id: 11747, name: 'Jane Monheit', price_per_person: '$45' } },
+    { id: 3, datetime: '2026-07-17T02:00:00Z', show_id: 11800, show: { id: 11800, name: 'Late Night Session' } },
+  ]);
+  const evs = smokeParse(fixture);
+  // 22:30Z = 6:30pm ET; 00:30Z next day = 8:30pm ET SAME NY date -> one event, two sets
+  assert.equal(evs.length, 2);
+  const jane = evs.find((e) => /Monheit/.test(e.title));
+  assert.equal(jane.date, '2026-07-15');
+  assert.deepEqual(jane.sets, ['18:30', '20:30']);
+  assert.match(jane.url, /\/shows\/11747\//);
+  const late = evs.find((e) => /Late Night/.test(e.title));
+  assert.equal(late.date, '2026-07-16'); // 02:00Z = 10pm ET on the 16th
+  assert.deepEqual(late.sets, ['22:00']);
+});
+
+// --- Nublu -----------------------------------------------------------------------
+import { parse as nubluParse } from './clubs/nublu.js';
+ok('nublu: splits day rows into per-act events with ticket links', () => {
+  const html = `
+  <tr><td class="schpage-date2"><span class="date-display-single" content="2026-07-15T00:00:00-04:00">Wednesday</span></td></tr>
+  <tr><td class="schpage-date3"><span class="date-display-single" content="2026-07-15T00:00:00-04:00">July</span> <span class="date-display-single" content="2026-07-15T00:00:00-04:00">15</span></td></tr>
+  <tr><td class="schpage-blue"><div class="schpage-body">
+    <p>7pm-Masta Ace "Disposable Arts"<br/><a href="https://posh.vip/e/masta-ace?x=1">Tickets</a></p>
+    <p>10pm-Fernando Garcia &amp; The Lux Quintet<br/><a href="https://posh.vip/e/fernando-garcia">Tickets</a></p>
+    <p>Sushi Reservations at Resy.com</p>
+  </div></td></tr>
+  <tr><td class="schpage-date2"><span class="date-display-single" content="2026-07-16T00:00:00-04:00">Thursday</span></td></tr>
+  <tr><td class="schpage-blue"><div class="schpage-body"><p>11pm - 1am Ilhan Ersahin Session <a href="https://posh.vip/e/ilhan">Tickets</a></p></div></td></tr>`;
+  const evs = nubluParse(html);
+  assert.equal(evs.length, 3, `expected 3 acts, got ${evs.length}: ${evs.map((e) => e.title).join(' | ')}`);
+  assert.equal(evs[0].date, '2026-07-15');
+  assert.match(evs[0].title, /Masta Ace/);
+  assert.deepEqual(evs[0].sets, ['19:00']);
+  assert.equal(evs[0].url, 'https://posh.vip/e/masta-ace');
+  assert.match(evs[1].title, /Fernando Garcia/);
+  assert.deepEqual(evs[1].sets, ['22:00']);
+  assert.equal(evs[2].date, '2026-07-16');
+  assert.match(evs[2].title, /Ilhan/);
+});
+
+// --- Bar LunÀtico -------------------------------------------------------------------
+import { parse as luParse } from './clubs/lunatico.js';
+ok('lunatico: items with plausible times become sets, past filtered', () => {
+  const mk = (title, iso, excerpt = '') => ({
+    title, startDate: new Date(iso).getTime(), fullUrl: '/calendar/2026/x/' + title.toLowerCase(), excerpt,
+  });
+  const fixture = JSON.stringify({ items: [
+    mk('Tumbao', '2026-07-18T21:00:00-04:00'),
+    mk('Morning Thing', '2026-07-19T09:00:00-04:00'),
+    mk('Old Show', '2026-06-01T21:00:00-04:00'),
+    mk('Duo Night', '2026-07-20T20:30:00-04:00', 'Ana Smith - guitar Ben Lee - bass'),
+  ]});
+  const evs = luParse(fixture, new Date(2026, 6, 15));
+  assert.equal(evs.length, 3); // Old Show filtered
+  assert.deepEqual(evs[0].sets, ['21:00']);
+  assert.deepEqual(evs[1].sets, []); // 9am not a plausible set time
+  assert.equal(evs[2].personnel.length, 2);
+});
+
+// --- Jazz Cultural (via the Smalls feed) ----------------------------------------------
+ok('smalls feed: jazzcultural venue now included', () => {
+  const tpl = `
+  <div class="flex-column day-list">
+    <div class="title1">Wed Jul 15</div>
+    <div class="venue-group">
+      <div class="jazzcultural-color text2">Jazzcultural</div>
+      <div class="flex-column day-event">
+        <div class="text-grey text2">2:00 PM</div>
+        <a href="/events/33187-afternoon-jam/"><div class="text2 day_event_title">Afternoon Jam in the Cafe</div></a>
+      </div>
+    </div>
+  </div>`;
+  const evs = smParse(tpl, TODAY);
+  assert.equal(evs.length, 1);
+  assert.equal(evs[0].clubId, 'jazzcultural');
+  assert.deepEqual(evs[0].sets, ['14:00']);
+});
+
+// --- crawl merge integration (failure isolation rules) --------------------------
+import { mergeCrawlResults } from './run.js';
+ok('merge: zero events = suspect, failures keep previous, dedupe + sort', () => {
+  const prev = [
+    { id: 'a:2026-07-10:old', clubId: 'a', date: '2026-07-10', sets: [] },
+    { id: 'b:2026-07-11:keep', clubId: 'b', date: '2026-07-11', sets: [] },
+    { id: 'c:2026-07-12:keep', clubId: 'c', date: '2026-07-12', sets: [] },
+  ];
+  const results = [
+    { status: 'fulfilled', value: { mod: './clubs/a.js', events: [
+      { id: 'a:2026-07-20:new', clubId: 'a', date: '2026-07-20', sets: ['19:00'] },
+      { id: 'a:2026-07-20:new', clubId: 'a', date: '2026-07-20', sets: ['19:00'] }, // dupe
+    ] } },
+    { status: 'fulfilled', value: { mod: './clubs/b.js', events: [] } },   // suspect
+    { status: 'rejected', reason: new Error('site down') },               // failure
+  ];
+  const out = mergeCrawlResults(results, { previousEvents: prev, targetIds: new Set(['a', 'b', 'c']) });
+  // club a: fresh replaces old; club b: suspect -> previous kept; club c: untargeted-by-results -> kept
+  assert.deepEqual(out.events.map((e) => e.id),
+    ['b:2026-07-11:keep', 'c:2026-07-12:keep', 'a:2026-07-20:new']);
+  assert.equal(out.freshCount, 2); // pre-dedupe count of fresh
+  assert.equal(out.keptCount, 2);
+  assert.equal(out.errors.length, 2);
+  assert.ok(out.errors.some((e) => /0 events/.test(e)));
+  assert.ok(out.errors.some((e) => /site down/.test(e)));
 });

@@ -254,3 +254,19 @@ function lastNameRun(text) {
   const run = tokens.slice(start).join(' ');
   return run.length >= 3 && start >= tokens.length - 4 ? run : '';
 }
+
+// --- timezone helpers ---------------------------------------------------------
+
+// Epoch ms or ISO string -> 'YYYY-MM-DD' in America/New_York.
+export function nyDate(input) {
+  return new Intl.DateTimeFormat('en-CA', {
+    timeZone: 'America/New_York', year: 'numeric', month: '2-digit', day: '2-digit',
+  }).format(new Date(input));
+}
+
+// Epoch ms or ISO string -> 'HH:MM' (24h) in America/New_York.
+export function nyTime(input) {
+  return new Intl.DateTimeFormat('en-GB', {
+    timeZone: 'America/New_York', hour: '2-digit', minute: '2-digit', hour12: false,
+  }).format(new Date(input));
+}
