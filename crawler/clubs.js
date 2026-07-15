@@ -90,7 +90,7 @@ export const CLUBS = [
     borough: 'manhattan',
     timezone: 'America/New_York',
     neighborhood: 'Columbus Circle',
-    color: '#ffa042', // the amber room + sunset behind the stage glass
+    color: '#ff8929', // the amber room + sunset behind the stage glass
     module: './clubs/dizzys.js',
   },
   {
@@ -103,7 +103,7 @@ export const CLUBS = [
     borough: 'manhattan',
     timezone: 'America/New_York',
     neighborhood: 'West Village',
-    color: '#4a6ff5', // SmallsLive brand royal blue #1055c9, brightened
+    color: '#3d55e0', // SmallsLive brand royal blue #1055c9, brightened
     module: './clubs/smalls.js', // same SmallsLive feed as Smalls/Mezzrow
   },
   {
@@ -116,7 +116,7 @@ export const CLUBS = [
     borough: 'manhattan',
     timezone: 'America/New_York',
     neighborhood: 'Upper West Side',
-    color: '#9fb6c9', // the name; NB their site brand is red #c51403 if Zach prefers
+    color: '#b83226', // the name; NB their site brand is red #c51403 if Zach prefers
     module: './clubs/smoke.js',
   },
   {
@@ -142,7 +142,7 @@ export const CLUBS = [
     borough: 'brooklyn',
     timezone: 'America/New_York',
     neighborhood: 'Bed-Stuy',
-    color: '#45c4b5', // barlunatico.com brand teal #4c948b, brightened
+    color: '#2fa88c', // barlunatico.com brand teal #4c948b, brightened
     module: './clubs/lunatico.js',
   },
   {
@@ -234,7 +234,7 @@ export const CLUBS = [
     borough: 'manhattan',
     timezone: 'America/New_York',
     neighborhood: 'Harlem',
-    color: '#a9744f', // speakeasy whiskey brown — quick read
+    color: '#8a5a3a', // speakeasy whiskey brown — quick read
     module: './clubs/billsplace.js',
   },
   {
@@ -247,7 +247,7 @@ export const CLUBS = [
     borough: 'brooklyn',
     timezone: 'America/New_York',
     neighborhood: 'Park Slope',
-    color: '#b04a3d', // their dark-red calendar accent (#850505), glow-tuned
+    color: '#93323c', // their dark-red calendar accent (#850505), glow-tuned
     module: './clubs/barbes.js',
   },
   {
@@ -418,7 +418,7 @@ export const CLUBS = [
     borough: null,
     timezone: 'America/Los_Angeles',
     neighborhood: 'Historic Filipinotown',
-    color: '#d0355c', // their red-on-black poster language — quick read
+    color: '#d62a72', // their red-on-black poster language — quick read
     module: './clubs/twentytwotwenty.js',
   },
   {
@@ -444,7 +444,7 @@ export const CLUBS = [
     borough: null,
     timezone: 'America/Los_Angeles',
     neighborhood: 'Santa Monica',
-    color: '#8c3a5f', // red-velvet wine, 1931 speakeasy — quick read
+    color: '#b34d7a', // red-velvet wine, 1931 speakeasy — quick read
     module: './clubs/harvelles.js',
   },
 ];

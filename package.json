@@ -19,5 +19,8 @@
     "dev:web": "npm run dev -w web",
     "build:web": "npm run build -w web",
     "start": "npm run crawl && npm run build:web && npm run serve"
+  },
+  "devDependencies": {
+    "playwright": "^1.61.1"
   }
 }

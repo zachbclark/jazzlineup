@@ -22,7 +22,11 @@ export function parse(jsonText) {
         title: p.show.name,
         date,
         sets: [],
-        url: `${BASE}/shows/${p.show_id ?? p.show.id}/`,
+        // ?date= is required — without it the Show Detail page can't resolve
+        // which night you meant. Uses the literal performance date on purpose:
+        // applyLateNight may shift OUR date to the previous evening, but the
+        // ticketing site indexes by calendar date.
+        url: `${BASE}/shows/${p.show_id ?? p.show.id}/?date=${date}`,
         priceText: p.show.price_per_person ? String(p.show.price_per_person) : null,
       });
     }

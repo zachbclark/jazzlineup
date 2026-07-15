@@ -128,7 +128,10 @@ times from description text; verify against reality after first live crawl.
 - [ ] Quick polish batch: "Data crawled" → "Updated Xh ago"; Calendar/List
       toggle as one compact icon button; share-card (og.png) redesign once
       brand font is settled (current one reads corny)
-- [ ] Artist search (title + personnel text)
+- [x] **Artist search (2026-07-16):** topbar search box; accent-insensitive
+      match on title + personnel + details + club name, city-wide (ignores
+      chip filters); results as a date-grouped list. Foundation for saved
+      artists + email alerts
 - [ ] "New this week" page via `firstSeenAt` diff of consecutive crawls
 - [ ] iCal export / add-to-calendar per show
 
@@ -160,9 +163,10 @@ times from description text; verify against reality after first live crawl.
       bytes, 4xx/5xx, crawler invocations/errors/duration) + email alarms
       (crawler fails 2 runs in a row; site >5% 5xx) + CloudFront access logs
       to S3 (90-day retention) — all in CDK, all free tier
-- [ ] Markup-drift alerting at CLUB level: notify after N consecutive failed
-      or suspect crawls for a single club (Lambda-level alarm exists; per-club
-      needs a custom metric emitted from the crawl summary)
+- [x] Markup-drift alerting at CLUB level (2026-07-16): Lambda emits a
+      "ProblemClubs" metric per crawl (total + per city); alarm emails after
+      ~24h of any club staying suspect/failed; dashboard widget shows the
+      trend. Which club = crawler log group
 - [ ] Crawler politeness: descriptive UA, delays, cache/etag use where possible
 
 ## Brand simmer (open, non-blocking)

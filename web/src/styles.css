@@ -53,6 +53,33 @@ button { font: inherit; cursor: pointer; }
 .city-option:hover { background: var(--panel-2); color: var(--text); }
 .city-option.on { color: var(--accent); }
 
+/* artist search */
+.search-box {
+  display: flex; align-items: center; gap: 7px;
+  background: var(--panel); border: 1px solid var(--line); border-radius: 999px;
+  padding: 6px 13px; transition: border-color .2s ease, box-shadow .2s ease;
+}
+.search-box:focus-within, .search-box.has-query {
+  border-color: var(--accent);
+  box-shadow: 0 0 12px rgba(232, 180, 88, 0.25);
+}
+.search-icon { color: var(--muted); font-size: 13px; }
+.search-box:focus-within .search-icon, .search-box.has-query .search-icon { color: var(--accent); }
+.search-box input {
+  background: none; border: none; outline: none; color: var(--text);
+  font: inherit; font-size: 14px; width: 130px; transition: width .2s ease;
+}
+.search-box input:focus { width: 190px; }
+.search-box input::placeholder { color: var(--muted); }
+.search-box input::-webkit-search-cancel-button { display: none; }
+.search-clear {
+  background: none; border: none; color: var(--muted);
+  font-size: 17px; line-height: 1; padding: 0 2px;
+}
+.search-clear:hover { color: var(--text); }
+.search-summary { color: var(--muted); font-size: 13.5px; margin: 10px 0 4px; }
+.search-summary strong { color: var(--accent); font-weight: 600; }
+
 .view-toggle { display: flex; border: 1px solid var(--line); border-radius: 8px; overflow: hidden; }
 .view-toggle button {
   background: transparent; color: var(--muted); border: none; padding: 7px 16px;
@@ -204,10 +231,26 @@ button { font: inherit; cursor: pointer; }
 .tip-jar {
   color: var(--accent); opacity: 0.9; font-weight: 600; letter-spacing: 0.3px;
   transition: all .2s ease;
+  display: inline-flex; align-items: center; gap: 5px;
 }
 .tip-jar:hover {
   opacity: 1;
   text-shadow: 0 0 12px rgba(232, 180, 88, 0.6);
+}
+.jar-icon { display: inline-block; transform-origin: 50% 90%; }
+.tip-jar:hover .jar-icon, .tip-jar:focus .jar-icon {
+  animation: jar-rattle 0.55s ease-in-out;
+}
+@keyframes jar-rattle {
+  0%   { transform: rotate(0deg); }
+  15%  { transform: rotate(-11deg); }
+  35%  { transform: rotate(9deg); }
+  55%  { transform: rotate(-6deg); }
+  75%  { transform: rotate(3deg); }
+  100% { transform: rotate(0deg); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .tip-jar:hover .jar-icon, .tip-jar:focus .jar-icon { animation: none; }
 }
 
 /* compact calendar (phone) */
@@ -238,6 +281,10 @@ button.cell { text-align: left; border: 1px solid var(--line); font: inherit; co
   .topbar { flex-wrap: wrap; gap: 10px; }
   .brand { font-size: 21px; }
   .view-toggle button { padding: 11px 18px; } /* thumb-sized */
+
+  /* search takes its own full-width row under the brand */
+  .search-box { order: 3; width: 100%; }
+  .search-box input, .search-box input:focus { width: 100%; font-size: 16px; } /* no iOS zoom */
 
   /* filter chips: wrapped grid, no sideways scrolling (scroll rails at 24
      venues felt weird — Zach 2026-07-15). Collapsed = first two lines; the

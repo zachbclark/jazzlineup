@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-15T04:59:59.377Z",
+  "generatedAt": "2026-07-15T19:32:24.371Z",
   "city": "la",
   "clubs": [
     {
@@ -77,7 +77,7 @@
     {
       "id": "hollywoodbowl",
       "name": "Hollywood Bowl",
-      "shortName": "The Bowl",
+      "shortName": "Hollywood Bowl",
       "url": "https://www.hollywoodbowl.com",
       "address": "2301 N Highland Ave, Los Angeles, CA 90068",
       "city": "la",
@@ -96,7 +96,7 @@
       "borough": null,
       "timezone": "America/Los_Angeles",
       "neighborhood": "Historic Filipinotown",
-      "color": "#d0355c"
+      "color": "#d62a72"
     },
     {
       "id": "zebulon",
@@ -120,7 +120,7 @@
       "borough": null,
       "timezone": "America/Los_Angeles",
       "neighborhood": "Santa Monica",
-      "color": "#8c3a5f"
+      "color": "#b34d7a"
     }
   ],
   "errors": [],
@@ -1088,32 +1088,6 @@
       "priceText": null
     },
     {
-      "id": "samfirst:2026-07-14:tuesday-happenings-hosted-by-devin-daniels-with-julien-knowl",
-      "clubId": "samfirst",
-      "title": "“Tuesday Happenings”: Hosted by Devin Daniels with Julien Knowles, Isaiah Harwood, Logan Kane & Jonathan Pinson",
-      "date": "2026-07-14",
-      "sets": [
-        "19:30"
-      ],
-      "url": "https://www.samfirstbar.com/events/tuesday-happenings-hosted-by-devin-daniels-with-julien-knowles-isaiah-harwood-logan-kane-jonathan-pinson",
-      "details": "Devin Daniels, one of the most unique and exciting voices from LA’s thriving creative music scene, leads tonight's \"Happenings\". House band performs one set at 7:30pm followed by a jam session from 9:30-11pm.",
-      "personnel": null,
-      "priceText": null
-    },
-    {
-      "id": "vibrato:2026-07-14:bee-gees-gold",
-      "clubId": "vibrato",
-      "title": "Bee Gees Gold",
-      "date": "2026-07-14",
-      "sets": [
-        "22:30"
-      ],
-      "url": "https://www.vibratogrilljazz.com/music/bee-gees-gold-3",
-      "details": "The Bee Gees Gold tribute is the ultimate salute, and experience of seeing ‪the Bee Gees‬ in their prime, live once again Show: 7:30pm Reserve Now",
-      "personnel": null,
-      "priceText": null
-    },
-    {
       "id": "samfirst:2026-07-15:jason-hayashi-group-with-steve-lehman-luca-mendoza-ryan-embo",
       "clubId": "samfirst",
       "title": "Jason Hayashi Group with Steve Lehman, Luca Mendoza, Ryan Embola & Jonathan Pinson",
@@ -1272,7 +1246,7 @@
     {
       "id": "samfirst:2026-07-17:larry-goldings-trio-with-david-piltch-joe-la-barbera",
       "clubId": "samfirst",
-      "title": "Larry Goldings trio with David Piltch & Joe La Barbera",
+      "title": "Larry Goldings Trio with David Piltch & Joe La Barbera",
       "date": "2026-07-17",
       "sets": [
         "19:30"
@@ -2496,6 +2470,19 @@
       "details": "Free outdoor concert — Smidt Welcome Plaza",
       "personnel": null,
       "priceText": "Free"
+    },
+    {
+      "id": "samfirst:2026-08-08:nicole-mccabe-quartet-live-album-recording-for-sam-first-rec",
+      "clubId": "samfirst",
+      "title": "Nicole McCabe Quartet Live Album Recording for Sam First Records feat. Gerald Clayton, Justin Brown & Logan Kane",
+      "date": "2026-08-08",
+      "sets": [
+        "19:30"
+      ],
+      "url": "https://www.samfirstbar.com/events/nicole-mccabe-quartet-live-album-recording-for-sam-first-records-feat-gerald-clayton-justin-brown-logan-kane-1",
+      "details": "Nicole McCabe is a Los Angeles-based saxophonist and composer whose genre-defying sound blends jazz tradition with modern experimentation. McCabe has assembled a group of stellar, like-minded musicians for this very special live recording for Sam First Records.",
+      "personnel": null,
+      "priceText": null
     },
     {
       "id": "catalina:2026-08-08:gordon-goodwin-s-big-phat-band-album-release-of-25-years-of-",

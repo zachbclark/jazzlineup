@@ -1,5 +1,6 @@
 import React, { useEffect, useMemo, useState } from 'react';
-import { fetchData, initialCity, todayIso } from './api';
+import { fetchData, initialCity, todayIso, relTime, searchNorm, eventMatches } from './api';
+import SearchBox from './components/SearchBox';
 import { useIsMobile } from './useIsMobile';
 import CitySwitcher from './components/CitySwitcher';
 import BoroughBar from './components/BoroughBar';
@@ -18,6 +19,7 @@ export default function App() {
   const [active, setActive] = useState(null); // null = all clubs; else Set of ids
   const [borough, setBorough] = useState(null); // null = all boroughs
   const [order, setOrder] = useState(null); // saved chip order (array of ids) per city
+  const [query, setQuery] = useState(''); // artist search
   const [city, setCity] = useState(initialCity);
   // Everyone lands on the calendar; today is pre-selected so tonight's
   // lineup shows in the day drawer immediately.
@@ -41,6 +43,11 @@ export default function App() {
         } catch { setActive(null); }
       })
       .catch((e) => setError(String(e.message ?? e)));
+  }, [city]);
+
+  // Keep the browser tab honest when switching cities (was stuck on NYC).
+  useEffect(() => {
+    document.title = `Jazz Lineup — live jazz in ${city === 'nyc' ? 'NYC' : city.toUpperCase()} tonight`;
   }, [city]);
 
   const changeCity = (id) => {
@@ -119,7 +126,20 @@ export default function App() {
   const visible = useMemo(() => {
     return events.filter((e) => scopedIdSet.has(e.clubId) && (active === null || active.has(e.clubId)));
   }, [events, active, scopedIdSet]);
-  const shownClubCount = scopedClubs.filter((c) => active === null || active.has(c.id)).length;
+
+  // Artist search: city-wide, ignores chip/borough filters; results render
+  // as a date-grouped list (the natural shape for "his next five dates").
+  const normQuery = searchNorm(query.trim());
+  const searching = normQuery.length > 0;
+  const results = useMemo(
+    () => (searching ? events.filter((e) => eventMatches(e, normQuery, clubById)) : null),
+    [events, searching, normQuery, clubById]
+  );
+
+  const shownEvents = searching ? results : visible;
+  const shownClubCount = searching
+    ? new Set(results.map((e) => e.clubId)).size
+    : scopedClubs.filter((c) => active === null || active.has(c.id)).length;
 
   // Selection model: from "all on", the first click selects ONLY that club;
   // further clicks add/remove clubs; removing the last one returns to all.
@@ -145,15 +165,24 @@ export default function App() {
           <span className="brand-note">&#9835;</span> Jazz<span className="brand-accent">Lineup</span>
           <CitySwitcher city={city} onChange={changeCity} />
         </div>
+        <SearchBox query={query} onChange={setQuery} />
         <div className="view-toggle" role="tablist">
           <button className={view === 'month' ? 'on' : ''} onClick={() => setView('month')}>Calendar</button>
           <button className={view === 'list' ? 'on' : ''} onClick={() => setView('list')}>List</button>
         </div>
       </header>
 
-      <BoroughBar boroughs={boroughs} borough={borough} onChange={setBorough} />
+      {searching && (
+        <div className="search-summary">
+          {results.length
+            ? <>{results.length} show{results.length === 1 ? '' : 's'} match <strong>&ldquo;{query.trim()}&rdquo;</strong> across all {city.toUpperCase()} venues</>
+            : <>Nothing matches <strong>&ldquo;{query.trim()}&rdquo;</strong> in {city.toUpperCase()} — try the other city?</>}
+        </div>
+      )}
 
-      <FilterBar
+      {!searching && <BoroughBar boroughs={boroughs} borough={borough} onChange={setBorough} />}
+
+      {!searching && <FilterBar
         clubs={scopedClubs}
         active={active}
         onToggle={toggleClub}
@@ -166,11 +195,13 @@ export default function App() {
           persistActive(null);
           setActive(null);
         }}
-      />
+      />}
 
       {error && <div className="error">Couldn&rsquo;t load shows: {error}</div>}
 
-      {view === 'month' ? (
+      {searching ? (
+        <ListView events={shownEvents} clubById={clubById} today={todayIso()} />
+      ) : view === 'month' ? (
         <MonthGrid
           events={visible}
           clubById={clubById}
@@ -184,13 +215,26 @@ export default function App() {
       )}
 
       <footer className="foot">
-        {generatedAt && <span>Data crawled {new Date(generatedAt).toLocaleString()}</span>}
+        {generatedAt && (
+          <span title={new Date(generatedAt).toLocaleString()}>
+            Updated {relTime(generatedAt)}
+          </span>
+        )}
         <span className="foot-sep">&middot;</span>
-        <span>{visible.length} shows across {shownClubCount} clubs</span>
+        <span>{shownEvents.length} shows across {shownClubCount} clubs</span>
         <span className="foot-sep">&middot;</span>
         <a className="tip-jar" href={TIP_URL} target="_blank" rel="noreferrer"
           title="Enjoying the site? Buy me a drink.">
-          &#9835; tip jar
+          {/* a literal tip jar: lid, slot, two coins — rattles on hover */}
+          <svg className="jar-icon" viewBox="0 0 24 24" width="15" height="15"
+            fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" aria-hidden="true">
+            <rect x="7.5" y="2.5" width="9" height="3" rx="1" />
+            <line x1="10.5" y1="4" x2="13.5" y2="4" strokeWidth="1.1" />
+            <path d="M7 5.5 C6 8 5.5 10 5.5 13 c0 5 2.6 8.5 6.5 8.5 s6.5-3.5 6.5-8.5 c0-3-.5-5-1.5-7.5" />
+            <circle cx="10.2" cy="17" r="1.7" strokeWidth="1.2" />
+            <circle cx="14" cy="18" r="1.7" strokeWidth="1.2" />
+          </svg>
+          tip jar
         </a>
       </footer>
     </div>

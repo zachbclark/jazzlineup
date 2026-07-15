@@ -169,6 +169,29 @@ try {
     assert.equal(cleared, null, 'all-on selection should clear the storage key');
   });
 
+  await test('artist search finds shows by personnel name, clear restores', async () => {
+    const count = async () => Number((await pd.textContent('.foot')).match(/(\d+) shows/)[1]);
+    const initial = await count();
+    // derive a real artist from the served data so the test isn't brittle
+    const artist = await pd.evaluate(async () => {
+      const d = await (await fetch('/events-nyc.json')).json();
+      const ev = d.events.find((e) => e.personnel?.length);
+      return ev ? ev.personnel[0].name : null;
+    });
+    assert.ok(artist, 'no personnel in data to search for');
+    await pd.fill('.search-box input', artist);
+    await pd.waitForTimeout(300);
+    assert.ok(await pd.$('.search-summary'), 'search summary missing');
+    const matches = await count();
+    assert.ok(matches > 0 && matches < initial, `unexpected match count: ${matches}`);
+    assert.ok((await pd.$$('.daygroup')).length > 0, 'results list missing');
+    assert.equal(await pd.$('.filterbar'), null, 'chips should hide while searching');
+    await pd.click('.search-clear');
+    await pd.waitForTimeout(300);
+    assert.equal(await count(), initial, 'clearing search did not restore');
+    assert.ok(await pd.$('.filterbar'), 'chips did not return');
+  });
+
   await test('borough filter narrows chips and counts, then clears', async () => {
     const count = async () => Number((await pd.textContent('.foot')).match(/(\d+) shows/)[1]);
     const chips = async () => (await pd.$$('.chip:not(.chip-all)')).length;

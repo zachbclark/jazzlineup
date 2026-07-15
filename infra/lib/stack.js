@@ -18,6 +18,7 @@ const events = require('aws-cdk-lib/aws-events');
 const targets = require('aws-cdk-lib/aws-events-targets');
 const logs = require('aws-cdk-lib/aws-logs');
 const cloudwatch = require('aws-cdk-lib/aws-cloudwatch');
+const iam = require('aws-cdk-lib/aws-iam');
 const cwActions = require('aws-cdk-lib/aws-cloudwatch-actions');
 const sns = require('aws-cdk-lib/aws-sns');
 const snsSubs = require('aws-cdk-lib/aws-sns-subscriptions');
@@ -102,6 +103,12 @@ class JazzLineupStack extends cdk.Stack {
       description: 'Crawls NYC jazz club sites and writes events.json to S3',
     });
     bucket.grantReadWrite(crawler);
+    // the crawler emits a per-run "ProblemClubs" drift metric
+    crawler.addToRolePolicy(new iam.PolicyStatement({
+      actions: ['cloudwatch:PutMetricData'],
+      resources: ['*'],
+      conditions: { StringEquals: { 'cloudwatch:namespace': 'JazzLineup' } },
+    }));
 
     // --- Schedule: every 4 hours ---------------------------------------------
     new events.Rule(this, 'CrawlSchedule', {
@@ -138,6 +145,24 @@ class JazzLineupStack extends cdk.Stack {
     });
     siteAlarm.addAlarmAction(new cwActions.SnsAction(alerts));
 
+    // A single club rotting for ~24h (6 crawls) -> email. Which club is in
+    // the Lambda logs; this only says "go look".
+    const problemClubs = new cloudwatch.Metric({
+      namespace: 'JazzLineup',
+      metricName: 'ProblemClubs',
+      period: cdk.Duration.hours(4),
+      statistic: 'Maximum',
+    });
+    const driftAlarm = new cloudwatch.Alarm(this, 'ClubDrift', {
+      metric: problemClubs,
+      threshold: 1,
+      evaluationPeriods: 6,
+      comparisonOperator: cloudwatch.ComparisonOperator.GREATER_THAN_OR_EQUAL_TO_THRESHOLD,
+      treatMissingData: cloudwatch.TreatMissingData.NOT_BREACHING,
+      alarmDescription: 'A jazzlineup club crawler has been suspect/failing for ~24h — check the crawler logs for which venue',
+    });
+    driftAlarm.addAlarmAction(new cwActions.SnsAction(alerts));
+
     // One dashboard: visitor traffic on top, crawler health below.
     const dash = new cloudwatch.Dashboard(this, 'Dashboard', { dashboardName: 'jazzlineup' });
     dash.addWidgets(
@@ -169,6 +194,23 @@ class JazzLineupStack extends cdk.Stack {
         ],
         right: [crawler.metricDuration({ period: cdk.Duration.hours(4), statistic: 'Average' })],
         width: 12,
+      }),
+    );
+    dash.addWidgets(
+      new cloudwatch.GraphWidget({
+        title: 'Problem clubs per crawl (suspect or failed parsers, by city)',
+        left: [
+          problemClubs.with({ label: 'total' }),
+          new cloudwatch.Metric({
+            namespace: 'JazzLineup', metricName: 'ProblemClubs',
+            dimensionsMap: { City: 'nyc' }, period: cdk.Duration.hours(4), statistic: 'Maximum', label: 'nyc',
+          }),
+          new cloudwatch.Metric({
+            namespace: 'JazzLineup', metricName: 'ProblemClubs',
+            dimensionsMap: { City: 'la' }, period: cdk.Duration.hours(4), statistic: 'Maximum', label: 'la',
+          }),
+        ],
+        width: 24,
       }),
     );
 
