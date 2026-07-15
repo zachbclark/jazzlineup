@@ -22,6 +22,7 @@ const iam = require('aws-cdk-lib/aws-iam');
 const cwActions = require('aws-cdk-lib/aws-cloudwatch-actions');
 const sns = require('aws-cdk-lib/aws-sns');
 const snsSubs = require('aws-cdk-lib/aws-sns-subscriptions');
+const budgets = require('aws-cdk-lib/aws-budgets');
 const { Construct } = require('constructs');
 
 const DOMAIN = 'jazzlineup.com';
@@ -58,6 +59,23 @@ class JazzLineupStack extends cdk.Stack {
       autoDeleteObjects: true,
     });
 
+    // --- Security headers (HSTS, no-sniff, frame-deny, referrer policy) ------
+    const securityHeaders = new cloudfront.ResponseHeadersPolicy(this, 'SecurityHeaders', {
+      securityHeadersBehavior: {
+        strictTransportSecurity: {
+          accessControlMaxAge: cdk.Duration.days(365),
+          includeSubdomains: true,
+          override: true,
+        },
+        contentTypeOptions: { override: true },
+        frameOptions: { frameOption: cloudfront.HeadersFrameOption.DENY, override: true },
+        referrerPolicy: {
+          referrerPolicy: cloudfront.HeadersReferrerPolicy.STRICT_ORIGIN_WHEN_CROSS_ORIGIN,
+          override: true,
+        },
+      },
+    });
+
     // --- CloudFront ----------------------------------------------------------
     const distribution = new cloudfront.Distribution(this, 'Distribution', {
       enableLogging: true,
@@ -67,6 +85,7 @@ class JazzLineupStack extends cdk.Stack {
         origin: origins.S3BucketOrigin.withOriginAccessControl(bucket),
         viewerProtocolPolicy: cloudfront.ViewerProtocolPolicy.REDIRECT_TO_HTTPS,
         compress: true,
+        responseHeadersPolicy: securityHeaders,
         // CACHING_OPTIMIZED honors origin Cache-Control headers; the crawler
         // writes events.json with max-age=300 so data refreshes within 5 min.
         cachePolicy: cloudfront.CachePolicy.CACHING_OPTIMIZED,
@@ -213,6 +232,27 @@ class JazzLineupStack extends cdk.Stack {
         width: 24,
       }),
     );
+
+    // --- Billing tripwire: static sites don't fall over, they run up bills ---
+    // Realistic monthly spend is <$2; email at 80% of $10 = something is wrong
+    // (hotlink storm, bandwidth abuse) long before it matters.
+    new budgets.CfnBudget(this, 'MonthlyBudget', {
+      budget: {
+        budgetName: 'jazzlineup-monthly',
+        budgetType: 'COST',
+        timeUnit: 'MONTHLY',
+        budgetLimit: { amount: 10, unit: 'USD' },
+      },
+      notificationsWithSubscribers: [{
+        notification: {
+          notificationType: 'ACTUAL',
+          comparisonOperator: 'GREATER_THAN',
+          threshold: 80,
+          thresholdType: 'PERCENTAGE',
+        },
+        subscribers: [{ subscriptionType: 'EMAIL', address: ALERT_EMAIL }],
+      }],
+    });
 
     // --- Outputs ---------------------------------------------------------------
     new cdk.CfnOutput(this, 'DashboardUrl', {
