@@ -5,6 +5,7 @@ import { writeFile, mkdir, readFile } from 'node:fs/promises';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { runCrawl, buildOutput, cities } from './run.js';
+import { CLUBS } from './clubs.js';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const DEFAULT_DIR = join(__dirname, '..', 'data');
@@ -25,10 +26,13 @@ async function crawlCity(city, args) {
   try {
     previousEvents = JSON.parse(await readFile(outPath, 'utf8')).events ?? [];
   } catch {
-    // first per-city run: fall back to the legacy single file
-    try {
-      previousEvents = JSON.parse(await readFile(join(args.outDir, 'events.json'), 'utf8')).events ?? [];
-    } catch { /* truly first run */ }
+    // first per-city run: the legacy single file is NYC data — only NYC may
+    // fall back to it (other cities would inherit a foreign city's events)
+    if (city === 'nyc') {
+      try {
+        previousEvents = JSON.parse(await readFile(join(args.outDir, 'events.json'), 'utf8')).events ?? [];
+      } catch { /* truly first run */ }
+    }
   }
 
   const result = await runCrawl({
@@ -50,7 +54,17 @@ async function crawlCity(city, args) {
 
 async function main() {
   const args = parseArgs(process.argv);
-  const targets = args.city === 'all' ? cities() : [args.city];
+  let targets = args.city === 'all' ? cities() : [args.city];
+  // --club: only crawl cities where that club actually lives, instead of
+  // throwing when the loop reaches a city without it.
+  if (args.club) {
+    targets = targets.filter((city) => CLUBS.some((c) => c.city === city && c.id === args.club));
+    if (targets.length === 0) {
+      console.error(`unknown club id "${args.club}"; known: ${CLUBS.map((c) => c.id).join(', ')}`);
+      process.exitCode = 1;
+      return;
+    }
+  }
   let errorCount = 0;
   for (const city of targets) {
     errorCount += await crawlCity(city, args);

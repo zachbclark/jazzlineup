@@ -2,10 +2,14 @@ import React, { useEffect, useMemo, useState } from 'react';
 import { fmtSets, fmtDateHeading } from '../api';
 import Personnel from './Personnel';
 
+const DAYS_PER_PAGE = 21; // day-windowed rendering: the full list at 1500+
+                          // events makes filter toggles janky on phones
+
 export default function ListView({ events, clubById, today }) {
   const [showJump, setShowJump] = useState(false);
+  const [shownDays, setShownDays] = useState(DAYS_PER_PAGE);
 
-  const groups = useMemo(() => {
+  const allGroups = useMemo(() => {
     const m = new Map();
     for (const e of events) {
       if (e.date < today) continue;
@@ -14,6 +18,8 @@ export default function ListView({ events, clubById, today }) {
     }
     return [...m.entries()].sort((a, b) => a[0].localeCompare(b[0]));
   }, [events, today]);
+  const groups = allGroups.slice(0, shownDays);
+  const hiddenDays = allGroups.length - groups.length;
 
   // Floating "Tonight" button appears once the user has scrolled away.
   useEffect(() => {
@@ -52,6 +58,11 @@ export default function ListView({ events, clubById, today }) {
           })}
         </section>
       ))}
+      {hiddenDays > 0 && (
+        <button className="show-more-days" onClick={() => setShownDays((n) => n + DAYS_PER_PAGE)}>
+          Show {Math.min(hiddenDays, DAYS_PER_PAGE)} more days
+        </button>
+      )}
       {showJump && (
         <button className="jump-tonight" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
           &#9835; Tonight

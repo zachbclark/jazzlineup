@@ -608,6 +608,233 @@ ok("billsplace: residency generator emits Fri/Sat pairs; vanished text -> 0", ()
   assert.deepEqual(bpParse('<h1>Closed for renovations</h1>', TODAY), [], 'residency text gone -> SUSPECT');
 });
 
+// --- JCAL (Queens; SociableKit/Eventbrite feed) --------------------------------
+import { parse as jcParse } from './clubs/jcal.js';
+ok('jcal: jazz-flagged events kept, others dropped', () => {
+  const fixture = JSON.stringify({ events: [
+    { name: 'Downtown Jamaica Riddim and Jazz Festival: Day 1', date_start: '2026-07-24',
+      start_time_raw: '2026-07-24T18:00:00', description: '<p>Free outdoor festival.</p>',
+      ticket_uri: 'https://www.eventbrite.com/e/riddim-jazz-1', price_range: 'Free' },
+    { name: 'Queens Get The Cup: World Cup Viewing', date_start: '2026-07-19',
+      start_time_raw: '2026-07-19T12:30:00', description: '<p>Watch the final.</p>', ticket_uri: 'x' },
+  ]});
+  const evs = jcParse(fixture);
+  assert.equal(evs.length, 1, 'world cup viewing must be filtered out');
+  assert.equal(evs[0].date, '2026-07-24');
+  assert.deepEqual(evs[0].sets, ['18:00']);
+  assert.equal(evs[0].priceText, 'Free');
+});
+
+// --- Roulette --------------------------------------------------------------------
+import { parse as rlParse } from './clubs/roulette.js';
+ok('roulette: event blocks -> dated events with price', () => {
+  const html = `
+  <div class="list-events">
+    <div class="event">
+      <h2 class="event-title"><a href="https://roulette.org/event/jim-staley/">Jim Staley with Ikue Mori and Zeena Parkins</a></h2>
+      <div class="event-img"><a href="https://roulette.org/event/jim-staley/"><img src="x.jpg"/></a></div>
+      <div class="event-time">Thursday, August 20, 2026. 8:00 pm</div>
+      <div class="event-price">Tickets $25</div>
+      <a class="event-purchase" href="https://ci.ovationtix.com/36368/production/1264032">Purchase Tickets</a>
+      <div class="event-desc">Roulette co-founder Jim Staley returns to the stage.</div>
+    </div>
+    <div class="event">
+      <h2 class="event-title"><a href="https://roulette.org/event/other/">Mendoza Hoff Revels</a></h2>
+      <div class="event-time">Sunday, September 13, 2026. 8:00 pm</div>
+    </div>
+  </div>`;
+  const evs = rlParse(html);
+  assert.equal(evs.length, 2);
+  assert.equal(evs[0].date, '2026-08-20');
+  assert.deepEqual(evs[0].sets, ['20:00']);
+  assert.equal(evs[0].priceText, '$25');
+  assert.match(evs[0].details, /co-founder/);
+  assert.equal(evs[1].date, '2026-09-13');
+});
+
+// --- Sam First (Wix warmup-data) ----------------------------------------------------
+import { parse as sfParse } from './clubs/samfirst.js';
+ok('samfirst: warmup-data events -> LA-local dates', () => {
+  const warmup = { appsWarmupData: { deep: { events: [
+    {
+      title: 'Devin Daniels "Happenings"', slug: 'devin-daniels-happenings',
+      scheduling: { config: { startDate: '2026-07-15T02:30:00.000Z', timeZoneId: 'America/Los_Angeles' } },
+      description: 'House band at 7:30pm.',
+    },
+  ] } } };
+  const html = `<html><script type="application/json" id="wix-warmup-data">${JSON.stringify(warmup)}</script></html>`;
+  const evs = sfParse(html);
+  assert.equal(evs.length, 1);
+  assert.equal(evs[0].date, '2026-07-14'); // 02:30Z = 7:30pm PT the previous day
+  assert.deepEqual(evs[0].sets, ['19:30']);
+  assert.match(evs[0].url, /samfirstbar\.com\/events\/devin-daniels/);
+});
+
+// --- Catalina (TicketWeb plugin, birdland sibling) -----------------------------------
+import { parse as ctParse } from './clubs/catalina.js';
+ok('catalina: tw-sections -> events with doors detail', () => {
+  const html = `
+  <div class="tw-plugin-upcoming-event-list">
+    <div class="tw-section"><div class="row">
+      <div class="date-month-wrapper"><div class="name-of-month">Jul</div><div class="date-of-month">15</div></div>
+      <div class="tw-name"><a href="https://catalinajazzclub.com/tm-event/elliott-caine-quintet/">ELLIOTT CAINE QUINTET</a></div>
+      <span class="tw-event-time">8:30 pm</span>
+      <span class="tw-event-door-time">7:00 pm</span>
+    </div></div>
+  </div>`;
+  const evs = ctParse(html, TODAY);
+  assert.equal(evs.length, 1);
+  assert.equal(evs[0].date, '2026-07-15');
+  assert.deepEqual(evs[0].sets, ['20:30']);
+  assert.match(evs[0].details, /Doors @ 7:00 pm/);
+  assert.match(evs[0].url, /elliott-caine/);
+});
+
+// --- Vibrato (Squarespace, LA tz) ----------------------------------------------------
+import { parse as vbParse } from './clubs/vibrato.js';
+ok('vibrato: upcoming items -> LA dates/times', () => {
+  const fixture = JSON.stringify({ upcoming: [
+    { title: 'Christian Jacob Trio', startDate: new Date('2026-07-18T19:30:00-07:00').getTime(), fullUrl: '/music/cjt' },
+  ]});
+  const evs = vbParse(fixture);
+  assert.equal(evs[0].date, '2026-07-18');
+  assert.deepEqual(evs[0].sets, ['19:30']);
+  assert.match(evs[0].url, /vibratogrilljazz\.com\/music\/cjt/);
+});
+
+// --- World Stage (Tockify) -----------------------------------------------------------
+import { parse as wsParse } from './clubs/worldstage.js';
+ok('worldstage: tockify events -> events with detail urls', () => {
+  const ms = new Date('2026-07-16T20:00:00-07:00').getTime();
+  const fixture = JSON.stringify({ events: [
+    { eid: { uid: '655' }, when: { start: { millis: ms, tzid: 'America/Los_Angeles' } },
+      content: { summary: { text: 'Jazz Jam Session' }, description: { text: 'Weekly session.' } } },
+  ]});
+  const evs = wsParse(fixture);
+  assert.equal(evs[0].date, '2026-07-16');
+  assert.deepEqual(evs[0].sets, ['20:00']);
+  assert.match(evs[0].url, /tockify\.com\/the\.world\.stage\/detail\/655\//);
+});
+
+// --- Jazz at LACMA ---------------------------------------------------------------------
+import { parse as lcParse } from './clubs/lacma.js';
+ok('lacma: card-event blocks -> free Friday events, series prefix stripped', () => {
+  const html = `
+  <div class="views-row"><div class="card-event">
+    <div class="card-event__header"><span class="card-event__type">Music</span></div>
+    <div class="card-event__name"><a class="no-text-styles" href="/event/jazz-lacma-robert-rodriguez">Jazz at LACMA: Robert Rodriguez Quartet</a></div>
+    <div class="card-event__content"><p>This week…</p></div>
+    <div class="card-event__date"><span>Fri Jul 17</span> | <span>6 pm PT</span></div>
+    <div class="card-event__location"><span>Smidt Welcome Plaza</span></div>
+  </div></div>`;
+  const evs = lcParse(html, TODAY);
+  assert.equal(evs.length, 1);
+  assert.equal(evs[0].title, 'Robert Rodriguez Quartet');
+  assert.equal(evs[0].date, '2026-07-17');
+  assert.deepEqual(evs[0].sets, ['18:00']);
+  assert.equal(evs[0].priceText, 'Free');
+});
+
+// --- The Mint (Plot/DICE listings API) ----------------------------------------------------
+import { parse as mtParse } from './clubs/mint.js';
+ok('mint: jazz listings kept, pop dropped, YYYYMMDD parsed', () => {
+  const fixture = JSON.stringify([
+    { title: 'PAUL CORNISH', day: '20260717', startTime: '7pm',
+      permalink: 'https://themintla.com/listing/paul-cornish/',
+      description: '<p>Pianist Paul Cornish is one of the most exciting rising voices in modern jazz.</p>',
+      fromPrice: '$20' },
+    { title: 'Sierra Sikora, Jenny Nuo', day: '20260714', startTime: '7pm',
+      permalink: 'https://themintla.com/listing/sequoia/', description: '<p>Indie pop night.</p>' },
+  ]);
+  const evs = mtParse(fixture);
+  assert.equal(evs.length, 1, 'pop night must be filtered out');
+  assert.equal(evs[0].title, 'PAUL CORNISH');
+  assert.equal(evs[0].date, '2026-07-17');
+  assert.deepEqual(evs[0].sets, ['19:00']);
+  assert.equal(evs[0].priceText, '$20');
+});
+
+// --- Hollywood Bowl -------------------------------------------------------------------------
+import { parse as hbParse } from './clubs/hollywoodbowl.js';
+ok('hollywoodbowl: Jazz/Blues genre kept, classical + past dropped', () => {
+  const fixture = JSON.stringify([
+    { is_past: false, program: { name: 'Smooth Summer Jazz' },
+      supporting_artists: 'The Commodores • Boney James <br> Sheila E.',
+      start_time: '2026-08-30T18:30:00-07:00', genres: [{ id: 10, name: 'Jazz/Blues' }],
+      absolute_url: '/events/performances/4252/2026-08-30/smooth-summer-jazz',
+      venue: { id: 1, name: 'Hollywood Bowl' } }, // live feed sends an OBJECT (caught in prod)
+    { is_past: false, program: { name: 'Jazz at The Ford' },
+      start_time: '2026-08-01T20:00:00-07:00', genres: [{ id: 10, name: 'Jazz/Blues' }],
+      venue: { id: 2, name: 'The Ford' } },
+    { is_past: false, program: { name: 'Tchaikovsky & Beethoven' },
+      start_time: '2026-07-14T20:00:00-07:00', genres: [{ id: 1, name: 'Classical' }], venue: 'Hollywood Bowl' },
+    { is_past: true, program: { name: 'Old Jazz Night' },
+      start_time: '2026-06-01T20:00:00-07:00', genres: [{ id: 10, name: 'Jazz/Blues' }], venue: 'Hollywood Bowl' },
+  ]);
+  const evs = hbParse(fixture);
+  assert.equal(evs.length, 1, 'object-venue must parse; The Ford + classical + past must drop');
+  assert.equal(evs[0].title, 'Smooth Summer Jazz');
+  assert.equal(evs[0].date, '2026-08-30');
+  assert.deepEqual(evs[0].sets, ['18:30']);
+  assert.match(evs[0].details, /Commodores.*Sheila E\./);
+});
+
+// --- 2220 Arts (DICE venue page) --------------------------------------------------------------
+import { parse as ttParse } from './clubs/twentytwotwenty.js';
+ok('2220: __NEXT_DATA__ profile events parsed', () => {
+  const next = { props: { pageProps: { profile: { sections: [{ events: [
+    { name: "Qur'an Shaheed, haana lee, Trellis",
+      perm_name: 'g53goa-quran-shaheed-15th-jul-2220-arts',
+      dates: { event_start_date: '2026-07-15T20:00:00-07:00', timezone: 'America/Los_Angeles' },
+      about: { description: '**Late Breakfast** presents an evening of genre-crossing music.' } },
+  ] }] } } } };
+  const html = `<script id="__NEXT_DATA__" type="application/json">${JSON.stringify(next)}</script>`;
+  const evs = ttParse(html);
+  assert.equal(evs.length, 1);
+  assert.equal(evs[0].date, '2026-07-15');
+  assert.deepEqual(evs[0].sets, ['20:00']);
+  assert.match(evs[0].url, /dice\.fm\/event\/g53goa/);
+  assert.ok(!evs[0].details.includes('**'));
+});
+
+// --- Zebulon (DICE partners API) ---------------------------------------------------------------
+import { parse as zpParse } from './clubs/zebulon.js';
+ok('zebulon: jazz keyword filter + UTC -> LA conversion', () => {
+  const fixture = JSON.stringify({ data: [
+    { name: 'Kamasi Washington Quartet', date: '2026-07-19T03:00:00Z', timezone: 'America/Los_Angeles',
+      url: 'https://link.dice.fm/abc', description: 'A night of spiritual jazz.' },
+    { name: 'Night Scene: A Rock n Roll Sleaze Show', date: '2026-07-15T03:00:00Z',
+      timezone: 'America/Los_Angeles', url: 'https://link.dice.fm/xyz', description: 'Rock.' },
+  ]});
+  const evs = zpParse(fixture);
+  assert.equal(evs.length, 1, 'rock night must be filtered out');
+  assert.equal(evs[0].date, '2026-07-18'); // 03:00Z = 8pm PT the previous day
+  assert.deepEqual(evs[0].sets, ['20:00']);
+});
+
+// --- Harvelle's (SeatEngine month calendar) -----------------------------------------------------
+import { parse as hvParse } from './clubs/harvelles.js';
+ok("harvelles: date cells -> events with show times", () => {
+  const html = `
+  <table><tbody><tr>
+    <td><span class='date'>17</span><div class='padding-small'>
+      <ul><li><a href="/events/137965">The Toledo Show - Soul Jazz Cabaret</a></li></ul>
+      <ul><li class='event-btn-group'><a class='event-btn-stacked' href=''>9:00 PM</a></li></ul>
+    </div></td>
+    <td><span class='date'>18</span><div class='padding-small'>
+      <ul><li><a href="/events/137970">House of Vibe All-Stars</a></li></ul>
+      <ul><li><a class='event-btn-stacked' href=''>8:00 PM</a></li>
+      <li><a class='event-btn-stacked' href=''>10:30 PM</a></li></ul>
+    </div></td>
+  </tr></tbody></table>`;
+  const evs = hvParse(html, 2026, 7);
+  assert.equal(evs.length, 2);
+  assert.equal(evs[0].date, '2026-07-17');
+  assert.deepEqual(evs[0].sets, ['21:00']);
+  assert.match(evs[0].url, /harvelles\.com\/events\/137965/);
+  assert.deepEqual(evs[1].sets, ['20:00', '22:30']);
+});
+
 // --- crawl merge integration (failure isolation rules) --------------------------
 import { mergeCrawlResults } from './run.js';
 ok('merge: zero events = suspect, failures keep previous, dedupe + sort', () => {
@@ -633,4 +860,26 @@ ok('merge: zero events = suspect, failures keep previous, dedupe + sort', () => 
   assert.equal(out.errors.length, 2);
   assert.ok(out.errors.some((e) => /0 events/.test(e)));
   assert.ok(out.errors.some((e) => /site down/.test(e)));
+});
+
+ok('merge: previous events from OTHER cities never leak into this city', () => {
+  // Regression: first LA run inherited NYC previous data (legacy fallback)
+  // and kept all 1460 NYC events in events-la.json.
+  const prev = [
+    { id: 'smalls:2026-07-16:x', clubId: 'smalls', date: '2026-07-16', sets: [] },   // NYC — not an LA target
+    { id: 'samfirst:2026-07-16:y', clubId: 'samfirst', date: '2026-07-16', sets: [] },
+  ];
+  const results = [
+    { status: 'fulfilled', value: { mod: './clubs/catalina.js', events: [
+      { id: 'catalina:2026-07-20:z', clubId: 'catalina', date: '2026-07-20', sets: ['20:30'] },
+    ] } },
+    { status: 'rejected', reason: new Error('samfirst down') }, // samfirst keeps previous
+  ];
+  const out = mergeCrawlResults(results, {
+    previousEvents: prev,
+    targetIds: new Set(['catalina', 'samfirst']),
+  });
+  assert.deepEqual(out.events.map((e) => e.clubId).sort(), ['catalina', 'samfirst'],
+    'smalls (NYC) must not survive into an LA merge');
+  assert.equal(out.keptCount, 1);
 });

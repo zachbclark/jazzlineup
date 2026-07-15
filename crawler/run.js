@@ -52,7 +52,10 @@ export function mergeCrawlResults(results, { previousEvents = [], targetIds }) {
     }
   }
 
-  const kept = previousEvents.filter((e) => !crawledClubIds.has(e.clubId));
+  // Keep previous data only for clubs we targeted but failed to refresh.
+  // The targetIds guard also stops foreign-city events from leaking through
+  // a wrong previous file (bit us 2026-07-15: NYC events in events-la.json).
+  const kept = previousEvents.filter((e) => targetIds.has(e.clubId) && !crawledClubIds.has(e.clubId));
 
   const byId = new Map();
   for (const e of [...kept, ...fresh]) byId.set(e.id, e);

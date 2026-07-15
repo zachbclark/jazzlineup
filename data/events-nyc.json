@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-15T03:30:27.310Z",
+  "generatedAt": "2026-07-15T04:50:51.261Z",
   "city": "nyc",
   "clubs": [
     {
@@ -265,6 +265,30 @@
       "timezone": "America/New_York",
       "neighborhood": "Prospect-Lefferts",
       "color": "#7d9fe0"
+    },
+    {
+      "id": "roulette",
+      "name": "Roulette Intermedium",
+      "shortName": "Roulette",
+      "url": "https://roulette.org",
+      "address": "509 Atlantic Ave, Brooklyn, NY 11217",
+      "city": "nyc",
+      "borough": "brooklyn",
+      "timezone": "America/New_York",
+      "neighborhood": "Downtown Brooklyn",
+      "color": "#9b7bff"
+    },
+    {
+      "id": "jcal",
+      "name": "JCAL (Jamaica Center)",
+      "shortName": "JCAL",
+      "url": "https://jcal.org/events-tickets",
+      "address": "161-04 Jamaica Ave, Jamaica, NY 11432",
+      "city": "nyc",
+      "borough": "queens",
+      "timezone": "America/New_York",
+      "neighborhood": "Jamaica",
+      "color": "#c2439a"
     }
   ],
   "errors": [],
@@ -923,107 +947,6 @@
       "priceText": null
     },
     {
-      "id": "lunatico:2026-07-13:yacine-boular-s-quartet",
-      "clubId": "lunatico",
-      "title": "Yacine Boularès Quartet",
-      "date": "2026-07-13",
-      "sets": [
-        "21:00",
-        "22:15"
-      ],
-      "url": "https://www.barlunatico.com/calendar/2022/7/14/yacine-boulars-quartet-xz8d4-kw2n4-sprjx-dpw3j",
-      "details": "This Tunisian/West African rhythm-based combo is a killer group. Yacine won’t be back in NYC for a good while so come see him while you can! Yacine Boularès ~ tenor sax Can Olgun ~ piano Or Bareket ~ bass Elé Howell ~ drums Described by Radio France internationale as “a Tunisian man in New York, one",
-      "personnel": null,
-      "priceText": null
-    },
-    {
-      "id": "jazzcultural:2026-07-14:barry-harris-institute-presents-free-piano-lesson-jam-sessio",
-      "clubId": "jazzcultural",
-      "title": "Barry Harris Institute Presents: Free Piano Lesson & Jam Session",
-      "date": "2026-07-14",
-      "sets": [
-        "14:00"
-      ],
-      "url": "https://www.smallslive.com/events/33390-barry-harris-institute-presents-free-piano-lesson-jam-session/",
-      "details": "until 6:00 PM",
-      "personnel": [
-        {
-          "name": "Richard Clements",
-          "instrument": "piano"
-        }
-      ],
-      "priceText": null
-    },
-    {
-      "id": "zincbar:2026-07-14:johnny-o-neal-trio",
-      "clubId": "zincbar",
-      "title": "Johnny O’Neal Trio",
-      "date": "2026-07-14",
-      "sets": [
-        "17:00",
-        "19:00",
-        "20:30"
-      ],
-      "url": "https://www.zincbar.com/event/johnny-oneal-2/",
-      "details": "Showtimes: 7:00 PM & 8:30 PM | Tickets: $40 at the door Reservations: Not necessary — we recommend arriving 20–30 minutes before showtime. Seating: Available throughout the shows. Bar Hours: Open from 5:00 PM to midnight — no cover charge to enjoy cocktails and the vibe! If you haven’t caught Johnny",
-      "personnel": null,
-      "priceText": "$40"
-    },
-    {
-      "id": "mezzrow:2026-07-14:michael-kanan-trio",
-      "clubId": "mezzrow",
-      "title": "Michael Kanan Trio",
-      "date": "2026-07-14",
-      "sets": [
-        "18:00",
-        "19:30"
-      ],
-      "url": "https://www.smallslive.com/events/33119-michael-kanan-trio/",
-      "details": null,
-      "personnel": [
-        {
-          "name": "Michael Kanan",
-          "instrument": "piano"
-        },
-        {
-          "name": "Greg Ruggiero",
-          "instrument": "guitar"
-        },
-        {
-          "name": "Neal Miner",
-          "instrument": "bass"
-        }
-      ],
-      "priceText": null
-    },
-    {
-      "id": "smalls:2026-07-14:jay-sawyer-trio",
-      "clubId": "smalls",
-      "title": "Jay Sawyer Trio",
-      "date": "2026-07-14",
-      "sets": [
-        "18:00",
-        "19:30"
-      ],
-      "url": "https://www.smallslive.com/events/33225-jay-sawyer-trio/",
-      "details": null,
-      "personnel": [
-        {
-          "name": "Jay Sawyer",
-          "instrument": "drums"
-        },
-        {
-          "name": "Michael Jellick",
-          "instrument": "piano"
-        },
-        {
-          "name": "Sam Weber",
-          "instrument": "bass"
-        }
-      ],
-      "priceText": null
-    },
-    {
       "id": "ornithology:2026-07-14:earlybird-show",
       "clubId": "ornithology",
       "title": "Earlybird Show",
@@ -1044,33 +967,6 @@
         },
         {
           "name": "Mike Camacho",
-          "instrument": "drums"
-        }
-      ],
-      "priceText": null
-    },
-    {
-      "id": "jazzcultural:2026-07-14:jon-thomas-trio",
-      "clubId": "jazzcultural",
-      "title": "Jon Thomas Trio",
-      "date": "2026-07-14",
-      "sets": [
-        "19:00",
-        "21:00"
-      ],
-      "url": "https://www.smallslive.com/events/33160-jon-thomas-trio/",
-      "details": null,
-      "personnel": [
-        {
-          "name": "Jonathan Thomas",
-          "instrument": "piano"
-        },
-        {
-          "name": "Ahmed McLemore",
-          "instrument": "bass"
-        },
-        {
-          "name": "Drew Hoschar",
           "instrument": "drums"
         }
       ],
@@ -1126,19 +1022,6 @@
         "19:00"
       ],
       "url": "https://www.cellardog.net/calendar-link/tony-davis-trio-4",
-      "details": null,
-      "personnel": null,
-      "priceText": null
-    },
-    {
-      "id": "arthurs:2026-07-14:yuichi-hirakawa-house-band",
-      "clubId": "arthurs",
-      "title": "Yuichi Hirakawa House Band",
-      "date": "2026-07-14",
-      "sets": [
-        "19:00"
-      ],
-      "url": "https://www.arthurstavernnyc.com/performances.html",
       "details": null,
       "personnel": null,
       "priceText": null
@@ -1228,80 +1111,6 @@
       "priceText": null
     },
     {
-      "id": "mezzrow:2026-07-14:ray-gallon-trio",
-      "clubId": "mezzrow",
-      "title": "Ray Gallon Trio",
-      "date": "2026-07-14",
-      "sets": [
-        "21:00",
-        "22:30"
-      ],
-      "url": "https://www.smallslive.com/events/33120-ray-gallon-trio/",
-      "details": null,
-      "personnel": [
-        {
-          "name": "Ray Gallon",
-          "instrument": "piano"
-        },
-        {
-          "name": "Peter Washington",
-          "instrument": "bass"
-        },
-        {
-          "name": "Kenny Washington",
-          "instrument": "drums"
-        }
-      ],
-      "priceText": null
-    },
-    {
-      "id": "smalls:2026-07-14:rico-jones-bearer-of-the-awakening",
-      "clubId": "smalls",
-      "title": "Rico Jones’ “Bearer of the Awakening”",
-      "date": "2026-07-14",
-      "sets": [
-        "21:00",
-        "22:30"
-      ],
-      "url": "https://www.smallslive.com/events/33121-rico-jones-bearer-of-the-awakening/",
-      "details": null,
-      "personnel": [
-        {
-          "name": "Rico Jones",
-          "instrument": "tenor sax"
-        },
-        {
-          "name": "William Hill III",
-          "instrument": "piano"
-        },
-        {
-          "name": "Tony Golden",
-          "instrument": "bass"
-        },
-        {
-          "name": "Jerome Gillespie",
-          "instrument": "drums"
-        },
-        {
-          "name": "Jason Maximo Clotter",
-          "instrument": "bass"
-        },
-        {
-          "name": "Daniel Bereket",
-          "instrument": "trumpet"
-        },
-        {
-          "name": "Jordan Williams",
-          "instrument": "piano"
-        },
-        {
-          "name": "Harvel Nakundi",
-          "instrument": "drums"
-        }
-      ],
-      "priceText": null
-    },
-    {
       "id": "lunatico:2026-07-14:bobby-hawk-w-cole-kamen-green-jacob-drab-bill-campbell-chris",
       "clubId": "lunatico",
       "title": "Bobby Hawk w/Cole Kamen-Green | Jacob Drab | Bill Campbell | Chris Parker",
@@ -1312,19 +1121,6 @@
       ],
       "url": "https://www.barlunatico.com/calendar/2025/8/13/bobby-hawk-ad-hawk-record-release-79hxa-ctp7f-43hlg",
       "details": "A completely improvised body of work, Bobby Hawk’s latest album, Ad Hawk, reveals unpredictable rhythms and riffs drawn anywhere from western-inspired twangs to ethereal spacey cosmology. We’re gonna go places with this excellent crew tonite. join us! Bobby Hawk : violin Cole Kamen-Green : trumpet J",
-      "personnel": null,
-      "priceText": null
-    },
-    {
-      "id": "barbes:2026-07-14:slavic-soul-party",
-      "clubId": "barbes",
-      "title": "SLAVIC SOUL PARTY",
-      "date": "2026-07-14",
-      "sets": [
-        "21:00"
-      ],
-      "url": "https://www.viewcy.com/event/slavic_soul_party_263",
-      "details": "SLAVIC SOUL PARTY - Every Tuesday. (for ever..) Fiery Balkan brass, throbbing funk grooves, Roma accordion wizardry, and virtuoso jazz chops: Slavic Soul Party! is just what it says. Brash and strong as slivovitz, these nine musicians have forged a virtuosic new brass band music in the heart of New",
       "personnel": null,
       "priceText": null
     },
@@ -1388,54 +1184,6 @@
       "priceText": null
     },
     {
-      "id": "jazzcultural:2026-07-14:jam-in-the-cafe",
-      "clubId": "jazzcultural",
-      "title": "Jam in the Cafe",
-      "date": "2026-07-14",
-      "sets": [
-        "22:00"
-      ],
-      "url": "https://www.smallslive.com/events/33216-jam-in-the-cafe/",
-      "details": "until 12:00 AM",
-      "personnel": [
-        {
-          "name": "Yago Vazquez",
-          "instrument": "piano"
-        },
-        {
-          "name": "John Webber",
-          "instrument": "guitar"
-        }
-      ],
-      "priceText": null
-    },
-    {
-      "id": "arthurs:2026-07-14:e-j-sharpe-with-off-the-hook",
-      "clubId": "arthurs",
-      "title": "E.J. Sharpe with Off the Hook",
-      "date": "2026-07-14",
-      "sets": [
-        "22:00"
-      ],
-      "url": "https://www.arthurstavernnyc.com/performances.html",
-      "details": null,
-      "personnel": null,
-      "priceText": null
-    },
-    {
-      "id": "arthurs:2026-07-14:stew-cutler-friends",
-      "clubId": "arthurs",
-      "title": "Stew Cutler & Friends",
-      "date": "2026-07-14",
-      "sets": [
-        "22:00"
-      ],
-      "url": "https://www.arthurstavernnyc.com/performances.html",
-      "details": null,
-      "personnel": null,
-      "priceText": null
-    },
-    {
       "id": "django:2026-07-14:kali-rodriguez-pe-a-quartet",
       "clubId": "django",
       "title": "Kali Rodriguez-Peña Quartet",
@@ -1467,80 +1215,6 @@
         {
           "name": "Will Hill III",
           "instrument": "piano"
-        }
-      ],
-      "late": true,
-      "priceText": null
-    },
-    {
-      "id": "mezzrow:2026-07-14:vinyl-after-hours",
-      "clubId": "mezzrow",
-      "title": "Vinyl After Hours",
-      "date": "2026-07-14",
-      "sets": [
-        "23:30"
-      ],
-      "url": "https://www.smallslive.com/events/33134-vinyl-after-hours/",
-      "details": "until 12:45 AM",
-      "personnel": [
-        {
-          "name": "Adam Kolker",
-          "instrument": "tenor sax"
-        },
-        {
-          "name": "Sam Yahel",
-          "instrument": "piano"
-        }
-      ],
-      "late": true,
-      "priceText": null
-    },
-    {
-      "id": "smalls:2026-07-14:jam-session-hosted-by-jason-clotter",
-      "clubId": "smalls",
-      "title": "Jam Session Hosted By Jason Clotter",
-      "date": "2026-07-14",
-      "sets": [
-        "23:45"
-      ],
-      "url": "https://www.smallslive.com/events/33090-jam-session-hosted-by-jason-clotter/",
-      "details": "until 4:00 AM",
-      "personnel": [
-        {
-          "name": "Jason Maximo Clotter",
-          "instrument": "bass"
-        },
-        {
-          "name": "Daniel Bereket",
-          "instrument": "trumpet"
-        },
-        {
-          "name": "Jordan Williams",
-          "instrument": "piano"
-        },
-        {
-          "name": "Harvel Nakundi",
-          "instrument": "drums"
-        },
-        {
-          "name": "Behn Gillece",
-          "instrument": "vibraphone"
-        },
-        {
-          "name": "Willie Morris III",
-          "instrument": "tenor sax"
-        },
-        {
-          "name": "Neil Podgurski",
-          "instrument": "piano"
-        },
-        {
-          "name": "Clovis Nicolas",
-          "instrument": "bass"
-        },
-        {
-          "name": "Vinnie Sperrazza",
-          "instrument": "drums"
         }
       ],
       "late": true,
@@ -7405,7 +7079,32 @@
       ],
       "url": "https://www.smallslive.com/events/33057-alex-tremblay-sextet/",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Alex Tremblay",
+          "instrument": "bass"
+        },
+        {
+          "name": "Tessie Overmyer",
+          "instrument": "alto sax"
+        },
+        {
+          "name": "Noah Halpern",
+          "instrument": "trumpet"
+        },
+        {
+          "name": "Tony Davis",
+          "instrument": "guitar"
+        },
+        {
+          "name": "Chris McCarthy",
+          "instrument": "piano"
+        },
+        {
+          "name": "Evan Hyde",
+          "instrument": "drums"
+        }
+      ],
       "priceText": null
     },
     {
@@ -7568,7 +7267,24 @@
       ],
       "url": "https://www.smallslive.com/events/33099-jam-session-hosted-by-matt-snow/",
       "details": "until 4:00 AM",
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Matt Snow",
+          "instrument": "bass"
+        },
+        {
+          "name": "Clay Lyons",
+          "instrument": "alto sax"
+        },
+        {
+          "name": "Cameron Campbell",
+          "instrument": "piano"
+        },
+        {
+          "name": "Charlie Schefft",
+          "instrument": "drums"
+        }
+      ],
       "late": true,
       "priceText": null
     },
@@ -7607,7 +7323,12 @@
       ],
       "url": "https://www.smallslive.com/events/33196-afternoon-jam-in-the-cafe/",
       "details": "until 6:00 PM",
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Panas Athanatos",
+          "instrument": "guitar"
+        }
+      ],
       "priceText": null
     },
     {
@@ -7620,7 +7341,20 @@
       ],
       "url": "https://www.smallslive.com/events/33306-smalls-afternoon-jam-session-hosted-by-andrew-kushnir/",
       "details": "until 5:15 PM",
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Andrew Kushnir",
+          "instrument": "drums"
+        },
+        {
+          "name": "Chet Doxas",
+          "instrument": "tenor sax"
+        },
+        {
+          "name": "Sam Trapchak",
+          "instrument": "bass"
+        }
+      ],
       "priceText": null
     },
     {
@@ -7705,7 +7439,20 @@
       ],
       "url": "https://www.smallslive.com/events/33443-jon-thomas-trio/",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Jonathan Thomas",
+          "instrument": "piano"
+        },
+        {
+          "name": "Or Bareket",
+          "instrument": "bass"
+        },
+        {
+          "name": "Drew Hoschar",
+          "instrument": "drums"
+        }
+      ],
       "priceText": null
     },
     {
@@ -7778,7 +7525,28 @@
       ],
       "url": "https://www.smallslive.com/events/33113-steve-wilson-quintet-enduring-sonance/",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Steve Wilson",
+          "instrument": "alto sax"
+        },
+        {
+          "name": "Joe Locke",
+          "instrument": "vibraphone"
+        },
+        {
+          "name": "Helen Sung",
+          "instrument": "piano"
+        },
+        {
+          "name": "Jay Anderson",
+          "instrument": "bass"
+        },
+        {
+          "name": "Adam Cruz",
+          "instrument": "drums"
+        }
+      ],
       "priceText": null
     },
     {
@@ -7900,6 +7668,19 @@
           "instrument": "tenor sax"
         }
       ],
+      "priceText": null
+    },
+    {
+      "id": "jcal:2026-07-24:downtown-jamaica-riddim-and-jazz-festival-2026-day-1",
+      "clubId": "jcal",
+      "title": "Downtown Jamaica Riddim and Jazz Festival 2026: Day 1",
+      "date": "2026-07-24",
+      "sets": [
+        "19:00"
+      ],
+      "url": "https://www.eventbrite.com/e/downtown-jamaica-riddim-and-jazz-festival-2026-day-1-tickets-1988951553638",
+      "details": "An evening of live music, featuring Dennis Collins and Steven Kroon",
+      "personnel": null,
       "priceText": null
     },
     {
@@ -8051,7 +7832,20 @@
       ],
       "url": "https://www.smallslive.com/events/33325-eden-ladin-trio/",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Eden Ladin",
+          "instrument": "piano"
+        },
+        {
+          "name": "Joe Martin",
+          "instrument": "bass"
+        },
+        {
+          "name": "Adam Arruda",
+          "instrument": "drums"
+        }
+      ],
       "priceText": null
     },
     {
@@ -8157,7 +7951,24 @@
       ],
       "url": "https://www.smallslive.com/events/33317-abraham-burton-quartet/",
       "details": "until 12:00 AM",
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Abraham Burton",
+          "instrument": "tenor sax"
+        },
+        {
+          "name": "David Virelles",
+          "instrument": "piano"
+        },
+        {
+          "name": "Gervis Myles",
+          "instrument": "bass"
+        },
+        {
+          "name": "Eric McPherson",
+          "instrument": "drums"
+        }
+      ],
       "priceText": null
     },
     {
@@ -8237,7 +8048,12 @@
       ],
       "url": "https://www.smallslive.com/events/33448-round-midnight-solo-piano-with-john-di-martino/",
       "details": "until 1:00 AM",
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "John Di Martino",
+          "instrument": "piano"
+        }
+      ],
       "late": true,
       "priceText": null
     },
@@ -8345,6 +8161,19 @@
       ],
       "url": "https://www.viewcy.com/event/jeremiah_lockwood_sa",
       "details": "In residence Saturdays in July at 6pm Jeremiah Lockwood is a scholar and a storyteller; a singer, guitarist and composer with an expansive knowledge of musical traditions and techniques that range from cantorial sacred music to Piedmont blues. His career as musician and academic engages with issues",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "jcal:2026-07-25:downtown-jamaica-riddim-and-jazz-festival-the-branford-marsa",
+      "clubId": "jcal",
+      "title": "Downtown Jamaica Riddim and Jazz Festival: The Branford Marsalis Quartet",
+      "date": "2026-07-25",
+      "sets": [
+        "18:00"
+      ],
+      "url": "https://www.eventbrite.com/e/downtown-jamaica-riddim-and-jazz-festival-the-branford-marsalis-quartet-tickets-1988626799289",
+      "details": "An evening of live music, featuring The Branford Marsalis Quartet!",
       "personnel": null,
       "priceText": null
     },
@@ -13233,6 +13062,19 @@
       "priceText": null
     },
     {
+      "id": "arthurs:2026-08-04:yuichi-hirakawa-house-band",
+      "clubId": "arthurs",
+      "title": "Yuichi Hirakawa House Band",
+      "date": "2026-08-04",
+      "sets": [
+        "19:00"
+      ],
+      "url": "https://www.arthurstavernnyc.com/performances.html",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
       "id": "pocket:2026-08-04:arturo-o-farrill-the-afro-latin-jazz-orchestra",
       "clubId": "pocket",
       "title": "Arturo O’Farrill & The Afro Latin Jazz Orchestra",
@@ -13355,6 +13197,32 @@
       ],
       "url": "https://www.smallslive.com/events/33555-jam-in-the-cafe/",
       "details": "until 12:00 AM",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "arthurs:2026-08-04:e-j-sharpe-with-off-the-hook",
+      "clubId": "arthurs",
+      "title": "E.J. Sharpe with Off the Hook",
+      "date": "2026-08-04",
+      "sets": [
+        "22:00"
+      ],
+      "url": "https://www.arthurstavernnyc.com/performances.html",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "arthurs:2026-08-04:stew-cutler-friends",
+      "clubId": "arthurs",
+      "title": "Stew Cutler & Friends",
+      "date": "2026-08-04",
+      "sets": [
+        "22:00"
+      ],
+      "url": "https://www.arthurstavernnyc.com/performances.html",
+      "details": null,
       "personnel": null,
       "priceText": null
     },
@@ -18481,6 +18349,19 @@
       "priceText": null
     },
     {
+      "id": "roulette:2026-08-20:jim-staley-with-ikue-mori-and-zeena-parkins",
+      "clubId": "roulette",
+      "title": "Jim Staley with Ikue Mori and Zeena Parkins",
+      "date": "2026-08-20",
+      "sets": [
+        "20:00"
+      ],
+      "url": "https://roulette.org/event/jim-staley-ikue-mori-zeena-parkins/",
+      "details": "Roulette co-founder Jim Staley returns to the stage with some of his long-running collaborators for a special evening of improvisation.",
+      "personnel": null,
+      "priceText": "$25"
+    },
+    {
       "id": "mezzrow:2026-08-20:dave-baron-trio",
       "clubId": "mezzrow",
       "title": "Dave Baron Trio",
@@ -22369,6 +22250,19 @@
       "priceText": null
     },
     {
+      "id": "roulette:2026-09-13:raven-chacon-tashi-dorji-alex-zhang-hungtai-leo-chang",
+      "clubId": "roulette",
+      "title": "Raven Chacon + Tashi Dorji + Alex Zhang Hungtai // Leo Chang",
+      "date": "2026-09-13",
+      "sets": [
+        "20:00"
+      ],
+      "url": "https://roulette.org/event/raven-chacon-tashi-dorji-alex-zhang-hungtai-leo-chang/",
+      "details": "An interactive sound-movement piece reimagines the Korean folk practice of sangmonori, followed by the debut of a new improvising trio.",
+      "personnel": null,
+      "priceText": "$25"
+    },
+    {
       "id": "zincbar:2026-09-14:marta-s-nchez-quartet",
       "clubId": "zincbar",
       "title": "Marta Sánchez Quartet",
@@ -22566,6 +22460,19 @@
       "priceText": null
     },
     {
+      "id": "roulette:2026-09-17:katherine-young-biomes-album-release",
+      "clubId": "roulette",
+      "title": "Katherine Young: BIOMES (Album Release)",
+      "date": "2026-09-17",
+      "sets": [
+        "20:00"
+      ],
+      "url": "https://roulette.org/event/biomes-album-release-katherine-young/",
+      "details": "Bassoonist/composer joins forces with Olivia Block, Ben LaMar Gay, Brian Chase, and Yarn/Wire to celebrate a new Chaikin release.",
+      "personnel": null,
+      "priceText": "$25"
+    },
+    {
       "id": "barbes:2026-09-17:the-arntzen-family-friends",
       "clubId": "barbes",
       "title": "THE ARNTZEN FAMILY & FRIENDS",
@@ -22659,6 +22566,19 @@
       "priceText": null
     },
     {
+      "id": "roulette:2026-09-18:red-hook-records-5th-anniversary-andrew-cyrille-wadada-leo-s",
+      "clubId": "roulette",
+      "title": "Red Hook Records 5th Anniversary: Andrew Cyrille, Wadada Leo Smith, and Qasim Naqvi // Amina Claudine Myers",
+      "date": "2026-09-18",
+      "sets": [
+        "20:00"
+      ],
+      "url": "https://roulette.org/event/red-hook-records-andrew-cyrille-wadada-leo-smith-qasim-naqvi-amina-claudine-myers/",
+      "details": "A two-night showcase curated by Red Hook Records spotlights artists from its catalog and collaborators across its orbit.",
+      "personnel": null,
+      "priceText": "$40"
+    },
+    {
       "id": "barbes:2026-09-18:cheo-y-los-consentidos-de-la-casa",
       "clubId": "barbes",
       "title": "CHEO Y LOS CONSENTIDOS DE LA CASA",
@@ -22684,6 +22604,19 @@
       "details": null,
       "personnel": null,
       "priceText": null
+    },
+    {
+      "id": "roulette:2026-09-19:red-hook-records-5th-anniversary-jason-moran-blankfor-ms-and",
+      "clubId": "roulette",
+      "title": "Red Hook Records 5th Anniversary: Jason Moran, BlankFor.ms, and Marcus Gilmore // Caroline Davis, Qasim Naqvi, and Grey Mcmurray",
+      "date": "2026-09-19",
+      "sets": [
+        "20:00"
+      ],
+      "url": "https://roulette.org/event/red-hook-records-jason-moran-blankforms-marcus-gilmore-caroline-davis-qasim-naqvi-grey-mcmurray/",
+      "details": "A two-night showcase curated by Red Hook Records spotlights artists from its catalog and collaborators across its orbit.",
+      "personnel": null,
+      "priceText": "$40"
     },
     {
       "id": "zincbar:2026-09-19:open-for-cocktails",
@@ -22949,6 +22882,19 @@
       "priceText": null
     },
     {
+      "id": "roulette:2026-09-24:the-scores-project-a-book-release-show-w-the-rise-of-the-nov",
+      "clubId": "roulette",
+      "title": "The Scores Project: A Book Release Show w/ The Rise of the Novel",
+      "date": "2026-09-24",
+      "sets": [
+        "20:00"
+      ],
+      "url": "https://roulette.org/event/the-scores-project-the-rise-of-the-novel/",
+      "details": "Scholars of experimental notation discuss their new book The Scores Project, followed by performances from members of The Rise of the Novel.",
+      "personnel": null,
+      "priceText": "$25"
+    },
+    {
       "id": "zincbar:2026-09-25:pete-rodriguez-quintet",
       "clubId": "zincbar",
       "title": "Pete Rodriguez Quintet",
@@ -23082,6 +23028,19 @@
       "details": "Stéphane Wrembel is probably the foremost interpreter of Django Reinhardt’s music in North America. Whether sticking to the French master’s arrangements, or taking the music into new territory, Wrembel has always treated Django like a serious composer rather the cliché paragon of swing and speed he",
       "personnel": null,
       "priceText": null
+    },
+    {
+      "id": "roulette:2026-09-27:john-zorn-s-alea-iacta-est-world-premiere",
+      "clubId": "roulette",
+      "title": "John Zorn’s Alea Iacta Est (World Premiere)",
+      "date": "2026-09-27",
+      "sets": [
+        "20:00"
+      ],
+      "url": "https://roulette.org/event/john-zorns-alea-iacta-est/",
+      "details": "One of Zorn’s most challenging masterworks — a complex and varied piano concerto performed by four of his most trusted interpreters.",
+      "personnel": null,
+      "priceText": "$35"
     },
     {
       "id": "zincbar:2026-09-28:william-hill-iii-trio",
@@ -23238,6 +23197,19 @@
       "details": null,
       "personnel": null,
       "priceText": null
+    },
+    {
+      "id": "roulette:2026-09-30:larry-ochs-safe-havens-for-the-abstract-truth-nate-wooley-s-",
+      "clubId": "roulette",
+      "title": "Larry Ochs Safe Havens (for the Abstract Truth) // Nate Wooley’s Mutual Aid Music",
+      "date": "2026-09-30",
+      "sets": [
+        "20:00"
+      ],
+      "url": "https://roulette.org/event/nate-wooley-larry-ochs/",
+      "details": "Two ensembles create collective sound-worlds deeply rooted in the spirit of improvisation.",
+      "personnel": null,
+      "priceText": "$25"
     },
     {
       "id": "barbes:2026-09-30:mamady-kouyate-s-mandingo-ambassadors",
@@ -24018,6 +23990,19 @@
       "priceText": null
     },
     {
+      "id": "roulette:2026-10-22:interpretations-ursel-schlicht-critical-response",
+      "clubId": "roulette",
+      "title": "Interpretations: Ursel Schlicht // Critical Response",
+      "date": "2026-10-22",
+      "sets": [
+        "20:00"
+      ],
+      "url": "https://roulette.org/event/interpretations-ursel-schlicht-critical-response/",
+      "details": "The Interpretations series returns with sets by acclaimed pianist Ursel Schlicht and Jason Kao Hwang's jazz trio.",
+      "personnel": null,
+      "priceText": "$20"
+    },
+    {
       "id": "zincbar:2026-10-23:the-matt-cappy-quintet",
       "clubId": "zincbar",
       "title": "The Matt Cappy Quintet",
@@ -24313,6 +24298,19 @@
       "priceText": null
     },
     {
+      "id": "roulette:2026-11-07:m3-festival-2026",
+      "clubId": "roulette",
+      "title": "M3 Festival 2026",
+      "date": "2026-11-07",
+      "sets": [
+        "19:00"
+      ],
+      "url": "https://roulette.org/event/m3-festival-2026/",
+      "details": "The 5th annual M³ festival celebrates some of the most innovative composer-performers in the jazz and creative music scene.",
+      "personnel": null,
+      "priceText": null
+    },
+    {
       "id": "barbes:2026-11-14:michael-hearst-presents-the-unusual-extraordinary-curious-an",
       "clubId": "barbes",
       "title": "MICHAEL HEARST presents: The Unusual, Extraordinary, Curious, and Unconventional Songbook",
@@ -24339,6 +24337,32 @@
       "priceText": null
     },
     {
+      "id": "roulette:2026-11-18:qasim-naqvi-slow-television",
+      "clubId": "roulette",
+      "title": "Qasim Naqvi: Slow Television",
+      "date": "2026-11-18",
+      "sets": [
+        "20:00"
+      ],
+      "url": "https://roulette.org/event/qasim-naqvi-slow-television/",
+      "details": "For his Roulette Commission, Naqvi performs two new works for modular synthesizer and chamber ensemble.",
+      "personnel": null,
+      "priceText": "$25"
+    },
+    {
+      "id": "roulette:2026-11-19:jessica-cook-fuguist-night-1",
+      "clubId": "roulette",
+      "title": "Jessica Cook: Fuguist (Night 1)",
+      "date": "2026-11-19",
+      "sets": [
+        "20:00"
+      ],
+      "url": "https://roulette.org/event/jessica-cook-night-1/",
+      "details": "Choreographer presents a new solo improvisation combining sound, dance, and objects for her Roulette Commission.",
+      "personnel": null,
+      "priceText": "$25"
+    },
+    {
       "id": "barbes:2026-11-19:the-arntzen-family-friends",
       "clubId": "barbes",
       "title": "THE ARNTZEN FAMILY & FRIENDS",
@@ -24352,6 +24376,19 @@
       "priceText": null
     },
     {
+      "id": "roulette:2026-11-20:jessica-cook-fuguist-night-2",
+      "clubId": "roulette",
+      "title": "Jessica Cook: Fuguist (Night 2)",
+      "date": "2026-11-20",
+      "sets": [
+        "20:00"
+      ],
+      "url": "https://roulette.org/event/jessica-cook-night-2/",
+      "details": "Choreographer presents a new solo improvisation combining sound, dance, and objects for her Roulette Commission.",
+      "personnel": null,
+      "priceText": "$25"
+    },
+    {
       "id": "barbes:2026-11-20:cheo-y-los-consentidos-de-la-casa",
       "clubId": "barbes",
       "title": "CHEO Y LOS CONSENTIDOS DE LA CASA",
@@ -24363,6 +24400,19 @@
       "details": "CHEO Y LOS CONSENTIDOS DE LA CASA Salsa Funk, from Cheo (Los Amigos Invisibles, Locobeach, DJ Afro) and his crew. Revisiting old salsa dura hits and writing the future one - with a full on crew - 3 percussionists, piano, bass - and Cheo's guitar taking the place of the horn section. Followed by DJ s",
       "personnel": null,
       "priceText": null
+    },
+    {
+      "id": "roulette:2026-12-03:interpretations-gerry-hemingway-lina-andonovska-and-earl-how",
+      "clubId": "roulette",
+      "title": "Interpretations: Gerry Hemingway, Lina Andonovska, and Earl Howard // Kyle Motl, Eli Wallace, and Nick Neuburg",
+      "date": "2026-12-03",
+      "sets": [
+        "20:00"
+      ],
+      "url": "https://roulette.org/event/hemingway-andonovska-howard-motl-wallace-neuburg/",
+      "details": "The Interpretations Series returns with two ensembles — a percussion, flute, sax, and synth quartet, and a piano, percussion, and bass trio.",
+      "personnel": null,
+      "priceText": "$20"
     },
     {
       "id": "barbes:2026-12-05:the-four-bags",

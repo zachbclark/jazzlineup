@@ -86,9 +86,14 @@ Sep; structures are crawlable):
 - [ ] Juilliard Jazz (Drupal views rows) · Manhattan School of Music ·
       The New School / The Stone series — filter to jazz-only
 
+Round 2 — DONE 2026-07-15 (NYC 24 clubs, boroughs now M/BK/Q):
+- [x] Roulette Intermedium (Downtown BK — experimental anchor)
+- [x] JCAL Jamaica Center (QUEENS — first queens venue; mixed arts center,
+      jazz-keyword filtered)
+
 Tier 2 (standing checklist):
 - [ ] Harlem: Showmans (would give Bill's Place company uptown) · Silvana
-- [ ] Brooklyn: Sistas' Place · IBeam · Roulette · Lowlands
+- [ ] Brooklyn: Sistas' Place · IBeam · Lowlands
 - [ ] Manhattan: Swing 46 · Tomi Jazz · The Ear Inn (Sun) · Iridium ·
       Marjorie Eliot's Parlor Jazz (Sun, Washington Heights)
 - [ ] Queens: Terraza 7 · Flushing Town Hall series
@@ -115,6 +120,11 @@ times from description text; verify against reality after first live crawl.
       renders a concert program — inline for small groups, grouped by
       instrument for big bands; promo noise stripped. Foundation in place
       for artist search + saved-artist notifications
+- [x] Mobile perf (2026-07-15, Zach: "filters feel laggy"): list view renders
+      in 21-day windows + content-visibility on day groups — filter toggles
+      no longer rebuild 1500 rows
+- [x] Mobile chips (2026-07-15, Zach: "one long line isn't going to cut it"):
+      two-row scrollable rail; tiles-with-favorites remains the Phase 2 answer
 - [ ] Quick polish batch: "Data crawled" → "Updated Xh ago"; Calendar/List
       toggle as one compact icon button; share-card (og.png) redesign once
       brand font is settled (current one reads corny)
@@ -129,12 +139,19 @@ times from description text; verify against reality after first live crawl.
 - [ ] Manual "refresh data" button with a takes-a-while warning
 
 ## Phase 4 — Multi-city: LA → Paris → Berlin
-- [ ] URL structure `/nyc`, `/la` + city switcher where the NYC badge sits —
-      make the NYC button pop (angled?) and open a city dropdown
-- [ ] Per-city data files (`events-nyc.json`, `events-la.json`) + per-city
-      crawl schedules
-- [ ] LA club recon + crawlers (Catalina, Sam First, The Baked Potato,
-      World Stage…)
+- [x] URL structure `/nyc`, `/la` + city switcher in the brand
+- [x] Per-city data files (`events-nyc.json`, `events-la.json`)
+- [x] **LA LAUNCHED 2026-07-15 — 10 venues:** Sam First (Wix events JSON) ·
+      Catalina (TicketWeb plugin) · Vibrato (Squarespace) · The World Stage
+      (Tockify) · Jazz at LACMA + Latin Sounds (Drupal cards, free series) ·
+      The Mint (Plot/DICE API, jazz-filtered — Paul Cornish plays here) ·
+      Hollywood Bowl (LA Phil genre feed, Jazz/Blues only) · 2220 Arts +
+      Archives (DICE venue page) · Zebulon (DICE partner API, jazz-filtered) ·
+      Harvelle's Santa Monica (SeatEngine calendar)
+- LA skips, check back: The Baked Potato (site broken — calendar empty, no
+  ticket products since April; the room itself is alive, find their real
+  listing source) · Mr Musichead (events page stale/2025; check their
+  Eventbrite organizer for Sunset Sessions)
 - [ ] Paris/Berlin repeat the LA playbook (timezone correctness matters here —
       covered by the Phase 0 registry fields)
 

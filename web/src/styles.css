@@ -171,6 +171,16 @@ button { font: inherit; cursor: pointer; }
   padding: 1px 5px; margin-right: 8px; vertical-align: 1px;
 }
 
+/* long-list rendering: let the browser skip layout of offscreen day groups */
+.daygroup { content-visibility: auto; contain-intrinsic-size: auto 320px; }
+.show-more-days {
+  display: block; width: 100%; margin: 18px 0 6px;
+  background: var(--panel); color: var(--muted);
+  border: 1px solid var(--line); border-radius: 9px; padding: 12px;
+  letter-spacing: 0.5px;
+}
+.show-more-days:hover { border-color: var(--accent); color: var(--text); }
+
 .empty-list, .error { color: var(--muted); padding: 40px 0; text-align: center; }
 .error { color: #e07a6a; }
 
@@ -206,14 +216,18 @@ button.cell { text-align: left; border: 1px solid var(--line); font: inherit; co
   .brand { font-size: 21px; }
   .view-toggle button { padding: 11px 18px; } /* thumb-sized */
 
-  /* filter chips: one horizontally scrollable row */
+  /* filter chips: two-row scrollable rail — one line stopped scaling past
+     ~15 venues; two rows halve the scroll distance without hiding colors */
   .filterbar {
-    flex-wrap: nowrap; overflow-x: auto; -webkit-overflow-scrolling: touch;
+    display: grid; grid-auto-flow: column; grid-template-rows: repeat(2, auto);
+    grid-auto-columns: max-content; justify-content: start; align-items: start;
+    column-gap: 8px; row-gap: 8px;
+    overflow-x: auto; -webkit-overflow-scrolling: touch;
     margin-left: -12px; margin-right: -12px; padding: 2px 12px 8px;
     scrollbar-width: none;
   }
   .filterbar::-webkit-scrollbar { display: none; }
-  .chip { flex: 0 0 auto; padding: 10px 15px; font-size: 14px; }
+  .chip { padding: 10px 15px; font-size: 14px; }
   .borough-btn { padding: 8px 12px; font-size: 13px; } /* thumb-sized */
 
   /* compact month grid */
