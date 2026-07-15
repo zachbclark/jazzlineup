@@ -5,3 +5,4 @@ data/events.json
 infra/cdk.out/
 *.log
 .DS_Store
+cdk.out/
