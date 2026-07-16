@@ -46,5 +46,14 @@ export async function crawl(ctx = {}) {
   const start = laDate(today);
   const end = laDate(today.getTime() + 45 * 86400000);
   const url = `${BASE}/ace-api/events/?startDate=${start}&endDate=${end}`;
-  return parse(await fetchText(url, { headers: { accept: 'application/json' } }));
+  // sfjazz.org's Cloudflare challenges every non-browser client (confirmed
+  // 2026-07-16: 403 + cf-mitigated on curl AND Node, browser-perfect
+  // headers included). Try live anyway — the day they allowlist us this
+  // upgrades itself — then fall back to browser-captured seed data.
+  try {
+    return parse(await fetchText(url, { headers: { accept: 'application/json' } }));
+  } catch {
+    const { SEED } = await import('./sfjazz-seed.js');
+    return parse(JSON.stringify(SEED)).filter((e) => e.date >= start);
+  }
 }

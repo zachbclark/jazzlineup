@@ -737,19 +737,10 @@ export const CLUBS = [
     color: '#8fbf6f', // bookshop-shelf sage — audit-cleared
     module: './clubs/birdbeckett.js',
   },
-  {
-    id: 'freight',
-    name: 'Freight & Salvage',
-    shortName: 'Freight',
-    url: 'https://thefreight.org',
-    address: '2020 Addison St, Berkeley, CA 94704',
-    city: 'sf',
-    borough: null,
-    timezone: 'America/Los_Angeles',
-    neighborhood: 'Downtown Berkeley',
-    color: '#45c4bc', // workshop-patina teal — audit-cleared
-    module: './clubs/freight.js',
-  },
+  // Freight & Salvage: BACKLOGGED 2026-07-16 — site is Cloudflare-blocked to
+  // non-browsers and the reachable TNEW ticketing API carries no genre data,
+  // so the jazz filter can't work. Module kept at ./clubs/freight.js;
+  // restore this entry if they allowlist us or expose genre elsewhere.
   {
     id: 'yoshis',
     name: "Yoshi's",
@@ -762,6 +753,99 @@ export const CLUBS = [
     neighborhood: 'Jack London Square, Oakland',
     color: '#4a90d9', // harbor-water blue — audit-cleared
     module: './clubs/yoshis.js',
+  },
+
+  // --------------------------------------------------------------- Paris ----
+  {
+    id: 'duc',
+    name: 'Duc des Lombards',
+    shortName: 'Duc',
+    url: 'https://ducdeslombards.com',
+    address: '42 rue des Lombards, 75001 Paris',
+    city: 'par',
+    borough: null,
+    timezone: 'Europe/Paris',
+    neighborhood: 'Châtelet',
+    color: '#d92f45', // their red-on-black marquee
+    module: './clubs/ducdeslombards.js',
+  },
+  {
+    id: 'sunset',
+    name: 'Sunset',
+    shortName: 'Sunset',
+    url: 'https://www.sunset-sunside.com',
+    address: '60 rue des Lombards, 75001 Paris',
+    city: 'par',
+    borough: null,
+    timezone: 'Europe/Paris',
+    neighborhood: 'Châtelet',
+    color: '#ff7847', // the electric basement — dusk orange
+    module: './clubs/sunsetsunside.js',
+  },
+  {
+    id: 'sunside',
+    name: 'Sunside',
+    shortName: 'Sunside',
+    url: 'https://www.sunset-sunside.com',
+    address: '60 rue des Lombards, 75001 Paris',
+    city: 'par',
+    borough: null,
+    timezone: 'Europe/Paris',
+    neighborhood: 'Châtelet',
+    color: '#6fc3e8', // the acoustic ground floor — daylight blue
+    module: './clubs/sunsetsunside.js', // same tribe API serves both rooms
+  },
+  {
+    id: 'newmorning',
+    name: 'New Morning',
+    shortName: 'New Morning',
+    url: 'https://www.newmorning.com',
+    address: '7-9 rue des Petites Écuries, 75010 Paris',
+    city: 'par',
+    borough: null,
+    timezone: 'Europe/Paris',
+    neighborhood: '10e',
+    color: '#3fae62', // their green logo, unchanged since 1981
+    module: './clubs/newmorning.js',
+  },
+  {
+    id: 'caveau',
+    name: 'Caveau de la Huchette',
+    shortName: 'Caveau',
+    url: 'https://www.caveaudelahuchette.fr',
+    address: '5 rue de la Huchette, 75005 Paris',
+    city: 'par',
+    borough: null,
+    timezone: 'Europe/Paris',
+    neighborhood: 'Quartier Latin',
+    color: '#d9b45a', // candlelit cellar stone — audit-cleared
+    module: './clubs/caveau.js',
+  },
+  {
+    id: 'balblomet',
+    name: 'Bal Blomet',
+    shortName: 'Bal Blomet',
+    url: 'https://www.balblomet.fr',
+    address: '33 rue Blomet, 75015 Paris',
+    city: 'par',
+    borough: null,
+    timezone: 'Europe/Paris',
+    neighborhood: '15e',
+    color: '#9b6bd0', // ballroom-velvet violet — audit-cleared
+    module: './clubs/balblomet.js',
+  },
+  {
+    id: 'riv38',
+    name: '38 Riv',
+    shortName: '38 Riv',
+    url: 'https://38riv.com',
+    address: '38 rue de Rivoli, 75004 Paris',
+    city: 'par',
+    borough: null,
+    timezone: 'Europe/Paris',
+    neighborhood: 'Le Marais',
+    color: '#e86fa8', // Marais rose — audit-cleared
+    module: './clubs/riv38.js',
   },
 ];
 

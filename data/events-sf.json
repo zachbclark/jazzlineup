@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-15T23:42:13.912Z",
+  "generatedAt": "2026-07-16T01:14:01.365Z",
   "city": "sf",
   "clubs": [
     {
@@ -63,18 +63,6 @@
       "color": "#8fbf6f"
     },
     {
-      "id": "freight",
-      "name": "Freight & Salvage",
-      "shortName": "Freight",
-      "url": "https://thefreight.org",
-      "address": "2020 Addison St, Berkeley, CA 94704",
-      "city": "sf",
-      "borough": null,
-      "timezone": "America/Los_Angeles",
-      "neighborhood": "Downtown Berkeley",
-      "color": "#45c4bc"
-    },
-    {
       "id": "yoshis",
       "name": "Yoshi's",
       "shortName": "Yoshi's",
@@ -88,8 +76,6 @@
     }
   ],
   "errors": [
-    "GET https://www.sfjazz.org/ace-api/events/?startDate=2026-07-15&endDate=2026-08-29 -> 403",
-    "GET https://thefreight.org/shows/ -> 403",
     "./clubs/yoshis.js: returned 0 events (markup change? keeping previous data)"
   ],
   "events": [
@@ -310,17 +296,18 @@
       "priceText": null
     },
     {
-      "id": "mrtipples:2026-07-15:bob-kenmotsu-quartet",
-      "clubId": "mrtipples",
-      "title": "Bob Kenmotsu Quartet",
-      "date": "2026-07-15",
+      "id": "sfjazz:2026-07-16:steven-bernstein-s-sexmob",
+      "clubId": "sfjazz",
+      "title": "Steven Bernstein's Sexmob",
+      "date": "2026-07-16",
       "sets": [
-        "20:45"
+        "19:00",
+        "20:30"
       ],
-      "url": "https://mrtipplessf.com/calendar/ben-kenmotsu-quartet-2/",
-      "details": "Bob Kenmotsu | Sax Ben Stolorow | Piano Ollie Dudek | Bass Ron Marabuto | Drums",
+      "url": "https://www.sfjazz.org/tickets/productions/summer-2026/steven-bernsteins-sexmob/",
+      "details": "Joe Henderson Lab",
       "personnel": null,
-      "priceText": "$15-$30"
+      "priceText": null
     },
     {
       "id": "blackcat:2026-07-16:ben-sherman-quartet-debut-residency",
@@ -351,6 +338,19 @@
       "priceText": null
     },
     {
+      "id": "sfjazz:2026-07-16:lettuce",
+      "clubId": "sfjazz",
+      "title": "Lettuce",
+      "date": "2026-07-16",
+      "sets": [
+        "19:30"
+      ],
+      "url": "https://www.sfjazz.org/tickets/productions/summer-2026/lettuce/",
+      "details": "Miner Auditorium",
+      "personnel": null,
+      "priceText": null
+    },
+    {
       "id": "mrtipples:2026-07-16:steinkoler-trio",
       "clubId": "mrtipples",
       "title": "Steinkoler Trio",
@@ -362,6 +362,20 @@
       "details": "Evan Steinkoler | Piano Sam Bevan | Bass Jeremy Steinkoler | Drums",
       "personnel": null,
       "priceText": "$15-$30"
+    },
+    {
+      "id": "sfjazz:2026-07-17:steven-bernstein-s-sexmob",
+      "clubId": "sfjazz",
+      "title": "Steven Bernstein's Sexmob",
+      "date": "2026-07-17",
+      "sets": [
+        "19:00",
+        "20:30"
+      ],
+      "url": "https://www.sfjazz.org/tickets/productions/summer-2026/steven-bernsteins-sexmob/",
+      "details": "Joe Henderson Lab",
+      "personnel": null,
+      "priceText": null
     },
     {
       "id": "blackcat:2026-07-17:ben-sherman-quartet-debut-residency",
@@ -387,6 +401,19 @@
       ],
       "url": "https://keysjazzbistro.com/event/kenny-washington-quartet-9/",
       "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "sfjazz:2026-07-17:lettuce",
+      "clubId": "sfjazz",
+      "title": "Lettuce",
+      "date": "2026-07-17",
+      "sets": [
+        "19:30"
+      ],
+      "url": "https://www.sfjazz.org/tickets/productions/summer-2026/lettuce/",
+      "details": "Miner Auditorium",
       "personnel": null,
       "priceText": null
     },
@@ -443,6 +470,20 @@
       "priceText": "$15-$30"
     },
     {
+      "id": "sfjazz:2026-07-18:steven-bernstein-s-sexmob",
+      "clubId": "sfjazz",
+      "title": "Steven Bernstein's Sexmob",
+      "date": "2026-07-18",
+      "sets": [
+        "19:00",
+        "20:30"
+      ],
+      "url": "https://www.sfjazz.org/tickets/productions/summer-2026/steven-bernsteins-sexmob/",
+      "details": "Joe Henderson Lab",
+      "personnel": null,
+      "priceText": null
+    },
+    {
       "id": "blackcat:2026-07-18:ben-sherman-quartet-debut-residency",
       "clubId": "blackcat",
       "title": "Ben Sherman Quartet Debut Residency",
@@ -466,6 +507,19 @@
       ],
       "url": "https://keysjazzbistro.com/event/clairdee-13/",
       "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "sfjazz:2026-07-18:lettuce",
+      "clubId": "sfjazz",
+      "title": "Lettuce",
+      "date": "2026-07-18",
+      "sets": [
+        "19:30"
+      ],
+      "url": "https://www.sfjazz.org/tickets/productions/summer-2026/lettuce/",
+      "details": "Miner Auditorium",
       "personnel": null,
       "priceText": null
     },
@@ -553,6 +607,33 @@
       "priceText": null
     },
     {
+      "id": "sfjazz:2026-07-19:steven-bernstein-s-sexmob",
+      "clubId": "sfjazz",
+      "title": "Steven Bernstein's Sexmob",
+      "date": "2026-07-19",
+      "sets": [
+        "18:00",
+        "19:30"
+      ],
+      "url": "https://www.sfjazz.org/tickets/productions/summer-2026/steven-bernsteins-sexmob/",
+      "details": "Joe Henderson Lab",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "sfjazz:2026-07-19:lettuce",
+      "clubId": "sfjazz",
+      "title": "Lettuce",
+      "date": "2026-07-19",
+      "sets": [
+        "19:00"
+      ],
+      "url": "https://www.sfjazz.org/tickets/productions/summer-2026/lettuce/",
+      "details": "Miner Auditorium",
+      "personnel": null,
+      "priceText": null
+    },
+    {
       "id": "blackcat:2026-07-19:ben-sherman-quartet-debut-residency",
       "clubId": "blackcat",
       "title": "Ben Sherman Quartet Debut Residency",
@@ -620,6 +701,20 @@
       "priceText": "$15-$30"
     },
     {
+      "id": "sfjazz:2026-07-23:daniel-villarreal",
+      "clubId": "sfjazz",
+      "title": "Daniel Villarreal",
+      "date": "2026-07-23",
+      "sets": [
+        "19:00",
+        "20:30"
+      ],
+      "url": "https://www.sfjazz.org/tickets/productions/summer-2026/daniel-villarreal/",
+      "details": "Joe Henderson Lab",
+      "personnel": null,
+      "priceText": null
+    },
+    {
       "id": "blackcat:2026-07-23:anthony-fung-common-language-album-release-tour",
       "clubId": "blackcat",
       "title": "Anthony Fung \"Common Language\" Album Release Tour",
@@ -659,6 +754,20 @@
       "details": "Keith Saunders- Piano Eric Markowitz- bass Mark Ferber- drums An exciting band with a big sound, this group of some of SF’s finest has been playing together for over 9 years, focusing on original compositions and hard bop classics from Horace Silver, Kenny Dorham, and Freddie Redd. The quintet’s alb",
       "personnel": null,
       "priceText": "$15-$20"
+    },
+    {
+      "id": "sfjazz:2026-07-24:daniel-villarreal",
+      "clubId": "sfjazz",
+      "title": "Daniel Villarreal",
+      "date": "2026-07-24",
+      "sets": [
+        "19:00",
+        "20:30"
+      ],
+      "url": "https://www.sfjazz.org/tickets/productions/summer-2026/daniel-villarreal/",
+      "details": "Joe Henderson Lab",
+      "personnel": null,
+      "priceText": null
     },
     {
       "id": "blackcat:2026-07-24:anthony-fung-common-language-album-release-tour",
@@ -738,6 +847,20 @@
       "details": "Armen Krakirian | Trumpet Carl Schultz | Saxophone Michael Potter | Piano Alan Jones | Bass John MacDonald | Drums Armen Krakirian is an accomplished trumpeter based in the Bay Area, California. Holding a degree in Jazz Trumpet Performance from Oberlin Conservatory (2023), Armen’s musical journey ha",
       "personnel": null,
       "priceText": "$15-$30"
+    },
+    {
+      "id": "sfjazz:2026-07-25:logan-richardson",
+      "clubId": "sfjazz",
+      "title": "Logan Richardson",
+      "date": "2026-07-25",
+      "sets": [
+        "19:00",
+        "20:30"
+      ],
+      "url": "https://www.sfjazz.org/tickets/productions/summer-2026/logan-richardson/",
+      "details": "Joe Henderson Lab",
+      "personnel": null,
+      "priceText": null
     },
     {
       "id": "blackcat:2026-07-25:anthony-fung-common-language-album-release-tour",
@@ -833,6 +956,20 @@
       "priceText": null
     },
     {
+      "id": "sfjazz:2026-07-26:yilian-ca-izares",
+      "clubId": "sfjazz",
+      "title": "Yilian Cañizares",
+      "date": "2026-07-26",
+      "sets": [
+        "18:00",
+        "19:30"
+      ],
+      "url": "https://www.sfjazz.org/tickets/productions/summer-2026/yilian-canizares/",
+      "details": "Joe Henderson Lab",
+      "personnel": null,
+      "priceText": null
+    },
+    {
       "id": "blackcat:2026-07-26:anthony-fung-common-language-album-release-tour",
       "clubId": "blackcat",
       "title": "Anthony Fung \"Common Language\" Album Release Tour",
@@ -912,6 +1049,20 @@
       "priceText": null
     },
     {
+      "id": "sfjazz:2026-07-30:burnt-sugar-the-arkestra-chamber",
+      "clubId": "sfjazz",
+      "title": "Burnt Sugar The Arkestra Chamber",
+      "date": "2026-07-30",
+      "sets": [
+        "19:00",
+        "20:30"
+      ],
+      "url": "https://www.sfjazz.org/tickets/productions/summer-2026/burnt-sugar-the-arkestra-chamber/",
+      "details": "Joe Henderson Lab",
+      "personnel": null,
+      "priceText": null
+    },
+    {
       "id": "blackcat:2026-07-30:natanya-montgomery-a-tribute-to-roberta-flack",
       "clubId": "blackcat",
       "title": "Natanya Montgomery: A Tribute to Roberta Flack",
@@ -940,6 +1091,19 @@
       "priceText": null
     },
     {
+      "id": "sfjazz:2026-07-30:monsieur-perin",
+      "clubId": "sfjazz",
+      "title": "Monsieur Periné",
+      "date": "2026-07-30",
+      "sets": [
+        "19:30"
+      ],
+      "url": "https://www.sfjazz.org/tickets/productions/summer-2026/monsieur-perine/",
+      "details": "Miner Auditorium",
+      "personnel": null,
+      "priceText": null
+    },
+    {
       "id": "mrtipples:2026-07-30:sylvia-cuenca-quintet-ft-rico-jones",
       "clubId": "mrtipples",
       "title": "Sylvia Cuenca Quintet Ft Rico Jones",
@@ -951,6 +1115,20 @@
       "details": "Rico Jones | Tenor Sax Joel Behrman | Trumpet Matt Clark | Piano Essiet Essiet | Bass Sylvia Cuenca | Drums",
       "personnel": null,
       "priceText": "$15-$20"
+    },
+    {
+      "id": "sfjazz:2026-07-31:burnt-sugar-the-arkestra-chamber",
+      "clubId": "sfjazz",
+      "title": "Burnt Sugar The Arkestra Chamber",
+      "date": "2026-07-31",
+      "sets": [
+        "19:00",
+        "20:30"
+      ],
+      "url": "https://www.sfjazz.org/tickets/productions/summer-2026/burnt-sugar-the-arkestra-chamber/",
+      "details": "Joe Henderson Lab",
+      "personnel": null,
+      "priceText": null
     },
     {
       "id": "blackcat:2026-07-31:daniel-winshall-denim-dream-release-ft-pher-reimagined-sly-a",
@@ -976,6 +1154,19 @@
       ],
       "url": "https://keysjazzbistro.com/event/tammy-hall-5/",
       "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "sfjazz:2026-07-31:monsieur-perin",
+      "clubId": "sfjazz",
+      "title": "Monsieur Periné",
+      "date": "2026-07-31",
+      "sets": [
+        "19:30"
+      ],
+      "url": "https://www.sfjazz.org/tickets/productions/summer-2026/monsieur-perine/",
+      "details": "Miner Auditorium",
       "personnel": null,
       "priceText": null
     },
@@ -1032,6 +1223,20 @@
       "priceText": "$15-$30"
     },
     {
+      "id": "sfjazz:2026-08-01:burnt-sugar-the-arkestra-chamber",
+      "clubId": "sfjazz",
+      "title": "Burnt Sugar The Arkestra Chamber",
+      "date": "2026-08-01",
+      "sets": [
+        "19:00",
+        "20:30"
+      ],
+      "url": "https://www.sfjazz.org/tickets/productions/summer-2026/burnt-sugar-the-arkestra-chamber/",
+      "details": "Joe Henderson Lab",
+      "personnel": null,
+      "priceText": null
+    },
+    {
       "id": "blackcat:2026-08-01:daniel-winshall-denim-dream-release-ft-pher-reimagined-sly-a",
       "clubId": "blackcat",
       "title": "Daniel Winshall “Denim Dream” Release ft. PHER: Reimagined Sly and the Family Stone",
@@ -1055,6 +1260,19 @@
       ],
       "url": "https://keysjazzbistro.com/event/the-brad-leali-jazz-quartet-ft-carla-helmbrecht-5/",
       "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "sfjazz:2026-08-01:monsieur-perin",
+      "clubId": "sfjazz",
+      "title": "Monsieur Periné",
+      "date": "2026-08-01",
+      "sets": [
+        "19:30"
+      ],
+      "url": "https://www.sfjazz.org/tickets/productions/summer-2026/monsieur-perine/",
+      "details": "Miner Auditorium",
       "personnel": null,
       "priceText": null
     },
@@ -1125,6 +1343,19 @@
       "priceText": null
     },
     {
+      "id": "sfjazz:2026-08-02:monsieur-perin",
+      "clubId": "sfjazz",
+      "title": "Monsieur Periné",
+      "date": "2026-08-02",
+      "sets": [
+        "19:00"
+      ],
+      "url": "https://www.sfjazz.org/tickets/productions/summer-2026/monsieur-perine/",
+      "details": "Miner Auditorium",
+      "personnel": null,
+      "priceText": null
+    },
+    {
       "id": "blackcat:2026-08-02:daniel-winshall-denim-dream-release",
       "clubId": "blackcat",
       "title": "Daniel Winshall “Denim Dream” Release",
@@ -1150,6 +1381,32 @@
       "details": "Andrew Stephens l Trumpet Brahm Sasner | Piano Nico Martinez | Bass Zach Adleman | Drums Bio: Hailing from Montclair, New Jersey, drummer Zach Adleman has performed at Carnegie Hall and the 57th Annual Grammy Awards After Parties alongside jazz luminaries Wynton Marsalis and Christian McBride. He ho",
       "personnel": null,
       "priceText": "$15-$20"
+    },
+    {
+      "id": "sfjazz:2026-08-04:interactive-open-soundcheck-w-nyo-jazz-dee-dee-bridgewater",
+      "clubId": "sfjazz",
+      "title": "Interactive Open Soundcheck w/ NYO Jazz & Dee Dee Bridgewater",
+      "date": "2026-08-04",
+      "sets": [
+        "17:00"
+      ],
+      "url": "https://www.sfjazz.org/tickets/productions/summer-2026/open-soundcheck-nyo-jazz-dee-dee-bridgewater/",
+      "details": "Miner Auditorium",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "sfjazz:2026-08-04:nyo-jazz",
+      "clubId": "sfjazz",
+      "title": "NYO Jazz",
+      "date": "2026-08-04",
+      "sets": [
+        "19:30"
+      ],
+      "url": "https://www.sfjazz.org/tickets/productions/summer-2026/nyo-jazz-dee-dee-bridgewater/",
+      "details": "Miner Auditorium",
+      "personnel": null,
+      "priceText": null
     },
     {
       "id": "blackcat:2026-08-05:currents",
@@ -1445,6 +1702,19 @@
       "priceText": "$15-45"
     },
     {
+      "id": "sfjazz:2026-08-13:take-6",
+      "clubId": "sfjazz",
+      "title": "Take 6",
+      "date": "2026-08-13",
+      "sets": [
+        "19:30"
+      ],
+      "url": "https://www.sfjazz.org/tickets/productions/summer-2026/take-6/",
+      "details": "Miner Auditorium",
+      "personnel": null,
+      "priceText": null
+    },
+    {
       "id": "mrtipples:2026-08-13:motoko-honda-quartet",
       "clubId": "mrtipples",
       "title": "Motoko Honda Quartet",
@@ -1470,6 +1740,19 @@
       "details": null,
       "personnel": null,
       "priceText": "$15-55"
+    },
+    {
+      "id": "sfjazz:2026-08-14:take-6",
+      "clubId": "sfjazz",
+      "title": "Take 6",
+      "date": "2026-08-14",
+      "sets": [
+        "19:30"
+      ],
+      "url": "https://www.sfjazz.org/tickets/productions/summer-2026/take-6/",
+      "details": "Miner Auditorium",
+      "personnel": null,
+      "priceText": null
     },
     {
       "id": "mrtipples:2026-08-14:essiet-okon-essiet-quartet",
@@ -1506,7 +1789,7 @@
         "22:30"
       ],
       "url": "https://mrtipplessf.com/calendar/john-brothers-piano-company-2/",
-      "details": null,
+      "details": "🎹 John Boomer | Piano & Clarinet 🎷 Gerrard Ramm | Saxophone 🎻 Kent Kessinger | Bass 🥁 Jimi Marks | Drums",
       "personnel": null,
       "priceText": "$15-$30"
     },
@@ -1523,6 +1806,19 @@
       "details": null,
       "personnel": null,
       "priceText": "$15-55"
+    },
+    {
+      "id": "sfjazz:2026-08-15:take-6",
+      "clubId": "sfjazz",
+      "title": "Take 6",
+      "date": "2026-08-15",
+      "sets": [
+        "19:30"
+      ],
+      "url": "https://www.sfjazz.org/tickets/productions/summer-2026/take-6/",
+      "details": "Miner Auditorium",
+      "personnel": null,
+      "priceText": null
     },
     {
       "id": "mrtipples:2026-08-15:dann-zinn-quartet",
@@ -1549,6 +1845,19 @@
       "details": null,
       "personnel": null,
       "priceText": "$15-$30"
+    },
+    {
+      "id": "sfjazz:2026-08-16:take-6",
+      "clubId": "sfjazz",
+      "title": "Take 6",
+      "date": "2026-08-16",
+      "sets": [
+        "19:00"
+      ],
+      "url": "https://www.sfjazz.org/tickets/productions/summer-2026/take-6/",
+      "details": "Miner Auditorium",
+      "personnel": null,
+      "priceText": null
     },
     {
       "id": "blackcat:2026-08-16:david-kikoski-jazz-all-star-4tet",
@@ -1898,6 +2207,19 @@
       "priceText": "$15-$30"
     },
     {
+      "id": "sfjazz:2026-08-29:brad-mehldau-ride-into-the-sun",
+      "clubId": "sfjazz",
+      "title": "Brad Mehldau: Ride Into The Sun",
+      "date": "2026-08-29",
+      "sets": [
+        "20:00"
+      ],
+      "url": "https://www.sfjazz.org/tickets/productions/25-26/brad-mehldau-ride-into-the-sun/",
+      "details": "Paramount Theatre, Oakland",
+      "personnel": null,
+      "priceText": null
+    },
+    {
       "id": "blackcat:2026-08-30:the-coltrane-influence-two-different-expressions-ft-wayne-es",
       "clubId": "blackcat",
       "title": "The Coltrane Influence: Two Different Expressions ft. Wayne Escoffery & Tal Cohen",
@@ -1977,6 +2299,33 @@
       "priceText": "$15-$20"
     },
     {
+      "id": "sfjazz:2026-09-10:paul-cornish-trio",
+      "clubId": "sfjazz",
+      "title": "Paul Cornish Trio",
+      "date": "2026-09-10",
+      "sets": [
+        "19:00",
+        "20:30"
+      ],
+      "url": "https://www.sfjazz.org/tickets/productions/26-27/paul-cornish-trio/",
+      "details": "Joe Henderson Lab",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "sfjazz:2026-09-10:christian-mcbride",
+      "clubId": "sfjazz",
+      "title": "Christian McBride",
+      "date": "2026-09-10",
+      "sets": [
+        "19:30"
+      ],
+      "url": "https://www.sfjazz.org/tickets/productions/26-27/christian-mcbride-ray-brown-centennial-celebration/",
+      "details": "Miner Auditorium",
+      "personnel": null,
+      "priceText": null
+    },
+    {
       "id": "mrtipples:2026-09-10:george-cole-quartet-george-meets-django",
       "clubId": "mrtipples",
       "title": "George Cole Quartet – George meets Django",
@@ -1988,6 +2337,33 @@
       "details": "Val Cole | Guitar and Vocals Anton Patzner | Violin Fred Randolph | Bass George Cole | Guitar Bio: George Cole Quartet – George Meets DjangoThe George Cole Quartet brings the spirit of Django Reinhardt to life in an intimate evening of jazz manouche and original compositions. BAMMIE Award-winning gu",
       "personnel": null,
       "priceText": "$15-$20"
+    },
+    {
+      "id": "sfjazz:2026-09-11:paul-cornish-trio",
+      "clubId": "sfjazz",
+      "title": "Paul Cornish Trio",
+      "date": "2026-09-11",
+      "sets": [
+        "19:00",
+        "20:30"
+      ],
+      "url": "https://www.sfjazz.org/tickets/productions/26-27/paul-cornish-trio/",
+      "details": "Joe Henderson Lab",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "sfjazz:2026-09-11:christian-mcbride",
+      "clubId": "sfjazz",
+      "title": "Christian McBride",
+      "date": "2026-09-11",
+      "sets": [
+        "19:30"
+      ],
+      "url": "https://www.sfjazz.org/tickets/productions/26-27/christian-mcbride-ray-brown-centennial-celebration/",
+      "details": "Miner Auditorium",
+      "personnel": null,
+      "priceText": null
     },
     {
       "id": "mrtipples:2026-09-11:alon-nechustan-quintet",
@@ -2016,6 +2392,33 @@
       "priceText": "$15-$30"
     },
     {
+      "id": "sfjazz:2026-09-12:nduduzo-makhathini-trio",
+      "clubId": "sfjazz",
+      "title": "Nduduzo Makhathini Trio",
+      "date": "2026-09-12",
+      "sets": [
+        "19:00",
+        "20:30"
+      ],
+      "url": "https://www.sfjazz.org/tickets/productions/26-27/nduduzo-makhathini-trio/",
+      "details": "Joe Henderson Lab",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "sfjazz:2026-09-12:christian-mcbride-s-ursa-major",
+      "clubId": "sfjazz",
+      "title": "Christian McBride's Ursa Major",
+      "date": "2026-09-12",
+      "sets": [
+        "19:30"
+      ],
+      "url": "https://www.sfjazz.org/tickets/productions/26-27/christian-mcbride-ursa-major/",
+      "details": "Miner Auditorium",
+      "personnel": null,
+      "priceText": null
+    },
+    {
       "id": "mrtipples:2026-09-12:arman-sangalang-quartet",
       "clubId": "mrtipples",
       "title": "Arman Sangalang Quartet",
@@ -2040,6 +2443,33 @@
       "details": null,
       "personnel": null,
       "priceText": "$15-$30"
+    },
+    {
+      "id": "sfjazz:2026-09-13:nduduzo-makhathini-trio",
+      "clubId": "sfjazz",
+      "title": "Nduduzo Makhathini Trio",
+      "date": "2026-09-13",
+      "sets": [
+        "18:00",
+        "19:30"
+      ],
+      "url": "https://www.sfjazz.org/tickets/productions/26-27/nduduzo-makhathini-trio/",
+      "details": "Joe Henderson Lab",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "sfjazz:2026-09-13:christian-mcbride-s-ursa-major",
+      "clubId": "sfjazz",
+      "title": "Christian McBride's Ursa Major",
+      "date": "2026-09-13",
+      "sets": [
+        "19:00"
+      ],
+      "url": "https://www.sfjazz.org/tickets/productions/26-27/christian-mcbride-ursa-major/",
+      "details": "Miner Auditorium",
+      "personnel": null,
+      "priceText": null
     },
     {
       "id": "mrtipples:2026-09-13:stella-heath-and-her-trio",

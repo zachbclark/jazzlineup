@@ -236,6 +236,10 @@ class JazzLineupStack extends cdk.Stack {
             namespace: 'JazzLineup', metricName: 'ProblemClubs',
             dimensionsMap: { City: 'sf' }, period: cdk.Duration.hours(4), statistic: 'Maximum', label: 'sf',
           }),
+          new cloudwatch.Metric({
+            namespace: 'JazzLineup', metricName: 'ProblemClubs',
+            dimensionsMap: { City: 'par' }, period: cdk.Duration.hours(4), statistic: 'Maximum', label: 'par',
+          }),
         ],
         width: 24,
       }),

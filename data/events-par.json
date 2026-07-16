@@ -1,0 +1,877 @@
+{
+  "generatedAt": "2026-07-16T01:19:14.863Z",
+  "city": "par",
+  "clubs": [
+    {
+      "id": "duc",
+      "name": "Duc des Lombards",
+      "shortName": "Duc",
+      "url": "https://ducdeslombards.com",
+      "address": "42 rue des Lombards, 75001 Paris",
+      "city": "par",
+      "borough": null,
+      "timezone": "Europe/Paris",
+      "neighborhood": "Châtelet",
+      "color": "#d92f45"
+    },
+    {
+      "id": "sunset",
+      "name": "Sunset",
+      "shortName": "Sunset",
+      "url": "https://www.sunset-sunside.com",
+      "address": "60 rue des Lombards, 75001 Paris",
+      "city": "par",
+      "borough": null,
+      "timezone": "Europe/Paris",
+      "neighborhood": "Châtelet",
+      "color": "#ff7847"
+    },
+    {
+      "id": "sunside",
+      "name": "Sunside",
+      "shortName": "Sunside",
+      "url": "https://www.sunset-sunside.com",
+      "address": "60 rue des Lombards, 75001 Paris",
+      "city": "par",
+      "borough": null,
+      "timezone": "Europe/Paris",
+      "neighborhood": "Châtelet",
+      "color": "#6fc3e8"
+    },
+    {
+      "id": "newmorning",
+      "name": "New Morning",
+      "shortName": "New Morning",
+      "url": "https://www.newmorning.com",
+      "address": "7-9 rue des Petites Écuries, 75010 Paris",
+      "city": "par",
+      "borough": null,
+      "timezone": "Europe/Paris",
+      "neighborhood": "10e",
+      "color": "#3fae62"
+    },
+    {
+      "id": "caveau",
+      "name": "Caveau de la Huchette",
+      "shortName": "Caveau",
+      "url": "https://www.caveaudelahuchette.fr",
+      "address": "5 rue de la Huchette, 75005 Paris",
+      "city": "par",
+      "borough": null,
+      "timezone": "Europe/Paris",
+      "neighborhood": "Quartier Latin",
+      "color": "#d9b45a"
+    },
+    {
+      "id": "balblomet",
+      "name": "Bal Blomet",
+      "shortName": "Bal Blomet",
+      "url": "https://www.balblomet.fr",
+      "address": "33 rue Blomet, 75015 Paris",
+      "city": "par",
+      "borough": null,
+      "timezone": "Europe/Paris",
+      "neighborhood": "15e",
+      "color": "#9b6bd0"
+    },
+    {
+      "id": "riv38",
+      "name": "38 Riv",
+      "shortName": "38 Riv",
+      "url": "https://38riv.com",
+      "address": "38 rue de Rivoli, 75004 Paris",
+      "city": "par",
+      "borough": null,
+      "timezone": "Europe/Paris",
+      "neighborhood": "Le Marais",
+      "color": "#e86fa8"
+    }
+  ],
+  "errors": [],
+  "events": [
+    {
+      "id": "duc:2026-07-15:amina-figarova-sextet",
+      "clubId": "duc",
+      "title": "Amina Figarova Sextet",
+      "date": "2026-07-15",
+      "sets": [
+        "19:30",
+        "22:00"
+      ],
+      "url": "https://ducdeslombards.com/fr/l-agenda/amina-figarova-sextet",
+      "details": "Piano Master",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "duc:2026-07-16:amina-figarova-sextet",
+      "clubId": "duc",
+      "title": "Amina Figarova Sextet",
+      "date": "2026-07-16",
+      "sets": [
+        "19:30",
+        "22:00"
+      ],
+      "url": "https://ducdeslombards.com/fr/l-agenda/amina-figarova-sextet",
+      "details": "Piano Master",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "duc:2026-07-17:mario-canonge-trio",
+      "clubId": "duc",
+      "title": "MARIO CANONGE TRIO",
+      "date": "2026-07-17",
+      "sets": [
+        "19:30",
+        "22:00"
+      ],
+      "url": "https://ducdeslombards.com/fr/l-agenda/mario-canonge-trio",
+      "details": "Caraibes",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "duc:2026-07-17:jam-du-duc",
+      "clubId": "duc",
+      "title": "JAM DU DUC",
+      "date": "2026-07-17",
+      "sets": [
+        "23:30"
+      ],
+      "url": "https://ducdeslombards.com/fr/l-agenda/jam-du-duc-simon-chivallon-11",
+      "details": null,
+      "personnel": null,
+      "late": true,
+      "priceText": null
+    },
+    {
+      "id": "duc:2026-07-18:the-brooks",
+      "clubId": "duc",
+      "title": "The Brooks",
+      "date": "2026-07-18",
+      "sets": [
+        "19:30",
+        "22:00"
+      ],
+      "url": "https://ducdeslombards.com/fr/l-agenda/brooks-0",
+      "details": "FUNK",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "duc:2026-07-18:jam-du-duc",
+      "clubId": "duc",
+      "title": "JAM DU DUC",
+      "date": "2026-07-18",
+      "sets": [
+        "23:30"
+      ],
+      "url": "https://ducdeslombards.com/fr/l-agenda/jam-du-duc-paul-morvan-16",
+      "details": null,
+      "personnel": null,
+      "late": true,
+      "priceText": null
+    },
+    {
+      "id": "duc:2026-07-20:ege-turev",
+      "clubId": "duc",
+      "title": "Ege Turev",
+      "date": "2026-07-20",
+      "sets": [
+        "19:30",
+        "22:00"
+      ],
+      "url": "https://ducdeslombards.com/fr/l-agenda/ege-turev",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "duc:2026-07-21:th-odore-kuzma-trio",
+      "clubId": "duc",
+      "title": "Théodore Kuzma Trio",
+      "date": "2026-07-21",
+      "sets": [
+        "19:30",
+        "22:00"
+      ],
+      "url": "https://ducdeslombards.com/fr/l-agenda/theodore-kuzma-trio",
+      "details": "Piano chic",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "duc:2026-07-22:laura-anglade",
+      "clubId": "duc",
+      "title": "Laura Anglade",
+      "date": "2026-07-22",
+      "sets": [
+        "19:30",
+        "22:00"
+      ],
+      "url": "https://ducdeslombards.com/fr/l-agenda/laura-anglade",
+      "details": "VOCAL",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "duc:2026-07-23:laura-anglade",
+      "clubId": "duc",
+      "title": "Laura Anglade",
+      "date": "2026-07-23",
+      "sets": [
+        "19:30",
+        "22:00"
+      ],
+      "url": "https://ducdeslombards.com/fr/l-agenda/laura-anglade",
+      "details": "VOCAL",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "duc:2026-07-24:gabrielle-cavassa",
+      "clubId": "duc",
+      "title": "Gabrielle Cavassa",
+      "date": "2026-07-24",
+      "sets": [
+        "19:30",
+        "22:00"
+      ],
+      "url": "https://ducdeslombards.com/fr/l-agenda/gabrielle-cavassa",
+      "details": "VOCAL",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "duc:2026-07-24:jam-du-duc",
+      "clubId": "duc",
+      "title": "JAM DU DUC",
+      "date": "2026-07-24",
+      "sets": [
+        "23:30"
+      ],
+      "url": "https://ducdeslombards.com/fr/l-agenda/jam-du-duc-angela-grey",
+      "details": null,
+      "personnel": null,
+      "late": true,
+      "priceText": null
+    },
+    {
+      "id": "duc:2026-07-25:gabrielle-cavassa",
+      "clubId": "duc",
+      "title": "Gabrielle Cavassa",
+      "date": "2026-07-25",
+      "sets": [
+        "19:30",
+        "22:00"
+      ],
+      "url": "https://ducdeslombards.com/fr/l-agenda/gabrielle-cavassa",
+      "details": "VOCAL",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "duc:2026-07-25:jam-du-duc",
+      "clubId": "duc",
+      "title": "JAM DU DUC",
+      "date": "2026-07-25",
+      "sets": [
+        "23:30"
+      ],
+      "url": "https://ducdeslombards.com/fr/l-agenda/jam-du-duc-paul-morvan-17",
+      "details": null,
+      "personnel": null,
+      "late": true,
+      "priceText": null
+    },
+    {
+      "id": "duc:2026-07-27:david-graham-the-eskimo-brothers",
+      "clubId": "duc",
+      "title": "David Graham & The Eskimo Brothers",
+      "date": "2026-07-27",
+      "sets": [
+        "19:30",
+        "22:00"
+      ],
+      "url": "https://ducdeslombards.com/fr/l-agenda/david-graham-eskimo-brothers-featuring-special-guest-ben-waters",
+      "details": "BLUES",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "duc:2026-07-28:david-graham-the-eskimo-brothers",
+      "clubId": "duc",
+      "title": "David Graham & The Eskimo Brothers",
+      "date": "2026-07-28",
+      "sets": [
+        "19:30",
+        "22:00"
+      ],
+      "url": "https://ducdeslombards.com/fr/l-agenda/david-graham-eskimo-brothers-featuring-special-guest-ben-waters",
+      "details": "BLUES",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "duc:2026-07-29:snorre-kirk-european-quartet",
+      "clubId": "duc",
+      "title": "Snorre Kirk European Quartet",
+      "date": "2026-07-29",
+      "sets": [
+        "19:30",
+        "22:00"
+      ],
+      "url": "https://ducdeslombards.com/fr/l-agenda/snorre-kirk-european-quartet-1",
+      "details": "swing",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "duc:2026-07-30:snorre-kirk-european-quartet",
+      "clubId": "duc",
+      "title": "Snorre Kirk European Quartet",
+      "date": "2026-07-30",
+      "sets": [
+        "19:30",
+        "22:00"
+      ],
+      "url": "https://ducdeslombards.com/fr/l-agenda/snorre-kirk-european-quartet-1",
+      "details": "swing",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "duc:2026-07-31:carte-blanche-benjamin-petit",
+      "clubId": "duc",
+      "title": "Carte blanche à Benjamin Petit",
+      "date": "2026-07-31",
+      "sets": [
+        "19:30",
+        "22:00"
+      ],
+      "url": "https://ducdeslombards.com/fr/l-agenda/carte-blanche-benjamin-petit-guests",
+      "details": "CARTE BLANCHE",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "duc:2026-07-31:jam-du-duc",
+      "clubId": "duc",
+      "title": "JAM DU DUC",
+      "date": "2026-07-31",
+      "sets": [
+        "23:30"
+      ],
+      "url": "https://ducdeslombards.com/fr/l-agenda/jam-du-duc-simon-chivallon-12",
+      "details": null,
+      "personnel": null,
+      "late": true,
+      "priceText": null
+    },
+    {
+      "id": "duc:2026-08-01:carte-blanche-benjamin-petit",
+      "clubId": "duc",
+      "title": "Carte blanche à Benjamin Petit",
+      "date": "2026-08-01",
+      "sets": [
+        "19:30",
+        "22:00"
+      ],
+      "url": "https://ducdeslombards.com/fr/l-agenda/carte-blanche-benjamin-petit-guests",
+      "details": "CARTE BLANCHE",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "duc:2026-08-01:jam-du-duc",
+      "clubId": "duc",
+      "title": "JAM DU DUC",
+      "date": "2026-08-01",
+      "sets": [
+        "23:30"
+      ],
+      "url": "https://ducdeslombards.com/fr/l-agenda/jam-du-duc-franck-amsallem-7",
+      "details": null,
+      "personnel": null,
+      "late": true,
+      "priceText": null
+    },
+    {
+      "id": "duc:2026-08-26:tierney-sutton-meets-charlier-sourisse",
+      "clubId": "duc",
+      "title": "Tierney Sutton meets Charlier/Sourisse",
+      "date": "2026-08-26",
+      "sets": [
+        "19:30",
+        "22:00"
+      ],
+      "url": "https://ducdeslombards.com/fr/l-agenda/tierney-sutton-meets-charliersourisse-feat-serge-merlaud-talking-sun",
+      "details": "Standards",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "duc:2026-08-27:tierney-sutton-meets-charlier-sourisse",
+      "clubId": "duc",
+      "title": "Tierney Sutton meets Charlier/Sourisse",
+      "date": "2026-08-27",
+      "sets": [
+        "19:30",
+        "22:00"
+      ],
+      "url": "https://ducdeslombards.com/fr/l-agenda/tierney-sutton-meets-charliersourisse-feat-serge-merlaud-talking-sun",
+      "details": "Standards",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "duc:2026-08-28:april-varner-quintet",
+      "clubId": "duc",
+      "title": "April Varner Quintet",
+      "date": "2026-08-28",
+      "sets": [
+        "19:30",
+        "22:00"
+      ],
+      "url": "https://ducdeslombards.com/fr/l-agenda/april-varner-quintet",
+      "details": "VOCAL",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "duc:2026-08-29:april-varner-quintet",
+      "clubId": "duc",
+      "title": "April Varner Quintet",
+      "date": "2026-08-29",
+      "sets": [
+        "19:30",
+        "22:00"
+      ],
+      "url": "https://ducdeslombards.com/fr/l-agenda/april-varner-quintet",
+      "details": "VOCAL",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "duc:2026-08-31:daniele-germani-quartet",
+      "clubId": "duc",
+      "title": "Daniele Germani Quartet",
+      "date": "2026-08-31",
+      "sets": [
+        "19:30",
+        "22:00"
+      ],
+      "url": "https://ducdeslombards.com/fr/l-agenda/daniele-germani-quartet",
+      "details": "Coup de coeur",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "duc:2026-09-01:anthony-strong",
+      "clubId": "duc",
+      "title": "Anthony Strong",
+      "date": "2026-09-01",
+      "sets": [
+        "19:30",
+        "22:00"
+      ],
+      "url": "https://ducdeslombards.com/fr/l-agenda/anthony-strong-2",
+      "details": "CROONER",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "duc:2026-09-02:anthony-strong",
+      "clubId": "duc",
+      "title": "Anthony Strong",
+      "date": "2026-09-02",
+      "sets": [
+        "19:30",
+        "22:00"
+      ],
+      "url": "https://ducdeslombards.com/fr/l-agenda/anthony-strong-2",
+      "details": "CROONER",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "duc:2026-09-03:anthony-strong",
+      "clubId": "duc",
+      "title": "Anthony Strong",
+      "date": "2026-09-03",
+      "sets": [
+        "19:30",
+        "22:00"
+      ],
+      "url": "https://ducdeslombards.com/fr/l-agenda/anthony-strong-2",
+      "details": "CROONER",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "duc:2026-09-04:wajdi-riahi-trio",
+      "clubId": "duc",
+      "title": "Wajdi Riahi Trio",
+      "date": "2026-09-04",
+      "sets": [
+        "19:30",
+        "22:00"
+      ],
+      "url": "https://ducdeslombards.com/fr/l-agenda/wajdi-riahi-trio",
+      "details": "Art du trio",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "duc:2026-09-05:wajdi-riahi-trio",
+      "clubId": "duc",
+      "title": "Wajdi Riahi Trio",
+      "date": "2026-09-05",
+      "sets": [
+        "19:30",
+        "22:00"
+      ],
+      "url": "https://ducdeslombards.com/fr/l-agenda/wajdi-riahi-trio",
+      "details": "Art du trio",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "duc:2026-09-07:ege-turev",
+      "clubId": "duc",
+      "title": "Ege Turev",
+      "date": "2026-09-07",
+      "sets": [
+        "19:30",
+        "22:00"
+      ],
+      "url": "https://ducdeslombards.com/fr/l-agenda/ege-turev-0",
+      "details": "DRUMS NEWCOMER",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "duc:2026-09-09:calo",
+      "clubId": "duc",
+      "title": "Caloé",
+      "date": "2026-09-09",
+      "sets": [
+        "19:30",
+        "22:00"
+      ],
+      "url": "https://ducdeslombards.com/fr/l-agenda/caloe-le-voyageur-fete-ses-2-ans",
+      "details": "VOCAL",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "duc:2026-09-10:olivier-temime-quartet",
+      "clubId": "duc",
+      "title": "Olivier Temime Quartet",
+      "date": "2026-09-10",
+      "sets": [
+        "19:30",
+        "22:00"
+      ],
+      "url": "https://ducdeslombards.com/fr/l-agenda/olivier-temime-quartet-sortie-de-l-album-marcenay-encore-chez-mama-tiger-music",
+      "details": "POWER QUARTET",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "duc:2026-09-15:tristan-guillaume-quintet",
+      "clubId": "duc",
+      "title": "Tristan Guillaume Quintet",
+      "date": "2026-09-15",
+      "sets": [
+        "19:30",
+        "22:00"
+      ],
+      "url": "https://ducdeslombards.com/fr/l-agenda/tristan-guillaume-quintet",
+      "details": "FUSION",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "duc:2026-09-16:harry-allen-martin-sasse",
+      "clubId": "duc",
+      "title": "Harry Allen - Martin Sasse",
+      "date": "2026-09-16",
+      "sets": [
+        "19:30",
+        "22:00"
+      ],
+      "url": "https://ducdeslombards.com/fr/l-agenda/harry-allen-martin-sasse-quartet",
+      "details": "SWING MASTERS",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "duc:2026-09-17:bria-skonberg",
+      "clubId": "duc",
+      "title": "Bria Skonberg",
+      "date": "2026-09-17",
+      "sets": [
+        "19:30",
+        "22:00"
+      ],
+      "url": "https://ducdeslombards.com/fr/l-agenda/bria-skonberg-1",
+      "details": "Coup de coeur",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "duc:2026-09-18:bria-skonberg",
+      "clubId": "duc",
+      "title": "Bria Skonberg",
+      "date": "2026-09-18",
+      "sets": [
+        "19:30",
+        "22:00"
+      ],
+      "url": "https://ducdeslombards.com/fr/l-agenda/bria-skonberg-1",
+      "details": "Coup de coeur",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "duc:2026-09-21:naama-sings-songs-from-the-road",
+      "clubId": "duc",
+      "title": "Naama Sings Songs From The Road",
+      "date": "2026-09-21",
+      "sets": [
+        "19:30",
+        "22:00"
+      ],
+      "url": "https://ducdeslombards.com/fr/l-agenda/naama-sings-songs-road",
+      "details": "VOCAL",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "duc:2026-09-24:ruthie-foster",
+      "clubId": "duc",
+      "title": "Ruthie Foster",
+      "date": "2026-09-24",
+      "sets": [
+        "19:30",
+        "22:00"
+      ],
+      "url": "https://ducdeslombards.com/fr/l-agenda/ruthie-foster",
+      "details": "BLUES",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "duc:2026-09-25:obradovic-tixier-duo",
+      "clubId": "duc",
+      "title": "Obradovic-Tixier Duo",
+      "date": "2026-09-25",
+      "sets": [
+        "19:30",
+        "22:00"
+      ],
+      "url": "https://ducdeslombards.com/fr/l-agenda/obradovic-tixier-duo-told-10-year-anniversary-release-party",
+      "details": "Futuristic",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "duc:2026-09-26:frode-kjekstad-eric-alexander-quartet",
+      "clubId": "duc",
+      "title": "Frode Kjekstad / Eric Alexander Quartet",
+      "date": "2026-09-26",
+      "sets": [
+        "19:30",
+        "22:00"
+      ],
+      "url": "https://ducdeslombards.com/fr/l-agenda/frode-kjekstad-eric-alexander-quartet",
+      "details": "Standards",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "duc:2026-09-28:th-odore-kuzma-quartet",
+      "clubId": "duc",
+      "title": "Théodore Kuzma Quartet",
+      "date": "2026-09-28",
+      "sets": [
+        "19:30",
+        "22:00"
+      ],
+      "url": "https://ducdeslombards.com/fr/l-agenda/theodore-kuzma-quartet",
+      "details": "Standards",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "duc:2026-09-29:midva-lofi-ensemble",
+      "clubId": "duc",
+      "title": "Midva Lofi Ensemble",
+      "date": "2026-09-29",
+      "sets": [
+        "19:30",
+        "22:00"
+      ],
+      "url": "https://ducdeslombards.com/fr/l-agenda/midva-lofi-ensemble",
+      "details": "FUSION",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "duc:2026-09-30:baptiste-herbin-fred-nardin-4tet",
+      "clubId": "duc",
+      "title": "Baptiste Herbin / Fred Nardin 4tet",
+      "date": "2026-09-30",
+      "sets": [
+        "19:30",
+        "22:00"
+      ],
+      "url": "https://ducdeslombards.com/fr/l-agenda/baptiste-herbin-fred-nardin-4tet-feat-darryl-hall-leon-parker",
+      "details": "JAZZ MASTERS",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "duc:2026-10-01:baptiste-herbin-fred-nardin-4tet",
+      "clubId": "duc",
+      "title": "Baptiste Herbin / Fred Nardin 4tet",
+      "date": "2026-10-01",
+      "sets": [
+        "19:30",
+        "22:00"
+      ],
+      "url": "https://ducdeslombards.com/fr/l-agenda/baptiste-herbin-fred-nardin-4tet-feat-darryl-hall-leon-parker",
+      "details": "JAZZ MASTERS",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "duc:2026-10-06:kassa-overall",
+      "clubId": "duc",
+      "title": "Kassa Overall",
+      "date": "2026-10-06",
+      "sets": [
+        "19:30",
+        "22:00"
+      ],
+      "url": "https://ducdeslombards.com/fr/l-agenda/kassa-overall",
+      "details": "Comme à New York",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "duc:2026-10-07:kassa-overall",
+      "clubId": "duc",
+      "title": "Kassa Overall",
+      "date": "2026-10-07",
+      "sets": [
+        "19:30",
+        "22:00"
+      ],
+      "url": "https://ducdeslombards.com/fr/l-agenda/kassa-overall",
+      "details": "Comme à New York",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "duc:2026-10-16:tchavolo-schmitt-trio",
+      "clubId": "duc",
+      "title": "Tchavolo Schmitt Trio",
+      "date": "2026-10-16",
+      "sets": [
+        "19:30",
+        "22:00"
+      ],
+      "url": "https://ducdeslombards.com/fr/l-agenda/tchavolo-schmitt-trio-3",
+      "details": "Manouche",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "duc:2026-10-17:tchavolo-schmitt-trio",
+      "clubId": "duc",
+      "title": "Tchavolo Schmitt Trio",
+      "date": "2026-10-17",
+      "sets": [
+        "19:30",
+        "22:00"
+      ],
+      "url": "https://ducdeslombards.com/fr/l-agenda/tchavolo-schmitt-trio-3",
+      "details": "Manouche",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "duc:2026-10-28:okonski",
+      "clubId": "duc",
+      "title": "OKONSKI",
+      "date": "2026-10-28",
+      "sets": [
+        "19:30",
+        "22:00"
+      ],
+      "url": "https://ducdeslombards.com/fr/l-agenda/okonski",
+      "details": "Art du trio",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "duc:2026-11-25:gabi-hartmann",
+      "clubId": "duc",
+      "title": "Gabi Hartmann",
+      "date": "2026-11-25",
+      "sets": [
+        "19:30",
+        "22:00"
+      ],
+      "url": "https://ducdeslombards.com/fr/l-agenda/gabi-hartmann-4",
+      "details": "JAZZ/SOUL/WORLD",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "duc:2026-11-26:gabi-hartmann",
+      "clubId": "duc",
+      "title": "Gabi Hartmann",
+      "date": "2026-11-26",
+      "sets": [
+        "19:30",
+        "22:00"
+      ],
+      "url": "https://ducdeslombards.com/fr/l-agenda/gabi-hartmann-4",
+      "details": "JAZZ/SOUL/WORLD",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "duc:2026-11-27:gabi-hartmann",
+      "clubId": "duc",
+      "title": "Gabi Hartmann",
+      "date": "2026-11-27",
+      "sets": [
+        "19:30",
+        "22:00"
+      ],
+      "url": "https://ducdeslombards.com/fr/l-agenda/gabi-hartmann-4",
+      "details": "JAZZ/SOUL/WORLD",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "duc:2026-11-28:gabi-hartmann",
+      "clubId": "duc",
+      "title": "Gabi Hartmann",
+      "date": "2026-11-28",
+      "sets": [
+        "19:30",
+        "22:00"
+      ],
+      "url": "https://ducdeslombards.com/fr/l-agenda/gabi-hartmann-4",
+      "details": "JAZZ/SOUL/WORLD",
+      "personnel": null,
+      "priceText": null
+    }
+  ]
+}

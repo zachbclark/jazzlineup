@@ -184,8 +184,33 @@ times from description text; verify against reality after first live crawl.
 - [ ] **San Francisco — city 4 (next up):**
       SFJAZZ · Black Cat (the young-scene room) · Keys Jazz Bistro ·
       Mr. Tipple's · Bird & Beckett · Yoshi's (Oakland). West Coast pair w/ LA
-- [ ] Paris/Berlin repeat the LA playbook (timezone correctness matters here —
-      covered by the Phase 0 registry fields)
+- [x] **Paris — city 5, BUILT 2026-07-16 (deploy pending):** 7 venues.
+      Duc des Lombards (Drupal agenda, per-night set times) · Sunset +
+      Sunside (tribe REST, one module two rooms) · New Morning (JSON-LD
+      agenda, no published set times) · Caveau de la Huchette (French
+      prose date parser: singles/pairs/ranges, 21h30 nightly) · Bal Blomet
+      (Eventer, ?terms_cats jazz filter) · 38 Riv (listing + detail-page
+      set enrichment with reuse). New shared helpers: _tribe.js, _fr.js.
+      24-hour time display for European cities (clock24 per city)
+- [ ] **Tokyo — city 6 (Zach's pick, i18n first):** romaji search layer so
+      kanji/kana titles match latin queries; personnel lexicon bypass;
+      then Blue Note Tokyo · Cotton Club · Body & Soul · Pit Inn · Alfie
+- [ ] **Jazz festivals as seasonal venues (greenlit 2026-07-16):**
+      `seasonal: true` registry flag, chip renders only when events exist.
+      Nearest first: Charlie Parker Jazz Fest (NYC, late Aug) · Chicago
+      Jazz Fest (Labor Day) · Hyde Park Jazz Fest (Sept) · Angel City
+      (LA, Sept-Oct) · Winter Jazzfest (NYC, Jan) · Vision Fest (June)
+- BACKLOG: Freight & Salvage (Berkeley) — Cloudflare blocks non-browser
+  clients on the genre-tagged site; TNEW ticketing API works but has no
+  genre field. Module built and kept (clubs/freight.js + tests). Revisit
+  via venue outreach or if genre data appears in the API
+- BACKLOG: SFJAZZ crawler blocked the same way (cf-mitigated: challenge on
+  their own ace-api). Play: email their team for a UA allowlist — we send
+  them ticket buyers; decide meanwhile whether the chip stays (stale data +
+  standing drift alarm) or waits in the registry comments like Freight
+- [ ] London + Berlin repeat the Paris playbook (Ronnie Scott's, 606,
+      Vortex, Jazz Cafe, Cafe OTO; A-Trane, Quasimodo, Zig Zag, Donau115.
+      Berlin note: German instrument names won't parse as personnel)
 - [ ] Tokyo — the endgame (strongest scene on earth; blocked on real i18n:
       Japanese titles break the personnel lexicon + romaji search)
 

@@ -1359,3 +1359,139 @@ ok('freight: jazz-family genres kept, roots dropped; date ordinals parse', () =>
   assert.equal(evs[1].date, '2026-07-31');
   assert.deepEqual(evs[1].sets, ['21:00']);
 });
+
+// ============================================================== Paris ======
+
+// --- Duc des Lombards (Drupal agenda) ------------------------------------------------
+import { parse as ducParse } from './clubs/ducdeslombards.js';
+ok('duc: multi-night card -> one event per night with both sets; French months', () => {
+  const art = `
+  <article class="col-xs-12 mosaique-evt-item-container module-item">
+    <a href="/fr/l-agenda/amina-figarova-sextet" class="mosaique-evt-item evenement" aria-label="Amina Figarova Sextet">
+      <div class="mosaique-evt-ruban etiquette-">Piano Master</div>
+      <div class="mosaique-evt-date">
+        <!-- $event : 'annule','reporte','termine' - $places : 'complet' -->
+        <div class="mosaique-evt-date-header h4"><div class="evt-date-jour">mer.</div><div>15 juil.</div></div>
+        <div class="mosaique-evt-date-heure"><div class="evt-date-heure">19H30</div></div>
+        <div class="mosaique-evt-date-heure"><div class="evt-date-heure">22H00</div></div>
+      </div>
+      <div class="mosaique-evt-date">
+        <div class="mosaique-evt-date-header h4"><div class="evt-date-jour">jeu.</div><div>16 juil.</div></div>
+        <div class="mosaique-evt-date-heure"><div class="evt-date-heure">19H30</div></div>
+      </div>
+    </a>
+  </article>`;
+  const evs = ducParse(art, new Date(2026, 6, 13));
+  assert.equal(evs.length, 2);
+  assert.equal(evs[0].title, 'Amina Figarova Sextet');
+  assert.equal(evs[0].date, '2026-07-15');
+  assert.deepEqual(evs[0].sets, ['19:30', '22:00']);
+  assert.equal(evs[0].details, 'Piano Master');
+  assert.match(evs[0].url, /ducdeslombards\.com\/fr\/l-agenda\/amina/);
+  assert.equal(evs[1].date, '2026-07-16');
+  assert.deepEqual(evs[1].sets, ['19:30']);
+});
+
+// --- Sunset / Sunside (shared tribe REST, venue routing) ------------------------------
+import { parse as ssParse } from './clubs/sunsetsunside.js';
+ok('sunsetsunside: venue field routes to the right room; unknown venues skipped', () => {
+  const fixture = JSON.stringify({ events: [
+    { title: 'Lila-May', start_date: '2026-07-16 19:30:00',
+      url: 'https://www.sunset-sunside.com/concert/lila-may/', venue: { venue: 'Sunset' } },
+    { title: 'Marc Copland Trio', start_date: '2026-07-16 21:00:00',
+      url: 'https://www.sunset-sunside.com/concert/marc-copland-trio/', venue: { venue: 'Sunside' }, cost: '25 – 30€' },
+    { title: 'Private event', start_date: '2026-07-17 19:00:00', venue: { venue: 'Autre salle' } },
+  ] });
+  const evs = ssParse(fixture);
+  assert.equal(evs.length, 2);
+  assert.equal(evs[0].clubId, 'sunset');
+  assert.deepEqual(evs[0].sets, ['19:30']);
+  assert.equal(evs[1].clubId, 'sunside');
+  assert.equal(evs[1].priceText, '25-30€');
+});
+
+// --- New Morning (JSON-LD agenda) ------------------------------------------------------
+import { parse as nmParse } from './clubs/newmorning.js';
+ok('newmorning: JSON-LD events parsed, T00:00:00 means no set times, dupes collapse', () => {
+  const ld = JSON.stringify([
+    { '@context': 'http://schema.org', '@type': 'Event', name: 'Immanuel Wilkins Quartet',
+      startDate: '2026-07-20T00:00:00', url: 'https://www.newmorning.com/N-7717-45-ans-du-new-immanuel-wilkins-quartet.html' },
+    { '@context': 'http://schema.org', '@type': 'Event', name: 'Immanuel Wilkins Quartet',
+      startDate: '2026-07-20T00:00:00', url: 'https://www.newmorning.com/N-7717-45-ans-du-new-immanuel-wilkins-quartet.html' },
+    { '@context': 'http://schema.org', '@type': 'WebSite', url: 'https://www.newmorning.com' },
+  ]);
+  const html = `<html><script type="application/ld+json">${ld}</script></html>`;
+  const evs = nmParse(html);
+  assert.equal(evs.length, 1);
+  assert.equal(evs[0].title, 'Immanuel Wilkins Quartet');
+  assert.equal(evs[0].date, '2026-07-20');
+  assert.deepEqual(evs[0].sets, []);
+  assert.match(evs[0].url, /N-7717/);
+});
+
+// --- Caveau de la Huchette (French prose dates) ----------------------------------------
+import { expandLine, parseMonthPage } from './clubs/caveau.js';
+ok('caveau: singles, pairs, and ranges expand; nightly 21h30', () => {
+  assert.deepEqual(expandLine('Lundi 6 juillet : Blues Monday').entries, [{ day: 6, title: 'Blues Monday' }]);
+  assert.equal(expandLine('Jeudi 16 et vendredi 17 juillet : Sebastian Ellis Band').entries.length, 2);
+  assert.deepEqual(expandLine('Du jeudi 9 au samedi 11 juillet : Danger Zone').entries.map((e) => e.day), [9, 10, 11]);
+  const html = `<html><body><h1>Concerts juillet 2026</h1>
+    <p>Lundi 6 juillet : Blues Monday</p>
+    <p>Du dimanche 12 au mercredi 15 juillet : Harlem Swing Orchestra</p>
+  </body></html>`;
+  const evs = parseMonthPage(html, 'https://www.caveaudelahuchette.fr/1/concerts_juillet_2026_1483430.html');
+  assert.equal(evs.length, 5);
+  assert.equal(evs[0].date, '2026-07-06');
+  assert.deepEqual(evs[0].sets, ['21:30']);
+  assert.equal(evs[4].date, '2026-07-15');
+  assert.equal(evs[4].title, 'Harlem Swing Orchestra');
+});
+
+// --- Bal Blomet (Eventer, jazz-filtered URL) --------------------------------------------
+import { parse as bbmParse } from './clubs/balblomet.js';
+ok('balblomet: edate link carries the date; time from the visible text', () => {
+  const html = `
+  <li class="eventer-event-item eventer-p2-event-list-item">
+    <h4 class="eventer-event-title"><a href="https://www.balblomet.fr/evenement/paul-lay-et-baptiste-herbin/edate/2026-09-11" class="eventer-event-item-link"><span class="eventer-event-title">PAUL LAY &amp; BAPTISTE HERBIN – TEA FOR TWO</span></a></h4>
+    <div class="eventer-list-meta">11-09-2026 20:00 vendredi, 20:00 à 21:30</div>
+  </li>`;
+  const evs = bbmParse(html);
+  assert.equal(evs.length, 1);
+  assert.equal(evs[0].title, 'PAUL LAY & BAPTISTE HERBIN – TEA FOR TWO');
+  assert.equal(evs[0].date, '2026-09-11');
+  assert.deepEqual(evs[0].sets, ['20:00']);
+});
+
+// --- 38 Riv (listing + detail set times + reuse) -------------------------------------------
+import { parse as rivParse, parseDetailSets } from './clubs/riv38.js';
+ok('riv38: listing gives dates; detail pages give per-date set times', () => {
+  const listing = `
+  <div class="views-row"><article class="_container agenda-item-container">
+    <a href="/concerts/sarah-king-trio" aria-label="Sarah King trio" class="agenda-item group">
+      <span>VENDREDI</span> <span>VEN.</span> <span>17/</span> <span>JUILLET</span> <span>07/</span> <span>2026</span>
+      <h3>SARAH KING TRIO</h3>
+    </a>
+  </article></div>`;
+  const evs = rivParse(listing);
+  assert.equal(evs.length, 1);
+  assert.equal(evs[0].title, 'Sarah King trio');
+  assert.equal(evs[0].date, '2026-07-17');
+  assert.match(evs[0].url, /38riv\.com\/concerts\/sarah-king-trio/);
+  const detail = '<div>VEN. 17 /07 /2026 19:30</div><div>VEN. 17 /07 /2026 21:30</div><div>SAM. 18 /07 /2026 19:30</div>';
+  const byDate = parseDetailSets(detail);
+  assert.deepEqual(byDate.get('2026-07-17'), ['19:30', '21:30']);
+  assert.deepEqual(byDate.get('2026-07-18'), ['19:30']);
+});
+
+// --- SFJAZZ seed fallback (Cloudflare workaround, 2026-07-16) -------------------------
+import { SEED as sfjSeed } from './clubs/sfjazz-seed.js';
+ok('sfjazz seed: valid shape, groups into set-merged events via the normal parser', () => {
+  assert.ok(sfjSeed.length >= 40, `seed thin: ${sfjSeed.length}`);
+  assert.ok(sfjSeed.every((e) => e.name && /^\d{4}-\d{2}-\d{2}T/.test(e.eventDate) && e.eventTypes));
+  const evs = sfjParse(JSON.stringify(sfjSeed));
+  assert.ok(evs.length >= 25, `grouped events thin: ${evs.length}`);
+  const cornish = evs.filter((e) => /paul cornish/i.test(e.title));
+  assert.equal(cornish.length, 2, 'Paul Cornish Trio: two nights');
+  assert.deepEqual(cornish[0].sets, ['19:00', '20:30'], 'two sets merged per night');
+  assert.equal(cornish[0].details, 'Joe Henderson Lab');
+});

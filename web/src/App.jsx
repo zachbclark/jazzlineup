@@ -1,5 +1,5 @@
 import React, { useEffect, useMemo, useState } from 'react';
-import { CITIES, fetchData, initialCity, todayIso, relTime, searchNorm, eventMatches } from './api';
+import { CITIES, fetchData, initialCity, todayIso, relTime, searchNorm, eventMatches, setClock24 } from './api';
 import SearchBox from './components/SearchBox';
 import { useIsMobile } from './useIsMobile';
 import CitySwitcher from './components/CitySwitcher';
@@ -26,6 +26,9 @@ export default function App() {
   // lineup shows in the day drawer immediately.
   const [view, setView] = useState('month');
   const isMobile = useIsMobile();
+  // synchronous (not an effect): time formatting must be right on the same
+  // render that shows the new city's events
+  setClock24(CITIES.find((c) => c.id === city)?.clock24 ?? false);
   const now = new Date();
   const [cursor, setCursor] = useState({ y: now.getFullYear(), m: now.getMonth() + 1 });
 
@@ -46,10 +49,12 @@ export default function App() {
       .catch((e) => setError(String(e.message ?? e)));
   }, [city]);
 
+  const cityLabel = CITIES.find((c) => c.id === city)?.label ?? city.toUpperCase();
+
   // Keep the browser tab honest when switching cities (was stuck on NYC).
   useEffect(() => {
-    document.title = `Jazz Lineup: live jazz in ${city.toUpperCase()} tonight`;
-  }, [city]);
+    document.title = `Jazz Lineup: live jazz in ${cityLabel} tonight`;
+  }, [cityLabel]);
 
   const changeCity = (id) => {
     setCity(id);
@@ -203,8 +208,8 @@ export default function App() {
       {searching && (
         <div className="search-summary">
           {results.length
-            ? <><strong>{results.length}</strong> show{results.length === 1 ? '' : 's'} across all {city.toUpperCase()} venues</>
-            : <>No matches in {city.toUpperCase()}</>}
+            ? <><strong>{results.length}</strong> show{results.length === 1 ? '' : 's'} across all {cityLabel} venues</>
+            : <>No matches in {cityLabel}</>}
           {otherMatches.map(({ city: oc, count }) => (
             <button key={oc.id} className="other-city" onClick={() => changeCity(oc.id)}>
               {count} in {oc.label} &rarr;

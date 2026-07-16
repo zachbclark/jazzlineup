@@ -4,8 +4,9 @@
 export const CITIES = [
   { id: 'nyc', label: 'NYC' },
   { id: 'la', label: 'LA' },
-  { id: 'chi', label: 'CHI' },
+  { id: 'chi', label: 'CHICAGO' },
   { id: 'sf', label: 'SF' },
+  { id: 'par', label: 'PARIS', clock24: true },
 ];
 
 export function initialCity() {
@@ -22,9 +23,15 @@ export async function fetchData(city = 'nyc') {
   return r.json(); // { generatedAt, city, clubs, errors, events }
 }
 
+// European cities read 24h ("20h30"); US cities keep 12h ("8:30 PM").
+// App calls setClock24 whenever the active city changes.
+let _clock24 = false;
+export function setClock24(v) { _clock24 = !!v; }
+
 export function fmtTime(hhmm) {
   if (!hhmm) return '';
   const [h, m] = hhmm.split(':').map(Number);
+  if (_clock24) return m ? `${h}h${String(m).padStart(2, '0')}` : `${h}h`;
   const ap = h >= 12 ? 'PM' : 'AM';
   const h12 = h % 12 === 0 ? 12 : h % 12;
   return m ? `${h12}:${String(m).padStart(2, '0')} ${ap}` : `${h12} ${ap}`;

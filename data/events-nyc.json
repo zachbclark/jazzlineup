@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-15T23:42:03.238Z",
+  "generatedAt": "2026-07-16T01:13:52.888Z",
   "city": "nyc",
   "clubs": [
     {
@@ -1061,19 +1061,6 @@
       "priceText": null
     },
     {
-      "id": "birdland:2026-07-14:vince-giordano-and-the-nighthawks-theater",
-      "clubId": "birdland",
-      "title": "Vince Giordano and the Nighthawks (Theater)",
-      "date": "2026-07-14",
-      "sets": [
-        "20:30"
-      ],
-      "url": "https://www.birdlandjazz.com/tm-event/vince-giordano-and-the-nighthawks-104/",
-      "details": "Birdland Theater — Doors @ 7:30PM",
-      "personnel": null,
-      "priceText": null
-    },
-    {
       "id": "lunatico:2026-07-14:bobby-hawk-w-cole-kamen-green-jacob-drab-bill-campbell-chris",
       "clubId": "lunatico",
       "title": "Bobby Hawk w/Cole Kamen-Green | Jacob Drab | Bill Campbell | Chris Parker",
@@ -1084,19 +1071,6 @@
       ],
       "url": "https://www.barlunatico.com/calendar/2025/8/13/bobby-hawk-ad-hawk-record-release-79hxa-ctp7f-43hlg",
       "details": "A completely improvised body of work, Bobby Hawk’s latest album, Ad Hawk, reveals unpredictable rhythms and riffs drawn anywhere from western-inspired twangs to ethereal spacey cosmology. We’re gonna go places with this excellent crew tonite. join us! Bobby Hawk : violin Cole Kamen-Green : trumpet J",
-      "personnel": null,
-      "priceText": null
-    },
-    {
-      "id": "birdland:2026-07-14:frank-catalano-quartet",
-      "clubId": "birdland",
-      "title": "Frank Catalano Quartet",
-      "date": "2026-07-14",
-      "sets": [
-        "21:30"
-      ],
-      "url": "https://www.birdlandjazz.com/tm-event/frank-catalano-quartet-2/",
-      "details": "Birdland Jazz Club — Doors @ 9:00PM",
       "personnel": null,
       "priceText": null
     },
@@ -1449,33 +1423,6 @@
       "priceText": null
     },
     {
-      "id": "closeup:2026-07-15:kevin-oliver-jr-maki-niento-devon-gates-gary-jones-iii",
-      "clubId": "closeup",
-      "title": "KEVIN OLIVER JR. - Maki Niento - Devon Gates - Gary Jones iii",
-      "date": "2026-07-15",
-      "sets": [
-        "19:30",
-        "21:00"
-      ],
-      "url": "https://www.viewcy.com/event/kevin_oliver_jr",
-      "details": null,
-      "personnel": [
-        {
-          "name": "KEVIN OLIVER JR.",
-          "instrument": "saxophone"
-        },
-        {
-          "name": "Maki Niento",
-          "instrument": "piano"
-        },
-        {
-          "name": "Devon Gates",
-          "instrument": "bass"
-        }
-      ],
-      "priceText": null
-    },
-    {
       "id": "ornithologycafe:2026-07-15:f-lix-lemerle-trio",
       "clubId": "ornithologycafe",
       "title": "Félix Lemerle Trio",
@@ -1512,19 +1459,6 @@
       ],
       "url": "https://www.bluenotejazz.com/nyc/tm-event/wyatt-waddell/",
       "details": "Blue Note Jazz Club",
-      "personnel": null,
-      "priceText": null
-    },
-    {
-      "id": "barbes:2026-07-15:will-bernard",
-      "clubId": "barbes",
-      "title": "WILL BERNARD",
-      "date": "2026-07-15",
-      "sets": [
-        "20:00"
-      ],
-      "url": "https://www.viewcy.com/event/will_bernard_7",
-      "details": "WILL BERNARD TRIO Will began playing and recording as a member of Peter Apfelbaum’ss Hieroglyphics Ensemble who made their recorded debut with Don Cherry on Multikulti (A&M 1989). Since then, Bernard has participated in a host of boundary stretching groups, ranging from jazz, hip-hop and world music",
       "personnel": null,
       "priceText": null
     },
@@ -1636,6 +1570,32 @@
         {
           "name": "Francisco Mela",
           "instrument": "drums"
+        }
+      ],
+      "priceText": null
+    },
+    {
+      "id": "closeup:2026-07-15:kevin-oliver-jr-maki-niento-devon-gates-gary-jones-iii",
+      "clubId": "closeup",
+      "title": "KEVIN OLIVER JR. - Maki Niento - Devon Gates - Gary Jones iii",
+      "date": "2026-07-15",
+      "sets": [
+        "21:00"
+      ],
+      "url": "https://www.viewcy.com/event/kevin_oliver_jr",
+      "details": null,
+      "personnel": [
+        {
+          "name": "KEVIN OLIVER JR.",
+          "instrument": "saxophone"
+        },
+        {
+          "name": "Maki Niento",
+          "instrument": "piano"
+        },
+        {
+          "name": "Devon Gates",
+          "instrument": "bass"
         }
       ],
       "priceText": null
@@ -10076,19 +10036,6 @@
       "priceText": "$35"
     },
     {
-      "id": "birdland:2026-07-27:vince-giordano-and-the-nighthawks-theater",
-      "clubId": "birdland",
-      "title": "Vince Giordano and the Nighthawks (Theater)",
-      "date": "2026-07-27",
-      "sets": [
-        "17:30"
-      ],
-      "url": "https://www.birdlandjazz.com/tm-event/vince-giordano-and-the-nighthawks-109/",
-      "details": "Birdland Theater — Doors @ 4:30PM",
-      "personnel": null,
-      "priceText": null
-    },
-    {
       "id": "mezzrow:2026-07-27:alan-broadbent-trio",
       "clubId": "mezzrow",
       "title": "Alan Broadbent Trio",
@@ -10319,6 +10266,19 @@
       "priceText": null
     },
     {
+      "id": "birdland:2026-07-27:vince-giordano-and-the-nighthawks-theater",
+      "clubId": "birdland",
+      "title": "Vince Giordano and the Nighthawks (Theater)",
+      "date": "2026-07-27",
+      "sets": [
+        "20:30"
+      ],
+      "url": "https://www.birdlandjazz.com/tm-event/vince-giordano-and-the-nighthawks-110/",
+      "details": "Birdland Theater — Doors @ 7:30PM",
+      "personnel": null,
+      "priceText": null
+    },
+    {
       "id": "mezzrow:2026-07-27:jesse-green-trio",
       "clubId": "mezzrow",
       "title": "Jesse Green Trio",
@@ -10405,6 +10365,19 @@
       ],
       "url": "https://www.viewcy.com/event/tropical_vortex_prese_235",
       "details": "A.B.E.L.A The Asociación de Bateristas Electrónicos de Latinoamerica (A.B.E.L.A.) i s an inclusive and transdisciplinary collective of Latinx percussionists who venture into technological exploration and their relationship with the ancestral rhythms of the American continent. “El Sindicato” (“The un",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "birdland:2026-07-27:jim-caruso-s-cast-party-with-billy-stritch",
+      "clubId": "birdland",
+      "title": "Jim Caruso's Cast Party with Billy Stritch",
+      "date": "2026-07-27",
+      "sets": [
+        "21:30"
+      ],
+      "url": "https://www.birdlandjazz.com/tm-event/jim-carusos-cast-party-16/",
+      "details": "Birdland Jazz Club — Doors @ 9:00PM",
       "personnel": null,
       "priceText": null
     },
@@ -10550,6 +10523,19 @@
       "priceText": "$35"
     },
     {
+      "id": "birdland:2026-07-28:vince-giordano-and-the-nighthawks-theater",
+      "clubId": "birdland",
+      "title": "Vince Giordano and the Nighthawks (Theater)",
+      "date": "2026-07-28",
+      "sets": [
+        "17:30"
+      ],
+      "url": "https://www.birdlandjazz.com/tm-event/vince-giordano-and-the-nighthawks-111/",
+      "details": "Birdland Theater — Doors @ 4:30PM",
+      "personnel": null,
+      "priceText": null
+    },
+    {
       "id": "mezzrow:2026-07-28:harvey-diamond-cameron-brown",
       "clubId": "mezzrow",
       "title": "Harvey Diamond & Cameron Brown",
@@ -10666,6 +10652,19 @@
           "instrument": "drums"
         }
       ],
+      "priceText": null
+    },
+    {
+      "id": "birdland:2026-07-28:bill-charlap-and-renee-rosnes",
+      "clubId": "birdland",
+      "title": "Bill Charlap and Renee Rosnes",
+      "date": "2026-07-28",
+      "sets": [
+        "19:00"
+      ],
+      "url": "https://www.birdlandjazz.com/tm-event/bill-charlap-and-renee-rosnes/",
+      "details": "Birdland Jazz Club — Doors @ 5:30PM",
+      "personnel": null,
       "priceText": null
     },
     {
