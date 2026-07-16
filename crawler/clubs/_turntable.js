@@ -4,8 +4,13 @@
 // -> [{ id, datetime (UTC ISO), show_id, show: { id, name, price_per_person } }]
 // One record per SET; we group by (venue-local date, show) into events with
 // sets[]. price_per_person is a string on some venues, a [min, max] array on
-// others — both normalize here.
-import { makeEvent, tzDate, tzTime, applyLateNight, fetchText } from '../lib.js';
+// others — both normalize here. show.description is HTML with the roster
+// line-per-player ("<p>Jane Monheit – vocals</p><p>Max Haymer – piano</p>"),
+// so personnel comes free with the same API call.
+import {
+  makeEvent, tzDate, tzTime, applyLateNight, fetchText, htmlToText,
+  personnelFromLines,
+} from '../lib.js';
 
 function priceText(p) {
   if (!p) return null;
@@ -39,6 +44,7 @@ export function parseTurntable(jsonText, clubId, { base, tz }) {
         // ticketing site indexes by calendar date.
         url: `${base}/shows/${p.show_id ?? p.show.id}/?date=${date}`,
         priceText: priceText(p.show.price_per_person),
+        personnel: p.show.description ? personnelFromLines(htmlToText(p.show.description)) : [],
       });
     }
     grouped.get(key).sets.push(tzTime(p.datetime, tz));

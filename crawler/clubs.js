@@ -396,6 +396,32 @@ export const CLUBS = [
     module: './clubs/samfirst.js',
   },
   {
+    id: 'bluenotela',
+    name: 'Blue Note Los Angeles',
+    shortName: 'Blue Note LA',
+    url: 'https://www.bluenotejazz.com/la',
+    address: '6372 W Sunset Blvd, Los Angeles, CA 90028',
+    city: 'la',
+    borough: null,
+    timezone: 'America/Los_Angeles',
+    neighborhood: 'Hollywood',
+    color: '#3d6fe0', // brand navy, a step deeper than Catalina's sky blue
+    module: './clubs/bluenotela.js',
+  },
+  {
+    id: 'bakedpotato',
+    name: 'The Baked Potato',
+    shortName: 'Baked Potato',
+    url: 'https://www.thebakedpotato.com',
+    address: '3787 Cahuenga Blvd, Studio City, CA 91604',
+    city: 'la',
+    borough: null,
+    timezone: 'America/Los_Angeles',
+    neighborhood: 'Studio City',
+    color: '#9d7bd8', // purple potato — LA's browns/tans were taken (vibrato, ford, gold-diggers)
+    module: './clubs/bakedpotato.js',
+  },
+  {
     id: 'lacma',
     name: 'Jazz at LACMA',
     shortName: 'LACMA',

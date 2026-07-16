@@ -229,6 +229,10 @@ const INSTRUMENTS = new Set([
   'batterie', 'contrebasse', 'trompette', 'guitare', 'basse', 'clavier',
   'claviers', 'chant', 'voix', 'flute', 'flutes', 'violon', 'violoncelle',
   'orgue', 'percussions', 'saxo', 'tenor', 'baryton',
+  // world / folk (Barbès rosters: "Daria Grace - vocals & baritone ukulele")
+  'ukulele', 'kora', 'balafon', 'ngoni', 'cuatro', 'tres', 'cavaquinho',
+  'bandoneon', 'fiddle', 'melodica', 'congas', 'bongos', 'timbales',
+  'washboard', 'tabla',
 ]);
 const isInstrumentWord = (w) =>
   INSTRUMENTS.has(String(w).normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase().replace(/[^a-z]/g, ''));
@@ -263,8 +267,15 @@ export function parsePersonnel(text) {
       instr.push(tokens[j]);
       j++;
     }
+    // ...minus trailing glue: "bass, and Willie Martinez" leaves "bass," +
+    // "and" in the run — both belong to the SEAM, not the instrument
+    // (the ", and" before the last player; spotted by Zach 2026-07-16).
+    while (instr.length && /^(?:&|and|\/|,)$/i.test(instr[instr.length - 1])) instr.pop();
     if (name && instr.length) {
-      personnel.push({ name: cleanText(name), instrument: cleanText(instr.join(' ').toLowerCase()) });
+      personnel.push({
+        name: cleanText(name),
+        instrument: cleanText(instr.join(' ').toLowerCase()).replace(/[,;.]+$/, ''),
+      });
     }
     // ...and the rest is the next player's name.
     name = lastNameRun(tokens.slice(j).join(' '));
@@ -274,12 +285,15 @@ export function parsePersonnel(text) {
 
 // Parse a LINE-PER-PLAYER roster (common on European venue detail pages):
 //   "Amina Figarova - Piano\nRick Margitza - Sax ténor\n…"
-// Stricter than parsePersonnel: the whole right side must be instrument
-// words, so prose lines with dashes never produce fake players.
+// Comma works as a separator too (Dizzy's: "Charles McPherson, alto
+// saxophone"). Stricter than parsePersonnel: the whole right side must be
+// instrument words, so prose lines with dashes or commas ("Sonny Stitt,
+// and Chet Baker", "Table Seating: $30.00 - $65.00") never produce fake
+// players.
 export function personnelFromLines(text) {
   const personnel = [];
   for (const line of String(text).split('\n')) {
-    const m = line.trim().match(/^(.{2,45}?)\s*[-–—:]\s*(.{2,40})$/);
+    const m = line.trim().match(/^(.{2,45}?)\s*[-–—:,]\s*(.{2,40})$/);
     if (!m) continue;
     const instr = m[2].trim();
     const words = instr.split(/[\s,/&]+/).filter(Boolean);
@@ -290,12 +304,41 @@ export function personnelFromLines(text) {
   return personnel.length >= 2 ? personnel : [];
 }
 
+// Parse rosters where the source HTML bolds the names — Barbès' ViewCy
+// descriptions do this and it's the most reliable roster signal we get:
+//   With <strong>Daria Grace</strong> - vocals & baritone ukulele,
+//   <strong>J. Walter Hawkes</strong> - trombone, ukulele & vocals,
+//   <strong>Jim Whitney</strong> - bass, and <strong>Willie Martinez</strong> - drums.
+// The tags give exact name boundaries (no "With" bleeding into names), the
+// commas can stay INSIDE multi-instrument lists, and the ", and" seam before
+// the last player plus trailing periods get trimmed instead of shipping to
+// the UI as "bass, and" / "drums." chips.
+export function personnelFromStrongTags(html) {
+  const personnel = [];
+  const re = /<(strong|b)\b[^>]*>([^<]{2,45}?)<\/\1>\s*[-–—:]\s*([^<]{2,80})/gi;
+  let m;
+  while ((m = re.exec(String(html)))) {
+    const name = cleanText(m[2]).replace(/[،,;:.]+$/, '');
+    const instr = cleanText(m[3])
+      .replace(/[,;.\s]+$/, '')      // trailing ", " before the next bolded name
+      .replace(/[,;\s]+and$/i, '')   // the ", and" seam
+      .replace(/[,;.\s]+$/, '');     // period after the last player
+    const words = instr.split(/[\s,/&]+/).filter(Boolean);
+    if (!name || !words.length) continue;
+    if (!words.every((w) => isInstrumentWord(w) || /^(?:et|and)$/i.test(w))) continue;
+    personnel.push({ name, instrument: instr.toLowerCase() });
+  }
+  return personnel.length >= 2 ? personnel : [];
+}
+
 // From trailing text, take the final run of capitalized-ish tokens (a name).
+// Connector words never join a name: "With Daria Grace" is Daria Grace.
+const NAME_CONNECTOR_RE = /^(?:with|featuring|feat\.?|w\/|avec|and)$/i;
 function lastNameRun(text) {
   const tokens = cleanText(text).split(/\s+/).filter(Boolean);
   let start = tokens.length;
   for (let i = tokens.length - 1; i >= 0; i--) {
-    if (/^[A-Z(“"']/.test(tokens[i]) && !isInstrumentWord(tokens[i])) start = i;
+    if (/^[A-Z(“"']/.test(tokens[i]) && !isInstrumentWord(tokens[i]) && !NAME_CONNECTOR_RE.test(tokens[i])) start = i;
     else break;
   }
   const run = tokens.slice(start).join(' ');

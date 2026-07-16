@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-16T17:19:41.627Z",
+  "generatedAt": "2026-07-16T20:53:06.205Z",
   "city": "par",
   "clubs": [
     {
@@ -259,45 +259,6 @@
       "priceText": null
     },
     {
-      "id": "duc:2026-07-16:amina-figarova-sextet",
-      "clubId": "duc",
-      "title": "Amina Figarova Sextet",
-      "date": "2026-07-16",
-      "sets": [
-        "19:30",
-        "22:00"
-      ],
-      "url": "https://ducdeslombards.com/fr/l-agenda/amina-figarova-sextet",
-      "details": "Piano Master",
-      "personnel": [
-        {
-          "name": "Amina Figarova",
-          "instrument": "piano"
-        },
-        {
-          "name": "Yasek Manzano",
-          "instrument": "trompette"
-        },
-        {
-          "name": "Rick Margitza",
-          "instrument": "sax ténor"
-        },
-        {
-          "name": "Bart Platteau",
-          "instrument": "flûtes"
-        },
-        {
-          "name": "Maurizio Congiu",
-          "instrument": "contrebasse"
-        },
-        {
-          "name": "Ferenc Nemeth",
-          "instrument": "batterie"
-        }
-      ],
-      "priceText": null
-    },
-    {
       "id": "riv38:2026-07-16:carte-blanche-hermon-mehari",
       "clubId": "riv38",
       "title": "Carte blanche à Hermon Mehari",
@@ -308,7 +269,20 @@
       ],
       "url": "https://38riv.com/concerts/carte-blanche-hermon-mehari-2",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Estelle Perrault",
+          "instrument": "voix"
+        },
+        {
+          "name": "Hermon Mehrari",
+          "instrument": "trompette"
+        },
+        {
+          "name": "Peter Schlamb",
+          "instrument": "piano"
+        }
+      ],
       "priceText": null
     },
     {
@@ -426,7 +400,20 @@
       ],
       "url": "https://38riv.com/concerts/sarah-king-trio",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Sarah King",
+          "instrument": "voix"
+        },
+        {
+          "name": "Clement Trimouille",
+          "instrument": "guitare"
+        },
+        {
+          "name": "Kim Baiunco",
+          "instrument": "contrebasse"
+        }
+      ],
       "priceText": null
     },
     {
@@ -545,7 +532,16 @@
       ],
       "url": "https://38riv.com/concerts/elisa-lecuyer-raconte-anita-oday",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Elisa Lécuyer",
+          "instrument": "voix"
+        },
+        {
+          "name": "Jeremy Hinnekens",
+          "instrument": "piano"
+        }
+      ],
       "priceText": null
     },
     {
@@ -602,7 +598,20 @@
       ],
       "url": "https://38riv.com/concerts/sarah-king-quartet",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Sarah King",
+          "instrument": "voix"
+        },
+        {
+          "name": "Clement Trimouille",
+          "instrument": "guitare"
+        },
+        {
+          "name": "Kim Baiunco",
+          "instrument": "contrebasse"
+        }
+      ],
       "priceText": null
     },
     {
@@ -710,7 +719,20 @@
       ],
       "url": "https://38riv.com/concerts/simonelli-daussat",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Vincent Simonelli",
+          "instrument": "guitare"
+        },
+        {
+          "name": "Samy Daussat",
+          "instrument": "guitare"
+        },
+        {
+          "name": "John Dufossé",
+          "instrument": "contrebasse"
+        }
+      ],
       "priceText": null
     },
     {
@@ -724,7 +746,16 @@
       ],
       "url": "https://38riv.com/concerts/eric-seva-daniel-zimmermann-1",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Eric Séva",
+          "instrument": "saxophone baryton"
+        },
+        {
+          "name": "Daniel Zimmermann",
+          "instrument": "trombone"
+        }
+      ],
       "priceText": null
     },
     {
@@ -774,7 +805,20 @@
       ],
       "url": "https://38riv.com/concerts/3-nights-david-bressat",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "David Bressat",
+          "instrument": "piano"
+        },
+        {
+          "name": "Charles Clayette",
+          "instrument": "batterie"
+        },
+        {
+          "name": "Thomas Belin",
+          "instrument": "contrebasse"
+        }
+      ],
       "priceText": null
     },
     {
@@ -865,7 +909,20 @@
       ],
       "url": "https://38riv.com/concerts/3-nights-david-bressat-0",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "David Bressat",
+          "instrument": "piano"
+        },
+        {
+          "name": "Charles Clayette",
+          "instrument": "batterie"
+        },
+        {
+          "name": "Thomas Belin",
+          "instrument": "contrebasse"
+        }
+      ],
       "priceText": null
     },
     {
@@ -963,7 +1020,20 @@
       ],
       "url": "https://38riv.com/concerts/3-nights-david-bressat-1",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "David Bressat",
+          "instrument": "piano"
+        },
+        {
+          "name": "Charles Clayette",
+          "instrument": "batterie"
+        },
+        {
+          "name": "Thomas Belin",
+          "instrument": "contrebasse"
+        }
+      ],
       "priceText": null
     },
     {
@@ -1157,7 +1227,28 @@
       ],
       "url": "https://38riv.com/concerts/le-grand-soir-1",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Lucie Guillem",
+          "instrument": "voix"
+        },
+        {
+          "name": "Alba Obert",
+          "instrument": "voix, violon"
+        },
+        {
+          "name": "Tom Naouri",
+          "instrument": "voix, saxophone alto"
+        },
+        {
+          "name": "Jean Saint Loubert",
+          "instrument": "piano"
+        },
+        {
+          "name": "Nicolas Fleury",
+          "instrument": "contrebasse"
+        }
+      ],
       "priceText": null
     },
     {
@@ -1263,7 +1354,16 @@
       ],
       "url": "https://38riv.com/concerts/oona-paul-racontent-joni-mitchell",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Oona Guino",
+          "instrument": "voix"
+        },
+        {
+          "name": "Paul Cépède",
+          "instrument": "guitare"
+        }
+      ],
       "priceText": null
     },
     {
@@ -1321,7 +1421,24 @@
       ],
       "url": "https://38riv.com/concerts/mailo-rakotonanahary",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Mailo Rakotonanahary",
+          "instrument": "batterie"
+        },
+        {
+          "name": "Anthony Jouravsky",
+          "instrument": "contrebasse"
+        },
+        {
+          "name": "Jules Regard",
+          "instrument": "trombone"
+        },
+        {
+          "name": "Oscar Teruel",
+          "instrument": "piano"
+        }
+      ],
       "priceText": null
     },
     {
@@ -3191,7 +3308,24 @@
       ],
       "url": "https://ducdeslombards.com/fr/l-agenda/harry-allen-martin-sasse-quartet",
       "details": "SWING MASTERS",
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Harry Allen",
+          "instrument": "saxophone"
+        },
+        {
+          "name": "Martin Sasse",
+          "instrument": "piano"
+        },
+        {
+          "name": "Solene Cairoli",
+          "instrument": "contrebasse"
+        },
+        {
+          "name": "Bernd Reiter",
+          "instrument": "batterie"
+        }
+      ],
       "priceText": null
     },
     {
@@ -3218,7 +3352,24 @@
       ],
       "url": "https://ducdeslombards.com/fr/l-agenda/bria-skonberg-1",
       "details": "Coup de coeur",
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Bria Skonberg",
+          "instrument": "trompette & voix"
+        },
+        {
+          "name": "Noé Huchard",
+          "instrument": "piano"
+        },
+        {
+          "name": "Clément Daldosso",
+          "instrument": "contrebasse"
+        },
+        {
+          "name": "Guillaume Leguerinel",
+          "instrument": "batterie"
+        }
+      ],
       "priceText": null
     },
     {
@@ -3256,7 +3407,24 @@
       ],
       "url": "https://ducdeslombards.com/fr/l-agenda/bria-skonberg-1",
       "details": "Coup de coeur",
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Bria Skonberg",
+          "instrument": "trompette & voix"
+        },
+        {
+          "name": "Noé Huchard",
+          "instrument": "piano"
+        },
+        {
+          "name": "Clément Daldosso",
+          "instrument": "contrebasse"
+        },
+        {
+          "name": "Guillaume Leguerinel",
+          "instrument": "batterie"
+        }
+      ],
       "priceText": null
     },
     {
@@ -3318,7 +3486,24 @@
       ],
       "url": "https://ducdeslombards.com/fr/l-agenda/naama-sings-songs-road",
       "details": "VOCAL",
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Naama",
+          "instrument": "voix"
+        },
+        {
+          "name": "TBA",
+          "instrument": "guitare & piano"
+        },
+        {
+          "name": "Dave Baron",
+          "instrument": "contrebasse"
+        },
+        {
+          "name": "Paul Morvan",
+          "instrument": "batterie"
+        }
+      ],
       "priceText": null
     },
     {
@@ -3416,7 +3601,16 @@
       ],
       "url": "https://ducdeslombards.com/fr/l-agenda/obradovic-tixier-duo-told-10-year-anniversary-release-party",
       "details": "Futuristic",
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Lada Obradović",
+          "instrument": "batterie"
+        },
+        {
+          "name": "David Tixier",
+          "instrument": "piano"
+        }
+      ],
       "priceText": null
     },
     {
@@ -3441,7 +3635,24 @@
       ],
       "url": "https://ducdeslombards.com/fr/l-agenda/frode-kjekstad-eric-alexander-quartet",
       "details": "Standards",
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Eric Alexander",
+          "instrument": "saxophone"
+        },
+        {
+          "name": "Frode Kjekstad",
+          "instrument": "guitare"
+        },
+        {
+          "name": "Roy Powell",
+          "instrument": "orgue"
+        },
+        {
+          "name": "Frederik Villmow",
+          "instrument": "batterie"
+        }
+      ],
       "priceText": null
     },
     {
@@ -3455,7 +3666,24 @@
       ],
       "url": "https://ducdeslombards.com/fr/l-agenda/theodore-kuzma-quartet",
       "details": "Standards",
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Théodore Kuzma",
+          "instrument": "piano"
+        },
+        {
+          "name": "Fabien Mary",
+          "instrument": "trompette"
+        },
+        {
+          "name": "Kim Baiunco",
+          "instrument": "contrebasse"
+        },
+        {
+          "name": "Malte Arndal",
+          "instrument": "batterie"
+        }
+      ],
       "priceText": null
     },
     {
@@ -3469,7 +3697,28 @@
       ],
       "url": "https://ducdeslombards.com/fr/l-agenda/midva-lofi-ensemble",
       "details": "FUSION",
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Albertine Obert",
+          "instrument": "flûte"
+        },
+        {
+          "name": "Célestine de Williencourt",
+          "instrument": "flûte"
+        },
+        {
+          "name": "Nicolas Daguet",
+          "instrument": "basse"
+        },
+        {
+          "name": "Pierre Haessler",
+          "instrument": "percussions/claviers"
+        },
+        {
+          "name": "Joël Brown",
+          "instrument": "batterie"
+        }
+      ],
       "priceText": null
     },
     {
@@ -3483,7 +3732,24 @@
       ],
       "url": "https://ducdeslombards.com/fr/l-agenda/baptiste-herbin-fred-nardin-4tet-feat-darryl-hall-leon-parker",
       "details": "JAZZ MASTERS",
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Baptiste Herbin",
+          "instrument": "saxophone"
+        },
+        {
+          "name": "Fred Nardin",
+          "instrument": "piano"
+        },
+        {
+          "name": "Darryl Hall",
+          "instrument": "contrebasse"
+        },
+        {
+          "name": "Leon Parker",
+          "instrument": "batterie"
+        }
+      ],
       "priceText": null
     },
     {
@@ -3521,7 +3787,24 @@
       ],
       "url": "https://ducdeslombards.com/fr/l-agenda/baptiste-herbin-fred-nardin-4tet-feat-darryl-hall-leon-parker",
       "details": "JAZZ MASTERS",
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Baptiste Herbin",
+          "instrument": "saxophone"
+        },
+        {
+          "name": "Fred Nardin",
+          "instrument": "piano"
+        },
+        {
+          "name": "Darryl Hall",
+          "instrument": "contrebasse"
+        },
+        {
+          "name": "Leon Parker",
+          "instrument": "batterie"
+        }
+      ],
       "priceText": null
     },
     {
@@ -4272,7 +4555,32 @@
       ],
       "url": "https://ducdeslombards.com/fr/l-agenda/gabi-hartmann-4",
       "details": "JAZZ/SOUL/WORLD",
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Gabrielle Hartmann",
+          "instrument": "chant et guitare"
+        },
+        {
+          "name": "Florian Robin",
+          "instrument": "piano"
+        },
+        {
+          "name": "Jérome Arrighi",
+          "instrument": "basse"
+        },
+        {
+          "name": "Arthur Alard",
+          "instrument": "batterie et percussions"
+        },
+        {
+          "name": "Abdoulaye Kouyaté",
+          "instrument": "guitare"
+        },
+        {
+          "name": "Robby Marschall",
+          "instrument": "saxophone"
+        }
+      ],
       "priceText": null
     },
     {
@@ -4310,7 +4618,32 @@
       ],
       "url": "https://ducdeslombards.com/fr/l-agenda/gabi-hartmann-4",
       "details": "JAZZ/SOUL/WORLD",
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Gabrielle Hartmann",
+          "instrument": "chant et guitare"
+        },
+        {
+          "name": "Florian Robin",
+          "instrument": "piano"
+        },
+        {
+          "name": "Jérome Arrighi",
+          "instrument": "basse"
+        },
+        {
+          "name": "Arthur Alard",
+          "instrument": "batterie et percussions"
+        },
+        {
+          "name": "Abdoulaye Kouyaté",
+          "instrument": "guitare"
+        },
+        {
+          "name": "Robby Marschall",
+          "instrument": "saxophone"
+        }
+      ],
       "priceText": null
     },
     {
@@ -4335,7 +4668,32 @@
       ],
       "url": "https://ducdeslombards.com/fr/l-agenda/gabi-hartmann-4",
       "details": "JAZZ/SOUL/WORLD",
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Gabrielle Hartmann",
+          "instrument": "chant et guitare"
+        },
+        {
+          "name": "Florian Robin",
+          "instrument": "piano"
+        },
+        {
+          "name": "Jérome Arrighi",
+          "instrument": "basse"
+        },
+        {
+          "name": "Arthur Alard",
+          "instrument": "batterie et percussions"
+        },
+        {
+          "name": "Abdoulaye Kouyaté",
+          "instrument": "guitare"
+        },
+        {
+          "name": "Robby Marschall",
+          "instrument": "saxophone"
+        }
+      ],
       "priceText": null
     },
     {
@@ -4349,7 +4707,32 @@
       ],
       "url": "https://ducdeslombards.com/fr/l-agenda/gabi-hartmann-4",
       "details": "JAZZ/SOUL/WORLD",
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Gabrielle Hartmann",
+          "instrument": "chant et guitare"
+        },
+        {
+          "name": "Florian Robin",
+          "instrument": "piano"
+        },
+        {
+          "name": "Jérome Arrighi",
+          "instrument": "basse"
+        },
+        {
+          "name": "Arthur Alard",
+          "instrument": "batterie et percussions"
+        },
+        {
+          "name": "Abdoulaye Kouyaté",
+          "instrument": "guitare"
+        },
+        {
+          "name": "Robby Marschall",
+          "instrument": "saxophone"
+        }
+      ],
       "priceText": null
     },
     {

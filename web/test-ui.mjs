@@ -65,6 +65,10 @@ try {
     assert.ok(m, `footer text unexpected: ${foot}`);
     assert.ok(Number(m[1]) > 100, `suspiciously few events: ${m[1]}`);
     assert.ok(Number(m[2]) >= 7, `expected 7+ clubs, got ${m[2]}`);
+    // suggest-a-venue mailto: assembled at runtime, prefilled subject
+    const href = await pd.getAttribute('.suggest-venue', 'href');
+    assert.ok(href?.startsWith('mailto:zachbclark+jazzlineup@gmail.com'), `contact href unexpected: ${href}`);
+    assert.match(href, /Venue%20idea/);
   });
 
   await test('city menu lists all six cities; CHI loads (empty until first crawl)', async () => {
@@ -188,10 +192,14 @@ try {
   await test('artist search finds shows by personnel name, clear restores', async () => {
     const count = async () => Number((await pd.textContent('.foot')).match(/(\d+) shows/)[1]);
     const initial = await count();
-    // derive a real artist from the served data so the test isn't brittle
+    // derive a real artist from the served data so the test isn't brittle —
+    // from an UPCOMING event: data files keep recent-past shows, and a
+    // past-only artist renders zero day groups (bit Zach's Mac 2026-07-16,
+    // where the first personnel event was a June Mingus Big Band night)
     const artist = await pd.evaluate(async () => {
       const d = await (await fetch('/events-nyc.json')).json();
-      const ev = d.events.find((e) => e.personnel?.length);
+      const today = new Date().toISOString().slice(0, 10);
+      const ev = d.events.find((e) => e.date >= today && e.personnel?.length);
       return ev ? ev.personnel[0].name : null;
     });
     assert.ok(artist, 'no personnel in data to search for');
@@ -209,6 +217,10 @@ try {
   });
 
   await test('borough filter narrows chips and counts, then clears', async () => {
+    // a failed search test can leave a query active (chips hidden) — reset
+    // so one failure never cascades into this one
+    await pd.fill('.search-box input', '');
+    await pd.waitForTimeout(250);
     const count = async () => Number((await pd.textContent('.foot')).match(/(\d+) shows/)[1]);
     const chips = async () => (await pd.$$('.chip:not(.chip-all)')).length;
     const bar = await pd.$('.borough-bar');

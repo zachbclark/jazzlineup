@@ -119,7 +119,7 @@ ok('vanguard: expands run + generates VJO Mondays', () => {
   <p>The 16-piece big band.</p>
   <a href="https://vv.squadup.com/artists/vanguard-jazz-orchestra?utm=x">TICKETS</a>
   <h2>Ben Wendel</h2>
-  <h3>July 14 - July 19</h3>
+  <h3>July 14 &#8209; July 19</h3>
   <p>Ben Wendel - saxophone</p>
   <a href="https://vv.squadup.com/artists/ben-wendel">TICKETS</a>
   <h2>Makaya McCraven Tet</h2>
@@ -131,8 +131,10 @@ ok('vanguard: expands run + generates VJO Mondays', () => {
   const vjo = evs.filter((e) => /Vanguard Jazz Orchestra/.test(e.title));
   assert.equal(vjo.length, 8);
   assert.equal(vjo[0].date, '2026-07-13'); // today is a Monday
+  // &#8209; above is U+2011 non-breaking hyphen — the exact character that
+  // made the real Ben Wendel week vanish (NYCJR audit catch, 2026-07-16)
   const wendel = evs.filter((e) => e.title === 'Ben Wendel');
-  assert.equal(wendel.length, 6);
+  assert.equal(wendel.length, 6, 'U+2011 date range must still parse');
   assert.equal(wendel[0].date, '2026-07-14');
   assert.equal(wendel[5].date, '2026-07-19');
   const makaya = evs.filter((e) => /McCraven/.test(e.title));
@@ -227,6 +229,32 @@ ok('bluenote: parses single-quoted markup, filters Sony Hall + private events', 
   assert.equal(evs[0].title, 'Wyatt Waddell');
 });
 
+// --- Blue Note LA (same platform, region 'la') ---------------------------------
+import { parse as bnlaParse } from './clubs/bluenotela.js';
+ok('bluenotela: same markup maps to LA club id; B-Side room kept with details', () => {
+  const html = `
+  <table><tbody><tr>
+    <td><div class='inner'><div class='day'>16</div>
+      <div class='day-wrap single-show'>
+        <h3><a href='https://www.bluenotejazz.com/la/tm-event/robert-glasper/'>Robert Glasper</a></h3>
+        <div class='showtimes'><time>8:00 PM</time> &amp; <time>10:30 PM</time><div class='venue'>Blue Note Los Angeles</div></div>
+      </div>
+      <div class='day-wrap '>
+        <h3><a href='/la/tm-event/late-hang/'>Late Hang</a></h3>
+        <div class='showtimes'><time>11:30 PM</time><div class='venue'>B-Side at Blue Note Los Angeles</div></div>
+      </div>
+    </div></td>
+  </tr></tbody></table>`;
+  const evs = bnlaParse(html, 2026, 7);
+  assert.equal(evs.length, 2, 'both rooms kept');
+  assert.ok(evs.every((e) => e.clubId === 'bluenotela'));
+  assert.equal(evs[0].title, 'Robert Glasper');
+  assert.match(evs[0].url, /\/la\/tm-event\/robert-glasper/);
+  const bside = evs.find((e) => /B-Side/.test(e.details ?? ''));
+  assert.ok(bside, 'B-Side room name rides along as details');
+  assert.equal(bside.late, true, '11:30 PM start wears the late tag');
+});
+
 
 
 // --- personnel parsing --------------------------------------------------------
@@ -248,6 +276,14 @@ ok('personnel: parses rosters, strips promo, rejects prose', () => {
   assert.deepEqual(parsePersonnel('A powerful story brought to life through big band jazz'), []);
   assert.deepEqual(parsePersonnel('Jean-Michel at the Cafe - special guest'), []);
   assert.equal(stripPromo('Great band! FREE WITH SUMMERPASS GET TICKETS'), 'Great band!');
+
+  // comma-run rosters: the ", and" seam and trailing punctuation never
+  // reach the UI, and "With" never joins a name (Pre-War Ponies, 2026-07-16)
+  const pw = parsePersonnel('With Daria Grace - vocals & baritone ukulele, J. Walter Hawkes - trombone, ukulele & vocals, Jim Whitney - bass, and Willie Martinez - drums.');
+  assert.equal(pw.length, 4);
+  assert.deepEqual(pw[0], { name: 'Daria Grace', instrument: 'vocals & baritone ukulele' });
+  assert.deepEqual(pw[2], { name: 'Jim Whitney', instrument: 'bass' });
+  assert.deepEqual(pw[3], { name: 'Willie Martinez', instrument: 'drums' });
 });
 
 ok('personnel: survives makeEvent end-to-end (jazzgallery)', () => {
@@ -277,6 +313,7 @@ ok('smoke: groups performances into events with NY-time sets', () => {
   const jane = evs.find((e) => /Monheit/.test(e.title));
   assert.equal(jane.date, '2026-07-15');
   assert.deepEqual(jane.sets, ['18:30', '20:30']);
+  assert.equal(jane.personnel, null, 'no description -> no personnel');
   // ?date= is load-bearing: without it Smoke's Show Detail page can't
   // resolve the night (bug found by Zach clicking through, 2026-07-16)
   assert.equal(jane.url, 'https://tickets.smokejazz.com/shows/11747/?date=2026-07-15');
@@ -294,6 +331,23 @@ ok('late-night rule: after-midnight starts belong to the previous evening', () =
   assert.equal(evs[0].date, '2026-07-16');
   assert.equal(evs[0].late, true);
   assert.deepEqual(evs[0].sets, ['00:30']);
+});
+
+ok('smoke: show.description roster becomes personnel with no extra fetch', () => {
+  // real Turntable API shape (verified 2026-07-16): description is HTML with
+  // boilerplate + prices + line-per-player roster + press-quote prose
+  const desc = '<p>*PLEASE NOTE: All 6:30PM and 8:30PM shows at Smoke are Dinner Shows</p><p><br></p>'
+    + '<p>$25.00 / $40.00 / $50.00 / $55.00 – Wed, Thu, Fri &amp; Sun</p>'
+    + '<p>Jane Monheit – vocals</p><p>Max Haymer – piano</p><p>Neal Miner – bass</p><p>Rick Montalbano – drums</p>'
+    + '<p>“A voice of phenomenal beauty.” <em>– The New York Times</em></p>'
+    + '<p>Vocalist Jane Monheit brings her signature warmth, joined by her acclaimed trio: pianist Max Haymer, bassist Neal Miner, and drummer Rick Montalbano.</p>';
+  const fixture = JSON.stringify([
+    { id: 1, datetime: '2026-07-16T22:30:00Z', show_id: 11747, show: { id: 11747, name: 'Jane Monheit Sings Cole Porter', description: desc } },
+  ]);
+  const evs = smokeParse(fixture);
+  assert.equal(evs[0].personnel.length, 4, 'roster lines parsed, prose/prices rejected');
+  assert.deepEqual(evs[0].personnel[0], { name: 'Jane Monheit', instrument: 'vocals' });
+  assert.deepEqual(evs[0].personnel[3], { name: 'Rick Montalbano', instrument: 'drums' });
 });
 
 // --- Nublu -----------------------------------------------------------------------
@@ -404,6 +458,29 @@ ok('viewcy: UTC starts -> NY dates, set-merging, personnel-less details', () => 
   assert.equal(kv.date, '2026-07-18');
   const cu = closeupParse(fixture);
   assert.equal(cu[0].clubId, 'closeup');
+});
+
+ok('viewcy: bolded-name roster parses clean (Pre-War Ponies, found by Zach 2026-07-16)', () => {
+  // real Barbès description — the old parser shipped "With Daria Grace",
+  // "trombone,", "bass, and", "drums." to the UI
+  const desc = '<div><a href="http://www.prewarponies.com/"><strong>THE PRE-WAR PONIES.</strong></a> '
+    + '20s, 30s and 40s forgotten gems by the likes of Irving Berlin and Hoagy Carmichael.</div>'
+    + '<div>&nbsp;With <strong>Daria Grace</strong> - vocals &amp; baritone ukulele, '
+    + '<strong>J. Walter Hawkes</strong> - trombone, ukulele &amp; vocals, '
+    + '<strong>Jim Whitney</strong> - bass, and <strong>Willie Martinez</strong> - drums.&nbsp;</div>'
+    + '<div><strong><em>$20 suggested</em></strong></div>';
+  const fixture = JSON.stringify({ data: [{
+    name: 'THE PRE-WAR PONIES', url: 'https://www.viewcy.com/event/ponies',
+    description: desc,
+    events: [{ name: 'THE PRE-WAR PONIES', starts_at: '2026-07-16T23:00:00.000Z', book_url: 'https://www.viewcy.com/event/ponies' }],
+  }], total_count: 1, has_more: false });
+  const evs = barbesParse(fixture);
+  assert.deepEqual(evs[0].personnel, [
+    { name: 'Daria Grace', instrument: 'vocals & baritone ukulele' },
+    { name: 'J. Walter Hawkes', instrument: 'trombone, ukulele & vocals' },
+    { name: 'Jim Whitney', instrument: 'bass' },
+    { name: 'Willie Martinez', instrument: 'drums' },
+  ]);
 });
 
 // --- The Django ---------------------------------------------------------------------
@@ -863,6 +940,48 @@ ok("harvelles: date cells -> events with show times", () => {
   assert.deepEqual(evs[1].sets, ['20:00', '22:30']);
 });
 
+// --- The Baked Potato (ThunderTix listing) -----------------------------------------
+import { parse as bakedParse, parseDetailSets as bakedDetailSets } from './clubs/bakedpotato.js';
+ok('bakedpotato: event_box blocks -> events with h3-roster personnel', () => {
+  const html = `
+  <div class="panel panel-default event_box"><div class="event_details"><article>
+    <div class="event_image position-relative"><img src="x.png"></div>
+    <div class="title-description">
+      <div class="row ml-0 event_title clear event_title_no_flex my-2"><h1>P f f T</h1>
+        <div class="event_date"> Thursday July 16, 2026 </div></div>
+      <div class="fade-bottom-text event_description event_description_high_contrast compact-paragraphs">
+        <h3>MIKE KENEALLY - GUITAR/KEYS</h3><h3>ANDREW SYNOWIEC - GUITAR</h3>
+        <h3>BRYON BELLER - BASS</h3><h3>JONATHAN MOVER - DRUMS</h3>
+        <h3>The Music of BRAND X and More..</h3></div>
+    </article></div>
+    <div class="event_actions" id="event_1"><a class="btn buy_tickets_button" href="/events/266082">Buy tickets</a></div>
+  </div>
+  <div class="panel panel-default event_box"><div class="event_details"><article>
+    <div class="title-description">
+      <div class="row event_title"><h1>SOLO ACT</h1>
+        <div class="event_date"> Friday July 17, 2026 </div></div>
+      <div class="event_description"><h3>An evening of improvised music.</h3></div>
+    </article></div>
+    <a class="btn buy_tickets_button" href="/events/266083">Buy tickets</a>
+  </div>`;
+  const evs = bakedParse(html);
+  assert.equal(evs.length, 2);
+  assert.equal(evs[0].title, 'P f f T');
+  assert.equal(evs[0].date, '2026-07-16');
+  assert.equal(evs[0].personnel.length, 4);
+  assert.deepEqual(evs[0].personnel[0], { name: 'MIKE KENEALLY', instrument: 'guitar/keys' });
+  assert.match(evs[0].details, /BRAND X/);
+  assert.match(evs[0].url, /thundertix\.com\/events\/266082/);
+  assert.equal(evs[1].personnel, null, 'prose-only description yields no fake roster');
+  assert.match(evs[1].details, /improvised music/);
+});
+
+ok('bakedpotato: detail page performance times -> sets', () => {
+  const html = `<div>Thursday, July 16, 2026 - 08:00 PM PDT</div>
+    <div>Thursday, July 16, 2026 - 10:00 PM PDT</div>`;
+  assert.deepEqual(bakedDetailSets(html), { sets: ['20:00', '22:00'] });
+});
+
 // --- Silvana + Shrine (shared Harlem calendar.php) --------------------------------
 import { parsePage as svParse } from './clubs/silvana.js';
 ok('silvana/shrine: day cells -> jazz acts only, genre kept as detail', () => {
@@ -1289,19 +1408,21 @@ ok('birdbeckett: generator emits 8 Fridays at 7:30pm', () => {
 
 // --- Yoshi's (homegrown calendar) --------------------------------------------------------
 import { parse as ysParse } from './clubs/yoshis.js';
-ok("yoshis: aria-label carries title+date+time; two shows merge into sets", () => {
+ok("yoshis: served-HTML anchors parse; Buy/plain variants dedupe; sets merge; price kept", () => {
+  // modeled on the RAW server response (not the JS-rebuilt event-indv list):
+  // each show has an image link ("Buy Tickets", <a with newline before attrs)
+  // and a button ("Tickets", href first) followed by p.price.
   const html = `
-  <ul class="event-full-list">
-  <li class="event-indv"><div class="event-cell edate"><span class="sd"><strong>Wed 7.15</strong></span><br/><span class="tss">8:00 PM</span></div>
-    <div class="event-cell eimage"><a aria-label="Buy Tickets NZURI SOUL: A TRIBUTE TO THE MEN OF R&amp;B July 15, 2026 - 8:00 PM" href="https://yoshis.com/events/buy-tickets/nzuri-soul-a-tribute-to-the-men-of-r-b/detail"><img /></a></div></li>
-  <li class="event-indv"><div class="event-cell edate"><span class="sd"><strong>Wed 7.15</strong></span><br/><span class="tss">10:00 PM</span></div>
-    <div class="event-cell eimage"><a aria-label="Buy Tickets NZURI SOUL: A TRIBUTE TO THE MEN OF R&amp;B July 15, 2026 - 10:00 PM" href="https://yoshis.com/events/buy-tickets/nzuri-soul-a-tribute-to-the-men-of-r-b/detail"><img /></a></div></li>
-  </ul>`;
+  <li><div class="event-cell eimage"><a
+aria-label="Buy Tickets NZURI SOUL: A TRIBUTE TO THE MEN OF R&amp;B July 15, 2026 - 8:00 PM" href="https://yoshis.com/events/buy-tickets/nzuri-soul-a-tribute-to-the-men-of-r-b/detail"><img /></a></div>
+    <div class="event-cell etix"><a href="https://yoshis.com/events/buy-tickets/nzuri-soul-a-tribute-to-the-men-of-r-b/detail" aria-label="Tickets NZURI SOUL: A TRIBUTE TO THE MEN OF R&amp;B July 15, 2026 - 8:00 PM" class="btn" target="_blank">Tickets</a><p class="price">$29 - $59</p></div></li>
+  <li><div class="event-cell etix"><a href="https://yoshis.com/events/buy-tickets/nzuri-soul-a-tribute-to-the-men-of-r-b/detail" aria-label="Tickets NZURI SOUL: A TRIBUTE TO THE MEN OF R&amp;B July 15, 2026 - 10:00PM" class="btn" target="_blank">Tickets</a><p class="price">$29 - $59</p></div></li>`;
   const evs = ysParse(html);
   assert.equal(evs.length, 1);
   assert.equal(evs[0].title, 'NZURI SOUL: A TRIBUTE TO THE MEN OF R&B');
   assert.equal(evs[0].date, '2026-07-15');
   assert.deepEqual(evs[0].sets, ['20:00', '22:00']);
+  assert.equal(evs[0].priceText, '$29 - $59');
   assert.match(evs[0].url, /yoshis\.com\/events\/buy-tickets\/nzuri-soul/);
 });
 
@@ -1764,6 +1885,67 @@ ok('enrich: reuses prior crawl by id, fetches only whats missing, never overwrit
   assert.equal(events[1].personnel.length, 4, 'fetched roster parsed');
   assert.equal(events[1].personnel[3].name, 'Tyshawn Sorey');
   assert.equal(events[2].personnel[0].name, 'Already Here', 'existing personnel untouched');
+});
+
+ok('enrich: urlKey dedupes residency dates into one fetch, result fans back out', async () => {
+  const events = [
+    { id: 'django:2026-07-17:hazeltine', date: '2026-07-17', personnel: null,
+      url: 'https://x/events/david-hazeltine-15/?selected_date=2026-07-17' },
+    { id: 'django:2026-07-18:hazeltine', date: '2026-07-18', personnel: null,
+      url: 'https://x/events/david-hazeltine-15/?selected_date=2026-07-18' },
+  ];
+  const fetched = [];
+  await enrichFromDetailPages(events, {}, {
+    fields: ['personnel'],
+    extract: () => ({ personnel: [{ name: 'David Hazeltine', instrument: 'piano' }, { name: 'Pete Van Nostrand', instrument: 'drums' }] }),
+    fetchImpl: async (url) => { fetched.push(url); return ''; },
+    urlKey: (url) => url.split('?')[0],
+  });
+  assert.equal(fetched.length, 1, 'one fetch for both nights');
+  assert.equal(events[0].personnel[0].name, 'David Hazeltine');
+  assert.equal(events[1].personnel[1].name, 'Pete Van Nostrand', 'second night filled from same page');
+});
+
+// --- personnelFromLines comma separator (Dizzy's format) ------------------------------
+ok('personnelFromLines: comma-separated rosters parse; prose commas stay out', () => {
+  const roster = 'Charles McPherson, alto saxophone\nTerell Stafford, trumpet\nRandy Porter, piano\nPeter Washington, bass\nBilly Drummond, drums';
+  const got = personnelFromLines(roster);
+  assert.equal(got.length, 5);
+  assert.deepEqual(got[0], { name: 'Charles McPherson', instrument: 'alto saxophone' });
+  // prose with commas must NOT create players
+  assert.deepEqual(personnelFromLines('grabbing the respect of jazz legends like Sonny Stitt, and Chet Baker'), []);
+  assert.deepEqual(personnelFromLines('Table Seating: $30.00 - $65.00\nBar Seating: $30.00 - $65.00'), []);
+  assert.deepEqual(personnelFromLines('FRIDAY, JUL 17, 2026 7:00PM\nOakland, CA'), []);
+});
+
+// --- Dizzy's detail extraction (2026-07-16: PERFORMANCE LINEUP recon) ------------------
+import { parseDetail as dzDetail } from './clubs/dizzys.js';
+ok('dizzys: ticketing page yields lineup + description prose', () => {
+  // mirrors ticketing.jazz.org's served markup (Tessitura, tn- classes)
+  const html = `<h3 class="sr-only">Description</h3>
+  <p class="tn-event-detail__description"></p><p><img src="https://jazz.org/x.jpg"></p>
+  <p>An 87th birthday, a jazz legend, and the kind of night Dizzy's was made for. Charles McPherson returns with an evening of fiery bebop.</p>
+  <h3 data-preserve-html-node="true">PERFORMANCE LINEUP</h3>
+  <p>Charles&nbsp;McPherson, alto saxophone<br> Terell Stafford, trumpet<br> Randy Porter, piano<br> Peter Washington, bass<br> Billy Drummond, drums</p>
+  <h3 class="sr-only">Notes</h3><p>Please note that "cover" means one (1) seat.</p>`;
+  const d = dzDetail(html);
+  assert.equal(d.personnel.length, 5);
+  assert.deepEqual(d.personnel[0], { name: 'Charles McPherson', instrument: 'alto saxophone' });
+  assert.match(d.details, /87th birthday/);
+  assert.doesNotMatch(d.details, /cover/);
+});
+
+// --- Django detail extraction (2026-07-16) ---------------------------------------------
+import { parseDetail as djDetail } from './clubs/django.js';
+ok('django: detail description block yields lineup + bio prose', () => {
+  const html = `<div class='event-details__copy'> <p class='event-details__copy--description'> Lineup:<br>
+  David Hazeltine - Piano<br> Jon Boutellier - Tenor saxophone<br> Caleb Tobocman - Bass<br> Pete Van Nostrand - Drums<br> <br>
+  David Hazeltine is one of the most sought-after pianists on the modern jazz scene. A Milwaukee native.</p></div>`;
+  const d = djDetail(html);
+  assert.equal(d.personnel.length, 4);
+  assert.deepEqual(d.personnel[1], { name: 'Jon Boutellier', instrument: 'tenor saxophone' });
+  assert.match(d.details, /sought-after pianists/);
+  assert.equal(djDetail('<html><body>no block here</body></html>'), null);
 });
 
 // --- 606 detail extraction ---------------------------------------------------------------

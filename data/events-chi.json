@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-16T16:39:08.638Z",
+  "generatedAt": "2026-07-16T20:52:39.575Z",
   "city": "chi",
   "clubs": [
     {
@@ -2256,6 +2256,19 @@
       "priceText": "$10 COVER"
     },
     {
+      "id": "hungrybrain:2026-07-26:aram-shelton-quintet",
+      "clubId": "hungrybrain",
+      "title": "Aram Shelton Quintet",
+      "date": "2026-07-26",
+      "sets": [
+        "21:00"
+      ],
+      "url": "https://wl.seetickets.us/event/aram-shelton-quintet/699390?afflky=HungryBrain",
+      "details": null,
+      "personnel": null,
+      "priceText": "$15.00"
+    },
+    {
       "id": "andys:2026-07-26:late-night-concert-series-w-sunday-soul",
       "clubId": "andys",
       "title": "Late Night Concert Series w/Sunday Soul",
@@ -3699,19 +3712,6 @@
       "priceText": "$10 COVER"
     },
     {
-      "id": "hungrybrain:2026-08-16:rempis-feldman-daisy-trio",
-      "clubId": "hungrybrain",
-      "title": "Rempis/Feldman/Daisy Trio",
-      "date": "2026-08-16",
-      "sets": [
-        "21:00"
-      ],
-      "url": "https://wl.seetickets.us/event/rempisfeldmandaisy-trio/694962?afflky=HungryBrain",
-      "details": null,
-      "personnel": null,
-      "priceText": "$15.00"
-    },
-    {
       "id": "jazzshowcase:2026-08-17:chicago-jazz-orchestra",
       "clubId": "jazzshowcase",
       "title": "Chicago Jazz Orchestra",
@@ -3893,6 +3893,19 @@
       ],
       "url": "https://www.jazzshowcase.com/nowplaying/tim-warfield-quartet",
       "details": "Tim Warfield Quartet",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "elasticarts:2026-08-20:improvised-music-series-jorrit-dijkstra-w-jeb-bishop-mabel-k",
+      "clubId": "elasticarts",
+      "title": "Improvised Music Series: Jorrit Dijkstra w/ Jeb Bishop, Mabel Kwan, Michael Zerang",
+      "date": "2026-08-20",
+      "sets": [
+        "20:30"
+      ],
+      "url": "https://elasticarts.org/events/improvised-music-series-8-20",
+      "details": "The Improvised Music Series welcomes saxophonist/electronicist/composer Jorrit Dijkstra from Boston. On this trip Dijkstra continues his longstanding musical relationship with Jeb Bishop and, following up on his January 2024 Chicago visit, performs again with Michael Zerang, while meeting Mabel Kwan",
       "personnel": null,
       "priceText": null
     },

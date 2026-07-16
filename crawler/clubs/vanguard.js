@@ -54,9 +54,13 @@ export function parse(html, today = new Date()) {
       continue;
     }
 
-    // "July 14 - July 19" or "August 25 - 30" (h3 somewhere in the section)
+    // "July 14 - July 19" or "August 25 - 30" (h3 somewhere in the section).
+    // Dash class covers the whole Unicode hyphen block: the site's editors
+    // sometimes type &#8209; (U+2011 non-breaking hyphen) instead of "-",
+    // which silently dropped the ENTIRE Ben Wendel week — caught only by
+    // the NYC Jazz Record recall audit (2026-07-16).
     const dr = htmlToText(section).match(
-      /([A-Z][a-z]+)\s+(\d{1,2})\s*[-–]\s*(?:([A-Z][a-z]+)\s+)?(\d{1,2})/
+      /([A-Z][a-z]+)\s+(\d{1,2})\s*[-–—‐-―−]\s*(?:([A-Z][a-z]+)\s+)?(\d{1,2})/
     );
     if (!dr || !monthNum(dr[1])) continue;
     const m1 = monthNum(dr[1]);

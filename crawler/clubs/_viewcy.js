@@ -5,7 +5,10 @@
 //               events: [{ name, starts_at(UTC ISO), ends_at, book_url }] }],
 //      total_count, has_more }
 // One "course" per show; events[] carries the actual date(s)/set(s).
-import { makeEvent, htmlToText, nyDate, nyTime, applyLateNight, stripPromo, parsePersonnel } from '../lib.js';
+import {
+  makeEvent, htmlToText, nyDate, nyTime, applyLateNight, stripPromo,
+  parsePersonnel, personnelFromStrongTags,
+} from '../lib.js';
 
 // "Artist Name - Set 2" / "Artist (late set)" -> base title for set-merging.
 function baseTitle(name) {
@@ -17,7 +20,9 @@ export function parseViewcy(jsonText, clubId, fallbackUrl) {
   const grouped = new Map(); // `${date}:${slugish title}` -> draft
   for (const course of j.data ?? []) {
     const desc = htmlToText(course.description ?? '');
-    const personnel = parsePersonnel(desc);
+    // bolded-name rosters first (exact boundaries), dash-run prose second
+    const strong = personnelFromStrongTags(course.description ?? '');
+    const personnel = strong.length ? strong : parsePersonnel(desc);
     for (const ev of course.events ?? []) {
       if (!ev?.starts_at) continue;
       const date = nyDate(ev.starts_at);

@@ -17,6 +17,9 @@ export async function enrichFromDetailPages(events, ctx, {
   concurrency = 3,
   delayMs = 200,
   fetchImpl = fetchText, // injectable for tests
+  // Events that share a page get ONE fetch. Default: the full URL. Django
+  // overrides to strip ?selected_date so a residency's dates dedupe.
+  urlKey = (url) => url,
 } = {}) {
   const prior = new Map((ctx?.previousEvents ?? []).map((e) => [e.id, e]));
   for (const e of events) {
@@ -32,23 +35,29 @@ export async function enrichFromDetailPages(events, ctx, {
     events.filter((e) => needs(e) && e.url)
       .sort((a, b) => a.date.localeCompare(b.date))
       .map((e) => e.url)
-  )].slice(0, maxPages);
+  )];
+  const keys = [...new Set(urls.map(urlKey))].slice(0, maxPages);
+  const fetchUrlByKey = new Map();
+  for (const u of urls) {
+    const k = urlKey(u);
+    if (!fetchUrlByKey.has(k)) fetchUrlByKey.set(k, u);
+  }
 
-  const byUrl = new Map();
+  const byKey = new Map();
   let i = 0;
   await Promise.all(Array.from({ length: concurrency }, async () => {
-    while (i < urls.length) {
-      const url = urls[i++];
+    while (i < keys.length) {
+      const key = keys[i++];
       try {
-        const got = extract(await fetchImpl(url));
-        if (got) byUrl.set(url, got);
+        const got = extract(await fetchImpl(fetchUrlByKey.get(key)));
+        if (got) byKey.set(key, got);
       } catch { /* a broken detail page never fails the venue */ }
       await sleep(delayMs);
     }
   }));
 
   for (const e of events) {
-    const got = byUrl.get(e.url);
+    const got = e.url && byKey.get(urlKey(e.url));
     if (!got) continue;
     for (const f of fields) {
       if (missing(e[f]) && !missing(got[f])) e[f] = got[f];

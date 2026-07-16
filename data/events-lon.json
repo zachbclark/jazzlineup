@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-16T17:28:11.689Z",
+  "generatedAt": "2026-07-16T20:53:12.034Z",
   "city": "lon",
   "clubs": [
     {
@@ -75,9 +75,7 @@
       "color": "#d8d3c0"
     }
   ],
-  "errors": [
-    "./clubs/pizzaexpresslive.js: returned 0 events (markup change? keeping previous data)"
-  ],
+  "errors": [],
   "events": [
     {
       "id": "club606:2026-07-13:phil-mulford-s-thunderthumbs",
@@ -88,7 +86,7 @@
         "20:00"
       ],
       "url": "https://www.606club.co.uk/events/view/phil-mulfords-thunderthumbs-23/",
-      "details": null,
+      "details": "Join us to celebrate the great Soul and Funk songs from the likes of George Benson, George Duke and Michael Jackson with “Thunderthumbs”, the 10-piece band led by bassist Phil Mulford . Inspired by the great US bassist Louis Johnson’s work the set runs from Louis’ time with Billy Preston in 1972 thr",
       "personnel": null,
       "priceText": null
     },
@@ -101,7 +99,7 @@
         "20:00"
       ],
       "url": "https://www.606club.co.uk/events/view/david-gordon-trio-19/",
-      "details": null,
+      "details": "“a richly gifted player with a sparkling style and boundless imagination” Independent on Sunday Described by the Independent as \"a richly gifted player with a sparkling style and boundless imagination\", pianist David Gordon 's one of the few professional musicians who is equally established in both ",
       "personnel": null,
       "priceText": null
     },
@@ -114,34 +112,8 @@
         "20:00"
       ],
       "url": "https://www.606club.co.uk/events/view/guille-hill-acoustic-band/",
-      "details": null,
+      "details": "“Guillermo Hill… excellent” All About Jazz Since moving to London from Uruguay in 1997 Guille Hill (pronounced Gee-jay) has established himself as a first call guitarist across the musical spectrum. The list of artists that he has worked with is a testament to his creativity and skill, including Tom",
       "personnel": null,
-      "priceText": null
-    },
-    {
-      "id": "vortex:2026-07-16:felix-moseholm-quartet-featuring-jonny-mansfield",
-      "clubId": "vortex",
-      "title": "Felix Moseholm Quartet featuring Jonny Mansfield",
-      "date": "2026-07-16",
-      "sets": [
-        "18:45"
-      ],
-      "url": "https://www.vortexjazz.co.uk/event/felix-moseholm-quartet-featuring-jonny-mansfield/",
-      "details": null,
-      "personnel": [
-        {
-          "name": "Jonny Mansfield",
-          "instrument": "vibraphone"
-        },
-        {
-          "name": "Noah Stoneman",
-          "instrument": "piano"
-        },
-        {
-          "name": "Jacob Patrone",
-          "instrument": "drums"
-        }
-      ],
       "priceText": null
     },
     {
@@ -179,9 +151,22 @@
         "20:00"
       ],
       "url": "https://www.606club.co.uk/events/view/tim-whitehead-11/",
-      "details": null,
+      "details": "“Tim Whitehead...the finest tenor player in Britain today” Jazz Review Tim Whitehead is renowned throughout the UK, Europe and the USA as a remarkable performer and composer with a dazzling CV. In the 70’s he toured with Ian Carr’s “Nucleus” and “Graham Collier Music” winning the Young Jazz Musician",
       "personnel": null,
       "priceText": null
+    },
+    {
+      "id": "pizzaexpress:2026-07-16:jazz-up-the-80s-with-the-jay-rayner-sextet",
+      "clubId": "pizzaexpress",
+      "title": "Jazz Up the 80s with the Jay Rayner Sextet",
+      "date": "2026-07-16",
+      "sets": [
+        "20:00"
+      ],
+      "url": "https://www.pizzaexpresslive.com/whats-on/jazz-up-the-80s-with-the-jay-rayner-sextet-5",
+      "details": null,
+      "personnel": null,
+      "priceText": "£35"
     },
     {
       "id": "ronnies:2026-07-16:eliane-elias",
@@ -217,6 +202,19 @@
       "priceText": null
     },
     {
+      "id": "pizzaexpress:2026-07-17:chris-ingham-s-rebop",
+      "clubId": "pizzaexpress",
+      "title": "Chris Ingham’s REBOP",
+      "date": "2026-07-17",
+      "sets": [
+        "13:00"
+      ],
+      "url": "https://www.pizzaexpresslive.com/whats-on/chris-inghams-rebop-play-miles-the-great-quintets",
+      "details": null,
+      "personnel": null,
+      "priceText": "£30"
+    },
+    {
       "id": "vortex:2026-07-17:phillip-golub-alex-hitchcock-andrew-lisle",
       "clubId": "vortex",
       "title": "Phillip Golub/Alex Hitchcock/Andrew Lisle",
@@ -239,6 +237,19 @@
       "priceText": null
     },
     {
+      "id": "pizzaexpress:2026-07-17:laura-klain-trio",
+      "clubId": "pizzaexpress",
+      "title": "Laura Klain Trio",
+      "date": "2026-07-17",
+      "sets": [
+        "20:00"
+      ],
+      "url": "https://www.pizzaexpresslive.com/whats-on/laura-klain-trio",
+      "details": null,
+      "personnel": null,
+      "priceText": "£30"
+    },
+    {
       "id": "club606:2026-07-17:bruce-adams-art-themen",
       "clubId": "club606",
       "title": "Bruce Adams/Art Themen",
@@ -247,7 +258,7 @@
         "21:00"
       ],
       "url": "https://www.606club.co.uk/events/view/bruce-adams-art-themen-2/",
-      "details": null,
+      "details": "Bruce Adams has been a stalwart of the UK jazz scene for almost 50 years, performing with the likes of Harry Sweets Edison, Buddy Tate, Al Cohn and Benny Waters and is widely regarded as one of the finest mainstream cornet/trumpet players in Europe. Lately, Bruce has appeared regularly here at the C",
       "personnel": null,
       "priceText": null
     },
@@ -313,9 +324,22 @@
         "21:00"
       ],
       "url": "https://www.606club.co.uk/events/view/greg-abate-6/",
-      "details": null,
+      "details": "“his work [has] a feeling of constant invention and creativity” Chicago Tribune A US-based musician of international standing, saxophonist Greg Abate is considered to be amongst the finest jazz players of his generation. After studying at Berklee in the mid 70's Greg went on tour with the Ray Charle",
       "personnel": null,
       "priceText": null
+    },
+    {
+      "id": "pizzaexpress:2026-07-18:king-pleasure-the-biscuit-boys",
+      "clubId": "pizzaexpress",
+      "title": "King Pleasure & The Biscuit Boys",
+      "date": "2026-07-18",
+      "sets": [
+        "21:00"
+      ],
+      "url": "https://www.pizzaexpresslive.com/whats-on/king-pleasure-the-biscuit-boys",
+      "details": null,
+      "personnel": null,
+      "priceText": "£30"
     },
     {
       "id": "ronnies:2026-07-18:late-late-show-with-kyra",
@@ -340,6 +364,19 @@
       "priceText": null
     },
     {
+      "id": "pizzaexpress:2026-07-19:noah-stoneman",
+      "clubId": "pizzaexpress",
+      "title": "Noah Stoneman",
+      "date": "2026-07-19",
+      "sets": [
+        "13:00"
+      ],
+      "url": "https://www.pizzaexpresslive.com/whats-on/noah-stoneman-trio",
+      "details": null,
+      "personnel": null,
+      "priceText": "£20"
+    },
+    {
       "id": "club606:2026-07-19:sunday-lunch-kaw-regis",
       "clubId": "club606",
       "title": "Sunday Lunch: Kaw Regis",
@@ -348,7 +385,7 @@
         "13:30"
       ],
       "url": "https://www.606club.co.uk/events/view/sunday-lunch-kaw-regis-6/",
-      "details": null,
+      "details": "Before football takes centre stage this evening, join us for a special lunchtime celebration of Brazilian music with multi-instrumentalist, singer, composer, and producer Kaw Regis . After establishing himself in his native Brazil, Kaw reached new heights upon moving to the UK. As a musical director",
       "personnel": null,
       "priceText": null
     },
@@ -400,9 +437,22 @@
         "20:00"
       ],
       "url": "https://www.606club.co.uk/events/view/wayne-hernandez-33/",
-      "details": null,
+      "details": "Wayne Hernandez is one of those fantastic singers who has been using his considerable talents for many years to make others sound good. Hugely successful within the music business he has worked with Tina Turner, Tori Amos, Blur, Grover Washington, Roberta Flack, Madonna and Rag'n'Bone Man. He has al",
       "personnel": null,
       "priceText": null
+    },
+    {
+      "id": "pizzaexpress:2026-07-19:hannah-horton",
+      "clubId": "pizzaexpress",
+      "title": "Hannah Horton",
+      "date": "2026-07-19",
+      "sets": [
+        "20:00"
+      ],
+      "url": "https://www.pizzaexpresslive.com/whats-on/hannah-horton",
+      "details": null,
+      "personnel": null,
+      "priceText": "£25"
     },
     {
       "id": "ronnies:2026-07-19:kenny-garrett-and-sounds-from-the-ancestors",
@@ -437,9 +487,22 @@
         "20:00"
       ],
       "url": "https://www.606club.co.uk/events/view/matt-skeapings-vital-organs-ft-jenny-howe/",
-      "details": null,
+      "details": "The Vital Organs , with Steve Ashworth -organ, Easel Kandola-McNicholas -guitar and Matt Skeaping- drums, started life as a South London instrumental jazz trio in 2019. But with the addition of vocalist Jenny Howe, a highly impressive singer who in addition to work with the BBC Big Band, Shakatak an",
       "personnel": null,
       "priceText": null
+    },
+    {
+      "id": "pizzaexpress:2026-07-20:emily-francis-trio",
+      "clubId": "pizzaexpress",
+      "title": "Emily Francis Trio",
+      "date": "2026-07-20",
+      "sets": [
+        "20:00"
+      ],
+      "url": "https://www.pizzaexpresslive.com/whats-on/emily-francis-trio",
+      "details": null,
+      "personnel": null,
+      "priceText": "£20"
     },
     {
       "id": "ronnies:2026-07-20:say-she-she",
@@ -487,9 +550,22 @@
         "20:00"
       ],
       "url": "https://www.606club.co.uk/events/view/francis-tulip-trio-with-special-guest-mejedi-owusu/",
-      "details": null,
+      "details": "Jazz guitarist Frances Tulip is making a major impression amongst those in the know for his technical prowess as well as his creative spark. A graduate of the Royal Birmingham Conservatoire – where he won their Jazz Performance Prize – he is now studying at Trinity Laban in London, and has already w",
       "personnel": null,
       "priceText": null
+    },
+    {
+      "id": "pizzaexpress:2026-07-21:miles-mindlin",
+      "clubId": "pizzaexpress",
+      "title": "Miles Mindlin",
+      "date": "2026-07-21",
+      "sets": [
+        "20:00"
+      ],
+      "url": "https://www.pizzaexpresslive.com/whats-on/miles-mindlin",
+      "details": null,
+      "personnel": null,
+      "priceText": "£25"
     },
     {
       "id": "ronnies:2026-07-21:isaiah-collier",
@@ -524,7 +600,7 @@
         "20:00"
       ],
       "url": "https://www.606club.co.uk/events/view/simon-mulligan-11/",
-      "details": null,
+      "details": "“The most abundantly gifted of pianists” The Times Although many jazz musicians are also trained classical musicians, it is unusual for an artist to manage successful ongoing careers in both fields. UK-born pianist Simon Mulligan is certainly one who has achieved this, with impressive results. At th",
       "personnel": null,
       "priceText": null
     },
@@ -574,9 +650,22 @@
         "20:00"
       ],
       "url": "https://www.606club.co.uk/events/view/bryan-corbetts-instrumental-groove-unit-2/",
-      "details": null,
+      "details": "An experienced and highly regarded trumpet player the Award-winning Bryan Corbett includes work with the likes of Us3, The Brand New Heavies, Alesha Dixon, Mica Paris, Beverley Knight, Ruby Turner and Jocelyn Brown on an impressive cv. Also a featured soloist with the 'BBC Concert Orchestra' and Big",
       "personnel": null,
       "priceText": null
+    },
+    {
+      "id": "pizzaexpress:2026-07-23:tom-sochas-trio",
+      "clubId": "pizzaexpress",
+      "title": "Tom Sochas Trio",
+      "date": "2026-07-23",
+      "sets": [
+        "20:00"
+      ],
+      "url": "https://www.pizzaexpresslive.com/whats-on/tom-sochas-trio",
+      "details": null,
+      "personnel": null,
+      "priceText": "£20"
     },
     {
       "id": "ronnies:2026-07-23:binker-golding",
@@ -588,6 +677,19 @@
       "details": null,
       "personnel": null,
       "priceText": null
+    },
+    {
+      "id": "pizzaexpress:2026-07-24:claire-martin-s-summer-songbook",
+      "clubId": "pizzaexpress",
+      "title": "Claire Martin's Summer Songbook",
+      "date": "2026-07-24",
+      "sets": [
+        "13:00"
+      ],
+      "url": "https://www.pizzaexpresslive.com/whats-on/claire-martins-summer-songbook",
+      "details": null,
+      "personnel": null,
+      "priceText": "£30"
     },
     {
       "id": "cafeoto:2026-07-24:agn-s-pe-mr-aka-amazing-nine-inch-nolan",
@@ -629,6 +731,19 @@
       "priceText": null
     },
     {
+      "id": "pizzaexpress:2026-07-24:pink-floyd-reworked",
+      "clubId": "pizzaexpress",
+      "title": "Pink Floyd ReWorked",
+      "date": "2026-07-24",
+      "sets": [
+        "20:00"
+      ],
+      "url": "https://www.pizzaexpresslive.com/whats-on/pink-floyd-reworked",
+      "details": null,
+      "personnel": null,
+      "priceText": "£48"
+    },
+    {
       "id": "club606:2026-07-24:samara",
       "clubId": "club606",
       "title": "Samara",
@@ -637,7 +752,7 @@
         "21:00"
       ],
       "url": "https://www.606club.co.uk/events/view/samara-51/",
-      "details": null,
+      "details": "“Cracking Latin-jazz quintet led by 606 proprietor Steve Rubie on flute and alto saxophone…explores these Latin jazz classics in great rhythmic style” Time Out Tonight we present an evening celebrating the joyous, rhythmic, delights of classic Brazilian MPB with the 606 Club’s outstanding Brazilian ",
       "personnel": null,
       "priceText": null
     },
@@ -672,6 +787,19 @@
       "priceText": null
     },
     {
+      "id": "pizzaexpress:2026-07-25:pink-floyd-reworked",
+      "clubId": "pizzaexpress",
+      "title": "Pink Floyd ReWorked",
+      "date": "2026-07-25",
+      "sets": [
+        "20:00"
+      ],
+      "url": "https://www.pizzaexpresslive.com/whats-on/pink-floyd-reworked",
+      "details": null,
+      "personnel": null,
+      "priceText": "£48"
+    },
+    {
       "id": "club606:2026-07-25:rachel-sutton-ft-paul-booth",
       "clubId": "club606",
       "title": "Rachel Sutton ft Paul Booth",
@@ -680,7 +808,7 @@
         "21:00"
       ],
       "url": "https://www.606club.co.uk/events/view/rachel-sutton-ft-paul-booth/",
-      "details": null,
+      "details": "“bursting-with-life stage presence...a must see” Cabaret Scenes Rachel Sutton trained at The Welsh College of Music and Drama and her background in theatre is at the core of every performance. With a rich tone and sense of swing that is both exciting and moving, Rachel performs her own arrangements ",
       "personnel": null,
       "priceText": null
     },
@@ -718,6 +846,19 @@
       "priceText": null
     },
     {
+      "id": "pizzaexpress:2026-07-26:the-simon-spillett-big-band",
+      "clubId": "pizzaexpress",
+      "title": "The Simon Spillett Big Band",
+      "date": "2026-07-26",
+      "sets": [
+        "13:00"
+      ],
+      "url": "https://www.pizzaexpresslive.com/whats-on/the-simon-spillett-big-band",
+      "details": null,
+      "personnel": null,
+      "priceText": "£40"
+    },
+    {
       "id": "club606:2026-07-26:pastiche-records-showcase-e-j-seal-carrie-hamilton-christell",
       "clubId": "club606",
       "title": "Pastiche Records Showcase: E J Seal, Carrie Hamilton, Christelle Désiré & APRILLO",
@@ -726,7 +867,7 @@
         "13:30"
       ],
       "url": "https://www.606club.co.uk/events/view/pastiche-records-showcase-e-j-seal-carrie-hamilton-christelle-desire-aprillo/",
-      "details": null,
+      "details": "Join us for an intimate afternoon showcase celebrating four exceptional artists — E J Seal, Carrie Hamilton , Christelle Désiré and APRILLO — all preparing to release new music on singer-songwriter Sarah Gillespie’s label, Pastiche Records. This special afternoon offers an early glimpse into the nex",
       "personnel": null,
       "priceText": null
     },
@@ -765,9 +906,22 @@
         "20:00"
       ],
       "url": "https://www.606club.co.uk/events/view/natalie-duncan-13/",
-      "details": null,
+      "details": "“..spare, restrained arrangements allowing that big soulful voice to roam free” Guardian Nottingham-raised singer/songwriter/pianist Natalie Duncan came to wider attention following her appearance on the BBC programme \"Goldie's Band By Royal Appointment\", the series that was the brainchild of drum a",
       "personnel": null,
       "priceText": null
+    },
+    {
+      "id": "pizzaexpress:2026-07-26:elchin-shirinov-trio",
+      "clubId": "pizzaexpress",
+      "title": "Elchin Shirinov Trio",
+      "date": "2026-07-26",
+      "sets": [
+        "20:00"
+      ],
+      "url": "https://www.pizzaexpresslive.com/whats-on/elchin-shirinov-trio",
+      "details": null,
+      "personnel": null,
+      "priceText": "£20"
     },
     {
       "id": "ronnies:2026-07-26:nina-kristofferson-sings-billie-holiday",
@@ -802,9 +956,22 @@
         "20:00"
       ],
       "url": "https://www.606club.co.uk/events/view/bruming-band/",
-      "details": null,
+      "details": "The BruMing band celebrates two contrasting heroes of American music: chamber jazz composer Dave Brubeck and the titanic force of nature that was Charles Mingus. Both of these iconic bandleaders put out groundbreaking albums in 1959, 'Time Out' and 'Ah Um', respectively and it is from these recordin",
       "personnel": null,
       "priceText": null
+    },
+    {
+      "id": "pizzaexpress:2026-07-27:shakatak",
+      "clubId": "pizzaexpress",
+      "title": "Shakatak",
+      "date": "2026-07-27",
+      "sets": [
+        "20:00"
+      ],
+      "url": "https://www.pizzaexpresslive.com/whats-on/shakatak-1",
+      "details": null,
+      "personnel": null,
+      "priceText": "£40"
     },
     {
       "id": "ronnies:2026-07-27:the-solomon-gundy-band",
@@ -882,9 +1049,22 @@
         "20:00"
       ],
       "url": "https://www.606club.co.uk/events/view/ed-bentleys-afro-jazz-express-1/",
-      "details": null,
+      "details": "“[Bentley] is a player's player, meaty rather than flashy... he doesn't need to bluff” Evening Standard Ghanaian-born musician Ed Bentley has been resident in the UK since the early 70’s and has carved an illustrious career on the international jazz scene as a fine pianist and organist. His fluent “",
       "personnel": null,
       "priceText": null
+    },
+    {
+      "id": "pizzaexpress:2026-07-28:shakatak",
+      "clubId": "pizzaexpress",
+      "title": "Shakatak",
+      "date": "2026-07-28",
+      "sets": [
+        "20:00"
+      ],
+      "url": "https://www.pizzaexpresslive.com/whats-on/shakatak-1",
+      "details": null,
+      "personnel": null,
+      "priceText": "£40"
     },
     {
       "id": "ronnies:2026-07-28:piano-trio-series-finn-carter",
@@ -932,9 +1112,22 @@
         "20:00"
       ],
       "url": "https://www.606club.co.uk/events/view/dulcie-may-moreno-ep-launch-stolen-moments/",
-      "details": null,
+      "details": "Influenced by the likes of Nina Simone, Billie Holiday & Sarah Vaughan singer Dulcie May Moreno is emerging as a versatile jazz artist with range and poise. Over the last 10 years she has performed on a regular basis around the UK, with notable performances from London and Canterbury to Newcastle an",
       "personnel": null,
       "priceText": null
+    },
+    {
+      "id": "pizzaexpress:2026-07-29:shakatak",
+      "clubId": "pizzaexpress",
+      "title": "Shakatak",
+      "date": "2026-07-29",
+      "sets": [
+        "20:00"
+      ],
+      "url": "https://www.pizzaexpresslive.com/whats-on/shakatak-1",
+      "details": null,
+      "personnel": null,
+      "priceText": "£40"
     },
     {
       "id": "ronnies:2026-07-29:mica-paris",
@@ -982,9 +1175,22 @@
         "20:00"
       ],
       "url": "https://www.606club.co.uk/events/view/r-j-gilbert/",
-      "details": null,
+      "details": "This is an exciting new band led by one of the UK’s most promising young saxophonists R-J Gilbert . R-J first made a name for himself with the iconic UK based US-born drummer the late Doug Sides (Johnny Griffin, Abbey Lincoln) before more recently being featured with the band of award-winning UK dru",
       "personnel": null,
       "priceText": null
+    },
+    {
+      "id": "pizzaexpress:2026-07-30:shakatak",
+      "clubId": "pizzaexpress",
+      "title": "Shakatak",
+      "date": "2026-07-30",
+      "sets": [
+        "20:00"
+      ],
+      "url": "https://www.pizzaexpresslive.com/whats-on/shakatak-1",
+      "details": null,
+      "personnel": null,
+      "priceText": "£40"
     },
     {
       "id": "ronnies:2026-07-30:ivan-lins",
@@ -1061,6 +1267,19 @@
       "priceText": null
     },
     {
+      "id": "pizzaexpress:2026-07-31:shakatak",
+      "clubId": "pizzaexpress",
+      "title": "Shakatak",
+      "date": "2026-07-31",
+      "sets": [
+        "20:00"
+      ],
+      "url": "https://www.pizzaexpresslive.com/whats-on/shakatak-1",
+      "details": null,
+      "personnel": null,
+      "priceText": "£40"
+    },
+    {
       "id": "vortex:2026-07-31:vortex-lates-jesse-doniach",
       "clubId": "vortex",
       "title": "Vortex Lates: Jesse Doniach",
@@ -1115,6 +1334,19 @@
       "priceText": null
     },
     {
+      "id": "pizzaexpress:2026-08-01:shakatak",
+      "clubId": "pizzaexpress",
+      "title": "Shakatak",
+      "date": "2026-08-01",
+      "sets": [
+        "20:00"
+      ],
+      "url": "https://www.pizzaexpresslive.com/whats-on/shakatak-1",
+      "details": null,
+      "personnel": null,
+      "priceText": "£40"
+    },
+    {
       "id": "club606:2026-08-01:alex-garnett-tribute-to-horace-silver",
       "clubId": "club606",
       "title": "Alex Garnett: Tribute To Horace Silver",
@@ -1148,6 +1380,19 @@
       "details": null,
       "personnel": null,
       "priceText": null
+    },
+    {
+      "id": "pizzaexpress:2026-08-02:the-joe-mackley-quartet",
+      "clubId": "pizzaexpress",
+      "title": "The Joe Mackley Quartet",
+      "date": "2026-08-02",
+      "sets": [
+        "13:00"
+      ],
+      "url": "https://www.pizzaexpresslive.com/whats-on/the-joe-mackley-quartet",
+      "details": null,
+      "personnel": null,
+      "priceText": "£20"
     },
     {
       "id": "club606:2026-08-02:closed-for-private-event-celebrating-dougie-winton",
@@ -1202,6 +1447,19 @@
       "priceText": null
     },
     {
+      "id": "pizzaexpress:2026-08-02:louis-wildi-quartet",
+      "clubId": "pizzaexpress",
+      "title": "Louis Wildi Quartet",
+      "date": "2026-08-02",
+      "sets": [
+        "20:00"
+      ],
+      "url": "https://www.pizzaexpresslive.com/whats-on/louis-wildi-quartet",
+      "details": null,
+      "personnel": null,
+      "priceText": "£20"
+    },
+    {
       "id": "ronnies:2026-08-02:olivia-cuttill-quintet",
       "clubId": "ronnies",
       "title": "Olivia Cuttill Quintet",
@@ -1237,6 +1495,19 @@
       "priceText": null
     },
     {
+      "id": "pizzaexpress:2026-08-03:dave-o-higgins-tom-smith",
+      "clubId": "pizzaexpress",
+      "title": "Dave O’Higgins & Tom Smith",
+      "date": "2026-08-03",
+      "sets": [
+        "20:00"
+      ],
+      "url": "https://www.pizzaexpresslive.com/whats-on/dave-ohiggins-tom-smith",
+      "details": null,
+      "personnel": null,
+      "priceText": "£25"
+    },
+    {
       "id": "vortex:2026-08-04:a-celebration-of-the-life-and-music-of-richard-turner",
       "clubId": "vortex",
       "title": "A Celebration of The Life and Music of Richard Turner",
@@ -1270,6 +1541,19 @@
       "details": null,
       "personnel": null,
       "priceText": null
+    },
+    {
+      "id": "pizzaexpress:2026-08-04:tipitina",
+      "clubId": "pizzaexpress",
+      "title": "Tipitina",
+      "date": "2026-08-04",
+      "sets": [
+        "20:00"
+      ],
+      "url": "https://www.pizzaexpresslive.com/whats-on/tipitina",
+      "details": null,
+      "personnel": null,
+      "priceText": "£20"
     },
     {
       "id": "ronnies:2026-08-04:the-blackbyrds",
@@ -1353,6 +1637,19 @@
       "priceText": null
     },
     {
+      "id": "pizzaexpress:2026-08-05:omar-puente-charanga-jazz-septet",
+      "clubId": "pizzaexpress",
+      "title": "Omar Puente Charanga Jazz Septet",
+      "date": "2026-08-05",
+      "sets": [
+        "20:00"
+      ],
+      "url": "https://www.pizzaexpresslive.com/whats-on/omar-puente-charanga-jazz-septet",
+      "details": null,
+      "personnel": null,
+      "priceText": "£30"
+    },
+    {
       "id": "vortex:2026-08-06:alasdair-pennington-quartet",
       "clubId": "vortex",
       "title": "Alasdair Pennington Quartet",
@@ -1377,6 +1674,19 @@
         }
       ],
       "priceText": null
+    },
+    {
+      "id": "pizzaexpress:2026-08-06:sambroso-all-stars-present-the-buena-vista",
+      "clubId": "pizzaexpress",
+      "title": "Sambroso All Stars Present The Buena Vista",
+      "date": "2026-08-06",
+      "sets": [
+        "20:00"
+      ],
+      "url": "https://www.pizzaexpresslive.com/whats-on/sambroso-all-stars-present-the-buena-vista",
+      "details": null,
+      "personnel": null,
+      "priceText": "£35"
     },
     {
       "id": "ronnies:2026-08-06:denny-ilett-s-electric-lady-big-band-plays-the-music-of-jimi",
@@ -1414,6 +1724,19 @@
       "priceText": null
     },
     {
+      "id": "pizzaexpress:2026-08-07:rosie-frater-taylor",
+      "clubId": "pizzaexpress",
+      "title": "Rosie Frater-Taylor",
+      "date": "2026-08-07",
+      "sets": [
+        "20:00"
+      ],
+      "url": "https://www.pizzaexpresslive.com/whats-on/rosie-fratertaylor",
+      "details": null,
+      "personnel": null,
+      "priceText": "£22"
+    },
+    {
       "id": "club606:2026-08-07:errol-linton",
       "clubId": "club606",
       "title": "Errol Linton",
@@ -1436,6 +1759,19 @@
       "details": null,
       "personnel": null,
       "priceText": null
+    },
+    {
+      "id": "pizzaexpress:2026-08-08:dave-lee-trio-a-legend-in-his-lifetime",
+      "clubId": "pizzaexpress",
+      "title": "Dave Lee Trio 'A Legend in his Lifetime'",
+      "date": "2026-08-08",
+      "sets": [
+        "13:00"
+      ],
+      "url": "https://www.pizzaexpresslive.com/whats-on/dave-lee-a-legend-in-his-lifetime",
+      "details": null,
+      "personnel": null,
+      "priceText": "£20"
     },
     {
       "id": "vortex:2026-08-08:leon-foster-thomas-group",
@@ -1462,6 +1798,19 @@
         }
       ],
       "priceText": null
+    },
+    {
+      "id": "pizzaexpress:2026-08-08:john-coghlan-s-quo-reimagined",
+      "clubId": "pizzaexpress",
+      "title": "John Coghlan’s Quo Reimagined",
+      "date": "2026-08-08",
+      "sets": [
+        "20:00"
+      ],
+      "url": "https://www.pizzaexpresslive.com/whats-on/john-coghlans-quo-reimagined",
+      "details": null,
+      "personnel": null,
+      "priceText": "£35"
     },
     {
       "id": "club606:2026-08-08:tony-kofi-s-standard-time-quartet",
@@ -1527,6 +1876,19 @@
       "priceText": null
     },
     {
+      "id": "pizzaexpress:2026-08-09:the-tom-seals-band",
+      "clubId": "pizzaexpress",
+      "title": "The Tom Seals Band",
+      "date": "2026-08-09",
+      "sets": [
+        "20:00"
+      ],
+      "url": "https://www.pizzaexpresslive.com/whats-on/the-tom-seals-band",
+      "details": null,
+      "personnel": null,
+      "priceText": "£35"
+    },
+    {
       "id": "vortex:2026-08-10:earth-and-bones-residency-ft-anna-chai-richard-l-t-nd-baker-",
       "clubId": "vortex",
       "title": "Earth and Bones Residency ft. Anna Chai & Richard Ọlátúndé Baker (first night)",
@@ -1551,6 +1913,19 @@
       "details": null,
       "personnel": null,
       "priceText": null
+    },
+    {
+      "id": "pizzaexpress:2026-08-10:the-tom-seals-band",
+      "clubId": "pizzaexpress",
+      "title": "The Tom Seals Band",
+      "date": "2026-08-10",
+      "sets": [
+        "20:00"
+      ],
+      "url": "https://www.pizzaexpresslive.com/whats-on/the-tom-seals-band",
+      "details": null,
+      "personnel": null,
+      "priceText": "£35"
     },
     {
       "id": "vortex:2026-08-11:midweek-downstairs-jam",
@@ -2105,6 +2480,19 @@
       "priceText": null
     },
     {
+      "id": "pizzaexpress:2026-08-25:the-jazz-africa-experience",
+      "clubId": "pizzaexpress",
+      "title": "The Jazz Africa Experience",
+      "date": "2026-08-25",
+      "sets": [
+        "20:00"
+      ],
+      "url": "https://www.pizzaexpresslive.com/whats-on/the-jazz-africa-experience",
+      "details": null,
+      "personnel": null,
+      "priceText": "£25"
+    },
+    {
       "id": "vortex:2026-08-26:the-hectet",
       "clubId": "vortex",
       "title": "The Hectet",
@@ -2144,6 +2532,19 @@
       "priceText": null
     },
     {
+      "id": "pizzaexpress:2026-08-26:scott-hamilton-quartet",
+      "clubId": "pizzaexpress",
+      "title": "Scott Hamilton Quartet",
+      "date": "2026-08-26",
+      "sets": [
+        "20:00"
+      ],
+      "url": "https://www.pizzaexpresslive.com/whats-on/scott-hamilton-quartet-2",
+      "details": null,
+      "personnel": null,
+      "priceText": "£38"
+    },
+    {
       "id": "ronnies:2026-08-26:emma-smith-jamie-safir-trio",
       "clubId": "ronnies",
       "title": "Emma Smith & Jamie Safir Trio",
@@ -2153,6 +2554,58 @@
       "details": "Upstairs at Ronnie’s",
       "personnel": null,
       "priceText": null
+    },
+    {
+      "id": "vortex:2026-08-27:hugh-pascall-quintet",
+      "clubId": "vortex",
+      "title": "Hugh Pascall Quintet",
+      "date": "2026-08-27",
+      "sets": [
+        "19:45"
+      ],
+      "url": "https://www.vortexjazz.co.uk/event/hugh-pascall-quintet/",
+      "details": null,
+      "personnel": [
+        {
+          "name": "Line-up: Hugh Pascall",
+          "instrument": "trumpet"
+        },
+        {
+          "name": "James Allsopp",
+          "instrument": "tenor saxophone"
+        },
+        {
+          "name": "Liam Dunachie",
+          "instrument": "piano"
+        }
+      ],
+      "priceText": null
+    },
+    {
+      "id": "pizzaexpress:2026-08-27:scott-hamilton-quartet",
+      "clubId": "pizzaexpress",
+      "title": "Scott Hamilton Quartet",
+      "date": "2026-08-27",
+      "sets": [
+        "20:00"
+      ],
+      "url": "https://www.pizzaexpresslive.com/whats-on/scott-hamilton-quartet-2",
+      "details": null,
+      "personnel": null,
+      "priceText": "£38"
+    },
+    {
+      "id": "pizzaexpress:2026-08-28:scott-hamilton-quartet",
+      "clubId": "pizzaexpress",
+      "title": "Scott Hamilton Quartet",
+      "date": "2026-08-28",
+      "sets": [
+        "20:00"
+      ],
+      "url": "https://www.pizzaexpresslive.com/whats-on/scott-hamilton-quartet-2",
+      "details": null,
+      "personnel": null,
+      "priceText": "£38"
     },
     {
       "id": "jazzcafe:2026-08-28:levitation-orchestra",
@@ -2166,6 +2619,45 @@
       "priceText": null
     },
     {
+      "id": "pizzaexpress:2026-08-29:scott-hamilton-quartet",
+      "clubId": "pizzaexpress",
+      "title": "Scott Hamilton Quartet",
+      "date": "2026-08-29",
+      "sets": [
+        "20:00"
+      ],
+      "url": "https://www.pizzaexpresslive.com/whats-on/scott-hamilton-quartet-2",
+      "details": null,
+      "personnel": null,
+      "priceText": "£38"
+    },
+    {
+      "id": "pizzaexpress:2026-08-30:scott-hamilton-quartet",
+      "clubId": "pizzaexpress",
+      "title": "Scott Hamilton Quartet",
+      "date": "2026-08-30",
+      "sets": [
+        "20:00"
+      ],
+      "url": "https://www.pizzaexpresslive.com/whats-on/scott-hamilton-quartet-2",
+      "details": null,
+      "personnel": null,
+      "priceText": "£38"
+    },
+    {
+      "id": "pizzaexpress:2026-08-31:scott-hamilton-quartet",
+      "clubId": "pizzaexpress",
+      "title": "Scott Hamilton Quartet",
+      "date": "2026-08-31",
+      "sets": [
+        "20:00"
+      ],
+      "url": "https://www.pizzaexpresslive.com/whats-on/scott-hamilton-quartet-2",
+      "details": null,
+      "personnel": null,
+      "priceText": "£38"
+    },
+    {
       "id": "jazzcafe:2026-08-31:miles-davis-kind-of-blue",
       "clubId": "jazzcafe",
       "title": "Miles Davis' Kind of Blue",
@@ -2175,6 +2667,32 @@
       "details": "A Jazz Classic Celebrated",
       "personnel": null,
       "priceText": null
+    },
+    {
+      "id": "pizzaexpress:2026-09-01:scott-hamilton-quartet",
+      "clubId": "pizzaexpress",
+      "title": "Scott Hamilton Quartet",
+      "date": "2026-09-01",
+      "sets": [
+        "20:00"
+      ],
+      "url": "https://www.pizzaexpresslive.com/whats-on/scott-hamilton-quartet-2",
+      "details": null,
+      "personnel": null,
+      "priceText": "£38"
+    },
+    {
+      "id": "pizzaexpress:2026-09-02:eleventh-hour-jazz-orchestra",
+      "clubId": "pizzaexpress",
+      "title": "Eleventh Hour Jazz Orchestra",
+      "date": "2026-09-02",
+      "sets": [
+        "20:00"
+      ],
+      "url": "https://www.pizzaexpresslive.com/whats-on/eleventh-hour-jazz-orchestra",
+      "details": null,
+      "personnel": null,
+      "priceText": "£22"
     },
     {
       "id": "jazzcafe:2026-09-02:cubafrobeat",
@@ -2199,6 +2717,19 @@
       "priceText": null
     },
     {
+      "id": "pizzaexpress:2026-09-03:steve-nelson-quartet",
+      "clubId": "pizzaexpress",
+      "title": "Steve Nelson Quartet",
+      "date": "2026-09-03",
+      "sets": [
+        "20:00"
+      ],
+      "url": "https://www.pizzaexpresslive.com/whats-on/steve-nelson-quartet",
+      "details": null,
+      "personnel": null,
+      "priceText": "£25"
+    },
+    {
       "id": "jazzcafe:2026-09-03:bcuc",
       "clubId": "jazzcafe",
       "title": "BCUC",
@@ -2208,6 +2739,110 @@
       "details": "Afro-Psychedelic Fusion",
       "personnel": null,
       "priceText": null
+    },
+    {
+      "id": "pizzaexpress:2026-09-04:eliane-correa-en-el-aire",
+      "clubId": "pizzaexpress",
+      "title": "Eliane Correa & En El Aire",
+      "date": "2026-09-04",
+      "sets": [
+        "20:00"
+      ],
+      "url": "https://www.pizzaexpresslive.com/whats-on/eliane-correa-en-el-aire",
+      "details": null,
+      "personnel": null,
+      "priceText": "£40"
+    },
+    {
+      "id": "pizzaexpress:2026-09-05:ilario-ferrari-trio-friends",
+      "clubId": "pizzaexpress",
+      "title": "Ilario Ferrari Trio & Friends",
+      "date": "2026-09-05",
+      "sets": [
+        "20:00"
+      ],
+      "url": "https://www.pizzaexpresslive.com/whats-on/ilario-ferrari-trio-friends",
+      "details": null,
+      "personnel": null,
+      "priceText": "£30"
+    },
+    {
+      "id": "pizzaexpress:2026-09-06:the-music-of-carole-king-and-james-taylor",
+      "clubId": "pizzaexpress",
+      "title": "The Music of Carole King and James Taylor",
+      "date": "2026-09-06",
+      "sets": [
+        "13:00"
+      ],
+      "url": "https://www.pizzaexpresslive.com/whats-on/the-music-of-carole-king-and-james-taylor",
+      "details": null,
+      "personnel": null,
+      "priceText": "£45"
+    },
+    {
+      "id": "pizzaexpress:2026-09-06:harry-bolt-quartet",
+      "clubId": "pizzaexpress",
+      "title": "Harry Bolt Quartet",
+      "date": "2026-09-06",
+      "sets": [
+        "20:00"
+      ],
+      "url": "https://www.pizzaexpresslive.com/whats-on/harry-bolt-quartet",
+      "details": null,
+      "personnel": null,
+      "priceText": "£25"
+    },
+    {
+      "id": "pizzaexpress:2026-09-07:tango-jazz-quartet-argentina",
+      "clubId": "pizzaexpress",
+      "title": "Tango Jazz Quartet (Argentina)",
+      "date": "2026-09-07",
+      "sets": [
+        "20:00"
+      ],
+      "url": "https://www.pizzaexpresslive.com/whats-on/tango-jazz-quartet",
+      "details": null,
+      "personnel": null,
+      "priceText": "£20"
+    },
+    {
+      "id": "pizzaexpress:2026-09-08:mali-sheard-hayfever",
+      "clubId": "pizzaexpress",
+      "title": "Mali Sheard 'Hayfever'",
+      "date": "2026-09-08",
+      "sets": [
+        "20:00"
+      ],
+      "url": "https://www.pizzaexpresslive.com/whats-on/mali-sheard",
+      "details": null,
+      "personnel": null,
+      "priceText": "£20"
+    },
+    {
+      "id": "pizzaexpress:2026-09-09:tv-time-sam-every-little-big-band",
+      "clubId": "pizzaexpress",
+      "title": "TV Time - Sam Every (Little) Big Band",
+      "date": "2026-09-09",
+      "sets": [
+        "20:00"
+      ],
+      "url": "https://www.pizzaexpresslive.com/whats-on/tv-time-sam-every-little-big-band",
+      "details": null,
+      "personnel": null,
+      "priceText": "£25"
+    },
+    {
+      "id": "pizzaexpress:2026-09-10:john-etheridge-and-the-soft-machine",
+      "clubId": "pizzaexpress",
+      "title": "John Etheridge and The Soft Machine",
+      "date": "2026-09-10",
+      "sets": [
+        "20:00"
+      ],
+      "url": "https://www.pizzaexpresslive.com/whats-on/john-etheridge-and-the-soft-machine",
+      "details": null,
+      "personnel": null,
+      "priceText": "£35"
     },
     {
       "id": "jazzcafe:2026-09-10:bruno-pernadas",
@@ -2221,6 +2856,32 @@
       "priceText": null
     },
     {
+      "id": "pizzaexpress:2026-09-11:john-etheridge-s-zappatistas",
+      "clubId": "pizzaexpress",
+      "title": "John Etheridge’s Zappatistas",
+      "date": "2026-09-11",
+      "sets": [
+        "20:00"
+      ],
+      "url": "https://www.pizzaexpresslive.com/whats-on/john-etheridges-zappatistas",
+      "details": null,
+      "personnel": null,
+      "priceText": "£35"
+    },
+    {
+      "id": "pizzaexpress:2026-09-12:john-etheridge-s-blue-spirits-with-vimala-rowe",
+      "clubId": "pizzaexpress",
+      "title": "John Etheridge’s Blue Spirits with Vimala Rowe",
+      "date": "2026-09-12",
+      "sets": [
+        "20:00"
+      ],
+      "url": "https://www.pizzaexpresslive.com/whats-on/john-etheridges-blue-spirits-with-vimala-rowe",
+      "details": null,
+      "personnel": null,
+      "priceText": "£35"
+    },
+    {
       "id": "jazzcafe:2026-09-12:china-moses",
       "clubId": "jazzcafe",
       "title": "China Moses",
@@ -2230,6 +2891,58 @@
       "details": "Soul-Jazz Powerhouse",
       "personnel": null,
       "priceText": null
+    },
+    {
+      "id": "pizzaexpress:2026-09-13:down-for-the-count-all-stars",
+      "clubId": "pizzaexpress",
+      "title": "Down for the Count All-Stars",
+      "date": "2026-09-13",
+      "sets": [
+        "20:00"
+      ],
+      "url": "https://www.pizzaexpresslive.com/whats-on/down-for-the-count-allstars",
+      "details": null,
+      "personnel": null,
+      "priceText": "£31"
+    },
+    {
+      "id": "pizzaexpress:2026-09-14:the-hot-club-of-jupiter",
+      "clubId": "pizzaexpress",
+      "title": "The Hot Club of Jupiter",
+      "date": "2026-09-14",
+      "sets": [
+        "20:00"
+      ],
+      "url": "https://www.pizzaexpresslive.com/whats-on/the-hot-club-of-jupiter",
+      "details": null,
+      "personnel": null,
+      "priceText": "£20"
+    },
+    {
+      "id": "pizzaexpress:2026-09-15:florian-arbenz-chris-cheek-arno-krijger-organ-trio",
+      "clubId": "pizzaexpress",
+      "title": "Florian Arbenz / Chris Cheek / Arno Krijger Organ Trio",
+      "date": "2026-09-15",
+      "sets": [
+        "20:00"
+      ],
+      "url": "https://www.pizzaexpresslive.com/whats-on/florian-arbenz-chris-cheek-arno-krijger-organ-trio",
+      "details": null,
+      "personnel": null,
+      "priceText": "£25"
+    },
+    {
+      "id": "pizzaexpress:2026-09-16:the-filthy-six",
+      "clubId": "pizzaexpress",
+      "title": "The Filthy Six",
+      "date": "2026-09-16",
+      "sets": [
+        "20:00"
+      ],
+      "url": "https://www.pizzaexpresslive.com/whats-on/the-filthy-six",
+      "details": null,
+      "personnel": null,
+      "priceText": "£26"
     },
     {
       "id": "jazzcafe:2026-09-16:future-jazz-showcase",
@@ -2243,6 +2956,19 @@
       "priceText": null
     },
     {
+      "id": "pizzaexpress:2026-09-17:james-morton-s-groove-den",
+      "clubId": "pizzaexpress",
+      "title": "James Morton’s Groove Den",
+      "date": "2026-09-17",
+      "sets": [
+        "20:00"
+      ],
+      "url": "https://www.pizzaexpresslive.com/whats-on/james-mortons-groove-den",
+      "details": null,
+      "personnel": null,
+      "priceText": "£35"
+    },
+    {
       "id": "jazzcafe:2026-09-17:the-bad-plus-farewell-tour",
       "clubId": "jazzcafe",
       "title": "The Bad Plus - Farewell Tour",
@@ -2254,6 +2980,84 @@
       "priceText": null
     },
     {
+      "id": "pizzaexpress:2026-09-18:gregg-karukas",
+      "clubId": "pizzaexpress",
+      "title": "Gregg Karukas",
+      "date": "2026-09-18",
+      "sets": [
+        "20:00"
+      ],
+      "url": "https://www.pizzaexpresslive.com/whats-on/gregg-karukas",
+      "details": null,
+      "personnel": null,
+      "priceText": "£52.50"
+    },
+    {
+      "id": "pizzaexpress:2026-09-19:gregg-karukas",
+      "clubId": "pizzaexpress",
+      "title": "Gregg Karukas",
+      "date": "2026-09-19",
+      "sets": [
+        "20:00"
+      ],
+      "url": "https://www.pizzaexpresslive.com/whats-on/gregg-karukas",
+      "details": null,
+      "personnel": null,
+      "priceText": "£55"
+    },
+    {
+      "id": "pizzaexpress:2026-09-20:chris-ingham-s-steely-jazz",
+      "clubId": "pizzaexpress",
+      "title": "Chris Ingham's Steely Jazz",
+      "date": "2026-09-20",
+      "sets": [
+        "20:00"
+      ],
+      "url": "https://www.pizzaexpresslive.com/whats-on/chris-inghams-steely-jazz",
+      "details": null,
+      "personnel": null,
+      "priceText": "£35"
+    },
+    {
+      "id": "pizzaexpress:2026-09-21:aria-rectify",
+      "clubId": "pizzaexpress",
+      "title": "Aria 'Rectify'",
+      "date": "2026-09-21",
+      "sets": [
+        "20:00"
+      ],
+      "url": "https://www.pizzaexpresslive.com/whats-on/aria-rectify",
+      "details": null,
+      "personnel": null,
+      "priceText": "£20"
+    },
+    {
+      "id": "pizzaexpress:2026-09-22:giulia-marro-quartet",
+      "clubId": "pizzaexpress",
+      "title": "Giulia Marro Quartet",
+      "date": "2026-09-22",
+      "sets": [
+        "20:00"
+      ],
+      "url": "https://www.pizzaexpresslive.com/whats-on/giulia-marro-quartet",
+      "details": null,
+      "personnel": null,
+      "priceText": "£20"
+    },
+    {
+      "id": "pizzaexpress:2026-09-23:frode-kjekstad-eric-alexander-quartet",
+      "clubId": "pizzaexpress",
+      "title": "Frode Kjekstad / Eric Alexander Quartet",
+      "date": "2026-09-23",
+      "sets": [
+        "20:00"
+      ],
+      "url": "https://www.pizzaexpresslive.com/whats-on/frode-kjekstad-eric-alexander-quartet",
+      "details": null,
+      "personnel": null,
+      "priceText": "£30"
+    },
+    {
       "id": "jazzcafe:2026-09-23:richard-spaven",
       "clubId": "jazzcafe",
       "title": "Richard Spaven",
@@ -2263,6 +3067,45 @@
       "details": "World-Class Drummer",
       "personnel": null,
       "priceText": null
+    },
+    {
+      "id": "pizzaexpress:2026-09-24:ben-and-tom-waters",
+      "clubId": "pizzaexpress",
+      "title": "Ben and Tom Waters",
+      "date": "2026-09-24",
+      "sets": [
+        "20:00"
+      ],
+      "url": "https://www.pizzaexpresslive.com/whats-on/ben-and-tom-waters-2",
+      "details": null,
+      "personnel": null,
+      "priceText": "£35"
+    },
+    {
+      "id": "pizzaexpress:2026-09-25:fat-brass",
+      "clubId": "pizzaexpress",
+      "title": "Fat Brass",
+      "date": "2026-09-25",
+      "sets": [
+        "20:00"
+      ],
+      "url": "https://www.pizzaexpresslive.com/whats-on/fat-brass",
+      "details": null,
+      "personnel": null,
+      "priceText": "£25"
+    },
+    {
+      "id": "pizzaexpress:2026-09-26:the-soul-steppers",
+      "clubId": "pizzaexpress",
+      "title": "The Soul Steppers",
+      "date": "2026-09-26",
+      "sets": [
+        "21:00"
+      ],
+      "url": "https://www.pizzaexpresslive.com/whats-on/the-soul-steppers",
+      "details": null,
+      "personnel": null,
+      "priceText": "£30"
     },
     {
       "id": "jazzcafe:2026-09-26:balimaya-project-matinee-show",
@@ -2296,6 +3139,19 @@
       "details": "'Soul Act of The Year'",
       "personnel": null,
       "priceText": null
+    },
+    {
+      "id": "pizzaexpress:2026-09-27:an-afternoon-with-the-vince-dunn-orchestra",
+      "clubId": "pizzaexpress",
+      "title": "An Afternoon with The Vince Dunn Orchestra",
+      "date": "2026-09-27",
+      "sets": [
+        "13:00"
+      ],
+      "url": "https://www.pizzaexpresslive.com/whats-on/an-afternoon-with-vince-dunn-orchestra-2",
+      "details": null,
+      "personnel": null,
+      "priceText": "£25"
     },
     {
       "id": "jazzcafe:2026-09-28:josh-meader-trio",

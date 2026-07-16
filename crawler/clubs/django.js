@@ -5,9 +5,29 @@
 //     <h3 class="event__title">Helio Alves Quintet</h3>
 //     <p class="event_card__time-pair"><span>7:00PM</span>…<span>8:45PM</span></p>
 //     <a class="details-container" href="…/events/slug/?selected_date=…">Details</a>
-import { fetchText, makeEvent, matchBlocks, htmlToText, extractTimes, splitIso } from '../lib.js';
+import {
+  fetchText, makeEvent, matchBlocks, htmlToText, extractTimes, splitIso,
+  cleanText, personnelFromLines,
+} from '../lib.js';
+import { enrichFromDetailPages } from './_enrichdetails.js';
 
 const URL_ = 'https://www.thedjangonyc.com/events/';
+
+// Detail pages (verified server-rendered 2026-07-16) carry the roster and a
+// bio in one block:
+//   <p class='event-details__copy--description'> Lineup:<br>
+//   David Hazeltine - Piano<br> … <br> <br> David Hazeltine is one of the…
+export function parseDetail(html) {
+  const block = html.match(/<p[^>]*event-details__copy--description[^>]*>([\s\S]*?)<\/p>/i)?.[1];
+  if (!block) return null;
+  const txt = htmlToText(block);
+  const personnel = personnelFromLines(txt);
+  // details = first prose line that isn't the "Lineup:" label or a roster row
+  const rosterNames = new Set(personnel.map((p) => p.name));
+  const prose = txt.split('\n').map((l) => l.trim()).find((l) =>
+    l.length > 40 && !/^Lineup:?$/i.test(l) && ![...rosterNames].some((n) => l.startsWith(n + ' -')));
+  return { personnel, details: prose ? cleanText(prose).slice(0, 300) : null };
+}
 
 export function parse(html) {
   const events = [];
@@ -48,6 +68,19 @@ export function parse(html) {
   return events;
 }
 
-export async function crawl() {
-  return parse(await fetchText(URL_));
+export async function crawl(ctx = {}) {
+  const events = parse(await fetchText(URL_));
+  await enrichFromDetailPages(
+    events.filter((e) => e.url !== URL_),
+    ctx,
+    {
+      fields: ['personnel', 'details'],
+      extract: parseDetail,
+      maxPages: 25,
+      // a residency's dates share one page — ?selected_date only picks the
+      // night, the lineup is identical, so dedupe fetches on the bare path
+      urlKey: (url) => url.split('?')[0],
+    },
+  );
+  return events;
 }

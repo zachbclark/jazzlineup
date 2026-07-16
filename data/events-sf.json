@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-16T16:39:13.225Z",
+  "generatedAt": "2026-07-16T21:34:43.663Z",
   "city": "sf",
   "clubs": [
     {
@@ -75,9 +75,7 @@
       "color": "#4a90d9"
     }
   ],
-  "errors": [
-    "./clubs/yoshis.js: returned 0 events (markup change? keeping previous data)"
-  ],
+  "errors": [],
   "events": [
     {
       "id": "keys:2026-07-01:grant-levin-classic-modern-trio-7pm-one-show-only",
@@ -168,7 +166,20 @@
       ],
       "url": "https://keysjazzbistro.com/event/late-set-simon-rowe-organ-trio-56/",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Simon Rowe",
+          "instrument": "organ"
+        },
+        {
+          "name": "Jesse Levit",
+          "instrument": "saxophone"
+        },
+        {
+          "name": "Brian Fishler",
+          "instrument": "drums"
+        }
+      ],
       "priceText": null
     },
     {
@@ -238,7 +249,32 @@
       ],
       "url": "https://keysjazzbistro.com/event/jazz-mafia-low-end-theory/",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Adam Theis",
+          "instrument": "trombone"
+        },
+        {
+          "name": "Jeff Cressman",
+          "instrument": "trombone"
+        },
+        {
+          "name": "John Gove",
+          "instrument": "trombone"
+        },
+        {
+          "name": "Marc Bolin",
+          "instrument": "bass trombone"
+        },
+        {
+          "name": "Matt Clark",
+          "instrument": "piano"
+        },
+        {
+          "name": "Eric Garland",
+          "instrument": "drums"
+        }
+      ],
       "priceText": null
     },
     {
@@ -251,7 +287,20 @@
       ],
       "url": "https://keysjazzbistro.com/event/late-set-simon-rowe-organ-trio-57/",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Adam Klipple",
+          "instrument": "organ"
+        },
+        {
+          "name": "Kai Lyons",
+          "instrument": "guitar"
+        },
+        {
+          "name": "Brian Fishler",
+          "instrument": "drums"
+        }
+      ],
       "priceText": null
     },
     {
@@ -347,6 +396,19 @@
       ],
       "url": "https://www.sfjazz.org/tickets/productions/summer-2026/lettuce/",
       "details": "Miner Auditorium",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "yoshis:2026-07-16:peter-white",
+      "clubId": "yoshis",
+      "title": "PETER WHITE",
+      "date": "2026-07-16",
+      "sets": [
+        "19:30"
+      ],
+      "url": "https://yoshis.com/events/buy-tickets/peter-white-11/detail",
+      "details": null,
       "personnel": null,
       "priceText": null
     },
@@ -554,6 +616,19 @@
       "priceText": "$15-$30"
     },
     {
+      "id": "yoshis:2026-07-18:greg-adams-east-bay-soul",
+      "clubId": "yoshis",
+      "title": "GREG ADAMS & EAST BAY SOUL",
+      "date": "2026-07-18",
+      "sets": [
+        "19:30"
+      ],
+      "url": "https://yoshis.com/events/buy-tickets/greg-adams-east-bay-soul-9/detail",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
       "id": "keys:2026-07-18:tiffany-austin-ella-and-ellington",
       "clubId": "keys",
       "title": "Tiffany Austin- “Ella and Ellington”",
@@ -661,6 +736,32 @@
       "priceText": "$15-$30"
     },
     {
+      "id": "yoshis:2026-07-20:music-monday-love-vibes",
+      "clubId": "yoshis",
+      "title": "MUSIC MONDAY - LOVE VIBES",
+      "date": "2026-07-20",
+      "sets": [
+        "20:00"
+      ],
+      "url": "https://yoshis.com/events/buy-tickets/an-evening-with-the-producer/detail",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "yoshis:2026-07-21:ric-alexander",
+      "clubId": "yoshis",
+      "title": "RIC ALEXANDER",
+      "date": "2026-07-21",
+      "sets": [
+        "19:30"
+      ],
+      "url": "https://yoshis.com/events/buy-tickets/ric-alexander/detail",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
       "id": "blackcat:2026-07-22:red-rabbit",
       "clubId": "blackcat",
       "title": "Red Rabbit",
@@ -683,6 +784,19 @@
         "21:00"
       ],
       "url": "https://keysjazzbistro.com/event/noel-jewkes-5/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "yoshis:2026-07-22:carl-verheyen",
+      "clubId": "yoshis",
+      "title": "CARL VERHEYEN",
+      "date": "2026-07-22",
+      "sets": [
+        "19:30"
+      ],
+      "url": "https://yoshis.com/events/buy-tickets/carl-verheyen-2/detail",
       "details": null,
       "personnel": null,
       "priceText": null
@@ -738,6 +852,32 @@
         "21:00"
       ],
       "url": "https://keysjazzbistro.com/event/bruce-forman-trio-2/",
+      "details": null,
+      "personnel": [
+        {
+          "name": "Bruce Forman",
+          "instrument": "guitar"
+        },
+        {
+          "name": "Rob Fisher",
+          "instrument": "bass"
+        },
+        {
+          "name": "Akira Tana",
+          "instrument": "drums"
+        }
+      ],
+      "priceText": null
+    },
+    {
+      "id": "yoshis:2026-07-23:avery-sunshine",
+      "clubId": "yoshis",
+      "title": "AVERY*SUNSHINE",
+      "date": "2026-07-23",
+      "sets": [
+        "19:30"
+      ],
+      "url": "https://yoshis.com/events/buy-tickets/avery-sunshine-7/detail",
       "details": null,
       "personnel": null,
       "priceText": null
@@ -903,6 +1043,19 @@
       "priceText": "$15-$30"
     },
     {
+      "id": "yoshis:2026-07-25:the-spinners",
+      "clubId": "yoshis",
+      "title": "THE SPINNERS",
+      "date": "2026-07-25",
+      "sets": [
+        "19:30"
+      ],
+      "url": "https://yoshis.com/events/calendar",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
       "id": "keys:2026-07-25:ritmo-y-voz-afro-cuban-jazz-ignited",
       "clubId": "keys",
       "title": "Ritmo y Voz: Afro-Cuban Jazz Ignited",
@@ -997,6 +1150,19 @@
       "priceText": "$15-$20"
     },
     {
+      "id": "yoshis:2026-07-28:miko-marks-residency-w-special-guest-tiffani-marie-of-arteli",
+      "clubId": "yoshis",
+      "title": "MIKO MARKS RESIDENCY W/ SPECIAL GUEST TIFFANI MARIE (OF ARTELIA GREEN)",
+      "date": "2026-07-28",
+      "sets": [
+        "19:30"
+      ],
+      "url": "https://yoshis.com/events/buy-tickets/miko-marks-residency/detail",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
       "id": "blackcat:2026-07-29:arnie-sainz-quintet",
       "clubId": "blackcat",
       "title": "Arnie Sainz Quintet",
@@ -1018,6 +1184,19 @@
         "19:00"
       ],
       "url": "https://keysjazzbistro.com/event/pamela-rose-wayne-de-la-cruz-hammond-organ-party-2/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "yoshis:2026-07-29:jeff-kashiwa-with-steve-oliver",
+      "clubId": "yoshis",
+      "title": "JEFF KASHIWA WITH STEVE OLIVER",
+      "date": "2026-07-29",
+      "sets": [
+        "19:30"
+      ],
+      "url": "https://yoshis.com/events/buy-tickets/jeff-kashiwa-with-steve-oliver-1/detail",
       "details": null,
       "personnel": null,
       "priceText": null
@@ -1104,6 +1283,19 @@
       "priceText": null
     },
     {
+      "id": "yoshis:2026-07-30:music-medicine-benefit-for-oakland-s-children-s-hospital",
+      "clubId": "yoshis",
+      "title": "MUSIC MEDICINE: BENEFIT FOR OAKLAND'S CHILDREN'S HOSPITAL",
+      "date": "2026-07-30",
+      "sets": [
+        "20:00"
+      ],
+      "url": "https://yoshis.com/events/buy-tickets/music-medicine-benefit-for-oakland-s-children-s-hospital-1/detail",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
       "id": "mrtipples:2026-07-30:sylvia-cuenca-quintet-ft-rico-jones",
       "clubId": "mrtipples",
       "title": "Sylvia Cuenca Quintet Ft Rico Jones",
@@ -1115,6 +1307,19 @@
       "details": "Rico Jones | Tenor Sax Joel Behrman | Trumpet Matt Clark | Piano Essiet Essiet | Bass Sylvia Cuenca | Drums",
       "personnel": null,
       "priceText": "$15-$20"
+    },
+    {
+      "id": "yoshis:2026-07-31:richie-rich-backstage-meet-greet-photo-opportunity-show-tick",
+      "clubId": "yoshis",
+      "title": "RICHIE RICH: BACKSTAGE MEET & GREET + PHOTO OPPORTUNITY (SHOW TICKET NOT INCLUDED)",
+      "date": "2026-07-31",
+      "sets": [
+        "17:45"
+      ],
+      "url": "https://yoshis.com/events/buy-tickets/richie-rich-backstage-meet-greet-photo-opportunity-show-ticket-not-included/detail",
+      "details": null,
+      "personnel": null,
+      "priceText": null
     },
     {
       "id": "sfjazz:2026-07-31:burnt-sugar-the-arkestra-chamber",
@@ -1193,6 +1398,19 @@
       ],
       "url": "https://birdbeckett.com/events/",
       "details": "Friday jazz among the shelves, every week since 2002. Rotating bands; see the events page for this week’s lineup. Donations support the musicians.",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "yoshis:2026-07-31:richie-rich-w-live-band",
+      "clubId": "yoshis",
+      "title": "RICHIE RICH W/ LIVE BAND",
+      "date": "2026-07-31",
+      "sets": [
+        "19:30"
+      ],
+      "url": "https://yoshis.com/events/buy-tickets/richie-rich-4/detail",
+      "details": null,
       "personnel": null,
       "priceText": null
     },
@@ -1383,6 +1601,19 @@
       "priceText": "$15-$20"
     },
     {
+      "id": "yoshis:2026-08-03:rebel-rose",
+      "clubId": "yoshis",
+      "title": "REBEL ROSE",
+      "date": "2026-08-03",
+      "sets": [
+        "20:00"
+      ],
+      "url": "https://yoshis.com/events/buy-tickets/rebel-rose/detail",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
       "id": "sfjazz:2026-08-04:interactive-open-soundcheck-w-nyo-jazz-dee-dee-bridgewater",
       "clubId": "sfjazz",
       "title": "Interactive Open Soundcheck w/ NYO Jazz & Dee Dee Bridgewater",
@@ -1409,6 +1640,32 @@
       "priceText": null
     },
     {
+      "id": "yoshis:2026-08-04:kd-the-poet-friends-w-the-full-house-band",
+      "clubId": "yoshis",
+      "title": "KD THE POET & FRIENDS W/ THE FULL HOUSE BAND",
+      "date": "2026-08-04",
+      "sets": [
+        "19:30"
+      ],
+      "url": "https://yoshis.com/events/buy-tickets/kd-the-poet-friends-w-live-band/detail",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "yoshis:2026-08-05:melba-moore-pre-show-vip-experience-show-ticket-not-included",
+      "clubId": "yoshis",
+      "title": "MELBA MOORE PRE SHOW VIP EXPERIENCE (SHOW TICKET NOT INCLUDED)",
+      "date": "2026-08-05",
+      "sets": [
+        "17:30"
+      ],
+      "url": "https://yoshis.com/events/buy-tickets/melba-moore-pre-show-vip-experience-show-ticket-not-included/detail",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
       "id": "blackcat:2026-08-05:currents",
       "clubId": "blackcat",
       "title": "CURRENTS",
@@ -1431,6 +1688,19 @@
         "21:00"
       ],
       "url": "https://keysjazzbistro.com/event/smith-dobson-quartet-7/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "yoshis:2026-08-05:melba-moore",
+      "clubId": "yoshis",
+      "title": "MELBA MOORE",
+      "date": "2026-08-05",
+      "sets": [
+        "19:30"
+      ],
+      "url": "https://yoshis.com/events/buy-tickets/melba-moore-1/detail",
       "details": null,
       "personnel": null,
       "priceText": null
@@ -1489,6 +1759,19 @@
       "priceText": "$15-$20"
     },
     {
+      "id": "yoshis:2026-08-07:teddy-riley-pre-show-vip-experience-show-ticket-not-included",
+      "clubId": "yoshis",
+      "title": "TEDDY RILEY PRE SHOW VIP EXPERIENCE (SHOW TICKET NOT INCLUDED)",
+      "date": "2026-08-07",
+      "sets": [
+        "17:30"
+      ],
+      "url": "https://yoshis.com/events/buy-tickets/teddy-riley-pre-show-vip-experience-show-ticket-not-included/detail",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
       "id": "blackcat:2026-08-07:instant-alter-feat-emilio-modeste-vocalist-natasha-agrama",
       "clubId": "blackcat",
       "title": "INSTANT ALTER feat. Emilio Modeste & vocalist Natasha Agrama",
@@ -1539,6 +1822,19 @@
       ],
       "url": "https://birdbeckett.com/events/",
       "details": "Friday jazz among the shelves, every week since 2002. Rotating bands; see the events page for this week’s lineup. Donations support the musicians.",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "yoshis:2026-08-07:teddy-riley",
+      "clubId": "yoshis",
+      "title": "TEDDY RILEY",
+      "date": "2026-08-07",
+      "sets": [
+        "19:30"
+      ],
+      "url": "https://yoshis.com/events/buy-tickets/teddy-riley/detail",
+      "details": null,
       "personnel": null,
       "priceText": null
     },
@@ -1635,6 +1931,19 @@
       "priceText": "$15-$30"
     },
     {
+      "id": "yoshis:2026-08-09:case-pre-show-vip-experience-show-ticket-not-included",
+      "clubId": "yoshis",
+      "title": "CASE PRE SHOW VIP EXPERIENCE (SHOW TICKET NOT INCLUDED)",
+      "date": "2026-08-09",
+      "sets": [
+        "17:00"
+      ],
+      "url": "https://yoshis.com/events/buy-tickets/case-pre-show-vip-experience-show-ticket-not-included/detail",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
       "id": "blackcat:2026-08-09:marty-isenberg",
       "clubId": "blackcat",
       "title": "Marty Isenberg",
@@ -1647,6 +1956,19 @@
       "details": null,
       "personnel": null,
       "priceText": "$15-45"
+    },
+    {
+      "id": "yoshis:2026-08-09:case-w-live-band",
+      "clubId": "yoshis",
+      "title": "CASE W/ LIVE BAND",
+      "date": "2026-08-09",
+      "sets": [
+        "19:00"
+      ],
+      "url": "https://yoshis.com/events/buy-tickets/case/detail",
+      "details": null,
+      "personnel": null,
+      "priceText": null
     },
     {
       "id": "mrtipples:2026-08-09:john-santos-quartet-with-special-guest-mj-santos",
@@ -1662,6 +1984,32 @@
       "priceText": "$15-$40"
     },
     {
+      "id": "yoshis:2026-08-10:the-robert-cray-band",
+      "clubId": "yoshis",
+      "title": "THE ROBERT CRAY BAND",
+      "date": "2026-08-10",
+      "sets": [
+        "20:00"
+      ],
+      "url": "https://yoshis.com/events/buy-tickets/robert-cray-band-7/detail",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "yoshis:2026-08-11:the-blues-project",
+      "clubId": "yoshis",
+      "title": "THE BLUES PROJECT",
+      "date": "2026-08-11",
+      "sets": [
+        "20:00"
+      ],
+      "url": "https://yoshis.com/events/buy-tickets/the-blues-project-1/detail",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
       "id": "blackcat:2026-08-12:sami-stevens",
       "clubId": "blackcat",
       "title": "Sami Stevens",
@@ -1675,6 +2023,19 @@
       "priceText": "$15-45"
     },
     {
+      "id": "yoshis:2026-08-12:rotimi-with-red-lotus-host-phoenyx-rose",
+      "clubId": "yoshis",
+      "title": "ROTIMI WITH RED LOTUS & HOST PHOENYX ROSE",
+      "date": "2026-08-12",
+      "sets": [
+        "19:30"
+      ],
+      "url": "https://yoshis.com/events/buy-tickets/rotimi-with-red-lotus/detail",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
       "id": "mrtipples:2026-08-12:jeff-denson-s-modern-songbook",
       "clubId": "mrtipples",
       "title": "Jeff Denson’s Modern Songbook",
@@ -1686,6 +2047,19 @@
       "details": "Jeff Denson | Bass & Vocals Frank Martin | Piano Mike Mitchell | Drums Modern Songbook — Award-winning bassist, vocalist, and composer Jeff Denson brings a fresh, genre-blurring set of original arrangements spanning Bonnie Raitt, Bill Withers, Peter Gabriel, Joni Mitchell, and Jeff Buckley, alongsid",
       "personnel": null,
       "priceText": "$15-$20"
+    },
+    {
+      "id": "yoshis:2026-08-13:tracie-spencer-pre-show-vip-experience-show-ticket-not-inclu",
+      "clubId": "yoshis",
+      "title": "TRACIE SPENCER PRE SHOW VIP EXPERIENCE (SHOW TICKET NOT INCLUDED)",
+      "date": "2026-08-13",
+      "sets": [
+        "17:30"
+      ],
+      "url": "https://yoshis.com/events/buy-tickets/tracey-spencer-pre-show-vip-experience-show-ticket-not-included/detail",
+      "details": null,
+      "personnel": null,
+      "priceText": null
     },
     {
       "id": "blackcat:2026-08-13:amanda-addleman-songs-and-stories-of-home",
@@ -1711,6 +2085,19 @@
       ],
       "url": "https://www.sfjazz.org/tickets/productions/summer-2026/take-6/",
       "details": "Miner Auditorium",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "yoshis:2026-08-13:tracie-spencer",
+      "clubId": "yoshis",
+      "title": "TRACIE SPENCER",
+      "date": "2026-08-13",
+      "sets": [
+        "19:30"
+      ],
+      "url": "https://yoshis.com/events/buy-tickets/tracey-spencer/detail",
+      "details": null,
       "personnel": null,
       "priceText": null
     },
@@ -1834,6 +2221,19 @@
       "priceText": "$15-$30"
     },
     {
+      "id": "yoshis:2026-08-15:j-holiday",
+      "clubId": "yoshis",
+      "title": "J. HOLIDAY",
+      "date": "2026-08-15",
+      "sets": [
+        "19:30"
+      ],
+      "url": "https://yoshis.com/events/buy-tickets/j-holiday-12/detail",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
       "id": "mrtipples:2026-08-15:the-ray-obiedo-group",
       "clubId": "mrtipples",
       "title": "The Ray Obiedo Group",
@@ -1885,6 +2285,32 @@
       "details": "John Di Martino | Piano Sam Bevan | Bass Tim Bulkley | Drums Vicki Burns | Vocals Bio: Vicki Burns has been performing steadily almost since the moment she arrived in New York from San Francisco in 2009, where she worked regularly at legendary North Beach clubs like Enrico’s, Pearl’s and The Purple",
       "personnel": null,
       "priceText": "$15-$20"
+    },
+    {
+      "id": "yoshis:2026-08-17:azure-mccall",
+      "clubId": "yoshis",
+      "title": "AZURE MCCALL",
+      "date": "2026-08-17",
+      "sets": [
+        "20:00"
+      ],
+      "url": "https://yoshis.com/events/buy-tickets/azure-mccall-8/detail",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "yoshis:2026-08-18:the-stylistics",
+      "clubId": "yoshis",
+      "title": "THE STYLISTICS",
+      "date": "2026-08-18",
+      "sets": [
+        "20:00"
+      ],
+      "url": "https://yoshis.com/events/buy-tickets/the-stylistics-17/detail",
+      "details": null,
+      "personnel": null,
+      "priceText": null
     },
     {
       "id": "blackcat:2026-08-19:nate-gilbreath-alan-jones-ohana-collective",
@@ -1993,6 +2419,19 @@
       "priceText": null
     },
     {
+      "id": "yoshis:2026-08-21:norman-brown",
+      "clubId": "yoshis",
+      "title": "NORMAN BROWN",
+      "date": "2026-08-21",
+      "sets": [
+        "20:00"
+      ],
+      "url": "https://yoshis.com/events/buy-tickets/norman-brown-10/detail",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
       "id": "mrtipples:2026-08-21:kutting-korners",
       "clubId": "mrtipples",
       "title": "Kutting Korners",
@@ -2074,6 +2513,19 @@
       "priceText": "$15-55"
     },
     {
+      "id": "yoshis:2026-08-23:keyon-harrold",
+      "clubId": "yoshis",
+      "title": "KEYON HARROLD",
+      "date": "2026-08-23",
+      "sets": [
+        "19:00"
+      ],
+      "url": "https://yoshis.com/events/buy-tickets/keyon-harrold-3/detail",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
       "id": "mrtipples:2026-08-23:jessica-king-and-her-quartet",
       "clubId": "mrtipples",
       "title": "Jessica King and her Quartet",
@@ -2085,6 +2537,32 @@
       "details": "Mikiya Matsuda | Bass Marceline Keene | Guitar Adam Shulman | Piano Kamrin Ortiz | Sax Jessica King | Vocals",
       "personnel": null,
       "priceText": "$15-$20"
+    },
+    {
+      "id": "yoshis:2026-08-24:berkeley-mt-zion-80th-anniversary-celebration",
+      "clubId": "yoshis",
+      "title": "BERKELEY MT ZION 80TH ANNIVERSARY CELEBRATION",
+      "date": "2026-08-24",
+      "sets": [
+        "19:30"
+      ],
+      "url": "https://yoshis.com/events/buy-tickets/berkeley-mt-zion-80th-anniversary-celebration/detail",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "yoshis:2026-08-25:keiko-matsui",
+      "clubId": "yoshis",
+      "title": "KEIKO MATSUI",
+      "date": "2026-08-25",
+      "sets": [
+        "19:30"
+      ],
+      "url": "https://yoshis.com/events/buy-tickets/keiko-matsui-14/detail",
+      "details": null,
+      "personnel": null,
+      "priceText": null
     },
     {
       "id": "blackcat:2026-08-26:eloise-carter-quartet",
@@ -2125,6 +2603,19 @@
       "details": null,
       "personnel": null,
       "priceText": "$15-45"
+    },
+    {
+      "id": "yoshis:2026-08-27:miko-marks-residency-w-special-guest-kiazi-malonga",
+      "clubId": "yoshis",
+      "title": "MIKO MARKS RESIDENCY W/ SPECIAL GUEST KIAZI MALONGA",
+      "date": "2026-08-27",
+      "sets": [
+        "19:30"
+      ],
+      "url": "https://yoshis.com/events/buy-tickets/miko-marks-residency-1/detail",
+      "details": null,
+      "personnel": null,
+      "priceText": null
     },
     {
       "id": "mrtipples:2026-08-27:adam-shulman-organ-trio",
@@ -2180,6 +2671,19 @@
       "priceText": null
     },
     {
+      "id": "yoshis:2026-08-28:richard-elliot",
+      "clubId": "yoshis",
+      "title": "RICHARD ELLIOT",
+      "date": "2026-08-28",
+      "sets": [
+        "19:30"
+      ],
+      "url": "https://yoshis.com/events/buy-tickets/richard-elliot-9/detail",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
       "id": "blackcat:2026-08-29:the-coltrane-influence-two-different-expressions-ft-wayne-es",
       "clubId": "blackcat",
       "title": "The Coltrane Influence: Two Different Expressions ft. Wayne Escoffery & Tal Cohen",
@@ -2205,6 +2709,19 @@
       "details": null,
       "personnel": null,
       "priceText": "$15-$30"
+    },
+    {
+      "id": "yoshis:2026-08-29:simon-phillips-protocol-6",
+      "clubId": "yoshis",
+      "title": "SIMON PHILLIPS & PROTOCOL 6",
+      "date": "2026-08-29",
+      "sets": [
+        "19:30"
+      ],
+      "url": "https://yoshis.com/events/buy-tickets/simon-phillips-protocol-v-6/detail",
+      "details": null,
+      "personnel": null,
+      "priceText": null
     },
     {
       "id": "sfjazz:2026-08-29:brad-mehldau-ride-into-the-sun",
@@ -2247,6 +2764,58 @@
       "priceText": "$15-$20"
     },
     {
+      "id": "yoshis:2026-08-31:mark-hummel-s-blues-all-stars-w-anson-funderburgh-junior-wat",
+      "clubId": "yoshis",
+      "title": "MARK HUMMEL'S BLUES ALL STARS W/ ANSON FUNDERBURGH & JUNIOR WATSON",
+      "date": "2026-08-31",
+      "sets": [
+        "19:30"
+      ],
+      "url": "https://yoshis.com/events/buy-tickets/mark-hummel-s-blues-all-stars/detail",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "yoshis:2026-09-01:haley-reinhart",
+      "clubId": "yoshis",
+      "title": "HALEY REINHART",
+      "date": "2026-09-01",
+      "sets": [
+        "19:30"
+      ],
+      "url": "https://yoshis.com/events/buy-tickets/haley-reinhart-7/detail",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "yoshis:2026-09-02:avery-wilson-pre-show-vip-experience-show-ticket-not-include",
+      "clubId": "yoshis",
+      "title": "AVERY WILSON PRE SHOW VIP EXPERIENCE (SHOW TICKET NOT INCLUDED)",
+      "date": "2026-09-02",
+      "sets": [
+        "17:30"
+      ],
+      "url": "https://yoshis.com/events/buy-tickets/avery-wilson-pre-show-vip-experience-show-ticket-not-included/detail",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "yoshis:2026-09-02:avery-wilson",
+      "clubId": "yoshis",
+      "title": "AVERY WILSON",
+      "date": "2026-09-02",
+      "sets": [
+        "19:30"
+      ],
+      "url": "https://yoshis.com/events/buy-tickets/avery-wilson/detail",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
       "id": "mrtipples:2026-09-03:closed-for-private-event",
       "clubId": "mrtipples",
       "title": "Closed For Private Event",
@@ -2255,6 +2824,19 @@
         "17:00"
       ],
       "url": "https://mrtipplessf.com/calendar/private-natalie-john/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "yoshis:2026-09-03:sheena-easton",
+      "clubId": "yoshis",
+      "title": "SHEENA EASTON",
+      "date": "2026-09-03",
+      "sets": [
+        "19:30"
+      ],
+      "url": "https://yoshis.com/events/buy-tickets/sheena-easton-2/detail",
       "details": null,
       "personnel": null,
       "priceText": null
@@ -2273,6 +2855,32 @@
       "priceText": null
     },
     {
+      "id": "yoshis:2026-09-04:kirk-whalum",
+      "clubId": "yoshis",
+      "title": "KIRK WHALUM",
+      "date": "2026-09-04",
+      "sets": [
+        "19:30"
+      ],
+      "url": "https://yoshis.com/events/buy-tickets/kirk-whalum-8/detail",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "yoshis:2026-09-06:sons-of-champlin-w-bill-champlin",
+      "clubId": "yoshis",
+      "title": "SONS OF CHAMPLIN W/ BILL CHAMPLIN",
+      "date": "2026-09-06",
+      "sets": [
+        "19:00"
+      ],
+      "url": "https://yoshis.com/events/buy-tickets/sons-of-champlin-w-bill-champlin-1/detail",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
       "id": "mrtipples:2026-09-06:mose-def-the-music-of-mose-allison",
       "clubId": "mrtipples",
       "title": "Mose Def : The Music of Mose Allison",
@@ -2284,6 +2892,45 @@
       "details": "Kymry Esainko | Piano Joe Kyle | Bass Randy Odell | Drums Tom Griesser | Sax Dean Mermell | Vocals Mose Def : The Music of Mose Allison Mose Def was born when Flower Piano co-creator Dean Mermell wanted someone to play a Mose Allison tribute at the event, but then decided he wanted to do it himself.",
       "personnel": null,
       "priceText": "$15-$20"
+    },
+    {
+      "id": "yoshis:2026-09-07:aimee-nolte",
+      "clubId": "yoshis",
+      "title": "AIMEE NOLTE",
+      "date": "2026-09-07",
+      "sets": [
+        "19:30"
+      ],
+      "url": "https://yoshis.com/events/buy-tickets/aimee-nolte/detail",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "yoshis:2026-09-08:matt-schofield-trio",
+      "clubId": "yoshis",
+      "title": "MATT SCHOFIELD TRIO",
+      "date": "2026-09-08",
+      "sets": [
+        "20:00"
+      ],
+      "url": "https://yoshis.com/events/buy-tickets/matt-schofield-trio-2/detail",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "yoshis:2026-09-09:lisa-fischer-orrin-evans-trio",
+      "clubId": "yoshis",
+      "title": "LISA FISCHER & ORRIN EVANS TRIO",
+      "date": "2026-09-09",
+      "sets": [
+        "19:30"
+      ],
+      "url": "https://yoshis.com/events/buy-tickets/lisa-fischer-orrin-evans-trio/detail",
+      "details": null,
+      "personnel": null,
+      "priceText": null
     },
     {
       "id": "mrtipples:2026-09-09:naama",
@@ -2322,6 +2969,19 @@
       ],
       "url": "https://www.sfjazz.org/tickets/productions/26-27/christian-mcbride-ray-brown-centennial-celebration/",
       "details": "Miner Auditorium",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "yoshis:2026-09-10:dominique-fils-aim",
+      "clubId": "yoshis",
+      "title": "DOMINIQUE FILS-AIMÉ",
+      "date": "2026-09-10",
+      "sets": [
+        "19:30"
+      ],
+      "url": "https://yoshis.com/events/buy-tickets/dominique-fils-aime/detail",
+      "details": null,
       "personnel": null,
       "priceText": null
     },
@@ -2379,6 +3039,19 @@
       "priceText": "$15-$30"
     },
     {
+      "id": "yoshis:2026-09-11:aneesa-strings",
+      "clubId": "yoshis",
+      "title": "ANEESA STRINGS",
+      "date": "2026-09-11",
+      "sets": [
+        "19:30"
+      ],
+      "url": "https://yoshis.com/events/buy-tickets/aneesa-strings-4/detail",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
       "id": "mrtipples:2026-09-11:charles-unger-experience",
       "clubId": "mrtipples",
       "title": "Charles Unger Experience",
@@ -2432,6 +3105,19 @@
       "priceText": "$15-$30"
     },
     {
+      "id": "yoshis:2026-09-12:rose-royce",
+      "clubId": "yoshis",
+      "title": "ROSE ROYCE",
+      "date": "2026-09-12",
+      "sets": [
+        "19:30"
+      ],
+      "url": "https://yoshis.com/events/buy-tickets/rose-royce-4/detail",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
       "id": "mrtipples:2026-09-12:el-howell-quartet",
       "clubId": "mrtipples",
       "title": "Elé Howell Quartet",
@@ -2472,6 +3158,19 @@
       "priceText": null
     },
     {
+      "id": "yoshis:2026-09-13:kamasi-washington",
+      "clubId": "yoshis",
+      "title": "KAMASI WASHINGTON",
+      "date": "2026-09-13",
+      "sets": [
+        "19:00"
+      ],
+      "url": "https://yoshis.com/events/buy-tickets/kamasi-washington/detail",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
       "id": "mrtipples:2026-09-13:stella-heath-and-her-trio",
       "clubId": "mrtipples",
       "title": "Stella Heath and her trio",
@@ -2483,6 +3182,604 @@
       "details": null,
       "personnel": null,
       "priceText": "$15-$20"
+    },
+    {
+      "id": "yoshis:2026-09-15:john-pizzarelli-presents-dear-mr-bennett",
+      "clubId": "yoshis",
+      "title": "JOHN PIZZARELLI PRESENTS \"DEAR MR. BENNETT”",
+      "date": "2026-09-15",
+      "sets": [
+        "19:30"
+      ],
+      "url": "https://yoshis.com/events/buy-tickets/john-pizzarelli-7/detail",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "yoshis:2026-09-18:big-daddy-kane",
+      "clubId": "yoshis",
+      "title": "BIG DADDY KANE",
+      "date": "2026-09-18",
+      "sets": [
+        "19:30"
+      ],
+      "url": "https://yoshis.com/events/buy-tickets/big-daddy-kane-2/detail",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "yoshis:2026-09-19:mohini-dey",
+      "clubId": "yoshis",
+      "title": "MOHINI DEY",
+      "date": "2026-09-19",
+      "sets": [
+        "19:30"
+      ],
+      "url": "https://yoshis.com/events/buy-tickets/mohini-dey-2/detail",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "yoshis:2026-09-23:lydia-pense-cold-blood",
+      "clubId": "yoshis",
+      "title": "LYDIA PENSE & COLD BLOOD",
+      "date": "2026-09-23",
+      "sets": [
+        "19:30"
+      ],
+      "url": "https://yoshis.com/events/buy-tickets/cold-blood/detail",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "yoshis:2026-09-24:wild-night-a-van-morrison-tribute",
+      "clubId": "yoshis",
+      "title": "WILD NIGHT: A VAN MORRISON TRIBUTE",
+      "date": "2026-09-24",
+      "sets": [
+        "19:30"
+      ],
+      "url": "https://yoshis.com/events/buy-tickets/wild-night-a-van-morrison-tribute/detail",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "yoshis:2026-09-25:syleena-johnson",
+      "clubId": "yoshis",
+      "title": "SYLEENA JOHNSON",
+      "date": "2026-09-25",
+      "sets": [
+        "19:30"
+      ],
+      "url": "https://yoshis.com/events/buy-tickets/syleen-johnson/detail",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "yoshis:2026-09-25:mary-jane-girls",
+      "clubId": "yoshis",
+      "title": "MARY JANE GIRLS",
+      "date": "2026-09-25",
+      "sets": [
+        "21:30"
+      ],
+      "url": "https://yoshis.com/events/buy-tickets/mary-jane-girls-4/detail",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "yoshis:2026-09-27:isaiah-collier",
+      "clubId": "yoshis",
+      "title": "ISAIAH COLLIER",
+      "date": "2026-09-27",
+      "sets": [
+        "19:00"
+      ],
+      "url": "https://yoshis.com/events/buy-tickets/isaiah-collier/detail",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "yoshis:2026-09-28:fred-wesley-s-new-jbs-w-martha-high-s-funky-divas",
+      "clubId": "yoshis",
+      "title": "FRED WESLEY'S NEW JBS W/ MARTHA HIGH'S FUNKY DIVAS",
+      "date": "2026-09-28",
+      "sets": [
+        "19:30"
+      ],
+      "url": "https://yoshis.com/events/buy-tickets/martha-high-the-funky-divas-w-fred-wesley-and-the-new-jbs/detail",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "yoshis:2026-09-29:spyro-gyra",
+      "clubId": "yoshis",
+      "title": "SPYRO GYRA",
+      "date": "2026-09-29",
+      "sets": [
+        "19:30"
+      ],
+      "url": "https://yoshis.com/events/buy-tickets/spyro-gyra-6/detail",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "yoshis:2026-10-01:vincent-ingala",
+      "clubId": "yoshis",
+      "title": "VINCENT INGALA",
+      "date": "2026-10-01",
+      "sets": [
+        "19:30"
+      ],
+      "url": "https://yoshis.com/events/buy-tickets/vincent-ingala-3/detail",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "yoshis:2026-10-05:euge-groove",
+      "clubId": "yoshis",
+      "title": "EUGE GROOVE",
+      "date": "2026-10-05",
+      "sets": [
+        "19:30"
+      ],
+      "url": "https://yoshis.com/events/buy-tickets/euge-groove-6/detail",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "yoshis:2026-10-07:will-downing",
+      "clubId": "yoshis",
+      "title": "WILL DOWNING",
+      "date": "2026-10-07",
+      "sets": [
+        "19:30"
+      ],
+      "url": "https://yoshis.com/events/buy-tickets/will-downing-12/detail",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "yoshis:2026-10-09:musiq-soulchild",
+      "clubId": "yoshis",
+      "title": "MUSIQ SOULCHILD",
+      "date": "2026-10-09",
+      "sets": [
+        "19:30"
+      ],
+      "url": "https://yoshis.com/events/buy-tickets/musiq-soulchild-46/detail",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "yoshis:2026-10-13:acoustic-alchemy",
+      "clubId": "yoshis",
+      "title": "ACOUSTIC ALCHEMY",
+      "date": "2026-10-13",
+      "sets": [
+        "19:30"
+      ],
+      "url": "https://yoshis.com/events/buy-tickets/acoustic-alchemy-3/detail",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "yoshis:2026-10-14:dos-santos",
+      "clubId": "yoshis",
+      "title": "DOS SANTOS",
+      "date": "2026-10-14",
+      "sets": [
+        "19:30"
+      ],
+      "url": "https://yoshis.com/events/buy-tickets/dos-santos/detail",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "yoshis:2026-10-17:damien-escobar",
+      "clubId": "yoshis",
+      "title": "DAMIEN ESCOBAR",
+      "date": "2026-10-17",
+      "sets": [
+        "19:30"
+      ],
+      "url": "https://yoshis.com/events/buy-tickets/damien-escobar-11/detail",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "yoshis:2026-10-19:shoshana-bean",
+      "clubId": "yoshis",
+      "title": "SHOSHANA BEAN",
+      "date": "2026-10-19",
+      "sets": [
+        "19:30"
+      ],
+      "url": "https://yoshis.com/events/buy-tickets/shoshana-bean/detail",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "yoshis:2026-10-20:twin-peaks-pre-show-vip-platinum-experience-show-ticket-not-",
+      "clubId": "yoshis",
+      "title": "TWIN PEAKS PRE SHOW VIP PLATINUM EXPERIENCE (SHOW TICKET NOT INCLUDED)",
+      "date": "2026-10-20",
+      "sets": [
+        "17:30"
+      ],
+      "url": "https://yoshis.com/events/buy-tickets/twin-peaks-pre-show-vip-platinum-experience-show-ticket-not-included/detail",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "yoshis:2026-10-20:twin-peaks-conversation-with-the-stars",
+      "clubId": "yoshis",
+      "title": "TWIN PEAKS: CONVERSATION WITH THE STARS",
+      "date": "2026-10-20",
+      "sets": [
+        "19:30"
+      ],
+      "url": "https://yoshis.com/events/buy-tickets/twin-peaks-conversation-with-the-stars/detail",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "yoshis:2026-10-20:twin-peaks-after-show-diamond-vip-experience-show-ticket-not",
+      "clubId": "yoshis",
+      "title": "TWIN PEAKS AFTER SHOW DIAMOND VIP EXPERIENCE (SHOW TICKET NOT INCLUDED)",
+      "date": "2026-10-20",
+      "sets": [
+        "21:00"
+      ],
+      "url": "https://yoshis.com/events/buy-tickets/twin-peaks-after-show-diamond-vip-experience-show-ticket-not-included/detail",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "yoshis:2026-10-22:rakim",
+      "clubId": "yoshis",
+      "title": "RAKIM",
+      "date": "2026-10-22",
+      "sets": [
+        "19:30"
+      ],
+      "url": "https://yoshis.com/events/buy-tickets/rakim-9/detail",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "yoshis:2026-10-23:maysa",
+      "clubId": "yoshis",
+      "title": "MAYSA",
+      "date": "2026-10-23",
+      "sets": [
+        "19:30"
+      ],
+      "url": "https://yoshis.com/events/buy-tickets/maysa-9/detail",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "yoshis:2026-10-24:christian-sands-trio",
+      "clubId": "yoshis",
+      "title": "CHRISTIAN SANDS TRIO",
+      "date": "2026-10-24",
+      "sets": [
+        "19:30"
+      ],
+      "url": "https://yoshis.com/events/buy-tickets/christian-sands-trio/detail",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "yoshis:2026-10-24:buttah-s-jook-joint",
+      "clubId": "yoshis",
+      "title": "BUTTAH'S JOOK JOINT",
+      "date": "2026-10-24",
+      "sets": [
+        "21:30"
+      ],
+      "url": "https://yoshis.com/events/buy-tickets/buttah-s-jook-joint-4/detail",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "yoshis:2026-10-25:marion-meadows",
+      "clubId": "yoshis",
+      "title": "MARION MEADOWS",
+      "date": "2026-10-25",
+      "sets": [
+        "19:00"
+      ],
+      "url": "https://yoshis.com/events/buy-tickets/marion-meadows-5/detail",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "yoshis:2026-10-27:direct-from-sweden-the-music-of-abba",
+      "clubId": "yoshis",
+      "title": "DIRECT FROM SWEDEN: THE MUSIC OF ABBA",
+      "date": "2026-10-27",
+      "sets": [
+        "19:30"
+      ],
+      "url": "https://yoshis.com/events/buy-tickets/direct-from-sweden-the-music-of-abba-2/detail",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "yoshis:2026-10-28:daley-preshow-vip-experience-show-ticket-not-included",
+      "clubId": "yoshis",
+      "title": "DALEY - PRESHOW VIP EXPERIENCE (SHOW TICKET NOT INCLUDED)",
+      "date": "2026-10-28",
+      "sets": [
+        "17:30"
+      ],
+      "url": "https://yoshis.com/events/buy-tickets/daley-preshow-vip-experience-show-ticket-not-included/detail",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "yoshis:2026-10-28:daley",
+      "clubId": "yoshis",
+      "title": "DALEY",
+      "date": "2026-10-28",
+      "sets": [
+        "19:30"
+      ],
+      "url": "https://yoshis.com/events/buy-tickets/daley/detail",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "yoshis:2026-10-29:grace-kelly",
+      "clubId": "yoshis",
+      "title": "GRACE KELLY",
+      "date": "2026-10-29",
+      "sets": [
+        "19:30"
+      ],
+      "url": "https://yoshis.com/events/buy-tickets/grace-kelly-5/detail",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "yoshis:2026-10-30:rick-braun",
+      "clubId": "yoshis",
+      "title": "RICK BRAUN",
+      "date": "2026-10-30",
+      "sets": [
+        "19:30"
+      ],
+      "url": "https://yoshis.com/events/buy-tickets/rick-braun-4/detail",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "yoshis:2026-11-01:ja-ronn-flow-that-80s-flow",
+      "clubId": "yoshis",
+      "title": "JA RONN & FLOW: THAT 80s FLOW",
+      "date": "2026-11-01",
+      "sets": [
+        "19:00"
+      ],
+      "url": "https://yoshis.com/events/buy-tickets/ja-ronn-flow-that-80s-flow/detail",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "yoshis:2026-11-04:cherronda-g-i-m-every-woman-show",
+      "clubId": "yoshis",
+      "title": "CHERRONDA G I'M EVERY WOMAN SHOW",
+      "date": "2026-11-04",
+      "sets": [
+        "20:00"
+      ],
+      "url": "https://yoshis.com/events/buy-tickets/cherronda-g-i-m-every-woman/detail",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "yoshis:2026-11-08:ruben-studdard",
+      "clubId": "yoshis",
+      "title": "RUBEN STUDDARD",
+      "date": "2026-11-08",
+      "sets": [
+        "19:00"
+      ],
+      "url": "https://yoshis.com/events/buy-tickets/rubben-studdard/detail",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "yoshis:2026-11-09:a-tribute-to-grover-washington-jr-feat-kevin-moore-angelo-lu",
+      "clubId": "yoshis",
+      "title": "A TRIBUTE TO GROVER WASHINGTON JR. FEAT KEVIN MOORE, ANGELO LUSTER, ASHLEY JEMISON AND ELDON T. JONES",
+      "date": "2026-11-09",
+      "sets": [
+        "20:00"
+      ],
+      "url": "https://yoshis.com/events/buy-tickets/a-tribute-to-grover-washington-jr-feat-kevin-moore-angelo-luster-ashley-jemison-and-eldon-t-jones/detail",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "yoshis:2026-11-11:herlin-riley",
+      "clubId": "yoshis",
+      "title": "HERLIN RILEY",
+      "date": "2026-11-11",
+      "sets": [
+        "19:30"
+      ],
+      "url": "https://yoshis.com/events/buy-tickets/herlin-riley/detail",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "yoshis:2026-11-12:jackiem-joyner",
+      "clubId": "yoshis",
+      "title": "JACKIEM JOYNER",
+      "date": "2026-11-12",
+      "sets": [
+        "19:30"
+      ],
+      "url": "https://yoshis.com/events/buy-tickets/jackiem-joyner-2/detail",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "yoshis:2026-11-14:day26-pre-show-vip-experience-show-ticket-not-included",
+      "clubId": "yoshis",
+      "title": "DAY26 PRE SHOW VIP EXPERIENCE (SHOW TICKET NOT INCLUDED)",
+      "date": "2026-11-14",
+      "sets": [
+        "17:30"
+      ],
+      "url": "https://yoshis.com/events/buy-tickets/day26-pre-show-vip-experience-show-ticet-not-included/detail",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "yoshis:2026-11-14:day26",
+      "clubId": "yoshis",
+      "title": "DAY26",
+      "date": "2026-11-14",
+      "sets": [
+        "19:30"
+      ],
+      "url": "https://yoshis.com/events/buy-tickets/day26-2/detail",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "yoshis:2026-11-15:brian-simpson",
+      "clubId": "yoshis",
+      "title": "BRIAN SIMPSON",
+      "date": "2026-11-15",
+      "sets": [
+        "19:00"
+      ],
+      "url": "https://yoshis.com/events/buy-tickets/brian-simpson-2/detail",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "yoshis:2026-11-20:gerald-albright",
+      "clubId": "yoshis",
+      "title": "GERALD ALBRIGHT",
+      "date": "2026-11-20",
+      "sets": [
+        "19:30"
+      ],
+      "url": "https://yoshis.com/events/buy-tickets/gerald-albright-12/detail",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "yoshis:2026-11-22:the-oz-noy-trio-feat-dave-weckl",
+      "clubId": "yoshis",
+      "title": "THE OZ NOY TRIO feat. DAVE WECKL",
+      "date": "2026-11-22",
+      "sets": [
+        "19:00"
+      ],
+      "url": "https://yoshis.com/events/buy-tickets/the-oz-noy-trio-feat-dave-weckl/detail",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "yoshis:2026-12-02:isaiah-sharkey",
+      "clubId": "yoshis",
+      "title": "ISAIAH SHARKEY",
+      "date": "2026-12-02",
+      "sets": [
+        "19:30"
+      ],
+      "url": "https://yoshis.com/events/buy-tickets/isaiah-sharkey/detail",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "yoshis:2026-12-04:demola-the-violinist",
+      "clubId": "yoshis",
+      "title": "DEMOLA THE VIOLINIST",
+      "date": "2026-12-04",
+      "sets": [
+        "19:30"
+      ],
+      "url": "https://yoshis.com/events/buy-tickets/demola-the-violinist-6/detail",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "yoshis:2026-12-08:spanish-harlem-orchestra",
+      "clubId": "yoshis",
+      "title": "SPANISH HARLEM ORCHESTRA",
+      "date": "2026-12-08",
+      "sets": [
+        "19:30"
+      ],
+      "url": "https://yoshis.com/events/buy-tickets/spanish-harlem-orchestra-4/detail",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "yoshis:2026-12-11:con-funk-shun",
+      "clubId": "yoshis",
+      "title": "CON FUNK SHUN",
+      "date": "2026-12-11",
+      "sets": [
+        "20:00"
+      ],
+      "url": "https://yoshis.com/events/buy-tickets/con-funk-shun-30/detail",
+      "details": null,
+      "personnel": null,
+      "priceText": null
     }
   ]
 }

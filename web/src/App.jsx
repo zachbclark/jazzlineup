@@ -11,6 +11,15 @@ import ListView from './components/ListView';
 // Tip jar — "buy me a drink"
 const TIP_URL = 'https://ko-fi.com/jazzlineup';
 
+// venue-idea inbox, assembled at runtime so the address never appears as a
+// scannable literal in the bundle (plus-alias: filterable, revocable)
+const contactHref = (cityLabel) => {
+  const addr = ['zachbclark', 'jazzlineup'].join('+') + String.fromCharCode(64) + 'gmail.com';
+  const subject = 'Venue idea for Jazz Lineup';
+  const body = `Venue name:\nCity: ${cityLabel}\nWebsite:\n\nWhy it belongs on the lineup:\n`;
+  return `mailto:${addr}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+};
+
 export default function App() {
   const [clubs, setClubs] = useState([]);
   const [events, setEvents] = useState([]);
@@ -273,6 +282,11 @@ export default function App() {
             <circle cx="14" cy="18" r="1.7" strokeWidth="1.2" />
           </svg>
           tip jar
+        </a>
+        <span className="foot-sep">&middot;</span>
+        <a className="suggest-venue" href={contactHref(cityLabel)}
+          title="Know a club we're missing? Email me.">
+          suggest a venue
         </a>
       </footer>
     </div>

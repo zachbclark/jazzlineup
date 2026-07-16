@@ -2,12 +2,27 @@
 // season list: .concert blocks with .concert--date ("Jul 13", "Jul 17-19",
 // "Jul 29 - Aug 2"), a title, and a ticketing.jazz.org link.
 // Set times are house-standard: Mon-Sat 7:00 & 9:00 PM, Sunday 5:00 & 7:30 PM.
+// The ticketing.jazz.org detail pages are server-rendered too (verified
+// 2026-07-16) and carry a "PERFORMANCE LINEUP" roster — "Charles McPherson,
+// alto saxophone<br>…" — plus real prose between the Description and lineup
+// headings. A residency shares one ticketing page, so one fetch enriches
+// the whole run.
 import {
   fetchText, makeEvent, matchBlocks, htmlToText,
-  monthNum, inferYear, isoDate,
+  monthNum, inferYear, isoDate, cleanText, personnelFromLines,
 } from '../lib.js';
+import { enrichFromDetailPages } from './_enrichdetails.js';
 
 const URL_ = 'https://jazz.org/dizzys/';
+
+export function parseDetail(html) {
+  const txt = htmlToText(html);
+  const dm = txt.match(/Description\s*\n([\s\S]*?)\n\s*PERFORMANCE LINEUP/i);
+  return {
+    personnel: personnelFromLines(txt),
+    details: dm ? cleanText(dm[1]).slice(0, 300) || null : null,
+  };
+}
 
 function setsFor(dateIso) {
   const [y, m, d] = dateIso.split('-').map(Number);
@@ -59,6 +74,12 @@ export function parse(html, today = new Date()) {
   return events;
 }
 
-export async function crawl() {
-  return parse(await fetchText(URL_));
+export async function crawl(ctx = {}) {
+  const events = parse(await fetchText(URL_), ctx.today ?? new Date());
+  await enrichFromDetailPages(
+    events.filter((e) => e.url !== URL_), // only events with a ticketing page
+    ctx,
+    { fields: ['personnel', 'details'], extract: parseDetail, maxPages: 30 },
+  );
+  return events;
 }
