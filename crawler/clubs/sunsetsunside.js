@@ -17,4 +17,6 @@ export function parse(jsonText) {
   return parseTribe(jsonText, OPTS);
 }
 
-export const crawl = makeTribeCrawler({ base: BASE, ...OPTS, maxPages: 4 });
+// Their tribe endpoint is SLOW (30s+ for per_page=50 — timed out the whole
+// module on first live crawl, 2026-07-16): smaller pages, longer leash.
+export const crawl = makeTribeCrawler({ base: BASE, ...OPTS, maxPages: 8, perPage: 20, timeoutMs: 60000 });

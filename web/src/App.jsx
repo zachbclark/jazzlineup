@@ -1,5 +1,5 @@
 import React, { useEffect, useMemo, useState } from 'react';
-import { CITIES, fetchData, initialCity, todayIso, relTime, searchNorm, eventMatches, setClock24 } from './api';
+import { CITIES, fetchData, initialCity, todayIso, relTime, searchNorm, eventMatches, setClock24, citySlug } from './api';
 import SearchBox from './components/SearchBox';
 import { useIsMobile } from './useIsMobile';
 import CitySwitcher from './components/CitySwitcher';
@@ -59,7 +59,7 @@ export default function App() {
   const changeCity = (id) => {
     setCity(id);
     localStorage.setItem('jl.city', id);
-    window.history.pushState({}, '', '/' + id);
+    window.history.pushState({}, '', '/' + citySlug(id));
   };
 
   // Chip order is saved per (city, borough scope): each of All / Manhattan /

@@ -1,17 +1,25 @@
 // In production the site is fully static: the crawler Lambda writes
 // events-<city>.json files to S3 and the frontend fetches them as plain
 // files (each city's clubs are embedded in its payload).
+// id: internal + data file name (events-<id>.json) + localStorage keys —
+// never changes. slug: what the URL shows (jazzlineup.com/chicago).
 export const CITIES = [
-  { id: 'nyc', label: 'NYC' },
-  { id: 'la', label: 'LA' },
-  { id: 'chi', label: 'CHICAGO' },
-  { id: 'sf', label: 'SF' },
-  { id: 'par', label: 'PARIS', clock24: true },
+  { id: 'nyc', label: 'NYC', slug: 'nyc' },
+  { id: 'la', label: 'LA', slug: 'la' },
+  { id: 'chi', label: 'CHICAGO', slug: 'chicago' },
+  { id: 'sf', label: 'SF', slug: 'sf' },
+  { id: 'par', label: 'PARIS', slug: 'paris', clock24: true },
 ];
+
+export function citySlug(id) {
+  return CITIES.find((c) => c.id === id)?.slug ?? id;
+}
 
 export function initialCity() {
   const fromPath = window.location.pathname.replace(/^\//, '').toLowerCase();
-  if (CITIES.some((c) => c.id === fromPath)) return fromPath;
+  // slugs are canonical; old short-id links (/par, /chi) keep working
+  const match = CITIES.find((c) => c.slug === fromPath || c.id === fromPath);
+  if (match) return match.id;
   const saved = localStorage.getItem('jl.city');
   if (CITIES.some((c) => c.id === saved)) return saved;
   return 'nyc';

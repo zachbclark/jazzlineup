@@ -1429,6 +1429,30 @@ ok('newmorning: JSON-LD events parsed, T00:00:00 means no set times, dupes colla
   assert.match(evs[0].url, /N-7717/);
 });
 
+ok('newmorning: malformed JSON-LD (their reality) falls back to lenient extraction', () => {
+  // an unescaped control character poisons strict JSON.parse of the array
+  const broken = `<script type="application/ld+json">[
+    { "@context":"http://schema.org", "@type":"Event",
+      "name":"Kenny Garrett",
+      "startDate":"2026-07-22T00:00:00", "endDate":"2026-07-22T23:30:00",
+      "description":"bad
+newline",
+      "url":"https://www.newmorning.com/N-7711-45-ans-du-new-kenny-garrett.html",
+      "location":{ "@type":"Place", "name":"New Morning" } },
+    { "@context":"http://schema.org", "@type":"Event",
+      "name":"Brad Mehldau \u2013 Solo",
+      "startDate":"2026-07-23T00:00:00",
+      "url":"https://www.newmorning.com/N-7712-brad-mehldau.html",
+      "location":{ "@type":"Place", "name":"New Morning" } }
+  ]</script>`;
+  const evs = nmParse(broken);
+  assert.equal(evs.length, 2);
+  assert.equal(evs[0].title, 'Kenny Garrett');
+  assert.equal(evs[0].date, '2026-07-22');
+  assert.match(evs[0].url, /N-7711/);
+  assert.equal(evs[1].title, 'Brad Mehldau – Solo'); // \u2013 unescaped
+});
+
 // --- Caveau de la Huchette (French prose dates) ----------------------------------------
 import { expandLine, parseMonthPage } from './clubs/caveau.js';
 ok('caveau: singles, pairs, and ranges expand; nightly 21h30', () => {

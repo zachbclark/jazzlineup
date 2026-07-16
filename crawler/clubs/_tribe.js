@@ -35,13 +35,13 @@ export function parseTribe(jsonText, { clubIdFor, fallbackUrl }) {
   return events;
 }
 
-export function makeTribeCrawler({ base, clubIdFor, fallbackUrl, maxPages = 3 }) {
+export function makeTribeCrawler({ base, clubIdFor, fallbackUrl, maxPages = 3, perPage = 50, timeoutMs = 30000 }) {
   return async function crawl(ctx = {}) {
     const today = ctx.today ?? new Date();
     const out = [];
-    let url = `${base}/wp-json/tribe/events/v1/events?per_page=50&start_date=${today.toISOString().slice(0, 10)}`;
+    let url = `${base}/wp-json/tribe/events/v1/events?per_page=${perPage}&start_date=${today.toISOString().slice(0, 10)}`;
     for (let page = 0; page < maxPages && url; page++) {
-      const body = await fetchText(url, { headers: { accept: 'application/json' } });
+      const body = await fetchText(url, { headers: { accept: 'application/json' }, timeoutMs });
       out.push(...parseTribe(body, { clubIdFor, fallbackUrl }));
       let next = null;
       try { next = JSON.parse(body).next_rest_url ?? null; } catch { /* done */ }

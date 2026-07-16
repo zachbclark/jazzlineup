@@ -10,11 +10,28 @@ import { fetchText, makeEvent, extractJsonLd, htmlToText, cleanText } from '../l
 const BASE = 'https://www.newmorning.com';
 const URL_ = `${BASE}/programmation`;
 
+// Their PHP emits the JSON-LD by string concatenation, and one unescaped
+// character anywhere makes JSON.parse reject the WHOLE 73-event array (bit
+// us on first live crawl: browser tolerated it, extractJsonLd didn't).
+// Lenient fallback: pull each event's fields by regex. Field order in
+// their template is stable: @type Event -> name -> startDate -> … -> url.
+function lenientEvents(html) {
+  const nodes = [];
+  const re = /"@type"\s*:\s*"Event"[\s\S]{0,400}?"name"\s*:\s*"((?:[^"\\]|\\.)*)"[\s\S]{0,200}?"startDate"\s*:\s*"([^"]+)"[\s\S]{0,400}?"url"\s*:\s*"([^"]+)"/g;
+  for (const m of html.matchAll(re)) {
+    let name = m[1];
+    try { name = JSON.parse(`"${m[1]}"`); } catch { /* keep raw */ }
+    nodes.push({ '@type': 'Event', name, startDate: m[2], url: m[3] });
+  }
+  return nodes;
+}
+
 export function parse(html) {
   const events = [];
   const seen = new Set();
-  for (const node of extractJsonLd(html)) {
-    if (!/event/i.test(String(node['@type'] ?? ''))) continue;
+  let nodes = extractJsonLd(html).filter((n) => /event/i.test(String(n['@type'] ?? '')));
+  if (!nodes.length) nodes = lenientEvents(html);
+  for (const node of nodes) {
     if (!node.name || !node.startDate) continue;
     const date = String(node.startDate).slice(0, 10);
     if (!/^\d{4}-\d{2}-\d{2}$/.test(date)) continue;

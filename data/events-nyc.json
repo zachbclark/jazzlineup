@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-16T01:13:52.888Z",
+  "generatedAt": "2026-07-16T01:32:09.875Z",
   "city": "nyc",
   "clubs": [
     {
@@ -1847,6 +1847,19 @@
         }
       ],
       "late": true,
+      "priceText": null
+    },
+    {
+      "id": "pocket:2026-07-16:closed-for-private-event",
+      "clubId": "pocket",
+      "title": "Closed for Private Event",
+      "date": "2026-07-16",
+      "sets": [
+        "00:00"
+      ],
+      "url": "https://thepocketnyc.com/event/closed-for-private-event/",
+      "details": null,
+      "personnel": null,
       "priceText": null
     },
     {
