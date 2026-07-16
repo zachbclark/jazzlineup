@@ -1429,6 +1429,25 @@ ok('newmorning: JSON-LD events parsed, T00:00:00 means no set times, dupes colla
   assert.match(evs[0].url, /N-7717/);
 });
 
+ok('newmorning: EventVenue node must not satisfy the strict path (73-show regression)', () => {
+  // real page shape: a parseable EventVenue block + a MALFORMED event array.
+  // the loose /event/i type test matched EventVenue, "succeeded" with zero
+  // events, and starved the lenient fallback.
+  const html = `<script type="application/ld+json">{"@context":"http://schema.org","@type":"EventVenue","name":"New Morning","url":"https://www.newmorning.com"}</script>
+  <script type="application/ld+json">[
+    { "@context":"http://schema.org", "@type":"Event",
+      "name":"The Bad Plus",
+      "startDate":"2026-07-16T00:00:00",
+      "url":"https://www.newmorning.com/20260716-7701-45-ans-du-new-the-bad-plus.html",
+      "location":{ "@type":"Place", "name":"New Morning" } },
+    { "broken": }
+  ]</script>`;
+  const evs = nmParse(html);
+  assert.equal(evs.length, 1, 'lenient fallback must fire despite the EventVenue node');
+  assert.equal(evs[0].title, 'The Bad Plus');
+  assert.equal(evs[0].date, '2026-07-16');
+});
+
 ok('newmorning: malformed JSON-LD (their reality) falls back to lenient extraction', () => {
   // an unescaped control character poisons strict JSON.parse of the array
   const broken = `<script type="application/ld+json">[
@@ -1648,11 +1667,13 @@ ok('pizzaexpress: Soho only, showtime + price parse', () => {
 import { parse as coParse } from './clubs/cafeoto.js';
 ok('cafeoto: date header near link parses; DJ bar nights skipped', () => {
   const block = (slug, title, dateLine) => `
-  <div class="each-event"><div class="each-image"><a href="/events/${slug}/"><img></a></div>
-  <div class="each-header"><p><a href="/events/${slug}/">${title}</a></p></div>
-  <div class="each-date">${dateLine}</div></div>`;
-  const html = block('khanah-space21', 'KHANAH — part of SPACE21 festival', 'FRIDAY 17 JULY 2026, 7.30PM')
-    + block('oto-bar-all-night-flight', 'OTO BAR with All Night Flight Records (DJ)', 'THURSDAY 16 JULY 2026, 7.30PM');
+  <div class="each-activity col-xs-12">
+    <div class="each-header"><p>${dateLine}</p></div>
+    <div class="each-image"><a href="/events/${slug}/"><img></a></div>
+    <div class="each-header"><p><a href="/events/${slug}/">${title}</a></p></div>
+  </div>`;
+  const html = block('khanah-space21', 'KHANAH — part of SPACE21 festival', 'Friday 17 July 2026, 7.30pm')
+    + block('oto-bar-all-night-flight', 'OTO BAR with All Night Flight Records (DJ)', 'Thursday 16 July 2026, 7.30pm');
   const evs = coParse(html);
   assert.equal(evs.length, 1, 'DJ bar night must be skipped');
   assert.match(evs[0].title, /KHANAH/);
@@ -1695,4 +1716,16 @@ ok('artist net: known names rescue keyword-less titles at keyword-filtered venue
   const evs = mintParse2(fixture);
   assert.equal(evs.length, 1, 'Jeff Parker rescued, rock showcase still dropped');
   assert.equal(evs[0].title, 'Jeff Parker');
+});
+
+// --- London seed fallbacks (WAF workarounds, 2026-07-16) --------------------------------
+import { SEED as rsSeed } from './clubs/ronnies-seed.js';
+import { SEED as jcSeed } from './clubs/jazzcafe-seed.js';
+ok('london seeds: valid shapes, sane sizes', () => {
+  assert.ok(rsSeed.length >= 50, `ronnies seed thin: ${rsSeed.length}`);
+  assert.ok(rsSeed.every((r) => r.length === 4 && /^\d{4}-\d{2}-\d{2}$/.test(r[2]) && 'MULX'.includes(r[3])));
+  assert.ok(jcSeed.length >= 40, `jazzcafe seed thin: ${jcSeed.length}`);
+  assert.ok(jcSeed.every((e) => e.title && /^\d{4}-\d{2}-\d{2}$/.test(e.date) && e.url));
+  assert.ok(rsSeed.some((r) => /kenny barron/i.test(r[1])), 'sanity: Kenny Barron in the Ronnie’s seed');
+  assert.ok(jcSeed.some((e) => /immanuel wilkins/i.test(e.title)), 'sanity: Wilkins in the Jazz Cafe seed');
 });

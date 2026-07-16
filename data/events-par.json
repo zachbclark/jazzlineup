@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-16T16:40:11.361Z",
+  "generatedAt": "2026-07-16T17:19:41.627Z",
   "city": "par",
   "clubs": [
     {
@@ -87,9 +87,7 @@
       "color": "#e86fa8"
     }
   ],
-  "errors": [
-    "./clubs/newmorning.js: returned 0 events (markup change? keeping previous data)"
-  ],
+  "errors": [],
   "events": [
     {
       "id": "caveau:2026-07-03:screamin-jones-avec-katrin-merili",
@@ -367,6 +365,17 @@
       "priceText": null
     },
     {
+      "id": "newmorning:2026-07-16:the-bad-plus",
+      "clubId": "newmorning",
+      "title": "The Bad Plus",
+      "date": "2026-07-16",
+      "sets": [],
+      "url": "https://www.newmorning.com/20260716-7701-45-ans-du-new-the-bad-plus.html",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
       "id": "duc:2026-07-17:mario-canonge-trio",
       "clubId": "duc",
       "title": "MARIO CANONGE TRIO",
@@ -512,6 +521,17 @@
       "details": null,
       "personnel": null,
       "late": true,
+      "priceText": null
+    },
+    {
+      "id": "newmorning:2026-07-17:ledisi",
+      "clubId": "newmorning",
+      "title": "Ledisi",
+      "date": "2026-07-17",
+      "sets": [],
+      "url": "https://www.newmorning.com/20260717-7728-45-ans-du-new-ledisi.html",
+      "details": null,
+      "personnel": null,
       "priceText": null
     },
     {
@@ -779,6 +799,17 @@
         "21:30"
       ],
       "url": "https://www.caveaudelahuchette.fr/1/concerts_juillet_2026_1483430.html",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "newmorning:2026-07-20:immanuel-wilkins-quartet",
+      "clubId": "newmorning",
+      "title": "Immanuel Wilkins Quartet",
+      "date": "2026-07-20",
+      "sets": [],
+      "url": "https://www.newmorning.com/20260720-7717-45-ans-du-new-immanuel-wilkins-quartet.html",
       "details": null,
       "personnel": null,
       "priceText": null
@@ -1074,6 +1105,17 @@
       "priceText": null
     },
     {
+      "id": "newmorning:2026-07-23:kenny-garrett",
+      "clubId": "newmorning",
+      "title": "Kenny Garrett",
+      "date": "2026-07-23",
+      "sets": [],
+      "url": "https://www.newmorning.com/20260723-7711-45-ans-du-new-kenny-garrett.html",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
       "id": "duc:2026-07-24:gabrielle-cavassa",
       "clubId": "duc",
       "title": "Gabrielle Cavassa",
@@ -1197,6 +1239,17 @@
       "details": null,
       "personnel": null,
       "late": true,
+      "priceText": null
+    },
+    {
+      "id": "newmorning:2026-07-24:kenny-garrett",
+      "clubId": "newmorning",
+      "title": "Kenny Garrett",
+      "date": "2026-07-24",
+      "sets": [],
+      "url": "https://www.newmorning.com/20260724-7712-45-ans-du-new-kenny-garrett.html",
+      "details": null,
+      "personnel": null,
       "priceText": null
     },
     {
@@ -1435,6 +1488,17 @@
       "priceText": null
     },
     {
+      "id": "newmorning:2026-07-27:aldorande-collettivo-immaginario",
+      "clubId": "newmorning",
+      "title": "Aldorande + Collettivo Immaginario",
+      "date": "2026-07-27",
+      "sets": [],
+      "url": "https://www.newmorning.com/20260727-7751-collettivo-immaginario-aldorande.html",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
       "id": "duc:2026-07-28:david-graham-the-eskimo-brothers",
       "clubId": "duc",
       "title": "David Graham & The Eskimo Brothers",
@@ -1518,6 +1582,17 @@
       "priceText": null
     },
     {
+      "id": "newmorning:2026-07-28:rog",
+      "clubId": "newmorning",
+      "title": "Rogê",
+      "date": "2026-07-28",
+      "sets": [],
+      "url": "https://www.newmorning.com/20260728-7725-45-ans-du-new-roge.html",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
       "id": "duc:2026-07-29:snorre-kirk-european-quartet",
       "clubId": "duc",
       "title": "Snorre Kirk European Quartet",
@@ -1571,6 +1646,17 @@
       "priceText": null
     },
     {
+      "id": "newmorning:2026-07-29:veronica-swift",
+      "clubId": "newmorning",
+      "title": "Veronica Swift",
+      "date": "2026-07-29",
+      "sets": [],
+      "url": "https://www.newmorning.com/20260729-7722-45-ans-du-new-veronica-swift.html",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
       "id": "duc:2026-07-30:snorre-kirk-european-quartet",
       "clubId": "duc",
       "title": "Snorre Kirk European Quartet",
@@ -1619,6 +1705,17 @@
         "21:30"
       ],
       "url": "https://www.caveaudelahuchette.fr/1/concerts_juillet_2026_1483430.html",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "newmorning:2026-07-30:the-blackbyrds",
+      "clubId": "newmorning",
+      "title": "The Blackbyrds",
+      "date": "2026-07-30",
+      "sets": [],
+      "url": "https://www.newmorning.com/20260730-7750-45-ans-du-new-the-blackbyrds.html",
       "details": null,
       "personnel": null,
       "priceText": null
@@ -1725,6 +1822,17 @@
         }
       ],
       "late": true,
+      "priceText": null
+    },
+    {
+      "id": "newmorning:2026-07-31:echoes-of",
+      "clubId": "newmorning",
+      "title": "Echoes Of",
+      "date": "2026-07-31",
+      "sets": [],
+      "url": "https://www.newmorning.com/20260731-7724-echoes-of.html",
+      "details": null,
+      "personnel": null,
       "priceText": null
     },
     {
@@ -3005,6 +3113,17 @@
       "priceText": "25,00&euro; à 30,00&euro;"
     },
     {
+      "id": "newmorning:2026-09-12:nik-west",
+      "clubId": "newmorning",
+      "title": "Nik West",
+      "date": "2026-09-12",
+      "sets": [],
+      "url": "https://www.newmorning.com/20260912-7739-45-ans-du-new-nik-west.html",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
       "id": "sunside:2026-09-13:hommage-ray-charles-avec-big-dez-jam-blues",
       "clubId": "sunside",
       "title": "HOMMAGE À RAY CHARLES avec Big Dez + Jam blues",
@@ -3116,6 +3235,17 @@
       "priceText": null
     },
     {
+      "id": "newmorning:2026-09-17:fred-alie",
+      "clubId": "newmorning",
+      "title": "Fred Alie",
+      "date": "2026-09-17",
+      "sets": [],
+      "url": "https://www.newmorning.com/20260917-7732-fred-alie.html",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
       "id": "duc:2026-09-18:bria-skonberg",
       "clubId": "duc",
       "title": "Bria Skonberg",
@@ -3143,6 +3273,17 @@
       "priceText": null
     },
     {
+      "id": "newmorning:2026-09-18:le-la-olivesi",
+      "clubId": "newmorning",
+      "title": "Leïla Olivesi",
+      "date": "2026-09-18",
+      "sets": [],
+      "url": "https://www.newmorning.com/20260918-7753-leila-olivesi.html",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
       "id": "balblomet:2026-09-19:the-roaring-cats-django-louis-armstrong-swing-legends",
       "clubId": "balblomet",
       "title": "THE ROARING CATS – DJANGO & LOUIS ARMSTRONG, SWING LEGENDS",
@@ -3151,6 +3292,17 @@
         "20:00"
       ],
       "url": "https://www.balblomet.fr/evenement/the-roaring-cats-2-2/edate/2026-09-19",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "newmorning:2026-09-19:mamas-gun",
+      "clubId": "newmorning",
+      "title": "Mamas Gun",
+      "date": "2026-09-19",
+      "sets": [],
+      "url": "https://www.newmorning.com/20260919-7706-mamas-gun.html",
       "details": null,
       "personnel": null,
       "priceText": null
@@ -3170,6 +3322,28 @@
       "priceText": null
     },
     {
+      "id": "newmorning:2026-09-21:seule-s-en-sc-ne",
+      "clubId": "newmorning",
+      "title": "Seule(s) en scène",
+      "date": "2026-09-21",
+      "sets": [],
+      "url": "https://www.newmorning.com/20260921-7785-seule-s-en-scene.html",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "newmorning:2026-09-22:jazz-icons-100-miles-davis-john-coltrane-oscar-brown-more",
+      "clubId": "newmorning",
+      "title": "Jazz Icons 100 : Miles Davis, John Coltrane, Oscar Brown & more",
+      "date": "2026-09-22",
+      "sets": [],
+      "url": "https://www.newmorning.com/20260922-7779-jazz-icons-100-miles-davis-john-coltrane-oscar-brown-more.html",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
       "id": "balblomet:2026-09-23:mama-shakers",
       "clubId": "balblomet",
       "title": "MAMA SHAKERS",
@@ -3178,6 +3352,17 @@
         "20:00"
       ],
       "url": "https://www.balblomet.fr/evenement/mama-shakers-2/edate/2026-09-23",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "newmorning:2026-09-23:persian-jazz-night",
+      "clubId": "newmorning",
+      "title": "Persian Jazz Night",
+      "date": "2026-09-23",
+      "sets": [],
+      "url": "https://www.newmorning.com/20260923-7777-saazbuzz-jazz-festival-persian-jazz-night.html",
       "details": null,
       "personnel": null,
       "priceText": null
@@ -3210,6 +3395,17 @@
       "priceText": null
     },
     {
+      "id": "newmorning:2026-09-24:kamilya-jubran-werner-hasler-lynn-adib",
+      "clubId": "newmorning",
+      "title": "Kamilya Jubran & Werner Hasler - Lynn Adib",
+      "date": "2026-09-24",
+      "sets": [],
+      "url": "https://www.newmorning.com/20260924-7778-saazbuzz-jazz-festival-kamilya-jubran-werner-hasler-lynn-adib.html",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
       "id": "duc:2026-09-25:obradovic-tixier-duo",
       "clubId": "duc",
       "title": "Obradovic-Tixier Duo",
@@ -3220,6 +3416,17 @@
       ],
       "url": "https://ducdeslombards.com/fr/l-agenda/obradovic-tixier-duo-told-10-year-anniversary-release-party",
       "details": "Futuristic",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "newmorning:2026-09-25:black-milk",
+      "clubId": "newmorning",
+      "title": "Black Milk",
+      "date": "2026-09-25",
+      "sets": [],
+      "url": "https://www.newmorning.com/20260925-7738-black-milk.html",
+      "details": null,
       "personnel": null,
       "priceText": null
     },
@@ -3293,6 +3500,17 @@
       "priceText": null
     },
     {
+      "id": "newmorning:2026-09-30:henri-texier-trio",
+      "clubId": "newmorning",
+      "title": "Henri Texier Trio",
+      "date": "2026-09-30",
+      "sets": [],
+      "url": "https://www.newmorning.com/20260930-7747-henri-texier-trio.html",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
       "id": "duc:2026-10-01:baptiste-herbin-fred-nardin-4tet",
       "clubId": "duc",
       "title": "Baptiste Herbin / Fred Nardin 4tet",
@@ -3320,6 +3538,17 @@
       "priceText": null
     },
     {
+      "id": "newmorning:2026-10-01:mario-canonge",
+      "clubId": "newmorning",
+      "title": "Mario Canonge",
+      "date": "2026-10-01",
+      "sets": [],
+      "url": "https://www.newmorning.com/20261001-7764-mario-canonge.html",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
       "id": "balblomet:2026-10-02:baptiste-trotignon-trio-art-is-simple",
       "clubId": "balblomet",
       "title": "BAPTISTE TROTIGNON TRIO – ART IS SIMPLE",
@@ -3328,6 +3557,17 @@
         "20:00"
       ],
       "url": "https://www.balblomet.fr/evenement/baptiste-trotignon-oct-2026/edate/2026-10-02",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "newmorning:2026-10-02:thee-sinseers",
+      "clubId": "newmorning",
+      "title": "Thee Sinseers",
+      "date": "2026-10-02",
+      "sets": [],
+      "url": "https://www.newmorning.com/20261002-7735-thee-sinseers.html",
       "details": null,
       "personnel": null,
       "priceText": null
@@ -3354,6 +3594,17 @@
         "20:00"
       ],
       "url": "https://www.balblomet.fr/evenement/natalie-dessay-chante-nougaro-oct-26-lundi/edate/2026-10-05",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "newmorning:2026-10-05:justin-hicks-feat-marvin-sewell-kyle-miles-morley-feat-chris",
+      "clubId": "newmorning",
+      "title": "Justin Hicks feat. Marvin Sewell & Kyle Miles + Morley feat. Chris Bruce & Yuval Lion",
+      "date": "2026-10-05",
+      "sets": [],
+      "url": "https://www.newmorning.com/20261005-7743-morley-feat-chris-bruce-yuval-lion-justin-hicks-feat-marvin-sewell-kyle-miles.html",
       "details": null,
       "personnel": null,
       "priceText": null
@@ -3386,6 +3637,17 @@
       "priceText": null
     },
     {
+      "id": "newmorning:2026-10-06:monty-alexander",
+      "clubId": "newmorning",
+      "title": "Monty Alexander",
+      "date": "2026-10-06",
+      "sets": [],
+      "url": "https://www.newmorning.com/20261006-7749-45-ans-du-new-monty-alexander.html",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
       "id": "duc:2026-10-07:kassa-overall",
       "clubId": "duc",
       "title": "Kassa Overall",
@@ -3413,6 +3675,17 @@
       "priceText": null
     },
     {
+      "id": "newmorning:2026-10-07:michel-alibo",
+      "clubId": "newmorning",
+      "title": "Michel Alibo",
+      "date": "2026-10-07",
+      "sets": [],
+      "url": "https://www.newmorning.com/20261007-7761-michel-alibo.html",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
       "id": "balblomet:2026-10-08:natalie-dessay-chante-nougaro",
       "clubId": "balblomet",
       "title": "NATALIE DESSAY CHANTE NOUGARO",
@@ -3421,6 +3694,17 @@
         "20:00"
       ],
       "url": "https://www.balblomet.fr/evenement/natalie-dessay-chante-nougaro-oct-26-2-2/edate/2026-10-08",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "newmorning:2026-10-08:guinga-yamandu-costa",
+      "clubId": "newmorning",
+      "title": "Guinga & Yamandu Costa",
+      "date": "2026-10-08",
+      "sets": [],
+      "url": "https://www.newmorning.com/20261008-7730-guinga-yamandu-costa.html",
       "details": null,
       "personnel": null,
       "priceText": null
@@ -3439,6 +3723,17 @@
       "priceText": null
     },
     {
+      "id": "newmorning:2026-10-09:tribute-to-pupy-y-los-que-son-son",
+      "clubId": "newmorning",
+      "title": "Tribute To Pupy Y Los Que Son Son",
+      "date": "2026-10-09",
+      "sets": [],
+      "url": "https://www.newmorning.com/20261009-7731-tribute-to-pupy-y-los-que-son-son.html",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
       "id": "balblomet:2026-10-10:natalie-dessay-chante-nougaro",
       "clubId": "balblomet",
       "title": "NATALIE DESSAY CHANTE NOUGARO",
@@ -3447,6 +3742,39 @@
         "20:00"
       ],
       "url": "https://www.balblomet.fr/evenement/natalie-dessay-chante-nougaro-oct-26-samedi/edate/2026-10-10",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "newmorning:2026-10-10:fela-day-hommage-fela-kuti",
+      "clubId": "newmorning",
+      "title": "FELA DAY, Hommage à Fela Kuti",
+      "date": "2026-10-10",
+      "sets": [],
+      "url": "https://www.newmorning.com/20261010-7773-fela-day-hommage-a-fela-kuti.html",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "newmorning:2026-10-12:lowdown-brass-band",
+      "clubId": "newmorning",
+      "title": "LowDown Brass Band",
+      "date": "2026-10-12",
+      "sets": [],
+      "url": "https://www.newmorning.com/20261012-7763-lowdown-brass-band.html",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "newmorning:2026-10-13:lakecia-benjamin",
+      "clubId": "newmorning",
+      "title": "Lakecia Benjamin",
+      "date": "2026-10-13",
+      "sets": [],
+      "url": "https://www.newmorning.com/20261013-7754-lakecia-benjamin.html",
       "details": null,
       "personnel": null,
       "priceText": null
@@ -3478,6 +3806,17 @@
       "priceText": null
     },
     {
+      "id": "newmorning:2026-10-15:azymuth",
+      "clubId": "newmorning",
+      "title": "Azymuth",
+      "date": "2026-10-15",
+      "sets": [],
+      "url": "https://www.newmorning.com/20261015-7723-45-ans-du-new-azymuth.html",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
       "id": "duc:2026-10-16:tchavolo-schmitt-trio",
       "clubId": "duc",
       "title": "Tchavolo Schmitt Trio",
@@ -3488,6 +3827,17 @@
       ],
       "url": "https://ducdeslombards.com/fr/l-agenda/tchavolo-schmitt-trio-3",
       "details": "Manouche",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "newmorning:2026-10-16:jeru-the-damaja",
+      "clubId": "newmorning",
+      "title": "Jeru the Damaja",
+      "date": "2026-10-16",
+      "sets": [],
+      "url": "https://www.newmorning.com/20261016-7784-jeru-the-damaja.html",
+      "details": null,
       "personnel": null,
       "priceText": null
     },
@@ -3519,6 +3869,28 @@
       "priceText": null
     },
     {
+      "id": "newmorning:2026-10-17:goldford",
+      "clubId": "newmorning",
+      "title": "GoldFord",
+      "date": "2026-10-17",
+      "sets": [],
+      "url": "https://www.newmorning.com/20261017-7783-goldford.html",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "newmorning:2026-10-19:keyon-harrold",
+      "clubId": "newmorning",
+      "title": "Keyon Harrold",
+      "date": "2026-10-19",
+      "sets": [],
+      "url": "https://www.newmorning.com/20261019-7776-keyon-harrold.html",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
       "id": "balblomet:2026-10-20:l-orchestre-du-bal-blomet",
       "clubId": "balblomet",
       "title": "L’ORCHESTRE DU BAL BLOMET",
@@ -3532,6 +3904,28 @@
       "priceText": null
     },
     {
+      "id": "newmorning:2026-10-20:le-la-duclos",
+      "clubId": "newmorning",
+      "title": "Leïla Duclos",
+      "date": "2026-10-20",
+      "sets": [],
+      "url": "https://www.newmorning.com/20261020-7748-leila-duclos.html",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "newmorning:2026-10-21:gaidaa",
+      "clubId": "newmorning",
+      "title": "Gaidaa",
+      "date": "2026-10-21",
+      "sets": [],
+      "url": "https://www.newmorning.com/20261021-7782-gaidaa.html",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
       "id": "balblomet:2026-10-22:philippe-et-marcel-powell-les-concerts-jazz-magazine",
       "clubId": "balblomet",
       "title": "PHILIPPE ET MARCEL POWELL – LES CONCERTS JAZZ MAGAZINE",
@@ -3540,6 +3934,61 @@
         "20:00"
       ],
       "url": "https://www.balblomet.fr/evenement/powell-jazz-mag/edate/2026-10-22",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "newmorning:2026-10-22:mica-millar",
+      "clubId": "newmorning",
+      "title": "Mica Millar",
+      "date": "2026-10-22",
+      "sets": [],
+      "url": "https://www.newmorning.com/20261022-6928-mica-millar.html",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "newmorning:2026-10-23:dub-pistols",
+      "clubId": "newmorning",
+      "title": "Dub Pistols",
+      "date": "2026-10-23",
+      "sets": [],
+      "url": "https://www.newmorning.com/20261023-7695-dub-pistols.html",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "newmorning:2026-10-24:galliano",
+      "clubId": "newmorning",
+      "title": "Galliano",
+      "date": "2026-10-24",
+      "sets": [],
+      "url": "https://www.newmorning.com/20261024-7772-galliano.html",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "newmorning:2026-10-26:elijah-fox",
+      "clubId": "newmorning",
+      "title": "Elijah Fox",
+      "date": "2026-10-26",
+      "sets": [],
+      "url": "https://www.newmorning.com/20261026-7755-elijah-fox.html",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "newmorning:2026-10-27:the-messthetics-james-brandon-lewis",
+      "clubId": "newmorning",
+      "title": "The Messthetics & James Brandon Lewis",
+      "date": "2026-10-27",
+      "sets": [],
+      "url": "https://www.newmorning.com/20261027-7757-the-messthetics-james-brandon-lewis.html",
       "details": null,
       "personnel": null,
       "priceText": null
@@ -3559,6 +4008,61 @@
       "priceText": null
     },
     {
+      "id": "newmorning:2026-10-29:shrizz-n-maze",
+      "clubId": "newmorning",
+      "title": "Shrizz N Maze",
+      "date": "2026-10-29",
+      "sets": [],
+      "url": "https://www.newmorning.com/20261029-7719-shrizz-n-maze.html",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "newmorning:2026-10-30:ga-20",
+      "clubId": "newmorning",
+      "title": "GA-20",
+      "date": "2026-10-30",
+      "sets": [],
+      "url": "https://www.newmorning.com/20261030-7769-ga-20.html",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "newmorning:2026-11-02:nils-landgren-funk-unit",
+      "clubId": "newmorning",
+      "title": "Nils Landgren Funk Unit",
+      "date": "2026-11-02",
+      "sets": [],
+      "url": "https://www.newmorning.com/20261102-7771-nils-landgren-funk-unit.html",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "newmorning:2026-11-03:kurt-rosenwinkel",
+      "clubId": "newmorning",
+      "title": "Kurt Rosenwinkel",
+      "date": "2026-11-03",
+      "sets": [],
+      "url": "https://www.newmorning.com/20261103-7760-kurt-rosenwinkel.html",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "newmorning:2026-11-04:isaiah-collier",
+      "clubId": "newmorning",
+      "title": "Isaiah Collier",
+      "date": "2026-11-04",
+      "sets": [],
+      "url": "https://www.newmorning.com/20261104-7775-isaiah-collier.html",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
       "id": "balblomet:2026-11-05:les-1001-nuits-du-jazz-leonard-cohen-et-le-jazz",
       "clubId": "balblomet",
       "title": "LES 1001 NUITS DU JAZZ – LEONARD COHEN ET LE JAZZ",
@@ -3567,6 +4071,17 @@
         "20:00"
       ],
       "url": "https://www.balblomet.fr/evenement/1001-nuits-leonard-cohen-et-le-jazz/edate/2026-11-05",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "newmorning:2026-11-05:tyreek-mcdole",
+      "clubId": "newmorning",
+      "title": "Tyreek McDole",
+      "date": "2026-11-05",
+      "sets": [],
+      "url": "https://www.newmorning.com/20261105-7765-tyreek-mcdole.html",
       "details": null,
       "personnel": null,
       "priceText": null
@@ -3585,6 +4100,17 @@
       "priceText": null
     },
     {
+      "id": "newmorning:2026-11-10:steve-coleman-the-five-elements",
+      "clubId": "newmorning",
+      "title": "Steve Coleman & The Five Elements",
+      "date": "2026-11-10",
+      "sets": [],
+      "url": "https://www.newmorning.com/20261110-7758-steve-coleman-the-five-elements.html",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
       "id": "balblomet:2026-11-13:marc-copland-quartet-dreaming",
       "clubId": "balblomet",
       "title": "MARC COPLAND QUARTET – DREAMING",
@@ -3593,6 +4119,17 @@
         "20:00"
       ],
       "url": "https://www.balblomet.fr/evenement/marc-copland-2/edate/2026-11-13",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "newmorning:2026-11-13:myles-sanko",
+      "clubId": "newmorning",
+      "title": "Myles Sanko",
+      "date": "2026-11-13",
+      "sets": [],
+      "url": "https://www.newmorning.com/20261113-7733-myles-sanko.html",
       "details": null,
       "personnel": null,
       "priceText": null
@@ -3611,6 +4148,28 @@
       "priceText": null
     },
     {
+      "id": "newmorning:2026-11-14:leee-john-of-imagination",
+      "clubId": "newmorning",
+      "title": "Leee John of Imagination",
+      "date": "2026-11-14",
+      "sets": [],
+      "url": "https://www.newmorning.com/20261114-7736-leee-john-of-imagination.html",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "newmorning:2026-11-15:rymden",
+      "clubId": "newmorning",
+      "title": "Rymden",
+      "date": "2026-11-15",
+      "sets": [],
+      "url": "https://www.newmorning.com/20261115-7766-rymden.html",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
       "id": "balblomet:2026-11-18:laurent-courthaliac-in-the-key-of-sinatra",
       "clubId": "balblomet",
       "title": "LAURENT COURTHALIAC – IN THE KEY OF SINATRA",
@@ -3624,6 +4183,17 @@
       "priceText": null
     },
     {
+      "id": "newmorning:2026-11-18:louis-matute",
+      "clubId": "newmorning",
+      "title": "Louis Matute",
+      "date": "2026-11-18",
+      "sets": [],
+      "url": "https://www.newmorning.com/20261118-7708-louis-matute.html",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
       "id": "balblomet:2026-11-19:les-1001-nuits-du-jazz-god-save-the-jazz-volume-3",
       "clubId": "balblomet",
       "title": "LES 1001 NUITS DU JAZZ – GOD SAVE THE JAZZ (VOLUME 3)",
@@ -3632,6 +4202,61 @@
         "20:00"
       ],
       "url": "https://www.balblomet.fr/evenement/godsavethe-jazz3/edate/2026-11-19",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "newmorning:2026-11-19:joyce-moreno",
+      "clubId": "newmorning",
+      "title": "Joyce Moreno",
+      "date": "2026-11-19",
+      "sets": [],
+      "url": "https://www.newmorning.com/20261119-7740-45-ans-du-new-joyce-moreno.html",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "newmorning:2026-11-20:jason-miles",
+      "clubId": "newmorning",
+      "title": "Jason Miles",
+      "date": "2026-11-20",
+      "sets": [],
+      "url": "https://www.newmorning.com/20261120-7741-45-ans-du-new-jason-miles.html",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "newmorning:2026-11-21:chico-chico",
+      "clubId": "newmorning",
+      "title": "Chico Chico",
+      "date": "2026-11-21",
+      "sets": [],
+      "url": "https://www.newmorning.com/20261121-7726-chico-chico.html",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "newmorning:2026-11-22:nubiyan-twist",
+      "clubId": "newmorning",
+      "title": "Nubiyan Twist",
+      "date": "2026-11-22",
+      "sets": [],
+      "url": "https://www.newmorning.com/20261122-7283-nubiyan-twist.html",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "newmorning:2026-11-24:little-odetta-the-zac-schulze-gang",
+      "clubId": "newmorning",
+      "title": "Little Odetta + The Zac Schulze Gang",
+      "date": "2026-11-24",
+      "sets": [],
+      "url": "https://www.newmorning.com/20261124-7720-little-odetta-the-zac-schulze-gang.html",
       "details": null,
       "personnel": null,
       "priceText": null
@@ -3664,6 +4289,17 @@
       "priceText": null
     },
     {
+      "id": "newmorning:2026-11-25:ginton",
+      "clubId": "newmorning",
+      "title": "Ginton",
+      "date": "2026-11-25",
+      "sets": [],
+      "url": "https://www.newmorning.com/20261125-7762-ginton.html",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
       "id": "duc:2026-11-26:gabi-hartmann",
       "clubId": "duc",
       "title": "Gabi Hartmann",
@@ -3674,6 +4310,17 @@
       ],
       "url": "https://ducdeslombards.com/fr/l-agenda/gabi-hartmann-4",
       "details": "JAZZ/SOUL/WORLD",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "newmorning:2026-11-26:mt-jones",
+      "clubId": "newmorning",
+      "title": "MT Jones",
+      "date": "2026-11-26",
+      "sets": [],
+      "url": "https://www.newmorning.com/20261126-7734-mt-jones.html",
+      "details": null,
       "personnel": null,
       "priceText": null
     },
@@ -3745,6 +4392,17 @@
       "priceText": null
     },
     {
+      "id": "newmorning:2026-12-02:kat-eaton",
+      "clubId": "newmorning",
+      "title": "Kat Eaton",
+      "date": "2026-12-02",
+      "sets": [],
+      "url": "https://www.newmorning.com/20261202-7696-kat-eaton.html",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
       "id": "balblomet:2026-12-03:les-1001-nuits-du-jazz-jazz-et-klezmer",
       "clubId": "balblomet",
       "title": "LES 1001 NUITS DU JAZZ – JAZZ ET KLEZMER",
@@ -3753,6 +4411,50 @@
         "20:00"
       ],
       "url": "https://www.balblomet.fr/evenement/jazz-klezmer/edate/2026-12-03",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "newmorning:2026-12-03:jontavious-willis",
+      "clubId": "newmorning",
+      "title": "Jontavious Willis",
+      "date": "2026-12-03",
+      "sets": [],
+      "url": "https://www.newmorning.com/20261203-7770-jontavious-willis.html",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "newmorning:2026-12-04:emf",
+      "clubId": "newmorning",
+      "title": "EMF",
+      "date": "2026-12-04",
+      "sets": [],
+      "url": "https://www.newmorning.com/20261204-7767-emf.html",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "newmorning:2026-12-08:antoine-karacostas-quartet",
+      "clubId": "newmorning",
+      "title": "Antoine Karacostas Quartet",
+      "date": "2026-12-08",
+      "sets": [],
+      "url": "https://www.newmorning.com/20261208-7781-antoine-karacostas-quartet.html",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "newmorning:2026-12-10:david-walters",
+      "clubId": "newmorning",
+      "title": "David Walters",
+      "date": "2026-12-10",
+      "sets": [],
+      "url": "https://www.newmorning.com/20261210-7744-david-walters.html",
       "details": null,
       "personnel": null,
       "priceText": null
@@ -3771,6 +4473,17 @@
       "priceText": null
     },
     {
+      "id": "newmorning:2026-12-11:david-walters",
+      "clubId": "newmorning",
+      "title": "David Walters",
+      "date": "2026-12-11",
+      "sets": [],
+      "url": "https://www.newmorning.com/20261211-7745-david-walters.html",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
       "id": "balblomet:2026-12-12:du-ragtime-rhapsody-in-blue-adam-swanson-joplin-gershwin-deb",
       "clubId": "balblomet",
       "title": "DU RAGTIME À RHAPSODY IN BLUE – ADAM SWANSON – Joplin, Gershwin, Debussy",
@@ -3779,6 +4492,94 @@
         "20:00"
       ],
       "url": "https://www.balblomet.fr/evenement/adam-swanson-3-2/edate/2026-12-12",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "newmorning:2026-12-12:bilal",
+      "clubId": "newmorning",
+      "title": "Bilal",
+      "date": "2026-12-12",
+      "sets": [],
+      "url": "https://www.newmorning.com/20261212-7721-45-ans-du-new-bilal.html",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "newmorning:2026-12-17:the-puppini-sisters",
+      "clubId": "newmorning",
+      "title": "The Puppini Sisters",
+      "date": "2026-12-17",
+      "sets": [],
+      "url": "https://www.newmorning.com/20261217-7709-the-puppini-sisters.html",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "newmorning:2027-01-20:jean-jacques-milteau",
+      "clubId": "newmorning",
+      "title": "Jean-Jacques Milteau",
+      "date": "2027-01-20",
+      "sets": [],
+      "url": "https://www.newmorning.com/20270120-7742-jean-jacques-milteau.html",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "newmorning:2027-01-27:jerron-paxton",
+      "clubId": "newmorning",
+      "title": "Jerron Paxton",
+      "date": "2027-01-27",
+      "sets": [],
+      "url": "https://www.newmorning.com/20270127-7780-jerron-paxton.html",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "newmorning:2027-01-30:la-la-brooks-of-the-crystals",
+      "clubId": "newmorning",
+      "title": "La La Brooks (of the Crystals)",
+      "date": "2027-01-30",
+      "sets": [],
+      "url": "https://www.newmorning.com/20270130-7756-la-la-brooks-of-the-crystals-.html",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "newmorning:2027-03-16:pokey-lafarge",
+      "clubId": "newmorning",
+      "title": "Pokey Lafarge",
+      "date": "2027-03-16",
+      "sets": [],
+      "url": "https://www.newmorning.com/20270316-7768-pokey-lafarge.html",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "newmorning:2027-04-07:aaron-parks",
+      "clubId": "newmorning",
+      "title": "Aaron Parks",
+      "date": "2027-04-07",
+      "sets": [],
+      "url": "https://www.newmorning.com/20270407-7786-aaron-parks.html",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "newmorning:2027-04-24:elba-ramalho",
+      "clubId": "newmorning",
+      "title": "Elba Ramalho",
+      "date": "2027-04-24",
+      "sets": [],
+      "url": "https://www.newmorning.com/20270424-7774-elba-ramalho.html",
       "details": null,
       "personnel": null,
       "priceText": null

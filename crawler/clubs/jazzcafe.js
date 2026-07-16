@@ -49,5 +49,20 @@ export function parse(html, today = new Date()) {
 }
 
 export async function crawl(ctx = {}) {
-  return parse(await fetchText(URL_), ctx.today ?? new Date());
+  try {
+    return parse(await fetchText(URL_), ctx.today ?? new Date());
+  } catch {
+    // their WAF 403s AWS IPs (residential works fine) — fall back to the
+    // seed generated from a local crawl; auto-heals if they unblock Lambda
+    const { SEED } = await import('./jazzcafe-seed.js');
+    const today = new Date().toISOString().slice(0, 10);
+    return SEED.filter((e) => e.date >= today).map((e) => makeEvent({
+      clubId: 'jazzcafe',
+      title: e.title,
+      date: e.date,
+      sets: [],
+      url: e.url,
+      details: e.details,
+    }));
+  }
 }

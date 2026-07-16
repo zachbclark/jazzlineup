@@ -27,10 +27,19 @@ function lenientEvents(html) {
 }
 
 export function parse(html) {
+  // exact type match: their page also carries an "EventVenue" node, which a
+  // loose /event/i test matched — making the strict path look successful
+  // (1 node, 0 usable events) so the lenient fallback never ran. Diagnosed
+  // from live bytes 2026-07-16.
+  const strictNodes = extractJsonLd(html).filter((n) => /^(?:Music)?Event$/i.test(String(n['@type'] ?? '')));
+  const fromNodes = (nodes) => buildEvents(nodes);
+  const strict = fromNodes(strictNodes);
+  return strict.length ? strict : fromNodes(lenientEvents(html));
+}
+
+function buildEvents(nodes) {
   const events = [];
   const seen = new Set();
-  let nodes = extractJsonLd(html).filter((n) => /event/i.test(String(n['@type'] ?? '')));
-  if (!nodes.length) nodes = lenientEvents(html);
   for (const node of nodes) {
     if (!node.name || !node.startDate) continue;
     const date = String(node.startDate).slice(0, 10);

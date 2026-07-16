@@ -4,15 +4,19 @@
 import { CLUBS } from './clubs.js';
 
 export async function runCrawl({ previousEvents = [], clubIds = null, city = null } = {}) {
-  let targets = city ? CLUBS.filter((c) => c.city === city) : CLUBS;
-  if (clubIds) targets = targets.filter((c) => clubIds.includes(c.id));
-  if (targets.length === 0) {
+  // targetIds stays CITY-WIDE even when --club narrows the crawl: the merge
+  // uses it to decide which previous events survive, and narrowing it made
+  // `--club X` erase every OTHER club's events from the city file
+  // (bit us 2026-07-16: `--club newmorning` wiped events-par.json to zero).
+  const cityClubs = city ? CLUBS.filter((c) => c.city === city) : CLUBS;
+  const crawlTargets = clubIds ? cityClubs.filter((c) => clubIds.includes(c.id)) : cityClubs;
+  if (crawlTargets.length === 0) {
     throw new Error(`no clubs matched (city=${city}, ids=${clubIds}); known: ${CLUBS.map((c) => c.id).join(', ')}`);
   }
 
   // Modules can be shared by clubs (Smalls + Mezzrow) — crawl each once.
-  const modules = [...new Set(targets.map((c) => c.module))];
-  const targetIds = new Set(targets.map((c) => c.id));
+  const modules = [...new Set(crawlTargets.map((c) => c.module))];
+  const targetIds = new Set(cityClubs.map((c) => c.id));
 
   const results = await Promise.allSettled(
     modules.map(async (mod) => {

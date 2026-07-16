@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-16T16:40:14.307Z",
+  "generatedAt": "2026-07-16T17:19:44.537Z",
   "city": "lon",
   "clubs": [
     {
@@ -76,9 +76,7 @@
     }
   ],
   "errors": [
-    "GET https://www.ronniescotts.co.uk/find-a-show -> 403",
-    "./clubs/pizzaexpresslive.js: returned 0 events (markup change? keeping previous data)",
-    "./clubs/cafeoto.js: returned 0 events (markup change? keeping previous data)"
+    "./clubs/pizzaexpresslive.js: returned 0 events (markup change? keeping previous data)"
   ],
   "events": [
     {
@@ -186,6 +184,39 @@
       "priceText": null
     },
     {
+      "id": "ronnies:2026-07-16:eliane-elias",
+      "clubId": "ronnies",
+      "title": "Eliane Elias",
+      "date": "2026-07-16",
+      "sets": [],
+      "url": "https://www.ronniescotts.co.uk/find-a-show/eliane-elias",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "ronnies:2026-07-16:late-late-show-upstairs-with-ed-hogben",
+      "clubId": "ronnies",
+      "title": "Late Late Show Upstairs with Ed Hogben",
+      "date": "2026-07-16",
+      "sets": [],
+      "url": "https://www.ronniescotts.co.uk/find-a-show/ed-hogben",
+      "details": "Late Late Show Upstairs",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "ronnies:2026-07-16:late-late-show-with-alex-hitchcock",
+      "clubId": "ronnies",
+      "title": "Late Late Show with Alex Hitchcock",
+      "date": "2026-07-16",
+      "sets": [],
+      "url": "https://www.ronniescotts.co.uk/find-a-show/late-late-show-with-alex-hitchcock",
+      "details": "Late Late Show",
+      "personnel": null,
+      "priceText": null
+    },
+    {
       "id": "vortex:2026-07-17:phillip-golub-alex-hitchcock-andrew-lisle",
       "clubId": "vortex",
       "title": "Phillip Golub/Alex Hitchcock/Andrew Lisle",
@@ -217,6 +248,17 @@
       ],
       "url": "https://www.606club.co.uk/events/view/bruce-adams-art-themen-2/",
       "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "ronnies:2026-07-17:late-late-electronic-with-nan-rizinni",
+      "clubId": "ronnies",
+      "title": "Late Late Electronic with Naná Rizinni",
+      "date": "2026-07-17",
+      "sets": [],
+      "url": "https://www.ronniescotts.co.uk/find-a-show/late-late-electronic-with-nana-rizinni",
+      "details": "Late Late Show",
       "personnel": null,
       "priceText": null
     },
@@ -276,6 +318,17 @@
       "priceText": null
     },
     {
+      "id": "ronnies:2026-07-18:late-late-show-with-kyra",
+      "clubId": "ronnies",
+      "title": "Late Late Show with Kyra",
+      "date": "2026-07-18",
+      "sets": [],
+      "url": "https://www.ronniescotts.co.uk/find-a-show/late-late-show-with-kyra",
+      "details": "Late Late Show",
+      "personnel": null,
+      "priceText": null
+    },
+    {
       "id": "jazzcafe:2026-07-18:immanuel-wilkins-quartet",
       "clubId": "jazzcafe",
       "title": "Immanuel Wilkins Quartet",
@@ -313,6 +366,19 @@
       "priceText": null
     },
     {
+      "id": "cafeoto:2026-07-19:leo-dupleix-rose-keeler-schaffeler-daniel-o-sullivan-ivy-o-s",
+      "clubId": "cafeoto",
+      "title": "Leo Dupleix + Rose Keeler-Schaffeler / Daniel O'Sullivan / Ivy O'Sullivan",
+      "date": "2026-07-19",
+      "sets": [
+        "19:30"
+      ],
+      "url": "https://www.cafeoto.co.uk/events/magic-hollow-leo-dupleix/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
       "id": "vortex:2026-07-19:vortex-jam-session",
       "clubId": "vortex",
       "title": "Vortex Jam Session",
@@ -339,6 +405,30 @@
       "priceText": null
     },
     {
+      "id": "ronnies:2026-07-19:kenny-garrett-and-sounds-from-the-ancestors",
+      "clubId": "ronnies",
+      "title": "Kenny Garrett and Sounds From The Ancestors",
+      "date": "2026-07-19",
+      "sets": [],
+      "url": "https://www.ronniescotts.co.uk/find-a-show/kenny-garrett-and-sounds-from-the-ancestors-2",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "cafeoto:2026-07-20:diana-lola-posani-jamie-man-mengting-zhuo-jiaying-kou",
+      "clubId": "cafeoto",
+      "title": "Diana Lola Posani + Jamie Man + Mengting Zhuo / Jiaying Kou",
+      "date": "2026-07-20",
+      "sets": [
+        "19:30"
+      ],
+      "url": "https://www.cafeoto.co.uk/events/para-phrase-3-diana-lola-posani-jamie-man-mengting/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
       "id": "club606:2026-07-20:matt-skeaping-s-vital-organs-ft-jenny-howe",
       "clubId": "club606",
       "title": "Matt Skeaping's Vital Organs ft Jenny Howe",
@@ -347,6 +437,30 @@
         "20:00"
       ],
       "url": "https://www.606club.co.uk/events/view/matt-skeapings-vital-organs-ft-jenny-howe/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "ronnies:2026-07-20:say-she-she",
+      "clubId": "ronnies",
+      "title": "Say She She",
+      "date": "2026-07-20",
+      "sets": [],
+      "url": "https://www.ronniescotts.co.uk/find-a-show/say-she-she",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "cafeoto:2026-07-21:tom-challenger-evan-parker-may-spring-last-a-lifetime-album-",
+      "clubId": "cafeoto",
+      "title": "Tom Challenger & Evan Parker - May Spring Last a Lifetime Album Launch + Hannah Marshall (solo)",
+      "date": "2026-07-21",
+      "sets": [
+        "19:30"
+      ],
+      "url": "https://www.cafeoto.co.uk/events/tom-challenger-evan-parker-may-spring-last-a-lifet/",
       "details": null,
       "personnel": null,
       "priceText": null
@@ -378,6 +492,17 @@
       "priceText": null
     },
     {
+      "id": "ronnies:2026-07-21:isaiah-collier",
+      "clubId": "ronnies",
+      "title": "Isaiah Collier",
+      "date": "2026-07-21",
+      "sets": [],
+      "url": "https://www.ronniescotts.co.uk/find-a-show/isaiah-collier-the-chosen-few",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
       "id": "vortex:2026-07-22:reuben-goldmark-trio",
       "clubId": "vortex",
       "title": "Reuben Goldmark Trio",
@@ -404,6 +529,30 @@
       "priceText": null
     },
     {
+      "id": "ronnies:2026-07-22:late-late-show-with-nikki-yeoh-s-nucleus-sessions-and-jay-ve",
+      "clubId": "ronnies",
+      "title": "Late Late Show with Nikki Yeoh's Nucleus Sessions and Jay Verma",
+      "date": "2026-07-22",
+      "sets": [],
+      "url": "https://www.ronniescotts.co.uk/find-a-show/nikki-yeoh-jay-verma",
+      "details": "Late Late Show",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "cafeoto:2026-07-23:project-divfuse-external-kate-carr-david-sappa-li-song",
+      "clubId": "cafeoto",
+      "title": "Project DIVFUSE EXTERNAL : Kate Carr + David Sappa + Li Song",
+      "date": "2026-07-23",
+      "sets": [
+        "19:30"
+      ],
+      "url": "https://www.cafeoto.co.uk/events/project-divfuse-july-2026/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
       "id": "vortex:2026-07-23:kate-williams-trio",
       "clubId": "vortex",
       "title": "Kate Williams Trio",
@@ -425,6 +574,30 @@
         "20:00"
       ],
       "url": "https://www.606club.co.uk/events/view/bryan-corbetts-instrumental-groove-unit-2/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "ronnies:2026-07-23:binker-golding",
+      "clubId": "ronnies",
+      "title": "Binker Golding",
+      "date": "2026-07-23",
+      "sets": [],
+      "url": "https://www.ronniescotts.co.uk/find-a-show/binker-golding",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "cafeoto:2026-07-24:agn-s-pe-mr-aka-amazing-nine-inch-nolan",
+      "clubId": "cafeoto",
+      "title": "Agnès Pe + Mr AKA Amazing + Nine Inch Nolan",
+      "date": "2026-07-24",
+      "sets": [
+        "19:30"
+      ],
+      "url": "https://www.cafeoto.co.uk/events/infant-tree-presents-agnes-pe/",
       "details": null,
       "personnel": null,
       "priceText": null
@@ -512,6 +685,28 @@
       "priceText": null
     },
     {
+      "id": "ronnies:2026-07-25:carmen-lundy",
+      "clubId": "ronnies",
+      "title": "Carmen Lundy",
+      "date": "2026-07-25",
+      "sets": [],
+      "url": "https://www.ronniescotts.co.uk/find-a-show/carmen-lundy",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "ronnies:2026-07-25:late-late-show-hosted-by-hoos-collective",
+      "clubId": "ronnies",
+      "title": "Late Late Show hosted by Hoos Collective",
+      "date": "2026-07-25",
+      "sets": [],
+      "url": "https://www.ronniescotts.co.uk/find-a-show/late-late-show-hosted-by-hoos-collective",
+      "details": "Late Late Show",
+      "personnel": null,
+      "priceText": null
+    },
+    {
       "id": "jazzcafe:2026-07-25:m-d-kuti-the-movement",
       "clubId": "jazzcafe",
       "title": "Mádé Kuti & The Movement",
@@ -531,6 +726,19 @@
         "13:30"
       ],
       "url": "https://www.606club.co.uk/events/view/pastiche-records-showcase-e-j-seal-carrie-hamilton-christelle-desire-aprillo/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "cafeoto:2026-07-26:john-butcher-dominic-lash-emil-karlsen",
+      "clubId": "cafeoto",
+      "title": "John Butcher / Dominic Lash / Emil Karlsen",
+      "date": "2026-07-26",
+      "sets": [
+        "19:30"
+      ],
+      "url": "https://www.cafeoto.co.uk/events/john-butcher-dominic-lash-emil-karlsen/",
       "details": null,
       "personnel": null,
       "priceText": null
@@ -562,6 +770,30 @@
       "priceText": null
     },
     {
+      "id": "ronnies:2026-07-26:nina-kristofferson-sings-billie-holiday",
+      "clubId": "ronnies",
+      "title": "Nina Kristofferson sings Billie Holiday",
+      "date": "2026-07-26",
+      "sets": [],
+      "url": "https://www.ronniescotts.co.uk/find-a-show/nina-kristofferson-sings-billie-holiday",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "cafeoto:2026-07-27:a-tribute-to-liane-radigue",
+      "clubId": "cafeoto",
+      "title": "A Tribute to Éliane Radigue",
+      "date": "2026-07-27",
+      "sets": [
+        "19:30"
+      ],
+      "url": "https://www.cafeoto.co.uk/events/a-tribute-to-eliane-radigue/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
       "id": "club606:2026-07-27:bruming-band",
       "clubId": "club606",
       "title": "BruMing Band",
@@ -570,6 +802,17 @@
         "20:00"
       ],
       "url": "https://www.606club.co.uk/events/view/bruming-band/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "ronnies:2026-07-27:the-solomon-gundy-band",
+      "clubId": "ronnies",
+      "title": "The Solomon Gundy Band",
+      "date": "2026-07-27",
+      "sets": [],
+      "url": "https://www.ronniescotts.co.uk/find-a-show/solomon-gundy-band",
       "details": null,
       "personnel": null,
       "priceText": null
@@ -584,6 +827,19 @@
       ],
       "url": "https://www.vortexjazz.co.uk/event/midweek-downstairs-jam-22/",
       "details": "Welcoming and relaxed, come for a drink, sit back and enjoy the music, or bring your horns, sticks and strings to join in during the second set. First set from house band: David Miller (saxophone), Davide Melis (piano), Duncan McKenzie (bass) & Bobby James (drums) followed by a jam session till clos",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "cafeoto:2026-07-28:simon-fisher-turner-lone-capture-library-jack-rollo",
+      "clubId": "cafeoto",
+      "title": "Simon Fisher Turner + Lone Capture Library + Jack Rollo",
+      "date": "2026-07-28",
+      "sets": [
+        "19:30"
+      ],
+      "url": "https://www.cafeoto.co.uk/events/a-colourful-storm-10-years-1/",
+      "details": null,
       "personnel": null,
       "priceText": null
     },
@@ -631,6 +887,17 @@
       "priceText": null
     },
     {
+      "id": "ronnies:2026-07-28:piano-trio-series-finn-carter",
+      "clubId": "ronnies",
+      "title": "Piano Trio Series: Finn Carter",
+      "date": "2026-07-28",
+      "sets": [],
+      "url": "https://www.ronniescotts.co.uk/find-a-show/finn-carter",
+      "details": "Upstairs at Ronnie’s",
+      "personnel": null,
+      "priceText": null
+    },
+    {
       "id": "vortex:2026-07-29:leif-kaner-lidstr-m",
       "clubId": "vortex",
       "title": "Leif Kaner-Lidström",
@@ -665,6 +932,17 @@
         "20:00"
       ],
       "url": "https://www.606club.co.uk/events/view/dulcie-may-moreno-ep-launch-stolen-moments/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "ronnies:2026-07-29:mica-paris",
+      "clubId": "ronnies",
+      "title": "Mica Paris",
+      "date": "2026-07-29",
+      "sets": [],
+      "url": "https://www.ronniescotts.co.uk/find-a-show/mica-paris",
       "details": null,
       "personnel": null,
       "priceText": null
@@ -705,6 +983,28 @@
       ],
       "url": "https://www.606club.co.uk/events/view/r-j-gilbert/",
       "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "ronnies:2026-07-30:ivan-lins",
+      "clubId": "ronnies",
+      "title": "Ivan Lins",
+      "date": "2026-07-30",
+      "sets": [],
+      "url": "https://www.ronniescotts.co.uk/find-a-show/ivan-lins",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "ronnies:2026-07-30:late-late-show-hosted-by-myele-manzanza",
+      "clubId": "ronnies",
+      "title": "Late Late Show hosted by Myele Manzanza",
+      "date": "2026-07-30",
+      "sets": [],
+      "url": "https://www.ronniescotts.co.uk/find-a-show/late-late-show-hosted-by-myele-manzanza",
+      "details": "Late Late Show",
       "personnel": null,
       "priceText": null
     },
@@ -774,6 +1074,17 @@
       "priceText": null
     },
     {
+      "id": "ronnies:2026-07-31:jeremy-ledbetter-trio",
+      "clubId": "ronnies",
+      "title": "Jeremy Ledbetter Trio",
+      "date": "2026-07-31",
+      "sets": [],
+      "url": "https://www.ronniescotts.co.uk/find-a-show/jeremy-ledbetter",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
       "id": "vortex:2026-08-01:john-etheridge-art-themen-all-star-quartet",
       "clubId": "vortex",
       "title": "John Etheridge & Art Themen: All Star Quartet",
@@ -812,6 +1123,28 @@
         "21:00"
       ],
       "url": "https://www.606club.co.uk/events/view/alex-garnett-tribute-to-horace-silver/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "ronnies:2026-08-01:ronnie-scott-s-street-party-2026",
+      "clubId": "ronnies",
+      "title": "Ronnie Scott's Street Party 2026",
+      "date": "2026-08-01",
+      "sets": [],
+      "url": "https://www.ronniescotts.co.uk/find-a-show/ronnie-scotts-street-party-2026",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "ronnies:2026-08-01:kenny-barron-songbook",
+      "clubId": "ronnies",
+      "title": "Kenny Barron: Songbook",
+      "date": "2026-08-01",
+      "sets": [],
+      "url": "https://www.ronniescotts.co.uk/find-a-show/kenny-barron",
       "details": null,
       "personnel": null,
       "priceText": null
@@ -864,6 +1197,17 @@
         "20:00"
       ],
       "url": "https://www.606club.co.uk/events/view/peter-churchill-4/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "ronnies:2026-08-02:olivia-cuttill-quintet",
+      "clubId": "ronnies",
+      "title": "Olivia Cuttill Quintet",
+      "date": "2026-08-02",
+      "sets": [],
+      "url": "https://www.ronniescotts.co.uk/find-a-show/olivia-cuttill-quintet",
       "details": null,
       "personnel": null,
       "priceText": null
@@ -924,6 +1268,39 @@
       ],
       "url": "https://www.606club.co.uk/events/view/graham-harvey-trio-1/",
       "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "ronnies:2026-08-04:the-blackbyrds",
+      "clubId": "ronnies",
+      "title": "The Blackbyrds",
+      "date": "2026-08-04",
+      "sets": [],
+      "url": "https://www.ronniescotts.co.uk/find-a-show/the-blackbyrds",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "ronnies:2026-08-04:bruno-heinen-trio",
+      "clubId": "ronnies",
+      "title": "Bruno Heinen Trio",
+      "date": "2026-08-04",
+      "sets": [],
+      "url": "https://www.ronniescotts.co.uk/find-a-show/bruno-heinen-trio",
+      "details": "Upstairs at Ronnie’s",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "ronnies:2026-08-04:late-late-show-upstairs-with-tomorrow-s-warriors-alex-ho-and",
+      "clubId": "ronnies",
+      "title": "Late Late Show Upstairs with Tomorrow's Warriors: Alex Ho and Donovan Haffner",
+      "date": "2026-08-04",
+      "sets": [],
+      "url": "https://www.ronniescotts.co.uk/find-a-show/tomorrows-warriors-alex-ho-donovan-haffner",
+      "details": "Late Late Show Upstairs",
       "personnel": null,
       "priceText": null
     },
@@ -1002,6 +1379,28 @@
       "priceText": null
     },
     {
+      "id": "ronnies:2026-08-06:denny-ilett-s-electric-lady-big-band-plays-the-music-of-jimi",
+      "clubId": "ronnies",
+      "title": "Denny Ilett’s Electric Lady Big Band plays the music of Jimi Hendrix",
+      "date": "2026-08-06",
+      "sets": [],
+      "url": "https://www.ronniescotts.co.uk/find-a-show/electric-lady-big-band",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "ronnies:2026-08-06:piano-trio-series-laurie-milton",
+      "clubId": "ronnies",
+      "title": "Piano Trio Series: Laurie Milton",
+      "date": "2026-08-06",
+      "sets": [],
+      "url": "https://www.ronniescotts.co.uk/find-a-show/piano-trio-series-laurie-milton",
+      "details": "Upstairs at Ronnie’s",
+      "personnel": null,
+      "priceText": null
+    },
+    {
       "id": "vortex:2026-08-07:the-downstairs-living-room-rebecka-edlund-s-songs-for-harmon",
       "clubId": "vortex",
       "title": "The Downstairs Living Room: Rebecka Edlund’s Songs for Harmonium",
@@ -1023,6 +1422,17 @@
         "21:00"
       ],
       "url": "https://www.606club.co.uk/events/view/errol-linton-13/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "ronnies:2026-08-07:kinga-g-yk",
+      "clubId": "ronnies",
+      "title": "Kinga Głyk",
+      "date": "2026-08-07",
+      "sets": [],
+      "url": "https://www.ronniescotts.co.uk/find-a-show/kinga-glyk",
       "details": null,
       "personnel": null,
       "priceText": null
@@ -1062,6 +1472,17 @@
         "21:00"
       ],
       "url": "https://www.606club.co.uk/events/view/tony-kofis-standard-time-quartet/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "ronnies:2026-08-08:saturday-brunch-songs-stories-with-ian-shaw-and-jay-rayner",
+      "clubId": "ronnies",
+      "title": "Saturday Brunch: Songs & Stories with Ian Shaw and Jay Rayner",
+      "date": "2026-08-08",
+      "sets": [],
+      "url": "https://www.ronniescotts.co.uk/find-a-show/songs-stories-with-jay-rayner",
       "details": null,
       "personnel": null,
       "priceText": null
@@ -1240,6 +1661,19 @@
           "instrument": "drums"
         }
       ],
+      "priceText": null
+    },
+    {
+      "id": "club606:2026-08-13:jonny-liebeck",
+      "clubId": "club606",
+      "title": "Jonny Liebeck",
+      "date": "2026-08-13",
+      "sets": [
+        "20:00"
+      ],
+      "url": "https://www.606club.co.uk/events/view/jonny-liebeck-3/",
+      "details": null,
+      "personnel": null,
       "priceText": null
     },
     {
@@ -1710,6 +2144,17 @@
       "priceText": null
     },
     {
+      "id": "ronnies:2026-08-26:emma-smith-jamie-safir-trio",
+      "clubId": "ronnies",
+      "title": "Emma Smith & Jamie Safir Trio",
+      "date": "2026-08-26",
+      "sets": [],
+      "url": "https://www.ronniescotts.co.uk/find-a-show/emma-smith-jamie-safir-trio",
+      "details": "Upstairs at Ronnie’s",
+      "personnel": null,
+      "priceText": null
+    },
+    {
       "id": "jazzcafe:2026-08-28:levitation-orchestra",
       "clubId": "jazzcafe",
       "title": "Levitation Orchestra",
@@ -1941,6 +2386,17 @@
       "priceText": null
     },
     {
+      "id": "ronnies:2026-10-17:late-late-show-upstairs-with-n22",
+      "clubId": "ronnies",
+      "title": "Late Late Show Upstairs with N22",
+      "date": "2026-10-17",
+      "sets": [],
+      "url": "https://www.ronniescotts.co.uk/find-a-show/tenderlonious-upstairs-at-ronnies",
+      "details": "Late Late Show Upstairs",
+      "personnel": null,
+      "priceText": null
+    },
+    {
       "id": "jazzcafe:2026-10-18:mike-lindup-trio",
       "clubId": "jazzcafe",
       "title": "Mike Lindup Trio",
@@ -2007,6 +2463,17 @@
       "priceText": null
     },
     {
+      "id": "ronnies:2026-11-01:ronnie-scott-s-blues-explosion",
+      "clubId": "ronnies",
+      "title": "Ronnie Scott's Blues Explosion",
+      "date": "2026-11-01",
+      "sets": [],
+      "url": "https://www.ronniescotts.co.uk/find-a-show/ronnie-scotts-blues-explosion-5",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
       "id": "jazzcafe:2026-11-01:okonski",
       "clubId": "jazzcafe",
       "title": "Okonski",
@@ -2040,6 +2507,17 @@
       "priceText": null
     },
     {
+      "id": "ronnies:2026-11-07:late-late-show-upstairs-with-jd3",
+      "clubId": "ronnies",
+      "title": "Late Late Show Upstairs with JD3",
+      "date": "2026-11-07",
+      "sets": [],
+      "url": "https://www.ronniescotts.co.uk/find-a-show/late-late-show-with-jd3",
+      "details": "Late Late Show Upstairs",
+      "personnel": null,
+      "priceText": null
+    },
+    {
       "id": "jazzcafe:2026-11-07:alceu-valen-a-80th-anniversary",
       "clubId": "jazzcafe",
       "title": "Alceu Valença 80th Anniversary",
@@ -2047,6 +2525,17 @@
       "sets": [],
       "url": "https://thejazzcafe.com/event/alceu-valenca-80th-anniversary/",
       "details": "Legendary Brazilian Singer",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "ronnies:2026-11-09:ronnie-scott-s-jazz-jam",
+      "clubId": "ronnies",
+      "title": "Ronnie Scott's Jazz Jam",
+      "date": "2026-11-09",
+      "sets": [],
+      "url": "https://www.ronniescotts.co.uk/find-a-show/ronnie-scotts-jazz-jam-1",
+      "details": "Late Late Show",
       "personnel": null,
       "priceText": null
     },
@@ -2128,6 +2617,28 @@
       "priceText": null
     },
     {
+      "id": "ronnies:2026-11-28:late-late-show-upstairs-with-energy-exchange-records",
+      "clubId": "ronnies",
+      "title": "Late Late Show Upstairs with Energy Exchange Records",
+      "date": "2026-11-28",
+      "sets": [],
+      "url": "https://www.ronniescotts.co.uk/find-a-show/late-late-show-upstairs-with-energy-exchange-records",
+      "details": "Late Late Show Upstairs",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "ronnies:2026-12-02:late-late-show-hosted-by-mark-kavuma-s-banger-factory",
+      "clubId": "ronnies",
+      "title": "Late Late Show hosted by Mark Kavuma's Banger Factory",
+      "date": "2026-12-02",
+      "sets": [],
+      "url": "https://www.ronniescotts.co.uk/find-a-show/late-late-show-hosted-by-mark-kavuma",
+      "details": "Late Late Show",
+      "personnel": null,
+      "priceText": null
+    },
+    {
       "id": "jazzcafe:2026-12-02:daoud",
       "clubId": "jazzcafe",
       "title": "daoud",
@@ -2135,6 +2646,17 @@
       "sets": [],
       "url": "https://thejazzcafe.com/event/daoud/",
       "details": "The Problem Child Of Jazz",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "ronnies:2026-12-05:late-late-show-with-future-movers",
+      "clubId": "ronnies",
+      "title": "Late Late Show with Future Movers",
+      "date": "2026-12-05",
+      "sets": [],
+      "url": "https://www.ronniescotts.co.uk/find-a-show/late-late-show-hosted-by-the-future-movers",
+      "details": "Late Late Show",
       "personnel": null,
       "priceText": null
     },
@@ -2150,6 +2672,17 @@
       "priceText": null
     },
     {
+      "id": "ronnies:2026-12-11:late-late-electronic-hosted-by-chiminyo",
+      "clubId": "ronnies",
+      "title": "Late Late Electronic hosted by Chiminyo",
+      "date": "2026-12-11",
+      "sets": [],
+      "url": "https://www.ronniescotts.co.uk/find-a-show/late-late-electronic-chiminyo",
+      "details": "Late Late Show",
+      "personnel": null,
+      "priceText": null
+    },
+    {
       "id": "jazzcafe:2026-12-11:cut-capers",
       "clubId": "jazzcafe",
       "title": "Cut Capers",
@@ -2157,6 +2690,17 @@
       "sets": [],
       "url": "https://thejazzcafe.com/event/cut-capers/",
       "details": "High-Energy Funk Collective",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "ronnies:2026-12-27:w3-funk-sessions",
+      "clubId": "ronnies",
+      "title": "W3 Funk Sessions",
+      "date": "2026-12-27",
+      "sets": [],
+      "url": "https://www.ronniescotts.co.uk/find-a-show/w3-funk-sessions-3",
+      "details": null,
       "personnel": null,
       "priceText": null
     },

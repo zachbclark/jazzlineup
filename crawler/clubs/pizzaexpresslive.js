@@ -36,11 +36,20 @@ export function parse(jsonText) {
 export async function crawl() {
   const out = [];
   for (const page of [1, 2]) {
-    const body = await fetchText(`${API}?page=${page}&itemsPerPage=100`, { headers: { accept: 'application/json' } });
+    // the API returns an empty body unless the request carries the site's
+    // own origin/referer (diagnosed 2026-07-16) — plain technical headers,
+    // same ones every browser visit sends
+    const body = await fetchText(`${API}?page=${page}&itemsPerPage=100`, {
+      headers: {
+        accept: 'application/json',
+        origin: 'https://www.pizzaexpresslive.com',
+        referer: 'https://www.pizzaexpresslive.com/',
+      },
+    });
     const batch = parse(body);
     out.push(...batch);
     let raw = [];
-    try { const j = JSON.parse(body); raw = j.results ?? j.items ?? j.data ?? []; } catch { /* done */ }
+    try { const j = JSON.parse(body); raw = Array.isArray(j) ? j : (j.results ?? j.items ?? j.data ?? []); } catch { /* done */ }
     if (!Array.isArray(raw) || raw.length < 100) break;
   }
   return out;

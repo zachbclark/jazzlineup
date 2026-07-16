@@ -62,7 +62,7 @@ function MonthGrid({ events, clubById, cursor, onCursor, today, compact = false 
       </div>
 
       {events.length === 0 && (
-        <div className="empty-list">No clubs selected — tap a club above to see shows.</div>
+        <div className="empty-list">No upcoming shows for this selection. Tap All clubs to widen it.</div>
       )}
       <div className="grid dow-row">
         {DOW.map((d) => <div key={d} className="dow">{compact ? d[0] : d}</div>)}

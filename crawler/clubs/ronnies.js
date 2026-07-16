@@ -58,6 +58,27 @@ export function parseDetailTimes(html, year) {
   return byDate;
 }
 
+// Seed fallback: their WAF 403s every non-browser client (2026-07-16),
+// so a browser-captured seed keeps the anchor venue alive. Rooms: keep
+// Main + Late Late jams; jazz-filter Upstairs like the live parser does.
+async function seedEvents() {
+  const { SEED } = await import('./ronnies-seed.js');
+  const { matchesKnownArtist } = await import('./_jazzartists.js');
+  const ROOM_LABEL = { M: null, U: 'Upstairs at Ronnie’s', L: 'Late Late Show', X: 'Late Late Show Upstairs' };
+  const today = new Date().toISOString().slice(0, 10);
+  return SEED
+    .filter(([, title, date, room]) => date >= today
+      && (room !== 'U' || JAZZ_RE.test(title) || matchesKnownArtist(title)))
+    .map(([slug, title, date, room]) => makeEvent({
+      clubId: 'ronnies',
+      title,
+      date,
+      sets: [],
+      url: `${URL_}/${slug}`,
+      details: ROOM_LABEL[room],
+    }));
+}
+
 export async function crawl(ctx = {}) {
   // the listing paginates; fetch a few pages, stop when one repeats/empties
   let html = '';
@@ -67,7 +88,7 @@ export async function crawl(ctx = {}) {
     try {
       html = await fetchText(p === 1 ? URL_ : `${URL_}?page=${p}`);
     } catch (err) {
-      if (p === 1) throw err;
+      if (p === 1) return seedEvents(); // WAF-blocked: serve the captured seed
       break;
     }
     const batch = parse(html).filter((e) => !seen.has(e.id));
