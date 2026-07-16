@@ -847,6 +847,86 @@ export const CLUBS = [
     color: '#e86fa8', // Marais rose — audit-cleared
     module: './clubs/riv38.js',
   },
+
+  // -------------------------------------------------------------- London ----
+  {
+    id: 'ronnies',
+    name: "Ronnie Scott's",
+    shortName: "Ronnie's",
+    url: 'https://www.ronniescotts.co.uk',
+    address: '47 Frith St, London W1D 4HT',
+    city: 'lon',
+    borough: null,
+    timezone: 'Europe/London',
+    neighborhood: 'Soho',
+    color: '#e04b4b', // the red neon over Frith Street since 1959
+    module: './clubs/ronnies.js',
+  },
+  {
+    id: 'vortex',
+    name: 'Vortex Jazz Club',
+    shortName: 'Vortex',
+    url: 'https://www.vortexjazz.co.uk',
+    address: '11 Gillett Square, London N16 8AZ',
+    city: 'lon',
+    borough: null,
+    timezone: 'Europe/London',
+    neighborhood: 'Dalston',
+    color: '#8a7bff', // Gillett Square dusk violet — audit-cleared
+    module: './clubs/vortex.js',
+  },
+  {
+    id: 'club606',
+    name: '606 Club',
+    shortName: '606',
+    url: 'https://www.606club.co.uk',
+    address: '90 Lots Rd, London SW10 0QD',
+    city: 'lon',
+    borough: null,
+    timezone: 'Europe/London',
+    neighborhood: 'Chelsea',
+    color: '#4a90d9', // basement-door blue — audit-cleared
+    module: './clubs/club606.js',
+  },
+  {
+    id: 'jazzcafe',
+    name: 'Jazz Cafe',
+    shortName: 'Jazz Cafe',
+    url: 'https://thejazzcafe.com',
+    address: '5 Parkway, London NW1 7PG',
+    city: 'lon',
+    borough: null,
+    timezone: 'Europe/London',
+    neighborhood: 'Camden',
+    color: '#f0b429', // their Camden marquee amber
+    module: './clubs/jazzcafe.js',
+  },
+  {
+    id: 'pizzaexpress',
+    name: 'PizzaExpress Live (Soho)',
+    shortName: 'Pizza Express',
+    url: 'https://www.pizzaexpresslive.com',
+    address: '10 Dean St, London W1D 3RW',
+    city: 'lon',
+    borough: null,
+    timezone: 'Europe/London',
+    neighborhood: 'Soho',
+    color: '#4ec9a8', // Dean Street basement teal — audit-cleared
+    module: './clubs/pizzaexpresslive.js',
+  },
+  {
+    id: 'cafeoto',
+    name: 'Cafe OTO',
+    shortName: 'Cafe OTO',
+    url: 'https://www.cafeoto.co.uk',
+    address: '18-22 Ashwin St, London E8 3DL',
+    city: 'lon',
+    borough: null,
+    timezone: 'Europe/London',
+    neighborhood: 'Dalston',
+    color: '#d8d3c0', // raw-concrete cream, true to the room — audit-cleared
+    module: './clubs/cafeoto.js',
+  },
 ];
 
 export function clubById(id) {

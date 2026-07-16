@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-16T01:32:14.269Z",
+  "generatedAt": "2026-07-16T16:39:08.638Z",
   "city": "chi",
   "clubs": [
     {
@@ -813,20 +813,6 @@
       "priceText": null
     },
     {
-      "id": "dorians:2026-07-10:rene-avila-s-afro-cuban-band",
-      "clubId": "dorians",
-      "title": "Rene Avila’s Afro~Cuban~ Band",
-      "date": "2026-07-10",
-      "sets": [
-        "21:00",
-        "23:00"
-      ],
-      "url": "https://throughtherecordshop.com/events/rene-avilas-afrocuban-band/",
-      "details": null,
-      "personnel": null,
-      "priceText": "$10"
-    },
-    {
       "id": "andys:2026-07-10:late-night-concert-series-w-jarrard-harris",
       "clubId": "andys",
       "title": "Late Night Concert Series w/Jarrard Harris",
@@ -879,20 +865,6 @@
       "details": null,
       "personnel": null,
       "priceText": null
-    },
-    {
-      "id": "dorians:2026-07-11:proximity",
-      "clubId": "dorians",
-      "title": "Proximity",
-      "date": "2026-07-11",
-      "sets": [
-        "21:00",
-        "23:00"
-      ],
-      "url": "https://throughtherecordshop.com/events/proximity-4/",
-      "details": null,
-      "personnel": null,
-      "priceText": "$10"
     },
     {
       "id": "andys:2026-07-11:late-night-concert-series-w-jarrard-harris",
@@ -1102,17 +1074,6 @@
       "priceText": null
     },
     {
-      "id": "dorians:2026-07-14:jazz-happy-hour-w-flex-trio",
-      "clubId": "dorians",
-      "title": "Jazz Happy Hour w/ FLEX Trio",
-      "date": "2026-07-14",
-      "sets": [],
-      "url": "https://throughtherecordshop.com/events/jazz-happy-hour-w-flex-trio-9/",
-      "details": null,
-      "personnel": null,
-      "priceText": null
-    },
-    {
       "id": "andys:2026-07-15:charles-heath",
       "clubId": "andys",
       "title": "Charles Heath",
@@ -1124,36 +1085,6 @@
       "url": "https://andysjazzclub.com/events/1st-set-with-charles-heath/?occurrence=2026-07-15&time=1784138400",
       "details": null,
       "personnel": null,
-      "priceText": null
-    },
-    {
-      "id": "winters:2026-07-15:abigail-riccards-friends-a-night-of-soul-jazz-blues-favorite",
-      "clubId": "winters",
-      "title": "Abigail Riccards & Friends - A Night of Soul / Jazz / Blues Favorites",
-      "date": "2026-07-15",
-      "sets": [
-        "18:30"
-      ],
-      "url": "https://www.wintersjazzclub.com/events/abigail-riccards-friends-a-night-of-soul-jazz-blues-favorites-18",
-      "details": null,
-      "personnel": [
-        {
-          "name": "Abigail Riccards",
-          "instrument": "vocals;"
-        },
-        {
-          "name": "Tom Vaitsas",
-          "instrument": "piano;"
-        },
-        {
-          "name": "Doug Bistrow",
-          "instrument": "bass;"
-        },
-        {
-          "name": "Linard Stroud",
-          "instrument": "drums"
-        }
-      ],
       "priceText": null
     },
     {
@@ -1208,17 +1139,6 @@
         "22:30"
       ],
       "url": "https://andysjazzclub.com/events/late-night-concert-series-w-chris-madsen/?occurrence=2026-07-15&time=1784154600",
-      "details": null,
-      "personnel": null,
-      "priceText": null
-    },
-    {
-      "id": "dorians:2026-07-15:nick-mazzarella-trio",
-      "clubId": "dorians",
-      "title": "Nick Mazzarella Trio",
-      "date": "2026-07-15",
-      "sets": [],
-      "url": "https://throughtherecordshop.com/events/nick-mazzarellas-meridian-trio/",
       "details": null,
       "personnel": null,
       "priceText": null
@@ -1398,7 +1318,7 @@
           "instrument": "bass;"
         },
         {
-          "name": "Clif Wallace",
+          "name": "Juan Pastor",
           "instrument": "drums"
         }
       ],
@@ -3543,6 +3463,32 @@
       "url": "https://www.jazzshowcase.com/nowplaying/petra-recession-seven-epy66-xl6gs-mcz77-p9h2b-gp2s6-gxrc7-m43n2-slpze-5bkhx-r7y7z-29t9c-xf6t6-ccd7j-7r7md-3g4e9-jggrg-kd59z-7yfxj-3ywkb-hzbgn-lgd6z-ad8km-jfb59",
       "details": "Petra’s Recession Seven",
       "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "winters:2026-08-12:andy-brown-trio-the-sound-of-brazil-bossa-nova-samba-by-jobi",
+      "clubId": "winters",
+      "title": "Andy Brown Trio - The Sound of Brazil: Bossa Nova & Samba by Jobim, João Gilberto & Luiz Bonfá",
+      "date": "2026-08-12",
+      "sets": [
+        "18:30"
+      ],
+      "url": "https://www.wintersjazzclub.com/events/andy-brown-trio-the-sound-of-brazil-bossa-nova-samba-by-jobim-joao-gilberto-luiz-bonfa",
+      "details": null,
+      "personnel": [
+        {
+          "name": "Andy Brown",
+          "instrument": "guitar;"
+        },
+        {
+          "name": "Joe Policastro",
+          "instrument": "bass;"
+        },
+        {
+          "name": "Phil Gratteau",
+          "instrument": "drums"
+        }
+      ],
       "priceText": null
     },
     {

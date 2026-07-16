@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-16T01:32:12.139Z",
+  "generatedAt": "2026-07-16T16:51:36.508Z",
   "city": "la",
   "clubs": [
     {
@@ -1124,45 +1124,6 @@
       "priceText": null
     },
     {
-      "id": "samfirst:2026-07-15:jason-hayashi-group-with-steve-lehman-luca-mendoza-ryan-embo",
-      "clubId": "samfirst",
-      "title": "Jason Hayashi Group with Steve Lehman, Luca Mendoza, Ryan Embola & Jonathan Pinson",
-      "date": "2026-07-15",
-      "sets": [
-        "19:30"
-      ],
-      "url": "https://www.samfirstbar.com/events/jason-hayashi-group-with-steve-lehman-luca-mendoza-ryan-embola-jonathan-pinson",
-      "details": "A bay area native, LA based saxophonist and composer Jason Hayashi presents an exhilarating program of harmonically expansive, rhythmically propulsive music.",
-      "personnel": null,
-      "priceText": null
-    },
-    {
-      "id": "twentytwotwenty:2026-07-15:qur-an-shaheed-haana-lee-trellis",
-      "clubId": "twentytwotwenty",
-      "title": "Qur'an Shaheed, haana lee, Trellis",
-      "date": "2026-07-15",
-      "sets": [
-        "20:00"
-      ],
-      "url": "https://dice.fm/event/g53goa-quran-shaheed-haana-lee-trellis-15th-jul-2220-arts-archives-los-angeles-tickets",
-      "details": "Late Breakfast is proud to present an evening of genre cross-pollination. Qur’an Shaheed headlines the evening with a solo performance. She is preceded by Colombia’s sonic sculptor, haana lee. The night opens with Trellis, the ambient duo of Jesse Perlstein (Sontag Shogun, AxOxH) and Michael Robert",
-      "personnel": null,
-      "priceText": null
-    },
-    {
-      "id": "catalina:2026-07-15:elliott-caine-quintet",
-      "clubId": "catalina",
-      "title": "ELLIOTT CAINE QUINTET",
-      "date": "2026-07-15",
-      "sets": [
-        "20:30"
-      ],
-      "url": "https://catalinajazzclub.com/tm-event/elliott-caine-quintet/",
-      "details": "Doors @ Doors: 7:00 pm",
-      "personnel": null,
-      "priceText": null
-    },
-    {
       "id": "harvelles:2026-07-15:come-sing-with-the-band-live-band-karaoke",
       "clubId": "harvelles",
       "title": "COME SING WITH the BAND - Live Band Karaoke",
@@ -1172,32 +1133,6 @@
       ],
       "url": "https://santamonica.harvelles.com/events/137969",
       "details": null,
-      "personnel": null,
-      "priceText": null
-    },
-    {
-      "id": "vibrato:2026-07-15:abba-la-the-live-concert-experience",
-      "clubId": "vibrato",
-      "title": "ABBA LA: The Live Concert Experience",
-      "date": "2026-07-15",
-      "sets": [
-        "22:30"
-      ],
-      "url": "https://www.vibratogrilljazz.com/music/abba-la-the-live-concert-experience-1",
-      "details": "Don’t miss this breathtaking ABBA concert experience that will have you singing and dancing the night away Shows: 6:30pm & 9pm Reserve Now",
-      "personnel": null,
-      "priceText": null
-    },
-    {
-      "id": "golddiggers:2026-07-16:mr-dinkles-the-anti-groupies-derek-day",
-      "clubId": "golddiggers",
-      "title": "Mr. Dinkles, The Anti Groupies, Derek Day",
-      "date": "2026-07-16",
-      "sets": [
-        "19:00"
-      ],
-      "url": "https://link.dice.fm/H91625585592",
-      "details": "Mr. Dinkles The Anti Groupies Derek Day- LA-based singer, songwriter, and multi-instrumentalist Derek Day exists in the gap between technical mastery and beautiful madness. He is a fusion of Prince, Freddie Mercury, and David Bowie, with performances so addictive and infused with rock and roll, art-",
       "personnel": null,
       "priceText": null
     },
@@ -1530,6 +1465,19 @@
       "priceText": null
     },
     {
+      "id": "zebulon:2026-07-20:ted-byrnes-michael-foster-sharon-udoh-william-hutson",
+      "clubId": "zebulon",
+      "title": "Ted Byrnes/Michael Foster, Sharon Udoh, William Hutson",
+      "date": "2026-07-20",
+      "sets": [
+        "20:00"
+      ],
+      "url": "https://link.dice.fm/kffbaa13b081",
+      "details": "Ted Byrnes/Michael Foster Sharon Udoh William Hutson Presented by Zebulon. This is a 21+ event",
+      "personnel": null,
+      "priceText": null
+    },
+    {
       "id": "harvelles:2026-07-20:all-star-jam-session-benefit",
       "clubId": "harvelles",
       "title": "ALL-STAR JAM SESSION BENEFIT",
@@ -1649,19 +1597,6 @@
       "priceText": null
     },
     {
-      "id": "golddiggers:2026-07-23:norwood-fisher-s-blackened-sabbath-the-lolly-bombs",
-      "clubId": "golddiggers",
-      "title": "Norwood Fisher's Blackened Sabbath, The Lolly Bombs",
-      "date": "2026-07-23",
-      "sets": [
-        "19:00"
-      ],
-      "url": "https://link.dice.fm/K6d06b7416bb",
-      "details": "Blackened Sabbath Classic Black Sabbath Reimagined in the Ultra-Funkiest Way What if Sly and the Family Stone, Funkadelic, Larry Graham, or Chuck Brown had written the songs of Black Sabbath? Blackened Sabbath answers that question with a bold, groove-heavy reinvention of heavy rock's most iconic ca",
-      "personnel": null,
-      "priceText": null
-    },
-    {
       "id": "samfirst:2026-07-23:tim-rachbach-group-ft-mark-turner-with-adam-ratner-adam-hers",
       "clubId": "samfirst",
       "title": "Tim Rachbach Group ft. Mark Turner with Adam Ratner, Adam Hersh & Graeham Guerin",
@@ -1726,19 +1661,6 @@
       "details": "Free outdoor concert — Smidt Welcome Plaza",
       "personnel": null,
       "priceText": "Free"
-    },
-    {
-      "id": "golddiggers:2026-07-24:alex-bone-presents-future-funk-la-edition",
-      "clubId": "golddiggers",
-      "title": "Alex Bone presents Future Funk: LA Edition",
-      "date": "2026-07-24",
-      "sets": [
-        "19:00"
-      ],
-      "url": "https://link.dice.fm/xc94ff0b6f92",
-      "details": "Alex Bone grew up in Darlington, UK, living two musical lives at once. One revolved around instruments. He was at the piano before he could walk and picked up the saxophone soon after. The other revolved around dance music: his first Fatboy Slim record, stacks of Ministry of Sound compilations, and",
-      "personnel": null,
-      "priceText": null
     },
     {
       "id": "samfirst:2026-07-24:jane-monheit-duo-with-max-haymer",
@@ -1884,19 +1806,6 @@
       "details": "Join us EVERY SUNDAY for a rotating selection of the best in LA's Jazz Music scene, and stay late for our Sunday residency with Kevin...",
       "personnel": null,
       "priceText": "Tickets from $15.00"
-    },
-    {
-      "id": "golddiggers:2026-07-26:cherry-blonde-adam-casanova-salter-boko",
-      "clubId": "golddiggers",
-      "title": "Cherry Blonde, Adam Casanova, Salter, Boko",
-      "date": "2026-07-26",
-      "sets": [
-        "19:00"
-      ],
-      "url": "https://link.dice.fm/Td9fbe20260c",
-      "details": "Salt and Pepper Productions present: Cherry Blonde + Adam Casanova + Salter + Boko Cherry Blonde admits he has a split personality. Crowd Hype Man and Sad Boy Crooner. Depending on his mood he’s both. As the lead singer for the pop jazz alt rock fusion band, Honeyboys, he’s jumped around stages up a",
-      "personnel": null,
-      "priceText": null
     },
     {
       "id": "catalina:2026-07-26:kat-edmonson-award-winning-singer-songwriter",
@@ -2334,6 +2243,19 @@
       "priceText": null
     },
     {
+      "id": "zebulon:2026-08-02:tortoise-tara-jane-o-neil",
+      "clubId": "zebulon",
+      "title": "Tortoise, Tara Jane O'Neil",
+      "date": "2026-08-02",
+      "sets": [
+        "20:00"
+      ],
+      "url": "https://link.dice.fm/H0df106ed369",
+      "details": "Tortoise Tara Jane O'Neil Presented by Zebulon. This is a 21+ event",
+      "personnel": null,
+      "priceText": null
+    },
+    {
       "id": "harvelles:2026-08-02:the-toledo-show",
       "clubId": "harvelles",
       "title": "THE TOLEDO SHOW",
@@ -2572,14 +2494,27 @@
       "priceText": null
     },
     {
-      "id": "twentytwotwenty:2026-08-07:windgreasers-sextet",
+      "id": "mint:2026-08-07:rebirth-brass-band-captain-danger-nk-acoustic-duo",
+      "clubId": "mint",
+      "title": "Rebirth Brass Band, Captain Danger, NK Acoustic Duo",
+      "date": "2026-08-07",
+      "sets": [
+        "19:30"
+      ],
+      "url": "https://themintla.com/listing/rebirth-brass-band/",
+      "details": "Rebirth Brass Band| Whether seen on HBO’s Treme or at their legendary Tuesday night gig at The Maple Leaf, Grammy-winning Rebirth Brass Band is a...",
+      "personnel": null,
+      "priceText": "Tickets from $30.00"
+    },
+    {
+      "id": "twentytwotwenty:2026-08-07:windgrease-festival-windgreasers-sextet",
       "clubId": "twentytwotwenty",
-      "title": "Windgreasers Sextet",
+      "title": "Windgrease Festival: Windgreasers Sextet",
       "date": "2026-08-07",
       "sets": [
         "20:00"
       ],
-      "url": "https://dice.fm/event/wwmkdn-windgreasers-sextet-7th-aug-2220-arts-archives-los-angeles-tickets",
+      "url": "https://dice.fm/event/wwmkdn-windgrease-festival-windgreasers-sextet-7th-aug-2220-arts-archives-los-angeles-tickets",
       "details": "Six visionary vocalists bring “The Experimental Shondo” to life in an immersive, live compositional performance. Starring Georgia Anne Muldrow, Jimetta Rose, Chester Gregory, V.C.R. The Martian, Nadia Washington, Ogi Ifediora.",
       "personnel": null,
       "priceText": null
@@ -2638,6 +2573,19 @@
       "priceText": "Free"
     },
     {
+      "id": "samfirst:2026-08-08:nicole-mccabe-quartet-live-album-recording-for-sam-first-rec",
+      "clubId": "samfirst",
+      "title": "Nicole McCabe Quartet Live Album Recording for Sam First Records feat. Gerald Clayton, Justin Brown & Logan Kane",
+      "date": "2026-08-08",
+      "sets": [
+        "19:30"
+      ],
+      "url": "https://www.samfirstbar.com/events/nicole-mccabe-quartet-live-album-recording-for-sam-first-records-feat-gerald-clayton-justin-brown-logan-kane-1",
+      "details": "Nicole McCabe is a Los Angeles-based saxophonist and composer whose genre-defying sound blends jazz tradition with modern experimentation. McCabe has assembled a group of stellar, like-minded musicians for this very special live recording for Sam First Records.",
+      "personnel": null,
+      "priceText": null
+    },
+    {
       "id": "catalina:2026-08-08:gordon-goodwin-s-big-phat-band-album-release-of-25-years-of-",
       "clubId": "catalina",
       "title": "Gordon Goodwin’s BIG PHAT BAND: Album Release of \"25 Years of Phatness\"",
@@ -2647,6 +2595,19 @@
       ],
       "url": "https://catalinajazzclub.com/tm-event/gordon-goodwins-big-phat-band-album-release-of-25-years-of-phatness-2/",
       "details": "Doors @ Doors: 7:00 pm",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "twentytwotwenty:2026-08-08:windgrease-festival-revolving-piano-concert",
+      "clubId": "twentytwotwenty",
+      "title": "Windgrease Festival: Revolving Piano Concert",
+      "date": "2026-08-08",
+      "sets": [
+        "21:00"
+      ],
+      "url": "https://dice.fm/event/2wqlp6-windgrease-festival-revolving-piano-concert-8th-aug-2220-arts-archives-los-angeles-tickets",
+      "details": "The Windgrease Festival continues with Night Two, featuring musical chairs and a piano summit in one. Three pianos await creativity; each movement will be 5 minutes. Featuring Alexis Lombre, Georgia Anne Muldrow, Josef Leimberg, Jamael Dean, Upper Reality + more.",
       "personnel": null,
       "priceText": null
     },
@@ -2728,14 +2689,14 @@
       "priceText": null
     },
     {
-      "id": "twentytwotwenty:2026-08-11:logan-richardson-s-horn-summit-of-dreams",
+      "id": "twentytwotwenty:2026-08-11:windgrease-festival-logan-richardson-s-horn-summit-of-dreams",
       "clubId": "twentytwotwenty",
-      "title": "Logan Richardson's Horn Summit of Dreams",
+      "title": "Windgrease Festival: Logan Richardson's Horn Summit of Dreams",
       "date": "2026-08-11",
       "sets": [
         "19:00"
       ],
-      "url": "https://dice.fm/event/mxgy9v-logan-richardsons-horn-summit-of-dreams-11th-aug-2220-arts-archives-los-angeles-tickets",
+      "url": "https://dice.fm/event/mxgy9v-windgrease-festival-logan-richardsons-horn-summit-of-dreams-11th-aug-2220-arts-archives-los-angeles-tickets",
       "details": "Roundtable focused on saxophone practice/s + performances from Logan Richardson, Bennie Maupin, Teodross Avery, Steve Lehman and Ralph Moore.",
       "personnel": null,
       "priceText": null
@@ -2891,19 +2852,6 @@
       "priceText": null
     },
     {
-      "id": "golddiggers:2026-08-14:priyanka-presents-india-mapiano-los-angeles",
-      "clubId": "golddiggers",
-      "title": "Priyanka Presents: India-mapiano Los Angeles",
-      "date": "2026-08-14",
-      "sets": [
-        "22:30"
-      ],
-      "url": "https://link.dice.fm/o30ff0095e27",
-      "details": "Inspired by her viral YouTube mixes, PRIYANKA brings INDIA-MAPIANO to life as an immersive, live experience. INDIA-MAPIANO is a powerful fusion of Indian and Afro-inspired sounds — blending Amapiano and Afrobeats with Bollywood anthems and classical Indian elements into one cohesive sonic journey. R",
-      "personnel": null,
-      "priceText": null
-    },
-    {
       "id": "vibrato:2026-08-14:brenna-whitaker-little-big-band-vintage-jazz-soulful-vocals",
       "clubId": "vibrato",
       "title": "Brenna Whitaker Little Big Band – Vintage Jazz & Soulful Vocals",
@@ -2926,6 +2874,19 @@
       "details": "Free outdoor concert — Smidt Welcome Plaza",
       "personnel": null,
       "priceText": "Free"
+    },
+    {
+      "id": "catalina:2026-08-15:keith-washington-back-by-popular-demand",
+      "clubId": "catalina",
+      "title": "KEITH WASHINGTON: BACK BY POPULAR DEMAND!",
+      "date": "2026-08-15",
+      "sets": [
+        "20:30"
+      ],
+      "url": "https://catalinajazzclub.com/tm-event/keith-washington-back-by-popular-demand/",
+      "details": "Doors @ Doors: 7:00 pm",
+      "personnel": null,
+      "priceText": null
     },
     {
       "id": "harvelles:2026-08-15:smokestack-lightning-formerly-blowin-smoke",
@@ -3115,19 +3076,6 @@
       "priceText": null
     },
     {
-      "id": "golddiggers:2026-08-20:mel-mu-iz",
-      "clubId": "golddiggers",
-      "title": "Mel Muñiz",
-      "date": "2026-08-20",
-      "sets": [
-        "19:00"
-      ],
-      "url": "https://link.dice.fm/Bdb8f73e2881",
-      "details": "Argentine singer-songwriter Mel Muñiz revives the profound emotion of classic Latin music for contemporary audiences. Her sound is a captivating fusion where the timeless warmth of old Latin orchestras meets modern storytelling and dramatic, heartfelt lyrics. Winds, strings, boleros, danzones, rumba",
-      "personnel": null,
-      "priceText": null
-    },
-    {
       "id": "harvelles:2026-08-20:better-daze",
       "clubId": "harvelles",
       "title": "BETTER DAZE",
@@ -3215,19 +3163,6 @@
       "priceText": "Free"
     },
     {
-      "id": "zebulon:2026-08-22:steve-von-till-six-organs-of-admittance",
-      "clubId": "zebulon",
-      "title": "Steve Von Till, Six Organs of Admittance",
-      "date": "2026-08-22",
-      "sets": [
-        "19:00"
-      ],
-      "url": "https://link.dice.fm/L5b107c60731",
-      "details": "Steve Von Till Six Organs of Admittance Physically enveloping and forebodingly beautiful, drawing on the animistic spirit of the natural world, Steve Von Till announces his seventh solo LP, arriving May 16 via Neurot Recordings. Ploughing a different furrow, \\*Alone in a World of Wounds\\* is an albu",
-      "personnel": null,
-      "priceText": null
-    },
-    {
       "id": "harvelles:2026-08-22:missus-jones",
       "clubId": "harvelles",
       "title": "MISSUS JONES",
@@ -3285,19 +3220,6 @@
       "sets": [],
       "url": "https://www.vibratogrilljazz.com/music/anne-walsh-bossa-to-bacharach-and-more",
       "details": "A groovy 1960s-inspired evening of Burt Bacharach classics in bossa nova style, plus favorites from Astrud Gilberto and Brasil ’66 Show: 7:30pm Reserve Now",
-      "personnel": null,
-      "priceText": null
-    },
-    {
-      "id": "zebulon:2026-08-24:hippie-death-cult-earth-tongue",
-      "clubId": "zebulon",
-      "title": "Hippie Death Cult, Earth Tongue",
-      "date": "2026-08-24",
-      "sets": [
-        "20:00"
-      ],
-      "url": "https://link.dice.fm/y1113bf3d356",
-      "details": "Hippie Death Cult Earth Tongue Hippie Death Cult have been described as “a journey through shameless and triumphant artistic expression, exploration and discovery” in the realms of psychedelia and riff-heavy rock n’ roll. The band hails from Portland, Oregon and during their formative years they hav",
       "personnel": null,
       "priceText": null
     },
@@ -3385,6 +3307,19 @@
       "details": "Free outdoor concert — Smidt Welcome Plaza",
       "personnel": null,
       "priceText": "Free"
+    },
+    {
+      "id": "zebulon:2026-08-28:nick-waterhouse-mask-appeal",
+      "clubId": "zebulon",
+      "title": "Nick Waterhouse, Mask Appeal",
+      "date": "2026-08-28",
+      "sets": [
+        "19:00"
+      ],
+      "url": "https://link.dice.fm/L034a1a66a3b",
+      "details": "Nick Waterhouse Mask Appeal Nick Waterhouse is a legend in the making, an American guitarist-singer-songwriter who can be found on stages all over the world when he's not in the (analog) studio. Since breaking out with his raw, finger-snapping R&B-infused debut Time's All Gone, he has continued to p",
+      "personnel": null,
+      "priceText": null
     },
     {
       "id": "twentytwotwenty:2026-08-28:sahara-grim-sarah-collin-a-full-moon-episode",
@@ -3784,6 +3719,19 @@
       "priceText": null
     },
     {
+      "id": "zebulon:2026-09-30:bill-frisell-harmony-five-featuring-petra-haden-hank-roberts",
+      "clubId": "zebulon",
+      "title": "Bill Frisell & Harmony Five featuring Petra Haden, Hank Roberts, Luke Bergman & Tim Angulo",
+      "date": "2026-09-30",
+      "sets": [
+        "20:00"
+      ],
+      "url": "https://link.dice.fm/e72410459510",
+      "details": "Bill Frisell & Harmony Five featuring Petra Haden, Hank Roberts, Luke Bergman & Tim Angulo Bill Frisell Bill Frisell’s career as a guitarist and composer has spanned more than 45 years and many celebrated recordings, whose catalog has been cited by Downbeat as “the best recorded output of the decade",
+      "personnel": null,
+      "priceText": null
+    },
+    {
       "id": "twentytwotwenty:2026-10-02:xiu-xiu-eraserhead-xiu-xiu",
       "clubId": "twentytwotwenty",
       "title": "Xiu Xiu Eraserhead Xiu Xiu",
@@ -3962,19 +3910,6 @@
       ],
       "url": "https://dice.fm/event/3o7qgp-hana-stretton-17th-oct-2220-arts-archives-los-angeles-tickets",
       "details": "Hana Stretton is a British/Australian composer, singer and producer known for her remarkably warm production style and uniquely spacious songform. In 2023, her debut album, *Soon*, earned a beloved status among discerning listeners around the globe. This stunning work caught the ear of one Phil Elve",
-      "personnel": null,
-      "priceText": null
-    },
-    {
-      "id": "zebulon:2026-10-18:anna-ash-floodlights-anniversary-lila-forde-album-release",
-      "clubId": "zebulon",
-      "title": "Anna Ash (Floodlights Anniversary) & Lila Forde (Album Release)",
-      "date": "2026-10-18",
-      "sets": [
-        "19:00"
-      ],
-      "url": "https://link.dice.fm/n01ab3f2c9a0",
-      "details": "Anna Ash (Floodlights Anniversary) & Lila Forde (Album Release) With a voice steeped in jazz, soul, folk, and old-school American songcraft, the Seattle-born, Los Angeles-based singer/songwriter has always carried a deep sense of self through her music. But on Life Can Still Be Sweet, her sophomore",
       "personnel": null,
       "priceText": null
     },

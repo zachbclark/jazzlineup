@@ -7,11 +7,14 @@
 // sessions are their own cards. All jazz — no filter.
 import {
   fetchText, makeEvent, applyLateNight, inferYear, isoDate, cleanText,
+  htmlToText, personnelFromLines, sleep,
 } from '../lib.js';
 import { frMonthNum, frTime } from './_fr.js';
 
 const BASE = 'https://ducdeslombards.com';
 const URL_ = `${BASE}/fr/l-agenda`;
+const ENRICH_MAX_PAGES = 25;
+const ENRICH_CONCURRENCY = 3;
 
 export function parse(html, today = new Date()) {
   const events = [];
@@ -55,6 +58,42 @@ export function parse(html, today = new Date()) {
   return events;
 }
 
+// Band rosters live on the detail pages as one line per player
+// ("Amina Figarova - Piano" … "Ferenc Nemeth - Batterie"). Smalls-style
+// enrichment: reuse personnel from the previous crawl by stable id, fetch
+// pages only for events still missing them.
+export function parseDetailPersonnel(html) {
+  return personnelFromLines(htmlToText(html));
+}
+
 export async function crawl(ctx = {}) {
-  return parse(await fetchText(URL_), ctx.today ?? new Date());
+  const events = parse(await fetchText(URL_), ctx.today ?? new Date());
+
+  const prior = new Map(
+    (ctx.previousEvents ?? []).filter((e) => e.personnel?.length).map((e) => [e.id, e.personnel])
+  );
+  for (const e of events) {
+    if (!e.personnel && prior.has(e.id)) e.personnel = prior.get(e.id);
+  }
+
+  const urls = [...new Set(
+    events.filter((e) => !e.personnel).sort((a, b) => a.date.localeCompare(b.date)).map((e) => e.url)
+  )].slice(0, ENRICH_MAX_PAGES);
+  const byUrl = new Map();
+  let i = 0;
+  await Promise.all(Array.from({ length: ENRICH_CONCURRENCY }, async () => {
+    while (i < urls.length) {
+      const url = urls[i++];
+      try {
+        const personnel = parseDetailPersonnel(await fetchText(url));
+        if (personnel.length) byUrl.set(url, personnel);
+      } catch { /* skip */ }
+      await sleep(200);
+    }
+  }));
+  for (const e of events) {
+    const p = byUrl.get(e.url);
+    if (p && !e.personnel) e.personnel = p;
+  }
+  return events;
 }

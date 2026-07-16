@@ -115,7 +115,7 @@ class JazzLineupStack extends cdk.Stack {
       runtime: lambda.Runtime.NODEJS_22_X,
       handler: 'lambda.handler',
       code: lambda.Code.fromAsset(path.join(__dirname, '..', '..', 'crawler')),
-      timeout: cdk.Duration.minutes(3),
+      timeout: cdk.Duration.minutes(6), // slowest venue host (Sunset/Sunside ~40s/request) sets the floor
       memorySize: 512,
       environment: { BUCKET: bucket.bucketName },
       logRetention: logs.RetentionDays.TWO_WEEKS,
@@ -239,6 +239,10 @@ class JazzLineupStack extends cdk.Stack {
           new cloudwatch.Metric({
             namespace: 'JazzLineup', metricName: 'ProblemClubs',
             dimensionsMap: { City: 'par' }, period: cdk.Duration.hours(4), statistic: 'Maximum', label: 'par',
+          }),
+          new cloudwatch.Metric({
+            namespace: 'JazzLineup', metricName: 'ProblemClubs',
+            dimensionsMap: { City: 'lon' }, period: cdk.Duration.hours(4), statistic: 'Maximum', label: 'lon',
           }),
         ],
         width: 24,

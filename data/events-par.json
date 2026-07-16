@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-16T01:37:11.900Z",
+  "generatedAt": "2026-07-16T16:40:11.361Z",
   "city": "par",
   "clubs": [
     {
@@ -248,20 +248,6 @@
       "priceText": null
     },
     {
-      "id": "duc:2026-07-15:amina-figarova-sextet",
-      "clubId": "duc",
-      "title": "Amina Figarova Sextet",
-      "date": "2026-07-15",
-      "sets": [
-        "19:30",
-        "22:00"
-      ],
-      "url": "https://ducdeslombards.com/fr/l-agenda/amina-figarova-sextet",
-      "details": "Piano Master",
-      "personnel": null,
-      "priceText": null
-    },
-    {
       "id": "caveau:2026-07-15:harlem-swing-orchestra",
       "clubId": "caveau",
       "title": "Harlem Swing Orchestra",
@@ -285,7 +271,32 @@
       ],
       "url": "https://ducdeslombards.com/fr/l-agenda/amina-figarova-sextet",
       "details": "Piano Master",
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Amina Figarova",
+          "instrument": "piano"
+        },
+        {
+          "name": "Yasek Manzano",
+          "instrument": "trompette"
+        },
+        {
+          "name": "Rick Margitza",
+          "instrument": "sax ténor"
+        },
+        {
+          "name": "Bart Platteau",
+          "instrument": "flûtes"
+        },
+        {
+          "name": "Maurizio Congiu",
+          "instrument": "contrebasse"
+        },
+        {
+          "name": "Ferenc Nemeth",
+          "instrument": "batterie"
+        }
+      ],
       "priceText": null
     },
     {
@@ -366,7 +377,20 @@
       ],
       "url": "https://ducdeslombards.com/fr/l-agenda/mario-canonge-trio",
       "details": "Caraibes",
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Mario Canonge",
+          "instrument": "piano"
+        },
+        {
+          "name": "Michel Alibo",
+          "instrument": "contrebasse"
+        },
+        {
+          "name": "Arnaud Dolmen",
+          "instrument": "batterie"
+        }
+      ],
       "priceText": null
     },
     {
@@ -459,7 +483,20 @@
       ],
       "url": "https://ducdeslombards.com/fr/l-agenda/jam-du-duc-simon-chivallon-11",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Simon Chivallon",
+          "instrument": "piano"
+        },
+        {
+          "name": "Luca Fattorini",
+          "instrument": "contrebasse"
+        },
+        {
+          "name": "Gustave Reichert",
+          "instrument": "batterie"
+        }
+      ],
       "late": true,
       "priceText": null
     },
@@ -502,7 +539,36 @@
       ],
       "url": "https://ducdeslombards.com/fr/l-agenda/brooks-0",
       "details": "FUNK",
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Alan Prater",
+          "instrument": "voix"
+        },
+        {
+          "name": "Alexandre Lapointe",
+          "instrument": "basse"
+        },
+        {
+          "name": "Endrick Tremblay",
+          "instrument": "guitare & voix"
+        },
+        {
+          "name": "Dan Thouin",
+          "instrument": "claviers"
+        },
+        {
+          "name": "Tristan Forget Brisson",
+          "instrument": "percussions & voix"
+        },
+        {
+          "name": "Andy King",
+          "instrument": "trompette"
+        },
+        {
+          "name": "Dominic Cloutier",
+          "instrument": "batterie"
+        }
+      ],
       "priceText": null
     },
     {
@@ -582,7 +648,20 @@
       ],
       "url": "https://ducdeslombards.com/fr/l-agenda/jam-du-duc-paul-morvan-16",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Paul Morvan",
+          "instrument": "batterie"
+        },
+        {
+          "name": "Fabien Mary",
+          "instrument": "trompette"
+        },
+        {
+          "name": "Gabriel Sauzay",
+          "instrument": "contrebasse"
+        }
+      ],
       "late": true,
       "priceText": null
     },
@@ -652,7 +731,16 @@
       ],
       "url": "https://ducdeslombards.com/fr/l-agenda/ege-turev",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Ege Turev",
+          "instrument": "batterie"
+        },
+        {
+          "name": "Arthur Kohlhaas",
+          "instrument": "saxophone"
+        }
+      ],
       "priceText": null
     },
     {
@@ -706,7 +794,20 @@
       ],
       "url": "https://ducdeslombards.com/fr/l-agenda/theodore-kuzma-trio",
       "details": "Piano chic",
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Théodore Kuzma",
+          "instrument": "piano"
+        },
+        {
+          "name": "Slim Chikhaoui",
+          "instrument": "contrebasse"
+        },
+        {
+          "name": "Gustave Reichert",
+          "instrument": "batterie"
+        }
+      ],
       "priceText": null
     },
     {
@@ -787,7 +888,24 @@
       ],
       "url": "https://ducdeslombards.com/fr/l-agenda/laura-anglade",
       "details": "VOCAL",
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Laura Anglade",
+          "instrument": "voix"
+        },
+        {
+          "name": "Kim Baiunco",
+          "instrument": "basse"
+        },
+        {
+          "name": "Michael Valeanu",
+          "instrument": "guitare"
+        },
+        {
+          "name": "Mourad Benhammou",
+          "instrument": "batterie"
+        }
+      ],
       "priceText": null
     },
     {
@@ -881,7 +999,24 @@
       ],
       "url": "https://ducdeslombards.com/fr/l-agenda/laura-anglade",
       "details": "VOCAL",
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Laura Anglade",
+          "instrument": "voix"
+        },
+        {
+          "name": "Kim Baiunco",
+          "instrument": "basse"
+        },
+        {
+          "name": "Michael Valeanu",
+          "instrument": "guitare"
+        },
+        {
+          "name": "Mourad Benhammou",
+          "instrument": "batterie"
+        }
+      ],
       "priceText": null
     },
     {
@@ -949,7 +1084,24 @@
       ],
       "url": "https://ducdeslombards.com/fr/l-agenda/gabrielle-cavassa",
       "details": "VOCAL",
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Gabrielle Cavassa",
+          "instrument": "voix"
+        },
+        {
+          "name": "Femi Temowo",
+          "instrument": "guitare"
+        },
+        {
+          "name": "Lex Warshawsky",
+          "instrument": "contrebasse"
+        },
+        {
+          "name": "Tiss Rodriguez",
+          "instrument": "batterie"
+        }
+      ],
       "priceText": null
     },
     {
@@ -1016,7 +1168,20 @@
       ],
       "url": "https://ducdeslombards.com/fr/l-agenda/jam-du-duc-angela-grey",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Angela Grey",
+          "instrument": "voix"
+        },
+        {
+          "name": "Michael Valeanu",
+          "instrument": "guitare"
+        },
+        {
+          "name": "Solène Cairoli",
+          "instrument": "contrebasse"
+        }
+      ],
       "late": true,
       "priceText": null
     },
@@ -1072,7 +1237,24 @@
       ],
       "url": "https://ducdeslombards.com/fr/l-agenda/gabrielle-cavassa",
       "details": "VOCAL",
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Gabrielle Cavassa",
+          "instrument": "voix"
+        },
+        {
+          "name": "Femi Temowo",
+          "instrument": "guitare"
+        },
+        {
+          "name": "Lex Warshawsky",
+          "instrument": "contrebasse"
+        },
+        {
+          "name": "Tiss Rodriguez",
+          "instrument": "batterie"
+        }
+      ],
       "priceText": null
     },
     {
@@ -1152,7 +1334,20 @@
       ],
       "url": "https://ducdeslombards.com/fr/l-agenda/jam-du-duc-paul-morvan-17",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Paul Morvan",
+          "instrument": "batterie"
+        },
+        {
+          "name": "Dmitry Baevsky",
+          "instrument": "sax alto"
+        },
+        {
+          "name": "Gabriel Sauzay",
+          "instrument": "contrebasse"
+        }
+      ],
       "late": true,
       "priceText": null
     },
@@ -1193,7 +1388,24 @@
       ],
       "url": "https://ducdeslombards.com/fr/l-agenda/david-graham-eskimo-brothers-featuring-special-guest-ben-waters",
       "details": "BLUES",
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "David Graham",
+          "instrument": "guitare & voix"
+        },
+        {
+          "name": "Ian Jennings",
+          "instrument": "contrebasse"
+        },
+        {
+          "name": "Tony D'Angelo",
+          "instrument": "batterie & voix"
+        },
+        {
+          "name": "Ben Waters",
+          "instrument": "piano & voix"
+        }
+      ],
       "priceText": null
     },
     {
@@ -1233,7 +1445,24 @@
       ],
       "url": "https://ducdeslombards.com/fr/l-agenda/david-graham-eskimo-brothers-featuring-special-guest-ben-waters",
       "details": "BLUES",
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "David Graham",
+          "instrument": "guitare & voix"
+        },
+        {
+          "name": "Ian Jennings",
+          "instrument": "contrebasse"
+        },
+        {
+          "name": "Tony D'Angelo",
+          "instrument": "batterie & voix"
+        },
+        {
+          "name": "Ben Waters",
+          "instrument": "piano & voix"
+        }
+      ],
       "priceText": null
     },
     {
@@ -1299,7 +1528,20 @@
       ],
       "url": "https://ducdeslombards.com/fr/l-agenda/snorre-kirk-european-quartet-1",
       "details": "swing",
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Snorre Kirk",
+          "instrument": "batterie"
+        },
+        {
+          "name": "Joe Webb",
+          "instrument": "piano"
+        },
+        {
+          "name": "Lasse Mørck",
+          "instrument": "contrebasse"
+        }
+      ],
       "priceText": null
     },
     {
@@ -1339,7 +1581,20 @@
       ],
       "url": "https://ducdeslombards.com/fr/l-agenda/snorre-kirk-european-quartet-1",
       "details": "swing",
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Snorre Kirk",
+          "instrument": "batterie"
+        },
+        {
+          "name": "Joe Webb",
+          "instrument": "piano"
+        },
+        {
+          "name": "Lasse Mørck",
+          "instrument": "contrebasse"
+        }
+      ],
       "priceText": null
     },
     {
@@ -1379,7 +1634,44 @@
       ],
       "url": "https://ducdeslombards.com/fr/l-agenda/carte-blanche-benjamin-petit-guests",
       "details": "CARTE BLANCHE",
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Benjamin Petit",
+          "instrument": "saxophone"
+        },
+        {
+          "name": "Julia Perminova",
+          "instrument": "claviers"
+        },
+        {
+          "name": "Léo Tochon",
+          "instrument": "batterie"
+        },
+        {
+          "name": "Stephy Haik",
+          "instrument": "voix"
+        },
+        {
+          "name": "Benjamin Petit",
+          "instrument": "saxophone"
+        },
+        {
+          "name": "Julia Perminova",
+          "instrument": "claviers"
+        },
+        {
+          "name": "Raphaël Pannier",
+          "instrument": "batterie"
+        },
+        {
+          "name": "William Brunard",
+          "instrument": "contrebasse"
+        },
+        {
+          "name": "Antoine Drye",
+          "instrument": "trompette"
+        }
+      ],
       "priceText": null
     },
     {
@@ -1418,7 +1710,20 @@
       ],
       "url": "https://ducdeslombards.com/fr/l-agenda/jam-du-duc-simon-chivallon-12",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Simon Chivallon",
+          "instrument": "piano"
+        },
+        {
+          "name": "Ananda Brandao",
+          "instrument": "batterie"
+        },
+        {
+          "name": "Cyril Drapé",
+          "instrument": "contrebasse"
+        }
+      ],
       "late": true,
       "priceText": null
     },
@@ -1446,7 +1751,44 @@
       ],
       "url": "https://ducdeslombards.com/fr/l-agenda/carte-blanche-benjamin-petit-guests",
       "details": "CARTE BLANCHE",
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Benjamin Petit",
+          "instrument": "saxophone"
+        },
+        {
+          "name": "Julia Perminova",
+          "instrument": "claviers"
+        },
+        {
+          "name": "Léo Tochon",
+          "instrument": "batterie"
+        },
+        {
+          "name": "Stephy Haik",
+          "instrument": "voix"
+        },
+        {
+          "name": "Benjamin Petit",
+          "instrument": "saxophone"
+        },
+        {
+          "name": "Julia Perminova",
+          "instrument": "claviers"
+        },
+        {
+          "name": "Raphaël Pannier",
+          "instrument": "batterie"
+        },
+        {
+          "name": "William Brunard",
+          "instrument": "contrebasse"
+        },
+        {
+          "name": "Antoine Drye",
+          "instrument": "trompette"
+        }
+      ],
       "priceText": null
     },
     {
@@ -1472,7 +1814,20 @@
       ],
       "url": "https://ducdeslombards.com/fr/l-agenda/jam-du-duc-franck-amsallem-7",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Franck Amsallem",
+          "instrument": "piano"
+        },
+        {
+          "name": "Solène Cairoli",
+          "instrument": "contrebasse"
+        },
+        {
+          "name": "Rasmus Blixt",
+          "instrument": "batterie"
+        }
+      ],
       "late": true,
       "priceText": null
     },
@@ -1812,7 +2167,20 @@
       ],
       "url": "https://ducdeslombards.com/fr/l-agenda/tierney-sutton-meets-charliersourisse-feat-serge-merlaud-talking-sun",
       "details": "Standards",
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Tierney Sutton",
+          "instrument": "chant"
+        },
+        {
+          "name": "Serge Merlaud",
+          "instrument": "guitare"
+        },
+        {
+          "name": "André Charlier",
+          "instrument": "batterie"
+        }
+      ],
       "priceText": null
     },
     {
@@ -1839,7 +2207,20 @@
       ],
       "url": "https://ducdeslombards.com/fr/l-agenda/tierney-sutton-meets-charliersourisse-feat-serge-merlaud-talking-sun",
       "details": "Standards",
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Tierney Sutton",
+          "instrument": "chant"
+        },
+        {
+          "name": "Serge Merlaud",
+          "instrument": "guitare"
+        },
+        {
+          "name": "André Charlier",
+          "instrument": "batterie"
+        }
+      ],
       "priceText": null
     },
     {
@@ -1866,7 +2247,24 @@
       ],
       "url": "https://ducdeslombards.com/fr/l-agenda/april-varner-quintet",
       "details": "VOCAL",
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "April Varner",
+          "instrument": "voix"
+        },
+        {
+          "name": "William Hill III",
+          "instrument": "piano"
+        },
+        {
+          "name": "Aaron Matson",
+          "instrument": "guitare"
+        },
+        {
+          "name": "Shimon Gambourg",
+          "instrument": "contrebasse"
+        }
+      ],
       "priceText": null
     },
     {
@@ -1919,7 +2317,24 @@
       ],
       "url": "https://ducdeslombards.com/fr/l-agenda/april-varner-quintet",
       "details": "VOCAL",
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "April Varner",
+          "instrument": "voix"
+        },
+        {
+          "name": "William Hill III",
+          "instrument": "piano"
+        },
+        {
+          "name": "Aaron Matson",
+          "instrument": "guitare"
+        },
+        {
+          "name": "Shimon Gambourg",
+          "instrument": "contrebasse"
+        }
+      ],
       "priceText": null
     },
     {
@@ -1959,7 +2374,20 @@
       ],
       "url": "https://ducdeslombards.com/fr/l-agenda/daniele-germani-quartet",
       "details": "Coup de coeur",
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Daniele Germani",
+          "instrument": "sax ténor"
+        },
+        {
+          "name": "Domenico Sanna",
+          "instrument": "piano"
+        },
+        {
+          "name": "Luca Fattorini",
+          "instrument": "contrebasse"
+        }
+      ],
       "priceText": null
     },
     {
@@ -1976,6 +2404,19 @@
       "priceText": null
     },
     {
+      "id": "sunside:2026-09-01:ode-trio-troph-es-du-sunside",
+      "clubId": "sunside",
+      "title": "Ode Trio – Trophées du Sunside 🏆",
+      "date": "2026-09-01",
+      "sets": [
+        "19:00"
+      ],
+      "url": "https://www.sunset-sunside.com/concert/%f0%9f%8f%86-ode-trio-trophees-du-sunside/",
+      "details": "Ode Trio propose un jazz envoûtant, subtil mélange de virtuosité et de complicité musicale. Le groupe revisite avec élégance les grandes mélodies de la chanson française et internationale dans un écrin résolument jazz. Lauréats du prestigieux concours international Léopold Bellan en 2017, ils affirm",
+      "personnel": null,
+      "priceText": null
+    },
+    {
       "id": "duc:2026-09-01:anthony-strong",
       "clubId": "duc",
       "title": "Anthony Strong",
@@ -1986,6 +2427,58 @@
       ],
       "url": "https://ducdeslombards.com/fr/l-agenda/anthony-strong-2",
       "details": "CROONER",
+      "personnel": [
+        {
+          "name": "Anthony Strong",
+          "instrument": "piano & voix"
+        },
+        {
+          "name": "Spencer Brown",
+          "instrument": "contrebasse"
+        },
+        {
+          "name": "Joel Barford",
+          "instrument": "batterie"
+        }
+      ],
+      "priceText": null
+    },
+    {
+      "id": "sunside:2026-09-01:jb-rannou-quartet-troph-es-du-sunside",
+      "clubId": "sunside",
+      "title": "JB Rannou Quartet – Trophées du Sunside 🏆",
+      "date": "2026-09-01",
+      "sets": [
+        "20:00"
+      ],
+      "url": "https://www.sunset-sunside.com/concert/jb-rannou-quartet-trophees-du-sunside-%f0%9f%8f%86/",
+      "details": "Ce jeune saxophoniste et clarinettiste présente son premier projet de compositions originales, entre lyrisme rêveur et énergie débordante. En quartet, ils développent un son de groupe organique dont les inspirations vont de Shai Maestro à Melissa Aldana, en passant par Joshua Redman et Brian Blade.",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "sunside:2026-09-01:oka-troph-es-du-sunside",
+      "clubId": "sunside",
+      "title": "Oka – Trophées du Sunside 🏆",
+      "date": "2026-09-01",
+      "sets": [
+        "21:00"
+      ],
+      "url": "https://www.sunset-sunside.com/concert/oka-trophees-du-sunside-%f0%9f%8f%86/",
+      "details": "Jeune quartet parisien, Oka est une ode à la nature et à la simplicité. Sa musique développe un jazz énergique et envoûtant, influencé par des musiciens tels que Terence Blanchard, Kenny Garrett, ou encore Dave Holland. Le souci est toujours là, de maintenir l’auditeur en haleine, et de le faire vib",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "sunside:2026-09-01:sofiane-fran-ois-elie-quintet-troph-es-du-sunside",
+      "clubId": "sunside",
+      "title": "Sofiane François-Elie Quintet – Trophées du Sunside 🏆",
+      "date": "2026-09-01",
+      "sets": [
+        "22:00"
+      ],
+      "url": "https://www.sunset-sunside.com/concert/sofiane-francois-elie-quintet-trophees-du-sunside-%f0%9f%8f%86/",
+      "details": "Portées par des compositions singulières, les histoires naviguant entre réalité et fantastique tissent un univers musical poussant à l’imagination et au rêve. C’est une musique à la fois pointue dans l’écriture et fluide dans l’improvisation pour laquelle 4 musiciens d’horizon différents me",
       "personnel": null,
       "priceText": null
     },
@@ -2000,6 +2493,58 @@
       ],
       "url": "https://ducdeslombards.com/fr/l-agenda/anthony-strong-2",
       "details": "CROONER",
+      "personnel": [
+        {
+          "name": "Anthony Strong",
+          "instrument": "piano & voix"
+        },
+        {
+          "name": "Spencer Brown",
+          "instrument": "contrebasse"
+        },
+        {
+          "name": "Joel Barford",
+          "instrument": "batterie"
+        }
+      ],
+      "priceText": null
+    },
+    {
+      "id": "sunside:2026-09-02:pollen-astral-troph-es-du-sunside",
+      "clubId": "sunside",
+      "title": "Pollen Astral – Trophées du Sunside 🏆",
+      "date": "2026-09-02",
+      "sets": [
+        "20:00"
+      ],
+      "url": "https://www.sunset-sunside.com/concert/pollen-astral-trophees-du-sunside-%f0%9f%8f%86/",
+      "details": "Pollen Astral est le quintet de la chanteuse-compositrice et flûtiste Äulne. Incantatoire, solaire ou méditative, la musique de Pollen Astral voyage dans un monde libre et coloré, entre groove, jazz et inspirations orientales. Dans la lignée du spiritual jazz de Don Cherry ou Pharoah Sanders, P",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "sunside:2026-09-02:jean-saint-loubert-trio-troph-es-du-sunside",
+      "clubId": "sunside",
+      "title": "Jean Saint Loubert Trio – Trophées du Sunside 🏆",
+      "date": "2026-09-02",
+      "sets": [
+        "21:00"
+      ],
+      "url": "https://www.sunset-sunside.com/concert/jean-saint-loubert-trio-trophees-du-sunside-%f0%9f%8f%86/",
+      "details": "Le Jean Saint Loubert Trio propose un jazz moderne nourri de musique classique, de musiques latines et de textures électroniques. Inspirées par les voyages, les rencontres et les émotions qui continuent de résonner en nous, les compositions laissent une large place à l’improvisation et au dialogue e",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "sunside:2026-09-02:bettina-martinez-trio-troph-es-du-sunside",
+      "clubId": "sunside",
+      "title": "Bettina Martinez Trio – Trophées du Sunside 🏆",
+      "date": "2026-09-02",
+      "sets": [
+        "22:00"
+      ],
+      "url": "https://www.sunset-sunside.com/concert/bettina-martinez-trio-trophees-du-sunside-%f0%9f%8f%86/",
+      "details": "Bettina Martinez est une pianiste et compositrice de jazz de la scène parisienne. À seulement 19 ans, elle vient d’être choisie pour figurer dans l’Orchestre National de Jazz des Jeunes dirigé par Marc Ducret. Elle réunit dans son trio le contrebassiste Julien Rech et le batteur Jonas Charles, pour",
       "personnel": null,
       "priceText": null
     },
@@ -2014,6 +2559,58 @@
       ],
       "url": "https://ducdeslombards.com/fr/l-agenda/anthony-strong-2",
       "details": "CROONER",
+      "personnel": [
+        {
+          "name": "Anthony Strong",
+          "instrument": "piano & voix"
+        },
+        {
+          "name": "Spencer Brown",
+          "instrument": "contrebasse"
+        },
+        {
+          "name": "Joel Barford",
+          "instrument": "batterie"
+        }
+      ],
+      "priceText": null
+    },
+    {
+      "id": "sunside:2026-09-03:ingrid-troph-es-du-sunside",
+      "clubId": "sunside",
+      "title": "Ingrid – Trophées du Sunside 🏆",
+      "date": "2026-09-03",
+      "sets": [
+        "20:00"
+      ],
+      "url": "https://www.sunset-sunside.com/concert/ingrid-trophees-du-sunside-%f0%9f%8f%86/",
+      "details": "Ingrid est un trio à la croisée du folk, de la pop et du jazz, porté par une écriture intime et un son acoustique épuré. La voix d’Ingrid se tisse aux guitares et à la contrebasse dans une musique sincère, lumineuse, pensée pour l’écoute et le partage.",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "sunset:2026-09-03:chyzm-troph-es-du-sunside",
+      "clubId": "sunset",
+      "title": "Chyzm – Trophées du Sunside 🏆",
+      "date": "2026-09-03",
+      "sets": [
+        "21:00"
+      ],
+      "url": "https://www.sunset-sunside.com/concert/chyzm-trophees-du-sunside-%f0%9f%8f%86/",
+      "details": "Chyzm explore le dialogue entre musiques traditionnelles et contemporaines, façonnant un univers où les sonorités traditionnelles rencontrent l’énergie des textures modernes. Animé par une passion commune pour la recherche et l’exploration des répertoires du monde entier, le groupe puise dans",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "sunside:2026-09-03:nakama-troph-es-du-sunside",
+      "clubId": "sunside",
+      "title": "Nakama – Trophées du Sunside 🏆",
+      "date": "2026-09-03",
+      "sets": [
+        "22:00"
+      ],
+      "url": "https://www.sunset-sunside.com/concert/nakama-trophees-du-sunside-%f0%9f%8f%86/",
+      "details": "“NAKAMA” est un terme japonais représentant le lien profond qui nous lie à nos camarades, nos ami•es, notre famille et nous porte vers un bien commun. Ainsi, le quintet de jeunes musiciens désire délivrer un message empli de rires, de partage et de tendresse. Un regard chargé d’espoir rendu possible",
       "personnel": null,
       "priceText": null
     },
@@ -2028,7 +2625,20 @@
       ],
       "url": "https://ducdeslombards.com/fr/l-agenda/wajdi-riahi-trio",
       "details": "Art du trio",
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Wajdi Riahi",
+          "instrument": "piano"
+        },
+        {
+          "name": "Basile Rahola",
+          "instrument": "contrebasse"
+        },
+        {
+          "name": "Pierre Hurty",
+          "instrument": "batterie"
+        }
+      ],
       "priceText": null
     },
     {
@@ -2068,7 +2678,20 @@
       ],
       "url": "https://ducdeslombards.com/fr/l-agenda/wajdi-riahi-trio",
       "details": "Art du trio",
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Wajdi Riahi",
+          "instrument": "piano"
+        },
+        {
+          "name": "Basile Rahola",
+          "instrument": "contrebasse"
+        },
+        {
+          "name": "Pierre Hurty",
+          "instrument": "batterie"
+        }
+      ],
       "priceText": null
     },
     {
@@ -2082,7 +2705,20 @@
       ],
       "url": "https://ducdeslombards.com/fr/l-agenda/ege-turev-0",
       "details": "DRUMS NEWCOMER",
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Ege Turev",
+          "instrument": "batterie"
+        },
+        {
+          "name": "Keïta Janota",
+          "instrument": "alto saxophone"
+        },
+        {
+          "name": "Antoine Fleury",
+          "instrument": "claviers"
+        }
+      ],
       "priceText": null
     },
     {
@@ -2148,7 +2784,24 @@
       ],
       "url": "https://ducdeslombards.com/fr/l-agenda/caloe-le-voyageur-fete-ses-2-ans",
       "details": "VOCAL",
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Caloé",
+          "instrument": "voix"
+        },
+        {
+          "name": "Philippe Maniez",
+          "instrument": "batterie"
+        },
+        {
+          "name": "Clément Simon",
+          "instrument": "piano"
+        },
+        {
+          "name": "Arthur Henn",
+          "instrument": "contrebasse"
+        }
+      ],
       "priceText": null
     },
     {
@@ -2188,7 +2841,24 @@
       ],
       "url": "https://ducdeslombards.com/fr/l-agenda/olivier-temime-quartet-sortie-de-l-album-marcenay-encore-chez-mama-tiger-music",
       "details": "POWER QUARTET",
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Olivier Temime",
+          "instrument": "saxophone"
+        },
+        {
+          "name": "Etienne Deconfin",
+          "instrument": "piano"
+        },
+        {
+          "name": "Sylvain Romano",
+          "instrument": "contrebasse"
+        },
+        {
+          "name": "Philippe Soirat",
+          "instrument": "batterie"
+        }
+      ],
       "priceText": null
     },
     {
@@ -2358,21 +3028,25 @@
       ],
       "url": "https://ducdeslombards.com/fr/l-agenda/tristan-guillaume-quintet",
       "details": "FUSION",
-      "personnel": null,
-      "priceText": null
-    },
-    {
-      "id": "sunside:2026-09-15:h-lo-se-bay",
-      "clubId": "sunside",
-      "title": "Héloïse Bay",
-      "date": "2026-09-15",
-      "sets": [
-        "19:30"
+      "personnel": [
+        {
+          "name": "Tristan Guillaume",
+          "instrument": "batterie"
+        },
+        {
+          "name": "Nico Andino",
+          "instrument": "trompette"
+        },
+        {
+          "name": "Adlane Aliouche",
+          "instrument": "claviers"
+        },
+        {
+          "name": "Idris Felix Bahri",
+          "instrument": "basse"
+        }
       ],
-      "url": "https://www.sunset-sunside.com/concert/heloise-bay/",
-      "details": "La prometteuse chanteuse Héloïse Bay signe un hommage vibrant à la chanson française revisitée avec l’élégance du jazz pour son nouvel album « Une belle histoire »*. Avec Cédric Chauveau au piano et Nicola Sabato à la contrebasse, le trio revisite des titres emblématiques des années 50 à 2000, mêlan",
-      "personnel": null,
-      "priceText": "15,00&euro; à 25,00&euro;"
+      "priceText": null
     },
     {
       "id": "balblomet:2026-09-15:l-orchestre-du-bal-blomet-rhythm-is-our-business",
@@ -2386,32 +3060,6 @@
       "details": null,
       "personnel": null,
       "priceText": null
-    },
-    {
-      "id": "sunset:2026-09-15:rotem-sivan",
-      "clubId": "sunset",
-      "title": "Rotem Sivan",
-      "date": "2026-09-15",
-      "sets": [
-        "20:30"
-      ],
-      "url": "https://www.sunset-sunside.com/concert/rotem-sivan/",
-      "details": "Le talent de guitariste de Rotem Sivan est reconnu dans le monde entier. Le New York Times l’a qualifié de « bien plus qu’un très bon jeune guitariste ». Le magazine Downbeat l’a quant à lui décrit comme « un talent remarquable ». Rotem a terminé ses études de composition classique et d’interprétati",
-      "personnel": null,
-      "priceText": "25,00&euro; à 35,00&euro;"
-    },
-    {
-      "id": "sunside:2026-09-15:mahmoud-sadi-trio",
-      "clubId": "sunside",
-      "title": "Mahmoud Sadi Trio",
-      "date": "2026-09-15",
-      "sets": [
-        "21:30"
-      ],
-      "url": "https://www.sunset-sunside.com/concert/mahmoud-sadi-trio/",
-      "details": "Les membres du Mahmoud Sadi Trio se sont rencontrés au fil de différentes aventures musicales. Leur répertoire, composé de créations originales et de réinterprétations, s’inscrit dans un jazz contemporain nourri de multiples influences — pop, latin, afro et autres couleurs — qui enrichissent chaque",
-      "personnel": null,
-      "priceText": "15,00&euro; à 25,00&euro;"
     },
     {
       "id": "duc:2026-09-16:harry-allen-martin-sasse",
@@ -2428,19 +3076,6 @@
       "priceText": null
     },
     {
-      "id": "sunside:2026-09-16:hommage-bill-evans-jim-hall",
-      "clubId": "sunside",
-      "title": "Hommage à Bill Evans & Jim Hall",
-      "date": "2026-09-16",
-      "sets": [
-        "19:30"
-      ],
-      "url": "https://www.sunset-sunside.com/concert/hommage-a-bill-evans-jim-hall/",
-      "details": "Le guitariste aux multiples facettes Joel Shapira et le pianiste vétéran Larry McDonough réinventent les deux enregistrements marquants du pianiste Bill Evans et du guitariste Jim Hall. Le duo explore les riches tapisseries d’harmonie, de mélodie et d’improvisation créées par deux icônes du jazz.",
-      "personnel": null,
-      "priceText": "15,00&euro; à 25,00&euro;"
-    },
-    {
       "id": "balblomet:2026-09-16:st-phane-kerecki-liberation-songs",
       "clubId": "balblomet",
       "title": "STÉPHANE KERECKI – LIBERATION SONGS",
@@ -2452,32 +3087,6 @@
       "details": null,
       "personnel": null,
       "priceText": null
-    },
-    {
-      "id": "sunset:2026-09-16:nefesh-ft-jonathan-orland-shimon-gambourg",
-      "clubId": "sunset",
-      "title": "Nefesh ft. Jonathan Orland & Shimon Gambourg",
-      "date": "2026-09-16",
-      "sets": [
-        "20:30"
-      ],
-      "url": "https://www.sunset-sunside.com/concert/nefesh-ft-jonathan-orland-shimon-gambourg/",
-      "details": "Nefesh réunit deux musiciens reconnus sur la scène jazz autour d’un répertoire inspiré de leur héritage culturel, mêlant chants israéliens, mélodies yiddish et composition originales. Entre tradition et création, le duo propose une musique libre et profondément expressive.",
-      "personnel": null,
-      "priceText": "15,00&euro; à 25,00&euro;"
-    },
-    {
-      "id": "sunside:2026-09-16:lown-trio",
-      "clubId": "sunside",
-      "title": "Lown Trio",
-      "date": "2026-09-16",
-      "sets": [
-        "21:30"
-      ],
-      "url": "https://www.sunset-sunside.com/concert/lown-trio/",
-      "details": "En distillant un jazz contemporain effervescent et mélodique, LOWN TRIO nous entraîne dans un espace imaginaire infusé de couleurs d’orient : mélodies fluides et rythmiques tranchantes, quelquepart entre orient, balkans et amérique latine. Le trio déploie ces contrastes dans une verve poétique et ju",
-      "personnel": null,
-      "priceText": "15,00&euro; à 25,00&euro;"
     },
     {
       "id": "duc:2026-09-17:bria-skonberg",
@@ -2507,32 +3116,6 @@
       "priceText": null
     },
     {
-      "id": "sunset:2026-09-17:jfc-power-trio",
-      "clubId": "sunset",
-      "title": "JFC Power Trio",
-      "date": "2026-09-17",
-      "sets": [
-        "20:30"
-      ],
-      "url": "https://www.sunset-sunside.com/concert/jfc-power-trio/",
-      "details": "JFC POWER TRIO est un groupe londonien composé de 3 musiciens de la scène internationale :Julian Burdock (guitare/harmonica chant) du groupe 24PESOS, Francesco Mendolia (batterie) du groupe Incognito, Chicco Allotta (clavier chant) du groupe Incognito. Venez découvrir ce trio dont le son est une exp",
-      "personnel": null,
-      "priceText": "15,00&euro; à 25,00&euro;"
-    },
-    {
-      "id": "sunside:2026-09-17:bruno-dozzi",
-      "clubId": "sunside",
-      "title": "Bruno Dozzi",
-      "date": "2026-09-17",
-      "sets": [
-        "21:30"
-      ],
-      "url": "https://www.sunset-sunside.com/concert/bruno-dozzi/",
-      "details": "L’album de Bruno Dozzi rassemble des souvenirs, des liens et des hommages à des proches qui ont marqué son parcours. À travers des styles variés (samba, jazz, choro), chaque morceau devient un geste de gratitude et de mémoire. Plus qu’un disque,c’est une collection d’affections transformées en musiq",
-      "personnel": null,
-      "priceText": "15,00&euro; à 25,00&euro;"
-    },
-    {
       "id": "duc:2026-09-18:bria-skonberg",
       "clubId": "duc",
       "title": "Bria Skonberg",
@@ -2560,45 +3143,6 @@
       "priceText": null
     },
     {
-      "id": "sunset:2026-09-18:titi-robin",
-      "clubId": "sunset",
-      "title": "Titi Robin",
-      "date": "2026-09-18",
-      "sets": [
-        "20:30"
-      ],
-      "url": "https://www.sunset-sunside.com/concert/titi-robin/",
-      "details": "Titi Robin présente ici une nouvelle formation instrumentale, de culture radicalement modale et polyrythmique. « La réunion musicale que constitue ce quatuor vise pour moi une forme d’idéal abandon en confiance entre des solistes qui, de par leurs parcours et leur approches esthétiques du discours i",
-      "personnel": null,
-      "priceText": "25,00&euro; à 35,00&euro;"
-    },
-    {
-      "id": "sunside:2026-09-18:michele-hendricks-sara-lazarus-tribute-to-jon-hendricks",
-      "clubId": "sunside",
-      "title": "Michele Hendricks & Sara Lazarus « tribute to Jon Hendricks »",
-      "date": "2026-09-18",
-      "sets": [
-        "21:30"
-      ],
-      "url": "https://www.sunset-sunside.com/concert/sara-lazarus-michele-hendricks-quintet-2/",
-      "details": "À l’affiche de cette soirée exceptionnelle, deux voix féminines incontournables, qui ne sont pas sans point commun : Sara Lazarus et Michele Hendricks. Toutes deux Américaines ayant fait de la France leur terre d’élection ; toutes deux ancrées dans la grande tradition du jazz. La première a remporté",
-      "personnel": null,
-      "priceText": "25,00&euro; à 35,00&euro;"
-    },
-    {
-      "id": "sunside:2026-09-19:liane-limon-trio",
-      "clubId": "sunside",
-      "title": "Liane Limon Trio",
-      "date": "2026-09-19",
-      "sets": [
-        "19:00"
-      ],
-      "url": "https://www.sunset-sunside.com/concert/liane-limon-trio-ft-hugo-guezbar-william-brunard/",
-      "details": "Avec son trio, Liane Limon propose un voyage au cœur du jazz vocal, entre standards intemporels, compositions originales et arrangements personnels. Accompagnée de Hugo Guezbar à la guitare et William Brunard à la contrebasse, elle façonne un univers où l’élégance du swing, l’écoute et la spontanéit",
-      "personnel": null,
-      "priceText": "20,00&euro; à 25,00&euro;"
-    },
-    {
       "id": "balblomet:2026-09-19:the-roaring-cats-django-louis-armstrong-swing-legends",
       "clubId": "balblomet",
       "title": "THE ROARING CATS – DJANGO & LOUIS ARMSTRONG, SWING LEGENDS",
@@ -2610,19 +3154,6 @@
       "details": null,
       "personnel": null,
       "priceText": null
-    },
-    {
-      "id": "sunset:2026-09-19:titi-robin",
-      "clubId": "sunset",
-      "title": "Titi Robin",
-      "date": "2026-09-19",
-      "sets": [
-        "20:30"
-      ],
-      "url": "https://www.sunset-sunside.com/concert/titi-robin-2/",
-      "details": "Titi Robin présente ici une nouvelle formation instrumentale, de culture radicalement modale et polyrythmique. « La réunion musicale que constitue ce quatuor vise pour moi une forme d’idéal abandon en confiance entre des solistes qui, de par leurs parcours et leur approches esthétiques du discours i",
-      "personnel": null,
-      "priceText": "30,00&euro; à 35,00&euro;"
     },
     {
       "id": "duc:2026-09-21:naama-sings-songs-from-the-road",
@@ -2639,71 +3170,6 @@
       "priceText": null
     },
     {
-      "id": "sunside:2026-09-21:hommage-john-coltrane-avec-david-sauzay-jam",
-      "clubId": "sunside",
-      "title": "Hommage à John Coltrane avec David Sauzay + jam",
-      "date": "2026-09-21",
-      "sets": [
-        "21:30"
-      ],
-      "url": "https://www.sunset-sunside.com/concert/hommage-a-john-coltrane-avec-david-sauzay-jam-2/",
-      "details": "ENTREE LIBRE – PAS DE RESERVATION La Jam session est le rendez-vous indispensable pour un club de jazz digne de ce nom ! C’est la rencontre entre musiciens réputés et jeunes talents. Ce sont des moments uniques où se fabriquent les groupes et les artistes de demain. C’est l’interaction sans filet et",
-      "personnel": null,
-      "priceText": null
-    },
-    {
-      "id": "sunside:2026-09-22:laetitia-ayr-s-wonderful-world",
-      "clubId": "sunside",
-      "title": "LAETITIA AYRÈS «WONDERFUL WORLD»",
-      "date": "2026-09-22",
-      "sets": [
-        "19:30"
-      ],
-      "url": "https://www.sunset-sunside.com/concert/laetitia-ayres-wonderful-world-6/",
-      "details": "Grandir avec des comédies musicales… Puis lire les infos. Comment rester aussi léger qu’une paillette écoresponsable dans ce monde merveilleux, mais pour le moins troublé ? Nourrie aux happy endings, une chanteuse interroge l’époque avec humour, swing et lucidité. Éco-anxiété, rêve américain à bout",
-      "personnel": null,
-      "priceText": "15,00&euro; à 25,00&euro;"
-    },
-    {
-      "id": "sunset:2026-09-22:line-kruse-herv-samb-gilles-coquard-arnaud-dolmen",
-      "clubId": "sunset",
-      "title": "Line Kruse / Hervé Samb / Gilles Coquard / Arnaud Dolmen",
-      "date": "2026-09-22",
-      "sets": [
-        "20:30"
-      ],
-      "url": "https://www.sunset-sunside.com/concert/line-kruse-herve-samb-gilles-coquard-arnaud-dolmen/",
-      "details": "Quatre voix distinctes convergent dans 4Worlds. Ensemble, elles ont forgé un son qu’elles nomment “jazz mélé” – une musique où quatre musiciens aux racines traditionnelles profondes dialoguent d’égal à égal, sans concession. Chaque identité demeure entière. Ce premier album, enregistré à Paris témoi",
-      "personnel": null,
-      "priceText": "18,00&euro; à 28,00&euro;"
-    },
-    {
-      "id": "sunside:2026-09-22:resolute-trio",
-      "clubId": "sunside",
-      "title": "Resolute Trio",
-      "date": "2026-09-22",
-      "sets": [
-        "21:30"
-      ],
-      "url": "https://www.sunset-sunside.com/concert/resolute-trio/",
-      "details": "Pour célébrer trois ans de création et trois albums — Falaise (2023), Parallel (2024) et le récent III (2026) — Resolute Trio investit le Sunside. Habitué des clubs parisiens, le trio impose un son moderne et interactif, ancré dans le groove et la mélodie. Un univers qui évoque notamment Robert Glas",
-      "personnel": null,
-      "priceText": null
-    },
-    {
-      "id": "sunside:2026-09-23:nonato-lima",
-      "clubId": "sunside",
-      "title": "Nonato Lima",
-      "date": "2026-09-23",
-      "sets": [
-        "19:30"
-      ],
-      "url": "https://www.sunset-sunside.com/concert/nomato-lima/",
-      "details": "Accordéoniste virtuose originaire de Fortaleza (Brésil), Nonato Lima présente Brasiliando, son nouvel album, une plongée au cœur du jazz brésilien, porté par ses racines nordestines. Il développe un univers singulier où la tradition brésilienne rencontre l’improvisation et l’élégance du jazz contemp",
-      "personnel": null,
-      "priceText": "15,00&euro; à 25,00&euro;"
-    },
-    {
       "id": "balblomet:2026-09-23:mama-shakers",
       "clubId": "balblomet",
       "title": "MAMA SHAKERS",
@@ -2715,32 +3181,6 @@
       "details": null,
       "personnel": null,
       "priceText": null
-    },
-    {
-      "id": "sunset:2026-09-23:johanna-saint-pierre",
-      "clubId": "sunset",
-      "title": "Johanna Saint-Pierre",
-      "date": "2026-09-23",
-      "sets": [
-        "20:30"
-      ],
-      "url": "https://www.sunset-sunside.com/concert/johanna-saint-pierre/",
-      "details": "Johanna Saint-Pierre est une chanteuse, pianiste française, auteure compositrice, à la voix remarquable. Musicienne depuis l’enfance, elle s’est constituée un large répertoire musical, puissant, poétique, original et très personnel. Son univers se situe entre le pop soul funk et jazz que nous vous i",
-      "personnel": null,
-      "priceText": null
-    },
-    {
-      "id": "sunside:2026-09-23:erella-h-ritages",
-      "clubId": "sunside",
-      "title": "Erella “Héritages”",
-      "date": "2026-09-23",
-      "sets": [
-        "21:30"
-      ],
-      "url": "https://www.sunset-sunside.com/concert/erella-heritages/",
-      "details": "Erella chantera les chansons originales de son prochain album « Héritages », accompagnée de son piano et des sons envoûtants du oud, de la trompette, de la contrebasse et des percussions. Inspirée de ses héritages multiples, sa musique nous emporte dans un univers coloré où Orient et Occident, poési",
-      "personnel": null,
-      "priceText": "15,00&euro; à 25,00&euro;"
     },
     {
       "id": "duc:2026-09-24:ruthie-foster",
@@ -2757,19 +3197,6 @@
       "priceText": null
     },
     {
-      "id": "sunside:2026-09-24:nocuts",
-      "clubId": "sunside",
-      "title": "Nocuts",
-      "date": "2026-09-24",
-      "sets": [
-        "19:30"
-      ],
-      "url": "https://www.sunset-sunside.com/concert/nocuts-2/",
-      "details": "Nocuts est un groupe de jazz moderne aux couleurs oniriques et cinématographiques, mêlant écriture raffinée, riches nuances et improvisations débridées. La musique du groupe offre un véritable périple émotionnel : une invitation au voyage où les timbres chauds de la clarinette et de la clarinette ba",
-      "personnel": null,
-      "priceText": "15,00&euro; à 25,00&euro;"
-    },
-    {
       "id": "balblomet:2026-09-24:olga-amelchenko-les-concerts-jazz-magazine",
       "clubId": "balblomet",
       "title": "OLGA AMELCHENKO – LES CONCERTS JAZZ MAGAZINE",
@@ -2781,19 +3208,6 @@
       "details": null,
       "personnel": null,
       "priceText": null
-    },
-    {
-      "id": "sunside:2026-09-24:trio-ma-c",
-      "clubId": "sunside",
-      "title": "Trio MAÏCÉ",
-      "date": "2026-09-24",
-      "sets": [
-        "21:30"
-      ],
-      "url": "https://www.sunset-sunside.com/concert/trio-maice/",
-      "details": "Après plusieurs mois de concerts et de création, MAÏCÊ dévoile son premier EP. Rendez-vous le 24 septembre au Sunside pour découvrir ce nouveau répertoire, entre rythmes brésiliens, improvisation et écriture contemporaine.",
-      "personnel": null,
-      "priceText": "18,00&euro; à 28,00&euro;"
     },
     {
       "id": "duc:2026-09-25:obradovic-tixier-duo",
@@ -2810,45 +3224,6 @@
       "priceText": null
     },
     {
-      "id": "sunside:2026-09-25:plan-marcel-quartet",
-      "clubId": "sunside",
-      "title": "Plan Marcel Quartet",
-      "date": "2026-09-25",
-      "sets": [
-        "19:30"
-      ],
-      "url": "https://www.sunset-sunside.com/concert/plan-marcel-quartet/",
-      "details": "Univers coloré d’inspiration hardbop, cool et cinéphile, Plan Marcel est un quartet de jazz parisien qui se réunit autour des compositions de Jules Michel (trompette). Immersion dans les ambiances variées relevées par la pureté des lignes. Accompagné d’Ethan Denis (contrebasse), Dylan Lhéritier (pia",
-      "personnel": null,
-      "priceText": "15,00&euro; à 25,00&euro;"
-    },
-    {
-      "id": "sunset:2026-09-25:tommy-smith-coltrane-centenary",
-      "clubId": "sunset",
-      "title": "Tommy Smith “Coltrane Centenary”",
-      "date": "2026-09-25",
-      "sets": [
-        "20:30"
-      ],
-      "url": "https://www.sunset-sunside.com/concert/tommy-smith-coltrane-centenary/",
-      "details": "Avec près d’un million d’auditeurs mensuels, le pianiste Carl Winther s’est imposé comme un musicien capable de toucher un large public. Cela n’a rien de surprenant lorsqu’on écoute son style de piano jazz, empreint d’empathie et d’un swing profond. Grâce à des collaborations internationales avec de",
-      "personnel": null,
-      "priceText": "25,00&euro; à 35,00&euro;"
-    },
-    {
-      "id": "sunside:2026-09-25:giovanni-mirabassi-the-new-york-sessions",
-      "clubId": "sunside",
-      "title": "Giovanni Mirabassi “The New York Sessions”",
-      "date": "2026-09-25",
-      "sets": [
-        "21:30"
-      ],
-      "url": "https://www.sunset-sunside.com/concert/giovanni-mirabassi-the-new-york-sessions/",
-      "details": "Le nouveau power trio de Giovanni Mirabassi revient en scène avec un projet dédié au Great American Songbook. Entouré de son compagnon de toujours Gianluca Renzi à la contrebasse et de Colin Stranahan, batteur tout droit issu de la nouvelle scène new-yorkaise, le soliste se penche sur ce répertoire",
-      "personnel": null,
-      "priceText": "25,00&euro; à 35,00&euro;"
-    },
-    {
       "id": "duc:2026-09-26:frode-kjekstad-eric-alexander-quartet",
       "clubId": "duc",
       "title": "Frode Kjekstad / Eric Alexander Quartet",
@@ -2861,45 +3236,6 @@
       "details": "Standards",
       "personnel": null,
       "priceText": null
-    },
-    {
-      "id": "sunset:2026-09-26:tommy-smith-coltrane-centenary",
-      "clubId": "sunset",
-      "title": "Tommy Smith “Coltrane Centenary”",
-      "date": "2026-09-26",
-      "sets": [
-        "20:30"
-      ],
-      "url": "https://www.sunset-sunside.com/concert/tommy-smith-coltrane-centenary-2/",
-      "details": "Avec près d’un million d’auditeurs mensuels, le pianiste Carl Winther s’est imposé comme un musicien capable de toucher un large public. Cela n’a rien de surprenant lorsqu’on écoute son style de piano jazz, empreint d’empathie et d’un swing profond. Grâce à des collaborations internationales avec de",
-      "personnel": null,
-      "priceText": "30,00&euro; à 35,00&euro;"
-    },
-    {
-      "id": "sunside:2026-09-26:giovanni-mirabassi-the-new-york-sessions",
-      "clubId": "sunside",
-      "title": "Giovanni Mirabassi “The New York Sessions”",
-      "date": "2026-09-26",
-      "sets": [
-        "21:30"
-      ],
-      "url": "https://www.sunset-sunside.com/concert/giovanni-mirabassi-the-new-york-sessions-2/",
-      "details": "Le nouveau power trio de Giovanni Mirabassi revient en scène avec un projet dédié au Great American Songbook. Entouré de son compagnon de toujours Gianluca Renzi à la contrebasse et de Colin Stranahan, batteur tout droit issu de la nouvelle scène new-yorkaise, le soliste se penche sur ce répertoire",
-      "personnel": null,
-      "priceText": "30,00&euro; à 35,00&euro;"
-    },
-    {
-      "id": "sunside:2026-09-27:hommage-john-coltrane-concert-th-matique",
-      "clubId": "sunside",
-      "title": "Hommage à John Coltrane – concert thématique",
-      "date": "2026-09-27",
-      "sets": [
-        "19:00"
-      ],
-      "url": "https://www.sunset-sunside.com/concert/hommage-a-john-coltrane-concert-thematique/",
-      "details": "Le contrebassiste Jacques Vidal, entouré de talentueux musiciens, vous joueront les morceaux les plus emblématiques de cet artiste pendant que Lionel Eskenazi vous racontera sa vie et sa carrière. Les concerts thématiques de Jacques Vidal présentés par Lionel Eskenazi : le rendez-vous mensuel incont",
-      "personnel": null,
-      "priceText": "19,00&euro; à 29,00&euro;"
     },
     {
       "id": "duc:2026-09-28:th-odore-kuzma-quartet",
@@ -2930,45 +3266,6 @@
       "priceText": null
     },
     {
-      "id": "sunside:2026-09-29:maurizio-minardi-trio",
-      "clubId": "sunside",
-      "title": "Maurizio Minardi Trio",
-      "date": "2026-09-29",
-      "sets": [
-        "19:30"
-      ],
-      "url": "https://www.sunset-sunside.com/concert/maurizio-minardi-trio-3/",
-      "details": "Le compositeur et pianiste italien Maurizio Minardi a publié 16 albums et s’est produit dans de nombreux festivals à travers l’Europe. Sa musique mêle jazz, musique classique et atmosphères cinématographiques. Après la sortie d’INVISIBLE, un album qui « témoigne du talent d’un trio de musiciens exce",
-      "personnel": null,
-      "priceText": "15,00&euro; à 25,00&euro;"
-    },
-    {
-      "id": "sunset:2026-09-29:prince-experience-3-avec-thomas-naim-quintet",
-      "clubId": "sunset",
-      "title": "Prince Experience #3 avec Thomas Naim Quintet",
-      "date": "2026-09-29",
-      "sets": [
-        "20:30"
-      ],
-      "url": "https://www.sunset-sunside.com/concert/prince-experience-3-avec-thomas-naim-quintet/",
-      "details": "Connu depuis de nombreuses années pour son magnifique travail sur la musique de Jimi Hendrix, le guitariste Thomas Naïm est aussi un grand admirateur de Prince. Pour célébrer la musique du génie de Minneapolis disparu le 21 avril 2016 et dont le fabuleux héritage musical est une inépuisable source d",
-      "personnel": null,
-      "priceText": "20,00&euro; à 30,00&euro;"
-    },
-    {
-      "id": "sunside:2026-09-29:jazzlab-orchestra",
-      "clubId": "sunside",
-      "title": "Jazzlab Orchestra",
-      "date": "2026-09-29",
-      "sets": [
-        "21:30"
-      ],
-      "url": "https://www.sunset-sunside.com/concert/jazzlab-orchestra/",
-      "details": "Un programme unique et audacieux : Ce nouvel opus, intitulé Glissement du Temps (Slip of Time), propose un véritable voyage musical à travers dix pièces inédites (7 sur CD, 4 sur Vinyle, 10 sur Web) signées par des membres phares du collectif et par trois autres compositeurs de marque François Boura",
-      "personnel": null,
-      "priceText": "15,00&euro; à 25,00&euro;"
-    },
-    {
       "id": "duc:2026-09-30:baptiste-herbin-fred-nardin-4tet",
       "clubId": "duc",
       "title": "Baptiste Herbin / Fred Nardin 4tet",
@@ -2983,19 +3280,6 @@
       "priceText": null
     },
     {
-      "id": "sunside:2026-09-30:elsa-darnal-quartet",
-      "clubId": "sunside",
-      "title": "Elsa Darnal Quartet",
-      "date": "2026-09-30",
-      "sets": [
-        "19:30"
-      ],
-      "url": "https://www.sunset-sunside.com/concert/elsa-darnal-quartet-3/",
-      "details": "Avec Laurent Marode au piano, Denis Dessallien à la contrebasse et Hidéhiko Kan à la batterie, la chanteuse Elsa Darnal vous propose un répertoire alliant standards et compositions personnelles. Une invitation au voyage à travers un univers musical aux nuances caribéennes, ancré dans la tradition du",
-      "personnel": null,
-      "priceText": "15,00&euro; à 25,00&euro;"
-    },
-    {
       "id": "balblomet:2026-09-30:paris-soul-connexion-ray-charles",
       "clubId": "balblomet",
       "title": "PARIS SOUL CONNEXION – RAY CHARLES",
@@ -3007,32 +3291,6 @@
       "details": null,
       "personnel": null,
       "priceText": null
-    },
-    {
-      "id": "sunset:2026-09-30:funky-sax-project",
-      "clubId": "sunset",
-      "title": "Funky Sax Project",
-      "date": "2026-09-30",
-      "sets": [
-        "20:30"
-      ],
-      "url": "https://www.sunset-sunside.com/concert/funky-sax-project/",
-      "details": "Cinq saxs et une section rythmique…du groove, du groove, du groove….à sept pour deux sets endiablés, Le Funky Sax Project s’empare du Sunset pour une nuit dédiée à la soul, au rhythm and blues et au funk. Porté par des arrangements originaux et un esprit profondément festif, ce septette généreux et",
-      "personnel": null,
-      "priceText": "15,00&euro; à 25,00&euro;"
-    },
-    {
-      "id": "sunside:2026-09-30:c-dric-hanriot-trio-ft-knobil-terreon-gully",
-      "clubId": "sunside",
-      "title": "Cédric Hanriot Trio ft. Knobil & Terreon Gully",
-      "date": "2026-09-30",
-      "sets": [
-        "21:30"
-      ],
-      "url": "https://www.sunset-sunside.com/concert/cedric-hanriot-trio-ft-knobil-terreon-gully/",
-      "details": "Un retour aux sources du jazz acoustique pour le pianiste Cédric Hanriot, collaborateur de Dianne Reeves, Terri Lyne Carrington ou encore Herbie Hancock. Entouré d’un trio d’exception, il propose une musique à la fois organique et contemporaine, puisant dans l’esprit des grands albums Blue Note des",
-      "personnel": null,
-      "priceText": "18,00&euro; à 28,00&euro;"
     },
     {
       "id": "duc:2026-10-01:baptiste-herbin-fred-nardin-4tet",
@@ -3075,19 +3333,6 @@
       "priceText": null
     },
     {
-      "id": "sunset:2026-10-02:big-bruce-the-retro-kids",
-      "clubId": "sunset",
-      "title": "Big bruce & the Retro Kids",
-      "date": "2026-10-02",
-      "sets": [
-        "20:30"
-      ],
-      "url": "https://www.sunset-sunside.com/concert/big-bruce-the-retro-kids/",
-      "details": "Big Bruce and the Retro Kids est un projet instrumental Soul/Blues/Funk initié par le guitariste Brice Loubet, entouré de musiciens reconnus de la scène jazz, soul et groove française. Pensé comme un pont entre musique populaire et musique instrumentale, le groupe développe aujourd’hui un répertoire",
-      "personnel": null,
-      "priceText": "15,00&euro; à 25,00&euro;"
-    },
-    {
       "id": "balblomet:2026-10-03:baptiste-trotignon-trio-art-is-simple",
       "clubId": "balblomet",
       "title": "BAPTISTE TROTIGNON TRIO – ART IS SIMPLE",
@@ -3099,19 +3344,6 @@
       "details": null,
       "personnel": null,
       "priceText": null
-    },
-    {
-      "id": "sunset:2026-10-03:uptight",
-      "clubId": "sunset",
-      "title": "Uptight",
-      "date": "2026-10-03",
-      "sets": [
-        "20:30"
-      ],
-      "url": "https://www.sunset-sunside.com/concert/uptight/",
-      "details": "Uptight, c’est un groupe de région parisienne, dont le son navigue de la Soul la plus inspirée au Heavy-Funk le plus explosif. L’expérience scénique aiguisée au fil de leurs performances (New Morning, Point Ephémère, Le Trianon en 1ere partie de Lee Fields…) propulse le show d’Uptight vers une nouve",
-      "personnel": null,
-      "priceText": "20,00&euro; à 25,00&euro;"
     },
     {
       "id": "balblomet:2026-10-05:natalie-dessay-chante-nougaro",
@@ -3139,19 +3371,6 @@
       "details": "Comme à New York",
       "personnel": null,
       "priceText": null
-    },
-    {
-      "id": "sunside:2026-10-06:pierre-yves-plat",
-      "clubId": "sunside",
-      "title": "PIERRE-YVES PLAT",
-      "date": "2026-10-06",
-      "sets": [
-        "19:30"
-      ],
-      "url": "https://www.sunset-sunside.com/concert/1pierre-yves-plat/",
-      "details": "C’est le pianiste qui monte : son répertoire nous emmène de Chopin à Ray Charles, Stevie Wonder et bien des surprises. Pierre-Yves Plat fascine et enchante son public par sa virtuosité, sa sensibilité, son imagination et son humour. Il propose une traversée musicale entre humour et fantaisie, classi",
-      "personnel": null,
-      "priceText": "18,00&euro; à 28,00&euro;"
     },
     {
       "id": "balblomet:2026-10-06:natalie-dessay-chante-nougaro",
@@ -3194,19 +3413,6 @@
       "priceText": null
     },
     {
-      "id": "sunset:2026-10-07:gabriel-delmas-trio-invite-ga-l-horellou",
-      "clubId": "sunset",
-      "title": "Gabriel Delmas Trio invite Gaël Horellou",
-      "date": "2026-10-07",
-      "sets": [
-        "20:30"
-      ],
-      "url": "https://www.sunset-sunside.com/concert/gabriel-delmas-trio-invite-gael-horellou/",
-      "details": "Autour du batteur Gabriel Delmas, ce quartet cultive un jazz généreux, habité par le groove et l’improvisation. L’invitation donné à Gaël Horellou, saxophoniste incandescent, apporte une intensité nouvelle à cette musique directe et vivante. Les thèmes circulent, les prises de risques s’assument, l’",
-      "personnel": null,
-      "priceText": "15,00&euro; à 25,00&euro;"
-    },
-    {
       "id": "balblomet:2026-10-08:natalie-dessay-chante-nougaro",
       "clubId": "balblomet",
       "title": "NATALIE DESSAY CHANTE NOUGARO",
@@ -3233,32 +3439,6 @@
       "priceText": null
     },
     {
-      "id": "sunset:2026-10-09:alim-b-b-gu",
-      "clubId": "sunset",
-      "title": "Alimé Bébégué",
-      "date": "2026-10-09",
-      "sets": [
-        "21:00"
-      ],
-      "url": "https://www.sunset-sunside.com/concert/alime-bebegue-3/",
-      "details": "Dans ce nouveau projet, Alimé Bébégué célèbre les rencontres à travers le bonheur et le plaisir qu’elles inspirent. Artitse au style profondément sensible, nourri de jazz, de musiques latines et africaines, il propose une musique comme une invitation au voyage, riche en émotions et en surprises. Com",
-      "personnel": null,
-      "priceText": "15,00&euro; à 25,00&euro;"
-    },
-    {
-      "id": "sunside:2026-10-09:carlton-rara-universed-live",
-      "clubId": "sunside",
-      "title": "Carlton Rara “Universed Live”",
-      "date": "2026-10-09",
-      "sets": [
-        "21:30"
-      ],
-      "url": "https://www.sunset-sunside.com/concert/carlton-rara-universed-live/",
-      "details": "La musique de Carlton Rara est un mélange à nul autre pareil : pop, reggae, blues, « mizik rasin » d’Haïti… et son dernier album Universed est une invitation à la sensation d’une vibration musicale universelle. Deux fois en sélection FIP, un album classé dans le top World/Jazz des Inrocks, la chanso",
-      "personnel": null,
-      "priceText": "18,00&euro; à 28,00&euro;"
-    },
-    {
       "id": "balblomet:2026-10-10:natalie-dessay-chante-nougaro",
       "clubId": "balblomet",
       "title": "NATALIE DESSAY CHANTE NOUGARO",
@@ -3268,45 +3448,6 @@
       ],
       "url": "https://www.balblomet.fr/evenement/natalie-dessay-chante-nougaro-oct-26-samedi/edate/2026-10-10",
       "details": null,
-      "personnel": null,
-      "priceText": null
-    },
-    {
-      "id": "sunside:2026-10-10:christie-dashiell-quartet",
-      "clubId": "sunside",
-      "title": "Christie Dashiell Quartet",
-      "date": "2026-10-10",
-      "sets": [
-        "21:30"
-      ],
-      "url": "https://www.sunset-sunside.com/concert/christie-dashiell-quartet/",
-      "details": "Christie Dashiell, chanteuse à la créativité spectaculaire, sort son deuxième album tant attendu, *Journey in Black*. Fille du bassiste de jazz Carroll Dashiell Jr, née à Washington DC et ayant grandi en Caroline du Nord, Christie Dashiell chante depuis toujours et apporte à ses prestations un hérit",
-      "personnel": null,
-      "priceText": "30,00&euro; à 35,00&euro;"
-    },
-    {
-      "id": "sunset:2026-10-11:jazz-go-ter-f-te-disney-en-karaok",
-      "clubId": "sunset",
-      "title": "Jazz & goûter fête Disney en karaoké",
-      "date": "2026-10-11",
-      "sets": [
-        "17:00"
-      ],
-      "url": "https://www.sunset-sunside.com/concert/jazz-gouter-fete-disney-en-karaoke-6/",
-      "details": "Tarif unique à 16€ par personne (adulte et enfant, chaque participant doit être muni d’un billet). 10€ pour les enfants de moins de 2 ans. Jazz & Goûter, le concept qui cartonne chaque dimanche à l’heure du goûter est de retour pour une 19ème saison. Vous avez le choix entre deux séances : 15h ou 17",
-      "personnel": null,
-      "priceText": "10,00&euro; à 16,00&euro;"
-    },
-    {
-      "id": "sunside:2026-10-11:hommage-bb-king-sunset-avec-big-dez-jam-blues",
-      "clubId": "sunside",
-      "title": "Hommage à BB KING Sunset avec Big Dez + Jam blues",
-      "date": "2026-10-11",
-      "sets": [
-        "20:00"
-      ],
-      "url": "https://www.sunset-sunside.com/concert/hommage-a-bb-king-sunset-avec-big-dez-jam-blues/",
-      "details": "C’est le retour de la Jam Blues au Sunside ! La Jam session est le rendez-vous indispensable pour un club de jazz digne de ce nom ! C’est la rencontre entre musiciens réputés et jeunes talents. Ce sont des moments uniques où se fabriquent les groupes et les artistes de demain. C’est l’interaction sa",
       "personnel": null,
       "priceText": null
     },
@@ -3322,32 +3463,6 @@
       "details": null,
       "personnel": null,
       "priceText": null
-    },
-    {
-      "id": "sunset:2026-10-14:chlo-mons",
-      "clubId": "sunset",
-      "title": "Chloé Mons",
-      "date": "2026-10-14",
-      "sets": [
-        "20:30"
-      ],
-      "url": "https://www.sunset-sunside.com/concert/chloe-mons/",
-      "details": "Chloé Mons présente son nouvel album “A Drink With Burt”, hommage au génial songwriter Burt Bacharach, entre vertus cinématiques et héritage soul, quelque part entre Los Angeles et New York. Avec sa voix chaude et vibrante, forte de sa présence scénique envoûtante, celle qui enregistra “Cantique des",
-      "personnel": null,
-      "priceText": "18,00&euro; à 28,00&euro;"
-    },
-    {
-      "id": "sunside:2026-10-15:christina-goh",
-      "clubId": "sunside",
-      "title": "Christina Goh",
-      "date": "2026-10-15",
-      "sets": [
-        "19:30"
-      ],
-      "url": "https://www.sunset-sunside.com/concert/christina-goh/",
-      "details": "La vocaliste internationale de blues, Christina Goh, offre un face à face avec l’auditeur avec un clavier historique comme seul instrument harmonique. Accompagnée par Gotham Aymar, celle qui a été surnommée « la perle noire de l’afro-blues » présente un corps à corps avec le son, immersion musicale.",
-      "personnel": null,
-      "priceText": "15,00&euro; à 25,00&euro;"
     },
     {
       "id": "balblomet:2026-10-15:tribute-to-wayne-shorter-by-stefan-filey-les-concerts-jazz-m",
@@ -3404,19 +3519,6 @@
       "priceText": null
     },
     {
-      "id": "sunset:2026-10-18:jazz-go-ter-f-te-walt-disney",
-      "clubId": "sunset",
-      "title": "Jazz & goûter fête Walt Disney",
-      "date": "2026-10-18",
-      "sets": [
-        "17:00"
-      ],
-      "url": "https://www.sunset-sunside.com/concert/jazz-gouter-fete-walt-disney-13/",
-      "details": "Tarif unique à 16€ par personne (adulte et enfant, chaque participant doit être muni d’un billet). 10€ pour les enfants de moins de 2 ans. Jazz & Goûter, le concept qui cartonne chaque dimanche à l’heure du goûter est de retour pour une 19ème saison. Vous avez le choix entre deux séances : 15h ou 17",
-      "personnel": null,
-      "priceText": "10,00&euro; à 16,00&euro;"
-    },
-    {
       "id": "balblomet:2026-10-20:l-orchestre-du-bal-blomet",
       "clubId": "balblomet",
       "title": "L’ORCHESTRE DU BAL BLOMET",
@@ -3443,19 +3545,6 @@
       "priceText": null
     },
     {
-      "id": "sunset:2026-10-25:jazz-go-ter-f-te-elvis-presley",
-      "clubId": "sunset",
-      "title": "Jazz & goûter fête Elvis Presley",
-      "date": "2026-10-25",
-      "sets": [
-        "17:00"
-      ],
-      "url": "https://www.sunset-sunside.com/concert/1jazz-gouter-fete-elvis-presley-3/",
-      "details": "Tarif unique à 16€ par personne (adulte et enfant, chaque participant doit être muni d’un billet). 10€ pour les enfants de moins de 2 ans. Jazz & Goûter, le concept qui cartonne chaque dimanche à l’heure du goûter est de retour pour une 19ème saison. Vous avez le choix entre deux séances : 15h ou 17",
-      "personnel": null,
-      "priceText": "10,00&euro; à 16,00&euro;"
-    },
-    {
       "id": "duc:2026-10-28:okonski",
       "clubId": "duc",
       "title": "OKONSKI",
@@ -3468,45 +3557,6 @@
       "details": "Art du trio",
       "personnel": null,
       "priceText": null
-    },
-    {
-      "id": "sunside:2026-10-29:erella-h-ritages",
-      "clubId": "sunside",
-      "title": "Erella “Héritages”",
-      "date": "2026-10-29",
-      "sets": [
-        "21:30"
-      ],
-      "url": "https://www.sunset-sunside.com/concert/erella-heritages-2/",
-      "details": "Erella chantera les chansons originales de son prochain album « Héritages », accompagnée de son piano et des sons envoûtants du oud, de la trompette, de la contrebasse et des percussions. Inspirée de ses héritages multiples, sa musique nous emporte dans un univers coloré où Orient et Occident, poési",
-      "personnel": null,
-      "priceText": "15,00&euro; à 25,00&euro;"
-    },
-    {
-      "id": "sunset:2026-11-01:jazz-go-ter-f-te-halloween",
-      "clubId": "sunset",
-      "title": "Jazz & goûter fête Halloween",
-      "date": "2026-11-01",
-      "sets": [
-        "17:00"
-      ],
-      "url": "https://www.sunset-sunside.com/concert/1jazz-gouter-fete-halloween-3/",
-      "details": "Tarif unique à 16€ par personne (adulte et enfant, chaque participant doit être muni d’un billet). 10€ pour les enfants de moins de 2 ans. Jazz & Goûter, le concept qui cartonne chaque dimanche à l’heure du goûter est de retour pour une 19ème saison. Vous avez le choix entre deux séances : 15h ou 17",
-      "personnel": null,
-      "priceText": "10,00&euro; à 16,00&euro;"
-    },
-    {
-      "id": "sunside:2026-11-03:pierre-yves-plat",
-      "clubId": "sunside",
-      "title": "PIERRE-YVES PLAT",
-      "date": "2026-11-03",
-      "sets": [
-        "19:30"
-      ],
-      "url": "https://www.sunset-sunside.com/concert/1pierre-yves-plat-2/",
-      "details": "C’est le pianiste qui monte : son répertoire nous emmène de Chopin à Ray Charles, Stevie Wonder et bien des surprises. Pierre-Yves Plat fascine et enchante son public par sa virtuosité, sa sensibilité, son imagination et son humour. Il propose une traversée musicale entre humour et fantaisie, classi",
-      "personnel": null,
-      "priceText": "18,00&euro; à 28,00&euro;"
     },
     {
       "id": "balblomet:2026-11-05:les-1001-nuits-du-jazz-leonard-cohen-et-le-jazz",
@@ -3533,32 +3583,6 @@
       "details": null,
       "personnel": null,
       "priceText": null
-    },
-    {
-      "id": "sunset:2026-11-08:jazz-go-ter-f-te-les-beatles",
-      "clubId": "sunset",
-      "title": "Jazz & goûter fête Les Beatles",
-      "date": "2026-11-08",
-      "sets": [
-        "17:00"
-      ],
-      "url": "https://www.sunset-sunside.com/concert/1jazz-gouter-fete-les-beatles-3/",
-      "details": "Tarif unique à 16€ par personne (adulte et enfant, chaque participant doit être muni d’un billet). 10€ pour les enfants de moins de 2 ans. Jazz & Goûter, le concept qui cartonne chaque dimanche à l’heure du goûter est de retour pour une 19ème saison. Vous avez le choix entre deux séances : 15h ou 17",
-      "personnel": null,
-      "priceText": "10,00&euro; à 16,00&euro;"
-    },
-    {
-      "id": "sunset:2026-11-11:jazz-go-ter-speak-english",
-      "clubId": "sunset",
-      "title": "Jazz & goûter Speak English",
-      "date": "2026-11-11",
-      "sets": [
-        "15:00"
-      ],
-      "url": "https://www.sunset-sunside.com/concert/jazz-gouter-speak-english-2/",
-      "details": "Tarif unique à 16€ par personne (adulte et enfant, chaque participant doit être muni d’un billet). 10€ pour les enfants de moins de 2 ans. Jazz & Goûter, le concept qui cartonne chaque dimanche à l’heure du goûter est de retour pour une 19ème saison. Vous avez le choix entre deux séances : 15h ou 17",
-      "personnel": null,
-      "priceText": "10,00&euro; à 16,00&euro;"
     },
     {
       "id": "balblomet:2026-11-13:marc-copland-quartet-dreaming",

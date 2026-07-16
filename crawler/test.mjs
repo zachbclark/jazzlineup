@@ -1519,3 +1519,180 @@ ok('sfjazz seed: valid shape, groups into set-merged events via the normal parse
   assert.deepEqual(cornish[0].sets, ['19:00', '20:30'], 'two sets merged per night');
   assert.equal(cornish[0].details, 'Joe Henderson Lab');
 });
+
+// --- Duc detail rosters (French instruments, 2026-07-16) ------------------------------
+import { parseDetailPersonnel } from './clubs/ducdeslombards.js';
+ok('duc: detail-page roster parses with French instrument names', () => {
+  const html = `<div class="content"><h1>Amina Figarova Sextet</h1>
+    <p>Amina Figarova - Piano<br>Yasek Manzano - Trompette<br>Rick Margitza - Sax ténor<br>
+    Bart Platteau - Flûtes<br>Maurizio Congiu - Contrebasse<br>Ferenc Nemeth - Batterie</p>
+    <p>Réservez vite - les places partent.</p></div>`;
+  const p = parseDetailPersonnel(html);
+  assert.equal(p.length, 6, `expected 6 players, got ${p.length}`);
+  assert.deepEqual(p[0], { name: 'Amina Figarova', instrument: 'piano' });
+  assert.deepEqual(p[2], { name: 'Rick Margitza', instrument: 'sax ténor' });
+  assert.deepEqual(p[5], { name: 'Ferenc Nemeth', instrument: 'batterie' });
+  // the prose line with a dash must NOT become a fake player
+  assert.ok(!p.some((x) => /réservez/i.test(x.name)));
+});
+
+// ============================================================== London ======
+
+// --- Vortex (ICS feed) ----------------------------------------------------------------
+import { parse as vxParse } from './clubs/vortex.js';
+ok('vortex: ICS events parse with UTC->London conversion and unescaping', () => {
+  const ics = ['BEGIN:VCALENDAR', 'BEGIN:VEVENT',
+    'DTSTART:20260801T183000Z',
+    'SUMMARY:Sylvie Courvoisier \\& Mary Halvorson',
+    'URL:https://www.vortexjazz.co.uk/event/courvoisier-halvorson/',
+    'DESCRIPTION:Piano and guitar duo\\, first London date since 2024.',
+    'END:VEVENT', 'BEGIN:VEVENT',
+    'DTSTART;TZID=Europe/London:20260802T200000',
+    'SUMMARY:Evan Parker Trio',
+    'URL:https://www.vortexjazz.co.uk/event/evan-parker/',
+    'END:VEVENT', 'END:VCALENDAR'].join('\r\n');
+  const evs = vxParse(ics);
+  assert.equal(evs.length, 2);
+  assert.equal(evs[0].title, 'Sylvie Courvoisier & Mary Halvorson');
+  assert.equal(evs[0].date, '2026-08-01');
+  assert.deepEqual(evs[0].sets, ['19:30']); // 18:30Z = 19:30 BST
+  assert.match(evs[0].details, /first London date/);
+  assert.equal(evs[1].date, '2026-08-02');
+  assert.deepEqual(evs[1].sets, ['20:00']); // TZID datetimes pass through
+});
+
+// --- Ronnie Scott's (listing + doors enrichment) ----------------------------------------
+import { parse as rsParse, parseDetailTimes } from './clubs/ronnies.js';
+ok("ronnies: main room kept, non-jazz Upstairs filtered; doors times from detail", () => {
+  const card = ({ room, title, date, desc }) => `
+  <article class="listing">
+    <div class="listing__image-container"><img><div class="listing__show-type">${room}</div></div>
+    <div>${date}</div>
+    <h2 class="listing__title">${title}</h2>
+    <p class="listing__description">${desc}</p>
+    <button data-show-event-url="https://www.ronniescotts.co.uk/find-a-show/${title.toLowerCase().replace(/[^a-z]+/g, '-')}">Book</button>
+  </article>`;
+  const html = card({ room: '', title: 'Kurt Elling', date: 'Thu 16 Jul 2026', desc: 'The greatest male jazz vocalist of his generation.' })
+    + card({ room: "Upstairs at Ronnie's", title: 'Sharlene Hector', date: 'Thu 16 Jul 2026', desc: 'Top soul and pop vocalist.' })
+    + card({ room: "Upstairs at Ronnie's", title: 'Late Night Jazz Jam', date: 'Fri 17 Jul 2026', desc: 'Weekly jazz session.' });
+  const evs = rsParse(html);
+  assert.equal(evs.length, 2, 'soul upstairs show must be filtered');
+  assert.equal(evs[0].title, 'Kurt Elling');
+  assert.equal(evs[0].date, '2026-07-16');
+  assert.equal(evs[1].title, 'Late Night Jazz Jam'); // jazz-keyword upstairs kept
+  const byDate = parseDetailTimes('<p>Upcoming performances</p><p>16 July - Doors at 17:00</p><p>16 July - Doors at 20:15</p>', 2026);
+  assert.deepEqual(byDate.get('2026-07-16'), ['17:00', '20:15']);
+});
+
+// --- 606 Club (weekly server pages) ------------------------------------------------------
+import { parse as sixParse } from './clubs/club606.js';
+ok('club606: banner rows parse date, time, and title', () => {
+  const html = `
+  <div class="box dark"><div class="contained mh">
+    <p><a href="/events/view/phil-mulfords-thunderthumbs-23/" class="banner smaller">Mon 13<sup>th</sup> Jul - 8:00pm</a></p>
+    <p class="h4">Phil Mulford&#039;s &#039;Thunderthumbs&#039;</p>
+  </div></div>
+  <div class="box dark"><div class="contained mh">
+    <p><a href="/events/view/sunday-lunch-kaw-regis/" class="banner smaller">Sun 19<sup>th</sup> Jul - 1:30pm</a></p>
+    <p class="h4">Lunchtime Sunday Lunch: Kaw Regis</p>
+  </div></div>`;
+  const evs = sixParse(html, new Date(2026, 6, 13));
+  assert.equal(evs.length, 2);
+  assert.equal(evs[0].title, "Phil Mulford's 'Thunderthumbs'");
+  assert.equal(evs[0].date, '2026-07-13');
+  assert.deepEqual(evs[0].sets, ['20:00']);
+  assert.equal(evs[1].date, '2026-07-19');
+  assert.deepEqual(evs[1].sets, ['13:30']);
+});
+
+// --- Jazz Cafe (data-genre cards) ---------------------------------------------------------
+import { parse as jzcParse } from './clubs/jazzcafe.js';
+ok('jazzcafe: jazz genre kept, club nights and soul dropped, line-up to details', () => {
+  const li = ({ genre, type, day, mon, host, artist, lineup }) => `
+  <li data-genre="${genre}" data-type="${type}" data-event-type="${type}" class="event mix">
+    <div class="event-date alt-font">Sat<span>${day}</span>${mon}</div>
+    <h2 class="event-title"><span class="host">${host}</span><br>${artist}<br></h2>
+    <a href="https://thejazzcafe.com/event/${artist.toLowerCase().replace(/[^a-z]+/g, '-')}/">
+    <ul class="line-up list-unstyled">${lineup.map((x) => `<li>${x}</li>`).join('')}</ul></a>
+  </li>`;
+  const html = '<ul id="events-list">'
+    + li({ genre: 'jazz', type: 'Live show', day: 18, mon: 'Jul', host: 'Explosive NYC Saxophonist', artist: 'Immanuel Wilkins Quartet', lineup: ['Immanuel Wilkins Quartet', 'Support TBA'] })
+    + li({ genre: 'soul-rnb', type: 'Live show', day: 16, mon: 'Jul', host: "Soul Music's Finest", artist: 'Leon Bridges', lineup: ['Leon Bridges'] })
+    + li({ genre: 'jazz', type: 'Club night', day: 19, mon: 'Jul', host: 'Late Session', artist: 'Jazz Dance Party', lineup: ['DJ Someone'] })
+    + '</ul>';
+  const evs = jzcParse(html, new Date(2026, 6, 13));
+  assert.equal(evs.length, 1);
+  assert.equal(evs[0].title, 'Immanuel Wilkins Quartet');
+  assert.equal(evs[0].date, '2026-07-18');
+  assert.match(evs[0].details, /Explosive NYC Saxophonist/);
+});
+
+// --- PizzaExpress Live (JSON API, Soho filter) ----------------------------------------------
+import { parse as pxParse } from './clubs/pizzaexpresslive.js';
+ok('pizzaexpress: Soho only, showtime + price parse', () => {
+  const fixture = JSON.stringify({ results: [
+    { name: 'Jay Rayner Sextet', eventDate: '2026-07-16T00:00:00', showStartTime: '8:00PM',
+      doorsOpenTime: '6:30PM', price: 35, slug: 'jay-rayner-sextet-16-07', location: 'PizzaExpress Live - Soho' },
+    { name: 'Olivia Leisk', eventDate: '2026-07-16T00:00:00', showStartTime: '7:30PM',
+      price: 0, slug: 'olivia-leisk', location: 'Piano Lounge - Leicester Square' },
+  ] });
+  const evs = pxParse(fixture);
+  assert.equal(evs.length, 1, 'non-Soho rooms filtered');
+  assert.equal(evs[0].title, 'Jay Rayner Sextet');
+  assert.deepEqual(evs[0].sets, ['20:00']);
+  assert.equal(evs[0].priceText, '£35');
+  assert.match(evs[0].url, /pizzaexpresslive\.com\/whats-on\/jay-rayner/);
+});
+
+// --- Cafe OTO (event links + date headers) ---------------------------------------------------
+import { parse as coParse } from './clubs/cafeoto.js';
+ok('cafeoto: date header near link parses; DJ bar nights skipped', () => {
+  const block = (slug, title, dateLine) => `
+  <div class="each-event"><div class="each-image"><a href="/events/${slug}/"><img></a></div>
+  <div class="each-header"><p><a href="/events/${slug}/">${title}</a></p></div>
+  <div class="each-date">${dateLine}</div></div>`;
+  const html = block('khanah-space21', 'KHANAH — part of SPACE21 festival', 'FRIDAY 17 JULY 2026, 7.30PM')
+    + block('oto-bar-all-night-flight', 'OTO BAR with All Night Flight Records (DJ)', 'THURSDAY 16 JULY 2026, 7.30PM');
+  const evs = coParse(html);
+  assert.equal(evs.length, 1, 'DJ bar night must be skipped');
+  assert.match(evs[0].title, /KHANAH/);
+  assert.equal(evs[0].date, '2026-07-17');
+  assert.deepEqual(evs[0].sets, ['19:30']);
+});
+
+// --- DICE genre tags (Frisell regression, 2026-07-16) ---------------------------------
+import { parse as zebParse2 } from './clubs/zebulon.js';
+ok('dice: genre_tags trusted over keywords — untagged-title jazz kept, tagged non-jazz dropped', () => {
+  const fixture = JSON.stringify({ data: [
+    { name: 'Bill Frisell & Harmony Five featuring Petra Haden', date: '2026-10-01T03:00:00Z',
+      timezone: 'America/Los_Angeles', url: 'https://dice.fm/event/frisell',
+      description: 'An evening of harmony.', genre_tags: ['genre:jazz', 'genre:blues'] },
+    { name: 'Quartet Night Dance Party', date: '2026-10-02T03:00:00Z',
+      timezone: 'America/Los_Angeles', url: 'https://dice.fm/event/dance',
+      description: '', genre_tags: ['genre:electronic'] },
+    { name: 'Mystery Trio', date: '2026-10-03T03:00:00Z',
+      timezone: 'America/Los_Angeles', url: 'https://dice.fm/event/mystery',
+      description: 'improvised music all night' },
+  ] });
+  const evs = zebParse2(fixture);
+  assert.equal(evs.length, 2, 'tagged jazz + untagged-keyword-match kept; tagged electronic dropped');
+  assert.match(evs[0].title, /Frisell/);
+  assert.equal(evs[0].date, '2026-09-30'); // 03:00Z -> previous evening LA, late tag
+  assert.match(evs[1].title, /Mystery Trio/);
+});
+
+// --- Known-artist safety net (2026-07-16) -----------------------------------------------
+import { matchesKnownArtist } from './clubs/_jazzartists.js';
+import { parse as mintParse2 } from './clubs/mint.js';
+ok('artist net: known names rescue keyword-less titles at keyword-filtered venues', () => {
+  assert.ok(matchesKnownArtist('Bill Frisell & Harmony Five'));
+  assert.ok(matchesKnownArtist('An Evening with CÉCILE McLORIN SALVANT'));
+  assert.ok(!matchesKnownArtist('Taylor Swift Night'));
+  const fixture = JSON.stringify([
+    { title: 'Jeff Parker', day: '20260801', startTime: '8pm', permalink: 'https://themintla.com/event/jeff-parker/', description: '', fromPrice: '$25' },
+    { title: 'Indie Rock Showcase', day: '20260802', startTime: '8pm', permalink: 'https://themintla.com/event/rock/', description: 'four rock bands' },
+  ]);
+  const evs = mintParse2(fixture);
+  assert.equal(evs.length, 1, 'Jeff Parker rescued, rock showcase still dropped');
+  assert.equal(evs[0].title, 'Jeff Parker');
+});

@@ -1,0 +1,2197 @@
+{
+  "generatedAt": "2026-07-16T16:40:14.307Z",
+  "city": "lon",
+  "clubs": [
+    {
+      "id": "ronnies",
+      "name": "Ronnie Scott's",
+      "shortName": "Ronnie's",
+      "url": "https://www.ronniescotts.co.uk",
+      "address": "47 Frith St, London W1D 4HT",
+      "city": "lon",
+      "borough": null,
+      "timezone": "Europe/London",
+      "neighborhood": "Soho",
+      "color": "#e04b4b"
+    },
+    {
+      "id": "vortex",
+      "name": "Vortex Jazz Club",
+      "shortName": "Vortex",
+      "url": "https://www.vortexjazz.co.uk",
+      "address": "11 Gillett Square, London N16 8AZ",
+      "city": "lon",
+      "borough": null,
+      "timezone": "Europe/London",
+      "neighborhood": "Dalston",
+      "color": "#8a7bff"
+    },
+    {
+      "id": "club606",
+      "name": "606 Club",
+      "shortName": "606",
+      "url": "https://www.606club.co.uk",
+      "address": "90 Lots Rd, London SW10 0QD",
+      "city": "lon",
+      "borough": null,
+      "timezone": "Europe/London",
+      "neighborhood": "Chelsea",
+      "color": "#4a90d9"
+    },
+    {
+      "id": "jazzcafe",
+      "name": "Jazz Cafe",
+      "shortName": "Jazz Cafe",
+      "url": "https://thejazzcafe.com",
+      "address": "5 Parkway, London NW1 7PG",
+      "city": "lon",
+      "borough": null,
+      "timezone": "Europe/London",
+      "neighborhood": "Camden",
+      "color": "#f0b429"
+    },
+    {
+      "id": "pizzaexpress",
+      "name": "PizzaExpress Live (Soho)",
+      "shortName": "Pizza Express",
+      "url": "https://www.pizzaexpresslive.com",
+      "address": "10 Dean St, London W1D 3RW",
+      "city": "lon",
+      "borough": null,
+      "timezone": "Europe/London",
+      "neighborhood": "Soho",
+      "color": "#4ec9a8"
+    },
+    {
+      "id": "cafeoto",
+      "name": "Cafe OTO",
+      "shortName": "Cafe OTO",
+      "url": "https://www.cafeoto.co.uk",
+      "address": "18-22 Ashwin St, London E8 3DL",
+      "city": "lon",
+      "borough": null,
+      "timezone": "Europe/London",
+      "neighborhood": "Dalston",
+      "color": "#d8d3c0"
+    }
+  ],
+  "errors": [
+    "GET https://www.ronniescotts.co.uk/find-a-show -> 403",
+    "./clubs/pizzaexpresslive.js: returned 0 events (markup change? keeping previous data)",
+    "./clubs/cafeoto.js: returned 0 events (markup change? keeping previous data)"
+  ],
+  "events": [
+    {
+      "id": "club606:2026-07-13:phil-mulford-s-thunderthumbs",
+      "clubId": "club606",
+      "title": "Phil Mulford's 'Thunderthumbs'",
+      "date": "2026-07-13",
+      "sets": [
+        "20:00"
+      ],
+      "url": "https://www.606club.co.uk/events/view/phil-mulfords-thunderthumbs-23/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "club606:2026-07-14:david-gordon-trio",
+      "clubId": "club606",
+      "title": "David Gordon Trio",
+      "date": "2026-07-14",
+      "sets": [
+        "20:00"
+      ],
+      "url": "https://www.606club.co.uk/events/view/david-gordon-trio-19/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "club606:2026-07-15:guille-hill-acoustic-band",
+      "clubId": "club606",
+      "title": "Guille Hill Acoustic Band",
+      "date": "2026-07-15",
+      "sets": [
+        "20:00"
+      ],
+      "url": "https://www.606club.co.uk/events/view/guille-hill-acoustic-band/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "vortex:2026-07-16:felix-moseholm-quartet-featuring-jonny-mansfield",
+      "clubId": "vortex",
+      "title": "Felix Moseholm Quartet featuring Jonny Mansfield",
+      "date": "2026-07-16",
+      "sets": [
+        "18:45"
+      ],
+      "url": "https://www.vortexjazz.co.uk/event/felix-moseholm-quartet-featuring-jonny-mansfield/",
+      "details": null,
+      "personnel": [
+        {
+          "name": "Jonny Mansfield",
+          "instrument": "vibraphone"
+        },
+        {
+          "name": "Noah Stoneman",
+          "instrument": "piano"
+        },
+        {
+          "name": "Jacob Patrone",
+          "instrument": "drums"
+        }
+      ],
+      "priceText": null
+    },
+    {
+      "id": "vortex:2026-07-16:pete-wareham-friends",
+      "clubId": "vortex",
+      "title": "Pete Wareham & Friends",
+      "date": "2026-07-16",
+      "sets": [
+        "19:45"
+      ],
+      "url": "https://www.vortexjazz.co.uk/event/pete-wareham-friends/",
+      "details": null,
+      "personnel": [
+        {
+          "name": "Line-up: Peter Wareham",
+          "instrument": "tenor saxophone"
+        },
+        {
+          "name": "Dave Okumu",
+          "instrument": "guitar"
+        },
+        {
+          "name": "Sam Dixon",
+          "instrument": "bass guitar"
+        }
+      ],
+      "priceText": null
+    },
+    {
+      "id": "club606:2026-07-16:tim-whitehead",
+      "clubId": "club606",
+      "title": "Tim Whitehead",
+      "date": "2026-07-16",
+      "sets": [
+        "20:00"
+      ],
+      "url": "https://www.606club.co.uk/events/view/tim-whitehead-11/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "vortex:2026-07-17:phillip-golub-alex-hitchcock-andrew-lisle",
+      "clubId": "vortex",
+      "title": "Phillip Golub/Alex Hitchcock/Andrew Lisle",
+      "date": "2026-07-17",
+      "sets": [
+        "19:45"
+      ],
+      "url": "https://www.vortexjazz.co.uk/event/phillip-golubalex-hitchcockandrew-lisle/",
+      "details": null,
+      "personnel": [
+        {
+          "name": "Line-up: Phillip Golub",
+          "instrument": "piano"
+        },
+        {
+          "name": "Alex Hitchcock",
+          "instrument": "tenor saxophone"
+        }
+      ],
+      "priceText": null
+    },
+    {
+      "id": "club606:2026-07-17:bruce-adams-art-themen",
+      "clubId": "club606",
+      "title": "Bruce Adams/Art Themen",
+      "date": "2026-07-17",
+      "sets": [
+        "21:00"
+      ],
+      "url": "https://www.606club.co.uk/events/view/bruce-adams-art-themen-2/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "vortex:2026-07-18:tony-kofi-s-tentet-plays-monk-at-the-town-hall",
+      "clubId": "vortex",
+      "title": "Tony Kofi's Tentet plays Monk at The Town Hall",
+      "date": "2026-07-18",
+      "sets": [
+        "19:00"
+      ],
+      "url": "https://www.vortexjazz.co.uk/event/tony-kofis-tentet-plays-monk-at-the-town-hall/",
+      "details": null,
+      "personnel": [
+        {
+          "name": "Line-up: Chris Outhwaite",
+          "instrument": "piano"
+        },
+        {
+          "name": "Ollie Kelly",
+          "instrument": "alto saxophone"
+        },
+        {
+          "name": "Emma Jackson",
+          "instrument": "tenor saxophone"
+        },
+        {
+          "name": "Noah Black",
+          "instrument": "saxophone"
+        },
+        {
+          "name": "Diggory Keysr",
+          "instrument": "trumpet"
+        },
+        {
+          "name": "Misha Fox",
+          "instrument": "trombone"
+        },
+        {
+          "name": "Charlie Mellon",
+          "instrument": "trombone"
+        }
+      ],
+      "priceText": null
+    },
+    {
+      "id": "club606:2026-07-18:greg-abate",
+      "clubId": "club606",
+      "title": "Greg Abate",
+      "date": "2026-07-18",
+      "sets": [
+        "21:00"
+      ],
+      "url": "https://www.606club.co.uk/events/view/greg-abate-6/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "jazzcafe:2026-07-18:immanuel-wilkins-quartet",
+      "clubId": "jazzcafe",
+      "title": "Immanuel Wilkins Quartet",
+      "date": "2026-07-18",
+      "sets": [],
+      "url": "https://thejazzcafe.com/event/immanuel-wilkins-quartet/",
+      "details": "Explosive NYC Saxophonist",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "club606:2026-07-19:sunday-lunch-kaw-regis",
+      "clubId": "club606",
+      "title": "Sunday Lunch: Kaw Regis",
+      "date": "2026-07-19",
+      "sets": [
+        "13:30"
+      ],
+      "url": "https://www.606club.co.uk/events/view/sunday-lunch-kaw-regis-6/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "vortex:2026-07-19:mopomoso-international-free-improvised-music-july-2026",
+      "clubId": "vortex",
+      "title": "MOPOMOSO: International Free Improvised Music – July 2026",
+      "date": "2026-07-19",
+      "sets": [
+        "14:00"
+      ],
+      "url": "https://www.vortexjazz.co.uk/event/mopomoso-international-free-improvised-music-july-2026/",
+      "details": "Doors 2:00 PM - 3 sets of music About Mopomoso is the UK’s longest running concert series dedicated to freely improvised music! Line-Up Phil Minton (voice), Ivor Kallin (viola) & Charlotte Keeffe (trumpet) + Clive Bell (shakuhachi) & Mike Adcock (piano/accordion/small percussion) + \"Over the Edge\" t",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "vortex:2026-07-19:vortex-jam-session",
+      "clubId": "vortex",
+      "title": "Vortex Jam Session",
+      "date": "2026-07-19",
+      "sets": [
+        "19:45"
+      ],
+      "url": "https://www.vortexjazz.co.uk/event/vortex-jam-session-10/",
+      "details": "Doors 7:45 PM, Music 8:15 PM House Band TBC About A weekly session on Sunday evenings, hosted by four of London’s finest: guitarist Nick Costley-White, Trumpeter Sean Gibbs, pianist Rick Simpson and tenor saxophonists and Riley Stone-Lonergan, each one hosting one session on rotation. If you’re an i",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "club606:2026-07-19:wayne-hernandez",
+      "clubId": "club606",
+      "title": "Wayne Hernandez",
+      "date": "2026-07-19",
+      "sets": [
+        "20:00"
+      ],
+      "url": "https://www.606club.co.uk/events/view/wayne-hernandez-33/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "club606:2026-07-20:matt-skeaping-s-vital-organs-ft-jenny-howe",
+      "clubId": "club606",
+      "title": "Matt Skeaping's Vital Organs ft Jenny Howe",
+      "date": "2026-07-20",
+      "sets": [
+        "20:00"
+      ],
+      "url": "https://www.606club.co.uk/events/view/matt-skeapings-vital-organs-ft-jenny-howe/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "vortex:2026-07-21:sam-eastmond-the-composers-workshop-big-band",
+      "clubId": "vortex",
+      "title": "Sam Eastmond & The Composers Workshop Big Band",
+      "date": "2026-07-21",
+      "sets": [
+        "19:45"
+      ],
+      "url": "https://www.vortexjazz.co.uk/event/sam-eastmond-the-composers-workshop-big-band-2/",
+      "details": "Doors 7:45 PM, Music 8:30 PM - 2 sets of music About Trumpeter, composer, and arranger Sam Eastmond is known for his large ensemble work with John Zorn, he is the only artist to have led, arranged, and recorded Zorn’s works in MASADA Books Two and Three and The Bagatelles, recording albums in these",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "club606:2026-07-21:francis-tulip-trio-with-special-guest-mejedi-owusu",
+      "clubId": "club606",
+      "title": "Francis Tulip Trio with special guest Mejedi Owusu",
+      "date": "2026-07-21",
+      "sets": [
+        "20:00"
+      ],
+      "url": "https://www.606club.co.uk/events/view/francis-tulip-trio-with-special-guest-mejedi-owusu/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "vortex:2026-07-22:reuben-goldmark-trio",
+      "clubId": "vortex",
+      "title": "Reuben Goldmark Trio",
+      "date": "2026-07-22",
+      "sets": [
+        "19:45"
+      ],
+      "url": "https://www.vortexjazz.co.uk/event/reuben-goldmark-trio-3/",
+      "details": "Doors 7:45 PM, Music 8:30 PM - 2 sets of music Line-up: Reuben Goldmark - Piano Freddie Jensen - Double bass Jonah Evans - Drum kit About: Reuben Goldmark returns to the Vortex with his trio to premiere a brand new set of original compositions. Over the past four years, the band has developed a uniq",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "club606:2026-07-22:simon-mulligan",
+      "clubId": "club606",
+      "title": "Simon Mulligan",
+      "date": "2026-07-22",
+      "sets": [
+        "20:00"
+      ],
+      "url": "https://www.606club.co.uk/events/view/simon-mulligan-11/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "vortex:2026-07-23:kate-williams-trio",
+      "clubId": "vortex",
+      "title": "Kate Williams Trio",
+      "date": "2026-07-23",
+      "sets": [
+        "19:45"
+      ],
+      "url": "https://www.vortexjazz.co.uk/event/kate-williams-trio/",
+      "details": "Doors 7:45 PM, Music 8:30 PM - 2 sets of music Line-up: Kate Williams - Piano Oli Hayhurst - Double bass David Ingamells - Drum kit About Pianist/composer Kate Williams has gained a reputation as both a distinctive writer and performer. She has released several CDs, each one to critical acclaim, inc",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "club606:2026-07-23:bryan-corbett-s-instrumental-groove-unit",
+      "clubId": "club606",
+      "title": "Bryan Corbett's Instrumental Groove Unit",
+      "date": "2026-07-23",
+      "sets": [
+        "20:00"
+      ],
+      "url": "https://www.606club.co.uk/events/view/bryan-corbetts-instrumental-groove-unit-2/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "vortex:2026-07-24:mark-kavuma-quintet",
+      "clubId": "vortex",
+      "title": "Mark Kavuma Quintet",
+      "date": "2026-07-24",
+      "sets": [
+        "19:45"
+      ],
+      "url": "https://www.vortexjazz.co.uk/event/mark-kavuma-quintet/",
+      "details": null,
+      "personnel": [
+        {
+          "name": "Line-up: Mark Kavuma",
+          "instrument": "trumpet"
+        },
+        {
+          "name": "Noah Stoneman",
+          "instrument": "piano"
+        },
+        {
+          "name": "Wilf Diamond",
+          "instrument": "trombone"
+        }
+      ],
+      "priceText": null
+    },
+    {
+      "id": "club606:2026-07-24:samara",
+      "clubId": "club606",
+      "title": "Samara",
+      "date": "2026-07-24",
+      "sets": [
+        "21:00"
+      ],
+      "url": "https://www.606club.co.uk/events/view/samara-51/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "vortex:2026-07-25:myele-manzana",
+      "clubId": "vortex",
+      "title": "Myele Manzana",
+      "date": "2026-07-25",
+      "sets": [
+        "19:45"
+      ],
+      "url": "https://www.vortexjazz.co.uk/event/myele-manzana/",
+      "details": null,
+      "personnel": [
+        {
+          "name": "Line-up: Myele Manzanza",
+          "instrument": "drums"
+        },
+        {
+          "name": "Faye Thompson",
+          "instrument": "alto saxophone"
+        },
+        {
+          "name": "Gloria Yehilevsky",
+          "instrument": "vibraphone"
+        },
+        {
+          "name": "Kirke Gross",
+          "instrument": "cello"
+        }
+      ],
+      "priceText": null
+    },
+    {
+      "id": "club606:2026-07-25:rachel-sutton-ft-paul-booth",
+      "clubId": "club606",
+      "title": "Rachel Sutton ft Paul Booth",
+      "date": "2026-07-25",
+      "sets": [
+        "21:00"
+      ],
+      "url": "https://www.606club.co.uk/events/view/rachel-sutton-ft-paul-booth/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "jazzcafe:2026-07-25:m-d-kuti-the-movement",
+      "clubId": "jazzcafe",
+      "title": "Mádé Kuti & The Movement",
+      "date": "2026-07-25",
+      "sets": [],
+      "url": "https://thejazzcafe.com/event/made-kuti-the-movement/",
+      "details": "Nigerian Afrobeat Dynast",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "club606:2026-07-26:pastiche-records-showcase-e-j-seal-carrie-hamilton-christell",
+      "clubId": "club606",
+      "title": "Pastiche Records Showcase: E J Seal, Carrie Hamilton, Christelle Désiré & APRILLO",
+      "date": "2026-07-26",
+      "sets": [
+        "13:30"
+      ],
+      "url": "https://www.606club.co.uk/events/view/pastiche-records-showcase-e-j-seal-carrie-hamilton-christelle-desire-aprillo/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "vortex:2026-07-26:vortex-jam-session",
+      "clubId": "vortex",
+      "title": "Vortex Jam Session",
+      "date": "2026-07-26",
+      "sets": [
+        "19:45"
+      ],
+      "url": "https://www.vortexjazz.co.uk/event/vortex-jam-session-10-2026-07-26/",
+      "details": "Doors 7:45 PM, Music 8:15 PM House Band TBC About A weekly session on Sunday evenings, hosted by four of London’s finest: guitarist Nick Costley-White, Trumpeter Sean Gibbs, pianist Rick Simpson and tenor saxophonists and Riley Stone-Lonergan, each one hosting one session on rotation. If you’re an i",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "club606:2026-07-26:natalie-duncan",
+      "clubId": "club606",
+      "title": "Natalie Duncan",
+      "date": "2026-07-26",
+      "sets": [
+        "20:00"
+      ],
+      "url": "https://www.606club.co.uk/events/view/natalie-duncan-13/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "club606:2026-07-27:bruming-band",
+      "clubId": "club606",
+      "title": "BruMing Band",
+      "date": "2026-07-27",
+      "sets": [
+        "20:00"
+      ],
+      "url": "https://www.606club.co.uk/events/view/bruming-band/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "vortex:2026-07-28:midweek-downstairs-jam",
+      "clubId": "vortex",
+      "title": "Midweek Downstairs Jam",
+      "date": "2026-07-28",
+      "sets": [
+        "19:00"
+      ],
+      "url": "https://www.vortexjazz.co.uk/event/midweek-downstairs-jam-22/",
+      "details": "Welcoming and relaxed, come for a drink, sit back and enjoy the music, or bring your horns, sticks and strings to join in during the second set. First set from house band: David Miller (saxophone), Davide Melis (piano), Duncan McKenzie (bass) & Bobby James (drums) followed by a jam session till clos",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "vortex:2026-07-28:dave-sear-sextet",
+      "clubId": "vortex",
+      "title": "Dave Sear Sextet",
+      "date": "2026-07-28",
+      "sets": [
+        "19:45"
+      ],
+      "url": "https://www.vortexjazz.co.uk/event/dave-sear-sextet/",
+      "details": null,
+      "personnel": [
+        {
+          "name": "Line-up: Dave Sear",
+          "instrument": "trombone"
+        },
+        {
+          "name": "Percy Pursglove",
+          "instrument": "trumpet"
+        },
+        {
+          "name": "Riley Stone-Lonergan",
+          "instrument": "tenor saxophone"
+        },
+        {
+          "name": "Olly Chalk",
+          "instrument": "piano"
+        }
+      ],
+      "priceText": null
+    },
+    {
+      "id": "club606:2026-07-28:ed-bentley-s-afro-jazz-express",
+      "clubId": "club606",
+      "title": "Ed Bentley's Afro Jazz Express",
+      "date": "2026-07-28",
+      "sets": [
+        "20:00"
+      ],
+      "url": "https://www.606club.co.uk/events/view/ed-bentleys-afro-jazz-express-1/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "vortex:2026-07-29:leif-kaner-lidstr-m",
+      "clubId": "vortex",
+      "title": "Leif Kaner-Lidström",
+      "date": "2026-07-29",
+      "sets": [
+        "19:45"
+      ],
+      "url": "https://www.vortexjazz.co.uk/event/leif-kaner-lidstrom/",
+      "details": null,
+      "personnel": [
+        {
+          "name": "Line-up: Leif Kaner-Lidström",
+          "instrument": "piano"
+        },
+        {
+          "name": "Hugo Piper",
+          "instrument": "bass guitar"
+        },
+        {
+          "name": "Kaidi Akinnibi",
+          "instrument": "saxophone"
+        }
+      ],
+      "priceText": null
+    },
+    {
+      "id": "club606:2026-07-29:dulcie-may-moreno-ep-launch-stolen-moments",
+      "clubId": "club606",
+      "title": "Dulcie May Moreno EP Launch: \"Stolen Moments\"",
+      "date": "2026-07-29",
+      "sets": [
+        "20:00"
+      ],
+      "url": "https://www.606club.co.uk/events/view/dulcie-may-moreno-ep-launch-stolen-moments/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "vortex:2026-07-30:gareth-lockrane-quintet",
+      "clubId": "vortex",
+      "title": "Gareth Lockrane Quintet",
+      "date": "2026-07-30",
+      "sets": [
+        "19:45"
+      ],
+      "url": "https://www.vortexjazz.co.uk/event/gareth-lockrane-quintet/",
+      "details": null,
+      "personnel": [
+        {
+          "name": "Line-up: Gareth Lockrane",
+          "instrument": "flute, alto flute, bass flute,"
+        },
+        {
+          "name": "Piccolo Tom Cawley",
+          "instrument": "piano"
+        },
+        {
+          "name": "Mike Outram",
+          "instrument": "guitar"
+        }
+      ],
+      "priceText": null
+    },
+    {
+      "id": "club606:2026-07-30:r-j-gilbert",
+      "clubId": "club606",
+      "title": "R-J Gilbert",
+      "date": "2026-07-30",
+      "sets": [
+        "20:00"
+      ],
+      "url": "https://www.606club.co.uk/events/view/r-j-gilbert/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "vortex:2026-07-31:dalston-song-club-sam-griffiths",
+      "clubId": "vortex",
+      "title": "Dalston Song Club: Sam Griffiths",
+      "date": "2026-07-31",
+      "sets": [
+        "18:45"
+      ],
+      "url": "https://www.vortexjazz.co.uk/event/dalston-song-club-sam-griffiths/",
+      "details": "Doors 6:45 PM, Music 7:15 PM - 1 set of music About Dalston Song Club Our monthly series brings together some of the most prominent voices in contemporary songwriting, hosted by Matthew Herd. This month we’re hugely excited to welcome back The Howl & The Hum’s Sam Griffiths in a solo outing. This pr",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "vortex:2026-07-31:alice-leggett-reunion-band-part-2",
+      "clubId": "vortex",
+      "title": "Alice Leggett: Reunion Band Part 2",
+      "date": "2026-07-31",
+      "sets": [
+        "19:30"
+      ],
+      "url": "https://www.vortexjazz.co.uk/event/alice-leggett-reunion-band-part-2/",
+      "details": null,
+      "personnel": [
+        {
+          "name": "Line-up: Alice Leggett",
+          "instrument": "alto saxophone"
+        },
+        {
+          "name": "Alex Hitchcock",
+          "instrument": "tenor saxophone"
+        },
+        {
+          "name": "Miles Mindlin",
+          "instrument": "guitar"
+        }
+      ],
+      "priceText": null
+    },
+    {
+      "id": "club606:2026-07-31:vince-dunn-the-medicine-band",
+      "clubId": "club606",
+      "title": "Vince Dunn & the Medicine Band",
+      "date": "2026-07-31",
+      "sets": [
+        "20:00"
+      ],
+      "url": "https://www.606club.co.uk/events/view/vince-dunn-the-medicine-band-1/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "vortex:2026-07-31:vortex-lates-jesse-doniach",
+      "clubId": "vortex",
+      "title": "Vortex Lates: Jesse Doniach",
+      "date": "2026-07-31",
+      "sets": [
+        "22:30"
+      ],
+      "url": "https://www.vortexjazz.co.uk/event/vortex-lates-jesse-doniach/",
+      "details": "Doors 10:30 PM, Music 11:00 PM - 1 set of music Line-up: Jesse Doniach - Piano TBC About Jesse Doniach is a Hackney born pianist and graduate of Trinity Laban Conservatoire. An emerging voice in London’s vibrant jazz scene Jesse is active as bandleader and sideman. He has played at venues such as Ro",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "vortex:2026-08-01:john-etheridge-art-themen-all-star-quartet",
+      "clubId": "vortex",
+      "title": "John Etheridge & Art Themen: All Star Quartet",
+      "date": "2026-08-01",
+      "sets": [
+        "19:45"
+      ],
+      "url": "https://www.vortexjazz.co.uk/event/john-etheridge-art-themen-all-star-quartet/",
+      "details": null,
+      "personnel": [
+        {
+          "name": "Line-up: John Etheridge",
+          "instrument": "guitar"
+        },
+        {
+          "name": "Art Themen",
+          "instrument": "saxophone"
+        },
+        {
+          "name": "Fred Thelonious Baker",
+          "instrument": "bass"
+        },
+        {
+          "name": "Ian Thomas",
+          "instrument": "drums"
+        }
+      ],
+      "priceText": null
+    },
+    {
+      "id": "club606:2026-08-01:alex-garnett-tribute-to-horace-silver",
+      "clubId": "club606",
+      "title": "Alex Garnett: Tribute To Horace Silver",
+      "date": "2026-08-01",
+      "sets": [
+        "21:00"
+      ],
+      "url": "https://www.606club.co.uk/events/view/alex-garnett-tribute-to-horace-silver/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "club606:2026-08-02:closed-for-private-event-celebrating-dougie-winton",
+      "clubId": "club606",
+      "title": "Closed for Private Event: Celebrating Dougie Winton",
+      "date": "2026-08-02",
+      "sets": [
+        "13:30"
+      ],
+      "url": "https://www.606club.co.uk/events/view/closed-for-private-event-celebrating-dougie-winton/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "vortex:2026-08-02:vortex-collective-presents-future-standards-downstairs-jam",
+      "clubId": "vortex",
+      "title": "Vortex Collective presents: Future Standards & Downstairs Jam",
+      "date": "2026-08-02",
+      "sets": [
+        "14:30"
+      ],
+      "url": "https://www.vortexjazz.co.uk/event/vortex-collective-presents-future-standards-downstairs-jam-10/",
+      "details": "Doors 2:30 PM, Music 3:00 PM About \"Standards are engaging and accessible for musicians and listeners alike, but nearly all of jazz’s standard repertoire is from a 50 year period ca. 1920 – 1970. Another half century has since passed, where new compositions have not been added to this shared languag",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "vortex:2026-08-02:vortex-jam-session",
+      "clubId": "vortex",
+      "title": "Vortex Jam Session",
+      "date": "2026-08-02",
+      "sets": [
+        "19:45"
+      ],
+      "url": "https://www.vortexjazz.co.uk/event/vortex-jam-session-10-2026-08-02/",
+      "details": "Doors 7:45 PM, Music 8:15 PM House Band TBC About A weekly session on Sunday evenings, hosted by four of London’s finest: guitarist Nick Costley-White, Trumpeter Sean Gibbs, pianist Rick Simpson and tenor saxophonists and Riley Stone-Lonergan, each one hosting one session on rotation. If you’re an i",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "club606:2026-08-02:peter-churchill",
+      "clubId": "club606",
+      "title": "Peter Churchill",
+      "date": "2026-08-02",
+      "sets": [
+        "20:00"
+      ],
+      "url": "https://www.606club.co.uk/events/view/peter-churchill-4/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "jazzcafe:2026-08-02:jazz-cafe-festival-2026",
+      "clubId": "jazzcafe",
+      "title": "Jazz Cafe Festival 2026",
+      "date": "2026-08-02",
+      "sets": [],
+      "url": "https://thejazzcafe.com/event/jazz-cafe-festival-2026/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "club606:2026-08-03:tom-waters-band-plays-the-music-of-david-sanborn",
+      "clubId": "club606",
+      "title": "Tom Waters Band Plays the Music of David Sanborn",
+      "date": "2026-08-03",
+      "sets": [
+        "20:00"
+      ],
+      "url": "https://www.606club.co.uk/events/view/tom-waters-band-plays-the-music-of-david-sanborn/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "vortex:2026-08-04:a-celebration-of-the-life-and-music-of-richard-turner",
+      "clubId": "vortex",
+      "title": "A Celebration of The Life and Music of Richard Turner",
+      "date": "2026-08-04",
+      "sets": [
+        "19:45"
+      ],
+      "url": "https://www.vortexjazz.co.uk/event/a-celebration-of-the-life-and-music-of-richard-turner/",
+      "details": null,
+      "personnel": [
+        {
+          "name": "Line-up: Mike Chillingworth",
+          "instrument": "alto saxophone"
+        },
+        {
+          "name": "Josh Morrison",
+          "instrument": "drums"
+        }
+      ],
+      "priceText": null
+    },
+    {
+      "id": "club606:2026-08-04:graham-harvey-trio",
+      "clubId": "club606",
+      "title": "Graham Harvey Trio",
+      "date": "2026-08-04",
+      "sets": [
+        "20:00"
+      ],
+      "url": "https://www.606club.co.uk/events/view/graham-harvey-trio-1/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "vortex:2026-08-05:ursula-harrison-quartet",
+      "clubId": "vortex",
+      "title": "Ursula Harrison Quartet",
+      "date": "2026-08-05",
+      "sets": [
+        "18:45"
+      ],
+      "url": "https://www.vortexjazz.co.uk/event/ursula-harrison-quartet/",
+      "details": null,
+      "personnel": [
+        {
+          "name": "Amund Totland",
+          "instrument": "guitar"
+        },
+        {
+          "name": "Sylvie Noble",
+          "instrument": "vocals"
+        }
+      ],
+      "priceText": null
+    },
+    {
+      "id": "vortex:2026-08-05:zhenya-strigalev-quintet-group",
+      "clubId": "vortex",
+      "title": "Zhenya Strigalev Quintet Group",
+      "date": "2026-08-05",
+      "sets": [
+        "19:45"
+      ],
+      "url": "https://www.vortexjazz.co.uk/event/zhenya-strigalev-quintet/",
+      "details": null,
+      "personnel": [
+        {
+          "name": "Line-up: Zhenya Strigalev",
+          "instrument": "tenor saxophone"
+        },
+        {
+          "name": "Igor Yakovenko",
+          "instrument": "piano"
+        },
+        {
+          "name": "Annie Majin",
+          "instrument": "vocals"
+        }
+      ],
+      "priceText": null
+    },
+    {
+      "id": "vortex:2026-08-06:alasdair-pennington-quartet",
+      "clubId": "vortex",
+      "title": "Alasdair Pennington Quartet",
+      "date": "2026-08-06",
+      "sets": [
+        "19:45"
+      ],
+      "url": "https://www.vortexjazz.co.uk/event/alasdair-pennington-quartet/",
+      "details": null,
+      "personnel": [
+        {
+          "name": "Line-up: Alasdair Pennington",
+          "instrument": "drums"
+        },
+        {
+          "name": "Tori Freestone",
+          "instrument": "tenor saxophone"
+        },
+        {
+          "name": "Elliot Wong",
+          "instrument": "alto saxophone"
+        }
+      ],
+      "priceText": null
+    },
+    {
+      "id": "vortex:2026-08-07:the-downstairs-living-room-rebecka-edlund-s-songs-for-harmon",
+      "clubId": "vortex",
+      "title": "The Downstairs Living Room: Rebecka Edlund’s Songs for Harmonium",
+      "date": "2026-08-07",
+      "sets": [
+        "18:45"
+      ],
+      "url": "https://www.vortexjazz.co.uk/event/the-downstairs-living-room-rebecka-edlunds-songs-for-harmonium/",
+      "details": "Doors 6:45 PM, Music 7:15 PM - 1 set of music Line-up: Rebecka Edlund - Vocals, harmonium & 12-string guitar Owen Spafford - Fiddle & pedals About Innovative vocalist Rebecka Edlund presents new material written for voice and harmonium alongside trailblazing fiddle player Owen Spafford. Swedish voca",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "club606:2026-08-07:errol-linton",
+      "clubId": "club606",
+      "title": "Errol Linton",
+      "date": "2026-08-07",
+      "sets": [
+        "21:00"
+      ],
+      "url": "https://www.606club.co.uk/events/view/errol-linton-13/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "vortex:2026-08-08:leon-foster-thomas-group",
+      "clubId": "vortex",
+      "title": "Leon Foster Thomas Group",
+      "date": "2026-08-08",
+      "sets": [
+        "19:45"
+      ],
+      "url": "https://www.vortexjazz.co.uk/event/leon-foster-thomas-group-2/",
+      "details": null,
+      "personnel": [
+        {
+          "name": "Sam Leak",
+          "instrument": "piano"
+        },
+        {
+          "name": "LOX",
+          "instrument": "drums"
+        },
+        {
+          "name": "Ben Glasser",
+          "instrument": "electric guitar"
+        }
+      ],
+      "priceText": null
+    },
+    {
+      "id": "club606:2026-08-08:tony-kofi-s-standard-time-quartet",
+      "clubId": "club606",
+      "title": "Tony Kofi's \"Standard Time\" Quartet",
+      "date": "2026-08-08",
+      "sets": [
+        "21:00"
+      ],
+      "url": "https://www.606club.co.uk/events/view/tony-kofis-standard-time-quartet/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "club606:2026-08-09:yuko-yokoi",
+      "clubId": "club606",
+      "title": "Yuko Yokoi",
+      "date": "2026-08-09",
+      "sets": [
+        "13:30"
+      ],
+      "url": "https://www.606club.co.uk/events/view/yuko-yokoi-3/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "vortex:2026-08-09:vortex-jam-session",
+      "clubId": "vortex",
+      "title": "Vortex Jam Session",
+      "date": "2026-08-09",
+      "sets": [
+        "19:45"
+      ],
+      "url": "https://www.vortexjazz.co.uk/event/vortex-jam-session-10-2026-08-09/",
+      "details": "Doors 7:45 PM, Music 8:15 PM House Band TBC About A weekly session on Sunday evenings, hosted by four of London’s finest: guitarist Nick Costley-White, Trumpeter Sean Gibbs, pianist Rick Simpson and tenor saxophonists and Riley Stone-Lonergan, each one hosting one session on rotation. If you’re an i",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "club606:2026-08-09:louise-balkwill",
+      "clubId": "club606",
+      "title": "Louise Balkwill",
+      "date": "2026-08-09",
+      "sets": [
+        "20:00"
+      ],
+      "url": "https://www.606club.co.uk/events/view/louise-balkwill-11/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "vortex:2026-08-10:earth-and-bones-residency-ft-anna-chai-richard-l-t-nd-baker-",
+      "clubId": "vortex",
+      "title": "Earth and Bones Residency ft. Anna Chai & Richard Ọlátúndé Baker (first night)",
+      "date": "2026-08-10",
+      "sets": [
+        "19:45"
+      ],
+      "url": "https://www.vortexjazz.co.uk/event/earth-and-bones-residency-ft-anna-chai-richard-olatunde-baker-first-night/",
+      "details": "Doors 7:45 PM, Music 8:30 PM - 2 sets of music Line-up: Idris Rahman - Woodwinds Liran Donin - Double bass Anna Chai - Saxes, Flutes Richard Ọlátúndé Baker - West African drums and percussion About Idris Rahman and Liran Donin. Together they are creating a fully improvised compositions as they explo",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "club606:2026-08-10:clement-regert-s-gab-trio-ft-bea-asurmendi",
+      "clubId": "club606",
+      "title": "Clement Regert's 'GAB' Trio ft. Bea Asurmendi",
+      "date": "2026-08-10",
+      "sets": [
+        "20:00"
+      ],
+      "url": "https://www.606club.co.uk/events/view/clement-regerts-gab-trio-ft-bea-asurmendi/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "vortex:2026-08-11:midweek-downstairs-jam",
+      "clubId": "vortex",
+      "title": "Midweek Downstairs Jam",
+      "date": "2026-08-11",
+      "sets": [
+        "19:00"
+      ],
+      "url": "https://www.vortexjazz.co.uk/event/midweek-downstairs-jam-23/",
+      "details": "Welcoming and relaxed, come for a drink, sit back and enjoy the music, or bring your horns, sticks and strings to join in during the second set. First set from house band: David Miller (saxophone), Davide Melis (piano), Duncan McKenzie (bass) & Bobby James (drums) followed by a jam session till clos",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "vortex:2026-08-11:earth-and-bones-residency-ft-francesca-ter-berg-john-paricel",
+      "clubId": "vortex",
+      "title": "Earth and Bones Residency ft. Francesca Ter-Berg & John Paricelli (second night)",
+      "date": "2026-08-11",
+      "sets": [
+        "19:45"
+      ],
+      "url": "https://www.vortexjazz.co.uk/event/earth-and-bones-residency-ft-francesca-ter-berg-john-paricelli-second-night/",
+      "details": null,
+      "personnel": [
+        {
+          "name": "Francesca Ter-Berg",
+          "instrument": "cello"
+        },
+        {
+          "name": "John Paricelli",
+          "instrument": "guitar"
+        }
+      ],
+      "priceText": null
+    },
+    {
+      "id": "club606:2026-08-11:dan-reinstein",
+      "clubId": "club606",
+      "title": "Dan Reinstein",
+      "date": "2026-08-11",
+      "sets": [
+        "20:00"
+      ],
+      "url": "https://www.606club.co.uk/events/view/dan-reinstein-62/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "vortex:2026-08-12:earth-and-bones-residency-ft-emre-ramazanglu-third-night",
+      "clubId": "vortex",
+      "title": "Earth and Bones Residency ft. Emre Ramazanglu (third night)",
+      "date": "2026-08-12",
+      "sets": [
+        "19:45"
+      ],
+      "url": "https://www.vortexjazz.co.uk/event/earth-and-bones-residency-ft-emre-ramazanglu-third-night/",
+      "details": "Doors 7:45 PM, Music 8:30 PM - 2 sets of music Line-up: Idris Rahman - Woodwinds Liran Donin - Double bass Emre Ramazanglu - Drums About Idris Rahman and Liran Donin. Together they are creating a fully improvised compositions as they explore unique melodies, intimate sonic spaces, textures and medit",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "club606:2026-08-12:mark-crooks-organ-quartet",
+      "clubId": "club606",
+      "title": "Mark Crooks Organ Quartet",
+      "date": "2026-08-12",
+      "sets": [
+        "20:00"
+      ],
+      "url": "https://www.606club.co.uk/events/view/mark-crooks-organ-quartet-1/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "jazzcafe:2026-08-12:courtney-pine",
+      "clubId": "jazzcafe",
+      "title": "Courtney Pine",
+      "date": "2026-08-12",
+      "sets": [],
+      "url": "https://thejazzcafe.com/event/courtney-pine-4/",
+      "details": "A Modern-Day Jazz Story 1986-2026",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "vortex:2026-08-13:t-e-n-thomas-edwards-noble",
+      "clubId": "vortex",
+      "title": "T.E.N - Thomas / Edwards / Noble",
+      "date": "2026-08-13",
+      "sets": [
+        "19:45"
+      ],
+      "url": "https://www.vortexjazz.co.uk/event/t-e-n-thomas-edwards-noble/",
+      "details": null,
+      "personnel": [
+        {
+          "name": "Line-up: Pat Thomas",
+          "instrument": "piano"
+        },
+        {
+          "name": "John Edwards",
+          "instrument": "bass"
+        },
+        {
+          "name": "Steve Noble",
+          "instrument": "drums"
+        }
+      ],
+      "priceText": null
+    },
+    {
+      "id": "vortex:2026-08-14:glaser-copus-barford-martin-septet",
+      "clubId": "vortex",
+      "title": "Glaser/Copus/Barford/Martin Septet",
+      "date": "2026-08-14",
+      "sets": [
+        "19:30"
+      ],
+      "url": "https://www.vortexjazz.co.uk/event/glasercopusbarfordmartin-septet/",
+      "details": null,
+      "personnel": [
+        {
+          "name": "Line-up: Sam Glaser",
+          "instrument": "alto saxophone"
+        },
+        {
+          "name": "James Copus",
+          "instrument": "trumpet"
+        },
+        {
+          "name": "Tom Barford",
+          "instrument": "tenor saxophone"
+        },
+        {
+          "name": "Olli Martin",
+          "instrument": "trombone"
+        },
+        {
+          "name": "Will Barry",
+          "instrument": "piano"
+        }
+      ],
+      "priceText": null
+    },
+    {
+      "id": "club606:2026-08-14:lex-cameron-s-pre-birthday-gig",
+      "clubId": "club606",
+      "title": "Lex Cameron's Pre-Birthday Gig",
+      "date": "2026-08-14",
+      "sets": [
+        "21:00"
+      ],
+      "url": "https://www.606club.co.uk/events/view/lex-camerons-pre-birthday-gig/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "vortex:2026-08-14:vortex-lates-haffner-fink",
+      "clubId": "vortex",
+      "title": "Vortex Lates: Haffner / Fink",
+      "date": "2026-08-14",
+      "sets": [
+        "22:30"
+      ],
+      "url": "https://www.vortexjazz.co.uk/event/vortex-lates-haffner-fink/",
+      "details": null,
+      "personnel": [
+        {
+          "name": "Line-up: Donovan Haffner",
+          "instrument": "alto saxophone"
+        },
+        {
+          "name": "Laurel Fink",
+          "instrument": "tenor saxophone"
+        },
+        {
+          "name": "Laurie Milton",
+          "instrument": "piano"
+        }
+      ],
+      "priceText": null
+    },
+    {
+      "id": "vortex:2026-08-15:annie-whitehead-new-5tet",
+      "clubId": "vortex",
+      "title": "Annie Whitehead New 5tet",
+      "date": "2026-08-15",
+      "sets": [
+        "19:45"
+      ],
+      "url": "https://www.vortexjazz.co.uk/event/annie-whitehead-new-5tet-3/",
+      "details": null,
+      "personnel": [
+        {
+          "name": "Line-up: Annie Whitehead",
+          "instrument": "trombone"
+        },
+        {
+          "name": "Jennifer Maidman",
+          "instrument": "bass guitar"
+        },
+        {
+          "name": "Geoffrey Richardson",
+          "instrument": "viola"
+        },
+        {
+          "name": "Steve Lodder",
+          "instrument": "piano"
+        }
+      ],
+      "priceText": null
+    },
+    {
+      "id": "club606:2026-08-15:alan-barnes-kings-of-alto-baritone-saxophone",
+      "clubId": "club606",
+      "title": "Alan Barnes: Kings Of Alto & Baritone Saxophone",
+      "date": "2026-08-15",
+      "sets": [
+        "21:00"
+      ],
+      "url": "https://www.606club.co.uk/events/view/alan-barnes-kings-of-alto-baritone-saxophone/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "jazzcafe:2026-08-15:back-to-black-20th-anniversary",
+      "clubId": "jazzcafe",
+      "title": "Back to Black - 20th Anniversary",
+      "date": "2026-08-15",
+      "sets": [],
+      "url": "https://thejazzcafe.com/event/back-to-black-20th-anniversary-2/",
+      "details": "Celebrating The Queen of Soul",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "club606:2026-08-16:lunchtime-fleur-stevenson-with-art-themen",
+      "clubId": "club606",
+      "title": "Lunchtime: Fleur Stevenson with Art Themen",
+      "date": "2026-08-16",
+      "sets": [
+        "13:30"
+      ],
+      "url": "https://www.606club.co.uk/events/view/lunchtime-fleur-stevenson-with-art-themen-3/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "vortex:2026-08-16:vortex-jam-session",
+      "clubId": "vortex",
+      "title": "Vortex Jam Session",
+      "date": "2026-08-16",
+      "sets": [
+        "19:45"
+      ],
+      "url": "https://www.vortexjazz.co.uk/event/vortex-jam-session-10-2026-08-16/",
+      "details": "Doors 7:45 PM, Music 8:15 PM House Band TBC About A weekly session on Sunday evenings, hosted by four of London’s finest: guitarist Nick Costley-White, Trumpeter Sean Gibbs, pianist Rick Simpson and tenor saxophonists and Riley Stone-Lonergan, each one hosting one session on rotation. If you’re an i",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "club606:2026-08-16:the-wonder-of-stevie-ft-noel-mccalla-derek-nash",
+      "clubId": "club606",
+      "title": "“The Wonder of Stevie” ft. Noel McCalla/Derek Nash",
+      "date": "2026-08-16",
+      "sets": [
+        "20:00"
+      ],
+      "url": "https://www.606club.co.uk/events/view/the-wonder-of-stevie-ft-noel-mccalla-derek-nash-1/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "vortex:2026-08-17:alexandra-ridout-quartet",
+      "clubId": "vortex",
+      "title": "Alexandra Ridout Quartet",
+      "date": "2026-08-17",
+      "sets": [
+        "19:45"
+      ],
+      "url": "https://www.vortexjazz.co.uk/event/alexandra-ridout-2/",
+      "details": null,
+      "personnel": [
+        {
+          "name": "Line-up: Alexandra Ridout",
+          "instrument": "trumpet"
+        },
+        {
+          "name": "Noah Stoneman",
+          "instrument": "piano"
+        }
+      ],
+      "priceText": null
+    },
+    {
+      "id": "vortex:2026-08-18:midweek-downstairs-jam",
+      "clubId": "vortex",
+      "title": "Midweek Downstairs Jam",
+      "date": "2026-08-18",
+      "sets": [
+        "19:00"
+      ],
+      "url": "https://www.vortexjazz.co.uk/event/midweek-downstairs-jam-24/",
+      "details": "Welcoming and relaxed, come for a drink, sit back and enjoy the music, or bring your horns, sticks and strings to join in during the second set. First set from house band: David Miller (saxophone), Davide Melis (piano), Duncan McKenzie (bass) & Bobby James (drums) followed by a jam session till clos",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "vortex:2026-08-18:matt-roberts-big-band-presents-born-in-the-80s",
+      "clubId": "vortex",
+      "title": "Matt Roberts Big Band presents: Born in the ’80s",
+      "date": "2026-08-18",
+      "sets": [
+        "19:45"
+      ],
+      "url": "https://www.vortexjazz.co.uk/event/matt-roberts-big-band-presents-born-in-the-80s/",
+      "details": null,
+      "personnel": [
+        {
+          "name": "Line-up: Howard McGill",
+          "instrument": "alto sax"
+        },
+        {
+          "name": "Parthenope",
+          "instrument": "alto sax"
+        },
+        {
+          "name": "George Millard",
+          "instrument": "tenor sax"
+        },
+        {
+          "name": "Jon Shenoy",
+          "instrument": "tenor sax"
+        },
+        {
+          "name": "James Allsopp",
+          "instrument": "baritone sax"
+        },
+        {
+          "name": "Adam Chatterton",
+          "instrument": "trumpet"
+        },
+        {
+          "name": "Rebecca Crawshaw",
+          "instrument": "trumpet"
+        },
+        {
+          "name": "Matt Roberts",
+          "instrument": "trumpet"
+        },
+        {
+          "name": "James Copus",
+          "instrument": "trumpet"
+        },
+        {
+          "name": "Dan Higham",
+          "instrument": "trombone"
+        },
+        {
+          "name": "Richard Foote",
+          "instrument": "trombone"
+        },
+        {
+          "name": "Emma Bassett",
+          "instrument": "trombone"
+        },
+        {
+          "name": "Yusuf Narcin",
+          "instrument": "trombone"
+        },
+        {
+          "name": "Souza",
+          "instrument": "guitar"
+        },
+        {
+          "name": "Chris Eldred",
+          "instrument": "keyboard"
+        },
+        {
+          "name": "Flo Moore",
+          "instrument": "bass guitar"
+        },
+        {
+          "name": "Max Mills",
+          "instrument": "drums"
+        }
+      ],
+      "priceText": null
+    },
+    {
+      "id": "vortex:2026-08-19:cleveland-watkiss-orphy-robinson-neil-charles-b-a-s-s",
+      "clubId": "vortex",
+      "title": "Cleveland Watkiss, Orphy Robinson & Neil Charles: B.A.S.S",
+      "date": "2026-08-19",
+      "sets": [
+        "19:45"
+      ],
+      "url": "https://www.vortexjazz.co.uk/event/cleveland-watkiss-black-ancestral-sound-system/",
+      "details": "Doors 7:45 PM, Music 8:30 PM - 2 sets of music Line-up: Cleveland Watkiss Orphy Robinson Neil Charles About: B.A.S.S. “Black Ancestral Sound System”. Is a 360 sonic exploration of Black ancestral sound systems through analogue, ritual, digital futurism, and diasporic voice. A continuous sonic cartog",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "vortex:2026-08-20:heidi-vogel",
+      "clubId": "vortex",
+      "title": "Heidi Vogel",
+      "date": "2026-08-20",
+      "sets": [
+        "19:45"
+      ],
+      "url": "https://www.vortexjazz.co.uk/event/heidi-vogel-9/",
+      "details": null,
+      "personnel": [
+        {
+          "name": "Line-up: Heidi Vogel",
+          "instrument": "voice"
+        },
+        {
+          "name": "Will Barry",
+          "instrument": "piano"
+        },
+        {
+          "name": "Shaney Forbes",
+          "instrument": "drums"
+        }
+      ],
+      "priceText": null
+    },
+    {
+      "id": "vortex:2026-08-21:jeremy-viner-john-edwards-andrew-lisle",
+      "clubId": "vortex",
+      "title": "Jeremy Viner / John Edwards / Andrew Lisle",
+      "date": "2026-08-21",
+      "sets": [
+        "18:45"
+      ],
+      "url": "https://www.vortexjazz.co.uk/event/jeremy-viner-john-edwards-andrew-lisle/",
+      "details": "Doors 6:45 PM, Music 7:15 PM - 1 set of music Line-up: Jeremy Viner - Tenor saxophone John Edwards - Double bass Andrew Lisle - Drum kit About Improvised music from a trio of three leading voices of the US, UK, and European avant-garde. JEREMY VINER (b. 1986, Ellsworth, ME) is a Berlin-based multi-i",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "vortex:2026-08-21:tomorrow-s-warriors-presents-bxl-x-ldn-interplay-iii",
+      "clubId": "vortex",
+      "title": "Tomorrow’s Warriors presents BXL x LDN Interplay III",
+      "date": "2026-08-21",
+      "sets": [
+        "19:45"
+      ],
+      "url": "https://www.vortexjazz.co.uk/event/tomorrows-warriors-presents-bxl-x-ldn-interplay-iii/",
+      "details": null,
+      "personnel": [
+        {
+          "name": "Line-up: Lauren Breen",
+          "instrument": "tenor and soprano sax"
+        },
+        {
+          "name": "Donovan Haffner",
+          "instrument": "alto saxophone"
+        },
+        {
+          "name": "Christ-Stéphane Boizi",
+          "instrument": "trombone"
+        },
+        {
+          "name": "Lorenzo Kobina",
+          "instrument": "piano"
+        }
+      ],
+      "priceText": null
+    },
+    {
+      "id": "jazzcafe:2026-08-21:the-best-of-george-benson",
+      "clubId": "jazzcafe",
+      "title": "The Best of George Benson",
+      "date": "2026-08-21",
+      "sets": [],
+      "url": "https://thejazzcafe.com/event/the-best-of-george-benson/",
+      "details": "Give Me The Night",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "vortex:2026-08-23:vortex-collective-presents-future-standards-downstairs-jam",
+      "clubId": "vortex",
+      "title": "Vortex Collective presents: Future Standards & Downstairs Jam",
+      "date": "2026-08-23",
+      "sets": [
+        "14:30"
+      ],
+      "url": "https://www.vortexjazz.co.uk/event/vortex-collective-presents-future-standards-downstairs-jam-11/2026-08-23/",
+      "details": "Doors 2:30 PM, Music 3:00 PM About \"Standards are engaging and accessible for musicians and listeners alike, but nearly all of jazz’s standard repertoire is from a 50 year period ca. 1920 – 1970. Another half century has since passed, where new compositions have not been added to this shared languag",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "vortex:2026-08-23:vortex-jam-session",
+      "clubId": "vortex",
+      "title": "Vortex Jam Session",
+      "date": "2026-08-23",
+      "sets": [
+        "19:45"
+      ],
+      "url": "https://www.vortexjazz.co.uk/event/vortex-jam-session-10-2026-08-23/",
+      "details": "Doors 7:45 PM, Music 8:15 PM House Band TBC About A weekly session on Sunday evenings, hosted by four of London’s finest: guitarist Nick Costley-White, Trumpeter Sean Gibbs, pianist Rick Simpson and tenor saxophonists and Riley Stone-Lonergan, each one hosting one session on rotation. If you’re an i",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "vortex:2026-08-25:finn-carter-with-yves-fernandez-and-richard-spaven",
+      "clubId": "vortex",
+      "title": "Finn Carter with Yves Fernandez and Richard Spaven",
+      "date": "2026-08-25",
+      "sets": [
+        "19:45"
+      ],
+      "url": "https://www.vortexjazz.co.uk/event/finn-carter-with-yves-fernandez-and-richard-spaven/",
+      "details": null,
+      "personnel": [
+        {
+          "name": "Line-up: Finn Carter",
+          "instrument": "piano & keyboards"
+        },
+        {
+          "name": "Yves Fernandez",
+          "instrument": "bass guitar"
+        },
+        {
+          "name": "Richard Spaven",
+          "instrument": "drums"
+        }
+      ],
+      "priceText": null
+    },
+    {
+      "id": "vortex:2026-08-26:the-hectet",
+      "clubId": "vortex",
+      "title": "The Hectet",
+      "date": "2026-08-26",
+      "sets": [
+        "18:45"
+      ],
+      "url": "https://www.vortexjazz.co.uk/event/the-hectet/",
+      "details": null,
+      "personnel": [
+        {
+          "name": "Line-up: Hector McLachlan",
+          "instrument": "piano"
+        },
+        {
+          "name": "Lily Shaw",
+          "instrument": "tenor saxophone"
+        },
+        {
+          "name": "Jamie Pye",
+          "instrument": "electric guitar"
+        }
+      ],
+      "priceText": null
+    },
+    {
+      "id": "vortex:2026-08-26:sorin-zlat-trio-changing-times",
+      "clubId": "vortex",
+      "title": "Sorin Zlat Trio \"Changing Times\"",
+      "date": "2026-08-26",
+      "sets": [
+        "19:45"
+      ],
+      "url": "https://www.vortexjazz.co.uk/event/sorin-zlat-trio-changing-times/",
+      "details": "Doors 7:45 PM, Music 8:30 PM - 2 sets of music Line-up: Sorin Zlat - Piano Mikele Montolli - Double bass Andy Trim - Drum kit About Award-winning Romanian pianist and composer Sorin Zlat returns to London with his acclaimed Sorin Zlat Trio, presenting music from his latest project Changing Times. Kn",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "jazzcafe:2026-08-28:levitation-orchestra",
+      "clubId": "jazzcafe",
+      "title": "Levitation Orchestra",
+      "date": "2026-08-28",
+      "sets": [],
+      "url": "https://thejazzcafe.com/event/levitation-orchestra-2/",
+      "details": "UK Jazz Supergroup",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "jazzcafe:2026-08-31:miles-davis-kind-of-blue",
+      "clubId": "jazzcafe",
+      "title": "Miles Davis' Kind of Blue",
+      "date": "2026-08-31",
+      "sets": [],
+      "url": "https://thejazzcafe.com/event/miles-davis-kind-of-blue-8/",
+      "details": "A Jazz Classic Celebrated",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "jazzcafe:2026-09-02:cubafrobeat",
+      "clubId": "jazzcafe",
+      "title": "Cubafrobeat",
+      "date": "2026-09-02",
+      "sets": [],
+      "url": "https://thejazzcafe.com/event/cubafrobeat-8/",
+      "details": "A Cuban-Afrobeat Explosion",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "jazzcafe:2026-09-02:misha-panfilov-septet-postponed",
+      "clubId": "jazzcafe",
+      "title": "Misha Panfilov Septet [POSTPONED]",
+      "date": "2026-09-02",
+      "sets": [],
+      "url": "https://thejazzcafe.com/event/misha-panfilov-septet-postponed/",
+      "details": "Cinematic Jazz Alchemist",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "jazzcafe:2026-09-03:bcuc",
+      "clubId": "jazzcafe",
+      "title": "BCUC",
+      "date": "2026-09-03",
+      "sets": [],
+      "url": "https://thejazzcafe.com/event/bcuc-3/",
+      "details": "Afro-Psychedelic Fusion",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "jazzcafe:2026-09-10:bruno-pernadas",
+      "clubId": "jazzcafe",
+      "title": "Bruno Pernadas",
+      "date": "2026-09-10",
+      "sets": [],
+      "url": "https://thejazzcafe.com/event/bruno-pernadas/",
+      "details": "Psych-Jazz Meets Indie-Pop",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "jazzcafe:2026-09-12:china-moses",
+      "clubId": "jazzcafe",
+      "title": "China Moses",
+      "date": "2026-09-12",
+      "sets": [],
+      "url": "https://thejazzcafe.com/event/china-moses-2/",
+      "details": "Soul-Jazz Powerhouse",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "jazzcafe:2026-09-16:future-jazz-showcase",
+      "clubId": "jazzcafe",
+      "title": "Future Jazz Showcase",
+      "date": "2026-09-16",
+      "sets": [],
+      "url": "https://thejazzcafe.com/event/future-jazz-showcase-3/",
+      "details": "Triple Headline Of Ones-to-Watch",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "jazzcafe:2026-09-17:the-bad-plus-farewell-tour",
+      "clubId": "jazzcafe",
+      "title": "The Bad Plus - Farewell Tour",
+      "date": "2026-09-17",
+      "sets": [],
+      "url": "https://thejazzcafe.com/event/the-bad-plus-farewell-tour/",
+      "details": "Fearless Modern Jazz",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "jazzcafe:2026-09-23:richard-spaven",
+      "clubId": "jazzcafe",
+      "title": "Richard Spaven",
+      "date": "2026-09-23",
+      "sets": [],
+      "url": "https://thejazzcafe.com/event/richard-spaven-3/",
+      "details": "World-Class Drummer",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "jazzcafe:2026-09-26:balimaya-project-matinee-show",
+      "clubId": "jazzcafe",
+      "title": "Balimaya Project (Matinee Show)",
+      "date": "2026-09-26",
+      "sets": [],
+      "url": "https://thejazzcafe.com/event/balimaya-project-matinee-show/",
+      "details": "16-Piece African Diaspora Collective",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "jazzcafe:2026-09-26:balimaya-project-evening-show",
+      "clubId": "jazzcafe",
+      "title": "Balimaya Project (Evening Show)",
+      "date": "2026-09-26",
+      "sets": [],
+      "url": "https://thejazzcafe.com/event/balimaya-project-evening-show/",
+      "details": "16-Piece African Diaspora Collective",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "jazzcafe:2026-09-26:mica-millar",
+      "clubId": "jazzcafe",
+      "title": "Mica Millar",
+      "date": "2026-09-26",
+      "sets": [],
+      "url": "https://thejazzcafe.com/event/mica-millar-3/",
+      "details": "'Soul Act of The Year'",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "jazzcafe:2026-09-28:josh-meader-trio",
+      "clubId": "jazzcafe",
+      "title": "Josh Meader Trio",
+      "date": "2026-09-28",
+      "sets": [],
+      "url": "https://thejazzcafe.com/event/josh-meader-trio/",
+      "details": "Cutting-Edge Jazz Fusion",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "jazzcafe:2026-10-02:geejay",
+      "clubId": "jazzcafe",
+      "title": "GeeJay",
+      "date": "2026-10-02",
+      "sets": [],
+      "url": "https://thejazzcafe.com/event/geejay-2/",
+      "details": "One of the UK's fastest-rising soul duos",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "jazzcafe:2026-10-04:djavan",
+      "clubId": "jazzcafe",
+      "title": "Djavan",
+      "date": "2026-10-04",
+      "sets": [],
+      "url": "https://thejazzcafe.com/event/djavan/",
+      "details": "Iconic Brazilian Figure",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "jazzcafe:2026-10-09:songs-in-the-key-of-life-50th-anniversary",
+      "clubId": "jazzcafe",
+      "title": "Songs in the Key of Life - 50th Anniversary",
+      "date": "2026-10-09",
+      "sets": [],
+      "url": "https://thejazzcafe.com/event/songs-in-the-key-of-life-50th-anniversary-2/",
+      "details": "Celebrating Stevie Wonder's",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "jazzcafe:2026-10-09:mica-millar",
+      "clubId": "jazzcafe",
+      "title": "Mica Millar",
+      "date": "2026-10-09",
+      "sets": [],
+      "url": "https://thejazzcafe.com/event/mica-millar-4/",
+      "details": "'Soul Act of The Year'",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "jazzcafe:2026-10-10:myles-sanko",
+      "clubId": "jazzcafe",
+      "title": "Myles Sanko",
+      "date": "2026-10-10",
+      "sets": [],
+      "url": "https://thejazzcafe.com/event/myles-sanko/",
+      "details": "Contemporary Soul-Jazz Storyteller",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "jazzcafe:2026-10-11:soyuz",
+      "clubId": "jazzcafe",
+      "title": "СОЮЗ (SOYUZ)",
+      "date": "2026-10-11",
+      "sets": [],
+      "url": "https://thejazzcafe.com/event/%d1%81%d0%be%d1%8e%d0%b7-soyuz-2/",
+      "details": "Rising Folk-Jazz Collective",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "jazzcafe:2026-10-14:everything-yes",
+      "clubId": "jazzcafe",
+      "title": "Everything Yes",
+      "date": "2026-10-14",
+      "sets": [],
+      "url": "https://thejazzcafe.com/event/everything-yes-3/",
+      "details": "High-Octane Jazz Fusion",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "jazzcafe:2026-10-18:mike-lindup-trio",
+      "clubId": "jazzcafe",
+      "title": "Mike Lindup Trio",
+      "date": "2026-10-18",
+      "sets": [],
+      "url": "https://thejazzcafe.com/event/mike-lindup-trio/",
+      "details": "Brit Funk Meets Jazz",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "jazzcafe:2026-10-19:rita-pay-s-lucia-fumero",
+      "clubId": "jazzcafe",
+      "title": "Rita Payés & Lucia Fumero",
+      "date": "2026-10-19",
+      "sets": [],
+      "url": "https://thejazzcafe.com/event/rita-payes-lucia-fumero/",
+      "details": "Two Iberian Jazz Breakthroughs",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "jazzcafe:2026-10-20:peter-sandberg",
+      "clubId": "jazzcafe",
+      "title": "Peter Sandberg",
+      "date": "2026-10-20",
+      "sets": [],
+      "url": "https://thejazzcafe.com/event/peter-sandberg/",
+      "details": "Cinematic Neo-Classical Piano",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "jazzcafe:2026-10-23:the-kilimanjaro-darkjazz-ensemble",
+      "clubId": "jazzcafe",
+      "title": "The Kilimanjaro Darkjazz Ensemble",
+      "date": "2026-10-23",
+      "sets": [],
+      "url": "https://thejazzcafe.com/event/the-kilimanjaro-darkjazz-ensemble/",
+      "details": "Experimental Jazz Maestros",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "jazzcafe:2026-10-29:b-se",
+      "clubId": "jazzcafe",
+      "title": "Àbáse",
+      "date": "2026-10-29",
+      "sets": [],
+      "url": "https://thejazzcafe.com/event/abase/",
+      "details": "Spiritual Jazz Meets Afrobeat",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "jazzcafe:2026-10-31:okvsho-experience",
+      "clubId": "jazzcafe",
+      "title": "Okvsho +experience",
+      "date": "2026-10-31",
+      "sets": [],
+      "url": "https://thejazzcafe.com/event/okvsho-experience-2/",
+      "details": "European Modern Jazz Trailblazers",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "jazzcafe:2026-11-01:okonski",
+      "clubId": "jazzcafe",
+      "title": "Okonski",
+      "date": "2026-11-01",
+      "sets": [],
+      "url": "https://thejazzcafe.com/event/okonski/",
+      "details": "Meditative Piano Trio",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "jazzcafe:2026-11-03:mark-guiliana-beat-music",
+      "clubId": "jazzcafe",
+      "title": "Mark Guiliana BEAT MUSIC",
+      "date": "2026-11-03",
+      "sets": [],
+      "url": "https://thejazzcafe.com/event/mark-guiliana-beat-music-2/",
+      "details": "Psychedelic Electro-Jazz",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "jazzcafe:2026-11-06:idris-ackamoor-the-pyramids",
+      "clubId": "jazzcafe",
+      "title": "Idris Ackamoor & The Pyramids",
+      "date": "2026-11-06",
+      "sets": [],
+      "url": "https://thejazzcafe.com/event/idris-ackamoor-the-pyramids/",
+      "details": "Spiritual Afro-Jazz Originators",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "jazzcafe:2026-11-07:alceu-valen-a-80th-anniversary",
+      "clubId": "jazzcafe",
+      "title": "Alceu Valença 80th Anniversary",
+      "date": "2026-11-07",
+      "sets": [],
+      "url": "https://thejazzcafe.com/event/alceu-valenca-80th-anniversary/",
+      "details": "Legendary Brazilian Singer",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "jazzcafe:2026-11-11:marta-pereira-da-costa",
+      "clubId": "jazzcafe",
+      "title": "Marta Pereira da Costa",
+      "date": "2026-11-11",
+      "sets": [],
+      "url": "https://thejazzcafe.com/event/marta-pereira-da-costa/",
+      "details": "Portuguese Fado Master",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "jazzcafe:2026-11-13:dublon-live",
+      "clubId": "jazzcafe",
+      "title": "dublon (Live)",
+      "date": "2026-11-13",
+      "sets": [],
+      "url": "https://thejazzcafe.com/event/dublon-live/",
+      "details": "Jazz Instrumentation meets Deep House",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "jazzcafe:2026-11-14:los-pira-as",
+      "clubId": "jazzcafe",
+      "title": "Los Pirañas",
+      "date": "2026-11-14",
+      "sets": [],
+      "url": "https://thejazzcafe.com/event/los-piranas/",
+      "details": "Psych-Cumbia Disruptors",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "jazzcafe:2026-11-18:rymden",
+      "clubId": "jazzcafe",
+      "title": "Rymden",
+      "date": "2026-11-18",
+      "sets": [],
+      "url": "https://thejazzcafe.com/event/rymden/",
+      "details": "Cinematic Jazz Supergroup",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "jazzcafe:2026-11-21:pan-amsterdam",
+      "clubId": "jazzcafe",
+      "title": "Pan Amsterdam",
+      "date": "2026-11-21",
+      "sets": [],
+      "url": "https://thejazzcafe.com/event/pan-amsterdam-2/",
+      "details": "NYC Jazz-Rap Maverick",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "jazzcafe:2026-11-22:solomon-fox",
+      "clubId": "jazzcafe",
+      "title": "Solomon Fox",
+      "date": "2026-11-22",
+      "sets": [],
+      "url": "https://thejazzcafe.com/event/solomon-fox/",
+      "details": "Slick Multi-Instrumentalist",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "jazzcafe:2026-11-23:billy-cobham",
+      "clubId": "jazzcafe",
+      "title": "Billy Cobham",
+      "date": "2026-11-23",
+      "sets": [],
+      "url": "https://thejazzcafe.com/event/billy-cobham-6/",
+      "details": "Jazz Fusions Greatest Drummer",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "jazzcafe:2026-12-02:daoud",
+      "clubId": "jazzcafe",
+      "title": "daoud",
+      "date": "2026-12-02",
+      "sets": [],
+      "url": "https://thejazzcafe.com/event/daoud/",
+      "details": "The Problem Child Of Jazz",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "jazzcafe:2026-12-09:bilal-25-years-of-1st-born-second",
+      "clubId": "jazzcafe",
+      "title": "Bilal - 25 Years of 1st Born Second",
+      "date": "2026-12-09",
+      "sets": [],
+      "url": "https://thejazzcafe.com/event/bilal-25-years-of-1st-born-second/",
+      "details": "Grammy-winning Neo-Soul Icon",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "jazzcafe:2026-12-11:cut-capers",
+      "clubId": "jazzcafe",
+      "title": "Cut Capers",
+      "date": "2026-12-11",
+      "sets": [],
+      "url": "https://thejazzcafe.com/event/cut-capers/",
+      "details": "High-Energy Funk Collective",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "jazzcafe:2027-03-05:pedro-abrunhosa",
+      "clubId": "jazzcafe",
+      "title": "Pedro Abrunhosa",
+      "date": "2027-03-05",
+      "sets": [],
+      "url": "https://thejazzcafe.com/event/pedro-abrunhosa/",
+      "details": "Renowned Portuguese Singer-Songwriter",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "jazzcafe:2027-05-13:stevie-wonder-s-birthday-party-early-show",
+      "clubId": "jazzcafe",
+      "title": "Stevie Wonder's Birthday Party (Early Show)",
+      "date": "2027-05-13",
+      "sets": [],
+      "url": "https://thejazzcafe.com/event/stevie-wonders-birthday-party-early-show/",
+      "details": "Celebrating Soul Greatness",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "jazzcafe:2027-05-13:stevie-wonder-s-birthday-party-late-show",
+      "clubId": "jazzcafe",
+      "title": "Stevie Wonder's Birthday Party (Late Show)",
+      "date": "2027-05-13",
+      "sets": [],
+      "url": "https://thejazzcafe.com/event/stevie-wonders-birthday-party-late-show/",
+      "details": "Celebrating Soul Greatness",
+      "personnel": null,
+      "priceText": null
+    }
+  ]
+}

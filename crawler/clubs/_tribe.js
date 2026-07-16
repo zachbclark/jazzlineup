@@ -35,18 +35,28 @@ export function parseTribe(jsonText, { clubIdFor, fallbackUrl }) {
   return events;
 }
 
-export function makeTribeCrawler({ base, clubIdFor, fallbackUrl, maxPages = 3, perPage = 50, timeoutMs = 30000 }) {
+// Pages beyond the first fetch CONCURRENTLY — sequential paging against a
+// slow host (Sunset/Sunside takes 30-50s per request) made a Paris crawl
+// run 4+ minutes and threatened the Lambda's time budget. A date window
+// also caps how many pages exist at all. Page-2+ failures degrade to
+// missing pages instead of failing the venue.
+export function makeTribeCrawler({ base, clubIdFor, fallbackUrl, maxPages = 3, perPage = 50, timeoutMs = 30000, windowDays = 60 }) {
   return async function crawl(ctx = {}) {
     const today = ctx.today ?? new Date();
-    const out = [];
-    let url = `${base}/wp-json/tribe/events/v1/events?per_page=${perPage}&start_date=${today.toISOString().slice(0, 10)}`;
-    for (let page = 0; page < maxPages && url; page++) {
-      const body = await fetchText(url, { headers: { accept: 'application/json' }, timeoutMs });
-      out.push(...parseTribe(body, { clubIdFor, fallbackUrl }));
-      let next = null;
-      try { next = JSON.parse(body).next_rest_url ?? null; } catch { /* done */ }
-      url = next;
-    }
-    return out;
+    const start = today.toISOString().slice(0, 10);
+    const end = new Date(today.getTime() + windowDays * 86400000).toISOString().slice(0, 10);
+    const pageUrl = (p) =>
+      `${base}/wp-json/tribe/events/v1/events?per_page=${perPage}&start_date=${start}&end_date=${end}&page=${p}`;
+    const first = await fetchText(pageUrl(1), { headers: { accept: 'application/json' }, timeoutMs });
+    const out = parseTribe(first, { clubIdFor, fallbackUrl });
+    let totalPages = 1;
+    try { totalPages = Math.min(Number(JSON.parse(first).total_pages) || 1, maxPages); } catch { /* single page */ }
+    const rest = await Promise.all(
+      Array.from({ length: Math.max(0, totalPages - 1) }, (_, i) =>
+        fetchText(pageUrl(i + 2), { headers: { accept: 'application/json' }, timeoutMs })
+          .then((b) => parseTribe(b, { clubIdFor, fallbackUrl }))
+          .catch(() => []))
+    );
+    return out.concat(...rest);
   };
 }

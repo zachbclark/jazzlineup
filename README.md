@@ -1,9 +1,9 @@
 # jazzlineup.com 🎷
 
 **Live at [jazzlineup.com](https://jazzlineup.com).** One calendar for live
-jazz: who's playing tonight across 64 venues in New York, Los Angeles,
-Chicago, the Bay Area, and Paris, from the Village Vanguard to a medieval
-swing cellar on the rue de la Huchette. A
+jazz: who's playing tonight across 70 venues in New York, Los Angeles,
+Chicago, the Bay Area, Paris, and London, from the Village Vanguard to a
+medieval swing cellar on the rue de la Huchette. A
 zero-dependency crawler checks every venue's site around the clock,
 normalizes the chaos into one feed, and a static React frontend serves it
 fast from CloudFront. No ads, no accounts.
@@ -13,10 +13,11 @@ fast from CloudFront. No ads, no accounts.
 - **29 NYC venues** across Manhattan, Harlem, Brooklyn, and Queens,
   **13 LA venues** from the Hollywood Bowl to hotel bars, **9 Chicago
   venues** from the Green Mill to the creative-music lofts, **6 Bay
-  Area venues** from SFJAZZ to a Glen Park bookshop, and **7 Paris venues**
-  across the rue des Lombards triangle, the Marais, and the Latin Quarter.
-  City switcher in the wordmark; borough scopes for New York; 24-hour set
-  times for European cities.
+  Area venues** from SFJAZZ to a Glen Park bookshop, **7 Paris venues**
+  across the rue des Lombards triangle, the Marais, and the Latin Quarter,
+  and **6 London venues** from Ronnie Scott's to Cafe OTO. City switcher in
+  the wordmark; borough scopes for New York; 24-hour set times for
+  European cities.
 - **Artist search**: type a musician's name and see every date they're on,
   matched against titles, band rosters, and descriptions, accents ignored.
   When the other city has matches too, one tap switches with the query intact.
@@ -78,7 +79,7 @@ The three stages stay deliberately decoupled:
 
 ## Venue sources, by shape
 
-Sixty-four venues resolve to about fifteen source patterns:
+Seventy venues resolve to about fifteen source patterns:
 
 | Pattern | Examples |
 | --- | --- |
@@ -111,7 +112,7 @@ with a Monday jazz hang lists the hang and nothing else.
 ## Testing
 
 ```bash
-node crawler/test.mjs   # 66 parser + merge-logic test groups, no network
+node crawler/test.mjs   # 75 parser + merge-logic test groups, no network
 node web/test-ui.mjs    # 16 Playwright UI tests, desktop + mobile viewports
 ```
 

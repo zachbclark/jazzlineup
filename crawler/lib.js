@@ -224,8 +224,14 @@ const INSTRUMENTS = new Set([
   'percussion', 'harmonica', 'accordion', 'banjo', 'mandolin', 'harp', 'oud',
   'synth', 'synthesizer', 'electronics', 'turntables', 'dj', 'composer',
   'conductor', 'arranger', 'leader', 'electric', 'acoustic', 'upright',
+  // French (Paris rosters: "Ferenc Nemeth - Batterie"); accents are stripped
+  // before lookup so flûte matches 'flute'
+  'batterie', 'contrebasse', 'trompette', 'guitare', 'basse', 'clavier',
+  'claviers', 'chant', 'voix', 'flute', 'flutes', 'violon', 'violoncelle',
+  'orgue', 'percussions', 'saxo', 'tenor', 'baryton',
 ]);
-const isInstrumentWord = (w) => INSTRUMENTS.has(w.toLowerCase().replace(/[^a-z]/gi, ''));
+const isInstrumentWord = (w) =>
+  INSTRUMENTS.has(String(w).normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase().replace(/[^a-z]/g, ''));
 
 // Promo / boilerplate that pollutes event descriptions.
 const PROMO_RE = /\b(?:FREE WITH SUMMERPASS|SUMMERPASS|TICKETS\s*(?:&|and)\s*MORE INFO|GET (?:YOUR )?TICKETS?|MORE INFO|BUY TICKETS?|LIVESTREAM|SOLD OUT)\b[.!]?/gi;
@@ -262,6 +268,24 @@ export function parsePersonnel(text) {
     }
     // ...and the rest is the next player's name.
     name = lastNameRun(tokens.slice(j).join(' '));
+  }
+  return personnel.length >= 2 ? personnel : [];
+}
+
+// Parse a LINE-PER-PLAYER roster (common on European venue detail pages):
+//   "Amina Figarova - Piano\nRick Margitza - Sax ténor\n…"
+// Stricter than parsePersonnel: the whole right side must be instrument
+// words, so prose lines with dashes never produce fake players.
+export function personnelFromLines(text) {
+  const personnel = [];
+  for (const line of String(text).split('\n')) {
+    const m = line.trim().match(/^(.{2,45}?)\s*[-–—:]\s*(.{2,40})$/);
+    if (!m) continue;
+    const instr = m[2].trim();
+    const words = instr.split(/[\s,/&]+/).filter(Boolean);
+    if (!words.length) continue;
+    if (!words.every((w) => isInstrumentWord(w) || /^(?:et|and)$/i.test(w))) continue;
+    personnel.push({ name: cleanText(m[1]), instrument: cleanText(instr.toLowerCase()) });
   }
   return personnel.length >= 2 ? personnel : [];
 }

@@ -7,6 +7,7 @@
 // Both book across genres nightly, so acts are kept only when the genre
 // tag / title / description reads jazz-ish (precision-first, as elsewhere).
 import { fetchText, makeEvent, htmlToText, monthNum, inferYear, isoDate, normalizeTime, cleanText } from '../lib.js';
+import { matchesKnownArtist } from './_jazzartists.js';
 
 const SITES = {
   silvana: 'https://silvana-nyc.com',
@@ -45,7 +46,7 @@ export function parsePage(html, clubId, today = new Date()) {
       const genre = parts.length > 1 ? parts[parts.length - 1] : '';
       const title = (parts.length > 1 ? parts.slice(0, -1).join(' - ') : rest).trim();
       const desc = descs[num] ?? '';
-      if (!JAZZ_RE.test(`${title} ${genre} ${desc.slice(0, 300)}`)) continue;
+      if (!JAZZ_RE.test(`${title} ${genre} ${desc.slice(0, 300)}`) && !matchesKnownArtist(title)) continue;
       events.push(makeEvent({
         clubId,
         title,

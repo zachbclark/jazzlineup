@@ -67,11 +67,11 @@ try {
     assert.ok(Number(m[2]) >= 7, `expected 7+ clubs, got ${m[2]}`);
   });
 
-  await test('city menu lists all five cities; CHI loads (empty until first crawl)', async () => {
+  await test('city menu lists all six cities; CHI loads (empty until first crawl)', async () => {
     await pd.click('.city-badge-btn');
     await pd.waitForTimeout(200);
     const options = await Promise.all((await pd.$$('.city-option')).map((o) => o.textContent()));
-    assert.deepEqual(options.map((s) => s.trim()), ['NYC', 'LA', 'CHICAGO', 'SF', 'PARIS']);
+    assert.deepEqual(options.map((s) => s.trim()), ['NYC', 'LA', 'CHICAGO', 'SF', 'PARIS', 'LONDON']);
     await pd.click('.city-option:has-text("CHICAGO")');
     await pd.waitForTimeout(400);
     assert.match(await pd.title(), /CHI/);

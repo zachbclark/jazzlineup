@@ -6,6 +6,7 @@
 //       &filter[venues][]=<venue>            (x-api-key: <key from page>)
 // -> { data: [{ name, date (UTC ISO), timezone, url, description }] }
 import { fetchText, makeEvent, htmlToText, tzDate, tzTime, applyLateNight, stripPromo } from '../lib.js';
+import { matchesKnownArtist } from './_jazzartists.js';
 
 const KEY_RE = /apiKey["'\s:]+["']([A-Za-z0-9]+)["']/;
 
@@ -15,7 +16,15 @@ export function parseDiceEvents(jsonText, clubId, { fallbackUrl, jazzRe = null }
   for (const ev of j.data ?? []) {
     if (!ev?.name || !ev?.date) continue;
     const desc = htmlToText(String(ev.description ?? '').replace(/\*\*/g, ''));
-    if (jazzRe && !jazzRe.test(`${ev.name} ${desc.slice(0, 800)}`)) continue;
+    // DICE carries REAL genre tags (genre_tags: ["genre:jazz", …]) — trust
+    // them when present; keywords are only the fallback for untagged events.
+    // Found the hard way (2026-07-16): "Bill Frisell & Harmony Five" has no
+    // jazz keyword in its title and the keyword filter dropped one of the
+    // greatest living jazz guitarists.
+    const tags = [...(ev.genre_tags ?? []), ...(ev.tags ?? [])].map((t) => String(t).toLowerCase());
+    if (tags.length) {
+      if (jazzRe && !tags.some((t) => /jazz/.test(t))) continue;
+    } else if (jazzRe && !jazzRe.test(`${ev.name} ${desc.slice(0, 800)}`) && !matchesKnownArtist(ev.name)) continue;
     const tz = ev.timezone || 'America/Los_Angeles';
     events.push(makeEvent(applyLateNight({
       clubId,

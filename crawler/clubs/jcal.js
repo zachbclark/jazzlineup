@@ -7,6 +7,7 @@
 // JCAL is a mixed arts center (theater, dance, World Cup viewings…), so we
 // keep only jazz-flagged events — precision over recall for a jazz site.
 import { fetchText, makeEvent, htmlToText, splitIso, stripPromo } from '../lib.js';
+import { matchesKnownArtist } from './_jazzartists.js';
 
 const FEED = 'https://data.accentapi.com/feed/25581042.json';
 const SITE = 'https://jcal.org/events-tickets';
@@ -18,7 +19,7 @@ export function parse(jsonText) {
   for (const ev of j.events ?? []) {
     if (!ev?.name || !ev?.date_start) continue;
     const desc = htmlToText(ev.description ?? '');
-    if (!JAZZ_RE.test(`${ev.name} ${desc.slice(0, 600)}`)) continue;
+    if (!JAZZ_RE.test(`${ev.name} ${desc.slice(0, 600)}`) && !matchesKnownArtist(ev.name)) continue;
     const { time } = splitIso(ev.start_time_raw ?? '');
     events.push(makeEvent({
       clubId: 'jcal',

@@ -9,6 +9,7 @@ export const CITIES = [
   { id: 'chi', label: 'CHICAGO', slug: 'chicago' },
   { id: 'sf', label: 'SF', slug: 'sf' },
   { id: 'par', label: 'PARIS', slug: 'paris', clock24: true },
+  { id: 'lon', label: 'LONDON', slug: 'london', clock24: true },
 ];
 
 export function citySlug(id) {

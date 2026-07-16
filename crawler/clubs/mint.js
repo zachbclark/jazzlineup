@@ -6,10 +6,11 @@
 // Mixed-genre bookings (pop/soul/rock/jazz), so we keep jazz-flagged shows
 // only — same precision-first policy as JCAL.
 import { fetchText, makeEvent, htmlToText, normalizeTime, stripPromo, parsePersonnel } from '../lib.js';
+import { matchesKnownArtist } from './_jazzartists.js';
 
 const BASE = 'https://themintla.com';
 const PAGES = 3;
-const JAZZ_RE = /\bjazz|be-?bop|hard bop|swing|improvis|quartet|quintet|trio|big band|fusion\b/i;
+const JAZZ_RE = /\bjazz|be-?bop|hard bop|swing|improvis|quartet|quintet|trio|big band|brass band|fusion\b/i;
 
 export function parse(jsonText) {
   const listings = JSON.parse(jsonText);
@@ -17,7 +18,7 @@ export function parse(jsonText) {
   for (const it of Array.isArray(listings) ? listings : []) {
     if (!it?.title || !/^\d{8}$/.test(String(it.day ?? ''))) continue;
     const desc = htmlToText(it.description ?? '');
-    if (!JAZZ_RE.test(`${it.title} ${desc.slice(0, 800)}`)) continue;
+    if (!JAZZ_RE.test(`${it.title} ${desc.slice(0, 800)}`) && !matchesKnownArtist(it.title)) continue;
     const d = String(it.day);
     const time = normalizeTime(it.startTime ?? '');
     const personnel = parsePersonnel(desc);

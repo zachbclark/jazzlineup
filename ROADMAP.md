@@ -208,9 +208,18 @@ times from description text; verify against reality after first live crawl.
   their own ace-api). Play: email their team for a UA allowlist — we send
   them ticket buyers; decide meanwhile whether the chip stays (stale data +
   standing drift alarm) or waits in the registry comments like Freight
-- [ ] London + Berlin repeat the Paris playbook (Ronnie Scott's, 606,
-      Vortex, Jazz Cafe, Cafe OTO; A-Trane, Quasimodo, Zig Zag, Donau115.
-      Berlin note: German instrument names won't parse as personnel)
+- [x] **London — city 6, BUILT 2026-07-16 (deploy pending):** 6 venues.
+      Ronnie Scott's (listing cards + doors-time detail enrichment, Upstairs
+      jazz-filtered) · Vortex (ICS feed via new _ics.js helper) · 606 Club
+      (weekly server pages) · Jazz Cafe (data-genre cards, club nights
+      dropped) · PizzaExpress Live Soho (clean JSON API) · Cafe OTO
+      (improv church, DJ bar nights skipped)
+- [ ] **Berlin — city 7 (next):** A-Trane, Quasimodo, Zig Zag, Donau115,
+      Kunstfabrik Schlot. German instrument lexicon for personnel (French
+      precedent in lib.js)
+- [ ] Artist-analysis follow-ups (2026-07-16): Boston (Wally's, Regattabar)
+      + one-venue satellite cities on the touring circuit — Bimhuis
+      (Amsterdam), Porgy & Bess (Vienna), Jazzhus Montmartre (Copenhagen)
 - [ ] Tokyo — the endgame (strongest scene on earth; blocked on real i18n:
       Japanese titles break the personnel lexicon + romaji search)
 

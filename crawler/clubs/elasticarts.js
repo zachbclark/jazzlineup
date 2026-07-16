@@ -7,6 +7,7 @@ import {
   fetchText, makeEvent, htmlToText, chiDate, chiTime, stripPromo,
   applyLateNight, parsePersonnel,
 } from '../lib.js';
+import { matchesKnownArtist } from './_jazzartists.js';
 
 const BASE = 'https://elasticarts.org';
 const URL_ = `${BASE}/events?format=json`;
@@ -20,7 +21,7 @@ export function parse(jsonText) {
     if (!it?.title || !it?.startDate) continue;
     const tags = (it.tags ?? []).join(' ');
     const excerpt = htmlToText(it.excerpt ?? '');
-    if (!KEEP_RE.test(`${it.title} ${tags}`)) continue;
+    if (!KEEP_RE.test(`${it.title} ${tags}`) && !matchesKnownArtist(it.title)) continue;
     const time = chiTime(it.startDate);
     const plausible = time >= '12:00' || time < '03:00';
     const personnel = parsePersonnel(excerpt);

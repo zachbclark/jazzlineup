@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-16T01:32:09.875Z",
+  "generatedAt": "2026-07-16T16:39:03.424Z",
   "city": "nyc",
   "clubs": [
     {
@@ -1061,53 +1061,6 @@
       "priceText": null
     },
     {
-      "id": "lunatico:2026-07-14:bobby-hawk-w-cole-kamen-green-jacob-drab-bill-campbell-chris",
-      "clubId": "lunatico",
-      "title": "Bobby Hawk w/Cole Kamen-Green | Jacob Drab | Bill Campbell | Chris Parker",
-      "date": "2026-07-14",
-      "sets": [
-        "21:00",
-        "22:15"
-      ],
-      "url": "https://www.barlunatico.com/calendar/2025/8/13/bobby-hawk-ad-hawk-record-release-79hxa-ctp7f-43hlg",
-      "details": "A completely improvised body of work, Bobby Hawk’s latest album, Ad Hawk, reveals unpredictable rhythms and riffs drawn anywhere from western-inspired twangs to ethereal spacey cosmology. We’re gonna go places with this excellent crew tonite. join us! Bobby Hawk : violin Cole Kamen-Green : trumpet J",
-      "personnel": null,
-      "priceText": null
-    },
-    {
-      "id": "jazzcultural:2026-07-15:afternoon-jam-in-the-cafe",
-      "clubId": "jazzcultural",
-      "title": "Afternoon Jam in the Cafe",
-      "date": "2026-07-15",
-      "sets": [
-        "14:00"
-      ],
-      "url": "https://www.smallslive.com/events/33187-afternoon-jam-in-the-cafe/",
-      "details": "until 6:00 PM",
-      "personnel": [
-        {
-          "name": "John Webber",
-          "instrument": "guitar"
-        }
-      ],
-      "priceText": null
-    },
-    {
-      "id": "zincbar:2026-07-15:daniel-sky-quintet",
-      "clubId": "zincbar",
-      "title": "Daniel Sky Quintet",
-      "date": "2026-07-15",
-      "sets": [
-        "17:00",
-        "19:00",
-        "20:30"
-      ],
-      "url": "https://www.zincbar.com/event/daniel-sky-quintet/",
-      "details": "Showtimes: 7:00 PM & 8:30 PM | Tickets: $40 at the door Reservations: Not necessary — just arrive 20–30 minutes before showtime. Seating: Available throughout the shows. Bar Hours: Open from 5:00 PM to midnight never a cover to enjoy cocktails or relax with friends in our 1920’s art deco music room",
-      "personnel": null,
-      "priceText": "$40"
-    },
-    {
       "id": "birdland:2026-07-15:david-ostwald-s-louis-armstrong-eternity-band-theater",
       "clubId": "birdland",
       "title": "David Ostwald's Louis Armstrong Eternity Band (Theater)",
@@ -1118,92 +1071,6 @@
       "url": "https://www.birdlandjazz.com/tm-event/david-ostwalds-louis-armstrong-eternity-band-26/",
       "details": "Birdland Theater — Doors @ 4:30PM",
       "personnel": null,
-      "priceText": null
-    },
-    {
-      "id": "mezzrow:2026-07-15:adam-kolker-sam-yahel-duets",
-      "clubId": "mezzrow",
-      "title": "Adam Kolker/Sam Yahel Duets",
-      "date": "2026-07-15",
-      "sets": [
-        "18:00",
-        "19:30"
-      ],
-      "url": "https://www.smallslive.com/events/33034-adam-kolkersam-yahel-duets/",
-      "details": null,
-      "personnel": [
-        {
-          "name": "Adam Kolker",
-          "instrument": "tenor sax"
-        },
-        {
-          "name": "Sam Yahel",
-          "instrument": "piano"
-        },
-        {
-          "name": "Jihee Heo",
-          "instrument": "piano"
-        },
-        {
-          "name": "Ahmed McLemore",
-          "instrument": "bass"
-        },
-        {
-          "name": "Chris Beck",
-          "instrument": "drums"
-        }
-      ],
-      "priceText": null
-    },
-    {
-      "id": "smalls:2026-07-15:behn-gillece-quintet",
-      "clubId": "smalls",
-      "title": "Behn Gillece Quintet",
-      "date": "2026-07-15",
-      "sets": [
-        "18:00",
-        "19:30"
-      ],
-      "url": "https://www.smallslive.com/events/33044-behn-gillece-quintet/",
-      "details": null,
-      "personnel": [
-        {
-          "name": "Behn Gillece",
-          "instrument": "vibraphone"
-        },
-        {
-          "name": "Willie Morris III",
-          "instrument": "tenor sax"
-        },
-        {
-          "name": "Neil Podgurski",
-          "instrument": "piano"
-        },
-        {
-          "name": "Clovis Nicolas",
-          "instrument": "bass"
-        },
-        {
-          "name": "Vinnie Sperrazza",
-          "instrument": "drums"
-        },
-        {
-          "name": "Adam Niewood",
-          "instrument": "tenor sax"
-        },
-        {
-          "name": "Eric Lewis",
-          "instrument": "piano"
-        },
-        {
-          "name": "Sean Conly",
-          "instrument": "bass"
-        },
-        {
-          "name": "Ben Perowsky",
-          "instrument": "drums"
-        }
-      ],
       "priceText": null
     },
     {
@@ -1219,59 +1086,6 @@
       "details": null,
       "personnel": null,
       "priceText": "$25-65"
-    },
-    {
-      "id": "ornithology:2026-07-15:earlybird-show",
-      "clubId": "ornithology",
-      "title": "Earlybird Show",
-      "date": "2026-07-15",
-      "sets": [
-        "18:30"
-      ],
-      "url": "https://ornithologyjazzclub.com/brooklyn-bushwick-williamsburg-ornithology-jazz-club-events",
-      "details": null,
-      "personnel": [
-        {
-          "name": "Jon Davis",
-          "instrument": "piano"
-        },
-        {
-          "name": "Yuma Takagi",
-          "instrument": "bass"
-        },
-        {
-          "name": "David Sirkis",
-          "instrument": "drums"
-        }
-      ],
-      "priceText": null
-    },
-    {
-      "id": "jazzcultural:2026-07-15:george-papageorge-trio",
-      "clubId": "jazzcultural",
-      "title": "George Papageorge Trio",
-      "date": "2026-07-15",
-      "sets": [
-        "19:00",
-        "21:00"
-      ],
-      "url": "https://www.smallslive.com/events/33161-george-papageorge-trio/",
-      "details": null,
-      "personnel": [
-        {
-          "name": "George Papageorge",
-          "instrument": "organ"
-        },
-        {
-          "name": "Pete Smith",
-          "instrument": "guitar"
-        },
-        {
-          "name": "Brian Floody",
-          "instrument": "drums"
-        }
-      ],
-      "priceText": null
     },
     {
       "id": "jazzgallery:2026-07-15:miles-okazaki-s-boomtown-album-release-show",
@@ -1329,33 +1143,6 @@
       "priceText": null
     },
     {
-      "id": "dizzys:2026-07-15:john-ellis-heroes-quintet",
-      "clubId": "dizzys",
-      "title": "John Ellis Heroes Quintet",
-      "date": "2026-07-15",
-      "sets": [
-        "19:00",
-        "21:00"
-      ],
-      "url": "https://ticketing.jazz.org/21133/",
-      "details": null,
-      "personnel": null,
-      "priceText": null
-    },
-    {
-      "id": "nublu:2026-07-15:masta-ace-disposable-arts",
-      "clubId": "nublu",
-      "title": "Masta Ace \"Disposable Arts\"",
-      "date": "2026-07-15",
-      "sets": [
-        "19:00"
-      ],
-      "url": "https://posh.vip/e/masta-ace-disposable-art",
-      "details": null,
-      "personnel": null,
-      "priceText": null
-    },
-    {
       "id": "django:2026-07-15:nir-felder-trio",
       "clubId": "django",
       "title": "Nir Felder Trio",
@@ -1383,19 +1170,6 @@
       "priceText": null
     },
     {
-      "id": "arthurs:2026-07-15:eve-silber",
-      "clubId": "arthurs",
-      "title": "Eve Silber",
-      "date": "2026-07-15",
-      "sets": [
-        "19:00"
-      ],
-      "url": "https://www.arthurstavernnyc.com/performances.html",
-      "details": null,
-      "personnel": null,
-      "priceText": null
-    },
-    {
       "id": "pocket:2026-07-15:veronica-swift",
       "clubId": "pocket",
       "title": "Veronica Swift",
@@ -1407,45 +1181,6 @@
       "url": "https://thepocketnyc.com/event/veronica-swift-home-album-release/",
       "details": null,
       "personnel": null,
-      "priceText": null
-    },
-    {
-      "id": "silvana:2026-07-15:junho-lee",
-      "clubId": "silvana",
-      "title": "Junho Lee",
-      "date": "2026-07-15",
-      "sets": [
-        "19:00"
-      ],
-      "url": "https://silvana-nyc.com/calendar.php",
-      "details": "Jazz Guitarist — Junho Lee is a guitarist based in new york with 10 years of experience. Heavily influenced in Jazz, rock, folk, and mainly guitar music. Has worked professionaly in musical theater, cover bands, wedding bands. Perforemd various venues in NY",
-      "personnel": null,
-      "priceText": null
-    },
-    {
-      "id": "ornithologycafe:2026-07-15:f-lix-lemerle-trio",
-      "clubId": "ornithologycafe",
-      "title": "Félix Lemerle Trio",
-      "date": "2026-07-15",
-      "sets": [
-        "19:30"
-      ],
-      "url": "https://cafeornithology.com/brooklyn-bushwick-williamsburg-cafe-ornithology-events",
-      "details": null,
-      "personnel": [
-        {
-          "name": "Félix Lemerle",
-          "instrument": "guitar"
-        },
-        {
-          "name": "Lee Hudson",
-          "instrument": "bass"
-        },
-        {
-          "name": "Tony Leone",
-          "instrument": "drums"
-        }
-      ],
       "priceText": null
     },
     {
@@ -1490,64 +1225,6 @@
       "priceText": null
     },
     {
-      "id": "mezzrow:2026-07-15:jihee-heo-trio",
-      "clubId": "mezzrow",
-      "title": "Jihee Heo Trio",
-      "date": "2026-07-15",
-      "sets": [
-        "21:00",
-        "22:30"
-      ],
-      "url": "https://www.smallslive.com/events/33035-jihee-heo-trio/",
-      "details": null,
-      "personnel": [
-        {
-          "name": "Jihee Heo",
-          "instrument": "piano"
-        },
-        {
-          "name": "Ahmed McLemore",
-          "instrument": "bass"
-        },
-        {
-          "name": "Chris Beck",
-          "instrument": "drums"
-        }
-      ],
-      "priceText": null
-    },
-    {
-      "id": "smalls:2026-07-15:adam-niewood-quartet",
-      "clubId": "smalls",
-      "title": "Adam Niewood Quartet",
-      "date": "2026-07-15",
-      "sets": [
-        "21:00",
-        "22:30"
-      ],
-      "url": "https://www.smallslive.com/events/33043-adam-niewood-quartet/",
-      "details": null,
-      "personnel": [
-        {
-          "name": "Adam Niewood",
-          "instrument": "tenor sax"
-        },
-        {
-          "name": "Eric Lewis",
-          "instrument": "piano"
-        },
-        {
-          "name": "Sean Conly",
-          "instrument": "bass"
-        },
-        {
-          "name": "Ben Perowsky",
-          "instrument": "drums"
-        }
-      ],
-      "priceText": null
-    },
-    {
       "id": "lunatico:2026-07-15:leo-genovese-vinchuca",
       "clubId": "lunatico",
       "title": "Leo Genovese Vinchuca",
@@ -1575,75 +1252,6 @@
       "priceText": null
     },
     {
-      "id": "closeup:2026-07-15:kevin-oliver-jr-maki-niento-devon-gates-gary-jones-iii",
-      "clubId": "closeup",
-      "title": "KEVIN OLIVER JR. - Maki Niento - Devon Gates - Gary Jones iii",
-      "date": "2026-07-15",
-      "sets": [
-        "21:00"
-      ],
-      "url": "https://www.viewcy.com/event/kevin_oliver_jr",
-      "details": null,
-      "personnel": [
-        {
-          "name": "KEVIN OLIVER JR.",
-          "instrument": "saxophone"
-        },
-        {
-          "name": "Maki Niento",
-          "instrument": "piano"
-        },
-        {
-          "name": "Devon Gates",
-          "instrument": "bass"
-        }
-      ],
-      "priceText": null
-    },
-    {
-      "id": "ornithology:2026-07-15:jazz-dialogue",
-      "clubId": "ornithology",
-      "title": "Jazz Dialogue",
-      "date": "2026-07-15",
-      "sets": [
-        "21:00"
-      ],
-      "url": "https://ornithologyjazzclub.com/brooklyn-bushwick-williamsburg-ornithology-jazz-club-events",
-      "details": null,
-      "personnel": [
-        {
-          "name": "Ben Meigners",
-          "instrument": "bass"
-        },
-        {
-          "name": "Stacy Dillard",
-          "instrument": "tenor sax"
-        },
-        {
-          "name": "Eden Ladin",
-          "instrument": "piano"
-        },
-        {
-          "name": "Brother Ruckus",
-          "instrument": "drums"
-        }
-      ],
-      "priceText": null
-    },
-    {
-      "id": "silvana:2026-07-15:kevin-du-and-connor-sturge-duo",
-      "clubId": "silvana",
-      "title": "Kevin Du and Connor Sturge Duo",
-      "date": "2026-07-15",
-      "sets": [
-        "21:00"
-      ],
-      "url": "https://silvana-nyc.com/calendar.php",
-      "details": "Jazz Fusion — Kevin Du and Connor Sturge are New York-based keyboardist and drummer duo. They create a diverse palette of sounds that come from their jazz background, as well as sonic explorations that feature samples, synthesizers and key bass.",
-      "personnel": null,
-      "priceText": null
-    },
-    {
       "id": "birdland:2026-07-15:stella-cole",
       "clubId": "birdland",
       "title": "Stella Cole",
@@ -1657,45 +1265,6 @@
       "priceText": null
     },
     {
-      "id": "nublu:2026-07-15:fernando-garcia-the-lux-quintet",
-      "clubId": "nublu",
-      "title": "Fernando Garcia & The Lux Quintet",
-      "date": "2026-07-15",
-      "sets": [
-        "22:00"
-      ],
-      "url": "https://posh.vip/e/fernando-garcia-the-lux-quintet-1",
-      "details": null,
-      "personnel": null,
-      "priceText": null
-    },
-    {
-      "id": "arthurs:2026-07-15:alyson-williams-w-arthur-s-house-band",
-      "clubId": "arthurs",
-      "title": "Alyson Williams/w Arthur's House Band",
-      "date": "2026-07-15",
-      "sets": [
-        "22:00"
-      ],
-      "url": "https://www.arthurstavernnyc.com/performances.html",
-      "details": null,
-      "personnel": null,
-      "priceText": null
-    },
-    {
-      "id": "barbes:2026-07-15:mamady-kouyate-s-mandingo-ambassadors",
-      "clubId": "barbes",
-      "title": "Mamady Kouyate's MANDINGO AMBASSADORS",
-      "date": "2026-07-15",
-      "sets": [
-        "22:00"
-      ],
-      "url": "https://www.viewcy.com/event/mamady_kouyates_mand_272",
-      "details": "Mamady Kouyate and his Mandingo Ambassadors. Every Wednesday. Mamady Kouyate is one of Guinea's better known guitarist. The heir to a long line of griots, he was first taught by his father who was one of the first guinean griots to introduce the guitar. Kouyate senior specialized in transcribing tra",
-      "personnel": null,
-      "priceText": null
-    },
-    {
       "id": "django:2026-07-15:high-and-mighty-brass-band",
       "clubId": "django",
       "title": "High and Mighty Brass Band",
@@ -1705,159 +1274,6 @@
         "23:30"
       ],
       "url": "https://www.thedjangonyc.com/events/hiigh-and-mighty-brass-band-7/?selected_date=2026-07-15",
-      "details": null,
-      "personnel": null,
-      "priceText": null
-    },
-    {
-      "id": "jazzcultural:2026-07-15:nick-hempton-organ-band-and-invitational-jam-session",
-      "clubId": "jazzcultural",
-      "title": "Nick Hempton Organ Band and Invitational Jam Session",
-      "date": "2026-07-15",
-      "sets": [
-        "22:30"
-      ],
-      "url": "https://www.smallslive.com/events/33377-nick-hempton-organ-band-and-invitational-jam-session/",
-      "details": "until 12:00 AM",
-      "personnel": [
-        {
-          "name": "Nick Hempton",
-          "instrument": "tenor sax"
-        },
-        {
-          "name": "Kyle Koehler",
-          "instrument": "organ"
-        },
-        {
-          "name": "Charlie Sigler",
-          "instrument": "guitar"
-        },
-        {
-          "name": "Fukushi Tainaka",
-          "instrument": "drums"
-        }
-      ],
-      "priceText": null
-    },
-    {
-      "id": "closeup:2026-07-15:ben-rubie-abe-gold-shogo-yamagishi-ethan-kogan-set-and-sessi",
-      "clubId": "closeup",
-      "title": "BEN RUBIE - Abe Gold - Shogo Yamagishi - Ethan Kogan - Set and Session",
-      "date": "2026-07-15",
-      "sets": [
-        "22:30"
-      ],
-      "url": "https://www.viewcy.com/event/ben_rubie__abe_gold",
-      "details": null,
-      "personnel": [
-        {
-          "name": "PM Session BEN RUBIE",
-          "instrument": "violin"
-        },
-        {
-          "name": "Abe Gold",
-          "instrument": "piano"
-        },
-        {
-          "name": "Shogo Yamagishi",
-          "instrument": "bass"
-        },
-        {
-          "name": "Ethan Kogan",
-          "instrument": "drums"
-        }
-      ],
-      "priceText": null
-    },
-    {
-      "id": "ornithologycafe:2026-07-15:late-night-jam-hosted-by-zachariah-lambert",
-      "clubId": "ornithologycafe",
-      "title": "Late Night Jam Hosted By Zachariah Lambert",
-      "date": "2026-07-15",
-      "sets": [
-        "23:00"
-      ],
-      "url": "https://cafeornithology.com/brooklyn-bushwick-williamsburg-cafe-ornithology-events",
-      "details": null,
-      "personnel": [
-        {
-          "name": "Zachariah Lambert",
-          "instrument": "guitar"
-        },
-        {
-          "name": "Michael Howe",
-          "instrument": "saxophone"
-        },
-        {
-          "name": "Jack Nissen",
-          "instrument": "bass"
-        },
-        {
-          "name": "Evan Wood",
-          "instrument": "drums"
-        }
-      ],
-      "late": true,
-      "priceText": null
-    },
-    {
-      "id": "mezzrow:2026-07-15:vinyl-after-hours",
-      "clubId": "mezzrow",
-      "title": "Vinyl After Hours",
-      "date": "2026-07-15",
-      "sets": [
-        "23:30"
-      ],
-      "url": "https://www.smallslive.com/events/33135-vinyl-after-hours/",
-      "details": "until 12:45 AM",
-      "personnel": null,
-      "late": true,
-      "priceText": null
-    },
-    {
-      "id": "smalls:2026-07-15:jam-session-hosted-by-carlos-abadie-s-latin-jazz-express",
-      "clubId": "smalls",
-      "title": "Jam Session Hosted By Carlos Abadie’s Latin Jazz Express!",
-      "date": "2026-07-15",
-      "sets": [
-        "23:45"
-      ],
-      "url": "https://www.smallslive.com/events/33094-jam-session-hosted-by-carlos-abadies-latin-jazz-express/",
-      "details": "until 4:00 AM",
-      "personnel": [
-        {
-          "name": "Carlos Abadie",
-          "instrument": "trumpet"
-        },
-        {
-          "name": "Matt Knoegel",
-          "instrument": "tenor sax"
-        },
-        {
-          "name": "Manuel Valera",
-          "instrument": "piano"
-        },
-        {
-          "name": "Raul Reyes",
-          "instrument": "bass"
-        },
-        {
-          "name": "Joel Mateo",
-          "instrument": "drums"
-        }
-      ],
-      "late": true,
-      "priceText": null
-    },
-    {
-      "id": "pocket:2026-07-16:closed-for-private-event",
-      "clubId": "pocket",
-      "title": "Closed for Private Event",
-      "date": "2026-07-16",
-      "sets": [
-        "00:00"
-      ],
-      "url": "https://thepocketnyc.com/event/closed-for-private-event/",
       "details": null,
       "personnel": null,
       "priceText": null
@@ -4040,20 +3456,6 @@
       "priceText": null
     },
     {
-      "id": "terraza7:2026-07-18:elisabet-torras-nueva-york-flamenco-city",
-      "clubId": "terraza7",
-      "title": "Elisabet Torras & Nueva York Flamenco City",
-      "date": "2026-07-18",
-      "sets": [
-        "19:30",
-        "21:30"
-      ],
-      "url": "https://www.terraza7.com/events",
-      "details": "Join us for \"Elisabet and NY Flamenco City,\" a vibrant showcase of flamenco's passion. Witness Elisabet's mesmerizing dance as she embodies the spirit of flamenco, accompanied by the rhythms of the city's finest musicians. An evening of fiery dance and soulful music awaits!",
-      "personnel": null,
-      "priceText": null
-    },
-    {
       "id": "bluenote:2026-07-18:ms-lisa-fischer-ft-orrin-evans-trio-with-james-genus-and-mar",
       "clubId": "bluenote",
       "title": "Ms. Lisa Fischer ft. Orrin Evans Trio with James Genus and Mark Whitfield, Jr.",
@@ -4153,6 +3555,20 @@
       ],
       "url": "https://sistasplace.org/reggie-woods-quintet-3/",
       "details": "Doors 7:30 pm",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "terraza7:2026-07-18:elisabet-torras-nueva-york-flamenco-city",
+      "clubId": "terraza7",
+      "title": "Elisabet Torras & Nueva York Flamenco City",
+      "date": "2026-07-18",
+      "sets": [
+        "20:00",
+        "22:00"
+      ],
+      "url": "https://www.terraza7.com/events",
+      "details": "Join us for \"Elisabet and NY Flamenco City,\" a vibrant showcase of flamenco's passion. Witness Elisabet's mesmerizing dance as she embodies the spirit of flamenco, accompanied by the rhythms of the city's finest musicians. An evening of fiery dance and soulful music awaits!",
       "personnel": null,
       "priceText": null
     },
@@ -4868,15 +4284,15 @@
       "priceText": null
     },
     {
-      "id": "silvana:2026-07-19:sariyah-idan",
+      "id": "silvana:2026-07-19:anjali-rose",
       "clubId": "silvana",
-      "title": "Sariyah Idan",
+      "title": "Anjali Rose",
       "date": "2026-07-19",
       "sets": [
         "20:00"
       ],
       "url": "https://silvana-nyc.com/calendar.php",
-      "details": "Acoustic Soul — Sariyah Idan is a New Orleans based acoustic soul singer-songwriter originally from Woodstock NY. Her influences extend into jazz, latin, flamenco, klezmer, reggae, and hip-hop weaving unique sonics while her poetic lyrics address struggle,",
+      "details": "Songwriter — Anjali Rose is a multidisciplinary composer, vocalist, and performance artist whose work lives at the intersection of honesty, experimentation, and spiritual inquiry. Drawing from a lineage of indie rock, Indian classical, folk traditions,",
       "personnel": null,
       "priceText": null
     },
@@ -4967,6 +4383,19 @@
       ],
       "url": "https://www.barlunatico.com/calendar/2026/7/19/tal-yahalom-x-tom-oren-wspecial-guest-wayne-tucker",
       "details": "LunÀtico warmly welcomes this special fresh musical collaboration between guitarist Tal Yahalom and pianist Tom Oren - two virtuosos exploring original compositions, Brazilian music and jazz repertoire with special guest trumpeter Wayne Tucker adding his unique fire and lyricism to the mix. Join us!",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "silvana:2026-07-19:sariyah-idan",
+      "clubId": "silvana",
+      "title": "Sariyah Idan",
+      "date": "2026-07-19",
+      "sets": [
+        "21:00"
+      ],
+      "url": "https://silvana-nyc.com/calendar.php",
+      "details": "Acoustic Soul — Sariyah Idan is a New Orleans based acoustic soul singer-songwriter originally from Woodstock NY. Her influences extend into jazz, latin, flamenco, klezmer, reggae, and hip-hop weaving unique sonics while her poetic lyrics address struggle,",
       "personnel": null,
       "priceText": null
     },
@@ -7463,6 +6892,19 @@
       ],
       "url": "https://www.barbayeux.com/jazz/z63pt232xlmbzmm-lf3tb-5yewh-m6x68-p26t7-nldmr-r7jah-cs8kl-fsgfe-4k7be-mrn73-tlf9t-4ncdr-rheb4-y9mwa-hlsr5-5p4hn-9mn2k-tg8s9-5ampf-mb7ch-3pbw6-a4wfm-z2jjd-em2ra-nal2n-j4ppt-jse6l-ebhae-g2tp6",
       "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "silvana:2026-07-23:steven-blane",
+      "clubId": "silvana",
+      "title": "Steven Blane",
+      "date": "2026-07-23",
+      "sets": [
+        "20:00"
+      ],
+      "url": "https://silvana-nyc.com/calendar.php",
+      "details": "Jazz — Steven Blane | A dynamic vocalist, songwriter, and rabbi who fuses jazz, folk, and pop. Founder of Sim Shalom and JSLI, he shares soulful stories through music, faith, and his love for New York.",
       "personnel": null,
       "priceText": null
     },
@@ -10775,6 +10217,19 @@
       "priceText": null
     },
     {
+      "id": "shrine:2026-07-28:jess-ramone-quartet-jazz-rnb",
+      "clubId": "shrine",
+      "title": "Jess Ramone Quartet: Jazz / RnB",
+      "date": "2026-07-28",
+      "sets": [
+        "19:00"
+      ],
+      "url": "https://shrinenyc.com/calendar.php",
+      "details": "Jess is a Brooklyn native with soul and RnB roots currently immersed in traditional jazz. Her bands sound and energy is captivating and full of life.",
+      "personnel": null,
+      "priceText": null
+    },
+    {
       "id": "ornithologycafe:2026-07-28:bass-on-top-series",
       "clubId": "ornithologycafe",
       "title": "Bass On Top Series",
@@ -11808,6 +11263,19 @@
         }
       ],
       "late": true,
+      "priceText": null
+    },
+    {
+      "id": "pocket:2026-07-30:closed-for-private-event",
+      "clubId": "pocket",
+      "title": "Closed for Private Event",
+      "date": "2026-07-30",
+      "sets": [
+        "00:00"
+      ],
+      "url": "https://thepocketnyc.com/event/losed-for-private-event-7-30-26/",
+      "details": null,
+      "personnel": null,
       "priceText": null
     },
     {
@@ -15598,6 +15066,19 @@
       "priceText": null
     },
     {
+      "id": "arthurs:2026-08-05:eve-silber",
+      "clubId": "arthurs",
+      "title": "Eve Silber",
+      "date": "2026-08-05",
+      "sets": [
+        "19:00"
+      ],
+      "url": "https://www.arthurstavernnyc.com/performances.html",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
       "id": "closeup:2026-08-05:tim-watson-dion-kerr-craig-weinrib",
       "clubId": "closeup",
       "title": "TIM WATSON - Dion Kerr - Craig Weinrib",
@@ -15811,6 +15292,19 @@
       ],
       "url": "https://www.smallslive.com/events/33581-jam-in-the-cafe/",
       "details": "until 12:00 AM",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "arthurs:2026-08-05:alyson-williams-w-arthur-s-house-band",
+      "clubId": "arthurs",
+      "title": "Alyson Williams/w Arthur's House Band",
+      "date": "2026-08-05",
+      "sets": [
+        "22:00"
+      ],
+      "url": "https://www.arthurstavernnyc.com/performances.html",
+      "details": null,
       "personnel": null,
       "priceText": null
     },
@@ -16222,6 +15716,19 @@
       ],
       "url": "https://www.barbayeux.com/jazz/ddgdt9jhczp92g6-6ct2g",
       "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "silvana:2026-08-06:steven-blane",
+      "clubId": "silvana",
+      "title": "Steven Blane",
+      "date": "2026-08-06",
+      "sets": [
+        "20:00"
+      ],
+      "url": "https://silvana-nyc.com/calendar.php",
+      "details": "Jazz — Steven Blane | A dynamic vocalist, songwriter, and rabbi who fuses jazz, folk, and pop. Founder of Sim Shalom and JSLI, he shares soulful stories through music, faith, and his love for New York.",
       "personnel": null,
       "priceText": null
     },
@@ -17685,6 +17192,20 @@
       "priceText": null
     },
     {
+      "id": "pocket:2026-08-09:the-django-festival-all-stars",
+      "clubId": "pocket",
+      "title": "The Django Festival All-Stars",
+      "date": "2026-08-09",
+      "sets": [
+        "19:00",
+        "21:00"
+      ],
+      "url": "https://thepocketnyc.com/event/the-django-festival-all-stars/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
       "id": "closeup:2026-08-09:nathan-reising-sarah-rossy-lex-korten-noam-tanzer-evan-hyde",
       "clubId": "closeup",
       "title": "NATHAN REISING - Sarah Rossy - Lex Korten - Noam Tanzer - Evan Hyde",
@@ -17957,6 +17478,25 @@
       "priceText": "$35"
     },
     {
+      "id": "mezzrow:2026-08-10:spike-wilner-trio",
+      "clubId": "mezzrow",
+      "title": "Spike Wilner Trio",
+      "date": "2026-08-10",
+      "sets": [
+        "18:00",
+        "19:30"
+      ],
+      "url": "https://www.smallslive.com/events/33506-spike-wilner-trio/",
+      "details": null,
+      "personnel": [
+        {
+          "name": "Spike Wilner",
+          "instrument": "piano"
+        }
+      ],
+      "priceText": null
+    },
+    {
       "id": "smalls:2026-08-10:jerome-jennings-quartet",
       "clubId": "smalls",
       "title": "Jerome Jennings Quartet",
@@ -18127,6 +17667,33 @@
       "url": "https://www.bluenotejazz.com/nyc/tm-event/brandon-woodys-upendo/",
       "details": "Blue Note Jazz Club",
       "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "mezzrow:2026-08-10:jesse-green-trio",
+      "clubId": "mezzrow",
+      "title": "Jesse Green Trio",
+      "date": "2026-08-10",
+      "sets": [
+        "21:00",
+        "22:30"
+      ],
+      "url": "https://www.smallslive.com/events/33507-jesse-green-trio/",
+      "details": null,
+      "personnel": [
+        {
+          "name": "Jesse Green",
+          "instrument": "piano"
+        },
+        {
+          "name": "Gene Perla",
+          "instrument": "bass"
+        },
+        {
+          "name": "Bruce Cox",
+          "instrument": "drums"
+        }
+      ],
       "priceText": null
     },
     {
@@ -20902,6 +20469,25 @@
       "priceText": "$35"
     },
     {
+      "id": "smalls:2026-08-17:eliot-zigmund-quintet",
+      "clubId": "smalls",
+      "title": "Eliot Zigmund Quintet",
+      "date": "2026-08-17",
+      "sets": [
+        "18:00",
+        "19:30"
+      ],
+      "url": "https://www.smallslive.com/events/33349-eliot-zigmund-quintet/",
+      "details": null,
+      "personnel": [
+        {
+          "name": "Eliot Zigmund",
+          "instrument": "drums"
+        }
+      ],
+      "priceText": null
+    },
+    {
       "id": "jazzcultural:2026-08-17:paul-bollenback-quartet",
       "clubId": "jazzcultural",
       "title": "Paul Bollenback Quartet",
@@ -21027,6 +20613,25 @@
       "url": "https://www.bluenotejazz.com/nyc/tm-event/simon-phillips-protocol-v/",
       "details": "Blue Note Jazz Club",
       "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "mezzrow:2026-08-17:pasquale-grasso-trio",
+      "clubId": "mezzrow",
+      "title": "Pasquale Grasso Trio",
+      "date": "2026-08-17",
+      "sets": [
+        "21:00",
+        "22:30"
+      ],
+      "url": "https://www.smallslive.com/events/33386-pasquale-grasso-trio/",
+      "details": null,
+      "personnel": [
+        {
+          "name": "Pasquale Grasso",
+          "instrument": "guitar"
+        }
+      ],
       "priceText": null
     },
     {
@@ -23670,6 +23275,10 @@
         {
           "name": "Deric Dickens",
           "instrument": "drums"
+        },
+        {
+          "name": "Elijah J. Thomas",
+          "instrument": "flutes"
         }
       ],
       "priceText": null
@@ -23714,6 +23323,25 @@
       "url": "https://www.bluenotejazz.com/nyc/tm-event/stephan-moccio/",
       "details": "Blue Note Jazz Club",
       "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "smalls:2026-08-24:mike-ledonne-quartet",
+      "clubId": "smalls",
+      "title": "Mike Ledonne Quartet",
+      "date": "2026-08-24",
+      "sets": [
+        "21:00",
+        "22:30"
+      ],
+      "url": "https://www.smallslive.com/events/33360-mike-ledonne-quartet/",
+      "details": null,
+      "personnel": [
+        {
+          "name": "Mike Ledonne",
+          "instrument": "piano"
+        }
+      ],
       "priceText": null
     },
     {
@@ -26839,7 +26467,7 @@
     {
       "id": "nublu:2026-09-09:jon-madof-trio-tzadik-records-album-release-the-modulators-g",
       "clubId": "nublu",
-      "title": "Jon Madof Trio - Tzadik Records Album Release, The Modulators & Golem SPONSORS AND PARTNER",
+      "title": "Jon Madof Trio - Tzadik Records Album Release, The Modulators & Golem",
       "date": "2026-09-09",
       "sets": [
         "19:00"
@@ -27983,6 +27611,19 @@
         "21:00"
       ],
       "url": "https://ticketing.jazz.org/21344/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "nublu:2026-09-30:anthony-hervey-yellow-couch-music-ajile-sponsors-and-partner",
+      "clubId": "nublu",
+      "title": "Anthony Hervey, Yellow Couch Music, Ajile SPONSORS AND PARTNERS Home Club Label Program Mu",
+      "date": "2026-09-30",
+      "sets": [
+        "19:00"
+      ],
+      "url": "https://posh.vip/e/anthony-hervey-yellow-couch-music-ajile",
       "details": null,
       "personnel": null,
       "priceText": null
