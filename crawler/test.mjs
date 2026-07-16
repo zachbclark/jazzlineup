@@ -1648,19 +1648,25 @@ ok('jazzcafe: jazz genre kept, club nights and soul dropped, line-up to details'
 
 // --- PizzaExpress Live (JSON API, Soho filter) ----------------------------------------------
 import { parse as pxParse } from './clubs/pizzaexpresslive.js';
-ok('pizzaexpress: Soho only, showtime + price parse', () => {
-  const fixture = JSON.stringify({ results: [
-    { name: 'Jay Rayner Sextet', eventDate: '2026-07-16T00:00:00', showStartTime: '8:00PM',
-      doorsOpenTime: '6:30PM', price: 35, slug: 'jay-rayner-sextet-16-07', location: 'PizzaExpress Live - Soho' },
-    { name: 'Olivia Leisk', eventDate: '2026-07-16T00:00:00', showStartTime: '7:30PM',
-      price: 0, slug: 'olivia-leisk', location: 'Piano Lounge - Leicester Square' },
-  ] });
-  const evs = pxParse(fixture);
-  assert.equal(evs.length, 1, 'non-Soho rooms filtered');
-  assert.equal(evs[0].title, 'Jay Rayner Sextet');
+ok('pizzaexpress: real payload shapes — prose dates, pence prices, bare-city locations', () => {
+  const fixture = JSON.stringify([
+    { name: 'Jazz Up the 80s with the Jay Rayner Sextet', eventDate: 'Thursday 16th July',
+      showStartTime: '8:00PM', doorsOpenTime: '6:30PM', price: 3500,
+      slug: 'jazz-up-the-80s-with-the-jay-rayner-sextet-5', location: 'Soho' },
+    { name: 'Olivia Leisk', eventDate: 'Thursday 16th July', showStartTime: '7:30PM',
+      price: 0, slug: 'olivia-leisk', location: 'Leicester Square' },
+    { name: 'Late Set', eventDate: 'Friday 1st August', showStartTime: '9:30PM',
+      price: 2250, slug: 'late-set', location: 'Soho' },
+  ]);
+  const evs = pxParse(fixture, new Date(2026, 6, 13));
+  assert.equal(evs.length, 2, 'non-Soho rooms filtered');
+  assert.equal(evs[0].title, 'Jazz Up the 80s with the Jay Rayner Sextet');
+  assert.equal(evs[0].date, '2026-07-16');
   assert.deepEqual(evs[0].sets, ['20:00']);
   assert.equal(evs[0].priceText, '£35');
-  assert.match(evs[0].url, /pizzaexpresslive\.com\/whats-on\/jay-rayner/);
+  assert.equal(evs[1].date, '2026-08-01'); // ordinal + year inference
+  assert.equal(evs[1].priceText, '£22.50'); // pence with remainder
+  assert.match(evs[0].url, /pizzaexpresslive\.com\/whats-on\/jazz-up-the-80s/);
 });
 
 // --- Cafe OTO (event links + date headers) ---------------------------------------------------
@@ -1728,4 +1734,47 @@ ok('london seeds: valid shapes, sane sizes', () => {
   assert.ok(jcSeed.every((e) => e.title && /^\d{4}-\d{2}-\d{2}$/.test(e.date) && e.url));
   assert.ok(rsSeed.some((r) => /kenny barron/i.test(r[1])), 'sanity: Kenny Barron in the Ronnie’s seed');
   assert.ok(jcSeed.some((e) => /immanuel wilkins/i.test(e.title)), 'sanity: Wilkins in the Jazz Cafe seed');
+});
+
+// --- Shared detail enrichment (2026-07-16: "personnel is very important") -------------
+import { enrichFromDetailPages } from './clubs/_enrichdetails.js';
+import { personnelFromLines } from './lib.js';
+ok('enrich: reuses prior crawl by id, fetches only whats missing, never overwrites', async () => {
+  const events = [
+    { id: 'pocket:2026-07-20:a', date: '2026-07-20', url: 'https://x/a', personnel: null },
+    { id: 'pocket:2026-07-21:b', date: '2026-07-21', url: 'https://x/b', personnel: null },
+    { id: 'pocket:2026-07-22:c', date: '2026-07-22', url: 'https://x/c',
+      personnel: [{ name: 'Already Here', instrument: 'piano' }] },
+  ];
+  const ctx = { previousEvents: [
+    { id: 'pocket:2026-07-20:a', personnel: [{ name: 'From Last Crawl', instrument: 'bass' }] },
+  ] };
+  const fetched = [];
+  const fetchImpl = async (url) => {
+    fetched.push(url);
+    return 'Immanuel Wilkins - saxophone\nMicah Thomas - piano\nRyoma Takenaga - bass\nTyshawn Sorey - drums';
+  };
+  await enrichFromDetailPages(events, ctx, {
+    fields: ['personnel'],
+    extract: (html) => ({ personnel: personnelFromLines(html) }),
+    fetchImpl,
+  });
+  assert.deepEqual(fetched, ['https://x/b'], 'only the truly-missing event fetches');
+  assert.equal(events[0].personnel[0].name, 'From Last Crawl', 'reused from prior crawl');
+  assert.equal(events[1].personnel.length, 4, 'fetched roster parsed');
+  assert.equal(events[1].personnel[3].name, 'Tyshawn Sorey');
+  assert.equal(events[2].personnel[0].name, 'Already Here', 'existing personnel untouched');
+});
+
+// --- 606 detail extraction ---------------------------------------------------------------
+import { parseDetail as sixDetail } from './clubs/club606.js';
+ok('club606: detail page yields music charge + description', () => {
+  const html = `<div><h1>PHIL MULFORD'S 'THUNDERTHUMBS'</h1><p>MONDAY 13TH JULY 2026 - 8:00 PM</p>
+  <p>MUSIC CHARGE: £20.00</p><a>BOOK NOW</a>
+  <p>Join us to celebrate the great Soul and Funk songs with Thunderthumbs, the 10-piece band led by bassist Phil Mulford.</p>
+  <p>BACK TO CALENDAR</p></div>`;
+  const d = sixDetail(html);
+  assert.equal(d.priceText, '£20.00');
+  assert.match(d.details, /10-piece band led by bassist/);
+  assert.deepEqual(d.personnel, []);
 });

@@ -9,4 +9,4 @@ export function parse(html) {
   return parseSimpleEvents(html, 'pocket');
 }
 
-export const crawl = makeSimpleEventsCrawler({ clubId: 'pocket', base: BASE, tzDateFn: nyDate });
+export const crawl = makeSimpleEventsCrawler({ clubId: 'pocket', base: BASE, tzDateFn: nyDate , enrichPersonnel: true });

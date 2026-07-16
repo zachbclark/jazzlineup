@@ -6,10 +6,25 @@
 // All jazz — no filter.
 import {
   fetchText, makeEvent, applyLateNight, normalizeTime, monthNum, inferYear,
-  isoDate, htmlToText, cleanText, sleep,
+  isoDate, htmlToText, cleanText, sleep, personnelFromLines, stripPromo,
 } from '../lib.js';
+import { enrichFromDetailPages } from './_enrichdetails.js';
 
 const BASE = 'https://www.606club.co.uk';
+
+// Detail pages carry the music charge and a real description (and
+// occasionally a roster): "MUSIC CHARGE: £20.00 … Join us to celebrate…"
+export function parseDetail(html) {
+  const txt = htmlToText(html);
+  const price = (txt.match(/MUSIC CHARGE:\s*(£[\d.]+)/i) ?? [])[1] ?? null;
+  const after = txt.split(/BOOK NOW/i)[1] ?? '';
+  const details = stripPromo(after).split(/BACK TO CALENDAR|SIGN UP/i)[0].trim().slice(0, 300) || null;
+  return {
+    priceText: price,
+    details,
+    personnel: personnelFromLines(txt),
+  };
+}
 
 export function parse(html, today = new Date()) {
   const events = [];
@@ -56,5 +71,10 @@ export async function crawl(ctx = {}) {
     }
     await sleep(300);
   }
+  await enrichFromDetailPages(out, ctx, {
+    fields: ['priceText', 'details', 'personnel'],
+    extract: parseDetail,
+    maxPages: 20,
+  });
   return out;
 }

@@ -7,7 +7,8 @@
 //       <time datetime="19:00">7:00 pm</time>
 //       <h3 class="…calendar-event-title"><a href="…/event/slug/?se-date=NN">Title</a>
 // Desktop + mobile render the same day twice — de-dupe by (date, title).
-import { fetchText, makeEvent, htmlToText } from '../lib.js';
+import { fetchText, makeEvent, htmlToText, personnelFromLines } from '../lib.js';
+import { enrichFromDetailPages } from './_enrichdetails.js';
 
 export function parseSimpleEvents(html, clubId) {
   const drafts = new Map(); // `${date}:${title}` -> { …, sets:Set }
@@ -30,8 +31,8 @@ export function parseSimpleEvents(html, clubId) {
   return [...drafts.values()].map((dr) => makeEvent({ ...dr, sets: [...dr.sets] }));
 }
 
-export function makeSimpleEventsCrawler({ clubId, base, tzDateFn, monthsAhead = 2 }) {
-  return async function crawl() {
+export function makeSimpleEventsCrawler({ clubId, base, tzDateFn, monthsAhead = 2, enrichPersonnel = false }) {
+  return async function crawl(ctx = {}) {
     const out = [];
     const [y, m] = tzDateFn(Date.now()).split('-').map(Number);
     for (let i = 0; i < monthsAhead; i++) {
@@ -47,6 +48,15 @@ export function makeSimpleEventsCrawler({ clubId, base, tzDateFn, monthsAhead = 
       } catch (err) {
         if (i === 0) throw err; // current month must work
       }
+    }
+    if (enrichPersonnel) {
+      // event pages list the band one player per line ("Immanuel Wilkins —
+      // saxophone"); personnelFromLines is strict enough to run on the
+      // whole page text without inventing players from prose
+      await enrichFromDetailPages(out, ctx, {
+        fields: ['personnel'],
+        extract: (html) => ({ personnel: personnelFromLines(htmlToText(html)) }),
+      });
     }
     return out;
   };

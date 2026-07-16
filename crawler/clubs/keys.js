@@ -11,4 +11,4 @@ export function parse(html) {
   return parseSimpleEvents(html, 'keys');
 }
 
-export const crawl = makeSimpleEventsCrawler({ clubId: 'keys', base: BASE, tzDateFn: laDate });
+export const crawl = makeSimpleEventsCrawler({ clubId: 'keys', base: BASE, tzDateFn: laDate , enrichPersonnel: true });

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-16T16:39:03.424Z",
+  "generatedAt": "2026-07-16T20:49:09.704Z",
   "city": "nyc",
   "clubs": [
     {
@@ -377,7 +377,56 @@
       ],
       "url": "https://thepocketnyc.com/event/mingus-big-band-4/",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Dr. Alexander Norris",
+          "instrument": "trumpet"
+        },
+        {
+          "name": "Jeremy Pelt",
+          "instrument": "trumpet"
+        },
+        {
+          "name": "Philip Harper",
+          "instrument": "trumpet"
+        },
+        {
+          "name": "Brandon Wright",
+          "instrument": "alto sax"
+        },
+        {
+          "name": "Sarah Hanahan",
+          "instrument": "alto sax"
+        },
+        {
+          "name": "Wayne Escoffery",
+          "instrument": "tenor sax"
+        },
+        {
+          "name": "Craig Handy",
+          "instrument": "tenor sax"
+        },
+        {
+          "name": "Joe Fiedler",
+          "instrument": "trombone"
+        },
+        {
+          "name": "Dave Taylor",
+          "instrument": "bass trombone"
+        },
+        {
+          "name": "David Kikoski",
+          "instrument": "piano"
+        },
+        {
+          "name": "Boris Kozlov",
+          "instrument": "bass"
+        },
+        {
+          "name": "Donald Edwards",
+          "instrument": "drums"
+        }
+      ],
       "priceText": null
     },
     {
@@ -391,7 +440,80 @@
       ],
       "url": "https://thepocketnyc.com/event/arturo-ofarrill-the-afro-latin-jazz-orchestra-4/",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Jasper Dutz",
+          "instrument": "alto sax"
+        },
+        {
+          "name": "Sun Yoo",
+          "instrument": "alto sax"
+        },
+        {
+          "name": "Ivan Renta",
+          "instrument": "tenor sax"
+        },
+        {
+          "name": "Berta Moreno",
+          "instrument": "tenor sax"
+        },
+        {
+          "name": "Larry Bustamante",
+          "instrument": "tenor sax"
+        },
+        {
+          "name": "Seneca Black",
+          "instrument": "trumpet"
+        },
+        {
+          "name": "Jim Seeley",
+          "instrument": "trumpet"
+        },
+        {
+          "name": "Allison Philips",
+          "instrument": "trumpet"
+        },
+        {
+          "name": "Miles Keingstein",
+          "instrument": "trumpet"
+        },
+        {
+          "name": "Jasim Perales",
+          "instrument": "trombone"
+        },
+        {
+          "name": "Rafi Malkiel",
+          "instrument": "trombone"
+        },
+        {
+          "name": "Juanga Lakunza",
+          "instrument": "trombone"
+        },
+        {
+          "name": "Earl McIntyre",
+          "instrument": "bass trombone"
+        },
+        {
+          "name": "Arturo O’Farrill",
+          "instrument": "piano"
+        },
+        {
+          "name": "Raúl Reyes",
+          "instrument": "bass"
+        },
+        {
+          "name": "Vince Cherico",
+          "instrument": "drums"
+        },
+        {
+          "name": "Zack O’Farrill",
+          "instrument": "drums"
+        },
+        {
+          "name": "Carlos Maldonado",
+          "instrument": "percussion"
+        }
+      ],
       "priceText": null
     },
     {
@@ -418,7 +540,24 @@
       ],
       "url": "https://thepocketnyc.com/event/immanuel-wilkins-quartet/",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Immanuel Wilkins",
+          "instrument": "saxophone"
+        },
+        {
+          "name": "Micah Thomas",
+          "instrument": "piano"
+        },
+        {
+          "name": "Ryoma Takenaga",
+          "instrument": "bass"
+        },
+        {
+          "name": "Tyshawn Sorey",
+          "instrument": "drums"
+        }
+      ],
       "priceText": null
     },
     {
@@ -459,7 +598,24 @@
       ],
       "url": "https://thepocketnyc.com/event/immanuel-wilkins-quartet/",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Immanuel Wilkins",
+          "instrument": "saxophone"
+        },
+        {
+          "name": "Micah Thomas",
+          "instrument": "piano"
+        },
+        {
+          "name": "Ryoma Takenaga",
+          "instrument": "bass"
+        },
+        {
+          "name": "Tyshawn Sorey",
+          "instrument": "drums"
+        }
+      ],
       "priceText": null
     },
     {
@@ -553,7 +709,20 @@
       ],
       "url": "https://thepocketnyc.com/event/benny-green-trio/",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Benny Green",
+          "instrument": "piano"
+        },
+        {
+          "name": "Dezron Douglas",
+          "instrument": "bass"
+        },
+        {
+          "name": "Carl Allen",
+          "instrument": "drums"
+        }
+      ],
       "priceText": null
     },
     {
@@ -620,7 +789,20 @@
       ],
       "url": "https://thepocketnyc.com/event/benny-green-trio/",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Benny Green",
+          "instrument": "piano"
+        },
+        {
+          "name": "Dezron Douglas",
+          "instrument": "bass"
+        },
+        {
+          "name": "Carl Allen",
+          "instrument": "drums"
+        }
+      ],
       "priceText": null
     },
     {
@@ -689,7 +871,80 @@
       ],
       "url": "https://thepocketnyc.com/event/arturo-ofarrill-the-afro-latin-jazz-orchestra-5/",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Jasper Dutz",
+          "instrument": "alto sax"
+        },
+        {
+          "name": "Sun Yoo",
+          "instrument": "alto sax"
+        },
+        {
+          "name": "Ivan Renta",
+          "instrument": "tenor sax"
+        },
+        {
+          "name": "Berta Moreno",
+          "instrument": "tenor sax"
+        },
+        {
+          "name": "Larry Bustamante",
+          "instrument": "tenor sax"
+        },
+        {
+          "name": "Seneca Black",
+          "instrument": "trumpet"
+        },
+        {
+          "name": "Jim Seeley",
+          "instrument": "trumpet"
+        },
+        {
+          "name": "Allison Philips",
+          "instrument": "trumpet"
+        },
+        {
+          "name": "Miles Keingstein",
+          "instrument": "trumpet"
+        },
+        {
+          "name": "Jasim Perales",
+          "instrument": "trombone"
+        },
+        {
+          "name": "Rafi Malkiel",
+          "instrument": "trombone"
+        },
+        {
+          "name": "Juanga Lakunza",
+          "instrument": "trombone"
+        },
+        {
+          "name": "Earl McIntyre",
+          "instrument": "bass trombone"
+        },
+        {
+          "name": "Arturo O’Farrill",
+          "instrument": "piano"
+        },
+        {
+          "name": "Raúl Reyes",
+          "instrument": "bass"
+        },
+        {
+          "name": "Vince Cherico",
+          "instrument": "drums"
+        },
+        {
+          "name": "Zack O’Farrill",
+          "instrument": "drums"
+        },
+        {
+          "name": "Carlos Maldonado",
+          "instrument": "percussion"
+        }
+      ],
       "priceText": null
     },
     {
@@ -730,7 +985,24 @@
       ],
       "url": "https://thepocketnyc.com/event/donny-mccaslin/",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Donny McCaslin",
+          "instrument": "sax"
+        },
+        {
+          "name": "Jason Lindner",
+          "instrument": "keyboards"
+        },
+        {
+          "name": "Jonathan Maron",
+          "instrument": "bass"
+        },
+        {
+          "name": "Nate Wood",
+          "instrument": "drums"
+        }
+      ],
       "priceText": null
     },
     {
@@ -812,7 +1084,24 @@
       ],
       "url": "https://thepocketnyc.com/event/donald-harrison/",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Donald Harrison",
+          "instrument": "saxophone"
+        },
+        {
+          "name": "Dan Kaufman",
+          "instrument": "piano"
+        },
+        {
+          "name": "Nori Naraoka",
+          "instrument": "bass"
+        },
+        {
+          "name": "Brian Richburg",
+          "instrument": "drums"
+        }
+      ],
       "priceText": null
     },
     {
@@ -867,7 +1156,24 @@
       ],
       "url": "https://thepocketnyc.com/event/donald-harrison/",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Donald Harrison",
+          "instrument": "saxophone"
+        },
+        {
+          "name": "Dan Kaufman",
+          "instrument": "piano"
+        },
+        {
+          "name": "Nori Naraoka",
+          "instrument": "bass"
+        },
+        {
+          "name": "Brian Richburg",
+          "instrument": "drums"
+        }
+      ],
       "priceText": null
     },
     {
@@ -1030,7 +1336,80 @@
       ],
       "url": "https://thepocketnyc.com/event/arturo-ofarrill-the-afro-latin-jazz-orchestra-6/",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Jasper Dutz",
+          "instrument": "alto sax"
+        },
+        {
+          "name": "Sun Yoo",
+          "instrument": "alto sax"
+        },
+        {
+          "name": "Ivan Renta",
+          "instrument": "tenor sax"
+        },
+        {
+          "name": "Berta Moreno",
+          "instrument": "tenor sax"
+        },
+        {
+          "name": "Larry Bustamante",
+          "instrument": "tenor sax"
+        },
+        {
+          "name": "Seneca Black",
+          "instrument": "trumpet"
+        },
+        {
+          "name": "Jim Seeley",
+          "instrument": "trumpet"
+        },
+        {
+          "name": "Allison Philips",
+          "instrument": "trumpet"
+        },
+        {
+          "name": "Miles Keingstein",
+          "instrument": "trumpet"
+        },
+        {
+          "name": "Jasim Perales",
+          "instrument": "trombone"
+        },
+        {
+          "name": "Rafi Malkiel",
+          "instrument": "trombone"
+        },
+        {
+          "name": "Juanga Lakunza",
+          "instrument": "trombone"
+        },
+        {
+          "name": "Earl McIntyre",
+          "instrument": "bass trombone"
+        },
+        {
+          "name": "Arturo O’Farrill",
+          "instrument": "piano"
+        },
+        {
+          "name": "Raúl Reyes",
+          "instrument": "bass"
+        },
+        {
+          "name": "Vince Cherico",
+          "instrument": "drums"
+        },
+        {
+          "name": "Zack O’Farrill",
+          "instrument": "drums"
+        },
+        {
+          "name": "Carlos Maldonado",
+          "instrument": "percussion"
+        }
+      ],
       "priceText": null
     },
     {
@@ -1597,20 +1976,6 @@
       "priceText": null
     },
     {
-      "id": "pocket:2026-07-16:veronica-swift",
-      "clubId": "pocket",
-      "title": "Veronica Swift",
-      "date": "2026-07-16",
-      "sets": [
-        "19:00",
-        "21:00"
-      ],
-      "url": "https://thepocketnyc.com/event/veronica-swift-home-album-release/",
-      "details": null,
-      "personnel": null,
-      "priceText": null
-    },
-    {
       "id": "barbes:2026-07-16:the-pre-war-ponies",
       "clubId": "barbes",
       "title": "THE PRE-WAR PONIES",
@@ -1650,6 +2015,20 @@
       ],
       "url": "https://silvana-nyc.com/calendar.php",
       "details": "Latin / Jazz / Bluegrass Duo — A multi genre guitar and violin duo based in New York City with a sound that is a unique blend of jazz, Latin Fusion, ragtime and bluegrass.",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "pocket:2026-07-16:veronica-swift",
+      "clubId": "pocket",
+      "title": "Veronica Swift",
+      "date": "2026-07-16",
+      "sets": [
+        "19:00",
+        "21:00"
+      ],
+      "url": "https://thepocketnyc.com/event/veronica-swift-home-album-release/",
+      "details": null,
       "personnel": null,
       "priceText": null
     },
@@ -2478,20 +2857,6 @@
       "priceText": null
     },
     {
-      "id": "pocket:2026-07-17:george-coleman",
-      "clubId": "pocket",
-      "title": "George Coleman",
-      "date": "2026-07-17",
-      "sets": [
-        "19:00",
-        "21:00"
-      ],
-      "url": "https://thepocketnyc.com/event/george-coleman/",
-      "details": null,
-      "personnel": null,
-      "priceText": null
-    },
-    {
       "id": "billsplace:2026-07-17:bill-saxton-the-harlem-all-stars",
       "clubId": "billsplace",
       "title": "Bill Saxton & the Harlem All-Stars",
@@ -2521,6 +2886,41 @@
       "url": "https://silvana-nyc.com/calendar.php",
       "details": "Blues / Rock — Spiros Soukis is a guitarist, singer, and songwriter whose roots run from Athens to New York. Growing up with the sound of British blues and the great American players, he shaped a style that mixes blues, rock, and the spirit of the ’60s an",
       "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "pocket:2026-07-17:george-coleman",
+      "clubId": "pocket",
+      "title": "George Coleman",
+      "date": "2026-07-17",
+      "sets": [
+        "19:00",
+        "21:00"
+      ],
+      "url": "https://thepocketnyc.com/event/george-coleman/",
+      "details": null,
+      "personnel": [
+        {
+          "name": "George Coleman",
+          "instrument": "tenor sax"
+        },
+        {
+          "name": "Peter Bernstein",
+          "instrument": "guitar"
+        },
+        {
+          "name": "Steve Myerson",
+          "instrument": "piano"
+        },
+        {
+          "name": "Jon Webber",
+          "instrument": "bass"
+        },
+        {
+          "name": "George Coleman Jr.",
+          "instrument": "drums"
+        }
+      ],
       "priceText": null
     },
     {
@@ -3379,20 +3779,6 @@
       "priceText": null
     },
     {
-      "id": "pocket:2026-07-18:george-coleman",
-      "clubId": "pocket",
-      "title": "George Coleman",
-      "date": "2026-07-18",
-      "sets": [
-        "19:00",
-        "21:00"
-      ],
-      "url": "https://thepocketnyc.com/event/george-coleman/",
-      "details": null,
-      "personnel": null,
-      "priceText": null
-    },
-    {
       "id": "billsplace:2026-07-18:bill-saxton-the-harlem-all-stars",
       "clubId": "billsplace",
       "title": "Bill Saxton & the Harlem All-Stars",
@@ -3407,6 +3793,41 @@
         {
           "name": "Bill Saxton",
           "instrument": "tenor sax"
+        }
+      ],
+      "priceText": null
+    },
+    {
+      "id": "pocket:2026-07-18:george-coleman",
+      "clubId": "pocket",
+      "title": "George Coleman",
+      "date": "2026-07-18",
+      "sets": [
+        "19:00",
+        "21:00"
+      ],
+      "url": "https://thepocketnyc.com/event/george-coleman/",
+      "details": null,
+      "personnel": [
+        {
+          "name": "George Coleman",
+          "instrument": "tenor sax"
+        },
+        {
+          "name": "Peter Bernstein",
+          "instrument": "guitar"
+        },
+        {
+          "name": "Steve Myerson",
+          "instrument": "piano"
+        },
+        {
+          "name": "Jon Webber",
+          "instrument": "bass"
+        },
+        {
+          "name": "George Coleman Jr.",
+          "instrument": "drums"
         }
       ],
       "priceText": null
@@ -4222,7 +4643,28 @@
       ],
       "url": "https://thepocketnyc.com/event/george-coleman/",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "George Coleman",
+          "instrument": "tenor sax"
+        },
+        {
+          "name": "Peter Bernstein",
+          "instrument": "guitar"
+        },
+        {
+          "name": "Steve Myerson",
+          "instrument": "piano"
+        },
+        {
+          "name": "Jon Webber",
+          "instrument": "bass"
+        },
+        {
+          "name": "George Coleman Jr.",
+          "instrument": "drums"
+        }
+      ],
       "priceText": null
     },
     {
@@ -4799,20 +5241,6 @@
       "priceText": null
     },
     {
-      "id": "pocket:2026-07-20:mingus-big-band",
-      "clubId": "pocket",
-      "title": "Mingus Big Band",
-      "date": "2026-07-20",
-      "sets": [
-        "19:00",
-        "21:00"
-      ],
-      "url": "https://thepocketnyc.com/event/mingus-big-band-7/",
-      "details": null,
-      "personnel": null,
-      "priceText": null
-    },
-    {
       "id": "barbes:2026-07-20:flutes-and-roots",
       "clubId": "barbes",
       "title": "FLUTES AND ROOTS",
@@ -4835,6 +5263,20 @@
       ],
       "url": "https://silvana-nyc.com/calendar.php",
       "details": "Jazz — The Quddus Quartet is an esteemed quartet founded by Joshua Quddus, featuring Israel Stahl (trumpet), Zev Vestel (drums), and Sedge Green (bass).",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "pocket:2026-07-20:mingus-big-band",
+      "clubId": "pocket",
+      "title": "Mingus Big Band",
+      "date": "2026-07-20",
+      "sets": [
+        "19:00",
+        "21:00"
+      ],
+      "url": "https://thepocketnyc.com/event/mingus-big-band-7/",
+      "details": null,
       "personnel": null,
       "priceText": null
     },
@@ -5461,20 +5903,6 @@
       "priceText": null
     },
     {
-      "id": "pocket:2026-07-21:arturo-o-farrill-the-afro-latin-jazz-orchestra",
-      "clubId": "pocket",
-      "title": "Arturo O’Farrill & The Afro Latin Jazz Orchestra",
-      "date": "2026-07-21",
-      "sets": [
-        "19:00",
-        "21:00"
-      ],
-      "url": "https://thepocketnyc.com/event/arturo-ofarrill-the-afro-latin-jazz-orchestra-7/",
-      "details": null,
-      "personnel": null,
-      "priceText": null
-    },
-    {
       "id": "barbes:2026-07-21:tamar-korn-a-kornucopia",
       "clubId": "barbes",
       "title": "TAMAR KORN & A KORNUCOPIA",
@@ -5498,6 +5926,93 @@
       "url": "https://silvana-nyc.com/calendar.php",
       "details": "Jazz — Joe Wagner was born to a musical family on June 5, 1976 in Saratoga Springs, NY. He started playing the alto saxophone at the age of 10 and quickly fell in love with the music of Charlie Parker. He studied jazz and frequented many jazz club",
       "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "pocket:2026-07-21:arturo-o-farrill-the-afro-latin-jazz-orchestra",
+      "clubId": "pocket",
+      "title": "Arturo O’Farrill & The Afro Latin Jazz Orchestra",
+      "date": "2026-07-21",
+      "sets": [
+        "19:00",
+        "21:00"
+      ],
+      "url": "https://thepocketnyc.com/event/arturo-ofarrill-the-afro-latin-jazz-orchestra-7/",
+      "details": null,
+      "personnel": [
+        {
+          "name": "Jasper Dutz",
+          "instrument": "alto sax"
+        },
+        {
+          "name": "Sun Yoo",
+          "instrument": "alto sax"
+        },
+        {
+          "name": "Ivan Renta",
+          "instrument": "tenor sax"
+        },
+        {
+          "name": "Berta Moreno",
+          "instrument": "tenor sax"
+        },
+        {
+          "name": "Larry Bustamante",
+          "instrument": "tenor sax"
+        },
+        {
+          "name": "Seneca Black",
+          "instrument": "trumpet"
+        },
+        {
+          "name": "Jim Seeley",
+          "instrument": "trumpet"
+        },
+        {
+          "name": "Allison Philips",
+          "instrument": "trumpet"
+        },
+        {
+          "name": "Miles Keingstein",
+          "instrument": "trumpet"
+        },
+        {
+          "name": "Jasim Perales",
+          "instrument": "trombone"
+        },
+        {
+          "name": "Rafi Malkiel",
+          "instrument": "trombone"
+        },
+        {
+          "name": "Juanga Lakunza",
+          "instrument": "trombone"
+        },
+        {
+          "name": "Earl McIntyre",
+          "instrument": "bass trombone"
+        },
+        {
+          "name": "Arturo O’Farrill",
+          "instrument": "piano"
+        },
+        {
+          "name": "Raúl Reyes",
+          "instrument": "bass"
+        },
+        {
+          "name": "Vince Cherico",
+          "instrument": "drums"
+        },
+        {
+          "name": "Zack O’Farrill",
+          "instrument": "drums"
+        },
+        {
+          "name": "Carlos Maldonado",
+          "instrument": "percussion"
+        }
+      ],
       "priceText": null
     },
     {
@@ -6097,20 +6612,6 @@
       "priceText": null
     },
     {
-      "id": "pocket:2026-07-22:camille-thurman-with-the-darrell-green-trio",
-      "clubId": "pocket",
-      "title": "Camille Thurman with the Darrell Green Trio",
-      "date": "2026-07-22",
-      "sets": [
-        "19:00",
-        "21:00"
-      ],
-      "url": "https://thepocketnyc.com/event/camille-thurman-with-the-darrell-green-trio-2/",
-      "details": null,
-      "personnel": null,
-      "priceText": null
-    },
-    {
       "id": "terraza7:2026-07-22:the-pedro-giraudo-quartet-contemporary-tango",
       "clubId": "terraza7",
       "title": "The Pedro Giraudo Quartet — Contemporary Tango",
@@ -6121,6 +6622,20 @@
       ],
       "url": "https://www.terraza7.com/events",
       "details": "The Pedro Giraudo Quartet opens the evening with contemporary tango led by Latin GRAMMY Award–winning bassist and composer Pedro Giraudo, blending Argentine tradition with modern energy, lyrical depth, and expressive improvisation.",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "pocket:2026-07-22:camille-thurman-with-the-darrell-green-trio",
+      "clubId": "pocket",
+      "title": "Camille Thurman with the Darrell Green Trio",
+      "date": "2026-07-22",
+      "sets": [
+        "19:00",
+        "21:00"
+      ],
+      "url": "https://thepocketnyc.com/event/camille-thurman-with-the-darrell-green-trio-2/",
+      "details": null,
       "personnel": null,
       "priceText": null
     },
@@ -7556,20 +8071,6 @@
       "priceText": null
     },
     {
-      "id": "pocket:2026-07-24:skylar-tang",
-      "clubId": "pocket",
-      "title": "Skylar Tang",
-      "date": "2026-07-24",
-      "sets": [
-        "19:00",
-        "21:00"
-      ],
-      "url": "https://thepocketnyc.com/event/skylar-tang/",
-      "details": null,
-      "personnel": null,
-      "priceText": null
-    },
-    {
       "id": "billsplace:2026-07-24:bill-saxton-the-harlem-all-stars",
       "clubId": "billsplace",
       "title": "Bill Saxton & the Harlem All-Stars",
@@ -7598,6 +8099,20 @@
       ],
       "url": "https://www.eventbrite.com/e/downtown-jamaica-riddim-and-jazz-festival-2026-day-1-tickets-1988951553638",
       "details": "An evening of live music, featuring Dennis Collins and Steven Kroon",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "pocket:2026-07-24:skylar-tang",
+      "clubId": "pocket",
+      "title": "Skylar Tang",
+      "date": "2026-07-24",
+      "sets": [
+        "19:00",
+        "21:00"
+      ],
+      "url": "https://thepocketnyc.com/event/skylar-tang/",
+      "details": null,
       "personnel": null,
       "priceText": null
     },
@@ -8383,20 +8898,6 @@
       "priceText": null
     },
     {
-      "id": "pocket:2026-07-25:david-virelles-trio",
-      "clubId": "pocket",
-      "title": "David Virelles trio",
-      "date": "2026-07-25",
-      "sets": [
-        "19:00",
-        "21:00"
-      ],
-      "url": "https://thepocketnyc.com/event/david-virelles/",
-      "details": null,
-      "personnel": null,
-      "priceText": null
-    },
-    {
       "id": "billsplace:2026-07-25:bill-saxton-the-harlem-all-stars",
       "clubId": "billsplace",
       "title": "Bill Saxton & the Harlem All-Stars",
@@ -8426,6 +8927,33 @@
       "url": "https://silvana-nyc.com/calendar.php",
       "details": "Following a successful concerts in the past years, Winterfisch is now gearing up for gigs starting from March this year. The band, though relatively new on the scene, has exclusively showcased in New York City. Andy Winter’s “Winterfisch\" takes pride in its repertoire, consisting solely of original",
       "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "pocket:2026-07-25:david-virelles-trio",
+      "clubId": "pocket",
+      "title": "David Virelles trio",
+      "date": "2026-07-25",
+      "sets": [
+        "19:00",
+        "21:00"
+      ],
+      "url": "https://thepocketnyc.com/event/david-virelles/",
+      "details": null,
+      "personnel": [
+        {
+          "name": "David Virelles",
+          "instrument": "piano"
+        },
+        {
+          "name": "Thomas Morgan",
+          "instrument": "bass"
+        },
+        {
+          "name": "Eric McPherson",
+          "instrument": "drums"
+        }
+      ],
       "priceText": null
     },
     {
@@ -9163,7 +9691,16 @@
       ],
       "url": "https://thepocketnyc.com/event/el-arte-del-bolero-miguel-zenon-and-luis-perdomo-duo/",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Miguel Zenón",
+          "instrument": "alto saxophone"
+        },
+        {
+          "name": "Luis Perdomo",
+          "instrument": "piano"
+        }
+      ],
       "priceText": null
     },
     {
@@ -9639,6 +10176,19 @@
       "priceText": null
     },
     {
+      "id": "barbes:2026-07-27:dana-lyn-kyle-sanna",
+      "clubId": "barbes",
+      "title": "DANA LYN & KYLE SANNA",
+      "date": "2026-07-27",
+      "sets": [
+        "19:00"
+      ],
+      "url": "https://www.viewcy.com/event/dana_lyn__kyle_sanna_43",
+      "details": "Dana Lyn & Kyle Sanna : A \"Through the Looking Glass\" approach to traditional Irish music. Hailed as “first-rate, versatile musicians” by The New Yorker and “a top-notch fiddle-and-guitar duo” by The New York Times , Dana Lyn and Kyle Sanna connect the dots between their experience as composers and",
+      "personnel": null,
+      "priceText": null
+    },
+    {
       "id": "pocket:2026-07-27:mingus-big-band",
       "clubId": "pocket",
       "title": "Mingus Big Band",
@@ -9649,19 +10199,6 @@
       ],
       "url": "https://thepocketnyc.com/event/mingus-big-band-8/",
       "details": null,
-      "personnel": null,
-      "priceText": null
-    },
-    {
-      "id": "barbes:2026-07-27:dana-lyn-kyle-sanna",
-      "clubId": "barbes",
-      "title": "DANA LYN & KYLE SANNA",
-      "date": "2026-07-27",
-      "sets": [
-        "19:00"
-      ],
-      "url": "https://www.viewcy.com/event/dana_lyn__kyle_sanna_43",
-      "details": "Dana Lyn & Kyle Sanna : A \"Through the Looking Glass\" approach to traditional Irish music. Hailed as “first-rate, versatile musicians” by The New Yorker and “a top-notch fiddle-and-guitar duo” by The New York Times , Dana Lyn and Kyle Sanna connect the dots between their experience as composers and",
       "personnel": null,
       "priceText": null
     },
@@ -10177,20 +10714,6 @@
       "priceText": null
     },
     {
-      "id": "pocket:2026-07-28:arturo-o-farrill-the-afro-latin-jazz-orchestra",
-      "clubId": "pocket",
-      "title": "Arturo O’Farrill & The Afro Latin Jazz Orchestra",
-      "date": "2026-07-28",
-      "sets": [
-        "19:00",
-        "21:00"
-      ],
-      "url": "https://thepocketnyc.com/event/arturo-ofarrill-the-afro-latin-jazz-orchestra-8/",
-      "details": null,
-      "personnel": null,
-      "priceText": null
-    },
-    {
       "id": "barbes:2026-07-28:akiko-pavolka",
       "clubId": "barbes",
       "title": "AKIKO PAVOLKA",
@@ -10227,6 +10750,93 @@
       "url": "https://shrinenyc.com/calendar.php",
       "details": "Jess is a Brooklyn native with soul and RnB roots currently immersed in traditional jazz. Her bands sound and energy is captivating and full of life.",
       "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "pocket:2026-07-28:arturo-o-farrill-the-afro-latin-jazz-orchestra",
+      "clubId": "pocket",
+      "title": "Arturo O’Farrill & The Afro Latin Jazz Orchestra",
+      "date": "2026-07-28",
+      "sets": [
+        "19:00",
+        "21:00"
+      ],
+      "url": "https://thepocketnyc.com/event/arturo-ofarrill-the-afro-latin-jazz-orchestra-8/",
+      "details": null,
+      "personnel": [
+        {
+          "name": "Jasper Dutz",
+          "instrument": "alto sax"
+        },
+        {
+          "name": "Sun Yoo",
+          "instrument": "alto sax"
+        },
+        {
+          "name": "Ivan Renta",
+          "instrument": "tenor sax"
+        },
+        {
+          "name": "Berta Moreno",
+          "instrument": "tenor sax"
+        },
+        {
+          "name": "Larry Bustamante",
+          "instrument": "tenor sax"
+        },
+        {
+          "name": "Seneca Black",
+          "instrument": "trumpet"
+        },
+        {
+          "name": "Jim Seeley",
+          "instrument": "trumpet"
+        },
+        {
+          "name": "Allison Philips",
+          "instrument": "trumpet"
+        },
+        {
+          "name": "Miles Keingstein",
+          "instrument": "trumpet"
+        },
+        {
+          "name": "Jasim Perales",
+          "instrument": "trombone"
+        },
+        {
+          "name": "Rafi Malkiel",
+          "instrument": "trombone"
+        },
+        {
+          "name": "Juanga Lakunza",
+          "instrument": "trombone"
+        },
+        {
+          "name": "Earl McIntyre",
+          "instrument": "bass trombone"
+        },
+        {
+          "name": "Arturo O’Farrill",
+          "instrument": "piano"
+        },
+        {
+          "name": "Raúl Reyes",
+          "instrument": "bass"
+        },
+        {
+          "name": "Vince Cherico",
+          "instrument": "drums"
+        },
+        {
+          "name": "Zack O’Farrill",
+          "instrument": "drums"
+        },
+        {
+          "name": "Carlos Maldonado",
+          "instrument": "percussion"
+        }
+      ],
       "priceText": null
     },
     {
@@ -10806,6 +11416,19 @@
       "priceText": null
     },
     {
+      "id": "shrine:2026-07-29:dave-kardas-band",
+      "clubId": "shrine",
+      "title": "Dave Kardas Band",
+      "date": "2026-07-29",
+      "sets": [
+        "19:00"
+      ],
+      "url": "https://shrinenyc.com/calendar.php",
+      "details": "Soul / Funk — Dave Kardas band plays Blues/Jazz/Fusion and will be performing music from their album \"Fire and Ice\" as well as new releases like \"Living in the Moment\" and \"Joyride\". DKB has played all around NYC, Ct and Texas.",
+      "personnel": null,
+      "priceText": null
+    },
+    {
       "id": "pocket:2026-07-29:blood-brothers",
       "clubId": "pocket",
       "title": "Blood Brothers",
@@ -10816,19 +11439,6 @@
       ],
       "url": "https://thepocketnyc.com/event/blood-brothers/",
       "details": null,
-      "personnel": null,
-      "priceText": null
-    },
-    {
-      "id": "shrine:2026-07-29:dave-kardas-band",
-      "clubId": "shrine",
-      "title": "Dave Kardas Band",
-      "date": "2026-07-29",
-      "sets": [
-        "19:00"
-      ],
-      "url": "https://shrinenyc.com/calendar.php",
-      "details": "Soul / Funk — Dave Kardas band plays Blues/Jazz/Fusion and will be performing music from their album \"Fire and Ice\" as well as new releases like \"Living in the Moment\" and \"Joyride\". DKB has played all around NYC, Ct and Texas.",
       "personnel": null,
       "priceText": null
     },
@@ -11266,19 +11876,6 @@
       "priceText": null
     },
     {
-      "id": "pocket:2026-07-30:closed-for-private-event",
-      "clubId": "pocket",
-      "title": "Closed for Private Event",
-      "date": "2026-07-30",
-      "sets": [
-        "00:00"
-      ],
-      "url": "https://thepocketnyc.com/event/losed-for-private-event-7-30-26/",
-      "details": null,
-      "personnel": null,
-      "priceText": null
-    },
-    {
       "id": "shrine:2026-07-30:dj-alino",
       "clubId": "shrine",
       "title": "DJ Alino",
@@ -11288,6 +11885,19 @@
       ],
       "url": "https://shrinenyc.com/calendar.php",
       "details": "One of the best DJs in town, playing Afrobeats, Afro-fusion, Reggae, Reggaeton, Latin, Ethiopian, and Old School Hip Hop. Come join the dance party!",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "pocket:2026-07-30:closed-for-private-event",
+      "clubId": "pocket",
+      "title": "Closed for Private Event",
+      "date": "2026-07-30",
+      "sets": [
+        "00:00"
+      ],
+      "url": "https://thepocketnyc.com/event/losed-for-private-event-7-30-26/",
+      "details": null,
       "personnel": null,
       "priceText": null
     },
@@ -12354,20 +12964,6 @@
       "priceText": null
     },
     {
-      "id": "pocket:2026-07-31:matthew-whitaker",
-      "clubId": "pocket",
-      "title": "Matthew Whitaker",
-      "date": "2026-07-31",
-      "sets": [
-        "19:00",
-        "21:00"
-      ],
-      "url": "https://thepocketnyc.com/event/matthew-whitaker/",
-      "details": null,
-      "personnel": null,
-      "priceText": null
-    },
-    {
       "id": "billsplace:2026-07-31:bill-saxton-the-harlem-all-stars",
       "clubId": "billsplace",
       "title": "Bill Saxton & the Harlem All-Stars",
@@ -12384,6 +12980,20 @@
           "instrument": "tenor sax"
         }
       ],
+      "priceText": null
+    },
+    {
+      "id": "pocket:2026-07-31:matthew-whitaker",
+      "clubId": "pocket",
+      "title": "Matthew Whitaker",
+      "date": "2026-07-31",
+      "sets": [
+        "19:00",
+        "21:00"
+      ],
+      "url": "https://thepocketnyc.com/event/matthew-whitaker/",
+      "details": null,
+      "personnel": null,
       "priceText": null
     },
     {
@@ -13022,20 +13632,6 @@
       "priceText": null
     },
     {
-      "id": "pocket:2026-08-01:simon-moullier",
-      "clubId": "pocket",
-      "title": "Simon Moullier",
-      "date": "2026-08-01",
-      "sets": [
-        "19:00",
-        "21:00"
-      ],
-      "url": "https://thepocketnyc.com/event/simon-moullier/",
-      "details": null,
-      "personnel": null,
-      "priceText": null
-    },
-    {
       "id": "billsplace:2026-08-01:bill-saxton-the-harlem-all-stars",
       "clubId": "billsplace",
       "title": "Bill Saxton & the Harlem All-Stars",
@@ -13064,6 +13660,20 @@
       ],
       "url": "https://silvana-nyc.com/calendar.php",
       "details": "Klaire is a versatile jazz vocalist, pianist, and composer from Hamburg, Germany. With artistic roots in jazz, blues, and pop, she studied Jazz Vocals at the University of the Arts Bremen and completed her Master’s degree in the international New York Jazz program at the Prins Claus Conservatory in",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "pocket:2026-08-01:simon-moullier",
+      "clubId": "pocket",
+      "title": "Simon Moullier",
+      "date": "2026-08-01",
+      "sets": [
+        "19:00",
+        "21:00"
+      ],
+      "url": "https://thepocketnyc.com/event/simon-moullier/",
+      "details": null,
       "personnel": null,
       "priceText": null
     },
@@ -14591,20 +15201,6 @@
       "priceText": null
     },
     {
-      "id": "pocket:2026-08-04:arturo-o-farrill-the-afro-latin-jazz-orchestra",
-      "clubId": "pocket",
-      "title": "Arturo O’Farrill & The Afro Latin Jazz Orchestra",
-      "date": "2026-08-04",
-      "sets": [
-        "19:00",
-        "21:00"
-      ],
-      "url": "https://thepocketnyc.com/event/arturo-ofarrill-the-afro-latin-jazz-orchestra-9/",
-      "details": null,
-      "personnel": null,
-      "priceText": null
-    },
-    {
       "id": "barbes:2026-08-04:tamar-korn-a-kornucopia",
       "clubId": "barbes",
       "title": "TAMAR KORN & A KORNUCOPIA",
@@ -14640,6 +15236,20 @@
       ],
       "url": "https://shrinenyc.com/calendar.php",
       "details": "Jazz / Blues / Pop — Klaire is a versatile jazz vocalist, pianist, and composer from Hamburg, Germany. With artistic roots in jazz, blues, and pop, she studied Jazz Vocals at the University of the Arts Bremen and completed her Master’s degree in the internation",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "pocket:2026-08-04:arturo-o-farrill-the-afro-latin-jazz-orchestra",
+      "clubId": "pocket",
+      "title": "Arturo O’Farrill & The Afro Latin Jazz Orchestra",
+      "date": "2026-08-04",
+      "sets": [
+        "19:00",
+        "21:00"
+      ],
+      "url": "https://thepocketnyc.com/event/arturo-ofarrill-the-afro-latin-jazz-orchestra-9/",
+      "details": null,
       "personnel": null,
       "priceText": null
     },
@@ -17588,6 +18198,19 @@
       "priceText": null
     },
     {
+      "id": "barbes:2026-08-10:dayna-kurtz",
+      "clubId": "barbes",
+      "title": "DAYNA KURTZ",
+      "date": "2026-08-10",
+      "sets": [
+        "19:00"
+      ],
+      "url": "https://www.viewcy.com/event/dayna_kurtz_20",
+      "details": "Over the past decade, the New Jersey born, now New Orleans resident Dayna Kurtz - a vocalist. writer. musician and producer - has been bestowed with many awards and praises, including being named the Female Songwriter of the Year by the National Academy of Songwriters. Norah Jones and Bonnie Raitt h",
+      "personnel": null,
+      "priceText": null
+    },
+    {
       "id": "pocket:2026-08-10:mingus-big-band",
       "clubId": "pocket",
       "title": "Mingus Big Band",
@@ -17598,19 +18221,6 @@
       ],
       "url": "https://thepocketnyc.com/event/mingus-big-band-10/",
       "details": null,
-      "personnel": null,
-      "priceText": null
-    },
-    {
-      "id": "barbes:2026-08-10:dayna-kurtz",
-      "clubId": "barbes",
-      "title": "DAYNA KURTZ",
-      "date": "2026-08-10",
-      "sets": [
-        "19:00"
-      ],
-      "url": "https://www.viewcy.com/event/dayna_kurtz_20",
-      "details": "Over the past decade, the New Jersey born, now New Orleans resident Dayna Kurtz - a vocalist. writer. musician and producer - has been bestowed with many awards and praises, including being named the Female Songwriter of the Year by the National Academy of Songwriters. Norah Jones and Bonnie Raitt h",
       "personnel": null,
       "priceText": null
     },
@@ -18003,20 +18613,6 @@
       "priceText": null
     },
     {
-      "id": "pocket:2026-08-11:arturo-o-farrill-the-afro-latin-jazz-orchestra",
-      "clubId": "pocket",
-      "title": "Arturo O’Farrill & The Afro Latin Jazz Orchestra",
-      "date": "2026-08-11",
-      "sets": [
-        "19:00",
-        "21:00"
-      ],
-      "url": "https://thepocketnyc.com/event/arturo-ofarrill-the-afro-latin-jazz-orchestra-10/",
-      "details": null,
-      "personnel": null,
-      "priceText": null
-    },
-    {
       "id": "barbes:2026-08-11:kenny-warren-s-sweet-world",
       "clubId": "barbes",
       "title": "KENNY WARREN'S SWEET WORLD",
@@ -18036,6 +18632,20 @@
           "instrument": "trumpet."
         }
       ],
+      "priceText": null
+    },
+    {
+      "id": "pocket:2026-08-11:arturo-o-farrill-the-afro-latin-jazz-orchestra",
+      "clubId": "pocket",
+      "title": "Arturo O’Farrill & The Afro Latin Jazz Orchestra",
+      "date": "2026-08-11",
+      "sets": [
+        "19:00",
+        "21:00"
+      ],
+      "url": "https://thepocketnyc.com/event/arturo-ofarrill-the-afro-latin-jazz-orchestra-10/",
+      "details": null,
+      "personnel": null,
       "priceText": null
     },
     {
@@ -20897,6 +21507,19 @@
       "priceText": null
     },
     {
+      "id": "barbes:2026-08-18:tamar-korn-a-kornucopia",
+      "clubId": "barbes",
+      "title": "TAMAR KORN & A KORNUCOPIA",
+      "date": "2026-08-18",
+      "sets": [
+        "19:00"
+      ],
+      "url": "https://www.viewcy.com/event/tamar_korn__a_kornuc_31",
+      "details": "Tamar Korn , she of Brain Cloud and Cangelosi Cards fame, has been dazzling us for over a decade, surprising us at every turn with her choice of repertoire, hopscotching, in one set, from early jazz, Western swing and American roots music to Yiddish songs, vocal solos and unexpected recitatives invo",
+      "personnel": null,
+      "priceText": null
+    },
+    {
       "id": "pocket:2026-08-18:arturo-o-farrill-the-afro-latin-jazz-orchestra",
       "clubId": "pocket",
       "title": "Arturo O’Farrill & The Afro Latin Jazz Orchestra",
@@ -20907,19 +21530,6 @@
       ],
       "url": "https://thepocketnyc.com/event/arturo-ofarrill-the-afro-latin-jazz-orchestra-11/",
       "details": null,
-      "personnel": null,
-      "priceText": null
-    },
-    {
-      "id": "barbes:2026-08-18:tamar-korn-a-kornucopia",
-      "clubId": "barbes",
-      "title": "TAMAR KORN & A KORNUCOPIA",
-      "date": "2026-08-18",
-      "sets": [
-        "19:00"
-      ],
-      "url": "https://www.viewcy.com/event/tamar_korn__a_kornuc_31",
-      "details": "Tamar Korn , she of Brain Cloud and Cangelosi Cards fame, has been dazzling us for over a decade, surprising us at every turn with her choice of repertoire, hopscotching, in one set, from early jazz, Western swing and American roots music to Yiddish songs, vocal solos and unexpected recitatives invo",
       "personnel": null,
       "priceText": null
     },
@@ -23244,20 +23854,6 @@
       "priceText": null
     },
     {
-      "id": "pocket:2026-08-24:mingus-big-band",
-      "clubId": "pocket",
-      "title": "Mingus Big Band",
-      "date": "2026-08-24",
-      "sets": [
-        "19:00",
-        "21:00"
-      ],
-      "url": "https://thepocketnyc.com/event/mingus-big-band-12/",
-      "details": null,
-      "personnel": null,
-      "priceText": null
-    },
-    {
       "id": "barbes:2026-08-24:ytd-yang-dickens-thomas",
       "clubId": "barbes",
       "title": "YTD - Yang/ Dickens/ Thomas",
@@ -23281,6 +23877,20 @@
           "instrument": "flutes"
         }
       ],
+      "priceText": null
+    },
+    {
+      "id": "pocket:2026-08-24:mingus-big-band",
+      "clubId": "pocket",
+      "title": "Mingus Big Band",
+      "date": "2026-08-24",
+      "sets": [
+        "19:00",
+        "21:00"
+      ],
+      "url": "https://thepocketnyc.com/event/mingus-big-band-12/",
+      "details": null,
+      "personnel": null,
       "priceText": null
     },
     {
@@ -25808,6 +26418,19 @@
       "priceText": null
     },
     {
+      "id": "barbes:2026-08-31:dana-lyn-kyle-sanna",
+      "clubId": "barbes",
+      "title": "DANA LYN & KYLE SANNA",
+      "date": "2026-08-31",
+      "sets": [
+        "19:00"
+      ],
+      "url": "https://www.viewcy.com/event/dana_lyn__kyle_sanna_45",
+      "details": "Dana Lyn & Kyle Sanna : A \"Through the Looking Glass\" approach to traditional Irish music. Hailed as “first-rate, versatile musicians” by The New Yorker and “a top-notch fiddle-and-guitar duo” by The New York Times , Dana Lyn and Kyle Sanna connect the dots between their experience as composers and",
+      "personnel": null,
+      "priceText": null
+    },
+    {
       "id": "pocket:2026-08-31:mingus-big-band",
       "clubId": "pocket",
       "title": "Mingus Big Band",
@@ -25818,19 +26441,6 @@
       ],
       "url": "https://thepocketnyc.com/event/mingus-big-band-22/",
       "details": null,
-      "personnel": null,
-      "priceText": null
-    },
-    {
-      "id": "barbes:2026-08-31:dana-lyn-kyle-sanna",
-      "clubId": "barbes",
-      "title": "DANA LYN & KYLE SANNA",
-      "date": "2026-08-31",
-      "sets": [
-        "19:00"
-      ],
-      "url": "https://www.viewcy.com/event/dana_lyn__kyle_sanna_45",
-      "details": "Dana Lyn & Kyle Sanna : A \"Through the Looking Glass\" approach to traditional Irish music. Hailed as “first-rate, versatile musicians” by The New Yorker and “a top-notch fiddle-and-guitar duo” by The New York Times , Dana Lyn and Kyle Sanna connect the dots between their experience as composers and",
       "personnel": null,
       "priceText": null
     },
@@ -25943,6 +26553,19 @@
       "priceText": null
     },
     {
+      "id": "barbes:2026-09-01:tamar-korn-a-kornucopia",
+      "clubId": "barbes",
+      "title": "TAMAR KORN & A KORNUCOPIA",
+      "date": "2026-09-01",
+      "sets": [
+        "19:00"
+      ],
+      "url": "https://www.viewcy.com/event/tamar_korn__a_kornuc_32",
+      "details": "Tamar Korn , she of Brain Cloud and Cangelosi Cards fame, has been dazzling us for over a decade, surprising us at every turn with her choice of repertoire, hopscotching, in one set, from early jazz, Western swing and American roots music to Yiddish songs, vocal solos and unexpected recitatives invo",
+      "personnel": null,
+      "priceText": null
+    },
+    {
       "id": "pocket:2026-09-01:arturo-o-farrill-the-afro-latin-jazz-orchestra",
       "clubId": "pocket",
       "title": "Arturo O’Farrill & The Afro Latin Jazz Orchestra",
@@ -25953,19 +26576,6 @@
       ],
       "url": "https://thepocketnyc.com/event/arturo-ofarrill-the-afro-latin-jazz-orchestra-13/",
       "details": null,
-      "personnel": null,
-      "priceText": null
-    },
-    {
-      "id": "barbes:2026-09-01:tamar-korn-a-kornucopia",
-      "clubId": "barbes",
-      "title": "TAMAR KORN & A KORNUCOPIA",
-      "date": "2026-09-01",
-      "sets": [
-        "19:00"
-      ],
-      "url": "https://www.viewcy.com/event/tamar_korn__a_kornuc_32",
-      "details": "Tamar Korn , she of Brain Cloud and Cangelosi Cards fame, has been dazzling us for over a decade, surprising us at every turn with her choice of repertoire, hopscotching, in one set, from early jazz, Western swing and American roots music to Yiddish songs, vocal solos and unexpected recitatives invo",
       "personnel": null,
       "priceText": null
     },
