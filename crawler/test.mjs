@@ -1960,4 +1960,3 @@ ok('club606: detail page yields music charge + description', () => {
   assert.match(d.details, /10-piece band led by bassist/);
   assert.deepEqual(d.personnel, []);
 });
-ok('ci red-path check: delete me', () => { throw new Error('deliberately broken'); });
