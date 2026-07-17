@@ -1,0 +1,57 @@
+# CI on every push and PR; deploy on merge to main.
+# Auth is GitHub OIDC -> IAM role (no AWS keys stored in GitHub).
+# The role ARN lives in the repo secret AWS_DEPLOY_ROLE_ARN.
+#
+# Note: a deploy ships CODE. Site data refreshes when the crawler Lambda
+# runs (every 4 hours, or invoke it manually) — new venues appear then,
+# not at deploy time.
+name: ci
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: node crawler/test.mjs
+      - run: npm run build:web
+      # UI suite (web/test-ui.mjs) is phase 2: it needs a Playwright
+      # Chromium download + the local server; keep CI fast for now.
+
+  deploy:
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    needs: test
+    runs-on: ubuntu-latest
+    permissions:
+      id-token: write   # OIDC token for AWS
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm run build:web
+      # infra is NOT an npm workspace — it installs separately
+      - run: npm ci
+        working-directory: infra
+      - uses: aws-actions/configure-aws-credentials@v4
+        with:
+          role-to-assume: ${{ secrets.AWS_DEPLOY_ROLE_ARN }}
+          aws-region: us-east-1
+      - run: npx cdk deploy --require-approval never
+        working-directory: infra
