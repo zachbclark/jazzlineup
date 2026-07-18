@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-18T19:11:35.818Z",
+  "generatedAt": "2026-07-18T19:36:29.942Z",
   "city": "bos",
   "clubs": [
     {
@@ -77,6 +77,58 @@
   ],
   "errors": [],
   "events": [
+    {
+      "id": "lilypad:2026-07-05:the-spatulas",
+      "clubId": "lilypad",
+      "title": "THE SPATULAS",
+      "date": "2026-07-05",
+      "sets": [
+        "19:30"
+      ],
+      "url": "https://www.lilypadinman.com/home/jerry-bergonzi-2026-ppejb-xz8jt-taahh-c9yrx-lhd5t-abg8d-646n6-4tbmw-524y4-z8ca3-ad5g2",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "lilypad:2026-07-06:francisco-mela",
+      "clubId": "lilypad",
+      "title": "Francisco Mela",
+      "date": "2026-07-06",
+      "sets": [
+        "19:00"
+      ],
+      "url": "https://www.lilypadinman.com/home/jerry-bergonzi-2026-ppejb-xz8jt-taahh-c9yrx-lhd5t-abg8d-646n6-4tbmw-524y4-z8ca3-ad5g2",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "lilypad:2026-07-06:jerry-bergonzi-quartet",
+      "clubId": "lilypad",
+      "title": "Jerry Bergonzi Quartet",
+      "date": "2026-07-06",
+      "sets": [
+        "20:30"
+      ],
+      "url": "https://www.lilypadinman.com/home/jerry-bergonzi-2026-ppejb-xz8jt-taahh-c9yrx-lhd5t-abg8d-646n6-4tbmw-524y4-z8ca3-ad5g2",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "lilypad:2026-07-06:the-fringe",
+      "clubId": "lilypad",
+      "title": "The Fringe",
+      "date": "2026-07-06",
+      "sets": [
+        "22:00"
+      ],
+      "url": "https://www.lilypadinman.com/home/the-fringe-2026-7llfb-r7kry-b53aw-7c7kh-sj23g-aj762-dmc6t-kpk2d-xgds5-xra93-5awrt-lt6fr-n5twa-la8ks-byl78-ztmdp-anz8s",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
     {
       "id": "lilypad:2026-07-07:bevan-manson-trio-ft-allan-chase",
       "clubId": "lilypad",
@@ -397,7 +449,7 @@
       "sets": [
         "12:00"
       ],
-      "url": "https://www.lilypadinman.com/home/variety-hn35w-m6fm2-n5hrz-s992t-7hth4-l685n",
+      "url": "https://www.lilypadinman.com/",
       "details": null,
       "personnel": null,
       "priceText": null
@@ -410,7 +462,7 @@
       "sets": [
         "22:00"
       ],
-      "url": "https://www.lilypadinman.com/home/variety-hn35w-m6fm2-n5hrz-s992t-7hth4-l685n",
+      "url": "https://www.lilypadinman.com/",
       "details": null,
       "personnel": null,
       "priceText": null
@@ -437,7 +489,7 @@
       "sets": [
         "12:00"
       ],
-      "url": "https://www.lilypadinman.com/home/variety-hn35w-m6fm2-n5hrz-s992t-7hth4-l685n",
+      "url": "https://www.lilypadinman.com/",
       "details": null,
       "personnel": null,
       "priceText": null
@@ -450,7 +502,7 @@
       "sets": [
         "17:00"
       ],
-      "url": "https://www.lilypadinman.com/home/variety-hn35w-m6fm2-n5hrz-s992t-7hth4-l685n",
+      "url": "https://www.lilypadinman.com/",
       "details": null,
       "personnel": null,
       "priceText": null
@@ -590,19 +642,6 @@
       "priceText": null
     },
     {
-      "id": "madmonkfish:2026-07-19:jazz-vocal-jam-session-feat-teddy-horangic-3pm",
-      "clubId": "madmonkfish",
-      "title": "Jazz Vocal Jam Session feat. Teddy Horangic (3pm-",
-      "date": "2026-07-19",
-      "sets": [
-        "18:00"
-      ],
-      "url": "https://www.themadmonkfish.com/event/719-jazz-vocal-jam-session-feat-teddy-horangic-3pm-6pm/",
-      "details": null,
-      "personnel": null,
-      "priceText": null
-    },
-    {
       "id": "lilypad:2026-07-19:allan-chase-s-jazz-impressions-of-brazil",
       "clubId": "lilypad",
       "title": "Allan Chase’s Jazz Impressions of Brazil",
@@ -611,6 +650,19 @@
         "18:00"
       ],
       "url": "https://www.lilypadinman.com/home/live-music-hatha-yoga",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "madmonkfish:2026-07-19:jazz-vocal-jam-session-feat-teddy-horangic-3pm",
+      "clubId": "madmonkfish",
+      "title": "Jazz Vocal Jam Session feat. Teddy Horangic (3pm-",
+      "date": "2026-07-19",
+      "sets": [
+        "18:00"
+      ],
+      "url": "https://www.themadmonkfish.com/event/719-jazz-vocal-jam-session-feat-teddy-horangic-3pm-6pm/",
       "details": null,
       "personnel": null,
       "priceText": null
@@ -870,6 +922,19 @@
       "priceText": null
     },
     {
+      "id": "lilypad:2026-07-23:in-use-ssa-linn-high-traffic",
+      "clubId": "lilypad",
+      "title": "in use / ssa linn / high traffic",
+      "date": "2026-07-23",
+      "sets": [
+        "19:00"
+      ],
+      "url": "https://www.lilypadinman.com/home/6sdiuafa-mzntw-3c56t-3ntzh-fp8ge-65psh-cg5gh-5fe8k-sws42",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
       "id": "madmonkfish:2026-07-23:russ-gershon-trio",
       "clubId": "madmonkfish",
       "title": "Russ Gershon Trio",
@@ -889,19 +954,6 @@
           "instrument": "drums"
         }
       ],
-      "priceText": null
-    },
-    {
-      "id": "lilypad:2026-07-23:in-use-ssa-linn-high-traffic",
-      "clubId": "lilypad",
-      "title": "in use / ssa linn / high traffic",
-      "date": "2026-07-23",
-      "sets": [
-        "19:00"
-      ],
-      "url": "https://www.lilypadinman.com/home/6sdiuafa-mzntw-3c56t-3ntzh-fp8ge-65psh-cg5gh-5fe8k-sws42",
-      "details": null,
-      "personnel": null,
       "priceText": null
     },
     {
@@ -1434,6 +1486,19 @@
       "priceText": null
     },
     {
+      "id": "lilypad:2026-07-30:todd-marcus-virginia-macdonald-quintet",
+      "clubId": "lilypad",
+      "title": "Todd Marcus - Virginia MacDonald Quintet",
+      "date": "2026-07-30",
+      "sets": [
+        "19:00"
+      ],
+      "url": "https://www.lilypadinman.com/home/6sdiuafa-mzntw-3c56t-3ntzh-fp8ge-65psh-cg5gh-5fe8k-sws42-g74mg",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
       "id": "madmonkfish:2026-07-30:stephanie-nakasian-with-the-greg-wardson-trio",
       "clubId": "madmonkfish",
       "title": "Stephanie Nakasian with the Greg Wardson Trio",
@@ -1457,19 +1522,6 @@
           "instrument": "drums"
         }
       ],
-      "priceText": null
-    },
-    {
-      "id": "lilypad:2026-07-30:todd-marcus-virginia-macdonald-quintet",
-      "clubId": "lilypad",
-      "title": "Todd Marcus - Virginia MacDonald Quintet",
-      "date": "2026-07-30",
-      "sets": [
-        "19:00"
-      ],
-      "url": "https://www.lilypadinman.com/home/6sdiuafa-mzntw-3c56t-3ntzh-fp8ge-65psh-cg5gh-5fe8k-sws42-g74mg",
-      "details": null,
-      "personnel": null,
       "priceText": null
     },
     {

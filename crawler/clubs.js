@@ -1033,6 +1033,99 @@ export const CLUBS = [
     color: '#f5cd4f', // honey, naturally
     module: './clubs/beehive.js',
   },
+
+  // ------------------------------------------------------------- Tokyo ----
+  {
+    id: 'pitinn',
+    name: 'Shinjuku Pit Inn',
+    shortName: 'Pit Inn',
+    url: 'http://pit-inn.com',
+    address: 'Accord Bldg B1, 2-12-4 Shinjuku, Tokyo',
+    city: 'tok',
+    borough: null,
+    timezone: 'Asia/Tokyo',
+    neighborhood: 'Shinjuku',
+    color: '#e84545', // the red logotype over the basement stairs
+    module: './clubs/pitinn.js',
+  },
+  {
+    id: 'bluenotetok',
+    name: 'Blue Note Tokyo',
+    shortName: 'Blue Note',
+    url: 'https://www.bluenote.co.jp',
+    address: '6-3-16 Minami-Aoyama, Minato, Tokyo',
+    city: 'tok',
+    borough: null,
+    timezone: 'Asia/Tokyo',
+    neighborhood: 'Aoyama',
+    color: '#4d9bff', // family azure, same as the NYC mothership
+    module: './clubs/bluenotetok.js',
+  },
+  {
+    id: 'cottonclubtok',
+    name: 'Cotton Club',
+    shortName: 'Cotton Club',
+    url: 'https://www.cottonclubjapan.co.jp',
+    address: 'Tokyo Bldg TOKIA 2F, 2-7-3 Marunouchi, Tokyo',
+    city: 'tok',
+    borough: null,
+    timezone: 'Asia/Tokyo',
+    neighborhood: 'Marunouchi',
+    color: '#d9a441', // champagne gold for the supper club
+    module: './clubs/cottonclubtok.js',
+  },
+  {
+    id: 'bodyandsoul',
+    name: 'Body & Soul',
+    shortName: 'Body & Soul',
+    url: 'https://bodyandsoul.co.jp',
+    address: '6-13-9 Minami-Aoyama B1, Minato, Tokyo',
+    city: 'tok',
+    borough: null,
+    timezone: 'Asia/Tokyo',
+    neighborhood: 'Aoyama',
+    color: '#b06ad9', // Kyoko-san's velvet purple
+    module: './clubs/bodyandsoul.js',
+  },
+  {
+    id: 'sometimetok',
+    name: 'Sometime',
+    shortName: 'Sometime',
+    url: 'https://www.sometime.co.jp/sometime/',
+    address: '1-11-31 Kichijoji Honcho, Musashino, Tokyo',
+    city: 'tok',
+    borough: null,
+    timezone: 'Asia/Tokyo',
+    neighborhood: 'Kichijoji',
+    color: '#4ec98a', // Kichijoji park green
+    module: './clubs/sometimetok.js',
+  },
+  {
+    id: 'alfie',
+    name: 'Alfie',
+    shortName: 'Alfie',
+    url: 'https://alfie.tokyo',
+    address: 'Hama Roppongi Bldg 5F, 6-2-35 Roppongi, Tokyo',
+    city: 'tok',
+    borough: null,
+    timezone: 'Asia/Tokyo',
+    neighborhood: 'Roppongi',
+    color: '#e87d3e', // late-night amber, fifth floor
+    module: './clubs/alfie.js',
+  },
+  {
+    id: 'introtok',
+    name: 'JazzSpot Intro',
+    shortName: 'Intro',
+    url: 'https://jazzspot.intro.co.jp',
+    address: 'NT Bldg B1, 2-14-8 Takadanobaba, Shinjuku, Tokyo',
+    city: 'tok',
+    borough: null,
+    timezone: 'Asia/Tokyo',
+    neighborhood: 'Takadanobaba',
+    color: '#5bc8d9', // all-night neon cyan
+    module: './clubs/introtok.js',
+  },
 ];
 
 export function clubById(id) {

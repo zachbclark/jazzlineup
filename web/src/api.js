@@ -11,6 +11,7 @@ export const CITIES = [
   { id: 'par', label: 'PARIS', slug: 'paris', clock24: true },
   { id: 'lon', label: 'LONDON', slug: 'london', clock24: true },
   { id: 'bos', label: 'BOSTON', slug: 'boston' },
+  { id: 'tok', label: 'TOKYO', slug: 'tokyo', clock24: 'colon' },
 ];
 
 export function citySlug(id) {
@@ -56,6 +57,8 @@ export function setClock24(v) { _clock24 = !!v; }
 export function fmtTime(hhmm) {
   if (!hhmm) return '';
   const [h, m] = hhmm.split(':').map(Number);
+  // 'colon' = Japanese 24h style (19:30); true = European style (20h30)
+  if (_clock24 === 'colon') return `${h}:${String(m).padStart(2, '0')}`;
   if (_clock24) return m ? `${h}h${String(m).padStart(2, '0')}` : `${h}h`;
   const ap = h >= 12 ? 'PM' : 'AM';
   const h12 = h % 12 === 0 ? 12 : h % 12;
@@ -97,6 +100,12 @@ export function searchNorm(s) {
   return String(s ?? '')
     .normalize('NFD')
     .replace(/[̀-ͯ]/g, '')
+    // full-width romaji/digits -> ASCII (ＡＢＣ１２３ -> abc123)
+    .replace(/[！-～]/g, (c) => String.fromCharCode(c.charCodeAt(0) - 0xfee0))
+    // katakana -> hiragana (fixed code-point offset), so ミウラ matches みうら
+    .replace(/[ァ-ヶ]/g, (c) => String.fromCharCode(c.charCodeAt(0) - 0x60))
+    // JP spacing/middot never blocks a match
+    .replace(/[\u3000・]/g, ' ')
     .toLowerCase();
 }
 
@@ -105,7 +114,9 @@ export function searchNorm(s) {
 export function eventMatches(e, normQuery, clubById) {
   if (!normQuery) return true;
   if (searchNorm(e.title).includes(normQuery)) return true;
-  if (e.personnel?.some((p) => searchNorm(p.name).includes(normQuery))) return true;
+  if (e.titleAlt && searchNorm(e.titleAlt).includes(normQuery)) return true;
+  if (e.personnel?.some((p) => searchNorm(p.name).includes(normQuery)
+    || (p.nameAlt && searchNorm(p.nameAlt).includes(normQuery)))) return true;
   if (e.details && searchNorm(e.details).includes(normQuery)) return true;
   const club = clubById?.[e.clubId];
   if (club && searchNorm(club.name).includes(normQuery)) return true;

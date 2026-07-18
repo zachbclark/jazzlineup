@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-18T18:29:21.818Z",
+  "generatedAt": "2026-07-18T19:35:16.451Z",
   "city": "nyc",
   "clubs": [
     {
@@ -351,9 +351,7 @@
       "color": "#e8a0b8"
     }
   ],
-  "errors": [
-    "GET https://www.arthurstavernnyc.com/performances.html -> 522"
-  ],
+  "errors": [],
   "events": [
     {
       "id": "pocket:2026-06-28:pride-at-the-pocket-vuyo-sotashe",
@@ -2339,19 +2337,6 @@
       "priceText": null
     },
     {
-      "id": "arthurs:2026-07-18:eri-yamamoto-jazz-trio",
-      "clubId": "arthurs",
-      "title": "Eri Yamamoto Jazz Trio",
-      "date": "2026-07-18",
-      "sets": [
-        "19:00"
-      ],
-      "url": "https://www.arthurstavernnyc.com/performances.html",
-      "details": null,
-      "personnel": null,
-      "priceText": null
-    },
-    {
       "id": "jazzcultural:2026-07-18:geoffrey-keezer-friends",
       "clubId": "jazzcultural",
       "title": "Geoffrey Keezer & Friends",
@@ -2474,6 +2459,19 @@
         "19:00"
       ],
       "url": "https://www.cellardog.net/calendar-link/hendrik-meurkens-quartet",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "arthurs:2026-07-18:eri-yamamoto-jazz-trio",
+      "clubId": "arthurs",
+      "title": "Eri Yamamoto Jazz Trio",
+      "date": "2026-07-18",
+      "sets": [
+        "19:00"
+      ],
+      "url": "https://www.arthurstavernnyc.com/performances.html",
       "details": null,
       "personnel": null,
       "priceText": null
@@ -3370,19 +3368,6 @@
       "priceText": null
     },
     {
-      "id": "arthurs:2026-07-19:creole-cooking-jazz-band",
-      "clubId": "arthurs",
-      "title": "Creole Cooking Jazz Band",
-      "date": "2026-07-19",
-      "sets": [
-        "19:00"
-      ],
-      "url": "https://www.arthurstavernnyc.com/performances.html",
-      "details": null,
-      "personnel": null,
-      "priceText": null
-    },
-    {
       "id": "jazzcultural:2026-07-19:geoffrey-keezer-friends",
       "clubId": "jazzcultural",
       "title": "Geoffrey Keezer & Friends",
@@ -3439,6 +3424,19 @@
         "19:00"
       ],
       "url": "https://www.cellardog.net/calendar-link/ehcp2mjzwcfxc3yztbffek9468rgmg",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "arthurs:2026-07-19:creole-cooking-jazz-band",
+      "clubId": "arthurs",
+      "title": "Creole Cooking Jazz Band",
+      "date": "2026-07-19",
+      "sets": [
+        "19:00"
+      ],
+      "url": "https://www.arthurstavernnyc.com/performances.html",
       "details": null,
       "personnel": null,
       "priceText": null
@@ -3754,6 +3752,24 @@
       "priceText": null
     },
     {
+      "id": "jazzcultural:2026-07-19:jam-in-the-cafe",
+      "clubId": "jazzcultural",
+      "title": "Jam in the Cafe",
+      "date": "2026-07-19",
+      "sets": [
+        "22:00"
+      ],
+      "url": "https://www.smallslive.com/events/33208-jam-in-the-cafe/",
+      "details": "until 12:00 AM",
+      "personnel": [
+        {
+          "name": "Marc Devine",
+          "instrument": "piano"
+        }
+      ],
+      "priceText": null
+    },
+    {
       "id": "arthurs:2026-07-19:stew-cutler-friends",
       "clubId": "arthurs",
       "title": "Stew Cutler & Friends",
@@ -3777,24 +3793,6 @@
       "url": "https://www.arthurstavernnyc.com/performances.html",
       "details": null,
       "personnel": null,
-      "priceText": null
-    },
-    {
-      "id": "jazzcultural:2026-07-19:jam-in-the-cafe",
-      "clubId": "jazzcultural",
-      "title": "Jam in the Cafe",
-      "date": "2026-07-19",
-      "sets": [
-        "22:00"
-      ],
-      "url": "https://www.smallslive.com/events/33208-jam-in-the-cafe/",
-      "details": "until 12:00 AM",
-      "personnel": [
-        {
-          "name": "Marc Devine",
-          "instrument": "piano"
-        }
-      ],
       "priceText": null
     },
     {
@@ -4038,19 +4036,6 @@
       "priceText": null
     },
     {
-      "id": "arthurs:2026-07-20:grove-street-stompers-dixieland-jazz-band",
-      "clubId": "arthurs",
-      "title": "Grove Street Stompers Dixieland Jazz Band",
-      "date": "2026-07-20",
-      "sets": [
-        "19:00"
-      ],
-      "url": "https://www.arthurstavernnyc.com/performances.html",
-      "details": null,
-      "personnel": null,
-      "priceText": null
-    },
-    {
       "id": "jazzcultural:2026-07-20:ari-hoenig-quartet",
       "clubId": "jazzcultural",
       "title": "Ari Hoenig Quartet",
@@ -4201,6 +4186,19 @@
         "19:00"
       ],
       "url": "https://www.cellardog.net/calendar-link/dan-aran-trio-3",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "arthurs:2026-07-20:grove-street-stompers-dixieland-jazz-band",
+      "clubId": "arthurs",
+      "title": "Grove Street Stompers Dixieland Jazz Band",
+      "date": "2026-07-20",
+      "sets": [
+        "19:00"
+      ],
+      "url": "https://www.arthurstavernnyc.com/performances.html",
       "details": null,
       "personnel": null,
       "priceText": null
@@ -4519,19 +4517,6 @@
       "priceText": null
     },
     {
-      "id": "arthurs:2026-07-20:toni-menage",
-      "clubId": "arthurs",
-      "title": "Toni Menage",
-      "date": "2026-07-20",
-      "sets": [
-        "22:00"
-      ],
-      "url": "https://www.arthurstavernnyc.com/performances.html",
-      "details": null,
-      "personnel": null,
-      "priceText": null
-    },
-    {
       "id": "jazzcultural:2026-07-20:jam-in-the-cafe",
       "clubId": "jazzcultural",
       "title": "Jam in the Cafe",
@@ -4547,6 +4532,19 @@
           "instrument": "piano"
         }
       ],
+      "priceText": null
+    },
+    {
+      "id": "arthurs:2026-07-20:toni-menage",
+      "clubId": "arthurs",
+      "title": "Toni Menage",
+      "date": "2026-07-20",
+      "sets": [
+        "22:00"
+      ],
+      "url": "https://www.arthurstavernnyc.com/performances.html",
+      "details": null,
+      "personnel": null,
       "priceText": null
     },
     {
@@ -4791,19 +4789,6 @@
       "priceText": null
     },
     {
-      "id": "arthurs:2026-07-21:yuichi-hirakawa-house-band",
-      "clubId": "arthurs",
-      "title": "Yuichi Hirakawa House Band",
-      "date": "2026-07-21",
-      "sets": [
-        "19:00"
-      ],
-      "url": "https://www.arthurstavernnyc.com/performances.html",
-      "details": null,
-      "personnel": null,
-      "priceText": null
-    },
-    {
       "id": "jazzcultural:2026-07-21:jeb-patton-trio",
       "clubId": "jazzcultural",
       "title": "Jeb Patton Trio",
@@ -4905,6 +4890,19 @@
         "19:00"
       ],
       "url": "https://www.cellardog.net/calendar-link/clovis-nicolas-trio",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "arthurs:2026-07-21:yuichi-hirakawa-house-band",
+      "clubId": "arthurs",
+      "title": "Yuichi Hirakawa House Band",
+      "date": "2026-07-21",
+      "sets": [
+        "19:00"
+      ],
+      "url": "https://www.arthurstavernnyc.com/performances.html",
       "details": null,
       "personnel": null,
       "priceText": null
@@ -5265,6 +5263,24 @@
       "priceText": null
     },
     {
+      "id": "jazzcultural:2026-07-21:jam-in-the-cafe",
+      "clubId": "jazzcultural",
+      "title": "Jam in the Cafe",
+      "date": "2026-07-21",
+      "sets": [
+        "22:00"
+      ],
+      "url": "https://www.smallslive.com/events/33217-jam-in-the-cafe/",
+      "details": "until 12:00 AM",
+      "personnel": [
+        {
+          "name": "Yago Vazquez",
+          "instrument": "piano"
+        }
+      ],
+      "priceText": null
+    },
+    {
       "id": "arthurs:2026-07-21:e-j-sharpe-with-off-the-hook",
       "clubId": "arthurs",
       "title": "E.J. Sharpe with Off the Hook",
@@ -5288,24 +5304,6 @@
       "url": "https://www.arthurstavernnyc.com/performances.html",
       "details": null,
       "personnel": null,
-      "priceText": null
-    },
-    {
-      "id": "jazzcultural:2026-07-21:jam-in-the-cafe",
-      "clubId": "jazzcultural",
-      "title": "Jam in the Cafe",
-      "date": "2026-07-21",
-      "sets": [
-        "22:00"
-      ],
-      "url": "https://www.smallslive.com/events/33217-jam-in-the-cafe/",
-      "details": "until 12:00 AM",
-      "personnel": [
-        {
-          "name": "Yago Vazquez",
-          "instrument": "piano"
-        }
-      ],
       "priceText": null
     },
     {
@@ -5566,19 +5564,6 @@
       "priceText": null
     },
     {
-      "id": "arthurs:2026-07-22:eve-silber",
-      "clubId": "arthurs",
-      "title": "Eve Silber",
-      "date": "2026-07-22",
-      "sets": [
-        "19:00"
-      ],
-      "url": "https://www.arthurstavernnyc.com/performances.html",
-      "details": null,
-      "personnel": null,
-      "priceText": null
-    },
-    {
       "id": "jazzcultural:2026-07-22:ian-hendrickson-smith-quartet",
       "clubId": "jazzcultural",
       "title": "Ian Hendrickson-Smith Quartet",
@@ -5690,6 +5675,19 @@
         "19:00"
       ],
       "url": "https://www.cellardog.net/calendar-link/h46gcx86kx856bcc9xz6jh4j5cacyr",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "arthurs:2026-07-22:eve-silber",
+      "clubId": "arthurs",
+      "title": "Eve Silber",
+      "date": "2026-07-22",
+      "sets": [
+        "19:00"
+      ],
+      "url": "https://www.arthurstavernnyc.com/performances.html",
       "details": null,
       "personnel": null,
       "priceText": null
@@ -6321,19 +6319,6 @@
       "priceText": "$25-65"
     },
     {
-      "id": "arthurs:2026-07-23:eri-yamamoto-jazz-trio",
-      "clubId": "arthurs",
-      "title": "Eri Yamamoto Jazz Trio",
-      "date": "2026-07-23",
-      "sets": [
-        "19:00"
-      ],
-      "url": "https://www.arthurstavernnyc.com/performances.html",
-      "details": null,
-      "personnel": null,
-      "priceText": null
-    },
-    {
       "id": "jazzcultural:2026-07-23:leo-genovese-quintet",
       "clubId": "jazzcultural",
       "title": "Leo Genovese Quintet",
@@ -6479,6 +6464,19 @@
         "19:00"
       ],
       "url": "https://www.cellardog.net/calendar-link/phil-stewart-quartet",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "arthurs:2026-07-23:eri-yamamoto-jazz-trio",
+      "clubId": "arthurs",
+      "title": "Eri Yamamoto Jazz Trio",
+      "date": "2026-07-23",
+      "sets": [
+        "19:00"
+      ],
+      "url": "https://www.arthurstavernnyc.com/performances.html",
       "details": null,
       "personnel": null,
       "priceText": null
@@ -6724,6 +6722,19 @@
       "priceText": null
     },
     {
+      "id": "nublu:2026-07-23:blaque-dynamite-special-guests",
+      "clubId": "nublu",
+      "title": "Blaque Dynamite + Special Guests",
+      "date": "2026-07-23",
+      "sets": [
+        "22:00"
+      ],
+      "url": "https://posh.vip/e/blaque-dynamite-special-guests",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
       "id": "arthurs:2026-07-23:bobby-harden",
       "clubId": "arthurs",
       "title": "Bobby Harden",
@@ -6758,19 +6769,6 @@
         "22:00"
       ],
       "url": "https://www.arthurstavernnyc.com/performances.html",
-      "details": null,
-      "personnel": null,
-      "priceText": null
-    },
-    {
-      "id": "nublu:2026-07-23:blaque-dynamite-special-guests",
-      "clubId": "nublu",
-      "title": "Blaque Dynamite + Special Guests",
-      "date": "2026-07-23",
-      "sets": [
-        "22:00"
-      ],
-      "url": "https://posh.vip/e/blaque-dynamite-special-guests",
       "details": null,
       "personnel": null,
       "priceText": null
@@ -7213,19 +7211,6 @@
       "priceText": null
     },
     {
-      "id": "arthurs:2026-07-24:eri-yamamoto",
-      "clubId": "arthurs",
-      "title": "Eri Yamamoto",
-      "date": "2026-07-24",
-      "sets": [
-        "19:00"
-      ],
-      "url": "https://www.arthurstavernnyc.com/performances.html",
-      "details": null,
-      "personnel": null,
-      "priceText": null
-    },
-    {
       "id": "jazzcultural:2026-07-24:steve-wilson-quintet-enduring-sonance",
       "clubId": "jazzcultural",
       "title": "Steve Wilson Quintet Enduring Sonance",
@@ -7348,6 +7333,19 @@
         "19:00"
       ],
       "url": "https://www.cellardog.net/calendar-link/pf53ce8ntrpy9fft9mtak5ykbjsxxn",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "arthurs:2026-07-24:eri-yamamoto",
+      "clubId": "arthurs",
+      "title": "Eri Yamamoto",
+      "date": "2026-07-24",
+      "sets": [
+        "19:00"
+      ],
+      "url": "https://www.arthurstavernnyc.com/performances.html",
       "details": null,
       "personnel": null,
       "priceText": null
@@ -8095,19 +8093,6 @@
       "priceText": "$25-65"
     },
     {
-      "id": "arthurs:2026-07-25:eri-yamamoto-jazz-trio",
-      "clubId": "arthurs",
-      "title": "Eri Yamamoto Jazz Trio",
-      "date": "2026-07-25",
-      "sets": [
-        "19:00"
-      ],
-      "url": "https://www.arthurstavernnyc.com/performances.html",
-      "details": null,
-      "personnel": null,
-      "priceText": null
-    },
-    {
       "id": "jazzcultural:2026-07-25:steve-wilson-quintet-enduring-sonance",
       "clubId": "jazzcultural",
       "title": "Steve Wilson Quintet Enduring Sonance",
@@ -8226,6 +8211,19 @@
         "19:00"
       ],
       "url": "https://www.cellardog.net/calendar-link/swh764wbaeag9zdmw8db9sl7ssmpz9",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "arthurs:2026-07-25:eri-yamamoto-jazz-trio",
+      "clubId": "arthurs",
+      "title": "Eri Yamamoto Jazz Trio",
+      "date": "2026-07-25",
+      "sets": [
+        "19:00"
+      ],
+      "url": "https://www.arthurstavernnyc.com/performances.html",
       "details": null,
       "personnel": null,
       "priceText": null
@@ -8527,19 +8525,6 @@
       "priceText": null
     },
     {
-      "id": "arthurs:2026-07-25:alyson-williams-w-arthur-s-house-band",
-      "clubId": "arthurs",
-      "title": "Alyson Williams/w Arthur's House Band",
-      "date": "2026-07-25",
-      "sets": [
-        "22:00"
-      ],
-      "url": "https://www.arthurstavernnyc.com/performances.html",
-      "details": null,
-      "personnel": null,
-      "priceText": null
-    },
-    {
       "id": "nublu:2026-07-25:jigsaw-earth-w-baby-baguette",
       "clubId": "nublu",
       "title": "Jigsaw Earth w/ Baby & Baguette",
@@ -8548,6 +8533,19 @@
         "22:00"
       ],
       "url": "https://posh.vip/e/jigsaw-earth-w-baby-baguette",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "arthurs:2026-07-25:alyson-williams-w-arthur-s-house-band",
+      "clubId": "arthurs",
+      "title": "Alyson Williams/w Arthur's House Band",
+      "date": "2026-07-25",
+      "sets": [
+        "22:00"
+      ],
+      "url": "https://www.arthurstavernnyc.com/performances.html",
       "details": null,
       "personnel": null,
       "priceText": null
@@ -9004,19 +9002,6 @@
       "priceText": null
     },
     {
-      "id": "arthurs:2026-07-26:creole-cooking-jazz-band",
-      "clubId": "arthurs",
-      "title": "Creole Cooking Jazz Band",
-      "date": "2026-07-26",
-      "sets": [
-        "19:00"
-      ],
-      "url": "https://www.arthurstavernnyc.com/performances.html",
-      "details": null,
-      "personnel": null,
-      "priceText": null
-    },
-    {
       "id": "jazzcultural:2026-07-26:steve-wilson-quintet-enduring-sonance",
       "clubId": "jazzcultural",
       "title": "Steve Wilson Quintet Enduring Sonance",
@@ -9073,6 +9058,19 @@
         "19:00"
       ],
       "url": "https://www.cellardog.net/calendar-link/mfahw2lznyd9zkfcsflw8nnzj6rwmd",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "arthurs:2026-07-26:creole-cooking-jazz-band",
+      "clubId": "arthurs",
+      "title": "Creole Cooking Jazz Band",
+      "date": "2026-07-26",
+      "sets": [
+        "19:00"
+      ],
+      "url": "https://www.arthurstavernnyc.com/performances.html",
       "details": null,
       "personnel": null,
       "priceText": null
@@ -9261,6 +9259,24 @@
       "priceText": null
     },
     {
+      "id": "jazzcultural:2026-07-26:jam-in-the-cafe",
+      "clubId": "jazzcultural",
+      "title": "Jam in the Cafe",
+      "date": "2026-07-26",
+      "sets": [
+        "22:00"
+      ],
+      "url": "https://www.smallslive.com/events/33209-jam-in-the-cafe/",
+      "details": "until 12:00 AM",
+      "personnel": [
+        {
+          "name": "Marc Devine",
+          "instrument": "piano"
+        }
+      ],
+      "priceText": null
+    },
+    {
       "id": "arthurs:2026-07-26:stew-cutler-friends",
       "clubId": "arthurs",
       "title": "Stew Cutler & Friends",
@@ -9284,24 +9300,6 @@
       "url": "https://www.arthurstavernnyc.com/performances.html",
       "details": null,
       "personnel": null,
-      "priceText": null
-    },
-    {
-      "id": "jazzcultural:2026-07-26:jam-in-the-cafe",
-      "clubId": "jazzcultural",
-      "title": "Jam in the Cafe",
-      "date": "2026-07-26",
-      "sets": [
-        "22:00"
-      ],
-      "url": "https://www.smallslive.com/events/33209-jam-in-the-cafe/",
-      "details": "until 12:00 AM",
-      "personnel": [
-        {
-          "name": "Marc Devine",
-          "instrument": "piano"
-        }
-      ],
       "priceText": null
     },
     {
@@ -9509,19 +9507,6 @@
       "priceText": null
     },
     {
-      "id": "arthurs:2026-07-27:grove-street-stompers-dixieland-jazz-band",
-      "clubId": "arthurs",
-      "title": "Grove Street Stompers Dixieland Jazz Band",
-      "date": "2026-07-27",
-      "sets": [
-        "19:00"
-      ],
-      "url": "https://www.arthurstavernnyc.com/performances.html",
-      "details": null,
-      "personnel": null,
-      "priceText": null
-    },
-    {
       "id": "jazzcultural:2026-07-27:eric-alexander-quartet",
       "clubId": "jazzcultural",
       "title": "Eric Alexander Quartet",
@@ -9607,6 +9592,19 @@
         "19:00"
       ],
       "url": "https://www.cellardog.net/calendar-link/harry-allen-trio-3",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "arthurs:2026-07-27:grove-street-stompers-dixieland-jazz-band",
+      "clubId": "arthurs",
+      "title": "Grove Street Stompers Dixieland Jazz Band",
+      "date": "2026-07-27",
+      "sets": [
+        "19:00"
+      ],
+      "url": "https://www.arthurstavernnyc.com/performances.html",
       "details": null,
       "personnel": null,
       "priceText": null
@@ -9823,19 +9821,6 @@
       "priceText": null
     },
     {
-      "id": "arthurs:2026-07-27:toni-menage",
-      "clubId": "arthurs",
-      "title": "Toni Menage",
-      "date": "2026-07-27",
-      "sets": [
-        "22:00"
-      ],
-      "url": "https://www.arthurstavernnyc.com/performances.html",
-      "details": null,
-      "personnel": null,
-      "priceText": null
-    },
-    {
       "id": "jazzcultural:2026-07-27:jam-in-the-cafe",
       "clubId": "jazzcultural",
       "title": "Jam in the Cafe",
@@ -9851,6 +9836,19 @@
           "instrument": "piano"
         }
       ],
+      "priceText": null
+    },
+    {
+      "id": "arthurs:2026-07-27:toni-menage",
+      "clubId": "arthurs",
+      "title": "Toni Menage",
+      "date": "2026-07-27",
+      "sets": [
+        "22:00"
+      ],
+      "url": "https://www.arthurstavernnyc.com/performances.html",
+      "details": null,
+      "personnel": null,
       "priceText": null
     },
     {
@@ -10073,19 +10071,6 @@
       "priceText": null
     },
     {
-      "id": "arthurs:2026-07-28:yuichi-hirakawa-house-band",
-      "clubId": "arthurs",
-      "title": "Yuichi Hirakawa House Band",
-      "date": "2026-07-28",
-      "sets": [
-        "19:00"
-      ],
-      "url": "https://www.arthurstavernnyc.com/performances.html",
-      "details": null,
-      "personnel": null,
-      "priceText": null
-    },
-    {
       "id": "jazzcultural:2026-07-28:victor-gould-trio",
       "clubId": "jazzcultural",
       "title": "Victor Gould Trio",
@@ -10166,6 +10151,19 @@
         "19:00"
       ],
       "url": "https://www.cellardog.net/calendar-link/ezxltwah3e8d9fycswdy55pw97zee7",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "arthurs:2026-07-28:yuichi-hirakawa-house-band",
+      "clubId": "arthurs",
+      "title": "Yuichi Hirakawa House Band",
+      "date": "2026-07-28",
+      "sets": [
+        "19:00"
+      ],
+      "url": "https://www.arthurstavernnyc.com/performances.html",
       "details": null,
       "personnel": null,
       "priceText": null
@@ -10524,6 +10522,24 @@
       "priceText": null
     },
     {
+      "id": "jazzcultural:2026-07-28:jam-in-the-cafe",
+      "clubId": "jazzcultural",
+      "title": "Jam in the Cafe",
+      "date": "2026-07-28",
+      "sets": [
+        "22:00"
+      ],
+      "url": "https://www.smallslive.com/events/33218-jam-in-the-cafe/",
+      "details": "until 12:00 AM",
+      "personnel": [
+        {
+          "name": "Yago Vazquez",
+          "instrument": "piano"
+        }
+      ],
+      "priceText": null
+    },
+    {
       "id": "arthurs:2026-07-28:e-j-sharpe-with-off-the-hook",
       "clubId": "arthurs",
       "title": "E.J. Sharpe with Off the Hook",
@@ -10547,24 +10563,6 @@
       "url": "https://www.arthurstavernnyc.com/performances.html",
       "details": null,
       "personnel": null,
-      "priceText": null
-    },
-    {
-      "id": "jazzcultural:2026-07-28:jam-in-the-cafe",
-      "clubId": "jazzcultural",
-      "title": "Jam in the Cafe",
-      "date": "2026-07-28",
-      "sets": [
-        "22:00"
-      ],
-      "url": "https://www.smallslive.com/events/33218-jam-in-the-cafe/",
-      "details": "until 12:00 AM",
-      "personnel": [
-        {
-          "name": "Yago Vazquez",
-          "instrument": "piano"
-        }
-      ],
       "priceText": null
     },
     {
@@ -10848,19 +10846,6 @@
       "priceText": null
     },
     {
-      "id": "arthurs:2026-07-29:eve-silber",
-      "clubId": "arthurs",
-      "title": "Eve Silber",
-      "date": "2026-07-29",
-      "sets": [
-        "19:00"
-      ],
-      "url": "https://www.arthurstavernnyc.com/performances.html",
-      "details": null,
-      "personnel": null,
-      "priceText": null
-    },
-    {
       "id": "jazzcultural:2026-07-29:jerry-weldon-quintet",
       "clubId": "jazzcultural",
       "title": "Jerry Weldon Quintet",
@@ -10970,6 +10955,19 @@
         "19:00"
       ],
       "url": "https://www.cellardog.net/calendar-link/akfhhhwm4ebxahbz3rm3s6rtgp9tph",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "arthurs:2026-07-29:eve-silber",
+      "clubId": "arthurs",
+      "title": "Eve Silber",
+      "date": "2026-07-29",
+      "sets": [
+        "19:00"
+      ],
+      "url": "https://www.arthurstavernnyc.com/performances.html",
       "details": null,
       "personnel": null,
       "priceText": null
@@ -11669,19 +11667,6 @@
       "priceText": "$25-65"
     },
     {
-      "id": "arthurs:2026-07-30:eri-yamamoto-jazz-trio",
-      "clubId": "arthurs",
-      "title": "Eri Yamamoto Jazz Trio",
-      "date": "2026-07-30",
-      "sets": [
-        "19:00"
-      ],
-      "url": "https://www.arthurstavernnyc.com/performances.html",
-      "details": null,
-      "personnel": null,
-      "priceText": null
-    },
-    {
       "id": "jazzcultural:2026-07-30:rudresh-mahanthappa-hero-trio",
       "clubId": "jazzcultural",
       "title": "Rudresh Mahanthappa Hero Trio",
@@ -11854,6 +11839,19 @@
         "19:00"
       ],
       "url": "https://www.cellardog.net/calendar-link/frank-basile-quintet",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "arthurs:2026-07-30:eri-yamamoto-jazz-trio",
+      "clubId": "arthurs",
+      "title": "Eri Yamamoto Jazz Trio",
+      "date": "2026-07-30",
+      "sets": [
+        "19:00"
+      ],
+      "url": "https://www.arthurstavernnyc.com/performances.html",
       "details": null,
       "personnel": null,
       "priceText": null
@@ -12107,6 +12105,19 @@
       "priceText": null
     },
     {
+      "id": "nublu:2026-07-30:djavaneio",
+      "clubId": "nublu",
+      "title": "DJAVANEIO",
+      "date": "2026-07-30",
+      "sets": [
+        "22:00"
+      ],
+      "url": "https://posh.vip/e/djavaneio",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
       "id": "arthurs:2026-07-30:bobby-harden",
       "clubId": "arthurs",
       "title": "Bobby Harden",
@@ -12141,19 +12152,6 @@
         "22:00"
       ],
       "url": "https://www.arthurstavernnyc.com/performances.html",
-      "details": null,
-      "personnel": null,
-      "priceText": null
-    },
-    {
-      "id": "nublu:2026-07-30:djavaneio",
-      "clubId": "nublu",
-      "title": "DJAVANEIO",
-      "date": "2026-07-30",
-      "sets": [
-        "22:00"
-      ],
-      "url": "https://posh.vip/e/djavaneio",
       "details": null,
       "personnel": null,
       "priceText": null
@@ -12559,19 +12557,6 @@
       "priceText": "$25-65"
     },
     {
-      "id": "arthurs:2026-07-31:eri-yamamoto",
-      "clubId": "arthurs",
-      "title": "Eri Yamamoto",
-      "date": "2026-07-31",
-      "sets": [
-        "19:00"
-      ],
-      "url": "https://www.arthurstavernnyc.com/performances.html",
-      "details": null,
-      "personnel": null,
-      "priceText": null
-    },
-    {
       "id": "jazzcultural:2026-07-31:primary-influences-band",
       "clubId": "jazzcultural",
       "title": "Primary Influences Band",
@@ -12710,6 +12695,19 @@
         "19:00"
       ],
       "url": "https://www.cellardog.net/calendar-link/yk2baz2rs8m26w5njcp5d62b8khbzt",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "arthurs:2026-07-31:eri-yamamoto",
+      "clubId": "arthurs",
+      "title": "Eri Yamamoto",
+      "date": "2026-07-31",
+      "sets": [
+        "19:00"
+      ],
+      "url": "https://www.arthurstavernnyc.com/performances.html",
       "details": null,
       "personnel": null,
       "priceText": null
@@ -13314,19 +13312,6 @@
       "priceText": "$25-65"
     },
     {
-      "id": "arthurs:2026-08-01:eri-yamamoto-jazz-trio",
-      "clubId": "arthurs",
-      "title": "Eri Yamamoto Jazz Trio",
-      "date": "2026-08-01",
-      "sets": [
-        "19:00"
-      ],
-      "url": "https://www.arthurstavernnyc.com/performances.html",
-      "details": null,
-      "personnel": null,
-      "priceText": null
-    },
-    {
       "id": "jazzcultural:2026-08-01:primary-influences-band",
       "clubId": "jazzcultural",
       "title": "Primary Influences Band",
@@ -13452,6 +13437,19 @@
         "19:00"
       ],
       "url": "https://www.cellardog.net/calendar-link/grant-stewart-quartet-2",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "arthurs:2026-08-01:eri-yamamoto-jazz-trio",
+      "clubId": "arthurs",
+      "title": "Eri Yamamoto Jazz Trio",
+      "date": "2026-08-01",
+      "sets": [
+        "19:00"
+      ],
+      "url": "https://www.arthurstavernnyc.com/performances.html",
       "details": null,
       "personnel": null,
       "priceText": null
@@ -14109,19 +14107,6 @@
       "priceText": null
     },
     {
-      "id": "arthurs:2026-08-02:creole-cooking-jazz-band",
-      "clubId": "arthurs",
-      "title": "Creole Cooking Jazz Band",
-      "date": "2026-08-02",
-      "sets": [
-        "19:00"
-      ],
-      "url": "https://www.arthurstavernnyc.com/performances.html",
-      "details": null,
-      "personnel": null,
-      "priceText": null
-    },
-    {
       "id": "jazzcultural:2026-08-02:primary-influences-band",
       "clubId": "jazzcultural",
       "title": "Primary Influences Band",
@@ -14182,6 +14167,19 @@
         "19:00"
       ],
       "url": "https://www.cellardog.net/calendar-link/nick-biello-trio-5",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "arthurs:2026-08-02:creole-cooking-jazz-band",
+      "clubId": "arthurs",
+      "title": "Creole Cooking Jazz Band",
+      "date": "2026-08-02",
+      "sets": [
+        "19:00"
+      ],
+      "url": "https://www.arthurstavernnyc.com/performances.html",
       "details": null,
       "personnel": null,
       "priceText": null
@@ -14395,6 +14393,24 @@
       "priceText": null
     },
     {
+      "id": "jazzcultural:2026-08-02:jam-in-the-cafe",
+      "clubId": "jazzcultural",
+      "title": "Jam in the Cafe",
+      "date": "2026-08-02",
+      "sets": [
+        "22:00"
+      ],
+      "url": "https://www.smallslive.com/events/33210-jam-in-the-cafe/",
+      "details": "until 12:00 AM",
+      "personnel": [
+        {
+          "name": "Marc Devine",
+          "instrument": "piano"
+        }
+      ],
+      "priceText": null
+    },
+    {
       "id": "arthurs:2026-08-02:stew-cutler-friends",
       "clubId": "arthurs",
       "title": "Stew Cutler & Friends",
@@ -14418,24 +14434,6 @@
       "url": "https://www.arthurstavernnyc.com/performances.html",
       "details": null,
       "personnel": null,
-      "priceText": null
-    },
-    {
-      "id": "jazzcultural:2026-08-02:jam-in-the-cafe",
-      "clubId": "jazzcultural",
-      "title": "Jam in the Cafe",
-      "date": "2026-08-02",
-      "sets": [
-        "22:00"
-      ],
-      "url": "https://www.smallslive.com/events/33210-jam-in-the-cafe/",
-      "details": "until 12:00 AM",
-      "personnel": [
-        {
-          "name": "Marc Devine",
-          "instrument": "piano"
-        }
-      ],
       "priceText": null
     },
     {
@@ -14620,19 +14618,6 @@
       "priceText": null
     },
     {
-      "id": "arthurs:2026-08-03:grove-street-stompers-dixieland-jazz-band",
-      "clubId": "arthurs",
-      "title": "Grove Street Stompers Dixieland Jazz Band",
-      "date": "2026-08-03",
-      "sets": [
-        "19:00"
-      ],
-      "url": "https://www.arthurstavernnyc.com/performances.html",
-      "details": null,
-      "personnel": null,
-      "priceText": null
-    },
-    {
       "id": "jazzcultural:2026-08-03:ari-hoenig-quartet",
       "clubId": "jazzcultural",
       "title": "Ari Hoenig Quartet",
@@ -14787,6 +14772,19 @@
       "priceText": null
     },
     {
+      "id": "arthurs:2026-08-03:grove-street-stompers-dixieland-jazz-band",
+      "clubId": "arthurs",
+      "title": "Grove Street Stompers Dixieland Jazz Band",
+      "date": "2026-08-03",
+      "sets": [
+        "19:00"
+      ],
+      "url": "https://www.arthurstavernnyc.com/performances.html",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
       "id": "pocket:2026-08-03:mingus-big-band",
       "clubId": "pocket",
       "title": "Mingus Big Band",
@@ -14914,19 +14912,6 @@
       "priceText": null
     },
     {
-      "id": "arthurs:2026-08-03:toni-menage",
-      "clubId": "arthurs",
-      "title": "Toni Menage",
-      "date": "2026-08-03",
-      "sets": [
-        "22:00"
-      ],
-      "url": "https://www.arthurstavernnyc.com/performances.html",
-      "details": null,
-      "personnel": null,
-      "priceText": null
-    },
-    {
       "id": "jazzcultural:2026-08-03:jam-in-the-cafe",
       "clubId": "jazzcultural",
       "title": "Jam in the Cafe",
@@ -14942,6 +14927,19 @@
           "instrument": "piano"
         }
       ],
+      "priceText": null
+    },
+    {
+      "id": "arthurs:2026-08-03:toni-menage",
+      "clubId": "arthurs",
+      "title": "Toni Menage",
+      "date": "2026-08-03",
+      "sets": [
+        "22:00"
+      ],
+      "url": "https://www.arthurstavernnyc.com/performances.html",
+      "details": null,
+      "personnel": null,
       "priceText": null
     },
     {
@@ -15095,19 +15093,6 @@
       "priceText": null
     },
     {
-      "id": "arthurs:2026-08-04:yuichi-hirakawa-house-band",
-      "clubId": "arthurs",
-      "title": "Yuichi Hirakawa House Band",
-      "date": "2026-08-04",
-      "sets": [
-        "19:00"
-      ],
-      "url": "https://www.arthurstavernnyc.com/performances.html",
-      "details": null,
-      "personnel": null,
-      "priceText": null
-    },
-    {
       "id": "jazzcultural:2026-08-04:caelan-cardello-trio",
       "clubId": "jazzcultural",
       "title": "Caelan Cardello Trio",
@@ -15214,6 +15199,19 @@
         "19:00"
       ],
       "url": "https://www.cellardog.net/calendar-link/x3k4re849zdfxlk27yt4ab8dwcs4l8",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "arthurs:2026-08-04:yuichi-hirakawa-house-band",
+      "clubId": "arthurs",
+      "title": "Yuichi Hirakawa House Band",
+      "date": "2026-08-04",
+      "sets": [
+        "19:00"
+      ],
+      "url": "https://www.arthurstavernnyc.com/performances.html",
       "details": null,
       "personnel": null,
       "priceText": null
@@ -15462,6 +15460,24 @@
       "priceText": null
     },
     {
+      "id": "jazzcultural:2026-08-04:jam-in-the-cafe",
+      "clubId": "jazzcultural",
+      "title": "Jam in the Cafe",
+      "date": "2026-08-04",
+      "sets": [
+        "22:00"
+      ],
+      "url": "https://www.smallslive.com/events/33555-jam-in-the-cafe/",
+      "details": "until 12:00 AM",
+      "personnel": [
+        {
+          "name": "Yago Vazquez",
+          "instrument": "piano"
+        }
+      ],
+      "priceText": null
+    },
+    {
       "id": "arthurs:2026-08-04:e-j-sharpe-with-off-the-hook",
       "clubId": "arthurs",
       "title": "E.J. Sharpe with Off the Hook",
@@ -15485,24 +15501,6 @@
       "url": "https://www.arthurstavernnyc.com/performances.html",
       "details": null,
       "personnel": null,
-      "priceText": null
-    },
-    {
-      "id": "jazzcultural:2026-08-04:jam-in-the-cafe",
-      "clubId": "jazzcultural",
-      "title": "Jam in the Cafe",
-      "date": "2026-08-04",
-      "sets": [
-        "22:00"
-      ],
-      "url": "https://www.smallslive.com/events/33555-jam-in-the-cafe/",
-      "details": "until 12:00 AM",
-      "personnel": [
-        {
-          "name": "Yago Vazquez",
-          "instrument": "piano"
-        }
-      ],
       "priceText": null
     },
     {
@@ -15702,19 +15700,6 @@
       "priceText": "$25-65"
     },
     {
-      "id": "arthurs:2026-08-05:eve-silber",
-      "clubId": "arthurs",
-      "title": "Eve Silber",
-      "date": "2026-08-05",
-      "sets": [
-        "19:00"
-      ],
-      "url": "https://www.arthurstavernnyc.com/performances.html",
-      "details": null,
-      "personnel": null,
-      "priceText": null
-    },
-    {
       "id": "jazzcultural:2026-08-05:mike-ledonne-groover-quartet",
       "clubId": "jazzcultural",
       "title": "Mike Ledonne Groover Quartet",
@@ -15813,6 +15798,19 @@
         "19:00"
       ],
       "url": "https://www.cellardog.net/calendar-link/525r58wtw787w542c62chshgl4xrg5",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "arthurs:2026-08-05:eve-silber",
+      "clubId": "arthurs",
+      "title": "Eve Silber",
+      "date": "2026-08-05",
+      "sets": [
+        "19:00"
+      ],
+      "url": "https://www.arthurstavernnyc.com/performances.html",
       "details": null,
       "personnel": null,
       "priceText": null
@@ -16308,19 +16306,6 @@
       "priceText": "$25-65"
     },
     {
-      "id": "arthurs:2026-08-06:eri-yamamoto-jazz-trio",
-      "clubId": "arthurs",
-      "title": "Eri Yamamoto Jazz Trio",
-      "date": "2026-08-06",
-      "sets": [
-        "19:00"
-      ],
-      "url": "https://www.arthurstavernnyc.com/performances.html",
-      "details": null,
-      "personnel": null,
-      "priceText": null
-    },
-    {
       "id": "jazzcultural:2026-08-06:theo-hill-quartet",
       "clubId": "jazzcultural",
       "title": "Theo Hill Quartet",
@@ -16449,6 +16434,19 @@
         "19:00"
       ],
       "url": "https://www.cellardog.net/calendar-link/brandon-lee-quintet-5",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "arthurs:2026-08-06:eri-yamamoto-jazz-trio",
+      "clubId": "arthurs",
+      "title": "Eri Yamamoto Jazz Trio",
+      "date": "2026-08-06",
+      "sets": [
+        "19:00"
+      ],
+      "url": "https://www.arthurstavernnyc.com/performances.html",
       "details": null,
       "personnel": null,
       "priceText": null
@@ -16964,19 +16962,6 @@
       "priceText": "$25-65"
     },
     {
-      "id": "arthurs:2026-08-07:eri-yamamoto",
-      "clubId": "arthurs",
-      "title": "Eri Yamamoto",
-      "date": "2026-08-07",
-      "sets": [
-        "19:00"
-      ],
-      "url": "https://www.arthurstavernnyc.com/performances.html",
-      "details": null,
-      "personnel": null,
-      "priceText": null
-    },
-    {
       "id": "jazzcultural:2026-08-07:ethan-iverson-sextet",
       "clubId": "jazzcultural",
       "title": "Ethan Iverson Sextet",
@@ -17068,6 +17053,19 @@
         "19:00"
       ],
       "url": "https://www.cellardog.net/calendar-link/frrgt5g2kltecpblfynhlyt5354zt4",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "arthurs:2026-08-07:eri-yamamoto",
+      "clubId": "arthurs",
+      "title": "Eri Yamamoto",
+      "date": "2026-08-07",
+      "sets": [
+        "19:00"
+      ],
+      "url": "https://www.arthurstavernnyc.com/performances.html",
       "details": null,
       "personnel": null,
       "priceText": null
@@ -17272,6 +17270,19 @@
       "priceText": null
     },
     {
+      "id": "nublu:2026-08-07:blondee-steel-blue-album-release-concert",
+      "clubId": "nublu",
+      "title": "Blondee \"steel blue\" Album Release Concert",
+      "date": "2026-08-07",
+      "sets": [
+        "22:00"
+      ],
+      "url": "https://posh.vip/e/blondee-steel-blue-album-release-concert",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
       "id": "arthurs:2026-08-07:bobby-harden",
       "clubId": "arthurs",
       "title": "Bobby Harden",
@@ -17306,19 +17317,6 @@
         "22:00"
       ],
       "url": "https://www.arthurstavernnyc.com/performances.html",
-      "details": null,
-      "personnel": null,
-      "priceText": null
-    },
-    {
-      "id": "nublu:2026-08-07:blondee-steel-blue-album-release-concert",
-      "clubId": "nublu",
-      "title": "Blondee \"steel blue\" Album Release Concert",
-      "date": "2026-08-07",
-      "sets": [
-        "22:00"
-      ],
-      "url": "https://posh.vip/e/blondee-steel-blue-album-release-concert",
       "details": null,
       "personnel": null,
       "priceText": null
@@ -17660,6 +17658,19 @@
           "instrument": "drums"
         }
       ],
+      "priceText": null
+    },
+    {
+      "id": "nublu:2026-08-08:slowspin-afterimage-album-release-show",
+      "clubId": "nublu",
+      "title": "Slowspin \"Afterimage\" Album Release Show",
+      "date": "2026-08-08",
+      "sets": [
+        "19:00"
+      ],
+      "url": "https://nublu.net/program151",
+      "details": null,
+      "personnel": null,
       "priceText": null
     },
     {
@@ -18663,6 +18674,19 @@
         "21:00"
       ],
       "url": "https://ticketing.jazz.org/21202/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "nublu:2026-08-10:cloudsave-vs-dom-palombi-s-game-night",
+      "clubId": "nublu",
+      "title": "CLOUDSAVE vs DOM PALOMBI'S GAME NIGHT!",
+      "date": "2026-08-10",
+      "sets": [
+        "19:00"
+      ],
+      "url": "https://nublu.net/program151",
       "details": null,
       "personnel": null,
       "priceText": null
@@ -22693,7 +22717,7 @@
         "20:45"
       ],
       "url": "https://www.thedjangonyc.com/events/ny-flamenco-3/?selected_date=2026-08-18",
-      "details": null,
+      "details": "The New York Flamenco All-Stars presents flamenco and songwriting that moves fluidly between deep-rooted tradition and contemporary song. Featuring flamenco dance in dialogue with voice, guitar, saxophone, piano, bass and drums. Famed Rolling Stones saxophonist Tim Ries leads this unique ensemble al",
       "personnel": null,
       "priceText": null
     },
@@ -22945,8 +22969,25 @@
         "23:30"
       ],
       "url": "https://www.thedjangonyc.com/events/sol-liebeskind-2/?selected_date=2026-08-18",
-      "details": null,
-      "personnel": null,
+      "details": "Drawing on bolero, jazz, and contemporary influences, Argentine vocalist Sol Liebeskind brings an outstanding group to perform music from her album NOCHE NO TE VAYAS, released last year. The repertoire blends classic, soulful boleros from across Latin America with carefully selected deep cuts, reima",
+      "personnel": [
+        {
+          "name": "Sol Liebeskind",
+          "instrument": "vocals"
+        },
+        {
+          "name": "Tal Yahalom",
+          "instrument": "guitar"
+        },
+        {
+          "name": "Toru Dodo",
+          "instrument": "piano"
+        },
+        {
+          "name": "Joel Mateo",
+          "instrument": "percussion"
+        }
+      ],
       "priceText": null
     },
     {
@@ -23392,7 +23433,7 @@
         "23:30"
       ],
       "url": "https://www.thedjangonyc.com/events/ace-2/?selected_date=2026-08-19",
-      "details": null,
+      "details": "A.C.E. (aka Alex Claffy Elektric) is bassist Alexander Claffy's new groove-focused ensemble. The in-demand bassist moved to New York in 2011 and since then he’s worked with everyone from legends like Jimmy Cobb, Louis Hayes and Harold Mabern, to today’s biggest draws like Chris Botti and Veronica Sw",
       "personnel": null,
       "priceText": null
     },
@@ -23701,8 +23742,25 @@
         "20:45"
       ],
       "url": "https://www.thedjangonyc.com/events/tyler-blanton-23/?selected_date=2026-08-20",
-      "details": null,
-      "personnel": null,
+      "details": "Brooklyn based vibraphonist Tyler Blanton is becoming known as a new and identifiable voice on the instrument. With his distinctly lyrical and nuanced 4 mallet approach to the vibraphone, he has been praised as “an heir to the swinging and melodically charged throne of post-bop masters such as Gary ",
+      "personnel": [
+        {
+          "name": "Tyler Blanton",
+          "instrument": "vibraphone"
+        },
+        {
+          "name": "Klaus Muller",
+          "instrument": "piano"
+        },
+        {
+          "name": "Eduardo Belo",
+          "instrument": "bass"
+        },
+        {
+          "name": "Dennis Bulhoes",
+          "instrument": "drums"
+        }
+      ],
       "priceText": null
     },
     {
@@ -28652,7 +28710,20 @@
       ],
       "url": "https://thepocketnyc.com/event/claudia-acuna-ave-de-luz-record-release/",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Manu Koch",
+          "instrument": "piano/keys"
+        },
+        {
+          "name": "Carlos Henderson",
+          "instrument": "bass guitar"
+        },
+        {
+          "name": "Yayo Serka",
+          "instrument": "drums"
+        }
+      ],
       "priceText": null
     },
     {
@@ -29120,7 +29191,7 @@
     {
       "id": "nublu:2026-09-09:jon-madof-trio-tzadik-records-album-release-the-modulators-g",
       "clubId": "nublu",
-      "title": "Jon Madof Trio - Tzadik Records Album Release, The Modulators & Golem",
+      "title": "Jon Madof Trio - Tzadik Records Album Release, The Modulators & Golem SPONSORS AND PARTNER",
       "date": "2026-09-09",
       "sets": [
         "19:00"
@@ -31069,19 +31140,6 @@
       "priceText": null
     },
     {
-      "id": "nublu:2026-09-30:anthony-hervey-yellow-couch-music-ajile",
-      "clubId": "nublu",
-      "title": "Anthony Hervey, Yellow Couch Music, Ajile",
-      "date": "2026-09-30",
-      "sets": [
-        "19:00"
-      ],
-      "url": "https://posh.vip/e/anthony-hervey-yellow-couch-music-ajile",
-      "details": null,
-      "personnel": null,
-      "priceText": null
-    },
-    {
       "id": "roulette:2026-09-30:larry-ochs-safe-havens-for-the-abstract-truth-nate-wooley-s-",
       "clubId": "roulette",
       "title": "Larry Ochs Safe Havens (for the Abstract Truth) // Nate Wooley’s Mutual Aid Music",
@@ -32730,19 +32788,6 @@
       "sets": [],
       "url": "https://www.zincbar.com/event/open-for-cocktails-79/",
       "details": "Bar Hours: Open from 2:00 PM to 2:AM — no cover charge to enjoy cocktails and other drinks from our offer and the vibe! Join us every Saturday at Zinc Bar for an unforgettable night of signature cocktails, great vibes, and the unique atmosphere you won’t find anywhere else.",
-      "personnel": null,
-      "priceText": null
-    },
-    {
-      "id": "nublu:2026-11-06:fkajazz-trio-w-moto-fukushima-vicky-casis-sponsors-and-partn",
-      "clubId": "nublu",
-      "title": "FKAjazz Trio+ w/ Moto Fukushima & Vicky Casis SPONSORS AND PARTNERS Home Club Label Progra",
-      "date": "2026-11-06",
-      "sets": [
-        "19:00"
-      ],
-      "url": "https://posh.vip/e/fkajazz-trio-w-moto-fukushima-vicky-casis",
-      "details": null,
       "personnel": null,
       "priceText": null
     },
