@@ -2006,6 +2006,7 @@ ok('regattabar: seed merges same-title dates into sets (Coleman two-a-night)', (
 ok('lilypad: gcal links -> NY-time events; non-music filtered; late set shifts', () => {
   const amp = String.fromCharCode(38);
   const html = [
+    '<a href="/home/cb2er-63k5x-865f2"><h3>Gill Aharon Trio</h3></a>',
     'google.com/calendar/event?action=TEMPLATE' + amp + 'text=Gill%20Aharon%20Trio' + amp + 'dates=20260716T001500Z/20260716T020000Z',
     'google.com/calendar/event?action=TEMPLATE' + amp + 'amp;text=Jesse%20Gallagher%20%2B%20Steve%20Fell' + amp + 'amp;dates=20260715T230000Z/20260716T000000Z',
     'google.com/calendar/event?action=TEMPLATE' + amp + 'text=The%20Lilypad%20Variety%20Show' + amp + 'dates=20260716T020000Z/20260716T035900Z',
@@ -2015,6 +2016,7 @@ ok('lilypad: gcal links -> NY-time events; non-music filtered; late set shifts',
   const gill = evs.find((e) => /Gill Aharon/.test(e.title));
   assert.equal(gill.date, '2026-07-15', '00:15 UTC = 8:15pm ET the evening before');
   assert.deepEqual(gill.sets, ['20:15']);
+  assert.equal(gill.url, 'https://www.lilypadinman.com/home/cb2er-63k5x-865f2', 'per-event page linked');
   assert.match(evs.find((e) => /Gallagher/.test(e.title)).title, /\+ Steve Fell/);
 });
 
