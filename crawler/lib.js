@@ -113,6 +113,10 @@ export function sleep(ms) {
 const MONTHS = {
   jan: 1, feb: 2, mar: 3, apr: 4, may: 5, jun: 6,
   jul: 7, aug: 8, sep: 9, oct: 10, nov: 11, dec: 12,
+  // German (Berlin listings): only where the 3-char prefix differs from
+  // English — Januar/Februar/April/Juni/Juli/August/September/November
+  // already collide correctly. Mär/Mrz/Maerz all mean March.
+  'mär': 3, mrz: 3, mae: 3, mai: 5, okt: 10, dez: 12,
 };
 export function monthNum(name) {
   return MONTHS[String(name).slice(0, 3).toLowerCase()] ?? null;
@@ -252,8 +256,14 @@ const INSTRUMENTS = new Set([
   'ukulele', 'kora', 'balafon', 'ngoni', 'cuatro', 'tres', 'cavaquinho',
   'bandoneon', 'fiddle', 'melodica', 'congas', 'bongos', 'timbales',
   'washboard', 'tabla',
+  // German (Berlin rosters: "Anna Schmidt - Schlagzeug"); umlauts are
+  // NFD-stripped before lookup (flöte -> flote), transliterations included
+  'schlagzeug', 'kontrabass', 'posaune', 'trompete', 'gitarre', 'klavier',
+  'saxophon', 'saxofon', 'gesang', 'stimme', 'geige', 'bratsche',
+  'flote', 'floete', 'querflote', 'querfloete', 'klarinette', 'orgel',
+  'tasten', 'fluegelhorn', 'ebass', 'keyb',
 ]);
-const isInstrumentWord = (w) =>
+export const isInstrumentWord = (w) =>
   INSTRUMENTS.has(String(w).normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase().replace(/[^a-z]/g, ''));
 
 // --- Japanese rosters --------------------------------------------------------
@@ -261,7 +271,7 @@ const isInstrumentWord = (w) =>
 // width: "菊地成孔(Sax,Vo)林 正樹(P)" or "井上JUJUヒロシ（sax） 岡 淳（sax）".
 // The abbreviations are romaji; map them to the site's instrument names.
 const JP_INSTRUMENTS = {
-  p: 'piano', pf: 'piano', pno: 'piano', key: 'keys', keys: 'keys',
+  p: 'piano', pf: 'piano', pno: 'piano', key: 'keys', keys: 'keys', keyb: 'keys',
   b: 'bass', ba: 'bass', wb: 'bass', eb: 'electric bass', cb: 'bass',
   ds: 'drums', dr: 'drums', drs: 'drums', d: 'drums',
   g: 'guitar', gt: 'guitar', eg: 'guitar', ag: 'guitar',
@@ -279,20 +289,25 @@ const JP_INSTRUMENTS = {
 // Parse a run of Name(Abbr[,Abbr]) pairs -> [{name, instrument}].
 // Both ASCII () and full-width （） parens accepted; needs 2+ players so a
 // single parenthetical in prose never becomes a fake roster.
-export function personnelFromJpRun(text) {
+export function personnelFromJpRun(text, opts = {}) {
+  const { maxName = 12 } = opts; // Berlin/western rosters pass a higher cap
   const personnel = [];
-  const re = /([^()（）\n]{1,30}?)[（(]\s*([A-Za-z][A-Za-z ,./]{0,20})\s*[）)]/g;
+  const re = /([^()（）\n]{1,40}?)[（(]\s*([A-Za-z][A-Za-z ,./.]{0,25})\s*[）)]/g;
   for (const m of String(text).matchAll(re)) {
     let name = cleanText(m[1]).replace(/^[、,・\/\s]+/, '');
     // run-on prefixes (a band name before the leader) bleed into the first
     // capture; JP names are short, so over-long ones keep the trailing token
-    if (name.length > 12) {
+    if (name.length > maxName) {
       const tk = name.split(/\s+/);
       name = tk.length > 1 ? tk[tk.length - 1] : name;
     }
-    const abbrs = m[2].split(/[,、/]/).map((a) => a.trim().toLowerCase()).filter(Boolean);
+    const abbrs = m[2].split(/[,、/]/)
+      .map((a) => a.trim().replace(/\.+$/, '').toLowerCase()).filter(Boolean);
     if (!name || !abbrs.length) continue;
-    const mapped = abbrs.map((a) => JP_INSTRUMENTS[a] ?? null);
+    // abbreviation map first; else accept full instrument words
+    // ("Electric Bass", "Saxophone" — B-Flat and Donau115 write them out)
+    const mapped = abbrs.map((a) => JP_INSTRUMENTS[a]
+      ?? (a.split(/\s+/).every(isInstrumentWord) ? a : null));
     if (mapped.some((x) => x === null)) continue; // not an instrument tag: skip
     personnel.push({ name, instrument: mapped.join(', ') });
   }
@@ -436,4 +451,8 @@ export const chiDate = (input) => tzDate(input, 'America/Chicago');
 
 export const jpDate = (input) => tzDate(input, 'Asia/Tokyo');
 export const jpTime = (input) => tzTime(input, 'Asia/Tokyo');
+
+// Berlin conveniences (for the Berlin crawlers).
+export const deDate = (input) => tzDate(input, 'Europe/Berlin');
+export const deTime = (input) => tzTime(input, 'Europe/Berlin');
 export const chiTime = (input) => tzTime(input, 'America/Chicago');

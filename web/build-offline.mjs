@@ -142,7 +142,7 @@ writeFileSync(join(DIST, 'index.html'), `<!doctype html>
 <meta property="og:description" content="Who's playing tonight. Every New York jazz club, one calendar — updated all day." />
 <meta property="og:url" content="https://jazzlineup.com/" />
 <meta property="og:type" content="website" />
-<meta property="og:image" content="https://jazzlineup.com/og.png?v=4" />
+<meta property="og:image" content="https://jazzlineup.com/og.png?v=5" />
 <meta name="twitter:card" content="summary_large_image" />
 <title>Jazz Lineup — live jazz in NYC tonight</title>
 <link rel="stylesheet" href="/styles.css" />
