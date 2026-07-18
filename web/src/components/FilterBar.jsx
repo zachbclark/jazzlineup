@@ -179,7 +179,7 @@ export default function FilterBar({
     </div>
     {(overflows || expanded) && (
       <button className="chips-toggle" onClick={() => setExpanded((v) => !v)}>
-        {expanded ? '▴ show less' : `▾ all ${clubs.length} venues`}
+        {expanded ? 'Show fewer venues ▴' : `Show all ${clubs.length} venues ▾`}
       </button>
     )}
     </>

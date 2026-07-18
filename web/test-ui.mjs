@@ -67,6 +67,16 @@ try {
     assert.ok(Number(m[2]) >= 7, `expected 7+ clubs, got ${m[2]}`);
   });
 
+  await test('info tip opens, mentions drag reorder, closes on Escape', async () => {
+    await pd.click('.info-btn');
+    await pd.waitForTimeout(150);
+    const menu = await pd.textContent('.info-menu');
+    assert.match(menu, /Drag chips to reorder/);
+    await pd.keyboard.press('Escape');
+    await pd.waitForTimeout(150);
+    assert.equal(await pd.$('.info-menu'), null, 'Escape should close tips');
+  });
+
   await test('first-visit city hint shows once, dies on switcher touch', async () => {
     assert.ok(await pd.$('.city-hint'), 'hint missing on first visit');
   });
@@ -236,6 +246,30 @@ try {
     assert.equal(await count(), allShows, 'clearing borough did not restore');
     assert.equal(await chips(), allChips);
   });
+  await test('deep links: /nyc/brooklyn narrows borough; ?date= opens the drawer; URL follows', async () => {
+    // find a date with events (tomorrow-ish) from the served data
+    const day = await pd.evaluate(async () => {
+      const d = await (await fetch('/events-nyc.json')).json();
+      const today = new Date().toISOString().slice(0, 10);
+      const bk = new Set(d.clubs.filter((c) => c.borough === 'brooklyn').map((c) => c.id));
+      return d.events.find((e) => e.date > today && bk.has(e.clubId))?.date ?? null;
+    });
+    assert.ok(day, 'no future events in data');
+    await pd.goto(BASE + '/nyc/brooklyn?date=' + day, { waitUntil: 'networkidle' });
+    await pd.waitForTimeout(600);
+    assert.match(await pd.textContent('.borough-btn.on'), /Brooklyn/i, 'deep-linked borough not applied');
+    assert.ok(await pd.$('.daypanel.inline'), 'deep-linked date did not open the drawer');
+    // URL keeps mirroring state: switch borough to All, path drops the segment
+    await pd.click('.borough-btn:has-text("All")');
+    await pd.waitForTimeout(300);
+    const path = await pd.evaluate(() => window.location.pathname);
+    assert.equal(path, '/nyc', 'URL did not follow borough change: ' + path);
+    // bad borough segment degrades gracefully
+    await pd.goto(BASE + '/nyc/atlantis', { waitUntil: 'networkidle' });
+    await pd.waitForTimeout(600);
+    assert.match(await pd.textContent('.borough-btn.on'), /All/i, 'unknown borough should fall back to All');
+  });
+
   await pd.close();
 
   // --- mobile -------------------------------------------------------------------

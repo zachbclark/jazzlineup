@@ -1,8 +1,9 @@
-import React, { useEffect, useMemo, useState } from 'react';
-import { CITIES, fetchData, initialCity, todayIso, relTime, searchNorm, eventMatches, setClock24, citySlug } from './api';
+import React, { useEffect, useMemo, useRef, useState } from 'react';
+import { CITIES, fetchData, initialCity, initialRoute, todayIso, relTime, searchNorm, eventMatches, setClock24, citySlug } from './api';
 import SearchBox from './components/SearchBox';
 import { useIsMobile } from './useIsMobile';
 import CitySwitcher from './components/CitySwitcher';
+import InfoTip from './components/InfoTip';
 import BoroughBar from './components/BoroughBar';
 import FilterBar from './components/FilterBar';
 import MonthGrid from './components/MonthGrid';
@@ -10,6 +11,15 @@ import ListView from './components/ListView';
 
 // Tip jar — "buy me a drink"
 const TIP_URL = 'https://ko-fi.com/jazzlineup';
+
+// venue-idea inbox, assembled at runtime so the address never appears as a
+// scannable literal in the bundle (plus-alias: filterable, revocable)
+const contactHref = (cityLabel) => {
+  const addr = ['zachbclark', 'jazzlineup'].join('+') + String.fromCharCode(64) + 'gmail.com';
+  const subject = 'Venue idea for Jazz Lineup';
+  const body = `Venue name:\nCity: ${cityLabel}\nWebsite:\n\nWhy it belongs on the lineup:\n`;
+  return `mailto:${addr}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+};
 
 export default function App() {
   const [clubs, setClubs] = useState([]);
@@ -22,6 +32,12 @@ export default function App() {
   const [query, setQuery] = useState(''); // artist search
   const [otherCityEvents, setOtherCityEvents] = useState({}); // cityId -> events (lazy, for cross-city hint)
   const [city, setCity] = useState(initialCity);
+  // Deep-link route (/:city/:borough?date=...): borough is applied AFTER
+  // the city's data loads (it needs validating against real club data) and
+  // consumed exactly once — later city switches reset to all-boroughs.
+  const routeRef = useRef(initialRoute());
+  const sharedDate = routeRef.current.date; // stable for the app's lifetime
+  const [urlDay, setUrlDay] = useState(sharedDate); // day drawer, mirrored to ?date=
   // Everyone lands on the calendar; today is pre-selected so tonight's
   // lineup shows in the day drawer immediately.
   const [view, setView] = useState('month');
@@ -30,7 +46,13 @@ export default function App() {
   // render that shows the new city's events
   setClock24(CITIES.find((c) => c.id === city)?.clock24 ?? false);
   const now = new Date();
-  const [cursor, setCursor] = useState({ y: now.getFullYear(), m: now.getMonth() + 1 });
+  const [cursor, setCursor] = useState(() => {
+    if (sharedDate) {
+      const [y, m] = sharedDate.split('-').map(Number);
+      return { y, m };
+    }
+    return { y: now.getFullYear(), m: now.getMonth() + 1 };
+  });
 
   useEffect(() => {
     setError(null);
@@ -39,7 +61,10 @@ export default function App() {
         setClubs(d.clubs);
         setEvents(d.events);
         setGeneratedAt(d.generatedAt);
-        setBorough(null);
+        // deep-linked borough: validate against real club data, use once
+        const linked = routeRef.current.borough;
+        routeRef.current.borough = null;
+        setBorough(linked && d.clubs.some((c) => c.borough === linked) ? linked : null);
         // restore this city's saved chip selection (null = everything on)
         try {
           const saved = JSON.parse(localStorage.getItem(`jl.active.${city}`));
@@ -58,9 +83,18 @@ export default function App() {
 
   const changeCity = (id) => {
     setCity(id);
+    setUrlDay(null);
     localStorage.setItem('jl.city', id);
     window.history.pushState({}, '', '/' + citySlug(id));
   };
+
+  // Keep the address bar shareable: /:city/:borough + ?date= always mirror
+  // the current view (replaceState — only city changes make history entries).
+  useEffect(() => {
+    const path = '/' + citySlug(city) + (borough ? '/' + borough : '');
+    const q = urlDay ? '?date=' + urlDay : '';
+    window.history.replaceState({}, '', path + q);
+  }, [city, borough, urlDay]);
 
   // Chip order is saved per (city, borough scope): each of All / Manhattan /
   // Brooklyn / Queens keeps its own arrangement.
@@ -255,6 +289,8 @@ export default function App() {
           onCursor={setCursor}
           today={todayIso()}
           compact={isMobile}
+          initialDay={sharedDate}
+          onDayShare={setUrlDay}
         />
       ) : (
         <ListView events={visible} clubById={clubById} today={todayIso()} />
@@ -282,6 +318,13 @@ export default function App() {
           </svg>
           tip jar
         </a>
+        <span className="foot-sep">&middot;</span>
+        <a className="suggest-venue" href={contactHref(cityLabel)}
+          title="Know a club we're missing? Email me.">
+          suggest a venue
+        </a>
+        <span className="foot-sep">&middot;</span>
+        <InfoTip />
       </footer>
     </div>
   );

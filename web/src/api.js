@@ -16,14 +16,29 @@ export function citySlug(id) {
   return CITIES.find((c) => c.id === id)?.slug ?? id;
 }
 
-export function initialCity() {
-  const fromPath = window.location.pathname.replace(/^\//, '').toLowerCase();
+// Deep links (r/Jazz request, 2026-07): /nyc/brooklyn?date=2026-07-25 is a
+// shareable filtered view. Path is /:citySlug/:borough?; date rides the
+// query string. Bad segments degrade gracefully (unknown borough ignored,
+// malformed date ignored) — a shared link should never 404 or wedge.
+export function initialRoute() {
+  const segs = window.location.pathname.split('/').filter(Boolean).map((s) => s.toLowerCase());
   // slugs are canonical; old short-id links (/par, /chi) keep working
-  const match = CITIES.find((c) => c.slug === fromPath || c.id === fromPath);
-  if (match) return match.id;
-  const saved = localStorage.getItem('jl.city');
-  if (CITIES.some((c) => c.id === saved)) return saved;
-  return 'nyc';
+  const match = CITIES.find((c) => c.slug === segs[0] || c.id === segs[0]);
+  const rawDate = new URLSearchParams(window.location.search).get('date') ?? '';
+  let city = match?.id ?? null;
+  if (!city) {
+    const saved = localStorage.getItem('jl.city');
+    city = CITIES.some((c) => c.id === saved) ? saved : 'nyc';
+  }
+  return {
+    city,
+    borough: (match && segs[1]) || null, // validated against club data after load
+    date: /^\d{4}-\d{2}-\d{2}$/.test(rawDate) ? rawDate : null,
+  };
+}
+
+export function initialCity() {
+  return initialRoute().city;
 }
 
 export async function fetchData(city = 'nyc') {
