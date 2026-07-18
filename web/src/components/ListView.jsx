@@ -46,6 +46,7 @@ function ListView({ events, clubById, today }) {
                 <span className="badge" style={{ background: club?.color }}>{club?.shortName}</span>
                 <span className="row-title">
                   {e.title}
+                  {e.titleAlt && <span className="title-alt">{e.titleAlt}</span>}
                   {e.personnel?.length
                     ? <span className="row-details roster"><Personnel personnel={e.personnel} /></span>
                     : e.details && <span className="row-details prose">{e.details}</span>}

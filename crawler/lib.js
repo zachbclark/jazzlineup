@@ -190,6 +190,9 @@ export function makeEvent(e) {
     // "late" = shifted after-midnight start (applyLateNight) OR a same-day
     // start at 11pm or later — both wear the tag; only the former moves days.
     late: e.late === true || ((e.sets ?? []).slice().sort()[0] ?? '') >= '23:00' || undefined,
+    // optional alternate-script title (Tokyo: curated romaji under the
+    // native title; search matches both)
+    titleAlt: e.titleAlt ? cleanText(e.titleAlt) : undefined,
     priceText: e.priceText ? cleanText(e.priceText) : null,
   };
 }
@@ -236,6 +239,49 @@ const INSTRUMENTS = new Set([
 ]);
 const isInstrumentWord = (w) =>
   INSTRUMENTS.has(String(w).normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase().replace(/[^a-z]/g, ''));
+
+// --- Japanese rosters --------------------------------------------------------
+// Tokyo listings write personnel as run-on Name(Abbr) pairs, in either paren
+// width: "菊地成孔(Sax,Vo)林 正樹(P)" or "井上JUJUヒロシ（sax） 岡 淳（sax）".
+// The abbreviations are romaji; map them to the site's instrument names.
+const JP_INSTRUMENTS = {
+  p: 'piano', pf: 'piano', pno: 'piano', key: 'keys', keys: 'keys',
+  b: 'bass', ba: 'bass', wb: 'bass', eb: 'electric bass', cb: 'bass',
+  ds: 'drums', dr: 'drums', drs: 'drums', d: 'drums',
+  g: 'guitar', gt: 'guitar', eg: 'guitar', ag: 'guitar',
+  vo: 'vocals', voc: 'vocals',
+  sax: 'sax', as: 'alto sax', ts: 'tenor sax', ss: 'soprano sax', bs: 'baritone sax',
+  tp: 'trumpet', flh: 'flugelhorn', tb: 'trombone', btb: 'bass trombone',
+  fl: 'flute', cl: 'clarinet', bcl: 'bass clarinet',
+  org: 'organ', vib: 'vibraphone', vln: 'violin', vn: 'violin', vc: 'cello',
+  per: 'percussion', perc: 'percussion', tab: 'tabla',
+  syn: 'synth', synth: 'synth', elec: 'electronics', acc: 'accordion',
+  hca: 'harmonica', harp: 'harp', bjo: 'banjo', mand: 'mandolin', euph: 'euphonium',
+  tuba: 'tuba', cor: 'cornet', horn: 'horn', cond: 'conductor', arr: 'arranger',
+};
+
+// Parse a run of Name(Abbr[,Abbr]) pairs -> [{name, instrument}].
+// Both ASCII () and full-width （） parens accepted; needs 2+ players so a
+// single parenthetical in prose never becomes a fake roster.
+export function personnelFromJpRun(text) {
+  const personnel = [];
+  const re = /([^()（）\n]{1,30}?)[（(]\s*([A-Za-z][A-Za-z ,./]{0,20})\s*[）)]/g;
+  for (const m of String(text).matchAll(re)) {
+    let name = cleanText(m[1]).replace(/^[、,・\/\s]+/, '');
+    // run-on prefixes (a band name before the leader) bleed into the first
+    // capture; JP names are short, so over-long ones keep the trailing token
+    if (name.length > 12) {
+      const tk = name.split(/\s+/);
+      name = tk.length > 1 ? tk[tk.length - 1] : name;
+    }
+    const abbrs = m[2].split(/[,、/]/).map((a) => a.trim().toLowerCase()).filter(Boolean);
+    if (!name || !abbrs.length) continue;
+    const mapped = abbrs.map((a) => JP_INSTRUMENTS[a] ?? null);
+    if (mapped.some((x) => x === null)) continue; // not an instrument tag: skip
+    personnel.push({ name, instrument: mapped.join(', ') });
+  }
+  return personnel.length >= 2 ? personnel : [];
+}
 
 // Promo / boilerplate that pollutes event descriptions.
 const PROMO_RE = /\b(?:FREE WITH SUMMERPASS|SUMMERPASS|TICKETS\s*(?:&|and)\s*MORE INFO|GET (?:YOUR )?TICKETS?|MORE INFO|BUY TICKETS?|LIVESTREAM|SOLD OUT)\b[.!]?/gi;
@@ -371,4 +417,7 @@ export const laTime = (input) => tzTime(input, 'America/Los_Angeles');
 
 // Chicago conveniences (for the Chicago crawlers).
 export const chiDate = (input) => tzDate(input, 'America/Chicago');
+
+export const jpDate = (input) => tzDate(input, 'Asia/Tokyo');
+export const jpTime = (input) => tzTime(input, 'Asia/Tokyo');
 export const chiTime = (input) => tzTime(input, 'America/Chicago');

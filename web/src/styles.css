@@ -271,8 +271,15 @@ button { font: inherit; cursor: pointer; }
 .empty-list, .error { color: var(--muted); padding: 40px 0; text-align: center; }
 .error { color: #e07a6a; }
 
+/* Tokyo: curated romaji line under a native-script title */
+.p-name-alt { color: var(--muted); }
+.title-alt { display: block; color: var(--muted); font-size: 0.85em; font-weight: 400; margin-top: 1px; }
+
 .foot { margin-top: 30px; color: var(--muted); font-size: 12.5px; display: flex; gap: 8px; flex-wrap: wrap; }
 .foot-sep { color: var(--line); }
+/* quiet by design: the tip jar keeps the footer's only gold */
+.suggest-venue { color: var(--muted); text-decoration: none; }
+.suggest-venue:hover { color: var(--text); }
 /* the tip jar wears gold — the footer's one invitation; halo on hover only */
 .tip-jar {
   color: var(--accent); opacity: 0.9; font-weight: 600; letter-spacing: 0.3px;

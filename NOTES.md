@@ -245,8 +245,44 @@ quarter). Boston recall-audit candidate: Bostonshows.org (jazz filter).
 personnel-audit STRUCTURAL should gain: wallys, beehive, regattabar,
 scullers.
 
-Queue after Boston: TOKYO (Zach, 2026-07-19: bumped ahead of Philly to
-use the strongest model while available — see Tokyo notes below), then
+TOKYO SHIPPED 2026-07-19 (city id tok, 7 venues; slug /tokyo; clock24:
+'colon' = Japanese 19:30 style). Architecture: searchNorm now folds
+katakana->hiragana and full-width->ASCII (JP search works in any script);
+events carry optional titleAlt (curated romaji under native titles —
+_jpromaji.js, VERIFIED READINGS ONLY, grow it over time, absent beats
+wrong); personnelFromJpRun in lib.js parses Name(Abbr) roster runs in both
+paren widths with a romaji-abbreviation instrument map. Venues: Pit Inn
+(http NOT https; /schedule + /next-schedule + /schedule-day day_box
+markup; rosters nightly; Start times; sold-out flag), Blue Note Tokyo +
+Cotton Club (shared _bluenotejp.js; reserve.<host>/reserve/schedule/move/
+YYYYMM; one table.later per run, rowspan fans dates; price + intro; NO set
+times in this view — detail enrichment is a future pass), Body & Soul
+(WP /schedule; date lives in the /event/YYMMDD slug; 1st/2nd set times;
+rosters), Sometime (text-regular live.html + liveYYYYMM.html archives;
+full-width-paren rosters; matinees tagged 昼の部), Alfie (alfie.tokyo
+/schedule/YYYYMM.html; genre tags [jazz]/[world] kept with non-jazz noted
+in details; house set time parsed from the header line), Intro (pure jam
+generator: Tue/Wed/Thu/Sun practice jams + SATURDAY 10-HOUR ALL-NIGHT JAM
+18:30-4:30; Mon closed, Fri at their sister cafe). BILLBOARD LIVE PENDING:
+site was in payment-system maintenance during recon — recon
+billboard-live.com/pg/shop/show/index.php?mode=list&shop=1 (shop=1 =
+Tokyo; 2/3 are Osaka/Yokohama), then include WHOLESALE per Zach's ruling
+on mixed supper clubs. Personnel: five of seven venues publish nightly
+rosters — Tokyo launches with the best personnel coverage of any city.
+
+TOKYO TIER-3 CANDIDATES (v2, from scene knowledge — recon before
+building): Someday (Shinjuku, nightly, big-band scene), Aketa no Mise
+(Nishi-Ogikubo, legendary underground since 1974), B Flat (Akasaka),
+JZ Brat (Cerulean Tower, Shibuya), Blues Alley Japan (Meguro). Also
+grow _jpromaji.js continuously — every un-romanized famous name is a
+one-line fix.
+
+NEW CITY LAUNCH CHECKLIST (learned on Boston): merge deploys CODE only;
+the city 404s until the Lambda writes events-<id>.json. Invoke the Lambda,
+and if the city page still errors, CloudFront cached the HTML fallback for
+that JSON path — invalidate /events-<id>.json.
+
+Queue after Tokyo:
 PHILLY (Chris' Jazz Cafe, South Jazz Kitchen, Solar Myth, Paris Bistro,
 Clef Club, World Cafe Live filtered, Time; city id phl), then Berlin
 (A-Trane, Quasimodo, Zig Zag, Donau115, Kunstfabrik Schlot; add German

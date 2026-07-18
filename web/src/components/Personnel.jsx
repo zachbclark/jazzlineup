@@ -36,7 +36,7 @@ export default function Personnel({ personnel }) {
     <span className="personnel">
       {personnel.map((p, i) => (
         <span key={i} className="p-member">
-          {p.name} <span className="p-inst">{shorten(p.instrument)}</span>
+          {p.name}{p.nameAlt && <span className="p-name-alt"> · {p.nameAlt}</span>} <span className="p-inst">{shorten(p.instrument)}</span>
           {i < personnel.length - 1 && <span className="p-sep"> · </span>}
         </span>
       ))}
