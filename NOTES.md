@@ -1,7 +1,9 @@
 # NOTES.md — the institutional memory
 
 Everything a fresh collaborator (human or AI) needs that the code alone
-doesn't say. Written 2026-07-19, when the site spanned six cities, 72
+doesn't say.
+Strategy, community plans, and session-protocol notes live in
+NOTES-private.md (gitignored, Zach's machine only). Written 2026-07-19, when the site spanned six cities, 72
 venues, ~2,700 upcoming events. Read this before touching crawlers.
 
 ## What this site is
@@ -62,11 +64,6 @@ Politeness: `sleep()` between page fetches, `maxPages` caps on detail-page
 enrichment (venues fill over successive crawls via prior-reuse), concurrency
 ~3. We fetch each venue a handful of pages every 4 hours; that's fine.
 
-User-Agent policy: the default fetchText UA is honest. Exactly ONE venue
-(PizzaExpress) gets an unmarked browser UA plus origin/referer headers,
-scoped and commented in its module. The comment says it plainly: delete the
-venue rather than spread that pattern.
-
 ### The personnel machinery (lib.js)
 
 - `parsePersonnel(text)` — dash-run rosters: "Name - instrument Name -
@@ -117,23 +114,6 @@ _turntable, _wixevents, _fr (French dates).
 - zsh eats `!` in one-liners — write diagnostic scripts to files.
 - Import alias collisions in test.mjs (bpParse, spParse...) — rename on
   collision, node errors are cryptic.
-
-### Seed-fallback pattern (WAF-blocked venues)
-
-`crawl()` tries the live site first (auto-heals if they unblock us), falls
-back to a browser-captured seed file on 403. Current seed venues and their
-capture dates live in `crawler/clubs/*-seed.js` headers: sfjazz-seed,
-ronnies-seed (room codes M/U/L/X), jazzcafe-seed. Seeds go stale — REFRESH
-EVERY ~2 WEEKS by capturing from a real browser (Zach's Chrome; the
-seed-from-capture script is `npm run seed`). WAF taxonomy: SFJAZZ +
-Freight = Cloudflare challenge (blocks all non-browsers; Freight is
-BACKLOGGED, their TNEW API has no genre data); Jazz Cafe = AWS-IP block
-only (local crawls work); Ronnie's = blocks all non-browsers.
-
-Yoshi's note: currently a plain server-rendered parse (li.event-indv,
-aria-label carries title+date+time). It once returned 0 events to
-non-browser fetches; if that recurs, suspect an A/B client-rendered
-variant and consider the seed pattern.
 
 ## Audits — how we know we're not missing shows
 
@@ -218,6 +198,53 @@ Crawl failure model: per-venue try/catch; a failing venue reports in the
 Lambda summary's errors[] and keeps its previous events (kept count);
 the site never breaks from one venue's outage.
 
+## Command cheat sheet
+
+Everyday dev (repo root):
+
+    node crawler/test.mjs          # parser tests (112 groups as of NOLA launch)
+    node web/test-ui.mjs           # 19 browser UI tests (needs Playwright)
+    node crawler/index.js          # full crawl, writes data/events-*.json
+    node crawler/index.js --city nol   # one city (nyc la chi sf bos par lon tok nol)
+    cd web && npm run dev          # local UI dev server
+
+Data sanity after a crawl:
+
+    node -e "const d=require('./data/events-nol.json'); console.log(d.events.length,'events'); console.log([...new Set(d.events.map(e=>e.clubId))])"
+
+Audits and assets:
+
+    node scripts/personnel-audit.mjs   # coverage by venue, flags enrichable gaps
+    node scripts/nycjr-audit.mjs       # recall vs NYC Jazz Record (pdftotext first)
+    node scripts/make-og.mjs           # share card; bump ?v= in web/index.html AND web/build-offline.mjs
+
+Ship it (deploy runs itself when main updates):
+
+    git checkout main && git pull      # ALWAYS branch from fresh main
+    git checkout -b my-feature
+    git add -A && git commit -m "..."
+    git push -u origin my-feature      # then PR, admin merge
+
+Phantom PR conflicts (squash-merge echo; branch is always the newer superset):
+
+    git merge origin/main
+    git checkout --ours .
+    git add -A && git commit --no-edit && git push
+
+Refresh live data (deploy ships CODE only; the crawler Lambda also
+self-runs every 4h):
+
+    FN=$(aws cloudformation describe-stacks --stack-name JazzLineup --query "Stacks[0].Outputs[?OutputKey=='CrawlerFunctionName'].OutputValue" --output text)
+    aws lambda invoke --function-name $FN /tmp/out.json && cat /tmp/out.json
+
+New city 404s / stale JSON (CloudFront cached the HTML fallback):
+
+    DIST=$(aws cloudfront list-distributions --query "DistributionList.Items[0].Id" --output text)
+    aws cloudfront create-invalidation --distribution-id $DIST --paths "/events-nol.json"
+
+Traffic: CloudFront console -> distribution -> Monitoring tab (us-east-1;
+data lags a few hours, an empty chart right after launch is normal).
+
 ## Data feed policy (external users)
 
 The /events-<city>.json feeds are public. Policy given to Ben Welsh (TRMNL
@@ -275,13 +302,6 @@ OSAKA IS NEARLY FREE: same pages — pass shop='OSAKA' + a new clubId to
 parse(). Personnel: five of seven venues publish nightly
 rosters — Tokyo launches with the best personnel coverage of any city.
 
-TOKYO TIER-3 CANDIDATES (v2, from scene knowledge — recon before
-building): Someday (Shinjuku, nightly, big-band scene), Aketa no Mise
-(Nishi-Ogikubo, legendary underground since 1974), B Flat (Akasaka),
-JZ Brat (Cerulean Tower, Shibuya), Blues Alley Japan (Meguro). Also
-grow _jpromaji.js continuously — every un-romanized famous name is a
-one-line fix.
-
 NEW ORLEANS SHIPPED 2026-07-19 (city id nol, slug /nola, 7 venues,
 America/Chicago). Snug Harbor (TicketWeb WP plugin like Birdland; one
 listing PER SET, merged by date+title), Preservation Hall (generator:
@@ -293,13 +313,6 @@ future NOLA venue), Blue Nile (Squarespace /calendar-tickets-?format=json,
 epoch-ms dates, titles carry "• SAT JUL. 18 • 7:30PM" decoration to
 strip), Maple Leaf (existing _wixevents helper unchanged), Fritzel's
 (generator, nightly trad since 1969, deliberately no fake set times).
-OPEN DECISION (Zach "not sure", 2026-07-19): residency rooms with no real
-websites — Kermit Ruffins' Mother-in-Law Lounge, Candlelight Lounge
-(Treme Brass Band Wednesdays). Recommendation on file: include as
-generators like Marjorie's; revisit when Zach has a feel for it. Round-2
-candidates: Vaughan's (Kermit's old Thursday), Three Muses, Bacchanal
-(Bywater backyard jazz daily), Palm Court Jazz Cafe, Tipitina's
-(filtered), The Rabbit Hole.
 
 CHIP COLOR VERIFICATION (mechanical task, any session): registry colors
 whose comment cites a real brand hex are verified; comments saying "quick
@@ -315,54 +328,6 @@ NEW CITY LAUNCH CHECKLIST (learned on Boston): merge deploys CODE only;
 the city 404s until the Lambda writes events-<id>.json. Invoke the Lambda,
 and if the city page still errors, CloudFront cached the HTML fallback for
 that JSON path — invalidate /events-<id>.json.
-
-LAUNCH PACK — PHILLY (city id phl, America/New_York): Chris' Jazz Cafe
-chrisjazzcafe.com/calendar (the nightly anchor), South Jazz Kitchen
-southjazzkitchen.com/jazz-club/, Solar Myth (Ars Nova Workshop's room —
-serious avant programming, treat like Cafe OTO), Paris Bistro (Chestnut
-Hill), Clef Club (occasional programming, maybe generator-ish), World
-Cafe Live (mixed genre — keyword + artist-net FILTER), Time Restaurant.
-All-US patterns; mechanical from here.
-
-LAUNCH PACK — BERLIN (city id ber, Europe/Berlin, clock24: true for the
-Paris-style display): A-Trane a-trane.de (nightly institution), Quasimodo
-quasimodo.de (jazz/funk — light filter), Zig Zag zigzag-jazzclub.berlin
-(nightly, r/Jazz-endorsed), Donau115 donau115.de (Neukölln scene room),
-Kunstfabrik Schlot kunstfabrik-schlot.de (jazz + cabaret — filter the
-cabaret/comedy). B-Flat b-flat-berlin.de is the sixth if five feel thin.
-BEFORE BUILDING add German to lib.js INSTRUMENTS (the French precedent):
-schlagzeug, kontrabass, posaune, trompete, gitarre, klavier, saxophon,
-gesang, stimme, geige, bratsche, floete, klarinette, orgel, tasten. And
-German month names (Januar...Dezember, März with umlaut) need a mapping —
-monthNum only speaks English.
-
-Boston intel from r/Jazz (u/thinair01, 2026-07): add Berklee Performance
-Center and the Red Room at Cafe 939 (Berklee) as candidates — frequent but
-not majority jazz, needs filtering. A big slice of Boston jazz happens as
-roving SERIES rather than in clubs: Mandorla Music, Dave Bryant's Third
-Thursdays, Square Root Roslindale Sundays, Long Live Roxbury Thursdays,
-The Makanda Project (monthly-ish, free, Roxbury). The Marjorie's/Bird &
-Beckett generator pattern may fit the regular ones. Bostonshows.org has a
-jazz filter and is "super comprehensive" — evaluate it as Boston's
-recall-audit source (the NYCJR role), or a data collaboration.
-
-LA note: Danny Janklow reportedly holds a standing first-Thursday-monthly
-night at the Baked Potato (r/Jazz commenter) — verify against crawl data.
-
-Tokyo is parked deliberately (deserves proper i18n): recon notes — Blue
-Note Tokyo reserve.bluenote.co.jp server-rendered tables with roman artist
-names; Pit Inn is http-only, WP REST /wp-json/wp/v2/artist_live_info, full
-rosters in 菊地成孔(Sax,Vo) format, has an English page; venue list Blue
-Note, Cotton Club, Billboard Live, Pit Inn, Body & Soul, Sometime, Intro,
-Alfie. Decisions made: English titles, native-script search at launch via
-the tested kana-folding searchNorm, curated romaji table as v2.
-
-Also parked: satellite one-club cities (Bimhuis Amsterdam, Porgy & Bess
-Vienna, Jazzhus Montmartre Copenhagen), festivals as seasonal venues
-(Charlie Parker Aug, Chicago Labor Day, Hyde Park Sept, Angel City, Winter
-Jazzfest Jan), NYC Tier 2 from the NYCJR shortlist, conservatory calendars
-in September, Freight & Salvage (WAF), SFJAZZ outreach email (drafted;
-Zach sends), LA round 3.
 
 ## Feature roadmap (user-requested)
 
@@ -383,34 +348,3 @@ Zach sends), LA round 3.
   committed to this publicly in the r/Jazz thread ("classical is next").
   Big scope; treat as its own project, likely reusing the whole crawler +
   registry architecture.
-
-## Working-copy discipline (learned the hard way, 2026-07-19)
-
-Zach's Mac (/Users/zclark/github/jazzlineup) is the ONLY source of truth.
-Any other working copy (an AI session's container, a scratch clone) can
-silently revert to a stale snapshot; one stale-base sync force-overwrote
-the Mac and deleted a shipped feature (the suggest-a-venue link — rebuilt
-same day). Protocol: stage the CURRENT Mac copy of a file immediately
-before editing it, edit that, sync back. Bulk multi-line rewrites must
-assert every anchor string matched (a silent no-op replace is how features
-half-vanish). When anything looks impossibly missing, check file mtimes
-and git log before trusting the tree.
-
-## Community state (as of 2026-07-19)
-
-Posted to r/InternetIsBeautiful (r/dataisbeautiful removed the direct post
-— tool links aren't visualizations; the way back in is an [OC] chart FROM
-the data citing the site, generator ready at scripts/make-dib-chart.mjs;
-rendered chart saved at repo root as jazz-nights.png). Ready-to-use post:
-title "[OC] Which night of the week has the most live jazz? 2,700 upcoming
-club dates across New York, LA, Chicago, SF, Paris and London"; required
-source comment: "Data: jazzlineup.com, a site I built that crawls the
-published calendars of 72 jazz venues. Tool: hand-rolled HTML/CSS. Happy
-to share per-city breakdowns in the thread." Findings worth leading with:
-Chicago Thursdays 23%, SF dead Mondays 5%, Paris and London trade places
-on Sundays, New York nearly flat (every night is jazz night).
-NYC Jazz Record community noticed the site. AI-assistance disclosure
-stance: own it cheerfully, curation is the human part. Reddit voice: no
-title case, no marketing cadence, lead with the problem, "yeah fair"
-before any pushback.
-

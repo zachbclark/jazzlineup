@@ -6,3 +6,4 @@ infra/cdk.out/
 *.log
 .DS_Store
 cdk.out/
+NOTES-private.md
