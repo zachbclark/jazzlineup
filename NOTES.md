@@ -263,11 +263,16 @@ full-width-paren rosters; matinees tagged 昼の部), Alfie (alfie.tokyo
 /schedule/YYYYMM.html; genre tags [jazz]/[world] kept with non-jazz noted
 in details; house set time parsed from the header line), Intro (pure jam
 generator: Tue/Wed/Thu/Sun practice jams + SATURDAY 10-HOUR ALL-NIGHT JAM
-18:30-4:30; Mon closed, Fri at their sister cafe). BILLBOARD LIVE PENDING:
-site was in payment-system maintenance during recon — recon
-billboard-live.com/pg/shop/show/index.php?mode=list&shop=1 (shop=1 =
-Tokyo; 2/3 are Osaka/Yokohama), then include WHOLESALE per Zach's ruling
-on mixed supper clubs. Personnel: five of seven venues publish nightly
+18:30-4:30; Mon closed, Fri at their sister cafe). BILLBOARD LIVE
+SHIPPED 2026-07-19 after their maintenance (they relaunched on Next.js
+mid-recon): billboardtok.js walks /schedules?today=YYYY-MM-DD day pages
+(35 ahead); each page carries ALL THREE shops' cards, attributed by the
+nearest preceding >TOKYO</>YOKOHAMA</>OSAKA< marker; React comment nodes
+stripped before parsing; CSS-module hashes churn per deploy so only
+stable class PREFIXES are matched; JP name in aria-label + EN tour title
+= free titleAlt; both stage Start times = sets; min price = "from ¥N".
+OSAKA IS NEARLY FREE: same pages — pass shop='OSAKA' + a new clubId to
+parse(). Personnel: five of seven venues publish nightly
 rosters — Tokyo launches with the best personnel coverage of any city.
 
 TOKYO TIER-3 CANDIDATES (v2, from scene knowledge — recon before
@@ -277,17 +282,59 @@ JZ Brat (Cerulean Tower, Shibuya), Blues Alley Japan (Meguro). Also
 grow _jpromaji.js continuously — every un-romanized famous name is a
 one-line fix.
 
+NEW ORLEANS SHIPPED 2026-07-19 (city id nol, slug /nola, 7 venues,
+America/Chicago). Snug Harbor (TicketWeb WP plugin like Birdland; one
+listing PER SET, merged by date+title), Preservation Hall (generator:
+three nightly sets 17:00/18:30/20:00, from their own meta copy; rotating
+band names = future enrichment), d.b.a. + Spotted Cat (BILL'S GIGULATOR —
+shared _gigulator.js; publish.billsgigulator.com/shows.html?site=1048 /
+1052; it's the NOLA-standard listing service, check it FIRST for any
+future NOLA venue), Blue Nile (Squarespace /calendar-tickets-?format=json,
+epoch-ms dates, titles carry "• SAT JUL. 18 • 7:30PM" decoration to
+strip), Maple Leaf (existing _wixevents helper unchanged), Fritzel's
+(generator, nightly trad since 1969, deliberately no fake set times).
+OPEN DECISION (Zach "not sure", 2026-07-19): residency rooms with no real
+websites — Kermit Ruffins' Mother-in-Law Lounge, Candlelight Lounge
+(Treme Brass Band Wednesdays). Recommendation on file: include as
+generators like Marjorie's; revisit when Zach has a feel for it. Round-2
+candidates: Vaughan's (Kermit's old Thursday), Three Muses, Bacchanal
+(Bywater backyard jazz daily), Palm Court Jazz Cafe, Tipitina's
+(filtered), The Rabbit Hole.
+
+CHIP COLOR VERIFICATION (mechanical task, any session): registry colors
+whose comment cites a real brand hex are verified; comments saying "quick
+read" or vibes are NOT. Sweep the unverified ones (most of bos/tok/nol)
+with the dominant-color extractor: load the venue site in a browser, count
+computed backgroundColor/color/borderColor values excluding grays, top hit
+is the brand color, glow-tune for the black background. Snug Harbor was
+caught wearing an invented red this way (real brand: #a54399 purple —
+Zach, from having actually been there). One-line fixes; community
+corrections welcome.
+
 NEW CITY LAUNCH CHECKLIST (learned on Boston): merge deploys CODE only;
 the city 404s until the Lambda writes events-<id>.json. Invoke the Lambda,
 and if the city page still errors, CloudFront cached the HTML fallback for
 that JSON path — invalidate /events-<id>.json.
 
-Queue after Tokyo:
-PHILLY (Chris' Jazz Cafe, South Jazz Kitchen, Solar Myth, Paris Bistro,
-Clef Club, World Cafe Live filtered, Time; city id phl), then Berlin
-(A-Trane, Quasimodo, Zig Zag, Donau115, Kunstfabrik Schlot; add German
-instrument lexicon; Zig Zag got an unprompted 5-star endorsement in the
-r/Jazz thread).
+LAUNCH PACK — PHILLY (city id phl, America/New_York): Chris' Jazz Cafe
+chrisjazzcafe.com/calendar (the nightly anchor), South Jazz Kitchen
+southjazzkitchen.com/jazz-club/, Solar Myth (Ars Nova Workshop's room —
+serious avant programming, treat like Cafe OTO), Paris Bistro (Chestnut
+Hill), Clef Club (occasional programming, maybe generator-ish), World
+Cafe Live (mixed genre — keyword + artist-net FILTER), Time Restaurant.
+All-US patterns; mechanical from here.
+
+LAUNCH PACK — BERLIN (city id ber, Europe/Berlin, clock24: true for the
+Paris-style display): A-Trane a-trane.de (nightly institution), Quasimodo
+quasimodo.de (jazz/funk — light filter), Zig Zag zigzag-jazzclub.berlin
+(nightly, r/Jazz-endorsed), Donau115 donau115.de (Neukölln scene room),
+Kunstfabrik Schlot kunstfabrik-schlot.de (jazz + cabaret — filter the
+cabaret/comedy). B-Flat b-flat-berlin.de is the sixth if five feel thin.
+BEFORE BUILDING add German to lib.js INSTRUMENTS (the French precedent):
+schlagzeug, kontrabass, posaune, trompete, gitarre, klavier, saxophon,
+gesang, stimme, geige, bratsche, floete, klarinette, orgel, tasten. And
+German month names (Januar...Dezember, März with umlaut) need a mapping —
+monthNum only speaks English.
 
 Boston intel from r/Jazz (u/thinair01, 2026-07): add Berklee Performance
 Center and the Red Room at Cafe 939 (Berklee) as candidates — frequent but
@@ -318,6 +365,15 @@ in September, Freight & Salvage (WAF), SFJAZZ outreach email (drafted;
 Zach sends), LA round 3.
 
 ## Feature roadmap (user-requested)
+
+- Google Analytics: Zach's brother-in-law Joe set up a GA account; wire it
+  in (backlogged 2026-07-19). IMPORTANT tradeoff to surface at build time:
+  GA sets cookies, which triggers cookie-consent obligations for EU/UK
+  visitors (Paris/London pages) — the site currently sets zero cookies and
+  needs no banner. Alternatives if the banner is unwanted: GA4 in
+  cookieless/consent-mode, or the already-planned CloudFront-logs+Athena
+  analytics (Brian's project), or Plausible/GoatCounter. Decide with eyes
+  open; don't just paste the gtag snippet.
 
 - Deep routing for sharing (r/Jazz, Zach: "top of my improvements list"):
   /:city/:district/ paths (e.g. /nyc/manhattan/) and a ?date=YYYY-MM-DD

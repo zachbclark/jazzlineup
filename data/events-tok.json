@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-18T20:06:26.627Z",
+  "generatedAt": "2026-07-18T21:28:58.274Z",
   "city": "tok",
   "clubs": [
     {
@@ -87,9 +87,7 @@
       "color": "#5bc8d9"
     }
   ],
-  "errors": [
-    "./clubs/alfie.js: returned 0 events (markup change? keeping previous data)"
-  ],
+  "errors": [],
   "events": [
     {
       "id": "pitinn:2026-07-01:duo",
@@ -116,6 +114,36 @@
         }
       ],
       "priceText": null
+    },
+    {
+      "id": "alfie:2026-07-01:ayuko",
+      "clubId": "alfie",
+      "title": "Ayuko",
+      "date": "2026-07-01",
+      "sets": [
+        "19:15"
+      ],
+      "url": "https://alfie.tokyo/schedule/",
+      "details": null,
+      "personnel": [
+        {
+          "name": "Ayuko",
+          "instrument": "vocals"
+        },
+        {
+          "name": "松原慶史",
+          "instrument": "guitar"
+        },
+        {
+          "name": "高橋佳輝",
+          "instrument": "electric bass"
+        },
+        {
+          "name": "塚田陽太",
+          "instrument": "drums"
+        }
+      ],
+      "priceText": "¥5,500"
     },
     {
       "id": "pitinn:2026-07-01:",
@@ -238,6 +266,36 @@
       "priceText": null
     },
     {
+      "id": "alfie:2026-07-02:wanna-hang-out",
+      "clubId": "alfie",
+      "title": "Wanna Hang Out",
+      "date": "2026-07-02",
+      "sets": [
+        "19:15"
+      ],
+      "url": "https://alfie.tokyo/schedule/",
+      "details": null,
+      "personnel": [
+        {
+          "name": "片山士駿",
+          "instrument": "flute"
+        },
+        {
+          "name": "平田晃一",
+          "instrument": "guitar"
+        },
+        {
+          "name": "廣橋契",
+          "instrument": "bass"
+        },
+        {
+          "name": "柳沼佑育",
+          "instrument": "drums"
+        }
+      ],
+      "priceText": "¥5,500"
+    },
+    {
       "id": "pitinn:2026-07-02:resonance-and-emission-quartet",
       "clubId": "pitinn",
       "title": "鈴木直人 Resonance and Emission Quartet",
@@ -349,6 +407,40 @@
       "priceText": null
     },
     {
+      "id": "alfie:2026-07-03:",
+      "clubId": "alfie",
+      "title": "小沢咲希",
+      "date": "2026-07-03",
+      "sets": [
+        "19:15"
+      ],
+      "url": "https://alfie.tokyo/schedule/",
+      "details": null,
+      "personnel": [
+        {
+          "name": "小沢咲希",
+          "instrument": "piano"
+        },
+        {
+          "name": "佐藤敬幸",
+          "instrument": "alto sax"
+        },
+        {
+          "name": "江澤茜",
+          "instrument": "alto sax"
+        },
+        {
+          "name": "粟谷巧",
+          "instrument": "bass"
+        },
+        {
+          "name": "柳沼佑育",
+          "instrument": "drums"
+        }
+      ],
+      "priceText": "¥6,600"
+    },
+    {
       "id": "pitinn:2026-07-03:quintet",
       "clubId": "pitinn",
       "title": "中村海斗 Quintet",
@@ -444,6 +536,38 @@
         }
       ],
       "priceText": "¥3,000"
+    },
+    {
+      "id": "alfie:2026-07-04:",
+      "clubId": "alfie",
+      "title": "古地克成",
+      "date": "2026-07-04",
+      "sets": [
+        "19:15"
+      ],
+      "url": "https://alfie.tokyo/schedule/",
+      "details": null,
+      "personnel": [
+        {
+          "name": "古地克成",
+          "instrument": "drums"
+        },
+        {
+          "name": "太田剣",
+          "instrument": "alto sax",
+          "nameAlt": "Ken Ota"
+        },
+        {
+          "name": "中村真",
+          "instrument": "piano"
+        },
+        {
+          "name": "安ヵ川大樹",
+          "instrument": "drums",
+          "nameAlt": "Daiki Yasukagawa"
+        }
+      ],
+      "priceText": "¥5,500"
     },
     {
       "id": "pitinn:2026-07-04:trio-jazz-live",
@@ -576,6 +700,32 @@
         }
       ],
       "priceText": "¥4,800"
+    },
+    {
+      "id": "alfie:2026-07-05:juna-serita",
+      "clubId": "alfie",
+      "title": "Juna Serita",
+      "date": "2026-07-05",
+      "sets": [
+        "19:15"
+      ],
+      "url": "https://alfie.tokyo/schedule/",
+      "details": null,
+      "personnel": [
+        {
+          "name": "Juna Serita",
+          "instrument": "electric bass"
+        },
+        {
+          "name": "伊藤一道",
+          "instrument": "guitar"
+        },
+        {
+          "name": "片山晴翔",
+          "instrument": "drums"
+        }
+      ],
+      "priceText": "¥5,500"
     },
     {
       "id": "pitinn:2026-07-05:",
@@ -779,6 +929,40 @@
       "priceText": null
     },
     {
+      "id": "alfie:2026-07-07:axis-quintet",
+      "clubId": "alfie",
+      "title": "Axis Quintet",
+      "date": "2026-07-07",
+      "sets": [
+        "19:15"
+      ],
+      "url": "https://alfie.tokyo/schedule/",
+      "details": null,
+      "personnel": [
+        {
+          "name": "松坂光輝",
+          "instrument": "piano"
+        },
+        {
+          "name": "龍野日菜子",
+          "instrument": "trumpet"
+        },
+        {
+          "name": "松下美月",
+          "instrument": "tenor sax"
+        },
+        {
+          "name": "大参泰平",
+          "instrument": "bass"
+        },
+        {
+          "name": "後藤龍太郎",
+          "instrument": "drums"
+        }
+      ],
+      "priceText": "¥5,500"
+    },
+    {
       "id": "pitinn:2026-07-07:the-new-force-1",
       "clubId": "pitinn",
       "title": "奥平真吾 THE NEW FORCE +1",
@@ -898,6 +1082,36 @@
       "priceText": null
     },
     {
+      "id": "alfie:2026-07-08:sayaka",
+      "clubId": "alfie",
+      "title": "SAYAKA",
+      "date": "2026-07-08",
+      "sets": [
+        "19:15"
+      ],
+      "url": "https://alfie.tokyo/schedule/",
+      "details": "[world]",
+      "personnel": [
+        {
+          "name": "SAYAKA",
+          "instrument": "violin"
+        },
+        {
+          "name": "Cespedes",
+          "instrument": "vocals, guitar"
+        },
+        {
+          "name": "川村竜",
+          "instrument": "electric bass"
+        },
+        {
+          "name": "GENKI",
+          "instrument": "vocals, percussion"
+        }
+      ],
+      "priceText": "¥5,500"
+    },
+    {
       "id": "pitinn:2026-07-08:group",
       "clubId": "pitinn",
       "title": "宮崎勝央 GROUP",
@@ -981,6 +1195,32 @@
         }
       ],
       "priceText": "¥3,000"
+    },
+    {
+      "id": "alfie:2026-07-09:",
+      "clubId": "alfie",
+      "title": "須田晶子",
+      "date": "2026-07-09",
+      "sets": [
+        "19:15"
+      ],
+      "url": "https://alfie.tokyo/schedule/",
+      "details": null,
+      "personnel": [
+        {
+          "name": "須田晶子",
+          "instrument": "vocals"
+        },
+        {
+          "name": "中嶋錠二",
+          "instrument": "piano"
+        },
+        {
+          "name": "吉田豊",
+          "instrument": "bass"
+        }
+      ],
+      "priceText": "¥5,500"
     },
     {
       "id": "pitinn:2026-07-09:",
@@ -1096,6 +1336,40 @@
         }
       ],
       "priceText": null
+    },
+    {
+      "id": "alfie:2026-07-10:seiko-summer-jazz-camp-at-alfe",
+      "clubId": "alfie",
+      "title": "Seiko Summer Jazz Camp at alfe",
+      "date": "2026-07-10",
+      "sets": [
+        "19:15"
+      ],
+      "url": "https://alfie.tokyo/schedule/",
+      "details": null,
+      "personnel": [
+        {
+          "name": "佐々木諒太",
+          "instrument": "tenor sax"
+        },
+        {
+          "name": "菊地立起",
+          "instrument": "trumpet"
+        },
+        {
+          "name": "井口大夢",
+          "instrument": "piano"
+        },
+        {
+          "name": "木村優太",
+          "instrument": "bass"
+        },
+        {
+          "name": "塚田陽太",
+          "instrument": "drums"
+        }
+      ],
+      "priceText": "¥4,400"
     },
     {
       "id": "pitinn:2026-07-10:group",
@@ -1223,6 +1497,33 @@
         }
       ],
       "priceText": null
+    },
+    {
+      "id": "alfie:2026-07-11:",
+      "clubId": "alfie",
+      "title": "中村海斗",
+      "date": "2026-07-11",
+      "sets": [
+        "19:15"
+      ],
+      "url": "https://alfie.tokyo/schedule/",
+      "details": null,
+      "personnel": [
+        {
+          "name": "中村海斗",
+          "instrument": "drums"
+        },
+        {
+          "name": "平田晃一",
+          "instrument": "guitar"
+        },
+        {
+          "name": "宮川純",
+          "instrument": "organ",
+          "nameAlt": "Jun Miyakawa"
+        }
+      ],
+      "priceText": "¥5,500"
     },
     {
       "id": "pitinn:2026-07-11:group",
@@ -1402,6 +1703,45 @@
         }
       ],
       "priceText": "¥4,800"
+    },
+    {
+      "id": "alfie:2026-07-12:jino-session",
+      "clubId": "alfie",
+      "title": "JINO Session",
+      "date": "2026-07-12",
+      "sets": [
+        "19:15"
+      ],
+      "url": "https://alfie.tokyo/schedule/",
+      "details": null,
+      "personnel": [
+        {
+          "name": "日野\"JINO\"賢二",
+          "instrument": "electric bass",
+          "nameAlt": "Kenji \"JINO\" Hino"
+        },
+        {
+          "name": "Andrew Soda",
+          "instrument": "vocals"
+        },
+        {
+          "name": "Masa Kohama",
+          "instrument": "guitar"
+        },
+        {
+          "name": "Hiro Homma",
+          "instrument": "guitar"
+        },
+        {
+          "name": "Penny-K",
+          "instrument": "keys"
+        },
+        {
+          "name": "Riku Taira",
+          "instrument": "drums"
+        }
+      ],
+      "priceText": "¥6,600"
     },
     {
       "id": "pitinn:2026-07-12:q-s-bar",
@@ -1645,6 +1985,36 @@
       "priceText": null
     },
     {
+      "id": "alfie:2026-07-14:",
+      "clubId": "alfie",
+      "title": "下田雄人",
+      "date": "2026-07-14",
+      "sets": [
+        "19:15"
+      ],
+      "url": "https://alfie.tokyo/schedule/",
+      "details": null,
+      "personnel": [
+        {
+          "name": "下田雄人",
+          "instrument": "guitar"
+        },
+        {
+          "name": "小室響",
+          "instrument": "piano"
+        },
+        {
+          "name": "中林薫平",
+          "instrument": "bass"
+        },
+        {
+          "name": "小田桐和寛",
+          "instrument": "drums"
+        }
+      ],
+      "priceText": "¥5,500"
+    },
+    {
       "id": "pitinn:2026-07-14:keiko-lee-band",
       "clubId": "pitinn",
       "title": "Keiko Lee Band",
@@ -1758,6 +2128,42 @@
         }
       ],
       "priceText": null
+    },
+    {
+      "id": "alfie:2026-07-15:",
+      "clubId": "alfie",
+      "title": "川嶋哲郎",
+      "date": "2026-07-15",
+      "sets": [
+        "19:15"
+      ],
+      "url": "https://alfie.tokyo/schedule/",
+      "details": null,
+      "personnel": [
+        {
+          "name": "川嶋哲郎",
+          "instrument": "tenor sax",
+          "nameAlt": "Tetsuro Kawashima"
+        },
+        {
+          "name": "原朋直",
+          "instrument": "trumpet"
+        },
+        {
+          "name": "椎名豊",
+          "instrument": "piano"
+        },
+        {
+          "name": "本川悠平",
+          "instrument": "bass"
+        },
+        {
+          "name": "久米雅之",
+          "instrument": "drums"
+        }
+      ],
+      "titleAlt": "Tetsuro Kawashima",
+      "priceText": "¥5,500"
     },
     {
       "id": "pitinn:2026-07-15:feat-himi",
@@ -1874,6 +2280,36 @@
         }
       ],
       "priceText": null
+    },
+    {
+      "id": "alfie:2026-07-16:",
+      "clubId": "alfie",
+      "title": "鈴木雄太郎",
+      "date": "2026-07-16",
+      "sets": [
+        "19:15"
+      ],
+      "url": "https://alfie.tokyo/schedule/",
+      "details": null,
+      "personnel": [
+        {
+          "name": "鈴木雄太郎",
+          "instrument": "trumpet"
+        },
+        {
+          "name": "吉田一成",
+          "instrument": "guitar"
+        },
+        {
+          "name": "佐藤潤一",
+          "instrument": "bass"
+        },
+        {
+          "name": "塚田陽太",
+          "instrument": "drums"
+        }
+      ],
+      "priceText": "¥5,500"
     },
     {
       "id": "pitinn:2026-07-16:new-who-s-who",
@@ -1995,6 +2431,32 @@
       "priceText": null
     },
     {
+      "id": "alfie:2026-07-17:",
+      "clubId": "alfie",
+      "title": "寺久保伶矢",
+      "date": "2026-07-17",
+      "sets": [
+        "19:15"
+      ],
+      "url": "https://alfie.tokyo/schedule/",
+      "details": null,
+      "personnel": [
+        {
+          "name": "寺久保伶矢",
+          "instrument": "trumpet"
+        },
+        {
+          "name": "市川空",
+          "instrument": "piano"
+        },
+        {
+          "name": "高橋佳輝",
+          "instrument": "electric bass"
+        }
+      ],
+      "priceText": "¥5,500"
+    },
+    {
       "id": "pitinn:2026-07-17:",
       "clubId": "pitinn",
       "title": "『鳴らした場合』",
@@ -2047,6 +2509,36 @@
       "personnel": null,
       "titleAlt": "10-Hour All-Night Jam",
       "priceText": null
+    },
+    {
+      "id": "alfie:2026-07-18:",
+      "clubId": "alfie",
+      "title": "板谷薫",
+      "date": "2026-07-18",
+      "sets": [
+        "19:15"
+      ],
+      "url": "https://alfie.tokyo/schedule/",
+      "details": null,
+      "personnel": [
+        {
+          "name": "板谷薫",
+          "instrument": "vocals"
+        },
+        {
+          "name": "秋田慎治",
+          "instrument": "piano"
+        },
+        {
+          "name": "田辺充邦",
+          "instrument": "guitar"
+        },
+        {
+          "name": "伊東佑季",
+          "instrument": "bass"
+        }
+      ],
+      "priceText": "¥5,500"
     },
     {
       "id": "pitinn:2026-07-18:3days",
@@ -2172,6 +2664,32 @@
       "personnel": null,
       "titleAlt": "Practice Jam Session",
       "priceText": null
+    },
+    {
+      "id": "alfie:2026-07-19:j-a-s",
+      "clubId": "alfie",
+      "title": "J.A.S",
+      "date": "2026-07-19",
+      "sets": [
+        "19:15"
+      ],
+      "url": "https://alfie.tokyo/schedule/",
+      "details": null,
+      "personnel": [
+        {
+          "name": "\"J.A.S\" 丈青",
+          "instrument": "piano"
+        },
+        {
+          "name": "秋田ゴールドマン紀彰",
+          "instrument": "bass"
+        },
+        {
+          "name": "小名坂誠哉",
+          "instrument": "drums"
+        }
+      ],
+      "priceText": "¥6,600"
     },
     {
       "id": "pitinn:2026-07-19:3days",
@@ -2569,6 +3087,40 @@
       "priceText": null
     },
     {
+      "id": "alfie:2026-07-22:",
+      "clubId": "alfie",
+      "title": "岩野未侑",
+      "date": "2026-07-22",
+      "sets": [
+        "19:15"
+      ],
+      "url": "https://alfie.tokyo/schedule/",
+      "details": null,
+      "personnel": [
+        {
+          "name": "岩野未侑",
+          "instrument": "vocals"
+        },
+        {
+          "name": "小川悦司",
+          "instrument": "guitar"
+        },
+        {
+          "name": "野崎洋一",
+          "instrument": "piano"
+        },
+        {
+          "name": "松下一弘",
+          "instrument": "bass"
+        },
+        {
+          "name": "竹内大貴",
+          "instrument": "drums"
+        }
+      ],
+      "priceText": "¥5,500"
+    },
+    {
       "id": "pitinn:2026-07-22:5days",
       "clubId": "pitinn",
       "title": "スガダイロー 5DAYS",
@@ -2709,6 +3261,32 @@
       "personnel": null,
       "titleAlt": "Practice Jam Session",
       "priceText": null
+    },
+    {
+      "id": "alfie:2026-07-23:",
+      "clubId": "alfie",
+      "title": "村田千紘",
+      "date": "2026-07-23",
+      "sets": [
+        "19:15"
+      ],
+      "url": "https://alfie.tokyo/schedule/",
+      "details": null,
+      "personnel": [
+        {
+          "name": "村田千紘",
+          "instrument": "trumpet"
+        },
+        {
+          "name": "田窪寛之",
+          "instrument": "piano"
+        },
+        {
+          "name": "吉田豊",
+          "instrument": "bass"
+        }
+      ],
+      "priceText": "¥5,500"
     },
     {
       "id": "pitinn:2026-07-23:5days",
@@ -2875,6 +3453,33 @@
       "priceText": null
     },
     {
+      "id": "alfie:2026-07-24:",
+      "clubId": "alfie",
+      "title": "山田夢子",
+      "date": "2026-07-24",
+      "sets": [
+        "19:15"
+      ],
+      "url": "https://alfie.tokyo/schedule/",
+      "details": null,
+      "personnel": [
+        {
+          "name": "山田夢子",
+          "instrument": "vocals"
+        },
+        {
+          "name": "田中信正",
+          "instrument": "piano",
+          "nameAlt": "Nobumasa Tanaka"
+        },
+        {
+          "name": "中山拓海",
+          "instrument": "alto sax"
+        }
+      ],
+      "priceText": "¥5,500"
+    },
+    {
       "id": "pitinn:2026-07-24:5days",
       "clubId": "pitinn",
       "title": "スガダイロー 5DAYS",
@@ -3003,6 +3608,36 @@
       "personnel": null,
       "titleAlt": "10-Hour All-Night Jam",
       "priceText": null
+    },
+    {
+      "id": "alfie:2026-07-25:",
+      "clubId": "alfie",
+      "title": "外薗雄一",
+      "date": "2026-07-25",
+      "sets": [
+        "19:15"
+      ],
+      "url": "https://alfie.tokyo/schedule/",
+      "details": null,
+      "personnel": [
+        {
+          "name": "外薗雄一",
+          "instrument": "drums"
+        },
+        {
+          "name": "矢元美沙樹",
+          "instrument": "alto sax"
+        },
+        {
+          "name": "田中TAK拓也",
+          "instrument": "guitar"
+        },
+        {
+          "name": "SOKUSAI",
+          "instrument": "bass"
+        }
+      ],
+      "priceText": "¥5,500"
     },
     {
       "id": "pitinn:2026-07-25:5days",
@@ -3211,6 +3846,32 @@
       "personnel": null,
       "titleAlt": "Practice Jam Session",
       "priceText": null
+    },
+    {
+      "id": "alfie:2026-07-26:jazz",
+      "clubId": "alfie",
+      "title": "[jazz] 市川空",
+      "date": "2026-07-26",
+      "sets": [
+        "19:15"
+      ],
+      "url": "https://alfie.tokyo/schedule/",
+      "details": null,
+      "personnel": [
+        {
+          "name": "[jazz] 市川空",
+          "instrument": "piano"
+        },
+        {
+          "name": "高橋将",
+          "instrument": "bass"
+        },
+        {
+          "name": "塚田陽太",
+          "instrument": "drums"
+        }
+      ],
+      "priceText": "¥5,500"
     },
     {
       "id": "pitinn:2026-07-26:5days",
@@ -3620,6 +4281,40 @@
       "priceText": null
     },
     {
+      "id": "alfie:2026-07-29:",
+      "clubId": "alfie",
+      "title": "酒井麻生代",
+      "date": "2026-07-29",
+      "sets": [
+        "19:15"
+      ],
+      "url": "https://alfie.tokyo/schedule/",
+      "details": null,
+      "personnel": [
+        {
+          "name": "酒井麻生代",
+          "instrument": "flute"
+        },
+        {
+          "name": "瀬田創太",
+          "instrument": "piano"
+        },
+        {
+          "name": "馬場孝喜",
+          "instrument": "guitar"
+        },
+        {
+          "name": "小牧良平",
+          "instrument": "bass"
+        },
+        {
+          "name": "江藤良人",
+          "instrument": "drums"
+        }
+      ],
+      "priceText": "¥5,500"
+    },
+    {
       "id": "pitinn:2026-07-29:special-guest",
       "clubId": "pitinn",
       "title": "大村朋子 カルテット＋special guest 原 朋直",
@@ -3780,6 +4475,33 @@
       "priceText": null
     },
     {
+      "id": "alfie:2026-07-30:toku",
+      "clubId": "alfie",
+      "title": "TOKU",
+      "date": "2026-07-30",
+      "sets": [
+        "19:15"
+      ],
+      "url": "https://alfie.tokyo/schedule/",
+      "details": null,
+      "personnel": [
+        {
+          "name": "TOKU",
+          "instrument": "vocals, flugelhorn"
+        },
+        {
+          "name": "宮川純",
+          "instrument": "organ",
+          "nameAlt": "Jun Miyakawa"
+        },
+        {
+          "name": "沼澤尚",
+          "instrument": "drums"
+        }
+      ],
+      "priceText": "¥6,600"
+    },
+    {
       "id": "pitinn:2026-07-30:vincent-herring-erena-terakubo",
       "clubId": "pitinn",
       "title": "Vincent Herring・Erena Terakubo",
@@ -3915,6 +4637,38 @@
       "priceText": null
     },
     {
+      "id": "alfie:2026-07-31:",
+      "clubId": "alfie",
+      "title": "市原ひかり",
+      "date": "2026-07-31",
+      "sets": [
+        "19:15"
+      ],
+      "url": "https://alfie.tokyo/schedule/",
+      "details": null,
+      "personnel": [
+        {
+          "name": "市原ひかり",
+          "instrument": "trumpet",
+          "nameAlt": "Hikari Ichihara"
+        },
+        {
+          "name": "紗理",
+          "instrument": "vocals"
+        },
+        {
+          "name": "瀬田創太",
+          "instrument": "piano"
+        },
+        {
+          "name": "高橋陸",
+          "instrument": "bass"
+        }
+      ],
+      "titleAlt": "Hikari Ichihara",
+      "priceText": "¥5,500"
+    },
+    {
       "id": "pitinn:2026-07-31:ben-van-gelder-reinier-baas",
       "clubId": "pitinn",
       "title": "Ben van Gelder & Reinier Baas",
@@ -4039,6 +4793,28 @@
       "personnel": null,
       "titleAlt": "10-Hour All-Night Jam",
       "priceText": null
+    },
+    {
+      "id": "alfie:2026-08-01:akiko",
+      "clubId": "alfie",
+      "title": "akiko",
+      "date": "2026-08-01",
+      "sets": [
+        "19:15"
+      ],
+      "url": "https://alfie.tokyo/schedule/",
+      "details": null,
+      "personnel": [
+        {
+          "name": "akiko",
+          "instrument": "vocals"
+        },
+        {
+          "name": "with 鈴木瑤子",
+          "instrument": "piano"
+        }
+      ],
+      "priceText": "¥6,600"
     },
     {
       "id": "pitinn:2026-08-01:",
@@ -4279,6 +5055,28 @@
       "priceText": "¥3,500"
     },
     {
+      "id": "alfie:2026-08-03:",
+      "clubId": "alfie",
+      "title": "海堀弘太",
+      "date": "2026-08-03",
+      "sets": [
+        "19:15"
+      ],
+      "url": "https://alfie.tokyo/schedule/",
+      "details": null,
+      "personnel": [
+        {
+          "name": "海堀弘太",
+          "instrument": "piano"
+        },
+        {
+          "name": "with マルセロ木村",
+          "instrument": "vocals, guitar"
+        }
+      ],
+      "priceText": "¥5,500"
+    },
+    {
       "id": "pitinn:2026-08-03:the-new-force-1",
       "clubId": "pitinn",
       "title": "奥平真吾THE NEW FORCE +1",
@@ -4367,6 +5165,36 @@
       "personnel": null,
       "titleAlt": "Practice Jam Session",
       "priceText": null
+    },
+    {
+      "id": "alfie:2026-08-04:",
+      "clubId": "alfie",
+      "title": "利光玲奈",
+      "date": "2026-08-04",
+      "sets": [
+        "19:15"
+      ],
+      "url": "https://alfie.tokyo/schedule/",
+      "details": null,
+      "personnel": [
+        {
+          "name": "利光玲奈",
+          "instrument": "vocals, drums"
+        },
+        {
+          "name": "Ema",
+          "instrument": "vocals"
+        },
+        {
+          "name": "鈴木瑤子",
+          "instrument": "piano"
+        },
+        {
+          "name": "寺尾陽介",
+          "instrument": "bass"
+        }
+      ],
+      "priceText": "¥5,500"
     },
     {
       "id": "pitinn:2026-08-04:kyoko-satoh-septet",
@@ -4464,6 +5292,32 @@
       "priceText": null
     },
     {
+      "id": "alfie:2026-08-05:",
+      "clubId": "alfie",
+      "title": "田中菜緒子",
+      "date": "2026-08-05",
+      "sets": [
+        "19:15"
+      ],
+      "url": "https://alfie.tokyo/schedule/",
+      "details": null,
+      "personnel": [
+        {
+          "name": "田中菜緒子",
+          "instrument": "piano"
+        },
+        {
+          "name": "高橋陸",
+          "instrument": "bass"
+        },
+        {
+          "name": "岡田汐音",
+          "instrument": "drums"
+        }
+      ],
+      "priceText": "¥5,500"
+    },
+    {
       "id": "pitinn:2026-08-05:group",
       "clubId": "pitinn",
       "title": "橋爪亮督 GROUP",
@@ -4558,6 +5412,36 @@
       "priceText": null
     },
     {
+      "id": "alfie:2026-08-06:",
+      "clubId": "alfie",
+      "title": "小野葉月",
+      "date": "2026-08-06",
+      "sets": [
+        "19:15"
+      ],
+      "url": "https://alfie.tokyo/schedule/",
+      "details": null,
+      "personnel": [
+        {
+          "name": "小野葉月",
+          "instrument": "vocals"
+        },
+        {
+          "name": "片山士駿",
+          "instrument": "flute"
+        },
+        {
+          "name": "武藤勇樹",
+          "instrument": "piano"
+        },
+        {
+          "name": "山本裕之",
+          "instrument": "bass"
+        }
+      ],
+      "priceText": "¥5,500"
+    },
+    {
       "id": "pitinn:2026-08-06:josei-session",
       "clubId": "pitinn",
       "title": "Josei Session",
@@ -4629,6 +5513,32 @@
         }
       ],
       "priceText": "¥3,000"
+    },
+    {
+      "id": "alfie:2026-08-07:",
+      "clubId": "alfie",
+      "title": "島裕介",
+      "date": "2026-08-07",
+      "sets": [
+        "19:15"
+      ],
+      "url": "https://alfie.tokyo/schedule/",
+      "details": null,
+      "personnel": [
+        {
+          "name": "島裕介",
+          "instrument": "trumpet"
+        },
+        {
+          "name": "丈青",
+          "instrument": "piano"
+        },
+        {
+          "name": "秋田ゴールドマン紀彰",
+          "instrument": "bass"
+        }
+      ],
+      "priceText": "¥5,500"
     },
     {
       "id": "pitinn:2026-08-07:the-duet-2026",
@@ -4715,6 +5625,44 @@
       "personnel": null,
       "titleAlt": "10-Hour All-Night Jam",
       "priceText": null
+    },
+    {
+      "id": "alfie:2026-08-08:",
+      "clubId": "alfie",
+      "title": "東かおる",
+      "date": "2026-08-08",
+      "sets": [
+        "19:15"
+      ],
+      "url": "https://alfie.tokyo/schedule/",
+      "details": null,
+      "personnel": [
+        {
+          "name": "東かおる",
+          "instrument": "vocals"
+        },
+        {
+          "name": "Forest",
+          "instrument": "guitar"
+        },
+        {
+          "name": "group 石川広行",
+          "instrument": "trumpet"
+        },
+        {
+          "name": "Negrete",
+          "instrument": "alto sax"
+        },
+        {
+          "name": "伊地知大輔",
+          "instrument": "bass"
+        },
+        {
+          "name": "桃井裕範",
+          "instrument": "drums"
+        }
+      ],
+      "priceText": "¥5,500"
     },
     {
       "id": "pitinn:2026-08-08:the-duet-2026",
@@ -4840,6 +5788,19 @@
       "priceText": null
     },
     {
+      "id": "alfie:2026-08-09:vo-3",
+      "clubId": "alfie",
+      "title": "土井保利(vo) +3",
+      "date": "2026-08-09",
+      "sets": [
+        "19:15"
+      ],
+      "url": "https://alfie.tokyo/schedule/",
+      "details": null,
+      "personnel": null,
+      "priceText": "¥5,500"
+    },
+    {
       "id": "pitinn:2026-08-09:bocco",
       "clubId": "pitinn",
       "title": "BOCCO",
@@ -4946,6 +5907,36 @@
         }
       ],
       "priceText": "¥3,000"
+    },
+    {
+      "id": "alfie:2026-08-10:",
+      "clubId": "alfie",
+      "title": "板谷薫",
+      "date": "2026-08-10",
+      "sets": [
+        "19:15"
+      ],
+      "url": "https://alfie.tokyo/schedule/",
+      "details": null,
+      "personnel": [
+        {
+          "name": "板谷薫",
+          "instrument": "vocals"
+        },
+        {
+          "name": "上長根明子",
+          "instrument": "piano"
+        },
+        {
+          "name": "下田雄人",
+          "instrument": "guitar"
+        },
+        {
+          "name": "伊東佑季",
+          "instrument": "bass"
+        }
+      ],
+      "priceText": "¥5,500"
     },
     {
       "id": "pitinn:2026-08-10:",
@@ -5162,6 +6153,36 @@
       "priceText": null
     },
     {
+      "id": "alfie:2026-08-12:",
+      "clubId": "alfie",
+      "title": "下田雄人",
+      "date": "2026-08-12",
+      "sets": [
+        "19:15"
+      ],
+      "url": "https://alfie.tokyo/schedule/",
+      "details": null,
+      "personnel": [
+        {
+          "name": "下田雄人",
+          "instrument": "guitar"
+        },
+        {
+          "name": "柴田敏孝",
+          "instrument": "piano"
+        },
+        {
+          "name": "中林薫平",
+          "instrument": "bass"
+        },
+        {
+          "name": "山内陽一朗",
+          "instrument": "drums"
+        }
+      ],
+      "priceText": "¥5,500"
+    },
+    {
       "id": "pitinn:2026-08-12:",
       "clubId": "pitinn",
       "title": "山口コーイチ トリオ",
@@ -5252,6 +6273,32 @@
       "priceText": null
     },
     {
+      "id": "alfie:2026-08-13:",
+      "clubId": "alfie",
+      "title": "井上陽介",
+      "date": "2026-08-13",
+      "sets": [
+        "19:15"
+      ],
+      "url": "https://alfie.tokyo/schedule/",
+      "details": null,
+      "personnel": [
+        {
+          "name": "井上陽介",
+          "instrument": "bass"
+        },
+        {
+          "name": "平倉初音",
+          "instrument": "piano"
+        },
+        {
+          "name": "後藤龍太郎",
+          "instrument": "drums"
+        }
+      ],
+      "priceText": "¥5,500"
+    },
+    {
       "id": "pitinn:2026-08-13:akira-ishiguro-america-quartet",
       "clubId": "pitinn",
       "title": "Akira Ishiguro America Quartet",
@@ -5322,6 +6369,40 @@
         }
       ],
       "priceText": "¥3,000"
+    },
+    {
+      "id": "alfie:2026-08-14:",
+      "clubId": "alfie",
+      "title": "中村海斗",
+      "date": "2026-08-14",
+      "sets": [
+        "19:15"
+      ],
+      "url": "https://alfie.tokyo/schedule/",
+      "details": null,
+      "personnel": [
+        {
+          "name": "中村海斗",
+          "instrument": "drums"
+        },
+        {
+          "name": "佐々木梨子",
+          "instrument": "alto sax"
+        },
+        {
+          "name": "馬場孝喜",
+          "instrument": "guitar"
+        },
+        {
+          "name": "布施音人",
+          "instrument": "piano"
+        },
+        {
+          "name": "高橋陸",
+          "instrument": "bass"
+        }
+      ],
+      "priceText": "¥5,500"
     },
     {
       "id": "pitinn:2026-08-14:band",
@@ -5422,6 +6503,28 @@
       "priceText": null
     },
     {
+      "id": "alfie:2026-08-15:",
+      "clubId": "alfie",
+      "title": "龍野日菜子",
+      "date": "2026-08-15",
+      "sets": [
+        "19:15"
+      ],
+      "url": "https://alfie.tokyo/schedule/",
+      "details": null,
+      "personnel": [
+        {
+          "name": "龍野日菜子",
+          "instrument": "trumpet"
+        },
+        {
+          "name": "松島啓之",
+          "instrument": "trumpet"
+        }
+      ],
+      "priceText": "¥5,500"
+    },
+    {
       "id": "pitinn:2026-08-15:rs5pb-ruike-shinpei-5piece-band",
       "clubId": "pitinn",
       "title": "RS5pb (RUIKE SHINPEI 5piece band)",
@@ -5515,6 +6618,34 @@
       "personnel": null,
       "titleAlt": "Practice Jam Session",
       "priceText": null
+    },
+    {
+      "id": "alfie:2026-08-16:jino",
+      "clubId": "alfie",
+      "title": "日野\"JINO\"賢二",
+      "date": "2026-08-16",
+      "sets": [
+        "19:15"
+      ],
+      "url": "https://alfie.tokyo/schedule/",
+      "details": null,
+      "personnel": [
+        {
+          "name": "日野\"JINO\"賢二",
+          "instrument": "electric bass",
+          "nameAlt": "Kenji \"JINO\" Hino"
+        },
+        {
+          "name": "Penny-K",
+          "instrument": "keys"
+        },
+        {
+          "name": "Masa Shimizu",
+          "instrument": "guitar"
+        }
+      ],
+      "titleAlt": "Kenji \"JINO\" Hino",
+      "priceText": "¥5,500"
     },
     {
       "id": "pitinn:2026-08-16:blacksheep",
@@ -5688,6 +6819,40 @@
       "priceText": null
     },
     {
+      "id": "alfie:2026-08-18:",
+      "clubId": "alfie",
+      "title": "及川陽菜",
+      "date": "2026-08-18",
+      "sets": [
+        "19:15"
+      ],
+      "url": "https://alfie.tokyo/schedule/",
+      "details": null,
+      "personnel": [
+        {
+          "name": "及川陽菜",
+          "instrument": "alto sax"
+        },
+        {
+          "name": "Berkman",
+          "instrument": "piano"
+        },
+        {
+          "name": "小倉直也",
+          "instrument": "trumpet"
+        },
+        {
+          "name": "Evan Gregor",
+          "instrument": "bass"
+        },
+        {
+          "name": "大坂昌彦",
+          "instrument": "drums"
+        }
+      ],
+      "priceText": "¥5,500"
+    },
+    {
       "id": "pitinn:2026-08-18:quartet",
       "clubId": "pitinn",
       "title": "池田 篤 Quartet",
@@ -5754,6 +6919,28 @@
       "personnel": null,
       "titleAlt": "Practice Jam Session",
       "priceText": null
+    },
+    {
+      "id": "alfie:2026-08-19:",
+      "clubId": "alfie",
+      "title": "金子礼",
+      "date": "2026-08-19",
+      "sets": [
+        "19:15"
+      ],
+      "url": "https://alfie.tokyo/schedule/",
+      "details": null,
+      "personnel": [
+        {
+          "name": "金子礼",
+          "instrument": "alto sax"
+        },
+        {
+          "name": "with 壷阪健登",
+          "instrument": "piano"
+        }
+      ],
+      "priceText": "¥5,500"
     },
     {
       "id": "pitinn:2026-08-19:hina-oikawa-short-songs",
@@ -5866,6 +7053,37 @@
       "priceText": null
     },
     {
+      "id": "alfie:2026-08-20:",
+      "clubId": "alfie",
+      "title": "酒井麻生代",
+      "date": "2026-08-20",
+      "sets": [
+        "19:15"
+      ],
+      "url": "https://alfie.tokyo/schedule/",
+      "details": null,
+      "personnel": [
+        {
+          "name": "酒井麻生代",
+          "instrument": "flute"
+        },
+        {
+          "name": "武本和大",
+          "instrument": "piano"
+        },
+        {
+          "name": "安ヵ川大樹",
+          "instrument": "bass",
+          "nameAlt": "Daiki Yasukagawa"
+        },
+        {
+          "name": "鈴木郁",
+          "instrument": "drums"
+        }
+      ],
+      "priceText": "¥5,500"
+    },
+    {
       "id": "pitinn:2026-08-20:",
       "clubId": "pitinn",
       "title": "菊地成孔 トリオ",
@@ -5947,6 +7165,32 @@
         }
       ],
       "priceText": "¥10,000"
+    },
+    {
+      "id": "alfie:2026-08-21:",
+      "clubId": "alfie",
+      "title": "古山雄太",
+      "date": "2026-08-21",
+      "sets": [
+        "19:15"
+      ],
+      "url": "https://alfie.tokyo/schedule/",
+      "details": null,
+      "personnel": [
+        {
+          "name": "古山雄太",
+          "instrument": "drums"
+        },
+        {
+          "name": "伊東寿",
+          "instrument": "piano"
+        },
+        {
+          "name": "山本裕之",
+          "instrument": "bass"
+        }
+      ],
+      "priceText": "¥5,500"
     },
     {
       "id": "pitinn:2026-08-21:3days",
@@ -6050,6 +7294,36 @@
       "personnel": null,
       "titleAlt": "10-Hour All-Night Jam",
       "priceText": null
+    },
+    {
+      "id": "alfie:2026-08-22:",
+      "clubId": "alfie",
+      "title": "江澤茜",
+      "date": "2026-08-22",
+      "sets": [
+        "19:15"
+      ],
+      "url": "https://alfie.tokyo/schedule/",
+      "details": null,
+      "personnel": [
+        {
+          "name": "江澤茜",
+          "instrument": "alto sax"
+        },
+        {
+          "name": "David Bryant",
+          "instrument": "piano"
+        },
+        {
+          "name": "Evan Gregor",
+          "instrument": "bass"
+        },
+        {
+          "name": "Gene Jackson",
+          "instrument": "drums"
+        }
+      ],
+      "priceText": "¥5,500"
     },
     {
       "id": "pitinn:2026-08-22:3days",
@@ -6308,6 +7582,36 @@
       "priceText": null
     },
     {
+      "id": "alfie:2026-08-25:",
+      "clubId": "alfie",
+      "title": "秋元直子",
+      "date": "2026-08-25",
+      "sets": [
+        "19:15"
+      ],
+      "url": "https://alfie.tokyo/schedule/",
+      "details": null,
+      "personnel": [
+        {
+          "name": "秋元直子",
+          "instrument": "vocals"
+        },
+        {
+          "name": "クリヤ・マコト",
+          "instrument": "piano"
+        },
+        {
+          "name": "楠井五月",
+          "instrument": "bass"
+        },
+        {
+          "name": "大槻カルタ英宣",
+          "instrument": "drums"
+        }
+      ],
+      "priceText": "¥6,600"
+    },
+    {
       "id": "pitinn:2026-08-25:",
       "clubId": "pitinn",
       "title": "夏休み",
@@ -6376,6 +7680,20 @@
       "priceText": null
     },
     {
+      "id": "alfie:2026-08-26:g",
+      "clubId": "alfie",
+      "title": "井上銘(g)",
+      "date": "2026-08-26",
+      "sets": [
+        "19:15"
+      ],
+      "url": "https://alfie.tokyo/schedule/",
+      "details": null,
+      "personnel": null,
+      "titleAlt": "May Inoue(g)",
+      "priceText": "¥5,500"
+    },
+    {
       "id": "pitinn:2026-08-26:",
       "clubId": "pitinn",
       "title": "夏休み",
@@ -6440,6 +7758,32 @@
       "priceText": null
     },
     {
+      "id": "alfie:2026-08-27:",
+      "clubId": "alfie",
+      "title": "松岡杏奈",
+      "date": "2026-08-27",
+      "sets": [
+        "19:15"
+      ],
+      "url": "https://alfie.tokyo/schedule/",
+      "details": null,
+      "personnel": [
+        {
+          "name": "松岡杏奈",
+          "instrument": "piano"
+        },
+        {
+          "name": "横原由梨子",
+          "instrument": "tenor sax"
+        },
+        {
+          "name": "佐藤潤一",
+          "instrument": "bass"
+        }
+      ],
+      "priceText": "¥5,500"
+    },
+    {
       "id": "pitinn:2026-08-27:special-trio",
       "clubId": "pitinn",
       "title": "永武幹子 Special Trio",
@@ -6500,6 +7844,38 @@
         }
       ],
       "priceText": "¥3,000"
+    },
+    {
+      "id": "alfie:2026-08-28:",
+      "clubId": "alfie",
+      "title": "川嶋哲郎",
+      "date": "2026-08-28",
+      "sets": [
+        "19:15"
+      ],
+      "url": "https://alfie.tokyo/schedule/",
+      "details": null,
+      "personnel": [
+        {
+          "name": "川嶋哲郎",
+          "instrument": "tenor sax",
+          "nameAlt": "Tetsuro Kawashima"
+        },
+        {
+          "name": "\"スタンダーズ\" 椎名豊",
+          "instrument": "piano"
+        },
+        {
+          "name": "坂井紅介",
+          "instrument": "bass"
+        },
+        {
+          "name": "久米雅之",
+          "instrument": "drums"
+        }
+      ],
+      "titleAlt": "Tetsuro Kawashima",
+      "priceText": "¥5,500"
     },
     {
       "id": "pitinn:2026-08-28:2days",
@@ -6600,6 +7976,36 @@
       "priceText": null
     },
     {
+      "id": "alfie:2026-08-29:reichel",
+      "clubId": "alfie",
+      "title": "REICHEL",
+      "date": "2026-08-29",
+      "sets": [
+        "19:15"
+      ],
+      "url": "https://alfie.tokyo/schedule/",
+      "details": "[chanson]",
+      "personnel": [
+        {
+          "name": "REICHEL",
+          "instrument": "vocals"
+        },
+        {
+          "name": "土屋恵",
+          "instrument": "accordion"
+        },
+        {
+          "name": "クリヤ・マコト",
+          "instrument": "piano"
+        },
+        {
+          "name": "坂田慶治",
+          "instrument": "bass"
+        }
+      ],
+      "priceText": "¥5,500"
+    },
+    {
       "id": "pitinn:2026-08-29:2days",
       "clubId": "pitinn",
       "title": "板垣光弘 2DAYS",
@@ -6696,6 +8102,32 @@
       "personnel": null,
       "titleAlt": "Practice Jam Session",
       "priceText": null
+    },
+    {
+      "id": "alfie:2026-08-30:sayaka",
+      "clubId": "alfie",
+      "title": "SAYAKA",
+      "date": "2026-08-30",
+      "sets": [
+        "19:15"
+      ],
+      "url": "https://alfie.tokyo/schedule/",
+      "details": "[world]",
+      "personnel": [
+        {
+          "name": "SAYAKA",
+          "instrument": "violin"
+        },
+        {
+          "name": "瀬田創太",
+          "instrument": "piano"
+        },
+        {
+          "name": "大義見元",
+          "instrument": "percussion"
+        }
+      ],
+      "priceText": "¥5,500"
     },
     {
       "id": "pitinn:2026-08-30:",

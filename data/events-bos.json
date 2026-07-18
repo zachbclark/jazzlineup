@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-18T19:36:29.942Z",
+  "generatedAt": "2026-07-18T21:28:51.537Z",
   "city": "bos",
   "clubs": [
     {
@@ -77,58 +77,6 @@
   ],
   "errors": [],
   "events": [
-    {
-      "id": "lilypad:2026-07-05:the-spatulas",
-      "clubId": "lilypad",
-      "title": "THE SPATULAS",
-      "date": "2026-07-05",
-      "sets": [
-        "19:30"
-      ],
-      "url": "https://www.lilypadinman.com/home/jerry-bergonzi-2026-ppejb-xz8jt-taahh-c9yrx-lhd5t-abg8d-646n6-4tbmw-524y4-z8ca3-ad5g2",
-      "details": null,
-      "personnel": null,
-      "priceText": null
-    },
-    {
-      "id": "lilypad:2026-07-06:francisco-mela",
-      "clubId": "lilypad",
-      "title": "Francisco Mela",
-      "date": "2026-07-06",
-      "sets": [
-        "19:00"
-      ],
-      "url": "https://www.lilypadinman.com/home/jerry-bergonzi-2026-ppejb-xz8jt-taahh-c9yrx-lhd5t-abg8d-646n6-4tbmw-524y4-z8ca3-ad5g2",
-      "details": null,
-      "personnel": null,
-      "priceText": null
-    },
-    {
-      "id": "lilypad:2026-07-06:jerry-bergonzi-quartet",
-      "clubId": "lilypad",
-      "title": "Jerry Bergonzi Quartet",
-      "date": "2026-07-06",
-      "sets": [
-        "20:30"
-      ],
-      "url": "https://www.lilypadinman.com/home/jerry-bergonzi-2026-ppejb-xz8jt-taahh-c9yrx-lhd5t-abg8d-646n6-4tbmw-524y4-z8ca3-ad5g2",
-      "details": null,
-      "personnel": null,
-      "priceText": null
-    },
-    {
-      "id": "lilypad:2026-07-06:the-fringe",
-      "clubId": "lilypad",
-      "title": "The Fringe",
-      "date": "2026-07-06",
-      "sets": [
-        "22:00"
-      ],
-      "url": "https://www.lilypadinman.com/home/the-fringe-2026-7llfb-r7kry-b53aw-7c7kh-sj23g-aj762-dmc6t-kpk2d-xgds5-xra93-5awrt-lt6fr-n5twa-la8ks-byl78-ztmdp-anz8s",
-      "details": null,
-      "personnel": null,
-      "priceText": null
-    },
     {
       "id": "lilypad:2026-07-07:bevan-manson-trio-ft-allan-chase",
       "clubId": "lilypad",
@@ -449,7 +397,7 @@
       "sets": [
         "12:00"
       ],
-      "url": "https://www.lilypadinman.com/",
+      "url": "https://www.lilypadinman.com/home/variety-hn35w-m6fm2-n5hrz-s992t-7hth4-l685n",
       "details": null,
       "personnel": null,
       "priceText": null
@@ -462,7 +410,7 @@
       "sets": [
         "22:00"
       ],
-      "url": "https://www.lilypadinman.com/",
+      "url": "https://www.lilypadinman.com/home/variety-hn35w-m6fm2-n5hrz-s992t-7hth4-l685n",
       "details": null,
       "personnel": null,
       "priceText": null
@@ -489,7 +437,7 @@
       "sets": [
         "12:00"
       ],
-      "url": "https://www.lilypadinman.com/",
+      "url": "https://www.lilypadinman.com/home/variety-hn35w-m6fm2-n5hrz-s992t-7hth4-l685n",
       "details": null,
       "personnel": null,
       "priceText": null
@@ -502,7 +450,7 @@
       "sets": [
         "17:00"
       ],
-      "url": "https://www.lilypadinman.com/",
+      "url": "https://www.lilypadinman.com/home/variety-hn35w-m6fm2-n5hrz-s992t-7hth4-l685n",
       "details": null,
       "personnel": null,
       "priceText": null

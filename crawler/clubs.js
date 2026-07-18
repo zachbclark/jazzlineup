@@ -1017,7 +1017,7 @@ export const CLUBS = [
     borough: null,
     timezone: 'America/New_York',
     neighborhood: 'Central Square',
-    color: '#f0a02e', // monkfish-roe orange, warm against the green next door
+    color: '#9d6bd8', // the Jazz Baroness Room — purple for Nica, naturally
     module: './clubs/madmonkfish.js',
   },
   {
@@ -1071,7 +1071,7 @@ export const CLUBS = [
     borough: null,
     timezone: 'Asia/Tokyo',
     neighborhood: 'Marunouchi',
-    color: '#d9a441', // champagne gold for the supper club
+    color: '#e6d39e', // pale champagne, backed off from Alfie's amber
     module: './clubs/cottonclubtok.js',
   },
   {
@@ -1125,6 +1125,112 @@ export const CLUBS = [
     neighborhood: 'Takadanobaba',
     color: '#5bc8d9', // all-night neon cyan
     module: './clubs/introtok.js',
+  },
+  {
+    id: 'billboardtok',
+    name: 'Billboard Live Tokyo',
+    shortName: 'Billboard',
+    url: 'https://www.billboard-live.com',
+    address: 'Tokyo Midtown Garden Terrace 4F, 9-7-4 Akasaka, Minato, Tokyo',
+    city: 'tok',
+    borough: null,
+    timezone: 'Asia/Tokyo',
+    neighborhood: 'Roppongi',
+    color: '#d94f8a', // chart-pink for the big room
+    module: './clubs/billboardtok.js',
+  },
+
+  // ------------------------------------------------------- New Orleans ----
+  {
+    id: 'snugharbor',
+    name: 'Snug Harbor Jazz Bistro',
+    shortName: 'Snug Harbor',
+    url: 'https://snugjazz.com',
+    address: '626 Frenchmen St, New Orleans, LA 70116',
+    city: 'nol',
+    borough: null,
+    timezone: 'America/Chicago',
+    neighborhood: 'Frenchmen St',
+    color: '#c357b5', // snugjazz.com's actual brand purple #a54399, glow-tuned (Zach caught my fake red)
+    module: './clubs/snugharbor.js',
+  },
+  {
+    id: 'preservationhall',
+    name: 'Preservation Hall',
+    shortName: 'Preservation Hall',
+    url: 'https://www.preservationhall.com',
+    address: '726 St. Peter St, New Orleans, LA 70116',
+    city: 'nol',
+    borough: null,
+    timezone: 'America/Chicago',
+    neighborhood: 'French Quarter',
+    color: '#c9a06a', // the sepia room itself
+    module: './clubs/preservationhall.js',
+  },
+  {
+    id: 'dbanola',
+    name: 'd.b.a.',
+    shortName: 'd.b.a.',
+    url: 'https://www.dbaneworleans.com',
+    address: '618 Frenchmen St, New Orleans, LA 70116',
+    city: 'nol',
+    borough: null,
+    timezone: 'America/Chicago',
+    neighborhood: 'Frenchmen St',
+    color: '#4ec98a', // the green-lit bar
+    module: './clubs/dbanola.js',
+  },
+  {
+    id: 'spottedcat',
+    name: 'The Spotted Cat Music Club',
+    shortName: 'Spotted Cat',
+    url: 'https://www.spottedcatmusicclub.com',
+    address: '623 Frenchmen St, New Orleans, LA 70116',
+    city: 'nol',
+    borough: null,
+    timezone: 'America/Chicago',
+    neighborhood: 'Frenchmen St',
+    color: '#f0b429', // brass in the window at 2pm
+    module: './clubs/spottedcat.js',
+  },
+  {
+    id: 'bluenile',
+    name: 'Blue Nile',
+    shortName: 'Blue Nile',
+    url: 'https://www.bluenilelive.com',
+    address: '532 Frenchmen St, New Orleans, LA 70116',
+    city: 'nol',
+    borough: null,
+    timezone: 'America/Chicago',
+    neighborhood: 'Frenchmen St',
+    color: '#4d9bff', // the name, obviously
+    module: './clubs/bluenile.js',
+  },
+  {
+    id: 'mapleleaf',
+    name: 'Maple Leaf Bar',
+    shortName: 'Maple Leaf',
+    url: 'https://www.mapleleafbar.com',
+    address: '8316 Oak St, New Orleans, LA 70118',
+    city: 'nol',
+    borough: null,
+    timezone: 'America/Chicago',
+    neighborhood: 'Uptown',
+    color: '#e0524e', // a maple leaf is red — took the slot Snug's real purple freed up
+    module: './clubs/mapleleaf.js',
+  },
+  {
+    id: 'fritzels',
+    name: "Fritzel's European Jazz Pub",
+    shortName: "Fritzel's",
+    url: 'https://fritzelsjazz.com',
+    address: '733 Bourbon St, New Orleans, LA 70116',
+    city: 'nol',
+    borough: null,
+    timezone: 'America/Chicago',
+    neighborhood: 'French Quarter',
+    color: '#8a5a3a', // old pub walnut — three golds in one city was two too many
+    module: './clubs/fritzels.js',
   },
 ];
 
