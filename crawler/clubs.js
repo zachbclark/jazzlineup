@@ -1232,6 +1232,86 @@ export const CLUBS = [
     color: '#8a5a3a', // old pub walnut — three golds in one city was two too many
     module: './clubs/fritzels.js',
   },
+
+  // --- BERLIN ----------------------------------------------------------------
+  {
+    id: 'atrane',
+    name: 'A-Trane',
+    shortName: 'A-Trane',
+    url: 'https://a-trane.de',
+    address: 'Bleibtreustraße 1, 10623 Berlin',
+    city: 'ber',
+    borough: null,
+    timezone: 'Europe/Berlin',
+    neighborhood: 'Charlottenburg',
+    color: '#f04a4a', // a-trane.de's dominant brand red #ed1c24, glow-tuned
+    module: './clubs/atrane.js',
+  },
+  {
+    id: 'zigzag',
+    name: 'Zig Zag Jazz Club',
+    shortName: 'Zig Zag',
+    url: 'https://zigzag-jazzclub.berlin',
+    address: 'Hauptstraße 89, 12159 Berlin',
+    city: 'ber',
+    borough: null,
+    timezone: 'Europe/Berlin',
+    neighborhood: 'Friedenau',
+    color: '#5b7ef0', // site's brand blue #4368e5, glow-tuned
+    module: './clubs/zigzag.js',
+  },
+  {
+    id: 'bflat',
+    name: 'b-flat',
+    shortName: 'b-flat',
+    url: 'https://b-flat-berlin.de',
+    address: 'Dircksenstraße 40, 10178 Berlin',
+    city: 'ber',
+    borough: null,
+    timezone: 'Europe/Berlin',
+    neighborhood: 'Mitte',
+    color: '#e0913f', // site's brand amber #e08b25, lifted a touch
+    module: './clubs/bflat.js',
+  },
+  {
+    id: 'donau115',
+    name: 'Donau115',
+    shortName: 'Donau115',
+    url: 'https://donau115.de',
+    address: 'Donaustraße 115, 12043 Berlin',
+    city: 'ber',
+    borough: null,
+    timezone: 'Europe/Berlin',
+    neighborhood: 'Neukölln',
+    color: '#4ec98a', // site is monochrome — assigned green for in-city distinctness
+    module: './clubs/donau115.js',
+  },
+  {
+    id: 'schlot',
+    name: 'Kunstfabrik Schlot',
+    shortName: 'Schlot',
+    url: 'https://kunstfabrik-schlot.de',
+    address: 'Invalidenstraße 117, 10115 Berlin',
+    city: 'ber',
+    borough: null,
+    timezone: 'Europe/Berlin',
+    neighborhood: 'Mitte',
+    color: '#f4772a', // site's brand orange #f45f0b, glow-tuned
+    module: './clubs/schlot.js',
+  },
+  {
+    id: 'quasimodo',
+    name: 'Quasimodo',
+    shortName: 'Quasimodo',
+    url: 'https://quasimodo.club',
+    address: 'Kantstraße 12A, 10623 Berlin',
+    city: 'ber',
+    borough: null,
+    timezone: 'Europe/Berlin',
+    neighborhood: 'Charlottenburg',
+    color: '#f5c33d', // quasimodo.club's brand gold #ffb30d, tuned off the UI accent
+    module: './clubs/quasimodo.js',
+  },
 ];
 
 export function clubById(id) {

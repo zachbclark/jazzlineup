@@ -314,6 +314,33 @@ epoch-ms dates, titles carry "• SAT JUL. 18 • 7:30PM" decoration to
 strip), Maple Leaf (existing _wixevents helper unchanged), Fritzel's
 (generator, nightly trad since 1969, deliberately no fake set times).
 
+BERLIN SHIPPED 2026-07-18 (city id ber, slug /berlin, 6 venues,
+Europe/Berlin, clock24: 'colon' — Germans write 19:30, not the launch
+pack's assumed Paris style). Platform: lib.js MONTHS gained German
+prefixes (mär/mrz/mai/okt/dez), INSTRUMENTS gained the German set
+(schlagzeug, kontrabass, posaune...), personnelFromJpRun takes
+{maxName} for western Name(Instrument) rosters and accepts written-out
+instrument words + trailing-dot abbreviations (keyb.). Venues: A-Trane
+(EventON on WordPress; homepage server-renders ~6 weeks of
+.eventon_list_event blocks; data-time="start-end" epochs are LOCAL TIME
+PRETENDING TO BE UTC — format with tzDate/tzTime 'UTC' and wall-clock
+falls out, DST-proof; PRÄSENTIERT prefix stripped; GESCHLOSSEN
+placeholders skipped), Zig Zag (Squarespace hand-built /programmneu
+summary page, ENGLISH dates, genre paren "(Jazz)" opens each excerpt,
+Beginn times via detail enrichment), b-flat (Squarespace events JSON =
+the Blue Nile pattern; Concert time rides tags, roster rides excerpt in
+Name(abbr) form; startDate clock is bogus, date-only), Donau115 (their
+Wix site loads a PUBLIC FIREBASE FEED .../events.json — ISO dates, live
+flag, members rosters in two shapes; Two-Song Tuesday songwriter night
+filtered out, Thursday Jazz Jam kept), Kunstfabrik Schlot (WP Offbeat
+theme /programm/ list, GERMAN month abbrevs, no year (inferYear), no
+times on list — detail enrichment; kabarett/comedy title filter),
+Quasimodo (WP Events Manager; TRUST THEIR TAG PAGES /events/tags/jazz +
+latin-jazz + blues, numeric dd.mm.yyyy dates, title-keyword rescue over
+the full list). Colors all site-verified via dominant-color extraction
+except Donau115 (monochrome site, assigned green). Four of six venues
+carry personnel. A-Trane leads the chips.
+
 CHIP COLOR VERIFICATION (mechanical task, any session): registry colors
 whose comment cites a real brand hex are verified; comments saying "quick
 read" or vibes are NOT. Sweep the unverified ones (most of bos/tok/nol)

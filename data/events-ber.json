@@ -1,0 +1,3069 @@
+{
+  "generatedAt": "2026-07-18T23:46:20.404Z",
+  "city": "ber",
+  "clubs": [
+    {
+      "id": "atrane",
+      "name": "A-Trane",
+      "shortName": "A-Trane",
+      "url": "https://a-trane.de",
+      "address": "Bleibtreustraße 1, 10623 Berlin",
+      "city": "ber",
+      "borough": null,
+      "timezone": "Europe/Berlin",
+      "neighborhood": "Charlottenburg",
+      "color": "#f04a4a"
+    },
+    {
+      "id": "zigzag",
+      "name": "Zig Zag Jazz Club",
+      "shortName": "Zig Zag",
+      "url": "https://zigzag-jazzclub.berlin",
+      "address": "Hauptstraße 89, 12159 Berlin",
+      "city": "ber",
+      "borough": null,
+      "timezone": "Europe/Berlin",
+      "neighborhood": "Friedenau",
+      "color": "#5b7ef0"
+    },
+    {
+      "id": "bflat",
+      "name": "b-flat",
+      "shortName": "b-flat",
+      "url": "https://b-flat-berlin.de",
+      "address": "Dircksenstraße 40, 10178 Berlin",
+      "city": "ber",
+      "borough": null,
+      "timezone": "Europe/Berlin",
+      "neighborhood": "Mitte",
+      "color": "#e0913f"
+    },
+    {
+      "id": "donau115",
+      "name": "Donau115",
+      "shortName": "Donau115",
+      "url": "https://donau115.de",
+      "address": "Donaustraße 115, 12043 Berlin",
+      "city": "ber",
+      "borough": null,
+      "timezone": "Europe/Berlin",
+      "neighborhood": "Neukölln",
+      "color": "#4ec98a"
+    },
+    {
+      "id": "schlot",
+      "name": "Kunstfabrik Schlot",
+      "shortName": "Schlot",
+      "url": "https://kunstfabrik-schlot.de",
+      "address": "Invalidenstraße 117, 10115 Berlin",
+      "city": "ber",
+      "borough": null,
+      "timezone": "Europe/Berlin",
+      "neighborhood": "Mitte",
+      "color": "#f4772a"
+    },
+    {
+      "id": "quasimodo",
+      "name": "Quasimodo",
+      "shortName": "Quasimodo",
+      "url": "https://quasimodo.club",
+      "address": "Kantstraße 12A, 10623 Berlin",
+      "city": "ber",
+      "borough": null,
+      "timezone": "Europe/Berlin",
+      "neighborhood": "Charlottenburg",
+      "color": "#f5c33d"
+    }
+  ],
+  "errors": [],
+  "events": [
+    {
+      "id": "donau115:2026-07-16:thursday-jazz-jam",
+      "clubId": "donau115",
+      "title": "Thursday Jazz Jam",
+      "date": "2026-07-16",
+      "sets": [],
+      "url": "https://donau115.de",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "donau115:2026-07-17:mads-riis-quartet",
+      "clubId": "donau115",
+      "title": "Mads Riis Quartet",
+      "date": "2026-07-17",
+      "sets": [],
+      "url": "https://donau115.de",
+      "details": null,
+      "personnel": [
+        {
+          "name": "Mads Riis",
+          "instrument": "guitar"
+        },
+        {
+          "name": "Ronja Andersson",
+          "instrument": "vocals/alto sax"
+        },
+        {
+          "name": "Thiago Duarte",
+          "instrument": "bass"
+        },
+        {
+          "name": "Steven Moser",
+          "instrument": "drums"
+        }
+      ],
+      "priceText": null
+    },
+    {
+      "id": "schlot:2026-07-18:internationaler-jazz-workshop-berlin-2026-abschlusskonzert-d",
+      "clubId": "schlot",
+      "title": "Internationaler Jazz Workshop Berlin 2026 – Abschlusskonzert der Workshopteilnehmenden",
+      "date": "2026-07-18",
+      "sets": [
+        "16:00"
+      ],
+      "url": "https://kunstfabrik-schlot.de/event/jazzworkshop-ms-city-west-4/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "zigzag:2026-07-18:tal-arditi-featuring-tim-ries-the-rolling-stones",
+      "clubId": "zigzag",
+      "title": "Tal Arditi Featuring Tim Ries (The Rolling Stones)",
+      "date": "2026-07-18",
+      "sets": [
+        "20:00"
+      ],
+      "url": "https://www.zigzag-jazzclub.berlin/program-mai/takingoffuri-bp7l7",
+      "details": null,
+      "personnel": null,
+      "priceText": "25€"
+    },
+    {
+      "id": "schlot:2026-07-18:internationaler-jazz-workshop-berlin-2026-abschlusskonzert-c",
+      "clubId": "schlot",
+      "title": "Internationaler Jazz Workshop Berlin 2026 – Abschlusskonzert – Corinna Danzer – Christof Griese Sextett / Līva Strazdiņa – Dirk Strakhof Quintett / Christof Griese – Double Drums – Double Bass Project",
+      "date": "2026-07-18",
+      "sets": [
+        "21:00"
+      ],
+      "url": "https://kunstfabrik-schlot.de/event/internationaler-jazz-workshop-berlin-2026-abschlusskonzert-mit-dem-corinna-danzer-christof-griese-sextett-dem-liva-strazdina-dirk-strakhof-quintett-dem-christof-griese-double-drums/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "donau115:2026-07-18:nathan-ott-coltrane100",
+      "clubId": "donau115",
+      "title": "Nathan Ott Coltrane100",
+      "date": "2026-07-18",
+      "sets": [],
+      "url": "https://donau115.de",
+      "details": null,
+      "personnel": [
+        {
+          "name": "Kit Downes",
+          "instrument": "piano"
+        },
+        {
+          "name": "Jeremy Viner",
+          "instrument": "tenor sax, clarinet"
+        },
+        {
+          "name": "Felix Henkelhausen",
+          "instrument": "bass"
+        },
+        {
+          "name": "Nathan Ott",
+          "instrument": "drums"
+        }
+      ],
+      "priceText": null
+    },
+    {
+      "id": "schlot:2026-07-19:fitz-swing-big-band-der-university-of-cambridge",
+      "clubId": "schlot",
+      "title": "Fitz Swing – Big Band der University of Cambridge",
+      "date": "2026-07-19",
+      "sets": [
+        "19:00"
+      ],
+      "url": "https://kunstfabrik-schlot.de/event/fitz-swing-big-band-der-university-of-cambridge/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "bflat:2026-07-19:les-color-s-jazz-kr-ol",
+      "clubId": "bflat",
+      "title": "Les Colorés Jazz Kréol",
+      "date": "2026-07-19",
+      "sets": [
+        "21:00"
+      ],
+      "url": "https://b-flat-berlin.de/events/mcg5sn3pdyxhzz9-wbt6h-kcd6x-r7daf-h2mgc-f6lxm-awap9-jgaxk-338m3-5rsjr-6m3wz-hx5y4-ewx7f-l8jg5-3hgbt-7339d-h76fn",
+      "details": null,
+      "personnel": [
+        {
+          "name": "Hervé Hartock",
+          "instrument": "drums"
+        },
+        {
+          "name": "Samuel Appapoulay",
+          "instrument": "keys"
+        },
+        {
+          "name": "Richard Müller",
+          "instrument": "bass"
+        },
+        {
+          "name": "Tanja Becker",
+          "instrument": "trombone"
+        }
+      ],
+      "priceText": null
+    },
+    {
+      "id": "zigzag:2026-07-20:the-zig-zag-jazz-festival-fusion-experience-feat-dave-weckl-",
+      "clubId": "zigzag",
+      "title": "The Zig Zag Jazz Festival: Fusion Experience feat. Dave Weckl, Richard Bona, Ciro Manna, Michael Lecoq",
+      "date": "2026-07-20",
+      "sets": [
+        "18:00"
+      ],
+      "url": "https://www.zigzag-jazzclub.berlin/program-mai/paolojoceylkn-8r5ws-are92-zn6l6",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "atrane:2026-07-20:andreas-schmidt-friends",
+      "clubId": "atrane",
+      "title": "ANDREAS SCHMIDT & FRIENDS",
+      "date": "2026-07-20",
+      "sets": [
+        "20:30"
+      ],
+      "url": "https://a-trane.de/programm/",
+      "details": "HEUTE MIT: HEINRICH KÖBBERLING-RUDI MAHALL · Special Guest: ETIENNE WITTICH",
+      "personnel": null,
+      "priceText": "Free"
+    },
+    {
+      "id": "zigzag:2026-07-20:the-zig-zag-jazz-festival-dee-dee-bridgewater",
+      "clubId": "zigzag",
+      "title": "The Zig Zag Jazz Festival: Dee Dee Bridgewater",
+      "date": "2026-07-20",
+      "sets": [
+        "20:30"
+      ],
+      "url": "https://www.zigzag-jazzclub.berlin/program-mai/paolojoceylkn-8r5ws-are92",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "zigzag:2026-07-21:the-zig-zag-jazz-festival-mario-biondi-20-years-of-this-is-w",
+      "clubId": "zigzag",
+      "title": "The Zig Zag Jazz Festival: Mario Biondi 20 Years of This Is What You Are",
+      "date": "2026-07-21",
+      "sets": [
+        "18:00"
+      ],
+      "url": "https://www.zigzag-jazzclub.berlin/program-mai/paolojoceylkn-8r5ws-are92-zyt7j",
+      "details": "Jazz, Soul",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "atrane:2026-07-21:nils-kugelmann",
+      "clubId": "atrane",
+      "title": "Nils Kugelmann",
+      "date": "2026-07-21",
+      "sets": [
+        "20:30"
+      ],
+      "url": "https://a-trane.de/programm/",
+      "details": "«Where Nights Unfold» · Celebrating 5 Years Of The Trio · FEAT: Luca Zambito-Sebastian Wolfgruber",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "zigzag:2026-07-21:the-zig-zag-jazz-festival-till-br-nner-italia",
+      "clubId": "zigzag",
+      "title": "The Zig Zag Jazz Festival: Till Brönner ITALIA",
+      "date": "2026-07-21",
+      "sets": [
+        "20:30"
+      ],
+      "url": "https://www.zigzag-jazzclub.berlin/program-mai/paolojoceylkn-8r5ws-are92-zyt7j-x9zaf",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "schlot:2026-07-21:ivanov-vibe",
+      "clubId": "schlot",
+      "title": "Ivanov Vibe",
+      "date": "2026-07-21",
+      "sets": [
+        "21:00"
+      ],
+      "url": "https://kunstfabrik-schlot.de/event/ivanov-vibe-3/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "zigzag:2026-07-21:the-zig-zag-jazz-festival-antonio-fara-quartet-italian-sound",
+      "clubId": "zigzag",
+      "title": "The Zig Zag Jazz Festival: Antonio Faraò Quartet - Italian Soundtracks",
+      "date": "2026-07-21",
+      "sets": [
+        "22:00"
+      ],
+      "url": "https://www.zigzag-jazzclub.berlin/program-mai/paolojoceylkn-8r5ws-are92-zyt7j-x9zaf-9cyja",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "zigzag:2026-07-22:the-zig-zag-jazz-festival-stacey-kent",
+      "clubId": "zigzag",
+      "title": "The Zig Zag Jazz Festival: Stacey Kent",
+      "date": "2026-07-22",
+      "sets": [
+        "18:00"
+      ],
+      "url": "https://www.zigzag-jazzclub.berlin/program-mai/paolojoceylkn-8r5ws-are92-zyt7j-x9zaf-9cyja-mh6ww",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "atrane:2026-07-22:nils-kugelmann",
+      "clubId": "atrane",
+      "title": "Nils Kugelmann",
+      "date": "2026-07-22",
+      "sets": [
+        "20:30"
+      ],
+      "url": "https://a-trane.de/programm/",
+      "details": "«Where Nights Unfold» · Celebrating 5 Years Of The Trio · FEAT: Luca Zambito-Sebastian Wolfgruber",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "zigzag:2026-07-22:the-zig-zag-jazz-festival-ledisi",
+      "clubId": "zigzag",
+      "title": "The Zig Zag Jazz Festival: Ledisi",
+      "date": "2026-07-22",
+      "sets": [
+        "20:30"
+      ],
+      "url": "https://www.zigzag-jazzclub.berlin/program-mai/paolojoceylkn-8r5ws-are92-zyt7j-x9zaf-58kkf",
+      "details": "Jazz, Soul",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "bflat:2026-07-22:robins-nest-jamsession",
+      "clubId": "bflat",
+      "title": "Robins Nest - Jamsession",
+      "date": "2026-07-22",
+      "sets": [
+        "21:00"
+      ],
+      "url": "https://b-flat-berlin.de/events/lswg3btcxjmsnlt-458yl-a36fa-dgnlm-dpjak-d94fw-l8ery-c4f4h-h437d-z8ap5-4m9xc-kkrtw-le9t8-2jpf2-sbs62-h6437-l2mxe-awdyg",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "donau115:2026-07-22:quique-sinesi-w-thiago-duarte-amoy-ribas-augusto-sinesi",
+      "clubId": "donau115",
+      "title": "QUIQUE SINESI w: Thiago Duarte, Amoy Ribas, & Augusto Sinesi",
+      "date": "2026-07-22",
+      "sets": [],
+      "url": "https://donau115.de",
+      "details": null,
+      "personnel": [
+        {
+          "name": "Quique Sinesi",
+          "instrument": "7 strings & 10 strings spanish guitars, charango, composition"
+        },
+        {
+          "name": "Augusto Sinesi",
+          "instrument": "electric and spanish guitars, voice, composition"
+        },
+        {
+          "name": "Thiago Duarte",
+          "instrument": "double bass"
+        },
+        {
+          "name": "Amoy Ribas",
+          "instrument": "percussion"
+        },
+        {
+          "name": "Ariel Bart",
+          "instrument": "harmonica"
+        }
+      ],
+      "priceText": null
+    },
+    {
+      "id": "zigzag:2026-07-23:the-zig-zag-jazz-festival-bill-charlap-trio",
+      "clubId": "zigzag",
+      "title": "The Zig Zag Jazz Festival: Bill Charlap Trio",
+      "date": "2026-07-23",
+      "sets": [
+        "18:00"
+      ],
+      "url": "https://www.zigzag-jazzclub.berlin/program-mai/paolojoceylkn-8r5ws-are92-zyt7j-x9zaf-9cyja-mh6ww-ys9t9",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "atrane:2026-07-23:nils-kugelmann",
+      "clubId": "atrane",
+      "title": "Nils Kugelmann",
+      "date": "2026-07-23",
+      "sets": [
+        "20:30"
+      ],
+      "url": "https://a-trane.de/programm/",
+      "details": "«Where Nights Unfold» · Celebrating 5 Years Of The Trio · FEAT: Luca Zambito-Sebastian Wolfgruber · SPECIAL GUESTS: SHUTEEN ERDENEBAATAR & JAKOB MANZ",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "zigzag:2026-07-23:the-zig-zag-jazz-festival-the-bad-plus-farewell-tour",
+      "clubId": "zigzag",
+      "title": "The Zig Zag Jazz Festival: The Bad Plus - Farewell Tour",
+      "date": "2026-07-23",
+      "sets": [
+        "20:30"
+      ],
+      "url": "https://www.zigzag-jazzclub.berlin/program-mai/paolojoceylkn-8r5ws-are92-zyt7j-x9zaf-58kkf-2gxcc",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "bflat:2026-07-23:cr-me-br-ll-e",
+      "clubId": "bflat",
+      "title": "Crème Brüllée",
+      "date": "2026-07-23",
+      "sets": [
+        "21:00"
+      ],
+      "url": "https://b-flat-berlin.de/events/mcg5sn3pdyxhzz9-wbt6h-kcd6x-r7daf-h2mgc-f6lxm-awap9-jgaxk-338m3-5rsjr-6m3wz-hx5y4-ewx7f-l8jg5-3hgbt-7339d-h76fn-mh9w4",
+      "details": null,
+      "personnel": [
+        {
+          "name": "Márton Zsiborás",
+          "instrument": "electric bass"
+        },
+        {
+          "name": "Eljo Hendro",
+          "instrument": "electric bass"
+        },
+        {
+          "name": "Paul Brüllmann",
+          "instrument": "drums"
+        }
+      ],
+      "priceText": null
+    },
+    {
+      "id": "schlot:2026-07-23:komi-tau-hexagon",
+      "clubId": "schlot",
+      "title": "Komi Tau Hexagon",
+      "date": "2026-07-23",
+      "sets": [
+        "21:00"
+      ],
+      "url": "https://kunstfabrik-schlot.de/event/komi-tau-hexagon/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "donau115:2026-07-23:thursday-jazz-jam",
+      "clubId": "donau115",
+      "title": "Thursday Jazz Jam",
+      "date": "2026-07-23",
+      "sets": [],
+      "url": "https://donau115.de",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "zigzag:2026-07-24:the-zig-zag-jazz-festival-ida-nielsen-group-a-prince-celebra",
+      "clubId": "zigzag",
+      "title": "The Zig Zag Jazz Festival: Ida Nielsen Group - A Prince Celebration",
+      "date": "2026-07-24",
+      "sets": [
+        "18:00"
+      ],
+      "url": "https://www.zigzag-jazzclub.berlin/program-mai/paolojoceylkn-8r5ws-are92-zyt7j-x9zaf-9cyja-mh6ww-ys9t9-ys7dy",
+      "details": "Jazz, Funk, Groove",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "atrane:2026-07-24:nils-kugelmann",
+      "clubId": "atrane",
+      "title": "Nils Kugelmann",
+      "date": "2026-07-24",
+      "sets": [
+        "20:30"
+      ],
+      "url": "https://a-trane.de/programm/",
+      "details": "«Where Nights Unfold» · Celebrating 5 Years Of The Trio · FEAT: Luca Zambito-Sebastian Wolfgruber",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "bflat:2026-07-24:hugo-fernandez-quartett-plays-rivermind",
+      "clubId": "bflat",
+      "title": "Hugo Fernandez Quartett plays «Rivermind»",
+      "date": "2026-07-24",
+      "sets": [
+        "21:00"
+      ],
+      "url": "https://b-flat-berlin.de/events/mcg5sn3pdyxhzz9-wbt6h-kcd6x-r7daf-h2mgc-f6lxm-awap9-jgaxk-338m3-5rsjr-6m3wz-hx5y4-ewx7f-l8jg5-3hgbt-7339d-h76fn-mh9w4-tmjl2",
+      "details": null,
+      "personnel": [
+        {
+          "name": "Benedikt Jahnel",
+          "instrument": "piano"
+        },
+        {
+          "name": "Giacomo Tagliavia",
+          "instrument": "bass"
+        },
+        {
+          "name": "Mathias Ruppnig",
+          "instrument": "drums"
+        }
+      ],
+      "priceText": null
+    },
+    {
+      "id": "schlot:2026-07-24:kiki-the-heartbreakers",
+      "clubId": "schlot",
+      "title": "KIKI & THE HEARTBREAKERS",
+      "date": "2026-07-24",
+      "sets": [
+        "21:00"
+      ],
+      "url": "https://kunstfabrik-schlot.de/event/kiki-the-heartbreakers-3/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "zigzag:2026-07-24:the-zig-zag-jazz-festival-mononeon",
+      "clubId": "zigzag",
+      "title": "The Zig Zag Jazz Festival: MonoNeon",
+      "date": "2026-07-24",
+      "sets": [],
+      "url": "https://www.zigzag-jazzclub.berlin/program-mai/paolojoceylkn-8r5ws-are92-zyt7j-x9zaf-58kkf-2gxcc-lxsf9",
+      "details": "Jazz, Funk, Groove",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "zigzag:2026-07-24:the-zig-zag-jazz-festival-cosmo-klein-purple-4-life",
+      "clubId": "zigzag",
+      "title": "The Zig Zag Jazz Festival: Cosmo Klein - Purple 4 Life",
+      "date": "2026-07-24",
+      "sets": [],
+      "url": "https://www.zigzag-jazzclub.berlin/program-mai/paolojoceylkn-8r5ws-are92-zyt7j-x9zaf-58kkf-7cjze",
+      "details": "Jazz, Funk, Soul, Rock",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "donau115:2026-07-24:hila-kulik-group",
+      "clubId": "donau115",
+      "title": "Hila Kulik Group",
+      "date": "2026-07-24",
+      "sets": [],
+      "url": "https://donau115.de",
+      "details": null,
+      "personnel": [
+        {
+          "name": "Hila Kulik",
+          "instrument": "piano"
+        },
+        {
+          "name": "Ori Jacobson",
+          "instrument": "sax"
+        },
+        {
+          "name": "Amir Bresler",
+          "instrument": "drums"
+        },
+        {
+          "name": "Makar Novikov",
+          "instrument": "double bass"
+        }
+      ],
+      "priceText": null
+    },
+    {
+      "id": "atrane:2026-07-25:nils-kugelmann",
+      "clubId": "atrane",
+      "title": "Nils Kugelmann",
+      "date": "2026-07-25",
+      "sets": [
+        "20:30"
+      ],
+      "url": "https://a-trane.de/programm/",
+      "details": "«Where Nights Unfold» · Celebrating 5 Years Of The Trio · FEAT: Luca Zambito-Sebastian Wolfgruber",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "bflat:2026-07-25:verajoy-band",
+      "clubId": "bflat",
+      "title": "Verajoy Band",
+      "date": "2026-07-25",
+      "sets": [
+        "21:00"
+      ],
+      "url": "https://b-flat-berlin.de/events/mcg5sn3pdyxhzz9-wbt6h-kcd6x-r7daf-h2mgc-f6lxm-awap9-jgaxk-338m3-5rsjr-6m3wz-hx5y4-ewx7f-l8jg5-3hgbt-7339d-h76fn-mh9w4-tmjl2-33mrm",
+      "details": null,
+      "personnel": [
+        {
+          "name": "Maria Joy",
+          "instrument": "vocals"
+        },
+        {
+          "name": "· Claudio Valladares",
+          "instrument": "guitar"
+        },
+        {
+          "name": "Fran Suárez",
+          "instrument": "piano"
+        },
+        {
+          "name": "· Luismo Valladares",
+          "instrument": "bass"
+        },
+        {
+          "name": "· Sergio Díaz",
+          "instrument": "drums"
+        }
+      ],
+      "priceText": null
+    },
+    {
+      "id": "schlot:2026-07-25:the-berlin-quartet",
+      "clubId": "schlot",
+      "title": "THE BERLIN QUARTET",
+      "date": "2026-07-25",
+      "sets": [
+        "21:00"
+      ],
+      "url": "https://kunstfabrik-schlot.de/event/the-berlin-quartet-6/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "zigzag:2026-07-25:the-zig-zag-jazz-festival-victor-wooten-brothers",
+      "clubId": "zigzag",
+      "title": "The Zig Zag Jazz Festival: Victor Wooten Brothers",
+      "date": "2026-07-25",
+      "sets": [],
+      "url": "https://www.zigzag-jazzclub.berlin/program-mai/paolojoceylkn-8r5ws-are92-zyt7j-x9zaf-9cyja-mh6ww-ys9t9-2grlc",
+      "details": "Jazz, Groove, Funk",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "zigzag:2026-07-25:the-zig-zag-jazz-festival-kurt-rosenwinkel-4tet-feat-brad-me",
+      "clubId": "zigzag",
+      "title": "The Zig Zag Jazz Festival: Kurt Rosenwinkel 4tet feat Brad Mehldau",
+      "date": "2026-07-25",
+      "sets": [],
+      "url": "https://www.zigzag-jazzclub.berlin/program-mai/paolojoceylkn-8r5ws-are92-zyt7j-x9zaf-58kkf-2gxcc-lxsf9-3hxtr",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "zigzag:2026-07-25:the-zig-zag-jazz-festival-gretchen-parlato",
+      "clubId": "zigzag",
+      "title": "The Zig Zag Jazz Festival: Gretchen Parlato",
+      "date": "2026-07-25",
+      "sets": [],
+      "url": "https://www.zigzag-jazzclub.berlin/program-mai/paolojoceylkn-8r5ws-are92-zyt7j-x9zaf-58kkf-7cjze-eczw4",
+      "details": "Jazz, Soul",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "donau115:2026-07-25:viner-donkin-moser",
+      "clubId": "donau115",
+      "title": "Viner/Donkin/Moser",
+      "date": "2026-07-25",
+      "sets": [],
+      "url": "https://donau115.de",
+      "details": null,
+      "personnel": [
+        {
+          "name": "Jeremy Viner",
+          "instrument": "tenor sax"
+        },
+        {
+          "name": "Phil Donkin",
+          "instrument": "bass"
+        },
+        {
+          "name": "Stevie Moser",
+          "instrument": "drums"
+        }
+      ],
+      "priceText": null
+    },
+    {
+      "id": "schlot:2026-07-26:amr-hammour-pr-sentiert-das-sommer-sch-lerkonzert",
+      "clubId": "schlot",
+      "title": "Amr Hammour präsentiert: Das Sommer-Schülerkonzert",
+      "date": "2026-07-26",
+      "sets": [
+        "19:00"
+      ],
+      "url": "https://kunstfabrik-schlot.de/event/amr-hammour-praesentiert-das-sommer-schuelerkonzert/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "bflat:2026-07-26:ramiro-olaciregui-my-standards-4tet",
+      "clubId": "bflat",
+      "title": "Ramiro Olaciregui \"My Standards 4tet\"",
+      "date": "2026-07-26",
+      "sets": [
+        "21:00"
+      ],
+      "url": "https://b-flat-berlin.de/events/mcg5sn3pdyxhzz9-wbt6h-kcd6x-r7daf-h2mgc-f6lxm-awap9-jgaxk-338m3-5rsjr-6m3wz-hx5y4-ewx7f-l8jg5-3hgbt-7339d-h76fn-mh9w4-tmjl2-33mrm-ddmnt",
+      "details": null,
+      "personnel": [
+        {
+          "name": "Gianni Gagliardi",
+          "instrument": "sax"
+        },
+        {
+          "name": "Makar Novikov",
+          "instrument": "bass"
+        },
+        {
+          "name": "Mathias Ruppnig",
+          "instrument": "drums"
+        }
+      ],
+      "priceText": null
+    },
+    {
+      "id": "zigzag:2026-07-26:the-zig-zag-jazz-festival-maddie-ashman",
+      "clubId": "zigzag",
+      "title": "The Zig Zag Jazz Festival: Maddie Ashman",
+      "date": "2026-07-26",
+      "sets": [],
+      "url": "https://www.zigzag-jazzclub.berlin/program-mai/paolojoceylkn-8r5ws-are92-zyt7j-x9zaf-58kkf-2gxcc-lxsf9-3hxtr-86tnl",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "zigzag:2026-07-26:the-zig-zag-jazz-festival-gonzalo-rubalcaba-quartet-feat-chr",
+      "clubId": "zigzag",
+      "title": "The Zig Zag Jazz Festival: Gonzalo Rubalcaba Quartet feat. Chris Potter, Larry Grenadier & Eric Harland",
+      "date": "2026-07-26",
+      "sets": [],
+      "url": "https://www.zigzag-jazzclub.berlin/program-mai/paolojoceylkn-8r5ws-are92-zyt7j-x9zaf-9cyja-mh6ww-ys9t9-ys7dy-9xsss",
+      "details": "Jazz,",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "zigzag:2026-07-26:the-zig-zag-jazz-festival-tigran-hamasyan-manifeste-quartet",
+      "clubId": "zigzag",
+      "title": "The Zig Zag Jazz Festival: Tigran Hamasyan Manifeste Quartet",
+      "date": "2026-07-26",
+      "sets": [],
+      "url": "https://www.zigzag-jazzclub.berlin/program-mai/paolojoceylkn-8r5ws-are92-zyt7j-x9zaf-58kkf-2gxcc-w85mc",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "zigzag:2026-07-26:the-zig-zag-jazz-festival-uri-gincel-trio",
+      "clubId": "zigzag",
+      "title": "The Zig Zag Jazz Festival: Uri Gincel Trio",
+      "date": "2026-07-26",
+      "sets": [],
+      "url": "https://www.zigzag-jazzclub.berlin/program-mai/paolojoceylkn-8r5ws-are92-zyt7j-x9zaf-58kkf-7cjze-lx62y",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "atrane:2026-07-27:andreas-schmidt-friends",
+      "clubId": "atrane",
+      "title": "ANDREAS SCHMIDT & FRIENDS",
+      "date": "2026-07-27",
+      "sets": [
+        "20:30"
+      ],
+      "url": "https://a-trane.de/programm/",
+      "details": "HEUTE MIT:",
+      "personnel": null,
+      "priceText": "Free"
+    },
+    {
+      "id": "schlot:2026-07-27:manni-wex-ansgar-specht-quintett",
+      "clubId": "schlot",
+      "title": "Manni Wex/Ansgar Specht Quintett",
+      "date": "2026-07-27",
+      "sets": [
+        "21:00"
+      ],
+      "url": "https://kunstfabrik-schlot.de/event/manni-wex-ansgar-specht-quintett-4/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "zigzag:2026-07-27:the-zig-zag-jazz-festival-joey-calderazzo-trio-ausverkauft",
+      "clubId": "zigzag",
+      "title": "The Zig Zag Jazz Festival: Joey Calderazzo Trio - AUSVERKAUFT",
+      "date": "2026-07-27",
+      "sets": [],
+      "url": "https://www.zigzag-jazzclub.berlin/program-mai/paolojoceylkn-8r5ws-are92-zyt7j-x9zaf-9cyja-mh6ww-ys9t9-ys7dy-9xsss-xgkek",
+      "details": "Jazz,",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "zigzag:2026-07-27:the-zig-zag-jazz-festival-al-di-meola",
+      "clubId": "zigzag",
+      "title": "The Zig Zag Jazz Festival: Al Di Meola",
+      "date": "2026-07-27",
+      "sets": [],
+      "url": "https://www.zigzag-jazzclub.berlin/program-mai/paolojoceylkn-8r5ws-are92-zyt7j-x9zaf-58kkf-2gxcc-w85mc-ay4pr",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "schlot:2026-07-28:mathias-ruppnig-presents-foam",
+      "clubId": "schlot",
+      "title": "Mathias Ruppnig presents FOAM",
+      "date": "2026-07-28",
+      "sets": [
+        "21:00"
+      ],
+      "url": "https://kunstfabrik-schlot.de/event/mathias-ruppnig-presents-foam/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "zigzag:2026-07-28:the-zig-zag-jazz-festival-eliane-elias",
+      "clubId": "zigzag",
+      "title": "The Zig Zag Jazz Festival: Eliane Elias",
+      "date": "2026-07-28",
+      "sets": [],
+      "url": "https://www.zigzag-jazzclub.berlin/program-mai/paolojoceylkn-8r5ws-are92-zyt7j-x9zaf-9cyja-mh6ww-8kejs",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "zigzag:2026-07-28:the-zig-zag-jazz-festival-ivan-lins-quartet",
+      "clubId": "zigzag",
+      "title": "The Zig Zag Jazz Festival: Ivan Lins Quartet",
+      "date": "2026-07-28",
+      "sets": [],
+      "url": "https://www.zigzag-jazzclub.berlin/program-mai/paolojoceylkn-8r5ws-are92-zyt7j-x9zaf-58kkf-2gxcc-w85mc-ay4pr-2c6np",
+      "details": "Jazz, Bossa Nova",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "atrane:2026-07-29:torsten-goods-meets-atrin-madani",
+      "clubId": "atrane",
+      "title": "TORSTEN GOODS MEETS ATRIN MADANI",
+      "date": "2026-07-29",
+      "sets": [
+        "20:30"
+      ],
+      "url": "https://a-trane.de/programm/",
+      "details": "«YACHTROCK & WESTCOAST» · FEAT: Till Sahm-Björn Werra-Magro",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "bflat:2026-07-29:robins-nest-jamsession",
+      "clubId": "bflat",
+      "title": "Robins Nest - Jamsession",
+      "date": "2026-07-29",
+      "sets": [
+        "21:00"
+      ],
+      "url": "https://b-flat-berlin.de/events/lswg3btcxjmsnlt-458yl-a36fa-dgnlm-dpjak-d94fw-l8ery-c4f4h-h437d-z8ap5-4m9xc-kkrtw-le9t8-2jpf2-sbs62-h6437-l2mxe-awdyg-bw5r8",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "schlot:2026-07-29:fuente-p-blica",
+      "clubId": "schlot",
+      "title": "Fuente Pública",
+      "date": "2026-07-29",
+      "sets": [
+        "21:00"
+      ],
+      "url": "https://kunstfabrik-schlot.de/event/fuente-publica-2/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "donau115:2026-07-29:kalle-zeier-trio",
+      "clubId": "donau115",
+      "title": "Kalle Zeier trio",
+      "date": "2026-07-29",
+      "sets": [],
+      "url": "https://donau115.de",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "schlot:2026-07-30:tower-jazzband-berlin",
+      "clubId": "schlot",
+      "title": "Tower-Jazzband Berlin",
+      "date": "2026-07-30",
+      "sets": [
+        "20:00"
+      ],
+      "url": "https://kunstfabrik-schlot.de/event/tower-jazzband-berlin-2/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "atrane:2026-07-30:torsten-goods-meets-atrin-madani",
+      "clubId": "atrane",
+      "title": "TORSTEN GOODS MEETS ATRIN MADANI",
+      "date": "2026-07-30",
+      "sets": [
+        "20:30"
+      ],
+      "url": "https://a-trane.de/programm/",
+      "details": "«YACHTROCK & WESTCOAST» · FEAT: Till Sahm-Björn Werra-Magro",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "bflat:2026-07-30:patricio-b-ttcher-quartett",
+      "clubId": "bflat",
+      "title": "Patricio Böttcher Quartett",
+      "date": "2026-07-30",
+      "sets": [
+        "21:00"
+      ],
+      "url": "https://b-flat-berlin.de/events/mcg5sn3pdyxhzz9-wbt6h-kcd6x-r7daf-h2mgc-f6lxm-awap9-jgaxk-338m3-5rsjr-6m3wz-hx5y4-ewx7f-l8jg5-3hgbt-7339d-h76fn-mh9w4-tmjl2-33mrm-ddmnt-3tne9",
+      "details": null,
+      "personnel": [
+        {
+          "name": "Ramiro Zayas",
+          "instrument": "piano"
+        },
+        {
+          "name": "Lisa Hoppe",
+          "instrument": "bass"
+        },
+        {
+          "name": "Axel Filip",
+          "instrument": "drums"
+        }
+      ],
+      "priceText": null
+    },
+    {
+      "id": "zigzag:2026-07-30:the-zig-zag-jazz-festival-nesrine",
+      "clubId": "zigzag",
+      "title": "The Zig Zag Jazz Festival: Nesrine",
+      "date": "2026-07-30",
+      "sets": [],
+      "url": "https://www.zigzag-jazzclub.berlin/program-mai/paolojoceylkn-8r5ws-are92-zyt7j-x9zaf-9cyja-mh6ww-8kejs-bc8d9",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "zigzag:2026-07-30:the-zig-zag-jazz-festival-dhafer-youssef",
+      "clubId": "zigzag",
+      "title": "The Zig Zag Jazz Festival: Dhafer Youssef",
+      "date": "2026-07-30",
+      "sets": [],
+      "url": "https://www.zigzag-jazzclub.berlin/program-mai/paolojoceylkn-8r5ws-are92-zyt7j-x9zaf-58kkf-2gxcc-w85mc-ay4pr-2c6np-l3alc",
+      "details": "Jazz, Bossa Nova",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "donau115:2026-07-30:thursday-jazz-jam",
+      "clubId": "donau115",
+      "title": "Thursday Jazz Jam",
+      "date": "2026-07-30",
+      "sets": [],
+      "url": "https://donau115.de",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "atrane:2026-07-31:torsten-goods-meets-kim-sanders",
+      "clubId": "atrane",
+      "title": "TORSTEN GOODS MEETS KIM SANDERS",
+      "date": "2026-07-31",
+      "sets": [
+        "20:30"
+      ],
+      "url": "https://a-trane.de/programm/",
+      "details": "«YACHTROCK & WESTCOAST» · FEAT: Till Sahm-Björn Werra-Magro",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "bflat:2026-07-31:nita-aasten-latin-jazz-quartet-with-eduard-alexander",
+      "clubId": "bflat",
+      "title": "Nita Aasten Latin Jazz Quartet with Eduard Alexander",
+      "date": "2026-07-31",
+      "sets": [
+        "21:00"
+      ],
+      "url": "https://b-flat-berlin.de/events/mcg5sn3pdyxhzz9-wbt6h-kcd6x-r7daf-h2mgc-f6lxm-awap9-jgaxk-338m3-5rsjr-6m3wz-hx5y4-ewx7f-l8jg5-3hgbt-7339d-h76fn-mh9w4-tmjl2-33mrm-ddmnt-3tne9-xh5tr",
+      "details": null,
+      "personnel": [
+        {
+          "name": "Nita Aartsen",
+          "instrument": "piano, vocals"
+        },
+        {
+          "name": "IDN/, Daigo Nakai",
+          "instrument": "bass"
+        },
+        {
+          "name": "JP/, Shinichi Nakajima",
+          "instrument": "drums"
+        },
+        {
+          "name": "JP/, Eric Vaughn",
+          "instrument": "alto sax"
+        },
+        {
+          "name": "USA/, Eduard Alexander",
+          "instrument": "vocals"
+        }
+      ],
+      "priceText": null
+    },
+    {
+      "id": "schlot:2026-07-31:jive-park",
+      "clubId": "schlot",
+      "title": "Jive Park",
+      "date": "2026-07-31",
+      "sets": [
+        "21:00"
+      ],
+      "url": "https://kunstfabrik-schlot.de/event/jive-park/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "donau115:2026-07-31:jonathan-reisin-trio",
+      "clubId": "donau115",
+      "title": "Jonathan Reisin Trio",
+      "date": "2026-07-31",
+      "sets": [],
+      "url": "https://donau115.de",
+      "details": null,
+      "personnel": [
+        {
+          "name": "Jonathan Reisin",
+          "instrument": "saxophone"
+        },
+        {
+          "name": "Julius Windisch",
+          "instrument": "piano"
+        },
+        {
+          "name": "Francesca Remigi",
+          "instrument": "drums"
+        }
+      ],
+      "priceText": null
+    },
+    {
+      "id": "atrane:2026-08-01:torsten-goods-meets-kim-sanders",
+      "clubId": "atrane",
+      "title": "TORSTEN GOODS MEETS KIM SANDERS",
+      "date": "2026-08-01",
+      "sets": [
+        "20:30"
+      ],
+      "url": "https://a-trane.de/programm/",
+      "details": "«YACHTROCK & WESTCOAST» · FEAT: Till Sahm-Björn Werra-Magro",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "bflat:2026-08-01:the-b-flat-all-stars-present-liva-strazdina-und-simona-turk",
+      "clubId": "bflat",
+      "title": "The „B-flat All-Stars“ present Liva Strazdina und Simona Turk",
+      "date": "2026-08-01",
+      "sets": [
+        "21:00"
+      ],
+      "url": "https://b-flat-berlin.de/events/mcg5sn3pdyxhzz9-wbt6h-kcd6x-r7daf-h2mgc-f6lxm-awap9-jgaxk-338m3-5rsjr-6m3wz-hx5y4-ewx7f-l8jg5-3hgbt-7339d-h76fn-mh9w4-tmjl2-33mrm-ddmnt-3tne9-xh5tr-h8r9t",
+      "details": null,
+      "personnel": [
+        {
+          "name": "Liva Strazdina",
+          "instrument": "trumpet"
+        },
+        {
+          "name": "Simona Turk",
+          "instrument": "saxophone"
+        },
+        {
+          "name": "Kai Schönburg",
+          "instrument": "drums"
+        }
+      ],
+      "priceText": null
+    },
+    {
+      "id": "schlot:2026-08-01:uwe-kropinski-dieter-k-hnlein",
+      "clubId": "schlot",
+      "title": "UWE KROPINSKI / DIETER KÖHNLEIN",
+      "date": "2026-08-01",
+      "sets": [
+        "21:00"
+      ],
+      "url": "https://kunstfabrik-schlot.de/event/uwe-kropinski-dieter-koehnlein/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "zigzag:2026-08-01:the-zig-zag-jazz-festival-django-reinhardt-orchestra",
+      "clubId": "zigzag",
+      "title": "The Zig Zag Jazz Festival: Django Reinhardt Orchestra",
+      "date": "2026-08-01",
+      "sets": [],
+      "url": "https://www.zigzag-jazzclub.berlin/program-mai/paolojoceylkn-8r5ws-are92-zyt7j-x9zaf-9cyja-mh6ww-8kejs-bc8d9-wbrdy",
+      "details": "Gypsy Jazz",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "zigzag:2026-08-01:the-zig-zag-jazz-festival-ute-lemper",
+      "clubId": "zigzag",
+      "title": "The Zig Zag Jazz Festival: Ute Lemper",
+      "date": "2026-08-01",
+      "sets": [],
+      "url": "https://www.zigzag-jazzclub.berlin/program-mai/paolojoceylkn-8r5ws-are92-zyt7j-x9zaf-58kkf-2gxcc-w85mc-ay4pr-2c6np-l3alc-spnyh",
+      "details": "Jazz, Chanson",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "donau115:2026-08-01:three-of-seven",
+      "clubId": "donau115",
+      "title": "Three Of Seven",
+      "date": "2026-08-01",
+      "sets": [],
+      "url": "https://donau115.de",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "bflat:2026-08-02:bastian-menz-project",
+      "clubId": "bflat",
+      "title": "Bastian Menz Project",
+      "date": "2026-08-02",
+      "sets": [
+        "21:00"
+      ],
+      "url": "https://b-flat-berlin.de/events/mcg5sn3pdyxhzz9-wbt6h-kcd6x-r7daf-h2mgc-f6lxm-awap9-jgaxk-338m3-5rsjr-6m3wz-hx5y4-ewx7f-l8jg5-3hgbt-7339d-h76fn-mh9w4-tmjl2-33mrm-ddmnt-3tne9-xh5tr-h8r9t-zft9e",
+      "details": null,
+      "personnel": [
+        {
+          "name": "Omri Abramov",
+          "instrument": "sax"
+        },
+        {
+          "name": "Arseny Rykov",
+          "instrument": "piano"
+        },
+        {
+          "name": "Giacomo Tagliavia",
+          "instrument": "bass"
+        },
+        {
+          "name": "Bastian Menz",
+          "instrument": "drums"
+        }
+      ],
+      "priceText": null
+    },
+    {
+      "id": "atrane:2026-08-03:andreas-schmidt-friends",
+      "clubId": "atrane",
+      "title": "ANDREAS SCHMIDT & FRIENDS",
+      "date": "2026-08-03",
+      "sets": [
+        "20:30"
+      ],
+      "url": "https://a-trane.de/programm/",
+      "details": "HEUTE MIT:",
+      "personnel": null,
+      "priceText": "Free"
+    },
+    {
+      "id": "atrane:2026-08-04:emma-rawicz",
+      "clubId": "atrane",
+      "title": "Emma Rawicz",
+      "date": "2026-08-04",
+      "sets": [
+        "20:30"
+      ],
+      "url": "https://a-trane.de/programm/",
+      "details": "«CLOUDWALKER» · FEAT: Rasmus Sørensen-Freddie Jensen-Marc Michel",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "bflat:2026-08-04:still-waters-echo",
+      "clubId": "bflat",
+      "title": "Still Waters ||:ECHO:||",
+      "date": "2026-08-04",
+      "sets": [
+        "21:00"
+      ],
+      "url": "https://b-flat-berlin.de/events/mcg5sn3pdyxhzz9-wbt6h-kcd6x-r7daf-h2mgc-f6lxm-awap9-jgaxk-338m3-5rsjr-6m3wz-hx5y4-ewx7f-l8jg5-3hgbt-7339d-h76fn-mh9w4-tmjl2-33mrm-ddmnt-3tne9-xh5tr-h8r9t-zft9e-petzs",
+      "details": null,
+      "personnel": [
+        {
+          "name": "Dima Bondarev",
+          "instrument": "trumpet"
+        },
+        {
+          "name": "Béla Meinberg",
+          "instrument": "piano"
+        },
+        {
+          "name": "Niklas Lukassen",
+          "instrument": "bass"
+        },
+        {
+          "name": "Ivars Arutyunyan",
+          "instrument": "drums"
+        }
+      ],
+      "priceText": null
+    },
+    {
+      "id": "zigzag:2026-08-04:the-zig-zag-jazzed-up-jam-session",
+      "clubId": "zigzag",
+      "title": "THE ZIG ZAG JAZZED UP JAM SESSION",
+      "date": "2026-08-04",
+      "sets": [],
+      "url": "https://www.zigzag-jazzclub.berlin/program-mai/bwnarwjfpss3x6p",
+      "details": "Jazz / Funk / Groove / Swing",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "atrane:2026-08-05:emma-rawicz",
+      "clubId": "atrane",
+      "title": "Emma Rawicz",
+      "date": "2026-08-05",
+      "sets": [
+        "20:30"
+      ],
+      "url": "https://a-trane.de/programm/",
+      "details": "«CLOUDWALKER» · FEAT: Rasmus Sørensen-Freddie Jensen-Marc Michel · TODAYS SPECIAL GUEST: Jonny Mansfield",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "bflat:2026-08-05:robins-nest-jamsession",
+      "clubId": "bflat",
+      "title": "Robins Nest - Jamsession",
+      "date": "2026-08-05",
+      "sets": [
+        "21:00"
+      ],
+      "url": "https://b-flat-berlin.de/events/lswg3btcxjmsnlt-458yl-a36fa-dgnlm-dpjak-d94fw-l8ery-c4f4h-h437d-z8ap5-4m9xc-kkrtw-le9t8-2jpf2-sbs62-h6437-l2mxe-awdyg-bw5r8-k4gdx",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "zigzag:2026-08-05:celebrating-buena-vista-social-club",
+      "clubId": "zigzag",
+      "title": "Celebrating Buena Vista Social Club",
+      "date": "2026-08-05",
+      "sets": [],
+      "url": "https://www.zigzag-jazzclub.berlin/program-mai/buenas-8lsfg",
+      "details": "Jazz / Latin",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "donau115:2026-08-05:cook-crellin-cross-duun",
+      "clubId": "donau115",
+      "title": "Cook / Crellin / Cross / Duun",
+      "date": "2026-08-05",
+      "sets": [],
+      "url": "https://donau115.de",
+      "details": null,
+      "personnel": [
+        {
+          "name": "Miriam Crellin",
+          "instrument": "voice"
+        },
+        {
+          "name": "Harry Cook",
+          "instrument": "piano"
+        },
+        {
+          "name": "Morten Duun",
+          "instrument": "guitar"
+        },
+        {
+          "name": "Claire Cross",
+          "instrument": "electric bass"
+        }
+      ],
+      "priceText": null
+    },
+    {
+      "id": "atrane:2026-08-06:emma-rawicz",
+      "clubId": "atrane",
+      "title": "Emma Rawicz",
+      "date": "2026-08-06",
+      "sets": [
+        "20:30"
+      ],
+      "url": "https://a-trane.de/programm/",
+      "details": "«CLOUDWALKER» · FEAT: Rasmus Sørensen-Freddie Jensen-Marc Michel · TODAYS SPECIAL GUEST: Jonny Mansfield",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "bflat:2026-08-06:orquesta-de-antes-argentina",
+      "clubId": "bflat",
+      "title": "“Orquesta de Antes” / Argentina",
+      "date": "2026-08-06",
+      "sets": [
+        "21:00"
+      ],
+      "url": "https://b-flat-berlin.de/events/mcg5sn3pdyxhzz9-wbt6h-kcd6x-r7daf-h2mgc-f6lxm-awap9-jgaxk-338m3-5rsjr-6m3wz-hx5y4-ewx7f-l8jg5-3hgbt-7339d-h76fn-mh9w4-tmjl2-33mrm-ddmnt-3tne9-xh5tr-h8r9t-zft9e-ztx2c",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "donau115:2026-08-06:thursday-jazz-jam",
+      "clubId": "donau115",
+      "title": "Thursday Jazz Jam",
+      "date": "2026-08-06",
+      "sets": [],
+      "url": "https://donau115.de",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "atrane:2026-08-07:emma-rawicz",
+      "clubId": "atrane",
+      "title": "Emma Rawicz",
+      "date": "2026-08-07",
+      "sets": [
+        "20:30"
+      ],
+      "url": "https://a-trane.de/programm/",
+      "details": "«CLOUDWALKER» · FEAT: Rasmus Sørensen-Freddie Jensen-Marc Michel · TODAYS SPECIAL GUEST: Aitzi Cofre Real",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "bflat:2026-08-07:mauritius-meets-columbia",
+      "clubId": "bflat",
+      "title": "Mauritius meets Columbia",
+      "date": "2026-08-07",
+      "sets": [
+        "21:00"
+      ],
+      "url": "https://b-flat-berlin.de/events/mcg5sn3pdyxhzz9-wbt6h-kcd6x-r7daf-h2mgc-f6lxm-awap9-jgaxk-338m3-5rsjr-6m3wz-hx5y4-ewx7f-l8jg5-3hgbt-7339d-h76fn-mh9w4-tmjl2-33mrm-ddmnt-3tne9-xh5tr-h8r9t-zft9e-ztx2c-kpts5",
+      "details": null,
+      "personnel": [
+        {
+          "name": "FOX",
+          "instrument": "sax"
+        },
+        {
+          "name": "GREG AMBROISINE",
+          "instrument": "trumpet"
+        },
+        {
+          "name": "AUS/, SAMUEL APPAPOULAY",
+          "instrument": "piano"
+        },
+        {
+          "name": "MUS/, URS JOHNEN",
+          "instrument": "bass"
+        },
+        {
+          "name": "DAVID MILLAN",
+          "instrument": "drums"
+        }
+      ],
+      "priceText": null
+    },
+    {
+      "id": "zigzag:2026-08-07:morgan-james",
+      "clubId": "zigzag",
+      "title": "Morgan James",
+      "date": "2026-08-07",
+      "sets": [],
+      "url": "https://www.zigzag-jazzclub.berlin/program-mai/jazzsabbath-asgrm-slfl6",
+      "details": "Jazz, Soul",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "donau115:2026-08-07:niklas-lukassen",
+      "clubId": "donau115",
+      "title": "Niklas Lukassen",
+      "date": "2026-08-07",
+      "sets": [],
+      "url": "https://donau115.de",
+      "details": null,
+      "personnel": [
+        {
+          "name": "Wanja Slavin",
+          "instrument": "alto saxophone"
+        },
+        {
+          "name": "Kit Downes",
+          "instrument": "piano"
+        },
+        {
+          "name": "Ivars Arutyunyan",
+          "instrument": "drums"
+        }
+      ],
+      "priceText": null
+    },
+    {
+      "id": "atrane:2026-08-08:emma-rawicz",
+      "clubId": "atrane",
+      "title": "Emma Rawicz",
+      "date": "2026-08-08",
+      "sets": [
+        "20:30"
+      ],
+      "url": "https://a-trane.de/programm/",
+      "details": "«CLOUDWALKER» · FEAT: Rasmus Sørensen-Freddie Jensen-Marc Michel · TODAYS SPECIAL GUEST: Aitzi Cofre Real",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "bflat:2026-08-08:tempo-havanna",
+      "clubId": "bflat",
+      "title": "Tempo Havanna",
+      "date": "2026-08-08",
+      "sets": [
+        "21:00"
+      ],
+      "url": "https://b-flat-berlin.de/events/mcg5sn3pdyxhzz9-wbt6h-kcd6x-r7daf-h2mgc-f6lxm-awap9-jgaxk-338m3-5rsjr-6m3wz-hx5y4-ewx7f-l8jg5-3hgbt-7339d-h76fn-mh9w4-tmjl2-33mrm-ddmnt-3tne9-xh5tr-h8r9t-zft9e-ztx2c-kpts5-jb65d",
+      "details": null,
+      "personnel": [
+        {
+          "name": "Rafael Martinez",
+          "instrument": "bass, vocals"
+        },
+        {
+          "name": "Carlos Corona",
+          "instrument": "tres"
+        },
+        {
+          "name": "Pablo Muñoz Barragán",
+          "instrument": "sax"
+        },
+        {
+          "name": "Montalvo Calderón",
+          "instrument": "guitar"
+        },
+        {
+          "name": "Ernesto Zamora",
+          "instrument": "piano"
+        }
+      ],
+      "priceText": null
+    },
+    {
+      "id": "donau115:2026-08-08:practically-married-jo-o-lopes-pereira",
+      "clubId": "donau115",
+      "title": "Practically Married + João Lopes Pereira",
+      "date": "2026-08-08",
+      "sets": [],
+      "url": "https://donau115.de",
+      "details": null,
+      "personnel": [
+        {
+          "name": "Declan Forde",
+          "instrument": "piano"
+        },
+        {
+          "name": "James Banner",
+          "instrument": "double bass"
+        },
+        {
+          "name": "João Lopes Pereira",
+          "instrument": "drums"
+        }
+      ],
+      "priceText": null
+    },
+    {
+      "id": "bflat:2026-08-09:mate-cocido-group",
+      "clubId": "bflat",
+      "title": "Mate Cocido Group",
+      "date": "2026-08-09",
+      "sets": [
+        "21:00"
+      ],
+      "url": "https://b-flat-berlin.de/events/mcg5sn3pdyxhzz9-wbt6h-kcd6x-r7daf-h2mgc-f6lxm-awap9-jgaxk-338m3-5rsjr-6m3wz-hx5y4-ewx7f-l8jg5-3hgbt-7339d-h76fn-mh9w4-tmjl2-33mrm-ddmnt-3tne9-xh5tr-h8r9t-zft9e-ztx2c-kpts5-jb65d-k4ag5",
+      "details": null,
+      "personnel": [
+        {
+          "name": "Alessandro Rizzato",
+          "instrument": "drums"
+        },
+        {
+          "name": "Gabriel Stern",
+          "instrument": "sax"
+        }
+      ],
+      "priceText": null
+    },
+    {
+      "id": "atrane:2026-08-10:andreas-schmidt-friends",
+      "clubId": "atrane",
+      "title": "ANDREAS SCHMIDT & FRIENDS",
+      "date": "2026-08-10",
+      "sets": [
+        "20:30"
+      ],
+      "url": "https://a-trane.de/programm/",
+      "details": "HEUTE MIT:",
+      "personnel": null,
+      "priceText": "Free"
+    },
+    {
+      "id": "atrane:2026-08-11:tobias-meinhart-berlin-people",
+      "clubId": "atrane",
+      "title": "Tobias Meinhart – Berlin People",
+      "date": "2026-08-11",
+      "sets": [
+        "20:30"
+      ],
+      "url": "https://a-trane.de/programm/",
+      "details": "Special Guest: Kurt Rosenwinkel · Feat: Ludwig Hornung – Tom Berkmann – Mathias Ruppnig",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "bflat:2026-08-11:juan-borgatti-quintett",
+      "clubId": "bflat",
+      "title": "Juan Borgatti Quintett",
+      "date": "2026-08-11",
+      "sets": [
+        "21:00"
+      ],
+      "url": "https://b-flat-berlin.de/events/mcg5sn3pdyxhzz9-wbt6h-kcd6x-r7daf-h2mgc-f6lxm-awap9-jgaxk-338m3-5rsjr-6m3wz-hx5y4-ewx7f-l8jg5-3hgbt-7339d-h76fn-mh9w4-tmjl2-33mrm-ddmnt-3tne9-xh5tr-h8r9t-zft9e-ztx2c-kpts5-jb65d-k4ag5-g9wtd",
+      "details": null,
+      "personnel": [
+        {
+          "name": "Patricio Böttcher",
+          "instrument": "tenor sax, bass clarinet"
+        },
+        {
+          "name": "Andres Marino",
+          "instrument": "piano"
+        },
+        {
+          "name": "Maik Kleer",
+          "instrument": "bass"
+        },
+        {
+          "name": "Axel Filip",
+          "instrument": "drums"
+        }
+      ],
+      "priceText": null
+    },
+    {
+      "id": "zigzag:2026-08-11:the-zig-zag-jazzed-up-jam-session",
+      "clubId": "zigzag",
+      "title": "THE ZIG ZAG JAZZED UP JAM SESSION",
+      "date": "2026-08-11",
+      "sets": [],
+      "url": "https://www.zigzag-jazzclub.berlin/program-mai/bwnarwjfpss3x6p-c38nm",
+      "details": "Jazz / Funk / Groove / Swing",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "atrane:2026-08-12:tobias-meinhart-berlin-people",
+      "clubId": "atrane",
+      "title": "Tobias Meinhart – Berlin People",
+      "date": "2026-08-12",
+      "sets": [
+        "20:30"
+      ],
+      "url": "https://a-trane.de/programm/",
+      "details": "Special Guest: Kurt Rosenwinkel · Feat: Ludwig Hornung – Tom Berkmann – Mathias Ruppnig",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "bflat:2026-08-12:robins-nest-jamsession",
+      "clubId": "bflat",
+      "title": "Robins Nest - Jamsession",
+      "date": "2026-08-12",
+      "sets": [
+        "21:00"
+      ],
+      "url": "https://b-flat-berlin.de/events/lswg3btcxjmsnlt-458yl-a36fa-dgnlm-dpjak-d94fw-l8ery-c4f4h-h437d-z8ap5-4m9xc-kkrtw-le9t8-2jpf2-sbs62-h6437-l2mxe-awdyg-bw5r8-k4gdx-ynbf2",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "donau115:2026-08-12:femke-smit-quartet-night-1-bossa-nova-revisited",
+      "clubId": "donau115",
+      "title": "Femke Smit Quartet NIGHT 1 - Bossa nova revisited",
+      "date": "2026-08-12",
+      "sets": [],
+      "url": "https://donau115.de",
+      "details": null,
+      "personnel": [
+        {
+          "name": "Amoy Ribas",
+          "instrument": "percussion"
+        },
+        {
+          "name": "Tino Derado",
+          "instrument": "piano"
+        },
+        {
+          "name": "Jeroen Vierdag",
+          "instrument": "bass"
+        },
+        {
+          "name": "Femke Smit",
+          "instrument": "vocals"
+        }
+      ],
+      "priceText": null
+    },
+    {
+      "id": "atrane:2026-08-13:tobias-meinhart-berlin-people",
+      "clubId": "atrane",
+      "title": "Tobias Meinhart – Berlin People",
+      "date": "2026-08-13",
+      "sets": [
+        "20:30"
+      ],
+      "url": "https://a-trane.de/programm/",
+      "details": "Special Guest: Kurt Rosenwinkel · Feat: Ludwig Hornung – Tom Berkmann – Mathias Ruppnig",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "bflat:2026-08-13:gal-liraz-quartett",
+      "clubId": "bflat",
+      "title": "Gal Liraz Quartett",
+      "date": "2026-08-13",
+      "sets": [
+        "21:00"
+      ],
+      "url": "https://b-flat-berlin.de/events/mcg5sn3pdyxhzz9-wbt6h-kcd6x-r7daf-h2mgc-f6lxm-awap9-jgaxk-338m3-5rsjr-6m3wz-hx5y4-ewx7f-l8jg5-3hgbt-7339d-h76fn-mh9w4-tmjl2-33mrm-ddmnt-3tne9-xh5tr-h8r9t-zft9e-ztx2c-kpts5-jb65d-k4ag5-g9wtd-86796",
+      "details": null,
+      "personnel": [
+        {
+          "name": "Gal Liraz",
+          "instrument": "sax"
+        },
+        {
+          "name": "​Gur Liraz",
+          "instrument": "guitar"
+        },
+        {
+          "name": "​Matt Adomeit",
+          "instrument": "bass"
+        },
+        {
+          "name": "Omri Gondor",
+          "instrument": "drums"
+        }
+      ],
+      "priceText": null
+    },
+    {
+      "id": "zigzag:2026-08-13:golden-voices-sinatra-sammy-davis-jr-tony-bennett-beyond",
+      "clubId": "zigzag",
+      "title": "Golden Voices: Sinatra, Sammy Davis Jr., Tony Bennett & Beyond",
+      "date": "2026-08-13",
+      "sets": [],
+      "url": "https://www.zigzag-jazzclub.berlin/program-mai/atrin251054025-5kn9t-e2l5d-hbx4b",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "donau115:2026-08-13:thursday-jazz-jam",
+      "clubId": "donau115",
+      "title": "Thursday Jazz Jam",
+      "date": "2026-08-13",
+      "sets": [],
+      "url": "https://donau115.de",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "atrane:2026-08-14:tobias-meinhart-berlin-people",
+      "clubId": "atrane",
+      "title": "Tobias Meinhart – Berlin People",
+      "date": "2026-08-14",
+      "sets": [
+        "20:30"
+      ],
+      "url": "https://a-trane.de/programm/",
+      "details": "Special Guest: Kurt Rosenwinkel · Feat: Ludwig Hornung – Tom Berkmann – Mathias Ruppnig",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "bflat:2026-08-14:streamline-orchestra",
+      "clubId": "bflat",
+      "title": "STREAMLINE ORCHESTRA",
+      "date": "2026-08-14",
+      "sets": [
+        "21:00"
+      ],
+      "url": "https://b-flat-berlin.de/events/mcg5sn3pdyxhzz9-wbt6h-kcd6x-r7daf-h2mgc-f6lxm-awap9-jgaxk-338m3-5rsjr-6m3wz-hx5y4-ewx7f-l8jg5-3hgbt-7339d-h76fn-mh9w4-tmjl2-33mrm-ddmnt-3tne9-xh5tr-h8r9t-zft9e-ztx2c-kpts5-jb65d-k4ag5-g9wtd-73wa9",
+      "details": null,
+      "personnel": [
+        {
+          "name": "Christian Grabandt",
+          "instrument": "trumpet, flugelhorn"
+        },
+        {
+          "name": "Axel-Glenn Müller",
+          "instrument": "tenor sax"
+        },
+        {
+          "name": "Andreas Bicking",
+          "instrument": "tenor sax, soprano sax"
+        },
+        {
+          "name": "Nils Marquardt",
+          "instrument": "trombone"
+        },
+        {
+          "name": "Oliver Lepinat",
+          "instrument": "piano"
+        },
+        {
+          "name": "Rüdiger Krause",
+          "instrument": "guitar"
+        },
+        {
+          "name": "Gerhard Kubach",
+          "instrument": "bass"
+        },
+        {
+          "name": "Denis Stilke",
+          "instrument": "drums"
+        }
+      ],
+      "priceText": null
+    },
+    {
+      "id": "donau115:2026-08-14:femke-smit-quartet-night-2-sambando",
+      "clubId": "donau115",
+      "title": "Femke Smit Quartet NIGHT 2 - Sambando",
+      "date": "2026-08-14",
+      "sets": [],
+      "url": "https://donau115.de",
+      "details": null,
+      "personnel": [
+        {
+          "name": "Femke Smit",
+          "instrument": "vocals"
+        },
+        {
+          "name": "Jeroen Vierdag",
+          "instrument": "bass"
+        },
+        {
+          "name": "Amoy Ribas",
+          "instrument": "percussion"
+        },
+        {
+          "name": "Pablo Camus",
+          "instrument": "7-string guitar"
+        }
+      ],
+      "priceText": null
+    },
+    {
+      "id": "atrane:2026-08-15:tobias-meinhart-berlin-people",
+      "clubId": "atrane",
+      "title": "Tobias Meinhart – Berlin People",
+      "date": "2026-08-15",
+      "sets": [
+        "20:30"
+      ],
+      "url": "https://a-trane.de/programm/",
+      "details": "Special Guest: Kurt Rosenwinkel · Feat: Ludwig Hornung – Tom Berkmann – Mathias Ruppnig",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "bflat:2026-08-15:marcos-coll-band-feat-emiliano-juarez",
+      "clubId": "bflat",
+      "title": "Marcos Coll Band feat. Emiliano Juarez",
+      "date": "2026-08-15",
+      "sets": [
+        "21:00"
+      ],
+      "url": "https://b-flat-berlin.de/events/6tbd2awweywly72",
+      "details": null,
+      "personnel": [
+        {
+          "name": "Marcos Coll",
+          "instrument": "harmonica, vocals"
+        },
+        {
+          "name": "ESP/, Josué Barquero",
+          "instrument": "guitar, vocals"
+        },
+        {
+          "name": "CRI/, Katrina Martinez",
+          "instrument": "drums, vocals"
+        },
+        {
+          "name": "CUB/ Vito Giacovelli",
+          "instrument": "percussion"
+        },
+        {
+          "name": "IT/, Kevin Klein",
+          "instrument": "bass, vocals"
+        },
+        {
+          "name": "ECU/ feat: Emiliano Juarez",
+          "instrument": "guitar"
+        }
+      ],
+      "priceText": null
+    },
+    {
+      "id": "bflat:2026-08-16:david-anthony-rose-manouche-26-la-vie-en-rose",
+      "clubId": "bflat",
+      "title": "David Anthony Rose & Manouche '26 - „La vie en rose“",
+      "date": "2026-08-16",
+      "sets": [
+        "21:00"
+      ],
+      "url": "https://b-flat-berlin.de/events/6tbd2awweywly72-prf6w",
+      "details": null,
+      "personnel": [
+        {
+          "name": "ISR/, Dylan Vukasovic",
+          "instrument": "guitar"
+        },
+        {
+          "name": "GB/, Alexey Krupsky",
+          "instrument": "guitar"
+        },
+        {
+          "name": "UK/, David Hagen",
+          "instrument": "bass"
+        }
+      ],
+      "priceText": null
+    },
+    {
+      "id": "donau115:2026-08-16:ely-perlman-trio",
+      "clubId": "donau115",
+      "title": "Ely Perlman Trio",
+      "date": "2026-08-16",
+      "sets": [],
+      "url": "https://donau115.de",
+      "details": null,
+      "personnel": [
+        {
+          "name": "Ely Perlman",
+          "instrument": "guitar, vocals"
+        },
+        {
+          "name": "Amir Bresler",
+          "instrument": "drums"
+        },
+        {
+          "name": "Daniel Nagel",
+          "instrument": "bass"
+        }
+      ],
+      "priceText": null
+    },
+    {
+      "id": "atrane:2026-08-17:andreas-schmidt-friends",
+      "clubId": "atrane",
+      "title": "ANDREAS SCHMIDT & FRIENDS",
+      "date": "2026-08-17",
+      "sets": [
+        "20:30"
+      ],
+      "url": "https://a-trane.de/programm/",
+      "details": "HEUTE MIT:",
+      "personnel": null,
+      "priceText": "Free"
+    },
+    {
+      "id": "atrane:2026-08-18:wolfgang-haffner",
+      "clubId": "atrane",
+      "title": "WOLFGANG HAFFNER",
+      "date": "2026-08-18",
+      "sets": [
+        "20:30"
+      ],
+      "url": "https://a-trane.de/programm/",
+      "details": "SUMMER SPECIAL · FEAT: Jakob Manz-Nils Kugelmann",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "bflat:2026-08-18:jessica-kandeler-and-mega-nice-band",
+      "clubId": "bflat",
+      "title": "Jessica Kandeler and Mega Nice Band",
+      "date": "2026-08-18",
+      "sets": [
+        "21:00"
+      ],
+      "url": "https://b-flat-berlin.de/events/6tbd2awweywly72-prf6w-tssrr",
+      "details": null,
+      "personnel": [
+        {
+          "name": "Jessica Kandeler",
+          "instrument": "vocals"
+        },
+        {
+          "name": "Fedro Heger",
+          "instrument": "guitar"
+        },
+        {
+          "name": "Daigo Nakai",
+          "instrument": "bass"
+        },
+        {
+          "name": "Andrei Milea",
+          "instrument": "drums, percussion"
+        },
+        {
+          "name": "Helge Ebinger",
+          "instrument": "piano, organ"
+        },
+        {
+          "name": "Peter Zastrow",
+          "instrument": "trumpet, flugelhorn, cornet"
+        },
+        {
+          "name": "Julian Gretschel",
+          "instrument": "trombone"
+        },
+        {
+          "name": "Leonie Freudenberger",
+          "instrument": "alto sax"
+        },
+        {
+          "name": "Patrick Braun",
+          "instrument": "tenor sax"
+        },
+        {
+          "name": "Nikolaus Leistle",
+          "instrument": "baritone sax"
+        }
+      ],
+      "priceText": null
+    },
+    {
+      "id": "zigzag:2026-08-18:the-zig-zag-jazzed-up-jam-session",
+      "clubId": "zigzag",
+      "title": "THE ZIG ZAG JAZZED UP JAM SESSION",
+      "date": "2026-08-18",
+      "sets": [],
+      "url": "https://www.zigzag-jazzclub.berlin/program-mai/bwnarwjfpss3x6p-c38nm-ntfs4",
+      "details": "Jazz / Funk / Groove / Swing",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "atrane:2026-08-19:wolfgang-haffner",
+      "clubId": "atrane",
+      "title": "WOLFGANG HAFFNER",
+      "date": "2026-08-19",
+      "sets": [
+        "20:30"
+      ],
+      "url": "https://a-trane.de/programm/",
+      "details": "SUMMER SPECIAL · FEAT: Jakob Manz-Nils Kugelmann",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "bflat:2026-08-19:robins-nest-jamsession",
+      "clubId": "bflat",
+      "title": "Robins Nest - Jamsession",
+      "date": "2026-08-19",
+      "sets": [
+        "21:00"
+      ],
+      "url": "https://b-flat-berlin.de/events/lswg3btcxjmsnlt-458yl-a36fa-dgnlm-dpjak-d94fw-l8ery-c4f4h-h437d-z8ap5-4m9xc-kkrtw-le9t8-2jpf2-sbs62-h6437-l2mxe-awdyg-bw5r8-k4gdx-ynbf2-9zswz",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "donau115:2026-08-19:fadfada-duo-and-friends",
+      "clubId": "donau115",
+      "title": "Fadfada Duo and Friends",
+      "date": "2026-08-19",
+      "sets": [],
+      "url": "https://donau115.de",
+      "details": null,
+      "personnel": [
+        {
+          "name": "Nabil Arbaain",
+          "instrument": "oud"
+        },
+        {
+          "name": "Hans Bilger",
+          "instrument": "double bass"
+        }
+      ],
+      "priceText": null
+    },
+    {
+      "id": "atrane:2026-08-20:wolfgang-haffner",
+      "clubId": "atrane",
+      "title": "WOLFGANG HAFFNER",
+      "date": "2026-08-20",
+      "sets": [
+        "20:30"
+      ],
+      "url": "https://a-trane.de/programm/",
+      "details": "SUMMER SPECIAL · FEAT: Jakob Manz-Thomas Stieger-Christopher Dell",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "bflat:2026-08-20:holger-scheid-roots-to-the-back",
+      "clubId": "bflat",
+      "title": "Holger Scheid \"Roots To The Back\"",
+      "date": "2026-08-20",
+      "sets": [
+        "21:00"
+      ],
+      "url": "https://b-flat-berlin.de/events/6tbd2awweywly72-prf6w-tssrr-drahy",
+      "details": null,
+      "personnel": [
+        {
+          "name": "JHolger Scheidt",
+          "instrument": "bass, vocals"
+        },
+        {
+          "name": "Flo Müller",
+          "instrument": "guitar"
+        },
+        {
+          "name": "Joe Hertenstein",
+          "instrument": "drums"
+        }
+      ],
+      "priceText": null
+    },
+    {
+      "id": "donau115:2026-08-20:thursday-jazz-jam",
+      "clubId": "donau115",
+      "title": "Thursday Jazz Jam",
+      "date": "2026-08-20",
+      "sets": [],
+      "url": "https://donau115.de",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "atrane:2026-08-21:wolfgang-haffner",
+      "clubId": "atrane",
+      "title": "WOLFGANG HAFFNER",
+      "date": "2026-08-21",
+      "sets": [
+        "20:30"
+      ],
+      "url": "https://a-trane.de/programm/",
+      "details": "SUMMER SPECIAL · FEAT: Ulf Wakenius-Thomas Stieger",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "bflat:2026-08-21:conex-o-berlin",
+      "clubId": "bflat",
+      "title": "CONEXÃO BERLIN",
+      "date": "2026-08-21",
+      "sets": [
+        "21:00"
+      ],
+      "url": "https://b-flat-berlin.de/events/mcg5sn3pdyxhzz9-wbt6h-kcd6x-r7daf-h2mgc-f6lxm-awap9-jgaxk-pb5ys",
+      "details": null,
+      "personnel": [
+        {
+          "name": "Tino Derado",
+          "instrument": "piano"
+        },
+        {
+          "name": "Matthias Trippner",
+          "instrument": "drums"
+        },
+        {
+          "name": "Thiago Duarte",
+          "instrument": "bass"
+        },
+        {
+          "name": "Max Hacker",
+          "instrument": "sax, flute"
+        },
+        {
+          "name": "Andreas Weiser",
+          "instrument": "percussion"
+        }
+      ],
+      "priceText": null
+    },
+    {
+      "id": "donau115:2026-08-21:ainan-trio",
+      "clubId": "donau115",
+      "title": "Ainan Trio",
+      "date": "2026-08-21",
+      "sets": [],
+      "url": "https://donau115.de",
+      "details": null,
+      "personnel": [
+        {
+          "name": "Francisco Batista",
+          "instrument": "guitar"
+        },
+        {
+          "name": "Igor Spallati",
+          "instrument": "double bass"
+        },
+        {
+          "name": "Eldar Tsalikov",
+          "instrument": "clarinet"
+        }
+      ],
+      "priceText": null
+    },
+    {
+      "id": "schlot:2026-08-22:sommerworkshop-2026-der-global-jazz-academy",
+      "clubId": "schlot",
+      "title": "SOMMERWORKSHOP 2026 der Global Jazz Academy",
+      "date": "2026-08-22",
+      "sets": [
+        "11:00"
+      ],
+      "url": "https://kunstfabrik-schlot.de/event/sommerworkshop-2026-der-global-jazz-academy/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "atrane:2026-08-22:wolfgang-haffner",
+      "clubId": "atrane",
+      "title": "WOLFGANG HAFFNER",
+      "date": "2026-08-22",
+      "sets": [
+        "20:30"
+      ],
+      "url": "https://a-trane.de/programm/",
+      "details": "SUMMER SPECIAL · FEAT: Ulf Wakenius-Thomas Stieger",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "bflat:2026-08-22:woodbeez",
+      "clubId": "bflat",
+      "title": "Woodbeez",
+      "date": "2026-08-22",
+      "sets": [
+        "21:00"
+      ],
+      "url": "https://b-flat-berlin.de/events/mcg5sn3pdyxhzz9-wbt6h-kcd6x-r7daf-h2mgc-f6lxm-awap9-jgaxk-pb5ys-mx9tm",
+      "details": null,
+      "personnel": [
+        {
+          "name": "Ritchie Staringer",
+          "instrument": "keys"
+        },
+        {
+          "name": "Rafiandi Giri",
+          "instrument": "vocals"
+        },
+        {
+          "name": "Tobi Reckfort",
+          "instrument": "drums"
+        },
+        {
+          "name": "Jacco Herhaus",
+          "instrument": "bass"
+        },
+        {
+          "name": "Johann Horst",
+          "instrument": "guitar"
+        }
+      ],
+      "priceText": null
+    },
+    {
+      "id": "donau115:2026-08-22:dornbusch-downes-henkelhausen-baumg-rtner",
+      "clubId": "donau115",
+      "title": "Dornbusch / Downes / Henkelhausen / Baumgärtner",
+      "date": "2026-08-22",
+      "sets": [],
+      "url": "https://donau115.de",
+      "details": null,
+      "personnel": [
+        {
+          "name": "Phillip Dornbusch",
+          "instrument": "ten"
+        },
+        {
+          "name": "Kit Downes",
+          "instrument": "piano"
+        },
+        {
+          "name": "Felix Henkelhausen",
+          "instrument": "bass"
+        },
+        {
+          "name": "Moritz Baumgärtner",
+          "instrument": "drums"
+        }
+      ],
+      "priceText": null
+    },
+    {
+      "id": "schlot:2026-08-23:sommerworkshop-2026-der-global-jazz-academy",
+      "clubId": "schlot",
+      "title": "SOMMERWORKSHOP 2026 der Global Jazz Academy",
+      "date": "2026-08-23",
+      "sets": [
+        "11:00"
+      ],
+      "url": "https://kunstfabrik-schlot.de/event/58482/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "bflat:2026-08-23:ido-spak-trio",
+      "clubId": "bflat",
+      "title": "Ido Spak Trio",
+      "date": "2026-08-23",
+      "sets": [
+        "21:00"
+      ],
+      "url": "https://b-flat-berlin.de/events/mcg5sn3pdyxhzz9-wbt6h-kcd6x-r7daf-h2mgc-f6lxm-awap9-jgaxk-pb5ys-mx9tm-xycfc",
+      "details": null,
+      "personnel": [
+        {
+          "name": "Ido Spak",
+          "instrument": "piano"
+        },
+        {
+          "name": "Jan-Gerrit Lütgering",
+          "instrument": "bass"
+        },
+        {
+          "name": "Andi Rohde",
+          "instrument": "drums"
+        }
+      ],
+      "priceText": null
+    },
+    {
+      "id": "donau115:2026-08-23:carlota-fl-neur",
+      "clubId": "donau115",
+      "title": "Carlota Flâneur",
+      "date": "2026-08-23",
+      "sets": [],
+      "url": "https://donau115.de",
+      "details": null,
+      "personnel": [
+        {
+          "name": "Carlota Flâneur",
+          "instrument": "vocals & guitar"
+        },
+        {
+          "name": "Ferran Pegenaute",
+          "instrument": "guitar"
+        }
+      ],
+      "priceText": null
+    },
+    {
+      "id": "atrane:2026-08-24:andreas-schmidt-friends",
+      "clubId": "atrane",
+      "title": "ANDREAS SCHMIDT & FRIENDS",
+      "date": "2026-08-24",
+      "sets": [
+        "20:30"
+      ],
+      "url": "https://a-trane.de/programm/",
+      "details": "HEUTE MIT:",
+      "personnel": null,
+      "priceText": "Free"
+    },
+    {
+      "id": "atrane:2026-08-25:two-concerts-one-night-day1",
+      "clubId": "atrane",
+      "title": "TWO CONCERTS ONE NIGHT DAY1:",
+      "date": "2026-08-25",
+      "sets": [
+        "20:30"
+      ],
+      "url": "https://a-trane.de/programm/",
+      "details": "Pepe Berns · «Old and New Friends» Gratitude · 60th Birthday Celebration Concerts · TODAY: TRIO BLUR FEAT: SOPHIA GÜNST & YAKOU TRIBE · SPECIAL GUESTS: WERNER NEUMANN & CHRISTOPH ADAMS",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "bflat:2026-08-25:the-good-vibes-quintett",
+      "clubId": "bflat",
+      "title": "\"The good vibes Quintett\"",
+      "date": "2026-08-25",
+      "sets": [
+        "21:00"
+      ],
+      "url": "https://b-flat-berlin.de/events/mcg5sn3pdyxhzz9-wbt6h-kcd6x-r7daf-h2mgc-f6lxm-awap9-jgaxk-pb5ys-mx9tm-xycfc-w4nw7",
+      "details": null,
+      "personnel": [
+        {
+          "name": "Reiner Hess",
+          "instrument": "sax"
+        },
+        {
+          "name": "Thomas Finke",
+          "instrument": "piano"
+        },
+        {
+          "name": "Dirk Homuth",
+          "instrument": "guitar"
+        },
+        {
+          "name": "Kubi Kubach",
+          "instrument": "bass"
+        }
+      ],
+      "priceText": null
+    },
+    {
+      "id": "zigzag:2026-08-25:the-zig-zag-jazzed-up-jam-session",
+      "clubId": "zigzag",
+      "title": "THE ZIG ZAG JAZZED UP JAM SESSION",
+      "date": "2026-08-25",
+      "sets": [],
+      "url": "https://www.zigzag-jazzclub.berlin/program-mai/bwnarwjfpss3x6p-c38nm-ntfs4-hcxx7",
+      "details": "Jazz / Funk / Groove / Swing",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "schlot:2026-08-26:jazzkollektiv-berlin-kollektiv-nights",
+      "clubId": "schlot",
+      "title": "Jazzkollektiv Berlin – KOLLEKTIV NIGHTS",
+      "date": "2026-08-26",
+      "sets": [
+        "20:00"
+      ],
+      "url": "https://kunstfabrik-schlot.de/event/jazzkollektiv-berlin-kollektiv-nights/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "atrane:2026-08-26:two-concerts-one-night-day2",
+      "clubId": "atrane",
+      "title": "TWO CONCERTS ONE NIGHT DAY2:",
+      "date": "2026-08-26",
+      "sets": [
+        "20:30"
+      ],
+      "url": "https://a-trane.de/programm/",
+      "details": "Pepe Berns · «Old and New Friends» Gratitude · 60th Birthday Celebration Concerts · TODAY: BERNS KÖBBERLING WEISS · NERD NETWORK · JONAS SCHOEN QUARTETT",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "bflat:2026-08-26:robins-nest-jamsession",
+      "clubId": "bflat",
+      "title": "Robins Nest - Jamsession",
+      "date": "2026-08-26",
+      "sets": [
+        "21:00"
+      ],
+      "url": "https://b-flat-berlin.de/events/lswg3btcxjmsnlt-458yl-a36fa-dgnlm-dpjak-d94fw-l8ery-c4f4h-h437d-z8ap5-4m9xc-kkrtw-le9t8-2jpf2-sbs62-h6437-l2mxe-awdyg-bw5r8-k4gdx-ynbf2-9zswz-h64ej",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "schlot:2026-08-27:jazzkollektiv-berlin-kollektiv-nights",
+      "clubId": "schlot",
+      "title": "Jazzkollektiv Berlin – Kollektiv Nights",
+      "date": "2026-08-27",
+      "sets": [
+        "20:00"
+      ],
+      "url": "https://kunstfabrik-schlot.de/event/jazzkollektiv-berlin-kollektiv-nights-2/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "atrane:2026-08-27:artist-in-residency-day1",
+      "clubId": "atrane",
+      "title": "ARTIST IN RESIDENCY DAY1:",
+      "date": "2026-08-27",
+      "sets": [
+        "20:30"
+      ],
+      "url": "https://a-trane.de/programm/",
+      "details": "DESNEY BAILEY · THREE 4 SOUL · \"A BAND OF SOUL WITH A TWIST\" · FEAT: Carly Quiroz-Jean Ghazal-Or Rozenfeld-Jan Trojanowski",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "bflat:2026-08-27:tango-jazz-quartett-argentinien",
+      "clubId": "bflat",
+      "title": "Tango Jazz Quartett / Argentinien",
+      "date": "2026-08-27",
+      "sets": [
+        "21:00"
+      ],
+      "url": "https://b-flat-berlin.de/events/mcg5sn3pdyxhzz9-wbt6h-kcd6x-r7daf-h2mgc-f6lxm-awap9-jgaxk-pb5ys-mx9tm-xycfc-w4nw7-42xb8",
+      "details": null,
+      "personnel": [
+        {
+          "name": "Gustavo Firmenich",
+          "instrument": "tenor sax, clarinet"
+        },
+        {
+          "name": "Ezequiel Vargas",
+          "instrument": "drums"
+        },
+        {
+          "name": "Horacio Acosta",
+          "instrument": "piano"
+        }
+      ],
+      "priceText": null
+    },
+    {
+      "id": "schlot:2026-08-28:jazzkollektiv-berlin-kollektiv-nights",
+      "clubId": "schlot",
+      "title": "Jazzkollektiv Berlin – Kollektiv Nights",
+      "date": "2026-08-28",
+      "sets": [
+        "20:00"
+      ],
+      "url": "https://kunstfabrik-schlot.de/event/jazzkollektiv-berlin-kollektiv-nights-3/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "atrane:2026-08-28:artist-in-residency-day2",
+      "clubId": "atrane",
+      "title": "ARTIST IN RESIDENCY DAY2:",
+      "date": "2026-08-28",
+      "sets": [
+        "20:30"
+      ],
+      "url": "https://a-trane.de/programm/",
+      "details": "DESNEY BAILEY MEETS DES · «Soulful House Music» · REMIX · FEAT: Carly Quiroz-Carmelo Leotta-Omri Abramov-Jan Trojanowski",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "bflat:2026-08-28:havana-berlin-express",
+      "clubId": "bflat",
+      "title": "Havana Berlin Express",
+      "date": "2026-08-28",
+      "sets": [
+        "21:00"
+      ],
+      "url": "https://b-flat-berlin.de/events/mcg5sn3pdyxhzz9-wbt6h-kcd6x-r7daf-h2mgc-f6lxm-awap9-jgaxk-pb5ys-mx9tm-xycfc-w4nw7-42xb8-dhpjp",
+      "details": null,
+      "personnel": [
+        {
+          "name": "Sergio Medina",
+          "instrument": "vocals"
+        },
+        {
+          "name": "Alexander Wienand",
+          "instrument": "piano"
+        },
+        {
+          "name": "Urs Johnen",
+          "instrument": "bass"
+        },
+        {
+          "name": "Rasiel Almanza",
+          "instrument": "percussion"
+        },
+        {
+          "name": "David Beecroft",
+          "instrument": "sax"
+        },
+        {
+          "name": "Greg Ambroisine",
+          "instrument": "trumpet"
+        }
+      ],
+      "priceText": null
+    },
+    {
+      "id": "schlot:2026-08-29:jazzkollektiv-berlin-kollektiv-nights",
+      "clubId": "schlot",
+      "title": "Jazzkollektiv Berlin – Kollektiv Nights",
+      "date": "2026-08-29",
+      "sets": [
+        "20:00"
+      ],
+      "url": "https://kunstfabrik-schlot.de/event/jazzkollektiv-berlin-kollektiv-nights-4/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "atrane:2026-08-29:artist-in-residency-day3",
+      "clubId": "atrane",
+      "title": "ARTIST IN RESIDENCY DAY3:",
+      "date": "2026-08-29",
+      "sets": [
+        "20:30"
+      ],
+      "url": "https://a-trane.de/programm/",
+      "details": "DESNEY BAILEY MEETS DES · «Soulful House Music» · REMIX · FEAT: Igor Zavatckii-Carmelo Leotta-Omri Abramov-Jan Trojanowski",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "bflat:2026-08-29:shannon-callahan-band",
+      "clubId": "bflat",
+      "title": "Shannon Callahan & Band",
+      "date": "2026-08-29",
+      "sets": [
+        "21:00"
+      ],
+      "url": "https://b-flat-berlin.de/events/mcg5sn3pdyxhzz9-wbt6h-kcd6x-r7daf-h2mgc-f6lxm-awap9-jgaxk-pb5ys-mx9tm-xycfc-w4nw7-42xb8-dhpjp-d8pw6",
+      "details": null,
+      "personnel": [
+        {
+          "name": "Shannon Callahan",
+          "instrument": "vocals"
+        },
+        {
+          "name": "Jürgen Heckel",
+          "instrument": "guitar"
+        },
+        {
+          "name": "Frank Nicolovius",
+          "instrument": "keys"
+        },
+        {
+          "name": "Max Hughes",
+          "instrument": "bass"
+        },
+        {
+          "name": "Javier Rayes",
+          "instrument": "drums"
+        }
+      ],
+      "priceText": null
+    },
+    {
+      "id": "donau115:2026-08-29:spatz",
+      "clubId": "donau115",
+      "title": "Spatz",
+      "date": "2026-08-29",
+      "sets": [],
+      "url": "https://donau115.de",
+      "details": null,
+      "personnel": [
+        {
+          "name": "Tobias Delius",
+          "instrument": "tenor sax & clarinet"
+        },
+        {
+          "name": "Declan Forde",
+          "instrument": "piano"
+        },
+        {
+          "name": "Jonas Westergaard",
+          "instrument": "bass"
+        },
+        {
+          "name": "Steve Heather",
+          "instrument": "drums"
+        }
+      ],
+      "priceText": null
+    },
+    {
+      "id": "bflat:2026-08-30:the-bottomline",
+      "clubId": "bflat",
+      "title": "the bottomline",
+      "date": "2026-08-30",
+      "sets": [
+        "21:00"
+      ],
+      "url": "https://b-flat-berlin.de/events/mcg5sn3pdyxhzz9-wbt6h-kcd6x-r7daf-h2mgc-f6lxm-awap9-jgaxk-pb5ys-mx9tm-xycfc-w4nw7-42xb8-dhpjp-d8pw6-9pl72",
+      "details": null,
+      "personnel": [
+        {
+          "name": "Franzis Lating",
+          "instrument": "vocals, piano, synth"
+        },
+        {
+          "name": "und Johannes Elia Nuß",
+          "instrument": "drums, synth"
+        }
+      ],
+      "priceText": null
+    },
+    {
+      "id": "atrane:2026-08-31:andreas-schmidt-friends",
+      "clubId": "atrane",
+      "title": "ANDREAS SCHMIDT & FRIENDS",
+      "date": "2026-08-31",
+      "sets": [
+        "20:30"
+      ],
+      "url": "https://a-trane.de/programm/",
+      "details": "HEUTE MIT:",
+      "personnel": null,
+      "priceText": "Free"
+    },
+    {
+      "id": "schlot:2026-08-31:reiner-hess-quartett",
+      "clubId": "schlot",
+      "title": "Reiner Hess Quartett",
+      "date": "2026-08-31",
+      "sets": [
+        "21:00"
+      ],
+      "url": "https://kunstfabrik-schlot.de/event/reiner-hess-quartett-2/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "schlot:2026-09-03:savoy-satellites-quartet-feat-siri-svegler",
+      "clubId": "schlot",
+      "title": "SAVOY SATELLITES Quartet feat. Siri Svegler",
+      "date": "2026-09-03",
+      "sets": [
+        "21:00"
+      ],
+      "url": "https://kunstfabrik-schlot.de/event/savoy-satellites-quartet-feat-siri-svegler/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "schlot:2026-09-04:maria-baptist-orchestra",
+      "clubId": "schlot",
+      "title": "Maria Baptist Orchestra",
+      "date": "2026-09-04",
+      "sets": [
+        "21:00"
+      ],
+      "url": "https://kunstfabrik-schlot.de/event/maria-baptist-orchestra-36/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "quasimodo:2026-09-04:marcos-coll-album-release-concert",
+      "clubId": "quasimodo",
+      "title": "Marcos Coll – Album Release Concert",
+      "date": "2026-09-04",
+      "sets": [
+        "22:00"
+      ],
+      "url": "https://quasimodo.club/events/marcos-coll-album-release-concert-7387",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "schlot:2026-09-05:esther-kaiser-alexander-wienand-breathing-record-release-con",
+      "clubId": "schlot",
+      "title": "Esther Kaiser/ Alexander Wienand „BREATHING“ (Record Release Concert)",
+      "date": "2026-09-05",
+      "sets": [
+        "21:00"
+      ],
+      "url": "https://kunstfabrik-schlot.de/event/esther-kaiser-alexander-wienand-breathing-record-release-concert/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "schlot:2026-09-08:inside-luc-a-mart-nez",
+      "clubId": "schlot",
+      "title": "„Inside…“ Lucía Martínez",
+      "date": "2026-09-08",
+      "sets": [
+        "20:30"
+      ],
+      "url": "https://kunstfabrik-schlot.de/event/inside-lucia-martinez/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "schlot:2026-09-11:berlin-21-streetworkers-feat-emil-wahlgren",
+      "clubId": "schlot",
+      "title": "BERLIN 21 STREETWORKERS feat. Emil Wahlgren",
+      "date": "2026-09-11",
+      "sets": [
+        "21:00"
+      ],
+      "url": "https://kunstfabrik-schlot.de/event/berlin-21-streetworkers-feat-emil-wahlgren/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "quasimodo:2026-09-11:soul-night-ft-frankie-balou",
+      "clubId": "quasimodo",
+      "title": "Soul Night ft. Frankie Balou",
+      "date": "2026-09-11",
+      "sets": [
+        "22:00"
+      ],
+      "url": "https://quasimodo.club/events/soul-night-ft-frankie-balou-3-7384",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "schlot:2026-09-12:paul-peuker-lichtung",
+      "clubId": "schlot",
+      "title": "Paul Peuker : Lichtung",
+      "date": "2026-09-12",
+      "sets": [
+        "21:00"
+      ],
+      "url": "https://kunstfabrik-schlot.de/event/paul-peuker-lichtung/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "zigzag:2026-09-15:jazz-sabbath",
+      "clubId": "zigzag",
+      "title": "Jazz Sabbath",
+      "date": "2026-09-15",
+      "sets": [],
+      "url": "https://www.zigzag-jazzclub.berlin/program-mai/jazzsabbath-asgrm",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "schlot:2026-09-16:nathan-ott-coltrane100",
+      "clubId": "schlot",
+      "title": "Nathan Ott Coltrane100",
+      "date": "2026-09-16",
+      "sets": [
+        "21:00"
+      ],
+      "url": "https://kunstfabrik-schlot.de/event/nathan-ott-coltrane100/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "schlot:2026-09-17:urban-poets-ensemble",
+      "clubId": "schlot",
+      "title": "Urban Poets Ensemble",
+      "date": "2026-09-17",
+      "sets": [
+        "21:00"
+      ],
+      "url": "https://kunstfabrik-schlot.de/event/urban-poets-ensemble-2/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "schlot:2026-09-19:ania-paz-trio",
+      "clubId": "schlot",
+      "title": "Ania Paz Trio",
+      "date": "2026-09-19",
+      "sets": [
+        "21:00"
+      ],
+      "url": "https://kunstfabrik-schlot.de/event/ania-paz-trio-7/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "schlot:2026-09-22:agneya-album-release-concert",
+      "clubId": "schlot",
+      "title": "Agneya – Album Release Concert",
+      "date": "2026-09-22",
+      "sets": [
+        "21:00"
+      ],
+      "url": "https://kunstfabrik-schlot.de/event/agneya-album-release-concert/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "schlot:2026-09-24:juliana-blumenschein-quintett",
+      "clubId": "schlot",
+      "title": "Juliana Blumenschein Quintett",
+      "date": "2026-09-24",
+      "sets": [
+        "21:00"
+      ],
+      "url": "https://kunstfabrik-schlot.de/event/juliana-blumenschein-quintett/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "quasimodo:2026-09-25:blues-caravan",
+      "clubId": "quasimodo",
+      "title": "Blues Caravan",
+      "date": "2026-09-25",
+      "sets": [
+        "22:00"
+      ],
+      "url": "https://quasimodo.club/events/blues-caravan-3-7229",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "zigzag:2026-09-25:peter-bernstein-quartet",
+      "clubId": "zigzag",
+      "title": "Peter Bernstein Quartet",
+      "date": "2026-09-25",
+      "sets": [],
+      "url": "https://www.zigzag-jazzclub.berlin/program-mai/pbjam",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "schlot:2026-09-26:jubil-umskonzert-50-jahre-riff-reloaded",
+      "clubId": "schlot",
+      "title": "Jubiläumskonzert 50 Jahre Riff (reloaded)",
+      "date": "2026-09-26",
+      "sets": [],
+      "url": "https://kunstfabrik-schlot.de/event/jubilaeumskonzert-50-jahre-riff-reloaded-2/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "schlot:2026-09-27:e-la-luna-mit-dem-cartoonist-joshua-held",
+      "clubId": "schlot",
+      "title": "„…e la luna?“ mit dem Cartoonist Joshua Held",
+      "date": "2026-09-27",
+      "sets": [],
+      "url": "https://kunstfabrik-schlot.de/event/e-la-luna-mit-dem-cartoonist-joshua-held/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "schlot:2026-09-28:here-s-to-life-reflections-on-50-years-in-music",
+      "clubId": "schlot",
+      "title": "Here’s to Life: Reflections on 50+ Years in Music",
+      "date": "2026-09-28",
+      "sets": [],
+      "url": "https://kunstfabrik-schlot.de/event/heres-to-life-reflections-on-50-years-in-music/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "quasimodo:2026-10-10:lowdown-brass-band",
+      "clubId": "quasimodo",
+      "title": "LowDown Brass Band",
+      "date": "2026-10-10",
+      "sets": [
+        "22:00"
+      ],
+      "url": "https://quasimodo.club/events/lowdown-brass-band-7390",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "quasimodo:2026-10-23:eb-davis-the-superband",
+      "clubId": "quasimodo",
+      "title": "EB Davis & The Superband",
+      "date": "2026-10-23",
+      "sets": [
+        "22:00"
+      ],
+      "url": "https://quasimodo.club/events/eb-davis-the-superband-7-7399",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "donau115:2026-10-25:little-north-dk-feat-reinier-baas-nl-hannes-bennich-se",
+      "clubId": "donau115",
+      "title": "Little North (DK) feat. Reinier Baas (NL) & Hannes Bennich (SE)",
+      "date": "2026-10-25",
+      "sets": [],
+      "url": "https://donau115.de",
+      "details": null,
+      "personnel": [
+        {
+          "name": "Reinier Baas (NL)",
+          "instrument": "guitar"
+        },
+        {
+          "name": "Hannes Bennich (SE)",
+          "instrument": "alto sax"
+        },
+        {
+          "name": "Benjamin Nørholm Jacobsen (DK)",
+          "instrument": "piano"
+        },
+        {
+          "name": "Martin Brunbjerg Rasmussen (DK)",
+          "instrument": "bass"
+        },
+        {
+          "name": "Lasse Jacobsen (DK)",
+          "instrument": "drums"
+        }
+      ],
+      "priceText": null
+    },
+    {
+      "id": "quasimodo:2026-11-06:nighthawks",
+      "clubId": "quasimodo",
+      "title": "Nighthawks",
+      "date": "2026-11-06",
+      "sets": [
+        "22:00"
+      ],
+      "url": "https://quasimodo.club/events/nighthawks-3-7358",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "donau115:2026-11-07:synesthetic4",
+      "clubId": "donau115",
+      "title": "Synesthetic4",
+      "date": "2026-11-07",
+      "sets": [],
+      "url": "https://donau115.de",
+      "details": null,
+      "personnel": [
+        {
+          "name": "Andreas Lettner",
+          "instrument": "drums"
+        },
+        {
+          "name": "Manuel Mayr",
+          "instrument": "bass"
+        },
+        {
+          "name": "Peter Rom",
+          "instrument": "guitar"
+        },
+        {
+          "name": "Vincent Pongracz",
+          "instrument": "clarinet"
+        }
+      ],
+      "priceText": null
+    },
+    {
+      "id": "quasimodo:2026-11-20:jazz-night-ft-flow-rea-est",
+      "clubId": "quasimodo",
+      "title": "Jazz Night ft. Flow Rea (Est)",
+      "date": "2026-11-20",
+      "sets": [
+        "22:00"
+      ],
+      "url": "https://quasimodo.club/events/jazz-night-ft-flow-rea-est-7396",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    }
+  ]
+}

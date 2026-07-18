@@ -81,12 +81,12 @@ try {
     assert.ok(await pd.$('.city-hint'), 'hint missing on first visit');
   });
 
-  await test('city menu lists all nine cities; CHI loads (empty until first crawl)', async () => {
+  await test('city menu lists all ten cities; CHI loads (empty until first crawl)', async () => {
     await pd.click('.city-badge-btn');
     assert.equal(await pd.$('.city-hint'), null, 'hint must vanish once touched');
     await pd.waitForTimeout(200);
     const options = await Promise.all((await pd.$$('.city-option')).map((o) => o.textContent()));
-    assert.deepEqual(options.map((s) => s.trim()), ['NYC', 'LA', 'CHICAGO', 'SF', 'PARIS', 'LONDON', 'BOSTON', 'TOKYO', 'NOLA']);
+    assert.deepEqual(options.map((s) => s.trim()), ['NYC', 'LA', 'CHICAGO', 'SF', 'PARIS', 'LONDON', 'BOSTON', 'TOKYO', 'NOLA', 'BERLIN']);
     await pd.click('.city-option:has-text("CHICAGO")');
     await pd.waitForTimeout(400);
     assert.match(await pd.title(), /CHI/);
