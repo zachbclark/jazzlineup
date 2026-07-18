@@ -29,16 +29,29 @@ button { font: inherit; cursor: pointer; }
 .brand-note { color: var(--accent); }
 .brand-accent { color: var(--accent); }
 .brand-nyc { color: var(--muted); font-weight: 300; }
+/* The city is part of the wordmark: "Jazz Lineup NYC" in the brand serif,
+   gold, with an always-on caret — a control, not a label. (It was an 11px
+   bordered badge nobody realized was clickable — Zach, 2026-07-18.) */
 .city-badge {
-  display: inline-block; vertical-align: 4px; margin-left: 9px;
-  font-size: 11px; font-weight: 700; letter-spacing: 1.5px;
-  color: var(--accent); border: 1px solid var(--accent);
-  border-radius: 5px; padding: 2px 7px;
+  display: inline-block; margin-left: 10px;
+  font-family: inherit; font-size: 0.78em; font-weight: 400;
+  letter-spacing: 1px; color: var(--accent);
+  border: none; border-radius: 8px; padding: 1px 7px;
+  vertical-align: baseline;
 }
 .city-switcher { position: relative; display: inline-block; }
-.city-badge-btn { background: transparent; cursor: pointer; }
-.city-badge-btn:hover { background: rgba(232, 180, 88, 0.12); }
-.city-badge-btn .caret { font-size: 9px; opacity: 0.8; }
+/* first-visit whisper: sans (not the brand serif), muted, fades in late so
+   the page settles first; exists for one visit only */
+.city-hint {
+  font-family: -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  font-size: 11px; font-weight: 500; letter-spacing: 1.4px; text-transform: uppercase;
+  color: var(--muted); margin-left: 10px; vertical-align: 4px; white-space: nowrap;
+  animation: hint-in 0.7s ease 1s backwards;
+}
+@keyframes hint-in { from { opacity: 0; transform: translateX(-4px); } }
+.city-badge-btn { background: transparent; cursor: pointer; transition: background .15s ease; }
+.city-badge-btn:hover { background: rgba(232, 180, 88, 0.14); }
+.city-badge-btn .caret { font-size: 0.5em; opacity: 0.85; vertical-align: 3px; margin-left: 1px; }
 .city-menu {
   position: absolute; top: calc(100% + 6px); left: 0; z-index: 50;
   display: flex; flex-direction: column; min-width: 92px;
@@ -235,9 +248,6 @@ button { font: inherit; cursor: pointer; }
 
 .foot { margin-top: 30px; color: var(--muted); font-size: 12.5px; display: flex; gap: 8px; flex-wrap: wrap; }
 .foot-sep { color: var(--line); }
-/* quiet by design: the tip jar keeps the footer's only gold */
-.suggest-venue { color: var(--muted); text-decoration: none; }
-.suggest-venue:hover { color: var(--text); }
 /* the tip jar wears gold — the footer's one invitation; halo on hover only */
 .tip-jar {
   color: var(--accent); opacity: 0.9; font-weight: 600; letter-spacing: 0.3px;
@@ -296,15 +306,12 @@ button.cell { text-align: left; border: 1px solid var(--line); font: inherit; co
   .view-toggle .vt-label { display: none; }
   .view-toggle .vt-icon { display: inline; }
   /* the city badge earns a touch more presence */
-  .city-badge { font-size: 12px; padding: 3px 8px; }
+  .city-badge { font-size: 0.82em; padding: 1px 6px; margin-left: 7px; }
+  .city-hint { font-size: 9.5px; letter-spacing: 1px; margin-left: 6px; }
 
-  /* search takes its own full-width row under the brand. has-query must be
-     in this list: the desktop 190px has-query rule outspecifies the plain
-     input selector, so without it the box snapped 100% -> 190px whenever
-     the input blurred with a query typed (scroll or view-toggle tap), and
-     the clear x slid away (Zach's phone, 2026-07-16) */
-  .search-box input, .search-box input:focus, .search-box.has-query input { width: 100%; font-size: 16px; } /* no iOS zoom */
+  /* search takes its own full-width row under the brand */
   .search-box { order: 3; width: 100%; }
+  .search-box input, .search-box input:focus { width: 100%; font-size: 16px; } /* no iOS zoom */
 
   /* filter chips: wrapped grid, no sideways scrolling (scroll rails at 24
      venues felt weird — Zach 2026-07-15). Collapsed = first two lines; the
