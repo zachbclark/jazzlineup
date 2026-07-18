@@ -81,12 +81,12 @@ try {
     assert.ok(await pd.$('.city-hint'), 'hint missing on first visit');
   });
 
-  await test('city menu lists all six cities; CHI loads (empty until first crawl)', async () => {
+  await test('city menu lists all seven cities; CHI loads (empty until first crawl)', async () => {
     await pd.click('.city-badge-btn');
     assert.equal(await pd.$('.city-hint'), null, 'hint must vanish once touched');
     await pd.waitForTimeout(200);
     const options = await Promise.all((await pd.$$('.city-option')).map((o) => o.textContent()));
-    assert.deepEqual(options.map((s) => s.trim()), ['NYC', 'LA', 'CHICAGO', 'SF', 'PARIS', 'LONDON']);
+    assert.deepEqual(options.map((s) => s.trim()), ['NYC', 'LA', 'CHICAGO', 'SF', 'PARIS', 'LONDON', 'BOSTON']);
     await pd.click('.city-option:has-text("CHICAGO")');
     await pd.waitForTimeout(400);
     assert.match(await pd.title(), /CHI/);
@@ -247,7 +247,6 @@ try {
     assert.equal(await chips(), allChips);
   });
   await test('deep links: /nyc/brooklyn narrows borough; ?date= opens the drawer; URL follows', async () => {
-    // find a date with events (tomorrow-ish) from the served data
     const day = await pd.evaluate(async () => {
       const d = await (await fetch('/events-nyc.json')).json();
       const today = new Date().toISOString().slice(0, 10);
@@ -259,12 +258,10 @@ try {
     await pd.waitForTimeout(600);
     assert.match(await pd.textContent('.borough-btn.on'), /Brooklyn/i, 'deep-linked borough not applied');
     assert.ok(await pd.$('.daypanel.inline'), 'deep-linked date did not open the drawer');
-    // URL keeps mirroring state: switch borough to All, path drops the segment
     await pd.click('.borough-btn:has-text("All")');
     await pd.waitForTimeout(300);
     const path = await pd.evaluate(() => window.location.pathname);
     assert.equal(path, '/nyc', 'URL did not follow borough change: ' + path);
-    // bad borough segment degrades gracefully
     await pd.goto(BASE + '/nyc/atlantis', { waitUntil: 'networkidle' });
     await pd.waitForTimeout(600);
     assert.match(await pd.textContent('.borough-btn.on'), /All/i, 'unknown borough should fall back to All');

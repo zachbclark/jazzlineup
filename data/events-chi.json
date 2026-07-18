@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-16T20:52:39.575Z",
+  "generatedAt": "2026-07-18T18:29:51.693Z",
   "city": "chi",
   "clubs": [
     {
@@ -1158,36 +1158,6 @@
       "priceText": null
     },
     {
-      "id": "winters:2026-07-16:jeremy-kahn-trio-with-special-guest-leslie-beukelman-clooney",
-      "clubId": "winters",
-      "title": "Jeremy Kahn Trio with special guest Leslie Beukelman - Clooney Tunes: A Tribute to Rosemary Clooney",
-      "date": "2026-07-16",
-      "sets": [
-        "18:30"
-      ],
-      "url": "https://www.wintersjazzclub.com/events/jeremy-kahn-trio-with-special-guest-leslie-beukelman-clooney-tunes-a-tribute-to-rosemary-clooney",
-      "details": null,
-      "personnel": [
-        {
-          "name": "Jeremy Kahn",
-          "instrument": "piano;"
-        },
-        {
-          "name": "Leslie Beukelman",
-          "instrument": "vocals;"
-        },
-        {
-          "name": "Clark Sommers",
-          "instrument": "bass;"
-        },
-        {
-          "name": "Jon Deitemyer",
-          "instrument": "drums"
-        }
-      ],
-      "priceText": null
-    },
-    {
       "id": "greenmill:2026-07-16:alan-gresik-s-swing-orchestra",
       "clubId": "greenmill",
       "title": "ALAN GRESIK'S SWING ORCHESTRA",
@@ -1212,46 +1182,6 @@
       "details": "Marques Carroll Quintet",
       "personnel": null,
       "priceText": null
-    },
-    {
-      "id": "constellation:2026-07-16:s-g-26-preview-bitchin-bajas-natural-information-society",
-      "clubId": "constellation",
-      "title": "S&G 26 Preview: Bitchin Bajas + Natural Information Society",
-      "date": "2026-07-16",
-      "sets": [
-        "20:00"
-      ],
-      "url": "https://constellation-chicago.com/calendar/",
-      "details": null,
-      "personnel": null,
-      "priceText": "$30.00"
-    },
-    {
-      "id": "elasticarts:2026-07-16:improvised-music-series-avreeayl-ra-and-dream-stuff",
-      "clubId": "elasticarts",
-      "title": "Improvised Music Series: Avreeayl Ra and Dream Stuff",
-      "date": "2026-07-16",
-      "sets": [
-        "20:30"
-      ],
-      "url": "https://elasticarts.org/events/improvised-music-series-avreeayl-ra-and-dream-stuff",
-      "details": "Avreeayl Ra’s Dream Stuff is Avreeayl Ra (drums), Edward Wilkerson (reeds), Peter Maunu (strings), Jim Baker (keyboards), and Jason Roebke (bass). Dream Stuff exemplifies Spontaneous Composition and Arrangement. Dream Stuff will perform two sets at 8:30 and 9:30 . $15 / $10 w/ Student ID - Tickets A",
-      "personnel": null,
-      "priceText": null
-    },
-    {
-      "id": "dorians:2026-07-16:low-spark",
-      "clubId": "dorians",
-      "title": "Low Spark",
-      "date": "2026-07-16",
-      "sets": [
-        "21:00",
-        "22:30"
-      ],
-      "url": "https://throughtherecordshop.com/events/low-spark/",
-      "details": null,
-      "personnel": null,
-      "priceText": "$10"
     },
     {
       "id": "andys:2026-07-16:late-night-concert-series-w-marion-mallard",
@@ -1292,36 +1222,6 @@
       "url": "https://andysjazzclub.com/events/1st-set-with-pharez-whitted/?occurrence=2026-07-17&time=1784311200",
       "details": null,
       "personnel": null,
-      "priceText": null
-    },
-    {
-      "id": "winters:2026-07-17:thaddeus-tukes-quartet-with-special-guest-keya-trammell",
-      "clubId": "winters",
-      "title": "Thaddeus Tukes Quartet with special guest Keya Trammell",
-      "date": "2026-07-17",
-      "sets": [
-        "19:30"
-      ],
-      "url": "https://www.wintersjazzclub.com/events/thaddeus-tukes-quartet-with-special-guest-keya-trammell",
-      "details": null,
-      "personnel": [
-        {
-          "name": "Thaddeus Tukes",
-          "instrument": "vibes;"
-        },
-        {
-          "name": "Keya Trammell",
-          "instrument": "vocals;"
-        },
-        {
-          "name": "Steve Manns",
-          "instrument": "bass;"
-        },
-        {
-          "name": "Juan Pastor",
-          "instrument": "drums"
-        }
-      ],
       "priceText": null
     },
     {
@@ -1418,11 +1318,11 @@
       "personnel": [
         {
           "name": "Bryan Eng",
-          "instrument": "piano, vocals;"
+          "instrument": "piano, vocals"
         },
         {
           "name": "TJ Thompson",
-          "instrument": "drums;"
+          "instrument": "drums"
         },
         {
           "name": "Stephen Parisi",
@@ -1507,15 +1407,15 @@
       "personnel": [
         {
           "name": "Bethany Pickens",
-          "instrument": "piano;"
+          "instrument": "piano"
         },
         {
           "name": "Dakarai Barclay",
-          "instrument": "trumpet;"
+          "instrument": "trumpet"
         },
         {
           "name": "Ted Brewer",
-          "instrument": "acoustic bass;"
+          "instrument": "acoustic bass"
         },
         {
           "name": "Charles Heath",
@@ -1755,15 +1655,15 @@
       "personnel": [
         {
           "name": "Michael Lerich",
-          "instrument": "clarinet;"
+          "instrument": "clarinet"
         },
         {
           "name": "Ron Bedal",
-          "instrument": "piano;"
+          "instrument": "piano"
         },
         {
           "name": "Patrick Williams",
-          "instrument": "bass;"
+          "instrument": "bass"
         },
         {
           "name": "Kurt Lubbe",
@@ -1879,11 +1779,11 @@
       "personnel": [
         {
           "name": "Angel Spiccia",
-          "instrument": "vocals;"
+          "instrument": "vocals"
         },
         {
           "name": "Jeremy Kahn",
-          "instrument": "piano;"
+          "instrument": "piano"
         },
         {
           "name": "Phil Gratteau",
@@ -1999,19 +1899,19 @@
       "personnel": [
         {
           "name": "Paul Marinaro",
-          "instrument": "vocals;"
+          "instrument": "vocals"
         },
         {
           "name": "Mike Allemana",
-          "instrument": "guitar;"
+          "instrument": "guitar"
         },
         {
           "name": "John Tate",
-          "instrument": "bass;"
+          "instrument": "bass"
         },
         {
           "name": "Neil Hemphill",
-          "instrument": "drums;"
+          "instrument": "drums"
         },
         {
           "name": "Eric Jacobson",
@@ -2101,23 +2001,23 @@
       "personnel": [
         {
           "name": "Dwayne Bosman",
-          "instrument": "saxophone;"
+          "instrument": "saxophone"
         },
         {
           "name": "Dwight Bosman",
-          "instrument": "saxophone;"
+          "instrument": "saxophone"
         },
         {
           "name": "Kevin Fort",
-          "instrument": "piano;"
+          "instrument": "piano"
         },
         {
           "name": "Marlene Rosenberg",
-          "instrument": "bass;"
+          "instrument": "bass"
         },
         {
           "name": "Lee Rothenberg",
-          "instrument": "guitar;"
+          "instrument": "guitar"
         },
         {
           "name": "Linard Stroud",
@@ -2202,15 +2102,15 @@
       "personnel": [
         {
           "name": "Spider Saloff",
-          "instrument": "vocals;"
+          "instrument": "vocals"
         },
         {
           "name": "Pete Benson",
-          "instrument": "piano;"
+          "instrument": "piano"
         },
         {
           "name": "Clark Sommers",
-          "instrument": "bass;"
+          "instrument": "bass"
         },
         {
           "name": "Alex Hall",
@@ -2436,15 +2336,15 @@
       "personnel": [
         {
           "name": "Patricia Barber",
-          "instrument": "piano, vocals;"
+          "instrument": "piano, vocals"
         },
         {
           "name": "Larry Kohut",
-          "instrument": "bass;"
+          "instrument": "bass"
         },
         {
           "name": "Neal Alger",
-          "instrument": "guitar;"
+          "instrument": "guitar"
         },
         {
           "name": "Jon Deitemyer",
@@ -2572,15 +2472,15 @@
       "personnel": [
         {
           "name": "John Dokes",
-          "instrument": "vocals;"
+          "instrument": "vocals"
         },
         {
           "name": "Jeremy Kahn",
-          "instrument": "piano;"
+          "instrument": "piano"
         },
         {
           "name": "Clark Summers",
-          "instrument": "bass;"
+          "instrument": "bass"
         },
         {
           "name": "Dana Hall",
@@ -2708,27 +2608,27 @@
       "personnel": [
         {
           "name": "Amr Fahmy",
-          "instrument": "piano;"
+          "instrument": "piano"
         },
         {
           "name": "Micah Collier",
-          "instrument": "bass;"
+          "instrument": "bass"
         },
         {
           "name": "Lashera Ellis",
-          "instrument": "vocals;"
+          "instrument": "vocals"
         },
         {
           "name": "Joshua Achiron",
-          "instrument": "guitar;"
+          "instrument": "guitar"
         },
         {
           "name": "Keith Brooks",
-          "instrument": "drums;"
+          "instrument": "drums"
         },
         {
           "name": "Ryan Nyther",
-          "instrument": "trumpet;"
+          "instrument": "trumpet"
         },
         {
           "name": "John Fournier",
@@ -2829,23 +2729,23 @@
       "personnel": [
         {
           "name": "Derrick Gardner",
-          "instrument": "trumpet;"
+          "instrument": "trumpet"
         },
         {
           "name": "Robert Dixon",
-          "instrument": "alto, tenor saxophones;"
+          "instrument": "alto, tenor saxophones"
         },
         {
           "name": "Kirby Fellis",
-          "instrument": "trombone;"
+          "instrument": "trombone"
         },
         {
           "name": "Isaiah Jones, Jr.",
-          "instrument": "piano;"
+          "instrument": "piano"
         },
         {
           "name": "Ivan Taylor",
-          "instrument": "bass;"
+          "instrument": "bass"
         },
         {
           "name": "Cliff Wallace",
@@ -2916,19 +2816,19 @@
       "personnel": [
         {
           "name": "Alyssa Allgood",
-          "instrument": "vocals;"
+          "instrument": "vocals"
         },
         {
           "name": "Chris Madsen",
-          "instrument": "saxophone;"
+          "instrument": "saxophone"
         },
         {
           "name": "Mason Lampa",
-          "instrument": "drums;"
+          "instrument": "drums"
         },
         {
           "name": "Connor Sullivan",
-          "instrument": "bass;"
+          "instrument": "bass"
         },
         {
           "name": "Chris White",
@@ -3049,15 +2949,15 @@
       "personnel": [
         {
           "name": "Carmen Stokes",
-          "instrument": "piano, vocals;"
+          "instrument": "piano, vocals"
         },
         {
           "name": "Vern Allison",
-          "instrument": "drums, vocals;"
+          "instrument": "drums, vocals"
         },
         {
           "name": "Buddy Fambro",
-          "instrument": "guitar;"
+          "instrument": "guitar"
         },
         {
           "name": "Runere Brooks",
@@ -3135,15 +3035,15 @@
       "personnel": [
         {
           "name": "Tatum Langley",
-          "instrument": "vocals;"
+          "instrument": "vocals"
         },
         {
           "name": "Jeremy Kahn",
-          "instrument": "piano;"
+          "instrument": "piano"
         },
         {
           "name": "Lawrence Kohut",
-          "instrument": "bass;"
+          "instrument": "bass"
         }
       ],
       "priceText": null
@@ -3214,27 +3114,27 @@
       "personnel": [
         {
           "name": "Amr Fahmy",
-          "instrument": "piano;"
+          "instrument": "piano"
         },
         {
           "name": "Micah Collier",
-          "instrument": "bass;"
+          "instrument": "bass"
         },
         {
           "name": "Lashera Ellis",
-          "instrument": "vocals;"
+          "instrument": "vocals"
         },
         {
           "name": "Joshua Achiron",
-          "instrument": "guitar;"
+          "instrument": "guitar"
         },
         {
           "name": "Keith Brooks",
-          "instrument": "drums;"
+          "instrument": "drums"
         },
         {
           "name": "Ryan Nyther",
-          "instrument": "trumpet;"
+          "instrument": "trumpet"
         },
         {
           "name": "John Fournier",
@@ -3296,15 +3196,15 @@
       "personnel": [
         {
           "name": "Emily Braden",
-          "instrument": "vocals;"
+          "instrument": "vocals"
         },
         {
           "name": "Ben Waltzer",
-          "instrument": "piano;"
+          "instrument": "piano"
         },
         {
           "name": "Clark Sommers",
-          "instrument": "bass;"
+          "instrument": "bass"
         },
         {
           "name": "Justin Boyd",
@@ -3362,15 +3262,15 @@
       "personnel": [
         {
           "name": "Jane Monheit",
-          "instrument": "vocals;"
+          "instrument": "vocals"
         },
         {
           "name": "Max Haymer",
-          "instrument": "piano;"
+          "instrument": "piano"
         },
         {
           "name": "Neal Miner",
-          "instrument": "bass;"
+          "instrument": "bass"
         },
         {
           "name": "Rick Montalbano",
@@ -3491,11 +3391,11 @@
       "personnel": [
         {
           "name": "Andy Brown",
-          "instrument": "guitar;"
+          "instrument": "guitar"
         },
         {
           "name": "Joe Policastro",
-          "instrument": "bass;"
+          "instrument": "bass"
         },
         {
           "name": "Phil Gratteau",
@@ -3561,6 +3461,36 @@
       "priceText": null
     },
     {
+      "id": "winters:2026-08-13:joshua-achiron-quartet",
+      "clubId": "winters",
+      "title": "Joshua Achiron Quartet",
+      "date": "2026-08-13",
+      "sets": [
+        "18:30"
+      ],
+      "url": "https://www.wintersjazzclub.com/events/joshua-achiron-quartet-3",
+      "details": null,
+      "personnel": [
+        {
+          "name": "Joshua Achiron",
+          "instrument": "guitar"
+        },
+        {
+          "name": "Jeremy Kahn",
+          "instrument": "piano"
+        },
+        {
+          "name": "Clark Sommers",
+          "instrument": "bass"
+        },
+        {
+          "name": "Jon Deitemyer",
+          "instrument": "drums"
+        }
+      ],
+      "priceText": null
+    },
+    {
       "id": "greenmill:2026-08-13:alan-gresik-s-swing-orchestra",
       "clubId": "greenmill",
       "title": "ALAN GRESIK'S SWING ORCHESTRA",
@@ -3611,6 +3541,40 @@
       "details": null,
       "personnel": null,
       "late": true,
+      "priceText": null
+    },
+    {
+      "id": "winters:2026-08-14:better-together-music-to-move-your-soul",
+      "clubId": "winters",
+      "title": "Better Together - Music to Move Your Soul!",
+      "date": "2026-08-14",
+      "sets": [
+        "19:30"
+      ],
+      "url": "https://www.wintersjazzclub.com/events/better-together-music-to-move-your-soul-20",
+      "details": null,
+      "personnel": [
+        {
+          "name": "Jo Ann Daugherty",
+          "instrument": "piano"
+        },
+        {
+          "name": "Bruce Henry",
+          "instrument": "vocals"
+        },
+        {
+          "name": "Joshua Ramos",
+          "instrument": "bass"
+        },
+        {
+          "name": "Ryan Bennett",
+          "instrument": "drums"
+        },
+        {
+          "name": "Henry Johnson",
+          "instrument": "guitar"
+        }
+      ],
       "priceText": null
     },
     {
@@ -3710,6 +3674,19 @@
         }
       ],
       "priceText": "$10 COVER"
+    },
+    {
+      "id": "hungrybrain:2026-08-16:rempis-feldman-daisy-trio",
+      "clubId": "hungrybrain",
+      "title": "Rempis/Feldman/Daisy Trio",
+      "date": "2026-08-16",
+      "sets": [
+        "21:00"
+      ],
+      "url": "https://wl.seetickets.us/event/rempisfeldmandaisy-trio/694962?afflky=HungryBrain",
+      "details": null,
+      "personnel": null,
+      "priceText": "$15.00"
     },
     {
       "id": "jazzshowcase:2026-08-17:chicago-jazz-orchestra",
@@ -3935,6 +3912,19 @@
       "details": null,
       "personnel": null,
       "priceText": "$5.00-$15.00"
+    },
+    {
+      "id": "hungrybrain:2026-08-21:the-joel-paterson-swing-quartet",
+      "clubId": "hungrybrain",
+      "title": "The Joel Paterson Swing Quartet",
+      "date": "2026-08-21",
+      "sets": [
+        "21:00"
+      ],
+      "url": "https://wl.seetickets.us/event/The-Joel-Paterson-Swing-Quartet/696464?afflky=HungryBrain",
+      "details": null,
+      "personnel": null,
+      "priceText": "$15.00"
     },
     {
       "id": "greenmill:2026-08-21:green-mill-jam-session-with-marquis-hill",

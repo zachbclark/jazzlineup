@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-16T20:53:06.205Z",
+  "generatedAt": "2026-07-18T18:30:55.909Z",
   "city": "par",
   "clubs": [
     {
@@ -259,59 +259,6 @@
       "priceText": null
     },
     {
-      "id": "riv38:2026-07-16:carte-blanche-hermon-mehari",
-      "clubId": "riv38",
-      "title": "Carte blanche à Hermon Mehari",
-      "date": "2026-07-16",
-      "sets": [
-        "19:30",
-        "21:30"
-      ],
-      "url": "https://38riv.com/concerts/carte-blanche-hermon-mehari-2",
-      "details": null,
-      "personnel": [
-        {
-          "name": "Estelle Perrault",
-          "instrument": "voix"
-        },
-        {
-          "name": "Hermon Mehrari",
-          "instrument": "trompette"
-        },
-        {
-          "name": "Peter Schlamb",
-          "instrument": "piano"
-        }
-      ],
-      "priceText": null
-    },
-    {
-      "id": "sunside:2026-07-16:marc-copland-trio-ft-stephane-kerecki-fabrice-moreau",
-      "clubId": "sunside",
-      "title": "Marc Copland Trio ft. Stephane Kerecki & Fabrice Moreau",
-      "date": "2026-07-16",
-      "sets": [
-        "20:30"
-      ],
-      "url": "https://www.sunset-sunside.com/concert/marc-copland-trio-ft-stephane-kerecki-fabrice-moreau/",
-      "details": "« Un grand parmi les grands….un des meilleurs pianistes de l’histoire de jazz ». Monk, Copland, Kern … par un trio de rêve : Copland, Kerecki, Moreau. Un jazz au naturel, une improvisation collective ravageuse avec le blues lyrique du pianiste, la flamboyance bop du contrebassiste et le colorisme ch",
-      "personnel": null,
-      "priceText": "25,00&euro; à 35,00&euro;"
-    },
-    {
-      "id": "sunset:2026-07-16:lila-may",
-      "clubId": "sunset",
-      "title": "Lila-May",
-      "date": "2026-07-16",
-      "sets": [
-        "21:30"
-      ],
-      "url": "https://www.sunset-sunside.com/concert/lila-may-2/",
-      "details": "Cette jeune artiste française (17 ans à peine) en pleine ascension dévoile avec « Out Of Time » un premier EP qui affirme déjà une identité musicale singulière entre héritage jazz et modernité pop. Encore lycéenne, elle cumule des millions de vues sur les réseaux sociaux et impressionne grâce à une",
-      "personnel": null,
-      "priceText": "10,00&euro; à 20,00&euro;"
-    },
-    {
       "id": "caveau:2026-07-16:sebastian-ellis-rock-n-roll-band",
       "clubId": "caveau",
       "title": "Sebastian Ellis Rock’N Roll Band",
@@ -325,124 +272,6 @@
       "priceText": null
     },
     {
-      "id": "riv38:2026-07-16:jam-session-jazz-sol-ne-cairoli",
-      "clubId": "riv38",
-      "title": "Jam session jazz — Solène Cairoli",
-      "date": "2026-07-16",
-      "sets": [
-        "23:00"
-      ],
-      "url": "https://38riv.com/concerts/jam-session-jazz-solene-cairoli-42",
-      "details": null,
-      "personnel": null,
-      "late": true,
-      "priceText": null
-    },
-    {
-      "id": "newmorning:2026-07-16:the-bad-plus",
-      "clubId": "newmorning",
-      "title": "The Bad Plus",
-      "date": "2026-07-16",
-      "sets": [],
-      "url": "https://www.newmorning.com/20260716-7701-45-ans-du-new-the-bad-plus.html",
-      "details": null,
-      "personnel": null,
-      "priceText": null
-    },
-    {
-      "id": "duc:2026-07-17:mario-canonge-trio",
-      "clubId": "duc",
-      "title": "MARIO CANONGE TRIO",
-      "date": "2026-07-17",
-      "sets": [
-        "19:30",
-        "22:00"
-      ],
-      "url": "https://ducdeslombards.com/fr/l-agenda/mario-canonge-trio",
-      "details": "Caraibes",
-      "personnel": [
-        {
-          "name": "Mario Canonge",
-          "instrument": "piano"
-        },
-        {
-          "name": "Michel Alibo",
-          "instrument": "contrebasse"
-        },
-        {
-          "name": "Arnaud Dolmen",
-          "instrument": "batterie"
-        }
-      ],
-      "priceText": null
-    },
-    {
-      "id": "sunside:2026-07-17:claudia-parisi",
-      "clubId": "sunside",
-      "title": "Claudia Parisi",
-      "date": "2026-07-17",
-      "sets": [
-        "19:30"
-      ],
-      "url": "https://www.sunset-sunside.com/concert/claudia-parisi/",
-      "details": "Claudia Parisi autrice-compositrice et interprète présente son nouvel album Lo So au Sunside. Résolument organique, l’album s’ouvre à des influences des musiques du monde et du jazz, où les percussions de Minino Garay et l’accordéon de Noé Clerc occupent une place centrale. Accompagnée de Nico Morel",
-      "personnel": null,
-      "priceText": "15,00&euro; à 25,00&euro;"
-    },
-    {
-      "id": "riv38:2026-07-17:sarah-king-trio",
-      "clubId": "riv38",
-      "title": "Sarah King trio",
-      "date": "2026-07-17",
-      "sets": [
-        "19:30",
-        "21:30"
-      ],
-      "url": "https://38riv.com/concerts/sarah-king-trio",
-      "details": null,
-      "personnel": [
-        {
-          "name": "Sarah King",
-          "instrument": "voix"
-        },
-        {
-          "name": "Clement Trimouille",
-          "instrument": "guitare"
-        },
-        {
-          "name": "Kim Baiunco",
-          "instrument": "contrebasse"
-        }
-      ],
-      "priceText": null
-    },
-    {
-      "id": "sunset:2026-07-17:django-celebration-ft-boulou-ferr-s-bastien-giniaux",
-      "clubId": "sunset",
-      "title": "Django Celebration ft. Boulou Ferré & Sébastien Giniaux",
-      "date": "2026-07-17",
-      "sets": [
-        "20:30"
-      ],
-      "url": "https://www.sunset-sunside.com/concert/django-celebration-ft-boulou-ferre-sebastien-giniaux/",
-      "details": "A l’initiative de William Brunard, bassiste de Bireli Lagrène, nouveau format mensuel au Sunset pour honorer la mémoire de Django. “Django Celebration” propose de célébrer l’héritage de Django Reinhardt à travers une série de rencontres intergénérationnelles entre une figure reconnue de cette musiqu",
-      "personnel": null,
-      "priceText": "22,00&euro; à 32,00&euro;"
-    },
-    {
-      "id": "sunside:2026-07-17:marc-copland-trio-ft-stephane-kerecki-fabrice-moreau",
-      "clubId": "sunside",
-      "title": "Marc Copland Trio ft. Stephane Kerecki & Fabrice Moreau",
-      "date": "2026-07-17",
-      "sets": [
-        "21:30"
-      ],
-      "url": "https://www.sunset-sunside.com/concert/marc-copland-trio-ft-stephane-kerecki-fabrice-moreau-2/",
-      "details": "« Un grand parmi les grands….un des meilleurs pianistes de l’histoire de jazz ». Monk, Copland, Kern … par un trio de rêve : Copland, Kerecki, Moreau. Un jazz au naturel, une improvisation collective ravageuse avec le blues lyrique du pianiste, la flamboyance bop du contrebassiste et le colorisme ch",
-      "personnel": null,
-      "priceText": "25,00&euro; à 35,00&euro;"
-    },
-    {
       "id": "caveau:2026-07-17:sebastian-ellis-rock-n-roll-band",
       "clubId": "caveau",
       "title": "Sebastian Ellis Rock’N Roll Band",
@@ -453,95 +282,6 @@
       "url": "https://www.caveaudelahuchette.fr/1/concerts_juillet_2026_1483430.html",
       "details": null,
       "personnel": null,
-      "priceText": null
-    },
-    {
-      "id": "riv38:2026-07-17:apollo-late-sessions",
-      "clubId": "riv38",
-      "title": "Apollo ‘late’ sessions",
-      "date": "2026-07-17",
-      "sets": [
-        "23:00"
-      ],
-      "url": "https://38riv.com/concerts/apollo-late-sessions-43",
-      "details": null,
-      "personnel": null,
-      "late": true,
-      "priceText": null
-    },
-    {
-      "id": "duc:2026-07-17:jam-du-duc",
-      "clubId": "duc",
-      "title": "JAM DU DUC",
-      "date": "2026-07-17",
-      "sets": [
-        "23:30"
-      ],
-      "url": "https://ducdeslombards.com/fr/l-agenda/jam-du-duc-simon-chivallon-11",
-      "details": null,
-      "personnel": [
-        {
-          "name": "Simon Chivallon",
-          "instrument": "piano"
-        },
-        {
-          "name": "Luca Fattorini",
-          "instrument": "contrebasse"
-        },
-        {
-          "name": "Gustave Reichert",
-          "instrument": "batterie"
-        }
-      ],
-      "late": true,
-      "priceText": null
-    },
-    {
-      "id": "riv38:2026-07-17:jam-session-groove-apollo",
-      "clubId": "riv38",
-      "title": "Jam session groove — Apollo",
-      "date": "2026-07-17",
-      "sets": [
-        "23:59"
-      ],
-      "url": "https://38riv.com/concerts/jam-session-groove-apollo-43",
-      "details": null,
-      "personnel": null,
-      "late": true,
-      "priceText": null
-    },
-    {
-      "id": "newmorning:2026-07-17:ledisi",
-      "clubId": "newmorning",
-      "title": "Ledisi",
-      "date": "2026-07-17",
-      "sets": [],
-      "url": "https://www.newmorning.com/20260717-7728-45-ans-du-new-ledisi.html",
-      "details": null,
-      "personnel": null,
-      "priceText": null
-    },
-    {
-      "id": "riv38:2026-07-18:elisa-lecuyer-raconte-anita-o-day",
-      "clubId": "riv38",
-      "title": "Elisa Lecuyer raconte Anita O'Day",
-      "date": "2026-07-18",
-      "sets": [
-        "15:00",
-        "17:00"
-      ],
-      "url": "https://38riv.com/concerts/elisa-lecuyer-raconte-anita-oday",
-      "details": null,
-      "personnel": [
-        {
-          "name": "Elisa Lécuyer",
-          "instrument": "voix"
-        },
-        {
-          "name": "Jeremy Hinnekens",
-          "instrument": "piano"
-        }
-      ],
       "priceText": null
     },
     {
@@ -1522,6 +1262,70 @@
       "priceText": null
     },
     {
+      "id": "riv38:2026-07-25:jam-session-jazz-zoot",
+      "clubId": "riv38",
+      "title": "Jam session jazz — Zoot",
+      "date": "2026-07-25",
+      "sets": [
+        "23:59"
+      ],
+      "url": "https://38riv.com/concerts/jam-session-jazz-zoot-45",
+      "details": null,
+      "personnel": null,
+      "late": true,
+      "priceText": null
+    },
+    {
+      "id": "riv38:2026-07-26:the-belleville-hot-four",
+      "clubId": "riv38",
+      "title": "The Belleville Hot Four",
+      "date": "2026-07-26",
+      "sets": [
+        "15:00",
+        "17:00"
+      ],
+      "url": "https://38riv.com/concerts/belleville-hot-four-2",
+      "details": null,
+      "personnel": [
+        {
+          "name": "Baptiste Ferrandis",
+          "instrument": "guitare"
+        },
+        {
+          "name": "Simone Magliozzi",
+          "instrument": "guitare"
+        },
+        {
+          "name": "Thomas Posner",
+          "instrument": "contrebasse"
+        }
+      ],
+      "priceText": null
+    },
+    {
+      "id": "riv38:2026-07-26:pamina-beroff-simon-chivallon",
+      "clubId": "riv38",
+      "title": "Pamina Beroff & Simon Chivallon",
+      "date": "2026-07-26",
+      "sets": [
+        "19:30",
+        "21:30"
+      ],
+      "url": "https://38riv.com/concerts/pamina-beroff-simon-chivallon",
+      "details": null,
+      "personnel": [
+        {
+          "name": "Pamina Beroff",
+          "instrument": "voix"
+        },
+        {
+          "name": "Simon Chivallon",
+          "instrument": "piano"
+        }
+      ],
+      "priceText": null
+    },
+    {
       "id": "sunside:2026-07-26:hommage-ella-fitzgerald-avec-m-lina-tobiana-jam-vocale",
       "clubId": "sunside",
       "title": "Hommage à Ella Fitzgerald avec Mélina Tobiana + Jam Vocale",
@@ -1574,6 +1378,33 @@
         {
           "name": "Ben Waters",
           "instrument": "piano & voix"
+        }
+      ],
+      "priceText": null
+    },
+    {
+      "id": "riv38:2026-07-27:3-nights-with-estelle-perrault",
+      "clubId": "riv38",
+      "title": "3 nights with Estelle Perrault",
+      "date": "2026-07-27",
+      "sets": [
+        "19:30",
+        "21:30"
+      ],
+      "url": "https://38riv.com/concerts/3-nights-estelle-perrault",
+      "details": null,
+      "personnel": [
+        {
+          "name": "Estelle Perrault",
+          "instrument": "voix"
+        },
+        {
+          "name": "Gianluca Figliola",
+          "instrument": "guitare"
+        },
+        {
+          "name": "Gabriel Sauzay",
+          "instrument": "contrebasse"
         }
       ],
       "priceText": null
@@ -1660,6 +1491,33 @@
       "priceText": "15,00&euro; à 25,00&euro;"
     },
     {
+      "id": "riv38:2026-07-28:3-nights-with-estelle-perrault",
+      "clubId": "riv38",
+      "title": "3 nights with Estelle Perrault",
+      "date": "2026-07-28",
+      "sets": [
+        "19:30",
+        "21:30"
+      ],
+      "url": "https://38riv.com/concerts/3-nights-estelle-perrault-0",
+      "details": null,
+      "personnel": [
+        {
+          "name": "Estelle Perrault",
+          "instrument": "voix"
+        },
+        {
+          "name": "Gianluca Figliola",
+          "instrument": "guitare"
+        },
+        {
+          "name": "Gabriel Sauzay",
+          "instrument": "contrebasse"
+        }
+      ],
+      "priceText": null
+    },
+    {
       "id": "sunset:2026-07-28:gilliam-sayad-quartet",
       "clubId": "sunset",
       "title": "Gilliam Sayad Quartet",
@@ -1696,6 +1554,20 @@
       "url": "https://www.caveaudelahuchette.fr/1/concerts_juillet_2026_1483430.html",
       "details": null,
       "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "riv38:2026-07-28:jam-session-funk-pierre-gibbe",
+      "clubId": "riv38",
+      "title": "Jam session funk — Pierre Gibbe",
+      "date": "2026-07-28",
+      "sets": [
+        "23:00"
+      ],
+      "url": "https://38riv.com/concerts/jam-session-funk-pierre-gibbe-45",
+      "details": null,
+      "personnel": null,
+      "late": true,
       "priceText": null
     },
     {
@@ -2814,8 +2686,8 @@
       "priceText": null
     },
     {
-      "id": "sunset:2026-09-03:chyzm-troph-es-du-sunside",
-      "clubId": "sunset",
+      "id": "sunside:2026-09-03:chyzm-troph-es-du-sunside",
+      "clubId": "sunside",
       "title": "Chyzm – Trophées du Sunside 🏆",
       "date": "2026-09-03",
       "sets": [
@@ -2880,6 +2752,32 @@
       "priceText": "20,00&euro; à 30,00&euro;"
     },
     {
+      "id": "sunset:2026-09-04:paco-sery-friends",
+      "clubId": "sunset",
+      "title": "Paco Sery & Friends",
+      "date": "2026-09-04",
+      "sets": [
+        "20:30"
+      ],
+      "url": "https://www.sunset-sunside.com/concert/paco-sery-friends/",
+      "details": "Phénomène du rythme, multi instrumentiste inimitable, on le dit empereur du rythme et génie du groove ! Depuis 50 ans, sur les scènes du monde entier, Paco Séry a joué avec Nina Simone, Jaco Pastorius, Wayne Shorter, Salif Keita, Marvin Gaye, son groupe fétiche Sixun… Une frappe terrible, un jeu san",
+      "personnel": null,
+      "priceText": "25,00&euro; à 35,00&euro;"
+    },
+    {
+      "id": "sunside:2026-09-04:ricky-ford-hommage-john-coltrane",
+      "clubId": "sunside",
+      "title": "Ricky Ford “Hommage à John Coltrane”",
+      "date": "2026-09-04",
+      "sets": [
+        "21:30"
+      ],
+      "url": "https://www.sunset-sunside.com/concert/ricky-ford-hommage-a-john-coltrane/",
+      "details": "Figure majeure du jazz international, le saxophoniste RICKY FORD s’est illustré aux côtés de légendes telles que Duke Ellington, Lionnel Hampton, Charles Mingus et beaucoup d’autres. Le quartet offre un jazz d’une rare intensité, où l’élégance de la tradition rencontre la liberté de l’improvisation",
+      "personnel": null,
+      "priceText": "25,00&euro; à 35,00&euro;"
+    },
+    {
       "id": "sunside:2026-09-05:yacine-malek-trio",
       "clubId": "sunside",
       "title": "Yacine Malek Trio",
@@ -2917,6 +2815,32 @@
           "instrument": "batterie"
         }
       ],
+      "priceText": null
+    },
+    {
+      "id": "sunset:2026-09-05:paco-sery-friends",
+      "clubId": "sunset",
+      "title": "Paco Sery & Friends",
+      "date": "2026-09-05",
+      "sets": [
+        "20:30"
+      ],
+      "url": "https://www.sunset-sunside.com/concert/paco-sery-friends-2/",
+      "details": "Phénomène du rythme, multi instrumentiste inimitable, on le dit empereur du rythme et génie du groove ! Depuis 50 ans, sur les scènes du monde entier, Paco Séry a joué avec Nina Simone, Jaco Pastorius, Wayne Shorter, Salif Keita, Marvin Gaye, son groupe fétiche Sixun… Une frappe terrible, un jeu san",
+      "personnel": null,
+      "priceText": "30,00&euro; à 35,00&euro;"
+    },
+    {
+      "id": "sunside:2026-09-06:hommage-ernestine-anderson-avec-cecil-l-recchia-jam-vocale",
+      "clubId": "sunside",
+      "title": "Hommage à Ernestine Anderson avec Cecil L. Recchia + Jam Vocale",
+      "date": "2026-09-06",
+      "sets": [
+        "21:00"
+      ],
+      "url": "https://www.sunset-sunside.com/concert/hommage-a-ernestine-andersonavec-cecil-l-recchia-jam-vocale-4/",
+      "details": "ENTREE LIBRE – PAS DE RESERVATION La Jam Session Vocale : rendez-vous mensuel au Sunside animé par Cecil L. Recchia et destiné à la voix ! Un set en hommage à une légende du jazz et après c’est la jam vocale jusqu’à minuit. Jazz vocaliste et pédagogue chevronnée, elle est une des valeurs sûres de la",
+      "personnel": null,
       "priceText": null
     },
     {
@@ -3028,6 +2952,19 @@
         }
       ],
       "priceText": null
+    },
+    {
+      "id": "sunside:2026-09-09:lunettes2vue",
+      "clubId": "sunside",
+      "title": "Lunettes2vue",
+      "date": "2026-09-09",
+      "sets": [
+        "19:30"
+      ],
+      "url": "https://www.sunset-sunside.com/concert/lunettes2vue/",
+      "details": "Trio explosif à la direction artistique bien particulière, lunettes2vue redéfinit les codes établis sous ses airs de bons élèves. Chemises à rayures, et lunettes dorées influencés par Ornette Coleman, Dave Liebman ou John Coltrane, le trio vous fera voyager entre surprise et douceur. Ici, les strabi",
+      "personnel": null,
+      "priceText": "15,00&euro; à 25,00&euro;"
     },
     {
       "id": "sunset:2026-09-09:bus-57",
@@ -3204,6 +3141,19 @@
       "priceText": "20,00&euro; à 25,00&euro;"
     },
     {
+      "id": "sunset:2026-09-12:baptiste-herbin-django-trio",
+      "clubId": "sunset",
+      "title": "Baptiste Herbin “Django” Trio",
+      "date": "2026-09-12",
+      "sets": [
+        "20:00"
+      ],
+      "url": "https://www.sunset-sunside.com/concert/baptiste-herbin-django-trio-3/",
+      "details": "Pour cet album, Baptiste Herbin a, pour la première fois, fait appel à un directeur artistique .Il a trouvé en Daniel Yvinec un interlocuteur éclairé et stimulant, qui après l ‘avoir entendu jouer un thème de Django lors d’une jam session, lui a soufflé le sujet de cet album. Ensemble, ils f",
+      "personnel": null,
+      "priceText": "25,00&euro; à 30,00&euro;"
+    },
+    {
       "id": "balblomet:2026-09-12:melissa-lesnie-gatsby-s-jazz-folies",
       "clubId": "balblomet",
       "title": "MELISSA LESNIE – GATSBY’S JAZZ & FOLIES",
@@ -3285,6 +3235,19 @@
       "priceText": null
     },
     {
+      "id": "sunside:2026-09-15:h-lo-se-bay",
+      "clubId": "sunside",
+      "title": "Héloïse Bay",
+      "date": "2026-09-15",
+      "sets": [
+        "19:30"
+      ],
+      "url": "https://www.sunset-sunside.com/concert/heloise-bay/",
+      "details": "La prometteuse chanteuse Héloïse Bay signe un hommage vibrant à la chanson française revisitée avec l’élégance du jazz pour son nouvel album « Une belle histoire »*. Avec Cédric Chauveau au piano et Nicola Sabato à la contrebasse, le trio revisite des titres emblématiques des années 50 à 2000, mêlan",
+      "personnel": null,
+      "priceText": "15,00&euro; à 25,00&euro;"
+    },
+    {
       "id": "balblomet:2026-09-15:l-orchestre-du-bal-blomet-rhythm-is-our-business",
       "clubId": "balblomet",
       "title": "L’ORCHESTRE DU BAL BLOMET – RHYTHM IS OUR BUSINESS !",
@@ -3296,6 +3259,32 @@
       "details": null,
       "personnel": null,
       "priceText": null
+    },
+    {
+      "id": "sunset:2026-09-15:rotem-sivan",
+      "clubId": "sunset",
+      "title": "Rotem Sivan",
+      "date": "2026-09-15",
+      "sets": [
+        "20:30"
+      ],
+      "url": "https://www.sunset-sunside.com/concert/rotem-sivan/",
+      "details": "Le talent de guitariste de Rotem Sivan est reconnu dans le monde entier. Le New York Times l’a qualifié de « bien plus qu’un très bon jeune guitariste ». Le magazine Downbeat l’a quant à lui décrit comme « un talent remarquable ». Rotem a terminé ses études de composition classique et d’interprétati",
+      "personnel": null,
+      "priceText": "25,00&euro; à 35,00&euro;"
+    },
+    {
+      "id": "sunside:2026-09-15:mahmoud-sadi-trio",
+      "clubId": "sunside",
+      "title": "Mahmoud Sadi Trio",
+      "date": "2026-09-15",
+      "sets": [
+        "21:30"
+      ],
+      "url": "https://www.sunset-sunside.com/concert/mahmoud-sadi-trio/",
+      "details": "Les membres du Mahmoud Sadi Trio se sont rencontrés au fil de différentes aventures musicales. Leur répertoire, composé de créations originales et de réinterprétations, s’inscrit dans un jazz contemporain nourri de multiples influences — pop, latin, afro et autres couleurs — qui enrichissent chaque",
+      "personnel": null,
+      "priceText": "15,00&euro; à 25,00&euro;"
     },
     {
       "id": "duc:2026-09-16:harry-allen-martin-sasse",
@@ -3329,6 +3318,19 @@
       "priceText": null
     },
     {
+      "id": "sunside:2026-09-16:hommage-bill-evans-jim-hall",
+      "clubId": "sunside",
+      "title": "Hommage à Bill Evans & Jim Hall",
+      "date": "2026-09-16",
+      "sets": [
+        "19:30"
+      ],
+      "url": "https://www.sunset-sunside.com/concert/hommage-a-bill-evans-jim-hall/",
+      "details": "Le guitariste aux multiples facettes Joel Shapira et le pianiste vétéran Larry McDonough réinventent les deux enregistrements marquants du pianiste Bill Evans et du guitariste Jim Hall. Le duo explore les riches tapisseries d’harmonie, de mélodie et d’improvisation créées par deux icônes du jazz.",
+      "personnel": null,
+      "priceText": "15,00&euro; à 25,00&euro;"
+    },
+    {
       "id": "balblomet:2026-09-16:st-phane-kerecki-liberation-songs",
       "clubId": "balblomet",
       "title": "STÉPHANE KERECKI – LIBERATION SONGS",
@@ -3340,6 +3342,32 @@
       "details": null,
       "personnel": null,
       "priceText": null
+    },
+    {
+      "id": "sunset:2026-09-16:nefesh-ft-jonathan-orland-shimon-gambourg",
+      "clubId": "sunset",
+      "title": "Nefesh ft. Jonathan Orland & Shimon Gambourg",
+      "date": "2026-09-16",
+      "sets": [
+        "20:30"
+      ],
+      "url": "https://www.sunset-sunside.com/concert/nefesh-ft-jonathan-orland-shimon-gambourg/",
+      "details": "Nefesh réunit deux musiciens reconnus sur la scène jazz autour d’un répertoire inspiré de leur héritage culturel, mêlant chants israéliens, mélodies yiddish et composition originales. Entre tradition et création, le duo propose une musique libre et profondément expressive.",
+      "personnel": null,
+      "priceText": "15,00&euro; à 25,00&euro;"
+    },
+    {
+      "id": "sunside:2026-09-16:lown-trio",
+      "clubId": "sunside",
+      "title": "Lown Trio",
+      "date": "2026-09-16",
+      "sets": [
+        "21:30"
+      ],
+      "url": "https://www.sunset-sunside.com/concert/lown-trio/",
+      "details": "En distillant un jazz contemporain effervescent et mélodique, LOWN TRIO nous entraîne dans un espace imaginaire infusé de couleurs d’orient : mélodies fluides et rythmiques tranchantes, quelquepart entre orient, balkans et amérique latine. Le trio déploie ces contrastes dans une verve poétique et ju",
+      "personnel": null,
+      "priceText": "15,00&euro; à 25,00&euro;"
     },
     {
       "id": "duc:2026-09-17:bria-skonberg",
@@ -4919,6 +4947,17 @@
       "date": "2027-01-27",
       "sets": [],
       "url": "https://www.newmorning.com/20270127-7780-jerron-paxton.html",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "newmorning:2027-01-28:nils-petter-molvaer",
+      "clubId": "newmorning",
+      "title": "Nils Petter Molvaer",
+      "date": "2027-01-28",
+      "sets": [],
+      "url": "https://www.newmorning.com/20270128-7787-nils-petter-molvaer.html",
       "details": null,
       "personnel": null,
       "priceText": null

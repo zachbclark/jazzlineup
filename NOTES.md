@@ -229,12 +229,29 @@ existing consumers, email when something breaks. TODO: publish this as an
 
 ## City queue and backlog
 
-Approved and next: BOSTON (Wally's, Scullers, Regattabar, Lilypad, Mad
-Monkfish, Beehive, City Winery Boston) then PHILLY (Chris' Jazz Cafe,
-South Jazz Kitchen, Solar Myth, Paris Bistro, Clef Club, World Cafe Live
-filtered, Time). City ids: bos, phl. Then Berlin (A-Trane, Quasimodo, Zig
-Zag, Donau115, Kunstfabrik Schlot; add German instrument lexicon; Zig Zag
-got an unprompted 5-star endorsement in the r/Jazz thread).
+BOSTON SHIPPED 2026-07-19 (city id bos, 6 venues): Wally's (pure
+generator — no artist calendar exists, jam Tue-Sat 19:00 + nightly night
+set 21:00), Scullers (MusicIDB widget crawl, venueId 715, flaky host ->
+seed fallback in scullers-seed.js), Regattabar (TicketWeb = Ticketmaster,
+assumed bot-hostile, SEED-ONLY in regattabar-seed.js — refresh ~2 weeks
+from ticketweb.com/venue/748814; same-title dates merge into sets),
+Lilypad (gcal-template links on the homepage carry exact UTC times; light
+non-music filter per Zach), Mad Monkfish (BentoBox /jazz-schedule/?p=N,
+aria-label "M/D Title [time]"; "12-1am" tails are true after-midnight
+sets), Beehive (named fixtures ONLY per Zach: Bruce Bears Sunday blues +
+weekend brunch — no genre-roulette nightly filler). City Winery Boston:
+BACKLOGGED per Zach (calendar is hip-hop/comedy/R&B; jazz ~one night a
+quarter). Boston recall-audit candidate: Bostonshows.org (jazz filter).
+personnel-audit STRUCTURAL should gain: wallys, beehive, regattabar,
+scullers.
+
+Queue after Boston: TOKYO (Zach, 2026-07-19: bumped ahead of Philly to
+use the strongest model while available — see Tokyo notes below), then
+PHILLY (Chris' Jazz Cafe, South Jazz Kitchen, Solar Myth, Paris Bistro,
+Clef Club, World Cafe Live filtered, Time; city id phl), then Berlin
+(A-Trane, Quasimodo, Zig Zag, Donau115, Kunstfabrik Schlot; add German
+instrument lexicon; Zig Zag got an unprompted 5-star endorsement in the
+r/Jazz thread).
 
 Boston intel from r/Jazz (u/thinair01, 2026-07): add Berklee Performance
 Center and the Red Room at Cafe 939 (Berklee) as candidates — frequent but

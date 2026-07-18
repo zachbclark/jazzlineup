@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-16T23:29:52.538Z",
+  "generatedAt": "2026-07-18T18:29:48.960Z",
   "city": "la",
   "clubs": [
     {
@@ -185,32 +185,6 @@
   ],
   "errors": [],
   "events": [
-    {
-      "id": "worldstage:2026-06-02:west-african-conga-rhythms-and-beats",
-      "clubId": "worldstage",
-      "title": "West African Conga Rhythms and Beats",
-      "date": "2026-06-02",
-      "sets": [
-        "18:00"
-      ],
-      "url": "https://tockify.com/the.world.stage/detail/655/1780448400000",
-      "details": "Explore the intoxicating rhythms of Nigeria, Ghana, and the Ivory Coast with master drummer Najite Agindotan. Admission: $15 Suggested Donation",
-      "personnel": null,
-      "priceText": null
-    },
-    {
-      "id": "worldstage:2026-06-03:anansi-writers-workshop",
-      "clubId": "worldstage",
-      "title": "Anansi Writers Workshop",
-      "date": "2026-06-03",
-      "sets": [
-        "19:00"
-      ],
-      "url": "https://tockify.com/the.world.stage/detail/7/1780538400000",
-      "details": "The Anansi Writers Workshop was founded in 1990 by Kamau Daáood, Akilah Oliver, Nafis Nabawi and Anthony Lyons. In 1993, Michael Datcher initiated the developme",
-      "personnel": null,
-      "priceText": null
-    },
     {
       "id": "worldstage:2026-06-04:the-billy-higgins-instrumental-jam-session",
       "clubId": "worldstage",
@@ -1263,6 +1237,19 @@
       "priceText": null
     },
     {
+      "id": "worldstage:2026-07-12:world-stage-big-band",
+      "clubId": "worldstage",
+      "title": "World Stage Big Band",
+      "date": "2026-07-12",
+      "sets": [
+        "17:00"
+      ],
+      "url": "https://tockify.com/the.world.stage/detail/574/1783900800000",
+      "details": "Coordinated by Billy McCoy, this workshop goes through the decades of the past century of jazz development. The World Stage Big Band functions as a rehearsal ba",
+      "personnel": null,
+      "priceText": null
+    },
+    {
       "id": "bluenotela:2026-07-12:flying-lotus-with-live-band",
       "clubId": "bluenotela",
       "title": "Flying Lotus (with Live Band)",
@@ -1273,6 +1260,19 @@
       ],
       "url": "https://www.bluenotejazz.com/la/tm-event/flying-lotus/",
       "details": "Blue Note Los Angeles",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "worldstage:2026-07-12:the-rose-gales-vocal-jam-session",
+      "clubId": "worldstage",
+      "title": "The Rose Gales Vocal Jam Session",
+      "date": "2026-07-12",
+      "sets": [
+        "20:00"
+      ],
+      "url": "https://tockify.com/the.world.stage/detail/6/1783911600000",
+      "details": "Hosted by Rene Fisher. Located on the World Stage's enclosed patio. Masks and temperature checks required. 20 people excluding house band and host allowed insid",
       "personnel": null,
       "priceText": null
     },
@@ -1385,76 +1385,6 @@
       "priceText": null
     },
     {
-      "id": "samfirst:2026-07-16:kcrw-presents-third-thursdays-with-miles-lennox-quartet-with",
-      "clubId": "samfirst",
-      "title": "KCRW Presents: \"Third Thursdays\" with Miles Lennox Quartet with Nic Gelin, Nolan Nwachukwu & John Davis",
-      "date": "2026-07-16",
-      "sets": [
-        "19:30"
-      ],
-      "url": "https://www.samfirstbar.com/events/kcrw-presents-third-thursdays-with-miles-lennox-quartet-with-nic-gelin-nolan-nwachukwu-john-davis",
-      "details": "Pianist Miles Lennox brings his quartet back to Sam First, presenting new original music with an exciting and soulful group! Expect to hear a night of beautiful melodies, bold and creative improvisation, swing, and groove!",
-      "personnel": null,
-      "priceText": null
-    },
-    {
-      "id": "bakedpotato:2026-07-16:p-f-f-t",
-      "clubId": "bakedpotato",
-      "title": "P f f T",
-      "date": "2026-07-16",
-      "sets": [
-        "20:00",
-        "22:00"
-      ],
-      "url": "https://thebakedpotato.thundertix.com/events/266082",
-      "details": "The Music of BRAND X and More..",
-      "personnel": [
-        {
-          "name": "MIKE KENEALLY",
-          "instrument": "guitar/keys"
-        },
-        {
-          "name": "ANDREW SYNOWIEC",
-          "instrument": "guitar"
-        },
-        {
-          "name": "BRYON BELLER",
-          "instrument": "bass"
-        },
-        {
-          "name": "JONATHAN MOVER",
-          "instrument": "drums"
-        }
-      ],
-      "priceText": null
-    },
-    {
-      "id": "twentytwotwenty:2026-07-16:ex-tortion-fujioka-meantstreetz-senna-oliver",
-      "clubId": "twentytwotwenty",
-      "title": "Ex Tortion₈: Fujioka+Meantstreetz & Senna+Oliver",
-      "date": "2026-07-16",
-      "sets": [
-        "20:00"
-      ],
-      "url": "https://dice.fm/event/2w5evo-ex-tortion-fujiokameantstreetz-sennaoliver-16th-jul-2220-arts-archives-los-angeles-tickets",
-      "details": "Please join us for the eighth installment of Ex Tortion, featuring percussion and capoeira performance, presented by Diag0nal and pehrspace. This performance's participants include Dylan Fujioka (percussion) and Mike Meantstreetz (percussion), in collaborative performance with Martell Oliver (capoei",
-      "personnel": null,
-      "priceText": null
-    },
-    {
-      "id": "catalina:2026-07-16:garth-garcia-sings-the-classics-filipino-american-singer-son",
-      "clubId": "catalina",
-      "title": "GARTH GARCIA sings THE CLASSICS (Filipino-American Singer, Songwriter, and Producer)",
-      "date": "2026-07-16",
-      "sets": [
-        "20:30"
-      ],
-      "url": "https://catalinajazzclub.com/tm-event/garth-garcia-sings-the-classics/",
-      "details": "Doors @ Doors: 7:00 pm",
-      "personnel": null,
-      "priceText": null
-    },
-    {
       "id": "harvelles:2026-07-16:harvelle-s-presents",
       "clubId": "harvelles",
       "title": "HARVELLE'S PRESENTS",
@@ -1466,32 +1396,6 @@
       "details": null,
       "personnel": null,
       "priceText": null
-    },
-    {
-      "id": "vibrato:2026-07-16:paris-chansons",
-      "clubId": "vibrato",
-      "title": "Paris Chansons",
-      "date": "2026-07-16",
-      "sets": [
-        "22:30"
-      ],
-      "url": "https://www.vibratogrilljazz.com/music/tpnpgskfl44443c63d76raean6cjzn",
-      "details": "French music, with a global twist Show: 7:30pm Reserve Now",
-      "personnel": null,
-      "priceText": null
-    },
-    {
-      "id": "lacma:2026-07-17:robert-rodriguez-quartet",
-      "clubId": "lacma",
-      "title": "Robert Rodriguez Quartet",
-      "date": "2026-07-17",
-      "sets": [
-        "18:00"
-      ],
-      "url": "https://www.lacma.org/event/jazz-lacma-robert-rodriguez",
-      "details": "Free outdoor concert — Smidt Welcome Plaza",
-      "personnel": null,
-      "priceText": "Free"
     },
     {
       "id": "bluenotela:2026-07-17:inara-george-van-dyke-parks",
@@ -1506,85 +1410,6 @@
       "details": "Blue Note Los Angeles",
       "personnel": null,
       "priceText": null
-    },
-    {
-      "id": "mint:2026-07-17:paul-cornish",
-      "clubId": "mint",
-      "title": "Paul Cornish",
-      "date": "2026-07-17",
-      "sets": [
-        "19:00"
-      ],
-      "url": "https://themintla.com/listing/paul-cornish/",
-      "details": "Pianist Paul Cornish is one of the most exciting rising voices in modern jazz, blending lyrical piano work, adventurous improvisation, contemporary groove, and emotional storytelling...",
-      "personnel": null,
-      "priceText": "Tickets from $30.00"
-    },
-    {
-      "id": "samfirst:2026-07-17:larry-goldings-trio-with-david-piltch-joe-la-barbera",
-      "clubId": "samfirst",
-      "title": "Larry Goldings Trio with David Piltch & Joe La Barbera",
-      "date": "2026-07-17",
-      "sets": [
-        "19:30"
-      ],
-      "url": "https://www.samfirstbar.com/events/larry-goldings-trio-with-david-piltch-joe-la-barbera",
-      "details": "Larry Goldings, widely regarded as one of today's most iconic voices on both the piano and Hammond B-3 organ, is recognized for his long-standing collaborations with the likes of James Taylor, Maceo Parker, Madeleine Peyroux, John Scofield, Steve Gadd, Peter Bernstein & Bill Stewart.",
-      "personnel": null,
-      "priceText": null
-    },
-    {
-      "id": "twentytwotwenty:2026-07-17:sumarr-reading-series-d-az-hall-vangani-rhodes-delzompo",
-      "clubId": "twentytwotwenty",
-      "title": "SUMARR Reading Series: Díaz, Hall, Vangani, rhodes, Delzompo",
-      "date": "2026-07-17",
-      "sets": [
-        "19:30"
-      ],
-      "url": "https://dice.fm/event/2w58ma-sumarr-reading-series-daz-hall-vangani-rhodes-delzompo-17th-jul-2220-arts-archives-los-angeles-tickets",
-      "details": "Sumarr, a seasonal reading series curated and hosted by Diana Arterian, begins its next season with this exciting lineup: Óscar Moisés Díaz, Elizabeth Hall, Preeti Vangani and heidi andrea restrepo rhodes, with music by Dominic Delzompo. ∆ Óscar Moisés Díaz is a poet, artist, film and art curator, a",
-      "personnel": null,
-      "priceText": null
-    },
-    {
-      "id": "bakedpotato:2026-07-17:mitch-forman-real-allstars",
-      "clubId": "bakedpotato",
-      "title": "MITCH FORMAN REAL ALLSTARS",
-      "date": "2026-07-17",
-      "sets": [
-        "20:00",
-        "22:00"
-      ],
-      "url": "https://thebakedpotato.thundertix.com/events/265021",
-      "details": "MITCH FORMAN ...Hammond B3 / KEYS",
-      "personnel": null,
-      "priceText": null
-    },
-    {
-      "id": "catalina:2026-07-17:omar-sosa-quarteto-americanos-we-are-not-the-headliner-cd-re",
-      "clubId": "catalina",
-      "title": "OMAR SOSA QUARTETO AMERICANOS | \"We Are Not The Headliner\" CD Release Concert (7x Grammy Award-nominee)",
-      "date": "2026-07-17",
-      "sets": [
-        "20:30"
-      ],
-      "url": "https://catalinajazzclub.com/tm-event/omar-sosa-quarteto-americanos-cd-release-celebration-we-are-not-the-headliner/",
-      "details": "Doors @ Doors: 7:00 pm",
-      "personnel": null,
-      "priceText": null
-    },
-    {
-      "id": "mint:2026-07-17:ravi-campbell-quintet-adam-hersh-trio",
-      "clubId": "mint",
-      "title": "Ravi Campbell Quintet, Adam Hersh Trio",
-      "date": "2026-07-17",
-      "sets": [
-        "21:00"
-      ],
-      "url": "https://themintla.com/listing/ravi-campbell-quintet-adam-hersh/",
-      "details": "The Adam Hersh Trio presents original jazz fusion. Influenced by some of the most innovative minds in the genre—Chick Corea, Billy Childs, & Wayne Shorter.LA...",
-      "personnel": null,
-      "priceText": "Tickets from $20.00"
     },
     {
       "id": "harvelles:2026-07-17:western-revenge",
@@ -1837,7 +1662,7 @@
         "19:00"
       ],
       "url": "https://link.dice.fm/Q90d78b8373e",
-      "details": "Alex Wasily's very good™ mondays is LA's weekly powerhouse jazz jam you just can't miss. Enjoy featured performances by a rotating cast of slayers, GRAMMY winners, session legends, and special guests~ Performers TBA This is a night of improvised play among some of the most talented musicians in Los",
+      "details": "Alex Wasily's very good™ mondays is LA's weekly powerhouse jazz jam you just can't miss. Enjoy featured performances by Sam Barsh, Brian Colliez, Errol Cooney, Matty Taylor, and DJ Stepmom! This is a night of improvised play among some of the most talented musicians in Los Angeles. Mondays have but",
       "personnel": null,
       "priceText": null
     },
@@ -3175,6 +3000,19 @@
       "priceText": null
     },
     {
+      "id": "golddiggers:2026-08-03:very-good-mondays",
+      "clubId": "golddiggers",
+      "title": "very good mondays",
+      "date": "2026-08-03",
+      "sets": [
+        "19:00"
+      ],
+      "url": "https://link.dice.fm/X2016eeafd55",
+      "details": "Alex Wasily's very good™ mondays is LA's weekly powerhouse jazz jam you just can't miss. Enjoy featured performances by *Tristan Coppell, Aaron Jonik, Nick Campbell, Javier Santiago, Christian Euman, Andrew Renfrue,* and DJ sets by *Soosh*! This is a night of improvised play among some of the most t",
+      "personnel": null,
+      "priceText": null
+    },
+    {
       "id": "bakedpotato:2026-08-03:dechter-frank-segiel-shaw-quartet",
       "clubId": "bakedpotato",
       "title": "DECHTER / FRANK / SEGIEL / SHAW QUARTET",
@@ -3509,6 +3347,19 @@
       "priceText": null
     },
     {
+      "id": "twentytwotwenty:2026-08-07:the-windgrease-festival-full-festival-passes",
+      "clubId": "twentytwotwenty",
+      "title": "The Windgrease Festival: Full Festival Passes",
+      "date": "2026-08-07",
+      "sets": [
+        "19:00"
+      ],
+      "url": "https://dice.fm/event/dkdgpe-the-windgrease-festival-full-festival-passes-7th-aug-2220-arts-archives-los-angeles-tickets",
+      "details": "Full eight day festival pass for the inaugural Windgrease Festival, presented by Georgia Anne Muldrow, Mythscience, and Minaret Records: a week of experimental concerts and workshops in the battle for the creative soul of Los Angeles taking place from August 7–14 at 2220 Arts + Archives. This festiv",
+      "personnel": null,
+      "priceText": null
+    },
+    {
       "id": "samfirst:2026-08-07:nicole-mccabe-quartet-live-album-recording-for-sam-first-rec",
       "clubId": "samfirst",
       "title": "Nicole McCabe Quartet Live Album Recording for Sam First Records feat. Gerald Clayton, Justin Brown & Logan Kane",
@@ -3566,14 +3417,14 @@
       "priceText": null
     },
     {
-      "id": "twentytwotwenty:2026-08-07:windgrease-festival-windgreasers-sextet",
+      "id": "twentytwotwenty:2026-08-07:windgrease-festival-windgreasers-vocal-sextet",
       "clubId": "twentytwotwenty",
-      "title": "Windgrease Festival: Windgreasers Sextet",
+      "title": "Windgrease Festival: Windgreasers Vocal Sextet",
       "date": "2026-08-07",
       "sets": [
         "20:00"
       ],
-      "url": "https://dice.fm/event/wwmkdn-windgrease-festival-windgreasers-sextet-7th-aug-2220-arts-archives-los-angeles-tickets",
+      "url": "https://dice.fm/event/wwmkdn-windgrease-festival-windgreasers-vocal-sextet-7th-aug-2220-arts-archives-los-angeles-tickets",
       "details": "Six visionary vocalists bring “The Experimental Shondo” to life in an immersive, live compositional performance. Starring Georgia Anne Muldrow, Jimetta Rose, Chester Gregory, V.C.R. The Martian, Nadia Washington, Ogi Ifediora.",
       "personnel": null,
       "priceText": null
@@ -3630,6 +3481,19 @@
       "details": "Free outdoor concert — Smidt Welcome Plaza",
       "personnel": null,
       "priceText": "Free"
+    },
+    {
+      "id": "twentytwotwenty:2026-08-08:windgrease-festival-harmony-holiday-s-poetics-of-the-missing",
+      "clubId": "twentytwotwenty",
+      "title": "Windgrease Festival: Harmony Holiday’s Poetics of the Missing Black Notes",
+      "date": "2026-08-08",
+      "sets": [
+        "17:30"
+      ],
+      "url": "https://dice.fm/event/pywodw-windgrease-festival-harmony-holidays-poetics-of-the-missing-black-notes-8th-aug-2220-arts-archives-los-angeles-tickets",
+      "details": "The Windgrease Festival continues with Night Two, featuring a poetry concert with readings by Fred Moten, Baba Amde, Harmony Holiday and additional special guests, with synth accompaniment by Georgia Anne Muldrow. Followed by an oral history salon. Tickets come with a curated book from Holiday's arc",
+      "personnel": null,
+      "priceText": null
     },
     {
       "id": "bluenotela:2026-08-08:macy-gray",
@@ -3694,7 +3558,7 @@
         "21:00"
       ],
       "url": "https://dice.fm/event/2wqlp6-windgrease-festival-revolving-piano-concert-8th-aug-2220-arts-archives-los-angeles-tickets",
-      "details": "The Windgrease Festival continues with Night Two, featuring musical chairs and a piano summit in one. Three pianos await creativity; each movement will be 5 minutes. Featuring Alexis Lombre, Georgia Anne Muldrow, Josef Leimberg, Jamael Dean, Upper Reality + more.",
+      "details": "The Windgrease Festival continues with Night Two, featuring musical chairs and a piano summit in one. Three pianos await creativity; each movement will be 5 minutes. Featuring Alexis Lombre, Georgia Anne Muldrow, Josef Leimberg, Upper Reality + more.",
       "personnel": null,
       "priceText": null
     },
@@ -3788,6 +3652,19 @@
       "details": "A soul-stirring evening with 2x Grammy nominee Terry Steele, co-writer of “Here and Now,” celebrating Luther Vandross Show: 7:30pm Reserve Now",
       "personnel": null,
       "late": true,
+      "priceText": null
+    },
+    {
+      "id": "golddiggers:2026-08-10:very-good-mondays",
+      "clubId": "golddiggers",
+      "title": "very good mondays",
+      "date": "2026-08-10",
+      "sets": [
+        "19:00"
+      ],
+      "url": "https://link.dice.fm/N4c6ac1b30f2",
+      "details": "Alex Wasily's very good™ mondays is LA's weekly powerhouse jazz jam you just can't miss. Enjoy featured performances by Dominique Xavier, Greg Clark Jr, Joe Cleveland, Errol Cooney, and DJ sets by Teddy Roxpin. This is a night of improvised play among some of the most talented musicians in Los Angel",
+      "personnel": null,
       "priceText": null
     },
     {
@@ -3906,6 +3783,19 @@
       ],
       "url": "https://www.bluenotejazz.com/la/tm-event/stanley-jordan-trio/",
       "details": "Blue Note Los Angeles",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "samfirst:2026-08-12:nicolaus-gelin-quartet",
+      "clubId": "samfirst",
+      "title": "Nicolaus Gelin Quartet",
+      "date": "2026-08-12",
+      "sets": [
+        "19:30"
+      ],
+      "url": "https://www.samfirstbar.com/events/nicolaus-gelin-quartet",
+      "details": "Trumpeter and composer Nicolaus Gelin is a rising voice in contemporary jazz, known for his expressive sound and inventive writing. Blending tradition with a modern perspective, Gelin presents original music marked by creativity, connection, and bold musical exploration.",
       "personnel": null,
       "priceText": null
     },
@@ -4066,6 +3956,19 @@
       "priceText": null
     },
     {
+      "id": "samfirst:2026-08-14:roy-mccurdy-quartet-with-rickey-woodard-josh-nelson-mike-gur",
+      "clubId": "samfirst",
+      "title": "Roy McCurdy Quartet with Rickey Woodard, Josh Nelson & Mike Gurrola",
+      "date": "2026-08-14",
+      "sets": [
+        "19:30"
+      ],
+      "url": "https://www.samfirstbar.com/events/roy-mccurdy-quartet-with-rickey-woodard-josh-nelson-mike-gurrola",
+      "details": "Legendary drummer, USC Professor and Rochester Music Hall of Fame Inductee Roy McCurdy has worked with just about all the major jazz personalities, including Ella Fitzgerald, Sonny Rollins, Nancy Wilson, Cannonball Adderley, Betty Carter, Freddie Hubbard, Sarah Vaughan and Benny Golson.",
+      "personnel": null,
+      "priceText": null
+    },
+    {
       "id": "bakedpotato:2026-08-14:banned-from-utopia",
       "clubId": "bakedpotato",
       "title": "BANNED from UTOPIA",
@@ -4222,6 +4125,19 @@
       "priceText": "Tickets from $15.00"
     },
     {
+      "id": "catalina:2026-08-16:keith-washington-back-by-popular-demand",
+      "clubId": "catalina",
+      "title": "KEITH WASHINGTON: BACK BY POPULAR DEMAND!",
+      "date": "2026-08-16",
+      "sets": [
+        "19:30"
+      ],
+      "url": "https://catalinajazzclub.com/tm-event/keith-washington-back-by-popular-demand-2/",
+      "details": "Doors @ Doors: 6:00 pm",
+      "personnel": null,
+      "priceText": null
+    },
+    {
       "id": "bakedpotato:2026-08-16:yayennings-quartet",
       "clubId": "bakedpotato",
       "title": "YaYENNINGS QUARTET",
@@ -4282,6 +4198,19 @@
       "sets": [],
       "url": "https://www.vibratogrilljazz.com/music/ronee-martin-van-anh-nguyen-2",
       "details": "Soul vocalist Ronee Martin & virtuoso pianist Van-Anh Nguyen present a genre-bending show where classical meets soul unexpectedly Show: 7:30pm Reserve Now",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "golddiggers:2026-08-17:very-good-mondays",
+      "clubId": "golddiggers",
+      "title": "very good mondays",
+      "date": "2026-08-17",
+      "sets": [
+        "19:00"
+      ],
+      "url": "https://link.dice.fm/Wcd4f98f63c9",
+      "details": "Alex Wasily's very good™ mondays is LA's weekly powerhouse jazz jam you just can't miss. Enjoy featured performances by a rotating cast of slayers, GRAMMY winners, session legends, and special guests~ Performers TBA This is a night of improvised play among some of the most talented musicians in Los",
       "personnel": null,
       "priceText": null
     },
@@ -4521,6 +4450,19 @@
           "instrument": "guitar"
         }
       ],
+      "priceText": null
+    },
+    {
+      "id": "catalina:2026-08-20:jazz-legends-john-pizzarelli-trio-grammy-award-winning-jazz-",
+      "clubId": "catalina",
+      "title": "Jazz Legends: JOHN PIZZARELLI TRIO (Grammy Award-winning Jazz Guitarist and Vocalist)",
+      "date": "2026-08-20",
+      "sets": [
+        "20:30"
+      ],
+      "url": "https://catalinajazzclub.com/tm-event/jazz-legends-john-pizzarelli-trio-grammy-award-winning-jazz-guitarist-and-vocalist/",
+      "details": "Doors @ Doors: 7:00 pm",
+      "personnel": null,
       "priceText": null
     },
     {
@@ -4770,15 +4712,15 @@
       "priceText": null
     },
     {
-      "id": "harvelles:2026-08-24:all-star-jam-session-benefit",
-      "clubId": "harvelles",
-      "title": "ALL-STAR JAM SESSION BENEFIT",
+      "id": "golddiggers:2026-08-24:very-good-mondays",
+      "clubId": "golddiggers",
+      "title": "very good mondays",
       "date": "2026-08-24",
       "sets": [
-        "21:30"
+        "19:00"
       ],
-      "url": "https://santamonica.harvelles.com/events/139980",
-      "details": null,
+      "url": "https://link.dice.fm/M88ce5361eba",
+      "details": "Alex Wasily's very good™ mondays is LA's weekly powerhouse jazz jam you just can't miss. Enjoy featured performances by a rotating cast of slayers, GRAMMY winners, session legends, and special guests~ Performers TBA This is a night of improvised play among some of the most talented musicians in Los",
       "personnel": null,
       "priceText": null
     },
@@ -4787,7 +4729,10 @@
       "clubId": "bakedpotato",
       "title": "ANDY PRADO and ZONA 818",
       "date": "2026-08-24",
-      "sets": [],
+      "sets": [
+        "20:00",
+        "22:00"
+      ],
       "url": "https://thebakedpotato.thundertix.com/events/267940",
       "details": "$20.00 1ST Set INSIDE",
       "personnel": [
@@ -4819,6 +4764,19 @@
       "priceText": null
     },
     {
+      "id": "harvelles:2026-08-24:all-star-jam-session-benefit",
+      "clubId": "harvelles",
+      "title": "ALL-STAR JAM SESSION BENEFIT",
+      "date": "2026-08-24",
+      "sets": [
+        "21:30"
+      ],
+      "url": "https://santamonica.harvelles.com/events/139980",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
       "id": "bluenotela:2026-08-25:jeff-goldblum-the-mildred-snitzer-orchestra",
       "clubId": "bluenotela",
       "title": "Jeff Goldblum & The Mildred Snitzer Orchestra",
@@ -4833,6 +4791,20 @@
       "priceText": null
     },
     {
+      "id": "bakedpotato:2026-08-25:joey-delgado",
+      "clubId": "bakedpotato",
+      "title": "JOEY DELGADO",
+      "date": "2026-08-25",
+      "sets": [
+        "20:00",
+        "22:00"
+      ],
+      "url": "https://thebakedpotato.thundertix.com/events/267941",
+      "details": "$35.00 1ST Set INSIDE",
+      "personnel": null,
+      "priceText": null
+    },
+    {
       "id": "harvelles:2026-08-25:the-no-chasers",
       "clubId": "harvelles",
       "title": "THE NO CHASERS",
@@ -4842,17 +4814,6 @@
       ],
       "url": "https://santamonica.harvelles.com/events/139291",
       "details": null,
-      "personnel": null,
-      "priceText": null
-    },
-    {
-      "id": "bakedpotato:2026-08-25:joey-delgado",
-      "clubId": "bakedpotato",
-      "title": "JOEY DELGADO",
-      "date": "2026-08-25",
-      "sets": [],
-      "url": "https://thebakedpotato.thundertix.com/events/267941",
-      "details": "$35.00 1ST Set INSIDE",
       "personnel": null,
       "priceText": null
     },
@@ -4882,6 +4843,20 @@
       "priceText": null
     },
     {
+      "id": "bakedpotato:2026-08-26:think-x",
+      "clubId": "bakedpotato",
+      "title": "THINK : X",
+      "date": "2026-08-26",
+      "sets": [
+        "20:00",
+        "22:00"
+      ],
+      "url": "https://thebakedpotato.thundertix.com/events/267942",
+      "details": "​STEPHEN PERKINS …Drums from Jane’s",
+      "personnel": null,
+      "priceText": null
+    },
+    {
       "id": "harvelles:2026-08-26:come-sing-with-the-band-live-band-karaoke",
       "clubId": "harvelles",
       "title": "COME SING WITH the BAND - Live Band Karaoke",
@@ -4891,17 +4866,6 @@
       ],
       "url": "https://santamonica.harvelles.com/events/139985",
       "details": null,
-      "personnel": null,
-      "priceText": null
-    },
-    {
-      "id": "bakedpotato:2026-08-26:think-x",
-      "clubId": "bakedpotato",
-      "title": "THINK : X",
-      "date": "2026-08-26",
-      "sets": [],
-      "url": "https://thebakedpotato.thundertix.com/events/267942",
-      "details": "​STEPHEN PERKINS …Drums from Jane’s",
       "personnel": null,
       "priceText": null
     },
@@ -4935,7 +4899,10 @@
       "clubId": "bakedpotato",
       "title": "ANDREW SYNOWIEC BAND",
       "date": "2026-08-27",
-      "sets": [],
+      "sets": [
+        "20:00",
+        "22:00"
+      ],
       "url": "https://thebakedpotato.thundertix.com/events/267943",
       "details": "$35.00 1ST Set INSIDE",
       "personnel": null,
@@ -5006,6 +4973,20 @@
       "priceText": null
     },
     {
+      "id": "bakedpotato:2026-08-28:don-randi-quest",
+      "clubId": "bakedpotato",
+      "title": "Don Randi & Quest",
+      "date": "2026-08-28",
+      "sets": [
+        "20:00",
+        "22:00"
+      ],
+      "url": "https://thebakedpotato.thundertix.com/events/267944",
+      "details": "The Baked Potato's Original Jazz Master",
+      "personnel": null,
+      "priceText": null
+    },
+    {
       "id": "harvelles:2026-08-28:western-revenge",
       "clubId": "harvelles",
       "title": "WESTERN REVENGE",
@@ -5015,17 +4996,6 @@
       ],
       "url": "https://santamonica.harvelles.com/events/139990",
       "details": null,
-      "personnel": null,
-      "priceText": null
-    },
-    {
-      "id": "bakedpotato:2026-08-28:don-randi-quest",
-      "clubId": "bakedpotato",
-      "title": "Don Randi & Quest",
-      "date": "2026-08-28",
-      "sets": [],
-      "url": "https://thebakedpotato.thundertix.com/events/267944",
-      "details": "The Baked Potato's Original Jazz Master",
       "personnel": null,
       "priceText": null
     },
@@ -5058,7 +5028,10 @@
       "clubId": "bakedpotato",
       "title": "Don Randi & Quest",
       "date": "2026-08-29",
-      "sets": [],
+      "sets": [
+        "20:00",
+        "22:00"
+      ],
       "url": "https://thebakedpotato.thundertix.com/events/267945",
       "details": "The Baked Potato's Original Jazz Master",
       "personnel": null,
@@ -5102,6 +5075,20 @@
       "priceText": null
     },
     {
+      "id": "bakedpotato:2026-08-30:paul-peress-project",
+      "clubId": "bakedpotato",
+      "title": "PAUL PERESS PROJECT",
+      "date": "2026-08-30",
+      "sets": [
+        "20:00",
+        "22:00"
+      ],
+      "url": "https://thebakedpotato.thundertix.com/events/267946",
+      "details": "TOSHI YANAGI ..Guitar",
+      "personnel": null,
+      "priceText": null
+    },
+    {
       "id": "harvelles:2026-08-30:the-toledo-show",
       "clubId": "harvelles",
       "title": "THE TOLEDO SHOW",
@@ -5115,17 +5102,6 @@
       "priceText": null
     },
     {
-      "id": "bakedpotato:2026-08-30:paul-peress-project",
-      "clubId": "bakedpotato",
-      "title": "PAUL PERESS PROJECT",
-      "date": "2026-08-30",
-      "sets": [],
-      "url": "https://thebakedpotato.thundertix.com/events/267946",
-      "details": "TOSHI YANAGI ..Guitar",
-      "personnel": null,
-      "priceText": null
-    },
-    {
       "id": "vibrato:2026-08-30:freddie-ravel-sizzling-sensuous-salsa-soul",
       "clubId": "vibrato",
       "title": "Freddie Ravel • Sizzling Sensuous Salsa & Soul",
@@ -5133,6 +5109,33 @@
       "sets": [],
       "url": "https://www.vibratogrilljazz.com/music/freddie-ravel-sizzling-sensuous-salsa-soul-4",
       "details": "The Freddie Ravel Power Band is back! Latin, R&B, samba, salsa & romantic vibes to move your heart, soul and feet Show: 7:30pm Reserve Now",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "golddiggers:2026-08-31:very-good-mondays",
+      "clubId": "golddiggers",
+      "title": "very good mondays",
+      "date": "2026-08-31",
+      "sets": [
+        "19:00"
+      ],
+      "url": "https://link.dice.fm/y54140d0be47",
+      "details": "Alex Wasily's very good™ mondays is LA's weekly powerhouse jazz jam you just can't miss. Enjoy featured performances by a rotating cast of slayers, GRAMMY winners, session legends, and special guests~ Performers TBA This is a night of improvised play among some of the most talented musicians in Los",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "bakedpotato:2026-08-31:novak-hersh",
+      "clubId": "bakedpotato",
+      "title": "NOVAK / HERSH",
+      "date": "2026-08-31",
+      "sets": [
+        "20:00",
+        "22:00"
+      ],
+      "url": "https://thebakedpotato.thundertix.com/events/267947",
+      "details": "GARY NOVAK …Drums",
       "personnel": null,
       "priceText": null
     },
@@ -5150,13 +5153,16 @@
       "priceText": null
     },
     {
-      "id": "bakedpotato:2026-08-31:novak-hersh",
+      "id": "bakedpotato:2026-09-01:the-bbb-big-band-featuring-bernie-dresel",
       "clubId": "bakedpotato",
-      "title": "NOVAK / HERSH",
-      "date": "2026-08-31",
-      "sets": [],
-      "url": "https://thebakedpotato.thundertix.com/events/267947",
-      "details": "GARY NOVAK …Drums",
+      "title": "The BBB Big Band ​featuring: ​BERNIE DRESEL",
+      "date": "2026-09-01",
+      "sets": [
+        "20:00",
+        "22:00"
+      ],
+      "url": "https://thebakedpotato.thundertix.com/events/268005",
+      "details": "The BBB Big Band",
       "personnel": null,
       "priceText": null
     },
@@ -5174,24 +5180,30 @@
       "priceText": null
     },
     {
-      "id": "bakedpotato:2026-09-01:the-bbb-big-band-featuring-bernie-dresel",
-      "clubId": "bakedpotato",
-      "title": "The BBB Big Band ​featuring: ​BERNIE DRESEL",
-      "date": "2026-09-01",
-      "sets": [],
-      "url": "https://thebakedpotato.thundertix.com/events/268005",
-      "details": "The BBB Big Band",
-      "personnel": null,
-      "priceText": null
-    },
-    {
       "id": "bakedpotato:2026-09-02:tba",
       "clubId": "bakedpotato",
       "title": "TBA",
       "date": "2026-09-02",
-      "sets": [],
+      "sets": [
+        "20:00",
+        "22:00"
+      ],
       "url": "https://thebakedpotato.thundertix.com/events/268006",
       "details": "$25.00 1ST Set INSIDE",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "bakedpotato:2026-09-03:john-daversa-big-band",
+      "clubId": "bakedpotato",
+      "title": "JOHN DAVERSA BIG BAND",
+      "date": "2026-09-03",
+      "sets": [
+        "20:00",
+        "22:00"
+      ],
+      "url": "https://thebakedpotato.thundertix.com/events/268007",
+      "details": "John Daversa - Conductor, Trumpet and EVI",
       "personnel": null,
       "priceText": null
     },
@@ -5205,17 +5217,6 @@
       ],
       "url": "https://dice.fm/event/xeyqna-lightstruck-craig-baldwins-sonic-outlaws-3rd-sep-2220-arts-archives-los-angeles-tickets",
       "details": "Lightstruck presents *Sonic Outlaws* (1995) by Craig Baldwin, shot and edited by Bill Daniel. 16mm, bw & color, 87m. Preceded by: *Craig's Cutting Room Floor* (2011) by Linda Izcali Scobie, 16mm, bw & color, 1.5m ∆ As mass media gets ever massier, and as the unbidden tide of its content/sewage has r",
-      "personnel": null,
-      "priceText": null
-    },
-    {
-      "id": "bakedpotato:2026-09-03:john-daversa-big-band",
-      "clubId": "bakedpotato",
-      "title": "JOHN DAVERSA BIG BAND",
-      "date": "2026-09-03",
-      "sets": [],
-      "url": "https://thebakedpotato.thundertix.com/events/268007",
-      "details": "John Daversa - Conductor, Trumpet and EVI",
       "personnel": null,
       "priceText": null
     },
@@ -5237,7 +5238,10 @@
       "clubId": "bakedpotato",
       "title": "JOHN DAVERSA BIG BAND",
       "date": "2026-09-04",
-      "sets": [],
+      "sets": [
+        "20:00",
+        "22:00"
+      ],
       "url": "https://thebakedpotato.thundertix.com/events/268008",
       "details": "John Daversa - Conductor, Trumpet and EVI",
       "personnel": null,
@@ -5261,7 +5265,10 @@
       "clubId": "bakedpotato",
       "title": "JOHN DAVERSA BIG BAND",
       "date": "2026-09-05",
-      "sets": [],
+      "sets": [
+        "20:00",
+        "22:00"
+      ],
       "url": "https://thebakedpotato.thundertix.com/events/268009",
       "details": "John Daversa - Conductor, Trumpet and EVI",
       "personnel": null,
@@ -5272,9 +5279,25 @@
       "clubId": "bakedpotato",
       "title": "JOHN DAVERSA BIG BAND",
       "date": "2026-09-06",
-      "sets": [],
+      "sets": [
+        "20:00",
+        "22:00"
+      ],
       "url": "https://thebakedpotato.thundertix.com/events/268010",
       "details": "John Daversa - Conductor, Trumpet and EVI",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "golddiggers:2026-09-07:very-good-mondays",
+      "clubId": "golddiggers",
+      "title": "very good mondays",
+      "date": "2026-09-07",
+      "sets": [
+        "19:00"
+      ],
+      "url": "https://link.dice.fm/Y9c6f9e1a34b",
+      "details": "Alex Wasily's very good™ mondays is LA's weekly powerhouse jazz jam you just can't miss. Enjoy featured performances by a rotating cast of slayers, GRAMMY winners, session legends, and special guests~ Performers TBA This is a night of improvised play among some of the most talented musicians in Los",
       "personnel": null,
       "priceText": null
     },
@@ -5283,7 +5306,10 @@
       "clubId": "bakedpotato",
       "title": "DECHTER / FRANK / SEGIEL / SHAW QUARTET",
       "date": "2026-09-07",
-      "sets": [],
+      "sets": [
+        "20:00",
+        "22:00"
+      ],
       "url": "https://thebakedpotato.thundertix.com/events/268011",
       "details": "Jordon Segiel – Fender Rhoads",
       "personnel": [
@@ -5307,9 +5333,26 @@
       "clubId": "bakedpotato",
       "title": "ZANE CARNEY",
       "date": "2026-09-08",
-      "sets": [],
+      "sets": [
+        "20:00",
+        "22:00"
+      ],
       "url": "https://thebakedpotato.thundertix.com/events/268012",
       "details": "Zane Carney..Guitar",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "bakedpotato:2026-09-09:the-kinsey-sessions",
+      "clubId": "bakedpotato",
+      "title": "The KINSEY Sessions",
+      "date": "2026-09-09",
+      "sets": [
+        "20:00",
+        "22:00"
+      ],
+      "url": "https://thebakedpotato.thundertix.com/events/268014",
+      "details": "SCOTT KINSEY …KEYS",
       "personnel": null,
       "priceText": null
     },
@@ -5327,22 +5370,14 @@
       "priceText": null
     },
     {
-      "id": "bakedpotato:2026-09-09:the-kinsey-sessions",
-      "clubId": "bakedpotato",
-      "title": "The KINSEY Sessions",
-      "date": "2026-09-09",
-      "sets": [],
-      "url": "https://thebakedpotato.thundertix.com/events/268014",
-      "details": "SCOTT KINSEY …KEYS",
-      "personnel": null,
-      "priceText": null
-    },
-    {
       "id": "bakedpotato:2026-09-10:danny-janklow",
       "clubId": "bakedpotato",
       "title": "Danny Janklow",
       "date": "2026-09-10",
-      "sets": [],
+      "sets": [
+        "20:00",
+        "22:00"
+      ],
       "url": "https://thebakedpotato.thundertix.com/events/268015",
       "details": "$25.00 1ST Set INSIDE",
       "personnel": null,
@@ -5362,24 +5397,14 @@
       "priceText": "Free"
     },
     {
-      "id": "twentytwotwenty:2026-09-11:locust-live-spectral-record-release-show",
-      "clubId": "twentytwotwenty",
-      "title": "Locust Live: Spectral+ Record Release Show",
-      "date": "2026-09-11",
-      "sets": [
-        "20:00"
-      ],
-      "url": "https://dice.fm/event/2w5lg7-locust-live-spectral-record-release-show-11th-sep-2220-arts-archives-los-angeles-tickets",
-      "details": "One night only, Locust (Mark Van Hoen) celebrates a new album, *Spectral+*, with a performance on the 2220 main stage, presented by Pretty But Wicked. ∆ Locust, the project of British electronic composer and producer Mark Van Hoen, exists in the space between ambient music, IDM, and dream pop. Since",
-      "personnel": null,
-      "priceText": null
-    },
-    {
       "id": "bakedpotato:2026-09-11:david-garfield-and-friends",
       "clubId": "bakedpotato",
       "title": "DAVID GARFIELD and FRIENDS",
       "date": "2026-09-11",
-      "sets": [],
+      "sets": [
+        "20:00",
+        "22:00"
+      ],
       "url": "https://thebakedpotato.thundertix.com/events/268016",
       "details": "Plus special guests..",
       "personnel": [
@@ -5399,6 +5424,33 @@
       "priceText": null
     },
     {
+      "id": "twentytwotwenty:2026-09-11:locust-live-spectral-record-release-show",
+      "clubId": "twentytwotwenty",
+      "title": "Locust Live: Spectral+ Record Release Show",
+      "date": "2026-09-11",
+      "sets": [
+        "20:00"
+      ],
+      "url": "https://dice.fm/event/2w5lg7-locust-live-spectral-record-release-show-11th-sep-2220-arts-archives-los-angeles-tickets",
+      "details": "One night only, Locust (Mark Van Hoen) celebrates a new album, *Spectral+*, with a performance on the 2220 main stage, presented by Pretty But Wicked. ∆ Locust, the project of British electronic composer and producer Mark Van Hoen, exists in the space between ambient music, IDM, and dream pop. Since",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "bakedpotato:2026-09-12:thom-rotella",
+      "clubId": "bakedpotato",
+      "title": "THOM ROTELLA",
+      "date": "2026-09-12",
+      "sets": [
+        "20:00",
+        "22:00"
+      ],
+      "url": "https://thebakedpotato.thundertix.com/events/268017",
+      "details": "Lenny Castro …Percussion",
+      "personnel": null,
+      "priceText": null
+    },
+    {
       "id": "twentytwotwenty:2026-09-12:carla-dal-forno",
       "clubId": "twentytwotwenty",
       "title": "Carla dal Forno",
@@ -5408,17 +5460,6 @@
       ],
       "url": "https://dice.fm/event/k6dd68-carla-dal-forno-12th-sep-2220-arts-archives-los-angeles-tickets",
       "details": "2220 presents one night with Australian singer Carla dal Forno, featuring songs from her latest LP *Confession,* just released on Kallista Records. ~ “After a career spent spinning post-punk in Australian bands F Ingers and Tarcar, Carla dal Forno went solo to find her voice merging dreamy-pop ambia",
-      "personnel": null,
-      "priceText": null
-    },
-    {
-      "id": "bakedpotato:2026-09-12:thom-rotella",
-      "clubId": "bakedpotato",
-      "title": "THOM ROTELLA",
-      "date": "2026-09-12",
-      "sets": [],
-      "url": "https://thebakedpotato.thundertix.com/events/268017",
-      "details": "Lenny Castro …Percussion",
       "personnel": null,
       "priceText": null
     },
@@ -5453,9 +5494,25 @@
       "clubId": "bakedpotato",
       "title": "JASON HARNELL QUARTET",
       "date": "2026-09-13",
-      "sets": [],
+      "sets": [
+        "20:00",
+        "22:00"
+      ],
       "url": "https://thebakedpotato.thundertix.com/events/268018",
       "details": "$20.00 INSIDE SEATING",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "golddiggers:2026-09-14:very-good-mondays",
+      "clubId": "golddiggers",
+      "title": "very good mondays",
+      "date": "2026-09-14",
+      "sets": [
+        "19:00"
+      ],
+      "url": "https://link.dice.fm/De6868e4c47b",
+      "details": "Alex Wasily's very good™ mondays is LA's weekly powerhouse jazz jam you just can't miss. Enjoy featured performances by a rotating cast of slayers, GRAMMY winners, session legends, and special guests~ Performers TBA This is a night of improvised play among some of the most talented musicians in Los",
       "personnel": null,
       "priceText": null
     },
@@ -5477,7 +5534,10 @@
       "clubId": "bakedpotato",
       "title": "TBA",
       "date": "2026-09-14",
-      "sets": [],
+      "sets": [
+        "20:00",
+        "22:00"
+      ],
       "url": "https://thebakedpotato.thundertix.com/events/268019",
       "details": "$45.00 1ST SET INSIDE",
       "personnel": null,
@@ -5497,6 +5557,20 @@
       "priceText": null
     },
     {
+      "id": "bakedpotato:2026-09-15:tba",
+      "clubId": "bakedpotato",
+      "title": "TBA",
+      "date": "2026-09-15",
+      "sets": [
+        "20:00",
+        "22:00"
+      ],
+      "url": "https://thebakedpotato.thundertix.com/events/268020",
+      "details": "$45.00 1ST SET INSIDE",
+      "personnel": null,
+      "priceText": null
+    },
+    {
       "id": "zebulon:2026-09-15:ali",
       "clubId": "zebulon",
       "title": "ALI",
@@ -5510,22 +5584,14 @@
       "priceText": null
     },
     {
-      "id": "bakedpotato:2026-09-15:tba",
-      "clubId": "bakedpotato",
-      "title": "TBA",
-      "date": "2026-09-15",
-      "sets": [],
-      "url": "https://thebakedpotato.thundertix.com/events/268020",
-      "details": "$45.00 1ST SET INSIDE",
-      "personnel": null,
-      "priceText": null
-    },
-    {
       "id": "bakedpotato:2026-09-16:ruggiero-quartet",
       "clubId": "bakedpotato",
       "title": "RUGGIERO QUARTET",
       "date": "2026-09-16",
-      "sets": [],
+      "sets": [
+        "20:00",
+        "22:00"
+      ],
       "url": "https://thebakedpotato.thundertix.com/events/268021",
       "details": "$20.00 1ST SET INSIDE",
       "personnel": null,
@@ -5536,7 +5602,10 @@
       "clubId": "bakedpotato",
       "title": "Alex SKOLNICK",
       "date": "2026-09-17",
-      "sets": [],
+      "sets": [
+        "20:00",
+        "22:00"
+      ],
       "url": "https://thebakedpotato.thundertix.com/events/268022",
       "details": "ALEX SKOLNICK …GUITAR",
       "personnel": null,
@@ -5560,9 +5629,25 @@
       "clubId": "bakedpotato",
       "title": "RONNIE FOSTER TRIO",
       "date": "2026-09-18",
-      "sets": [],
+      "sets": [
+        "20:00",
+        "22:00"
+      ],
       "url": "https://thebakedpotato.thundertix.com/events/268023",
       "details": "Ronnie Foster …Hammond B3",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "twentytwotwenty:2026-09-18:negativland-sue-c-w-irene-moon",
+      "clubId": "twentytwotwenty",
+      "title": "Negativland + SUE-C w/ Irene Moon",
+      "date": "2026-09-18",
+      "sets": [
+        "20:00"
+      ],
+      "url": "https://dice.fm/event/oe8e3a-negativland-sue-c-w-irene-moon-18th-sep-2220-arts-archives-los-angeles-tickets",
+      "details": "We're thrilled to welcome back Negativland, presenting their new AV extravaganza SIGNIFICANTLY LESS DECEPTIVE with their long time visual collaborator, SUE-C, who will be there live and in person doing her hands-on thing. The opening act is the impossible-to-accurately-describe Irene Moon, who will",
       "personnel": null,
       "priceText": null
     },
@@ -5571,7 +5656,10 @@
       "clubId": "bakedpotato",
       "title": "PHILIP SAYCE",
       "date": "2026-09-19",
-      "sets": [],
+      "sets": [
+        "20:00",
+        "22:00"
+      ],
       "url": "https://thebakedpotato.thundertix.com/events/268024",
       "details": "BRYAN HEAD …DRUMS",
       "personnel": null,
@@ -5582,9 +5670,25 @@
       "clubId": "bakedpotato",
       "title": "JIM FOX GUITAR Hang",
       "date": "2026-09-20",
-      "sets": [],
+      "sets": [
+        "20:00",
+        "22:00"
+      ],
       "url": "https://thebakedpotato.thundertix.com/events/268025",
       "details": "$25.00 1ST SET INSIDE",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "golddiggers:2026-09-21:very-good-mondays",
+      "clubId": "golddiggers",
+      "title": "very good mondays",
+      "date": "2026-09-21",
+      "sets": [
+        "19:00"
+      ],
+      "url": "https://link.dice.fm/ta0b8e574173",
+      "details": "Alex Wasily's very good™ mondays is LA's weekly powerhouse jazz jam you just can't miss. Enjoy featured performances by a rotating cast of slayers, GRAMMY winners, session legends, and special guests~ Performers TBA This is a night of improvised play among some of the most talented musicians in Los",
       "personnel": null,
       "priceText": null
     },
@@ -5593,7 +5697,10 @@
       "clubId": "bakedpotato",
       "title": "ARTUR MENEZES",
       "date": "2026-09-21",
-      "sets": [],
+      "sets": [
+        "20:00",
+        "22:00"
+      ],
       "url": "https://thebakedpotato.thundertix.com/events/268026",
       "details": "$20.00 1ST SET INSIDE",
       "personnel": [
@@ -5621,8 +5728,42 @@
       "clubId": "bakedpotato",
       "title": "MIKE KENEALLY & BEER for DOLPHINS",
       "date": "2026-09-22",
-      "sets": [],
+      "sets": [
+        "20:00",
+        "22:00"
+      ],
       "url": "https://thebakedpotato.thundertix.com/events/268027",
+      "details": "$30.00 1ST SET INSIDE",
+      "personnel": [
+        {
+          "name": "Mike Keaneally",
+          "instrument": "guitar/keys/vocals"
+        },
+        {
+          "name": "Bryan Bellar",
+          "instrument": "bass"
+        },
+        {
+          "name": "Joe Travers",
+          "instrument": "drums"
+        },
+        {
+          "name": "Rick Mesullam",
+          "instrument": "guitar"
+        }
+      ],
+      "priceText": null
+    },
+    {
+      "id": "bakedpotato:2026-09-23:mike-keneally-beer-for-dolphins",
+      "clubId": "bakedpotato",
+      "title": "MIKE KENEALLY & BEER for DOLPHINS",
+      "date": "2026-09-23",
+      "sets": [
+        "20:00",
+        "22:00"
+      ],
+      "url": "https://thebakedpotato.thundertix.com/events/268028",
       "details": "$30.00 1ST SET INSIDE",
       "personnel": [
         {
@@ -5658,39 +5799,14 @@
       "priceText": null
     },
     {
-      "id": "bakedpotato:2026-09-23:mike-keneally-beer-for-dolphins",
-      "clubId": "bakedpotato",
-      "title": "MIKE KENEALLY & BEER for DOLPHINS",
-      "date": "2026-09-23",
-      "sets": [],
-      "url": "https://thebakedpotato.thundertix.com/events/268028",
-      "details": "$30.00 1ST SET INSIDE",
-      "personnel": [
-        {
-          "name": "Mike Keaneally",
-          "instrument": "guitar/keys/vocals"
-        },
-        {
-          "name": "Bryan Bellar",
-          "instrument": "bass"
-        },
-        {
-          "name": "Joe Travers",
-          "instrument": "drums"
-        },
-        {
-          "name": "Rick Mesullam",
-          "instrument": "guitar"
-        }
-      ],
-      "priceText": null
-    },
-    {
       "id": "bakedpotato:2026-09-24:stick-men",
       "clubId": "bakedpotato",
       "title": "STICK MEN",
       "date": "2026-09-24",
-      "sets": [],
+      "sets": [
+        "20:00",
+        "22:00"
+      ],
       "url": "https://thebakedpotato.thundertix.com/events/268029",
       "details": "TONY LEVIN …Chapman Stick",
       "personnel": null,
@@ -5723,6 +5839,20 @@
       "priceText": "Tickets from $15.00"
     },
     {
+      "id": "bakedpotato:2026-09-25:stick-men",
+      "clubId": "bakedpotato",
+      "title": "STICK MEN",
+      "date": "2026-09-25",
+      "sets": [
+        "20:00",
+        "22:00"
+      ],
+      "url": "https://thebakedpotato.thundertix.com/events/268030",
+      "details": "TONY LEVIN …Chapman Stick",
+      "personnel": null,
+      "priceText": null
+    },
+    {
       "id": "twentytwotwenty:2026-09-25:sababa-5",
       "clubId": "twentytwotwenty",
       "title": "Sababa 5",
@@ -5732,17 +5862,6 @@
       ],
       "url": "https://dice.fm/event/l8xolr-sababa-5-25th-sep-2220-arts-archives-los-angeles-tickets",
       "details": "Sababa 5 are a Paris-based band known for their hypnotic blend of Middle Eastern psychedelia, Mediterranean funk, and analog groove. Their sound fuses swirling organs, surf guitars, and irresistible rhythms into a style that feels both nostalgic and forward-looking — rooted in vintage tones, but alw",
-      "personnel": null,
-      "priceText": null
-    },
-    {
-      "id": "bakedpotato:2026-09-25:stick-men",
-      "clubId": "bakedpotato",
-      "title": "STICK MEN",
-      "date": "2026-09-25",
-      "sets": [],
-      "url": "https://thebakedpotato.thundertix.com/events/268030",
-      "details": "TONY LEVIN …Chapman Stick",
       "personnel": null,
       "priceText": null
     },
@@ -5764,7 +5883,10 @@
       "clubId": "bakedpotato",
       "title": "Don Randi &; Quest",
       "date": "2026-09-26",
-      "sets": [],
+      "sets": [
+        "20:00",
+        "22:00"
+      ],
       "url": "https://thebakedpotato.thundertix.com/events/268031",
       "details": "Don Randi On Keyboards",
       "personnel": null,
@@ -5788,9 +5910,25 @@
       "clubId": "bakedpotato",
       "title": "BASIC CABLE",
       "date": "2026-09-27",
-      "sets": [],
+      "sets": [
+        "20:00",
+        "22:00"
+      ],
       "url": "https://thebakedpotato.thundertix.com/events/268032",
       "details": "Jeff Babko …Music",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "golddiggers:2026-09-28:very-good-mondays",
+      "clubId": "golddiggers",
+      "title": "very good mondays",
+      "date": "2026-09-28",
+      "sets": [
+        "19:00"
+      ],
+      "url": "https://link.dice.fm/f32c9c212153",
+      "details": "Alex Wasily's very good™ mondays is LA's weekly powerhouse jazz jam you just can't miss. Enjoy featured performances by a rotating cast of slayers, GRAMMY winners, session legends, and special guests~ Performers TBA This is a night of improvised play among some of the most talented musicians in Los",
       "personnel": null,
       "priceText": null
     },
@@ -5799,7 +5937,10 @@
       "clubId": "bakedpotato",
       "title": "TBA",
       "date": "2026-09-28",
-      "sets": [],
+      "sets": [
+        "20:00",
+        "22:00"
+      ],
       "url": "https://thebakedpotato.thundertix.com/events/268033",
       "details": "$25.00 1ST SET INSIDE",
       "personnel": null,
@@ -5810,9 +5951,26 @@
       "clubId": "bakedpotato",
       "title": "THINK : X",
       "date": "2026-09-29",
-      "sets": [],
+      "sets": [
+        "20:00",
+        "22:00"
+      ],
       "url": "https://thebakedpotato.thundertix.com/events/268034",
       "details": "STEPHEN PERKINS …Drums from Jane’s",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "bakedpotato:2026-09-30:chef-dave-s-southern-rockin-blue-band",
+      "clubId": "bakedpotato",
+      "title": "CHEF DAVE’S SOUTHERN ROCKIN & BLUE Band",
+      "date": "2026-09-30",
+      "sets": [
+        "20:00",
+        "22:00"
+      ],
+      "url": "https://thebakedpotato.thundertix.com/events/268035",
+      "details": "TOSHI YANAGI …Guitar",
       "personnel": null,
       "priceText": null
     },
@@ -5843,24 +6001,30 @@
       "priceText": null
     },
     {
-      "id": "bakedpotato:2026-09-30:chef-dave-s-southern-rockin-blue-band",
-      "clubId": "bakedpotato",
-      "title": "CHEF DAVE’S SOUTHERN ROCKIN & BLUE Band",
-      "date": "2026-09-30",
-      "sets": [],
-      "url": "https://thebakedpotato.thundertix.com/events/268035",
-      "details": "TOSHI YANAGI …Guitar",
-      "personnel": null,
-      "priceText": null
-    },
-    {
       "id": "bakedpotato:2026-10-01:t-b-a",
       "clubId": "bakedpotato",
       "title": "T. B. A.",
       "date": "2026-10-01",
-      "sets": [],
+      "sets": [
+        "20:00",
+        "22:00"
+      ],
       "url": "https://thebakedpotato.thundertix.com/events/268036",
       "details": "$25.00 1ST SET INSIDE",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "bakedpotato:2026-10-02:allen-hinds-group",
+      "clubId": "bakedpotato",
+      "title": "ALLEN HINDS GROUP",
+      "date": "2026-10-02",
+      "sets": [
+        "20:00",
+        "22:00"
+      ],
+      "url": "https://thebakedpotato.thundertix.com/events/268037",
+      "details": "MATT RHODE …Keys",
       "personnel": null,
       "priceText": null
     },
@@ -5874,17 +6038,6 @@
       ],
       "url": "https://dice.fm/event/ryk7l5-xiu-xiu-eraserhead-xiu-xiu-2nd-oct-2220-arts-archives-los-angeles-tickets",
       "details": "Black Editions Presents two nights of *Eraserhead Xiu Xiu* Live In 2016, with the blessing of David Lynch and Angelo Badalamenti, Xiu Xiu released and toured the surprisingly successful album and concert, *Plays the Music of Twin Peaks*. Out of respect and deference to the beloved series, the band d",
-      "personnel": null,
-      "priceText": null
-    },
-    {
-      "id": "bakedpotato:2026-10-02:allen-hinds-group",
-      "clubId": "bakedpotato",
-      "title": "ALLEN HINDS GROUP",
-      "date": "2026-10-02",
-      "sets": [],
-      "url": "https://thebakedpotato.thundertix.com/events/268037",
-      "details": "MATT RHODE …Keys",
       "personnel": null,
       "priceText": null
     },
@@ -5954,24 +6107,14 @@
       "priceText": null
     },
     {
-      "id": "twentytwotwenty:2026-10-08:tp-dutchkiss-deep-glens-strangejane-slc",
-      "clubId": "twentytwotwenty",
-      "title": "tp Dutchkiss, deep glens, strangejane, SLC",
-      "date": "2026-10-08",
-      "sets": [
-        "20:00"
-      ],
-      "url": "https://dice.fm/event/v3xpd7-tp-dutchkiss-deep-glens-strangejane-slc-8th-oct-2220-arts-archives-los-angeles-tickets",
-      "details": "Late Breakfast is proud to present an evening of heady & diverse electronic music. Featuring IDM-informed sounds from LA’s own tp Dutchkiss & Minnesota’s deep glens, experimental compositions from strangejane, and prodigal son Stephen Lee Clark returns on visit from his new home of Chicago. ~ tp Dut",
-      "personnel": null,
-      "priceText": null
-    },
-    {
       "id": "bakedpotato:2026-10-09:jeff-lorber-fusion",
       "clubId": "bakedpotato",
       "title": "JEFF LORBER FUSION",
       "date": "2026-10-09",
-      "sets": [],
+      "sets": [
+        "20:00",
+        "22:00"
+      ],
       "url": "https://thebakedpotato.thundertix.com/events/268038",
       "details": "JEFF LORBER …KEYS/RHOADS",
       "personnel": null,
@@ -5987,6 +6130,20 @@
       ],
       "url": "https://link.dice.fm/dfcd367ccbd6",
       "details": "Casa Sueño (mike baggetta :: john herndon :: mike watt) Casa Sueño is a new band from guitarist Mike Baggetta (mssv, Psychic Temple), drummer John Herndon (Tortoise, Isotope 217) and bassist mike watt (Minutemen, Stooges). Formed in late 2025 to record their first 7-inch release House Of Dreams on N",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "bakedpotato:2026-10-10:jeff-lorber-fusion",
+      "clubId": "bakedpotato",
+      "title": "JEFF LORBER FUSION",
+      "date": "2026-10-10",
+      "sets": [
+        "20:00",
+        "22:00"
+      ],
+      "url": "https://thebakedpotato.thundertix.com/events/268039",
+      "details": "JEFF LORBER …KEYS/RHOADS",
       "personnel": null,
       "priceText": null
     },

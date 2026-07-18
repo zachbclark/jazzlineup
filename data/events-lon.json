@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-16T20:53:12.034Z",
+  "generatedAt": "2026-07-18T18:31:01.795Z",
   "city": "lon",
   "clubs": [
     {
@@ -117,32 +117,6 @@
       "priceText": null
     },
     {
-      "id": "vortex:2026-07-16:pete-wareham-friends",
-      "clubId": "vortex",
-      "title": "Pete Wareham & Friends",
-      "date": "2026-07-16",
-      "sets": [
-        "19:45"
-      ],
-      "url": "https://www.vortexjazz.co.uk/event/pete-wareham-friends/",
-      "details": null,
-      "personnel": [
-        {
-          "name": "Line-up: Peter Wareham",
-          "instrument": "tenor saxophone"
-        },
-        {
-          "name": "Dave Okumu",
-          "instrument": "guitar"
-        },
-        {
-          "name": "Sam Dixon",
-          "instrument": "bass guitar"
-        }
-      ],
-      "priceText": null
-    },
-    {
       "id": "club606:2026-07-16:tim-whitehead",
       "clubId": "club606",
       "title": "Tim Whitehead",
@@ -156,100 +130,6 @@
       "priceText": null
     },
     {
-      "id": "pizzaexpress:2026-07-16:jazz-up-the-80s-with-the-jay-rayner-sextet",
-      "clubId": "pizzaexpress",
-      "title": "Jazz Up the 80s with the Jay Rayner Sextet",
-      "date": "2026-07-16",
-      "sets": [
-        "20:00"
-      ],
-      "url": "https://www.pizzaexpresslive.com/whats-on/jazz-up-the-80s-with-the-jay-rayner-sextet-5",
-      "details": null,
-      "personnel": null,
-      "priceText": "£35"
-    },
-    {
-      "id": "ronnies:2026-07-16:eliane-elias",
-      "clubId": "ronnies",
-      "title": "Eliane Elias",
-      "date": "2026-07-16",
-      "sets": [],
-      "url": "https://www.ronniescotts.co.uk/find-a-show/eliane-elias",
-      "details": null,
-      "personnel": null,
-      "priceText": null
-    },
-    {
-      "id": "ronnies:2026-07-16:late-late-show-upstairs-with-ed-hogben",
-      "clubId": "ronnies",
-      "title": "Late Late Show Upstairs with Ed Hogben",
-      "date": "2026-07-16",
-      "sets": [],
-      "url": "https://www.ronniescotts.co.uk/find-a-show/ed-hogben",
-      "details": "Late Late Show Upstairs",
-      "personnel": null,
-      "priceText": null
-    },
-    {
-      "id": "ronnies:2026-07-16:late-late-show-with-alex-hitchcock",
-      "clubId": "ronnies",
-      "title": "Late Late Show with Alex Hitchcock",
-      "date": "2026-07-16",
-      "sets": [],
-      "url": "https://www.ronniescotts.co.uk/find-a-show/late-late-show-with-alex-hitchcock",
-      "details": "Late Late Show",
-      "personnel": null,
-      "priceText": null
-    },
-    {
-      "id": "pizzaexpress:2026-07-17:chris-ingham-s-rebop",
-      "clubId": "pizzaexpress",
-      "title": "Chris Ingham’s REBOP",
-      "date": "2026-07-17",
-      "sets": [
-        "13:00"
-      ],
-      "url": "https://www.pizzaexpresslive.com/whats-on/chris-inghams-rebop-play-miles-the-great-quintets",
-      "details": null,
-      "personnel": null,
-      "priceText": "£30"
-    },
-    {
-      "id": "vortex:2026-07-17:phillip-golub-alex-hitchcock-andrew-lisle",
-      "clubId": "vortex",
-      "title": "Phillip Golub/Alex Hitchcock/Andrew Lisle",
-      "date": "2026-07-17",
-      "sets": [
-        "19:45"
-      ],
-      "url": "https://www.vortexjazz.co.uk/event/phillip-golubalex-hitchcockandrew-lisle/",
-      "details": null,
-      "personnel": [
-        {
-          "name": "Line-up: Phillip Golub",
-          "instrument": "piano"
-        },
-        {
-          "name": "Alex Hitchcock",
-          "instrument": "tenor saxophone"
-        }
-      ],
-      "priceText": null
-    },
-    {
-      "id": "pizzaexpress:2026-07-17:laura-klain-trio",
-      "clubId": "pizzaexpress",
-      "title": "Laura Klain Trio",
-      "date": "2026-07-17",
-      "sets": [
-        "20:00"
-      ],
-      "url": "https://www.pizzaexpresslive.com/whats-on/laura-klain-trio",
-      "details": null,
-      "personnel": null,
-      "priceText": "£30"
-    },
-    {
       "id": "club606:2026-07-17:bruce-adams-art-themen",
       "clubId": "club606",
       "title": "Bruce Adams/Art Themen",
@@ -259,17 +139,6 @@
       ],
       "url": "https://www.606club.co.uk/events/view/bruce-adams-art-themen-2/",
       "details": "Bruce Adams has been a stalwart of the UK jazz scene for almost 50 years, performing with the likes of Harry Sweets Edison, Buddy Tate, Al Cohn and Benny Waters and is widely regarded as one of the finest mainstream cornet/trumpet players in Europe. Lately, Bruce has appeared regularly here at the C",
-      "personnel": null,
-      "priceText": null
-    },
-    {
-      "id": "ronnies:2026-07-17:late-late-electronic-with-nan-rizinni",
-      "clubId": "ronnies",
-      "title": "Late Late Electronic with Naná Rizinni",
-      "date": "2026-07-17",
-      "sets": [],
-      "url": "https://www.ronniescotts.co.uk/find-a-show/late-late-electronic-with-nana-rizinni",
-      "details": "Late Late Show",
       "personnel": null,
       "priceText": null
     },
@@ -416,15 +285,15 @@
       "priceText": null
     },
     {
-      "id": "vortex:2026-07-19:vortex-jam-session",
+      "id": "vortex:2026-07-19:cancelled-vortex-jam-session",
       "clubId": "vortex",
-      "title": "Vortex Jam Session",
+      "title": "[CANCELLED] Vortex Jam Session",
       "date": "2026-07-19",
       "sets": [
         "19:45"
       ],
       "url": "https://www.vortexjazz.co.uk/event/vortex-jam-session-10/",
-      "details": "Doors 7:45 PM, Music 8:15 PM House Band TBC About A weekly session on Sunday evenings, hosted by four of London’s finest: guitarist Nick Costley-White, Trumpeter Sean Gibbs, pianist Rick Simpson and tenor saxophonists and Riley Stone-Lonergan, each one hosting one session on rotation. If you’re an i",
+      "details": "This weeks Jam session is cancelled and will return next week",
       "personnel": null,
       "priceText": null
     },
@@ -612,6 +481,19 @@
       "sets": [],
       "url": "https://www.ronniescotts.co.uk/find-a-show/nikki-yeoh-jay-verma",
       "details": "Late Late Show",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "vortex:2026-07-23:downstairs-bar",
+      "clubId": "vortex",
+      "title": "DOWNSTAIRS BAR",
+      "date": "2026-07-23",
+      "sets": [
+        "17:00"
+      ],
+      "url": "https://www.vortexjazz.co.uk/event/downstairs-bar/",
+      "details": "OPENING TIMES 5 PM - 9 PM Join us for a drink looking out onto Gillett Square. Ticket holders for the gig upstairs get 20% off items, just show your ticket when ordering at the bar.",
       "personnel": null,
       "priceText": null
     },
@@ -1078,6 +960,19 @@
       "priceText": null
     },
     {
+      "id": "cafeoto:2026-07-29:valentina-magaletti-princess-diana-of-wales-florence",
+      "clubId": "cafeoto",
+      "title": "Valentina Magaletti + Princess Diana of Wales + Florence",
+      "date": "2026-07-29",
+      "sets": [
+        "19:30"
+      ],
+      "url": "https://www.cafeoto.co.uk/events/a-colourful-storm-10-years-2/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
       "id": "vortex:2026-07-29:leif-kaner-lidstr-m",
       "clubId": "vortex",
       "title": "Leif Kaner-Lidström",
@@ -1153,7 +1048,7 @@
       "personnel": [
         {
           "name": "Line-up: Gareth Lockrane",
-          "instrument": "flute, alto flute, bass flute,"
+          "instrument": "flute, alto flute, bass flute"
         },
         {
           "name": "Piccolo Tom Cawley",
@@ -1288,8 +1183,25 @@
         "22:30"
       ],
       "url": "https://www.vortexjazz.co.uk/event/vortex-lates-jesse-doniach/",
-      "details": "Doors 10:30 PM, Music 11:00 PM - 1 set of music Line-up: Jesse Doniach - Piano TBC About Jesse Doniach is a Hackney born pianist and graduate of Trinity Laban Conservatoire. An emerging voice in London’s vibrant jazz scene Jesse is active as bandleader and sideman. He has played at venues such as Ro",
-      "personnel": null,
+      "details": null,
+      "personnel": [
+        {
+          "name": "Line-up: Jesse Doniach",
+          "instrument": "piano"
+        },
+        {
+          "name": "Wilf Diamond",
+          "instrument": "trombone"
+        },
+        {
+          "name": "Josh Vadiveloo",
+          "instrument": "bass"
+        },
+        {
+          "name": "Sacha Harlan",
+          "instrument": "drums"
+        }
+      ],
       "priceText": null
     },
     {
@@ -1719,8 +1631,17 @@
         "18:45"
       ],
       "url": "https://www.vortexjazz.co.uk/event/the-downstairs-living-room-rebecka-edlunds-songs-for-harmonium/",
-      "details": "Doors 6:45 PM, Music 7:15 PM - 1 set of music Line-up: Rebecka Edlund - Vocals, harmonium & 12-string guitar Owen Spafford - Fiddle & pedals About Innovative vocalist Rebecka Edlund presents new material written for voice and harmonium alongside trailblazing fiddle player Owen Spafford. Swedish voca",
-      "personnel": null,
+      "details": null,
+      "personnel": [
+        {
+          "name": "Line-up: Rebecka Edlund",
+          "instrument": "vocals"
+        },
+        {
+          "name": "Owen Spafford",
+          "instrument": "fiddle"
+        }
+      ],
       "priceText": null
     },
     {
@@ -2425,6 +2346,40 @@
       "url": "https://thejazzcafe.com/event/the-best-of-george-benson/",
       "details": "Give Me The Night",
       "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "vortex:2026-08-22:rory-ingham-quintet-ft-maarten-combrink",
+      "clubId": "vortex",
+      "title": "Rory Ingham Quintet ft. Maarten Combrink",
+      "date": "2026-08-22",
+      "sets": [
+        "20:00"
+      ],
+      "url": "https://www.vortexjazz.co.uk/event/rory-ingham-quintet-ft-maarten-combrink/",
+      "details": null,
+      "personnel": [
+        {
+          "name": "Line-up: Rory Ingham",
+          "instrument": "trombone"
+        },
+        {
+          "name": "Maarten Combrink",
+          "instrument": "trombone"
+        },
+        {
+          "name": "Matt Carter",
+          "instrument": "piano"
+        },
+        {
+          "name": "Joe Lee",
+          "instrument": "bass"
+        },
+        {
+          "name": "Joe Dessauer",
+          "instrument": "drums"
+        }
+      ],
       "priceText": null
     },
     {
@@ -3154,6 +3109,32 @@
       "priceText": "£25"
     },
     {
+      "id": "pizzaexpress:2026-09-27:musicians-company-jazz",
+      "clubId": "pizzaexpress",
+      "title": "Musicians’ Company Jazz",
+      "date": "2026-09-27",
+      "sets": [
+        "19:30"
+      ],
+      "url": "https://www.pizzaexpresslive.com/whats-on/musicians-company-jazz",
+      "details": null,
+      "personnel": null,
+      "priceText": "£25"
+    },
+    {
+      "id": "pizzaexpress:2026-09-28:lucy-anne-daniels",
+      "clubId": "pizzaexpress",
+      "title": "Lucy-Anne Daniels",
+      "date": "2026-09-28",
+      "sets": [
+        "20:00"
+      ],
+      "url": "https://www.pizzaexpresslive.com/whats-on/lucyanne-daniels",
+      "details": null,
+      "personnel": null,
+      "priceText": "£25"
+    },
+    {
       "id": "jazzcafe:2026-09-28:josh-meader-trio",
       "clubId": "jazzcafe",
       "title": "Josh Meader Trio",
@@ -3163,6 +3144,32 @@
       "details": "Cutting-Edge Jazz Fusion",
       "personnel": null,
       "priceText": null
+    },
+    {
+      "id": "pizzaexpress:2026-09-29:the-pocket-ellington-ft-tony-kofi-alan-barnes",
+      "clubId": "pizzaexpress",
+      "title": "The Pocket Ellington ft. Tony Kofi & Alan Barnes",
+      "date": "2026-09-29",
+      "sets": [
+        "20:00"
+      ],
+      "url": "https://www.pizzaexpresslive.com/whats-on/the-pocket-ellington-feat-tony-kofi-alan-barnes",
+      "details": null,
+      "personnel": null,
+      "priceText": "£25"
+    },
+    {
+      "id": "pizzaexpress:2026-09-30:niklas-lukassen-still-waters",
+      "clubId": "pizzaexpress",
+      "title": "Niklas Lukassen 'Still Waters'",
+      "date": "2026-09-30",
+      "sets": [
+        "20:00"
+      ],
+      "url": "https://www.pizzaexpresslive.com/whats-on/niklas-lukassen-still-waters",
+      "details": null,
+      "personnel": null,
+      "priceText": "£35"
     },
     {
       "id": "jazzcafe:2026-10-02:geejay",
@@ -3480,6 +3487,17 @@
       "sets": [],
       "url": "https://www.ronniescotts.co.uk/find-a-show/late-late-show-upstairs-with-energy-exchange-records",
       "details": "Late Late Show Upstairs",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "jazzcafe:2026-11-28:toshiki-soejima",
+      "clubId": "jazzcafe",
+      "title": "Toshiki Soejima",
+      "date": "2026-11-28",
+      "sets": [],
+      "url": "https://thejazzcafe.com/event/toshiki-soejima/",
+      "details": "Japan's Neo-Soul Master",
       "personnel": null,
       "priceText": null
     },
