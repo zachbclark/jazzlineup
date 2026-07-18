@@ -1,0 +1,4062 @@
+{
+  "generatedAt": "2026-07-18T18:31:02.993Z",
+  "city": "bos",
+  "clubs": [
+    {
+      "id": "wallys",
+      "name": "Wally's Cafe Jazz Club",
+      "shortName": "Wally's",
+      "url": "https://wallyscafe.com",
+      "address": "427 Massachusetts Ave, Boston, MA 02118",
+      "city": "bos",
+      "borough": null,
+      "timezone": "America/New_York",
+      "neighborhood": "South End",
+      "color": "#e0524e"
+    },
+    {
+      "id": "scullers",
+      "name": "Scullers Jazz Club",
+      "shortName": "Scullers",
+      "url": "https://scullersjazz.com",
+      "address": "400 Soldiers Field Rd, Boston, MA 02134",
+      "city": "bos",
+      "borough": null,
+      "timezone": "America/New_York",
+      "neighborhood": "Allston",
+      "color": "#58a6e8"
+    },
+    {
+      "id": "regattabar",
+      "name": "Regattabar",
+      "shortName": "Regattabar",
+      "url": "https://www.regattabarjazz.com",
+      "address": "1 Bennett St (Charles Hotel), Cambridge, MA 02138",
+      "city": "bos",
+      "borough": null,
+      "timezone": "America/New_York",
+      "neighborhood": "Harvard Square",
+      "color": "#3fbfb0"
+    },
+    {
+      "id": "lilypad",
+      "name": "The Lilypad",
+      "shortName": "Lilypad",
+      "url": "https://www.lilypadinman.com",
+      "address": "1353 Cambridge St, Cambridge, MA 02139",
+      "city": "bos",
+      "borough": null,
+      "timezone": "America/New_York",
+      "neighborhood": "Inman Square",
+      "color": "#8fd45a"
+    },
+    {
+      "id": "madmonkfish",
+      "name": "The Mad Monkfish",
+      "shortName": "Mad Monkfish",
+      "url": "https://www.themadmonkfish.com",
+      "address": "524 Massachusetts Ave, Cambridge, MA 02139",
+      "city": "bos",
+      "borough": null,
+      "timezone": "America/New_York",
+      "neighborhood": "Central Square",
+      "color": "#f0a02e"
+    },
+    {
+      "id": "beehive",
+      "name": "The Beehive",
+      "shortName": "Beehive",
+      "url": "https://www.beehiveboston.com",
+      "address": "541 Tremont St, Boston, MA 02116",
+      "city": "bos",
+      "borough": null,
+      "timezone": "America/New_York",
+      "neighborhood": "South End",
+      "color": "#f5cd4f"
+    }
+  ],
+  "errors": [],
+  "events": [
+    {
+      "id": "lilypad:2026-07-07:bevan-manson-trio-ft-allan-chase",
+      "clubId": "lilypad",
+      "title": "Bevan Manson Trio ft. Allan Chase",
+      "date": "2026-07-07",
+      "sets": [
+        "19:00"
+      ],
+      "url": "https://www.lilypadinman.com/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "lilypad:2026-07-08:free-lunchtime-concerts",
+      "clubId": "lilypad",
+      "title": "Free Lunchtime Concerts",
+      "date": "2026-07-08",
+      "sets": [
+        "12:00"
+      ],
+      "url": "https://www.lilypadinman.com/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "lilypad:2026-07-08:tag-trio",
+      "clubId": "lilypad",
+      "title": "TAG Trio",
+      "date": "2026-07-08",
+      "sets": [
+        "18:50"
+      ],
+      "url": "https://www.lilypadinman.com/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "lilypad:2026-07-08:jesse-gallagher-steve-fell",
+      "clubId": "lilypad",
+      "title": "Jesse Gallagher + Steve Fell",
+      "date": "2026-07-08",
+      "sets": [
+        "20:15"
+      ],
+      "url": "https://www.lilypadinman.com/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "lilypad:2026-07-09:free-lunchtime-concerts",
+      "clubId": "lilypad",
+      "title": "Free Lunchtime Concerts",
+      "date": "2026-07-09",
+      "sets": [
+        "12:00"
+      ],
+      "url": "https://www.lilypadinman.com/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "lilypad:2026-07-09:sophie-wellington-album-release-square-dance",
+      "clubId": "lilypad",
+      "title": "Sophie Wellington Album Release + Square Dance!",
+      "date": "2026-07-09",
+      "sets": [
+        "19:30"
+      ],
+      "url": "https://www.lilypadinman.com/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "lilypad:2026-07-09:h2-live-the-lilypad",
+      "clubId": "lilypad",
+      "title": "h2 Live @ The Lilypad",
+      "date": "2026-07-09",
+      "sets": [
+        "22:00"
+      ],
+      "url": "https://www.lilypadinman.com/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "lilypad:2026-07-10:free-lunchtime-concerts-r-g-gallagher",
+      "clubId": "lilypad",
+      "title": "Free Lunchtime Concerts ~ R. G. Gallagher",
+      "date": "2026-07-10",
+      "sets": [
+        "12:00"
+      ],
+      "url": "https://www.lilypadinman.com/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "lilypad:2026-07-10:lilypad-art-jam",
+      "clubId": "lilypad",
+      "title": "LILYPAD ART JAM",
+      "date": "2026-07-10",
+      "sets": [
+        "13:00"
+      ],
+      "url": "https://www.lilypadinman.com/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "lilypad:2026-07-10:hooley-hour",
+      "clubId": "lilypad",
+      "title": "Hooley Hour",
+      "date": "2026-07-10",
+      "sets": [
+        "17:00"
+      ],
+      "url": "https://www.lilypadinman.com/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "lilypad:2026-07-10:youbet",
+      "clubId": "lilypad",
+      "title": "youbet",
+      "date": "2026-07-10",
+      "sets": [
+        "19:30"
+      ],
+      "url": "https://www.lilypadinman.com/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "lilypad:2026-07-11:hatha-yoga-w-live-music",
+      "clubId": "lilypad",
+      "title": "Hatha Yoga w/ Live Music",
+      "date": "2026-07-11",
+      "sets": [
+        "12:00"
+      ],
+      "url": "https://www.lilypadinman.com/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "lilypad:2026-07-11:homefried-valentines",
+      "clubId": "lilypad",
+      "title": "Homefried Valentines",
+      "date": "2026-07-11",
+      "sets": [
+        "17:00"
+      ],
+      "url": "https://www.lilypadinman.com/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "lilypad:2026-07-11:cousin-greg",
+      "clubId": "lilypad",
+      "title": "Cousin Greg",
+      "date": "2026-07-11",
+      "sets": [
+        "19:30"
+      ],
+      "url": "https://www.lilypadinman.com/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "lilypad:2026-07-12:finger-foods",
+      "clubId": "lilypad",
+      "title": "Finger Foods",
+      "date": "2026-07-12",
+      "sets": [
+        "19:00"
+      ],
+      "url": "https://www.lilypadinman.com/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "lilypad:2026-07-13:luther-gray",
+      "clubId": "lilypad",
+      "title": "Luther Gray",
+      "date": "2026-07-13",
+      "sets": [
+        "19:00"
+      ],
+      "url": "https://www.lilypadinman.com/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "lilypad:2026-07-13:jerry-bergonzi-quartet",
+      "clubId": "lilypad",
+      "title": "Jerry Bergonzi Quartet",
+      "date": "2026-07-13",
+      "sets": [
+        "20:30"
+      ],
+      "url": "https://www.lilypadinman.com/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "lilypad:2026-07-13:the-fringe",
+      "clubId": "lilypad",
+      "title": "The Fringe",
+      "date": "2026-07-13",
+      "sets": [
+        "22:00"
+      ],
+      "url": "https://www.lilypadinman.com/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "lilypad:2026-07-14:free-lunchtime-concerts",
+      "clubId": "lilypad",
+      "title": "Free Lunchtime Concerts",
+      "date": "2026-07-14",
+      "sets": [
+        "12:00"
+      ],
+      "url": "https://www.lilypadinman.com/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "lilypad:2026-07-14:point-01-percent",
+      "clubId": "lilypad",
+      "title": "Point 01 Percent",
+      "date": "2026-07-14",
+      "sets": [
+        "19:30"
+      ],
+      "url": "https://www.lilypadinman.com/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "lilypad:2026-07-14:deadword-theatre-co-presents-naked-sara-no-nudity-by-sara-ea",
+      "clubId": "lilypad",
+      "title": "Deadword Theatre Co. Presents: naked SARA (no nudity) by Sara Eakman",
+      "date": "2026-07-14",
+      "sets": [
+        "22:30"
+      ],
+      "url": "https://www.lilypadinman.com/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "lilypad:2026-07-15:free-lunchtime-concerts",
+      "clubId": "lilypad",
+      "title": "Free Lunchtime Concerts",
+      "date": "2026-07-15",
+      "sets": [
+        "12:00"
+      ],
+      "url": "https://www.lilypadinman.com/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "lilypad:2026-07-15:jesse-gallagher-steve-fell",
+      "clubId": "lilypad",
+      "title": "Jesse Gallagher + Steve Fell",
+      "date": "2026-07-15",
+      "sets": [
+        "19:00"
+      ],
+      "url": "https://www.lilypadinman.com/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "lilypad:2026-07-15:gill-aharon-trio",
+      "clubId": "lilypad",
+      "title": "Gill Aharon Trio",
+      "date": "2026-07-15",
+      "sets": [
+        "20:15"
+      ],
+      "url": "https://www.lilypadinman.com/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "lilypad:2026-07-16:free-lunchtime-concerts",
+      "clubId": "lilypad",
+      "title": "Free Lunchtime Concerts",
+      "date": "2026-07-16",
+      "sets": [
+        "12:00"
+      ],
+      "url": "https://www.lilypadinman.com/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "lilypad:2026-07-16:the-nicolas-hensal-quartet",
+      "clubId": "lilypad",
+      "title": "The Nicolas Hensal Quartet",
+      "date": "2026-07-16",
+      "sets": [
+        "22:00"
+      ],
+      "url": "https://www.lilypadinman.com/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "madmonkfish:2026-07-16:midnight-at-the-mad-monkfish-w-mikayla-shirley",
+      "clubId": "madmonkfish",
+      "title": "Midnight at the Mad Monkfish w/Mikayla Shirley",
+      "date": "2026-07-16",
+      "sets": [
+        "00:00"
+      ],
+      "url": "https://www.themadmonkfish.com/event/717-midnight-at-the-mad-monkfish-wmikayla-shirley-12-1am/",
+      "details": null,
+      "personnel": null,
+      "late": true,
+      "priceText": null
+    },
+    {
+      "id": "lilypad:2026-07-17:free-lunchtime-concerts-r-g-gallagher",
+      "clubId": "lilypad",
+      "title": "Free Lunchtime Concerts ~ R. G. Gallagher",
+      "date": "2026-07-17",
+      "sets": [
+        "12:00"
+      ],
+      "url": "https://www.lilypadinman.com/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "lilypad:2026-07-17:hooley-hour",
+      "clubId": "lilypad",
+      "title": "Hooley Hour",
+      "date": "2026-07-17",
+      "sets": [
+        "17:00"
+      ],
+      "url": "https://www.lilypadinman.com/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "madmonkfish:2026-07-17:the-midnight-hour-w-camila-quintero",
+      "clubId": "madmonkfish",
+      "title": "The Midnight Hour w/Camila Quintero",
+      "date": "2026-07-17",
+      "sets": [
+        "00:00"
+      ],
+      "url": "https://www.themadmonkfish.com/event/718-the-midnight-hour-wcamila-quintero-12-1am/",
+      "details": null,
+      "personnel": null,
+      "late": true,
+      "priceText": null
+    },
+    {
+      "id": "beehive:2026-07-18:live-music-weekend-brunch",
+      "clubId": "beehive",
+      "title": "Live Music Weekend Brunch",
+      "date": "2026-07-18",
+      "sets": [
+        "10:00"
+      ],
+      "url": "https://www.beehiveboston.com/calendar",
+      "details": "Live jazz with brunch, 10am to 2pm.",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "lilypad:2026-07-18:hatha-yoga-w-live-music",
+      "clubId": "lilypad",
+      "title": "Hatha Yoga w/ Live Music",
+      "date": "2026-07-18",
+      "sets": [
+        "12:00"
+      ],
+      "url": "https://www.lilypadinman.com/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "lilypad:2026-07-18:private-event",
+      "clubId": "lilypad",
+      "title": "** Private Event **",
+      "date": "2026-07-18",
+      "sets": [
+        "17:00"
+      ],
+      "url": "https://www.lilypadinman.com/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "wallys:2026-07-18:wally-s-jam-session",
+      "clubId": "wallys",
+      "title": "Wally's Jam Session",
+      "date": "2026-07-18",
+      "sets": [
+        "19:00"
+      ],
+      "url": "https://wallyscafe.com",
+      "details": "Berklee kids trade choruses with big band veterans. Bring your horn, sign the list. Tue thru Sat, 7 to 9.",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "wallys:2026-07-18:night-set-at-wally-s",
+      "clubId": "wallys",
+      "title": "Night Set at Wally's",
+      "date": "2026-07-18",
+      "sets": [
+        "21:00"
+      ],
+      "url": "https://wallyscafe.com",
+      "details": "The pros take over, three feet from the bell of the horn, till midnight. Nightly since 1947.",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "madmonkfish:2026-07-18:jeff-stout-quartet",
+      "clubId": "madmonkfish",
+      "title": "Jeff Stout Quartet",
+      "date": "2026-07-18",
+      "sets": [],
+      "url": "https://www.themadmonkfish.com/event/718-jeff-stout-quartet/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "madmonkfish:2026-07-18:late-night-w-matt-stavrakas-jam-session",
+      "clubId": "madmonkfish",
+      "title": "Late Night w/Matt Stavrakas Jam Session",
+      "date": "2026-07-18",
+      "sets": [],
+      "url": "https://www.themadmonkfish.com/event/718-late-night-wmatt-stavrakas-jam-session/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "beehive:2026-07-19:live-music-weekend-brunch",
+      "clubId": "beehive",
+      "title": "Live Music Weekend Brunch",
+      "date": "2026-07-19",
+      "sets": [
+        "10:00"
+      ],
+      "url": "https://www.beehiveboston.com/calendar",
+      "details": "Live jazz with brunch, 10am to 2pm.",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "lilypad:2026-07-19:allan-chase-s-jazz-impressions-of-brazil",
+      "clubId": "lilypad",
+      "title": "Allan Chase’s Jazz Impressions of Brazil",
+      "date": "2026-07-19",
+      "sets": [
+        "18:00"
+      ],
+      "url": "https://www.lilypadinman.com/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "madmonkfish:2026-07-19:jazz-vocal-jam-session-feat-teddy-horangic-3pm",
+      "clubId": "madmonkfish",
+      "title": "Jazz Vocal Jam Session feat. Teddy Horangic (3pm-",
+      "date": "2026-07-19",
+      "sets": [
+        "18:00"
+      ],
+      "url": "https://www.themadmonkfish.com/event/719-jazz-vocal-jam-session-feat-teddy-horangic-3pm-6pm/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "beehive:2026-07-19:blues-of-sunday-bruce-bears-friends",
+      "clubId": "beehive",
+      "title": "Blues of Sunday: Bruce Bears & Friends",
+      "date": "2026-07-19",
+      "sets": [
+        "19:30"
+      ],
+      "url": "https://www.beehiveboston.com/calendar",
+      "details": "The standing Sunday residency on the Beehive stage.",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "lilypad:2026-07-19:joe-hunt-group",
+      "clubId": "lilypad",
+      "title": "Joe Hunt Group",
+      "date": "2026-07-19",
+      "sets": [
+        "20:00"
+      ],
+      "url": "https://www.lilypadinman.com/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "wallys:2026-07-19:night-set-at-wally-s",
+      "clubId": "wallys",
+      "title": "Night Set at Wally's",
+      "date": "2026-07-19",
+      "sets": [
+        "21:00"
+      ],
+      "url": "https://wallyscafe.com",
+      "details": "The pros take over, three feet from the bell of the horn, till midnight. Nightly since 1947.",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "madmonkfish:2026-07-19:mike-turk-trio",
+      "clubId": "madmonkfish",
+      "title": "Mike Turk Trio",
+      "date": "2026-07-19",
+      "sets": [],
+      "url": "https://www.themadmonkfish.com/event/719-mike-turk-trio/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "lilypad:2026-07-20:adventure-time-trio",
+      "clubId": "lilypad",
+      "title": "Adventure Time Trio",
+      "date": "2026-07-20",
+      "sets": [
+        "19:00"
+      ],
+      "url": "https://www.lilypadinman.com/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "lilypad:2026-07-20:jerry-bergonzi-quartet",
+      "clubId": "lilypad",
+      "title": "Jerry Bergonzi Quartet",
+      "date": "2026-07-20",
+      "sets": [
+        "20:30"
+      ],
+      "url": "https://www.lilypadinman.com/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "wallys:2026-07-20:night-set-at-wally-s",
+      "clubId": "wallys",
+      "title": "Night Set at Wally's",
+      "date": "2026-07-20",
+      "sets": [
+        "21:00"
+      ],
+      "url": "https://wallyscafe.com",
+      "details": "The pros take over, three feet from the bell of the horn, till midnight. Nightly since 1947.",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "lilypad:2026-07-20:the-fringe",
+      "clubId": "lilypad",
+      "title": "The Fringe",
+      "date": "2026-07-20",
+      "sets": [
+        "22:00"
+      ],
+      "url": "https://www.lilypadinman.com/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "lilypad:2026-07-21:free-lunchtime-concerts",
+      "clubId": "lilypad",
+      "title": "Free Lunchtime Concerts",
+      "date": "2026-07-21",
+      "sets": [
+        "12:00"
+      ],
+      "url": "https://www.lilypadinman.com/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "wallys:2026-07-21:wally-s-jam-session",
+      "clubId": "wallys",
+      "title": "Wally's Jam Session",
+      "date": "2026-07-21",
+      "sets": [
+        "19:00"
+      ],
+      "url": "https://wallyscafe.com",
+      "details": "Berklee kids trade choruses with big band veterans. Bring your horn, sign the list. Tue thru Sat, 7 to 9.",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "wallys:2026-07-21:night-set-at-wally-s",
+      "clubId": "wallys",
+      "title": "Night Set at Wally's",
+      "date": "2026-07-21",
+      "sets": [
+        "21:00"
+      ],
+      "url": "https://wallyscafe.com",
+      "details": "The pros take over, three feet from the bell of the horn, till midnight. Nightly since 1947.",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "lilypad:2026-07-22:free-lunchtime-concerts",
+      "clubId": "lilypad",
+      "title": "Free Lunchtime Concerts",
+      "date": "2026-07-22",
+      "sets": [
+        "12:00"
+      ],
+      "url": "https://www.lilypadinman.com/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "wallys:2026-07-22:wally-s-jam-session",
+      "clubId": "wallys",
+      "title": "Wally's Jam Session",
+      "date": "2026-07-22",
+      "sets": [
+        "19:00"
+      ],
+      "url": "https://wallyscafe.com",
+      "details": "Berklee kids trade choruses with big band veterans. Bring your horn, sign the list. Tue thru Sat, 7 to 9.",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "madmonkfish:2026-07-22:yulia-musayelyan-quartet",
+      "clubId": "madmonkfish",
+      "title": "Yulia Musayelyan Quartet",
+      "date": "2026-07-22",
+      "sets": [
+        "19:00"
+      ],
+      "url": "https://www.themadmonkfish.com/event/722-yulia-musayelyan-quartet-7pm-mad-monkfish-concert-series/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "lilypad:2026-07-22:gill-aharon-trio",
+      "clubId": "lilypad",
+      "title": "Gill Aharon Trio",
+      "date": "2026-07-22",
+      "sets": [
+        "20:15"
+      ],
+      "url": "https://www.lilypadinman.com/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "wallys:2026-07-22:night-set-at-wally-s",
+      "clubId": "wallys",
+      "title": "Night Set at Wally's",
+      "date": "2026-07-22",
+      "sets": [
+        "21:00"
+      ],
+      "url": "https://wallyscafe.com",
+      "details": "The pros take over, three feet from the bell of the horn, till midnight. Nightly since 1947.",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "lilypad:2026-07-23:free-lunchtime-concerts",
+      "clubId": "lilypad",
+      "title": "Free Lunchtime Concerts",
+      "date": "2026-07-23",
+      "sets": [
+        "12:00"
+      ],
+      "url": "https://www.lilypadinman.com/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "wallys:2026-07-23:wally-s-jam-session",
+      "clubId": "wallys",
+      "title": "Wally's Jam Session",
+      "date": "2026-07-23",
+      "sets": [
+        "19:00"
+      ],
+      "url": "https://wallyscafe.com",
+      "details": "Berklee kids trade choruses with big band veterans. Bring your horn, sign the list. Tue thru Sat, 7 to 9.",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "lilypad:2026-07-23:in-use-ssa-linn-high-traffic",
+      "clubId": "lilypad",
+      "title": "in use / ssa linn / high traffic",
+      "date": "2026-07-23",
+      "sets": [
+        "19:00"
+      ],
+      "url": "https://www.lilypadinman.com/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "madmonkfish:2026-07-23:russ-gershon-trio",
+      "clubId": "madmonkfish",
+      "title": "Russ Gershon Trio",
+      "date": "2026-07-23",
+      "sets": [
+        "19:00"
+      ],
+      "url": "https://www.themadmonkfish.com/event/723-russ-gershon-trio-7pm-mad-monkfish-concert-series/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "wallys:2026-07-23:night-set-at-wally-s",
+      "clubId": "wallys",
+      "title": "Night Set at Wally's",
+      "date": "2026-07-23",
+      "sets": [
+        "21:00"
+      ],
+      "url": "https://wallyscafe.com",
+      "details": "The pros take over, three feet from the bell of the horn, till midnight. Nightly since 1947.",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "madmonkfish:2026-07-23:the-midnight-hour-w-mikayla-shirley",
+      "clubId": "madmonkfish",
+      "title": "The Midnight Hour w/Mikayla Shirley",
+      "date": "2026-07-23",
+      "sets": [
+        "00:00"
+      ],
+      "url": "https://www.themadmonkfish.com/event/724-the-midnight-hour-wmikayla-shirley-12-1am/",
+      "details": null,
+      "personnel": null,
+      "late": true,
+      "priceText": null
+    },
+    {
+      "id": "lilypad:2026-07-24:free-lunchtime-concerts-r-g-gallagher",
+      "clubId": "lilypad",
+      "title": "Free Lunchtime Concerts ~ R. G. Gallagher",
+      "date": "2026-07-24",
+      "sets": [
+        "12:00"
+      ],
+      "url": "https://www.lilypadinman.com/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "lilypad:2026-07-24:hooley-hour",
+      "clubId": "lilypad",
+      "title": "Hooley Hour",
+      "date": "2026-07-24",
+      "sets": [
+        "17:00"
+      ],
+      "url": "https://www.lilypadinman.com/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "wallys:2026-07-24:wally-s-jam-session",
+      "clubId": "wallys",
+      "title": "Wally's Jam Session",
+      "date": "2026-07-24",
+      "sets": [
+        "19:00"
+      ],
+      "url": "https://wallyscafe.com",
+      "details": "Berklee kids trade choruses with big band veterans. Bring your horn, sign the list. Tue thru Sat, 7 to 9.",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "wallys:2026-07-24:night-set-at-wally-s",
+      "clubId": "wallys",
+      "title": "Night Set at Wally's",
+      "date": "2026-07-24",
+      "sets": [
+        "21:00"
+      ],
+      "url": "https://wallyscafe.com",
+      "details": "The pros take over, three feet from the bell of the horn, till midnight. Nightly since 1947.",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "madmonkfish:2026-07-24:the-midnight-hour-w-camila-quintero",
+      "clubId": "madmonkfish",
+      "title": "The Midnight Hour w/Camila Quintero",
+      "date": "2026-07-24",
+      "sets": [
+        "00:00"
+      ],
+      "url": "https://www.themadmonkfish.com/event/725-the-midnight-hour-wcamila-quintero-12-1am/",
+      "details": null,
+      "personnel": null,
+      "late": true,
+      "priceText": null
+    },
+    {
+      "id": "madmonkfish:2026-07-24:yoko-miwa-trio",
+      "clubId": "madmonkfish",
+      "title": "Yoko Miwa Trio",
+      "date": "2026-07-24",
+      "sets": [],
+      "url": "https://www.themadmonkfish.com/event/724-yoko-miwa-trio/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "madmonkfish:2026-07-24:after-hours-w-andy-voelker-jam",
+      "clubId": "madmonkfish",
+      "title": "After-Hours w/Andy Voelker (Jam)",
+      "date": "2026-07-24",
+      "sets": [],
+      "url": "https://www.themadmonkfish.com/event/724-after-hours-wandy-voelker-jam/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "beehive:2026-07-25:live-music-weekend-brunch",
+      "clubId": "beehive",
+      "title": "Live Music Weekend Brunch",
+      "date": "2026-07-25",
+      "sets": [
+        "10:00"
+      ],
+      "url": "https://www.beehiveboston.com/calendar",
+      "details": "Live jazz with brunch, 10am to 2pm.",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "lilypad:2026-07-25:hatha-yoga-w-live-music",
+      "clubId": "lilypad",
+      "title": "Hatha Yoga w/ Live Music",
+      "date": "2026-07-25",
+      "sets": [
+        "12:00"
+      ],
+      "url": "https://www.lilypadinman.com/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "wallys:2026-07-25:wally-s-jam-session",
+      "clubId": "wallys",
+      "title": "Wally's Jam Session",
+      "date": "2026-07-25",
+      "sets": [
+        "19:00"
+      ],
+      "url": "https://wallyscafe.com",
+      "details": "Berklee kids trade choruses with big band veterans. Bring your horn, sign the list. Tue thru Sat, 7 to 9.",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "wallys:2026-07-25:night-set-at-wally-s",
+      "clubId": "wallys",
+      "title": "Night Set at Wally's",
+      "date": "2026-07-25",
+      "sets": [
+        "21:00"
+      ],
+      "url": "https://wallyscafe.com",
+      "details": "The pros take over, three feet from the bell of the horn, till midnight. Nightly since 1947.",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "madmonkfish:2026-07-25:april-hall-quintet",
+      "clubId": "madmonkfish",
+      "title": "April Hall Quintet",
+      "date": "2026-07-25",
+      "sets": [],
+      "url": "https://www.themadmonkfish.com/event/725-april-hall-quintet/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "madmonkfish:2026-07-25:late-night-jam-session-with-liz-sinn",
+      "clubId": "madmonkfish",
+      "title": "Late Night Jam Session with Liz Sinn",
+      "date": "2026-07-25",
+      "sets": [],
+      "url": "https://www.themadmonkfish.com/event/725-late-night-jam-session-with-liz-sinn/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "beehive:2026-07-26:live-music-weekend-brunch",
+      "clubId": "beehive",
+      "title": "Live Music Weekend Brunch",
+      "date": "2026-07-26",
+      "sets": [
+        "10:00"
+      ],
+      "url": "https://www.beehiveboston.com/calendar",
+      "details": "Live jazz with brunch, 10am to 2pm.",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "lilypad:2026-07-26:macuco-sextet",
+      "clubId": "lilypad",
+      "title": "Macuco Sextet",
+      "date": "2026-07-26",
+      "sets": [
+        "18:15"
+      ],
+      "url": "https://www.lilypadinman.com/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "beehive:2026-07-26:blues-of-sunday-bruce-bears-friends",
+      "clubId": "beehive",
+      "title": "Blues of Sunday: Bruce Bears & Friends",
+      "date": "2026-07-26",
+      "sets": [
+        "19:30"
+      ],
+      "url": "https://www.beehiveboston.com/calendar",
+      "details": "The standing Sunday residency on the Beehive stage.",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "lilypad:2026-07-26:the-jorge-perez-albela-trio-with-kenny-werner-john-lockwood",
+      "clubId": "lilypad",
+      "title": "The Jorge Perez-Albela Trio with Kenny Werner & John Lockwood",
+      "date": "2026-07-26",
+      "sets": [
+        "20:00"
+      ],
+      "url": "https://www.lilypadinman.com/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "wallys:2026-07-26:night-set-at-wally-s",
+      "clubId": "wallys",
+      "title": "Night Set at Wally's",
+      "date": "2026-07-26",
+      "sets": [
+        "21:00"
+      ],
+      "url": "https://wallyscafe.com",
+      "details": "The pros take over, three feet from the bell of the horn, till midnight. Nightly since 1947.",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "madmonkfish:2026-07-26:the-mad-monkfish-jazz-orchestra-led-by-pete-kenagy",
+      "clubId": "madmonkfish",
+      "title": "The Mad Monkfish Jazz Orchestra led by Pete Kenagy",
+      "date": "2026-07-26",
+      "sets": [],
+      "url": "https://www.themadmonkfish.com/event/726-the-mad-monkfish-jazz-orchestra-led-by-pete-kenagy/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "lilypad:2026-07-27:elan-mehler-trio",
+      "clubId": "lilypad",
+      "title": "Elan Mehler Trio",
+      "date": "2026-07-27",
+      "sets": [
+        "19:00"
+      ],
+      "url": "https://www.lilypadinman.com/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "lilypad:2026-07-27:jerry-bergonzi-quartet",
+      "clubId": "lilypad",
+      "title": "Jerry Bergonzi Quartet",
+      "date": "2026-07-27",
+      "sets": [
+        "20:30"
+      ],
+      "url": "https://www.lilypadinman.com/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "wallys:2026-07-27:night-set-at-wally-s",
+      "clubId": "wallys",
+      "title": "Night Set at Wally's",
+      "date": "2026-07-27",
+      "sets": [
+        "21:00"
+      ],
+      "url": "https://wallyscafe.com",
+      "details": "The pros take over, three feet from the bell of the horn, till midnight. Nightly since 1947.",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "lilypad:2026-07-27:the-fringe",
+      "clubId": "lilypad",
+      "title": "The Fringe",
+      "date": "2026-07-27",
+      "sets": [
+        "22:00"
+      ],
+      "url": "https://www.lilypadinman.com/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "lilypad:2026-07-28:free-lunchtime-concerts",
+      "clubId": "lilypad",
+      "title": "Free Lunchtime Concerts",
+      "date": "2026-07-28",
+      "sets": [
+        "12:00"
+      ],
+      "url": "https://www.lilypadinman.com/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "wallys:2026-07-28:wally-s-jam-session",
+      "clubId": "wallys",
+      "title": "Wally's Jam Session",
+      "date": "2026-07-28",
+      "sets": [
+        "19:00"
+      ],
+      "url": "https://wallyscafe.com",
+      "details": "Berklee kids trade choruses with big band veterans. Bring your horn, sign the list. Tue thru Sat, 7 to 9.",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "lilypad:2026-07-28:ilona-kudina-s-baltic-transit",
+      "clubId": "lilypad",
+      "title": "Ilona Kudina's BALTIC TRANSIT",
+      "date": "2026-07-28",
+      "sets": [
+        "19:30"
+      ],
+      "url": "https://www.lilypadinman.com/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "wallys:2026-07-28:night-set-at-wally-s",
+      "clubId": "wallys",
+      "title": "Night Set at Wally's",
+      "date": "2026-07-28",
+      "sets": [
+        "21:00"
+      ],
+      "url": "https://wallyscafe.com",
+      "details": "The pros take over, three feet from the bell of the horn, till midnight. Nightly since 1947.",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "lilypad:2026-07-29:free-lunchtime-concerts",
+      "clubId": "lilypad",
+      "title": "Free Lunchtime Concerts",
+      "date": "2026-07-29",
+      "sets": [
+        "12:00"
+      ],
+      "url": "https://www.lilypadinman.com/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "wallys:2026-07-29:wally-s-jam-session",
+      "clubId": "wallys",
+      "title": "Wally's Jam Session",
+      "date": "2026-07-29",
+      "sets": [
+        "19:00"
+      ],
+      "url": "https://wallyscafe.com",
+      "details": "Berklee kids trade choruses with big band veterans. Bring your horn, sign the list. Tue thru Sat, 7 to 9.",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "madmonkfish:2026-07-29:esaie-menou-trio",
+      "clubId": "madmonkfish",
+      "title": "Esaie Menou Trio",
+      "date": "2026-07-29",
+      "sets": [
+        "19:00"
+      ],
+      "url": "https://www.themadmonkfish.com/event/729-esaie-menou-trio-7pm-mad-monkfish-concert-series/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "lilypad:2026-07-29:gill-aharon-trio",
+      "clubId": "lilypad",
+      "title": "Gill Aharon Trio",
+      "date": "2026-07-29",
+      "sets": [
+        "20:15"
+      ],
+      "url": "https://www.lilypadinman.com/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "wallys:2026-07-29:night-set-at-wally-s",
+      "clubId": "wallys",
+      "title": "Night Set at Wally's",
+      "date": "2026-07-29",
+      "sets": [
+        "21:00"
+      ],
+      "url": "https://wallyscafe.com",
+      "details": "The pros take over, three feet from the bell of the horn, till midnight. Nightly since 1947.",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "lilypad:2026-07-30:free-lunchtime-concerts",
+      "clubId": "lilypad",
+      "title": "Free Lunchtime Concerts",
+      "date": "2026-07-30",
+      "sets": [
+        "12:00"
+      ],
+      "url": "https://www.lilypadinman.com/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "wallys:2026-07-30:wally-s-jam-session",
+      "clubId": "wallys",
+      "title": "Wally's Jam Session",
+      "date": "2026-07-30",
+      "sets": [
+        "19:00"
+      ],
+      "url": "https://wallyscafe.com",
+      "details": "Berklee kids trade choruses with big band veterans. Bring your horn, sign the list. Tue thru Sat, 7 to 9.",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "lilypad:2026-07-30:todd-marcus-virginia-macdonald-quintet",
+      "clubId": "lilypad",
+      "title": "Todd Marcus - Virginia MacDonald Quintet",
+      "date": "2026-07-30",
+      "sets": [
+        "19:00"
+      ],
+      "url": "https://www.lilypadinman.com/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "madmonkfish:2026-07-30:stephanie-nakasian-with-the-greg-wardson-trio",
+      "clubId": "madmonkfish",
+      "title": "Stephanie Nakasian with the Greg Wardson Trio",
+      "date": "2026-07-30",
+      "sets": [
+        "19:00"
+      ],
+      "url": "https://www.themadmonkfish.com/event/730-stephanie-nakasian-with-the-greg-wardson-trio-7pm-mad-monkfish-concert-series/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "wallys:2026-07-30:night-set-at-wally-s",
+      "clubId": "wallys",
+      "title": "Night Set at Wally's",
+      "date": "2026-07-30",
+      "sets": [
+        "21:00"
+      ],
+      "url": "https://wallyscafe.com",
+      "details": "The pros take over, three feet from the bell of the horn, till midnight. Nightly since 1947.",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "madmonkfish:2026-07-30:midnight-at-the-mad-monkfish-w-teddy-horangic",
+      "clubId": "madmonkfish",
+      "title": "Midnight at the Mad Monkfish w/Teddy Horangic",
+      "date": "2026-07-30",
+      "sets": [
+        "00:00"
+      ],
+      "url": "https://www.themadmonkfish.com/event/731-midnight-at-the-mad-monkfish-wteddy-horangic-12-1am/",
+      "details": null,
+      "personnel": null,
+      "late": true,
+      "priceText": null
+    },
+    {
+      "id": "lilypad:2026-07-31:free-lunchtime-concerts-r-g-gallagher",
+      "clubId": "lilypad",
+      "title": "Free Lunchtime Concerts ~ R. G. Gallagher",
+      "date": "2026-07-31",
+      "sets": [
+        "12:00"
+      ],
+      "url": "https://www.lilypadinman.com/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "lilypad:2026-07-31:hooley-hour",
+      "clubId": "lilypad",
+      "title": "Hooley Hour",
+      "date": "2026-07-31",
+      "sets": [
+        "17:00"
+      ],
+      "url": "https://www.lilypadinman.com/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "wallys:2026-07-31:wally-s-jam-session",
+      "clubId": "wallys",
+      "title": "Wally's Jam Session",
+      "date": "2026-07-31",
+      "sets": [
+        "19:00"
+      ],
+      "url": "https://wallyscafe.com",
+      "details": "Berklee kids trade choruses with big band veterans. Bring your horn, sign the list. Tue thru Sat, 7 to 9.",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "wallys:2026-07-31:night-set-at-wally-s",
+      "clubId": "wallys",
+      "title": "Night Set at Wally's",
+      "date": "2026-07-31",
+      "sets": [
+        "21:00"
+      ],
+      "url": "https://wallyscafe.com",
+      "details": "The pros take over, three feet from the bell of the horn, till midnight. Nightly since 1947.",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "madmonkfish:2026-07-31:yoko-miwa-trio",
+      "clubId": "madmonkfish",
+      "title": "Yoko Miwa Trio",
+      "date": "2026-07-31",
+      "sets": [],
+      "url": "https://www.themadmonkfish.com/event/731-yoko-miwa-trio/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "madmonkfish:2026-07-31:after-hours-w-andy-voelker-jam",
+      "clubId": "madmonkfish",
+      "title": "After-Hours w/Andy Voelker (Jam)",
+      "date": "2026-07-31",
+      "sets": [],
+      "url": "https://www.themadmonkfish.com/event/731-after-hours-wandy-voelker-jam/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "beehive:2026-08-01:live-music-weekend-brunch",
+      "clubId": "beehive",
+      "title": "Live Music Weekend Brunch",
+      "date": "2026-08-01",
+      "sets": [
+        "10:00"
+      ],
+      "url": "https://www.beehiveboston.com/calendar",
+      "details": "Live jazz with brunch, 10am to 2pm.",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "lilypad:2026-08-01:hatha-yoga-w-live-music",
+      "clubId": "lilypad",
+      "title": "Hatha Yoga w/ Live Music",
+      "date": "2026-08-01",
+      "sets": [
+        "12:00"
+      ],
+      "url": "https://www.lilypadinman.com/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "wallys:2026-08-01:wally-s-jam-session",
+      "clubId": "wallys",
+      "title": "Wally's Jam Session",
+      "date": "2026-08-01",
+      "sets": [
+        "19:00"
+      ],
+      "url": "https://wallyscafe.com",
+      "details": "Berklee kids trade choruses with big band veterans. Bring your horn, sign the list. Tue thru Sat, 7 to 9.",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "wallys:2026-08-01:night-set-at-wally-s",
+      "clubId": "wallys",
+      "title": "Night Set at Wally's",
+      "date": "2026-08-01",
+      "sets": [
+        "21:00"
+      ],
+      "url": "https://wallyscafe.com",
+      "details": "The pros take over, three feet from the bell of the horn, till midnight. Nightly since 1947.",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "beehive:2026-08-02:live-music-weekend-brunch",
+      "clubId": "beehive",
+      "title": "Live Music Weekend Brunch",
+      "date": "2026-08-02",
+      "sets": [
+        "10:00"
+      ],
+      "url": "https://www.beehiveboston.com/calendar",
+      "details": "Live jazz with brunch, 10am to 2pm.",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "lilypad:2026-08-02:melissa-kassel-tom-zicarelli-group",
+      "clubId": "lilypad",
+      "title": "Melissa Kassel & Tom Zicarelli Group",
+      "date": "2026-08-02",
+      "sets": [
+        "18:15"
+      ],
+      "url": "https://www.lilypadinman.com/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "beehive:2026-08-02:blues-of-sunday-bruce-bears-friends",
+      "clubId": "beehive",
+      "title": "Blues of Sunday: Bruce Bears & Friends",
+      "date": "2026-08-02",
+      "sets": [
+        "19:30"
+      ],
+      "url": "https://www.beehiveboston.com/calendar",
+      "details": "The standing Sunday residency on the Beehive stage.",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "wallys:2026-08-02:night-set-at-wally-s",
+      "clubId": "wallys",
+      "title": "Night Set at Wally's",
+      "date": "2026-08-02",
+      "sets": [
+        "21:00"
+      ],
+      "url": "https://wallyscafe.com",
+      "details": "The pros take over, three feet from the bell of the horn, till midnight. Nightly since 1947.",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "lilypad:2026-08-03:elan-mehler-trio",
+      "clubId": "lilypad",
+      "title": "Elan Mehler Trio",
+      "date": "2026-08-03",
+      "sets": [
+        "19:00"
+      ],
+      "url": "https://www.lilypadinman.com/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "lilypad:2026-08-03:jerry-bergonzi-quartet",
+      "clubId": "lilypad",
+      "title": "Jerry Bergonzi Quartet",
+      "date": "2026-08-03",
+      "sets": [
+        "20:30"
+      ],
+      "url": "https://www.lilypadinman.com/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "wallys:2026-08-03:night-set-at-wally-s",
+      "clubId": "wallys",
+      "title": "Night Set at Wally's",
+      "date": "2026-08-03",
+      "sets": [
+        "21:00"
+      ],
+      "url": "https://wallyscafe.com",
+      "details": "The pros take over, three feet from the bell of the horn, till midnight. Nightly since 1947.",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "lilypad:2026-08-03:the-fringe",
+      "clubId": "lilypad",
+      "title": "The Fringe",
+      "date": "2026-08-03",
+      "sets": [
+        "22:00"
+      ],
+      "url": "https://www.lilypadinman.com/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "lilypad:2026-08-04:free-lunchtime-concerts",
+      "clubId": "lilypad",
+      "title": "Free Lunchtime Concerts",
+      "date": "2026-08-04",
+      "sets": [
+        "12:00"
+      ],
+      "url": "https://www.lilypadinman.com/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "wallys:2026-08-04:wally-s-jam-session",
+      "clubId": "wallys",
+      "title": "Wally's Jam Session",
+      "date": "2026-08-04",
+      "sets": [
+        "19:00"
+      ],
+      "url": "https://wallyscafe.com",
+      "details": "Berklee kids trade choruses with big band veterans. Bring your horn, sign the list. Tue thru Sat, 7 to 9.",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "lilypad:2026-08-04:grex-album-release-forbes-graham-mirror-stars",
+      "clubId": "lilypad",
+      "title": "Grex (Album Release) / Forbes Graham / Mirror Stars",
+      "date": "2026-08-04",
+      "sets": [
+        "19:30"
+      ],
+      "url": "https://www.lilypadinman.com/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "wallys:2026-08-04:night-set-at-wally-s",
+      "clubId": "wallys",
+      "title": "Night Set at Wally's",
+      "date": "2026-08-04",
+      "sets": [
+        "21:00"
+      ],
+      "url": "https://wallyscafe.com",
+      "details": "The pros take over, three feet from the bell of the horn, till midnight. Nightly since 1947.",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "lilypad:2026-08-04:conor-moore-w-grace-liu-luke-curran",
+      "clubId": "lilypad",
+      "title": "Conor Moore w/ Grace Liu & Luke Curran",
+      "date": "2026-08-04",
+      "sets": [
+        "22:00"
+      ],
+      "url": "https://www.lilypadinman.com/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "lilypad:2026-08-05:free-lunchtime-concerts",
+      "clubId": "lilypad",
+      "title": "Free Lunchtime Concerts",
+      "date": "2026-08-05",
+      "sets": [
+        "12:00"
+      ],
+      "url": "https://www.lilypadinman.com/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "lilypad:2026-08-05:bert-seager-s-heart-of-hearing",
+      "clubId": "lilypad",
+      "title": "Bert Seager's Heart of Hearing",
+      "date": "2026-08-05",
+      "sets": [
+        "18:30"
+      ],
+      "url": "https://www.lilypadinman.com/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "wallys:2026-08-05:wally-s-jam-session",
+      "clubId": "wallys",
+      "title": "Wally's Jam Session",
+      "date": "2026-08-05",
+      "sets": [
+        "19:00"
+      ],
+      "url": "https://wallyscafe.com",
+      "details": "Berklee kids trade choruses with big band veterans. Bring your horn, sign the list. Tue thru Sat, 7 to 9.",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "lilypad:2026-08-05:gill-aharon-trio",
+      "clubId": "lilypad",
+      "title": "Gill Aharon Trio",
+      "date": "2026-08-05",
+      "sets": [
+        "20:15"
+      ],
+      "url": "https://www.lilypadinman.com/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "wallys:2026-08-05:night-set-at-wally-s",
+      "clubId": "wallys",
+      "title": "Night Set at Wally's",
+      "date": "2026-08-05",
+      "sets": [
+        "21:00"
+      ],
+      "url": "https://wallyscafe.com",
+      "details": "The pros take over, three feet from the bell of the horn, till midnight. Nightly since 1947.",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "lilypad:2026-08-06:free-lunchtime-concerts",
+      "clubId": "lilypad",
+      "title": "Free Lunchtime Concerts",
+      "date": "2026-08-06",
+      "sets": [
+        "12:00"
+      ],
+      "url": "https://www.lilypadinman.com/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "wallys:2026-08-06:wally-s-jam-session",
+      "clubId": "wallys",
+      "title": "Wally's Jam Session",
+      "date": "2026-08-06",
+      "sets": [
+        "19:00"
+      ],
+      "url": "https://wallyscafe.com",
+      "details": "Berklee kids trade choruses with big band veterans. Bring your horn, sign the list. Tue thru Sat, 7 to 9.",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "wallys:2026-08-06:night-set-at-wally-s",
+      "clubId": "wallys",
+      "title": "Night Set at Wally's",
+      "date": "2026-08-06",
+      "sets": [
+        "21:00"
+      ],
+      "url": "https://wallyscafe.com",
+      "details": "The pros take over, three feet from the bell of the horn, till midnight. Nightly since 1947.",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "lilypad:2026-08-07:free-lunchtime-concerts-r-g-gallagher",
+      "clubId": "lilypad",
+      "title": "Free Lunchtime Concerts ~ R. G. Gallagher",
+      "date": "2026-08-07",
+      "sets": [
+        "12:00"
+      ],
+      "url": "https://www.lilypadinman.com/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "lilypad:2026-08-07:hooley-hour",
+      "clubId": "lilypad",
+      "title": "Hooley Hour",
+      "date": "2026-08-07",
+      "sets": [
+        "17:00"
+      ],
+      "url": "https://www.lilypadinman.com/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "wallys:2026-08-07:wally-s-jam-session",
+      "clubId": "wallys",
+      "title": "Wally's Jam Session",
+      "date": "2026-08-07",
+      "sets": [
+        "19:00"
+      ],
+      "url": "https://wallyscafe.com",
+      "details": "Berklee kids trade choruses with big band veterans. Bring your horn, sign the list. Tue thru Sat, 7 to 9.",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "lilypad:2026-08-07:sean-o-reilly",
+      "clubId": "lilypad",
+      "title": "Sean O'Reilly",
+      "date": "2026-08-07",
+      "sets": [
+        "19:30"
+      ],
+      "url": "https://www.lilypadinman.com/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "wallys:2026-08-07:night-set-at-wally-s",
+      "clubId": "wallys",
+      "title": "Night Set at Wally's",
+      "date": "2026-08-07",
+      "sets": [
+        "21:00"
+      ],
+      "url": "https://wallyscafe.com",
+      "details": "The pros take over, three feet from the bell of the horn, till midnight. Nightly since 1947.",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "beehive:2026-08-08:live-music-weekend-brunch",
+      "clubId": "beehive",
+      "title": "Live Music Weekend Brunch",
+      "date": "2026-08-08",
+      "sets": [
+        "10:00"
+      ],
+      "url": "https://www.beehiveboston.com/calendar",
+      "details": "Live jazz with brunch, 10am to 2pm.",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "lilypad:2026-08-08:hatha-yoga-w-live-music",
+      "clubId": "lilypad",
+      "title": "Hatha Yoga w/ Live Music",
+      "date": "2026-08-08",
+      "sets": [
+        "12:00"
+      ],
+      "url": "https://www.lilypadinman.com/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "wallys:2026-08-08:wally-s-jam-session",
+      "clubId": "wallys",
+      "title": "Wally's Jam Session",
+      "date": "2026-08-08",
+      "sets": [
+        "19:00"
+      ],
+      "url": "https://wallyscafe.com",
+      "details": "Berklee kids trade choruses with big band veterans. Bring your horn, sign the list. Tue thru Sat, 7 to 9.",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "lilypad:2026-08-08:jordan-smart",
+      "clubId": "lilypad",
+      "title": "Jordan Smart",
+      "date": "2026-08-08",
+      "sets": [
+        "19:30"
+      ],
+      "url": "https://www.lilypadinman.com/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "wallys:2026-08-08:night-set-at-wally-s",
+      "clubId": "wallys",
+      "title": "Night Set at Wally's",
+      "date": "2026-08-08",
+      "sets": [
+        "21:00"
+      ],
+      "url": "https://wallyscafe.com",
+      "details": "The pros take over, three feet from the bell of the horn, till midnight. Nightly since 1947.",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "beehive:2026-08-09:live-music-weekend-brunch",
+      "clubId": "beehive",
+      "title": "Live Music Weekend Brunch",
+      "date": "2026-08-09",
+      "sets": [
+        "10:00"
+      ],
+      "url": "https://www.beehiveboston.com/calendar",
+      "details": "Live jazz with brunch, 10am to 2pm.",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "beehive:2026-08-09:blues-of-sunday-bruce-bears-friends",
+      "clubId": "beehive",
+      "title": "Blues of Sunday: Bruce Bears & Friends",
+      "date": "2026-08-09",
+      "sets": [
+        "19:30"
+      ],
+      "url": "https://www.beehiveboston.com/calendar",
+      "details": "The standing Sunday residency on the Beehive stage.",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "wallys:2026-08-09:night-set-at-wally-s",
+      "clubId": "wallys",
+      "title": "Night Set at Wally's",
+      "date": "2026-08-09",
+      "sets": [
+        "21:00"
+      ],
+      "url": "https://wallyscafe.com",
+      "details": "The pros take over, three feet from the bell of the horn, till midnight. Nightly since 1947.",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "lilypad:2026-08-10:luther-gray",
+      "clubId": "lilypad",
+      "title": "Luther Gray",
+      "date": "2026-08-10",
+      "sets": [
+        "19:00"
+      ],
+      "url": "https://www.lilypadinman.com/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "lilypad:2026-08-10:jerry-bergonzi-quartet",
+      "clubId": "lilypad",
+      "title": "Jerry Bergonzi Quartet",
+      "date": "2026-08-10",
+      "sets": [
+        "20:30"
+      ],
+      "url": "https://www.lilypadinman.com/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "wallys:2026-08-10:night-set-at-wally-s",
+      "clubId": "wallys",
+      "title": "Night Set at Wally's",
+      "date": "2026-08-10",
+      "sets": [
+        "21:00"
+      ],
+      "url": "https://wallyscafe.com",
+      "details": "The pros take over, three feet from the bell of the horn, till midnight. Nightly since 1947.",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "lilypad:2026-08-10:the-fringe",
+      "clubId": "lilypad",
+      "title": "The Fringe",
+      "date": "2026-08-10",
+      "sets": [
+        "22:00"
+      ],
+      "url": "https://www.lilypadinman.com/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "lilypad:2026-08-11:free-lunchtime-concerts",
+      "clubId": "lilypad",
+      "title": "Free Lunchtime Concerts",
+      "date": "2026-08-11",
+      "sets": [
+        "12:00"
+      ],
+      "url": "https://www.lilypadinman.com/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "wallys:2026-08-11:wally-s-jam-session",
+      "clubId": "wallys",
+      "title": "Wally's Jam Session",
+      "date": "2026-08-11",
+      "sets": [
+        "19:00"
+      ],
+      "url": "https://wallyscafe.com",
+      "details": "Berklee kids trade choruses with big band veterans. Bring your horn, sign the list. Tue thru Sat, 7 to 9.",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "wallys:2026-08-11:night-set-at-wally-s",
+      "clubId": "wallys",
+      "title": "Night Set at Wally's",
+      "date": "2026-08-11",
+      "sets": [
+        "21:00"
+      ],
+      "url": "https://wallyscafe.com",
+      "details": "The pros take over, three feet from the bell of the horn, till midnight. Nightly since 1947.",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "lilypad:2026-08-12:free-lunchtime-concerts",
+      "clubId": "lilypad",
+      "title": "Free Lunchtime Concerts",
+      "date": "2026-08-12",
+      "sets": [
+        "12:00"
+      ],
+      "url": "https://www.lilypadinman.com/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "wallys:2026-08-12:wally-s-jam-session",
+      "clubId": "wallys",
+      "title": "Wally's Jam Session",
+      "date": "2026-08-12",
+      "sets": [
+        "19:00"
+      ],
+      "url": "https://wallyscafe.com",
+      "details": "Berklee kids trade choruses with big band veterans. Bring your horn, sign the list. Tue thru Sat, 7 to 9.",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "lilypad:2026-08-12:gill-aharon-trio",
+      "clubId": "lilypad",
+      "title": "Gill Aharon Trio",
+      "date": "2026-08-12",
+      "sets": [
+        "20:15"
+      ],
+      "url": "https://www.lilypadinman.com/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "wallys:2026-08-12:night-set-at-wally-s",
+      "clubId": "wallys",
+      "title": "Night Set at Wally's",
+      "date": "2026-08-12",
+      "sets": [
+        "21:00"
+      ],
+      "url": "https://wallyscafe.com",
+      "details": "The pros take over, three feet from the bell of the horn, till midnight. Nightly since 1947.",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "lilypad:2026-08-13:free-lunchtime-concerts",
+      "clubId": "lilypad",
+      "title": "Free Lunchtime Concerts",
+      "date": "2026-08-13",
+      "sets": [
+        "12:00"
+      ],
+      "url": "https://www.lilypadinman.com/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "wallys:2026-08-13:wally-s-jam-session",
+      "clubId": "wallys",
+      "title": "Wally's Jam Session",
+      "date": "2026-08-13",
+      "sets": [
+        "19:00"
+      ],
+      "url": "https://wallyscafe.com",
+      "details": "Berklee kids trade choruses with big band veterans. Bring your horn, sign the list. Tue thru Sat, 7 to 9.",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "lilypad:2026-08-13:dolly-ave",
+      "clubId": "lilypad",
+      "title": "Dolly Ave",
+      "date": "2026-08-13",
+      "sets": [
+        "19:30"
+      ],
+      "url": "https://www.lilypadinman.com/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "wallys:2026-08-13:night-set-at-wally-s",
+      "clubId": "wallys",
+      "title": "Night Set at Wally's",
+      "date": "2026-08-13",
+      "sets": [
+        "21:00"
+      ],
+      "url": "https://wallyscafe.com",
+      "details": "The pros take over, three feet from the bell of the horn, till midnight. Nightly since 1947.",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "lilypad:2026-08-14:free-lunchtime-concerts-r-g-gallagher",
+      "clubId": "lilypad",
+      "title": "Free Lunchtime Concerts ~ R. G. Gallagher",
+      "date": "2026-08-14",
+      "sets": [
+        "12:00"
+      ],
+      "url": "https://www.lilypadinman.com/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "lilypad:2026-08-14:hooley-hour",
+      "clubId": "lilypad",
+      "title": "Hooley Hour",
+      "date": "2026-08-14",
+      "sets": [
+        "17:00"
+      ],
+      "url": "https://www.lilypadinman.com/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "wallys:2026-08-14:wally-s-jam-session",
+      "clubId": "wallys",
+      "title": "Wally's Jam Session",
+      "date": "2026-08-14",
+      "sets": [
+        "19:00"
+      ],
+      "url": "https://wallyscafe.com",
+      "details": "Berklee kids trade choruses with big band veterans. Bring your horn, sign the list. Tue thru Sat, 7 to 9.",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "regattabar:2026-08-14:rhythm-future-quartet",
+      "clubId": "regattabar",
+      "title": "Rhythm Future Quartet",
+      "date": "2026-08-14",
+      "sets": [
+        "19:00"
+      ],
+      "url": "https://www.ticketweb.com/event/14233664",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "wallys:2026-08-14:night-set-at-wally-s",
+      "clubId": "wallys",
+      "title": "Night Set at Wally's",
+      "date": "2026-08-14",
+      "sets": [
+        "21:00"
+      ],
+      "url": "https://wallyscafe.com",
+      "details": "The pros take over, three feet from the bell of the horn, till midnight. Nightly since 1947.",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "beehive:2026-08-15:live-music-weekend-brunch",
+      "clubId": "beehive",
+      "title": "Live Music Weekend Brunch",
+      "date": "2026-08-15",
+      "sets": [
+        "10:00"
+      ],
+      "url": "https://www.beehiveboston.com/calendar",
+      "details": "Live jazz with brunch, 10am to 2pm.",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "lilypad:2026-08-15:hatha-yoga-w-live-music",
+      "clubId": "lilypad",
+      "title": "Hatha Yoga w/ Live Music",
+      "date": "2026-08-15",
+      "sets": [
+        "12:00"
+      ],
+      "url": "https://www.lilypadinman.com/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "lilypad:2026-08-15:joan-watson-jones",
+      "clubId": "lilypad",
+      "title": "Joan Watson-Jones",
+      "date": "2026-08-15",
+      "sets": [
+        "16:30"
+      ],
+      "url": "https://www.lilypadinman.com/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "wallys:2026-08-15:wally-s-jam-session",
+      "clubId": "wallys",
+      "title": "Wally's Jam Session",
+      "date": "2026-08-15",
+      "sets": [
+        "19:00"
+      ],
+      "url": "https://wallyscafe.com",
+      "details": "Berklee kids trade choruses with big band veterans. Bring your horn, sign the list. Tue thru Sat, 7 to 9.",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "wallys:2026-08-15:night-set-at-wally-s",
+      "clubId": "wallys",
+      "title": "Night Set at Wally's",
+      "date": "2026-08-15",
+      "sets": [
+        "21:00"
+      ],
+      "url": "https://wallyscafe.com",
+      "details": "The pros take over, three feet from the bell of the horn, till midnight. Nightly since 1947.",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "beehive:2026-08-16:live-music-weekend-brunch",
+      "clubId": "beehive",
+      "title": "Live Music Weekend Brunch",
+      "date": "2026-08-16",
+      "sets": [
+        "10:00"
+      ],
+      "url": "https://www.beehiveboston.com/calendar",
+      "details": "Live jazz with brunch, 10am to 2pm.",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "beehive:2026-08-16:blues-of-sunday-bruce-bears-friends",
+      "clubId": "beehive",
+      "title": "Blues of Sunday: Bruce Bears & Friends",
+      "date": "2026-08-16",
+      "sets": [
+        "19:30"
+      ],
+      "url": "https://www.beehiveboston.com/calendar",
+      "details": "The standing Sunday residency on the Beehive stage.",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "lilypad:2026-08-16:joe-hunt-group",
+      "clubId": "lilypad",
+      "title": "Joe Hunt Group",
+      "date": "2026-08-16",
+      "sets": [
+        "20:00"
+      ],
+      "url": "https://www.lilypadinman.com/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "wallys:2026-08-16:night-set-at-wally-s",
+      "clubId": "wallys",
+      "title": "Night Set at Wally's",
+      "date": "2026-08-16",
+      "sets": [
+        "21:00"
+      ],
+      "url": "https://wallyscafe.com",
+      "details": "The pros take over, three feet from the bell of the horn, till midnight. Nightly since 1947.",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "lilypad:2026-08-17:francisco-mela",
+      "clubId": "lilypad",
+      "title": "Francisco Mela",
+      "date": "2026-08-17",
+      "sets": [
+        "19:00"
+      ],
+      "url": "https://www.lilypadinman.com/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "lilypad:2026-08-17:jerry-bergonzi-quartet",
+      "clubId": "lilypad",
+      "title": "Jerry Bergonzi Quartet",
+      "date": "2026-08-17",
+      "sets": [
+        "20:30"
+      ],
+      "url": "https://www.lilypadinman.com/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "wallys:2026-08-17:night-set-at-wally-s",
+      "clubId": "wallys",
+      "title": "Night Set at Wally's",
+      "date": "2026-08-17",
+      "sets": [
+        "21:00"
+      ],
+      "url": "https://wallyscafe.com",
+      "details": "The pros take over, three feet from the bell of the horn, till midnight. Nightly since 1947.",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "lilypad:2026-08-17:the-fringe",
+      "clubId": "lilypad",
+      "title": "The Fringe",
+      "date": "2026-08-17",
+      "sets": [
+        "22:00"
+      ],
+      "url": "https://www.lilypadinman.com/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "lilypad:2026-08-18:free-lunchtime-concerts",
+      "clubId": "lilypad",
+      "title": "Free Lunchtime Concerts",
+      "date": "2026-08-18",
+      "sets": [
+        "12:00"
+      ],
+      "url": "https://www.lilypadinman.com/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "wallys:2026-08-18:wally-s-jam-session",
+      "clubId": "wallys",
+      "title": "Wally's Jam Session",
+      "date": "2026-08-18",
+      "sets": [
+        "19:00"
+      ],
+      "url": "https://wallyscafe.com",
+      "details": "Berklee kids trade choruses with big band veterans. Bring your horn, sign the list. Tue thru Sat, 7 to 9.",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "wallys:2026-08-18:night-set-at-wally-s",
+      "clubId": "wallys",
+      "title": "Night Set at Wally's",
+      "date": "2026-08-18",
+      "sets": [
+        "21:00"
+      ],
+      "url": "https://wallyscafe.com",
+      "details": "The pros take over, three feet from the bell of the horn, till midnight. Nightly since 1947.",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "lilypad:2026-08-19:free-lunchtime-concerts",
+      "clubId": "lilypad",
+      "title": "Free Lunchtime Concerts",
+      "date": "2026-08-19",
+      "sets": [
+        "12:00"
+      ],
+      "url": "https://www.lilypadinman.com/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "wallys:2026-08-19:wally-s-jam-session",
+      "clubId": "wallys",
+      "title": "Wally's Jam Session",
+      "date": "2026-08-19",
+      "sets": [
+        "19:00"
+      ],
+      "url": "https://wallyscafe.com",
+      "details": "Berklee kids trade choruses with big band veterans. Bring your horn, sign the list. Tue thru Sat, 7 to 9.",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "lilypad:2026-08-19:jesse-gallagher-steve-fell",
+      "clubId": "lilypad",
+      "title": "Jesse Gallagher + Steve Fell",
+      "date": "2026-08-19",
+      "sets": [
+        "19:00"
+      ],
+      "url": "https://www.lilypadinman.com/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "lilypad:2026-08-19:gill-aharon-trio",
+      "clubId": "lilypad",
+      "title": "Gill Aharon Trio",
+      "date": "2026-08-19",
+      "sets": [
+        "20:15"
+      ],
+      "url": "https://www.lilypadinman.com/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "wallys:2026-08-19:night-set-at-wally-s",
+      "clubId": "wallys",
+      "title": "Night Set at Wally's",
+      "date": "2026-08-19",
+      "sets": [
+        "21:00"
+      ],
+      "url": "https://wallyscafe.com",
+      "details": "The pros take over, three feet from the bell of the horn, till midnight. Nightly since 1947.",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "lilypad:2026-08-20:free-lunchtime-concerts",
+      "clubId": "lilypad",
+      "title": "Free Lunchtime Concerts",
+      "date": "2026-08-20",
+      "sets": [
+        "12:00"
+      ],
+      "url": "https://www.lilypadinman.com/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "wallys:2026-08-20:wally-s-jam-session",
+      "clubId": "wallys",
+      "title": "Wally's Jam Session",
+      "date": "2026-08-20",
+      "sets": [
+        "19:00"
+      ],
+      "url": "https://wallyscafe.com",
+      "details": "Berklee kids trade choruses with big band veterans. Bring your horn, sign the list. Tue thru Sat, 7 to 9.",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "wallys:2026-08-20:night-set-at-wally-s",
+      "clubId": "wallys",
+      "title": "Night Set at Wally's",
+      "date": "2026-08-20",
+      "sets": [
+        "21:00"
+      ],
+      "url": "https://wallyscafe.com",
+      "details": "The pros take over, three feet from the bell of the horn, till midnight. Nightly since 1947.",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "lilypad:2026-08-21:free-lunchtime-concerts-r-g-gallagher",
+      "clubId": "lilypad",
+      "title": "Free Lunchtime Concerts ~ R. G. Gallagher",
+      "date": "2026-08-21",
+      "sets": [
+        "12:00"
+      ],
+      "url": "https://www.lilypadinman.com/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "lilypad:2026-08-21:hooley-hour",
+      "clubId": "lilypad",
+      "title": "Hooley Hour",
+      "date": "2026-08-21",
+      "sets": [
+        "17:00"
+      ],
+      "url": "https://www.lilypadinman.com/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "wallys:2026-08-21:wally-s-jam-session",
+      "clubId": "wallys",
+      "title": "Wally's Jam Session",
+      "date": "2026-08-21",
+      "sets": [
+        "19:00"
+      ],
+      "url": "https://wallyscafe.com",
+      "details": "Berklee kids trade choruses with big band veterans. Bring your horn, sign the list. Tue thru Sat, 7 to 9.",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "regattabar:2026-08-21:cabo-verde-em-alta-zerui-depina-and-world-rhythms-in-a-night",
+      "clubId": "regattabar",
+      "title": "Cabo Verde em Alta: Zerui Depina and World Rhythms in a night of Cape Verdean Music",
+      "date": "2026-08-21",
+      "sets": [
+        "19:00"
+      ],
+      "url": "https://www.ticketweb.com/event/14259964",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "wallys:2026-08-21:night-set-at-wally-s",
+      "clubId": "wallys",
+      "title": "Night Set at Wally's",
+      "date": "2026-08-21",
+      "sets": [
+        "21:00"
+      ],
+      "url": "https://wallyscafe.com",
+      "details": "The pros take over, three feet from the bell of the horn, till midnight. Nightly since 1947.",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "beehive:2026-08-22:live-music-weekend-brunch",
+      "clubId": "beehive",
+      "title": "Live Music Weekend Brunch",
+      "date": "2026-08-22",
+      "sets": [
+        "10:00"
+      ],
+      "url": "https://www.beehiveboston.com/calendar",
+      "details": "Live jazz with brunch, 10am to 2pm.",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "lilypad:2026-08-22:hatha-yoga-w-live-music",
+      "clubId": "lilypad",
+      "title": "Hatha Yoga w/ Live Music",
+      "date": "2026-08-22",
+      "sets": [
+        "12:00"
+      ],
+      "url": "https://www.lilypadinman.com/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "wallys:2026-08-22:wally-s-jam-session",
+      "clubId": "wallys",
+      "title": "Wally's Jam Session",
+      "date": "2026-08-22",
+      "sets": [
+        "19:00"
+      ],
+      "url": "https://wallyscafe.com",
+      "details": "Berklee kids trade choruses with big band veterans. Bring your horn, sign the list. Tue thru Sat, 7 to 9.",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "lilypad:2026-08-22:afternoon-bike-ride",
+      "clubId": "lilypad",
+      "title": "Afternoon Bike Ride",
+      "date": "2026-08-22",
+      "sets": [
+        "19:30"
+      ],
+      "url": "https://www.lilypadinman.com/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "wallys:2026-08-22:night-set-at-wally-s",
+      "clubId": "wallys",
+      "title": "Night Set at Wally's",
+      "date": "2026-08-22",
+      "sets": [
+        "21:00"
+      ],
+      "url": "https://wallyscafe.com",
+      "details": "The pros take over, three feet from the bell of the horn, till midnight. Nightly since 1947.",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "beehive:2026-08-23:live-music-weekend-brunch",
+      "clubId": "beehive",
+      "title": "Live Music Weekend Brunch",
+      "date": "2026-08-23",
+      "sets": [
+        "10:00"
+      ],
+      "url": "https://www.beehiveboston.com/calendar",
+      "details": "Live jazz with brunch, 10am to 2pm.",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "lilypad:2026-08-23:the-quintet-original-jazz-by-eriko-yamaki",
+      "clubId": "lilypad",
+      "title": "The Quintet - Original Jazz by Eriko Yamaki",
+      "date": "2026-08-23",
+      "sets": [
+        "15:45"
+      ],
+      "url": "https://www.lilypadinman.com/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "beehive:2026-08-23:blues-of-sunday-bruce-bears-friends",
+      "clubId": "beehive",
+      "title": "Blues of Sunday: Bruce Bears & Friends",
+      "date": "2026-08-23",
+      "sets": [
+        "19:30"
+      ],
+      "url": "https://www.beehiveboston.com/calendar",
+      "details": "The standing Sunday residency on the Beehive stage.",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "wallys:2026-08-23:night-set-at-wally-s",
+      "clubId": "wallys",
+      "title": "Night Set at Wally's",
+      "date": "2026-08-23",
+      "sets": [
+        "21:00"
+      ],
+      "url": "https://wallyscafe.com",
+      "details": "The pros take over, three feet from the bell of the horn, till midnight. Nightly since 1947.",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "lilypad:2026-08-23:surviving-in-love-jessi-joseph-with-jessi-th",
+      "clubId": "lilypad",
+      "title": "Surviving in Love ::: Jessi & Joseph with Jessi TH",
+      "date": "2026-08-23",
+      "sets": [
+        "22:00"
+      ],
+      "url": "https://www.lilypadinman.com/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "lilypad:2026-08-24:elan-mehler-trio",
+      "clubId": "lilypad",
+      "title": "Elan Mehler Trio",
+      "date": "2026-08-24",
+      "sets": [
+        "19:00"
+      ],
+      "url": "https://www.lilypadinman.com/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "lilypad:2026-08-24:jerry-bergonzi-quartet",
+      "clubId": "lilypad",
+      "title": "Jerry Bergonzi Quartet",
+      "date": "2026-08-24",
+      "sets": [
+        "20:30"
+      ],
+      "url": "https://www.lilypadinman.com/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "wallys:2026-08-24:night-set-at-wally-s",
+      "clubId": "wallys",
+      "title": "Night Set at Wally's",
+      "date": "2026-08-24",
+      "sets": [
+        "21:00"
+      ],
+      "url": "https://wallyscafe.com",
+      "details": "The pros take over, three feet from the bell of the horn, till midnight. Nightly since 1947.",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "lilypad:2026-08-24:the-fringe",
+      "clubId": "lilypad",
+      "title": "The Fringe",
+      "date": "2026-08-24",
+      "sets": [
+        "22:00"
+      ],
+      "url": "https://www.lilypadinman.com/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "lilypad:2026-08-25:free-lunchtime-concerts",
+      "clubId": "lilypad",
+      "title": "Free Lunchtime Concerts",
+      "date": "2026-08-25",
+      "sets": [
+        "12:00"
+      ],
+      "url": "https://www.lilypadinman.com/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "wallys:2026-08-25:wally-s-jam-session",
+      "clubId": "wallys",
+      "title": "Wally's Jam Session",
+      "date": "2026-08-25",
+      "sets": [
+        "19:00"
+      ],
+      "url": "https://wallyscafe.com",
+      "details": "Berklee kids trade choruses with big band veterans. Bring your horn, sign the list. Tue thru Sat, 7 to 9.",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "wallys:2026-08-25:night-set-at-wally-s",
+      "clubId": "wallys",
+      "title": "Night Set at Wally's",
+      "date": "2026-08-25",
+      "sets": [
+        "21:00"
+      ],
+      "url": "https://wallyscafe.com",
+      "details": "The pros take over, three feet from the bell of the horn, till midnight. Nightly since 1947.",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "lilypad:2026-08-26:free-lunchtime-concerts",
+      "clubId": "lilypad",
+      "title": "Free Lunchtime Concerts",
+      "date": "2026-08-26",
+      "sets": [
+        "12:00"
+      ],
+      "url": "https://www.lilypadinman.com/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "wallys:2026-08-26:wally-s-jam-session",
+      "clubId": "wallys",
+      "title": "Wally's Jam Session",
+      "date": "2026-08-26",
+      "sets": [
+        "19:00"
+      ],
+      "url": "https://wallyscafe.com",
+      "details": "Berklee kids trade choruses with big band veterans. Bring your horn, sign the list. Tue thru Sat, 7 to 9.",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "lilypad:2026-08-26:gill-aharon-trio",
+      "clubId": "lilypad",
+      "title": "Gill Aharon Trio",
+      "date": "2026-08-26",
+      "sets": [
+        "20:15"
+      ],
+      "url": "https://www.lilypadinman.com/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "wallys:2026-08-26:night-set-at-wally-s",
+      "clubId": "wallys",
+      "title": "Night Set at Wally's",
+      "date": "2026-08-26",
+      "sets": [
+        "21:00"
+      ],
+      "url": "https://wallyscafe.com",
+      "details": "The pros take over, three feet from the bell of the horn, till midnight. Nightly since 1947.",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "lilypad:2026-08-27:free-lunchtime-concerts",
+      "clubId": "lilypad",
+      "title": "Free Lunchtime Concerts",
+      "date": "2026-08-27",
+      "sets": [
+        "12:00"
+      ],
+      "url": "https://www.lilypadinman.com/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "wallys:2026-08-27:wally-s-jam-session",
+      "clubId": "wallys",
+      "title": "Wally's Jam Session",
+      "date": "2026-08-27",
+      "sets": [
+        "19:00"
+      ],
+      "url": "https://wallyscafe.com",
+      "details": "Berklee kids trade choruses with big band veterans. Bring your horn, sign the list. Tue thru Sat, 7 to 9.",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "wallys:2026-08-27:night-set-at-wally-s",
+      "clubId": "wallys",
+      "title": "Night Set at Wally's",
+      "date": "2026-08-27",
+      "sets": [
+        "21:00"
+      ],
+      "url": "https://wallyscafe.com",
+      "details": "The pros take over, three feet from the bell of the horn, till midnight. Nightly since 1947.",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "lilypad:2026-08-28:free-lunchtime-concerts-r-g-gallagher",
+      "clubId": "lilypad",
+      "title": "Free Lunchtime Concerts ~ R. G. Gallagher",
+      "date": "2026-08-28",
+      "sets": [
+        "12:00"
+      ],
+      "url": "https://www.lilypadinman.com/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "lilypad:2026-08-28:hooley-hour",
+      "clubId": "lilypad",
+      "title": "Hooley Hour",
+      "date": "2026-08-28",
+      "sets": [
+        "17:00"
+      ],
+      "url": "https://www.lilypadinman.com/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "wallys:2026-08-28:wally-s-jam-session",
+      "clubId": "wallys",
+      "title": "Wally's Jam Session",
+      "date": "2026-08-28",
+      "sets": [
+        "19:00"
+      ],
+      "url": "https://wallyscafe.com",
+      "details": "Berklee kids trade choruses with big band veterans. Bring your horn, sign the list. Tue thru Sat, 7 to 9.",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "lilypad:2026-08-28:luke-borchelt",
+      "clubId": "lilypad",
+      "title": "Luke Borchelt",
+      "date": "2026-08-28",
+      "sets": [
+        "19:30"
+      ],
+      "url": "https://www.lilypadinman.com/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "wallys:2026-08-28:night-set-at-wally-s",
+      "clubId": "wallys",
+      "title": "Night Set at Wally's",
+      "date": "2026-08-28",
+      "sets": [
+        "21:00"
+      ],
+      "url": "https://wallyscafe.com",
+      "details": "The pros take over, three feet from the bell of the horn, till midnight. Nightly since 1947.",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "beehive:2026-08-29:live-music-weekend-brunch",
+      "clubId": "beehive",
+      "title": "Live Music Weekend Brunch",
+      "date": "2026-08-29",
+      "sets": [
+        "10:00"
+      ],
+      "url": "https://www.beehiveboston.com/calendar",
+      "details": "Live jazz with brunch, 10am to 2pm.",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "lilypad:2026-08-29:hatha-yoga-w-live-music",
+      "clubId": "lilypad",
+      "title": "Hatha Yoga w/ Live Music",
+      "date": "2026-08-29",
+      "sets": [
+        "12:00"
+      ],
+      "url": "https://www.lilypadinman.com/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "wallys:2026-08-29:wally-s-jam-session",
+      "clubId": "wallys",
+      "title": "Wally's Jam Session",
+      "date": "2026-08-29",
+      "sets": [
+        "19:00"
+      ],
+      "url": "https://wallyscafe.com",
+      "details": "Berklee kids trade choruses with big band veterans. Bring your horn, sign the list. Tue thru Sat, 7 to 9.",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "wallys:2026-08-29:night-set-at-wally-s",
+      "clubId": "wallys",
+      "title": "Night Set at Wally's",
+      "date": "2026-08-29",
+      "sets": [
+        "21:00"
+      ],
+      "url": "https://wallyscafe.com",
+      "details": "The pros take over, three feet from the bell of the horn, till midnight. Nightly since 1947.",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "beehive:2026-08-30:live-music-weekend-brunch",
+      "clubId": "beehive",
+      "title": "Live Music Weekend Brunch",
+      "date": "2026-08-30",
+      "sets": [
+        "10:00"
+      ],
+      "url": "https://www.beehiveboston.com/calendar",
+      "details": "Live jazz with brunch, 10am to 2pm.",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "beehive:2026-08-30:blues-of-sunday-bruce-bears-friends",
+      "clubId": "beehive",
+      "title": "Blues of Sunday: Bruce Bears & Friends",
+      "date": "2026-08-30",
+      "sets": [
+        "19:30"
+      ],
+      "url": "https://www.beehiveboston.com/calendar",
+      "details": "The standing Sunday residency on the Beehive stage.",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "wallys:2026-08-30:night-set-at-wally-s",
+      "clubId": "wallys",
+      "title": "Night Set at Wally's",
+      "date": "2026-08-30",
+      "sets": [
+        "21:00"
+      ],
+      "url": "https://wallyscafe.com",
+      "details": "The pros take over, three feet from the bell of the horn, till midnight. Nightly since 1947.",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "lilypad:2026-08-31:elan-mehler-trio",
+      "clubId": "lilypad",
+      "title": "Elan Mehler Trio",
+      "date": "2026-08-31",
+      "sets": [
+        "19:00"
+      ],
+      "url": "https://www.lilypadinman.com/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "lilypad:2026-08-31:jerry-bergonzi-quartet",
+      "clubId": "lilypad",
+      "title": "Jerry Bergonzi Quartet",
+      "date": "2026-08-31",
+      "sets": [
+        "20:30"
+      ],
+      "url": "https://www.lilypadinman.com/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "wallys:2026-08-31:night-set-at-wally-s",
+      "clubId": "wallys",
+      "title": "Night Set at Wally's",
+      "date": "2026-08-31",
+      "sets": [
+        "21:00"
+      ],
+      "url": "https://wallyscafe.com",
+      "details": "The pros take over, three feet from the bell of the horn, till midnight. Nightly since 1947.",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "lilypad:2026-08-31:the-fringe",
+      "clubId": "lilypad",
+      "title": "The Fringe",
+      "date": "2026-08-31",
+      "sets": [
+        "22:00"
+      ],
+      "url": "https://www.lilypadinman.com/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "wallys:2026-09-01:wally-s-jam-session",
+      "clubId": "wallys",
+      "title": "Wally's Jam Session",
+      "date": "2026-09-01",
+      "sets": [
+        "19:00"
+      ],
+      "url": "https://wallyscafe.com",
+      "details": "Berklee kids trade choruses with big band veterans. Bring your horn, sign the list. Tue thru Sat, 7 to 9.",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "wallys:2026-09-01:night-set-at-wally-s",
+      "clubId": "wallys",
+      "title": "Night Set at Wally's",
+      "date": "2026-09-01",
+      "sets": [
+        "21:00"
+      ],
+      "url": "https://wallyscafe.com",
+      "details": "The pros take over, three feet from the bell of the horn, till midnight. Nightly since 1947.",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "lilypad:2026-09-02:bert-seager-s-heart-of-hearing",
+      "clubId": "lilypad",
+      "title": "Bert Seager's Heart of Hearing",
+      "date": "2026-09-02",
+      "sets": [
+        "18:30"
+      ],
+      "url": "https://www.lilypadinman.com/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "wallys:2026-09-02:wally-s-jam-session",
+      "clubId": "wallys",
+      "title": "Wally's Jam Session",
+      "date": "2026-09-02",
+      "sets": [
+        "19:00"
+      ],
+      "url": "https://wallyscafe.com",
+      "details": "Berklee kids trade choruses with big band veterans. Bring your horn, sign the list. Tue thru Sat, 7 to 9.",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "lilypad:2026-09-02:gill-aharon-trio",
+      "clubId": "lilypad",
+      "title": "Gill Aharon Trio",
+      "date": "2026-09-02",
+      "sets": [
+        "20:15"
+      ],
+      "url": "https://www.lilypadinman.com/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "wallys:2026-09-02:night-set-at-wally-s",
+      "clubId": "wallys",
+      "title": "Night Set at Wally's",
+      "date": "2026-09-02",
+      "sets": [
+        "21:00"
+      ],
+      "url": "https://wallyscafe.com",
+      "details": "The pros take over, three feet from the bell of the horn, till midnight. Nightly since 1947.",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "wallys:2026-09-03:wally-s-jam-session",
+      "clubId": "wallys",
+      "title": "Wally's Jam Session",
+      "date": "2026-09-03",
+      "sets": [
+        "19:00"
+      ],
+      "url": "https://wallyscafe.com",
+      "details": "Berklee kids trade choruses with big band veterans. Bring your horn, sign the list. Tue thru Sat, 7 to 9.",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "lilypad:2026-09-03:louisa-stancioff-how-s-about-charlie",
+      "clubId": "lilypad",
+      "title": "Louisa Stancioff / How's About Charlie",
+      "date": "2026-09-03",
+      "sets": [
+        "19:00"
+      ],
+      "url": "https://www.lilypadinman.com/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "wallys:2026-09-03:night-set-at-wally-s",
+      "clubId": "wallys",
+      "title": "Night Set at Wally's",
+      "date": "2026-09-03",
+      "sets": [
+        "21:00"
+      ],
+      "url": "https://wallyscafe.com",
+      "details": "The pros take over, three feet from the bell of the horn, till midnight. Nightly since 1947.",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "lilypad:2026-09-04:hooley-hour",
+      "clubId": "lilypad",
+      "title": "Hooley Hour",
+      "date": "2026-09-04",
+      "sets": [
+        "17:00"
+      ],
+      "url": "https://www.lilypadinman.com/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "wallys:2026-09-04:wally-s-jam-session",
+      "clubId": "wallys",
+      "title": "Wally's Jam Session",
+      "date": "2026-09-04",
+      "sets": [
+        "19:00"
+      ],
+      "url": "https://wallyscafe.com",
+      "details": "Berklee kids trade choruses with big band veterans. Bring your horn, sign the list. Tue thru Sat, 7 to 9.",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "wallys:2026-09-04:night-set-at-wally-s",
+      "clubId": "wallys",
+      "title": "Night Set at Wally's",
+      "date": "2026-09-04",
+      "sets": [
+        "21:00"
+      ],
+      "url": "https://wallyscafe.com",
+      "details": "The pros take over, three feet from the bell of the horn, till midnight. Nightly since 1947.",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "beehive:2026-09-05:live-music-weekend-brunch",
+      "clubId": "beehive",
+      "title": "Live Music Weekend Brunch",
+      "date": "2026-09-05",
+      "sets": [
+        "10:00"
+      ],
+      "url": "https://www.beehiveboston.com/calendar",
+      "details": "Live jazz with brunch, 10am to 2pm.",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "wallys:2026-09-05:wally-s-jam-session",
+      "clubId": "wallys",
+      "title": "Wally's Jam Session",
+      "date": "2026-09-05",
+      "sets": [
+        "19:00"
+      ],
+      "url": "https://wallyscafe.com",
+      "details": "Berklee kids trade choruses with big band veterans. Bring your horn, sign the list. Tue thru Sat, 7 to 9.",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "wallys:2026-09-05:night-set-at-wally-s",
+      "clubId": "wallys",
+      "title": "Night Set at Wally's",
+      "date": "2026-09-05",
+      "sets": [
+        "21:00"
+      ],
+      "url": "https://wallyscafe.com",
+      "details": "The pros take over, three feet from the bell of the horn, till midnight. Nightly since 1947.",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "beehive:2026-09-06:live-music-weekend-brunch",
+      "clubId": "beehive",
+      "title": "Live Music Weekend Brunch",
+      "date": "2026-09-06",
+      "sets": [
+        "10:00"
+      ],
+      "url": "https://www.beehiveboston.com/calendar",
+      "details": "Live jazz with brunch, 10am to 2pm.",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "beehive:2026-09-06:blues-of-sunday-bruce-bears-friends",
+      "clubId": "beehive",
+      "title": "Blues of Sunday: Bruce Bears & Friends",
+      "date": "2026-09-06",
+      "sets": [
+        "19:30"
+      ],
+      "url": "https://www.beehiveboston.com/calendar",
+      "details": "The standing Sunday residency on the Beehive stage.",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "wallys:2026-09-06:night-set-at-wally-s",
+      "clubId": "wallys",
+      "title": "Night Set at Wally's",
+      "date": "2026-09-06",
+      "sets": [
+        "21:00"
+      ],
+      "url": "https://wallyscafe.com",
+      "details": "The pros take over, three feet from the bell of the horn, till midnight. Nightly since 1947.",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "lilypad:2026-09-07:elan-mehler-trio",
+      "clubId": "lilypad",
+      "title": "Elan Mehler Trio",
+      "date": "2026-09-07",
+      "sets": [
+        "19:00"
+      ],
+      "url": "https://www.lilypadinman.com/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "lilypad:2026-09-07:jerry-bergonzi-quartet",
+      "clubId": "lilypad",
+      "title": "Jerry Bergonzi Quartet",
+      "date": "2026-09-07",
+      "sets": [
+        "20:30"
+      ],
+      "url": "https://www.lilypadinman.com/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "wallys:2026-09-07:night-set-at-wally-s",
+      "clubId": "wallys",
+      "title": "Night Set at Wally's",
+      "date": "2026-09-07",
+      "sets": [
+        "21:00"
+      ],
+      "url": "https://wallyscafe.com",
+      "details": "The pros take over, three feet from the bell of the horn, till midnight. Nightly since 1947.",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "lilypad:2026-09-07:the-fringe",
+      "clubId": "lilypad",
+      "title": "The Fringe",
+      "date": "2026-09-07",
+      "sets": [
+        "22:00"
+      ],
+      "url": "https://www.lilypadinman.com/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "wallys:2026-09-08:wally-s-jam-session",
+      "clubId": "wallys",
+      "title": "Wally's Jam Session",
+      "date": "2026-09-08",
+      "sets": [
+        "19:00"
+      ],
+      "url": "https://wallyscafe.com",
+      "details": "Berklee kids trade choruses with big band veterans. Bring your horn, sign the list. Tue thru Sat, 7 to 9.",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "wallys:2026-09-08:night-set-at-wally-s",
+      "clubId": "wallys",
+      "title": "Night Set at Wally's",
+      "date": "2026-09-08",
+      "sets": [
+        "21:00"
+      ],
+      "url": "https://wallyscafe.com",
+      "details": "The pros take over, three feet from the bell of the horn, till midnight. Nightly since 1947.",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "wallys:2026-09-09:wally-s-jam-session",
+      "clubId": "wallys",
+      "title": "Wally's Jam Session",
+      "date": "2026-09-09",
+      "sets": [
+        "19:00"
+      ],
+      "url": "https://wallyscafe.com",
+      "details": "Berklee kids trade choruses with big band veterans. Bring your horn, sign the list. Tue thru Sat, 7 to 9.",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "lilypad:2026-09-09:gill-aharon-trio",
+      "clubId": "lilypad",
+      "title": "Gill Aharon Trio",
+      "date": "2026-09-09",
+      "sets": [
+        "20:15"
+      ],
+      "url": "https://www.lilypadinman.com/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "wallys:2026-09-09:night-set-at-wally-s",
+      "clubId": "wallys",
+      "title": "Night Set at Wally's",
+      "date": "2026-09-09",
+      "sets": [
+        "21:00"
+      ],
+      "url": "https://wallyscafe.com",
+      "details": "The pros take over, three feet from the bell of the horn, till midnight. Nightly since 1947.",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "wallys:2026-09-10:wally-s-jam-session",
+      "clubId": "wallys",
+      "title": "Wally's Jam Session",
+      "date": "2026-09-10",
+      "sets": [
+        "19:00"
+      ],
+      "url": "https://wallyscafe.com",
+      "details": "Berklee kids trade choruses with big band veterans. Bring your horn, sign the list. Tue thru Sat, 7 to 9.",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "regattabar:2026-09-10:duochrome",
+      "clubId": "regattabar",
+      "title": "Duochrome",
+      "date": "2026-09-10",
+      "sets": [
+        "19:00"
+      ],
+      "url": "https://www.ticketweb.com/event/14983853",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "wallys:2026-09-10:night-set-at-wally-s",
+      "clubId": "wallys",
+      "title": "Night Set at Wally's",
+      "date": "2026-09-10",
+      "sets": [
+        "21:00"
+      ],
+      "url": "https://wallyscafe.com",
+      "details": "The pros take over, three feet from the bell of the horn, till midnight. Nightly since 1947.",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "scullers:2026-09-10:arturo-sandoval",
+      "clubId": "scullers",
+      "title": "Arturo Sandoval",
+      "date": "2026-09-10",
+      "sets": [],
+      "url": "https://scullersjazz.com/calendar/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "lilypad:2026-09-11:hooley-hour",
+      "clubId": "lilypad",
+      "title": "Hooley Hour",
+      "date": "2026-09-11",
+      "sets": [
+        "17:00"
+      ],
+      "url": "https://www.lilypadinman.com/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "wallys:2026-09-11:wally-s-jam-session",
+      "clubId": "wallys",
+      "title": "Wally's Jam Session",
+      "date": "2026-09-11",
+      "sets": [
+        "19:00"
+      ],
+      "url": "https://wallyscafe.com",
+      "details": "Berklee kids trade choruses with big band veterans. Bring your horn, sign the list. Tue thru Sat, 7 to 9.",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "wallys:2026-09-11:night-set-at-wally-s",
+      "clubId": "wallys",
+      "title": "Night Set at Wally's",
+      "date": "2026-09-11",
+      "sets": [
+        "21:00"
+      ],
+      "url": "https://wallyscafe.com",
+      "details": "The pros take over, three feet from the bell of the horn, till midnight. Nightly since 1947.",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "scullers:2026-09-11:arturo-sandoval",
+      "clubId": "scullers",
+      "title": "Arturo Sandoval",
+      "date": "2026-09-11",
+      "sets": [],
+      "url": "https://scullersjazz.com/calendar/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "regattabar:2026-09-12:cyrille-aimee",
+      "clubId": "regattabar",
+      "title": "Cyrille Aimee",
+      "date": "2026-09-12",
+      "sets": [
+        "19:00"
+      ],
+      "url": "https://www.ticketweb.com/event/14894073",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "scullers:2026-09-12:arturo-sandoval",
+      "clubId": "scullers",
+      "title": "Arturo Sandoval",
+      "date": "2026-09-12",
+      "sets": [],
+      "url": "https://scullersjazz.com/calendar/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "lilypad:2026-09-14:elan-mehler-trio",
+      "clubId": "lilypad",
+      "title": "Elan Mehler Trio",
+      "date": "2026-09-14",
+      "sets": [
+        "19:00"
+      ],
+      "url": "https://www.lilypadinman.com/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "lilypad:2026-09-14:jerry-bergonzi-quartet",
+      "clubId": "lilypad",
+      "title": "Jerry Bergonzi Quartet",
+      "date": "2026-09-14",
+      "sets": [
+        "20:30"
+      ],
+      "url": "https://www.lilypadinman.com/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "lilypad:2026-09-14:the-fringe",
+      "clubId": "lilypad",
+      "title": "The Fringe",
+      "date": "2026-09-14",
+      "sets": [
+        "22:00"
+      ],
+      "url": "https://www.lilypadinman.com/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "lilypad:2026-09-16:gill-aharon-trio",
+      "clubId": "lilypad",
+      "title": "Gill Aharon Trio",
+      "date": "2026-09-16",
+      "sets": [
+        "20:15"
+      ],
+      "url": "https://www.lilypadinman.com/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "regattabar:2026-09-17:theo-croker",
+      "clubId": "regattabar",
+      "title": "Theo Croker",
+      "date": "2026-09-17",
+      "sets": [
+        "19:00"
+      ],
+      "url": "https://www.ticketweb.com/event/14922773",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "lilypad:2026-09-18:hooley-hour",
+      "clubId": "lilypad",
+      "title": "Hooley Hour",
+      "date": "2026-09-18",
+      "sets": [
+        "17:00"
+      ],
+      "url": "https://www.lilypadinman.com/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "regattabar:2026-09-18:george-coleman",
+      "clubId": "regattabar",
+      "title": "George Coleman",
+      "date": "2026-09-18",
+      "sets": [
+        "19:00",
+        "21:30"
+      ],
+      "url": "https://www.ticketweb.com/event/14262324",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "lilypad:2026-09-19:journeyglo-ft-micah-yoo",
+      "clubId": "lilypad",
+      "title": "JOURNEYGLO ft. Micah Yoo",
+      "date": "2026-09-19",
+      "sets": [
+        "17:00"
+      ],
+      "url": "https://www.lilypadinman.com/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "regattabar:2026-09-19:george-coleman",
+      "clubId": "regattabar",
+      "title": "George Coleman",
+      "date": "2026-09-19",
+      "sets": [
+        "19:00",
+        "21:30"
+      ],
+      "url": "https://www.ticketweb.com/event/14262334",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "scullers:2026-09-19:michael-prentky-s-sad-boy-add-apocalypse-album-release",
+      "clubId": "scullers",
+      "title": "Michael Prentky's sad boy:ADD:apocalypse Album Release",
+      "date": "2026-09-19",
+      "sets": [],
+      "url": "https://scullersjazz.com/calendar/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "regattabar:2026-09-20:april-varner-quintet",
+      "clubId": "regattabar",
+      "title": "April Varner Quintet",
+      "date": "2026-09-20",
+      "sets": [
+        "18:00"
+      ],
+      "url": "https://www.ticketweb.com/event/14201414",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "lilypad:2026-09-21:elan-mehler-trio",
+      "clubId": "lilypad",
+      "title": "Elan Mehler Trio",
+      "date": "2026-09-21",
+      "sets": [
+        "19:00"
+      ],
+      "url": "https://www.lilypadinman.com/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "lilypad:2026-09-21:jerry-bergonzi-quartet",
+      "clubId": "lilypad",
+      "title": "Jerry Bergonzi Quartet",
+      "date": "2026-09-21",
+      "sets": [
+        "20:30"
+      ],
+      "url": "https://www.lilypadinman.com/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "lilypad:2026-09-21:the-fringe",
+      "clubId": "lilypad",
+      "title": "The Fringe",
+      "date": "2026-09-21",
+      "sets": [
+        "22:00"
+      ],
+      "url": "https://www.lilypadinman.com/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "lilypad:2026-09-23:gill-aharon-trio",
+      "clubId": "lilypad",
+      "title": "Gill Aharon Trio",
+      "date": "2026-09-23",
+      "sets": [
+        "20:15"
+      ],
+      "url": "https://www.lilypadinman.com/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "lilypad:2026-09-25:hooley-hour",
+      "clubId": "lilypad",
+      "title": "Hooley Hour",
+      "date": "2026-09-25",
+      "sets": [
+        "17:00"
+      ],
+      "url": "https://www.lilypadinman.com/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "regattabar:2026-09-26:blues-on-the-corner-mccoy-tyner-legacy-band-featuring-franci",
+      "clubId": "regattabar",
+      "title": "Blues on the Corner: McCoy Tyner Legacy Band featuring Francisco Mela, Benito Gonzalez, Santi Debriano with special guest, George Garzone",
+      "date": "2026-09-26",
+      "sets": [
+        "19:00"
+      ],
+      "url": "https://www.ticketweb.com/event/14233734",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "scullers:2026-09-26:mike-dirubbo-quartet",
+      "clubId": "scullers",
+      "title": "Mike DiRubbo Quartet",
+      "date": "2026-09-26",
+      "sets": [],
+      "url": "https://scullersjazz.com/calendar/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "lilypad:2026-09-28:elan-mehler-trio",
+      "clubId": "lilypad",
+      "title": "Elan Mehler Trio",
+      "date": "2026-09-28",
+      "sets": [
+        "19:00"
+      ],
+      "url": "https://www.lilypadinman.com/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "lilypad:2026-09-28:jerry-bergonzi-quartet",
+      "clubId": "lilypad",
+      "title": "Jerry Bergonzi Quartet",
+      "date": "2026-09-28",
+      "sets": [
+        "20:30"
+      ],
+      "url": "https://www.lilypadinman.com/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "lilypad:2026-09-28:the-fringe",
+      "clubId": "lilypad",
+      "title": "The Fringe",
+      "date": "2026-09-28",
+      "sets": [
+        "22:00"
+      ],
+      "url": "https://www.lilypadinman.com/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "lilypad:2026-09-30:gill-aharon-trio",
+      "clubId": "lilypad",
+      "title": "Gill Aharon Trio",
+      "date": "2026-09-30",
+      "sets": [
+        "20:15"
+      ],
+      "url": "https://www.lilypadinman.com/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "regattabar:2026-10-02:eli-paperboy-reed",
+      "clubId": "regattabar",
+      "title": "Eli Paperboy Reed",
+      "date": "2026-10-02",
+      "sets": [
+        "19:00"
+      ],
+      "url": "https://www.ticketweb.com/event/14215844",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "lilypad:2026-10-02:gordi",
+      "clubId": "lilypad",
+      "title": "Gordi",
+      "date": "2026-10-02",
+      "sets": [
+        "19:30"
+      ],
+      "url": "https://www.lilypadinman.com/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "scullers:2026-10-02:yoko-miwa-trio-with-special-guest-mikayla-shirley",
+      "clubId": "scullers",
+      "title": "Yoko Miwa Trio with Special Guest, Mikayla Shirley",
+      "date": "2026-10-02",
+      "sets": [],
+      "url": "https://scullersjazz.com/calendar/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "regattabar:2026-10-03:michael-mayo",
+      "clubId": "regattabar",
+      "title": "Michael Mayo",
+      "date": "2026-10-03",
+      "sets": [
+        "19:00"
+      ],
+      "url": "https://www.ticketweb.com/event/14171014",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "scullers:2026-10-03:peter-white",
+      "clubId": "scullers",
+      "title": "Peter White",
+      "date": "2026-10-03",
+      "sets": [],
+      "url": "https://scullersjazz.com/calendar/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "regattabar:2026-10-04:john-pizzarelli",
+      "clubId": "regattabar",
+      "title": "John Pizzarelli",
+      "date": "2026-10-04",
+      "sets": [
+        "16:00",
+        "18:00"
+      ],
+      "url": "https://www.ticketweb.com/event/14957233",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "regattabar:2026-10-08:kevin-hays-awakening-quartet-featuring-brian-blade-immanuel-",
+      "clubId": "regattabar",
+      "title": "Kevin Hays Awakening Quartet featuring Brian Blade, Immanuel Wilkins and Matt Brewer",
+      "date": "2026-10-08",
+      "sets": [
+        "19:00"
+      ],
+      "url": "https://www.ticketweb.com/event/14264324",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "regattabar:2026-10-09:alison-brown",
+      "clubId": "regattabar",
+      "title": "Alison Brown",
+      "date": "2026-10-09",
+      "sets": [
+        "19:00"
+      ],
+      "url": "https://www.ticketweb.com/event/14204234",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "scullers:2026-10-10:patrick-lamb",
+      "clubId": "scullers",
+      "title": "Patrick Lamb",
+      "date": "2026-10-10",
+      "sets": [],
+      "url": "https://scullersjazz.com/calendar/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "regattabar:2026-10-11:tia-fuller",
+      "clubId": "regattabar",
+      "title": "Tia Fuller",
+      "date": "2026-10-11",
+      "sets": [
+        "18:00"
+      ],
+      "url": "https://www.ticketweb.com/event/14013994",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "regattabar:2026-10-15:vanessa-collier",
+      "clubId": "regattabar",
+      "title": "Vanessa Collier",
+      "date": "2026-10-15",
+      "sets": [
+        "19:00"
+      ],
+      "url": "https://www.ticketweb.com/event/14925033",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "scullers:2026-10-16:warren-wolf",
+      "clubId": "scullers",
+      "title": "Warren Wolf",
+      "date": "2026-10-16",
+      "sets": [],
+      "url": "https://scullersjazz.com/calendar/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "regattabar:2026-10-17:the-pierre-hurel-trio",
+      "clubId": "regattabar",
+      "title": "The Pierre Hurel Trio",
+      "date": "2026-10-17",
+      "sets": [
+        "19:00"
+      ],
+      "url": "https://www.ticketweb.com/event/14925013",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "scullers:2026-10-17:ann-hampton-callaway-here-s-to-life",
+      "clubId": "scullers",
+      "title": "Ann Hampton Callaway - Here's to Life",
+      "date": "2026-10-17",
+      "sets": [],
+      "url": "https://scullersjazz.com/calendar/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "scullers:2026-10-31:benny-green",
+      "clubId": "scullers",
+      "title": "Benny Green",
+      "date": "2026-10-31",
+      "sets": [],
+      "url": "https://scullersjazz.com/calendar/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "lilypad:2026-11-14:private-event",
+      "clubId": "lilypad",
+      "title": "** Private Event **",
+      "date": "2026-11-14",
+      "sets": [
+        "19:00"
+      ],
+      "url": "https://www.lilypadinman.com/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "scullers:2026-12-12:amanda-carr-and-the-ken-clark-organ-trio-feat-james-montgome",
+      "clubId": "scullers",
+      "title": "Amanda Carr and the Ken Clark Organ Trio feat James Montgomery",
+      "date": "2026-12-12",
+      "sets": [],
+      "url": "https://scullersjazz.com/calendar/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    }
+  ]
+}

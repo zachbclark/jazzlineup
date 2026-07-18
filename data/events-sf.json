@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-16T21:34:43.663Z",
+  "generatedAt": "2026-07-18T18:30:00.144Z",
   "city": "sf",
   "clubs": [
     {
@@ -318,19 +318,6 @@
       "priceText": null
     },
     {
-      "id": "blackcat:2026-07-15:sami-stevens-homecoming",
-      "clubId": "blackcat",
-      "title": "Sami Stevens' Homecoming",
-      "date": "2026-07-15",
-      "sets": [
-        "19:00"
-      ],
-      "url": "https://blackcatsf.turntabletickets.com/shows/11918/?date=2026-07-15",
-      "details": null,
-      "personnel": null,
-      "priceText": "$15-45"
-    },
-    {
       "id": "keys:2026-07-15:the-guitar-hang",
       "clubId": "keys",
       "title": "The Guitar Hang",
@@ -343,34 +330,6 @@
       "details": null,
       "personnel": null,
       "priceText": null
-    },
-    {
-      "id": "sfjazz:2026-07-16:steven-bernstein-s-sexmob",
-      "clubId": "sfjazz",
-      "title": "Steven Bernstein's Sexmob",
-      "date": "2026-07-16",
-      "sets": [
-        "19:00",
-        "20:30"
-      ],
-      "url": "https://www.sfjazz.org/tickets/productions/summer-2026/steven-bernsteins-sexmob/",
-      "details": "Joe Henderson Lab",
-      "personnel": null,
-      "priceText": null
-    },
-    {
-      "id": "blackcat:2026-07-16:ben-sherman-quartet-debut-residency",
-      "clubId": "blackcat",
-      "title": "Ben Sherman Quartet Debut Residency",
-      "date": "2026-07-16",
-      "sets": [
-        "19:00",
-        "21:15"
-      ],
-      "url": "https://blackcatsf.turntabletickets.com/shows/11919/?date=2026-07-16",
-      "details": null,
-      "personnel": null,
-      "priceText": "$15-45"
     },
     {
       "id": "keys:2026-07-16:fog-city-swing",
@@ -387,59 +346,6 @@
       "priceText": null
     },
     {
-      "id": "sfjazz:2026-07-16:lettuce",
-      "clubId": "sfjazz",
-      "title": "Lettuce",
-      "date": "2026-07-16",
-      "sets": [
-        "19:30"
-      ],
-      "url": "https://www.sfjazz.org/tickets/productions/summer-2026/lettuce/",
-      "details": "Miner Auditorium",
-      "personnel": null,
-      "priceText": null
-    },
-    {
-      "id": "yoshis:2026-07-16:peter-white",
-      "clubId": "yoshis",
-      "title": "PETER WHITE",
-      "date": "2026-07-16",
-      "sets": [
-        "19:30"
-      ],
-      "url": "https://yoshis.com/events/buy-tickets/peter-white-11/detail",
-      "details": null,
-      "personnel": null,
-      "priceText": null
-    },
-    {
-      "id": "mrtipples:2026-07-16:steinkoler-trio",
-      "clubId": "mrtipples",
-      "title": "Steinkoler Trio",
-      "date": "2026-07-16",
-      "sets": [
-        "20:45"
-      ],
-      "url": "https://mrtipplessf.com/calendar/steinkoler-trio-2/",
-      "details": "Evan Steinkoler | Piano Sam Bevan | Bass Jeremy Steinkoler | Drums",
-      "personnel": null,
-      "priceText": "$15-$30"
-    },
-    {
-      "id": "sfjazz:2026-07-17:steven-bernstein-s-sexmob",
-      "clubId": "sfjazz",
-      "title": "Steven Bernstein's Sexmob",
-      "date": "2026-07-17",
-      "sets": [
-        "19:00",
-        "20:30"
-      ],
-      "url": "https://www.sfjazz.org/tickets/productions/summer-2026/steven-bernsteins-sexmob/",
-      "details": "Joe Henderson Lab",
-      "personnel": null,
-      "priceText": null
-    },
-    {
       "id": "blackcat:2026-07-17:ben-sherman-quartet-debut-residency",
       "clubId": "blackcat",
       "title": "Ben Sherman Quartet Debut Residency",
@@ -450,7 +356,24 @@
       ],
       "url": "https://blackcatsf.turntabletickets.com/shows/11920/?date=2026-07-17",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Ben Sherman",
+          "instrument": "tenor saxophone"
+        },
+        {
+          "name": "Roman Goron",
+          "instrument": "piano"
+        },
+        {
+          "name": "Daniel Song",
+          "instrument": "bass"
+        },
+        {
+          "name": "Isaiah Bravo",
+          "instrument": "drums"
+        }
+      ],
       "priceText": "$15-55"
     },
     {
@@ -467,45 +390,6 @@
       "priceText": null
     },
     {
-      "id": "sfjazz:2026-07-17:lettuce",
-      "clubId": "sfjazz",
-      "title": "Lettuce",
-      "date": "2026-07-17",
-      "sets": [
-        "19:30"
-      ],
-      "url": "https://www.sfjazz.org/tickets/productions/summer-2026/lettuce/",
-      "details": "Miner Auditorium",
-      "personnel": null,
-      "priceText": null
-    },
-    {
-      "id": "mrtipples:2026-07-17:joe-warner-trio",
-      "clubId": "mrtipples",
-      "title": "Joe Warner Trio",
-      "date": "2026-07-17",
-      "sets": [
-        "19:30"
-      ],
-      "url": "https://mrtipplessf.com/calendar/joe-warner-trio-2/",
-      "details": "Ron Belcher | Bass Dante Roberson | Drums Joe Warner | Piano",
-      "personnel": null,
-      "priceText": "$15-$30"
-    },
-    {
-      "id": "birdbeckett:2026-07-17:jazz-in-the-bookshop",
-      "clubId": "birdbeckett",
-      "title": "Jazz in the Bookshop",
-      "date": "2026-07-17",
-      "sets": [
-        "19:30"
-      ],
-      "url": "https://birdbeckett.com/events/",
-      "details": "Friday jazz among the shelves, every week since 2002. Rotating bands; see the events page for this week’s lineup. Donations support the musicians.",
-      "personnel": null,
-      "priceText": null
-    },
-    {
       "id": "keys:2026-07-17:tony-lindsay",
       "clubId": "keys",
       "title": "Tony Lindsay",
@@ -517,19 +401,6 @@
       "details": null,
       "personnel": null,
       "priceText": null
-    },
-    {
-      "id": "mrtipples:2026-07-17:john-palowitch-group",
-      "clubId": "mrtipples",
-      "title": "John Palowitch Group",
-      "date": "2026-07-17",
-      "sets": [
-        "22:30"
-      ],
-      "url": "https://mrtipplessf.com/calendar/john-palowitch-group-2/",
-      "details": "Kevin Person Jr. | Piano Toncau | Bass Jaycie Grady | Drums John Palowitch | Alto KOOL A.D. | Emcee John is one of the Bay Area’s leading saxophone players and composers, hailing from Thomas Pridgen’s BIG TRIPPIN supergroup that blends hip hop, rock, and modern jazz. Tonight, John brings a set of hi",
-      "personnel": null,
-      "priceText": "$15-$30"
     },
     {
       "id": "sfjazz:2026-07-18:steven-bernstein-s-sexmob",
@@ -556,7 +427,24 @@
       ],
       "url": "https://blackcatsf.turntabletickets.com/shows/11920/?date=2026-07-18",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Ben Sherman",
+          "instrument": "tenor saxophone"
+        },
+        {
+          "name": "Roman Goron",
+          "instrument": "piano"
+        },
+        {
+          "name": "Daniel Song",
+          "instrument": "bass"
+        },
+        {
+          "name": "Isaiah Bravo",
+          "instrument": "drums"
+        }
+      ],
       "priceText": "$15-55"
     },
     {
@@ -569,7 +457,20 @@
       ],
       "url": "https://keysjazzbistro.com/event/clairdee-13/",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Jason Lewis",
+          "instrument": "drums"
+        },
+        {
+          "name": "Ron Belcher",
+          "instrument": "bass"
+        },
+        {
+          "name": "Eric Swinderman",
+          "instrument": "guitar"
+        }
+      ],
       "priceText": null
     },
     {
@@ -623,7 +524,7 @@
       "sets": [
         "19:30"
       ],
-      "url": "https://yoshis.com/events/buy-tickets/greg-adams-east-bay-soul-9/detail",
+      "url": "https://yoshis.com/events/calendar",
       "details": null,
       "personnel": null,
       "priceText": null
@@ -719,7 +620,24 @@
       ],
       "url": "https://blackcatsf.turntabletickets.com/shows/11919/?date=2026-07-19",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Ben Sherman",
+          "instrument": "tenor saxophone"
+        },
+        {
+          "name": "Roman Goron",
+          "instrument": "piano"
+        },
+        {
+          "name": "Daniel Song",
+          "instrument": "bass"
+        },
+        {
+          "name": "Isaiah Bravo",
+          "instrument": "drums"
+        }
+      ],
       "priceText": "$15-45"
     },
     {
@@ -771,7 +689,20 @@
       ],
       "url": "https://blackcatsf.turntabletickets.com/shows/11925/?date=2026-07-22",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Dann Zinn",
+          "instrument": "saxophone, flute, electronics"
+        },
+        {
+          "name": "John Wiitala",
+          "instrument": "bass"
+        },
+        {
+          "name": "Michael Mitchell",
+          "instrument": "drums"
+        }
+      ],
       "priceText": "$15-45"
     },
     {
@@ -839,7 +770,24 @@
       ],
       "url": "https://blackcatsf.turntabletickets.com/shows/11926/?date=2026-07-23",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Anthony Fung",
+          "instrument": "drums"
+        },
+        {
+          "name": "Alex Hahn",
+          "instrument": "alto sax"
+        },
+        {
+          "name": "Michael Ragonese",
+          "instrument": "piano"
+        },
+        {
+          "name": "Luca Alemanno",
+          "instrument": "bass"
+        }
+      ],
       "priceText": "$15-45"
     },
     {
@@ -891,7 +839,7 @@
         "20:45"
       ],
       "url": "https://mrtipplessf.com/calendar/patrick-wolff-quartet-2/",
-      "details": "Keith Saunders- Piano Eric Markowitz- bass Mark Ferber- drums An exciting band with a big sound, this group of some of SF’s finest has been playing together for over 9 years, focusing on original compositions and hard bop classics from Horace Silver, Kenny Dorham, and Freddie Redd. The quintet’s alb",
+      "details": "Mike Olmos | Trumpet Keith Saunders | Piano Eric Markowitz | Bass Mark Ferber | Drums Patrick Wolff | Tenor An exciting band with a big sound, this group of some of SF’s finest has been playing together for over 9 years, focusing on original compositions and hard bop classics from Horace Silver, Ken",
       "personnel": null,
       "priceText": "$15-$20"
     },
@@ -920,7 +868,24 @@
       ],
       "url": "https://blackcatsf.turntabletickets.com/shows/11927/?date=2026-07-24",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Anthony Fung",
+          "instrument": "drums"
+        },
+        {
+          "name": "Alex Hahn",
+          "instrument": "alto sax"
+        },
+        {
+          "name": "Michael Ragonese",
+          "instrument": "piano"
+        },
+        {
+          "name": "Luca Alemanno",
+          "instrument": "bass"
+        }
+      ],
       "priceText": "$15-55"
     },
     {
@@ -1013,7 +978,24 @@
       ],
       "url": "https://blackcatsf.turntabletickets.com/shows/11927/?date=2026-07-25",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Anthony Fung",
+          "instrument": "drums"
+        },
+        {
+          "name": "Alex Hahn",
+          "instrument": "alto sax"
+        },
+        {
+          "name": "Michael Ragonese",
+          "instrument": "piano"
+        },
+        {
+          "name": "Luca Alemanno",
+          "instrument": "bass"
+        }
+      ],
       "priceText": "$15-55"
     },
     {
@@ -1065,7 +1047,20 @@
       ],
       "url": "https://keysjazzbistro.com/event/ritmo-y-voz-afro-cuban-jazz-ignited-17/",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Einar “Tito” Leliebre",
+          "instrument": "vocals, percussion"
+        },
+        {
+          "name": "Ernesto Kindelan Mazar",
+          "instrument": "bass"
+        },
+        {
+          "name": "Kai Lyons",
+          "instrument": "guitar"
+        }
+      ],
       "priceText": null
     },
     {
@@ -1133,7 +1128,24 @@
       ],
       "url": "https://blackcatsf.turntabletickets.com/shows/11926/?date=2026-07-26",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Anthony Fung",
+          "instrument": "drums"
+        },
+        {
+          "name": "Alex Hahn",
+          "instrument": "alto sax"
+        },
+        {
+          "name": "Michael Ragonese",
+          "instrument": "piano"
+        },
+        {
+          "name": "Luca Alemanno",
+          "instrument": "bass"
+        }
+      ],
       "priceText": "$15-45"
     },
     {
@@ -1172,7 +1184,28 @@
       ],
       "url": "https://blackcatsf.turntabletickets.com/shows/11928/?date=2026-07-29",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Arnie Sainz",
+          "instrument": "piano"
+        },
+        {
+          "name": "Alistair Johnston",
+          "instrument": "tenor saxophone"
+        },
+        {
+          "name": "Robert Papacica",
+          "instrument": "guitar"
+        },
+        {
+          "name": "Jared Beckstead",
+          "instrument": "bass"
+        },
+        {
+          "name": "Malachi Whitson",
+          "instrument": "drums"
+        }
+      ],
       "priceText": "$15-45"
     },
     {
@@ -1346,7 +1379,20 @@
       ],
       "url": "https://blackcatsf.turntabletickets.com/shows/11929/?date=2026-07-31",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Daniel Winshall",
+          "instrument": "bass"
+        },
+        {
+          "name": "Matt Sewell",
+          "instrument": "guitar"
+        },
+        {
+          "name": "Thomas Pridgen",
+          "instrument": "drums"
+        }
+      ],
       "priceText": "$20-55"
     },
     {
@@ -1465,7 +1511,20 @@
       ],
       "url": "https://blackcatsf.turntabletickets.com/shows/11929/?date=2026-08-01",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Daniel Winshall",
+          "instrument": "bass"
+        },
+        {
+          "name": "Matt Sewell",
+          "instrument": "guitar"
+        },
+        {
+          "name": "Thomas Pridgen",
+          "instrument": "drums"
+        }
+      ],
       "priceText": "$20-55"
     },
     {
@@ -1506,19 +1565,6 @@
       "details": "Ayla Dávila | Bass Colin Douglas | Drums Pedro José Pastrana | Cuatro Bio: Pedro José Pastrana presents his latest album, “Lo Que Nos Llevamos”. With this new project, he shares original compositions that capture his current relationship with Puerto Rico from the distance. Supported by his trusted p",
       "personnel": null,
       "priceText": "$15-$30"
-    },
-    {
-      "id": "keys:2026-08-01:sundra-manning-soulful-vibrations",
-      "clubId": "keys",
-      "title": "Sundra Manning: “Soulful Vibrations”",
-      "date": "2026-08-01",
-      "sets": [
-        "21:00"
-      ],
-      "url": "https://keysjazzbistro.com/event/sundra-manning-soulful-vibrations-3/",
-      "details": null,
-      "personnel": null,
-      "priceText": null
     },
     {
       "id": "keys:2026-08-01:late-set-simon-rowe-organ-trio",
@@ -1584,7 +1630,20 @@
       ],
       "url": "https://blackcatsf.turntabletickets.com/shows/11930/?date=2026-08-02",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Daniel Winshall",
+          "instrument": "bass"
+        },
+        {
+          "name": "Matt Sewell",
+          "instrument": "guitar"
+        },
+        {
+          "name": "Thomas Pridgen",
+          "instrument": "drums"
+        }
+      ],
       "priceText": "$15-55"
     },
     {
@@ -1675,7 +1734,24 @@
       ],
       "url": "https://blackcatsf.turntabletickets.com/shows/12029/?date=2026-08-05",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Joel Behrman",
+          "instrument": "trumpet"
+        },
+        {
+          "name": "Jesse Levit",
+          "instrument": "sax"
+        },
+        {
+          "name": "Matt Clark",
+          "instrument": "piano"
+        },
+        {
+          "name": "Brian Fishler",
+          "instrument": "drums"
+        }
+      ],
       "priceText": "$15-45"
     },
     {
@@ -1833,7 +1909,7 @@
       "sets": [
         "19:30"
       ],
-      "url": "https://yoshis.com/events/buy-tickets/teddy-riley/detail",
+      "url": "https://yoshis.com/events/calendar",
       "details": null,
       "personnel": null,
       "priceText": null
@@ -1929,6 +2005,20 @@
       "details": "Peter Horvath | Piano Jason Lewis | Drums Josh Thurston-Milgrom | Bass Mike Zelber | Sax",
       "personnel": null,
       "priceText": "$15-$30"
+    },
+    {
+      "id": "keys:2026-08-09:rhonda-benin-jazz-on-the-soul-side",
+      "clubId": "keys",
+      "title": "Rhonda Benin-“Jazz on The Soul Side”",
+      "date": "2026-08-09",
+      "sets": [
+        "17:00",
+        "19:00"
+      ],
+      "url": "https://keysjazzbistro.com/event/rhonda-benin-jazz-on-the-soul-side/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
     },
     {
       "id": "yoshis:2026-08-09:case-pre-show-vip-experience-show-ticket-not-included",
@@ -2072,7 +2162,20 @@
       ],
       "url": "https://blackcatsf.turntabletickets.com/shows/12031/?date=2026-08-13",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Amanda Addleman",
+          "instrument": "vocals/piano"
+        },
+        {
+          "name": "Nico Martinez",
+          "instrument": "acoustic bass"
+        },
+        {
+          "name": "Zach Adleman",
+          "instrument": "drums"
+        }
+      ],
       "priceText": "$15-45"
     },
     {
@@ -2125,7 +2228,24 @@
       ],
       "url": "https://blackcatsf.turntabletickets.com/shows/12033/?date=2026-08-14",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "David Kikoski",
+          "instrument": "piano"
+        },
+        {
+          "name": "Ralph Moore",
+          "instrument": "tenor saxophone"
+        },
+        {
+          "name": "Marvin “Smitty” Smith",
+          "instrument": "drums"
+        },
+        {
+          "name": "Rob Moreno",
+          "instrument": "bass"
+        }
+      ],
       "priceText": "$15-55"
     },
     {
@@ -2191,7 +2311,24 @@
       ],
       "url": "https://blackcatsf.turntabletickets.com/shows/12033/?date=2026-08-15",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "David Kikoski",
+          "instrument": "piano"
+        },
+        {
+          "name": "Ralph Moore",
+          "instrument": "tenor saxophone"
+        },
+        {
+          "name": "Marvin “Smitty” Smith",
+          "instrument": "drums"
+        },
+        {
+          "name": "Rob Moreno",
+          "instrument": "bass"
+        }
+      ],
       "priceText": "$15-55"
     },
     {
@@ -2270,7 +2407,24 @@
       ],
       "url": "https://blackcatsf.turntabletickets.com/shows/12032/?date=2026-08-16",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "David Kikoski",
+          "instrument": "piano"
+        },
+        {
+          "name": "Ralph Moore",
+          "instrument": "tenor saxophone"
+        },
+        {
+          "name": "Marvin “Smitty” Smith",
+          "instrument": "drums"
+        },
+        {
+          "name": "Rob Moreno",
+          "instrument": "bass"
+        }
+      ],
       "priceText": "$15-45"
     },
     {
@@ -2322,7 +2476,28 @@
       ],
       "url": "https://blackcatsf.turntabletickets.com/shows/12239/?date=2026-08-19",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Nate Gilbreath",
+          "instrument": "trombone"
+        },
+        {
+          "name": "Nicolaus Gelin",
+          "instrument": "trumpet"
+        },
+        {
+          "name": "Mwanzi Harriott",
+          "instrument": "guitar"
+        },
+        {
+          "name": "Alan Jones",
+          "instrument": "bass"
+        },
+        {
+          "name": "Miles Turk",
+          "instrument": "drums"
+        }
+      ],
       "priceText": "$15-45"
     },
     {
@@ -2362,7 +2537,24 @@
       ],
       "url": "https://blackcatsf.turntabletickets.com/shows/12034/?date=2026-08-20",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Sheldon Alexander",
+          "instrument": "drums"
+        },
+        {
+          "name": "Kevin Person",
+          "instrument": "keys"
+        },
+        {
+          "name": "Clark Sims",
+          "instrument": "bass"
+        },
+        {
+          "name": "Veotis Latchison",
+          "instrument": "vocals"
+        }
+      ],
       "priceText": "$15-45"
     },
     {
@@ -2389,7 +2581,24 @@
       ],
       "url": "https://blackcatsf.turntabletickets.com/shows/12035/?date=2026-08-21",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Joe Farnsworth",
+          "instrument": "drums"
+        },
+        {
+          "name": "Eric Alexander",
+          "instrument": "sax"
+        },
+        {
+          "name": "Michael Zisman",
+          "instrument": "bass"
+        },
+        {
+          "name": "Matt Clarke",
+          "instrument": "piano"
+        }
+      ],
       "priceText": "$20-55"
     },
     {
@@ -2455,7 +2664,24 @@
       ],
       "url": "https://blackcatsf.turntabletickets.com/shows/12035/?date=2026-08-22",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Joe Farnsworth",
+          "instrument": "drums"
+        },
+        {
+          "name": "Eric Alexander",
+          "instrument": "sax"
+        },
+        {
+          "name": "Michael Zisman",
+          "instrument": "bass"
+        },
+        {
+          "name": "Matt Clarke",
+          "instrument": "piano"
+        }
+      ],
       "priceText": "$20-55"
     },
     {
@@ -2509,7 +2735,24 @@
       ],
       "url": "https://blackcatsf.turntabletickets.com/shows/12036/?date=2026-08-23",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Joe Farnsworth",
+          "instrument": "drums"
+        },
+        {
+          "name": "Eric Alexander",
+          "instrument": "sax"
+        },
+        {
+          "name": "Michael Zisman",
+          "instrument": "bass"
+        },
+        {
+          "name": "Matt Clarke",
+          "instrument": "piano"
+        }
+      ],
       "priceText": "$15-55"
     },
     {
@@ -2574,7 +2817,20 @@
       ],
       "url": "https://blackcatsf.turntabletickets.com/shows/12037/?date=2026-08-26",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Eloise Carter",
+          "instrument": "vocals"
+        },
+        {
+          "name": "Adam Schulman",
+          "instrument": "piano"
+        },
+        {
+          "name": "Brian Fishler",
+          "instrument": "drums"
+        }
+      ],
       "priceText": "$15-45"
     },
     {
@@ -2601,7 +2857,24 @@
       ],
       "url": "https://blackcatsf.turntabletickets.com/shows/12038/?date=2026-08-27",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Wayne Escoffery",
+          "instrument": "tenor saxophone"
+        },
+        {
+          "name": "Tal Cohen",
+          "instrument": "piano"
+        },
+        {
+          "name": "Giulio Xavier Cetto",
+          "instrument": "bass"
+        },
+        {
+          "name": "Malachi Whitson",
+          "instrument": "drums"
+        }
+      ],
       "priceText": "$15-45"
     },
     {
@@ -2641,7 +2914,24 @@
       ],
       "url": "https://blackcatsf.turntabletickets.com/shows/12039/?date=2026-08-28",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Wayne Escoffery",
+          "instrument": "tenor saxophone"
+        },
+        {
+          "name": "Tal Cohen",
+          "instrument": "piano"
+        },
+        {
+          "name": "Giulio Xavier Cetto",
+          "instrument": "bass"
+        },
+        {
+          "name": "Malachi Whitson",
+          "instrument": "drums"
+        }
+      ],
       "priceText": "$15-55"
     },
     {
@@ -2694,7 +2984,24 @@
       ],
       "url": "https://blackcatsf.turntabletickets.com/shows/12039/?date=2026-08-29",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Wayne Escoffery",
+          "instrument": "tenor saxophone"
+        },
+        {
+          "name": "Tal Cohen",
+          "instrument": "piano"
+        },
+        {
+          "name": "Giulio Xavier Cetto",
+          "instrument": "bass"
+        },
+        {
+          "name": "Malachi Whitson",
+          "instrument": "drums"
+        }
+      ],
       "priceText": "$15-55"
     },
     {
@@ -2737,6 +3044,19 @@
       "priceText": null
     },
     {
+      "id": "mrtipples:2026-08-29:sundra-manning-organ",
+      "clubId": "mrtipples",
+      "title": "Sundra Manning Organ",
+      "date": "2026-08-29",
+      "sets": [
+        "22:30"
+      ],
+      "url": "https://mrtipplessf.com/calendar/sundra-manning-organ-2/",
+      "details": null,
+      "personnel": null,
+      "priceText": "$15-$30"
+    },
+    {
       "id": "blackcat:2026-08-30:the-coltrane-influence-two-different-expressions-ft-wayne-es",
       "clubId": "blackcat",
       "title": "The Coltrane Influence: Two Different Expressions ft. Wayne Escoffery & Tal Cohen",
@@ -2747,7 +3067,24 @@
       ],
       "url": "https://blackcatsf.turntabletickets.com/shows/12038/?date=2026-08-30",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Wayne Escoffery",
+          "instrument": "tenor saxophone"
+        },
+        {
+          "name": "Tal Cohen",
+          "instrument": "piano"
+        },
+        {
+          "name": "Giulio Xavier Cetto",
+          "instrument": "bass"
+        },
+        {
+          "name": "Malachi Whitson",
+          "instrument": "drums"
+        }
+      ],
       "priceText": "$15-45"
     },
     {
@@ -2827,6 +3164,33 @@
       "details": null,
       "personnel": null,
       "priceText": null
+    },
+    {
+      "id": "blackcat:2026-09-03:daniel-harris-iii",
+      "clubId": "blackcat",
+      "title": "Daniel Harris III",
+      "date": "2026-09-03",
+      "sets": [
+        "19:00",
+        "21:15"
+      ],
+      "url": "https://blackcatsf.turntabletickets.com/shows/12338/?date=2026-09-03",
+      "details": null,
+      "personnel": [
+        {
+          "name": "Daniel Harris III",
+          "instrument": "trumpet"
+        },
+        {
+          "name": "Veritus Miller",
+          "instrument": "piano"
+        },
+        {
+          "name": "Micah Heard",
+          "instrument": "drums"
+        }
+      ],
+      "priceText": "$15-45"
     },
     {
       "id": "yoshis:2026-09-03:sheena-easton",
@@ -2918,6 +3282,32 @@
       "details": null,
       "personnel": null,
       "priceText": null
+    },
+    {
+      "id": "blackcat:2026-09-09:king-david",
+      "clubId": "blackcat",
+      "title": "King David",
+      "date": "2026-09-09",
+      "sets": [
+        "19:00"
+      ],
+      "url": "https://blackcatsf.turntabletickets.com/shows/12340/?date=2026-09-09",
+      "details": null,
+      "personnel": [
+        {
+          "name": "Mark Ligonde",
+          "instrument": "bass"
+        },
+        {
+          "name": "Rich Newell",
+          "instrument": "drums"
+        },
+        {
+          "name": "Chili Corder",
+          "instrument": "guitar"
+        }
+      ],
+      "priceText": "$15-45"
     },
     {
       "id": "yoshis:2026-09-09:lisa-fischer-orrin-evans-trio",
@@ -3037,6 +3427,19 @@
       "details": null,
       "personnel": null,
       "priceText": "$15-$30"
+    },
+    {
+      "id": "birdbeckett:2026-09-11:jazz-in-the-bookshop",
+      "clubId": "birdbeckett",
+      "title": "Jazz in the Bookshop",
+      "date": "2026-09-11",
+      "sets": [
+        "19:30"
+      ],
+      "url": "https://birdbeckett.com/events/",
+      "details": "Friday jazz among the shelves, every week since 2002. Rotating bands; see the events page for this week’s lineup. Donations support the musicians.",
+      "personnel": null,
+      "priceText": null
     },
     {
       "id": "yoshis:2026-09-11:aneesa-strings",
@@ -3197,6 +3600,47 @@
       "priceText": null
     },
     {
+      "id": "blackcat:2026-09-16:the-kuumba-experience",
+      "clubId": "blackcat",
+      "title": "The Kuumba Experience",
+      "date": "2026-09-16",
+      "sets": [
+        "19:00",
+        "21:15"
+      ],
+      "url": "https://blackcatsf.turntabletickets.com/shows/12341/?date=2026-09-16",
+      "details": null,
+      "personnel": null,
+      "priceText": "$15-45"
+    },
+    {
+      "id": "mrtipples:2026-09-16:lisa-mezzacappa-quintet",
+      "clubId": "mrtipples",
+      "title": "Lisa Mezzacappa Quintet",
+      "date": "2026-09-16",
+      "sets": [
+        "20:45"
+      ],
+      "url": "https://mrtipplessf.com/calendar/lisa-mezzacappa-quintet-2/",
+      "details": "Aaron Bennett | Tenor Sax Mark Clifford | Vibraphone Brett Carson | Piano Lisa Mezzacappa | Bass Jordan Glenn | Drums Bio: Adventurous original music by Mezzacappa and arrangements of rare classics by Herbie Nichols, Geri Allen, Arthur Blythe, Ornette Clmean, Carla Bley, Charles Mingus, and others.",
+      "personnel": null,
+      "priceText": "$15-$20"
+    },
+    {
+      "id": "blackcat:2026-09-17:the-kuumba-experience",
+      "clubId": "blackcat",
+      "title": "The Kuumba Experience",
+      "date": "2026-09-17",
+      "sets": [
+        "19:00",
+        "21:15"
+      ],
+      "url": "https://blackcatsf.turntabletickets.com/shows/12345/?date=2026-09-17",
+      "details": null,
+      "personnel": null,
+      "priceText": "$15-45"
+    },
+    {
       "id": "yoshis:2026-09-18:big-daddy-kane",
       "clubId": "yoshis",
       "title": "BIG DADDY KANE",
@@ -3221,6 +3665,49 @@
       "details": null,
       "personnel": null,
       "priceText": null
+    },
+    {
+      "id": "yoshis:2026-09-21:the-gens-throwback-gospel-music-experience",
+      "clubId": "yoshis",
+      "title": "THE GENS: THROWBACK GOSPEL MUSIC EXPERIENCE",
+      "date": "2026-09-21",
+      "sets": [
+        "20:00"
+      ],
+      "url": "https://yoshis.com/events/buy-tickets/the-gens-throwback-gospel-music-experience/detail",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "blackcat:2026-09-23:cody-steinman",
+      "clubId": "blackcat",
+      "title": "Cody Steinman",
+      "date": "2026-09-23",
+      "sets": [
+        "19:00"
+      ],
+      "url": "https://blackcatsf.turntabletickets.com/shows/12342/?date=2026-09-23",
+      "details": null,
+      "personnel": [
+        {
+          "name": "John Palowitch",
+          "instrument": "alto saxophone"
+        },
+        {
+          "name": "Cody Steinmann",
+          "instrument": "guitar"
+        },
+        {
+          "name": "Isaac Coyle",
+          "instrument": "bass"
+        },
+        {
+          "name": "Henry Plumb",
+          "instrument": "drums"
+        }
+      ],
+      "priceText": "$15-45"
     },
     {
       "id": "yoshis:2026-09-23:lydia-pense-cold-blood",
@@ -3312,6 +3799,40 @@
       "details": null,
       "personnel": null,
       "priceText": null
+    },
+    {
+      "id": "blackcat:2026-09-30:character-select",
+      "clubId": "blackcat",
+      "title": "Character Select",
+      "date": "2026-09-30",
+      "sets": [
+        "19:00"
+      ],
+      "url": "https://blackcatsf.turntabletickets.com/shows/12343/?date=2026-09-30",
+      "details": null,
+      "personnel": [
+        {
+          "name": "Trevor Strohl",
+          "instrument": "saxophone"
+        },
+        {
+          "name": "Jonathan Franaszek",
+          "instrument": "piano"
+        },
+        {
+          "name": "Dylan Escudero",
+          "instrument": "guitar"
+        },
+        {
+          "name": "Miguel “FRUNKYMAN” Leyva",
+          "instrument": "bass"
+        },
+        {
+          "name": "Nick Aganad",
+          "instrument": "drums"
+        }
+      ],
+      "priceText": "$15-45"
     },
     {
       "id": "yoshis:2026-10-01:vincent-ingala",

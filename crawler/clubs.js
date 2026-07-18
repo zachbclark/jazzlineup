@@ -953,6 +953,86 @@ export const CLUBS = [
     color: '#d8d3c0', // raw-concrete cream, true to the room — audit-cleared
     module: './clubs/cafeoto.js',
   },
+
+  // ------------------------------------------------------------ Boston ----
+  {
+    id: 'wallys',
+    name: "Wally's Cafe Jazz Club",
+    shortName: "Wally's",
+    url: 'https://wallyscafe.com',
+    address: '427 Massachusetts Ave, Boston, MA 02118',
+    city: 'bos',
+    borough: null,
+    timezone: 'America/New_York',
+    neighborhood: 'South End',
+    color: '#e0524e', // the red storefront on Mass Ave since 1947
+    module: './clubs/wallys.js',
+  },
+  {
+    id: 'scullers',
+    name: 'Scullers Jazz Club',
+    shortName: 'Scullers',
+    url: 'https://scullersjazz.com',
+    address: '400 Soldiers Field Rd, Boston, MA 02134',
+    city: 'bos',
+    borough: null,
+    timezone: 'America/New_York',
+    neighborhood: 'Allston',
+    color: '#58a6e8', // the Charles outside the window
+    module: './clubs/scullers.js',
+  },
+  {
+    id: 'regattabar',
+    name: 'Regattabar',
+    shortName: 'Regattabar',
+    url: 'https://www.regattabarjazz.com',
+    address: '1 Bennett St (Charles Hotel), Cambridge, MA 02138',
+    city: 'bos',
+    borough: null,
+    timezone: 'America/New_York',
+    neighborhood: 'Harvard Square',
+    color: '#3fbfb0', // regatta-pennant teal, clear of Scullers' blue
+    module: './clubs/regattabar.js',
+  },
+  {
+    id: 'lilypad',
+    name: 'The Lilypad',
+    shortName: 'Lilypad',
+    url: 'https://www.lilypadinman.com',
+    address: '1353 Cambridge St, Cambridge, MA 02139',
+    city: 'bos',
+    borough: null,
+    timezone: 'America/New_York',
+    neighborhood: 'Inman Square',
+    color: '#8fd45a', // lilypad green, obviously
+    module: './clubs/lilypad.js',
+  },
+  {
+    id: 'madmonkfish',
+    name: 'The Mad Monkfish',
+    shortName: 'Mad Monkfish',
+    url: 'https://www.themadmonkfish.com',
+    address: '524 Massachusetts Ave, Cambridge, MA 02139',
+    city: 'bos',
+    borough: null,
+    timezone: 'America/New_York',
+    neighborhood: 'Central Square',
+    color: '#f0a02e', // monkfish-roe orange, warm against the green next door
+    module: './clubs/madmonkfish.js',
+  },
+  {
+    id: 'beehive',
+    name: 'The Beehive',
+    shortName: 'Beehive',
+    url: 'https://www.beehiveboston.com',
+    address: '541 Tremont St, Boston, MA 02116',
+    city: 'bos',
+    borough: null,
+    timezone: 'America/New_York',
+    neighborhood: 'South End',
+    color: '#f5cd4f', // honey, naturally
+    module: './clubs/beehive.js',
+  },
 ];
 
 export function clubById(id) {
