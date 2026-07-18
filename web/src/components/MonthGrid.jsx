@@ -10,9 +10,12 @@ const MAX_DOTS = 6;
 
 // memo (at the bottom): chip reordering re-renders App on every drag
 // crossing — the grid's props are unchanged then, so skip rebuilding cells
-function MonthGrid({ events, clubById, cursor, onCursor, today, compact = false }) {
-  const [openDay, setOpenDay] = useState(null);
-  const userTapped = useRef(false); // guards the one-time auto-select of today
+function MonthGrid({ events, clubById, cursor, onCursor, today, compact = false, initialDay = null, onDayShare }) {
+  // initialDay: a deep-linked ?date= — pre-open that drawer and skip the
+  // auto-today select. onDayShare mirrors USER day taps to the URL (the
+  // auto-select stays out of the address bar).
+  const [openDay, setOpenDay] = useState(initialDay);
+  const userTapped = useRef(initialDay != null); // guards the one-time auto-select of today
 
   const byDate = useMemo(() => {
     const m = {};
@@ -36,10 +39,13 @@ function MonthGrid({ events, clubById, cursor, onCursor, today, compact = false 
     const nd = new Date(y, m - 1 + delta, 1);
     onCursor({ y: nd.getFullYear(), m: nd.getMonth() + 1 });
     setOpenDay(null);
+    onDayShare?.(null);
   };
   const toggleDay = (iso) => {
     userTapped.current = true;
-    setOpenDay(openDay === iso ? null : iso);
+    const next = openDay === iso ? null : iso;
+    setOpenDay(next);
+    onDayShare?.(next);
   };
 
   // Open with today pre-selected (if the visible month is the current one and
