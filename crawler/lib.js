@@ -13,7 +13,23 @@ export async function fetchText(url, opts = {}) {
     signal: AbortSignal.timeout(opts.timeoutMs ?? 30000),
   });
   if (!res.ok) throw new Error(`GET ${url} -> ${res.status}`);
-  return res.text();
+  return decodeBody(await res.arrayBuffer(), res.headers.get('content-type') ?? '');
+}
+
+// fetch()'s text() always decodes UTF-8, but old hand-written Japanese sites
+// (Alfie) still serve Shift_JIS — which silently mojibakes every anchor a
+// parser relies on (found in prod, 2026-07-19: Alfie returned 0 events from
+// the Lambda while a real browser parsed fine). Sniff the charset from the
+// header or the document head and re-decode when it isn't UTF-8.
+export function decodeBody(buf, contentType = '') {
+  let text = new TextDecoder('utf-8').decode(buf);
+  const m = (contentType + ' ' + text.slice(0, 2048))
+    .match(/charset=["']?\s*(shift[_-]?jis|windows-31j|euc-jp|iso-2022-jp)/i);
+  if (m) {
+    const label = /euc/i.test(m[1]) ? 'euc-jp' : /2022/.test(m[1]) ? 'iso-2022-jp' : 'shift_jis';
+    try { text = new TextDecoder(label).decode(buf); } catch { /* keep utf-8 */ }
+  }
+  return text;
 }
 
 export async function fetchJson(url, opts = {}) {

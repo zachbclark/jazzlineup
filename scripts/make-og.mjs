@@ -14,7 +14,8 @@ const DIST = join(__dirname, '..', 'web', 'dist', 'og.png');
 
 // one flagship room per vibe, spanning all six cities
 const PICKS = ['vanguard', 'bluenote', 'smalls', 'greenmill', 'sfjazz',
-  'zebulon', 'duc', 'ronnies', 'yoshis', 'bakedpotato', 'wallys', 'pitinn'];
+  'zebulon', 'duc', 'ronnies', 'yoshis', 'bakedpotato', 'wallys', 'pitinn',
+  'preservationhall', 'snugharbor'];
 const chips = PICKS.map((id) => CLUBS.find((c) => c.id === id)).filter(Boolean);
 const rest = CLUBS.length - chips.length;
 
@@ -46,7 +47,7 @@ const html = `<!doctype html><html><head><meta charset="utf-8"><style>
   .site { font-size: 28px; color: #f5efe4; letter-spacing: 0.5px; }
 </style></head><body>
   <h1><span class="note">&#9835;</span>Jazz <span class="gold">Lineup</span></h1>
-  <div class="pitch">Every jazz club in New York, LA, Chicago, SF, Boston, Paris, London &amp; Tokyo.<br>One calendar, updated all day.</div>
+  <div class="pitch">Every jazz club in 9 cities, New York to New Orleans to Tokyo.<br>One calendar, updated all day.</div>
   <div class="chips">${chipHtml}</div>
   <div class="more">plus ${rest} more rooms, from legendary basements to living-room sessions</div>
   <div class="site">jazzlineup.com</div>

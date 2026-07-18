@@ -2058,7 +2058,7 @@ ok('madmonkfish: detail page yields roster lines + prose set times', () => {
 });
 
 // --- Tokyo -------------------------------------------------------------------------
-import { personnelFromJpRun as jpRun } from './lib.js';
+import { personnelFromJpRun as jpRun, decodeBody } from './lib.js';
 import { applyRomaji } from './clubs/_jpromaji.js';
 import { parse as pitParse } from './clubs/pitinn.js';
 import { parse as bntParse } from './clubs/bluenotetok.js';
@@ -2185,4 +2185,94 @@ ok('jp: verified names decorate personnel; unknown names stay native-only', () =
   assert.equal(p[0].nameAlt, 'Akira Sakata');
   assert.equal(p[1].nameAlt, 'Masayasu Tzboguchi');
   assert.equal(p.filter((x) => x.nameAlt).length, 4, 'all four are verified names');
+});
+
+ok('lib: Shift_JIS pages decode correctly (the Alfie prod bug)', () => {
+  // "￥5500" encoded as Shift_JIS bytes: UTF-8 decode mojibakes it
+  const sjisBytes = new Uint8Array([0x3c, 0x6d, 0x65, 0x74, 0x61, 0x20, 0x63, 0x68, 0x61, 0x72, 0x73, 0x65, 0x74, 0x3d, 0x22, 0x53, 0x68, 0x69, 0x66, 0x74, 0x5f, 0x4a, 0x49, 0x53, 0x22, 0x3e, 0x81, 0x8f, 0x35, 0x35, 0x30, 0x30]);
+  const out = decodeBody(sjisBytes.buffer, 'text/html');
+  assert.ok(out.includes('￥5500'), 'yen sign must survive: ' + out.slice(-8));
+  // plain UTF-8 stays untouched
+  const utf8 = new TextEncoder().encode('<meta charset="utf-8">￥5500');
+  assert.ok(decodeBody(utf8.buffer, 'text/html').includes('￥5500'));
+});
+
+// --- New Orleans -------------------------------------------------------------------
+import { parseGigulator } from './clubs/_gigulator.js';
+import { parse as snugParse } from './clubs/snugharbor.js';
+import { parse as bnileParse } from './clubs/bluenile.js';
+import { parse as presGen } from './clubs/preservationhall.js';
+import { parse as fritzGen } from './clubs/fritzels.js';
+
+ok('gigulator: bgig rows -> dated events with time; shared by dba + spotted cat', () => {
+  const html = `
+  <div class="bgig-row bgig-hdr-month"><span class="bgig-hdr-month-txt">July</span> <span class="bgig-hdr-year-txt">2026</span></div>
+  <div class='bgig-row bgig-gig bgig-date-new bgig-day-odd'><div class='bgig-cell bgig_cell1'>
+    <div class="bgig-date"><span class='bgig-date-1'>Sat</span><span class='bgig-date-2'>Jul</span><span class='bgig-date-3'>18</span></div>
+    <div class="bgig-time"><div class='bgig-time-show'>6pm</div></div>
+    <span class='bgig-proj-name'>Dana Abbott</span></div></div>
+  <div class="bgig-row bgig-gig"><div class="bgig-cell bgig-cell-2">
+    <div class="bgig-date"><span class="bgig-date-2">Jul</span><span class="bgig-date-3">18</span></div>
+    <div class="bgig-time"><div class="bgig-time-show">10pm</div></div>
+    <span class="bgig-proj-name">Colin Davis &amp; Night People</span></div></div>`;
+  const evs = parseGigulator(html, 'dbanola', 'https://x', new Date(2026, 6, 19));
+  assert.equal(evs.length, 2);
+  assert.equal(evs[0].date, '2026-07-18');
+  assert.deepEqual(evs[0].sets, ['18:00']);
+  assert.equal(evs[1].title, 'Colin Davis & Night People');
+  assert.deepEqual(evs[1].sets, ['22:00']);
+});
+
+ok('snugharbor: tw listings merge two nightly sets into one event', () => {
+  const html = `
+  <div class="tw-name"><a href="https://snugjazz.com/tm-event/chris-thomas-king-trio/">Chris Thomas King Trio</a></div>
+  <div class="tw-date-time"><span class="tw-event-date">Jul 17</span> <span class="tw-event-time"> 7:30 pm</span></div>
+  <div class="tw-name"><a href="https://snugjazz.com/tm-event/chris-thomas-king-trio-2/">Chris Thomas King Trio</a></div>
+  <div class="tw-date-time"><span class="tw-event-date">Jul 17</span> <span class="tw-event-time"> 9:30 pm</span></div>`;
+  const evs = snugParse(html, new Date(2026, 6, 16));
+  assert.equal(evs.length, 1, 'two set rows, one event');
+  assert.deepEqual(evs[0].sets, ['19:30', '21:30']);
+  assert.equal(evs[0].date, '2026-07-17');
+});
+
+ok('bluenile: squarespace json; decorated titles stripped; epoch -> Central time', () => {
+  const fixture = JSON.stringify({ upcoming: [
+    { title: "The Caesar Brothers' FunkBox \u2022 SAT JUL. 18 \u2022 7:30PM ", startDate: 1784417400000, fullUrl: '/calendar-tickets-/x' },
+  ]});
+  const evs = bnileParse(fixture);
+  assert.equal(evs.length, 1);
+  assert.equal(evs[0].title, "The Caesar Brothers' FunkBox");
+  assert.equal(evs[0].date, '2026-07-18');
+  assert.equal(evs[0].sets.length, 1);
+});
+
+ok('nola generators: Preservation Hall three nightly sets; Fritzels nightly no fake times', () => {
+  const p = presGen(new Date(2026, 6, 20));
+  assert.equal(p.length, 56);
+  assert.deepEqual(p[0].sets, ['17:00', '18:30', '20:00']);
+  const f = fritzGen(new Date(2026, 6, 20));
+  assert.equal(f.length, 56);
+  assert.deepEqual(f[0].sets, []);
+});
+
+// --- Billboard Live Tokyo ----------------------------------------------------------
+import { parse as bbtParse } from './clubs/billboardtok.js';
+ok('billboardtok: shop-attributed cards; React comments stripped; both stages as sets', () => {
+  const html = `
+  <h2><span>>TOKYO<</span></h2><span>>TOKYO<</span>
+  <div class="ArtistCardFull_root__x1"><hgroup>
+    <h3 class="EventHeading_mainTitle__abc" aria-label="藤木直人"><span>藤木直人</span></h3>
+    <p class="EventHeading_subTitle__def">Naohito Fujiki Live Tour ver14.5 Billboard Live 2026</p></hgroup>
+    <ul><li>1st Stage<!-- --> / Open <!-- -->14:00<!-- --> / Start <!-- -->15:00</li>
+    <li>2nd Stage<!-- --> / Open <!-- -->17:00<!-- --> / Start <!-- -->18:00</li></ul>
+    <ul><li>S指定席 ￥13,100</li><li>カジュアル ￥11,500</li></ul></div>
+  <span>>YOKOHAMA<</span>
+  <div class="ArtistCardFull_root__x2"><h3 class="EventHeading_mainTitle__abc" aria-label="Someone Else"></h3>
+    <ul><li>1st Stage / Start 15:00</li></ul></div>`;
+  const evs = bbtParse(html, '2026-07-19');
+  assert.equal(evs.length, 1, 'Yokohama card excluded');
+  assert.equal(evs[0].title, '藤木直人');
+  assert.match(evs[0].titleAlt, /Naohito Fujiki/);
+  assert.deepEqual(evs[0].sets, ['15:00', '18:00']);
+  assert.equal(evs[0].priceText, 'from ¥11,500');
 });

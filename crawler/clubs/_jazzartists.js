@@ -58,6 +58,24 @@ const ARTISTS = [
   'amina figarova', 'rick margitza', 'omar sosa', 'david murray',
   'rebirth brass band', 'ted byrnes', 'tortoise', // audit finds 2026-07-16 (Tortoise = Jeff Parker's band; veto-able)
   'william parker', 'matthew shipp', 'james carter', 'marc ribot',
+  // knowledge dump, 2026-07-19 — names likely to appear at our keyword-
+  // filtered venues without genre tags (verified working jazz artists)
+  'ambrose akinmusire', 'immanuel wilkins', 'joel ross', 'cecile mclorin salvant',
+  'melissa aldana', 'kris davis', 'tyshawn sorey', 'ingrid laubrock',
+  'mary halvorson', 'james brandon lewis', 'makaya mccraven', 'jeff parker',
+  'marquis hill', 'junius paul', 'brandee younger', 'nubya garcia',
+  'shabaka hutchings', 'theon cross', 'ezra collective', 'alfa mist',
+  'yussef dayes', 'sons of kemet', 'walter smith iii', 'jason palmer',
+  'ben street', 'billy hart', 'larry grenadier', 'ethan iverson',
+  'marcus gilmore', 'jonathan pinson', 'charles altura', 'gerald clayton',
+  'aaron parks', 'sullivan fortner', 'emmet cohen', 'christian sands',
+  'joey alexander', 'kenny barron', 'ron carter', 'dave holland',
+  'john scofield', 'pat metheny', 'brad mehldau', 'vijay iyer',
+  'craig taborn', 'jason moran', 'robert glasper', 'terrace martin',
+  'kamasi washington', 'theo croker', 'keyon harrold', 'nicholas payton',
+  'christian scott', 'chief adjuah', 'trombone shorty', 'kermit ruffins',
+  'rebirth brass band', 'hot 8 brass band', 'soul rebels', 'preservation hall',
+  'naruyoshi kikuchi', 'hiromi uehara', 'makoto ozone', 'sadao watanabe',
 ];
 
 const norm = (s) => String(s ?? '').normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/[’‘]/g, "'").toLowerCase();
