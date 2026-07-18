@@ -19,18 +19,30 @@ const gcalToIso = (s) =>
   `${s.slice(0, 4)}-${s.slice(4, 6)}-${s.slice(6, 8)}T${s.slice(9, 11)}:${s.slice(11, 13)}:${s.slice(13, 15)}Z`;
 
 export function parse(html) {
+  const s = String(html);
+  // per-event Squarespace pages (/home/<slug>) precede each tile's gcal
+  // link — pair every event with the nearest /home/ href before it
+  const homes = [...s.matchAll(/href="(\/home\/[a-z0-9-]{6,})"/g)]
+    .map((m) => ({ i: m.index, href: m[1] }));
+  let hp = 0; // pointer: homes and gcal links both appear in document order
   const drafts = new Map(); // `${date}:${title}` -> draft
   const re = /google\.com\/calendar\/event\?action=TEMPLATE&(?:amp;)?text=([^&"]+)&(?:amp;)?dates=(\d{8}T\d{6}Z)/g;
-  for (const m of String(html).matchAll(re)) {
+  for (const m of s.matchAll(re)) {
     let title;
     try { title = cleanText(decodeURIComponent(m[1].replace(/\+/g, ' '))); } catch { continue; }
+    while (hp < homes.length - 1 && homes[hp + 1].i < m.index) hp++;
+    const home = homes[hp] && homes[hp].i < m.index ? homes[hp].href : null;
     if (!title || SKIP_RE.test(title)) continue;
     const startIso = gcalToIso(m[2]);
     const date = nyDate(startIso);
     const time = nyTime(startIso);
     const key = `${date}:${title.toLowerCase()}`;
     if (!drafts.has(key)) {
-      drafts.set(key, { clubId: 'lilypad', title, date, sets: [], url: URL_, details: null });
+      drafts.set(key, {
+        clubId: 'lilypad', title, date, sets: [],
+        url: home ? 'https://www.lilypadinman.com' + home : URL_,
+        details: null,
+      });
     }
     if (time && !drafts.get(key).sets.includes(time)) drafts.get(key).sets.push(time);
   }
