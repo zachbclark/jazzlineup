@@ -5,6 +5,16 @@ import { CITIES } from '../api';
 // click or Escape. Cities with no data yet still render (empty calendar).
 export default function CitySwitcher({ city, onChange }) {
   const [open, setOpen] = useState(false);
+  // First-visit whisper ("← choose your city") — greets once, then gone:
+  // the flag is set on first load, so a return visit never shows it, and
+  // touching the switcher hides it immediately. (Brian's idea, quieted.)
+  const [hint, setHint] = useState(() => {
+    try {
+      if (localStorage.getItem('jl.cityhint')) return false;
+      localStorage.setItem('jl.cityhint', '1');
+      return true;
+    } catch { return false; }
+  });
   const ref = useRef(null);
 
   useEffect(() => {
@@ -23,10 +33,11 @@ export default function CitySwitcher({ city, onChange }) {
         className="city-badge city-badge-btn"
         aria-haspopup="listbox"
         aria-expanded={open}
-        onClick={() => setOpen(!open)}
+        onClick={() => { setOpen(!open); setHint(false); }}
       >
         {current.label} <span className="caret">{open ? '▴' : '▾'}</span>
       </button>
+      {hint && <span className="city-hint" aria-hidden="true">&larr; choose your city</span>}
       {open && (
         <span className="city-menu" role="listbox">
           {CITIES.map((c) => (

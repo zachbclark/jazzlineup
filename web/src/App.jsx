@@ -11,15 +11,6 @@ import ListView from './components/ListView';
 // Tip jar — "buy me a drink"
 const TIP_URL = 'https://ko-fi.com/jazzlineup';
 
-// venue-idea inbox, assembled at runtime so the address never appears as a
-// scannable literal in the bundle (plus-alias: filterable, revocable)
-const contactHref = (cityLabel) => {
-  const addr = ['zachbclark', 'jazzlineup'].join('+') + String.fromCharCode(64) + 'gmail.com';
-  const subject = 'Venue idea for Jazz Lineup';
-  const body = `Venue name:\nCity: ${cityLabel}\nWebsite:\n\nWhy it belongs on the lineup:\n`;
-  return `mailto:${addr}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-};
-
 export default function App() {
   const [clubs, setClubs] = useState([]);
   const [events, setEvents] = useState([]);
@@ -144,10 +135,17 @@ export default function App() {
 
   // Artist search: city-wide, ignores chip/borough filters; results render
   // as a date-grouped list (the natural shape for "his next five dates").
+  // Upcoming only: data files keep a few recent-past days for merge
+  // continuity, and counting those in the summary while the list (rightly)
+  // hides them reads as "2 shows" above an empty list.
   const normQuery = searchNorm(query.trim());
   const searching = normQuery.length > 0;
   const results = useMemo(
-    () => (searching ? events.filter((e) => eventMatches(e, normQuery, clubById)) : null),
+    () => {
+      if (!searching) return null;
+      const today = todayIso();
+      return events.filter((e) => e.date >= today && eventMatches(e, normQuery, clubById));
+    },
     [events, searching, normQuery, clubById]
   );
 
@@ -169,10 +167,11 @@ export default function App() {
   }, [searching, city, otherCityEvents]);
   const otherMatches = useMemo(() => {
     if (!searching) return [];
+    const today = todayIso(); // upcoming only, same rule as the main results
     return CITIES.filter((c) => c.id !== city)
       .map((c) => ({
         city: c,
-        count: (otherCityEvents[c.id] ?? []).filter((e) => eventMatches(e, normQuery, null)).length,
+        count: (otherCityEvents[c.id] ?? []).filter((e) => e.date >= today && eventMatches(e, normQuery, null)).length,
       }))
       .filter((x) => x.count > 0);
   }, [searching, normQuery, city, otherCityEvents]);
@@ -282,11 +281,6 @@ export default function App() {
             <circle cx="14" cy="18" r="1.7" strokeWidth="1.2" />
           </svg>
           tip jar
-        </a>
-        <span className="foot-sep">&middot;</span>
-        <a className="suggest-venue" href={contactHref(cityLabel)}
-          title="Know a club we're missing? Email me.">
-          suggest a venue
         </a>
       </footer>
     </div>
