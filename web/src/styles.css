@@ -273,9 +273,6 @@ button { font: inherit; cursor: pointer; }
 
 .foot { margin-top: 30px; color: var(--muted); font-size: 12.5px; display: flex; gap: 8px; flex-wrap: wrap; }
 .foot-sep { color: var(--line); }
-/* quiet by design: the tip jar keeps the footer's only gold */
-.suggest-venue { color: var(--muted); text-decoration: none; }
-.suggest-venue:hover { color: var(--text); }
 /* the tip jar wears gold — the footer's one invitation; halo on hover only */
 .tip-jar {
   color: var(--accent); opacity: 0.9; font-weight: 600; letter-spacing: 0.3px;
