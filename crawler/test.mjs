@@ -1966,7 +1966,7 @@ import { parse as wallysGen } from './clubs/wallys.js';
 import { parse as sculParse, seedEvents as sculSeed } from './clubs/scullers.js';
 import { seedEvents as rbSeed } from './clubs/regattabar.js';
 import { parse as lilyParse } from './clubs/lilypad.js';
-import { parse as monkParse } from './clubs/madmonkfish.js';
+import { parse as monkParse, parseDetail as monkDetail } from './clubs/madmonkfish.js';
 import { parse as bhGen } from './clubs/beehive.js';
 
 ok('wallys: generator emits Tue-Sat jams + nightly night sets', () => {
@@ -2041,4 +2041,16 @@ ok('beehive: named fixtures only — Sunday blues + weekend brunch, no nightly f
   const blues = evs.filter((e) => /Bruce Bears/.test(e.title));
   assert.equal(blues.length, 8);
   assert.ok(blues.every((e) => new Date(e.date + 'T12:00:00Z').getUTCDay() === 0));
+});
+
+ok('madmonkfish: detail page yields roster lines + prose set times', () => {
+  const html = `<article><p>July 24, 2026 07:00 PM until July 24, 2026 10:00 PM</p>
+  <p>1st Show: 7:00-8:15pm and 2nd Show: 8:45-10:00pm</p>
+  <p>Yoko Miwa, piano</p><p>Matt Stavrakas, acoustic bass</p><p>Scott Goulding, drums</p>
+  <p>Miwa's story of becoming a jazz musician is full of serendipity.</p></article>`;
+  const d = monkDetail(html);
+  assert.deepEqual(d.sets, ['19:00', '20:45']);
+  assert.equal(d.personnel.length, 3);
+  assert.deepEqual(d.personnel[0], { name: 'Yoko Miwa', instrument: 'piano' });
+  assert.deepEqual(d.personnel[1], { name: 'Matt Stavrakas', instrument: 'acoustic bass' });
 });

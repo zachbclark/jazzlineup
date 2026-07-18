@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-18T18:31:02.993Z",
+  "generatedAt": "2026-07-18T19:01:41.612Z",
   "city": "bos",
   "clubs": [
     {
@@ -522,6 +522,37 @@
       "priceText": null
     },
     {
+      "id": "madmonkfish:2026-07-18:jeff-stout-quartet",
+      "clubId": "madmonkfish",
+      "title": "Jeff Stout Quartet",
+      "date": "2026-07-18",
+      "sets": [
+        "19:00",
+        "20:45"
+      ],
+      "url": "https://www.themadmonkfish.com/event/718-jeff-stout-quartet/",
+      "details": null,
+      "personnel": [
+        {
+          "name": "Jeff Stout",
+          "instrument": "trumpet"
+        },
+        {
+          "name": "Tim Ray",
+          "instrument": "piano"
+        },
+        {
+          "name": "John Lockwood",
+          "instrument": "acoustic bass"
+        },
+        {
+          "name": "Gary Johnson",
+          "instrument": "drums"
+        }
+      ],
+      "priceText": null
+    },
+    {
       "id": "wallys:2026-07-18:night-set-at-wally-s",
       "clubId": "wallys",
       "title": "Night Set at Wally's",
@@ -531,17 +562,6 @@
       ],
       "url": "https://wallyscafe.com",
       "details": "The pros take over, three feet from the bell of the horn, till midnight. Nightly since 1947.",
-      "personnel": null,
-      "priceText": null
-    },
-    {
-      "id": "madmonkfish:2026-07-18:jeff-stout-quartet",
-      "clubId": "madmonkfish",
-      "title": "Jeff Stout Quartet",
-      "date": "2026-07-18",
-      "sets": [],
-      "url": "https://www.themadmonkfish.com/event/718-jeff-stout-quartet/",
-      "details": null,
       "personnel": null,
       "priceText": null
     },
@@ -642,7 +662,16 @@
       "sets": [],
       "url": "https://www.themadmonkfish.com/event/719-mike-turk-trio/",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Ben Cook",
+          "instrument": "piano"
+        },
+        {
+          "name": "Bruce Gertz",
+          "instrument": "acoustic bass"
+        }
+      ],
       "priceText": null
     },
     {
@@ -772,7 +801,20 @@
       ],
       "url": "https://www.themadmonkfish.com/event/722-yulia-musayelyan-quartet-7pm-mad-monkfish-concert-series/",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Maxim Lubarsky",
+          "instrument": "piano"
+        },
+        {
+          "name": "Fernando Huergo",
+          "instrument": "bass"
+        },
+        {
+          "name": "Gen Yoshimura",
+          "instrument": "drums"
+        }
+      ],
       "priceText": null
     },
     {
@@ -850,7 +892,16 @@
       ],
       "url": "https://www.themadmonkfish.com/event/723-russ-gershon-trio-7pm-mad-monkfish-concert-series/",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Rick McLaughlin",
+          "instrument": "acoustic bass"
+        },
+        {
+          "name": "Brooke Sofferman",
+          "instrument": "drums"
+        }
+      ],
       "priceText": null
     },
     {
@@ -920,6 +971,33 @@
       "priceText": null
     },
     {
+      "id": "madmonkfish:2026-07-24:yoko-miwa-trio",
+      "clubId": "madmonkfish",
+      "title": "Yoko Miwa Trio",
+      "date": "2026-07-24",
+      "sets": [
+        "19:00",
+        "20:45"
+      ],
+      "url": "https://www.themadmonkfish.com/event/724-yoko-miwa-trio/",
+      "details": null,
+      "personnel": [
+        {
+          "name": "Yoko Miwa",
+          "instrument": "piano"
+        },
+        {
+          "name": "Matt Stavrakas",
+          "instrument": "acoustic bass"
+        },
+        {
+          "name": "Scott Goulding",
+          "instrument": "drums"
+        }
+      ],
+      "priceText": null
+    },
+    {
       "id": "wallys:2026-07-24:night-set-at-wally-s",
       "clubId": "wallys",
       "title": "Night Set at Wally's",
@@ -944,17 +1022,6 @@
       "details": null,
       "personnel": null,
       "late": true,
-      "priceText": null
-    },
-    {
-      "id": "madmonkfish:2026-07-24:yoko-miwa-trio",
-      "clubId": "madmonkfish",
-      "title": "Yoko Miwa Trio",
-      "date": "2026-07-24",
-      "sets": [],
-      "url": "https://www.themadmonkfish.com/event/724-yoko-miwa-trio/",
-      "details": null,
-      "personnel": null,
       "priceText": null
     },
     {
@@ -1008,6 +1075,37 @@
       "priceText": null
     },
     {
+      "id": "madmonkfish:2026-07-25:april-hall-quintet",
+      "clubId": "madmonkfish",
+      "title": "April Hall Quintet",
+      "date": "2026-07-25",
+      "sets": [
+        "19:00",
+        "20:45"
+      ],
+      "url": "https://www.themadmonkfish.com/event/725-april-hall-quintet/",
+      "details": null,
+      "personnel": [
+        {
+          "name": "April Hall",
+          "instrument": "vocals"
+        },
+        {
+          "name": "Doug Johnson",
+          "instrument": "piano"
+        },
+        {
+          "name": "Keala Kaumeheiwa",
+          "instrument": "acoustic bass"
+        },
+        {
+          "name": "TBA",
+          "instrument": "drums"
+        }
+      ],
+      "priceText": null
+    },
+    {
       "id": "wallys:2026-07-25:night-set-at-wally-s",
       "clubId": "wallys",
       "title": "Night Set at Wally's",
@@ -1017,17 +1115,6 @@
       ],
       "url": "https://wallyscafe.com",
       "details": "The pros take over, three feet from the bell of the horn, till midnight. Nightly since 1947.",
-      "personnel": null,
-      "priceText": null
-    },
-    {
-      "id": "madmonkfish:2026-07-25:april-hall-quintet",
-      "clubId": "madmonkfish",
-      "title": "April Hall Quintet",
-      "date": "2026-07-25",
-      "sets": [],
-      "url": "https://www.themadmonkfish.com/event/725-april-hall-quintet/",
-      "details": null,
       "personnel": null,
       "priceText": null
     },
@@ -1115,7 +1202,40 @@
       "sets": [],
       "url": "https://www.themadmonkfish.com/event/726-the-mad-monkfish-jazz-orchestra-led-by-pete-kenagy/",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Pete Kenagy",
+          "instrument": "trumpet"
+        },
+        {
+          "name": "Sam Spear",
+          "instrument": "alto saxophone"
+        },
+        {
+          "name": "Andy Voelker",
+          "instrument": "tenor saxophone"
+        },
+        {
+          "name": "Kathy Olson",
+          "instrument": "baritone saxophone"
+        },
+        {
+          "name": "Randy Pingrey",
+          "instrument": "trombone"
+        },
+        {
+          "name": "David Zoffer",
+          "instrument": "piano"
+        },
+        {
+          "name": "John Sullivan",
+          "instrument": "bass"
+        },
+        {
+          "name": "Austin McMahon",
+          "instrument": "drums"
+        }
+      ],
       "priceText": null
     },
     {
@@ -1336,7 +1456,20 @@
       ],
       "url": "https://www.themadmonkfish.com/event/730-stephanie-nakasian-with-the-greg-wardson-trio-7pm-mad-monkfish-concert-series/",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Greg Wardson",
+          "instrument": "piano"
+        },
+        {
+          "name": "Karl Kimmel",
+          "instrument": "bass"
+        },
+        {
+          "name": "TBD",
+          "instrument": "drums"
+        }
+      ],
       "priceText": null
     },
     {
@@ -1406,6 +1539,33 @@
       "priceText": null
     },
     {
+      "id": "madmonkfish:2026-07-31:yoko-miwa-trio",
+      "clubId": "madmonkfish",
+      "title": "Yoko Miwa Trio",
+      "date": "2026-07-31",
+      "sets": [
+        "19:00",
+        "20:45"
+      ],
+      "url": "https://www.themadmonkfish.com/event/731-yoko-miwa-trio/",
+      "details": null,
+      "personnel": [
+        {
+          "name": "Yoko Miwa",
+          "instrument": "piano"
+        },
+        {
+          "name": "Sean Farias",
+          "instrument": "acoustic bass"
+        },
+        {
+          "name": "Scott Goulding",
+          "instrument": "drums"
+        }
+      ],
+      "priceText": null
+    },
+    {
       "id": "wallys:2026-07-31:night-set-at-wally-s",
       "clubId": "wallys",
       "title": "Night Set at Wally's",
@@ -1415,17 +1575,6 @@
       ],
       "url": "https://wallyscafe.com",
       "details": "The pros take over, three feet from the bell of the horn, till midnight. Nightly since 1947.",
-      "personnel": null,
-      "priceText": null
-    },
-    {
-      "id": "madmonkfish:2026-07-31:yoko-miwa-trio",
-      "clubId": "madmonkfish",
-      "title": "Yoko Miwa Trio",
-      "date": "2026-07-31",
-      "sets": [],
-      "url": "https://www.themadmonkfish.com/event/731-yoko-miwa-trio/",
-      "details": null,
       "personnel": null,
       "priceText": null
     },

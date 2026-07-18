@@ -10,8 +10,9 @@
 // late-night shift). It's the JAZZ schedule — no filter.
 import {
   fetchText, makeEvent, applyLateNight, normalizeTime, inferYear, isoDate,
-  cleanText, sleep,
+  cleanText, sleep, htmlToText, personnelFromLines,
 } from '../lib.js';
+import { enrichFromDetailPages } from './_enrichdetails.js';
 
 const BASE = 'https://www.themadmonkfish.com';
 const MAX_PAGES = 5;
@@ -54,7 +55,23 @@ export function parse(html, today = new Date()) {
   return events;
 }
 
-export async function crawl() {
+// Detail pages carry the roster line-per-player ("Yoko Miwa, piano") and
+// the real set times as prose: "1st Show: 7:00-8:15pm and 2nd Show:
+// 8:45-10:00pm" — written without am/pm on the start time, so evening is
+// assumed for hours below 11.
+export function parseDetail(html) {
+  const txt = htmlToText(html);
+  const sets = [];
+  for (const m of txt.matchAll(/\b(?:1st|2nd)\s+Show:\s*(\d{1,2}):(\d{2})/gi)) {
+    let h = Number(m[1]);
+    if (h < 11) h += 12;
+    const t = `${String(h).padStart(2, '0')}:${m[2]}`;
+    if (!sets.includes(t)) sets.push(t);
+  }
+  return { personnel: personnelFromLines(txt), sets: sets.sort() };
+}
+
+export async function crawl(ctx = {}) {
   const out = [];
   const seen = new Set();
   for (let p = 1; p <= MAX_PAGES; p++) {
@@ -73,5 +90,10 @@ export async function crawl() {
     if (!added) break;
     await sleep(250);
   }
+  await enrichFromDetailPages(out, ctx, {
+    fields: ['personnel', 'sets'],
+    extract: parseDetail,
+    maxPages: 20,
+  });
   return out;
 }
