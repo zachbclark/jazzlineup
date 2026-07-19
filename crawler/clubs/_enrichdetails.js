@@ -6,12 +6,18 @@
 // cost: a handful of fetches for newly announced shows.
 // `extract(html)` returns a partial event ({ personnel, details, priceText… });
 // only fields the event is missing get filled — never overwrites.
+// `alsoFill` fields are filled from a fetched page (and copied from prior) just
+// like `fields`, but a missing one does NOT by itself trigger a fetch. Use it
+// for bonus data a page carries only sometimes (e.g. a set time or price that
+// gets published after the roster) — so a show whose roster arrived first isn't
+// refetched forever and doesn't starve genuinely new shows under maxPages.
 import { fetchText, sleep } from '../lib.js';
 
 const missing = (v) => v == null || (Array.isArray(v) && v.length === 0);
 
 export async function enrichFromDetailPages(events, ctx, {
   fields = ['personnel'],
+  alsoFill = [],
   extract,
   maxPages = 25,
   concurrency = 3,
@@ -21,11 +27,12 @@ export async function enrichFromDetailPages(events, ctx, {
   // overrides to strip ?selected_date so a residency's dates dedupe.
   urlKey = (url) => url,
 } = {}) {
+  const fillFields = [...fields, ...alsoFill];
   const prior = new Map((ctx?.previousEvents ?? []).map((e) => [e.id, e]));
   for (const e of events) {
     const p = prior.get(e.id);
     if (!p) continue;
-    for (const f of fields) {
+    for (const f of fillFields) {
       if (missing(e[f]) && !missing(p[f])) e[f] = p[f];
     }
   }
@@ -59,7 +66,7 @@ export async function enrichFromDetailPages(events, ctx, {
   for (const e of events) {
     const got = e.url && byKey.get(urlKey(e.url));
     if (!got) continue;
-    for (const f of fields) {
+    for (const f of fillFields) {
       if (missing(e[f]) && !missing(got[f])) e[f] = got[f];
     }
   }

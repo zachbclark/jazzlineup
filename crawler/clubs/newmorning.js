@@ -2,10 +2,14 @@
 // Chet Baker, Prince, Stan Getz, and today's touring bands. Old-school
 // homegrown site whose /programmation page embeds the FULL agenda as a
 // JSON-LD Event array — extractJsonLd() from lib reads it directly.
-// Quirk: startDate is always T00:00:00 (they never publish set times
-// structurally), so events ship time-less. All jazz-adjacent by curation;
-// no filter (their occasional soul/world bookings are core New Morning).
+// Quirk: the agenda's startDate is always T00:00:00 (no structural set time),
+// so the listing is time-less — but each event's DETAIL page carries the
+// roster ("Présentation" block), the concert time, and the price, which we
+// pull via detail-page enrichment (see parseDetail + crawl below). All
+// jazz-adjacent by curation; no filter (their occasional soul/world bookings
+// are core New Morning).
 import { fetchText, makeEvent, extractJsonLd, htmlToText, cleanText } from '../lib.js';
+import { enrichFromDetailPages } from './_enrichdetails.js';
 
 const BASE = 'https://www.newmorning.com';
 const URL_ = `${BASE}/programmation`;
@@ -60,6 +64,43 @@ function buildEvents(nodes) {
   return events;
 }
 
-export async function crawl() {
-  return parse(await fetchText(URL_));
+// Detail pages carry the roster in a "Présentation" block, one player per
+// line as:
+//   <div class="lh-sm mb-2"><span><strong>Name</strong></span><br>
+//   <span class="fst-italic">Instrument</span></div>
+// The block is emitted twice (responsive desktop/mobile variants) — dedupe by
+// name. The header also gives the concert start ("20h30 : Concert", after the
+// "… : Ouverture des portes" door time), and the JSON-LD offer gives a price.
+// Roster, time and price are published independently (a far-out show can list
+// its lineup before its time), so only personnel triggers a fetch; time/price
+// ride along via alsoFill when present.
+export function parseDetail(html) {
+  const personnel = [];
+  const seen = new Set();
+  const re = /<span><strong>([\s\S]*?)<\/strong><\/span>\s*<br>\s*<span class="fst-italic">([\s\S]*?)<\/span>/gi;
+  for (const m of html.matchAll(re)) {
+    const name = cleanText(htmlToText(m[1]));
+    const instrument = cleanText(htmlToText(m[2])).toLowerCase();
+    if (!name || !instrument || seen.has(name)) continue;
+    seen.add(name);
+    personnel.push({ name, instrument });
+  }
+
+  const timeM = html.match(/(\d{1,2})\s*h\s*(\d{2})\s*:\s*Concert/i);
+  const sets = timeM ? [`${timeM[1].padStart(2, '0')}:${timeM[2]}`] : [];
+
+  const priceM = html.match(/"price"\s*:\s*"?(\d+(?:\.\d+)?)"?/);
+  const priceText = priceM ? `${Number(priceM[1])}€` : null;
+
+  return { personnel: personnel.length ? personnel : null, sets, priceText };
+}
+
+export async function crawl(ctx = {}) {
+  const events = parse(await fetchText(URL_));
+  await enrichFromDetailPages(
+    events.filter((e) => e.url !== URL_),
+    ctx,
+    { fields: ['personnel'], alsoFill: ['sets', 'priceText'], extract: parseDetail },
+  );
+  return events;
 }
