@@ -65,11 +65,21 @@ export default function App() {
         const linked = routeRef.current.borough;
         routeRef.current.borough = null;
         setBorough(linked && d.clubs.some((c) => c.borough === linked) ? linked : null);
-        // restore this city's saved chip selection (null = everything on)
-        try {
-          const saved = JSON.parse(localStorage.getItem(`jl.active.${city}`));
-          setActive(Array.isArray(saved) ? new Set(saved) : null);
-        } catch { setActive(null); }
+        // deep-linked venues (?venues=vanguard,smalls): validate ids, use
+        // once, and DON'T persist — a shared link applies to this visit but
+        // never overwrites the visitor's own saved chips (borough precedent).
+        const linkedVenues = routeRef.current.venues;
+        routeRef.current.venues = null;
+        const validVenues = (linkedVenues ?? []).filter((id) => d.clubs.some((c) => c.id === id));
+        if (validVenues.length && validVenues.length < d.clubs.length) {
+          setActive(new Set(validVenues));
+        } else {
+          // restore this city's saved chip selection (null = everything on)
+          try {
+            const saved = JSON.parse(localStorage.getItem(`jl.active.${city}`));
+            setActive(Array.isArray(saved) ? new Set(saved) : null);
+          } catch { setActive(null); }
+        }
       })
       .catch((e) => setError(String(e.message ?? e)));
   }, [city]);
@@ -88,13 +98,17 @@ export default function App() {
     window.history.pushState({}, '', '/' + citySlug(id));
   };
 
-  // Keep the address bar shareable: /:city/:borough + ?date= always mirror
-  // the current view (replaceState — only city changes make history entries).
+  // Keep the address bar shareable: /:city/:borough + ?date= + ?venues=
+  // always mirror the current view (replaceState — only city changes make
+  // history entries). Commas are joined by hand: URLSearchParams would
+  // escape them to %2C and the links read worse.
   useEffect(() => {
     const path = '/' + citySlug(city) + (borough ? '/' + borough : '');
-    const q = urlDay ? '?date=' + urlDay : '';
-    window.history.replaceState({}, '', path + q);
-  }, [city, borough, urlDay]);
+    const parts = [];
+    if (urlDay) parts.push('date=' + urlDay);
+    if (active !== null && active.size) parts.push('venues=' + [...active].sort().join(','));
+    window.history.replaceState({}, '', path + (parts.length ? '?' + parts.join('&') : ''));
+  }, [city, borough, urlDay, active]);
 
   // Chip order is saved per (city, borough scope): each of All / Manhattan /
   // Brooklyn / Queens keeps its own arrangement.
