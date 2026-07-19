@@ -92,6 +92,28 @@ enrichment (venues fill over successive crawls via prior-reuse), concurrency
 - `_jazzartists.js` — known-artist safety net (~140 names) rescuing
   keyword-filtered venues without genre tags. Add names when the recall
   audit finds a miss (Bill Frisell at Zebulon was the founding case).
+- Names-only rosters are legitimate personnel (Bar Bayeux "w/Adam Kolker,
+  Jeremy Stratton", A-Trane "HEUTE MIT:"): emit instrument '' and the UI
+  skips the instrument span. Validators are strict — every part must read
+  like a 2-4 word capitalized name, billing words (band/trio/presents)
+  poison the whole run, and ambiguous dash-splits (Werra-Magro) reject
+  rather than guess.
+- `titleCaseName` fixes ALL-CAPS/lowercase roster names (A-Trane, Zig Zag);
+  leave mixed-case names alone.
+- `_enrichdetails` `alsoFill`: fields filled on a fetch but never
+  TRIGGERING one. Use for data published later than the roster (New
+  Morning times/prices) or missing on some shows (Zig Zag rosters) so
+  incomplete shows don't refetch forever and starve new ones.
+- 2026-07-18 personnel sweep verdicts, so nobody re-recons these: rosters
+  FOUND at New Morning + Bal Blomet + Sunset/Sunside (Paris detail pages;
+  Sunside's <div class=artistes> is UNQUOTED-attr markup), Mr. Tipple's
+  (pipe-separated, already in the tribe description), PizzaExpress
+  (__NEXT_DATA__ band_line_up_copy), Blue Note Tokyo + Cotton Club (artist
+  pages, two MEMBER markups; the reserve page's details block also has
+  per-date SET TIMES — the "no times in this view" note was wrong), Zig Zag
+  (detail pages, chaotic case). STRUCTURAL (no roster exists; list in
+  personnel-audit.mjs): Blue Note NYC/LA, Birdland, Cellar Dog, Nublu,
+  Yoshi's, 606, Andy's, Harvelle's, Vibrato, Schlot + the generators.
 
 ### Shared platform helpers (crawler/clubs/_*.js)
 
@@ -140,6 +162,14 @@ _turntable, _wixevents, _fr (French dates).
   the Vanguard U+2011 bug. Its "untracked rooms" list is the ranked NYC
   expansion shortlist: Five Spot Jazz, Aman, Roxy Lounge, The Stone at The
   New School, Red Pavillion, Sour Mouse, Birds, SEEDS, Ibeam, Iridium.
+- Ethan Iverson's do-the-gig venue list (old but trusted, cross-referenced
+  2026-07-18): The Stone, Iridium, SEEDS and Ibeam appear on BOTH his list
+  and the NYCJR shortlist — that's the ranked top of NYC Tier 2. Still-alive
+  candidates from his list we don't track: Mezzrow (!! Smalls' sister club,
+  SAME SmallsLIVE platform smalls.js already parses, publishes nightly
+  rosters — cheapest possible add unless deliberately excluded; ask Zach),
+  Minton's, Room 623, Cleopatra's Needle, Tomi Jazz, Soapbox Gallery,
+  The Owl.
 
 ## Frontend conventions
 

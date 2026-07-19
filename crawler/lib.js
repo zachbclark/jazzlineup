@@ -413,6 +413,13 @@ export function personnelFromStrongTags(html) {
 // From trailing text, take the final run of capitalized-ish tokens (a name).
 // Connector words never join a name: "With Daria Grace" is Daria Grace.
 const NAME_CONNECTOR_RE = /^(?:with|featuring|feat\.?|w\/|avec|and)$/i;
+// "HEINRICH KÖBBERLING" / "tim ries" -> "Heinrich Köbberling" / "Tim Ries".
+// For venues whose rosters arrive ALL-CAPS or lowercase (A-Trane, Zig Zag);
+// leave mixed-case names alone at the call site — they're already right.
+export function titleCaseName(name) {
+  return String(name).toLowerCase().replace(/(^|[\s\-'])(\p{Ll})/gu, (m, sep, ch) => sep + ch.toUpperCase());
+}
+
 // Trailing capitalized run of a text — trims leading prose off a name
 // ("band consisting of Gabrielle Fischler" -> "Gabrielle Fischler").
 // Exported for venues that mine rosters out of bio prose (Silvana/Shrine).

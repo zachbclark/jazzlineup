@@ -22,6 +22,14 @@ const STRUCTURAL = new Set([
   'birdland',  // detail pages are prose bios, no structured roster
   'cellardog', // month API excerpts are empty; titles are "Leader Trio"
   'nublu',     // listing is act names only; no detail pages
+  'yoshis',    // detail pages are promo prose (touring acts)
+  'club606',   // detail pages are bios; night's band never published
+  'andys',     // detail pages are bios only
+  'harvelles', // client-rendered event pages; rotating house revues
+  'vibrato',   // squarespace prose descriptions, no rosters
+  'schlot',    // event pages are a client-rendered shell
+  // generators by design (no published rosters to crawl)
+  'preservationhall', 'fritzels', 'introtok',
 ]);
 
 const today = new Date().toISOString().slice(0, 10);

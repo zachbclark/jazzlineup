@@ -2598,6 +2598,16 @@ ok('zigzag: squarespace summary items, english dates, genre paren, Beginn detail
   const d = zzDetail('<p>Beginn: 20:00 Uhr (Einlass ab 19:00 Uhr) Eintritt: 25€</p>');
   assert.deepEqual(d.sets, ['20:00']);
   assert.match(d.priceText, /25/);
+  // roster in chaotic case: ALL-CAPS leader, lowercase sidemen -> title-cased
+  const r = zzDetail(`<p>Beginn: 20:00 Uhr</p>
+    <p>TAL ARDITI - Guitar<br>tim ries - saxophone<br>makar novikov - bass<br>mathis grossman - drums</p>`);
+  assert.deepEqual(r.personnel, [
+    { name: 'Tal Arditi', instrument: 'guitar' },
+    { name: 'Tim Ries', instrument: 'saxophone' },
+    { name: 'Makar Novikov', instrument: 'bass' },
+    { name: 'Mathis Grossman', instrument: 'drums' },
+  ]);
+  assert.equal(d.personnel, null, 'no roster lines -> no personnel');
 });
 
 import { parse as donauParse, membersToPersonnel as donauMembers } from './clubs/donau115.js';

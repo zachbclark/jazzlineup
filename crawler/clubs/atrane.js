@@ -14,7 +14,7 @@
 // (free). "HEUTE GESCHLOSSEN - TODAY CLOSED" placeholder days are skipped.
 // All jazz — no filter.
 import {
-  fetchText, makeEvent, htmlToText, cleanText, tzDate, tzTime,
+  fetchText, makeEvent, htmlToText, cleanText, tzDate, tzTime, titleCaseName,
 } from '../lib.js';
 
 const BASE = 'https://a-trane.de';
@@ -32,9 +32,6 @@ const PREFIX_RE = /^A[- ]?TRANE PR[ÄA]SENTIERT:?\s*/i;
 // 2-3 word name, reject that run entirely (precision-first). ALL-CAPS names
 // are title-cased for display. Instrument-less, like Bar Bayeux.
 const ROSTER_LABEL_RE = /(?:HEUTE MIT|FEAT\.?|FEATURING|SPECIAL GUESTS?)\s*:?\s*([^·«»]+)/gi;
-function titleCaseName(name) {
-  return name.toLowerCase().replace(/(^|[\s\-'])(\p{Ll})/gu, (m, sep, ch) => sep + ch.toUpperCase());
-}
 export function personnelFromSubtitle(lines) {
   const personnel = [];
   const seen = new Set();
