@@ -26,9 +26,23 @@ async function writeJson(key, body) {
   }));
 }
 
-export const handler = async () => {
+// The event payload may narrow the crawl: {"city":"par"} or
+// {"city":["par","ber"]} crawls just those cities (manual targeted refresh
+// after adding or fixing a venue). No payload = full crawl (the 4h schedule
+// sends none). Unknown ids fail loudly — a typo must not silently crawl
+// nothing and report success.
+export const handler = async (event) => {
+  const requested = event?.city ? [event.city].flat() : null;
+  if (requested) {
+    const unknown = requested.filter((c) => !cities().includes(c));
+    if (unknown.length) {
+      throw new Error(`unknown city id(s): ${unknown.join(', ')} (valid: ${cities().join(' ')})`);
+    }
+  }
+  const targets = requested ?? cities();
+
   const summary = {};
-  for (const city of cities()) {
+  for (const city of targets) {
     const key = `events-${city}.json`;
     const previous = (await readJson(key)) ?? (city === 'nyc' ? await readJson('events.json') : null);
     const previousEvents = previous?.events ?? [];
@@ -55,11 +69,14 @@ export const handler = async () => {
   // The Lambda-level Errors alarm only sees total crashes; this catches one
   // venue silently rotting while everything else stays green. Alarmed in the
   // CDK stack when it stays >= 1 for ~24h; details are in this log group.
+  // On a PARTIAL run the aggregate metric is skipped: emitting 0 for a subset
+  // would reset the ~24h alarm clock and mask a rotting venue in a city the
+  // run never touched. Per-city dimensions are always safe to emit.
   try {
     await cw.send(new PutMetricDataCommand({
       Namespace: 'JazzLineup',
       MetricData: [
-        { MetricName: 'ProblemClubs', Value: errorCount, Unit: 'Count' },
+        ...(requested ? [] : [{ MetricName: 'ProblemClubs', Value: errorCount, Unit: 'Count' }]),
         ...Object.entries(summary).map(([city, s]) => ({
           MetricName: 'ProblemClubs',
           Dimensions: [{ Name: 'City', Value: city }],
