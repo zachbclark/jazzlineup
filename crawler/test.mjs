@@ -1732,7 +1732,7 @@ ok('caveau: singles, pairs, and ranges expand; nightly 21h30', () => {
 });
 
 // --- Bal Blomet (Eventer, jazz-filtered URL) --------------------------------------------
-import { parse as bbmParse } from './clubs/balblomet.js';
+import { parse as bbmParse, parseDetail as bbmDetail } from './clubs/balblomet.js';
 ok('balblomet: edate link carries the date; time from the visible text', () => {
   const html = `
   <li class="eventer-event-item eventer-p2-event-list-item">
@@ -1744,6 +1744,21 @@ ok('balblomet: edate link carries the date; time from the visible text', () => {
   assert.equal(evs[0].title, 'PAUL LAY & BAPTISTE HERBIN – TEA FOR TWO');
   assert.equal(evs[0].date, '2026-09-11');
   assert.deepEqual(evs[0].sets, ['20:00']);
+});
+
+ok('balblomet: event page dash roster + program note prose', () => {
+  const html = `<div class="post-content">
+    <p>Paul Lay – piano<br>Baptiste Herbin – saxophone</p>
+    <p>Tea for Two réunit deux figures exceptionnelles du jazz français, le pianiste Paul Lay et le saxophoniste Baptiste Herbin, autour d'un dialogue complice.</p>
+    <p>Contact event manager</p></div>`;
+  const got = bbmDetail(html);
+  assert.deepEqual(got.personnel, [
+    { name: 'Paul Lay', instrument: 'piano' },
+    { name: 'Baptiste Herbin', instrument: 'saxophone' },
+  ]);
+  assert.match(got.details, /^Tea for Two réunit/);
+  // a page with only prose must not fake a roster
+  assert.equal(bbmDetail('<p>Une soirée de standards revisités au piano seul, entre Ellington et Strayhorn, portée par un toucher lumineux.</p>').personnel, null);
 });
 
 // --- 38 Riv (listing + detail set times + reuse) -------------------------------------------
