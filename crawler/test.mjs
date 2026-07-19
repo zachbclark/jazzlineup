@@ -273,6 +273,12 @@ ok('personnel: parses rosters, strips promo, rejects prose', () => {
   assert.equal(vv.length, 4);
   assert.equal(vv[1].instrument, 'saxophone');
 
+  // pipe seams (Mr. Tipple's), mixed with a dash seam mid-run
+  const mt = parsePersonnel('Carmen Getit | Guitar & Vocals Kamrin Ortiz | Tenor Saxophone Tim Bulkley – Drums');
+  assert.equal(mt.length, 3);
+  assert.deepEqual(mt[0], { name: 'Carmen Getit', instrument: 'guitar & vocals' });
+  assert.deepEqual(mt[2], { name: 'Tim Bulkley', instrument: 'drums' });
+
   assert.deepEqual(parsePersonnel('A powerful story brought to life through big band jazz'), []);
   assert.deepEqual(parsePersonnel('Jean-Michel at the Cafe - special guest'), []);
   assert.equal(stripPromo('Great band! FREE WITH SUMMERPASS GET TICKETS'), 'Great band!');
@@ -653,8 +659,8 @@ ok('ornithology: sections -> events; abbreviated personnel expand', () => {
 });
 
 // --- Bar Bayeux ----------------------------------------------------------------------------
-import { parse as bxParse } from './clubs/barbayeux.js';
-ok('barbayeux: day/time prefix stripped, roster split into details', () => {
+import { parse as bxParse, namesFrom as bxNames } from './clubs/barbayeux.js';
+ok('barbayeux: day/time prefix stripped, dash roster becomes names-only personnel', () => {
   const fixture = JSON.stringify({ upcoming: [
     {
       title: 'TUES 8-11pm Jam Session. House Band Set - Miki Yamanaka, Matt Dwonszyk, Diego Voglino',
@@ -671,12 +677,46 @@ ok('barbayeux: day/time prefix stripped, roster split into details', () => {
   assert.equal(evs[0].title, 'Jam Session. House Band Set');
   assert.equal(evs[0].date, '2026-07-14');
   assert.deepEqual(evs[0].sets, ['20:00']); // 8-11pm is a range, not two sets
-  assert.match(evs[0].details, /Miki Yamanaka/);
+  assert.deepEqual(evs[0].personnel, [
+    { name: 'Miki Yamanaka', instrument: '' },
+    { name: 'Matt Dwonszyk', instrument: '' },
+    { name: 'Diego Voglino', instrument: '' },
+  ], 'dash roster promoted from details to personnel');
   assert.match(evs[0].url, /barbayeux\.com\/jazz\/8ajbd79-abc/);
   assert.equal(evs[1].title, 'Marta Sanchez Trio');
+  assert.equal(evs[1].personnel, null);
   assert.deepEqual(evs[1].sets, ['21:00']);
   assert.equal(evs[2].title, 'Morgan Guerin');
   assert.deepEqual(evs[2].sets, ['20:00', '21:30']); // both sets, mined from the title
+});
+
+ok('barbayeux: w/ sidemen tails become personnel; billing words reject the run', () => {
+  const fixture = JSON.stringify({ upcoming: [
+    { title: 'Steve Cardenas w/Adam Kolker, Jeremy Stratton, George Schuller',
+      startDate: new Date('2026-07-21T20:00:00-04:00').getTime(), fullUrl: '/jazz/sc' },
+    { title: 'Kazemde George w/Tyrone Allen II and Kayvon Gordon',
+      startDate: new Date('2026-07-22T20:00:00-04:00').getTime(), fullUrl: '/jazz/kg' },
+    // a w/ tail that is NOT a clean name run must stay in the title
+    { title: 'Big Night w/The Mingus Tribute Band',
+      startDate: new Date('2026-07-23T20:00:00-04:00').getTime(), fullUrl: '/jazz/bn' },
+  ]});
+  const evs = bxParse(fixture);
+  assert.equal(evs[0].title, 'Steve Cardenas');
+  assert.deepEqual(evs[0].personnel.map((p) => p.name),
+    ['Adam Kolker', 'Jeremy Stratton', 'George Schuller']);
+  assert.equal(evs[1].title, 'Kazemde George');
+  assert.deepEqual(evs[1].personnel.map((p) => p.name),
+    ['Tyrone Allen II', 'Kayvon Gordon'], 'II suffix passes the name check');
+  assert.equal(evs[2].title, 'Big Night w/The Mingus Tribute Band', 'band billing left intact');
+  assert.equal(evs[2].personnel, null);
+});
+
+ok('barbayeux: namesFrom is strict — one bad part rejects the whole run', () => {
+  assert.deepEqual(bxNames('Miki Yamanaka, Matt Dwonszyk'), ['Miki Yamanaka', 'Matt Dwonszyk']);
+  assert.deepEqual(bxNames('Leo Genovese and Adam Kolker'), ['Leo Genovese', 'Adam Kolker']);
+  assert.deepEqual(bxNames('Miki Yamanaka, special guests'), [], 'billing word poisons the run');
+  assert.deepEqual(bxNames('Quartet, Jimmy Macbride'), [], 'ensemble word poisons the run');
+  assert.deepEqual(bxNames('lowercase name, Jimmy Macbride'), [], 'lowercase part poisons the run');
 });
 
 // --- Bill's Place -----------------------------------------------------------------------------
@@ -1007,6 +1047,28 @@ ok('silvana/shrine: day cells -> jazz acts only, genre kept as detail', () => {
   assert.deepEqual(evs[1].sets, ['21:00']);
   const sh = svParse(html, 'shrine', TODAY);
   assert.equal(sh[0].clubId, 'shrine');
+});
+
+ok('silvana/shrine: bio-embedded "Name (instrument)" runs become personnel', () => {
+  const html = `
+  <td><span class="wh">July 17</span>
+    <p><a href onclick="return popCal(5);" id="t5">7pm-8pm: Coralai - Jazz Strings</a></p>
+    <div class="hid" id="x5">We are a New Orleans based string band consisting of
+      Gabrielle Fischler (violin), Jennie Brent (cello), Chris Beroes-Haigis (guitar)
+      and Martin Masakowski (bass). We compose original improvisational music.</div>
+    <p><a href onclick="return popCal(6);" id="t6">9pm-10pm: Anjali Rose - Jazz Vocalist</a></p>
+    <div class="hid" id="x6">Anjali Rose is a composer and vocalist whose work (honesty,
+      experimentation) lives at the intersection of jazz and folk.</div>
+  </td>`;
+  const evs = svParse(html, 'silvana', TODAY);
+  assert.equal(evs.length, 2);
+  assert.deepEqual(evs[0].personnel, [
+    { name: 'Gabrielle Fischler', instrument: 'violin' },
+    { name: 'Jennie Brent', instrument: 'cello' },
+    { name: 'Chris Beroes-Haigis', instrument: 'guitar' },
+    { name: 'Martin Masakowski', instrument: 'bass' },
+  ], 'prose prefixes trimmed to the trailing name run');
+  assert.equal(evs[1].personnel, null, 'prose parentheticals never fake a roster');
 });
 
 // --- Sistas' Place -------------------------------------------------------------------
@@ -1514,7 +1576,7 @@ ok('duc: multi-night card -> one event per night with both sets; French months',
 });
 
 // --- Sunset / Sunside (shared tribe REST, venue routing) ------------------------------
-import { parse as ssParse } from './clubs/sunsetsunside.js';
+import { parse as ssParse, parseDetail as ssDetail } from './clubs/sunsetsunside.js';
 ok('sunsetsunside: venue field routes to the right room; unknown venues skipped', () => {
   const fixture = JSON.stringify({ events: [
     { title: 'Lila-May', start_date: '2026-07-16 19:30:00',
@@ -1529,6 +1591,23 @@ ok('sunsetsunside: venue field routes to the right room; unknown venues skipped'
   assert.deepEqual(evs[0].sets, ['19:30']);
   assert.equal(evs[1].clubId, 'sunside');
   assert.equal(evs[1].priceText, '25-30€');
+});
+
+ok('sunsetsunside: concert-page artistes block -> roster (unquoted attrs, c.basse)', () => {
+  // mirrors their served markup: unquoted class attr, roster split across <p>s
+  const html = `<h1 class="titre-fiche">Xavier Thollard Trio</h1><div
+class=artistes><p>Xavier Thollard - piano</p><p>Yann Phayphet - c.basse<br>
+Simon Bernier - batterie <br>
+<br></p></div><div
+class=col-container>`;
+  const got = ssDetail(html);
+  assert.deepEqual(got.personnel, [
+    { name: 'Xavier Thollard', instrument: 'piano' },
+    { name: 'Yann Phayphet', instrument: 'c.basse' },
+    { name: 'Simon Bernier', instrument: 'batterie' },
+  ]);
+  // pages without the block (festivals, private events) must not fake a roster
+  assert.equal(ssDetail('<div class="texte"><p>Concert exceptionnel</p></div>'), null);
 });
 
 // --- New Morning (JSON-LD agenda) ------------------------------------------------------
@@ -1653,7 +1732,7 @@ ok('caveau: singles, pairs, and ranges expand; nightly 21h30', () => {
 });
 
 // --- Bal Blomet (Eventer, jazz-filtered URL) --------------------------------------------
-import { parse as bbmParse } from './clubs/balblomet.js';
+import { parse as bbmParse, parseDetail as bbmDetail } from './clubs/balblomet.js';
 ok('balblomet: edate link carries the date; time from the visible text', () => {
   const html = `
   <li class="eventer-event-item eventer-p2-event-list-item">
@@ -1665,6 +1744,21 @@ ok('balblomet: edate link carries the date; time from the visible text', () => {
   assert.equal(evs[0].title, 'PAUL LAY & BAPTISTE HERBIN – TEA FOR TWO');
   assert.equal(evs[0].date, '2026-09-11');
   assert.deepEqual(evs[0].sets, ['20:00']);
+});
+
+ok('balblomet: event page dash roster + program note prose', () => {
+  const html = `<div class="post-content">
+    <p>Paul Lay – piano<br>Baptiste Herbin – saxophone</p>
+    <p>Tea for Two réunit deux figures exceptionnelles du jazz français, le pianiste Paul Lay et le saxophoniste Baptiste Herbin, autour d'un dialogue complice.</p>
+    <p>Contact event manager</p></div>`;
+  const got = bbmDetail(html);
+  assert.deepEqual(got.personnel, [
+    { name: 'Paul Lay', instrument: 'piano' },
+    { name: 'Baptiste Herbin', instrument: 'saxophone' },
+  ]);
+  assert.match(got.details, /^Tea for Two réunit/);
+  // a page with only prose must not fake a roster
+  assert.equal(bbmDetail('<p>Une soirée de standards revisités au piano seul, entre Ellington et Strayhorn, portée par un toucher lumineux.</p>').personnel, null);
 });
 
 // --- 38 Riv (listing + detail set times + reuse) -------------------------------------------
@@ -1809,7 +1903,7 @@ ok('jazzcafe: jazz genre kept, club nights and soul dropped, line-up to details'
 });
 
 // --- PizzaExpress Live (JSON API, Soho filter) ----------------------------------------------
-import { parse as pxParse } from './clubs/pizzaexpresslive.js';
+import { parse as pxParse, parseDetail as pxDetail } from './clubs/pizzaexpresslive.js';
 ok('pizzaexpress: real payload shapes — prose dates, pence prices, bare-city locations', () => {
   const fixture = JSON.stringify([
     { name: 'Jazz Up the 80s with the Jay Rayner Sextet', eventDate: 'Thursday 16th July',
@@ -1829,6 +1923,25 @@ ok('pizzaexpress: real payload shapes — prose dates, pence prices, bare-city l
   assert.equal(evs[1].date, '2026-08-01'); // ordinal + year inference
   assert.equal(evs[1].priceText, '£22.50'); // pence with remainder
   assert.match(evs[0].url, /pizzaexpresslive\.com\/whats-on\/jazz-up-the-80s/);
+});
+
+ok('pizzaexpress: __NEXT_DATA__ band_line_up_copy -> roster; bio first line -> details', () => {
+  const next = { props: { pageProps: { event: { attributes: [
+    { attribute: { code: 'band_line_up_heading' }, value: 'Band Lineup' },
+    { attribute: { code: 'band_line_up_copy' },
+      value: 'Noah Stoneman (piano)<br>Felix Moseholm (double bass)<br>Jacob Patrone (drums)' },
+    { attribute: { code: 'html_description' },
+      value: '<p>Rising star pianist Noah Stoneman brings his acclaimed trio to Dean Street for one night only.</p>' },
+  ] } } } };
+  const html = `<script id="__NEXT_DATA__" type="application/json">${JSON.stringify(next)}</script>`;
+  const got = pxDetail(html);
+  assert.deepEqual(got.personnel, [
+    { name: 'Noah Stoneman', instrument: 'piano' },
+    { name: 'Felix Moseholm', instrument: 'double bass' },
+    { name: 'Jacob Patrone', instrument: 'drums' },
+  ]);
+  assert.match(got.details, /^Rising star pianist/);
+  assert.equal(pxDetail('<html>no next data</html>'), null);
 });
 
 // --- Cafe OTO (event links + date headers) ---------------------------------------------------
@@ -2181,6 +2294,58 @@ ok('bluenotejp: rowspan runs fan out to each date; price + intro ride along', ()
   assert.match(evs[0].details, /ビッグバンド/);
 });
 
+ok('bluenotejp: per-date seatings scope sets; artist link becomes the url', () => {
+  const html = `
+  <table class="later"><tr>
+    <td class="dayBox"><span class="day">23</span><span class="week">thu.</span></td>
+    <td class="scheduleBox" rowspan="3"><span class="columnTxt">
+      <a href="https://www.bluenote.co.jp/jp/artists/citrus-sun/"><span class="title">CITRUS SUN</span></a></span></td>
+    </tr><tr><td class="dayBox"><span class="day">24</span></td></tr>
+    <tr><td class="dayBox sat"><span class="day">25</span></td></tr></table>
+  <div class="priceBox"><span class="price">11,500</span></div>
+  <div class="details">
+    <span class="text">2026 7.23 thu. - 7.25 sat.</span>
+    <span class="text">7.23 thu., 7.24 fri.<br />
+　[1st]Open5:00pm Start6:00pm　[2nd]Open7:45pm Start8:30pm<br />
+7.25 sat.<br />
+　[1st]Open1:30pm Start2:30pm　[2nd]Open6:00pm Start7:00pm<br/></span>
+  </div>`;
+  const evs = bntParse(html, 2026, 7);
+  assert.equal(evs.length, 3);
+  assert.deepEqual(evs[0].sets, ['18:00', '20:30'], 'thu gets the weekday seatings');
+  assert.deepEqual(evs[1].sets, ['18:00', '20:30']);
+  assert.deepEqual(evs[2].sets, ['14:30', '19:00'], 'sat gets the matinee seatings');
+  assert.match(evs[0].url, /artists\/citrus-sun/);
+});
+
+import { parseArtistPage as bntArtist, parseShowtimes as bntTimes } from './clubs/_bluenotejp.js';
+ok('bluenotejp: artist-page MEMBER table -> roman roster; single seating line = fallback', () => {
+  const html = `<h5><img alt="MEMBER"></h5><table>
+    <tr><td class="pr20"><p>Simon Phillips(ds)</p></td><td><p>サイモン・フィリップス（ドラムス）</p></td></tr>
+    <tr><td class="pr20"><p>Ernest Tibbs(b)</p></td><td><p>アーネスト・ティブス（ベース）</p></td></tr>
+    <tr><td class="pr20"><p>Otmaro Ruiz(key)</p></td><td><p>オトマロ・ルイーズ（キーボード）</p></td></tr>
+  </table>`;
+  const got = bntArtist(html);
+  assert.deepEqual(got.personnel, [
+    { name: 'Simon Phillips', instrument: 'drums' },
+    { name: 'Ernest Tibbs', instrument: 'bass' },
+    { name: 'Otmaro Ruiz', instrument: 'keys' },
+  ]);
+  assert.equal(bntArtist('<p>no member table</p>'), null);
+
+  // Cotton Club shape: plain MEMBER heading, "Name (abbr)" lines, bracketed
+  // sections after; the nav's MEMBERS link must not trigger the match
+  const cc = bntArtist(`<nav><a href="/jp/members/">MEMBERS</a></nav>
+    <p>MEMBER</p><p>Joyce Moreno (vo,g)<br>Tutty Moreno (ds)<br>Rodolfo Stroeter (b)<br>Helio Alves (p)</p>
+    <p>[予約受付開始日]</p><p>【Web先行受付】</p>`);
+  assert.deepEqual(cc.personnel.map((p) => p.name),
+    ['Joyce Moreno', 'Tutty Moreno', 'Rodolfo Stroeter', 'Helio Alves']);
+  assert.equal(cc.personnel[0].instrument, 'vocals, guitar');
+
+  const t = bntTimes('[1st]Open5:00pm Start6:00pm　[2nd]Open7:45pm Start8:30pm');
+  assert.deepEqual(t.fallback, ['18:00', '20:30'], 'unscoped seating line covers the whole run');
+});
+
 ok('bodyandsoul: dated slugs, two-set times, inline roster, charge', () => {
   const html = `
   <h2 class="event-arc-title"><a href="https://bodyandsoul.co.jp/event/260719">小田桐和寛カルテット</a></h2>
@@ -2357,7 +2522,7 @@ ok('german lexicon: months (Okt/Dez/Mär/Mai) and instruments; western paren ros
   assert.equal(full.length, 2, 'written-out instrument words accepted');
 });
 
-import { parse as atraneParse } from './clubs/atrane.js';
+import { parse as atraneParse, personnelFromSubtitle as atraneRoster } from './clubs/atrane.js';
 ok('atrane: EventON epoch data-time; PRÄSENTIERT prefix stripped; closed days skipped', () => {
   const html = `
   <div id="event_94066_0" class="eventon_list_event evo_eventtop scheduled event no_et" data-time="1784579400-1784591400" data-colr="#ECECEC">
@@ -2376,6 +2541,22 @@ ok('atrane: EventON epoch data-time; PRÄSENTIERT prefix stripped; closed days s
   assert.match(evs[0].details, /HEUTE MIT: HEINRICH KÖBBERLING/);
   assert.equal(evs[0].priceText, 'Free');
   assert.match(evs[0].url, /Events-Directory/);
+  assert.deepEqual(evs[0].personnel, [{ name: 'Heinrich Köbberling', instrument: '' }],
+    'HEUTE MIT name title-cased into instrument-less personnel');
+});
+
+ok('atrane: labeled subtitle runs -> names; ambiguous dashes reject the run', () => {
+  assert.deepEqual(
+    atraneRoster(['HEUTE MIT: HEINRICH KÖBBERLING-RUDI MAHALL', 'Special Guest: ETIENNE WITTICH'])
+      .map((p) => p.name),
+    ['Heinrich Köbberling', 'Rudi Mahall', 'Etienne Wittich']);
+  assert.deepEqual(
+    atraneRoster(['FEAT: Luca Zambito-Sebastian Wolfgruber']).map((p) => p.name),
+    ['Luca Zambito', 'Sebastian Wolfgruber']);
+  // "Werra-Magro": hyphenated surname or separator? Can't know -> no roster
+  assert.deepEqual(atraneRoster(['FEAT: Till Sahm-Björn Werra-Magro']), []);
+  // unlabeled subtitle lines never become names
+  assert.deepEqual(atraneRoster(['«Where Nights Unfold» · Celebrating 5 Years Of The Trio']), []);
 });
 
 import { parse as quasiParse } from './clubs/quasimodo.js';
@@ -2417,6 +2598,16 @@ ok('zigzag: squarespace summary items, english dates, genre paren, Beginn detail
   const d = zzDetail('<p>Beginn: 20:00 Uhr (Einlass ab 19:00 Uhr) Eintritt: 25€</p>');
   assert.deepEqual(d.sets, ['20:00']);
   assert.match(d.priceText, /25/);
+  // roster in chaotic case: ALL-CAPS leader, lowercase sidemen -> title-cased
+  const r = zzDetail(`<p>Beginn: 20:00 Uhr</p>
+    <p>TAL ARDITI - Guitar<br>tim ries - saxophone<br>makar novikov - bass<br>mathis grossman - drums</p>`);
+  assert.deepEqual(r.personnel, [
+    { name: 'Tal Arditi', instrument: 'guitar' },
+    { name: 'Tim Ries', instrument: 'saxophone' },
+    { name: 'Makar Novikov', instrument: 'bass' },
+    { name: 'Mathis Grossman', instrument: 'drums' },
+  ]);
+  assert.equal(d.personnel, null, 'no roster lines -> no personnel');
 });
 
 import { parse as donauParse, membersToPersonnel as donauMembers } from './clubs/donau115.js';

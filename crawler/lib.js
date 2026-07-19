@@ -246,12 +246,13 @@ const INSTRUMENTS = new Set([
   'flute', 'clarinet', 'oboe', 'bassoon', 'cello', 'violin', 'viola', 'strings',
   'percussion', 'harmonica', 'accordion', 'banjo', 'mandolin', 'harp', 'oud',
   'synth', 'synthesizer', 'electronics', 'turntables', 'dj', 'composer',
-  'conductor', 'arranger', 'leader', 'electric', 'acoustic', 'upright',
+  'conductor', 'arranger', 'leader', 'electric', 'acoustic', 'upright', 'double',
   // French (Paris rosters: "Ferenc Nemeth - Batterie"); accents are stripped
   // before lookup so flûte matches 'flute'
   'batterie', 'contrebasse', 'trompette', 'guitare', 'basse', 'clavier',
   'claviers', 'chant', 'voix', 'flute', 'flutes', 'violon', 'violoncelle',
   'orgue', 'percussions', 'saxo', 'tenor', 'baryton',
+  'cbasse', // Sunset/Sunside abbreviate contrebasse as "c.basse" (dots strip)
   // world / folk (Barbès rosters: "Daria Grace - vocals & baritone ukulele")
   'ukulele', 'kora', 'balafon', 'ngoni', 'cuatro', 'tres', 'cavaquinho',
   'bandoneon', 'fiddle', 'melodica', 'congas', 'bongos', 'timbales',
@@ -329,8 +330,9 @@ export function parsePersonnel(text) {
   const t = stripPromo(String(text))
     .replace(/\bsets? at [^.]*$/i, '') // trailing "Sets at 7pm + 9pm ET"
     .trim();
-  // Split on dashes that have whitespace on both sides (name/instrument seams).
-  const parts = t.split(/\s+[-–—]\s+/);
+  // Split on dashes (or pipes — Mr. Tipple's writes "Carmen Getit | Guitar")
+  // that have whitespace on both sides (name/instrument seams).
+  const parts = t.split(/\s+[-–—|]\s+/);
   if (parts.length < 2) return [];
 
   const personnel = [];
@@ -411,7 +413,17 @@ export function personnelFromStrongTags(html) {
 // From trailing text, take the final run of capitalized-ish tokens (a name).
 // Connector words never join a name: "With Daria Grace" is Daria Grace.
 const NAME_CONNECTOR_RE = /^(?:with|featuring|feat\.?|w\/|avec|and)$/i;
-function lastNameRun(text) {
+// "HEINRICH KÖBBERLING" / "tim ries" -> "Heinrich Köbberling" / "Tim Ries".
+// For venues whose rosters arrive ALL-CAPS or lowercase (A-Trane, Zig Zag);
+// leave mixed-case names alone at the call site — they're already right.
+export function titleCaseName(name) {
+  return String(name).toLowerCase().replace(/(^|[\s\-'])(\p{Ll})/gu, (m, sep, ch) => sep + ch.toUpperCase());
+}
+
+// Trailing capitalized run of a text — trims leading prose off a name
+// ("band consisting of Gabrielle Fischler" -> "Gabrielle Fischler").
+// Exported for venues that mine rosters out of bio prose (Silvana/Shrine).
+export function lastNameRun(text) {
   const tokens = cleanText(text).split(/\s+/).filter(Boolean);
   let start = tokens.length;
   for (let i = tokens.length - 1; i >= 0; i--) {

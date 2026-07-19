@@ -11,12 +11,67 @@
 //     <tr><td class="dayBox sun"><span class="day">2</span>...</td></tr></table>
 //   <div class="priceBox">...Music charge &yen;<span class="price">8,000</span>
 //   <span class="intro">スター・サックス奏者率いる...</span>
-// Times aren't in this view — sets stay empty (their shows are 2 seatings;
-// detail-page enrichment is a future pass). Titles are mostly roman.
+// Titles are mostly roman.
+//
+// 2026-07-18 pass (the "future pass" the first version promised):
+// - SET TIMES are in this view after all — the details block lists per-date
+//   seatings ("7.23 thu., 7.24 fri.  [1st]Open5:00pm Start6:00pm
+//   [2nd]Open7:45pm Start8:30pm"); both Start times become sets, per the
+//   Billboard Live convention.
+// - Each run links its artist page (www.<site>/jp/artists/<slug>/) whose
+//   MEMBER table carries a roman roster column ("Simon Phillips(ds)") that
+//   personnelFromJpRun parses; fetched via detail enrichment, one page per
+//   run, and the artist page replaces the generic schedule URL on events.
 import {
-  fetchText, makeEvent, htmlToText, isoDate, cleanText, sleep,
+  fetchText, makeEvent, htmlToText, isoDate, cleanText, sleep, normalizeTime,
+  personnelFromJpRun,
 } from '../lib.js';
 import { applyRomaji } from './_jpromaji.js';
+import { enrichFromDetailPages } from './_enrichdetails.js';
+
+// The details text block -> Map of 'M.D' -> ['HH:MM', ...] plus a fallback
+// list for runs that print one seating line with no per-date scoping.
+export function parseShowtimes(text) {
+  const byDate = new Map();
+  let fallback = [];
+  let pendingDates = [];
+  for (const line of String(text).split('\n')) {
+    const starts = [...line.matchAll(/Start\s*(\d{1,2}:\d{2}\s*[ap]m)/gi)]
+      .map((m) => normalizeTime(m[1])).filter(Boolean);
+    const dates = [...line.matchAll(/(?:^|[\s,])(\d{1,2})\.(\d{1,2})(?=\s|$)/g)]
+      .map((m) => `${Number(m[1])}.${Number(m[2])}`);
+    if (starts.length) {
+      if (pendingDates.length || dates.length) {
+        for (const d of (dates.length ? dates : pendingDates)) byDate.set(d, starts);
+      } else {
+        fallback = starts;
+      }
+      pendingDates = [];
+    } else if (dates.length) {
+      // "2026 7.4 sat., 7.5 sun." full-run summary lines also match here;
+      // they're harmlessly overwritten by the scoped lines that follow
+      pendingDates = dates;
+    }
+  }
+  return { byDate, fallback };
+}
+
+// Artist page rosters, two shapes on one platform family:
+// - Blue Note Tokyo: MEMBER table with roman cells <td class="pr20"><p>Name(ds)</p>
+// - Cotton Club: a plain MEMBER heading followed by "Joyce Moreno (vo,g)"
+//   lines (ends at the next bracketed section like [予約受付開始日])
+// (\bMEMBER\b won't match the nav's "MEMBERS" link — the S is a word char.)
+export function parseArtistPage(html) {
+  const cells = [...String(html).matchAll(/<td[^>]*class="pr20"[^>]*>\s*<p>([\s\S]*?)<\/p>/gi)]
+    .map((m) => htmlToText(m[1]).trim()).filter(Boolean);
+  let text = cells.join('\n');
+  if (!text) {
+    const m = htmlToText(html).match(/\bMEMBER\b\s*([\s\S]{0,600}?)(?=\n\s*[\[【]|$)/);
+    text = m ? m[1] : '';
+  }
+  const personnel = personnelFromJpRun(text, { maxName: 40 });
+  return personnel.length ? { personnel } : null;
+}
 
 export function parseMonth(html, year, month, clubId, siteUrl) {
   const events = [];
@@ -31,14 +86,16 @@ export function parseMonth(html, year, month, clubId, siteUrl) {
     if (!title || !days.length) continue;
     const price = (afterTable.match(/<span class="price">([\d,]+)<\/span>/) ?? [])[1];
     const intro = cleanText(htmlToText((afterTable.match(/<span class="intro">([\s\S]*?)<\/span>/) ?? [])[1] ?? '')).slice(0, 200);
+    const times = parseShowtimes(htmlToText(afterTable));
+    const artistUrl = (seg.match(/href="(https?:[^"]*\/artists\/[^"]+)"/i) ?? [])[1];
     for (const day of days) {
       const ev = makeEvent({
         clubId,
         title,
         titleAlt: applyRomaji(title) ?? undefined,
         date: isoDate(year, month, day),
-        sets: [],
-        url: siteUrl,
+        sets: times.byDate.get(`${month}.${day}`) ?? times.fallback,
+        url: artistUrl ?? siteUrl,
         details: intro || null,
         priceText: price ? `¥${price}` : null,
       });
@@ -51,7 +108,7 @@ export function parseMonth(html, year, month, clubId, siteUrl) {
 }
 
 export function makeBlueNoteJpCrawler({ clubId, host, siteUrl }) {
-  return async function crawl() {
+  return async function crawl(ctx = {}) {
     const now = new Date();
     const events = [];
     for (let i = 0; i < 2; i++) {
@@ -65,6 +122,12 @@ export function makeBlueNoteJpCrawler({ clubId, host, siteUrl }) {
       }
       await sleep(400);
     }
+    // rosters live on the artist pages; a run's dates share one page/fetch
+    await enrichFromDetailPages(events.filter((e) => e.url !== siteUrl), ctx, {
+      fields: ['personnel'],
+      extract: parseArtistPage,
+      maxPages: 12,
+    });
     return events;
   };
 }

@@ -14,6 +14,7 @@
 // enrichment fills them a few pages per crawl.
 import {
   fetchText, makeEvent, cleanText, htmlToText, monthNum, isoDate,
+  personnelFromLines, titleCaseName,
 } from '../lib.js';
 import { enrichFromDetailPages } from './_enrichdetails.js';
 
@@ -52,22 +53,33 @@ export function parse(html) {
   return events;
 }
 
-// "Beginn: 20:00 Uhr (Einlass ab 19:00 Uhr)" -> sets ['20:00']
+// "Beginn: 20:00 Uhr (Einlass ab 19:00 Uhr)" -> sets ['20:00'].
+// The same pages carry a line-per-player roster in chaotic case
+// ("TAL ARDITI - Guitar", "tim ries - saxophone") — personnelFromLines
+// validates it, then any name without proper mixed case gets title-cased.
 export function extractDetail(html) {
   const txt = htmlToText(html);
   const start = txt.match(/Beginn:?\s*(\d{1,2})[:.](\d{2})/i)
     ?? txt.match(/Start:?\s*(\d{1,2})[:.](\d{2})/i);
   const price = txt.match(/Eintritt:?\s*([\d]+(?:[.,]\d{2})?\s*(?:€|Euro))/i)?.[1];
+  const personnel = personnelFromLines(txt).map((p) => ({
+    ...p,
+    name: /\p{Lu}\p{Ll}/u.test(p.name) ? p.name : titleCaseName(p.name),
+  }));
   return {
     sets: start ? [`${start[1].padStart(2, '0')}:${start[2]}`] : [],
     priceText: price ? cleanText(price) : null,
+    personnel: personnel.length ? personnel : null,
   };
 }
 
 export async function crawl(ctx) {
   const events = parse(await fetchText(`${BASE}/programmneu`));
   return enrichFromDetailPages(events, ctx, {
-    fields: ['sets', 'priceText'],
+    // sets triggers the fetch; price and roster ride along so shows without
+    // a published roster (jams) don't refetch forever (New Morning rule)
+    fields: ['sets'],
+    alsoFill: ['priceText', 'personnel'],
     extract: extractDetail,
     maxPages: 10,
   });

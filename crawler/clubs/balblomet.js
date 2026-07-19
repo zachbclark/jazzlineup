@@ -6,7 +6,11 @@
 // Their classical, tango, and film-music cabaret stays out (jazz EVENTS,
 // not jazz venues). Items carry the date twice: in the visible text
 // ("10-09-2026 20:00") and in the link (/evenement/<slug>/edate/YYYY-MM-DD).
-import { fetchText, makeEvent, applyLateNight, cleanText, matchBlocks } from '../lib.js';
+import {
+  fetchText, makeEvent, applyLateNight, cleanText, matchBlocks, htmlToText,
+  personnelFromLines,
+} from '../lib.js';
+import { enrichFromDetailPages } from './_enrichdetails.js';
 
 const BASE = 'https://www.balblomet.fr';
 const JAZZ_CATS = '59,60,63'; // term ids seen 2026-07-16; comment in sync with filter UI
@@ -37,6 +41,32 @@ export function parse(html) {
   return events;
 }
 
-export async function crawl() {
-  return parse(await fetchText(URL_));
+// Event pages open with a dash roster right above the program note
+// (verified 2026-07-18):
+//   Paul Lay – piano
+//   Baptiste Herbin – saxophone
+//   Tea for Two réunit deux figures exceptionnelles du jazz français…
+// personnelFromLines picks the roster (strict: whole right side must be
+// instrument words, 2+ players); the first long prose line becomes details.
+export function parseDetail(html) {
+  const text = htmlToText(html);
+  const personnel = personnelFromLines(text);
+  const prose = text.split('\n').map((l) => l.trim())
+    .find((l) => l.length > 80 && !/@|©|\bhttp/i.test(l));
+  return {
+    personnel: personnel.length ? personnel : null,
+    details: prose ? cleanText(prose).slice(0, 300) : null,
+  };
+}
+
+export async function crawl(ctx = {}) {
+  const events = parse(await fetchText(URL_));
+  await enrichFromDetailPages(events, ctx, {
+    fields: ['personnel', 'details'],
+    extract: parseDetail,
+    // a residency's dates share one page — the /edate/ suffix only picks the
+    // night (the Django ?selected_date precedent)
+    urlKey: (url) => url.split('/edate/')[0],
+  });
+  return events;
 }
