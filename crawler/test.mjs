@@ -2522,7 +2522,7 @@ ok('german lexicon: months (Okt/Dez/Mär/Mai) and instruments; western paren ros
   assert.equal(full.length, 2, 'written-out instrument words accepted');
 });
 
-import { parse as atraneParse } from './clubs/atrane.js';
+import { parse as atraneParse, personnelFromSubtitle as atraneRoster } from './clubs/atrane.js';
 ok('atrane: EventON epoch data-time; PRÄSENTIERT prefix stripped; closed days skipped', () => {
   const html = `
   <div id="event_94066_0" class="eventon_list_event evo_eventtop scheduled event no_et" data-time="1784579400-1784591400" data-colr="#ECECEC">
@@ -2541,6 +2541,22 @@ ok('atrane: EventON epoch data-time; PRÄSENTIERT prefix stripped; closed days s
   assert.match(evs[0].details, /HEUTE MIT: HEINRICH KÖBBERLING/);
   assert.equal(evs[0].priceText, 'Free');
   assert.match(evs[0].url, /Events-Directory/);
+  assert.deepEqual(evs[0].personnel, [{ name: 'Heinrich Köbberling', instrument: '' }],
+    'HEUTE MIT name title-cased into instrument-less personnel');
+});
+
+ok('atrane: labeled subtitle runs -> names; ambiguous dashes reject the run', () => {
+  assert.deepEqual(
+    atraneRoster(['HEUTE MIT: HEINRICH KÖBBERLING-RUDI MAHALL', 'Special Guest: ETIENNE WITTICH'])
+      .map((p) => p.name),
+    ['Heinrich Köbberling', 'Rudi Mahall', 'Etienne Wittich']);
+  assert.deepEqual(
+    atraneRoster(['FEAT: Luca Zambito-Sebastian Wolfgruber']).map((p) => p.name),
+    ['Luca Zambito', 'Sebastian Wolfgruber']);
+  // "Werra-Magro": hyphenated surname or separator? Can't know -> no roster
+  assert.deepEqual(atraneRoster(['FEAT: Till Sahm-Björn Werra-Magro']), []);
+  // unlabeled subtitle lines never become names
+  assert.deepEqual(atraneRoster(['«Where Nights Unfold» · Celebrating 5 Years Of The Trio']), []);
 });
 
 import { parse as quasiParse } from './clubs/quasimodo.js';

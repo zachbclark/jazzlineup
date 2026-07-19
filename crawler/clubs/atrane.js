@@ -23,6 +23,41 @@ const BASE = 'https://a-trane.de';
 // titles; the useful name follows it.
 const PREFIX_RE = /^A[- ]?TRANE PR[ÄA]SENTIERT:?\s*/i;
 
+// Sidemen hide in the subtitle lines as labeled name runs:
+//   "HEUTE MIT: HEINRICH KÖBBERLING-RUDI MAHALL"
+//   "FEAT: Luca Zambito-Sebastian Wolfgruber" · "Special Guest: ETIENNE WITTICH"
+// The dash is the separator BUT can also be a hyphenated surname
+// ("Till Sahm-Björn Werra-Magro" — is Magro a person or half a surname?).
+// Conservative rule: split on every dash; if any fragment isn't exactly a
+// 2-3 word name, reject that run entirely (precision-first). ALL-CAPS names
+// are title-cased for display. Instrument-less, like Bar Bayeux.
+const ROSTER_LABEL_RE = /(?:HEUTE MIT|FEAT\.?|FEATURING|SPECIAL GUESTS?)\s*:?\s*([^·«»]+)/gi;
+function titleCaseName(name) {
+  return name.toLowerCase().replace(/(^|[\s\-'])(\p{Ll})/gu, (m, sep, ch) => sep + ch.toUpperCase());
+}
+export function personnelFromSubtitle(lines) {
+  const personnel = [];
+  const seen = new Set();
+  for (const line of lines) {
+    for (const m of String(line).matchAll(ROSTER_LABEL_RE)) {
+      const frags = m[1].split(/\s*[-–]\s*|\s*,\s*|\s+&\s+/).map((s) => cleanText(s)).filter(Boolean);
+      if (!frags.length) continue;
+      const ok = frags.every((f) => {
+        const words = f.split(/\s+/);
+        return words.length >= 2 && words.length <= 3 && words.every((w) => /^\p{Lu}/u.test(w));
+      });
+      if (!ok) continue;
+      for (const f of frags) {
+        const name = /\p{Ll}/u.test(f) ? f : titleCaseName(f);
+        if (seen.has(name)) continue;
+        seen.add(name);
+        personnel.push({ name, instrument: '' });
+      }
+    }
+  }
+  return personnel;
+}
+
 export function parse(html) {
   const events = [];
   const seen = new Set();
@@ -52,6 +87,7 @@ export function parse(html) {
       date: tzDate(startMs, 'UTC'),
       sets: [tzTime(startMs, 'UTC')],
       url: url ?? `${BASE}/programm/`,
+      personnel: personnelFromSubtitle(rest),
       details: rest.join(' · ') || null,
       priceText: /EINTRITT FREI/i.test(subtitle) ? 'Free' : null,
     });
