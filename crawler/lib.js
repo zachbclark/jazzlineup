@@ -246,7 +246,7 @@ const INSTRUMENTS = new Set([
   'flute', 'clarinet', 'oboe', 'bassoon', 'cello', 'violin', 'viola', 'strings',
   'percussion', 'harmonica', 'accordion', 'banjo', 'mandolin', 'harp', 'oud',
   'synth', 'synthesizer', 'electronics', 'turntables', 'dj', 'composer',
-  'conductor', 'arranger', 'leader', 'electric', 'acoustic', 'upright',
+  'conductor', 'arranger', 'leader', 'electric', 'acoustic', 'upright', 'double',
   // French (Paris rosters: "Ferenc Nemeth - Batterie"); accents are stripped
   // before lookup so flûte matches 'flute'
   'batterie', 'contrebasse', 'trompette', 'guitare', 'basse', 'clavier',

@@ -1888,7 +1888,7 @@ ok('jazzcafe: jazz genre kept, club nights and soul dropped, line-up to details'
 });
 
 // --- PizzaExpress Live (JSON API, Soho filter) ----------------------------------------------
-import { parse as pxParse } from './clubs/pizzaexpresslive.js';
+import { parse as pxParse, parseDetail as pxDetail } from './clubs/pizzaexpresslive.js';
 ok('pizzaexpress: real payload shapes — prose dates, pence prices, bare-city locations', () => {
   const fixture = JSON.stringify([
     { name: 'Jazz Up the 80s with the Jay Rayner Sextet', eventDate: 'Thursday 16th July',
@@ -1908,6 +1908,25 @@ ok('pizzaexpress: real payload shapes — prose dates, pence prices, bare-city l
   assert.equal(evs[1].date, '2026-08-01'); // ordinal + year inference
   assert.equal(evs[1].priceText, '£22.50'); // pence with remainder
   assert.match(evs[0].url, /pizzaexpresslive\.com\/whats-on\/jazz-up-the-80s/);
+});
+
+ok('pizzaexpress: __NEXT_DATA__ band_line_up_copy -> roster; bio first line -> details', () => {
+  const next = { props: { pageProps: { event: { attributes: [
+    { attribute: { code: 'band_line_up_heading' }, value: 'Band Lineup' },
+    { attribute: { code: 'band_line_up_copy' },
+      value: 'Noah Stoneman (piano)<br>Felix Moseholm (double bass)<br>Jacob Patrone (drums)' },
+    { attribute: { code: 'html_description' },
+      value: '<p>Rising star pianist Noah Stoneman brings his acclaimed trio to Dean Street for one night only.</p>' },
+  ] } } } };
+  const html = `<script id="__NEXT_DATA__" type="application/json">${JSON.stringify(next)}</script>`;
+  const got = pxDetail(html);
+  assert.deepEqual(got.personnel, [
+    { name: 'Noah Stoneman', instrument: 'piano' },
+    { name: 'Felix Moseholm', instrument: 'double bass' },
+    { name: 'Jacob Patrone', instrument: 'drums' },
+  ]);
+  assert.match(got.details, /^Rising star pianist/);
+  assert.equal(pxDetail('<html>no next data</html>'), null);
 });
 
 // --- Cafe OTO (event links + date headers) ---------------------------------------------------
