@@ -2279,6 +2279,58 @@ ok('bluenotejp: rowspan runs fan out to each date; price + intro ride along', ()
   assert.match(evs[0].details, /ビッグバンド/);
 });
 
+ok('bluenotejp: per-date seatings scope sets; artist link becomes the url', () => {
+  const html = `
+  <table class="later"><tr>
+    <td class="dayBox"><span class="day">23</span><span class="week">thu.</span></td>
+    <td class="scheduleBox" rowspan="3"><span class="columnTxt">
+      <a href="https://www.bluenote.co.jp/jp/artists/citrus-sun/"><span class="title">CITRUS SUN</span></a></span></td>
+    </tr><tr><td class="dayBox"><span class="day">24</span></td></tr>
+    <tr><td class="dayBox sat"><span class="day">25</span></td></tr></table>
+  <div class="priceBox"><span class="price">11,500</span></div>
+  <div class="details">
+    <span class="text">2026 7.23 thu. - 7.25 sat.</span>
+    <span class="text">7.23 thu., 7.24 fri.<br />
+　[1st]Open5:00pm Start6:00pm　[2nd]Open7:45pm Start8:30pm<br />
+7.25 sat.<br />
+　[1st]Open1:30pm Start2:30pm　[2nd]Open6:00pm Start7:00pm<br/></span>
+  </div>`;
+  const evs = bntParse(html, 2026, 7);
+  assert.equal(evs.length, 3);
+  assert.deepEqual(evs[0].sets, ['18:00', '20:30'], 'thu gets the weekday seatings');
+  assert.deepEqual(evs[1].sets, ['18:00', '20:30']);
+  assert.deepEqual(evs[2].sets, ['14:30', '19:00'], 'sat gets the matinee seatings');
+  assert.match(evs[0].url, /artists\/citrus-sun/);
+});
+
+import { parseArtistPage as bntArtist, parseShowtimes as bntTimes } from './clubs/_bluenotejp.js';
+ok('bluenotejp: artist-page MEMBER table -> roman roster; single seating line = fallback', () => {
+  const html = `<h5><img alt="MEMBER"></h5><table>
+    <tr><td class="pr20"><p>Simon Phillips(ds)</p></td><td><p>サイモン・フィリップス（ドラムス）</p></td></tr>
+    <tr><td class="pr20"><p>Ernest Tibbs(b)</p></td><td><p>アーネスト・ティブス（ベース）</p></td></tr>
+    <tr><td class="pr20"><p>Otmaro Ruiz(key)</p></td><td><p>オトマロ・ルイーズ（キーボード）</p></td></tr>
+  </table>`;
+  const got = bntArtist(html);
+  assert.deepEqual(got.personnel, [
+    { name: 'Simon Phillips', instrument: 'drums' },
+    { name: 'Ernest Tibbs', instrument: 'bass' },
+    { name: 'Otmaro Ruiz', instrument: 'keys' },
+  ]);
+  assert.equal(bntArtist('<p>no member table</p>'), null);
+
+  // Cotton Club shape: plain MEMBER heading, "Name (abbr)" lines, bracketed
+  // sections after; the nav's MEMBERS link must not trigger the match
+  const cc = bntArtist(`<nav><a href="/jp/members/">MEMBERS</a></nav>
+    <p>MEMBER</p><p>Joyce Moreno (vo,g)<br>Tutty Moreno (ds)<br>Rodolfo Stroeter (b)<br>Helio Alves (p)</p>
+    <p>[予約受付開始日]</p><p>【Web先行受付】</p>`);
+  assert.deepEqual(cc.personnel.map((p) => p.name),
+    ['Joyce Moreno', 'Tutty Moreno', 'Rodolfo Stroeter', 'Helio Alves']);
+  assert.equal(cc.personnel[0].instrument, 'vocals, guitar');
+
+  const t = bntTimes('[1st]Open5:00pm Start6:00pm　[2nd]Open7:45pm Start8:30pm');
+  assert.deepEqual(t.fallback, ['18:00', '20:30'], 'unscoped seating line covers the whole run');
+});
+
 ok('bodyandsoul: dated slugs, two-set times, inline roster, charge', () => {
   const html = `
   <h2 class="event-arc-title"><a href="https://bodyandsoul.co.jp/event/260719">小田桐和寛カルテット</a></h2>
