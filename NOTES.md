@@ -41,10 +41,21 @@ GitHub Actions. DATA only changes when the crawler Lambda runs (4h schedule,
 or manual invoke). "I deployed but the new venue isn't showing" is always
 this.
 
-Manual Lambda invoke:
+Manual Lambda invoke (--cli-read-timeout 0: the full crawl outlives the
+CLI's 60s default, which "errors" while the Lambda finishes fine):
 
     FN=$(aws cloudformation describe-stacks --stack-name JazzLineup --query "Stacks[0].Outputs[?OutputKey=='CrawlerFunctionName'].OutputValue" --output text)
-    aws lambda invoke --function-name $FN /tmp/out.json && cat /tmp/out.json
+    aws lambda invoke --cli-read-timeout 0 --function-name $FN /tmp/out.json && cat /tmp/out.json
+
+One city only (targeted refresh after adding/fixing a venue; payload takes
+"par" or ["par","ber"], typos fail loudly, no payload = full crawl):
+
+    aws lambda invoke --cli-read-timeout 0 --cli-binary-format raw-in-base64-out \
+      --payload '{"city":"par"}' --function-name $FN /tmp/out.json && cat /tmp/out.json
+
+Partial runs skip the aggregate ProblemClubs metric on purpose — a subset
+reporting 0 would reset the ~24h drift alarm and mask a rotting venue in a
+city the run never touched (per-city dimensions still emit).
 
 ## Crawler conventions
 
