@@ -27,7 +27,11 @@ export function initialRoute() {
   const segs = window.location.pathname.split('/').filter(Boolean).map((s) => s.toLowerCase());
   // slugs are canonical; old short-id links (/par, /chi) keep working
   const match = CITIES.find((c) => c.slug === segs[0] || c.id === segs[0]);
-  const rawDate = new URLSearchParams(window.location.search).get('date') ?? '';
+  const search = new URLSearchParams(window.location.search);
+  const rawDate = search.get('date') ?? '';
+  // ?venues=vanguard,smalls — club ids, validated against club data after load
+  const rawVenues = (search.get('venues') ?? '').toLowerCase();
+  const venues = [...new Set(rawVenues.split(',').map((s) => s.trim()).filter(Boolean))];
   let city = match?.id ?? null;
   if (!city) {
     const saved = localStorage.getItem('jl.city');
@@ -37,6 +41,7 @@ export function initialRoute() {
     city,
     borough: (match && segs[1]) || null, // validated against club data after load
     date: /^\d{4}-\d{2}-\d{2}$/.test(rawDate) ? rawDate : null,
+    venues: venues.length ? venues : null,
   };
 }
 

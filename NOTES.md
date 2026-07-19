@@ -342,8 +342,10 @@ that JSON path — invalidate /events-<id>.json.
 
 - Deep routing for sharing (r/Jazz, Zach: "top of my improvements list"):
   /:city/:district/ paths (e.g. /nyc/manhattan/) and a ?date=YYYY-MM-DD
-  param, so a filtered view is a shareable link. City slugs already exist;
-  this extends the pattern to borough + date state.
+  param, so a filtered view is a shareable link. SHIPPED, plus ?venues=
+  (2026-07-19): comma-joined club ids mirror the chip selection live;
+  a shared link applies once on load and never overwrites the visitor's
+  saved chips; bad ids degrade gracefully; All = no param.
 - Classical music sibling site/section for the same cities — Zach
   committed to this publicly in the r/Jazz thread ("classical is next").
   Big scope; treat as its own project, likely reusing the whole crawler +
