@@ -303,6 +303,22 @@ export const CLUBS = [
     module: './clubs/roulette.js',
   },
   {
+    id: 'ny92',
+    name: '92NY',
+    shortName: '92NY',
+    url: 'https://www.92ny.org/culture-arts/concerts',
+    address: '1395 Lexington Ave, New York, NY 10128',
+    city: 'nyc',
+    borough: 'manhattan',
+    timezone: 'America/New_York',
+    neighborhood: 'Upper East Side',
+    color: '#17a2a8', // dark teal — quick read for NYC hue-distinctness, verify with extractor
+    module: './clubs/ny92.js',
+    // Jazz programming is seasonal (Jazz in July + scattered bookings); an
+    // empty calendar between series is normal, not a broken parser.
+    emptyOk: true,
+  },
+  {
     id: 'jcal',
     name: 'JCAL (Jamaica Center)',
     shortName: 'JCAL',
@@ -576,6 +592,19 @@ export const CLUBS = [
     neighborhood: 'Santa Monica',
     color: '#b34d7a', // red-velvet wine, brightened to read on black
     module: './clubs/harvelles.js',
+  },
+  {
+    id: 'lodgeroom',
+    name: 'Lodge Room',
+    shortName: 'Lodge Room',
+    url: 'https://www.lodgeroomhlp.com',
+    address: '104 N Ave 56, Los Angeles, CA 90042',
+    city: 'la',
+    borough: null,
+    timezone: 'America/Los_Angeles',
+    neighborhood: 'Highland Park',
+    color: '#8d4a84', // plum — quick read for LA hue-distinctness, verify with extractor
+    module: './clubs/lodgeroom.js',
   },
 
   // ----------------------------------------------------------- Chicago ----

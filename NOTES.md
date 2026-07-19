@@ -74,6 +74,12 @@ regress it. `--club x --city y` is safe now.
 Politeness: `sleep()` between page fetches, `maxPages` caps on detail-page
 enrichment (venues fill over successive crawls via prior-reuse), concurrency
 ~3. We fetch each venue a handful of pages every 4 hours; that's fine.
+Lodge Room 429s on back-to-back fetches — one homepage hit per crawl only.
+
+Seasonal venues: a registry entry may carry `emptyOk: true` (92NY, whose
+jazz is mostly the Jazz in July festival) — its module returning 0 events
+logs as off-season instead of SUSPECT, so a dark hall doesn't nag the
+drift alarm. A shared module is emptyOk only if every club it serves is.
 
 ### The personnel machinery (lib.js)
 
