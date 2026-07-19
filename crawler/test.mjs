@@ -1532,7 +1532,7 @@ ok('sunsetsunside: venue field routes to the right room; unknown venues skipped'
 });
 
 // --- New Morning (JSON-LD agenda) ------------------------------------------------------
-import { parse as nmParse } from './clubs/newmorning.js';
+import { parse as nmParse, parseDetail as nmDetail } from './clubs/newmorning.js';
 ok('newmorning: JSON-LD events parsed, T00:00:00 means no set times, dupes collapse', () => {
   const ld = JSON.stringify([
     { '@context': 'http://schema.org', '@type': 'Event', name: 'Immanuel Wilkins Quartet',
@@ -1591,6 +1591,47 @@ newline",
   assert.equal(evs[0].date, '2026-07-22');
   assert.match(evs[0].url, /N-7711/);
   assert.equal(evs[1].title, 'Brad Mehldau – Solo'); // \u2013 unescaped
+});
+
+ok('newmorning: parseDetail reads the Présentation roster, concert time and price', () => {
+  // the roster block is emitted twice (responsive desktop/mobile variants);
+  // the header carries a door time then the concert time; price is in the offer
+  const html = `<html><body>
+    <header>
+      <p class="mb-0 text-uppercase">19h30 : Ouverture des portes</p>
+      <p class="text-uppercase">20h30 : Concert</p>
+    </header>
+    <script type="application/ld+json">{"@type":"Event","name":"Immanuel Wilkins Quartet",
+      "offers":{"@type":"Offer","price":"27.00","priceCurrency":"EUR"}}</script>
+    <div class="d-none d-xl-block">
+      <div class="lh-sm mb-2"><span><strong>Immanuel Wilkins</strong></span><br><span class="fst-italic">Saxophone alto</span></div>
+      <div class="lh-sm mb-2"><span><strong>Micah Thomas</strong></span><br><span class="fst-italic">Piano</span></div>
+      <div class="lh-sm mb-2"><span><strong>Kayvon Gordon</strong></span><br><span class="fst-italic">Batterie</span></div>
+    </div>
+    <div class="d-xl-none">
+      <div class="lh-sm mb-2"><span><strong>Immanuel Wilkins</strong></span><br><span class="fst-italic">Saxophone alto</span></div>
+      <div class="lh-sm mb-2"><span><strong>Micah Thomas</strong></span><br><span class="fst-italic">Piano</span></div>
+      <div class="lh-sm mb-2"><span><strong>Kayvon Gordon</strong></span><br><span class="fst-italic">Batterie</span></div>
+    </div>
+  </body></html>`;
+  const got = nmDetail(html);
+  assert.deepEqual(got.personnel, [
+    { name: 'Immanuel Wilkins', instrument: 'saxophone alto' },
+    { name: 'Micah Thomas', instrument: 'piano' },
+    { name: 'Kayvon Gordon', instrument: 'batterie' },
+  ], 'dedupes the double-rendered roster by name');
+  assert.deepEqual(got.sets, ['20:30'], 'concert time, not the door time');
+  assert.equal(got.priceText, '27€');
+});
+
+ok('newmorning: parseDetail degrades — roster-only page (time/price not yet posted)', () => {
+  // a far-out show can list its lineup before its time or price exists
+  const html = `<div class="lh-sm mb-2"><span><strong>Seba Graves</strong></span><br><span class="fst-italic">Trombone basse</span></div>
+    <div class="lh-sm mb-2"><span><strong>Tarik Graves</strong></span><br><span class="fst-italic">Trompette</span></div>`;
+  const got = nmDetail(html);
+  assert.equal(got.personnel.length, 2);
+  assert.deepEqual(got.sets, []);
+  assert.equal(got.priceText, null);
 });
 
 // --- Caveau de la Huchette (French prose dates) ----------------------------------------
@@ -1904,6 +1945,26 @@ ok('enrich: urlKey dedupes residency dates into one fetch, result fans back out'
   assert.equal(fetched.length, 1, 'one fetch for both nights');
   assert.equal(events[0].personnel[0].name, 'David Hazeltine');
   assert.equal(events[1].personnel[1].name, 'Pete Van Nostrand', 'second night filled from same page');
+});
+
+ok('enrich: alsoFill rides along on a fetch but never triggers one (New Morning)', async () => {
+  // roster present but no time yet -> must NOT refetch just to chase the time
+  const events = [
+    { id: 'nm:2026-07-20:a', date: '2026-07-20', url: 'https://x/a', personnel: null, sets: [], priceText: null },
+    { id: 'nm:2026-07-27:b', date: '2026-07-27', url: 'https://x/b',
+      personnel: [{ name: 'Has Roster', instrument: 'piano' }], sets: [], priceText: null },
+  ];
+  const fetched = [];
+  await enrichFromDetailPages(events, {}, {
+    fields: ['personnel'],
+    alsoFill: ['sets', 'priceText'],
+    extract: () => ({ personnel: [{ name: 'Fetched Player', instrument: 'sax' }], sets: ['20:30'], priceText: '27€' }),
+    fetchImpl: async (url) => { fetched.push(url); return ''; },
+  });
+  assert.deepEqual(fetched, ['https://x/a'], 'only the roster-less event fetches; alsoFill gaps do not');
+  assert.deepEqual(events[0].sets, ['20:30'], 'time filled opportunistically on the personnel fetch');
+  assert.equal(events[0].priceText, '27€');
+  assert.deepEqual(events[1].sets, [], 'event with a roster is left time-less rather than refetched');
 });
 
 // --- personnelFromLines comma separator (Dizzy's format) ------------------------------
