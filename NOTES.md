@@ -165,11 +165,9 @@ _turntable, _wixevents, _fr (French dates).
 - Ethan Iverson's do-the-gig venue list (old but trusted, cross-referenced
   2026-07-18): The Stone, Iridium, SEEDS and Ibeam appear on BOTH his list
   and the NYCJR shortlist — that's the ranked top of NYC Tier 2. Still-alive
-  candidates from his list we don't track: Mezzrow (!! Smalls' sister club,
-  SAME SmallsLIVE platform smalls.js already parses, publishes nightly
-  rosters — cheapest possible add unless deliberately excluded; ask Zach),
-  Minton's, Room 623, Cleopatra's Needle, Tomi Jazz, Soapbox Gallery,
-  The Owl.
+  candidates from his list we don't track: Minton's, Room 623, Cleopatra's
+  Needle, Tomi Jazz, Soapbox Gallery, The Owl. (Mezzrow looked like a gap
+  at first read but is already tracked — smalls.js serves both rooms.)
 
 ## Frontend conventions
 
