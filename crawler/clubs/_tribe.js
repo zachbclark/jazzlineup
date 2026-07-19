@@ -10,6 +10,7 @@ import {
   fetchText, makeEvent, applyLateNight, htmlToText, stripPromo,
   parsePersonnel, splitIso,
 } from '../lib.js';
+import { enrichFromDetailPages } from './_enrichdetails.js';
 
 export function parseTribe(jsonText, { clubIdFor, fallbackUrl }) {
   const j = JSON.parse(jsonText);
@@ -40,7 +41,11 @@ export function parseTribe(jsonText, { clubIdFor, fallbackUrl }) {
 // run 4+ minutes and threatened the Lambda's time budget. A date window
 // also caps how many pages exist at all. Page-2+ failures degrade to
 // missing pages instead of failing the venue.
-export function makeTribeCrawler({ base, clubIdFor, fallbackUrl, maxPages = 3, perPage = 50, timeoutMs = 30000, windowDays = 60 }) {
+// `enrich` (optional) turns on detail-page enrichment for venues whose event
+// pages carry data the API description lacks (Sunset/Sunside rosters): the
+// options object is handed to enrichFromDetailPages, and the venue's timeoutMs
+// rides along on those fetches too (slow hosts stay slow on detail pages).
+export function makeTribeCrawler({ base, clubIdFor, fallbackUrl, maxPages = 3, perPage = 50, timeoutMs = 30000, windowDays = 60, enrich = null }) {
   return async function crawl(ctx = {}) {
     const today = ctx.today ?? new Date();
     const start = today.toISOString().slice(0, 10);
@@ -57,6 +62,13 @@ export function makeTribeCrawler({ base, clubIdFor, fallbackUrl, maxPages = 3, p
           .then((b) => parseTribe(b, { clubIdFor, fallbackUrl }))
           .catch(() => []))
     );
-    return out.concat(...rest);
+    const events = out.concat(...rest);
+    if (enrich) {
+      await enrichFromDetailPages(events.filter((e) => e.url !== fallbackUrl), ctx, {
+        fetchImpl: (u) => fetchText(u, { timeoutMs }),
+        ...enrich,
+      });
+    }
+    return events;
   };
 }

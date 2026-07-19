@@ -252,6 +252,7 @@ const INSTRUMENTS = new Set([
   'batterie', 'contrebasse', 'trompette', 'guitare', 'basse', 'clavier',
   'claviers', 'chant', 'voix', 'flute', 'flutes', 'violon', 'violoncelle',
   'orgue', 'percussions', 'saxo', 'tenor', 'baryton',
+  'cbasse', // Sunset/Sunside abbreviate contrebasse as "c.basse" (dots strip)
   // world / folk (Barbès rosters: "Daria Grace - vocals & baritone ukulele")
   'ukulele', 'kora', 'balafon', 'ngoni', 'cuatro', 'tres', 'cavaquinho',
   'bandoneon', 'fiddle', 'melodica', 'congas', 'bongos', 'timbales',

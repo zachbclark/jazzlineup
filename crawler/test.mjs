@@ -1570,7 +1570,7 @@ ok('duc: multi-night card -> one event per night with both sets; French months',
 });
 
 // --- Sunset / Sunside (shared tribe REST, venue routing) ------------------------------
-import { parse as ssParse } from './clubs/sunsetsunside.js';
+import { parse as ssParse, parseDetail as ssDetail } from './clubs/sunsetsunside.js';
 ok('sunsetsunside: venue field routes to the right room; unknown venues skipped', () => {
   const fixture = JSON.stringify({ events: [
     { title: 'Lila-May', start_date: '2026-07-16 19:30:00',
@@ -1585,6 +1585,23 @@ ok('sunsetsunside: venue field routes to the right room; unknown venues skipped'
   assert.deepEqual(evs[0].sets, ['19:30']);
   assert.equal(evs[1].clubId, 'sunside');
   assert.equal(evs[1].priceText, '25-30€');
+});
+
+ok('sunsetsunside: concert-page artistes block -> roster (unquoted attrs, c.basse)', () => {
+  // mirrors their served markup: unquoted class attr, roster split across <p>s
+  const html = `<h1 class="titre-fiche">Xavier Thollard Trio</h1><div
+class=artistes><p>Xavier Thollard - piano</p><p>Yann Phayphet - c.basse<br>
+Simon Bernier - batterie <br>
+<br></p></div><div
+class=col-container>`;
+  const got = ssDetail(html);
+  assert.deepEqual(got.personnel, [
+    { name: 'Xavier Thollard', instrument: 'piano' },
+    { name: 'Yann Phayphet', instrument: 'c.basse' },
+    { name: 'Simon Bernier', instrument: 'batterie' },
+  ]);
+  // pages without the block (festivals, private events) must not fake a roster
+  assert.equal(ssDetail('<div class="texte"><p>Concert exceptionnel</p></div>'), null);
 });
 
 // --- New Morning (JSON-LD agenda) ------------------------------------------------------
