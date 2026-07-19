@@ -653,8 +653,8 @@ ok('ornithology: sections -> events; abbreviated personnel expand', () => {
 });
 
 // --- Bar Bayeux ----------------------------------------------------------------------------
-import { parse as bxParse } from './clubs/barbayeux.js';
-ok('barbayeux: day/time prefix stripped, roster split into details', () => {
+import { parse as bxParse, namesFrom as bxNames } from './clubs/barbayeux.js';
+ok('barbayeux: day/time prefix stripped, dash roster becomes names-only personnel', () => {
   const fixture = JSON.stringify({ upcoming: [
     {
       title: 'TUES 8-11pm Jam Session. House Band Set - Miki Yamanaka, Matt Dwonszyk, Diego Voglino',
@@ -671,12 +671,46 @@ ok('barbayeux: day/time prefix stripped, roster split into details', () => {
   assert.equal(evs[0].title, 'Jam Session. House Band Set');
   assert.equal(evs[0].date, '2026-07-14');
   assert.deepEqual(evs[0].sets, ['20:00']); // 8-11pm is a range, not two sets
-  assert.match(evs[0].details, /Miki Yamanaka/);
+  assert.deepEqual(evs[0].personnel, [
+    { name: 'Miki Yamanaka', instrument: '' },
+    { name: 'Matt Dwonszyk', instrument: '' },
+    { name: 'Diego Voglino', instrument: '' },
+  ], 'dash roster promoted from details to personnel');
   assert.match(evs[0].url, /barbayeux\.com\/jazz\/8ajbd79-abc/);
   assert.equal(evs[1].title, 'Marta Sanchez Trio');
+  assert.equal(evs[1].personnel, null);
   assert.deepEqual(evs[1].sets, ['21:00']);
   assert.equal(evs[2].title, 'Morgan Guerin');
   assert.deepEqual(evs[2].sets, ['20:00', '21:30']); // both sets, mined from the title
+});
+
+ok('barbayeux: w/ sidemen tails become personnel; billing words reject the run', () => {
+  const fixture = JSON.stringify({ upcoming: [
+    { title: 'Steve Cardenas w/Adam Kolker, Jeremy Stratton, George Schuller',
+      startDate: new Date('2026-07-21T20:00:00-04:00').getTime(), fullUrl: '/jazz/sc' },
+    { title: 'Kazemde George w/Tyrone Allen II and Kayvon Gordon',
+      startDate: new Date('2026-07-22T20:00:00-04:00').getTime(), fullUrl: '/jazz/kg' },
+    // a w/ tail that is NOT a clean name run must stay in the title
+    { title: 'Big Night w/The Mingus Tribute Band',
+      startDate: new Date('2026-07-23T20:00:00-04:00').getTime(), fullUrl: '/jazz/bn' },
+  ]});
+  const evs = bxParse(fixture);
+  assert.equal(evs[0].title, 'Steve Cardenas');
+  assert.deepEqual(evs[0].personnel.map((p) => p.name),
+    ['Adam Kolker', 'Jeremy Stratton', 'George Schuller']);
+  assert.equal(evs[1].title, 'Kazemde George');
+  assert.deepEqual(evs[1].personnel.map((p) => p.name),
+    ['Tyrone Allen II', 'Kayvon Gordon'], 'II suffix passes the name check');
+  assert.equal(evs[2].title, 'Big Night w/The Mingus Tribute Band', 'band billing left intact');
+  assert.equal(evs[2].personnel, null);
+});
+
+ok('barbayeux: namesFrom is strict — one bad part rejects the whole run', () => {
+  assert.deepEqual(bxNames('Miki Yamanaka, Matt Dwonszyk'), ['Miki Yamanaka', 'Matt Dwonszyk']);
+  assert.deepEqual(bxNames('Leo Genovese and Adam Kolker'), ['Leo Genovese', 'Adam Kolker']);
+  assert.deepEqual(bxNames('Miki Yamanaka, special guests'), [], 'billing word poisons the run');
+  assert.deepEqual(bxNames('Quartet, Jimmy Macbride'), [], 'ensemble word poisons the run');
+  assert.deepEqual(bxNames('lowercase name, Jimmy Macbride'), [], 'lowercase part poisons the run');
 });
 
 // --- Bill's Place -----------------------------------------------------------------------------
@@ -1007,6 +1041,28 @@ ok('silvana/shrine: day cells -> jazz acts only, genre kept as detail', () => {
   assert.deepEqual(evs[1].sets, ['21:00']);
   const sh = svParse(html, 'shrine', TODAY);
   assert.equal(sh[0].clubId, 'shrine');
+});
+
+ok('silvana/shrine: bio-embedded "Name (instrument)" runs become personnel', () => {
+  const html = `
+  <td><span class="wh">July 17</span>
+    <p><a href onclick="return popCal(5);" id="t5">7pm-8pm: Coralai - Jazz Strings</a></p>
+    <div class="hid" id="x5">We are a New Orleans based string band consisting of
+      Gabrielle Fischler (violin), Jennie Brent (cello), Chris Beroes-Haigis (guitar)
+      and Martin Masakowski (bass). We compose original improvisational music.</div>
+    <p><a href onclick="return popCal(6);" id="t6">9pm-10pm: Anjali Rose - Jazz Vocalist</a></p>
+    <div class="hid" id="x6">Anjali Rose is a composer and vocalist whose work (honesty,
+      experimentation) lives at the intersection of jazz and folk.</div>
+  </td>`;
+  const evs = svParse(html, 'silvana', TODAY);
+  assert.equal(evs.length, 2);
+  assert.deepEqual(evs[0].personnel, [
+    { name: 'Gabrielle Fischler', instrument: 'violin' },
+    { name: 'Jennie Brent', instrument: 'cello' },
+    { name: 'Chris Beroes-Haigis', instrument: 'guitar' },
+    { name: 'Martin Masakowski', instrument: 'bass' },
+  ], 'prose prefixes trimmed to the trailing name run');
+  assert.equal(evs[1].personnel, null, 'prose parentheticals never fake a roster');
 });
 
 // --- Sistas' Place -------------------------------------------------------------------

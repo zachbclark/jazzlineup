@@ -6,8 +6,23 @@
 //   <div class="hid" id="x2">…act description…</div>
 // Both book across genres nightly, so acts are kept only when the genre
 // tag / title / description reads jazz-ish (precision-first, as elsewhere).
-import { fetchText, makeEvent, htmlToText, monthNum, inferYear, isoDate, normalizeTime, cleanText } from '../lib.js';
+import {
+  fetchText, makeEvent, htmlToText, monthNum, inferYear, isoDate, normalizeTime,
+  cleanText, personnelFromJpRun, lastNameRun,
+} from '../lib.js';
 import { matchesKnownArtist } from './_jazzartists.js';
+
+// Some act bios embed a "Name (instrument), Name (instrument)" run mid-prose
+// ("...consisting of Gabrielle Fischler (violin), Jennie Brent (cello)...").
+// personnelFromJpRun already validates the parenthetical against the
+// instrument lexicon (2+ players required); prose bleeds into the captured
+// names, so trim each to its trailing capitalized run. Strict: a member whose
+// name doesn't survive the trim drops the whole roster (precision-first).
+function personnelFromBio(text) {
+  const run = personnelFromJpRun(text, { maxName: 60 });
+  const cleaned = run.map((p) => ({ ...p, name: lastNameRun(p.name) }));
+  return cleaned.length >= 2 && cleaned.every((p) => p.name) ? cleaned : [];
+}
 
 const SITES = {
   silvana: 'https://silvana-nyc.com',
@@ -53,7 +68,8 @@ export function parsePage(html, clubId, today = new Date()) {
         date,
         sets: start ? [start] : [],
         url: `${SITES[clubId]}/calendar.php`,
-        details: genre ? `${genre}${desc ? ' — ' + desc.slice(0, 240) : ''}` : desc.slice(0, 300) || null,
+        personnel: personnelFromBio(desc),
+        details: genre ? `${genre}${desc ? ' · ' + desc.slice(0, 240) : ''}` : desc.slice(0, 300) || null,
       }));
     }
   }

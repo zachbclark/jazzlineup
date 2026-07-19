@@ -411,7 +411,10 @@ export function personnelFromStrongTags(html) {
 // From trailing text, take the final run of capitalized-ish tokens (a name).
 // Connector words never join a name: "With Daria Grace" is Daria Grace.
 const NAME_CONNECTOR_RE = /^(?:with|featuring|feat\.?|w\/|avec|and)$/i;
-function lastNameRun(text) {
+// Trailing capitalized run of a text — trims leading prose off a name
+// ("band consisting of Gabrielle Fischler" -> "Gabrielle Fischler").
+// Exported for venues that mine rosters out of bio prose (Silvana/Shrine).
+export function lastNameRun(text) {
   const tokens = cleanText(text).split(/\s+/).filter(Boolean);
   let start = tokens.length;
   for (let i = tokens.length - 1; i >= 0; i--) {

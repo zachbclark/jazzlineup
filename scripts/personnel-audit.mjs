@@ -13,7 +13,16 @@ const DATA_DIR = join(__dirname, '..', 'data');
 
 // venues whose source can never yield rosters (pure generators / seeds
 // without descriptions) — reported, but flagged instead of counted as gaps
-const STRUCTURAL = new Set(['marjorie', 'billsplace', 'arthurs', 'birdbeckett', 'caveau', 'ronnies', 'jazzcafe']);
+const STRUCTURAL = new Set([
+  'marjorie', 'billsplace', 'arthurs', 'birdbeckett', 'caveau', 'ronnies', 'jazzcafe',
+  // Boston (NOTES): generators/seeds with no published rosters
+  'wallys', 'beehive', 'regattabar', 'scullers',
+  // verified 2026-07-18 recon: no roster anywhere on the venue's site
+  'bluenote', 'bluenotela', // detail pages are ticketing boilerplate; lineups only ever in titles
+  'birdland',  // detail pages are prose bios, no structured roster
+  'cellardog', // month API excerpts are empty; titles are "Leader Trio"
+  'nublu',     // listing is act names only; no detail pages
+]);
 
 const today = new Date().toISOString().slice(0, 10);
 const rows = [];

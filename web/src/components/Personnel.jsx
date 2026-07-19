@@ -36,7 +36,9 @@ export default function Personnel({ personnel }) {
     <span className="personnel">
       {personnel.map((p, i) => (
         <span key={i} className="p-member">
-          {p.name}{p.nameAlt && <span className="p-name-alt"> · {p.nameAlt}</span>} <span className="p-inst">{shorten(p.instrument)}</span>
+          {p.name}{p.nameAlt && <span className="p-name-alt"> · {p.nameAlt}</span>}
+          {/* some venues publish names-only rosters (Bar Bayeux) */}
+          {p.instrument ? <> <span className="p-inst">{shorten(p.instrument)}</span></> : null}
           {i < personnel.length - 1 && <span className="p-sep"> · </span>}
         </span>
       ))}
