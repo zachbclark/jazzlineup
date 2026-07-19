@@ -273,6 +273,12 @@ ok('personnel: parses rosters, strips promo, rejects prose', () => {
   assert.equal(vv.length, 4);
   assert.equal(vv[1].instrument, 'saxophone');
 
+  // pipe seams (Mr. Tipple's), mixed with a dash seam mid-run
+  const mt = parsePersonnel('Carmen Getit | Guitar & Vocals Kamrin Ortiz | Tenor Saxophone Tim Bulkley – Drums');
+  assert.equal(mt.length, 3);
+  assert.deepEqual(mt[0], { name: 'Carmen Getit', instrument: 'guitar & vocals' });
+  assert.deepEqual(mt[2], { name: 'Tim Bulkley', instrument: 'drums' });
+
   assert.deepEqual(parsePersonnel('A powerful story brought to life through big band jazz'), []);
   assert.deepEqual(parsePersonnel('Jean-Michel at the Cafe - special guest'), []);
   assert.equal(stripPromo('Great band! FREE WITH SUMMERPASS GET TICKETS'), 'Great band!');

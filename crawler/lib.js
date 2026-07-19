@@ -330,8 +330,9 @@ export function parsePersonnel(text) {
   const t = stripPromo(String(text))
     .replace(/\bsets? at [^.]*$/i, '') // trailing "Sets at 7pm + 9pm ET"
     .trim();
-  // Split on dashes that have whitespace on both sides (name/instrument seams).
-  const parts = t.split(/\s+[-–—]\s+/);
+  // Split on dashes (or pipes — Mr. Tipple's writes "Carmen Getit | Guitar")
+  // that have whitespace on both sides (name/instrument seams).
+  const parts = t.split(/\s+[-–—|]\s+/);
   if (parts.length < 2) return [];
 
   const personnel = [];
