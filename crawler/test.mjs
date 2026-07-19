@@ -1092,6 +1092,21 @@ ok('merge: zero events = suspect, failures keep previous, dedupe + sort', () => 
   assert.ok(out.errors.some((e) => /site down/.test(e)));
 });
 
+ok('merge: emptyOk modules may return 0 events without going suspect', () => {
+  const results = [
+    { status: 'fulfilled', value: { mod: './clubs/ny92.js', events: [] } },
+    { status: 'fulfilled', value: { mod: './clubs/b.js', events: [] } },
+  ];
+  const out = mergeCrawlResults(results, {
+    previousEvents: [],
+    targetIds: new Set(['ny92', 'b']),
+    emptyOkMods: new Set(['./clubs/ny92.js']),
+  });
+  assert.equal(out.errors.length, 1, 'only the non-emptyOk module errors');
+  assert.match(out.errors[0], /clubs\/b\.js/);
+  assert.ok(out.log.some((l) => /ok .*ny92.*off-season/.test(l)), 'seasonal empty logs as ok');
+});
+
 ok('merge: previous events from OTHER cities never leak into this city', () => {
   // Regression: first LA run inherited NYC previous data (legacy fallback)
   // and kept all 1460 NYC events in events-la.json.
@@ -2496,4 +2511,49 @@ ok('bflat: squarespace events json, Concert-tag time, excerpt roster', () => {
   assert.equal(evs[0].personnel[3].instrument, 'trombone');
   assert.match(evs[0].url, /b-flat-berlin\.de\/events\//);
   assert.equal(evs[1].personnel, null);
+});
+
+// --- 92NY (seed-only; Incapsula-walled) ------------------------------------------------
+import { seedEvents as ny92Seed } from './clubs/ny92.js';
+ok('ny92: seed carries halls, rosters, prices; past dates drop; off-season is empty', () => {
+  const evs = ny92Seed(new Date('2026-07-22T12:00:00Z'));
+  assert.ok(evs.length >= 1);
+  assert.ok(evs.every((e) => e.date >= '2026-07-22'), 'past series dates dropped');
+  const ron = evs.find((e) => /Ron Carter/.test(e.title));
+  assert.ok(ron, 'Foursight present');
+  assert.deepEqual(ron.sets, ['19:30']);
+  assert.match(ron.details, /Geffen Stage at Kaufmann Concert Hall/);
+  assert.equal(ron.personnel.length, 4);
+  assert.equal(ron.personnel[2].name, 'Renee Rosnes');
+  assert.equal(ron.priceText, 'from $45');
+  const kortum = evs.find((e) => /Kortum/.test(e.title));
+  assert.match(kortum.details, /Buttenwieser Hall .* streaming/i, 'hall + sold-out note joined without em dash');
+  // off-season: far-future today -> no events, and that's the designed shape
+  assert.deepEqual(ny92Seed(new Date('2026-09-01T12:00:00Z')), []);
+});
+
+// --- Lodge Room (Tessera eventObjects; jazz-filtered) ----------------------------------
+import { parse as lodgeParse } from './clubs/lodgeroom.js';
+ok('lodgeroom: tessera blobs parse; jazz filter keeps keyword + known-artist hits only', () => {
+  const blob = (o) => `eventObjects.push(${JSON.stringify(o)});`;
+  const html = [
+    blob({ id: 1, eventDate: '08/23/2026 8:00 pm', mainArtist: ['Jeff Parker ETA IVtet ‘Happy Today’ Album Release'],
+           additionalArtists: [], venue: 'Lodge Room', doors: '7:00 pm',
+           link: 'https://www.lodgeroomhlp.com/shows/jeff-parker-eta-ivtet/', tags: [] }),
+    blob({ id: 2, eventDate: '07/25/2026 7:30 pm', mainArtist: ['Natural Information Society &#038; Bitchin Bajas'],
+           additionalArtists: ['Jill Fraser'], venue: 'Lodge Room',
+           link: 'https://www.lodgeroomhlp.com/shows/nis/', tags: [] }),
+    blob({ id: 3, eventDate: '08/01/2026 8:00 pm', mainArtist: ['Wu Lyf'], additionalArtists: ['Bondo'],
+           venue: 'Lodge Room', link: 'https://www.lodgeroomhlp.com/shows/wu-lyf/', tags: [] }),
+    blob({ id: 4, eventDate: '08/02/2026 8:00 pm', mainArtist: ['Some Jazz Quartet'],
+           additionalArtists: [], venue: 'The Regent', link: 'x', tags: [] }),
+  ].join('\n');
+  const evs = lodgeParse(html);
+  assert.equal(evs.length, 2, 'indie act and offsite venue filtered out');
+  assert.equal(evs[0].clubId, 'lodgeroom');
+  assert.equal(evs[0].title, 'Jeff Parker ETA IVtet ‘Happy Today’ Album Release');
+  assert.equal(evs[0].date, '2026-08-23');
+  assert.deepEqual(evs[0].sets, ['20:00']);
+  assert.equal(evs[1].title, 'Natural Information Society & Bitchin Bajas', 'entities decoded');
+  assert.equal(evs[1].details, 'With Jill Fraser');
 });

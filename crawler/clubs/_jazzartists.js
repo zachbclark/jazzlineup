@@ -76,6 +76,11 @@ const ARTISTS = [
   'christian scott', 'chief adjuah', 'trombone shorty', 'kermit ruffins',
   'rebirth brass band', 'hot 8 brass band', 'soul rebels', 'preservation hall',
   'naruyoshi kikuchi', 'hiromi uehara', 'makoto ozone', 'sadao watanabe',
+  // Lodge Room recon 2026-07-19 — International Anthem / bossa bookings the
+  // keyword filter missed ('resavoir' is single-word but a coined name that
+  // can't substring-collide)
+  'natural information society', 'marcos valle', 'alabaster deplume',
+  'resavoir', 'greg uhlmann',
 ];
 
 const norm = (s) => String(s ?? '').normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/[’‘]/g, "'").toLowerCase();
