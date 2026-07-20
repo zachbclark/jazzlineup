@@ -212,13 +212,19 @@ of an HTML page via Playwright). The og:image URL is versioned (?v=2) —
 BUMP THE VERSION when regenerating or platforms serve the stale cached
 card forever.
 
-Tests: `node crawler/test.mjs` (fixture-based, zero-dep, ~90 groups) and
+Tests: `node crawler/test.mjs` (fixture-based, zero-dep, ~134 groups) and
 `node web/test-ui.mjs` (Playwright against the built app + real data
-files, 18 tests). UI test brittleness rule learned twice: any test that
-derives inputs from data files must derive from UPCOMING events, and tests
-must clean up state (a failed search test once cascaded into the borough
-test). Container/CI note: `web/build-offline.mjs` builds without vite
-(esbuild); vite is the Mac/CI path.
+files, 20 tests). Both entry points are thin aggregators since 2026-07-20:
+crawler suites live in crawler/tests/ (one per city plus shared.mjs for
+lib/merge/enrichment; each also runs standalone, e.g. `node
+crawler/tests/chi.mjs`), UI suites in web/tests/ (desktop-basics, chips,
+search-routing, mobile — they share one boot and run IN ORDER; don't
+shuffle them). New venue tests go in the city's suite file. UI test
+brittleness rule learned twice: any test that derives inputs from data
+files must derive from UPCOMING events, and tests must clean up state (a
+failed search test once cascaded into the borough test). Container/CI
+note: `web/build-offline.mjs` builds without vite (esbuild); vite is the
+Mac/CI path.
 
 ## Ops
 
