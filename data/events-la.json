@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-18T21:27:38.065Z",
+  "generatedAt": "2026-07-20T22:50:14.616Z",
   "city": "la",
   "clubs": [
     {
@@ -181,504 +181,22 @@
       "timezone": "America/Los_Angeles",
       "neighborhood": "Santa Monica",
       "color": "#b34d7a"
+    },
+    {
+      "id": "lodgeroom",
+      "name": "Lodge Room",
+      "shortName": "Lodge Room",
+      "url": "https://www.lodgeroomhlp.com",
+      "address": "104 N Ave 56, Los Angeles, CA 90042",
+      "city": "la",
+      "borough": null,
+      "timezone": "America/Los_Angeles",
+      "neighborhood": "Highland Park",
+      "color": "#8d4a84"
     }
   ],
   "errors": [],
   "events": [
-    {
-      "id": "worldstage:2026-05-16:trap-drum-workshop",
-      "clubId": "worldstage",
-      "title": "Trap Drum Workshop",
-      "date": "2026-05-16",
-      "sets": [
-        "11:30"
-      ],
-      "url": "https://tockify.com/the.world.stage/detail/4/1778956200000",
-      "details": "Started by our beloved Billy Higgins, the World Stage Trap Drum Workshop is a wonderful hands-on experience designed especially for children. Participants learn",
-      "personnel": null,
-      "priceText": null
-    },
-    {
-      "id": "worldstage:2026-05-16:melody-first-the-art-of-jazz-singing",
-      "clubId": "worldstage",
-      "title": "Melody First: The Art of Jazz Singing",
-      "date": "2026-05-16",
-      "sets": [
-        "12:30"
-      ],
-      "url": "https://tockify.com/the.world.stage/detail/5/1778959800000",
-      "details": "Hosted by pianist Eric Scott Reed, a vital figure on the music scene for over 25 years. Known for his versatility, Reed has led numerous ensembles, performed so",
-      "personnel": null,
-      "priceText": null
-    },
-    {
-      "id": "worldstage:2026-05-16:reed-s-creeds",
-      "clubId": "worldstage",
-      "title": "Reed's Creeds",
-      "date": "2026-05-16",
-      "sets": [
-        "13:30"
-      ],
-      "url": "https://tockify.com/the.world.stage/detail/610/1778963400000",
-      "details": "Hosted by pianist Eric Scott Reed, a vital figure on the music scene for over 25 years. Known for his versatility, Reed has led numerous ensembles, performed so",
-      "personnel": null,
-      "priceText": null
-    },
-    {
-      "id": "worldstage:2026-05-16:s-h-i-n-e-mawusi-women-s-african-drum-circle",
-      "clubId": "worldstage",
-      "title": "S.H.I.N.E. Mawusi Women's African Drum Circle",
-      "date": "2026-05-16",
-      "sets": [
-        "14:00"
-      ],
-      "url": "https://tockify.com/the.world.stage/detail/8/1778965200000",
-      "details": "S.H.I.N.E. Mawusi is about Sisters Healing, Inspiring, Nurturing, and Empowering, in the Hands of God. It was formed and established by Rene Fisher-Mims with an",
-      "personnel": null,
-      "priceText": null
-    },
-    {
-      "id": "worldstage:2026-05-16:vocalist-liz-whitted-dawson",
-      "clubId": "worldstage",
-      "title": "Vocalist Liz Whitted Dawson",
-      "date": "2026-05-16",
-      "sets": [
-        "20:30"
-      ],
-      "url": "https://tockify.com/the.world.stage/detail/771/1778988600000",
-      "details": "$20 Admission in Person The World Stage YouTube Channel www.youtube.com/channel/UCYZPOWI1nn3e3eJc7kB4jOw The World Stage Facebook Page facebook.com/theworldstag",
-      "personnel": null,
-      "priceText": null
-    },
-    {
-      "id": "worldstage:2026-05-17:la-jazz-society-annual-vibraphone-summit",
-      "clubId": "worldstage",
-      "title": "LA Jazz Society Annual Vibraphone Summit",
-      "date": "2026-05-17",
-      "sets": [
-        "13:00"
-      ],
-      "url": "https://tockify.com/the.world.stage/detail/772/1779048000000",
-      "details": "Free Admission (in Person) The World Stage YouTube Channel www.youtube.com/channel/UCYZPOWI1nn3e3eJc7kB4jOw The World Stage Facebook Page facebook.com/theworlds",
-      "personnel": null,
-      "priceText": null
-    },
-    {
-      "id": "worldstage:2026-05-17:world-stage-big-band",
-      "clubId": "worldstage",
-      "title": "World Stage Big Band",
-      "date": "2026-05-17",
-      "sets": [
-        "17:00"
-      ],
-      "url": "https://tockify.com/the.world.stage/detail/574/1779062400000",
-      "details": "Coordinated by Billy McCoy, this workshop goes through the decades of the past century of jazz development. The World Stage Big Band functions as a rehearsal ba",
-      "personnel": null,
-      "priceText": null
-    },
-    {
-      "id": "worldstage:2026-05-17:the-rose-gales-vocal-jam-session",
-      "clubId": "worldstage",
-      "title": "The Rose Gales Vocal Jam Session",
-      "date": "2026-05-17",
-      "sets": [
-        "20:00"
-      ],
-      "url": "https://tockify.com/the.world.stage/detail/6/1779073200000",
-      "details": "Hosted by Rene Fisher. Located on the World Stage's enclosed patio. Masks and temperature checks required. 20 people excluding house band and host allowed insid",
-      "personnel": null,
-      "priceText": null
-    },
-    {
-      "id": "worldstage:2026-05-19:west-african-conga-rhythms-and-beats",
-      "clubId": "worldstage",
-      "title": "West African Conga Rhythms and Beats",
-      "date": "2026-05-19",
-      "sets": [
-        "18:00"
-      ],
-      "url": "https://tockify.com/the.world.stage/detail/655/1779238800000",
-      "details": "Explore the intoxicating rhythms of Nigeria, Ghana, and the Ivory Coast with master drummer Najite Agindotan. Admission: $15 Suggested Donation",
-      "personnel": null,
-      "priceText": null
-    },
-    {
-      "id": "worldstage:2026-05-20:anansi-writers-workshop",
-      "clubId": "worldstage",
-      "title": "Anansi Writers Workshop",
-      "date": "2026-05-20",
-      "sets": [
-        "19:00"
-      ],
-      "url": "https://tockify.com/the.world.stage/detail/7/1779328800000",
-      "details": "The Anansi Writers Workshop was founded in 1990 by Kamau Daáood, Akilah Oliver, Nafis Nabawi and Anthony Lyons. In 1993, Michael Datcher initiated the developme",
-      "personnel": null,
-      "priceText": null
-    },
-    {
-      "id": "worldstage:2026-05-21:the-billy-higgins-instrumental-jam-session",
-      "clubId": "worldstage",
-      "title": "The Billy Higgins Instrumental Jam Session",
-      "date": "2026-05-21",
-      "sets": [
-        "20:00"
-      ],
-      "url": "https://tockify.com/the.world.stage/detail/9/1779418800000",
-      "details": "Hosted by Ralph Gibson. Located on the World Stage's enclosed patio. Masks and temperature checks required. 20 people excluding house band and host allowed insi",
-      "personnel": null,
-      "priceText": null
-    },
-    {
-      "id": "worldstage:2026-05-23:the-world-stage-presents-leimert-park-sacred-music-and-heali",
-      "clubId": "worldstage",
-      "title": "The World Stage Presents LEIMERT PARK SACRED MUSIC AND HEALING HEALING FESTIVAL",
-      "date": "2026-05-23",
-      "sets": [
-        "11:00"
-      ],
-      "url": "https://tockify.com/the.world.stage/detail/773/1779559200000",
-      "details": "Free Admission The World Stage YouTube Channel www.youtube.com/channel/UCYZPOWI1nn3e3eJc7kB4jOw The World Stage Facebook Page facebook.com/theworldstage",
-      "personnel": null,
-      "priceText": null
-    },
-    {
-      "id": "worldstage:2026-05-23:trap-drum-workshop",
-      "clubId": "worldstage",
-      "title": "Trap Drum Workshop",
-      "date": "2026-05-23",
-      "sets": [
-        "11:30"
-      ],
-      "url": "https://tockify.com/the.world.stage/detail/4/1779561000000",
-      "details": "Started by our beloved Billy Higgins, the World Stage Trap Drum Workshop is a wonderful hands-on experience designed especially for children. Participants learn",
-      "personnel": null,
-      "priceText": null
-    },
-    {
-      "id": "worldstage:2026-05-23:melody-first-the-art-of-jazz-singing",
-      "clubId": "worldstage",
-      "title": "Melody First: The Art of Jazz Singing",
-      "date": "2026-05-23",
-      "sets": [
-        "12:30"
-      ],
-      "url": "https://tockify.com/the.world.stage/detail/5/1779564600000",
-      "details": "Hosted by pianist Eric Scott Reed, a vital figure on the music scene for over 25 years. Known for his versatility, Reed has led numerous ensembles, performed so",
-      "personnel": null,
-      "priceText": null
-    },
-    {
-      "id": "worldstage:2026-05-23:reed-s-creeds",
-      "clubId": "worldstage",
-      "title": "Reed's Creeds",
-      "date": "2026-05-23",
-      "sets": [
-        "13:30"
-      ],
-      "url": "https://tockify.com/the.world.stage/detail/610/1779568200000",
-      "details": "Hosted by pianist Eric Scott Reed, a vital figure on the music scene for over 25 years. Known for his versatility, Reed has led numerous ensembles, performed so",
-      "personnel": null,
-      "priceText": null
-    },
-    {
-      "id": "worldstage:2026-05-23:s-h-i-n-e-mawusi-women-s-african-drum-circle",
-      "clubId": "worldstage",
-      "title": "S.H.I.N.E. Mawusi Women's African Drum Circle",
-      "date": "2026-05-23",
-      "sets": [
-        "14:00"
-      ],
-      "url": "https://tockify.com/the.world.stage/detail/8/1779570000000",
-      "details": "S.H.I.N.E. Mawusi is about Sisters Healing, Inspiring, Nurturing, and Empowering, in the Hands of God. It was formed and established by Rene Fisher-Mims with an",
-      "personnel": null,
-      "priceText": null
-    },
-    {
-      "id": "worldstage:2026-05-24:leimert-park-jazz-festival-presents-sunday-jazz-featuring-b-",
-      "clubId": "worldstage",
-      "title": "Leimert Park Jazz Festival Presents Sunday Jazz Featuring B~Free & Q",
-      "date": "2026-05-24",
-      "sets": [
-        "15:00"
-      ],
-      "url": "https://tockify.com/the.world.stage/detail/776/1779660000000",
-      "details": "Program Name: Leimert Park Jazz Festival presents Sunday Jazz at The World Stage 2026 Monthly Concert Series Time: 2:30 PM Doors Open 3-4 PM Host Band Set 4-5 P",
-      "personnel": null,
-      "priceText": null
-    },
-    {
-      "id": "worldstage:2026-05-24:world-stage-big-band",
-      "clubId": "worldstage",
-      "title": "World Stage Big Band",
-      "date": "2026-05-24",
-      "sets": [
-        "17:00"
-      ],
-      "url": "https://tockify.com/the.world.stage/detail/574/1779667200000",
-      "details": "Coordinated by Billy McCoy, this workshop goes through the decades of the past century of jazz development. The World Stage Big Band functions as a rehearsal ba",
-      "personnel": null,
-      "priceText": null
-    },
-    {
-      "id": "worldstage:2026-05-24:the-rose-gales-vocal-jam-session",
-      "clubId": "worldstage",
-      "title": "The Rose Gales Vocal Jam Session",
-      "date": "2026-05-24",
-      "sets": [
-        "20:00"
-      ],
-      "url": "https://tockify.com/the.world.stage/detail/6/1779678000000",
-      "details": "Hosted by Rene Fisher. Located on the World Stage's enclosed patio. Masks and temperature checks required. 20 people excluding house band and host allowed insid",
-      "personnel": null,
-      "priceText": null
-    },
-    {
-      "id": "worldstage:2026-05-25:drummer-micah-heard",
-      "clubId": "worldstage",
-      "title": "Drummer Micah Heard",
-      "date": "2026-05-25",
-      "sets": [
-        "20:30"
-      ],
-      "url": "https://tockify.com/the.world.stage/detail/774/1779766200000",
-      "details": "$20 Admission (in person) The World Stage YouTube Channel www.youtube.com/channel/UCYZPOWI1nn3e3eJc7kB4jOw The World Stage Facebook Page facebook.com/theworldst",
-      "personnel": null,
-      "priceText": null
-    },
-    {
-      "id": "worldstage:2026-05-26:west-african-conga-rhythms-and-beats",
-      "clubId": "worldstage",
-      "title": "West African Conga Rhythms and Beats",
-      "date": "2026-05-26",
-      "sets": [
-        "18:00"
-      ],
-      "url": "https://tockify.com/the.world.stage/detail/655/1779843600000",
-      "details": "Explore the intoxicating rhythms of Nigeria, Ghana, and the Ivory Coast with master drummer Najite Agindotan. Admission: $15 Suggested Donation",
-      "personnel": null,
-      "priceText": null
-    },
-    {
-      "id": "worldstage:2026-05-27:anansi-writers-workshop",
-      "clubId": "worldstage",
-      "title": "Anansi Writers Workshop",
-      "date": "2026-05-27",
-      "sets": [
-        "19:00"
-      ],
-      "url": "https://tockify.com/the.world.stage/detail/7/1779933600000",
-      "details": "The Anansi Writers Workshop was founded in 1990 by Kamau Daáood, Akilah Oliver, Nafis Nabawi and Anthony Lyons. In 1993, Michael Datcher initiated the developme",
-      "personnel": null,
-      "priceText": null
-    },
-    {
-      "id": "worldstage:2026-05-28:the-billy-higgins-instrumental-jam-session",
-      "clubId": "worldstage",
-      "title": "The Billy Higgins Instrumental Jam Session",
-      "date": "2026-05-28",
-      "sets": [
-        "20:00"
-      ],
-      "url": "https://tockify.com/the.world.stage/detail/9/1780023600000",
-      "details": "Hosted by Ralph Gibson. Located on the World Stage's enclosed patio. Masks and temperature checks required. 20 people excluding house band and host allowed insi",
-      "personnel": null,
-      "priceText": null
-    },
-    {
-      "id": "worldstage:2026-05-29:saxophonist-azar-lawrence",
-      "clubId": "worldstage",
-      "title": "Saxophonist Azar Lawrence",
-      "date": "2026-05-29",
-      "sets": [
-        "20:30"
-      ],
-      "url": "https://tockify.com/the.world.stage/detail/775/1780111800000",
-      "details": "$20 Admission (in person) The World Stage YouTube Channel www.youtube.com/channel/UCYZPOWI1nn3e3eJc7kB4jOw The World Stage Facebook Page facebook.com/theworldst",
-      "personnel": null,
-      "priceText": null
-    },
-    {
-      "id": "worldstage:2026-05-30:trap-drum-workshop",
-      "clubId": "worldstage",
-      "title": "Trap Drum Workshop",
-      "date": "2026-05-30",
-      "sets": [
-        "11:30"
-      ],
-      "url": "https://tockify.com/the.world.stage/detail/4/1780165800000",
-      "details": "Started by our beloved Billy Higgins, the World Stage Trap Drum Workshop is a wonderful hands-on experience designed especially for children. Participants learn",
-      "personnel": null,
-      "priceText": null
-    },
-    {
-      "id": "worldstage:2026-05-30:melody-first-the-art-of-jazz-singing",
-      "clubId": "worldstage",
-      "title": "Melody First: The Art of Jazz Singing",
-      "date": "2026-05-30",
-      "sets": [
-        "12:30"
-      ],
-      "url": "https://tockify.com/the.world.stage/detail/5/1780169400000",
-      "details": "Hosted by pianist Eric Scott Reed, a vital figure on the music scene for over 25 years. Known for his versatility, Reed has led numerous ensembles, performed so",
-      "personnel": null,
-      "priceText": null
-    },
-    {
-      "id": "worldstage:2026-05-30:reed-s-creeds",
-      "clubId": "worldstage",
-      "title": "Reed's Creeds",
-      "date": "2026-05-30",
-      "sets": [
-        "13:30"
-      ],
-      "url": "https://tockify.com/the.world.stage/detail/610/1780173000000",
-      "details": "Hosted by pianist Eric Scott Reed, a vital figure on the music scene for over 25 years. Known for his versatility, Reed has led numerous ensembles, performed so",
-      "personnel": null,
-      "priceText": null
-    },
-    {
-      "id": "worldstage:2026-05-30:s-h-i-n-e-mawusi-women-s-african-drum-circle",
-      "clubId": "worldstage",
-      "title": "S.H.I.N.E. Mawusi Women's African Drum Circle",
-      "date": "2026-05-30",
-      "sets": [
-        "14:00"
-      ],
-      "url": "https://tockify.com/the.world.stage/detail/8/1780174800000",
-      "details": "S.H.I.N.E. Mawusi is about Sisters Healing, Inspiring, Nurturing, and Empowering, in the Hands of God. It was formed and established by Rene Fisher-Mims with an",
-      "personnel": null,
-      "priceText": null
-    },
-    {
-      "id": "worldstage:2026-05-31:world-stage-big-band",
-      "clubId": "worldstage",
-      "title": "World Stage Big Band",
-      "date": "2026-05-31",
-      "sets": [
-        "17:00"
-      ],
-      "url": "https://tockify.com/the.world.stage/detail/574/1780272000000",
-      "details": "Coordinated by Billy McCoy, this workshop goes through the decades of the past century of jazz development. The World Stage Big Band functions as a rehearsal ba",
-      "personnel": null,
-      "priceText": null
-    },
-    {
-      "id": "worldstage:2026-05-31:the-rose-gales-vocal-jam-session",
-      "clubId": "worldstage",
-      "title": "The Rose Gales Vocal Jam Session",
-      "date": "2026-05-31",
-      "sets": [
-        "20:00"
-      ],
-      "url": "https://tockify.com/the.world.stage/detail/6/1780282800000",
-      "details": "Hosted by Rene Fisher. Located on the World Stage's enclosed patio. Masks and temperature checks required. 20 people excluding house band and host allowed insid",
-      "personnel": null,
-      "priceText": null
-    },
-    {
-      "id": "worldstage:2026-06-02:west-african-conga-rhythms-and-beats",
-      "clubId": "worldstage",
-      "title": "West African Conga Rhythms and Beats",
-      "date": "2026-06-02",
-      "sets": [
-        "18:00"
-      ],
-      "url": "https://tockify.com/the.world.stage/detail/655/1780448400000",
-      "details": "Explore the intoxicating rhythms of Nigeria, Ghana, and the Ivory Coast with master drummer Najite Agindotan. Admission: $15 Suggested Donation",
-      "personnel": null,
-      "priceText": null
-    },
-    {
-      "id": "worldstage:2026-06-03:anansi-writers-workshop",
-      "clubId": "worldstage",
-      "title": "Anansi Writers Workshop",
-      "date": "2026-06-03",
-      "sets": [
-        "19:00"
-      ],
-      "url": "https://tockify.com/the.world.stage/detail/7/1780538400000",
-      "details": "The Anansi Writers Workshop was founded in 1990 by Kamau Daáood, Akilah Oliver, Nafis Nabawi and Anthony Lyons. In 1993, Michael Datcher initiated the developme",
-      "personnel": null,
-      "priceText": null
-    },
-    {
-      "id": "worldstage:2026-06-04:the-billy-higgins-instrumental-jam-session",
-      "clubId": "worldstage",
-      "title": "The Billy Higgins Instrumental Jam Session",
-      "date": "2026-06-04",
-      "sets": [
-        "20:00"
-      ],
-      "url": "https://tockify.com/the.world.stage/detail/9/1780628400000",
-      "details": "Hosted by Ralph Gibson. Located on the World Stage's enclosed patio. Masks and temperature checks required. 20 people excluding house band and host allowed insi",
-      "personnel": null,
-      "priceText": null
-    },
-    {
-      "id": "worldstage:2026-06-05:saxophonist-louis-van-taylor",
-      "clubId": "worldstage",
-      "title": "Saxophonist Louis Van Taylor",
-      "date": "2026-06-05",
-      "sets": [
-        "20:30"
-      ],
-      "url": "https://tockify.com/the.world.stage/detail/777/1780716600000",
-      "details": "$20 Admission in Person The World Stage YouTube Channel www.youtube.com/channel/UCYZPOWI1nn3e3eJc7kB4jOw The World Stage Facebook Page facebook.com/theworldstag",
-      "personnel": null,
-      "priceText": null
-    },
-    {
-      "id": "worldstage:2026-06-06:trap-drum-workshop",
-      "clubId": "worldstage",
-      "title": "Trap Drum Workshop",
-      "date": "2026-06-06",
-      "sets": [
-        "11:30"
-      ],
-      "url": "https://tockify.com/the.world.stage/detail/4/1780770600000",
-      "details": "Started by our beloved Billy Higgins, the World Stage Trap Drum Workshop is a wonderful hands-on experience designed especially for children. Participants learn",
-      "personnel": null,
-      "priceText": null
-    },
-    {
-      "id": "worldstage:2026-06-06:melody-first-the-art-of-jazz-singing",
-      "clubId": "worldstage",
-      "title": "Melody First: The Art of Jazz Singing",
-      "date": "2026-06-06",
-      "sets": [
-        "12:30"
-      ],
-      "url": "https://tockify.com/the.world.stage/detail/5/1780774200000",
-      "details": "Hosted by pianist Eric Scott Reed, a vital figure on the music scene for over 25 years. Known for his versatility, Reed has led numerous ensembles, performed so",
-      "personnel": null,
-      "priceText": null
-    },
-    {
-      "id": "worldstage:2026-06-06:reed-s-creeds",
-      "clubId": "worldstage",
-      "title": "Reed's Creeds",
-      "date": "2026-06-06",
-      "sets": [
-        "13:30"
-      ],
-      "url": "https://tockify.com/the.world.stage/detail/610/1780777800000",
-      "details": "Hosted by pianist Eric Scott Reed, a vital figure on the music scene for over 25 years. Known for his versatility, Reed has led numerous ensembles, performed so",
-      "personnel": null,
-      "priceText": null
-    },
-    {
-      "id": "worldstage:2026-06-06:s-h-i-n-e-mawusi-women-s-african-drum-circle",
-      "clubId": "worldstage",
-      "title": "S.H.I.N.E. Mawusi Women's African Drum Circle",
-      "date": "2026-06-06",
-      "sets": [
-        "14:00"
-      ],
-      "url": "https://tockify.com/the.world.stage/detail/8/1780779600000",
-      "details": "S.H.I.N.E. Mawusi is about Sisters Healing, Inspiring, Nurturing, and Empowering, in the Hands of God. It was formed and established by Rene Fisher-Mims with an",
-      "personnel": null,
-      "priceText": null
-    },
     {
       "id": "worldstage:2026-06-07:world-stage-big-band",
       "clubId": "worldstage",
@@ -966,6 +484,162 @@
       "priceText": null
     },
     {
+      "id": "worldstage:2026-06-23:west-african-conga-rhythms-and-beats",
+      "clubId": "worldstage",
+      "title": "West African Conga Rhythms and Beats",
+      "date": "2026-06-23",
+      "sets": [
+        "18:00"
+      ],
+      "url": "https://tockify.com/the.world.stage/detail/655/1782262800000",
+      "details": "Explore the intoxicating rhythms of Nigeria, Ghana, and the Ivory Coast with master drummer Najite Agindotan. Admission: $15 Suggested Donation",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "worldstage:2026-06-24:anansi-writers-workshop",
+      "clubId": "worldstage",
+      "title": "Anansi Writers Workshop",
+      "date": "2026-06-24",
+      "sets": [
+        "19:00"
+      ],
+      "url": "https://tockify.com/the.world.stage/detail/7/1782352800000",
+      "details": "The Anansi Writers Workshop was founded in 1990 by Kamau Daáood, Akilah Oliver, Nafis Nabawi and Anthony Lyons. In 1993, Michael Datcher initiated the developme",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "worldstage:2026-06-25:the-billy-higgins-instrumental-jam-session",
+      "clubId": "worldstage",
+      "title": "The Billy Higgins Instrumental Jam Session",
+      "date": "2026-06-25",
+      "sets": [
+        "20:00"
+      ],
+      "url": "https://tockify.com/the.world.stage/detail/9/1782442800000",
+      "details": "Hosted by Ralph Gibson. Located on the World Stage's enclosed patio. Masks and temperature checks required. 20 people excluding house band and host allowed insi",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "worldstage:2026-06-26:pianist-keyboardist-brandon-coleman",
+      "clubId": "worldstage",
+      "title": "Pianist/Keyboardist Brandon Coleman",
+      "date": "2026-06-26",
+      "sets": [
+        "20:30"
+      ],
+      "url": "https://tockify.com/the.world.stage/detail/781/1782531000000",
+      "details": "$20 Admission in Person The World Stage YouTube Channel www.youtube.com/channel/UCYZPOWI1nn3e3eJc7kB4jOw The World Stage Facebook Page facebook.com/theworldstag",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "worldstage:2026-06-27:trap-drum-workshop",
+      "clubId": "worldstage",
+      "title": "Trap Drum Workshop",
+      "date": "2026-06-27",
+      "sets": [
+        "11:30"
+      ],
+      "url": "https://tockify.com/the.world.stage/detail/4/1782585000000",
+      "details": "Started by our beloved Billy Higgins, the World Stage Trap Drum Workshop is a wonderful hands-on experience designed especially for children. Participants learn",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "worldstage:2026-06-27:melody-first-the-art-of-jazz-singing",
+      "clubId": "worldstage",
+      "title": "Melody First: The Art of Jazz Singing",
+      "date": "2026-06-27",
+      "sets": [
+        "12:30"
+      ],
+      "url": "https://tockify.com/the.world.stage/detail/5/1782588600000",
+      "details": "Hosted by pianist Eric Scott Reed, a vital figure on the music scene for over 25 years. Known for his versatility, Reed has led numerous ensembles, performed so",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "worldstage:2026-06-27:reed-s-creeds",
+      "clubId": "worldstage",
+      "title": "Reed's Creeds",
+      "date": "2026-06-27",
+      "sets": [
+        "13:30"
+      ],
+      "url": "https://tockify.com/the.world.stage/detail/610/1782592200000",
+      "details": "Hosted by pianist Eric Scott Reed, a vital figure on the music scene for over 25 years. Known for his versatility, Reed has led numerous ensembles, performed so",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "worldstage:2026-06-27:s-h-i-n-e-mawusi-women-s-african-drum-circle",
+      "clubId": "worldstage",
+      "title": "S.H.I.N.E. Mawusi Women's African Drum Circle",
+      "date": "2026-06-27",
+      "sets": [
+        "14:00"
+      ],
+      "url": "https://tockify.com/the.world.stage/detail/8/1782594000000",
+      "details": "S.H.I.N.E. Mawusi is about Sisters Healing, Inspiring, Nurturing, and Empowering, in the Hands of God. It was formed and established by Rene Fisher-Mims with an",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "worldstage:2026-06-28:leimert-park-jazz-festival-presents-sunday-jazz-featuring-b-",
+      "clubId": "worldstage",
+      "title": "Leimert Park Jazz Festival Presents, Sunday Jazz Featuring B~Free & Q",
+      "date": "2026-06-28",
+      "sets": [
+        "15:00"
+      ],
+      "url": "https://tockify.com/the.world.stage/detail/782/1782684000000",
+      "details": "Program Name: Leimert Park Jazz Festival presents Sunday Jazz at The World Stage 2026 Monthly Concert Series Time: 2:30 PM Doors Open 3-4 PM Host Band Set 4-5 P",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "worldstage:2026-06-28:world-stage-big-band",
+      "clubId": "worldstage",
+      "title": "World Stage Big Band",
+      "date": "2026-06-28",
+      "sets": [
+        "17:00"
+      ],
+      "url": "https://tockify.com/the.world.stage/detail/574/1782691200000",
+      "details": "Coordinated by Billy McCoy, this workshop goes through the decades of the past century of jazz development. The World Stage Big Band functions as a rehearsal ba",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "worldstage:2026-06-28:the-rose-gales-vocal-jam-session",
+      "clubId": "worldstage",
+      "title": "The Rose Gales Vocal Jam Session",
+      "date": "2026-06-28",
+      "sets": [
+        "20:00"
+      ],
+      "url": "https://tockify.com/the.world.stage/detail/6/1782702000000",
+      "details": "Hosted by Rene Fisher. Located on the World Stage's enclosed patio. Masks and temperature checks required. 20 people excluding house band and host allowed insid",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "worldstage:2026-06-30:west-african-conga-rhythms-and-beats",
+      "clubId": "worldstage",
+      "title": "West African Conga Rhythms and Beats",
+      "date": "2026-06-30",
+      "sets": [
+        "18:00"
+      ],
+      "url": "https://tockify.com/the.world.stage/detail/655/1782867600000",
+      "details": "Explore the intoxicating rhythms of Nigeria, Ghana, and the Ivory Coast with master drummer Najite Agindotan. Admission: $15 Suggested Donation",
+      "personnel": null,
+      "priceText": null
+    },
+    {
       "id": "bluenotela:2026-07-01:wyatt-waddell",
       "clubId": "bluenotela",
       "title": "Wyatt Waddell",
@@ -976,6 +650,19 @@
       ],
       "url": "https://www.bluenotejazz.com/la/tm-event/wyatt-waddell/",
       "details": "Blue Note Los Angeles",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "worldstage:2026-07-01:anansi-writers-workshop",
+      "clubId": "worldstage",
+      "title": "Anansi Writers Workshop",
+      "date": "2026-07-01",
+      "sets": [
+        "19:00"
+      ],
+      "url": "https://tockify.com/the.world.stage/detail/7/1782957600000",
+      "details": "The Anansi Writers Workshop was founded in 1990 by Kamau Daáood, Akilah Oliver, Nafis Nabawi and Anthony Lyons. In 1993, Michael Datcher initiated the developme",
       "personnel": null,
       "priceText": null
     },
@@ -1007,6 +694,19 @@
       "priceText": null
     },
     {
+      "id": "worldstage:2026-07-02:the-billy-higgins-instrumental-jam-session",
+      "clubId": "worldstage",
+      "title": "The Billy Higgins Instrumental Jam Session",
+      "date": "2026-07-02",
+      "sets": [
+        "20:00"
+      ],
+      "url": "https://tockify.com/the.world.stage/detail/9/1783047600000",
+      "details": "Hosted by Ralph Gibson. Located on the World Stage's enclosed patio. Masks and temperature checks required. 20 people excluding house band and host allowed insi",
+      "personnel": null,
+      "priceText": null
+    },
+    {
       "id": "harvelles:2026-07-02:harvelle-s-presents",
       "clubId": "harvelles",
       "title": "HARVELLE'S PRESENTS",
@@ -1034,6 +734,19 @@
       "priceText": null
     },
     {
+      "id": "worldstage:2026-07-03:drummer-from-nyc-brandon-sanders",
+      "clubId": "worldstage",
+      "title": "Drummer from NYC Brandon Sanders",
+      "date": "2026-07-03",
+      "sets": [
+        "20:30"
+      ],
+      "url": "https://tockify.com/the.world.stage/detail/783/1783135800000",
+      "details": "$20 Admission in Person The World Stage YouTube Channel www.youtube.com/channel/UCYZPOWI1nn3e3eJc7kB4jOw The World Stage Facebook Page facebook.com/theworldstag",
+      "personnel": null,
+      "priceText": null
+    },
+    {
       "id": "harvelles:2026-07-03:alligator-beach-new-orleans-funk-party",
       "clubId": "harvelles",
       "title": "Alligator Beach ’New Orleans Funk Party’",
@@ -1043,6 +756,58 @@
       ],
       "url": "https://santamonica.harvelles.com/events/138777",
       "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "worldstage:2026-07-04:trap-drum-workshop",
+      "clubId": "worldstage",
+      "title": "Trap Drum Workshop",
+      "date": "2026-07-04",
+      "sets": [
+        "11:30"
+      ],
+      "url": "https://tockify.com/the.world.stage/detail/4/1783189800000",
+      "details": "Started by our beloved Billy Higgins, the World Stage Trap Drum Workshop is a wonderful hands-on experience designed especially for children. Participants learn",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "worldstage:2026-07-04:melody-first-the-art-of-jazz-singing",
+      "clubId": "worldstage",
+      "title": "Melody First: The Art of Jazz Singing",
+      "date": "2026-07-04",
+      "sets": [
+        "12:30"
+      ],
+      "url": "https://tockify.com/the.world.stage/detail/5/1783193400000",
+      "details": "Hosted by pianist Eric Scott Reed, a vital figure on the music scene for over 25 years. Known for his versatility, Reed has led numerous ensembles, performed so",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "worldstage:2026-07-04:reed-s-creeds",
+      "clubId": "worldstage",
+      "title": "Reed's Creeds",
+      "date": "2026-07-04",
+      "sets": [
+        "13:30"
+      ],
+      "url": "https://tockify.com/the.world.stage/detail/610/1783197000000",
+      "details": "Hosted by pianist Eric Scott Reed, a vital figure on the music scene for over 25 years. Known for his versatility, Reed has led numerous ensembles, performed so",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "worldstage:2026-07-04:s-h-i-n-e-mawusi-women-s-african-drum-circle",
+      "clubId": "worldstage",
+      "title": "S.H.I.N.E. Mawusi Women's African Drum Circle",
+      "date": "2026-07-04",
+      "sets": [
+        "14:00"
+      ],
+      "url": "https://tockify.com/the.world.stage/detail/8/1783198800000",
+      "details": "S.H.I.N.E. Mawusi is about Sisters Healing, Inspiring, Nurturing, and Empowering, in the Hands of God. It was formed and established by Rene Fisher-Mims with an",
       "personnel": null,
       "priceText": null
     },
@@ -1074,6 +839,19 @@
       "priceText": null
     },
     {
+      "id": "worldstage:2026-07-05:world-stage-big-band",
+      "clubId": "worldstage",
+      "title": "World Stage Big Band",
+      "date": "2026-07-05",
+      "sets": [
+        "17:00"
+      ],
+      "url": "https://tockify.com/the.world.stage/detail/574/1783296000000",
+      "details": "Coordinated by Billy McCoy, this workshop goes through the decades of the past century of jazz development. The World Stage Big Band functions as a rehearsal ba",
+      "personnel": null,
+      "priceText": null
+    },
+    {
       "id": "bluenotela:2026-07-05:bob-james",
       "clubId": "bluenotela",
       "title": "Bob James",
@@ -1084,6 +862,19 @@
       ],
       "url": "https://www.bluenotejazz.com/la/tm-event/bob-james-7/",
       "details": "Blue Note Los Angeles",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "worldstage:2026-07-05:the-rose-gales-vocal-jam-session",
+      "clubId": "worldstage",
+      "title": "The Rose Gales Vocal Jam Session",
+      "date": "2026-07-05",
+      "sets": [
+        "20:00"
+      ],
+      "url": "https://tockify.com/the.world.stage/detail/6/1783306800000",
+      "details": "Hosted by Rene Fisher. Located on the World Stage's enclosed patio. Masks and temperature checks required. 20 people excluding house band and host allowed insid",
       "personnel": null,
       "priceText": null
     },
@@ -1124,6 +915,19 @@
       ],
       "url": "https://santamonica.harvelles.com/events/137955",
       "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "worldstage:2026-07-07:west-african-conga-rhythms-and-beats",
+      "clubId": "worldstage",
+      "title": "West African Conga Rhythms and Beats",
+      "date": "2026-07-07",
+      "sets": [
+        "18:00"
+      ],
+      "url": "https://tockify.com/the.world.stage/detail/655/1783472400000",
+      "details": "Explore the intoxicating rhythms of Nigeria, Ghana, and the Ivory Coast with master drummer Najite Agindotan. Admission: $15 Suggested Donation",
       "personnel": null,
       "priceText": null
     },
@@ -1169,6 +973,19 @@
       "priceText": null
     },
     {
+      "id": "worldstage:2026-07-08:anansi-writers-workshop",
+      "clubId": "worldstage",
+      "title": "Anansi Writers Workshop",
+      "date": "2026-07-08",
+      "sets": [
+        "19:00"
+      ],
+      "url": "https://tockify.com/the.world.stage/detail/7/1783562400000",
+      "details": "The Anansi Writers Workshop was founded in 1990 by Kamau Daáood, Akilah Oliver, Nafis Nabawi and Anthony Lyons. In 1993, Michael Datcher initiated the developme",
+      "personnel": null,
+      "priceText": null
+    },
+    {
       "id": "harvelles:2026-07-08:come-sing-with-the-band-live-band-karaoke",
       "clubId": "harvelles",
       "title": "COME SING WITH the BAND - Live Band Karaoke",
@@ -1192,6 +1009,19 @@
       ],
       "url": "https://www.bluenotejazz.com/la/tm-event/kim-burrell/",
       "details": "Blue Note Los Angeles",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "worldstage:2026-07-09:the-billy-higgins-instrumental-jam-session",
+      "clubId": "worldstage",
+      "title": "The Billy Higgins Instrumental Jam Session",
+      "date": "2026-07-09",
+      "sets": [
+        "20:00"
+      ],
+      "url": "https://tockify.com/the.world.stage/detail/9/1783652400000",
+      "details": "Hosted by Ralph Gibson. Located on the World Stage's enclosed patio. Masks and temperature checks required. 20 people excluding house band and host allowed insi",
       "personnel": null,
       "priceText": null
     },
@@ -1223,6 +1053,19 @@
       "priceText": null
     },
     {
+      "id": "worldstage:2026-07-10:drummer-clayton-cameron-featuring-elisee-ngbo-nicolas-gelin-",
+      "clubId": "worldstage",
+      "title": "Drummer Clayton Cameron Featuring Elisee Ngbo, Nicolas Gelin & Mike Gorlla",
+      "date": "2026-07-10",
+      "sets": [
+        "20:30"
+      ],
+      "url": "https://tockify.com/the.world.stage/detail/784/1783740600000",
+      "details": "$20 Admission in Person The World Stage YouTube Channel www.youtube.com/channel/UCYZPOWI1nn3e3eJc7kB4jOw The World Stage Facebook Page facebook.com/theworldstag",
+      "personnel": null,
+      "priceText": null
+    },
+    {
       "id": "harvelles:2026-07-10:the-scorch-sisters-friends-all-female-blues-soul-revue",
       "clubId": "harvelles",
       "title": "The Scorch Sisters & Friends All Female Blues & Soul Revue",
@@ -1232,6 +1075,58 @@
       ],
       "url": "https://santamonica.harvelles.com/events/139745",
       "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "worldstage:2026-07-11:trap-drum-workshop",
+      "clubId": "worldstage",
+      "title": "Trap Drum Workshop",
+      "date": "2026-07-11",
+      "sets": [
+        "11:30"
+      ],
+      "url": "https://tockify.com/the.world.stage/detail/4/1783794600000",
+      "details": "Started by our beloved Billy Higgins, the World Stage Trap Drum Workshop is a wonderful hands-on experience designed especially for children. Participants learn",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "worldstage:2026-07-11:melody-first-the-art-of-jazz-singing",
+      "clubId": "worldstage",
+      "title": "Melody First: The Art of Jazz Singing",
+      "date": "2026-07-11",
+      "sets": [
+        "12:30"
+      ],
+      "url": "https://tockify.com/the.world.stage/detail/5/1783798200000",
+      "details": "Hosted by pianist Eric Scott Reed, a vital figure on the music scene for over 25 years. Known for his versatility, Reed has led numerous ensembles, performed so",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "worldstage:2026-07-11:reed-s-creeds",
+      "clubId": "worldstage",
+      "title": "Reed's Creeds",
+      "date": "2026-07-11",
+      "sets": [
+        "13:30"
+      ],
+      "url": "https://tockify.com/the.world.stage/detail/610/1783801800000",
+      "details": "Hosted by pianist Eric Scott Reed, a vital figure on the music scene for over 25 years. Known for his versatility, Reed has led numerous ensembles, performed so",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "worldstage:2026-07-11:s-h-i-n-e-mawusi-women-s-african-drum-circle",
+      "clubId": "worldstage",
+      "title": "S.H.I.N.E. Mawusi Women's African Drum Circle",
+      "date": "2026-07-11",
+      "sets": [
+        "14:00"
+      ],
+      "url": "https://tockify.com/the.world.stage/detail/8/1783803600000",
+      "details": "S.H.I.N.E. Mawusi is about Sisters Healing, Inspiring, Nurturing, and Empowering, in the Hands of God. It was formed and established by Rene Fisher-Mims with an",
       "personnel": null,
       "priceText": null
     },
@@ -1250,6 +1145,19 @@
       "priceText": null
     },
     {
+      "id": "worldstage:2026-07-11:pianist-harold-land-jr",
+      "clubId": "worldstage",
+      "title": "Pianist Harold Land Jr.",
+      "date": "2026-07-11",
+      "sets": [
+        "20:30"
+      ],
+      "url": "https://tockify.com/the.world.stage/detail/785/1783827000000",
+      "details": "$20 Admission in Person The World Stage YouTube Channel www.youtube.com/channel/UCYZPOWI1nn3e3eJc7kB4jOw The World Stage Facebook Page facebook.com/theworldstag",
+      "personnel": null,
+      "priceText": null
+    },
+    {
       "id": "harvelles:2026-07-11:the-no-chasers",
       "clubId": "harvelles",
       "title": "THE NO CHASERS",
@@ -1259,6 +1167,19 @@
       ],
       "url": "https://santamonica.harvelles.com/events/139410",
       "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "worldstage:2026-07-12:world-stage-big-band",
+      "clubId": "worldstage",
+      "title": "World Stage Big Band",
+      "date": "2026-07-12",
+      "sets": [
+        "17:00"
+      ],
+      "url": "https://tockify.com/the.world.stage/detail/574/1783900800000",
+      "details": "Coordinated by Billy McCoy, this workshop goes through the decades of the past century of jazz development. The World Stage Big Band functions as a rehearsal ba",
       "personnel": null,
       "priceText": null
     },
@@ -1273,6 +1194,19 @@
       ],
       "url": "https://www.bluenotejazz.com/la/tm-event/flying-lotus/",
       "details": "Blue Note Los Angeles",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "worldstage:2026-07-12:the-rose-gales-vocal-jam-session",
+      "clubId": "worldstage",
+      "title": "The Rose Gales Vocal Jam Session",
+      "date": "2026-07-12",
+      "sets": [
+        "20:00"
+      ],
+      "url": "https://tockify.com/the.world.stage/detail/6/1783911600000",
+      "details": "Hosted by Rene Fisher. Located on the World Stage's enclosed patio. Masks and temperature checks required. 20 people excluding house band and host allowed insid",
       "personnel": null,
       "priceText": null
     },
@@ -1313,6 +1247,19 @@
       ],
       "url": "https://santamonica.harvelles.com/events/137956",
       "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "worldstage:2026-07-14:west-african-conga-rhythms-and-beats",
+      "clubId": "worldstage",
+      "title": "West African Conga Rhythms and Beats",
+      "date": "2026-07-14",
+      "sets": [
+        "18:00"
+      ],
+      "url": "https://tockify.com/the.world.stage/detail/655/1784077200000",
+      "details": "Explore the intoxicating rhythms of Nigeria, Ghana, and the Ivory Coast with master drummer Najite Agindotan. Admission: $15 Suggested Donation",
       "personnel": null,
       "priceText": null
     },
@@ -1358,6 +1305,19 @@
       "priceText": null
     },
     {
+      "id": "worldstage:2026-07-15:anansi-writers-workshop",
+      "clubId": "worldstage",
+      "title": "Anansi Writers Workshop",
+      "date": "2026-07-15",
+      "sets": [
+        "19:00"
+      ],
+      "url": "https://tockify.com/the.world.stage/detail/7/1784167200000",
+      "details": "The Anansi Writers Workshop was founded in 1990 by Kamau Daáood, Akilah Oliver, Nafis Nabawi and Anthony Lyons. In 1993, Michael Datcher initiated the developme",
+      "personnel": null,
+      "priceText": null
+    },
+    {
       "id": "harvelles:2026-07-15:come-sing-with-the-band-live-band-karaoke",
       "clubId": "harvelles",
       "title": "COME SING WITH the BAND - Live Band Karaoke",
@@ -1381,6 +1341,19 @@
       ],
       "url": "https://www.bluenotejazz.com/la/tm-event/slum-village-3/",
       "details": "Blue Note Los Angeles",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "worldstage:2026-07-16:the-billy-higgins-instrumental-jam-session",
+      "clubId": "worldstage",
+      "title": "The Billy Higgins Instrumental Jam Session",
+      "date": "2026-07-16",
+      "sets": [
+        "20:00"
+      ],
+      "url": "https://tockify.com/the.world.stage/detail/9/1784257200000",
+      "details": "Hosted by Ralph Gibson. Located on the World Stage's enclosed patio. Masks and temperature checks required. 20 people excluding house band and host allowed insi",
       "personnel": null,
       "priceText": null
     },
@@ -1412,6 +1385,19 @@
       "priceText": null
     },
     {
+      "id": "worldstage:2026-07-17:tatiana-tate-s-melanin-horns",
+      "clubId": "worldstage",
+      "title": "Tatiana Tate's Melanin Horns",
+      "date": "2026-07-17",
+      "sets": [
+        "20:30"
+      ],
+      "url": "https://tockify.com/the.world.stage/detail/786/1784345400000",
+      "details": "$20 Admission in Person The World Stage YouTube Channel www.youtube.com/channel/UCYZPOWI1nn3e3eJc7kB4jOw The World Stage Facebook Page facebook.com/theworldstag",
+      "personnel": null,
+      "priceText": null
+    },
+    {
       "id": "harvelles:2026-07-17:western-revenge",
       "clubId": "harvelles",
       "title": "WESTERN REVENGE",
@@ -1439,17 +1425,30 @@
       "priceText": null
     },
     {
-      "id": "lacma:2026-07-18:lily-h-clark-quartet",
-      "clubId": "lacma",
-      "title": "Lily H. Clark Quartet",
+      "id": "worldstage:2026-07-18:trap-drum-workshop",
+      "clubId": "worldstage",
+      "title": "Trap Drum Workshop",
       "date": "2026-07-18",
       "sets": [
-        "17:00"
+        "11:30"
       ],
-      "url": "https://www.lacma.org/event/latin-sounds-lily-clark",
-      "details": "Free outdoor concert — Smidt Welcome Plaza",
+      "url": "https://tockify.com/the.world.stage/detail/4/1784399400000",
+      "details": "Started by our beloved Billy Higgins, the World Stage Trap Drum Workshop is a wonderful hands-on experience designed especially for children. Participants learn",
       "personnel": null,
-      "priceText": "Free"
+      "priceText": null
+    },
+    {
+      "id": "worldstage:2026-07-18:melody-first-the-art-of-jazz-singing",
+      "clubId": "worldstage",
+      "title": "Melody First: The Art of Jazz Singing",
+      "date": "2026-07-18",
+      "sets": [
+        "12:30"
+      ],
+      "url": "https://tockify.com/the.world.stage/detail/5/1784403000000",
+      "details": "Hosted by pianist Eric Scott Reed, a vital figure on the music scene for over 25 years. Known for his versatility, Reed has led numerous ensembles, performed so",
+      "personnel": null,
+      "priceText": null
     },
     {
       "id": "bluenotela:2026-07-18:brian-blade-the-fellowship-band",
@@ -1462,46 +1461,6 @@
       ],
       "url": "https://www.bluenotejazz.com/la/tm-event/brian-blade-the-fellowship-band/",
       "details": "Blue Note Los Angeles",
-      "personnel": null,
-      "priceText": null
-    },
-    {
-      "id": "samfirst:2026-07-18:benedict-kane-penn-trio",
-      "clubId": "samfirst",
-      "title": "Benedict, Kane & Penn Trio",
-      "date": "2026-07-18",
-      "sets": [
-        "19:30"
-      ],
-      "url": "https://www.samfirstbar.com/events/benedict-kane-penn-trio",
-      "details": "Vocalist Lorin Benedict makes his Sam First bandleading debut alongside bassist Logan Kane and drummer Clarence Penn. Reimagining jazz standards in a chord-less, scat-driven setting, the trio creates an intimate, adventurous performance fueled by spontaneity and inventive interplay.",
-      "personnel": null,
-      "priceText": null
-    },
-    {
-      "id": "bakedpotato:2026-07-18:ernie-watts-group",
-      "clubId": "bakedpotato",
-      "title": "ERNIE WATTS GROUP",
-      "date": "2026-07-18",
-      "sets": [
-        "20:00",
-        "22:00"
-      ],
-      "url": "https://thebakedpotato.thundertix.com/events/265022",
-      "details": "Jazz legend..",
-      "personnel": null,
-      "priceText": null
-    },
-    {
-      "id": "catalina:2026-07-18:the-flos-former-ladies-of-the-supremes-40th-anniversary-cele",
-      "clubId": "catalina",
-      "title": "The FLOS (Former Ladies of The Supremes): 40TH ANNIVERSARY CELEBRATION",
-      "date": "2026-07-18",
-      "sets": [
-        "20:30"
-      ],
-      "url": "https://catalinajazzclub.com/tm-event/the-flos-former-ladies-of-the-supremes-40th-anniversary-celebration/",
-      "details": "Doors @ Doors: 7:00 pm",
       "personnel": null,
       "priceText": null
     },
@@ -1543,72 +1502,6 @@
       ],
       "url": "https://www.bluenotejazz.com/la/tm-event/brian-blade-the-fellowship-band/",
       "details": "Blue Note Los Angeles",
-      "personnel": null,
-      "priceText": null
-    },
-    {
-      "id": "mint:2026-07-19:jazz-sunday-marcello-carelli-s-effervescence-quartet-kevin-k",
-      "clubId": "mint",
-      "title": "Jazz Sunday: Marcello Carelli’s Effervescence Quartet & Kevin Kanner Jazz",
-      "date": "2026-07-19",
-      "sets": [
-        "19:00"
-      ],
-      "url": "https://themintla.com/listing/jazz-sunday-marcello-carellis-effervescence-quartet-kevin-kanner-jazz/",
-      "details": "Join us EVERY SUNDAY for a rotating selection of the best in LA's Jazz Music scene, and stay late for our Sunday residency with Kevin...",
-      "personnel": null,
-      "priceText": "Tickets from $20.00"
-    },
-    {
-      "id": "twentytwotwenty:2026-07-19:lesley-mok-john-herndon",
-      "clubId": "twentytwotwenty",
-      "title": "Lesley Mok, John Herndon",
-      "date": "2026-07-19",
-      "sets": [
-        "19:00"
-      ],
-      "url": "https://dice.fm/event/k6lwo8-lesley-mok-john-herndon-19th-jul-2220-arts-archives-los-angeles-tickets",
-      "details": "Pehrspace and AKP Recordings present Lesley Mok and John Herndon. ∆ Lesley Mok is a New York City-based percussionist and sound artist. Their work is guided by a continual search for the connection between the mundane and the divine, the experience and manipulation of time, and a desire to capture e",
-      "personnel": null,
-      "priceText": null
-    },
-    {
-      "id": "catalina:2026-07-19:brenda-lee-eager-my-songs-my-stories",
-      "clubId": "catalina",
-      "title": "BRENDA LEE EAGER: MY SONGS, MY STORIES",
-      "date": "2026-07-19",
-      "sets": [
-        "19:30"
-      ],
-      "url": "https://catalinajazzclub.com/tm-event/brenda-lee-eager-my-songs-my-stories/",
-      "details": "Doors @ Doors: 6:00 pm",
-      "personnel": null,
-      "priceText": null
-    },
-    {
-      "id": "theford:2026-07-19:john-beasley-s-unlimited-miles-miles-davis-at-100",
-      "clubId": "theford",
-      "title": "John Beasley’s UNLIMITED MILES: MILES DAVIS AT 100",
-      "date": "2026-07-19",
-      "sets": [
-        "19:30"
-      ],
-      "url": "https://www.theford.com/events/performances/4854/2026-07-19/john-beasleys-unlimited-miles-miles-davis-at-100",
-      "details": "Produced in partnership with Leimert Park Jazz Festival",
-      "personnel": null,
-      "priceText": null
-    },
-    {
-      "id": "bakedpotato:2026-07-19:jim-fox-guitar-hang",
-      "clubId": "bakedpotato",
-      "title": "JIM FOX GUITAR HANG",
-      "date": "2026-07-19",
-      "sets": [
-        "20:00",
-        "22:00"
-      ],
-      "url": "https://thebakedpotato.thundertix.com/events/266083",
-      "details": "PAT KELLEY …Special Guest Guitarist",
       "personnel": null,
       "priceText": null
     },
@@ -2072,6 +1965,19 @@
       "priceText": null
     },
     {
+      "id": "lodgeroom:2026-07-24:natural-information-society-bitchin-bajas",
+      "clubId": "lodgeroom",
+      "title": "Natural Information Society & Bitchin Bajas",
+      "date": "2026-07-24",
+      "sets": [
+        "20:00"
+      ],
+      "url": "https://www.lodgeroomhlp.com/shows/natural-information-society-bitchin-bajas/",
+      "details": "With Jill Fraser",
+      "personnel": null,
+      "priceText": null
+    },
+    {
       "id": "catalina:2026-07-24:jennifer-holliday-love-music-life-2x-grammy-tony-award-winni",
       "clubId": "catalina",
       "title": "Jennifer Holliday: Love, Music & Life (2x Grammy & Tony Award-winning star of Broadway’s original \"Dreamgirls\")",
@@ -2294,6 +2200,19 @@
         "21:30"
       ],
       "url": "https://santamonica.harvelles.com/events/137954",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "lodgeroom:2026-07-26:marcos-valle",
+      "clubId": "lodgeroom",
+      "title": "Marcos Valle",
+      "date": "2026-07-26",
+      "sets": [
+        "22:00"
+      ],
+      "url": "https://www.lodgeroomhlp.com/shows/marcos-valle-2/",
       "details": null,
       "personnel": null,
       "priceText": null
@@ -3156,7 +3075,7 @@
         "22:00"
       ],
       "url": "https://thebakedpotato.thundertix.com/events/266110",
-      "details": "SCOTT KINSEY …KEYS",
+      "details": "DANNY CAREY ...DRUMS from TOOL",
       "personnel": null,
       "priceText": null
     },
@@ -3983,6 +3902,19 @@
       "priceText": null
     },
     {
+      "id": "twentytwotwenty:2026-08-14:slow-rose-26-hour-show-opening-night",
+      "clubId": "twentytwotwenty",
+      "title": "Slow Rose 26 Hour Show (Opening Night)",
+      "date": "2026-08-14",
+      "sets": [
+        "20:00"
+      ],
+      "url": "https://dice.fm/event/ryr3aq-slow-rose-26-hour-show-opening-night-14th-aug-2220-arts-archives-los-angeles-tickets",
+      "details": "Slow Rose – Chris Nowak (bass), Paul Carter (drums), and Pauline Lay (violin + electronics) – vary between structured and unstructured moments, often durational and exploratory. Within 26 hours, they will collaborate with invited musicians, artists, projectionists, and dancers inside the Archives at",
+      "personnel": null,
+      "priceText": null
+    },
+    {
       "id": "catalina:2026-08-14:honey-cone-now-then-forever",
       "clubId": "catalina",
       "title": "HONEY CONE: NOW, THEN & FOREVER",
@@ -4033,6 +3965,19 @@
       "priceText": "Free"
     },
     {
+      "id": "twentytwotwenty:2026-08-15:slow-rose-26-hour-show-closing-night",
+      "clubId": "twentytwotwenty",
+      "title": "Slow Rose 26 Hour Show (Closing Night)",
+      "date": "2026-08-15",
+      "sets": [
+        "18:00"
+      ],
+      "url": "https://dice.fm/event/2wqo76-slow-rose-26-hour-show-closing-night-15th-aug-2220-arts-archives-los-angeles-tickets",
+      "details": "Slow Rose – Chris Nowak (bass), Paul Carter (drums), and Pauline Lay (violin + electronics) – vary between structured and unstructured moments, often durational and exploratory. Within 26 hours, they will collaborate with invited musicians, artists, projectionists, and dancers inside the Archives at",
+      "personnel": null,
+      "priceText": null
+    },
+    {
       "id": "bluenotela:2026-08-15:wayne-brady-friends",
       "clubId": "bluenotela",
       "title": "Wayne Brady & Friends",
@@ -4043,6 +3988,19 @@
       ],
       "url": "https://www.bluenotejazz.com/la/tm-event/wayne-brady-friends/",
       "details": "Blue Note Los Angeles",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "samfirst:2026-08-15:roy-mccurdy-quartet-with-rickey-woodard-josh-nelson-mike-gur",
+      "clubId": "samfirst",
+      "title": "Roy McCurdy Quartet with Rickey Woodard, Josh Nelson & Mike Gurrola",
+      "date": "2026-08-15",
+      "sets": [
+        "19:30"
+      ],
+      "url": "https://www.samfirstbar.com/events/roy-mccurdy-quartet-with-rickey-woodard-josh-nelson-mike-gurrola-2",
+      "details": "Legendary drummer, USC Professor and Rochester Music Hall of Fame Inductee Roy McCurdy has worked with just about all the major jazz personalities, including Ella Fitzgerald, Sonny Rollins, Nancy Wilson, Cannonball Adderley, Betty Carter, Freddie Hubbard, Sarah Vaughan and Benny Golson.",
       "personnel": null,
       "priceText": null
     },
@@ -4544,6 +4502,19 @@
       "priceText": null
     },
     {
+      "id": "catalina:2026-08-21:jazz-legends-john-pizzarelli-trio-grammy-award-winning-jazz-",
+      "clubId": "catalina",
+      "title": "Jazz Legends: JOHN PIZZARELLI TRIO (Grammy Award-winning Jazz Guitarist and Vocalist)",
+      "date": "2026-08-21",
+      "sets": [
+        "20:30"
+      ],
+      "url": "https://catalinajazzclub.com/tm-event/jazz-legends-john-pizzarelli-trio-grammy-award-winning-jazz-guitarist-and-vocalist-2/",
+      "details": "Doors @ Doors: 7:00 pm",
+      "personnel": null,
+      "priceText": null
+    },
+    {
       "id": "harvelles:2026-08-21:western-revenge",
       "clubId": "harvelles",
       "title": "WESTERN REVENGE",
@@ -4609,6 +4580,19 @@
       "priceText": null
     },
     {
+      "id": "catalina:2026-08-22:jazz-legends-john-pizzarelli-trio-grammy-award-winning-jazz-",
+      "clubId": "catalina",
+      "title": "Jazz Legends: JOHN PIZZARELLI TRIO (Grammy Award-winning Jazz Guitarist and Vocalist)",
+      "date": "2026-08-22",
+      "sets": [
+        "20:30"
+      ],
+      "url": "https://catalinajazzclub.com/tm-event/jazz-legends-john-pizzarelli-trio-grammy-award-winning-jazz-guitarist-and-vocalist-3/",
+      "details": "Doors @ Doors: 7:00 pm",
+      "personnel": null,
+      "priceText": null
+    },
+    {
       "id": "harvelles:2026-08-22:missus-jones",
       "clubId": "harvelles",
       "title": "MISSUS JONES",
@@ -4670,6 +4654,19 @@
       ],
       "url": "https://thebakedpotato.thundertix.com/events/267939",
       "details": "DANNY CAREY …DRUMS from TOOL",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "lodgeroom:2026-08-23:jeff-parker-eta-ivtet-happy-today-album-release-shows-in-the",
+      "clubId": "lodgeroom",
+      "title": "Jeff Parker ETA IVtet ‘Happy Today’ Album Release Shows In The Round",
+      "date": "2026-08-23",
+      "sets": [
+        "20:00"
+      ],
+      "url": "https://www.lodgeroomhlp.com/shows/jeff-parker-eta-ivtet-happy-today-album-release-shows-in-the-round/",
+      "details": null,
       "personnel": null,
       "priceText": null
     },
@@ -4764,6 +4761,19 @@
       "priceText": null
     },
     {
+      "id": "lodgeroom:2026-08-24:jeff-parker-eta-ivtet-happy-today-album-release-shows-in-the",
+      "clubId": "lodgeroom",
+      "title": "Jeff Parker ETA IVtet ‘Happy Today’ Album Release Shows In The Round",
+      "date": "2026-08-24",
+      "sets": [
+        "20:00"
+      ],
+      "url": "https://www.lodgeroomhlp.com/shows/jeff-parker-eta-ivtet-happy-today-album-release-shows-in-the-round-2/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
       "id": "harvelles:2026-08-24:all-star-jam-session-benefit",
       "clubId": "harvelles",
       "title": "ALL-STAR JAM SESSION BENEFIT",
@@ -4801,6 +4811,19 @@
       ],
       "url": "https://thebakedpotato.thundertix.com/events/267941",
       "details": "$35.00 1ST Set INSIDE",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "lodgeroom:2026-08-25:jeff-parker-eta-ivtet-happy-today-album-release-shows-in-the",
+      "clubId": "lodgeroom",
+      "title": "Jeff Parker ETA IVtet ‘Happy Today’ Album Release Shows In The Round",
+      "date": "2026-08-25",
+      "sets": [
+        "20:00"
+      ],
+      "url": "https://www.lodgeroomhlp.com/shows/jeff-parker-eta-ivtet-happy-today-album-release-shows-in-the-round-3/",
+      "details": null,
       "personnel": null,
       "priceText": null
     },
@@ -5234,6 +5257,19 @@
       "priceText": "Free"
     },
     {
+      "id": "zebulon:2026-09-04:ryan-sawyer-4-matana-roberts-jeff-parker-tunde-adebimpe",
+      "clubId": "zebulon",
+      "title": "Ryan Sawyer 4, Matana Roberts, Jeff Parker, Tunde Adebimpe",
+      "date": "2026-09-04",
+      "sets": [
+        "19:00"
+      ],
+      "url": "https://link.dice.fm/xf18a001ec87",
+      "details": "Ryan Sawyer 4, Matana Roberts, Jeff Parker, Tunde Adebimpe With special guest Judith Berkson Judith Berkson is a composer, vocalist, and pianist. Her research centers around tuning and microtonality as they relate to memory and perception, exploring the small spaces between similarity and difference",
+      "personnel": null,
+      "priceText": null
+    },
+    {
       "id": "bakedpotato:2026-09-04:john-daversa-big-band",
       "clubId": "bakedpotato",
       "title": "JOHN DAVERSA BIG BAND",
@@ -5540,6 +5576,19 @@
       ],
       "url": "https://thebakedpotato.thundertix.com/events/268019",
       "details": "$45.00 1ST SET INSIDE",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "lodgeroom:2026-09-14:alabaster-deplume",
+      "clubId": "lodgeroom",
+      "title": "Alabaster Deplume",
+      "date": "2026-09-14",
+      "sets": [
+        "20:00"
+      ],
+      "url": "https://www.lodgeroomhlp.com/shows/alabaster-deplume-2/",
+      "details": null,
       "personnel": null,
       "priceText": null
     },
@@ -6094,19 +6143,6 @@
       "priceText": "Tickets from $15.00"
     },
     {
-      "id": "twentytwotwenty:2026-10-06:el-khat",
-      "clubId": "twentytwotwenty",
-      "title": "El Khat",
-      "date": "2026-10-06",
-      "sets": [
-        "20:00"
-      ],
-      "url": "https://dice.fm/event/eo8lqw-el-khat-6th-oct-2220-arts-archives-los-angeles-tickets",
-      "details": "El Khat – Junkyard Funk from Yemen! El Khat is a homemade junkyard band led by multi-instrumentalist Eyal El Wahab. Named for the drug used so widely chewed across the Arab Peninsula, their original compositions are inspired by the music of the golden age in Aden, Yemen. Experimenting with DIY, self",
-      "personnel": null,
-      "priceText": null
-    },
-    {
       "id": "bakedpotato:2026-10-09:jeff-lorber-fusion",
       "clubId": "bakedpotato",
       "title": "JEFF LORBER FUSION",
@@ -6209,6 +6245,19 @@
       ],
       "url": "https://link.dice.fm/E8306cb03642",
       "details": "REZN - Cycles in the Infinite Dream Tour Over the last decade, Chicago quartet REZN have carved out a unique place in the landscape of heavy music, chiseling away at the crude formations of the topography, mining the most concentrated metallic ore from the dirt, and shaping it all into something mon",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "lodgeroom:2026-10-27:resavoir",
+      "clubId": "lodgeroom",
+      "title": "Resavoir",
+      "date": "2026-10-27",
+      "sets": [
+        "20:00"
+      ],
+      "url": "https://www.lodgeroomhlp.com/shows/resavoir/",
+      "details": "With Gregory Uhlmann",
       "personnel": null,
       "priceText": null
     },

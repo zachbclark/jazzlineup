@@ -62,6 +62,14 @@ export default async function run({ pd, errors }) {
     await pd.waitForTimeout(400);
   });
 
+  await test('wordmark is a real home link for the current city', async () => {
+    assert.equal(await pd.getAttribute('.brand-link', 'href'), '/nyc');
+    await pd.click('.brand-link');
+    await pd.waitForTimeout(800);
+    assert.equal(await pd.evaluate(() => location.pathname), '/nyc');
+    assert.ok(await pd.$('.grid'), 'calendar renders after home click');
+  });
+
   await test('clicking a day with events opens the inline drawer', async () => {
     // pick any cell with events that is not already open
     await pd.click('.cell.has-events:not(.open) .daynum');

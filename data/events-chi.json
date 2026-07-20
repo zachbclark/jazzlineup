@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-18T21:27:40.792Z",
+  "generatedAt": "2026-07-20T22:50:17.193Z",
   "city": "chi",
   "clubs": [
     {
@@ -1225,20 +1225,6 @@
       "priceText": null
     },
     {
-      "id": "dorians:2026-07-17:nebulus",
-      "clubId": "dorians",
-      "title": "Nebulus",
-      "date": "2026-07-17",
-      "sets": [
-        "21:00",
-        "23:00"
-      ],
-      "url": "https://throughtherecordshop.com/events/nebulus/",
-      "details": null,
-      "personnel": null,
-      "priceText": "$10"
-    },
-    {
       "id": "andys:2026-07-17:late-night-concert-series-w-chris-madsen",
       "clubId": "andys",
       "title": "Late Night Concert Series w/Chris Madsen",
@@ -1279,19 +1265,6 @@
       "priceText": "FREE"
     },
     {
-      "id": "space:2026-07-18:space-s-summer-patio-series-the-chicago-jazz-dads",
-      "clubId": "space",
-      "title": "Space’s Summer Patio Series: The Chicago Jazz Dads",
-      "date": "2026-07-18",
-      "sets": [
-        "16:00"
-      ],
-      "url": "https://www.ticketweb.com/event/spaces-summer-patio-series-the-space-tickets/14256094",
-      "details": null,
-      "personnel": null,
-      "priceText": null
-    },
-    {
       "id": "andys:2026-07-18:pharez-whitted",
       "clubId": "andys",
       "title": "Pharez Whitted",
@@ -1304,46 +1277,6 @@
       "details": null,
       "personnel": null,
       "priceText": null
-    },
-    {
-      "id": "winters:2026-07-18:bryan-eng-trio",
-      "clubId": "winters",
-      "title": "Bryan Eng Trio",
-      "date": "2026-07-18",
-      "sets": [
-        "19:30"
-      ],
-      "url": "https://www.wintersjazzclub.com/events/bryan-eng-trio-4",
-      "details": null,
-      "personnel": [
-        {
-          "name": "Bryan Eng",
-          "instrument": "piano, vocals"
-        },
-        {
-          "name": "TJ Thompson",
-          "instrument": "drums"
-        },
-        {
-          "name": "Stephen Parisi",
-          "instrument": "bass"
-        }
-      ],
-      "priceText": null
-    },
-    {
-      "id": "dorians:2026-07-18:jackson-shepard",
-      "clubId": "dorians",
-      "title": "Jackson Shepard",
-      "date": "2026-07-18",
-      "sets": [
-        "21:00",
-        "23:00"
-      ],
-      "url": "https://throughtherecordshop.com/events/jackson-shepard/",
-      "details": null,
-      "personnel": null,
-      "priceText": "$10"
     },
     {
       "id": "andys:2026-07-18:late-night-concert-series-w-chris-madsen",
@@ -1382,49 +1315,6 @@
       "priceText": "$5 cover"
     },
     {
-      "id": "space:2026-07-19:space-s-summer-patio-series-chris-greene-and-damian-espinosa",
-      "clubId": "space",
-      "title": "Space’s Summer Patio Series: Chris Greene and Damian Espinosa",
-      "date": "2026-07-19",
-      "sets": [
-        "17:00"
-      ],
-      "url": "https://www.ticketweb.com/event/spaces-summer-patio-series-chris-space-tickets/14256114",
-      "details": null,
-      "personnel": null,
-      "priceText": null
-    },
-    {
-      "id": "winters:2026-07-19:bethany-pickens-soulful-coalition",
-      "clubId": "winters",
-      "title": "Bethany Pickens Soulful Coalition",
-      "date": "2026-07-19",
-      "sets": [
-        "17:30"
-      ],
-      "url": "https://www.wintersjazzclub.com/events/bethany-pickens-soulful-coalition-10",
-      "details": null,
-      "personnel": [
-        {
-          "name": "Bethany Pickens",
-          "instrument": "piano"
-        },
-        {
-          "name": "Dakarai Barclay",
-          "instrument": "trumpet"
-        },
-        {
-          "name": "Ted Brewer",
-          "instrument": "acoustic bass"
-        },
-        {
-          "name": "Charles Heath",
-          "instrument": "drums"
-        }
-      ],
-      "priceText": null
-    },
-    {
       "id": "andys:2026-07-19:andy-brown-quartet",
       "clubId": "andys",
       "title": "Andy Brown Quartet",
@@ -1459,19 +1349,6 @@
         }
       ],
       "priceText": "$10 COVER"
-    },
-    {
-      "id": "hungrybrain:2026-07-19:ward-polipnick-miller-cox-kirchner",
-      "clubId": "hungrybrain",
-      "title": "Ward/Polipnick/Miller/Cox/Kirchner",
-      "date": "2026-07-19",
-      "sets": [
-        "21:00"
-      ],
-      "url": "https://wl.seetickets.us/event/wardpolipnickmillercoxkirchner/698767?afflky=HungryBrain",
-      "details": null,
-      "personnel": null,
-      "priceText": "$15.00"
     },
     {
       "id": "andys:2026-07-19:late-night-concert-series-w-andrew-toombs",
@@ -2220,16 +2097,29 @@
       "priceText": null
     },
     {
-      "id": "greenmill:2026-07-27:joel-paterson-friends",
+      "id": "greenmill:2026-07-27:natalie-scharf-friends",
       "clubId": "greenmill",
-      "title": "JOEL PATERSON & FRIENDS",
+      "title": "NATALIE SCHARF & FRIENDS",
       "date": "2026-07-27",
       "sets": [
         "20:00"
       ],
       "url": "https://greenmilljazz.com/events/joel-paterson-friends-2-2026-07-27/",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Scharf",
+          "instrument": "sax"
+        },
+        {
+          "name": "Mike Allemana",
+          "instrument": "guitar"
+        },
+        {
+          "name": "Alex Hall",
+          "instrument": "drums"
+        }
+      ],
       "priceText": "$10 Cover"
     },
     {
@@ -3618,9 +3508,43 @@
       "priceText": "FREE"
     },
     {
-      "id": "constellation:2026-08-15:sparklmami",
+      "id": "winters:2026-08-15:marques-carroll-quintet-the-music-of-dexter-gordon-and-fredd",
+      "clubId": "winters",
+      "title": "Marques Carroll Quintet - The Music of Dexter Gordon and Freddie Hubbard",
+      "date": "2026-08-15",
+      "sets": [
+        "19:30"
+      ],
+      "url": "https://www.wintersjazzclub.com/events/marques-carroll-quintet-the-music-of-dexter-gordon-and-freddie-hubbard-2",
+      "details": null,
+      "personnel": [
+        {
+          "name": "Marques Carroll",
+          "instrument": "trumpet"
+        },
+        {
+          "name": "Chris Madsen",
+          "instrument": "tenor sax"
+        },
+        {
+          "name": "Micah Collier",
+          "instrument": "bass"
+        },
+        {
+          "name": "Sam Jewell",
+          "instrument": "drums"
+        },
+        {
+          "name": "Julius Tucker",
+          "instrument": "piano"
+        }
+      ],
+      "priceText": null
+    },
+    {
+      "id": "constellation:2026-08-15:cancelled-sparklmami",
       "clubId": "constellation",
-      "title": "Sparklmami",
+      "title": "CANCELLED: Sparklmami",
       "date": "2026-08-15",
       "sets": [
         "20:30"
@@ -3628,7 +3552,7 @@
       "url": "https://constellation-chicago.com/calendar/",
       "details": null,
       "personnel": null,
-      "priceText": "$18.00"
+      "priceText": null
     },
     {
       "id": "greenmill:2026-08-15:righteous-rooster-organ-trio",
@@ -3652,6 +3576,36 @@
       ],
       "late": true,
       "priceText": "$5 cover"
+    },
+    {
+      "id": "winters:2026-08-16:thaddeus-tukes-trio-with-special-guest-angel-spiccia",
+      "clubId": "winters",
+      "title": "Thaddeus Tukes Trio with special guest Angel Spiccia",
+      "date": "2026-08-16",
+      "sets": [
+        "17:30"
+      ],
+      "url": "https://www.wintersjazzclub.com/events/thaddeus-tukes-trio-with-special-guest-angel-spiccia",
+      "details": null,
+      "personnel": [
+        {
+          "name": "Thaddeus Tukes",
+          "instrument": "vibes"
+        },
+        {
+          "name": "Angel Spiccia",
+          "instrument": "vocals"
+        },
+        {
+          "name": "Jeremiah Hunt",
+          "instrument": "bass"
+        },
+        {
+          "name": "Luke Sagadin",
+          "instrument": "drums"
+        }
+      ],
+      "priceText": null
     },
     {
       "id": "greenmill:2026-08-16:soul-message",
@@ -4196,6 +4150,19 @@
       "details": null,
       "personnel": null,
       "priceText": "$25.00"
+    },
+    {
+      "id": "hungrybrain:2026-08-28:the-arab-blues",
+      "clubId": "hungrybrain",
+      "title": "The Arab Blues",
+      "date": "2026-08-28",
+      "sets": [
+        "21:00"
+      ],
+      "url": "https://wl.seetickets.us/event/The-Arab-Blues/694956?afflky=HungryBrain",
+      "details": null,
+      "personnel": null,
+      "priceText": "$15.00"
     },
     {
       "id": "greenmill:2026-08-28:green-mill-jam-session-with-marquis-hill",

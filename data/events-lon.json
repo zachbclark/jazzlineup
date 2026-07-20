@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-18T21:28:49.776Z",
+  "generatedAt": "2026-07-20T22:51:34.417Z",
   "city": "lon",
   "clubs": [
     {
@@ -77,263 +77,6 @@
   ],
   "errors": [],
   "events": [
-    {
-      "id": "club606:2026-07-13:phil-mulford-s-thunderthumbs",
-      "clubId": "club606",
-      "title": "Phil Mulford's 'Thunderthumbs'",
-      "date": "2026-07-13",
-      "sets": [
-        "20:00"
-      ],
-      "url": "https://www.606club.co.uk/events/view/phil-mulfords-thunderthumbs-23/",
-      "details": "Join us to celebrate the great Soul and Funk songs from the likes of George Benson, George Duke and Michael Jackson with “Thunderthumbs”, the 10-piece band led by bassist Phil Mulford . Inspired by the great US bassist Louis Johnson’s work the set runs from Louis’ time with Billy Preston in 1972 thr",
-      "personnel": null,
-      "priceText": null
-    },
-    {
-      "id": "club606:2026-07-14:david-gordon-trio",
-      "clubId": "club606",
-      "title": "David Gordon Trio",
-      "date": "2026-07-14",
-      "sets": [
-        "20:00"
-      ],
-      "url": "https://www.606club.co.uk/events/view/david-gordon-trio-19/",
-      "details": "“a richly gifted player with a sparkling style and boundless imagination” Independent on Sunday Described by the Independent as \"a richly gifted player with a sparkling style and boundless imagination\", pianist David Gordon 's one of the few professional musicians who is equally established in both ",
-      "personnel": null,
-      "priceText": null
-    },
-    {
-      "id": "club606:2026-07-15:guille-hill-acoustic-band",
-      "clubId": "club606",
-      "title": "Guille Hill Acoustic Band",
-      "date": "2026-07-15",
-      "sets": [
-        "20:00"
-      ],
-      "url": "https://www.606club.co.uk/events/view/guille-hill-acoustic-band/",
-      "details": "“Guillermo Hill… excellent” All About Jazz Since moving to London from Uruguay in 1997 Guille Hill (pronounced Gee-jay) has established himself as a first call guitarist across the musical spectrum. The list of artists that he has worked with is a testament to his creativity and skill, including Tom",
-      "personnel": null,
-      "priceText": null
-    },
-    {
-      "id": "club606:2026-07-16:tim-whitehead",
-      "clubId": "club606",
-      "title": "Tim Whitehead",
-      "date": "2026-07-16",
-      "sets": [
-        "20:00"
-      ],
-      "url": "https://www.606club.co.uk/events/view/tim-whitehead-11/",
-      "details": "“Tim Whitehead...the finest tenor player in Britain today” Jazz Review Tim Whitehead is renowned throughout the UK, Europe and the USA as a remarkable performer and composer with a dazzling CV. In the 70’s he toured with Ian Carr’s “Nucleus” and “Graham Collier Music” winning the Young Jazz Musician",
-      "personnel": null,
-      "priceText": null
-    },
-    {
-      "id": "club606:2026-07-17:bruce-adams-art-themen",
-      "clubId": "club606",
-      "title": "Bruce Adams/Art Themen",
-      "date": "2026-07-17",
-      "sets": [
-        "21:00"
-      ],
-      "url": "https://www.606club.co.uk/events/view/bruce-adams-art-themen-2/",
-      "details": "Bruce Adams has been a stalwart of the UK jazz scene for almost 50 years, performing with the likes of Harry Sweets Edison, Buddy Tate, Al Cohn and Benny Waters and is widely regarded as one of the finest mainstream cornet/trumpet players in Europe. Lately, Bruce has appeared regularly here at the C",
-      "personnel": null,
-      "priceText": null
-    },
-    {
-      "id": "vortex:2026-07-18:tony-kofi-s-tentet-plays-monk-at-the-town-hall",
-      "clubId": "vortex",
-      "title": "Tony Kofi's Tentet plays Monk at The Town Hall",
-      "date": "2026-07-18",
-      "sets": [
-        "19:00"
-      ],
-      "url": "https://www.vortexjazz.co.uk/event/tony-kofis-tentet-plays-monk-at-the-town-hall/",
-      "details": null,
-      "personnel": [
-        {
-          "name": "Line-up: Chris Outhwaite",
-          "instrument": "piano"
-        },
-        {
-          "name": "Ollie Kelly",
-          "instrument": "alto saxophone"
-        },
-        {
-          "name": "Emma Jackson",
-          "instrument": "tenor saxophone"
-        },
-        {
-          "name": "Noah Black",
-          "instrument": "saxophone"
-        },
-        {
-          "name": "Diggory Keysr",
-          "instrument": "trumpet"
-        },
-        {
-          "name": "Misha Fox",
-          "instrument": "trombone"
-        },
-        {
-          "name": "Charlie Mellon",
-          "instrument": "trombone"
-        }
-      ],
-      "priceText": null
-    },
-    {
-      "id": "club606:2026-07-18:greg-abate",
-      "clubId": "club606",
-      "title": "Greg Abate",
-      "date": "2026-07-18",
-      "sets": [
-        "21:00"
-      ],
-      "url": "https://www.606club.co.uk/events/view/greg-abate-6/",
-      "details": "“his work [has] a feeling of constant invention and creativity” Chicago Tribune A US-based musician of international standing, saxophonist Greg Abate is considered to be amongst the finest jazz players of his generation. After studying at Berklee in the mid 70's Greg went on tour with the Ray Charle",
-      "personnel": null,
-      "priceText": null
-    },
-    {
-      "id": "pizzaexpress:2026-07-18:king-pleasure-the-biscuit-boys",
-      "clubId": "pizzaexpress",
-      "title": "King Pleasure & The Biscuit Boys",
-      "date": "2026-07-18",
-      "sets": [
-        "21:00"
-      ],
-      "url": "https://www.pizzaexpresslive.com/whats-on/king-pleasure-the-biscuit-boys",
-      "details": null,
-      "personnel": null,
-      "priceText": "£30"
-    },
-    {
-      "id": "ronnies:2026-07-18:late-late-show-with-kyra",
-      "clubId": "ronnies",
-      "title": "Late Late Show with Kyra",
-      "date": "2026-07-18",
-      "sets": [],
-      "url": "https://www.ronniescotts.co.uk/find-a-show/late-late-show-with-kyra",
-      "details": "Late Late Show",
-      "personnel": null,
-      "priceText": null
-    },
-    {
-      "id": "jazzcafe:2026-07-18:immanuel-wilkins-quartet",
-      "clubId": "jazzcafe",
-      "title": "Immanuel Wilkins Quartet",
-      "date": "2026-07-18",
-      "sets": [],
-      "url": "https://thejazzcafe.com/event/immanuel-wilkins-quartet/",
-      "details": "Explosive NYC Saxophonist",
-      "personnel": null,
-      "priceText": null
-    },
-    {
-      "id": "pizzaexpress:2026-07-19:noah-stoneman",
-      "clubId": "pizzaexpress",
-      "title": "Noah Stoneman",
-      "date": "2026-07-19",
-      "sets": [
-        "13:00"
-      ],
-      "url": "https://www.pizzaexpresslive.com/whats-on/noah-stoneman-trio",
-      "details": null,
-      "personnel": null,
-      "priceText": "£20"
-    },
-    {
-      "id": "club606:2026-07-19:sunday-lunch-kaw-regis",
-      "clubId": "club606",
-      "title": "Sunday Lunch: Kaw Regis",
-      "date": "2026-07-19",
-      "sets": [
-        "13:30"
-      ],
-      "url": "https://www.606club.co.uk/events/view/sunday-lunch-kaw-regis-6/",
-      "details": "Before football takes centre stage this evening, join us for a special lunchtime celebration of Brazilian music with multi-instrumentalist, singer, composer, and producer Kaw Regis . After establishing himself in his native Brazil, Kaw reached new heights upon moving to the UK. As a musical director",
-      "personnel": null,
-      "priceText": null
-    },
-    {
-      "id": "vortex:2026-07-19:mopomoso-international-free-improvised-music-july-2026",
-      "clubId": "vortex",
-      "title": "MOPOMOSO: International Free Improvised Music – July 2026",
-      "date": "2026-07-19",
-      "sets": [
-        "14:00"
-      ],
-      "url": "https://www.vortexjazz.co.uk/event/mopomoso-international-free-improvised-music-july-2026/",
-      "details": "Doors 2:00 PM - 3 sets of music About Mopomoso is the UK’s longest running concert series dedicated to freely improvised music! Line-Up Phil Minton (voice), Ivor Kallin (viola) & Charlotte Keeffe (trumpet) + Clive Bell (shakuhachi) & Mike Adcock (piano/accordion/small percussion) + \"Over the Edge\" t",
-      "personnel": null,
-      "priceText": null
-    },
-    {
-      "id": "cafeoto:2026-07-19:leo-dupleix-rose-keeler-schaffeler-daniel-o-sullivan-ivy-o-s",
-      "clubId": "cafeoto",
-      "title": "Leo Dupleix + Rose Keeler-Schaffeler / Daniel O'Sullivan / Ivy O'Sullivan",
-      "date": "2026-07-19",
-      "sets": [
-        "19:30"
-      ],
-      "url": "https://www.cafeoto.co.uk/events/magic-hollow-leo-dupleix/",
-      "details": null,
-      "personnel": null,
-      "priceText": null
-    },
-    {
-      "id": "vortex:2026-07-19:cancelled-vortex-jam-session",
-      "clubId": "vortex",
-      "title": "[CANCELLED] Vortex Jam Session",
-      "date": "2026-07-19",
-      "sets": [
-        "19:45"
-      ],
-      "url": "https://www.vortexjazz.co.uk/event/vortex-jam-session-10/",
-      "details": "This weeks Jam session is cancelled and will return next week",
-      "personnel": null,
-      "priceText": null
-    },
-    {
-      "id": "club606:2026-07-19:wayne-hernandez",
-      "clubId": "club606",
-      "title": "Wayne Hernandez",
-      "date": "2026-07-19",
-      "sets": [
-        "20:00"
-      ],
-      "url": "https://www.606club.co.uk/events/view/wayne-hernandez-33/",
-      "details": "Wayne Hernandez is one of those fantastic singers who has been using his considerable talents for many years to make others sound good. Hugely successful within the music business he has worked with Tina Turner, Tori Amos, Blur, Grover Washington, Roberta Flack, Madonna and Rag'n'Bone Man. He has al",
-      "personnel": null,
-      "priceText": null
-    },
-    {
-      "id": "pizzaexpress:2026-07-19:hannah-horton",
-      "clubId": "pizzaexpress",
-      "title": "Hannah Horton",
-      "date": "2026-07-19",
-      "sets": [
-        "20:00"
-      ],
-      "url": "https://www.pizzaexpresslive.com/whats-on/hannah-horton",
-      "details": null,
-      "personnel": null,
-      "priceText": "£25"
-    },
-    {
-      "id": "ronnies:2026-07-19:kenny-garrett-and-sounds-from-the-ancestors",
-      "clubId": "ronnies",
-      "title": "Kenny Garrett and Sounds From The Ancestors",
-      "date": "2026-07-19",
-      "sets": [],
-      "url": "https://www.ronniescotts.co.uk/find-a-show/kenny-garrett-and-sounds-from-the-ancestors-2",
-      "details": null,
-      "personnel": null,
-      "priceText": null
-    },
     {
       "id": "cafeoto:2026-07-20:diana-lola-posani-jamie-man-mengting-zhuo-jiaying-kou",
       "clubId": "cafeoto",
@@ -433,7 +176,24 @@
       ],
       "url": "https://www.pizzaexpresslive.com/whats-on/miles-mindlin",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Miles Mindlin",
+          "instrument": "guitar"
+        },
+        {
+          "name": "Alex Hitchcock",
+          "instrument": "tenor saxophone"
+        },
+        {
+          "name": "Freddie Jensen",
+          "instrument": "bass"
+        },
+        {
+          "name": "Luke Mccarthy",
+          "instrument": "drums"
+        }
+      ],
       "priceText": "£25"
     },
     {
@@ -456,8 +216,17 @@
         "19:45"
       ],
       "url": "https://www.vortexjazz.co.uk/event/reuben-goldmark-trio-3/",
-      "details": "Doors 7:45 PM, Music 8:30 PM - 2 sets of music Line-up: Reuben Goldmark - Piano Freddie Jensen - Double bass Jonah Evans - Drum kit About: Reuben Goldmark returns to the Vortex with his trio to premiere a brand new set of original compositions. Over the past four years, the band has developed a uniq",
-      "personnel": null,
+      "details": null,
+      "personnel": [
+        {
+          "name": "Reuben Goldmark",
+          "instrument": "piano"
+        },
+        {
+          "name": "Freddie Jensen",
+          "instrument": "double bass"
+        }
+      ],
       "priceText": null
     },
     {
@@ -519,8 +288,17 @@
         "19:45"
       ],
       "url": "https://www.vortexjazz.co.uk/event/kate-williams-trio/",
-      "details": "Doors 7:45 PM, Music 8:30 PM - 2 sets of music Line-up: Kate Williams - Piano Oli Hayhurst - Double bass David Ingamells - Drum kit About Pianist/composer Kate Williams has gained a reputation as both a distinctive writer and performer. She has released several CDs, each one to critical acclaim, inc",
-      "personnel": null,
+      "details": null,
+      "personnel": [
+        {
+          "name": "Kate Williams",
+          "instrument": "piano"
+        },
+        {
+          "name": "Oli Hayhurst",
+          "instrument": "double bass"
+        }
+      ],
       "priceText": null
     },
     {
@@ -546,7 +324,16 @@
       ],
       "url": "https://www.pizzaexpresslive.com/whats-on/tom-sochas-trio",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Theo Malka Wishart",
+          "instrument": "double bass"
+        },
+        {
+          "name": "Alasdair Pennington",
+          "instrument": "drums"
+        }
+      ],
       "priceText": "£20"
     },
     {
@@ -598,7 +385,7 @@
       "details": null,
       "personnel": [
         {
-          "name": "Line-up: Mark Kavuma",
+          "name": "Mark Kavuma",
           "instrument": "trumpet"
         },
         {
@@ -608,6 +395,10 @@
         {
           "name": "Wilf Diamond",
           "instrument": "trombone"
+        },
+        {
+          "name": "TBC",
+          "instrument": "double bass"
         }
       ],
       "priceText": null
@@ -650,7 +441,7 @@
       "details": null,
       "personnel": [
         {
-          "name": "Line-up: Myele Manzanza",
+          "name": "Myele Manzanza",
           "instrument": "drums"
         },
         {
@@ -664,6 +455,10 @@
         {
           "name": "Kirke Gross",
           "instrument": "cello"
+        },
+        {
+          "name": "Rio Kai",
+          "instrument": "double bass"
         }
       ],
       "priceText": null
@@ -737,7 +532,28 @@
       ],
       "url": "https://www.pizzaexpresslive.com/whats-on/the-simon-spillett-big-band",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Simon Spillett",
+          "instrument": "tenor saxophone, leader"
+        },
+        {
+          "name": "Garnett, Robert Fowler, Paul Nathaniel",
+          "instrument": "saxophones"
+        },
+        {
+          "name": "Rob Barron",
+          "instrument": "piano"
+        },
+        {
+          "name": "Alec Dankworth",
+          "instrument": "bass"
+        },
+        {
+          "name": "Pete Cater",
+          "instrument": "drums"
+        }
+      ],
       "priceText": "£40"
     },
     {
@@ -802,7 +618,20 @@
       ],
       "url": "https://www.pizzaexpresslive.com/whats-on/elchin-shirinov-trio",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Elchin Shirinov",
+          "instrument": "piano"
+        },
+        {
+          "name": "Ben Hazleton",
+          "instrument": "double bass"
+        },
+        {
+          "name": "Jon Scott",
+          "instrument": "drums"
+        }
+      ],
       "priceText": "£20"
     },
     {
@@ -852,7 +681,20 @@
       ],
       "url": "https://www.pizzaexpresslive.com/whats-on/shakatak-1",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Bill Sharpe",
+          "instrument": "keys"
+        },
+        {
+          "name": "Roger Odell",
+          "instrument": "drums"
+        },
+        {
+          "name": "George Anderson",
+          "instrument": "bass"
+        }
+      ],
       "priceText": "£40"
     },
     {
@@ -904,7 +746,7 @@
       "details": null,
       "personnel": [
         {
-          "name": "Line-up: Dave Sear",
+          "name": "Dave Sear",
           "instrument": "trombone"
         },
         {
@@ -918,6 +760,10 @@
         {
           "name": "Olly Chalk",
           "instrument": "piano"
+        },
+        {
+          "name": "James Owston",
+          "instrument": "double bass"
         }
       ],
       "priceText": null
@@ -945,7 +791,20 @@
       ],
       "url": "https://www.pizzaexpresslive.com/whats-on/shakatak-1",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Bill Sharpe",
+          "instrument": "keys"
+        },
+        {
+          "name": "Roger Odell",
+          "instrument": "drums"
+        },
+        {
+          "name": "George Anderson",
+          "instrument": "bass"
+        }
+      ],
       "priceText": "£40"
     },
     {
@@ -984,7 +843,7 @@
       "details": null,
       "personnel": [
         {
-          "name": "Line-up: Leif Kaner-Lidström",
+          "name": "Leif Kaner-Lidström",
           "instrument": "piano"
         },
         {
@@ -1021,7 +880,20 @@
       ],
       "url": "https://www.pizzaexpresslive.com/whats-on/shakatak-1",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Bill Sharpe",
+          "instrument": "keys"
+        },
+        {
+          "name": "Roger Odell",
+          "instrument": "drums"
+        },
+        {
+          "name": "George Anderson",
+          "instrument": "bass"
+        }
+      ],
       "priceText": "£40"
     },
     {
@@ -1031,6 +903,19 @@
       "date": "2026-07-29",
       "sets": [],
       "url": "https://www.ronniescotts.co.uk/find-a-show/mica-paris",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "cafeoto:2026-07-30:rap-betty-hammerschlag-toxic-positivity",
+      "clubId": "cafeoto",
+      "title": "RAP + Betty Hammerschlag + Toxic Positivity",
+      "date": "2026-07-30",
+      "sets": [
+        "19:30"
+      ],
+      "url": "https://www.cafeoto.co.uk/events/jolly-discs-presents-pt3/",
       "details": null,
       "personnel": null,
       "priceText": null
@@ -1047,16 +932,20 @@
       "details": null,
       "personnel": [
         {
-          "name": "Line-up: Gareth Lockrane",
-          "instrument": "flute, alto flute, bass flute"
+          "name": "Gareth Lockrane",
+          "instrument": "flute, alto flute, bass flute, piccolo"
         },
         {
-          "name": "Piccolo Tom Cawley",
+          "name": "Tom Cawley",
           "instrument": "piano"
         },
         {
           "name": "Mike Outram",
           "instrument": "guitar"
+        },
+        {
+          "name": "Dave Whitford",
+          "instrument": "double bass"
         }
       ],
       "priceText": null
@@ -1084,7 +973,20 @@
       ],
       "url": "https://www.pizzaexpresslive.com/whats-on/shakatak-1",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Bill Sharpe",
+          "instrument": "keys"
+        },
+        {
+          "name": "Roger Odell",
+          "instrument": "drums"
+        },
+        {
+          "name": "George Anderson",
+          "instrument": "bass"
+        }
+      ],
       "priceText": "£40"
     },
     {
@@ -1134,7 +1036,7 @@
       "details": null,
       "personnel": [
         {
-          "name": "Line-up: Alice Leggett",
+          "name": "Alice Leggett",
           "instrument": "alto saxophone"
         },
         {
@@ -1144,8 +1046,25 @@
         {
           "name": "Miles Mindlin",
           "instrument": "guitar"
+        },
+        {
+          "name": "Freddie Jensen",
+          "instrument": "double bass"
         }
       ],
+      "priceText": null
+    },
+    {
+      "id": "cafeoto:2026-07-31:folk-critique-cambridge-companion-to-folk-music-launch-event",
+      "clubId": "cafeoto",
+      "title": "Folk Critique + Cambridge Companion to Folk Music – launch event",
+      "date": "2026-07-31",
+      "sets": [
+        "19:30"
+      ],
+      "url": "https://www.cafeoto.co.uk/events/folk-critique/",
+      "details": null,
+      "personnel": null,
       "priceText": null
     },
     {
@@ -1157,7 +1076,7 @@
         "20:00"
       ],
       "url": "https://www.606club.co.uk/events/view/vince-dunn-the-medicine-band-1/",
-      "details": null,
+      "details": "A highly experienced live and session drummer with a stunning array of credits to his name, Vince Dunn has worked with some of the biggest names in pop, jazz and soul, including Pharrell Williams, Madonna, Cleo Laine, Courtney Pine and Liane Carroll! Also in demand as an educator running his own cli",
       "personnel": null,
       "priceText": null
     },
@@ -1171,7 +1090,20 @@
       ],
       "url": "https://www.pizzaexpresslive.com/whats-on/shakatak-1",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Bill Sharpe",
+          "instrument": "keys"
+        },
+        {
+          "name": "Roger Odell",
+          "instrument": "drums"
+        },
+        {
+          "name": "George Anderson",
+          "instrument": "bass"
+        }
+      ],
       "priceText": "£40"
     },
     {
@@ -1186,7 +1118,7 @@
       "details": null,
       "personnel": [
         {
-          "name": "Line-up: Jesse Doniach",
+          "name": "Jesse Doniach",
           "instrument": "piano"
         },
         {
@@ -1227,7 +1159,7 @@
       "details": null,
       "personnel": [
         {
-          "name": "Line-up: John Etheridge",
+          "name": "John Etheridge",
           "instrument": "guitar"
         },
         {
@@ -1255,7 +1187,20 @@
       ],
       "url": "https://www.pizzaexpresslive.com/whats-on/shakatak-1",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Bill Sharpe",
+          "instrument": "keys"
+        },
+        {
+          "name": "Roger Odell",
+          "instrument": "drums"
+        },
+        {
+          "name": "George Anderson",
+          "instrument": "bass"
+        }
+      ],
       "priceText": "£40"
     },
     {
@@ -1267,7 +1212,7 @@
         "21:00"
       ],
       "url": "https://www.606club.co.uk/events/view/alex-garnett-tribute-to-horace-silver/",
-      "details": null,
+      "details": "“Alex Garnett…one of Great Britain’s most accomplished post bop musicians” All About Jazz Alex Garnett ’s powerful, flowing, hard bop sax has been heard with leading musicians of world renown, including Wynton Marsalis, Kurt Elling, Van Morrison, Seth McFarlane and Charlie Watts (Rolling Stones), wh",
       "personnel": null,
       "priceText": null
     },
@@ -1303,7 +1248,24 @@
       ],
       "url": "https://www.pizzaexpresslive.com/whats-on/the-joe-mackley-quartet",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Joe Mackley",
+          "instrument": "sax"
+        },
+        {
+          "name": "Leon Greening",
+          "instrument": "piano"
+        },
+        {
+          "name": "Joe Lee",
+          "instrument": "bass"
+        },
+        {
+          "name": "Dave Ingamells",
+          "instrument": "drums"
+        }
+      ],
       "priceText": "£20"
     },
     {
@@ -1315,7 +1277,7 @@
         "13:30"
       ],
       "url": "https://www.606club.co.uk/events/view/closed-for-private-event-celebrating-dougie-winton/",
-      "details": null,
+      "details": "The 606 Club has extensive experience hosting & organizing a vast range of events, while offering both flexible & affordable pricing, making it an excellent value for this wholly unique location. Be it a PR launch, film or fashion shoot, birthday celebration, wedding, conference etc, this famous bas",
       "personnel": null,
       "priceText": null
     },
@@ -1354,7 +1316,7 @@
         "20:00"
       ],
       "url": "https://www.606club.co.uk/events/view/peter-churchill-4/",
-      "details": null,
+      "details": "““Churchill has a warm, rough-edged, lived-in voice which brings added resonance to the lyrics…”” All About Jazz Pete Churchill has been working as a composer, pianist, singer and educationalist for almost 30 years. Currently Professor of Jazz Composition at the Royal Academy of Music and Head of Ja",
       "personnel": null,
       "priceText": null
     },
@@ -1368,7 +1330,20 @@
       ],
       "url": "https://www.pizzaexpresslive.com/whats-on/louis-wildi-quartet",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Esben Tjalve",
+          "instrument": "piano"
+        },
+        {
+          "name": "Henrik Jensen",
+          "instrument": "double bass"
+        },
+        {
+          "name": "Kai MacRae",
+          "instrument": "drums"
+        }
+      ],
       "priceText": "£20"
     },
     {
@@ -1402,7 +1377,7 @@
         "20:00"
       ],
       "url": "https://www.606club.co.uk/events/view/tom-waters-band-plays-the-music-of-david-sanborn/",
-      "details": null,
+      "details": "More information to follow... \"Tom's The Tops\" Jools Holland; \"Pure Evil On The Horn\" Brian May; \"The King Of The Saxophone\" David Freeman/Jazz FM Artist Notification Get notified when Tom Waters plays at the club. First Name Last Name Email Address Submit",
       "personnel": null,
       "priceText": null
     },
@@ -1416,7 +1391,20 @@
       ],
       "url": "https://www.pizzaexpresslive.com/whats-on/dave-ohiggins-tom-smith",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Graham Harvey",
+          "instrument": "piano"
+        },
+        {
+          "name": "Luke Fowler",
+          "instrument": "bass"
+        },
+        {
+          "name": "Josh Morrison",
+          "instrument": "drums"
+        }
+      ],
       "priceText": "£25"
     },
     {
@@ -1431,8 +1419,12 @@
       "details": null,
       "personnel": [
         {
-          "name": "Line-up: Mike Chillingworth",
+          "name": "Mike Chillingworth",
           "instrument": "alto saxophone"
+        },
+        {
+          "name": "Tom Farmer",
+          "instrument": "double bass"
         },
         {
           "name": "Josh Morrison",
@@ -1450,7 +1442,7 @@
         "20:00"
       ],
       "url": "https://www.606club.co.uk/events/view/graham-harvey-trio-1/",
-      "details": null,
+      "details": "Familiar to us here at the Club for his performances with the highly-regarded Harvey/O’Higgins Project, Graham Harvey is a wonderful pianist with a spirited, confident style and graceful touch. After seven years of study in the US during the 1980’s, he’s since worked successfully in both the pop and",
       "personnel": null,
       "priceText": null
     },
@@ -1464,7 +1456,24 @@
       ],
       "url": "https://www.pizzaexpresslive.com/whats-on/tipitina",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Debbie Jones",
+          "instrument": "vocals, acoustic guitar"
+        },
+        {
+          "name": "Bob Wilson",
+          "instrument": "guitar"
+        },
+        {
+          "name": "Tom Hill",
+          "instrument": "bass"
+        },
+        {
+          "name": "Nick Milward",
+          "instrument": "drums"
+        }
+      ],
       "priceText": "£20"
     },
     {
@@ -1512,6 +1521,10 @@
       "details": null,
       "personnel": [
         {
+          "name": "Ursula Harrison",
+          "instrument": "double bass"
+        },
+        {
           "name": "Amund Totland",
           "instrument": "guitar"
         },
@@ -1534,7 +1547,7 @@
       "details": null,
       "personnel": [
         {
-          "name": "Line-up: Zhenya Strigalev",
+          "name": "Zhenya Strigalev",
           "instrument": "tenor saxophone"
         },
         {
@@ -1544,6 +1557,10 @@
         {
           "name": "Annie Majin",
           "instrument": "vocals"
+        },
+        {
+          "name": "Mirko Scarcia",
+          "instrument": "double bass"
         }
       ],
       "priceText": null
@@ -1558,7 +1575,36 @@
       ],
       "url": "https://www.pizzaexpresslive.com/whats-on/omar-puente-charanga-jazz-septet",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Omar Puente",
+          "instrument": "vocals, violin"
+        },
+        {
+          "name": "Oscar Martinez",
+          "instrument": "congas"
+        },
+        {
+          "name": "Dorance Lorza: baby",
+          "instrument": "bass, tres"
+        },
+        {
+          "name": "Fernando Depestre",
+          "instrument": "piano"
+        },
+        {
+          "name": "Eikel Hernandez",
+          "instrument": "trumpet"
+        },
+        {
+          "name": "Philip Kapadia",
+          "instrument": "timbales"
+        },
+        {
+          "name": "Alejandro Martinez",
+          "instrument": "percussion, vocals"
+        }
+      ],
       "priceText": "£30"
     },
     {
@@ -1573,7 +1619,7 @@
       "details": null,
       "personnel": [
         {
-          "name": "Line-up: Alasdair Pennington",
+          "name": "Alasdair Pennington",
           "instrument": "drums"
         },
         {
@@ -1583,8 +1629,25 @@
         {
           "name": "Elliot Wong",
           "instrument": "alto saxophone"
+        },
+        {
+          "name": "John Williamson",
+          "instrument": "double bass"
         }
       ],
+      "priceText": null
+    },
+    {
+      "id": "club606:2026-08-06:trish-clowes",
+      "clubId": "club606",
+      "title": "Trish Clowes",
+      "date": "2026-08-06",
+      "sets": [
+        "20:00"
+      ],
+      "url": "https://www.606club.co.uk/events/view/trish-clowes-9/",
+      "details": "“Everything Clowes does has an invigorating purposefulness” The Telegraph Described as “one of the most agile and original jugglers of improv and... composition”, Award-winning saxophonist/composer Trish Clowes has proven herself to be an exciting, world-class, musician of real creativity and skill.",
+      "personnel": null,
       "priceText": null
     },
     {
@@ -1634,7 +1697,7 @@
       "details": null,
       "personnel": [
         {
-          "name": "Line-up: Rebecka Edlund",
+          "name": "Rebecka Edlund",
           "instrument": "vocals"
         },
         {
@@ -1654,7 +1717,20 @@
       ],
       "url": "https://www.pizzaexpresslive.com/whats-on/rosie-fratertaylor",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Rosie Frater-Taylor",
+          "instrument": "guitar, vocals"
+        },
+        {
+          "name": "Dave Edwards",
+          "instrument": "bass"
+        },
+        {
+          "name": "Tom Potter",
+          "instrument": "drums"
+        }
+      ],
       "priceText": "£22"
     },
     {
@@ -1666,7 +1742,7 @@
         "21:00"
       ],
       "url": "https://www.606club.co.uk/events/view/errol-linton-13/",
-      "details": null,
+      "details": "“Errol isn’t so much upholding a tradition as creating his own” Echoes Magazine Born and raised in Brixton, singer and harmonica player Errol Linton got his first break when heard by a BBC producer while busking on the London Underground. That was thirty years ago and Errol has been steadily buildin",
       "personnel": null,
       "priceText": null
     },
@@ -1716,6 +1792,10 @@
         {
           "name": "Ben Glasser",
           "instrument": "electric guitar"
+        },
+        {
+          "name": "Mirko Scarcia",
+          "instrument": "double bass"
         }
       ],
       "priceText": null
@@ -1730,7 +1810,24 @@
       ],
       "url": "https://www.pizzaexpresslive.com/whats-on/john-coghlans-quo-reimagined",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "John Coghlan",
+          "instrument": "drums"
+        },
+        {
+          "name": "Paul Jeffries",
+          "instrument": "bass"
+        },
+        {
+          "name": "Ben Holder",
+          "instrument": "violin, vocals"
+        },
+        {
+          "name": "Alex Steele",
+          "instrument": "piano"
+        }
+      ],
       "priceText": "£35"
     },
     {
@@ -1873,6 +1970,10 @@
       "details": null,
       "personnel": [
         {
+          "name": "Woodwinds Liran Donin",
+          "instrument": "double bass"
+        },
+        {
           "name": "Francesca Ter-Berg",
           "instrument": "cello"
         },
@@ -1905,8 +2006,17 @@
         "19:45"
       ],
       "url": "https://www.vortexjazz.co.uk/event/earth-and-bones-residency-ft-emre-ramazanglu-third-night/",
-      "details": "Doors 7:45 PM, Music 8:30 PM - 2 sets of music Line-up: Idris Rahman - Woodwinds Liran Donin - Double bass Emre Ramazanglu - Drums About Idris Rahman and Liran Donin. Together they are creating a fully improvised compositions as they explore unique melodies, intimate sonic spaces, textures and medit",
-      "personnel": null,
+      "details": null,
+      "personnel": [
+        {
+          "name": "Woodwinds Liran Donin",
+          "instrument": "double bass"
+        },
+        {
+          "name": "Emre Ramazanglu",
+          "instrument": "drums"
+        }
+      ],
       "priceText": null
     },
     {
@@ -1945,7 +2055,7 @@
       "details": null,
       "personnel": [
         {
-          "name": "Line-up: Pat Thomas",
+          "name": "Pat Thomas",
           "instrument": "piano"
         },
         {
@@ -1984,7 +2094,7 @@
       "details": null,
       "personnel": [
         {
-          "name": "Line-up: Sam Glaser",
+          "name": "Sam Glaser",
           "instrument": "alto saxophone"
         },
         {
@@ -2002,6 +2112,10 @@
         {
           "name": "Will Barry",
           "instrument": "piano"
+        },
+        {
+          "name": "Will Sach",
+          "instrument": "double bass"
         }
       ],
       "priceText": null
@@ -2031,7 +2145,7 @@
       "details": null,
       "personnel": [
         {
-          "name": "Line-up: Donovan Haffner",
+          "name": "Donovan Haffner",
           "instrument": "alto saxophone"
         },
         {
@@ -2041,6 +2155,10 @@
         {
           "name": "Laurie Milton",
           "instrument": "piano"
+        },
+        {
+          "name": "Lorenzo Morabito",
+          "instrument": "double bass"
         }
       ],
       "priceText": null
@@ -2057,7 +2175,7 @@
       "details": null,
       "personnel": [
         {
-          "name": "Line-up: Annie Whitehead",
+          "name": "Annie Whitehead",
           "instrument": "trombone"
         },
         {
@@ -2150,14 +2268,31 @@
       "details": null,
       "personnel": [
         {
-          "name": "Line-up: Alexandra Ridout",
+          "name": "Alexandra Ridout",
           "instrument": "trumpet"
         },
         {
           "name": "Noah Stoneman",
           "instrument": "piano"
+        },
+        {
+          "name": "Freddie Jensen",
+          "instrument": "double bass"
         }
       ],
+      "priceText": null
+    },
+    {
+      "id": "club606:2026-08-17:around-about-dusk",
+      "clubId": "club606",
+      "title": "Around About Dusk",
+      "date": "2026-08-17",
+      "sets": [
+        "20:00"
+      ],
+      "url": "https://www.606club.co.uk/events/view/around-about-dusk/",
+      "details": null,
+      "personnel": null,
       "priceText": null
     },
     {
@@ -2185,7 +2320,7 @@
       "details": null,
       "personnel": [
         {
-          "name": "Line-up: Howard McGill",
+          "name": "Howard McGill",
           "instrument": "alto sax"
         },
         {
@@ -2256,6 +2391,19 @@
       "priceText": null
     },
     {
+      "id": "club606:2026-08-18:klara-devlin-quartet",
+      "clubId": "club606",
+      "title": "Klara Devlin Quartet",
+      "date": "2026-08-18",
+      "sets": [
+        "20:00"
+      ],
+      "url": "https://www.606club.co.uk/events/view/klara-devlin-quartet/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
       "id": "vortex:2026-08-19:cleveland-watkiss-orphy-robinson-neil-charles-b-a-s-s",
       "clubId": "vortex",
       "title": "Cleveland Watkiss, Orphy Robinson & Neil Charles: B.A.S.S",
@@ -2265,6 +2413,19 @@
       ],
       "url": "https://www.vortexjazz.co.uk/event/cleveland-watkiss-black-ancestral-sound-system/",
       "details": "Doors 7:45 PM, Music 8:30 PM - 2 sets of music Line-up: Cleveland Watkiss Orphy Robinson Neil Charles About: B.A.S.S. “Black Ancestral Sound System”. Is a 360 sonic exploration of Black ancestral sound systems through analogue, ritual, digital futurism, and diasporic voice. A continuous sonic cartog",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "club606:2026-08-19:ray-beadle",
+      "clubId": "club606",
+      "title": "Ray Beadle",
+      "date": "2026-08-19",
+      "sets": [
+        "20:00"
+      ],
+      "url": "https://www.606club.co.uk/events/view/ray-beadle-1/",
+      "details": null,
       "personnel": null,
       "priceText": null
     },
@@ -2280,8 +2441,12 @@
       "details": null,
       "personnel": [
         {
-          "name": "Line-up: Heidi Vogel",
+          "name": "Heidi Vogel",
           "instrument": "voice"
+        },
+        {
+          "name": "Tom Farmer",
+          "instrument": "double bass"
         },
         {
           "name": "Will Barry",
@@ -2303,8 +2468,17 @@
         "18:45"
       ],
       "url": "https://www.vortexjazz.co.uk/event/jeremy-viner-john-edwards-andrew-lisle/",
-      "details": "Doors 6:45 PM, Music 7:15 PM - 1 set of music Line-up: Jeremy Viner - Tenor saxophone John Edwards - Double bass Andrew Lisle - Drum kit About Improvised music from a trio of three leading voices of the US, UK, and European avant-garde. JEREMY VINER (b. 1986, Ellsworth, ME) is a Berlin-based multi-i",
-      "personnel": null,
+      "details": null,
+      "personnel": [
+        {
+          "name": "Jeremy Viner",
+          "instrument": "tenor saxophone"
+        },
+        {
+          "name": "John Edwards",
+          "instrument": "double bass"
+        }
+      ],
       "priceText": null
     },
     {
@@ -2319,7 +2493,7 @@
       "details": null,
       "personnel": [
         {
-          "name": "Line-up: Lauren Breen",
+          "name": "Lauren Breen",
           "instrument": "tenor and soprano sax"
         },
         {
@@ -2335,6 +2509,19 @@
           "instrument": "piano"
         }
       ],
+      "priceText": null
+    },
+    {
+      "id": "club606:2026-08-21:beverley-skeete",
+      "clubId": "club606",
+      "title": "Beverley Skeete",
+      "date": "2026-08-21",
+      "sets": [
+        "21:00"
+      ],
+      "url": "https://www.606club.co.uk/events/view/beverley-skeete-31/",
+      "details": null,
+      "personnel": null,
       "priceText": null
     },
     {
@@ -2360,7 +2547,7 @@
       "details": null,
       "personnel": [
         {
-          "name": "Line-up: Rory Ingham",
+          "name": "Rory Ingham",
           "instrument": "trombone"
         },
         {
@@ -2380,6 +2567,32 @@
           "instrument": "drums"
         }
       ],
+      "priceText": null
+    },
+    {
+      "id": "club606:2026-08-22:derek-nash-s-sax-appeal-quartet",
+      "clubId": "club606",
+      "title": "Derek Nash's Sax Appeal Quartet",
+      "date": "2026-08-22",
+      "sets": [
+        "21:00"
+      ],
+      "url": "https://www.606club.co.uk/events/view/derek-nashs-sax-appeal-quartet-16/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "club606:2026-08-23:helena-debono-charlie-bates",
+      "clubId": "club606",
+      "title": "Helena Debono & Charlie Bates",
+      "date": "2026-08-23",
+      "sets": [
+        "13:30"
+      ],
+      "url": "https://www.606club.co.uk/events/view/helena-debono-charlie-bates-2/",
+      "details": null,
+      "personnel": null,
       "priceText": null
     },
     {
@@ -2420,7 +2633,7 @@
       "details": null,
       "personnel": [
         {
-          "name": "Line-up: Finn Carter",
+          "name": "Finn Carter",
           "instrument": "piano & keyboards"
         },
         {
@@ -2444,7 +2657,20 @@
       ],
       "url": "https://www.pizzaexpresslive.com/whats-on/the-jazz-africa-experience",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Stuart Fiddler",
+          "instrument": "electric guitar"
+        },
+        {
+          "name": "Andrew John",
+          "instrument": "bass guitar"
+        },
+        {
+          "name": "Winston Clifford",
+          "instrument": "drums"
+        }
+      ],
       "priceText": "£25"
     },
     {
@@ -2459,7 +2685,7 @@
       "details": null,
       "personnel": [
         {
-          "name": "Line-up: Hector McLachlan",
+          "name": "Hector McLachlan",
           "instrument": "piano"
         },
         {
@@ -2469,6 +2695,10 @@
         {
           "name": "Jamie Pye",
           "instrument": "electric guitar"
+        },
+        {
+          "name": "Harrison Scholes",
+          "instrument": "double bass"
         }
       ],
       "priceText": null
@@ -2482,8 +2712,17 @@
         "19:45"
       ],
       "url": "https://www.vortexjazz.co.uk/event/sorin-zlat-trio-changing-times/",
-      "details": "Doors 7:45 PM, Music 8:30 PM - 2 sets of music Line-up: Sorin Zlat - Piano Mikele Montolli - Double bass Andy Trim - Drum kit About Award-winning Romanian pianist and composer Sorin Zlat returns to London with his acclaimed Sorin Zlat Trio, presenting music from his latest project Changing Times. Kn",
-      "personnel": null,
+      "details": null,
+      "personnel": [
+        {
+          "name": "Sorin Zlat",
+          "instrument": "piano"
+        },
+        {
+          "name": "Mikele Montolli",
+          "instrument": "double bass"
+        }
+      ],
       "priceText": null
     },
     {
@@ -2496,7 +2735,24 @@
       ],
       "url": "https://www.pizzaexpresslive.com/whats-on/scott-hamilton-quartet-2",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Scott Hamilton",
+          "instrument": "saxophone"
+        },
+        {
+          "name": "John Pearce",
+          "instrument": "piano"
+        },
+        {
+          "name": "Dave Green",
+          "instrument": "bass"
+        },
+        {
+          "name": "Steve Brown",
+          "instrument": "drums"
+        }
+      ],
       "priceText": "£38"
     },
     {
@@ -2516,13 +2772,13 @@
       "title": "Hugh Pascall Quintet",
       "date": "2026-08-27",
       "sets": [
-        "19:45"
+        "19:30"
       ],
       "url": "https://www.vortexjazz.co.uk/event/hugh-pascall-quintet/",
       "details": null,
       "personnel": [
         {
-          "name": "Line-up: Hugh Pascall",
+          "name": "Hugh Pascall",
           "instrument": "trumpet"
         },
         {
@@ -2532,6 +2788,10 @@
         {
           "name": "Liam Dunachie",
           "instrument": "piano"
+        },
+        {
+          "name": "Oli Hayhurst",
+          "instrument": "double bass"
         }
       ],
       "priceText": null
@@ -2546,8 +2806,47 @@
       ],
       "url": "https://www.pizzaexpresslive.com/whats-on/scott-hamilton-quartet-2",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Scott Hamilton",
+          "instrument": "saxophone"
+        },
+        {
+          "name": "John Pearce",
+          "instrument": "piano"
+        },
+        {
+          "name": "Dave Green",
+          "instrument": "bass"
+        },
+        {
+          "name": "Steve Brown",
+          "instrument": "drums"
+        }
+      ],
       "priceText": "£38"
+    },
+    {
+      "id": "vortex:2026-08-28:eddie-pr-vost-binker-golding-olie-brice-trio",
+      "clubId": "vortex",
+      "title": "Eddie Prévost, Binker Golding, Olie Brice – trio",
+      "date": "2026-08-28",
+      "sets": [
+        "19:45"
+      ],
+      "url": "https://www.vortexjazz.co.uk/event/eddie-prevost-binker-golding-olie-brice-trio-2/",
+      "details": null,
+      "personnel": [
+        {
+          "name": "Binker Golding",
+          "instrument": "tenor saxophone"
+        },
+        {
+          "name": "Olie Brice",
+          "instrument": "double bass"
+        }
+      ],
+      "priceText": null
     },
     {
       "id": "pizzaexpress:2026-08-28:scott-hamilton-quartet",
@@ -2559,7 +2858,24 @@
       ],
       "url": "https://www.pizzaexpresslive.com/whats-on/scott-hamilton-quartet-2",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Scott Hamilton",
+          "instrument": "saxophone"
+        },
+        {
+          "name": "John Pearce",
+          "instrument": "piano"
+        },
+        {
+          "name": "Dave Green",
+          "instrument": "bass"
+        },
+        {
+          "name": "Steve Brown",
+          "instrument": "drums"
+        }
+      ],
       "priceText": "£38"
     },
     {
@@ -2574,6 +2890,32 @@
       "priceText": null
     },
     {
+      "id": "vortex:2026-08-29:alexandra-ridout-fabrice-tarel-quartet-symbiosis",
+      "clubId": "vortex",
+      "title": "Alexandra Ridout & Fabrice Tarel Quartet: Symbiosis",
+      "date": "2026-08-29",
+      "sets": [
+        "19:45"
+      ],
+      "url": "https://www.vortexjazz.co.uk/event/alexandra-ridout-fabrice-tarel-quartet-symbiosis/",
+      "details": null,
+      "personnel": [
+        {
+          "name": "Fabrice Tarel",
+          "instrument": "piano"
+        },
+        {
+          "name": "Alex Ridout",
+          "instrument": "trumpet"
+        },
+        {
+          "name": "Ewan Hastie",
+          "instrument": "double bass"
+        }
+      ],
+      "priceText": null
+    },
+    {
       "id": "pizzaexpress:2026-08-29:scott-hamilton-quartet",
       "clubId": "pizzaexpress",
       "title": "Scott Hamilton Quartet",
@@ -2583,8 +2925,38 @@
       ],
       "url": "https://www.pizzaexpresslive.com/whats-on/scott-hamilton-quartet-2",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Scott Hamilton",
+          "instrument": "saxophone"
+        },
+        {
+          "name": "John Pearce",
+          "instrument": "piano"
+        },
+        {
+          "name": "Dave Green",
+          "instrument": "bass"
+        },
+        {
+          "name": "Steve Brown",
+          "instrument": "drums"
+        }
+      ],
       "priceText": "£38"
+    },
+    {
+      "id": "vortex:2026-08-30:vortex-jam-session",
+      "clubId": "vortex",
+      "title": "Vortex Jam Session",
+      "date": "2026-08-30",
+      "sets": [
+        "19:45"
+      ],
+      "url": "https://www.vortexjazz.co.uk/event/vortex-jam-session-10-2026-08-30/",
+      "details": "Doors 7:45 PM, Music 8:15 PM House Band TBC About A weekly session on Sunday evenings, hosted by four of London’s finest: guitarist Nick Costley-White, Trumpeter Sean Gibbs, pianist Rick Simpson and tenor saxophonists and Riley Stone-Lonergan, each one hosting one session on rotation. If you’re an i",
+      "personnel": null,
+      "priceText": null
     },
     {
       "id": "pizzaexpress:2026-08-30:scott-hamilton-quartet",
@@ -2596,7 +2968,24 @@
       ],
       "url": "https://www.pizzaexpresslive.com/whats-on/scott-hamilton-quartet-2",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Scott Hamilton",
+          "instrument": "saxophone"
+        },
+        {
+          "name": "John Pearce",
+          "instrument": "piano"
+        },
+        {
+          "name": "Dave Green",
+          "instrument": "bass"
+        },
+        {
+          "name": "Steve Brown",
+          "instrument": "drums"
+        }
+      ],
       "priceText": "£38"
     },
     {
@@ -2609,7 +2998,24 @@
       ],
       "url": "https://www.pizzaexpresslive.com/whats-on/scott-hamilton-quartet-2",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Scott Hamilton",
+          "instrument": "saxophone"
+        },
+        {
+          "name": "John Pearce",
+          "instrument": "piano"
+        },
+        {
+          "name": "Dave Green",
+          "instrument": "bass"
+        },
+        {
+          "name": "Steve Brown",
+          "instrument": "drums"
+        }
+      ],
       "priceText": "£38"
     },
     {
@@ -2633,7 +3039,24 @@
       ],
       "url": "https://www.pizzaexpresslive.com/whats-on/scott-hamilton-quartet-2",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Scott Hamilton",
+          "instrument": "saxophone"
+        },
+        {
+          "name": "John Pearce",
+          "instrument": "piano"
+        },
+        {
+          "name": "Dave Green",
+          "instrument": "bass"
+        },
+        {
+          "name": "Steve Brown",
+          "instrument": "drums"
+        }
+      ],
       "priceText": "£38"
     },
     {
@@ -2646,7 +3069,28 @@
       ],
       "url": "https://www.pizzaexpresslive.com/whats-on/eleventh-hour-jazz-orchestra",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "ick Willsher, Flo Redmonds; Noah Chiari",
+          "instrument": "saxophones"
+        },
+        {
+          "name": "Dom Howard",
+          "instrument": "guitar"
+        },
+        {
+          "name": "Lorenzo Bellini",
+          "instrument": "piano"
+        },
+        {
+          "name": "Chris Diamand",
+          "instrument": "bass"
+        },
+        {
+          "name": "Luke McCarthy",
+          "instrument": "drums"
+        }
+      ],
       "priceText": "£22"
     },
     {
@@ -2681,7 +3125,24 @@
       ],
       "url": "https://www.pizzaexpresslive.com/whats-on/steve-nelson-quartet",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Steve Nelson",
+          "instrument": "vibraphone"
+        },
+        {
+          "name": "Barry Green",
+          "instrument": "piano"
+        },
+        {
+          "name": "Joris Teepe",
+          "instrument": "bass"
+        },
+        {
+          "name": "Darren Beckett",
+          "instrument": "drums"
+        }
+      ],
       "priceText": "£25"
     },
     {
@@ -2718,7 +3179,40 @@
       ],
       "url": "https://www.pizzaexpresslive.com/whats-on/ilario-ferrari-trio-friends",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Eric Young",
+          "instrument": "drums"
+        },
+        {
+          "name": "Will Davis",
+          "instrument": "bass"
+        },
+        {
+          "name": "Charlie Pyne",
+          "instrument": "double bass"
+        },
+        {
+          "name": "Omar Puente",
+          "instrument": "violin"
+        },
+        {
+          "name": "Enrico Olivanti",
+          "instrument": "guitar"
+        },
+        {
+          "name": "Abbie Davis",
+          "instrument": "violin"
+        },
+        {
+          "name": "Jules Dos-Reis",
+          "instrument": "viola"
+        },
+        {
+          "name": "Miranda Lewis-Brown",
+          "instrument": "cello"
+        }
+      ],
       "priceText": "£30"
     },
     {
@@ -2731,7 +3225,32 @@
       ],
       "url": "https://www.pizzaexpresslive.com/whats-on/the-music-of-carole-king-and-james-taylor",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Elly Grice, Freddie Benedict",
+          "instrument": "vocals"
+        },
+        {
+          "name": "ri Freestone, Paddy Davies, Mick Foster",
+          "instrument": "saxophones"
+        },
+        {
+          "name": "Will Inscoe",
+          "instrument": "piano"
+        },
+        {
+          "name": "Joe Garland-Johnston",
+          "instrument": "guitar"
+        },
+        {
+          "name": "Murray Dare",
+          "instrument": "bass"
+        },
+        {
+          "name": "TBC",
+          "instrument": "drums"
+        }
+      ],
       "priceText": "£45"
     },
     {
@@ -3172,6 +3691,32 @@
       "priceText": "£35"
     },
     {
+      "id": "pizzaexpress:2026-10-01:down-to-the-bone",
+      "clubId": "pizzaexpress",
+      "title": "Down To The Bone",
+      "date": "2026-10-01",
+      "sets": [
+        "20:00"
+      ],
+      "url": "https://www.pizzaexpresslive.com/whats-on/down-to-the-bone",
+      "details": null,
+      "personnel": null,
+      "priceText": "£40"
+    },
+    {
+      "id": "pizzaexpress:2026-10-02:the-cadillac-kings",
+      "clubId": "pizzaexpress",
+      "title": "The Cadillac Kings",
+      "date": "2026-10-02",
+      "sets": [
+        "20:00"
+      ],
+      "url": "https://www.pizzaexpresslive.com/whats-on/the-cadillac-kings",
+      "details": null,
+      "personnel": null,
+      "priceText": "£30"
+    },
+    {
       "id": "jazzcafe:2026-10-02:geejay",
       "clubId": "jazzcafe",
       "title": "GeeJay",
@@ -3181,6 +3726,19 @@
       "details": "One of the UK's fastest-rising soul duos",
       "personnel": null,
       "priceText": null
+    },
+    {
+      "id": "pizzaexpress:2026-10-03:s-ren-bebe-trio-gratitude",
+      "clubId": "pizzaexpress",
+      "title": "Søren Bebe Trio 'Gratitude'",
+      "date": "2026-10-03",
+      "sets": [
+        "13:00"
+      ],
+      "url": "https://www.pizzaexpresslive.com/whats-on/sren-bebe-trio-gratitude",
+      "details": null,
+      "personnel": null,
+      "priceText": "£25"
     },
     {
       "id": "jazzcafe:2026-10-04:djavan",

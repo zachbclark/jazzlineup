@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-18T21:28:51.537Z",
+  "generatedAt": "2026-07-20T22:51:38.155Z",
   "city": "bos",
   "clubs": [
     {
@@ -60,7 +60,7 @@
       "borough": null,
       "timezone": "America/New_York",
       "neighborhood": "Central Square",
-      "color": "#f0a02e"
+      "color": "#9d6bd8"
     },
     {
       "id": "beehive",
@@ -416,20 +416,6 @@
       "priceText": null
     },
     {
-      "id": "madmonkfish:2026-07-16:midnight-at-the-mad-monkfish-w-mikayla-shirley",
-      "clubId": "madmonkfish",
-      "title": "Midnight at the Mad Monkfish w/Mikayla Shirley",
-      "date": "2026-07-16",
-      "sets": [
-        "00:00"
-      ],
-      "url": "https://www.themadmonkfish.com/event/717-midnight-at-the-mad-monkfish-wmikayla-shirley-12-1am/",
-      "details": null,
-      "personnel": null,
-      "late": true,
-      "priceText": null
-    },
-    {
       "id": "lilypad:2026-07-17:free-lunchtime-concerts-r-g-gallagher",
       "clubId": "lilypad",
       "title": "Free Lunchtime Concerts ~ R. G. Gallagher",
@@ -452,33 +438,6 @@
       ],
       "url": "https://www.lilypadinman.com/home/variety-hn35w-m6fm2-n5hrz-s992t-7hth4-l685n",
       "details": null,
-      "personnel": null,
-      "priceText": null
-    },
-    {
-      "id": "madmonkfish:2026-07-17:the-midnight-hour-w-camila-quintero",
-      "clubId": "madmonkfish",
-      "title": "The Midnight Hour w/Camila Quintero",
-      "date": "2026-07-17",
-      "sets": [
-        "00:00"
-      ],
-      "url": "https://www.themadmonkfish.com/event/718-the-midnight-hour-wcamila-quintero-12-1am/",
-      "details": null,
-      "personnel": null,
-      "late": true,
-      "priceText": null
-    },
-    {
-      "id": "beehive:2026-07-18:live-music-weekend-brunch",
-      "clubId": "beehive",
-      "title": "Live Music Weekend Brunch",
-      "date": "2026-07-18",
-      "sets": [
-        "10:00"
-      ],
-      "url": "https://www.beehiveboston.com/calendar",
-      "details": "Live jazz with brunch, 10am to 2pm.",
       "personnel": null,
       "priceText": null
     },
@@ -509,87 +468,6 @@
       "priceText": null
     },
     {
-      "id": "wallys:2026-07-18:wally-s-jam-session",
-      "clubId": "wallys",
-      "title": "Wally's Jam Session",
-      "date": "2026-07-18",
-      "sets": [
-        "19:00"
-      ],
-      "url": "https://wallyscafe.com",
-      "details": "Berklee kids trade choruses with big band veterans. Bring your horn, sign the list. Tue thru Sat, 7 to 9.",
-      "personnel": null,
-      "priceText": null
-    },
-    {
-      "id": "madmonkfish:2026-07-18:jeff-stout-quartet",
-      "clubId": "madmonkfish",
-      "title": "Jeff Stout Quartet",
-      "date": "2026-07-18",
-      "sets": [
-        "19:00",
-        "20:45"
-      ],
-      "url": "https://www.themadmonkfish.com/event/718-jeff-stout-quartet/",
-      "details": null,
-      "personnel": [
-        {
-          "name": "Jeff Stout",
-          "instrument": "trumpet"
-        },
-        {
-          "name": "Tim Ray",
-          "instrument": "piano"
-        },
-        {
-          "name": "John Lockwood",
-          "instrument": "acoustic bass"
-        },
-        {
-          "name": "Gary Johnson",
-          "instrument": "drums"
-        }
-      ],
-      "priceText": null
-    },
-    {
-      "id": "wallys:2026-07-18:night-set-at-wally-s",
-      "clubId": "wallys",
-      "title": "Night Set at Wally's",
-      "date": "2026-07-18",
-      "sets": [
-        "21:00"
-      ],
-      "url": "https://wallyscafe.com",
-      "details": "The pros take over, three feet from the bell of the horn, till midnight. Nightly since 1947.",
-      "personnel": null,
-      "priceText": null
-    },
-    {
-      "id": "madmonkfish:2026-07-18:late-night-w-matt-stavrakas-jam-session",
-      "clubId": "madmonkfish",
-      "title": "Late Night w/Matt Stavrakas Jam Session",
-      "date": "2026-07-18",
-      "sets": [],
-      "url": "https://www.themadmonkfish.com/event/718-late-night-wmatt-stavrakas-jam-session/",
-      "details": null,
-      "personnel": null,
-      "priceText": null
-    },
-    {
-      "id": "beehive:2026-07-19:live-music-weekend-brunch",
-      "clubId": "beehive",
-      "title": "Live Music Weekend Brunch",
-      "date": "2026-07-19",
-      "sets": [
-        "10:00"
-      ],
-      "url": "https://www.beehiveboston.com/calendar",
-      "details": "Live jazz with brunch, 10am to 2pm.",
-      "personnel": null,
-      "priceText": null
-    },
-    {
       "id": "lilypad:2026-07-19:allan-chase-s-jazz-impressions-of-brazil",
       "clubId": "lilypad",
       "title": "Allan Chase’s Jazz Impressions of Brazil",
@@ -599,32 +477,6 @@
       ],
       "url": "https://www.lilypadinman.com/home/live-music-hatha-yoga",
       "details": null,
-      "personnel": null,
-      "priceText": null
-    },
-    {
-      "id": "madmonkfish:2026-07-19:jazz-vocal-jam-session-feat-teddy-horangic-3pm",
-      "clubId": "madmonkfish",
-      "title": "Jazz Vocal Jam Session feat. Teddy Horangic (3pm-",
-      "date": "2026-07-19",
-      "sets": [
-        "18:00"
-      ],
-      "url": "https://www.themadmonkfish.com/event/719-jazz-vocal-jam-session-feat-teddy-horangic-3pm-6pm/",
-      "details": null,
-      "personnel": null,
-      "priceText": null
-    },
-    {
-      "id": "beehive:2026-07-19:blues-of-sunday-bruce-bears-friends",
-      "clubId": "beehive",
-      "title": "Blues of Sunday: Bruce Bears & Friends",
-      "date": "2026-07-19",
-      "sets": [
-        "19:30"
-      ],
-      "url": "https://www.beehiveboston.com/calendar",
-      "details": "The standing Sunday residency on the Beehive stage.",
       "personnel": null,
       "priceText": null
     },
@@ -639,39 +491,6 @@
       "url": "https://www.lilypadinman.com/home/2026-joe-hunt-xw3dr-j33lh-3mtrl",
       "details": null,
       "personnel": null,
-      "priceText": null
-    },
-    {
-      "id": "wallys:2026-07-19:night-set-at-wally-s",
-      "clubId": "wallys",
-      "title": "Night Set at Wally's",
-      "date": "2026-07-19",
-      "sets": [
-        "21:00"
-      ],
-      "url": "https://wallyscafe.com",
-      "details": "The pros take over, three feet from the bell of the horn, till midnight. Nightly since 1947.",
-      "personnel": null,
-      "priceText": null
-    },
-    {
-      "id": "madmonkfish:2026-07-19:mike-turk-trio",
-      "clubId": "madmonkfish",
-      "title": "Mike Turk Trio",
-      "date": "2026-07-19",
-      "sets": [],
-      "url": "https://www.themadmonkfish.com/event/719-mike-turk-trio/",
-      "details": null,
-      "personnel": [
-        {
-          "name": "Ben Cook",
-          "instrument": "piano"
-        },
-        {
-          "name": "Bruce Gertz",
-          "instrument": "acoustic bass"
-        }
-      ],
       "priceText": null
     },
     {
@@ -3692,6 +3511,32 @@
       "priceText": null
     },
     {
+      "id": "beehive:2026-09-12:live-music-weekend-brunch",
+      "clubId": "beehive",
+      "title": "Live Music Weekend Brunch",
+      "date": "2026-09-12",
+      "sets": [
+        "10:00"
+      ],
+      "url": "https://www.beehiveboston.com/calendar",
+      "details": "Live jazz with brunch, 10am to 2pm.",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "wallys:2026-09-12:wally-s-jam-session",
+      "clubId": "wallys",
+      "title": "Wally's Jam Session",
+      "date": "2026-09-12",
+      "sets": [
+        "19:00"
+      ],
+      "url": "https://wallyscafe.com",
+      "details": "Berklee kids trade choruses with big band veterans. Bring your horn, sign the list. Tue thru Sat, 7 to 9.",
+      "personnel": null,
+      "priceText": null
+    },
+    {
       "id": "regattabar:2026-09-12:cyrille-aimee",
       "clubId": "regattabar",
       "title": "Cyrille Aimee",
@@ -3705,6 +3550,19 @@
       "priceText": null
     },
     {
+      "id": "wallys:2026-09-12:night-set-at-wally-s",
+      "clubId": "wallys",
+      "title": "Night Set at Wally's",
+      "date": "2026-09-12",
+      "sets": [
+        "21:00"
+      ],
+      "url": "https://wallyscafe.com",
+      "details": "The pros take over, three feet from the bell of the horn, till midnight. Nightly since 1947.",
+      "personnel": null,
+      "priceText": null
+    },
+    {
       "id": "scullers:2026-09-12:arturo-sandoval",
       "clubId": "scullers",
       "title": "Arturo Sandoval",
@@ -3712,6 +3570,45 @@
       "sets": [],
       "url": "https://scullersjazz.com/calendar/",
       "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "beehive:2026-09-13:live-music-weekend-brunch",
+      "clubId": "beehive",
+      "title": "Live Music Weekend Brunch",
+      "date": "2026-09-13",
+      "sets": [
+        "10:00"
+      ],
+      "url": "https://www.beehiveboston.com/calendar",
+      "details": "Live jazz with brunch, 10am to 2pm.",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "beehive:2026-09-13:blues-of-sunday-bruce-bears-friends",
+      "clubId": "beehive",
+      "title": "Blues of Sunday: Bruce Bears & Friends",
+      "date": "2026-09-13",
+      "sets": [
+        "19:30"
+      ],
+      "url": "https://www.beehiveboston.com/calendar",
+      "details": "The standing Sunday residency on the Beehive stage.",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "wallys:2026-09-13:night-set-at-wally-s",
+      "clubId": "wallys",
+      "title": "Night Set at Wally's",
+      "date": "2026-09-13",
+      "sets": [
+        "21:00"
+      ],
+      "url": "https://wallyscafe.com",
+      "details": "The pros take over, three feet from the bell of the horn, till midnight. Nightly since 1947.",
       "personnel": null,
       "priceText": null
     },

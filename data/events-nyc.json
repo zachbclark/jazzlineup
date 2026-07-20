@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-18T21:27:34.957Z",
+  "generatedAt": "2026-07-20T22:50:11.282Z",
   "city": "nyc",
   "clubs": [
     {
@@ -279,6 +279,19 @@
       "color": "#9b7bff"
     },
     {
+      "id": "ny92",
+      "name": "92NY",
+      "shortName": "92NY",
+      "url": "https://www.92ny.org/culture-arts/concerts",
+      "address": "1395 Lexington Ave, New York, NY 10128",
+      "city": "nyc",
+      "borough": "manhattan",
+      "timezone": "America/New_York",
+      "neighborhood": "Upper East Side",
+      "color": "#17a2a8",
+      "emptyOk": true
+    },
+    {
       "id": "jcal",
       "name": "JCAL (Jamaica Center)",
       "shortName": "JCAL",
@@ -351,7 +364,9 @@
       "color": "#e8a0b8"
     }
   ],
-  "errors": [],
+  "errors": [
+    "./clubs/sistasplace.js: returned 0 events (markup change? keeping previous data)"
+  ],
   "events": [
     {
       "id": "pocket:2026-06-28:pride-at-the-pocket-vuyo-sotashe",
@@ -1413,41 +1428,6 @@
       "priceText": null
     },
     {
-      "id": "vanguard:2026-07-14:ben-wendel",
-      "clubId": "vanguard",
-      "title": "Ben Wendel",
-      "date": "2026-07-14",
-      "sets": [
-        "20:00",
-        "22:00"
-      ],
-      "url": "https://vv.squadup.com/artists/ben-wendel",
-      "details": null,
-      "personnel": [
-        {
-          "name": "Ben Wendel",
-          "instrument": "saxophone"
-        },
-        {
-          "name": "Gilad Hekselman",
-          "instrument": "guitar"
-        },
-        {
-          "name": "Taylor Eigsti",
-          "instrument": "piano"
-        },
-        {
-          "name": "John Patitucci",
-          "instrument": "bass"
-        },
-        {
-          "name": "Nate Wood",
-          "instrument": "drums"
-        }
-      ],
-      "priceText": null
-    },
-    {
       "id": "bluenote:2026-07-14:omar-sosa-quarteto-americanos",
       "clubId": "bluenote",
       "title": "Omar Sosa Quarteto Americanos",
@@ -1470,8 +1450,21 @@
         "20:00"
       ],
       "url": "https://www.barbayeux.com/jazz/8ajbd79jlwwxa4k-psxk9-78yrh-83y2x-kftwg-bdzzm-meta7-fc5pm-hb7xe-nggby-zsppy-ylx62-y65ax-yeds4-asa4a-dhzaf-wd2m4",
-      "details": "Miki Yamanaka, Matt Dwonszyk,Diego Voglino",
-      "personnel": null,
+      "details": null,
+      "personnel": [
+        {
+          "name": "Miki Yamanaka",
+          "instrument": ""
+        },
+        {
+          "name": "Matt Dwonszyk",
+          "instrument": ""
+        },
+        {
+          "name": "Diego Voglino",
+          "instrument": ""
+        }
+      ],
       "priceText": null
     },
     {
@@ -1499,41 +1492,6 @@
       "url": "https://thepocketnyc.com/event/veronica-swift-home-album-release/",
       "details": null,
       "personnel": null,
-      "priceText": null
-    },
-    {
-      "id": "vanguard:2026-07-15:ben-wendel",
-      "clubId": "vanguard",
-      "title": "Ben Wendel",
-      "date": "2026-07-15",
-      "sets": [
-        "20:00",
-        "22:00"
-      ],
-      "url": "https://vv.squadup.com/artists/ben-wendel",
-      "details": null,
-      "personnel": [
-        {
-          "name": "Ben Wendel",
-          "instrument": "saxophone"
-        },
-        {
-          "name": "Gilad Hekselman",
-          "instrument": "guitar"
-        },
-        {
-          "name": "Taylor Eigsti",
-          "instrument": "piano"
-        },
-        {
-          "name": "John Patitucci",
-          "instrument": "bass"
-        },
-        {
-          "name": "Nate Wood",
-          "instrument": "drums"
-        }
-      ],
       "priceText": null
     },
     {
@@ -1565,16 +1523,21 @@
       "priceText": null
     },
     {
-      "id": "barbayeux:2026-07-16:thurs-happy-hour-w-steven-crammer",
+      "id": "barbayeux:2026-07-16:thurs-happy-hour",
       "clubId": "barbayeux",
-      "title": "Thurs Happy Hour w/Steven Crammer",
+      "title": "Thurs Happy Hour",
       "date": "2026-07-16",
       "sets": [
         "17:30"
       ],
       "url": "https://www.barbayeux.com/jazz/3ywyskxsnfbsjjg-424y5-2jzed-tg49n-n554j-fkf8m-5eey5-jdwa6",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Steven Crammer",
+          "instrument": ""
+        }
+      ],
       "priceText": null
     },
     {
@@ -1636,41 +1599,6 @@
       "priceText": null
     },
     {
-      "id": "vanguard:2026-07-16:ben-wendel",
-      "clubId": "vanguard",
-      "title": "Ben Wendel",
-      "date": "2026-07-16",
-      "sets": [
-        "20:00",
-        "22:00"
-      ],
-      "url": "https://vv.squadup.com/artists/ben-wendel",
-      "details": null,
-      "personnel": [
-        {
-          "name": "Ben Wendel",
-          "instrument": "saxophone"
-        },
-        {
-          "name": "Gilad Hekselman",
-          "instrument": "guitar"
-        },
-        {
-          "name": "Taylor Eigsti",
-          "instrument": "piano"
-        },
-        {
-          "name": "John Patitucci",
-          "instrument": "bass"
-        },
-        {
-          "name": "Nate Wood",
-          "instrument": "drums"
-        }
-      ],
-      "priceText": null
-    },
-    {
       "id": "bluenote:2026-07-16:ms-lisa-fischer-ft-orrin-evans-trio-with-james-genus-and-mar",
       "clubId": "bluenote",
       "title": "Ms. Lisa Fischer ft. Orrin Evans Trio with James Genus and Mark Whitfield, Jr.",
@@ -1685,9 +1613,9 @@
       "priceText": null
     },
     {
-      "id": "barbayeux:2026-07-16:steve-cardenas-w-adam-kolker-jeremy-stratton-george-schuller",
+      "id": "barbayeux:2026-07-16:steve-cardenas",
       "clubId": "barbayeux",
-      "title": "Steve Cardenas w/Adam Kolker, Jeremy Stratton, George Schuller",
+      "title": "Steve Cardenas",
       "date": "2026-07-16",
       "sets": [
         "20:00",
@@ -1695,7 +1623,20 @@
       ],
       "url": "https://www.barbayeux.com/jazz/z63pt232xlmbzmm-lf3tb-5yewh-m6x68-p26t7-nldmr-r7jah-cs8kl-fsgfe-4k7be-mrn73-tlf9t-4ncdr-rheb4-y9mwa-hlsr5-5p4hn-9mn2k-tg8s9-5ampf-mb7ch-3pbw6-a4wfm-z2jjd-em2ra-nal2n-j4ppt-jse6l-ebhae-9xkne",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Adam Kolker",
+          "instrument": ""
+        },
+        {
+          "name": "Jeremy Stratton",
+          "instrument": ""
+        },
+        {
+          "name": "George Schuller",
+          "instrument": ""
+        }
+      ],
       "priceText": null
     },
     {
@@ -1744,121 +1685,19 @@
       "priceText": null
     },
     {
-      "id": "birdland:2026-07-17:birdland-big-band",
-      "clubId": "birdland",
-      "title": "Birdland Big Band",
-      "date": "2026-07-17",
-      "sets": [
-        "17:30"
-      ],
-      "url": "https://www.birdlandjazz.com/tm-event/birdland-big-band-16/",
-      "details": "Birdland Jazz Club — Doors @ 4:30PM",
-      "personnel": null,
-      "priceText": null
-    },
-    {
-      "id": "barbayeux:2026-07-17:fri-happy-hour-w-angus-mason",
+      "id": "barbayeux:2026-07-17:fri-happy-hour",
       "clubId": "barbayeux",
-      "title": "Fri Happy Hour w/Angus Mason",
+      "title": "Fri Happy Hour",
       "date": "2026-07-17",
       "sets": [
         "17:30"
       ],
       "url": "https://www.barbayeux.com/jazz/2ll2kabgl8lbdpc-9ywdc-txjfp-nwfb5-s885d",
       "details": null,
-      "personnel": null,
-      "priceText": null
-    },
-    {
-      "id": "smoke:2026-07-17:jane-monheit-sings-the-cole-porter-songbook",
-      "clubId": "smoke",
-      "title": "Jane Monheit Sings the Cole Porter Songbook",
-      "date": "2026-07-17",
-      "sets": [
-        "18:30",
-        "20:30",
-        "22:00"
-      ],
-      "url": "https://tickets.smokejazz.com/shows/11747/?date=2026-07-17",
-      "details": null,
       "personnel": [
         {
-          "name": "Jane Monheit",
-          "instrument": "vocals"
-        },
-        {
-          "name": "Max Haymer",
-          "instrument": "piano"
-        },
-        {
-          "name": "Neal Miner",
-          "instrument": "bass"
-        },
-        {
-          "name": "Rick Montalbano",
-          "instrument": "drums"
-        }
-      ],
-      "priceText": "$25-65"
-    },
-    {
-      "id": "jazzgallery:2026-07-17:tyler-bullock-trio",
-      "clubId": "jazzgallery",
-      "title": "Tyler Bullock Trio",
-      "date": "2026-07-17",
-      "sets": [
-        "19:00",
-        "21:00"
-      ],
-      "url": "https://jazzgallery.org/calendar/tyler-bullock-jul-17-2026",
-      "details": null,
-      "personnel": [
-        {
-          "name": "Tyler Bullock",
-          "instrument": "piano"
-        },
-        {
-          "name": "Aidan Taylor",
-          "instrument": "bass"
-        },
-        {
-          "name": "Koleby Royston",
-          "instrument": "drums"
-        }
-      ],
-      "priceText": null
-    },
-    {
-      "id": "dizzys:2026-07-17:charles-mcpherson-quintet",
-      "clubId": "dizzys",
-      "title": "Charles McPherson Quintet",
-      "date": "2026-07-17",
-      "sets": [
-        "19:00",
-        "21:00"
-      ],
-      "url": "https://ticketing.jazz.org/21136/",
-      "details": "An 87th birthday, a jazz legend, and the kind of night Dizzy’s was made for. Charles McPherson returns with an evening of fiery bebop, fresh music, and beloved selections from across his remarkable career. Joined by his quintet, he brings the joyful, hard-swinging energy that fills the room and make",
-      "personnel": [
-        {
-          "name": "Charles McPherson",
-          "instrument": "alto saxophone"
-        },
-        {
-          "name": "Terell Stafford",
-          "instrument": "trumpet"
-        },
-        {
-          "name": "Randy Porter",
-          "instrument": "piano"
-        },
-        {
-          "name": "Peter Washington",
-          "instrument": "bass"
-        },
-        {
-          "name": "Billy Drummond",
-          "instrument": "drums"
+          "name": "Angus Mason",
+          "instrument": ""
         }
       ],
       "priceText": null
@@ -1947,41 +1786,6 @@
       "priceText": null
     },
     {
-      "id": "vanguard:2026-07-17:ben-wendel",
-      "clubId": "vanguard",
-      "title": "Ben Wendel",
-      "date": "2026-07-17",
-      "sets": [
-        "20:00",
-        "22:00"
-      ],
-      "url": "https://vv.squadup.com/artists/ben-wendel",
-      "details": null,
-      "personnel": [
-        {
-          "name": "Ben Wendel",
-          "instrument": "saxophone"
-        },
-        {
-          "name": "Gilad Hekselman",
-          "instrument": "guitar"
-        },
-        {
-          "name": "Taylor Eigsti",
-          "instrument": "piano"
-        },
-        {
-          "name": "John Patitucci",
-          "instrument": "bass"
-        },
-        {
-          "name": "Nate Wood",
-          "instrument": "drums"
-        }
-      ],
-      "priceText": null
-    },
-    {
       "id": "bluenote:2026-07-17:ms-lisa-fischer-ft-orrin-evans-trio-with-james-genus-and-mar",
       "clubId": "bluenote",
       "title": "Ms. Lisa Fischer ft. Orrin Evans Trio with James Genus and Mark Whitfield, Jr.",
@@ -2010,46 +1814,6 @@
       "priceText": null
     },
     {
-      "id": "lunatico:2026-07-17:cali-mambo-tom-beckham-marcos-varela-dred-scott-diego-voglin",
-      "clubId": "lunatico",
-      "title": "Cali Mambo: Tom Beckham | Marcos Varela | Dred Scott | Diego Voglino",
-      "date": "2026-07-17",
-      "sets": [
-        "21:00",
-        "22:15"
-      ],
-      "url": "https://www.barlunatico.com/calendar/2022/8/10/cali-mambo-feat-dred-scott-tom-beckham-amp-moses-patrou-skd8l-gyfzz-bg69f-947dn-6zdbc-bpenp-w3djb",
-      "details": "CALI MAMBO , led by vibraphonist Tom Beckham and pianist Dred Scott, explores afro-cuban standards and latin-jazz classics. The instrumentation of vibes, piano, bass and percussion is reminiscent of Cal Tjader in the 1960’s or the George Shearing Quintet of the mid-1950’s that made 4 albums of Latin",
-      "personnel": null,
-      "priceText": null
-    },
-    {
-      "id": "birdland:2026-07-17:allan-harris-harlem-after-dark-featuring-maya-azucena-ac-lin",
-      "clubId": "birdland",
-      "title": "Allan Harris: Harlem After Dark featuring Maya Azucena & AC Lincoln (Theater)",
-      "date": "2026-07-17",
-      "sets": [
-        "21:30"
-      ],
-      "url": "https://www.birdlandjazz.com/tm-event/allan-harris-band-2/",
-      "details": "Birdland Theater — Doors @ 9:00PM",
-      "personnel": null,
-      "priceText": null
-    },
-    {
-      "id": "birdland:2026-07-17:stella-cole",
-      "clubId": "birdland",
-      "title": "Stella Cole",
-      "date": "2026-07-17",
-      "sets": [
-        "22:30"
-      ],
-      "url": "https://www.birdlandjazz.com/tm-event/stella-cole-6/",
-      "details": "Birdland Jazz Club — Doors @ 10:00PM",
-      "personnel": null,
-      "priceText": null
-    },
-    {
       "id": "cellardog:2026-07-17:jinjoo-yoo-quartet",
       "clubId": "cellardog",
       "title": "Jinjoo Yoo Quartet",
@@ -2061,32 +1825,6 @@
       "details": null,
       "personnel": null,
       "late": true,
-      "priceText": null
-    },
-    {
-      "id": "shrine:2026-07-18:dj-birane",
-      "clubId": "shrine",
-      "title": "Dj Birane",
-      "date": "2026-07-18",
-      "sets": [
-        "00:00"
-      ],
-      "url": "https://shrinenyc.com/calendar.php",
-      "details": "Afro Fusion — Come enjoy our dance party Saturday with the world renowned Dj Birane. Combing elements of music from all over the world, DJ Birane will have you on your feet!!",
-      "personnel": null,
-      "priceText": null
-    },
-    {
-      "id": "shrine:2026-07-18:dj-millie-bass",
-      "clubId": "shrine",
-      "title": "DJ Millie Bass",
-      "date": "2026-07-18",
-      "sets": [
-        "00:00"
-      ],
-      "url": "https://shrinenyc.com/calendar.php",
-      "details": "Afro Fusion",
-      "personnel": null,
       "priceText": null
     },
     {
@@ -2121,333 +1859,25 @@
       "priceText": null
     },
     {
-      "id": "jazzcultural:2026-07-18:afternoon-jam-in-the-cafe",
-      "clubId": "jazzcultural",
-      "title": "Afternoon Jam in the Cafe",
-      "date": "2026-07-18",
-      "sets": [
-        "14:00"
-      ],
-      "url": "https://www.smallslive.com/events/33190-afternoon-jam-in-the-cafe/",
-      "details": "until 6:00 PM",
-      "personnel": [
-        {
-          "name": "Samuel Lerner",
-          "instrument": "piano"
-        }
-      ],
-      "priceText": null
-    },
-    {
-      "id": "smalls:2026-07-18:smalls-afternoon-jam-session-hosted-by-steve-nelson",
-      "clubId": "smalls",
-      "title": "Smalls Afternoon Jam Session Hosted by Steve Nelson",
-      "date": "2026-07-18",
-      "sets": [
-        "14:00"
-      ],
-      "url": "https://www.smallslive.com/events/33311-smalls-afternoon-jam-session-hosted-by-steve-nelson/",
-      "details": "until 5:15 PM",
-      "personnel": [
-        {
-          "name": "Steve Nelson",
-          "instrument": "guitar"
-        },
-        {
-          "name": "Mike Migliore",
-          "instrument": "bass"
-        },
-        {
-          "name": "Michael Camacho",
-          "instrument": "drums"
-        }
-      ],
-      "priceText": null
-    },
-    {
-      "id": "barbes:2026-07-18:dirty-desmonds",
-      "clubId": "barbes",
-      "title": "DIRTY DESMONDS",
-      "date": "2026-07-18",
-      "sets": [
-        "15:00"
-      ],
-      "url": "https://www.viewcy.com/event/dirty_desmonds_25",
-      "details": "DIRTY DESMONDS (formerly Pakula Surprise ) is a trio with Eric Pakula on alto sax, Blake Lindberg on drums and Nick Cudahy on bass. They play Eric Pakula’s compositions, which are a mashup of swing and country music combined with 1960’s TV music. They also play the music of Lenny Tristano, Charlie P",
-      "personnel": null,
-      "priceText": null
-    },
-    {
-      "id": "birdland:2026-07-18:danny-tobias-quartet",
-      "clubId": "birdland",
-      "title": "Danny Tobias Quartet",
-      "date": "2026-07-18",
-      "sets": [
-        "17:30"
-      ],
-      "url": "https://www.birdlandjazz.com/tm-event/danny-tobias-quartet-3/",
-      "details": "Birdland Jazz Club — Doors @ 4:30PM",
-      "personnel": null,
-      "priceText": null
-    },
-    {
-      "id": "mezzrow:2026-07-18:jim-ridl-trio",
-      "clubId": "mezzrow",
-      "title": "Jim Ridl Trio",
-      "date": "2026-07-18",
-      "sets": [
-        "18:00",
-        "19:30"
-      ],
-      "url": "https://www.smallslive.com/events/33050-jim-ridl-trio/",
-      "details": null,
-      "personnel": [
-        {
-          "name": "Jim Ridl",
-          "instrument": "piano"
-        },
-        {
-          "name": "Evan Gregor",
-          "instrument": "bass"
-        },
-        {
-          "name": "Ross Pederson",
-          "instrument": "drums"
-        }
-      ],
-      "priceText": null
-    },
-    {
-      "id": "smalls:2026-07-18:yuhan-su-quartet",
-      "clubId": "smalls",
-      "title": "Yuhan Su Quartet",
-      "date": "2026-07-18",
-      "sets": [
-        "18:00",
-        "19:30"
-      ],
-      "url": "https://www.smallslive.com/events/32985-yuhan-su-quartet/",
-      "details": null,
-      "personnel": [
-        {
-          "name": "Yuhan Su",
-          "instrument": "vibraphone"
-        },
-        {
-          "name": "Caleb Curtis",
-          "instrument": "alto sax"
-        },
-        {
-          "name": "Dezron Douglas",
-          "instrument": "bass"
-        },
-        {
-          "name": "Colin Stranahan",
-          "instrument": "drums"
-        }
-      ],
-      "priceText": null
-    },
-    {
-      "id": "barbes:2026-07-18:jeremiah-lockwood-saturdays-in-july",
-      "clubId": "barbes",
-      "title": "JEREMIAH LOCKWOOD: Saturdays in July",
-      "date": "2026-07-18",
-      "sets": [
-        "18:00"
-      ],
-      "url": "https://www.viewcy.com/event/jeremiah_lockwood_sa_2",
-      "details": "In residence Saturdays in July at 6pm Jeremiah Lockwood is a scholar and a storyteller; a singer, guitarist and composer with an expansive knowledge of musical traditions and techniques that range from cantorial sacred music to Piedmont blues. His career as musician and academic engages with issues",
-      "personnel": null,
-      "priceText": null
-    },
-    {
-      "id": "barbayeux:2026-07-18:duet-set-s-w-leo-genovese-and-adam-kolker",
+      "id": "barbayeux:2026-07-18:duet-set-s",
       "clubId": "barbayeux",
-      "title": "Duet Set(s) w/Leo Genovese and Adam Kolker",
+      "title": "Duet Set(s)",
       "date": "2026-07-18",
       "sets": [
         "18:00"
       ],
       "url": "https://www.barbayeux.com/jazz/8e4wna6hz4bknew-w5dtz-l5j9e-a95je-3553z-tcey6-talh4-gchk3-bjks2-gxazp-kprek-6h6dy-7elm6-h3tgp-m6ft5",
       "details": null,
-      "personnel": null,
-      "priceText": null
-    },
-    {
-      "id": "smoke:2026-07-18:jane-monheit-sings-the-cole-porter-songbook",
-      "clubId": "smoke",
-      "title": "Jane Monheit Sings the Cole Porter Songbook",
-      "date": "2026-07-18",
-      "sets": [
-        "18:30",
-        "20:30",
-        "22:00"
-      ],
-      "url": "https://tickets.smokejazz.com/shows/11747/?date=2026-07-18",
-      "details": null,
       "personnel": [
         {
-          "name": "Jane Monheit",
-          "instrument": "vocals"
+          "name": "Leo Genovese",
+          "instrument": ""
         },
         {
-          "name": "Max Haymer",
-          "instrument": "piano"
-        },
-        {
-          "name": "Neal Miner",
-          "instrument": "bass"
-        },
-        {
-          "name": "Rick Montalbano",
-          "instrument": "drums"
+          "name": "Adam Kolker",
+          "instrument": ""
         }
       ],
-      "priceText": "$25-65"
-    },
-    {
-      "id": "ornithology:2026-07-18:earlybird-show",
-      "clubId": "ornithology",
-      "title": "Earlybird Show",
-      "date": "2026-07-18",
-      "sets": [
-        "18:30"
-      ],
-      "url": "https://ornithologyjazzclub.com/brooklyn-bushwick-williamsburg-ornithology-jazz-club-events",
-      "details": null,
-      "personnel": [
-        {
-          "name": "Ned Goold",
-          "instrument": "saxophone"
-        },
-        {
-          "name": "Lolivone de la Rosa",
-          "instrument": "guitar"
-        },
-        {
-          "name": "Reid Taylor",
-          "instrument": "bass"
-        },
-        {
-          "name": "Jason Tiemann",
-          "instrument": "drums"
-        }
-      ],
-      "priceText": null
-    },
-    {
-      "id": "jazzcultural:2026-07-18:geoffrey-keezer-friends",
-      "clubId": "jazzcultural",
-      "title": "Geoffrey Keezer & Friends",
-      "date": "2026-07-18",
-      "sets": [
-        "19:00",
-        "21:00"
-      ],
-      "url": "https://www.smallslive.com/events/33111-geoffrey-keezer-friends/",
-      "details": null,
-      "personnel": [
-        {
-          "name": "Geoffrey Keezer",
-          "instrument": "piano"
-        },
-        {
-          "name": "Ron Blake",
-          "instrument": "tenor sax"
-        },
-        {
-          "name": "Jocelyn Gould",
-          "instrument": "guitar"
-        },
-        {
-          "name": "Noriko Ueda",
-          "instrument": "bass"
-        },
-        {
-          "name": "Ryan Sands",
-          "instrument": "drums"
-        }
-      ],
-      "priceText": null
-    },
-    {
-      "id": "jazzgallery:2026-07-18:alexandra-ridout-quartet",
-      "clubId": "jazzgallery",
-      "title": "Alexandra Ridout Quartet",
-      "date": "2026-07-18",
-      "sets": [
-        "19:00",
-        "21:00"
-      ],
-      "url": "https://jazzgallery.org/calendar/alexandra-ridout-quartet-jul-18-2026",
-      "details": null,
-      "personnel": [
-        {
-          "name": "Alexandra Ridout",
-          "instrument": "trumpet"
-        },
-        {
-          "name": "Yvonne Rogers",
-          "instrument": "piano"
-        },
-        {
-          "name": "Simón Willson",
-          "instrument": "bass"
-        },
-        {
-          "name": "David Sirkis",
-          "instrument": "drums"
-        }
-      ],
-      "priceText": null
-    },
-    {
-      "id": "dizzys:2026-07-18:charles-mcpherson-quintet",
-      "clubId": "dizzys",
-      "title": "Charles McPherson Quintet",
-      "date": "2026-07-18",
-      "sets": [
-        "19:00",
-        "21:00"
-      ],
-      "url": "https://ticketing.jazz.org/21136/",
-      "details": "An 87th birthday, a jazz legend, and the kind of night Dizzy’s was made for. Charles McPherson returns with an evening of fiery bebop, fresh music, and beloved selections from across his remarkable career. Joined by his quintet, he brings the joyful, hard-swinging energy that fills the room and make",
-      "personnel": [
-        {
-          "name": "Charles McPherson",
-          "instrument": "alto saxophone"
-        },
-        {
-          "name": "Terell Stafford",
-          "instrument": "trumpet"
-        },
-        {
-          "name": "Randy Porter",
-          "instrument": "piano"
-        },
-        {
-          "name": "Peter Washington",
-          "instrument": "bass"
-        },
-        {
-          "name": "Billy Drummond",
-          "instrument": "drums"
-        }
-      ],
-      "priceText": null
-    },
-    {
-      "id": "nublu:2026-07-18:drinkabir-meltykyss-bus-boy-abbatya",
-      "clubId": "nublu",
-      "title": "Drinkabir, Meltykyss, Bus Boy, Abbatya",
-      "date": "2026-07-18",
-      "sets": [
-        "19:00"
-      ],
-      "url": "https://posh.vip/e/drinkabir-meltykyss-bus-boy-abbatya",
-      "details": null,
-      "personnel": null,
       "priceText": null
     },
     {
@@ -2459,19 +1889,6 @@
         "19:00"
       ],
       "url": "https://www.cellardog.net/calendar-link/hendrik-meurkens-quartet",
-      "details": null,
-      "personnel": null,
-      "priceText": null
-    },
-    {
-      "id": "arthurs:2026-07-18:eri-yamamoto-jazz-trio",
-      "clubId": "arthurs",
-      "title": "Eri Yamamoto Jazz Trio",
-      "date": "2026-07-18",
-      "sets": [
-        "19:00"
-      ],
-      "url": "https://www.arthurstavernnyc.com/performances.html",
       "details": null,
       "personnel": null,
       "priceText": null
@@ -2512,25 +1929,6 @@
       "priceText": null
     },
     {
-      "id": "billsplace:2026-07-18:bill-saxton-the-harlem-all-stars",
-      "clubId": "billsplace",
-      "title": "Bill Saxton & the Harlem All-Stars",
-      "date": "2026-07-18",
-      "sets": [
-        "19:00",
-        "21:30"
-      ],
-      "url": "https://billsplaceharlem.com/products/bill-saxton-the-harlem-all-stars",
-      "details": "Harlem speakeasy sets in the parlor — BYOB, reserve ahead",
-      "personnel": [
-        {
-          "name": "Bill Saxton",
-          "instrument": "tenor sax"
-        }
-      ],
-      "priceText": null
-    },
-    {
       "id": "django:2026-07-18:danny-jonokuchi-quintet",
       "clubId": "django",
       "title": "Danny Jonokuchi Quintet",
@@ -2566,68 +1964,17 @@
       "priceText": null
     },
     {
-      "id": "ornithologycafe:2026-07-18:nadav-remez-quartet",
-      "clubId": "ornithologycafe",
-      "title": "Nadav Remez Quartet",
-      "date": "2026-07-18",
-      "sets": [
-        "19:30"
-      ],
-      "url": "https://cafeornithology.com/brooklyn-bushwick-williamsburg-cafe-ornithology-events",
-      "details": null,
-      "personnel": [
-        {
-          "name": "Nadav Remez",
-          "instrument": "guitar"
-        },
-        {
-          "name": "Nitsan Kolko",
-          "instrument": "piano"
-        },
-        {
-          "name": "Ben Tiberio",
-          "instrument": "bass"
-        },
-        {
-          "name": "Ben Silashi",
-          "instrument": "drums"
-        }
-      ],
-      "priceText": null
-    },
-    {
-      "id": "vanguard:2026-07-18:ben-wendel",
-      "clubId": "vanguard",
-      "title": "Ben Wendel",
+      "id": "sistasplace:2026-07-18:reggie-woods-quintet",
+      "clubId": "sistasplace",
+      "title": "Reggie Woods Quintet",
       "date": "2026-07-18",
       "sets": [
         "20:00",
-        "22:00"
+        "21:30"
       ],
-      "url": "https://vv.squadup.com/artists/ben-wendel",
-      "details": null,
-      "personnel": [
-        {
-          "name": "Ben Wendel",
-          "instrument": "saxophone"
-        },
-        {
-          "name": "Gilad Hekselman",
-          "instrument": "guitar"
-        },
-        {
-          "name": "Taylor Eigsti",
-          "instrument": "piano"
-        },
-        {
-          "name": "John Patitucci",
-          "instrument": "bass"
-        },
-        {
-          "name": "Nate Wood",
-          "instrument": "drums"
-        }
-      ],
+      "url": "https://sistasplace.org/reggie-woods-quintet-3/",
+      "details": "Doors 7:30 pm",
+      "personnel": null,
       "priceText": null
     },
     {
@@ -2645,57 +1992,9 @@
       "priceText": null
     },
     {
-      "id": "closeup:2026-07-18:miguel-russell-maria-grand-david-leon-lex-korten-tyrone-alle",
-      "clubId": "closeup",
-      "title": "MIGUEL RUSSELL - Maria Grand - David Leon - Lex Korten - Tyrone Allen II",
-      "date": "2026-07-18",
-      "sets": [
-        "20:00",
-        "22:00"
-      ],
-      "url": "https://www.viewcy.com/event/miguel_russell__mari",
-      "details": null,
-      "personnel": [
-        {
-          "name": "MIGUEL RUSSELL",
-          "instrument": "drums"
-        },
-        {
-          "name": "Maria Grand",
-          "instrument": "saxophone"
-        },
-        {
-          "name": "David Leon",
-          "instrument": "saxophone"
-        },
-        {
-          "name": "Lex Korten",
-          "instrument": "piano"
-        },
-        {
-          "name": "Tyrone Allen II",
-          "instrument": "bass"
-        }
-      ],
-      "priceText": null
-    },
-    {
-      "id": "barbes:2026-07-18:moon-radio-the-smoota-t-te-a-t-te",
-      "clubId": "barbes",
-      "title": "MOON RADIO & THE SMOOTA TÊTE-A-TÊTE",
-      "date": "2026-07-18",
-      "sets": [
-        "20:00"
-      ],
-      "url": "https://www.viewcy.com/event/moon_radio__the_smoo",
-      "details": "MOON RADIO & THE SMOOTA TÊTE-A-TÊTE Moon Radio is a dreamy, cinematic lounge ensemble blending floating vocals, electric vibraphone, upright bass, woodwinds, percussion, and vintage synthesizers into a lush “space-age exotica” sound. Led by vocalist/guitarist Julia Haltigan and vibraphonist/synth pl",
-      "personnel": null,
-      "priceText": null
-    },
-    {
-      "id": "barbayeux:2026-07-18:meron-menares-macbride-live-at-the-sound-room-release-show-w",
+      "id": "barbayeux:2026-07-18:meron-menares-macbride-live-at-the-sound-room-release-show",
       "clubId": "barbayeux",
-      "title": "Meron • Menares • Macbride: Live at The Sound Room Release Show w/Daniel Meron, Pablo Menares, Jimmy Macbride",
+      "title": "Meron • Menares • Macbride: Live at The Sound Room Release Show",
       "date": "2026-07-18",
       "sets": [
         "20:00",
@@ -2703,270 +2002,20 @@
       ],
       "url": "https://www.barbayeux.com/jazz/8nr3zbphrp75e5k-3s5ml-h7ca5-syapg-t6xwm-whbzx-ccm8b-x3hj6-aye58-4psyn-3zkbd-74yln-2m7an-s36sk-hl2jc-hdptg-3slgm-eklny-a4mp4-crpp2-l8pkr-w3ft8-ddssg-hz3yr-kxhbe-3lych-pnwjs-af83b-x2lls-kykak",
       "details": null,
-      "personnel": null,
-      "priceText": null
-    },
-    {
-      "id": "silvana:2026-07-18:michael-morgan-group",
-      "clubId": "silvana",
-      "title": "Michael Morgan Group",
-      "date": "2026-07-18",
-      "sets": [
-        "20:00"
-      ],
-      "url": "https://silvana-nyc.com/calendar.php",
-      "details": "Soul / Jazz — A jazz vocalist rooted in the Philadelphia scene, they’ve been active in New York since 2018, performing at venues like Silvana, Shrine, and Minton’s while studying at BMCC and with Denise King, delivering jazz standards and blues with a st",
-      "personnel": null,
-      "priceText": null
-    },
-    {
-      "id": "sistasplace:2026-07-18:reggie-woods-quintet",
-      "clubId": "sistasplace",
-      "title": "Reggie Woods Quintet",
-      "date": "2026-07-18",
-      "sets": [
-        "20:00",
-        "21:30"
-      ],
-      "url": "https://sistasplace.org/reggie-woods-quintet-3/",
-      "details": "Doors 7:30 pm",
-      "personnel": null,
-      "priceText": null
-    },
-    {
-      "id": "mezzrow:2026-07-18:cameron-campbell-on-air-band",
-      "clubId": "mezzrow",
-      "title": "Cameron Campbell ON AIR! Band",
-      "date": "2026-07-18",
-      "sets": [
-        "21:00",
-        "22:30"
-      ],
-      "url": "https://www.smallslive.com/events/32983-cameron-campbell-on-air-band/",
-      "details": null,
       "personnel": [
         {
-          "name": "Cameron Campbell",
-          "instrument": "piano"
+          "name": "Daniel Meron",
+          "instrument": ""
         },
         {
-          "name": "Dave Strawn",
-          "instrument": "bass"
+          "name": "Pablo Menares",
+          "instrument": ""
         },
         {
-          "name": "Charlie Schefft",
-          "instrument": "drums"
+          "name": "Jimmy Macbride",
+          "instrument": ""
         }
       ],
-      "priceText": null
-    },
-    {
-      "id": "smalls:2026-07-18:dave-schumacher-cubeye",
-      "clubId": "smalls",
-      "title": "Dave Schumacher & Cubeye",
-      "date": "2026-07-18",
-      "sets": [
-        "21:00",
-        "22:30"
-      ],
-      "url": "https://www.smallslive.com/events/32987-dave-schumacher-cubeye/",
-      "details": null,
-      "personnel": [
-        {
-          "name": "Dave Schumacher",
-          "instrument": "baritone sax"
-        },
-        {
-          "name": "Diego Hedez",
-          "instrument": "trumpet"
-        },
-        {
-          "name": "Peter Brainin",
-          "instrument": "tenor sax"
-        },
-        {
-          "name": "Manuel Valera",
-          "instrument": "piano"
-        },
-        {
-          "name": "Alex \"Apolo\" Ayala",
-          "instrument": "bass"
-        },
-        {
-          "name": "Alvester Garnett",
-          "instrument": "drums"
-        },
-        {
-          "name": "Yusnier Sanchez",
-          "instrument": "percussion"
-        }
-      ],
-      "priceText": null
-    },
-    {
-      "id": "lunatico:2026-07-18:tumbao",
-      "clubId": "lunatico",
-      "title": "¡Tumbao!",
-      "date": "2026-07-18",
-      "sets": [
-        "21:00",
-        "22:15"
-      ],
-      "url": "https://www.barlunatico.com/calendar/2026/7/18/tumbao",
-      "details": "LunÁtico warmly welcomes the Amazonian psychedelic jazz of ¡Tumbao! Join us! Rey Riera (Congas) Julian Denton (Bass) Ryan Masecar (Drums) Michael Buckley (Guitar) Logan Maxwell (Alto Sax) Aaron Lane (Trumpet) Diego Avilez (Piano/Vocals) Coming off from a record-setting international tour for the nin",
-      "personnel": null,
-      "priceText": null
-    },
-    {
-      "id": "ornithology:2026-07-18:jazz-dialogue",
-      "clubId": "ornithology",
-      "title": "Jazz Dialogue",
-      "date": "2026-07-18",
-      "sets": [
-        "21:00"
-      ],
-      "url": "https://ornithologyjazzclub.com/brooklyn-bushwick-williamsburg-ornithology-jazz-club-events",
-      "details": null,
-      "personnel": [
-        {
-          "name": "Steve Nelson",
-          "instrument": "guitar"
-        },
-        {
-          "name": "Kazu Yokoshima",
-          "instrument": "organ"
-        },
-        {
-          "name": "Mike Camacho",
-          "instrument": "drums"
-        }
-      ],
-      "priceText": null
-    },
-    {
-      "id": "birdland:2026-07-18:allan-harris-harlem-after-dark-featuring-maya-azucena-ac-lin",
-      "clubId": "birdland",
-      "title": "Allan Harris: Harlem After Dark featuring Maya Azucena & AC Lincoln (Theater)",
-      "date": "2026-07-18",
-      "sets": [
-        "21:30"
-      ],
-      "url": "https://www.birdlandjazz.com/tm-event/allan-harris-band-4/",
-      "details": "Birdland Theater — Doors @ 9:00PM",
-      "personnel": null,
-      "priceText": null
-    },
-    {
-      "id": "arthurs:2026-07-18:alyson-williams-w-arthur-s-house-band",
-      "clubId": "arthurs",
-      "title": "Alyson Williams/w Arthur's House Band",
-      "date": "2026-07-18",
-      "sets": [
-        "22:00"
-      ],
-      "url": "https://www.arthurstavernnyc.com/performances.html",
-      "details": null,
-      "personnel": null,
-      "priceText": null
-    },
-    {
-      "id": "barbes:2026-07-18:cheo-y-los-consentidos-de-la-casa",
-      "clubId": "barbes",
-      "title": "CHEO Y LOS CONSENTIDOS DE LA CASA",
-      "date": "2026-07-18",
-      "sets": [
-        "22:00"
-      ],
-      "url": "https://www.viewcy.com/event/cheo_y_los_consentido_26",
-      "details": "CHEO Y LOS CONSENTIDOS DE LA CASA Salsa Funk, from Cheo (Los Amigos Invisibles, Locobeach, DJ Afro) and his crew. Revisiting old salsa dura hits and writing the future one - with a full on crew - 3 percussionists, piano, bass - and Cheo's guitar taking the place of the horn section. Followed by DJ s",
-      "personnel": null,
-      "priceText": null
-    },
-    {
-      "id": "jazzcultural:2026-07-18:anthony-wonsey-quintet",
-      "clubId": "jazzcultural",
-      "title": "Anthony Wonsey Quintet",
-      "date": "2026-07-18",
-      "sets": [
-        "22:30"
-      ],
-      "url": "https://www.smallslive.com/events/33567-anthony-wonsey-quintet/",
-      "details": "until 12:00 AM",
-      "personnel": [
-        {
-          "name": "Anthony Wonsey",
-          "instrument": "piano"
-        },
-        {
-          "name": "Wallace Roney Jr",
-          "instrument": "trumpet"
-        },
-        {
-          "name": "Ivan Polyanskiy",
-          "instrument": "alto sax"
-        },
-        {
-          "name": "Billy Edwards",
-          "instrument": "bass"
-        },
-        {
-          "name": "Jerome Gillespie",
-          "instrument": "drums"
-        }
-      ],
-      "priceText": null
-    },
-    {
-      "id": "birdland:2026-07-18:stella-cole",
-      "clubId": "birdland",
-      "title": "Stella Cole",
-      "date": "2026-07-18",
-      "sets": [
-        "22:30"
-      ],
-      "url": "https://www.birdlandjazz.com/tm-event/stella-cole-8/",
-      "details": "Birdland Jazz Club — Doors @ 10:00PM",
-      "personnel": null,
-      "priceText": null
-    },
-    {
-      "id": "nublu:2026-07-18:bossa-n-funk-bossa-nova-live-concert-by-barbara-fialho-and-b",
-      "clubId": "nublu",
-      "title": "Bossa N' Funk BOSSA NOVA LIVE CONCERT BY BARBARA FIALHO AND BAND DJ MONIKI, DJ RAPHA LIMA",
-      "date": "2026-07-18",
-      "sets": [
-        "22:30"
-      ],
-      "url": "https://posh.vip/e/bossa-n-funk",
-      "details": null,
-      "personnel": null,
-      "priceText": null
-    },
-    {
-      "id": "ornithologycafe:2026-07-18:late-night-jam-hosted-by-geraldo-marshall",
-      "clubId": "ornithologycafe",
-      "title": "Late Night Jam Hosted By Geraldo Marshall",
-      "date": "2026-07-18",
-      "sets": [
-        "23:00"
-      ],
-      "url": "https://cafeornithology.com/brooklyn-bushwick-williamsburg-cafe-ornithology-events",
-      "details": null,
-      "personnel": [
-        {
-          "name": "Geraldo Marshall",
-          "instrument": "trumpet"
-        },
-        {
-          "name": "Kweku Aggrey",
-          "instrument": "bass"
-        },
-        {
-          "name": "Orion Turre",
-          "instrument": "drums"
-        }
-      ],
-      "late": true,
       "priceText": null
     },
     {
@@ -2984,94 +2033,6 @@
       "priceText": null
     },
     {
-      "id": "closeup:2026-07-18:alon-benjamini-erika-toda-dan-montgomery-set-and-session",
-      "clubId": "closeup",
-      "title": "ALON BENJAMINI - Erika Toda - Dan Montgomery - Set and Session",
-      "date": "2026-07-18",
-      "sets": [
-        "23:30"
-      ],
-      "url": "https://www.viewcy.com/event/alon_benjamini__set_4",
-      "details": null,
-      "personnel": [
-        {
-          "name": "Session ALON BENJAMINI",
-          "instrument": "drums"
-        },
-        {
-          "name": "Erika Toda",
-          "instrument": "guitar"
-        },
-        {
-          "name": "Dan Montgomery",
-          "instrument": "bass"
-        }
-      ],
-      "late": true,
-      "priceText": null
-    },
-    {
-      "id": "mezzrow:2026-07-18:round-midnight-solo-piano-with-isaac-byrd",
-      "clubId": "mezzrow",
-      "title": "Round Midnight Solo Piano with Isaac Byrd",
-      "date": "2026-07-18",
-      "sets": [
-        "23:55"
-      ],
-      "url": "https://www.smallslive.com/events/33228-round-midnight-solo-piano-with-isaac-byrd/",
-      "details": "until 1:00 AM",
-      "personnel": [
-        {
-          "name": "Isaac Byrd",
-          "instrument": "piano"
-        }
-      ],
-      "late": true,
-      "priceText": null
-    },
-    {
-      "id": "smalls:2026-07-18:justin-robinson-quartet",
-      "clubId": "smalls",
-      "title": "Justin Robinson Quartet",
-      "date": "2026-07-18",
-      "sets": [
-        "23:55"
-      ],
-      "url": "https://www.smallslive.com/events/33080-justin-robinson-quartet/",
-      "details": "until 4:00 AM",
-      "personnel": [
-        {
-          "name": "Justin Robinson",
-          "instrument": "alto sax"
-        },
-        {
-          "name": "Sharp Radway",
-          "instrument": "piano"
-        },
-        {
-          "name": "Danton Boller",
-          "instrument": "bass"
-        },
-        {
-          "name": "Chris Beck",
-          "instrument": "drums"
-        }
-      ],
-      "late": true,
-      "priceText": null
-    },
-    {
-      "id": "zincbar:2026-07-18:open-for-cocktails",
-      "clubId": "zincbar",
-      "title": "Open for Cocktails",
-      "date": "2026-07-18",
-      "sets": [],
-      "url": "https://www.zincbar.com/event/open-for-cocktails-64/",
-      "details": "Bar Hours: Open from 2:00 PM to 2:AM — no cover charge to enjoy cocktails and other drinks from our offer and the vibe! Join us every Saturday at Zinc Bar for an unforgettable night of signature cocktails, great vibes, and the unique atmosphere you won’t find anywhere else.",
-      "personnel": null,
-      "priceText": null
-    },
-    {
       "id": "bluenote:2026-07-19:the-world-famous-harlem-gospel-choir",
       "clubId": "bluenote",
       "title": "The World Famous Harlem Gospel Choir",
@@ -3085,143 +2046,6 @@
       "priceText": null
     },
     {
-      "id": "jazzcultural:2026-07-19:afternoon-jam-in-the-cafe",
-      "clubId": "jazzcultural",
-      "title": "Afternoon Jam in the Cafe",
-      "date": "2026-07-19",
-      "sets": [
-        "14:00"
-      ],
-      "url": "https://www.smallslive.com/events/33191-afternoon-jam-in-the-cafe/",
-      "details": "until 6:00 PM",
-      "personnel": [
-        {
-          "name": "katie Cosco",
-          "instrument": "piano"
-        }
-      ],
-      "priceText": null
-    },
-    {
-      "id": "smalls:2026-07-19:smalls-afternoon-jam-session-hosted-by-ryo-sasaki",
-      "clubId": "smalls",
-      "title": "Smalls Afternoon Jam Session Hosted by Ryo Sasaki",
-      "date": "2026-07-19",
-      "sets": [
-        "14:00"
-      ],
-      "url": "https://www.smallslive.com/events/33301-smalls-afternoon-jam-session-hosted-by-ryo-sasaki/",
-      "details": "until 5:15 PM",
-      "personnel": [
-        {
-          "name": "Ryo Sasaki",
-          "instrument": "trumpet"
-        },
-        {
-          "name": "Steve Ash",
-          "instrument": "piano"
-        },
-        {
-          "name": "Bill Crow",
-          "instrument": "bass"
-        },
-        {
-          "name": "Steve Little",
-          "instrument": "drums"
-        }
-      ],
-      "priceText": null
-    },
-    {
-      "id": "barbes:2026-07-19:world-cup-game",
-      "clubId": "barbes",
-      "title": "WORLD CUP GAME",
-      "date": "2026-07-19",
-      "sets": [
-        "15:00"
-      ],
-      "url": "https://www.viewcy.com/event/world_cup_game_5",
-      "details": "We will stream all the remaining World Club games. On a 32\" tv in our front room As well as on our screen in the backroom when not conflicting with live music.",
-      "personnel": null,
-      "priceText": null
-    },
-    {
-      "id": "barbes:2026-07-19:clube-do-choro-with-regional-samauma",
-      "clubId": "barbes",
-      "title": "CLUBE DO CHORO with REGIONAL SAMAUMA",
-      "date": "2026-07-19",
-      "sets": [
-        "15:30"
-      ],
-      "url": "https://www.viewcy.com/event/clube_do_choro_with_r_59",
-      "details": "Fernanda Silveira leads a weekly Choro jam in our front room with Regional Samauma and special guests. A casual affair with virtuosos. Fernanda Silveira is a cavaquinho player specializing in the Brazilian practices of choro and traditional samba. She is a disciple of Luciana Rabello and has accompa",
-      "personnel": null,
-      "priceText": null
-    },
-    {
-      "id": "marjorie:2026-07-19:marjorie-eliot-s-parlor-jazz",
-      "clubId": "marjorie",
-      "title": "Marjorie Eliot's Parlor Jazz",
-      "date": "2026-07-19",
-      "sets": [
-        "15:30"
-      ],
-      "url": "https://www.facebook.com/pages/Marjorie-Elliots-Parlor-Jazz/488061981215540",
-      "details": "Free concert in her Sugar Hill parlor, Apt 3F — every Sunday since 1992. Arrive early.",
-      "personnel": null,
-      "priceText": "Free"
-    },
-    {
-      "id": "dizzys:2026-07-19:charles-mcpherson-quintet",
-      "clubId": "dizzys",
-      "title": "Charles McPherson Quintet",
-      "date": "2026-07-19",
-      "sets": [
-        "17:00",
-        "19:30"
-      ],
-      "url": "https://ticketing.jazz.org/21136/",
-      "details": "An 87th birthday, a jazz legend, and the kind of night Dizzy’s was made for. Charles McPherson returns with an evening of fiery bebop, fresh music, and beloved selections from across his remarkable career. Joined by his quintet, he brings the joyful, hard-swinging energy that fills the room and make",
-      "personnel": [
-        {
-          "name": "Charles McPherson",
-          "instrument": "alto saxophone"
-        },
-        {
-          "name": "Terell Stafford",
-          "instrument": "trumpet"
-        },
-        {
-          "name": "Randy Porter",
-          "instrument": "piano"
-        },
-        {
-          "name": "Peter Washington",
-          "instrument": "bass"
-        },
-        {
-          "name": "Billy Drummond",
-          "instrument": "drums"
-        }
-      ],
-      "priceText": null
-    },
-    {
-      "id": "zincbar:2026-07-19:valtinho-anast-cio",
-      "clubId": "zincbar",
-      "title": "Valtinho Anastácio",
-      "date": "2026-07-19",
-      "sets": [
-        "17:00",
-        "19:30",
-        "21:00"
-      ],
-      "url": "https://www.zincbar.com/event/valtinho-anastacio-63/",
-      "details": "Acclaimed Brazilian percussionist Valtinho Anastácio brings the sounds of Brazil to the Zinc every Sunday evening. Showtimes: 7:30 PM & 9:00 PM | Tickets: $35 at the door Reservations: Not necessary — we recommend arriving 20–30 minutes before showtime. Seating: Available throughout the shows. Bar H",
-      "personnel": null,
-      "priceText": "$35"
-    },
-    {
       "id": "birdland:2026-07-19:jon-gordon-nonet",
       "clubId": "birdland",
       "title": "Jon Gordon Nonet",
@@ -3233,125 +2057,6 @@
       "details": "Birdland Jazz Club — Doors @ 4:30PM",
       "personnel": null,
       "priceText": null
-    },
-    {
-      "id": "mezzrow:2026-07-19:april-varner-quartet",
-      "clubId": "mezzrow",
-      "title": "April Varner Quartet",
-      "date": "2026-07-19",
-      "sets": [
-        "18:00",
-        "19:30"
-      ],
-      "url": "https://www.smallslive.com/events/32988-april-varner-quartet/",
-      "details": null,
-      "personnel": [
-        {
-          "name": "April Varner",
-          "instrument": "vocalist"
-        },
-        {
-          "name": "William Hill III",
-          "instrument": "piano"
-        },
-        {
-          "name": "Isaac Beaumont",
-          "instrument": "bass"
-        },
-        {
-          "name": "Zach Adleman",
-          "instrument": "drums"
-        }
-      ],
-      "priceText": null
-    },
-    {
-      "id": "smalls:2026-07-19:larry-ham-ali-ryerson-quartet",
-      "clubId": "smalls",
-      "title": "Larry Ham/Ali Ryerson Quartet",
-      "date": "2026-07-19",
-      "sets": [
-        "18:00",
-        "19:30"
-      ],
-      "url": "https://www.smallslive.com/events/32990-larry-hamali-ryerson-quartet/",
-      "details": null,
-      "personnel": [
-        {
-          "name": "Larry Ham",
-          "instrument": "piano"
-        },
-        {
-          "name": "Ali Ryerson",
-          "instrument": "flute"
-        },
-        {
-          "name": "Lou Pappas",
-          "instrument": "bass"
-        },
-        {
-          "name": "Tom Melito",
-          "instrument": "drums"
-        }
-      ],
-      "priceText": null
-    },
-    {
-      "id": "barbes:2026-07-19:miss-maybell-the-ragtime-romeos",
-      "clubId": "barbes",
-      "title": "MISS MAYBELL & THE RAGTIME ROMEOS",
-      "date": "2026-07-19",
-      "sets": [
-        "18:00"
-      ],
-      "url": "https://www.viewcy.com/event/miss_maybell__the_ra_10",
-      "details": null,
-      "personnel": [
-        {
-          "name": "Charlie Judkins",
-          "instrument": "piano"
-        },
-        {
-          "name": "Miss Maybell",
-          "instrument": "banjo and voice"
-        },
-        {
-          "name": "Brian Nalepka",
-          "instrument": "bass"
-        }
-      ],
-      "priceText": null
-    },
-    {
-      "id": "smoke:2026-07-19:jane-monheit-sings-the-cole-porter-songbook",
-      "clubId": "smoke",
-      "title": "Jane Monheit Sings the Cole Porter Songbook",
-      "date": "2026-07-19",
-      "sets": [
-        "18:30",
-        "20:30"
-      ],
-      "url": "https://tickets.smokejazz.com/shows/11747/?date=2026-07-19",
-      "details": null,
-      "personnel": [
-        {
-          "name": "Jane Monheit",
-          "instrument": "vocals"
-        },
-        {
-          "name": "Max Haymer",
-          "instrument": "piano"
-        },
-        {
-          "name": "Neal Miner",
-          "instrument": "bass"
-        },
-        {
-          "name": "Rick Montalbano",
-          "instrument": "drums"
-        }
-      ],
-      "priceText": "$25-65"
     },
     {
       "id": "django:2026-07-19:brian-charette-trio",
@@ -3368,54 +2073,6 @@
       "priceText": null
     },
     {
-      "id": "jazzcultural:2026-07-19:geoffrey-keezer-friends",
-      "clubId": "jazzcultural",
-      "title": "Geoffrey Keezer & Friends",
-      "date": "2026-07-19",
-      "sets": [
-        "19:00",
-        "21:00"
-      ],
-      "url": "https://www.smallslive.com/events/33112-geoffrey-keezer-friends/",
-      "details": null,
-      "personnel": [
-        {
-          "name": "Geoffrey Keezer",
-          "instrument": "piano"
-        },
-        {
-          "name": "Ron Blake",
-          "instrument": "tenor sax"
-        },
-        {
-          "name": "Jocelyn Gould",
-          "instrument": "guitar"
-        },
-        {
-          "name": "Noriko Ueda",
-          "instrument": "bass"
-        },
-        {
-          "name": "Ryan Sands",
-          "instrument": "drums"
-        }
-      ],
-      "priceText": null
-    },
-    {
-      "id": "nublu:2026-07-19:the-international-psychedelic-latin-jazz-orchestra-tumbao-il",
-      "clubId": "nublu",
-      "title": "The International Psychedelic Latin Jazz Orchestra ¡Tumbao! & Ilhan Ersahin, Yusuke Yamamo",
-      "date": "2026-07-19",
-      "sets": [
-        "19:00"
-      ],
-      "url": "https://posh.vip/e/the-international-psychedelic-latin-jazz-orchestra-tumbao",
-      "details": null,
-      "personnel": null,
-      "priceText": null
-    },
-    {
       "id": "cellardog:2026-07-19:saul-rubin-trio",
       "clubId": "cellardog",
       "title": "Saul Rubin Trio",
@@ -3424,19 +2081,6 @@
         "19:00"
       ],
       "url": "https://www.cellardog.net/calendar-link/ehcp2mjzwcfxc3yztbffek9468rgmg",
-      "details": null,
-      "personnel": null,
-      "priceText": null
-    },
-    {
-      "id": "arthurs:2026-07-19:creole-cooking-jazz-band",
-      "clubId": "arthurs",
-      "title": "Creole Cooking Jazz Band",
-      "date": "2026-07-19",
-      "sets": [
-        "19:00"
-      ],
-      "url": "https://www.arthurstavernnyc.com/performances.html",
       "details": null,
       "personnel": null,
       "priceText": null
@@ -3477,98 +2121,6 @@
       "priceText": null
     },
     {
-      "id": "closeup:2026-07-19:dabin-ryu-alexandra-ridout-simon-willson-steven-crammer",
-      "clubId": "closeup",
-      "title": "DABIN RYU - Alexandra Ridout - Simon Willson - Steven Crammer",
-      "date": "2026-07-19",
-      "sets": [
-        "19:30",
-        "21:00"
-      ],
-      "url": "https://www.viewcy.com/event/dabin_ryu",
-      "details": null,
-      "personnel": [
-        {
-          "name": "DABIN RYU",
-          "instrument": "piano"
-        },
-        {
-          "name": "Alexandra Ridout",
-          "instrument": "trumpet"
-        },
-        {
-          "name": "Simon Willson",
-          "instrument": "bass"
-        },
-        {
-          "name": "Steven Crammer",
-          "instrument": "drums"
-        }
-      ],
-      "priceText": null
-    },
-    {
-      "id": "ornithologycafe:2026-07-19:sacha-perry-trio",
-      "clubId": "ornithologycafe",
-      "title": "Sacha Perry Trio",
-      "date": "2026-07-19",
-      "sets": [
-        "19:30"
-      ],
-      "url": "https://cafeornithology.com/brooklyn-bushwick-williamsburg-cafe-ornithology-events",
-      "details": null,
-      "personnel": [
-        {
-          "name": "Sacha Perry",
-          "instrument": "piano"
-        },
-        {
-          "name": "Sean Smith",
-          "instrument": "bass"
-        },
-        {
-          "name": "Alberto Chiozzi",
-          "instrument": "drums"
-        }
-      ],
-      "priceText": null
-    },
-    {
-      "id": "vanguard:2026-07-19:ben-wendel",
-      "clubId": "vanguard",
-      "title": "Ben Wendel",
-      "date": "2026-07-19",
-      "sets": [
-        "20:00",
-        "22:00"
-      ],
-      "url": "https://vv.squadup.com/artists/ben-wendel",
-      "details": null,
-      "personnel": [
-        {
-          "name": "Ben Wendel",
-          "instrument": "saxophone"
-        },
-        {
-          "name": "Gilad Hekselman",
-          "instrument": "guitar"
-        },
-        {
-          "name": "Taylor Eigsti",
-          "instrument": "piano"
-        },
-        {
-          "name": "John Patitucci",
-          "instrument": "bass"
-        },
-        {
-          "name": "Nate Wood",
-          "instrument": "drums"
-        }
-      ],
-      "priceText": null
-    },
-    {
       "id": "bluenote:2026-07-19:ms-lisa-fischer-ft-orrin-evans-trio-with-james-genus-and-mar",
       "clubId": "bluenote",
       "title": "Ms. Lisa Fischer ft. Orrin Evans Trio with James Genus and Mark Whitfield, Jr.",
@@ -3583,106 +2135,34 @@
       "priceText": null
     },
     {
-      "id": "barbes:2026-07-19:will-holshouser",
-      "clubId": "barbes",
-      "title": "WILL HOLSHOUSER",
+      "id": "smoke:2026-07-19:jane-monheit-sings-the-cole-porter-songbook",
+      "clubId": "smoke",
+      "title": "Jane Monheit Sings the Cole Porter Songbook",
       "date": "2026-07-19",
       "sets": [
-        "20:00"
+        "20:30"
       ],
-      "url": "https://www.viewcy.com/event/will_holshouser_4",
-      "details": "WILL HOLSHOUSER Will has played with a wide variety of artists including violinist Regina Carter, clarinetist David Krakauer, trumpet phenomenon Eric Vloeimans, Suzanne Vega, Antony and the Johnsons, Michael Winograd, Uri Caine, Martha, Loudon Wainwright III and many others. Three albums of his own",
-      "personnel": null,
-      "priceText": null
-    },
-    {
-      "id": "silvana:2026-07-19:anjali-rose",
-      "clubId": "silvana",
-      "title": "Anjali Rose",
-      "date": "2026-07-19",
-      "sets": [
-        "20:00"
-      ],
-      "url": "https://silvana-nyc.com/calendar.php",
-      "details": "Songwriter — Anjali Rose is a multidisciplinary composer, vocalist, and performance artist whose work lives at the intersection of honesty, experimentation, and spiritual inquiry. Drawing from a lineage of indie rock, Indian classical, folk traditions,",
-      "personnel": null,
-      "priceText": null
-    },
-    {
-      "id": "terraza7:2026-07-19:tango-jazz-jam",
-      "clubId": "terraza7",
-      "title": "Tango Jazz & Jam",
-      "date": "2026-07-19",
-      "sets": [
-        "20:00",
-        "21:30"
-      ],
-      "url": "https://www.terraza7.com/events",
-      "details": "Experience a monthly Tango Jazz Jam in Queens, New York, hosted by pianist Emilio Teubal and his house band. Musicians of all levels are invited to join, perform, and explore the meeting point between tango and jazz through improvisation and collaboration. And yes—don’t forget your bandoneón.",
-      "personnel": null,
-      "priceText": null
-    },
-    {
-      "id": "mezzrow:2026-07-19:naama-trio",
-      "clubId": "mezzrow",
-      "title": "Naama Trio",
-      "date": "2026-07-19",
-      "sets": [
-        "21:00",
-        "22:30"
-      ],
-      "url": "https://www.smallslive.com/events/32989-naama-trio/",
+      "url": "https://tickets.smokejazz.com/shows/11747/?date=2026-07-19",
       "details": null,
       "personnel": [
         {
-          "name": "Naama Gheber",
-          "instrument": "vocalist"
+          "name": "Jane Monheit",
+          "instrument": "vocals"
         },
         {
-          "name": "William Hill III",
+          "name": "Max Haymer",
           "instrument": "piano"
         },
         {
-          "name": "Dave Baron",
-          "instrument": "bass"
-        }
-      ],
-      "priceText": null
-    },
-    {
-      "id": "smalls:2026-07-19:hendrik-meurkens-quintet",
-      "clubId": "smalls",
-      "title": "Hendrik Meurkens Quintet",
-      "date": "2026-07-19",
-      "sets": [
-        "21:00",
-        "22:30"
-      ],
-      "url": "https://www.smallslive.com/events/32991-hendrik-meurkens-quintet/",
-      "details": null,
-      "personnel": [
-        {
-          "name": "Hendrik Meurkens",
-          "instrument": "vibraphone"
-        },
-        {
-          "name": "Nick Hempton",
-          "instrument": "tenor sax"
-        },
-        {
-          "name": "Steve Ash",
-          "instrument": "piano"
-        },
-        {
-          "name": "Chris Berger",
+          "name": "Neal Miner",
           "instrument": "bass"
         },
         {
-          "name": "Andy Watson",
+          "name": "Rick Montalbano",
           "instrument": "drums"
         }
       ],
-      "priceText": null
+      "priceText": "$25-65"
     },
     {
       "id": "lunatico:2026-07-19:tal-yahalom-x-tom-oren-w-special-guest-wayne-tucker",
@@ -3695,19 +2175,6 @@
       ],
       "url": "https://www.barlunatico.com/calendar/2026/7/19/tal-yahalom-x-tom-oren-wspecial-guest-wayne-tucker",
       "details": "LunÀtico warmly welcomes this special fresh musical collaboration between guitarist Tal Yahalom and pianist Tom Oren - two virtuosos exploring original compositions, Brazilian music and jazz repertoire with special guest trumpeter Wayne Tucker adding his unique fire and lyricism to the mix. Join us!",
-      "personnel": null,
-      "priceText": null
-    },
-    {
-      "id": "silvana:2026-07-19:sariyah-idan",
-      "clubId": "silvana",
-      "title": "Sariyah Idan",
-      "date": "2026-07-19",
-      "sets": [
-        "21:00"
-      ],
-      "url": "https://silvana-nyc.com/calendar.php",
-      "details": "Acoustic Soul — Sariyah Idan is a New Orleans based acoustic soul singer-songwriter originally from Woodstock NY. Her influences extend into jazz, latin, flamenco, klezmer, reggae, and hip-hop weaving unique sonics while her poetic lyrics address struggle,",
       "personnel": null,
       "priceText": null
     },
@@ -3752,76 +2219,6 @@
       "priceText": null
     },
     {
-      "id": "jazzcultural:2026-07-19:jam-in-the-cafe",
-      "clubId": "jazzcultural",
-      "title": "Jam in the Cafe",
-      "date": "2026-07-19",
-      "sets": [
-        "22:00"
-      ],
-      "url": "https://www.smallslive.com/events/33208-jam-in-the-cafe/",
-      "details": "until 12:00 AM",
-      "personnel": [
-        {
-          "name": "Marc Devine",
-          "instrument": "piano"
-        }
-      ],
-      "priceText": null
-    },
-    {
-      "id": "arthurs:2026-07-19:stew-cutler-friends",
-      "clubId": "arthurs",
-      "title": "Stew Cutler & Friends",
-      "date": "2026-07-19",
-      "sets": [
-        "22:00"
-      ],
-      "url": "https://www.arthurstavernnyc.com/performances.html",
-      "details": null,
-      "personnel": null,
-      "priceText": null
-    },
-    {
-      "id": "arthurs:2026-07-19:bobby-harden",
-      "clubId": "arthurs",
-      "title": "Bobby Harden",
-      "date": "2026-07-19",
-      "sets": [
-        "22:00"
-      ],
-      "url": "https://www.arthurstavernnyc.com/performances.html",
-      "details": null,
-      "personnel": null,
-      "priceText": null
-    },
-    {
-      "id": "silvana:2026-07-19:eric-plaks-trio",
-      "clubId": "silvana",
-      "title": "Eric Plaks Trio",
-      "date": "2026-07-19",
-      "sets": [
-        "22:00"
-      ],
-      "url": "https://silvana-nyc.com/calendar.php",
-      "details": "Jazz — With Zach Swanson and Leonid Galaganov - Born and raised in Princeton, New Jersey, Eric has split his adult life between playing jazz and teaching elementary school students in Harlem, and, recently, the South Bronx, where he helped to foun",
-      "personnel": null,
-      "priceText": null
-    },
-    {
-      "id": "shrine:2026-07-19:verde-floresta",
-      "clubId": "shrine",
-      "title": "Verde Floresta",
-      "date": "2026-07-19",
-      "sets": [
-        "22:00"
-      ],
-      "url": "https://shrinenyc.com/calendar.php",
-      "details": "Fernando Augusto is a Brazilian musician, composer, and writer from São Paulo and the creator of Verde Floresta. A cavaco player influenced by samba, choro, and MPB traditions, he develops music that connects Brazilian rhythms with elements of jazz and improvisation. He is also the author of the poe",
-      "personnel": null,
-      "priceText": null
-    },
-    {
       "id": "birdland:2026-07-19:the-birdland-latin-jazz-orchestra",
       "clubId": "birdland",
       "title": "The Birdland Latin Jazz Orchestra",
@@ -3832,86 +2229,6 @@
       "url": "https://www.birdlandjazz.com/tm-event/the-birdland-latin-jazz-orchestra-32/",
       "details": "Birdland Jazz Club — Doors @ 10:00PM",
       "personnel": null,
-      "priceText": null
-    },
-    {
-      "id": "closeup:2026-07-19:leo-larratt-jarien-jamanila-mike-migliore-set-and-session",
-      "clubId": "closeup",
-      "title": "LEO LARRATT - Jarien Jamanila - Mike Migliore - Set and Session",
-      "date": "2026-07-19",
-      "sets": [
-        "22:30"
-      ],
-      "url": "https://www.viewcy.com/event/leo_larratt__set_and",
-      "details": null,
-      "personnel": [
-        {
-          "name": "Session LEO LARRATT",
-          "instrument": "guitar"
-        },
-        {
-          "name": "Saxophon Mike Migliore",
-          "instrument": "bass"
-        }
-      ],
-      "priceText": null
-    },
-    {
-      "id": "ornithologycafe:2026-07-19:late-night-jam-hosted-by-samuel-lerner",
-      "clubId": "ornithologycafe",
-      "title": "Late Night Jam Hosted By Samuel Lerner",
-      "date": "2026-07-19",
-      "sets": [
-        "23:00"
-      ],
-      "url": "https://cafeornithology.com/brooklyn-bushwick-williamsburg-cafe-ornithology-events",
-      "details": null,
-      "personnel": [
-        {
-          "name": "Samuel Lerner",
-          "instrument": "piano"
-        },
-        {
-          "name": "Sean Smith",
-          "instrument": "bass"
-        }
-      ],
-      "late": true,
-      "priceText": null
-    },
-    {
-      "id": "smalls:2026-07-19:aaron-johnson-boplicity",
-      "clubId": "smalls",
-      "title": "Aaron Johnson Boplicity",
-      "date": "2026-07-19",
-      "sets": [
-        "23:55"
-      ],
-      "url": "https://www.smallslive.com/events/33383-aaron-johnson-boplicity/",
-      "details": "until 4:00 AM",
-      "personnel": [
-        {
-          "name": "Aaron Johnson",
-          "instrument": "alto sax"
-        },
-        {
-          "name": "Gregory Chen",
-          "instrument": "piano"
-        },
-        {
-          "name": "Felix Lemerle",
-          "instrument": "guitar"
-        },
-        {
-          "name": "Paul Sikivie",
-          "instrument": "bass"
-        },
-        {
-          "name": "James Gallagher",
-          "instrument": "drums"
-        }
-      ],
-      "late": true,
       "priceText": null
     },
     {
@@ -4044,7 +2361,7 @@
         "19:00",
         "21:00"
       ],
-      "url": "https://www.smallslive.com/events/33126-ari-hoenig-quartet/",
+      "url": "https://www.smallslive.com/events/33596-ari-hoenig-quartet/",
       "details": null,
       "personnel": [
         {
@@ -4239,8 +2556,21 @@
         "19:00"
       ],
       "url": "https://silvana-nyc.com/calendar.php",
-      "details": "Jazz — The Quddus Quartet is an esteemed quartet founded by Joshua Quddus, featuring Israel Stahl (trumpet), Zev Vestel (drums), and Sedge Green (bass).",
-      "personnel": null,
+      "details": "Jazz · The Quddus Quartet is an esteemed quartet founded by Joshua Quddus, featuring Israel Stahl (trumpet), Zev Vestel (drums), and Sedge Green (bass).",
+      "personnel": [
+        {
+          "name": "Israel Stahl",
+          "instrument": "trumpet"
+        },
+        {
+          "name": "Zev Vestel",
+          "instrument": "drums"
+        },
+        {
+          "name": "Sedge Green",
+          "instrument": "bass"
+        }
+      ],
       "priceText": null
     },
     {
@@ -4491,6 +2821,36 @@
       "priceText": null
     },
     {
+      "id": "ornithology:2026-07-20:jazz-dialogue",
+      "clubId": "ornithology",
+      "title": "Jazz Dialogue",
+      "date": "2026-07-20",
+      "sets": [
+        "21:00"
+      ],
+      "url": "https://ornithologyjazzclub.com/brooklyn-bushwick-williamsburg-ornithology-jazz-club-events",
+      "details": null,
+      "personnel": [
+        {
+          "name": "Chris McCarthy",
+          "instrument": "piano"
+        },
+        {
+          "name": "June Cavlan",
+          "instrument": "vocals"
+        },
+        {
+          "name": "Matt Dwonszyk",
+          "instrument": "bass"
+        },
+        {
+          "name": "Aaron Seeber",
+          "instrument": "drums"
+        }
+      ],
+      "priceText": null
+    },
+    {
       "id": "silvana:2026-07-20:louisa-lee-poster",
       "clubId": "silvana",
       "title": "Louisa Lee Poster",
@@ -4499,7 +2859,7 @@
         "21:00"
       ],
       "url": "https://silvana-nyc.com/calendar.php",
-      "details": "Jazz — As befits an octogenarian, jazz Girl Singer, Louisa Lee Poster is known for singing some of the great old Tin Pan Alley songs that are at least as old as she is. She first learned these songs when her father whistled them and her mother pla",
+      "details": "Jazz · As befits an octogenarian, jazz Girl Singer, Louisa Lee Poster is known for singing some of the great old Tin Pan Alley songs that are at least as old as she is. She first learned these songs when her father whistled them and her mother pla",
       "personnel": null,
       "priceText": null
     },
@@ -4851,6 +3211,19 @@
       "priceText": null
     },
     {
+      "id": "nublu:2026-07-21:robert-nicolls-quintet-luke-bacani-group",
+      "clubId": "nublu",
+      "title": "Robert Nicolls Quintet Luke Bacani Group",
+      "date": "2026-07-21",
+      "sets": [
+        "19:00"
+      ],
+      "url": "https://posh.vip/e/robert-nicolls-quintet-luke-bacani-group",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
       "id": "django:2026-07-21:manuel-valera-quartet",
       "clubId": "django",
       "title": "Manuel Valera Quartet",
@@ -5016,7 +3389,7 @@
         "19:00"
       ],
       "url": "https://silvana-nyc.com/calendar.php",
-      "details": "Jazz — Joe Wagner was born to a musical family on June 5, 1976 in Saratoga Springs, NY. He started playing the alto saxophone at the age of 10 and quickly fell in love with the music of Charlie Parker. He studied jazz and frequented many jazz club",
+      "details": "Jazz · Joe Wagner was born to a musical family on June 5, 1976 in Saratoga Springs, NY. He started playing the alto saxophone at the age of 10 and quickly fell in love with the music of Charlie Parker. He studied jazz and frequented many jazz club",
       "personnel": null,
       "priceText": null
     },
@@ -5029,7 +3402,7 @@
         "19:00"
       ],
       "url": "https://shrinenyc.com/calendar.php",
-      "details": "Jazz — Matthew Pearl is a jazz tenor saxophonist and one of New York City’s rising young musicians. Matt received a Bachelor of Music degree in 2023 from the Jackie McLean Institute of Jazz (Hartt School, University of Hartford) in Connecticut.",
+      "details": "Jazz · Matthew Pearl is a jazz tenor saxophonist and one of New York City’s rising young musicians. Matt received a Bachelor of Music degree in 2023 from the Jackie McLean Institute of Jazz (Hartt School, University of Hartford) in Connecticut.",
       "personnel": null,
       "priceText": null
     },
@@ -5062,6 +3435,28 @@
         }
       ],
       "priceText": null
+    },
+    {
+      "id": "ny92:2026-07-21:jazz-in-july-aaron-diehl-and-john-patitucci",
+      "clubId": "ny92",
+      "title": "Jazz in July: Aaron Diehl and John Patitucci",
+      "date": "2026-07-21",
+      "sets": [
+        "19:30"
+      ],
+      "url": "https://www.92ny.org/event/aaron-diehl-and-john-patitucci",
+      "details": "Geffen Stage at Kaufmann Concert Hall",
+      "personnel": [
+        {
+          "name": "Aaron Diehl",
+          "instrument": "piano"
+        },
+        {
+          "name": "John Patitucci",
+          "instrument": "bass"
+        }
+      ],
+      "priceText": "from $45"
     },
     {
       "id": "vanguard:2026-07-21:kris-davis-tyshawn-sorey-ingrid-laubrock",
@@ -5113,8 +3508,21 @@
         "20:00"
       ],
       "url": "https://www.barbayeux.com/jazz/8ajbd79jlwwxa4k-psxk9-78yrh-83y2x-kftwg-bdzzm-meta7-fc5pm-hb7xe-nggby-zsppy-ylx62-y65ax-yeds4-asa4a-dhzaf-6wxma",
-      "details": "Ed Cherry, Ugonna Okegwo, Diego Voglino",
-      "personnel": null,
+      "details": null,
+      "personnel": [
+        {
+          "name": "Ed Cherry",
+          "instrument": ""
+        },
+        {
+          "name": "Ugonna Okegwo",
+          "instrument": ""
+        },
+        {
+          "name": "Diego Voglino",
+          "instrument": ""
+        }
+      ],
       "priceText": null
     },
     {
@@ -5351,6 +3759,33 @@
           "instrument": "drums"
         }
       ],
+      "priceText": null
+    },
+    {
+      "id": "ornithologycafe:2026-07-21:late-night-jam-hosted-by-nicolai-daneck",
+      "clubId": "ornithologycafe",
+      "title": "Late Night Jam Hosted By Nicolai Daneck",
+      "date": "2026-07-21",
+      "sets": [
+        "23:00"
+      ],
+      "url": "https://cafeornithology.com/brooklyn-bushwick-williamsburg-cafe-ornithology-events",
+      "details": null,
+      "personnel": [
+        {
+          "name": "Nicolai Daneck",
+          "instrument": "piano"
+        },
+        {
+          "name": "Yuma Takagi",
+          "instrument": "bass"
+        },
+        {
+          "name": "Sam Russo",
+          "instrument": "drums"
+        }
+      ],
+      "late": true,
       "priceText": null
     },
     {
@@ -5693,9 +4128,9 @@
       "priceText": null
     },
     {
-      "id": "pocket:2026-07-22:camille-thurman-with-the-darrell-green-trio",
+      "id": "pocket:2026-07-22:camille-thurman-with-the-darrell-green-quartet-special-guest",
       "clubId": "pocket",
-      "title": "Camille Thurman with the Darrell Green Trio",
+      "title": "Camille Thurman with the Darrell Green Quartet – Special Guest Kamau Muata Adilifu",
       "date": "2026-07-22",
       "sets": [
         "19:00",
@@ -5753,6 +4188,28 @@
         }
       ],
       "priceText": null
+    },
+    {
+      "id": "ny92:2026-07-22:jazz-in-july-kate-kortum-and-the-aaron-diehl-trio",
+      "clubId": "ny92",
+      "title": "Jazz in July: Kate Kortum and the Aaron Diehl Trio",
+      "date": "2026-07-22",
+      "sets": [
+        "19:30"
+      ],
+      "url": "https://www.92ny.org/event/kate-kortum-and-the-aaron-diehl-trio",
+      "details": "Buttenwieser Hall at The Arnhold Center · In person sold out · streaming tickets available",
+      "personnel": [
+        {
+          "name": "Kate Kortum",
+          "instrument": "vocals"
+        },
+        {
+          "name": "Aaron Diehl",
+          "instrument": "piano"
+        }
+      ],
+      "priceText": "from $50"
     },
     {
       "id": "vanguard:2026-07-22:kris-davis-tyshawn-sorey-ingrid-laubrock",
@@ -5831,7 +4288,7 @@
         "20:00"
       ],
       "url": "https://silvana-nyc.com/calendar.php",
-      "details": "Folk / Blues / Indie — The Monthly Singer/Songwriter Conclave is a showcase of 4-6 acts rotating from a group of 20 musicians, drawn from the tri-state area. We love Silvana! This month's set will feature: 8pm Carol Lester https://youtu.be/E16K9KxjjDM?si=-Uohaugq",
+      "details": "Folk / Blues / Indie · The Monthly Singer/Songwriter Conclave is a showcase of 4-6 acts rotating from a group of 20 musicians, drawn from the tri-state area. We love Silvana! This month's set will feature: 8pm Carol Lester https://youtu.be/E16K9KxjjDM?si=-Uohaugq",
       "personnel": null,
       "priceText": null
     },
@@ -5844,7 +4301,7 @@
         "20:00"
       ],
       "url": "https://shrinenyc.com/calendar.php",
-      "details": "Blues — Veteran of the New York Rock and Blues Scene Tony Santos has now formed his own band: The Tony Santos Band which features songs that he has written over over 30 year career. Tony has released 4 CDs , Iguana Man, That's what I am talking abo",
+      "details": "Blues · Veteran of the New York Rock and Blues Scene Tony Santos has now formed his own band: The Tony Santos Band which features songs that he has written over over 30 year career. Tony has released 4 CDs , Iguana Man, That's what I am talking abo",
       "personnel": null,
       "priceText": null
     },
@@ -6112,7 +4569,7 @@
         "23:00"
       ],
       "url": "https://shrinenyc.com/calendar.php",
-      "details": "Jazz — Theo Stone - Trombone Nicolo Boselli - Alto Sax Brahm Sasner - Piano Ben Halle - Bass Joe Mintz - Drums",
+      "details": "Jazz · Theo Stone - Trombone Nicolo Boselli - Alto Sax Brahm Sasner - Piano Ben Halle - Bass Joe Mintz - Drums",
       "personnel": null,
       "late": true,
       "priceText": null
@@ -6213,16 +4670,25 @@
       "priceText": "$35"
     },
     {
-      "id": "barbayeux:2026-07-23:thurs-happy-hour-w-katie-cosco-and-laura-dreyer",
+      "id": "barbayeux:2026-07-23:thurs-happy-hour",
       "clubId": "barbayeux",
-      "title": "Thurs Happy Hour w/Katie Cosco and Laura Dreyer",
+      "title": "Thurs Happy Hour",
       "date": "2026-07-23",
       "sets": [
         "17:30"
       ],
       "url": "https://www.barbayeux.com/jazz/3ywyskxsnfbsjjg-424y5-2jzed-tg49n-n554j-fkf8m-5eey5-jdwa6-f2e37",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Katie Cosco",
+          "instrument": ""
+        },
+        {
+          "name": "Laura Dreyer",
+          "instrument": ""
+        }
+      ],
       "priceText": null
     },
     {
@@ -6412,19 +4878,6 @@
       "priceText": null
     },
     {
-      "id": "nublu:2026-07-23:billy-martin-matt-glassmeyer-jonathan-goldberger",
-      "clubId": "nublu",
-      "title": "Billy Martin, Matt Glassmeyer, Jonathan Goldberger",
-      "date": "2026-07-23",
-      "sets": [
-        "19:00"
-      ],
-      "url": "https://posh.vip/e/billy-martin-matt-glassmeyer-jonathan-goldberger",
-      "details": null,
-      "personnel": null,
-      "priceText": null
-    },
-    {
       "id": "django:2026-07-23:joe-farnsworth-quartet",
       "clubId": "django",
       "title": "Joe Farnsworth Quartet",
@@ -6496,6 +4949,55 @@
       "priceText": null
     },
     {
+      "id": "closeup:2026-07-23:sonny-step-liya-grigorian-chris-gaskell-ethan-kogan",
+      "clubId": "closeup",
+      "title": "SONNY STEP - Liya Grigorian - Chris Gaskell - Ethan Kogan",
+      "date": "2026-07-23",
+      "sets": [
+        "19:30",
+        "21:00"
+      ],
+      "url": "https://www.viewcy.com/event/sonny_step__liya_gri",
+      "details": null,
+      "personnel": [
+        {
+          "name": "Vocals/Saxophone Liya Grigorian",
+          "instrument": "piano"
+        },
+        {
+          "name": "Chris Gaskell",
+          "instrument": "bass"
+        },
+        {
+          "name": "Ethan Kogan",
+          "instrument": "drums"
+        }
+      ],
+      "priceText": null
+    },
+    {
+      "id": "ny92:2026-07-23:jazz-in-july-terence-blanchard-and-ravi-coltrane-with-the-e-",
+      "clubId": "ny92",
+      "title": "Jazz in July: Terence Blanchard and Ravi Coltrane with The E-Collective",
+      "date": "2026-07-23",
+      "sets": [
+        "19:30"
+      ],
+      "url": "https://www.92ny.org/event/terence-blanchard-and-ravi-coltrane",
+      "details": "Geffen Stage at Kaufmann Concert Hall",
+      "personnel": [
+        {
+          "name": "Terence Blanchard",
+          "instrument": "trumpet"
+        },
+        {
+          "name": "Ravi Coltrane",
+          "instrument": "saxophone"
+        }
+      ],
+      "priceText": "from $45"
+    },
+    {
       "id": "terraza7:2026-07-23:queens-college-jazz-jam-series-at-terraza-7",
       "clubId": "terraza7",
       "title": "Queens College Jazz Jam Series at Terraza 7",
@@ -6563,9 +5065,9 @@
       "priceText": null
     },
     {
-      "id": "barbayeux:2026-07-23:julian-shore-w-adam-kolker-jeremy-stratton-jochen-rueckert",
+      "id": "barbayeux:2026-07-23:julian-shore",
       "clubId": "barbayeux",
-      "title": "Julian Shore w/Adam Kolker, Jeremy Stratton, Jochen Rueckert",
+      "title": "Julian Shore",
       "date": "2026-07-23",
       "sets": [
         "20:00",
@@ -6573,7 +5075,20 @@
       ],
       "url": "https://www.barbayeux.com/jazz/z63pt232xlmbzmm-lf3tb-5yewh-m6x68-p26t7-nldmr-r7jah-cs8kl-fsgfe-4k7be-mrn73-tlf9t-4ncdr-rheb4-y9mwa-hlsr5-5p4hn-9mn2k-tg8s9-5ampf-mb7ch-3pbw6-a4wfm-z2jjd-em2ra-nal2n-j4ppt-jse6l-ebhae-g2tp6",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Adam Kolker",
+          "instrument": ""
+        },
+        {
+          "name": "Jeremy Stratton",
+          "instrument": ""
+        },
+        {
+          "name": "Jochen Rueckert",
+          "instrument": ""
+        }
+      ],
       "priceText": null
     },
     {
@@ -6585,7 +5100,7 @@
         "20:00"
       ],
       "url": "https://silvana-nyc.com/calendar.php",
-      "details": "Jazz — Steven Blane | A dynamic vocalist, songwriter, and rabbi who fuses jazz, folk, and pop. Founder of Sim Shalom and JSLI, he shares soulful stories through music, faith, and his love for New York.",
+      "details": "Jazz · Steven Blane | A dynamic vocalist, songwriter, and rabbi who fuses jazz, folk, and pop. Founder of Sim Shalom and JSLI, he shares soulful stories through music, faith, and his love for New York.",
       "personnel": null,
       "priceText": null
     },
@@ -6822,9 +5337,9 @@
       "priceText": null
     },
     {
-      "id": "closeup:2026-07-23:dave-adewumi-tyler-bullock-gervis-myles-steven-crammer-set-a",
+      "id": "closeup:2026-07-23:dave-adewumi-tyler-bullock-ben-tiberio-steven-crammer-set-an",
       "clubId": "closeup",
-      "title": "DAVE ADEWUMI - Tyler Bullock - Gervis Myles - Steven Crammer - Set and Session",
+      "title": "DAVE ADEWUMI - Tyler Bullock - Ben Tiberio - Steven Crammer - Set and Session",
       "date": "2026-07-23",
       "sets": [
         "22:30"
@@ -6841,7 +5356,7 @@
           "instrument": "piano"
         },
         {
-          "name": "Gervis Myles",
+          "name": "Ben Tiberio",
           "instrument": "bass"
         },
         {
@@ -6916,7 +5431,7 @@
         "00:00"
       ],
       "url": "https://shrinenyc.com/calendar.php",
-      "details": "Afro Fusion — Come enjoy our dance party Saturday with the world renowned Dj Birane. Combing elements of music from all over the world, DJ Birane will have you on your feet!!",
+      "details": "Afro Fusion · Come enjoy our dance party Saturday with the world renowned Dj Birane. Combing elements of music from all over the world, DJ Birane will have you on your feet!!",
       "personnel": null,
       "priceText": null
     },
@@ -7074,16 +5589,21 @@
       "priceText": null
     },
     {
-      "id": "barbayeux:2026-07-24:fri-happy-hour-w-julius-gawlik",
+      "id": "barbayeux:2026-07-24:fri-happy-hour",
       "clubId": "barbayeux",
-      "title": "Fri Happy Hour w/Julius Gawlik",
+      "title": "Fri Happy Hour",
       "date": "2026-07-24",
       "sets": [
         "17:30"
       ],
       "url": "https://www.barbayeux.com/jazz/2ll2kabgl8lbdpc-9ywdc-txjfp-nwfb5-s885d-4dbp4",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Julius Gawlik",
+          "instrument": ""
+        }
+      ],
       "priceText": null
     },
     {
@@ -7553,9 +6073,9 @@
       "priceText": null
     },
     {
-      "id": "barbayeux:2026-07-24:kazemde-george-w-tyrone-allen-ii-and-kayvon-gordon",
+      "id": "barbayeux:2026-07-24:kazemde-george",
       "clubId": "barbayeux",
-      "title": "Kazemde George w/Tyrone Allen II and Kayvon Gordon",
+      "title": "Kazemde George",
       "date": "2026-07-24",
       "sets": [
         "20:00",
@@ -7563,7 +6083,16 @@
       ],
       "url": "https://www.barbayeux.com/jazz/bsg4lz3rhzc3egx-mfjnz-47sjb-4e67s-xt5a5-6bjcx-cbrpj-e2s8z-ajbg8-ctpzs-c8mfg-727m7-zdpbx-42jss-xlx9x-zhw76-lns7p-fjc6n",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Tyrone Allen II",
+          "instrument": ""
+        },
+        {
+          "name": "Kayvon Gordon",
+          "instrument": ""
+        }
+      ],
       "priceText": null
     },
     {
@@ -7720,7 +6249,7 @@
         "22:00"
       ],
       "url": "https://silvana-nyc.com/calendar.php",
-      "details": "Rock / Blues / Funk — Founded in 2014, this indie-rock band has played dozens of local clubs playing all originals with a rock and blues dynamic!",
+      "details": "Rock / Blues / Funk · Founded in 2014, this indie-rock band has played dozens of local clubs playing all originals with a rock and blues dynamic!",
       "personnel": null,
       "priceText": null
     },
@@ -7880,7 +6409,7 @@
         "00:00"
       ],
       "url": "https://shrinenyc.com/calendar.php",
-      "details": "Afro Fusion — Come enjoy our dance party Saturday with the world renowned Dj Birane. Combing elements of music from all over the world, DJ Birane will have you on your feet!!",
+      "details": "Afro Fusion · Come enjoy our dance party Saturday with the world renowned Dj Birane. Combing elements of music from all over the world, DJ Birane will have you on your feet!!",
       "personnel": null,
       "priceText": null
     },
@@ -8319,6 +6848,36 @@
       "priceText": null
     },
     {
+      "id": "ny92:2026-07-25:jazz-in-july-ron-carter-s-foursight",
+      "clubId": "ny92",
+      "title": "Jazz in July: Ron Carter's Foursight",
+      "date": "2026-07-25",
+      "sets": [
+        "19:30"
+      ],
+      "url": "https://www.92ny.org/event/ron-carter-s-foursight",
+      "details": "Geffen Stage at Kaufmann Concert Hall",
+      "personnel": [
+        {
+          "name": "Ron Carter",
+          "instrument": "bass"
+        },
+        {
+          "name": "Jimmy Greene",
+          "instrument": "saxophone"
+        },
+        {
+          "name": "Renee Rosnes",
+          "instrument": "piano"
+        },
+        {
+          "name": "Payton Crossley",
+          "instrument": "drums"
+        }
+      ],
+      "priceText": "from $45"
+    },
+    {
       "id": "terraza7:2026-07-25:ricardo-osorio-el-ni-o-flamenco",
       "clubId": "terraza7",
       "title": "Ricardo Osorio “El Niño” | Flamenco",
@@ -8405,9 +6964,9 @@
       "priceText": null
     },
     {
-      "id": "barbayeux:2026-07-25:melissa-aldana-w-alexandra-ridout-pablo-menares-colin-strana",
+      "id": "barbayeux:2026-07-25:melissa-aldana",
       "clubId": "barbayeux",
-      "title": "Melissa Aldana w/Alexandra Ridout, Pablo Menares, Colin Stranahan",
+      "title": "Melissa Aldana",
       "date": "2026-07-25",
       "sets": [
         "20:00",
@@ -8415,7 +6974,20 @@
       ],
       "url": "https://www.barbayeux.com/jazz/8nr3zbphrp75e5k-3s5ml-h7ca5-syapg-t6xwm-whbzx-ccm8b-x3hj6-aye58-4psyn-3zkbd-74yln-2m7an-s36sk-hl2jc-hdptg-3slgm-eklny-a4mp4-crpp2-l8pkr-w3ft8-ddssg-hz3yr-kxhbe-3lych-pnwjs-af83b-x2lls-kykak-tnals",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Alexandra Ridout",
+          "instrument": ""
+        },
+        {
+          "name": "Pablo Menares",
+          "instrument": ""
+        },
+        {
+          "name": "Colin Stranahan",
+          "instrument": ""
+        }
+      ],
       "priceText": null
     },
     {
@@ -8507,7 +7079,7 @@
         "21:00"
       ],
       "url": "https://shrinenyc.com/calendar.php",
-      "details": "Rock / Blues — Robert Mitchell has been a performing, touring, recording artist since 1980. Performing in all original bands: GLASS HOUSE and WILDLIFE and RAJA and CINEMATIK, Mitchell also played as a sideman with numerous NYC and Boston bands. Currently",
+      "details": "Rock / Blues · Robert Mitchell has been a performing, touring, recording artist since 1980. Performing in all original bands: GLASS HOUSE and WILDLIFE and RAJA and CINEMATIK, Mitchell also played as a sideman with numerous NYC and Boston bands. Currently",
       "personnel": null,
       "priceText": null
     },
@@ -8564,6 +7136,19 @@
       "priceText": null
     },
     {
+      "id": "silvana:2026-07-25:steam-down",
+      "clubId": "silvana",
+      "title": "Steam Down",
+      "date": "2026-07-25",
+      "sets": [
+        "22:00"
+      ],
+      "url": "https://silvana-nyc.com/calendar.php",
+      "details": "Afro-Fusion · The Sounds of the Diaspora is a live musical journey curated by Steam Down and conducted in real time by Steam Down’s founder, celebrating the rhythms, stories and sonic traditions that connect communities across the African diaspora. Blend",
+      "personnel": null,
+      "priceText": null
+    },
+    {
       "id": "jazzcultural:2026-07-25:abraham-burton-quartet",
       "clubId": "jazzcultural",
       "title": "Abraham Burton Quartet",
@@ -8604,20 +7189,6 @@
       "url": "https://www.birdlandjazz.com/tm-event/gerry-gibbs-dream-band-ft-gary-bartz-randy-brecker-buster-williams-cyrus-chestnut-10/",
       "details": "Birdland Jazz Club — Doors @ 10:00PM",
       "personnel": null,
-      "priceText": null
-    },
-    {
-      "id": "silvana:2026-07-25:steam-down",
-      "clubId": "silvana",
-      "title": "Steam Down",
-      "date": "2026-07-25",
-      "sets": [
-        "23:00"
-      ],
-      "url": "https://silvana-nyc.com/calendar.php",
-      "details": "Afro-Fusion — The Sounds of the Diaspora is a live musical journey curated by Steam Down and conducted in real time by Steam Down’s founder, celebrating the rhythms, stories and sonic traditions that connect communities across the African diaspora. Blend",
-      "personnel": null,
-      "late": true,
       "priceText": null
     },
     {
@@ -9099,9 +7670,9 @@
       "priceText": null
     },
     {
-      "id": "closeup:2026-07-26:jonathan-paik-steve-williams-mark-valdes",
+      "id": "closeup:2026-07-26:jonathan-paik-steve-williams-alex-yoo",
       "clubId": "closeup",
-      "title": "JONATHAN PAIK - Steve Williams - Mark Valdes",
+      "title": "JONATHAN PAIK - Steve Williams - Alex Yoo",
       "date": "2026-07-26",
       "sets": [
         "19:30",
@@ -9119,7 +7690,7 @@
           "instrument": "bass"
         },
         {
-          "name": "Mark Valdes",
+          "name": "Alex Yoo",
           "instrument": "drums"
         }
       ],
@@ -9624,15 +8195,15 @@
       "priceText": null
     },
     {
-      "id": "barbes:2026-07-27:dana-lyn-kyle-sanna",
+      "id": "barbes:2026-07-27:dana-lyn-kyle-sanna-and-special-guest-cleek-schrey",
       "clubId": "barbes",
-      "title": "DANA LYN & KYLE SANNA",
+      "title": "DANA LYN & KYLE SANNA and special guest CLEEK SCHREY",
       "date": "2026-07-27",
       "sets": [
         "19:00"
       ],
       "url": "https://www.viewcy.com/event/dana_lyn__kyle_sanna_43",
-      "details": "Dana Lyn & Kyle Sanna : A \"Through the Looking Glass\" approach to traditional Irish music. Hailed as “first-rate, versatile musicians” by The New Yorker and “a top-notch fiddle-and-guitar duo” by The New York Times , Dana Lyn and Kyle Sanna connect the dots between their experience as composers and",
+      "details": "Dana Lyn & Kyle Sanna : With special guest guest Cleek Schrey, fiddle. A \"Through the Looking Glass\" approach to traditional Irish music. Hailed as “first-rate, versatile musicians” by The New Yorker and “a top-notch fiddle-and-guitar duo” by The New York Times , Dana Lyn and Kyle Sanna connect the",
       "personnel": null,
       "priceText": null
     },
@@ -10504,7 +9075,7 @@
         "21:00"
       ],
       "url": "https://shrinenyc.com/calendar.php",
-      "details": "Jazz — Dennis Mitcheltree, tenor saxophone Jesse Crawford, bass Bill McClellan, drums",
+      "details": "Jazz · Dennis Mitcheltree, tenor saxophone Jesse Crawford, bass Bill McClellan, drums",
       "personnel": null,
       "priceText": null
     },
@@ -11012,7 +9583,7 @@
         "19:00"
       ],
       "url": "https://shrinenyc.com/calendar.php",
-      "details": "Soul / Funk — Dave Kardas band plays Blues/Jazz/Fusion and will be performing music from their album \"Fire and Ice\" as well as new releases like \"Living in the Moment\" and \"Joyride\". DKB has played all around NYC, Ct and Texas.",
+      "details": "Soul / Funk · Dave Kardas band plays Blues/Jazz/Fusion and will be performing music from their album \"Fire and Ice\" as well as new releases like \"Living in the Moment\" and \"Joyride\". DKB has played all around NYC, Ct and Texas.",
       "personnel": null,
       "priceText": null
     },
@@ -11131,9 +9702,9 @@
       "priceText": null
     },
     {
-      "id": "barbayeux:2026-07-29:marty-ehrlich-quartet-expanse-w-jacob-sacks-matt-pavolka-ste",
+      "id": "barbayeux:2026-07-29:marty-ehrlich-quartet-expanse",
       "clubId": "barbayeux",
-      "title": "Marty Ehrlich Quartet Expanse w/Jacob Sacks, Matt Pavolka, Steven Crammer",
+      "title": "Marty Ehrlich Quartet Expanse",
       "date": "2026-07-29",
       "sets": [
         "20:00",
@@ -11141,7 +9712,20 @@
       ],
       "url": "https://www.barbayeux.com/jazz/33sxrd9ynk6pjzn-325ns-shjkp-4l7y4-er5kz-pfmt7-la9zt-hgezc-z5h28-s33sy-982jt-yttmk-x8h75-wrm8y-te9t8-zl2wj-m73r6-jbbct-brymc-6zgj3-xbsff-9pyta-8d82d-pw27n-lrrc8-edfbd-c72lj",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Jacob Sacks",
+          "instrument": ""
+        },
+        {
+          "name": "Matt Pavolka",
+          "instrument": ""
+        },
+        {
+          "name": "Steven Crammer",
+          "instrument": ""
+        }
+      ],
       "priceText": null
     },
     {
@@ -11290,7 +9874,7 @@
         "21:00"
       ],
       "url": "https://silvana-nyc.com/calendar.php",
-      "details": "Jazz — The music of promising young NYC guitarist/composer Zachariah Lambert traverses a wide range of influences while maintaining sturdy roots in the jazz idiom. His compositions reveal a keen knack for melody while providing ample opportunities",
+      "details": "Jazz · The music of promising young NYC guitarist/composer Zachariah Lambert traverses a wide range of influences while maintaining sturdy roots in the jazz idiom. His compositions reveal a keen knack for melody while providing ample opportunities",
       "personnel": null,
       "priceText": null
     },
@@ -11342,7 +9926,7 @@
         "22:00"
       ],
       "url": "https://shrinenyc.com/calendar.php",
-      "details": "Soul — Althea Pettigrew is a Harlemite who sings and plays all the great Standards of Jazz/Blues/R&B. She expresses soulful music for the soul.",
+      "details": "Soul · Althea Pettigrew is a Harlemite who sings and plays all the great Standards of Jazz/Blues/R&B. She expresses soulful music for the soul.",
       "personnel": null,
       "priceText": null
     },
@@ -11552,29 +10136,21 @@
       "priceText": "$35"
     },
     {
-      "id": "birdland:2026-07-30:the-high-society-new-orleans-jazz-band-theater",
-      "clubId": "birdland",
-      "title": "The High Society New Orleans Jazz Band (Theater)",
-      "date": "2026-07-30",
-      "sets": [
-        "17:30"
-      ],
-      "url": "https://www.birdlandjazz.com/tm-event/the-high-society-new-orleans-jazz-band-53/",
-      "details": "Birdland Theater — Doors @ 4:30PM",
-      "personnel": null,
-      "priceText": null
-    },
-    {
-      "id": "barbayeux:2026-07-30:thurs-happy-hour-w-steven-crammer",
+      "id": "barbayeux:2026-07-30:thurs-happy-hour",
       "clubId": "barbayeux",
-      "title": "Thurs Happy Hour w/Steven Crammer",
+      "title": "Thurs Happy Hour",
       "date": "2026-07-30",
       "sets": [
         "17:30"
       ],
       "url": "https://www.barbayeux.com/jazz/3ywyskxsnfbsjjg-424y5-2jzed-tg49n-n554j-fkf8m-5eey5-jdwa6-3dj4z",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Steven Crammer",
+          "instrument": ""
+        }
+      ],
       "priceText": null
     },
     {
@@ -11691,19 +10267,6 @@
           "instrument": "drums"
         }
       ],
-      "priceText": null
-    },
-    {
-      "id": "birdland:2026-07-30:bill-charlap-and-renee-rosnes",
-      "clubId": "birdland",
-      "title": "Bill Charlap and Renee Rosnes",
-      "date": "2026-07-30",
-      "sets": [
-        "19:00"
-      ],
-      "url": "https://www.birdlandjazz.com/tm-event/bill-charlap-and-renee-rosnes-5/",
-      "details": "Birdland Jazz Club — Doors @ 5:30PM",
-      "personnel": null,
       "priceText": null
     },
     {
@@ -11865,7 +10428,7 @@
         "19:00"
       ],
       "url": "https://shrinenyc.com/calendar.php",
-      "details": "Funk — COLD FUJON is a New York-based Funk/Jazz ensemble featuring touring artists coming together to perform up-tempo and hard-hitting fusion jazz with a driving beat. Horns and rhythm section combine with the full force of funk!",
+      "details": "Funk · COLD FUJON is a New York-based Funk/Jazz ensemble featuring touring artists coming together to perform up-tempo and hard-hitting fusion jazz with a driving beat. Horns and rhythm section combine with the full force of funk!",
       "personnel": null,
       "priceText": null
     },
@@ -11971,9 +10534,9 @@
       "priceText": null
     },
     {
-      "id": "barbayeux:2026-07-30:ben-monder-w-adam-kolker-jeremy-stratton-tom-rainey",
+      "id": "barbayeux:2026-07-30:ben-monder",
       "clubId": "barbayeux",
-      "title": "Ben Monder w/Adam Kolker, Jeremy Stratton, Tom Rainey",
+      "title": "Ben Monder",
       "date": "2026-07-30",
       "sets": [
         "20:00",
@@ -11981,6 +10544,32 @@
       ],
       "url": "https://www.barbayeux.com/jazz/z63pt232xlmbzmm-lf3tb-5yewh-m6x68-p26t7-nldmr-r7jah-cs8kl-fsgfe-4k7be-mrn73-tlf9t-4ncdr-rheb4-y9mwa-hlsr5-5p4hn-9mn2k-tg8s9-5ampf-mb7ch-3pbw6-a4wfm-z2jjd-em2ra-nal2n-j4ppt-jse6l-ebhae-g2tp6-rh6g9",
       "details": null,
+      "personnel": [
+        {
+          "name": "Adam Kolker",
+          "instrument": ""
+        },
+        {
+          "name": "Jeremy Stratton",
+          "instrument": ""
+        },
+        {
+          "name": "Tom Rainey",
+          "instrument": ""
+        }
+      ],
+      "priceText": null
+    },
+    {
+      "id": "birdland:2026-07-30:the-high-society-new-orleans-jazz-band-theater",
+      "clubId": "birdland",
+      "title": "The High Society New Orleans Jazz Band (Theater)",
+      "date": "2026-07-30",
+      "sets": [
+        "20:30"
+      ],
+      "url": "https://www.birdlandjazz.com/tm-event/the-high-society-new-orleans-jazz-band-54/",
+      "details": "Birdland Theater — Doors @ 7:30PM",
       "personnel": null,
       "priceText": null
     },
@@ -12087,7 +10676,7 @@
         "21:00"
       ],
       "url": "https://silvana-nyc.com/calendar.php",
-      "details": "Jazz — Antoine Dowdell is a Bronx-born musician who began piano at age ten and went on to study classical piano, music theory, and voice at The Riverdale School of Music and Music & Art High School before continuing his training with private instr",
+      "details": "Jazz · Antoine Dowdell is a Bronx-born musician who began piano at age ten and went on to study classical piano, music theory, and voice at The Riverdale School of Music and Music & Art High School before continuing his training with private instr",
       "personnel": null,
       "priceText": null
     },
@@ -12101,6 +10690,19 @@
       ],
       "url": "https://shrinenyc.com/calendar.php",
       "details": "Bees Deluxe is a blues-rooted, jazz-inspired, funk-infused band from Boston, on a mission to drag the music of Chicago in the 60s and the Blue Note catalog kicking and screaming into the 21st century.",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "birdland:2026-07-30:bill-charlap-and-renee-rosnes",
+      "clubId": "birdland",
+      "title": "Bill Charlap and Renee Rosnes",
+      "date": "2026-07-30",
+      "sets": [
+        "21:30"
+      ],
+      "url": "https://www.birdlandjazz.com/tm-event/bill-charlap-and-renee-rosnes-6/",
+      "details": "Birdland Jazz Club — Doors @ 9:00PM",
       "personnel": null,
       "priceText": null
     },
@@ -12337,7 +10939,7 @@
         "00:00"
       ],
       "url": "https://shrinenyc.com/calendar.php",
-      "details": "Afro Fusion — Come enjoy our dance party Saturday with the world renowned Dj Birane. Combing elements of music from all over the world, DJ Birane will have you on your feet!!",
+      "details": "Afro Fusion · Come enjoy our dance party Saturday with the world renowned Dj Birane. Combing elements of music from all over the world, DJ Birane will have you on your feet!!",
       "personnel": null,
       "priceText": null
     },
@@ -12432,6 +11034,19 @@
       "priceText": "$40"
     },
     {
+      "id": "birdland:2026-07-31:the-yardbird-big-band-directed-by-david-dejesus",
+      "clubId": "birdland",
+      "title": "The Yardbird Big Band Directed by David DeJesus",
+      "date": "2026-07-31",
+      "sets": [
+        "17:30"
+      ],
+      "url": "https://www.birdlandjazz.com/tm-event/birdland-big-band-18/",
+      "details": "Birdland Jazz Club — Doors @ 4:30PM",
+      "personnel": null,
+      "priceText": null
+    },
+    {
       "id": "barbes:2026-07-31:oscar-noriega-s-crooked-quartet",
       "clubId": "barbes",
       "title": "Oscar Noriega's CROOKED QUARTET",
@@ -12458,16 +11073,21 @@
       "priceText": null
     },
     {
-      "id": "barbayeux:2026-07-31:fri-happy-hour-w-angus-mason",
+      "id": "barbayeux:2026-07-31:fri-happy-hour",
       "clubId": "barbayeux",
-      "title": "Fri Happy Hour w/Angus Mason",
+      "title": "Fri Happy Hour",
       "date": "2026-07-31",
       "sets": [
         "17:30"
       ],
       "url": "https://www.barbayeux.com/jazz/2ll2kabgl8lbdpc-9ywdc-txjfp-nwfb5-s885d-f253p",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Angus Mason",
+          "instrument": ""
+        }
+      ],
       "priceText": null
     },
     {
@@ -12859,6 +11479,10 @@
           "instrument": "violin, vocals"
         },
         {
+          "name": "Jerry Fabris",
+          "instrument": "double bass, vocals"
+        },
+        {
           "name": "Seth Kessel",
           "instrument": "guitar"
         }
@@ -12866,31 +11490,9 @@
       "priceText": null
     },
     {
-      "id": "barbes:2026-07-31:baklava-express",
-      "clubId": "barbes",
-      "title": "BAKLAVA EXPRESS",
-      "date": "2026-07-31",
-      "sets": [
-        "20:00"
-      ],
-      "url": "https://www.viewcy.com/event/baklava_express_55",
-      "details": null,
-      "personnel": [
-        {
-          "name": "Josh Kaye",
-          "instrument": "oud"
-        },
-        {
-          "name": "James Robbins",
-          "instrument": "bass"
-        }
-      ],
-      "priceText": null
-    },
-    {
-      "id": "barbayeux:2026-07-31:stephan-crump-w-darius-jones-eric-mcpherson",
+      "id": "barbayeux:2026-07-31:stephan-crump",
       "clubId": "barbayeux",
-      "title": "Stephan Crump w/Darius Jones, Eric Mcpherson",
+      "title": "Stephan Crump",
       "date": "2026-07-31",
       "sets": [
         "20:00",
@@ -12898,7 +11500,16 @@
       ],
       "url": "https://www.barbayeux.com/jazz/bsg4lz3rhzc3egx-mfjnz-47sjb-4e67s-xt5a5-6bjcx-cbrpj-e2s8z-ajbg8-ctpzs-c8mfg-727m7-zdpbx-42jss-xlx9x-zhw76-lns7p-fjc6n-ywrkk",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Darius Jones",
+          "instrument": ""
+        },
+        {
+          "name": "Eric Mcpherson",
+          "instrument": ""
+        }
+      ],
       "priceText": null
     },
     {
@@ -12976,6 +11587,19 @@
       ],
       "url": "https://www.barlunatico.com/calendar/2022/10/28/super-yamba-band-chd5t-ldzlr-lsz5x-3lawg-xwhhf-3f3c9-egls7-dykfr-erhpl-bwm5y-63s68-tppg7-bwxsy",
       "details": "The psychedelic afro-funk of Super Yamba Band! Sean Smith is back in action and the band sounding better than ever. You know what to do. Joseph Yount ~ Drums Prince Amu ~ Bass Eric Burns ~ Guitar Sean Smith ~ Trumpet, Keys Walter Fancourt ~ Sax Evan Frierson ~ Talking Drum Brooklyn's Super Yamba Ban",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "birdland:2026-07-31:miki-yamanaka-trio-theater",
+      "clubId": "birdland",
+      "title": "Miki Yamanaka Trio (Theater)",
+      "date": "2026-07-31",
+      "sets": [
+        "21:30"
+      ],
+      "url": "https://www.birdlandjazz.com/tm-event/miki-yamanaka-trio-2/",
+      "details": "Birdland Theater — Doors @ 9:00PM",
       "personnel": null,
       "priceText": null
     },
@@ -13062,6 +11686,19 @@
       "priceText": null
     },
     {
+      "id": "birdland:2026-07-31:bill-charlap-and-renee-rosnes",
+      "clubId": "birdland",
+      "title": "Bill Charlap and Renee Rosnes",
+      "date": "2026-07-31",
+      "sets": [
+        "22:30"
+      ],
+      "url": "https://www.birdlandjazz.com/tm-event/bill-charlap-and-renee-rosnes-8/",
+      "details": "Birdland Jazz Club — Doors @ 10:00PM",
+      "personnel": null,
+      "priceText": null
+    },
+    {
       "id": "cellardog:2026-07-31:jihee-heo-quartet",
       "clubId": "cellardog",
       "title": "Jihee Heo Quartet",
@@ -13136,7 +11773,7 @@
         "00:00"
       ],
       "url": "https://shrinenyc.com/calendar.php",
-      "details": "Afro Fusion — Come enjoy our dance party Saturday with the world renowned Dj Birane. Combing elements of music from all over the world, DJ Birane will have you on your feet!!",
+      "details": "Afro Fusion · Come enjoy our dance party Saturday with the world renowned Dj Birane. Combing elements of music from all over the world, DJ Birane will have you on your feet!!",
       "personnel": null,
       "priceText": null
     },
@@ -13348,6 +11985,19 @@
           "instrument": "drums"
         }
       ],
+      "priceText": null
+    },
+    {
+      "id": "birdland:2026-08-01:miki-yamanaka-trio-theater",
+      "clubId": "birdland",
+      "title": "Miki Yamanaka Trio (Theater)",
+      "date": "2026-08-01",
+      "sets": [
+        "19:00"
+      ],
+      "url": "https://www.birdlandjazz.com/tm-event/miki-yamanaka-trio-3/",
+      "details": "Birdland Theater — Doors @ 5:30PM",
+      "personnel": null,
       "priceText": null
     },
     {
@@ -13641,6 +12291,36 @@
       "priceText": null
     },
     {
+      "id": "barbes:2026-08-01:michael-bates-acrobat",
+      "clubId": "barbes",
+      "title": "Michael Bates' ACROBAT",
+      "date": "2026-08-01",
+      "sets": [
+        "20:00"
+      ],
+      "url": "https://www.viewcy.com/event/michael_bates_acroba_17",
+      "details": null,
+      "personnel": [
+        {
+          "name": "Mazz Swift",
+          "instrument": "violin"
+        },
+        {
+          "name": "Sara Schoenbeck",
+          "instrument": "bassoon"
+        },
+        {
+          "name": "Michael Bates",
+          "instrument": "bass"
+        },
+        {
+          "name": "Michael Sarin",
+          "instrument": "drums"
+        }
+      ],
+      "priceText": null
+    },
+    {
       "id": "barbayeux:2026-08-01:alec-goldfarb",
       "clubId": "barbayeux",
       "title": "Alec Goldfarb",
@@ -13664,6 +12344,19 @@
       ],
       "url": "https://shrinenyc.com/calendar.php",
       "details": "Hailing from Madagascar, singer-songwriter and Malagasy award winner Niu Raza has performed with the likes of Nigerian record producer, singer-songwriter, and musician Don Jazzy, as well as Grammy Awardâ€“winning Hugh Masekela and singer-songwriter Vusi Mahlaseka. Blending huge jazzy vocals with sou",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "birdland:2026-08-01:bill-charlap-and-renee-rosnes",
+      "clubId": "birdland",
+      "title": "Bill Charlap and Renee Rosnes",
+      "date": "2026-08-01",
+      "sets": [
+        "20:30"
+      ],
+      "url": "https://www.birdlandjazz.com/tm-event/bill-charlap-and-renee-rosnes-9/",
+      "details": "Birdland Jazz Club — Doors @ 7:30PM",
       "personnel": null,
       "priceText": null
     },
@@ -14185,6 +12878,37 @@
       "priceText": null
     },
     {
+      "id": "pocket:2026-08-02:the-good-life-benny-benack-iii-s-all-star-celebration-of-ton",
+      "clubId": "pocket",
+      "title": "The Good Life: Benny Benack III’s All-Star Celebration of Tony Bennett",
+      "date": "2026-08-02",
+      "sets": [
+        "19:00",
+        "21:00"
+      ],
+      "url": "https://thepocketnyc.com/event/the-good-life-benny-benack-iiis-all-star-celebration-of-tony-bennett/",
+      "details": null,
+      "personnel": [
+        {
+          "name": "Benny Benack III",
+          "instrument": "trumpet and vocals"
+        },
+        {
+          "name": "Emmett Cohen",
+          "instrument": "piano"
+        },
+        {
+          "name": "Joey Ranieri",
+          "instrument": "bass"
+        },
+        {
+          "name": "Joe Saylor",
+          "instrument": "drums"
+        }
+      ],
+      "priceText": null
+    },
+    {
       "id": "closeup:2026-08-02:kazemde-george-tyrone-allen-ii-kayvon-gordon",
       "clubId": "closeup",
       "title": "KAZEMDE GEORGE - Tyrone Allen II - Kayvon Gordon",
@@ -14320,7 +13044,7 @@
         "20:00"
       ],
       "url": "https://shrinenyc.com/calendar.php",
-      "details": "Jazz — The Shrine Big Band Returns! A 16-piece big band, with three trumpets, three trombones, four saxes, flute, piano, guitar, bass, and drums. Come and experience the experimental and hard-swinging sounds every first Sunday of the month.",
+      "details": "Jazz · The Shrine Big Band Returns! A 16-piece big band, with three trumpets, three trombones, four saxes, flute, piano, guitar, bass, and drums. Come and experience the experimental and hard-swinging sounds every first Sunday of the month.",
       "personnel": null,
       "priceText": null
     },
@@ -14471,7 +13195,7 @@
         "22:00"
       ],
       "url": "https://shrinenyc.com/calendar.php",
-      "details": "Jazz — Josh Quddus leads his Quintet in a performance of his own original suite. Joshua Quddus - alto saxophone Gibson McAssey - piano/nord Zev Vestel - drums Lucas Giordano - bass Ezra Moran - guitar",
+      "details": "Jazz · Josh Quddus leads his Quintet in a performance of his own original suite. Joshua Quddus - alto saxophone Gibson McAssey - piano/nord Zev Vestel - drums Lucas Giordano - bass Ezra Moran - guitar",
       "personnel": null,
       "priceText": null
     },
@@ -15325,7 +14049,7 @@
         "19:00"
       ],
       "url": "https://silvana-nyc.com/calendar.php",
-      "details": "Jazz — Audrey Silver's voice is like pure sterling. Her phrasing is exquisite, her clarity and enunciation on par with the great Jo Stafford and her breath control is a talent so often, and so wrongfully overlooked rivals Sinatra's.",
+      "details": "Jazz · Audrey Silver's voice is like pure sterling. Her phrasing is exquisite, her clarity and enunciation on par with the great Jo Stafford and her breath control is a talent so often, and so wrongfully overlooked rivals Sinatra's.",
       "personnel": null,
       "priceText": null
     },
@@ -15338,7 +14062,7 @@
         "19:00"
       ],
       "url": "https://shrinenyc.com/calendar.php",
-      "details": "Jazz / Blues / Pop — Klaire is a versatile jazz vocalist, pianist, and composer from Hamburg, Germany. With artistic roots in jazz, blues, and pop, she studied Jazz Vocals at the University of the Arts Bremen and completed her Master’s degree in the internation",
+      "details": "Jazz / Blues / Pop · Klaire is a versatile jazz vocalist, pianist, and composer from Hamburg, Germany. With artistic roots in jazz, blues, and pop, she studied Jazz Vocals at the University of the Arts Bremen and completed her Master’s degree in the internation",
       "personnel": null,
       "priceText": null
     },
@@ -15396,7 +14120,7 @@
         "20:00"
       ],
       "url": "https://shrinenyc.com/calendar.php",
-      "details": "Afro-Caribbean Jazz — Paul Austerlitz brings his distinctive vodou horn sound to Shrine! This performance includes drums, bass, keys, tied together to create funky harmonies and energetic rhythms.",
+      "details": "Afro-Caribbean Jazz · Paul Austerlitz brings his distinctive vodou horn sound to Shrine! This performance includes drums, bass, keys, tied together to create funky harmonies and energetic rhythms.",
       "personnel": null,
       "priceText": null
     },
@@ -15816,6 +14540,20 @@
       "priceText": null
     },
     {
+      "id": "pocket:2026-08-05:glenn-zaleski-trio",
+      "clubId": "pocket",
+      "title": "Glenn Zaleski Trio",
+      "date": "2026-08-05",
+      "sets": [
+        "19:00",
+        "21:00"
+      ],
+      "url": "https://thepocketnyc.com/event/glenn-zaleski-trio/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
       "id": "closeup:2026-08-05:tim-watson-dion-kerr-craig-weinrib",
       "clubId": "closeup",
       "title": "TIM WATSON - Dion Kerr - Craig Weinrib",
@@ -15944,9 +14682,9 @@
       "priceText": null
     },
     {
-      "id": "barbayeux:2026-08-05:yvonne-rogers-trio-w-kanoa-mendenhall-jonas-esser",
+      "id": "barbayeux:2026-08-05:yvonne-rogers-trio",
       "clubId": "barbayeux",
-      "title": "Yvonne Rogers Trio w/Kanoa Mendenhall, Jonas Esser",
+      "title": "Yvonne Rogers Trio",
       "date": "2026-08-05",
       "sets": [
         "20:00",
@@ -15954,7 +14692,16 @@
       ],
       "url": "https://www.barbayeux.com/jazz/33sxrd9ynk6pjzn-325ns-shjkp-4l7y4-er5kz-pfmt7-la9zt-hgezc-z5h28-s33sy-982jt-yttmk-x8h75-wrm8y-te9t8-zl2wj-m73r6-jbbct-brymc-6zgj3-xbsff-9pyta-8d82d-pw27n-lrrc8-edfbd-c72lj-x7arx",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Kanoa Mendenhall",
+          "instrument": ""
+        },
+        {
+          "name": "Jonas Esser",
+          "instrument": ""
+        }
+      ],
       "priceText": null
     },
     {
@@ -16067,7 +14814,7 @@
         "22:00"
       ],
       "url": "https://shrinenyc.com/calendar.php",
-      "details": "Quartet — Gabe Newman and Max Kassoy are jazz musicians from Brooklyn. They have played together many times over the past three years, mostly as a duet. They started this band in order to play some of their original compositions and to expand on what",
+      "details": "Quartet · Gabe Newman and Max Kassoy are jazz musicians from Brooklyn. They have played together many times over the past three years, mostly as a duet. They started this band in order to play some of their original compositions and to expand on what",
       "personnel": null,
       "priceText": null
     },
@@ -16208,16 +14955,21 @@
       "priceText": "$35"
     },
     {
-      "id": "barbayeux:2026-08-06:thurs-happy-hour-w-lucas-winter",
+      "id": "barbayeux:2026-08-06:thurs-happy-hour",
       "clubId": "barbayeux",
-      "title": "Thurs Happy Hour w/Lucas Winter",
+      "title": "Thurs Happy Hour",
       "date": "2026-08-06",
       "sets": [
         "17:30"
       ],
       "url": "https://www.barbayeux.com/jazz/3ywyskxsnfbsjjg-424y5-2jzed-tg49n-n554j-fkf8m-5eey5-jdwa6-3dj4z-9yf8k",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Lucas Winter",
+          "instrument": ""
+        }
+      ],
       "priceText": null
     },
     {
@@ -16524,9 +15276,22 @@
       "priceText": null
     },
     {
-      "id": "barbayeux:2026-08-06:jeff-williams-w-chet-doxas-adam-kolker-jeremy-stratton",
+      "id": "barbes:2026-08-06:leo-sidran",
+      "clubId": "barbes",
+      "title": "LEO SIDRAN",
+      "date": "2026-08-06",
+      "sets": [
+        "20:00"
+      ],
+      "url": "https://www.viewcy.com/event/leo_sidran_10",
+      "details": "Leo Sidran “ There is nothing superficial about this singer who, like no other, combines carefree character and a finessed manner. ” - Telerama, Paris _______ Multi-instrumentalist, journalist, composer, and producer Leo Sidran is celebrating a quarter century of songwriting, record making, and perf",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "barbayeux:2026-08-06:jeff-williams",
       "clubId": "barbayeux",
-      "title": "Jeff Williams w/Chet Doxas, Adam Kolker, Jeremy Stratton",
+      "title": "Jeff Williams",
       "date": "2026-08-06",
       "sets": [
         "20:00",
@@ -16534,7 +15299,20 @@
       ],
       "url": "https://www.barbayeux.com/jazz/ddgdt9jhczp92g6-6ct2g",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Chet Doxas",
+          "instrument": ""
+        },
+        {
+          "name": "Adam Kolker",
+          "instrument": ""
+        },
+        {
+          "name": "Jeremy Stratton",
+          "instrument": ""
+        }
+      ],
       "priceText": null
     },
     {
@@ -16546,7 +15324,7 @@
         "20:00"
       ],
       "url": "https://silvana-nyc.com/calendar.php",
-      "details": "Jazz — Steven Blane | A dynamic vocalist, songwriter, and rabbi who fuses jazz, folk, and pop. Founder of Sim Shalom and JSLI, he shares soulful stories through music, faith, and his love for New York.",
+      "details": "Jazz · Steven Blane | A dynamic vocalist, songwriter, and rabbi who fuses jazz, folk, and pop. Founder of Sim Shalom and JSLI, he shares soulful stories through music, faith, and his love for New York.",
       "personnel": null,
       "priceText": null
     },
@@ -16764,7 +15542,7 @@
         "00:00"
       ],
       "url": "https://shrinenyc.com/calendar.php",
-      "details": "Afro Fusion — Come enjoy our dance party Saturday with the world renowned Dj Birane. Combing elements of music from all over the world, DJ Birane will have you on your feet!!",
+      "details": "Afro Fusion · Come enjoy our dance party Saturday with the world renowned Dj Birane. Combing elements of music from all over the world, DJ Birane will have you on your feet!!",
       "personnel": null,
       "priceText": null
     },
@@ -17098,7 +15876,7 @@
         "19:00"
       ],
       "url": "https://silvana-nyc.com/calendar.php",
-      "details": "Jazz Duo — Press Play is an exciting Jazz duo, with Lara Starr Rigores on Vocals and George Gonzales on guitar. The duo has been playing together since 2021 and has played a variety of NYC venues, including \"Cafe Noi Due\" on the Upper West Side and \"B",
+      "details": "Jazz Duo · Press Play is an exciting Jazz duo, with Lara Starr Rigores on Vocals and George Gonzales on guitar. The duo has been playing together since 2021 and has played a variety of NYC venues, including \"Cafe Noi Due\" on the Upper West Side and \"B",
       "personnel": null,
       "priceText": null
     },
@@ -17162,9 +15940,9 @@
       "priceText": null
     },
     {
-      "id": "closeup:2026-08-07:marta-sanchez-kanoa-mendenhall-mark-whitfield-jr",
+      "id": "closeup:2026-08-07:marta-sanchez-kanoa-mendenhall-dan-weiss",
       "clubId": "closeup",
-      "title": "MARTA SANCHEZ - Kanoa Mendenhall - Mark Whitfield jr.",
+      "title": "MARTA SANCHEZ - Kanoa Mendenhall - Dan Weiss",
       "date": "2026-08-07",
       "sets": [
         "20:00",
@@ -17180,14 +15958,18 @@
         {
           "name": "Kanoa Mendenhall",
           "instrument": "bass"
+        },
+        {
+          "name": "Dan Weiss",
+          "instrument": "drums"
         }
       ],
       "priceText": null
     },
     {
-      "id": "barbayeux:2026-08-07:ven-trio-w-vinicius-gomes-noah-garabedian-ele-howell",
+      "id": "barbayeux:2026-08-07:ven-trio",
       "clubId": "barbayeux",
-      "title": "VEN Trio w/Vinicius Gomes, Noah Garabedian, Ele Howell",
+      "title": "VEN Trio",
       "date": "2026-08-07",
       "sets": [
         "20:00",
@@ -17195,7 +15977,20 @@
       ],
       "url": "https://www.barbayeux.com/jazz/bsg4lz3rhzc3egx-mfjnz-47sjb-4e67s-xt5a5-6bjcx-cbrpj-e2s8z-ajbg8-ctpzs-c8mfg-727m7-zdpbx-42jss-xlx9x-zhw76-lns7p-fjc6n-ywrkk-gmdbj",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Vinicius Gomes",
+          "instrument": ""
+        },
+        {
+          "name": "Noah Garabedian",
+          "instrument": ""
+        },
+        {
+          "name": "Ele Howell",
+          "instrument": ""
+        }
+      ],
       "priceText": null
     },
     {
@@ -17207,7 +16002,7 @@
         "20:00"
       ],
       "url": "https://silvana-nyc.com/calendar.php",
-      "details": "Blues Rock — Tony Santos has been active on the NY Music scene since the 1980s playing in several bands and performing at CBGB, Gildersleeves, The Bitter End, Stone Pony .",
+      "details": "Blues Rock · Tony Santos has been active on the NY Music scene since the 1980s playing in several bands and performing at CBGB, Gildersleeves, The Bitter End, Stone Pony .",
       "personnel": null,
       "priceText": null
     },
@@ -17434,7 +16229,7 @@
         "00:00"
       ],
       "url": "https://shrinenyc.com/calendar.php",
-      "details": "Afro Fusion — Come enjoy our dance party Saturday with the world renowned Dj Birane. Combing elements of music from all over the world, DJ Birane will have you on your feet!!",
+      "details": "Afro Fusion · Come enjoy our dance party Saturday with the world renowned Dj Birane. Combing elements of music from all over the world, DJ Birane will have you on your feet!!",
       "personnel": null,
       "priceText": null
     },
@@ -17687,6 +16482,19 @@
       "priceText": null
     },
     {
+      "id": "arthurs:2026-08-08:eri-yamamoto-jazz-trio",
+      "clubId": "arthurs",
+      "title": "Eri Yamamoto Jazz Trio",
+      "date": "2026-08-08",
+      "sets": [
+        "19:00"
+      ],
+      "url": "https://www.arthurstavernnyc.com/performances.html",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
       "id": "billsplace:2026-08-08:bill-saxton-the-harlem-all-stars",
       "clubId": "billsplace",
       "title": "Bill Saxton & the Harlem All-Stars",
@@ -17813,9 +16621,9 @@
       "priceText": null
     },
     {
-      "id": "barbayeux:2026-08-08:jon-cowherd-quartet-w-steve-cardenas-tony-scherr-adam-cruz",
+      "id": "barbayeux:2026-08-08:jon-cowherd-quartet",
       "clubId": "barbayeux",
-      "title": "Jon Cowherd Quartet w/Steve Cardenas, Tony Scherr, Adam Cruz",
+      "title": "Jon Cowherd Quartet",
       "date": "2026-08-08",
       "sets": [
         "20:00",
@@ -17823,7 +16631,20 @@
       ],
       "url": "https://www.barbayeux.com/jazz/f4pnrttfkdgyck9-ckf4t",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Steve Cardenas",
+          "instrument": ""
+        },
+        {
+          "name": "Tony Scherr",
+          "instrument": ""
+        },
+        {
+          "name": "Adam Cruz",
+          "instrument": ""
+        }
+      ],
       "priceText": null
     },
     {
@@ -17835,7 +16656,7 @@
         "20:00"
       ],
       "url": "https://silvana-nyc.com/calendar.php",
-      "details": "RnB / Rock — Born in Brooklyn, ready for the world! Inspired by the energy of Brooklyn, GOOD COMPANY brings together musicians from diverse backgrounds and influences to create an original sound that is as vibrant as the city itself. Blending the soul o",
+      "details": "RnB / Rock · Born in Brooklyn, ready for the world! Inspired by the energy of Brooklyn, GOOD COMPANY brings together musicians from diverse backgrounds and influences to create an original sound that is as vibrant as the city itself. Blending the soul o",
       "personnel": null,
       "priceText": null
     },
@@ -17898,6 +16719,19 @@
       "priceText": null
     },
     {
+      "id": "arthurs:2026-08-08:alyson-williams-w-arthur-s-house-band",
+      "clubId": "arthurs",
+      "title": "Alyson Williams/w Arthur's House Band",
+      "date": "2026-08-08",
+      "sets": [
+        "22:00"
+      ],
+      "url": "https://www.arthurstavernnyc.com/performances.html",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
       "id": "silvana:2026-08-08:orange-burn",
       "clubId": "silvana",
       "title": "Orange Burn",
@@ -17906,7 +16740,7 @@
         "22:00"
       ],
       "url": "https://silvana-nyc.com/calendar.php",
-      "details": "Funk / Soul / Rock — Orange Burn ignites the NYC scene with a fusion of funk, rock, and soul built for maximum groove. Powered by Adam Marr’s bass and a lineup of veteran players, their explosive percussion, gritty guitar, lush keys, and powerhouse vocals hit w",
+      "details": "Funk / Soul / Rock · Orange Burn ignites the NYC scene with a fusion of funk, rock, and soul built for maximum groove. Powered by Adam Marr’s bass and a lineup of veteran players, their explosive percussion, gritty guitar, lush keys, and powerhouse vocals hit w",
       "personnel": null,
       "priceText": null
     },
@@ -18301,6 +17135,19 @@
       "priceText": null
     },
     {
+      "id": "arthurs:2026-08-09:creole-cooking-jazz-band",
+      "clubId": "arthurs",
+      "title": "Creole Cooking Jazz Band",
+      "date": "2026-08-09",
+      "sets": [
+        "19:00"
+      ],
+      "url": "https://www.arthurstavernnyc.com/performances.html",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
       "id": "pocket:2026-08-09:the-django-festival-all-stars",
       "clubId": "pocket",
       "title": "The Django Festival All-Stars",
@@ -18479,7 +17326,7 @@
         "21:00"
       ],
       "url": "https://silvana-nyc.com/calendar.php",
-      "details": "Rock / Funk — The Casey Rabito Trio is a jazz fusion trio composed of guitarist Casey Rabito, bassist Aidan Riess, and drummer Joe McCaffrey. The groups composition draws from various influences and styles including jazz, rock, funk, and psychedelic rock",
+      "details": "Rock / Funk · The Casey Rabito Trio is a jazz fusion trio composed of guitarist Casey Rabito, bassist Aidan Riess, and drummer Joe McCaffrey. The groups composition draws from various influences and styles including jazz, rock, funk, and psychedelic rock",
       "personnel": null,
       "priceText": null
     },
@@ -18513,6 +17360,32 @@
           "instrument": "piano"
         }
       ],
+      "priceText": null
+    },
+    {
+      "id": "arthurs:2026-08-09:stew-cutler-friends",
+      "clubId": "arthurs",
+      "title": "Stew Cutler & Friends",
+      "date": "2026-08-09",
+      "sets": [
+        "22:00"
+      ],
+      "url": "https://www.arthurstavernnyc.com/performances.html",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "arthurs:2026-08-09:bobby-harden",
+      "clubId": "arthurs",
+      "title": "Bobby Harden",
+      "date": "2026-08-09",
+      "sets": [
+        "22:00"
+      ],
+      "url": "https://www.arthurstavernnyc.com/performances.html",
+      "details": null,
+      "personnel": null,
       "priceText": null
     },
     {
@@ -19424,8 +18297,25 @@
         "22:00"
       ],
       "url": "https://shrinenyc.com/calendar.php",
-      "details": "Jazz — Soulmates are an instrumental jazz quartet — Dan Schnapp (keys), Ross Brooks (guitar), Jeremy Portwood (drums), and Emek Rave (bass) — playing contemporary jazz and reimagined standards with a deep groove.",
-      "personnel": null,
+      "details": "Jazz · Soulmates are an instrumental jazz quartet — Dan Schnapp (keys), Ross Brooks (guitar), Jeremy Portwood (drums), and Emek Rave (bass) — playing contemporary jazz and reimagined standards with a deep groove.",
+      "personnel": [
+        {
+          "name": "Dan Schnapp",
+          "instrument": "keys"
+        },
+        {
+          "name": "Ross Brooks",
+          "instrument": "guitar"
+        },
+        {
+          "name": "Jeremy Portwood",
+          "instrument": "drums"
+        },
+        {
+          "name": "Emek Rave",
+          "instrument": "bass"
+        }
+      ],
       "priceText": null
     },
     {
@@ -19811,9 +18701,9 @@
       "priceText": null
     },
     {
-      "id": "barbayeux:2026-08-12:gilad-hekselman-trio-w-harish-raghavan-kendrick-scott",
+      "id": "barbayeux:2026-08-12:gilad-hekselman-trio",
       "clubId": "barbayeux",
-      "title": "Gilad Hekselman Trio w/Harish Raghavan, Kendrick Scott",
+      "title": "Gilad Hekselman Trio",
       "date": "2026-08-12",
       "sets": [
         "20:00",
@@ -19821,7 +18711,16 @@
       ],
       "url": "https://www.barbayeux.com/jazz/33sxrd9ynk6pjzn-325ns-shjkp-4l7y4-er5kz-pfmt7-la9zt-hgezc-z5h28-s33sy-982jt-yttmk-x8h75-wrm8y-te9t8-zl2wj-m73r6-jbbct-brymc-6zgj3-xbsff-9pyta-8d82d-pw27n-lrrc8-edfbd-c72lj-x7arx-9jcna",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Harish Raghavan",
+          "instrument": ""
+        },
+        {
+          "name": "Kendrick Scott",
+          "instrument": ""
+        }
+      ],
       "priceText": null
     },
     {
@@ -20008,16 +18907,21 @@
       "priceText": "$35"
     },
     {
-      "id": "barbayeux:2026-08-13:thurs-happy-hour-w-matt-honor",
+      "id": "barbayeux:2026-08-13:thurs-happy-hour",
       "clubId": "barbayeux",
-      "title": "Thurs Happy Hour w/Matt Honor",
+      "title": "Thurs Happy Hour",
       "date": "2026-08-13",
       "sets": [
         "17:30"
       ],
       "url": "https://www.barbayeux.com/jazz/3ywyskxsnfbsjjg-424y5-2jzed-tg49n-n554j-fkf8m-5eey5-jdwa6-3dj4z-9yf8k-94g3a",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Matt Honor",
+          "instrument": ""
+        }
+      ],
       "priceText": null
     },
     {
@@ -20247,6 +19151,37 @@
       "priceText": null
     },
     {
+      "id": "pocket:2026-08-13:joey-alexander",
+      "clubId": "pocket",
+      "title": "Joey Alexander",
+      "date": "2026-08-13",
+      "sets": [
+        "19:00",
+        "21:00"
+      ],
+      "url": "https://thepocketnyc.com/event/joey-alexander/",
+      "details": null,
+      "personnel": [
+        {
+          "name": "Joey Alexander",
+          "instrument": "piano"
+        },
+        {
+          "name": "Anthony Harvey",
+          "instrument": "trumpet"
+        },
+        {
+          "name": "Daniel Winshall",
+          "instrument": "bass"
+        },
+        {
+          "name": "Tyson Jackson",
+          "instrument": "drums"
+        }
+      ],
+      "priceText": null
+    },
+    {
       "id": "shrine:2026-08-13:russell-james-hughes-band",
       "clubId": "shrine",
       "title": "Russell James Hughes Band",
@@ -20255,7 +19190,7 @@
         "19:00"
       ],
       "url": "https://shrinenyc.com/calendar.php",
-      "details": "Rock Trio — Russell James Hughes crafts vocal melodies and guitar hooks that echo in your head long after his songs end. Meshing classic rock, indie, and alternative, the Austin, TX-native’s music strikes an instinctive balance between vintage nostalgi",
+      "details": "Rock Trio · Russell James Hughes crafts vocal melodies and guitar hooks that echo in your head long after his songs end. Meshing classic rock, indie, and alternative, the Austin, TX-native’s music strikes an instinctive balance between vintage nostalgi",
       "personnel": null,
       "priceText": null
     },
@@ -20345,9 +19280,9 @@
       "priceText": null
     },
     {
-      "id": "barbayeux:2026-08-13:david-berkman-w-adam-kolker-jeremy-stratton",
+      "id": "barbayeux:2026-08-13:david-berkman",
       "clubId": "barbayeux",
-      "title": "David Berkman w/Adam Kolker, Jeremy Stratton,",
+      "title": "David Berkman",
       "date": "2026-08-13",
       "sets": [
         "20:00",
@@ -20355,7 +19290,16 @@
       ],
       "url": "https://www.barbayeux.com/jazz/ddgdt9jhczp92g6",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Adam Kolker",
+          "instrument": ""
+        },
+        {
+          "name": "Jeremy Stratton",
+          "instrument": ""
+        }
+      ],
       "priceText": null
     },
     {
@@ -20367,7 +19311,7 @@
         "20:00"
       ],
       "url": "https://shrinenyc.com/calendar.php",
-      "details": "Electric Blues — Kid Java is an NYC-based four-piece electric blues band. They play blues-n-rhythm and swing material—what they call urban roots music.",
+      "details": "Electric Blues · Kid Java is an NYC-based four-piece electric blues band. They play blues-n-rhythm and swing material—what they call urban roots music.",
       "personnel": null,
       "priceText": null
     },
@@ -20455,7 +19399,7 @@
         "22:00"
       ],
       "url": "https://shrinenyc.com/calendar.php",
-      "details": "Blues / Raggae / Rock — RADIO EXP is a high-energy blend of rock, blues, and reggae infused originals with hits inspired by the Summer of Love 1967 including The Doors, Beatles, Otis Redding, Jimi Hendrix, Sly & the Family Stone and more!",
+      "details": "Blues / Raggae / Rock · RADIO EXP is a high-energy blend of rock, blues, and reggae infused originals with hits inspired by the Summer of Love 1967 including The Doors, Beatles, Otis Redding, Jimi Hendrix, Sly & the Family Stone and more!",
       "personnel": null,
       "priceText": null
     },
@@ -20553,7 +19497,7 @@
         "00:00"
       ],
       "url": "https://shrinenyc.com/calendar.php",
-      "details": "Afro Fusion — Come enjoy our dance party Saturday with the world renowned Dj Birane. Combing elements of music from all over the world, DJ Birane will have you on your feet!!",
+      "details": "Afro Fusion · Come enjoy our dance party Saturday with the world renowned Dj Birane. Combing elements of music from all over the world, DJ Birane will have you on your feet!!",
       "personnel": null,
       "priceText": null
     },
@@ -20808,6 +19752,37 @@
       "priceText": null
     },
     {
+      "id": "pocket:2026-08-14:joey-alexander",
+      "clubId": "pocket",
+      "title": "Joey Alexander",
+      "date": "2026-08-14",
+      "sets": [
+        "19:00",
+        "21:00"
+      ],
+      "url": "https://thepocketnyc.com/event/joey-alexander/",
+      "details": null,
+      "personnel": [
+        {
+          "name": "Joey Alexander",
+          "instrument": "piano"
+        },
+        {
+          "name": "Anthony Harvey",
+          "instrument": "trumpet"
+        },
+        {
+          "name": "Daniel Winshall",
+          "instrument": "bass"
+        },
+        {
+          "name": "Tyson Jackson",
+          "instrument": "drums"
+        }
+      ],
+      "priceText": null
+    },
+    {
       "id": "billsplace:2026-08-14:bill-saxton-the-harlem-all-stars",
       "clubId": "billsplace",
       "title": "Bill Saxton & the Harlem All-Stars",
@@ -20927,9 +19902,9 @@
       "priceText": null
     },
     {
-      "id": "barbayeux:2026-08-14:carmen-quill-w-jacob-sacks-billy-hart",
+      "id": "barbayeux:2026-08-14:carmen-quill",
       "clubId": "barbayeux",
-      "title": "Carmen Quill w/Jacob Sacks, Billy Hart",
+      "title": "Carmen Quill",
       "date": "2026-08-14",
       "sets": [
         "20:00",
@@ -20937,7 +19912,16 @@
       ],
       "url": "https://www.barbayeux.com/jazz/bsg4lz3rhzc3egx-mfjnz-47sjb-4e67s-xt5a5-6bjcx-cbrpj-e2s8z-ajbg8-ctpzs-c8mfg-727m7-zdpbx-42jss-xlx9x-zhw76-lns7p-fjc6n-ywrkk-gmdbj-j45j2",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Jacob Sacks",
+          "instrument": ""
+        },
+        {
+          "name": "Billy Hart",
+          "instrument": ""
+        }
+      ],
       "priceText": null
     },
     {
@@ -20949,7 +19933,7 @@
         "20:00"
       ],
       "url": "https://shrinenyc.com/calendar.php",
-      "details": "Blues — Hard Bargain performed on the NYC scene for over a decade, and produced two well-received CDs, featuring passionate soulful singer Arthur Canady and a tight backup band complete with the “Hot Sauce Horns” and thick R&B grooves. This legenda",
+      "details": "Blues · Hard Bargain performed on the NYC scene for over a decade, and produced two well-received CDs, featuring passionate soulful singer Arthur Canady and a tight backup band complete with the “Hot Sauce Horns” and thick R&B grooves. This legenda",
       "personnel": null,
       "priceText": null
     },
@@ -21012,7 +19996,7 @@
         "21:00"
       ],
       "url": "https://silvana-nyc.com/calendar.php",
-      "details": "Latin / R&B — Lala Suárez is a Colombian-born singer and songwriter creating vibrant pop fusion with a soulful voice and heartfelt lyricism. Born and raised in Colombia, she has spent nearly a decade in the U.S., first in Boston and now in New York City,",
+      "details": "Latin / R&B · Lala Suárez is a Colombian-born singer and songwriter creating vibrant pop fusion with a soulful voice and heartfelt lyricism. Born and raised in Colombia, she has spent nearly a decade in the U.S., first in Boston and now in New York City,",
       "personnel": null,
       "priceText": null
     },
@@ -21025,7 +20009,7 @@
         "21:00"
       ],
       "url": "https://shrinenyc.com/calendar.php",
-      "details": "Fusion — Infrastructure plays soulful, \"sax-tinged American rock\" with \"big Hold Steady vibes\". The band's name refers to the bones of American music: blues, jazz, soul, funk, rock. Our five members combine backgrounds ranging across those genres (p",
+      "details": "Fusion · Infrastructure plays soulful, \"sax-tinged American rock\" with \"big Hold Steady vibes\". The band's name refers to the bones of American music: blues, jazz, soul, funk, rock. Our five members combine backgrounds ranging across those genres (p",
       "personnel": null,
       "priceText": null
     },
@@ -21051,7 +20035,7 @@
         "22:00"
       ],
       "url": "https://silvana-nyc.com/calendar.php",
-      "details": "Afro Fusion — Dafina is a dynamic roots band led by singer and percussionist Mamoudou Konate Simbo, who brings the rich ancestral songs of Burkina Faso to life. With an eclectic mix of musicians from the African diaspora and jazz artists, Dafina creates",
+      "details": "Afro Fusion · Dafina is a dynamic roots band led by singer and percussionist Mamoudou Konate Simbo, who brings the rich ancestral songs of Burkina Faso to life. With an eclectic mix of musicians from the African diaspora and jazz artists, Dafina creates",
       "personnel": null,
       "priceText": null
     },
@@ -21064,7 +20048,7 @@
         "22:00"
       ],
       "url": "https://shrinenyc.com/calendar.php",
-      "details": "Jazz Rock — Moon Sugar is an instrumental fusion act blending funk, rock, and jazz into high-energy performances that mix improvisation and composition, in the spirit of Herbie Hancock and Chick Corea Elektric Band",
+      "details": "Jazz Rock · Moon Sugar is an instrumental fusion act blending funk, rock, and jazz into high-energy performances that mix improvisation and composition, in the spirit of Herbie Hancock and Chick Corea Elektric Band",
       "personnel": null,
       "priceText": null
     },
@@ -21156,7 +20140,7 @@
         "00:00"
       ],
       "url": "https://shrinenyc.com/calendar.php",
-      "details": "Afro Fusion — Come enjoy our dance party Saturday with the world renowned Dj Birane. Combing elements of music from all over the world, DJ Birane will have you on your feet!!",
+      "details": "Afro Fusion · Come enjoy our dance party Saturday with the world renowned Dj Birane. Combing elements of music from all over the world, DJ Birane will have you on your feet!!",
       "personnel": null,
       "priceText": null
     },
@@ -21402,6 +20386,25 @@
       "priceText": null
     },
     {
+      "id": "billsplace:2026-08-15:bill-saxton-the-harlem-all-stars",
+      "clubId": "billsplace",
+      "title": "Bill Saxton & the Harlem All-Stars",
+      "date": "2026-08-15",
+      "sets": [
+        "19:00",
+        "21:30"
+      ],
+      "url": "https://billsplaceharlem.com/products/bill-saxton-the-harlem-all-stars",
+      "details": "Harlem speakeasy sets in the parlor — BYOB, reserve ahead",
+      "personnel": [
+        {
+          "name": "Bill Saxton",
+          "instrument": "tenor sax"
+        }
+      ],
+      "priceText": null
+    },
+    {
       "id": "django:2026-08-15:manuel-valera-quartet",
       "clubId": "django",
       "title": "Manuel Valera Quartet",
@@ -21577,7 +20580,7 @@
         "21:00"
       ],
       "url": "https://shrinenyc.com/calendar.php",
-      "details": "Fusion — Artist, percussionist, vibraphonist, jamming to orginals and your hip-hop and R&B faves.",
+      "details": "Fusion · Artist, percussionist, vibraphonist, jamming to orginals and your hip-hop and R&B faves.",
       "personnel": null,
       "priceText": null
     },
@@ -22084,6 +21087,19 @@
       "priceText": null
     },
     {
+      "id": "silvana:2026-08-16:wc-quintet",
+      "clubId": "silvana",
+      "title": "WC QUINTET",
+      "date": "2026-08-16",
+      "sets": [
+        "20:00"
+      ],
+      "url": "https://silvana-nyc.com/calendar.php",
+      "details": "Wynn Chang’s quintet brings together a group of emerging young jazz artists making their way onto the scene. Their repertoire spans selections from the post-bop tradition as well as original compositions influenced by that era, extending into contemporary modern jazz.",
+      "personnel": null,
+      "priceText": null
+    },
+    {
       "id": "mezzrow:2026-08-16:naama-trio",
       "clubId": "mezzrow",
       "title": "Naama Trio",
@@ -22174,6 +21190,28 @@
         {
           "name": "Marc Devine",
           "instrument": "piano"
+        }
+      ],
+      "priceText": null
+    },
+    {
+      "id": "barbes:2026-08-16:baklava-express",
+      "clubId": "barbes",
+      "title": "BAKLAVA EXPRESS",
+      "date": "2026-08-16",
+      "sets": [
+        "22:00"
+      ],
+      "url": "https://www.viewcy.com/event/baklava_express_55",
+      "details": null,
+      "personnel": [
+        {
+          "name": "Josh Kaye",
+          "instrument": "oud"
+        },
+        {
+          "name": "James Robbins",
+          "instrument": "bass"
         }
       ],
       "priceText": null
@@ -22349,6 +21387,32 @@
       "url": "https://thepocketnyc.com/event/mingus-big-band-11/",
       "details": null,
       "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "silvana:2026-08-17:quddus-quartet",
+      "clubId": "silvana",
+      "title": "Quddus Quartet",
+      "date": "2026-08-17",
+      "sets": [
+        "19:00"
+      ],
+      "url": "https://silvana-nyc.com/calendar.php",
+      "details": "Jazz · The Quddus Quartet is an esteemed quartet founded by Joshua Quddus, featuring Israel Stahl (trumpet), Zev Vestel (drums), and Sedge Green (bass).",
+      "personnel": [
+        {
+          "name": "Israel Stahl",
+          "instrument": "trumpet"
+        },
+        {
+          "name": "Zev Vestel",
+          "instrument": "drums"
+        },
+        {
+          "name": "Sedge Green",
+          "instrument": "bass"
+        }
+      ],
       "priceText": null
     },
     {
@@ -22611,6 +21675,37 @@
       "priceText": null
     },
     {
+      "id": "smalls:2026-08-18:ben-sherman-quartet",
+      "clubId": "smalls",
+      "title": "Ben Sherman Quartet",
+      "date": "2026-08-18",
+      "sets": [
+        "18:00",
+        "19:30"
+      ],
+      "url": "https://www.smallslive.com/events/33352-ben-sherman-quartet/",
+      "details": null,
+      "personnel": [
+        {
+          "name": "Ben Sherman",
+          "instrument": "tenor sax"
+        },
+        {
+          "name": "Roman Goron",
+          "instrument": "piano"
+        },
+        {
+          "name": "Daniel Song",
+          "instrument": "bass"
+        },
+        {
+          "name": "Isaiah Bravo",
+          "instrument": "drums"
+        }
+      ],
+      "priceText": null
+    },
+    {
       "id": "jazzcultural:2026-08-18:brandon-mccune-trio",
       "clubId": "jazzcultural",
       "title": "Brandon McCune Trio",
@@ -22822,6 +21917,19 @@
       "priceText": null
     },
     {
+      "id": "shrine:2026-08-18:sam-keedy-quartet",
+      "clubId": "shrine",
+      "title": "Sam Keedy Quartet",
+      "date": "2026-08-18",
+      "sets": [
+        "19:00"
+      ],
+      "url": "https://shrinenyc.com/calendar.php",
+      "details": "Jazz · Sam Keedy is a Grammy Nominated jazz trombonist, composer, and arranger whose dynamic artistry bridges tradition and innovation. A versatile performer, Sam has appeared at venues including Abbey Road Studios and Dizzy’s Club Coca-Cola, and",
+      "personnel": null,
+      "priceText": null
+    },
+    {
       "id": "vanguard:2026-08-18:bill-frisell-four",
       "clubId": "vanguard",
       "title": "Bill Frisell Four",
@@ -22898,31 +22006,31 @@
       "priceText": null
     },
     {
-      "id": "smalls:2026-08-18:ben-sherman-quartet",
+      "id": "smalls:2026-08-18:david-gibson-quartet",
       "clubId": "smalls",
-      "title": "Ben Sherman Quartet",
+      "title": "David Gibson Quartet",
       "date": "2026-08-18",
       "sets": [
         "21:00",
         "22:30"
       ],
-      "url": "https://www.smallslive.com/events/33352-ben-sherman-quartet/",
+      "url": "https://www.smallslive.com/events/33601-david-gibson-quartet/",
       "details": null,
       "personnel": [
         {
-          "name": "Ben Sherman",
-          "instrument": "tenor sax"
+          "name": "David Gibson",
+          "instrument": "trombone"
         },
         {
-          "name": "Roman Goron",
+          "name": "Cameron Campbell",
           "instrument": "piano"
         },
         {
-          "name": "Daniel Song",
+          "name": "Ruby Farmer",
           "instrument": "bass"
         },
         {
-          "name": "Isaiah Bravo",
+          "name": "Jason Brown",
           "instrument": "drums"
         }
       ],
@@ -23343,9 +22451,9 @@
       "priceText": null
     },
     {
-      "id": "barbayeux:2026-08-19:ralph-alessi-and-escalation-w-matt-mitchell-john-hebert-ches",
+      "id": "barbayeux:2026-08-19:ralph-alessi-and-escalation",
       "clubId": "barbayeux",
-      "title": "Ralph Alessi and Escalation w/Matt Mitchell, John Hebert, Ches Smith",
+      "title": "Ralph Alessi and Escalation",
       "date": "2026-08-19",
       "sets": [
         "20:00",
@@ -23353,6 +22461,32 @@
       ],
       "url": "https://www.barbayeux.com/jazz/33sxrd9ynk6pjzn-325ns-shjkp-4l7y4-er5kz-pfmt7-la9zt-hgezc-z5h28-s33sy-982jt-yttmk-x8h75-wrm8y-te9t8-zl2wj-m73r6-jbbct-brymc-6zgj3-xbsff-9pyta-8d82d-pw27n-lrrc8-edfbd-c72lj-x7arx-9jcna-hxh7l",
       "details": null,
+      "personnel": [
+        {
+          "name": "Matt Mitchell",
+          "instrument": ""
+        },
+        {
+          "name": "John Hebert",
+          "instrument": ""
+        },
+        {
+          "name": "Ches Smith",
+          "instrument": ""
+        }
+      ],
+      "priceText": null
+    },
+    {
+      "id": "silvana:2026-08-19:the-conclave",
+      "clubId": "silvana",
+      "title": "The Conclave",
+      "date": "2026-08-19",
+      "sets": [
+        "20:00"
+      ],
+      "url": "https://silvana-nyc.com/calendar.php",
+      "details": "Folk / Blues / Indie · The Monthly Singer/Songwriter Conclave is a showcase of 4-6 acts rotating from a group of 20 musicians, drawn from the tri-state area. We love Silvana!",
       "personnel": null,
       "priceText": null
     },
@@ -23484,6 +22618,19 @@
       "priceText": null
     },
     {
+      "id": "shrine:2026-08-20:dj-alino",
+      "clubId": "shrine",
+      "title": "DJ Alino",
+      "date": "2026-08-20",
+      "sets": [
+        "00:00"
+      ],
+      "url": "https://shrinenyc.com/calendar.php",
+      "details": "One of the best DJs in town, playing Afrobeats, Afro-fusion, Reggae, Reggaeton, Latin, Ethiopian, and Old School Hip Hop. Come join the dance party!",
+      "personnel": null,
+      "priceText": null
+    },
+    {
       "id": "jazzcultural:2026-08-20:afternoon-jam-in-the-cafe",
       "clubId": "jazzcultural",
       "title": "Afternoon Jam in the Cafe",
@@ -23517,16 +22664,21 @@
       "priceText": "$35"
     },
     {
-      "id": "barbayeux:2026-08-20:thurs-happy-hour-w-max-light",
+      "id": "barbayeux:2026-08-20:thurs-happy-hour",
       "clubId": "barbayeux",
-      "title": "Thurs Happy Hour w/Max Light",
+      "title": "Thurs Happy Hour",
       "date": "2026-08-20",
       "sets": [
         "17:30"
       ],
       "url": "https://www.barbayeux.com/jazz/3ywyskxsnfbsjjg-424y5-2jzed-tg49n-n554j-fkf8m-5eey5-jdwa6-3dj4z-9yf8k-94g3a-465dn",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Max Light",
+          "instrument": ""
+        }
+      ],
       "priceText": null
     },
     {
@@ -23883,6 +23035,19 @@
       "priceText": "$25"
     },
     {
+      "id": "shrine:2026-08-20:steven-blane",
+      "clubId": "shrine",
+      "title": "Steven Blane",
+      "date": "2026-08-20",
+      "sets": [
+        "20:00"
+      ],
+      "url": "https://shrinenyc.com/calendar.php",
+      "details": "Singer Songwriter* · Steven is a Jazz/Americana singer-songwriter whose songs move between smoky jazz phrasing and raw Americana storytelling—digging into relationships, faith, love, politics, and the stories we live by",
+      "personnel": null,
+      "priceText": null
+    },
+    {
       "id": "mezzrow:2026-08-20:dave-baron-trio",
       "clubId": "mezzrow",
       "title": "Dave Baron Trio",
@@ -24037,6 +23202,19 @@
       "sets": [],
       "url": "https://jazzgallery.org/calendar/golden-hour-concert-series-declan-sheehymoss-aug-20-2026",
       "details": "Golden Hour Pop-Up Concert Series: alana amore colvin Live at Plaza33; Free Event",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "shrine:2026-08-21:dj-birane",
+      "clubId": "shrine",
+      "title": "Dj Birane",
+      "date": "2026-08-21",
+      "sets": [
+        "00:00"
+      ],
+      "url": "https://shrinenyc.com/calendar.php",
+      "details": "Afro Fusion · Come enjoy our dance party Saturday with the world renowned Dj Birane. Combing elements of music from all over the world, DJ Birane will have you on your feet!!",
       "personnel": null,
       "priceText": null
     },
@@ -24416,6 +23594,19 @@
       "priceText": null
     },
     {
+      "id": "shrine:2026-08-21:peter-louis-octet",
+      "clubId": "shrine",
+      "title": "Peter Louis Octet",
+      "date": "2026-08-21",
+      "sets": [
+        "20:00"
+      ],
+      "url": "https://shrinenyc.com/calendar.php",
+      "details": "Peter Louis Octet features top NYC jazz artists including Michael Webster, Oscar Feldman and Matt McDonald. Original material in the jazz/latin/blues genre.",
+      "personnel": null,
+      "priceText": null
+    },
+    {
       "id": "mezzrow:2026-08-21:art-hirahara-trio",
       "clubId": "mezzrow",
       "title": "Art Hirahara Trio",
@@ -24475,6 +23666,19 @@
       "priceText": null
     },
     {
+      "id": "shrine:2026-08-21:dafina-roots",
+      "clubId": "shrine",
+      "title": "Dafina Roots",
+      "date": "2026-08-21",
+      "sets": [
+        "22:00"
+      ],
+      "url": "https://shrinenyc.com/calendar.php",
+      "details": "Afro Fusion · Dafina is a dynamic roots band led by singer and percussionist Mamadou Konate Simbo, who brings the rich ancestral songs of Burkina Faso to life. With an eclectic mix of musicians from the African diaspora and jazz artists.",
+      "personnel": null,
+      "priceText": null
+    },
+    {
       "id": "jazzcultural:2026-08-21:greg-glassman-quartet",
       "clubId": "jazzcultural",
       "title": "Greg Glassman Quartet",
@@ -24521,6 +23725,19 @@
         }
       ],
       "late": true,
+      "priceText": null
+    },
+    {
+      "id": "shrine:2026-08-22:dj-birane",
+      "clubId": "shrine",
+      "title": "Dj Birane",
+      "date": "2026-08-22",
+      "sets": [
+        "00:00"
+      ],
+      "url": "https://shrinenyc.com/calendar.php",
+      "details": "Afro Fusion · Come enjoy our dance party Saturday with the world renowned Dj Birane. Combing elements of music from all over the world, DJ Birane will have you on your feet!!",
+      "personnel": null,
       "priceText": null
     },
     {
@@ -25429,6 +24646,37 @@
       "priceText": null
     },
     {
+      "id": "jazzcultural:2026-08-24:benny-benack-quartet",
+      "clubId": "jazzcultural",
+      "title": "Benny Benack Quartet",
+      "date": "2026-08-24",
+      "sets": [
+        "19:00",
+        "21:00"
+      ],
+      "url": "https://www.smallslive.com/events/33564-benny-benack-quartet/",
+      "details": null,
+      "personnel": [
+        {
+          "name": "Benny Benack III",
+          "instrument": "trumpet"
+        },
+        {
+          "name": "Jonathan Thomas",
+          "instrument": "piano"
+        },
+        {
+          "name": "Mark Lewandowski",
+          "instrument": "bass"
+        },
+        {
+          "name": "Maria Marmarou",
+          "instrument": "drums"
+        }
+      ],
+      "priceText": null
+    },
+    {
       "id": "dizzys:2026-08-24:jared-schonig-big-band-live-album-release-celebration",
       "clubId": "dizzys",
       "title": "Jared Schonig Big Band: Live Album Release Celebration",
@@ -25596,6 +24844,25 @@
       "url": "https://www.bluenotejazz.com/nyc/tm-event/stephan-moccio/",
       "details": "Blue Note Jazz Club",
       "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "mezzrow:2026-08-24:jon-davis-trio",
+      "clubId": "mezzrow",
+      "title": "Jon Davis Trio",
+      "date": "2026-08-24",
+      "sets": [
+        "21:00",
+        "22:30"
+      ],
+      "url": "https://www.smallslive.com/events/33594-jon-davis-trio/",
+      "details": null,
+      "personnel": [
+        {
+          "name": "Jon Davis",
+          "instrument": "piano"
+        }
+      ],
       "priceText": null
     },
     {
@@ -26449,9 +25716,9 @@
       "priceText": null
     },
     {
-      "id": "barbayeux:2026-08-26:tyrone-allen-ii-quartet-w-neta-raanan-lex-korten-kayvon-gord",
+      "id": "barbayeux:2026-08-26:tyrone-allen-ii-quartet",
       "clubId": "barbayeux",
-      "title": "Tyrone Allen II Quartet w/Neta Raanan, Lex Korten, Kayvon Gordon",
+      "title": "Tyrone Allen II Quartet",
       "date": "2026-08-26",
       "sets": [
         "20:00",
@@ -26459,7 +25726,20 @@
       ],
       "url": "https://www.barbayeux.com/jazz/33sxrd9ynk6pjzn-325ns-shjkp-4l7y4-er5kz-pfmt7-la9zt-hgezc-z5h28-s33sy-982jt-yttmk-x8h75-wrm8y-te9t8-zl2wj-m73r6-jbbct-brymc-6zgj3-xbsff-9pyta-8d82d-pw27n-lrrc8-edfbd-c72lj-x7arx-9jcna-hxh7l-xrfnb",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Neta Raanan",
+          "instrument": ""
+        },
+        {
+          "name": "Lex Korten",
+          "instrument": ""
+        },
+        {
+          "name": "Kayvon Gordon",
+          "instrument": ""
+        }
+      ],
       "priceText": null
     },
     {
@@ -26631,16 +25911,21 @@
       "priceText": "$35"
     },
     {
-      "id": "barbayeux:2026-08-27:thurs-happy-hour-w-max-light",
+      "id": "barbayeux:2026-08-27:thurs-happy-hour",
       "clubId": "barbayeux",
-      "title": "Thurs Happy Hour w/Max Light",
+      "title": "Thurs Happy Hour",
       "date": "2026-08-27",
       "sets": [
         "17:30"
       ],
       "url": "https://www.barbayeux.com/jazz/3ywyskxsnfbsjjg-424y5-2jzed-tg49n-n554j-fkf8m-5eey5-jdwa6-3dj4z-9yf8k-94g3a-465dn-gms5c",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Max Light",
+          "instrument": ""
+        }
+      ],
       "priceText": null
     },
     {
@@ -27271,9 +26556,9 @@
       "priceText": null
     },
     {
-      "id": "barbayeux:2026-08-28:tal-yahalom-mirror-image-w-ledah-finck-daniel-hass-david-leo",
+      "id": "barbayeux:2026-08-28:tal-yahalom-mirror-image",
       "clubId": "barbayeux",
-      "title": "Tal Yahalom \"Mirror Image\" w/Ledah Finck, Daniel Hass, David Leon, Rogerio Boccato",
+      "title": "Tal Yahalom \"Mirror Image\"",
       "date": "2026-08-28",
       "sets": [
         "20:00",
@@ -27281,7 +26566,24 @@
       ],
       "url": "https://www.barbayeux.com/jazz/bsg4lz3rhzc3egx-mfjnz-47sjb-4e67s-xt5a5-6bjcx-cbrpj-e2s8z-ajbg8-ctpzs-c8mfg-727m7-zdpbx-42jss-xlx9x-zhw76-lns7p-fjc6n-ywrkk-gmdbj-j45j2-9cgah-dbegz",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Ledah Finck",
+          "instrument": ""
+        },
+        {
+          "name": "Daniel Hass",
+          "instrument": ""
+        },
+        {
+          "name": "David Leon",
+          "instrument": ""
+        },
+        {
+          "name": "Rogerio Boccato",
+          "instrument": ""
+        }
+      ],
       "priceText": null
     },
     {
@@ -28795,6 +28097,19 @@
       "priceText": null
     },
     {
+      "id": "barbes:2026-09-03:leo-sidran",
+      "clubId": "barbes",
+      "title": "LEO SIDRAN",
+      "date": "2026-09-03",
+      "sets": [
+        "20:00"
+      ],
+      "url": "https://www.viewcy.com/event/leo_sidran_11",
+      "details": "Leo Sidran “ There is nothing superficial about this singer who, like no other, combines carefree character and a finessed manner. ” - Telerama, Paris _______ Multi-instrumentalist, journalist, composer, and producer Leo Sidran is celebrating a quarter century of songwriting, record making, and perf",
+      "personnel": null,
+      "priceText": null
+    },
+    {
       "id": "barbes:2026-09-03:imal-gnawa",
       "clubId": "barbes",
       "title": "IMAL GNAWA",
@@ -28821,7 +28136,7 @@
       "details": null,
       "personnel": [
         {
-          "name": "Band Lineup: Wes Montego",
+          "name": "Wes Montego",
           "instrument": "vocals"
         },
         {
@@ -29191,7 +28506,7 @@
     {
       "id": "nublu:2026-09-09:jon-madof-trio-tzadik-records-album-release-the-modulators-g",
       "clubId": "nublu",
-      "title": "Jon Madof Trio - Tzadik Records Album Release, The Modulators & Golem SPONSORS AND PARTNER",
+      "title": "Jon Madof Trio - Tzadik Records Album Release, The Modulators & Golem",
       "date": "2026-09-09",
       "sets": [
         "19:00"
@@ -29352,6 +28667,19 @@
       "details": "Fernanda Silveira leads a weekly Choro jam in our front room with Regional Samauma and special guests. A casual affair with virtuosos. Fernanda Silveira is a cavaquinho player specializing in the Brazilian practices of choro and traditional samba. She is a disciple of Luciana Rabello and has accompa",
       "personnel": null,
       "priceText": null
+    },
+    {
+      "id": "marjorie:2026-09-13:marjorie-eliot-s-parlor-jazz",
+      "clubId": "marjorie",
+      "title": "Marjorie Eliot's Parlor Jazz",
+      "date": "2026-09-13",
+      "sets": [
+        "15:30"
+      ],
+      "url": "https://www.facebook.com/pages/Marjorie-Elliots-Parlor-Jazz/488061981215540",
+      "details": "Free concert in her Sugar Hill parlor, Apt 3F — every Sunday since 1992. Arrive early.",
+      "personnel": null,
+      "priceText": "Free"
     },
     {
       "id": "dizzys:2026-09-13:gaia-wilmer-large-ensemble-featuring-m-nica-salmaso-reflecti",
@@ -30185,6 +29513,19 @@
         }
       ],
       "priceText": null
+    },
+    {
+      "id": "roulette:2026-09-22:the-monkathon-world-premiere-screening",
+      "clubId": "roulette",
+      "title": "The Monkathon: World Premiere Screening",
+      "date": "2026-09-22",
+      "sets": [
+        "20:00"
+      ],
+      "url": "https://roulette.org/event/the-monkathon-film-screening-miles-okazaki/",
+      "details": "A concert film capturing guitarist Miles Okazaki's live performance of the complete works of Thelonious Monk.",
+      "personnel": null,
+      "priceText": "$20"
     },
     {
       "id": "barbes:2026-09-22:slavic-soul-party",
@@ -31140,6 +30481,19 @@
       "priceText": null
     },
     {
+      "id": "nublu:2026-09-30:anthony-hervey-yellow-couch-music-ajile-sponsors-and-partner",
+      "clubId": "nublu",
+      "title": "Anthony Hervey, Yellow Couch Music, Ajile SPONSORS AND PARTNERS Home Club Label Program Mu",
+      "date": "2026-09-30",
+      "sets": [
+        "19:00"
+      ],
+      "url": "https://posh.vip/e/anthony-hervey-yellow-couch-music-ajile",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
       "id": "roulette:2026-09-30:larry-ochs-safe-havens-for-the-abstract-truth-nate-wooley-s-",
       "clubId": "roulette",
       "title": "Larry Ochs Safe Havens (for the Abstract Truth) // Nate Wooley’s Mutual Aid Music",
@@ -31935,9 +31289,9 @@
       "priceText": null
     },
     {
-      "id": "roulette:2026-10-15:the-art-of-solo-james-brandon-lewis-nicole-mitchell-janel-le",
+      "id": "roulette:2026-10-15:the-art-of-the-solo-james-brandon-lewis-nicole-mitchell-jane",
       "clubId": "roulette",
-      "title": "The Art of Solo: James Brandon Lewis, Nicole Mitchell, Janel Leppin, Jenna Camille, Kalia Vandever, and Val Jeanty",
+      "title": "The Art of the Solo: James Brandon Lewis, Nicole Mitchell, Janel Leppin, Jenna Camille, Kalia Vandever, Val Jeanty, Shara Lunon, and Alexis Marcelo",
       "date": "2026-10-15",
       "sets": [
         "20:00"
@@ -32792,6 +32146,19 @@
       "priceText": null
     },
     {
+      "id": "roulette:2026-11-03:cecilia-lopez-s-filter-four-melissa-almaguer",
+      "clubId": "roulette",
+      "title": "Cecilia Lopez’s Filter Four // Melissa Almaguer",
+      "date": "2026-11-03",
+      "sets": [
+        "20:00"
+      ],
+      "url": "https://roulette.org/event/cecilia-lopez-trevor-dunn-dan-peck-ingrid-laubrock/",
+      "details": "New quartet explores acoustic-electronic boundaries, opened with an immersive solo performance of experimental tap dancing.",
+      "personnel": null,
+      "priceText": "$25"
+    },
+    {
       "id": "roulette:2026-11-07:m3-festival-2026",
       "clubId": "roulette",
       "title": "M3 Festival 2026",
@@ -32857,15 +32224,15 @@
       "priceText": "$25"
     },
     {
-      "id": "roulette:2026-11-19:jessica-cook-fuguist-night-1",
+      "id": "roulette:2026-11-19:breaks-a-solo-performance-by-jessica-cook-night-1",
       "clubId": "roulette",
-      "title": "Jessica Cook: Fuguist (Night 1)",
+      "title": "Breaks: A Solo Performance by Jessica Cook (Night 1)",
       "date": "2026-11-19",
       "sets": [
         "20:00"
       ],
       "url": "https://roulette.org/event/jessica-cook-night-1/",
-      "details": "Choreographer presents a new solo improvisation combining sound, dance, and objects for her Roulette Commission.",
+      "details": "Choreographer explores nonsense-making through fragmentation, the compression of sound, and movement scores for her Roulette Commission.",
       "personnel": null,
       "priceText": "$25"
     },
@@ -32883,15 +32250,15 @@
       "priceText": null
     },
     {
-      "id": "roulette:2026-11-20:jessica-cook-fuguist-night-2",
+      "id": "roulette:2026-11-20:breaks-a-solo-performance-by-jessica-cook-night-2",
       "clubId": "roulette",
-      "title": "Jessica Cook: Fuguist (Night 2)",
+      "title": "Breaks: A Solo Performance by Jessica Cook (Night 2)",
       "date": "2026-11-20",
       "sets": [
         "20:00"
       ],
       "url": "https://roulette.org/event/jessica-cook-night-2/",
-      "details": "Choreographer presents a new solo improvisation combining sound, dance, and objects for her Roulette Commission.",
+      "details": "Choreographer explores nonsense-making through fragmentation, the compression of sound, and movement scores for her Roulette Commission.",
       "personnel": null,
       "priceText": "$25"
     },
