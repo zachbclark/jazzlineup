@@ -214,7 +214,7 @@ card forever.
 
 Tests: `node crawler/test.mjs` (fixture-based, zero-dep, ~134 groups) and
 `node web/test-ui.mjs` (Playwright against the built app + real data
-files, 20 tests). Both entry points are thin aggregators since 2026-07-20:
+files, 21 tests). Both entry points are thin aggregators since 2026-07-20:
 crawler suites live in crawler/tests/ (one per city plus shared.mjs for
 lib/merge/enrichment; each also runs standalone, e.g. `node
 crawler/tests/chi.mjs`), UI suites in web/tests/ (desktop-basics, chips,
@@ -409,14 +409,21 @@ that JSON path — invalidate /events-<id>.json.
 
 ## Feature roadmap (user-requested)
 
-- Google Analytics: Zach's brother-in-law Joe set up a GA account; wire it
-  in (backlogged 2026-07-19). IMPORTANT tradeoff to surface at build time:
-  GA sets cookies, which triggers cookie-consent obligations for EU/UK
-  visitors (Paris/London pages) — the site currently sets zero cookies and
-  needs no banner. Alternatives if the banner is unwanted: GA4 in
-  cookieless/consent-mode, or the already-planned CloudFront-logs+Athena
-  analytics (Brian's project), or Plausible/GoatCounter. Decide with eyes
-  open; don't just paste the gtag snippet.
+- Google Analytics: SHIPPED 2026-07-20 as GTM (container GTM-5RPXJCWF,
+  Joe's script) with Consent Mode defaults DENYING all storage, declared
+  BEFORE the GTM loader in both web/index.html and the build-offline.mjs
+  template (the og-bump dual-edit rule applies here too). Consequences,
+  so nobody "fixes" them: the site still sets ZERO cookies and needs no
+  EU banner; tags Joe adds in the GTM console (GA4 etc.) run in
+  cookieless-ping mode, so his numbers read lower/modeled than a cookied
+  setup — that is the deal, not a bug. A UI test guards the promise
+  (desktop-basics: zero first-party cookies); if it ever fails, a GTM tag
+  is misconfigured — fix the tag or ship a consent banner (flip via
+  gtag('consent','update',...)), never the test. Tell Joe: enable GA4
+  Enhanced Measurement history tracking so SPA city/borough switches
+  count as page views (deep routes give clean paths). Joe is also setting
+  up Search Console access. GTM console changes deploy instantly without
+  code review — the cookie test is the only tripwire.
 
 - Deep routing for sharing (r/Jazz, Zach: "top of my improvements list"):
   /:city/:district/ paths (e.g. /nyc/manhattan/) and a ?date=YYYY-MM-DD
