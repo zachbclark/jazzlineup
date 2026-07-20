@@ -424,6 +424,21 @@ that JSON path — invalidate /events-<id>.json.
   (2026-07-19): comma-joined club ids mirror the chip selection live;
   a shared link applies once on load and never overwrites the visitor's
   saved chips; bad ids degrade gracefully; All = no param.
+- RSS feeds per city (user request, backlogged 2026-07-20). Cheap and
+  architecture-native: the Lambda publish step writes one more static XML
+  file per city next to the JSON, zero new infra. THE design decision is
+  what an item is. Recommended v1: daily digest, one item per city per day
+  ("Tonight in NYC · 43 shows" with lineups + personnel in the body,
+  deep-linking the existing ?date= routes); guid = city+date so 4-hourly
+  regeneration never duplicates. Item-per-show ("newly announced") is the
+  possible v2 but needs a persisted firstSeen per event for pubDate — a
+  data-shape change consumers would see. ASK THE REQUESTER which behavior
+  they expected before building v2. Build notes: em dash ban + per-city
+  clock24 apply to feed copy; add <link rel="alternate"> per city page for
+  reader auto-discovery + a quiet footer link (NOT gold — tip jar owns the
+  footer's gold); same max-age=300 as the JSON; mention the feeds in the
+  data-feed policy note above.
+
 - Classical music sibling site/section for the same cities — Zach
   committed to this publicly in the r/Jazz thread ("classical is next").
   Big scope; treat as its own project, likely reusing the whole crawler +
