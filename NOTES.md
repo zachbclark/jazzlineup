@@ -41,6 +41,14 @@ GitHub Actions. DATA only changes when the crawler Lambda runs (4h schedule,
 or manual invoke). "I deployed but the new venue isn't showing" is always
 this.
 
+data/ is GITIGNORED (since 2026-07-20; it used to be tracked and every
+local crawl dirtied ten files into unrelated PRs). Prod S3 is the source
+of truth; `npm run data:pull` fetches the live public feeds into data/
+for local dev, UI tests, and audit scripts — at most 4h stale, often
+fresher than a checked-in snapshot ever was. Local crawls overwrite the
+same files freely. The Lambda never touches repo data (it reads/writes
+S3 directly), and the CDK stack bundles only web/dist + crawler/.
+
 Manual Lambda invoke (--cli-read-timeout 0: the full crawl outlives the
 CLI's 60s default, which "errors" while the Lambda finishes fine):
 
@@ -253,10 +261,11 @@ the site never breaks from one venue's outage.
 
 Everyday dev (repo root):
 
-    node crawler/test.mjs          # parser tests (112 groups as of NOLA launch)
-    node web/test-ui.mjs           # 19 browser UI tests (needs Playwright)
+    npm run data:pull              # fetch prod feeds into data/ (gitignored; do this first on a fresh clone)
+    node crawler/test.mjs          # parser tests (135 groups as of the piccolo fix)
+    node web/test-ui.mjs           # browser UI tests (needs Playwright + data:pull)
     node crawler/index.js          # full crawl, writes data/events-*.json
-    node crawler/index.js --city nol   # one city (nyc la chi sf bos par lon tok nol)
+    node crawler/index.js --city nol   # one city (nyc la chi sf bos par lon tok nol ber)
     cd web && npm run dev          # local UI dev server
 
 Data sanity after a crawl:

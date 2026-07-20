@@ -1,7 +1,7 @@
 node_modules/
 web/dist/
 web/.tmp-offline/
-data/events.json
+data/
 infra/cdk.out/
 *.log
 .DS_Store
