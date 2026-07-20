@@ -13,6 +13,7 @@
     "test": "node crawler/test.mjs",
     "test:ui": "node web/test-ui.mjs",
     "seed": "node scripts/seed-from-capture.mjs",
+    "data:pull": "node scripts/pull-data.mjs",
     "crawl": "node crawler/index.js",
     "crawl:club": "node crawler/index.js --club",
     "serve": "node server/index.js",

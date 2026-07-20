@@ -6,6 +6,7 @@
 // order and several tests depend on state left by earlier ones (and clean up
 // after themselves — the test hygiene rule); keep the sequence.
 import { spawn } from 'node:child_process';
+import { existsSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { summary } from './tests/_harness.mjs';
@@ -16,6 +17,13 @@ import mobile from './tests/mobile.mjs';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const PORT = 3987;
+
+// Real data files are required and gitignored (since 2026-07-20) — several
+// tests derive their inputs from upcoming events in them.
+if (!existsSync(join(__dirname, '..', 'data', 'events-nyc.json'))) {
+  console.error('No local data files. Run: npm run data:pull   (or npm run crawl)');
+  process.exit(1);
+}
 
 async function loadPlaywright() {
   try { return await import('playwright'); }
