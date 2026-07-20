@@ -9,6 +9,15 @@ export default async function run({ pd, errors }) {
     assert.deepEqual(errors, []);
   });
 
+  await test('site sets ZERO first-party cookies (GTM consent-denied guard)', async () => {
+    // the no-banner stance depends on this: consent defaults deny storage,
+    // so tags added in the GTM console must never set cookies. If a _ga
+    // cookie ever shows up here, a tag is misconfigured — do not "fix" the
+    // test; fix the tag (or ship a consent banner first).
+    const cookies = (await pd.context().cookies()).filter((c) => c.domain.includes('localhost'));
+    assert.deepEqual(cookies.map((c) => c.name), [], 'unexpected first-party cookies');
+  });
+
   await test('calendar is the default view', async () => {
     assert.match(await pd.textContent('.view-toggle button.on'), /Calendar/);
     assert.ok(await pd.$('.grid'));
