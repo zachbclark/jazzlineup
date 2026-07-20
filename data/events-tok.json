@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-18T21:28:58.274Z",
+  "generatedAt": "2026-07-20T22:52:15.352Z",
   "city": "tok",
   "clubs": [
     {
@@ -36,7 +36,7 @@
       "borough": null,
       "timezone": "Asia/Tokyo",
       "neighborhood": "Marunouchi",
-      "color": "#d9a441"
+      "color": "#e6d39e"
     },
     {
       "id": "bodyandsoul",
@@ -85,6 +85,18 @@
       "timezone": "Asia/Tokyo",
       "neighborhood": "Takadanobaba",
       "color": "#5bc8d9"
+    },
+    {
+      "id": "billboardtok",
+      "name": "Billboard Live Tokyo",
+      "shortName": "Billboard",
+      "url": "https://www.billboard-live.com",
+      "address": "Tokyo Midtown Garden Terrace 4F, 9-7-4 Akasaka, Minato, Tokyo",
+      "city": "tok",
+      "borough": null,
+      "timezone": "Asia/Tokyo",
+      "neighborhood": "Roppongi",
+      "color": "#d94f8a"
     }
   ],
   "errors": [],
@@ -262,7 +274,16 @@
       ],
       "url": "http://pit-inn.com/artist_live_info/%e5%a4%a9%e8%97%a4%e4%b8%b8/",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "天鼓",
+          "instrument": "voice"
+        },
+        {
+          "name": "藤井聡子",
+          "instrument": "piano"
+        }
+      ],
       "priceText": null
     },
     {
@@ -2466,7 +2487,16 @@
       ],
       "url": "http://pit-inn.com/artist_live_info/260717make-a-sound/",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "加藤一平",
+          "instrument": "guitar"
+        },
+        {
+          "name": "大島輝之",
+          "instrument": "electronics, guitar"
+        }
+      ],
       "priceText": null
     },
     {
@@ -2495,20 +2525,6 @@
         }
       ],
       "priceText": "¥5,500"
-    },
-    {
-      "id": "introtok:2026-07-18:10",
-      "clubId": "introtok",
-      "title": "10時間オールナイトジャム",
-      "date": "2026-07-18",
-      "sets": [
-        "18:30"
-      ],
-      "url": "https://jazzspot.intro.co.jp/",
-      "details": "Saturday institution: 6:30 PM to 4:30 AM, straight through.",
-      "personnel": null,
-      "titleAlt": "10-Hour All-Night Jam",
-      "priceText": null
     },
     {
       "id": "alfie:2026-07-18:",
@@ -2652,20 +2668,6 @@
       "priceText": null
     },
     {
-      "id": "introtok:2026-07-19:",
-      "clubId": "introtok",
-      "title": "練習ジャムセッション",
-      "date": "2026-07-19",
-      "sets": [
-        "18:30"
-      ],
-      "url": "https://jazzspot.intro.co.jp/",
-      "details": "Bring your horn. Tomorrow’s Tokyo jazz leaders sharpening each other, nightly.",
-      "personnel": null,
-      "titleAlt": "Practice Jam Session",
-      "priceText": null
-    },
-    {
       "id": "alfie:2026-07-19:j-a-s",
       "clubId": "alfie",
       "title": "J.A.S",
@@ -2803,6 +2805,21 @@
       "priceText": null
     },
     {
+      "id": "billboardtok:2026-07-20:",
+      "clubId": "billboardtok",
+      "title": "藤木直人",
+      "date": "2026-07-20",
+      "sets": [
+        "14:00",
+        "17:00"
+      ],
+      "url": "https://www.billboard-live.com/schedules?shop=tokyo",
+      "details": null,
+      "personnel": null,
+      "titleAlt": "Naohito Fujiki Live Tour ver14.5 Billboard Live 2026",
+      "priceText": "from ¥11,500"
+    },
+    {
       "id": "bodyandsoul:2026-07-20:",
       "clubId": "bodyandsoul",
       "title": "デイタイムライブに変更 《河合代介&佐野康夫 デュオ》 オルガンジャズ",
@@ -2877,7 +2894,7 @@
           "instrument": "piano"
         },
         {
-          "name": "中林 薫平",
+          "name": "姫岡 優太",
           "instrument": "bass"
         },
         {
@@ -2916,6 +2933,23 @@
         }
       ],
       "priceText": null
+    },
+    {
+      "id": "billboardtok:2026-07-21:graham-gouldman",
+      "clubId": "billboardtok",
+      "title": "Graham Gouldman",
+      "date": "2026-07-21",
+      "sets": [
+        "17:00",
+        "17:30",
+        "20:00",
+        "20:30"
+      ],
+      "url": "https://www.billboard-live.com/schedules?shop=tokyo",
+      "details": null,
+      "personnel": null,
+      "titleAlt": "Heart Full of Songs",
+      "priceText": "from ¥12,400"
     },
     {
       "id": "introtok:2026-07-21:",
@@ -2969,7 +3003,7 @@
     {
       "id": "bodyandsoul:2026-07-21:maiko",
       "clubId": "bodyandsoul",
-      "title": "《maiko バイオリントリオ》",
+      "title": "《maiko ヴァイオリントリオ》",
       "date": "2026-07-21",
       "sets": [
         "19:30",
@@ -2994,28 +3028,6 @@
         }
       ],
       "priceText": "¥4,800"
-    },
-    {
-      "id": "bluenotetok:2026-07-21:shinobu-otake",
-      "clubId": "bluenotetok",
-      "title": "SHINOBU OTAKE",
-      "date": "2026-07-21",
-      "sets": [],
-      "url": "https://www.bluenote.co.jp/jp/artists/schedule/",
-      "details": "“いま歌いたい歌、いま聴いてほしい歌”をトークとともに 大竹しのぶの世界に酔いしれるプレミアム・ライヴ",
-      "personnel": null,
-      "priceText": "¥10,000"
-    },
-    {
-      "id": "cottonclubtok:2026-07-21:isaiah-j-thompson-trio",
-      "clubId": "cottonclubtok",
-      "title": "ISAIAH J. THOMPSON TRIO",
-      "date": "2026-07-21",
-      "sets": [],
-      "url": "https://www.cottonclubjapan.co.jp/jp/sp/artists/",
-      "details": "気鋭ピアニストが最新作を携え来日 祈りのように響く、心揺さぶるピアニズム",
-      "personnel": null,
-      "priceText": "¥7,700"
     },
     {
       "id": "sometimetok:2026-07-21:",
@@ -3071,6 +3083,21 @@
         }
       ],
       "priceText": null
+    },
+    {
+      "id": "billboardtok:2026-07-22:graham-gouldman",
+      "clubId": "billboardtok",
+      "title": "Graham Gouldman",
+      "date": "2026-07-22",
+      "sets": [
+        "17:30",
+        "20:30"
+      ],
+      "url": "https://www.billboard-live.com/schedules?shop=tokyo",
+      "details": null,
+      "personnel": null,
+      "titleAlt": "Heart Full of Songs",
+      "priceText": "from ¥12,400"
     },
     {
       "id": "introtok:2026-07-22:",
@@ -3187,17 +3214,6 @@
       "priceText": "¥4,800"
     },
     {
-      "id": "cottonclubtok:2026-07-22:isaiah-j-thompson-trio",
-      "clubId": "cottonclubtok",
-      "title": "ISAIAH J. THOMPSON TRIO",
-      "date": "2026-07-22",
-      "sets": [],
-      "url": "https://www.cottonclubjapan.co.jp/jp/sp/artists/",
-      "details": "気鋭ピアニストが最新作を携え来日 祈りのように響く、心揺さぶるピアニズム",
-      "personnel": null,
-      "priceText": "¥7,700"
-    },
-    {
       "id": "sometimetok:2026-07-22:itayoneri",
       "clubId": "sometimetok",
       "title": "itayoneri 大野",
@@ -3247,6 +3263,94 @@
         }
       ],
       "priceText": null
+    },
+    {
+      "id": "billboardtok:2026-07-23:2026",
+      "clubId": "billboardtok",
+      "title": "稲垣潤一 コンセプトライブ2026",
+      "date": "2026-07-23",
+      "sets": [
+        "17:00",
+        "20:00"
+      ],
+      "url": "https://www.billboard-live.com/schedules?shop=tokyo",
+      "details": null,
+      "personnel": null,
+      "titleAlt": "Focus on the endless chain ～back to the 2001〜",
+      "priceText": "from ¥9,500"
+    },
+    {
+      "id": "bluenotetok:2026-07-23:bluey-from-incognito-presents-citrus-sun",
+      "clubId": "bluenotetok",
+      "title": "Bluey from INCOGNITO presents \"CITRUS SUN\"",
+      "date": "2026-07-23",
+      "sets": [
+        "18:00",
+        "20:30"
+      ],
+      "url": "https://www.bluenote.co.jp/jp/artists/citrus-sun/",
+      "details": "ブルーイ率いるインコグニートの別働隊 極上のグルーヴを届けるファンキー・ステージ",
+      "personnel": [
+        {
+          "name": "Jean-Paul 'Bluey' Maunick",
+          "instrument": "vocals, guitar"
+        },
+        {
+          "name": "Rega Dauna",
+          "instrument": "harmonica"
+        },
+        {
+          "name": "Imaani",
+          "instrument": "vocals"
+        },
+        {
+          "name": "Kevin Robinson",
+          "instrument": "trumpet"
+        },
+        {
+          "name": "Graham Harvey",
+          "instrument": "keys"
+        },
+        {
+          "name": "Francesco Mendolia",
+          "instrument": "drums"
+        },
+        {
+          "name": "João Caetano",
+          "instrument": "percussion"
+        },
+        {
+          "name": "Harry Greene",
+          "instrument": "guitar"
+        }
+      ],
+      "priceText": "¥11,500"
+    },
+    {
+      "id": "cottonclubtok:2026-07-23:the-boys-trio-returns-19th-anniversary-special-concert-at-co",
+      "clubId": "cottonclubtok",
+      "title": "The Boys Trio Returns 19th Anniversary Special Concert at COTTON CLUB Boys (Akira Ishii, Hideaki Kanazawa, Shun Ishiwaka)",
+      "date": "2026-07-23",
+      "sets": [
+        "18:00"
+      ],
+      "url": "https://www.cottonclubjapan.co.jp/jp/sp/artists/boys-260723/",
+      "details": "石井彰、金澤英明、石若駿による“Boys”が登場！ 結成19周年を迎えたトリオが贈るアニバーサリー・ライヴ",
+      "personnel": [
+        {
+          "name": "石井彰",
+          "instrument": "piano"
+        },
+        {
+          "name": "金澤英明",
+          "instrument": "bass"
+        },
+        {
+          "name": "石若駿",
+          "instrument": "drums"
+        }
+      ],
+      "priceText": "¥7,000"
     },
     {
       "id": "introtok:2026-07-23:",
@@ -3376,28 +3480,6 @@
       "priceText": "¥4,800"
     },
     {
-      "id": "bluenotetok:2026-07-23:bluey-from-incognito-presents-citrus-sun",
-      "clubId": "bluenotetok",
-      "title": "Bluey from INCOGNITO presents \"CITRUS SUN\"",
-      "date": "2026-07-23",
-      "sets": [],
-      "url": "https://www.bluenote.co.jp/jp/artists/schedule/",
-      "details": "ブルーイ率いるインコグニートの別働隊 極上のグルーヴを届けるファンキー・ステージ",
-      "personnel": null,
-      "priceText": "¥11,500"
-    },
-    {
-      "id": "cottonclubtok:2026-07-23:the-boys-trio-returns-19th-anniversary-special-concert-at-co",
-      "clubId": "cottonclubtok",
-      "title": "The Boys Trio Returns 19th Anniversary Special Concert at COTTON CLUB Boys (Akira Ishii, Hideaki Kanazawa, Shun Ishiwaka)",
-      "date": "2026-07-23",
-      "sets": [],
-      "url": "https://www.cottonclubjapan.co.jp/jp/sp/artists/",
-      "details": "石井彰、金澤英明、石若駿による“Boys”が登場！ 結成19周年を迎えたトリオが贈るアニバーサリー・ライヴ",
-      "personnel": null,
-      "priceText": "¥7,000"
-    },
-    {
       "id": "sometimetok:2026-07-23:",
       "clubId": "sometimetok",
       "title": "永武 幹子",
@@ -3451,6 +3533,105 @@
         }
       ],
       "priceText": null
+    },
+    {
+      "id": "cottonclubtok:2026-07-24:best-day-ever-crescent-river",
+      "clubId": "cottonclubtok",
+      "title": "広末涼子 Best Day Ever~Crescent River",
+      "date": "2026-07-24",
+      "sets": [
+        "17:30"
+      ],
+      "url": "https://www.cottonclubjapan.co.jp/jp/sp/artists/ryoko-hirosue-260718/",
+      "details": "またこの場所で、特別な一日を。 広末涼子が贈るバースデー・スペシャルライヴ",
+      "personnel": [
+        {
+          "name": "広末涼子",
+          "instrument": "vocals"
+        },
+        {
+          "name": "伊藤健太",
+          "instrument": "bass"
+        },
+        {
+          "name": "石本大介",
+          "instrument": "guitar"
+        },
+        {
+          "name": "張替智広",
+          "instrument": "drums"
+        },
+        {
+          "name": "sugarbeans",
+          "instrument": "piano, keys"
+        },
+        {
+          "name": "伊藤隆博",
+          "instrument": "piano, keys"
+        }
+      ],
+      "priceText": "¥12,500"
+    },
+    {
+      "id": "billboardtok:2026-07-24:monkey-majik-at-billboard-live-summer-vibes",
+      "clubId": "billboardtok",
+      "title": "MONKEY MAJIK at Billboard Live ～Summer Vibes～",
+      "date": "2026-07-24",
+      "sets": [
+        "17:30",
+        "20:30"
+      ],
+      "url": "https://www.billboard-live.com/schedules?shop=tokyo",
+      "details": null,
+      "personnel": null,
+      "priceText": "from ¥10,500"
+    },
+    {
+      "id": "bluenotetok:2026-07-24:bluey-from-incognito-presents-citrus-sun",
+      "clubId": "bluenotetok",
+      "title": "Bluey from INCOGNITO presents \"CITRUS SUN\"",
+      "date": "2026-07-24",
+      "sets": [
+        "18:00",
+        "20:30"
+      ],
+      "url": "https://www.bluenote.co.jp/jp/artists/citrus-sun/",
+      "details": "ブルーイ率いるインコグニートの別働隊 極上のグルーヴを届けるファンキー・ステージ",
+      "personnel": [
+        {
+          "name": "Jean-Paul 'Bluey' Maunick",
+          "instrument": "vocals, guitar"
+        },
+        {
+          "name": "Rega Dauna",
+          "instrument": "harmonica"
+        },
+        {
+          "name": "Imaani",
+          "instrument": "vocals"
+        },
+        {
+          "name": "Kevin Robinson",
+          "instrument": "trumpet"
+        },
+        {
+          "name": "Graham Harvey",
+          "instrument": "keys"
+        },
+        {
+          "name": "Francesco Mendolia",
+          "instrument": "drums"
+        },
+        {
+          "name": "João Caetano",
+          "instrument": "percussion"
+        },
+        {
+          "name": "Harry Greene",
+          "instrument": "guitar"
+        }
+      ],
+      "priceText": "¥11,500"
     },
     {
       "id": "alfie:2026-07-24:",
@@ -3546,28 +3727,6 @@
       "priceText": "¥4,800"
     },
     {
-      "id": "bluenotetok:2026-07-24:bluey-from-incognito-presents-citrus-sun",
-      "clubId": "bluenotetok",
-      "title": "Bluey from INCOGNITO presents \"CITRUS SUN\"",
-      "date": "2026-07-24",
-      "sets": [],
-      "url": "https://www.bluenote.co.jp/jp/artists/schedule/",
-      "details": "ブルーイ率いるインコグニートの別働隊 極上のグルーヴを届けるファンキー・ステージ",
-      "personnel": null,
-      "priceText": "¥11,500"
-    },
-    {
-      "id": "cottonclubtok:2026-07-24:best-day-ever-crescent-river",
-      "clubId": "cottonclubtok",
-      "title": "広末涼子 Best Day Ever~Crescent River",
-      "date": "2026-07-24",
-      "sets": [],
-      "url": "https://www.cottonclubjapan.co.jp/jp/sp/artists/",
-      "details": "またこの場所で、特別な一日を。 広末涼子が贈るバースデー・スペシャルライヴ",
-      "personnel": null,
-      "priceText": "¥12,500"
-    },
-    {
       "id": "sometimetok:2026-07-24:",
       "clubId": "sometimetok",
       "title": "近藤 和彦",
@@ -3594,6 +3753,106 @@
         }
       ],
       "priceText": "¥3,500"
+    },
+    {
+      "id": "bluenotetok:2026-07-25:bluey-from-incognito-presents-citrus-sun",
+      "clubId": "bluenotetok",
+      "title": "Bluey from INCOGNITO presents \"CITRUS SUN\"",
+      "date": "2026-07-25",
+      "sets": [
+        "14:30",
+        "19:00"
+      ],
+      "url": "https://www.bluenote.co.jp/jp/artists/citrus-sun/",
+      "details": "ブルーイ率いるインコグニートの別働隊 極上のグルーヴを届けるファンキー・ステージ",
+      "personnel": [
+        {
+          "name": "Jean-Paul 'Bluey' Maunick",
+          "instrument": "vocals, guitar"
+        },
+        {
+          "name": "Rega Dauna",
+          "instrument": "harmonica"
+        },
+        {
+          "name": "Imaani",
+          "instrument": "vocals"
+        },
+        {
+          "name": "Kevin Robinson",
+          "instrument": "trumpet"
+        },
+        {
+          "name": "Graham Harvey",
+          "instrument": "keys"
+        },
+        {
+          "name": "Francesco Mendolia",
+          "instrument": "drums"
+        },
+        {
+          "name": "João Caetano",
+          "instrument": "percussion"
+        },
+        {
+          "name": "Harry Greene",
+          "instrument": "guitar"
+        }
+      ],
+      "priceText": "¥11,500"
+    },
+    {
+      "id": "billboardtok:2026-07-25:lindberg",
+      "clubId": "billboardtok",
+      "title": "LINDBERG",
+      "date": "2026-07-25",
+      "sets": [
+        "15:30",
+        "18:30"
+      ],
+      "url": "https://www.billboard-live.com/schedules?shop=tokyo",
+      "details": null,
+      "personnel": null,
+      "titleAlt": "Extra Flight Vol.6 Billboard Live Tour",
+      "priceText": "from ¥8,400"
+    },
+    {
+      "id": "cottonclubtok:2026-07-25:best-day-ever-crescent-river",
+      "clubId": "cottonclubtok",
+      "title": "広末涼子 Best Day Ever~Crescent River",
+      "date": "2026-07-25",
+      "sets": [
+        "17:30"
+      ],
+      "url": "https://www.cottonclubjapan.co.jp/jp/sp/artists/ryoko-hirosue-260718/",
+      "details": "またこの場所で、特別な一日を。 広末涼子が贈るバースデー・スペシャルライヴ",
+      "personnel": [
+        {
+          "name": "広末涼子",
+          "instrument": "vocals"
+        },
+        {
+          "name": "伊藤健太",
+          "instrument": "bass"
+        },
+        {
+          "name": "石本大介",
+          "instrument": "guitar"
+        },
+        {
+          "name": "張替智広",
+          "instrument": "drums"
+        },
+        {
+          "name": "sugarbeans",
+          "instrument": "piano, keys"
+        },
+        {
+          "name": "伊藤隆博",
+          "instrument": "piano, keys"
+        }
+      ],
+      "priceText": "¥12,500"
     },
     {
       "id": "introtok:2026-07-25:10",
@@ -3715,28 +3974,6 @@
       "priceText": null
     },
     {
-      "id": "bluenotetok:2026-07-25:bluey-from-incognito-presents-citrus-sun",
-      "clubId": "bluenotetok",
-      "title": "Bluey from INCOGNITO presents \"CITRUS SUN\"",
-      "date": "2026-07-25",
-      "sets": [],
-      "url": "https://www.bluenote.co.jp/jp/artists/schedule/",
-      "details": "ブルーイ率いるインコグニートの別働隊 極上のグルーヴを届けるファンキー・ステージ",
-      "personnel": null,
-      "priceText": "¥11,500"
-    },
-    {
-      "id": "cottonclubtok:2026-07-25:best-day-ever-crescent-river",
-      "clubId": "cottonclubtok",
-      "title": "広末涼子 Best Day Ever~Crescent River",
-      "date": "2026-07-25",
-      "sets": [],
-      "url": "https://www.cottonclubjapan.co.jp/jp/sp/artists/",
-      "details": "またこの場所で、特別な一日を。 広末涼子が贈るバースデー・スペシャルライヴ",
-      "personnel": null,
-      "priceText": "¥12,500"
-    },
-    {
       "id": "sometimetok:2026-07-25:",
       "clubId": "sometimetok",
       "title": "中西 暁子",
@@ -3834,6 +4071,114 @@
       "priceText": "¥4,800"
     },
     {
+      "id": "billboardtok:2026-07-26:chara",
+      "clubId": "billboardtok",
+      "title": "Chara",
+      "date": "2026-07-26",
+      "sets": [
+        "16:00",
+        "19:00"
+      ],
+      "url": "https://www.billboard-live.com/schedules?shop=tokyo",
+      "details": null,
+      "personnel": null,
+      "titleAlt": "Sweet Soul Sessions",
+      "priceText": "from ¥11,300"
+    },
+    {
+      "id": "bluenotetok:2026-07-26:bluey-from-incognito-presents-citrus-sun",
+      "clubId": "bluenotetok",
+      "title": "Bluey from INCOGNITO presents \"CITRUS SUN\"",
+      "date": "2026-07-26",
+      "sets": [
+        "16:30",
+        "19:30"
+      ],
+      "url": "https://www.bluenote.co.jp/jp/artists/citrus-sun/",
+      "details": "ブルーイ率いるインコグニートの別働隊 極上のグルーヴを届けるファンキー・ステージ",
+      "personnel": [
+        {
+          "name": "Jean-Paul 'Bluey' Maunick",
+          "instrument": "vocals, guitar"
+        },
+        {
+          "name": "Rega Dauna",
+          "instrument": "harmonica"
+        },
+        {
+          "name": "Imaani",
+          "instrument": "vocals"
+        },
+        {
+          "name": "Kevin Robinson",
+          "instrument": "trumpet"
+        },
+        {
+          "name": "Graham Harvey",
+          "instrument": "keys"
+        },
+        {
+          "name": "Francesco Mendolia",
+          "instrument": "drums"
+        },
+        {
+          "name": "João Caetano",
+          "instrument": "percussion"
+        },
+        {
+          "name": "Harry Greene",
+          "instrument": "guitar"
+        }
+      ],
+      "priceText": "¥11,500"
+    },
+    {
+      "id": "cottonclubtok:2026-07-26:feat-minyo-is-back-in-town-2026-new-album-from-japan-with-lo",
+      "clubId": "cottonclubtok",
+      "title": "民謡クルセイダーズ feat. 元ちとせ MINYO IS BACK IN TOWN 2026 New album『日本民謡より愛をこめて / FROM JAPAN WITH LOVE 』Release Live!!",
+      "date": "2026-07-26",
+      "sets": [
+        "16:30"
+      ],
+      "url": "https://www.cottonclubjapan.co.jp/jp/sp/artists/minyo-crusaders-260726/",
+      "details": "民謡クルセイダーズ、待望の新作を携え登場！ 元ちとせを迎えて贈るスペシャル・ステージ",
+      "personnel": [
+        {
+          "name": "フレディ塚本",
+          "instrument": "vocals"
+        },
+        {
+          "name": "山口ゆきのり",
+          "instrument": "organ"
+        },
+        {
+          "name": "カナミネケイタロウ",
+          "instrument": "bass"
+        },
+        {
+          "name": "Sonoo",
+          "instrument": "timbales"
+        },
+        {
+          "name": "マドコロナオヤ",
+          "instrument": "congas"
+        },
+        {
+          "name": "野口勇介",
+          "instrument": "trumpet"
+        },
+        {
+          "name": "湯浅佳代子",
+          "instrument": "trombone"
+        },
+        {
+          "name": "大沢広一郎",
+          "instrument": "sax"
+        }
+      ],
+      "priceText": "¥8,800"
+    },
+    {
       "id": "introtok:2026-07-26:",
       "clubId": "introtok",
       "title": "練習ジャムセッション",
@@ -3885,28 +4230,6 @@
       "details": null,
       "personnel": null,
       "priceText": null
-    },
-    {
-      "id": "bluenotetok:2026-07-26:bluey-from-incognito-presents-citrus-sun",
-      "clubId": "bluenotetok",
-      "title": "Bluey from INCOGNITO presents \"CITRUS SUN\"",
-      "date": "2026-07-26",
-      "sets": [],
-      "url": "https://www.bluenote.co.jp/jp/artists/schedule/",
-      "details": "ブルーイ率いるインコグニートの別働隊 極上のグルーヴを届けるファンキー・ステージ",
-      "personnel": null,
-      "priceText": "¥11,500"
-    },
-    {
-      "id": "cottonclubtok:2026-07-26:feat-minyo-is-back-in-town-2026-new-album-from-japan-with-lo",
-      "clubId": "cottonclubtok",
-      "title": "民謡クルセイダーズ feat. 元ちとせ MINYO IS BACK IN TOWN 2026 New album『日本民謡より愛をこめて / FROM JAPAN WITH LOVE 』Release Live!!",
-      "date": "2026-07-26",
-      "sets": [],
-      "url": "https://www.cottonclubjapan.co.jp/jp/sp/artists/",
-      "details": "民謡クルセイダーズ、待望の新作を携え登場！ 元ちとせを迎えて贈るスペシャル・ステージ",
-      "personnel": null,
-      "priceText": "¥8,800"
     },
     {
       "id": "sometimetok:2026-07-26:",
@@ -3992,6 +4315,91 @@
       "priceText": null
     },
     {
+      "id": "cottonclubtok:2026-07-27:feat-minyo-is-back-in-town-2026-new-album-from-japan-with-lo",
+      "clubId": "cottonclubtok",
+      "title": "民謡クルセイダーズ feat. 元ちとせ MINYO IS BACK IN TOWN 2026 New album『日本民謡より愛をこめて / FROM JAPAN WITH LOVE 』Release Live!!",
+      "date": "2026-07-27",
+      "sets": [
+        "16:30"
+      ],
+      "url": "https://www.cottonclubjapan.co.jp/jp/sp/artists/minyo-crusaders-260726/",
+      "details": "民謡クルセイダーズ、待望の新作を携え登場！ 元ちとせを迎えて贈るスペシャル・ステージ",
+      "personnel": [
+        {
+          "name": "フレディ塚本",
+          "instrument": "vocals"
+        },
+        {
+          "name": "山口ゆきのり",
+          "instrument": "organ"
+        },
+        {
+          "name": "カナミネケイタロウ",
+          "instrument": "bass"
+        },
+        {
+          "name": "Sonoo",
+          "instrument": "timbales"
+        },
+        {
+          "name": "マドコロナオヤ",
+          "instrument": "congas"
+        },
+        {
+          "name": "野口勇介",
+          "instrument": "trumpet"
+        },
+        {
+          "name": "湯浅佳代子",
+          "instrument": "trombone"
+        },
+        {
+          "name": "大沢広一郎",
+          "instrument": "sax"
+        }
+      ],
+      "priceText": "¥8,800"
+    },
+    {
+      "id": "bluenotetok:2026-07-27:marlene-timeless-diva",
+      "clubId": "bluenotetok",
+      "title": "MARLENE - Timeless Diva",
+      "date": "2026-07-27",
+      "sets": [
+        "18:00",
+        "20:30"
+      ],
+      "url": "https://www.bluenote.co.jp/jp/artists/marlene/",
+      "details": "真夏の夜を彩るマリーン・ワールド ディーヴァの美声に酔うプレミアム・ライヴ",
+      "personnel": [
+        {
+          "name": "Marlene",
+          "instrument": "vocals"
+        },
+        {
+          "name": "Penny K",
+          "instrument": "keys"
+        },
+        {
+          "name": "Kyoko Onoda",
+          "instrument": "piano"
+        },
+        {
+          "name": "Satsuki Kusui",
+          "instrument": "bass"
+        },
+        {
+          "name": "Senri Kawaguchi",
+          "instrument": "drums"
+        },
+        {
+          "name": "Atsushi Tsuzurano",
+          "instrument": "sax"
+        }
+      ],
+      "priceText": "¥8,000"
+    },
+    {
       "id": "pitinn:2026-07-27:yolcu-yolda",
       "clubId": "pitinn",
       "title": "Yolcu-Yoldaş ヨルジュ ヨルダシュ",
@@ -4049,28 +4457,6 @@
       "priceText": "¥4,800"
     },
     {
-      "id": "bluenotetok:2026-07-27:marlene-timeless-diva",
-      "clubId": "bluenotetok",
-      "title": "MARLENE - Timeless Diva",
-      "date": "2026-07-27",
-      "sets": [],
-      "url": "https://www.bluenote.co.jp/jp/artists/schedule/",
-      "details": "真夏の夜を彩るマリーン・ワールド ディーヴァの美声に酔うプレミアム・ライヴ",
-      "personnel": null,
-      "priceText": "¥8,000"
-    },
-    {
-      "id": "cottonclubtok:2026-07-27:feat-minyo-is-back-in-town-2026-new-album-from-japan-with-lo",
-      "clubId": "cottonclubtok",
-      "title": "民謡クルセイダーズ feat. 元ちとせ MINYO IS BACK IN TOWN 2026 New album『日本民謡より愛をこめて / FROM JAPAN WITH LOVE 』Release Live!!",
-      "date": "2026-07-27",
-      "sets": [],
-      "url": "https://www.cottonclubjapan.co.jp/jp/sp/artists/",
-      "details": "民謡クルセイダーズ、待望の新作を携え登場！ 元ちとせを迎えて贈るスペシャル・ステージ",
-      "personnel": null,
-      "priceText": "¥8,800"
-    },
-    {
       "id": "sometimetok:2026-07-27:",
       "clubId": "sometimetok",
       "title": "高橋 徹",
@@ -4123,6 +4509,37 @@
         }
       ],
       "priceText": null
+    },
+    {
+      "id": "bluenotetok:2026-07-28:coltrane-100-with-takeo-moriyama-quartet",
+      "clubId": "bluenotetok",
+      "title": "COLTRANE 100 with TAKEO MORIYAMA QUARTET",
+      "date": "2026-07-28",
+      "sets": [
+        "18:00",
+        "20:30"
+      ],
+      "url": "https://www.bluenote.co.jp/jp/artists/takeo-moriyama/",
+      "details": "“ジャズ史上最高のカリスマ” ジョン・コルトレーン 生誕100周年に贈るレジェンドたちのトリビュート",
+      "personnel": [
+        {
+          "name": "Takeo Moriyama",
+          "instrument": "drums"
+        },
+        {
+          "name": "Tetsuro Kawashima",
+          "instrument": "sax"
+        },
+        {
+          "name": "Takashi Sugawa",
+          "instrument": "bass"
+        },
+        {
+          "name": "Yusei Takahashi",
+          "instrument": "piano"
+        }
+      ],
+      "priceText": "¥8,800"
     },
     {
       "id": "introtok:2026-07-28:",
@@ -4194,23 +4611,14 @@
       "priceText": "¥4,800"
     },
     {
-      "id": "bluenotetok:2026-07-28:coltrane-100-with-takeo-moriyama-quartet",
-      "clubId": "bluenotetok",
-      "title": "COLTRANE 100 with TAKEO MORIYAMA QUARTET",
-      "date": "2026-07-28",
-      "sets": [],
-      "url": "https://www.bluenote.co.jp/jp/artists/schedule/",
-      "details": "“ジャズ史上最高のカリスマ” ジョン・コルトレーン 生誕100周年に贈るレジェンドたちのトリビュート",
-      "personnel": null,
-      "priceText": "¥8,800"
-    },
-    {
       "id": "cottonclubtok:2026-07-28:vol-37",
       "clubId": "cottonclubtok",
       "title": "古舘と客人と vol.37 古舘伊知郎 小池栄子",
       "date": "2026-07-28",
-      "sets": [],
-      "url": "https://www.cottonclubjapan.co.jp/jp/sp/artists/",
+      "sets": [
+        "20:00"
+      ],
+      "url": "https://www.cottonclubjapan.co.jp/jp/sp/artists/ichiro-furutachi-260728/",
       "details": "古舘伊知郎が\"今\"話したい人と一対一で語り合う 親密なクラブ空間で堪能するプレミアムステージ！",
       "personnel": null,
       "priceText": "¥8,000"
@@ -4265,6 +4673,28 @@
         }
       ],
       "priceText": null
+    },
+    {
+      "id": "cottonclubtok:2026-07-29:takeshi-ohbayashi-yotam-silberstein-the-art-of-duo",
+      "clubId": "cottonclubtok",
+      "title": "TAKESHI OHBAYASHI × YOTAM SILBERSTEIN \"The Art of Duo\"",
+      "date": "2026-07-29",
+      "sets": [
+        "18:00"
+      ],
+      "url": "https://www.cottonclubjapan.co.jp/jp/sp/artists/ohbayashi-yotam260729/",
+      "details": "大林武司とヨタム・シルバースタイン 現代ジャズを牽引する二人による極上のデュオ公演",
+      "personnel": [
+        {
+          "name": "Takeshi Ohbayashi",
+          "instrument": "piano"
+        },
+        {
+          "name": "Yotam Silberstein",
+          "instrument": "guitar"
+        }
+      ],
+      "priceText": "¥6,800"
     },
     {
       "id": "introtok:2026-07-29:",
@@ -4386,21 +4816,19 @@
       "title": "SHABAKA \"Of The Earth\"",
       "date": "2026-07-29",
       "sets": [],
-      "url": "https://www.bluenote.co.jp/jp/artists/schedule/",
+      "url": "http://www.bluenote.co.jp/jp/artists/shabaka/",
       "details": "現代UKジャズ最高峰に位置する鬼才 重要作『Of The Earth』を携え待望の初登場",
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Shabaka Hatchings",
+          "instrument": "sax, flute, keys"
+        },
+        {
+          "name": "Austin Williamson",
+          "instrument": "drums"
+        }
+      ],
       "priceText": "¥9,900"
-    },
-    {
-      "id": "cottonclubtok:2026-07-29:takeshi-ohbayashi-yotam-silberstein-the-art-of-duo",
-      "clubId": "cottonclubtok",
-      "title": "TAKESHI OHBAYASHI × YOTAM SILBERSTEIN \"The Art of Duo\"",
-      "date": "2026-07-29",
-      "sets": [],
-      "url": "https://www.cottonclubjapan.co.jp/jp/sp/artists/",
-      "details": "大林武司とヨタム・シルバースタイン 現代ジャズを牽引する二人による極上のデュオ公演",
-      "personnel": null,
-      "priceText": "¥6,800"
     },
     {
       "id": "sometimetok:2026-07-29:sound-scape",
@@ -4459,6 +4887,52 @@
         }
       ],
       "priceText": null
+    },
+    {
+      "id": "cottonclubtok:2026-07-30:big-horns-bee-35th-anniversary-year-vol-4-jazz-session-with-",
+      "clubId": "cottonclubtok",
+      "title": "BIG HORNS BEE 35th Anniversary Year vol.4 \"Jazz Session\" with COME COME \"Modern\" Jazz Band",
+      "date": "2026-07-30",
+      "sets": [
+        "18:00"
+      ],
+      "url": "https://www.cottonclubjapan.co.jp/jp/sp/artists/big-horns-bee-260730/",
+      "details": "デビュー35周年を走り続けるホーン集団 JAZZフォーマットで贈るスペシャルステージ！",
+      "personnel": [
+        {
+          "name": "金子隆博",
+          "instrument": "keys, vocals"
+        },
+        {
+          "name": "佐々木史郎",
+          "instrument": "trumpet, vocals"
+        },
+        {
+          "name": "小林太",
+          "instrument": "trumpet, vocals"
+        },
+        {
+          "name": "河合わかば",
+          "instrument": "trombone, vocals"
+        },
+        {
+          "name": "織田浩司",
+          "instrument": "sax, vocals"
+        },
+        {
+          "name": "井上陽介",
+          "instrument": "bass"
+        },
+        {
+          "name": "高橋信之介",
+          "instrument": "drums"
+        },
+        {
+          "name": "和泉聡志",
+          "instrument": "guitar"
+        }
+      ],
+      "priceText": "¥7,500"
     },
     {
       "id": "introtok:2026-07-30:",
@@ -4564,21 +5038,19 @@
       "title": "SHABAKA \"Of The Earth\"",
       "date": "2026-07-30",
       "sets": [],
-      "url": "https://www.bluenote.co.jp/jp/artists/schedule/",
+      "url": "http://www.bluenote.co.jp/jp/artists/shabaka/",
       "details": "現代UKジャズ最高峰に位置する鬼才 重要作『Of The Earth』を携え待望の初登場",
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Shabaka Hatchings",
+          "instrument": "sax, flute, keys"
+        },
+        {
+          "name": "Austin Williamson",
+          "instrument": "drums"
+        }
+      ],
       "priceText": "¥9,900"
-    },
-    {
-      "id": "cottonclubtok:2026-07-30:big-horns-bee-35th-anniversary-year-vol-4-jazz-session-with-",
-      "clubId": "cottonclubtok",
-      "title": "BIG HORNS BEE 35th Anniversary Year vol.4 \"Jazz Session\" with COME COME \"Modern\" Jazz Band",
-      "date": "2026-07-30",
-      "sets": [],
-      "url": "https://www.cottonclubjapan.co.jp/jp/sp/artists/",
-      "details": "デビュー35周年を走り続けるホーン集団 JAZZフォーマットで贈るスペシャルステージ！",
-      "personnel": null,
-      "priceText": "¥7,500"
     },
     {
       "id": "sometimetok:2026-07-30:",
@@ -4635,6 +5107,59 @@
         }
       ],
       "priceText": null
+    },
+    {
+      "id": "billboardtok:2026-07-31:2026",
+      "clubId": "billboardtok",
+      "title": "稲垣潤一 コンセプトライブ2026",
+      "date": "2026-07-31",
+      "sets": [
+        "17:00",
+        "20:00"
+      ],
+      "url": "https://www.billboard-live.com/schedules?shop=tokyo",
+      "details": null,
+      "personnel": null,
+      "titleAlt": "Focus on the endless chain ～back to the 2001〜",
+      "priceText": "from ¥9,500"
+    },
+    {
+      "id": "cottonclubtok:2026-07-31:emi-meyer-wings-other-stories",
+      "clubId": "cottonclubtok",
+      "title": "EMI MEYER Wings & Other Stories",
+      "date": "2026-07-31",
+      "sets": [
+        "18:00"
+      ],
+      "url": "https://www.cottonclubjapan.co.jp/jp/sp/artists/emi-meyer-260731/",
+      "details": "ジャズとソウル、アメリカーナが優しく交差する エミ・マイヤーが『Wings』の世界観を描く一夜",
+      "personnel": [
+        {
+          "name": "Emi Meyer",
+          "instrument": "vocals, piano"
+        },
+        {
+          "name": "石井マサユキ",
+          "instrument": "guitar"
+        },
+        {
+          "name": "坂田学",
+          "instrument": "drums"
+        },
+        {
+          "name": "田中邦和",
+          "instrument": "sax, flute"
+        },
+        {
+          "name": "大嶋世菜",
+          "instrument": "violin"
+        },
+        {
+          "name": "林田順平",
+          "instrument": "cello"
+        }
+      ],
+      "priceText": "¥7,000"
     },
     {
       "id": "alfie:2026-07-31:",
@@ -4735,21 +5260,19 @@
       "title": "SHABAKA \"Of The Earth\"",
       "date": "2026-07-31",
       "sets": [],
-      "url": "https://www.bluenote.co.jp/jp/artists/schedule/",
+      "url": "http://www.bluenote.co.jp/jp/artists/shabaka/",
       "details": "現代UKジャズ最高峰に位置する鬼才 重要作『Of The Earth』を携え待望の初登場",
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Shabaka Hatchings",
+          "instrument": "sax, flute, keys"
+        },
+        {
+          "name": "Austin Williamson",
+          "instrument": "drums"
+        }
+      ],
       "priceText": "¥9,900"
-    },
-    {
-      "id": "cottonclubtok:2026-07-31:emi-meyer-wings-other-stories",
-      "clubId": "cottonclubtok",
-      "title": "EMI MEYER Wings & Other Stories",
-      "date": "2026-07-31",
-      "sets": [],
-      "url": "https://www.cottonclubjapan.co.jp/jp/sp/artists/",
-      "details": "ジャズとソウル、アメリカーナが優しく交差する エミ・マイヤーが『Wings』の世界観を描く一夜",
-      "personnel": null,
-      "priceText": "¥7,000"
     },
     {
       "id": "sometimetok:2026-07-31:",
@@ -4779,6 +5302,113 @@
         }
       ],
       "priceText": "¥4,000"
+    },
+    {
+      "id": "billboardtok:2026-08-01:11-akko-my-little-lover",
+      "clubId": "billboardtok",
+      "title": "#11 Akko（My Little Lover）×武部聡志",
+      "date": "2026-08-01",
+      "sets": [
+        "16:00",
+        "19:00"
+      ],
+      "url": "https://www.billboard-live.com/schedules?shop=tokyo",
+      "details": null,
+      "personnel": null,
+      "titleAlt": "Billboard Live presents Piano Duo Session",
+      "priceText": "from ¥8,400"
+    },
+    {
+      "id": "bluenotetok:2026-08-01:masato-honda-b-b-station-big-band-night",
+      "clubId": "bluenotetok",
+      "title": "MASATO HONDA B.B.STATION -Big Band Night-",
+      "date": "2026-08-01",
+      "sets": [
+        "16:30",
+        "19:30"
+      ],
+      "url": "https://www.bluenote.co.jp/jp/artists/masato-honda/",
+      "details": "スター・サックス奏者率いるビッグバンド 真夏の夜を彩る華麗なるスウィング",
+      "personnel": [
+        {
+          "name": "Masato Honda",
+          "instrument": "sax"
+        },
+        {
+          "name": "Rei Aoyagi",
+          "instrument": "sax"
+        },
+        {
+          "name": "Hibiki Nakamura",
+          "instrument": "sax"
+        },
+        {
+          "name": "Kei Suzuki",
+          "instrument": "sax"
+        },
+        {
+          "name": "Hajime Gushiken",
+          "instrument": "trumpet"
+        },
+        {
+          "name": "Takahiro Mikami",
+          "instrument": "trumpet"
+        },
+        {
+          "name": "Akane Sakae",
+          "instrument": "trumpet"
+        },
+        {
+          "name": "Mahiro Kishino",
+          "instrument": "trumpet"
+        },
+        {
+          "name": "Yoichi Murata",
+          "instrument": "trombone"
+        },
+        {
+          "name": "Naoki Fujimura",
+          "instrument": "trombone"
+        },
+        {
+          "name": "Yuki Ishii",
+          "instrument": "trombone"
+        },
+        {
+          "name": "Hiroaki Okumoto",
+          "instrument": "trombone"
+        },
+        {
+          "name": "Shuto Nakagawa",
+          "instrument": "keys"
+        },
+        {
+          "name": "Jun Kajiwara",
+          "instrument": "guitar"
+        },
+        {
+          "name": "Ryu Kawamura",
+          "instrument": "bass"
+        },
+        {
+          "name": "Hiroyuki Noritake",
+          "instrument": "drums"
+        }
+      ],
+      "priceText": "¥8,000"
+    },
+    {
+      "id": "cottonclubtok:2026-08-01:toko-furuuchi-special-live-in-summer-time-day1-day2",
+      "clubId": "cottonclubtok",
+      "title": "TOKO FURUUCHI Special Live in Summer Time / Day1 & Day2",
+      "date": "2026-08-01",
+      "sets": [
+        "16:30"
+      ],
+      "url": "https://www.cottonclubjapan.co.jp/jp/sp/artists/",
+      "details": "甘く切ない恋模様を歌うシンガーソングライター 華やかなバンド編成で届けるスペシャルライヴ",
+      "personnel": null,
+      "priceText": "¥8,500"
     },
     {
       "id": "introtok:2026-08-01:10",
@@ -4907,28 +5537,6 @@
       "priceText": null
     },
     {
-      "id": "bluenotetok:2026-08-01:masato-honda-b-b-station-big-band-night",
-      "clubId": "bluenotetok",
-      "title": "MASATO HONDA B.B.STATION -Big Band Night-",
-      "date": "2026-08-01",
-      "sets": [],
-      "url": "https://www.bluenote.co.jp/jp/artists/schedule/",
-      "details": "スター・サックス奏者率いるビッグバンド 真夏の夜を彩る華麗なるスウィング",
-      "personnel": null,
-      "priceText": "¥8,000"
-    },
-    {
-      "id": "cottonclubtok:2026-08-01:toko-furuuchi-special-live-in-summer-time-day1-day2",
-      "clubId": "cottonclubtok",
-      "title": "TOKO FURUUCHI Special Live in Summer Time / Day1 & Day2",
-      "date": "2026-08-01",
-      "sets": [],
-      "url": "https://www.cottonclubjapan.co.jp/jp/sp/artists/",
-      "details": "甘く切ない恋模様を歌うシンガーソングライター 華やかなバンド編成で届けるスペシャルライヴ",
-      "personnel": null,
-      "priceText": "¥8,500"
-    },
-    {
       "id": "sometimetok:2026-08-01:",
       "clubId": "sometimetok",
       "title": "チャリート",
@@ -4955,6 +5563,113 @@
         }
       ],
       "priceText": "¥3,500"
+    },
+    {
+      "id": "billboardtok:2026-08-02:chara",
+      "clubId": "billboardtok",
+      "title": "Chara",
+      "date": "2026-08-02",
+      "sets": [
+        "16:00",
+        "19:00"
+      ],
+      "url": "https://www.billboard-live.com/schedules?shop=tokyo",
+      "details": null,
+      "personnel": null,
+      "titleAlt": "Sweet Soul Sessions",
+      "priceText": "from ¥11,300"
+    },
+    {
+      "id": "bluenotetok:2026-08-02:masato-honda-b-b-station-big-band-night",
+      "clubId": "bluenotetok",
+      "title": "MASATO HONDA B.B.STATION -Big Band Night-",
+      "date": "2026-08-02",
+      "sets": [
+        "16:30",
+        "19:30"
+      ],
+      "url": "https://www.bluenote.co.jp/jp/artists/masato-honda/",
+      "details": "スター・サックス奏者率いるビッグバンド 真夏の夜を彩る華麗なるスウィング",
+      "personnel": [
+        {
+          "name": "Masato Honda",
+          "instrument": "sax"
+        },
+        {
+          "name": "Rei Aoyagi",
+          "instrument": "sax"
+        },
+        {
+          "name": "Hibiki Nakamura",
+          "instrument": "sax"
+        },
+        {
+          "name": "Kei Suzuki",
+          "instrument": "sax"
+        },
+        {
+          "name": "Hajime Gushiken",
+          "instrument": "trumpet"
+        },
+        {
+          "name": "Takahiro Mikami",
+          "instrument": "trumpet"
+        },
+        {
+          "name": "Akane Sakae",
+          "instrument": "trumpet"
+        },
+        {
+          "name": "Mahiro Kishino",
+          "instrument": "trumpet"
+        },
+        {
+          "name": "Yoichi Murata",
+          "instrument": "trombone"
+        },
+        {
+          "name": "Naoki Fujimura",
+          "instrument": "trombone"
+        },
+        {
+          "name": "Yuki Ishii",
+          "instrument": "trombone"
+        },
+        {
+          "name": "Hiroaki Okumoto",
+          "instrument": "trombone"
+        },
+        {
+          "name": "Shuto Nakagawa",
+          "instrument": "keys"
+        },
+        {
+          "name": "Jun Kajiwara",
+          "instrument": "guitar"
+        },
+        {
+          "name": "Ryu Kawamura",
+          "instrument": "bass"
+        },
+        {
+          "name": "Hiroyuki Noritake",
+          "instrument": "drums"
+        }
+      ],
+      "priceText": "¥8,000"
+    },
+    {
+      "id": "cottonclubtok:2026-08-02:toko-furuuchi-special-live-in-summer-time-day1-day2",
+      "clubId": "cottonclubtok",
+      "title": "TOKO FURUUCHI Special Live in Summer Time / Day1 & Day2",
+      "date": "2026-08-02",
+      "sets": [
+        "16:30"
+      ],
+      "url": "https://www.cottonclubjapan.co.jp/jp/sp/artists/",
+      "details": "甘く切ない恋模様を歌うシンガーソングライター 華やかなバンド編成で届けるスペシャルライヴ",
+      "personnel": null,
+      "priceText": "¥8,500"
     },
     {
       "id": "introtok:2026-08-02:",
@@ -5001,28 +5716,6 @@
       "priceText": null
     },
     {
-      "id": "bluenotetok:2026-08-02:masato-honda-b-b-station-big-band-night",
-      "clubId": "bluenotetok",
-      "title": "MASATO HONDA B.B.STATION -Big Band Night-",
-      "date": "2026-08-02",
-      "sets": [],
-      "url": "https://www.bluenote.co.jp/jp/artists/schedule/",
-      "details": "スター・サックス奏者率いるビッグバンド 真夏の夜を彩る華麗なるスウィング",
-      "personnel": null,
-      "priceText": "¥8,000"
-    },
-    {
-      "id": "cottonclubtok:2026-08-02:toko-furuuchi-special-live-in-summer-time-day1-day2",
-      "clubId": "cottonclubtok",
-      "title": "TOKO FURUUCHI Special Live in Summer Time / Day1 & Day2",
-      "date": "2026-08-02",
-      "sets": [],
-      "url": "https://www.cottonclubjapan.co.jp/jp/sp/artists/",
-      "details": "甘く切ない恋模様を歌うシンガーソングライター 華やかなバンド編成で届けるスペシャルライヴ",
-      "personnel": null,
-      "priceText": "¥8,500"
-    },
-    {
       "id": "sometimetok:2026-08-02:",
       "clubId": "sometimetok",
       "title": "酒井 麻生代",
@@ -5053,6 +5746,115 @@
         }
       ],
       "priceText": "¥3,500"
+    },
+    {
+      "id": "bluenotetok:2026-08-03:junko-onishi-jazz-orchestra-premiere",
+      "clubId": "bluenotetok",
+      "title": "JUNKO ONISHI Jazz Orchestra Premiere",
+      "date": "2026-08-03",
+      "sets": [
+        "18:00",
+        "20:30"
+      ],
+      "url": "https://www.bluenote.co.jp/jp/artists/junko-onishi/",
+      "details": "次なる挑戦はビッグバンド！ 大西順子率いる精鋭オーケストラが初登場",
+      "personnel": [
+        {
+          "name": "Junko Onishi",
+          "instrument": "piano"
+        },
+        {
+          "name": "Kunpei Nakabayashi",
+          "instrument": "bass"
+        },
+        {
+          "name": "Sota Kira",
+          "instrument": "drums"
+        },
+        {
+          "name": "Tokuhiro Doi",
+          "instrument": "alto sax"
+        },
+        {
+          "name": "Shinsuke Tsujino",
+          "instrument": "alto sax"
+        },
+        {
+          "name": "Akihiro Yoshimoto",
+          "instrument": "tenor sax"
+        },
+        {
+          "name": "David Negrete",
+          "instrument": "tenor sax"
+        },
+        {
+          "name": "Misaki Motofuji",
+          "instrument": "baritone sax"
+        },
+        {
+          "name": "Shigetaka Ikemoto",
+          "instrument": "trombone"
+        },
+        {
+          "name": "Mariko Mihara",
+          "instrument": "trombone"
+        },
+        {
+          "name": "Kazuho Murakami",
+          "instrument": "trombone"
+        },
+        {
+          "name": "Hiroyuki Aochi",
+          "instrument": "bass trombone"
+        },
+        {
+          "name": "Miki Hirose",
+          "instrument": "trumpet"
+        },
+        {
+          "name": "Hisae Ohtomari",
+          "instrument": "trumpet"
+        },
+        {
+          "name": "Yusuke Sase",
+          "instrument": "trumpet"
+        },
+        {
+          "name": "Yutaro Suzuki",
+          "instrument": "trumpet"
+        }
+      ],
+      "priceText": "¥9,500"
+    },
+    {
+      "id": "cottonclubtok:2026-08-03:4aces",
+      "clubId": "cottonclubtok",
+      "title": "4ACES",
+      "date": "2026-08-03",
+      "sets": [
+        "18:00"
+      ],
+      "url": "https://www.cottonclubjapan.co.jp/jp/sp/artists/4aces-260803/",
+      "details": "MELRAWこと安藤康平率いるバンドが登場 精鋭メンバーと共に繰り広げる白熱のステージ！",
+      "personnel": [
+        {
+          "name": "安藤康平",
+          "instrument": "sax"
+        },
+        {
+          "name": "渡辺翔太",
+          "instrument": "piano, keys"
+        },
+        {
+          "name": "古木佳祐",
+          "instrument": "bass"
+        },
+        {
+          "name": "橋本現輝",
+          "instrument": "drums"
+        }
+      ],
+      "priceText": "¥6,600"
     },
     {
       "id": "alfie:2026-08-03:",
@@ -5111,28 +5913,6 @@
       "priceText": null
     },
     {
-      "id": "bluenotetok:2026-08-03:junko-onishi-jazz-orchestra-premiere",
-      "clubId": "bluenotetok",
-      "title": "JUNKO ONISHI Jazz Orchestra Premiere",
-      "date": "2026-08-03",
-      "sets": [],
-      "url": "https://www.bluenote.co.jp/jp/artists/schedule/",
-      "details": "次なる挑戦はビッグバンド！ 大西順子率いる精鋭オーケストラが初登場",
-      "personnel": null,
-      "priceText": "¥9,500"
-    },
-    {
-      "id": "cottonclubtok:2026-08-03:4aces",
-      "clubId": "cottonclubtok",
-      "title": "4ACES",
-      "date": "2026-08-03",
-      "sets": [],
-      "url": "https://www.cottonclubjapan.co.jp/jp/sp/artists/",
-      "details": "MELRAWこと安藤康平率いるバンドが登場 精鋭メンバーと共に繰り広げる白熱のステージ！",
-      "personnel": null,
-      "priceText": "¥6,600"
-    },
-    {
       "id": "sometimetok:2026-08-03:",
       "clubId": "sometimetok",
       "title": "河原 厚子",
@@ -5151,6 +5931,93 @@
         }
       ],
       "priceText": "¥3,000"
+    },
+    {
+      "id": "bluenotetok:2026-08-04:maria-schneider-orchestra",
+      "clubId": "bluenotetok",
+      "title": "MARIA SCHNEIDER ORCHESTRA",
+      "date": "2026-08-04",
+      "sets": [
+        "18:00",
+        "20:30"
+      ],
+      "url": "https://www.bluenote.co.jp/jp/artists/maria-schneider/",
+      "details": "マリア・シュナイダー率いるジャズ・オーケストラ最高峰 “音の魔術”に酔いしれる9年ぶりの来日公演",
+      "personnel": [
+        {
+          "name": "Steve Wilson",
+          "instrument": "alto sax"
+        },
+        {
+          "name": "Dave Pietro",
+          "instrument": "alto sax"
+        },
+        {
+          "name": "Rich Perry",
+          "instrument": "tenor sax"
+        },
+        {
+          "name": "Donny McCaslin",
+          "instrument": "tenor sax"
+        },
+        {
+          "name": "Scott Robinson",
+          "instrument": "baritone sax"
+        },
+        {
+          "name": "Greg Gisbert",
+          "instrument": "trumpet"
+        },
+        {
+          "name": "Michael Dudley Jr.",
+          "instrument": "trumpet"
+        },
+        {
+          "name": "Nadje Noordhuis",
+          "instrument": "trumpet"
+        },
+        {
+          "name": "Mike Rodriguez",
+          "instrument": "trumpet"
+        },
+        {
+          "name": "Keith O'Quinn",
+          "instrument": "trombone"
+        },
+        {
+          "name": "Ryan Keberle",
+          "instrument": "trombone"
+        },
+        {
+          "name": "Evan Amoroso",
+          "instrument": "trombone"
+        },
+        {
+          "name": "George Flynn",
+          "instrument": "trombone"
+        },
+        {
+          "name": "Julien Labro",
+          "instrument": "accordion"
+        },
+        {
+          "name": "Jeff Miles",
+          "instrument": "guitar"
+        },
+        {
+          "name": "Gary Versace",
+          "instrument": "piano"
+        },
+        {
+          "name": "Jay Anderson",
+          "instrument": "bass"
+        },
+        {
+          "name": "Johnathan Blake",
+          "instrument": "drums"
+        }
+      ],
+      "priceText": "¥14,000"
     },
     {
       "id": "introtok:2026-08-04:",
@@ -5239,15 +6106,38 @@
       "priceText": null
     },
     {
-      "id": "bluenotetok:2026-08-04:maria-schneider-orchestra",
-      "clubId": "bluenotetok",
-      "title": "MARIA SCHNEIDER ORCHESTRA",
+      "id": "pitinn:2026-08-04:",
+      "clubId": "pitinn",
+      "title": "酒井麻生代 クインテット",
       "date": "2026-08-04",
-      "sets": [],
-      "url": "https://www.bluenote.co.jp/jp/artists/schedule/",
-      "details": "マリア・シュナイダー率いるジャズ・オーケストラ最高峰 “音の魔術”に酔いしれる9年ぶりの来日公演",
-      "personnel": null,
-      "priceText": "¥14,000"
+      "sets": [
+        "19:30"
+      ],
+      "url": "http://pit-inn.com/artist_live_info/260904sakai/",
+      "details": null,
+      "personnel": [
+        {
+          "name": "酒井麻生代",
+          "instrument": "flute"
+        },
+        {
+          "name": "瀬田創太",
+          "instrument": "piano"
+        },
+        {
+          "name": "馬場孝喜",
+          "instrument": "guitar"
+        },
+        {
+          "name": "小牧良平",
+          "instrument": "bass"
+        },
+        {
+          "name": "江藤良人",
+          "instrument": "drums"
+        }
+      ],
+      "priceText": null
     },
     {
       "id": "sometimetok:2026-08-04:big-catch",
@@ -5276,6 +6166,119 @@
         }
       ],
       "priceText": "¥3,000"
+    },
+    {
+      "id": "bluenotetok:2026-08-05:maria-schneider-orchestra",
+      "clubId": "bluenotetok",
+      "title": "MARIA SCHNEIDER ORCHESTRA",
+      "date": "2026-08-05",
+      "sets": [
+        "18:00",
+        "20:30"
+      ],
+      "url": "https://www.bluenote.co.jp/jp/artists/maria-schneider/",
+      "details": "マリア・シュナイダー率いるジャズ・オーケストラ最高峰 “音の魔術”に酔いしれる9年ぶりの来日公演",
+      "personnel": [
+        {
+          "name": "Steve Wilson",
+          "instrument": "alto sax"
+        },
+        {
+          "name": "Dave Pietro",
+          "instrument": "alto sax"
+        },
+        {
+          "name": "Rich Perry",
+          "instrument": "tenor sax"
+        },
+        {
+          "name": "Donny McCaslin",
+          "instrument": "tenor sax"
+        },
+        {
+          "name": "Scott Robinson",
+          "instrument": "baritone sax"
+        },
+        {
+          "name": "Greg Gisbert",
+          "instrument": "trumpet"
+        },
+        {
+          "name": "Michael Dudley Jr.",
+          "instrument": "trumpet"
+        },
+        {
+          "name": "Nadje Noordhuis",
+          "instrument": "trumpet"
+        },
+        {
+          "name": "Mike Rodriguez",
+          "instrument": "trumpet"
+        },
+        {
+          "name": "Keith O'Quinn",
+          "instrument": "trombone"
+        },
+        {
+          "name": "Ryan Keberle",
+          "instrument": "trombone"
+        },
+        {
+          "name": "Evan Amoroso",
+          "instrument": "trombone"
+        },
+        {
+          "name": "George Flynn",
+          "instrument": "trombone"
+        },
+        {
+          "name": "Julien Labro",
+          "instrument": "accordion"
+        },
+        {
+          "name": "Jeff Miles",
+          "instrument": "guitar"
+        },
+        {
+          "name": "Gary Versace",
+          "instrument": "piano"
+        },
+        {
+          "name": "Jay Anderson",
+          "instrument": "bass"
+        },
+        {
+          "name": "Johnathan Blake",
+          "instrument": "drums"
+        }
+      ],
+      "priceText": "¥14,000"
+    },
+    {
+      "id": "cottonclubtok:2026-08-05:sullivan-fortner-trio",
+      "clubId": "cottonclubtok",
+      "title": "SULLIVAN FORTNER TRIO",
+      "date": "2026-08-05",
+      "sets": [
+        "18:00"
+      ],
+      "url": "https://www.cottonclubjapan.co.jp/jp/sp/artists/sullivan-fortner-260805/",
+      "details": "シーンを牽引する俊英ピアニストが待望の帰還 自身の極上トリオで魅せる最新ステージ",
+      "personnel": [
+        {
+          "name": "Sullivan Fortner",
+          "instrument": "piano"
+        },
+        {
+          "name": "Tyrone Allen",
+          "instrument": "bass"
+        },
+        {
+          "name": "Kayvon Gordon",
+          "instrument": "drums"
+        }
+      ],
+      "priceText": "¥8,800"
     },
     {
       "id": "introtok:2026-08-05:",
@@ -5348,28 +6351,6 @@
       "priceText": null
     },
     {
-      "id": "bluenotetok:2026-08-05:maria-schneider-orchestra",
-      "clubId": "bluenotetok",
-      "title": "MARIA SCHNEIDER ORCHESTRA",
-      "date": "2026-08-05",
-      "sets": [],
-      "url": "https://www.bluenote.co.jp/jp/artists/schedule/",
-      "details": "マリア・シュナイダー率いるジャズ・オーケストラ最高峰 “音の魔術”に酔いしれる9年ぶりの来日公演",
-      "personnel": null,
-      "priceText": "¥14,000"
-    },
-    {
-      "id": "cottonclubtok:2026-08-05:sullivan-fortner-trio",
-      "clubId": "cottonclubtok",
-      "title": "SULLIVAN FORTNER TRIO",
-      "date": "2026-08-05",
-      "sets": [],
-      "url": "https://www.cottonclubjapan.co.jp/jp/sp/artists/",
-      "details": "シーンを牽引する俊英ピアニストが待望の帰還 自身の極上トリオで魅せる最新ステージ",
-      "personnel": null,
-      "priceText": "¥8,800"
-    },
-    {
       "id": "sometimetok:2026-08-05:",
       "clubId": "sometimetok",
       "title": "出口 優日",
@@ -5396,6 +6377,107 @@
         }
       ],
       "priceText": "¥3,000"
+    },
+    {
+      "id": "billboardtok:2026-08-06:jazztronik-summer-live-2026",
+      "clubId": "billboardtok",
+      "title": "Jazztronik Summer Live 2026",
+      "date": "2026-08-06",
+      "sets": [
+        "17:30",
+        "20:30"
+      ],
+      "url": "https://www.billboard-live.com/schedules?shop=tokyo",
+      "details": null,
+      "personnel": null,
+      "priceText": "from ¥7,100"
+    },
+    {
+      "id": "bluenotetok:2026-08-06:maria-schneider-orchestra",
+      "clubId": "bluenotetok",
+      "title": "MARIA SCHNEIDER ORCHESTRA",
+      "date": "2026-08-06",
+      "sets": [
+        "18:00",
+        "20:30"
+      ],
+      "url": "https://www.bluenote.co.jp/jp/artists/maria-schneider/",
+      "details": "マリア・シュナイダー率いるジャズ・オーケストラ最高峰 “音の魔術”に酔いしれる9年ぶりの来日公演",
+      "personnel": [
+        {
+          "name": "Steve Wilson",
+          "instrument": "alto sax"
+        },
+        {
+          "name": "Dave Pietro",
+          "instrument": "alto sax"
+        },
+        {
+          "name": "Rich Perry",
+          "instrument": "tenor sax"
+        },
+        {
+          "name": "Donny McCaslin",
+          "instrument": "tenor sax"
+        },
+        {
+          "name": "Scott Robinson",
+          "instrument": "baritone sax"
+        },
+        {
+          "name": "Greg Gisbert",
+          "instrument": "trumpet"
+        },
+        {
+          "name": "Michael Dudley Jr.",
+          "instrument": "trumpet"
+        },
+        {
+          "name": "Nadje Noordhuis",
+          "instrument": "trumpet"
+        },
+        {
+          "name": "Mike Rodriguez",
+          "instrument": "trumpet"
+        },
+        {
+          "name": "Keith O'Quinn",
+          "instrument": "trombone"
+        },
+        {
+          "name": "Ryan Keberle",
+          "instrument": "trombone"
+        },
+        {
+          "name": "Evan Amoroso",
+          "instrument": "trombone"
+        },
+        {
+          "name": "George Flynn",
+          "instrument": "trombone"
+        },
+        {
+          "name": "Julien Labro",
+          "instrument": "accordion"
+        },
+        {
+          "name": "Jeff Miles",
+          "instrument": "guitar"
+        },
+        {
+          "name": "Gary Versace",
+          "instrument": "piano"
+        },
+        {
+          "name": "Jay Anderson",
+          "instrument": "bass"
+        },
+        {
+          "name": "Johnathan Blake",
+          "instrument": "drums"
+        }
+      ],
+      "priceText": "¥14,000"
     },
     {
       "id": "introtok:2026-08-06:",
@@ -5468,25 +6550,29 @@
       "priceText": null
     },
     {
-      "id": "bluenotetok:2026-08-06:maria-schneider-orchestra",
-      "clubId": "bluenotetok",
-      "title": "MARIA SCHNEIDER ORCHESTRA",
-      "date": "2026-08-06",
-      "sets": [],
-      "url": "https://www.bluenote.co.jp/jp/artists/schedule/",
-      "details": "マリア・シュナイダー率いるジャズ・オーケストラ最高峰 “音の魔術”に酔いしれる9年ぶりの来日公演",
-      "personnel": null,
-      "priceText": "¥14,000"
-    },
-    {
       "id": "cottonclubtok:2026-08-06:sullivan-fortner-trio",
       "clubId": "cottonclubtok",
       "title": "SULLIVAN FORTNER TRIO",
       "date": "2026-08-06",
-      "sets": [],
-      "url": "https://www.cottonclubjapan.co.jp/jp/sp/artists/",
+      "sets": [
+        "20:30"
+      ],
+      "url": "https://www.cottonclubjapan.co.jp/jp/sp/artists/sullivan-fortner-260805/",
       "details": "シーンを牽引する俊英ピアニストが待望の帰還 自身の極上トリオで魅せる最新ステージ",
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Sullivan Fortner",
+          "instrument": "piano"
+        },
+        {
+          "name": "Tyrone Allen",
+          "instrument": "bass"
+        },
+        {
+          "name": "Kayvon Gordon",
+          "instrument": "drums"
+        }
+      ],
       "priceText": "¥8,800"
     },
     {
@@ -5513,6 +6599,119 @@
         }
       ],
       "priceText": "¥3,000"
+    },
+    {
+      "id": "bluenotetok:2026-08-07:maria-schneider-orchestra",
+      "clubId": "bluenotetok",
+      "title": "MARIA SCHNEIDER ORCHESTRA",
+      "date": "2026-08-07",
+      "sets": [
+        "18:00",
+        "20:30"
+      ],
+      "url": "https://www.bluenote.co.jp/jp/artists/maria-schneider/",
+      "details": "マリア・シュナイダー率いるジャズ・オーケストラ最高峰 “音の魔術”に酔いしれる9年ぶりの来日公演",
+      "personnel": [
+        {
+          "name": "Steve Wilson",
+          "instrument": "alto sax"
+        },
+        {
+          "name": "Dave Pietro",
+          "instrument": "alto sax"
+        },
+        {
+          "name": "Rich Perry",
+          "instrument": "tenor sax"
+        },
+        {
+          "name": "Donny McCaslin",
+          "instrument": "tenor sax"
+        },
+        {
+          "name": "Scott Robinson",
+          "instrument": "baritone sax"
+        },
+        {
+          "name": "Greg Gisbert",
+          "instrument": "trumpet"
+        },
+        {
+          "name": "Michael Dudley Jr.",
+          "instrument": "trumpet"
+        },
+        {
+          "name": "Nadje Noordhuis",
+          "instrument": "trumpet"
+        },
+        {
+          "name": "Mike Rodriguez",
+          "instrument": "trumpet"
+        },
+        {
+          "name": "Keith O'Quinn",
+          "instrument": "trombone"
+        },
+        {
+          "name": "Ryan Keberle",
+          "instrument": "trombone"
+        },
+        {
+          "name": "Evan Amoroso",
+          "instrument": "trombone"
+        },
+        {
+          "name": "George Flynn",
+          "instrument": "trombone"
+        },
+        {
+          "name": "Julien Labro",
+          "instrument": "accordion"
+        },
+        {
+          "name": "Jeff Miles",
+          "instrument": "guitar"
+        },
+        {
+          "name": "Gary Versace",
+          "instrument": "piano"
+        },
+        {
+          "name": "Jay Anderson",
+          "instrument": "bass"
+        },
+        {
+          "name": "Johnathan Blake",
+          "instrument": "drums"
+        }
+      ],
+      "priceText": "¥14,000"
+    },
+    {
+      "id": "cottonclubtok:2026-08-07:sullivan-fortner-trio",
+      "clubId": "cottonclubtok",
+      "title": "SULLIVAN FORTNER TRIO",
+      "date": "2026-08-07",
+      "sets": [
+        "18:00"
+      ],
+      "url": "https://www.cottonclubjapan.co.jp/jp/sp/artists/sullivan-fortner-260805/",
+      "details": "シーンを牽引する俊英ピアニストが待望の帰還 自身の極上トリオで魅せる最新ステージ",
+      "personnel": [
+        {
+          "name": "Sullivan Fortner",
+          "instrument": "piano"
+        },
+        {
+          "name": "Tyrone Allen",
+          "instrument": "bass"
+        },
+        {
+          "name": "Kayvon Gordon",
+          "instrument": "drums"
+        }
+      ],
+      "priceText": "¥8,800"
     },
     {
       "id": "alfie:2026-08-07:",
@@ -5563,28 +6762,6 @@
       "priceText": null
     },
     {
-      "id": "bluenotetok:2026-08-07:maria-schneider-orchestra",
-      "clubId": "bluenotetok",
-      "title": "MARIA SCHNEIDER ORCHESTRA",
-      "date": "2026-08-07",
-      "sets": [],
-      "url": "https://www.bluenote.co.jp/jp/artists/schedule/",
-      "details": "マリア・シュナイダー率いるジャズ・オーケストラ最高峰 “音の魔術”に酔いしれる9年ぶりの来日公演",
-      "personnel": null,
-      "priceText": "¥14,000"
-    },
-    {
-      "id": "cottonclubtok:2026-08-07:sullivan-fortner-trio",
-      "clubId": "cottonclubtok",
-      "title": "SULLIVAN FORTNER TRIO",
-      "date": "2026-08-07",
-      "sets": [],
-      "url": "https://www.cottonclubjapan.co.jp/jp/sp/artists/",
-      "details": "シーンを牽引する俊英ピアニストが待望の帰還 自身の極上トリオで魅せる最新ステージ",
-      "personnel": null,
-      "priceText": "¥8,800"
-    },
-    {
       "id": "sometimetok:2026-08-07:",
       "clubId": "sometimetok",
       "title": "大坂 昌彦",
@@ -5611,6 +6788,119 @@
         }
       ],
       "priceText": "¥3,000"
+    },
+    {
+      "id": "bluenotetok:2026-08-08:maria-schneider-orchestra",
+      "clubId": "bluenotetok",
+      "title": "MARIA SCHNEIDER ORCHESTRA",
+      "date": "2026-08-08",
+      "sets": [
+        "16:30",
+        "19:30"
+      ],
+      "url": "https://www.bluenote.co.jp/jp/artists/maria-schneider/",
+      "details": "マリア・シュナイダー率いるジャズ・オーケストラ最高峰 “音の魔術”に酔いしれる9年ぶりの来日公演",
+      "personnel": [
+        {
+          "name": "Steve Wilson",
+          "instrument": "alto sax"
+        },
+        {
+          "name": "Dave Pietro",
+          "instrument": "alto sax"
+        },
+        {
+          "name": "Rich Perry",
+          "instrument": "tenor sax"
+        },
+        {
+          "name": "Donny McCaslin",
+          "instrument": "tenor sax"
+        },
+        {
+          "name": "Scott Robinson",
+          "instrument": "baritone sax"
+        },
+        {
+          "name": "Greg Gisbert",
+          "instrument": "trumpet"
+        },
+        {
+          "name": "Michael Dudley Jr.",
+          "instrument": "trumpet"
+        },
+        {
+          "name": "Nadje Noordhuis",
+          "instrument": "trumpet"
+        },
+        {
+          "name": "Mike Rodriguez",
+          "instrument": "trumpet"
+        },
+        {
+          "name": "Keith O'Quinn",
+          "instrument": "trombone"
+        },
+        {
+          "name": "Ryan Keberle",
+          "instrument": "trombone"
+        },
+        {
+          "name": "Evan Amoroso",
+          "instrument": "trombone"
+        },
+        {
+          "name": "George Flynn",
+          "instrument": "trombone"
+        },
+        {
+          "name": "Julien Labro",
+          "instrument": "accordion"
+        },
+        {
+          "name": "Jeff Miles",
+          "instrument": "guitar"
+        },
+        {
+          "name": "Gary Versace",
+          "instrument": "piano"
+        },
+        {
+          "name": "Jay Anderson",
+          "instrument": "bass"
+        },
+        {
+          "name": "Johnathan Blake",
+          "instrument": "drums"
+        }
+      ],
+      "priceText": "¥14,000"
+    },
+    {
+      "id": "cottonclubtok:2026-08-08:2026",
+      "clubId": "cottonclubtok",
+      "title": "岩崎宏美 アコースティックライブ 2026",
+      "date": "2026-08-08",
+      "sets": [
+        "16:30"
+      ],
+      "url": "https://www.cottonclubjapan.co.jp/jp/sp/artists/hiromi-iwasaki-260808/",
+      "details": "抜群の歌唱力で魅せる人気シンガー 岩崎宏美 アコースティック編成で贈るプレミアムライブ",
+      "personnel": [
+        {
+          "name": "岩崎宏美",
+          "instrument": "vocals"
+        },
+        {
+          "name": "青柳誠",
+          "instrument": "piano"
+        },
+        {
+          "name": "古川昌義",
+          "instrument": "guitar"
+        }
+      ],
+      "priceText": "¥10,000"
     },
     {
       "id": "introtok:2026-08-08:10",
@@ -5687,28 +6977,6 @@
       "priceText": null
     },
     {
-      "id": "bluenotetok:2026-08-08:maria-schneider-orchestra",
-      "clubId": "bluenotetok",
-      "title": "MARIA SCHNEIDER ORCHESTRA",
-      "date": "2026-08-08",
-      "sets": [],
-      "url": "https://www.bluenote.co.jp/jp/artists/schedule/",
-      "details": "マリア・シュナイダー率いるジャズ・オーケストラ最高峰 “音の魔術”に酔いしれる9年ぶりの来日公演",
-      "personnel": null,
-      "priceText": "¥14,000"
-    },
-    {
-      "id": "cottonclubtok:2026-08-08:2026",
-      "clubId": "cottonclubtok",
-      "title": "岩崎宏美 アコースティックライブ 2026",
-      "date": "2026-08-08",
-      "sets": [],
-      "url": "https://www.cottonclubjapan.co.jp/jp/sp/artists/",
-      "details": "抜群の歌唱力で魅せる人気シンガー 岩崎宏美 アコースティック編成で贈るプレミアムライブ",
-      "personnel": null,
-      "priceText": "¥10,000"
-    },
-    {
       "id": "sometimetok:2026-08-08:super-funky",
       "clubId": "sometimetok",
       "title": "SUPER FUNKY 西村",
@@ -5774,6 +7042,97 @@
       "priceText": "¥2,500"
     },
     {
+      "id": "billboardtok:2026-08-09:bradio-billboard-live-2026",
+      "clubId": "billboardtok",
+      "title": "BRADIO Billboard Live 2026",
+      "date": "2026-08-09",
+      "sets": [
+        "16:00",
+        "19:00"
+      ],
+      "url": "https://www.billboard-live.com/schedules?shop=tokyo",
+      "details": null,
+      "personnel": null,
+      "priceText": "from ¥7,500"
+    },
+    {
+      "id": "bluenotetok:2026-08-09:summer-jazz-camp-all-stars",
+      "clubId": "bluenotetok",
+      "title": "SUMMER JAZZ CAMP ALL STARS",
+      "date": "2026-08-09",
+      "sets": [
+        "16:30",
+        "19:30"
+      ],
+      "url": "https://www.bluenote.co.jp/jp/artists/summer-jazz-camp-all-stars/",
+      "details": "若き才能を育成するSummer Jazz Camp 10周年を記念した一夜限りのスペシャル・ライヴ",
+      "personnel": [
+        {
+          "name": "Michael Dease",
+          "instrument": "trombone"
+        },
+        {
+          "name": "Diego Rivera",
+          "instrument": "tenor sax"
+        },
+        {
+          "name": "Benny Benack III",
+          "instrument": "trumpet, vocals"
+        },
+        {
+          "name": "Dan Nimmer",
+          "instrument": "piano"
+        },
+        {
+          "name": "Yasushi Nakamura",
+          "instrument": "bass"
+        },
+        {
+          "name": "Quincy Davis",
+          "instrument": "drums"
+        },
+        {
+          "name": "Alicia Olatuja",
+          "instrument": "vocals"
+        },
+        {
+          "name": "Ray Kaneko",
+          "instrument": "alto sax"
+        },
+        {
+          "name": "Nanami Haruta",
+          "instrument": "trombone"
+        },
+        {
+          "name": "Hina Oikawa",
+          "instrument": "alto sax"
+        }
+      ],
+      "priceText": "¥8,000"
+    },
+    {
+      "id": "cottonclubtok:2026-08-09:iwasaki-sisters-live",
+      "clubId": "cottonclubtok",
+      "title": "岩崎宏美・岩崎良美 ジョイント公演 「IWASAKI SISTERS Live」",
+      "date": "2026-08-09",
+      "sets": [
+        "16:30"
+      ],
+      "url": "https://www.cottonclubjapan.co.jp/jp/sp/artists/iwasaki-sisters-260809/",
+      "details": "抜群の歌唱力で魅せる岩崎シスターズ初登場 息の合ったデュエットとトークで届ける心温まるステージ",
+      "personnel": [
+        {
+          "name": "岩崎宏美",
+          "instrument": "vocals"
+        },
+        {
+          "name": "岩崎良美",
+          "instrument": "vocals"
+        }
+      ],
+      "priceText": "¥10,500"
+    },
+    {
       "id": "introtok:2026-08-09:",
       "clubId": "introtok",
       "title": "練習ジャムセッション",
@@ -5788,16 +7147,33 @@
       "priceText": null
     },
     {
-      "id": "alfie:2026-08-09:vo-3",
+      "id": "alfie:2026-08-09:",
       "clubId": "alfie",
-      "title": "土井保利(vo) +3",
+      "title": "土井保利",
       "date": "2026-08-09",
       "sets": [
         "19:15"
       ],
       "url": "https://alfie.tokyo/schedule/",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "土井保利",
+          "instrument": "vocals"
+        },
+        {
+          "name": "荻原亮",
+          "instrument": "guitar"
+        },
+        {
+          "name": "伊藤勇司",
+          "instrument": "bass"
+        },
+        {
+          "name": "山崎隼",
+          "instrument": "drums"
+        }
+      ],
       "priceText": "¥5,500"
     },
     {
@@ -5833,28 +7209,6 @@
         }
       ],
       "priceText": null
-    },
-    {
-      "id": "bluenotetok:2026-08-09:summer-jazz-camp-all-stars",
-      "clubId": "bluenotetok",
-      "title": "SUMMER JAZZ CAMP ALL STARS",
-      "date": "2026-08-09",
-      "sets": [],
-      "url": "https://www.bluenote.co.jp/jp/artists/schedule/",
-      "details": "若き才能を育成するSummer Jazz Camp 10周年を記念した一夜限りのスペシャル・ライヴ",
-      "personnel": null,
-      "priceText": "¥8,000"
-    },
-    {
-      "id": "cottonclubtok:2026-08-09:iwasaki-sisters-live",
-      "clubId": "cottonclubtok",
-      "title": "岩崎宏美・岩崎良美 ジョイント公演 「IWASAKI SISTERS Live」",
-      "date": "2026-08-09",
-      "sets": [],
-      "url": "https://www.cottonclubjapan.co.jp/jp/sp/artists/",
-      "details": "抜群の歌唱力で魅せる岩崎シスターズ初登場 息の合ったデュエットとトークで届ける心温まるステージ",
-      "personnel": null,
-      "priceText": "¥10,500"
     },
     {
       "id": "sometimetok:2026-08-09:bebop",
@@ -5907,6 +7261,105 @@
         }
       ],
       "priceText": "¥3,000"
+    },
+    {
+      "id": "billboardtok:2026-08-10:claudio-simonetti-s-goblin",
+      "clubId": "billboardtok",
+      "title": "CLAUDIO SIMONETTI'S GOBLIN",
+      "date": "2026-08-10",
+      "sets": [
+        "17:30",
+        "20:30"
+      ],
+      "url": "https://www.billboard-live.com/schedules?shop=tokyo",
+      "details": null,
+      "personnel": null,
+      "priceText": "from ¥8,900"
+    },
+    {
+      "id": "bluenotetok:2026-08-10:jazzanova-live-feat-wayne-snow-clara-hill",
+      "clubId": "bluenotetok",
+      "title": "JAZZANOVA Live feat. Wayne Snow & Clara Hill",
+      "date": "2026-08-10",
+      "sets": [
+        "18:00",
+        "20:30"
+      ],
+      "url": "https://www.bluenote.co.jp/jp/artists/jazzanova/",
+      "details": "ベルリン発フューチャー・ジャズ・ユニットふたたび！ 昨年の大盛況ライヴを経て待望の再登場を果たす",
+      "personnel": [
+        {
+          "name": "Stefan Ulrich",
+          "instrument": "keys, trombone, electronics"
+        },
+        {
+          "name": "Christoph Adams",
+          "instrument": "keys, vocals"
+        },
+        {
+          "name": "Florian Menzel",
+          "instrument": "trumpet, flugelhorn"
+        },
+        {
+          "name": "Sebastian Borkowski",
+          "instrument": "sax, flute"
+        },
+        {
+          "name": "Jan Burkamp",
+          "instrument": "drums"
+        },
+        {
+          "name": "Paul Kleber",
+          "instrument": "bass"
+        },
+        {
+          "name": "Christoph Bernewitz",
+          "instrument": "guitar"
+        },
+        {
+          "name": "Wayne Snow",
+          "instrument": "vocals"
+        },
+        {
+          "name": "Clara Hill",
+          "instrument": "vocals"
+        }
+      ],
+      "priceText": "¥9,500"
+    },
+    {
+      "id": "cottonclubtok:2026-08-10:aco-30th-anniversary-live-2026",
+      "clubId": "cottonclubtok",
+      "title": "ACO 30th ANNIVERSARY LIVE 2026",
+      "date": "2026-08-10",
+      "sets": [
+        "18:00"
+      ],
+      "url": "https://www.cottonclubjapan.co.jp/jp/sp/artists/aco-260810/",
+      "details": "唯一無二の歌世界で時代を彩ってきたACO 30年の軌跡を辿るアニバーサリー・ライヴ",
+      "personnel": [
+        {
+          "name": "ACO",
+          "instrument": "vocals, guitar"
+        },
+        {
+          "name": "中村圭作",
+          "instrument": "piano, keys"
+        },
+        {
+          "name": "磯貝一樹",
+          "instrument": "guitar"
+        },
+        {
+          "name": "玉木正太郎",
+          "instrument": "bass"
+        },
+        {
+          "name": "GOTO",
+          "instrument": "drums"
+        }
+      ],
+      "priceText": "¥8,000"
     },
     {
       "id": "alfie:2026-08-10:",
@@ -5970,28 +7423,6 @@
       "priceText": null
     },
     {
-      "id": "bluenotetok:2026-08-10:jazzanova-live-feat-wayne-snow-clara-hill",
-      "clubId": "bluenotetok",
-      "title": "JAZZANOVA Live feat. Wayne Snow & Clara Hill",
-      "date": "2026-08-10",
-      "sets": [],
-      "url": "https://www.bluenote.co.jp/jp/artists/schedule/",
-      "details": "ベルリン発フューチャー・ジャズ・ユニットふたたび！ 昨年の大盛況ライヴを経て待望の再登場を果たす",
-      "personnel": null,
-      "priceText": "¥9,500"
-    },
-    {
-      "id": "cottonclubtok:2026-08-10:aco-30th-anniversary-live-2026",
-      "clubId": "cottonclubtok",
-      "title": "ACO 30th ANNIVERSARY LIVE 2026",
-      "date": "2026-08-10",
-      "sets": [],
-      "url": "https://www.cottonclubjapan.co.jp/jp/sp/artists/",
-      "details": "唯一無二の歌世界で時代を彩ってきたACO 30年の軌跡を辿るアニバーサリー・ライヴ",
-      "personnel": null,
-      "priceText": "¥8,000"
-    },
-    {
       "id": "sometimetok:2026-08-10:",
       "clubId": "sometimetok",
       "title": "八木 隆幸",
@@ -6014,6 +7445,84 @@
         }
       ],
       "priceText": "¥3,000"
+    },
+    {
+      "id": "billboardtok:2026-08-11:paris-match",
+      "clubId": "billboardtok",
+      "title": "paris match",
+      "date": "2026-08-11",
+      "sets": [
+        "16:00",
+        "19:00"
+      ],
+      "url": "https://www.billboard-live.com/schedules?shop=tokyo",
+      "details": null,
+      "personnel": null,
+      "priceText": "from ¥7,400"
+    },
+    {
+      "id": "bluenotetok:2026-08-11:jazzanova-live-feat-wayne-snow-clara-hill",
+      "clubId": "bluenotetok",
+      "title": "JAZZANOVA Live feat. Wayne Snow & Clara Hill",
+      "date": "2026-08-11",
+      "sets": [
+        "16:30",
+        "19:30"
+      ],
+      "url": "https://www.bluenote.co.jp/jp/artists/jazzanova/",
+      "details": "ベルリン発フューチャー・ジャズ・ユニットふたたび！ 昨年の大盛況ライヴを経て待望の再登場を果たす",
+      "personnel": [
+        {
+          "name": "Stefan Ulrich",
+          "instrument": "keys, trombone, electronics"
+        },
+        {
+          "name": "Christoph Adams",
+          "instrument": "keys, vocals"
+        },
+        {
+          "name": "Florian Menzel",
+          "instrument": "trumpet, flugelhorn"
+        },
+        {
+          "name": "Sebastian Borkowski",
+          "instrument": "sax, flute"
+        },
+        {
+          "name": "Jan Burkamp",
+          "instrument": "drums"
+        },
+        {
+          "name": "Paul Kleber",
+          "instrument": "bass"
+        },
+        {
+          "name": "Christoph Bernewitz",
+          "instrument": "guitar"
+        },
+        {
+          "name": "Wayne Snow",
+          "instrument": "vocals"
+        },
+        {
+          "name": "Clara Hill",
+          "instrument": "vocals"
+        }
+      ],
+      "priceText": "¥9,500"
+    },
+    {
+      "id": "cottonclubtok:2026-08-11:martin-taylor-standards",
+      "clubId": "cottonclubtok",
+      "title": "MARTIN TAYLOR \"Standards\"",
+      "date": "2026-08-11",
+      "sets": [
+        "16:30"
+      ],
+      "url": "https://www.cottonclubjapan.co.jp/jp/sp/artists/martin-taylor-260811/",
+      "details": "圧巻のテクニックと歌心あふれるフレージング 世界中のプロが敬意を寄せるギターの名手が登場！",
+      "personnel": null,
+      "priceText": "¥8,000"
     },
     {
       "id": "introtok:2026-08-11:",
@@ -6055,28 +7564,6 @@
         }
       ],
       "priceText": null
-    },
-    {
-      "id": "bluenotetok:2026-08-11:jazzanova-live-feat-wayne-snow-clara-hill",
-      "clubId": "bluenotetok",
-      "title": "JAZZANOVA Live feat. Wayne Snow & Clara Hill",
-      "date": "2026-08-11",
-      "sets": [],
-      "url": "https://www.bluenote.co.jp/jp/artists/schedule/",
-      "details": "ベルリン発フューチャー・ジャズ・ユニットふたたび！ 昨年の大盛況ライヴを経て待望の再登場を果たす",
-      "personnel": null,
-      "priceText": "¥9,500"
-    },
-    {
-      "id": "cottonclubtok:2026-08-11:martin-taylor-standards",
-      "clubId": "cottonclubtok",
-      "title": "MARTIN TAYLOR \"Standards\"",
-      "date": "2026-08-11",
-      "sets": [],
-      "url": "https://www.cottonclubjapan.co.jp/jp/sp/artists/",
-      "details": "圧巻のテクニックと歌心あふれるフレージング 世界中のプロが敬意を寄せるギターの名手が登場！",
-      "personnel": null,
-      "priceText": "¥8,000"
     },
     {
       "id": "sometimetok:2026-08-11:",
@@ -6137,6 +7624,71 @@
         }
       ],
       "priceText": "¥3,000"
+    },
+    {
+      "id": "cottonclubtok:2026-08-12:martin-taylor-standards",
+      "clubId": "cottonclubtok",
+      "title": "MARTIN TAYLOR \"Standards\"",
+      "date": "2026-08-12",
+      "sets": [
+        "16:30"
+      ],
+      "url": "https://www.cottonclubjapan.co.jp/jp/sp/artists/martin-taylor-260811/",
+      "details": "圧巻のテクニックと歌心あふれるフレージング 世界中のプロが敬意を寄せるギターの名手が登場！",
+      "personnel": null,
+      "priceText": "¥8,000"
+    },
+    {
+      "id": "billboardtok:2026-08-12:kishow-from-granrodeo-billboard-live",
+      "clubId": "billboardtok",
+      "title": "KISHOW from GRANRODEO Billboard Live",
+      "date": "2026-08-12",
+      "sets": [
+        "17:00",
+        "20:00"
+      ],
+      "url": "https://www.billboard-live.com/schedules?shop=tokyo",
+      "details": null,
+      "personnel": null,
+      "priceText": "from ¥12,000"
+    },
+    {
+      "id": "bluenotetok:2026-08-12:toshiki-kadomatsu-45th-anniversary-live-in-blue-note-tokyo",
+      "clubId": "bluenotetok",
+      "title": "TOSHIKI KADOMATSU 45th Anniversary Live in Blue Note Tokyo",
+      "date": "2026-08-12",
+      "sets": [
+        "18:00"
+      ],
+      "url": "https://www.bluenote.co.jp/jp/artists/toshiki-kadomatsu/",
+      "details": "デビュー45周年記念ライヴも大成功！ アニバーサリーとバースデーを祝うプレミアム・ライヴ",
+      "personnel": [
+        {
+          "name": "Toshiki Kadomatsu",
+          "instrument": "vocals, guitar, percussion"
+        },
+        {
+          "name": "Toshiyuki Mori",
+          "instrument": "keys"
+        },
+        {
+          "name": "Hidetoshi Suzuki",
+          "instrument": "guitar"
+        },
+        {
+          "name": "Shingo Ogaya",
+          "instrument": "bass"
+        },
+        {
+          "name": "Maoki Yamamoto",
+          "instrument": "drums"
+        },
+        {
+          "name": "Masato Honda",
+          "instrument": "sax"
+        }
+      ],
+      "priceText": "¥13,800"
     },
     {
       "id": "introtok:2026-08-12:",
@@ -6209,28 +7761,6 @@
       "priceText": null
     },
     {
-      "id": "bluenotetok:2026-08-12:toshiki-kadomatsu-45th-anniversary-live-in-blue-note-tokyo",
-      "clubId": "bluenotetok",
-      "title": "TOSHIKI KADOMATSU 45th Anniversary Live in Blue Note Tokyo",
-      "date": "2026-08-12",
-      "sets": [],
-      "url": "https://www.bluenote.co.jp/jp/artists/schedule/",
-      "details": "デビュー45周年記念ライヴも大成功！ アニバーサリーとバースデーを祝うプレミアム・ライヴ",
-      "personnel": null,
-      "priceText": "¥13,800"
-    },
-    {
-      "id": "cottonclubtok:2026-08-12:martin-taylor-standards",
-      "clubId": "cottonclubtok",
-      "title": "MARTIN TAYLOR \"Standards\"",
-      "date": "2026-08-12",
-      "sets": [],
-      "url": "https://www.cottonclubjapan.co.jp/jp/sp/artists/",
-      "details": "圧巻のテクニックと歌心あふれるフレージング 世界中のプロが敬意を寄せるギターの名手が登場！",
-      "personnel": null,
-      "priceText": "¥8,000"
-    },
-    {
       "id": "sometimetok:2026-08-12:ken-s-trio-plus",
       "clubId": "sometimetok",
       "title": "Ken’s Trio Plus 金子",
@@ -6257,6 +7787,72 @@
         }
       ],
       "priceText": "¥3,000"
+    },
+    {
+      "id": "billboardtok:2026-08-13:the-rh-factor-reunion",
+      "clubId": "billboardtok",
+      "title": "The RH Factor reunion",
+      "date": "2026-08-13",
+      "sets": [
+        "17:30",
+        "20:30"
+      ],
+      "url": "https://www.billboard-live.com/schedules?shop=tokyo",
+      "details": null,
+      "personnel": null,
+      "titleAlt": "tribute to Roy Hargrove",
+      "priceText": "from ¥13,400"
+    },
+    {
+      "id": "bluenotetok:2026-08-13:toshiki-kadomatsu-45th-anniversary-live-in-blue-note-tokyo",
+      "clubId": "bluenotetok",
+      "title": "TOSHIKI KADOMATSU 45th Anniversary Live in Blue Note Tokyo",
+      "date": "2026-08-13",
+      "sets": [
+        "18:00"
+      ],
+      "url": "https://www.bluenote.co.jp/jp/artists/toshiki-kadomatsu/",
+      "details": "デビュー45周年記念ライヴも大成功！ アニバーサリーとバースデーを祝うプレミアム・ライヴ",
+      "personnel": [
+        {
+          "name": "Toshiki Kadomatsu",
+          "instrument": "vocals, guitar, percussion"
+        },
+        {
+          "name": "Toshiyuki Mori",
+          "instrument": "keys"
+        },
+        {
+          "name": "Hidetoshi Suzuki",
+          "instrument": "guitar"
+        },
+        {
+          "name": "Shingo Ogaya",
+          "instrument": "bass"
+        },
+        {
+          "name": "Maoki Yamamoto",
+          "instrument": "drums"
+        },
+        {
+          "name": "Masato Honda",
+          "instrument": "sax"
+        }
+      ],
+      "priceText": "¥13,800"
+    },
+    {
+      "id": "cottonclubtok:2026-08-13:peter-erskine-dr-um-steps-into-the-weather-featuring-mike-ma",
+      "clubId": "cottonclubtok",
+      "title": "PETER ERSKINE \"Dr. Um\" -Steps Into The Weather- featuring MIKE MAINIERI with JOHN BEASLEY, BOB SHEPPARD & MATTHEW GARRISON",
+      "date": "2026-08-13",
+      "sets": [
+        "18:00"
+      ],
+      "url": "https://www.cottonclubjapan.co.jp/jp/sp/artists/peter-erskine-260813/",
+      "details": "スーパー・ドラマーによるオールスター・プロジェクト ウェザー・リポート、ステップス・アヘッドの伝説が蘇る",
+      "personnel": null,
+      "priceText": "¥11,000"
     },
     {
       "id": "introtok:2026-08-13:",
@@ -6325,28 +7921,6 @@
       "priceText": null
     },
     {
-      "id": "bluenotetok:2026-08-13:toshiki-kadomatsu-45th-anniversary-live-in-blue-note-tokyo",
-      "clubId": "bluenotetok",
-      "title": "TOSHIKI KADOMATSU 45th Anniversary Live in Blue Note Tokyo",
-      "date": "2026-08-13",
-      "sets": [],
-      "url": "https://www.bluenote.co.jp/jp/artists/schedule/",
-      "details": "デビュー45周年記念ライヴも大成功！ アニバーサリーとバースデーを祝うプレミアム・ライヴ",
-      "personnel": null,
-      "priceText": "¥13,800"
-    },
-    {
-      "id": "cottonclubtok:2026-08-13:peter-erskine-dr-um-steps-into-the-weather-featuring-mike-ma",
-      "clubId": "cottonclubtok",
-      "title": "PETER ERSKINE \"Dr. Um\" -Steps Into The Weather- featuring MIKE MAINIERI with JOHN BEASLEY, BOB SHEPPARD & MATTHEW GARRISON",
-      "date": "2026-08-13",
-      "sets": [],
-      "url": "https://www.cottonclubjapan.co.jp/jp/sp/artists/",
-      "details": "スーパー・ドラマーによるオールスター・プロジェクト ウェザー・リポート、ステップス・アヘッドの伝説が蘇る",
-      "personnel": null,
-      "priceText": "¥11,000"
-    },
-    {
       "id": "sometimetok:2026-08-13:",
       "clubId": "sometimetok",
       "title": "ジョナサン・カッツ",
@@ -6369,6 +7943,56 @@
         }
       ],
       "priceText": "¥3,000"
+    },
+    {
+      "id": "billboardtok:2026-08-14:shimizmyukopia-vol-2",
+      "clubId": "billboardtok",
+      "title": "SHIMIZMYUKOPIA〜シミズムユーコピア〜 vol.2",
+      "date": "2026-08-14",
+      "sets": [
+        "17:30",
+        "20:30"
+      ],
+      "url": "https://www.billboard-live.com/schedules?shop=tokyo",
+      "details": null,
+      "personnel": null,
+      "titleAlt": "安藤裕子×清水ミチコ",
+      "priceText": "from ¥7,000"
+    },
+    {
+      "id": "bluenotetok:2026-08-14:peter-erskine-dr-um-steps-into-the-weather-featuring-mike-ma",
+      "clubId": "bluenotetok",
+      "title": "PETER ERSKINE \"Dr. Um\" -Steps Into The Weather- featuring MIKE MAINIERI with JOHN BEASLEY, BOB SHEPPARD & MATTHEW GARRISON",
+      "date": "2026-08-14",
+      "sets": [
+        "18:00",
+        "20:30"
+      ],
+      "url": "https://www.bluenote.co.jp/jp/artists/peter-erskine/",
+      "details": "スーパー・ドラマーによるオールスター・プロジェクト ウェザー・リポート、ステップス・アヘッドの伝説が蘇る",
+      "personnel": [
+        {
+          "name": "Peter Erskine",
+          "instrument": "drums"
+        },
+        {
+          "name": "Mike Mainieri",
+          "instrument": "vibraphone"
+        },
+        {
+          "name": "John Beasley",
+          "instrument": "piano"
+        },
+        {
+          "name": "Bob Sheppard",
+          "instrument": "sax"
+        },
+        {
+          "name": "Matthew Garrison",
+          "instrument": "bass"
+        }
+      ],
+      "priceText": "¥11,000"
     },
     {
       "id": "alfie:2026-08-14:",
@@ -6439,23 +8063,14 @@
       "priceText": null
     },
     {
-      "id": "bluenotetok:2026-08-14:peter-erskine-dr-um-steps-into-the-weather-featuring-mike-ma",
-      "clubId": "bluenotetok",
-      "title": "PETER ERSKINE \"Dr. Um\" -Steps Into The Weather- featuring MIKE MAINIERI with JOHN BEASLEY, BOB SHEPPARD & MATTHEW GARRISON",
-      "date": "2026-08-14",
-      "sets": [],
-      "url": "https://www.bluenote.co.jp/jp/artists/schedule/",
-      "details": "スーパー・ドラマーによるオールスター・プロジェクト ウェザー・リポート、ステップス・アヘッドの伝説が蘇る",
-      "personnel": null,
-      "priceText": "¥11,000"
-    },
-    {
       "id": "cottonclubtok:2026-08-14:vol-38",
       "clubId": "cottonclubtok",
       "title": "古舘と客人と vol.38 古舘伊知郎 中田敦彦",
       "date": "2026-08-14",
-      "sets": [],
-      "url": "https://www.cottonclubjapan.co.jp/jp/sp/artists/",
+      "sets": [
+        "20:00"
+      ],
+      "url": "https://www.cottonclubjapan.co.jp/jp/sp/artists/ichiro-furutachi-260814/",
       "details": "古舘伊知郎が\"今\"話したい人と一対一で語り合う 親密なクラブ空間で堪能するプレミアムステージ！",
       "personnel": null,
       "priceText": "¥8,000"
@@ -6489,6 +8104,68 @@
       "priceText": "¥3,000"
     },
     {
+      "id": "billboardtok:2026-08-15:the-band-apart-naked-at-billboard-live-tokyo-2026",
+      "clubId": "billboardtok",
+      "title": "the band apart (naked) at Billboard Live TOKYO 2026",
+      "date": "2026-08-15",
+      "sets": [
+        "15:00",
+        "18:00"
+      ],
+      "url": "https://www.billboard-live.com/schedules?shop=tokyo",
+      "details": null,
+      "personnel": null,
+      "priceText": "from ¥6,500"
+    },
+    {
+      "id": "bluenotetok:2026-08-15:peter-erskine-dr-um-steps-into-the-weather-featuring-mike-ma",
+      "clubId": "bluenotetok",
+      "title": "PETER ERSKINE \"Dr. Um\" -Steps Into The Weather- featuring MIKE MAINIERI with JOHN BEASLEY, BOB SHEPPARD & MATTHEW GARRISON",
+      "date": "2026-08-15",
+      "sets": [
+        "16:30",
+        "19:30"
+      ],
+      "url": "https://www.bluenote.co.jp/jp/artists/peter-erskine/",
+      "details": "スーパー・ドラマーによるオールスター・プロジェクト ウェザー・リポート、ステップス・アヘッドの伝説が蘇る",
+      "personnel": [
+        {
+          "name": "Peter Erskine",
+          "instrument": "drums"
+        },
+        {
+          "name": "Mike Mainieri",
+          "instrument": "vibraphone"
+        },
+        {
+          "name": "John Beasley",
+          "instrument": "piano"
+        },
+        {
+          "name": "Bob Sheppard",
+          "instrument": "sax"
+        },
+        {
+          "name": "Matthew Garrison",
+          "instrument": "bass"
+        }
+      ],
+      "priceText": "¥11,000"
+    },
+    {
+      "id": "cottonclubtok:2026-08-15:the-charm-park-second-nature-tour-2026-in-tokyo",
+      "clubId": "cottonclubtok",
+      "title": "THE CHARM PARK Second Nature Tour 2026 in TOKYO",
+      "date": "2026-08-15",
+      "sets": [
+        "16:30"
+      ],
+      "url": "https://www.cottonclubjapan.co.jp/jp/sp/artists/the-charm-park-260815/",
+      "details": "多方面で活躍する新世代ポップス職人 バンド編成で贈る＜Second Nature Tour 2026＞東京公演",
+      "personnel": null,
+      "priceText": "¥6,800"
+    },
+    {
       "id": "introtok:2026-08-15:10",
       "clubId": "introtok",
       "title": "10時間オールナイトジャム",
@@ -6520,6 +8197,10 @@
         {
           "name": "松島啓之",
           "instrument": "trumpet"
+        },
+        {
+          "name": "石田衛",
+          "instrument": "piano"
         }
       ],
       "priceText": "¥5,500"
@@ -6560,28 +8241,6 @@
       "priceText": null
     },
     {
-      "id": "bluenotetok:2026-08-15:peter-erskine-dr-um-steps-into-the-weather-featuring-mike-ma",
-      "clubId": "bluenotetok",
-      "title": "PETER ERSKINE \"Dr. Um\" -Steps Into The Weather- featuring MIKE MAINIERI with JOHN BEASLEY, BOB SHEPPARD & MATTHEW GARRISON",
-      "date": "2026-08-15",
-      "sets": [],
-      "url": "https://www.bluenote.co.jp/jp/artists/schedule/",
-      "details": "スーパー・ドラマーによるオールスター・プロジェクト ウェザー・リポート、ステップス・アヘッドの伝説が蘇る",
-      "personnel": null,
-      "priceText": "¥11,000"
-    },
-    {
-      "id": "cottonclubtok:2026-08-15:the-charm-park-second-nature-tour-2026-in-tokyo",
-      "clubId": "cottonclubtok",
-      "title": "THE CHARM PARK Second Nature Tour 2026 in TOKYO",
-      "date": "2026-08-15",
-      "sets": [],
-      "url": "https://www.cottonclubjapan.co.jp/jp/sp/artists/",
-      "details": "多方面で活躍する新世代ポップス職人 バンド編成で贈る＜Second Nature Tour 2026＞東京公演",
-      "personnel": null,
-      "priceText": "¥6,800"
-    },
-    {
       "id": "sometimetok:2026-08-15:",
       "clubId": "sometimetok",
       "title": "大野 智子",
@@ -6604,6 +8263,69 @@
         }
       ],
       "priceText": "¥3,000"
+    },
+    {
+      "id": "billboardtok:2026-08-16:",
+      "clubId": "billboardtok",
+      "title": "布施明",
+      "date": "2026-08-16",
+      "sets": [
+        "15:00",
+        "18:00"
+      ],
+      "url": "https://www.billboard-live.com/schedules?shop=tokyo",
+      "details": null,
+      "personnel": null,
+      "titleAlt": "AKIRA FUSE SOMETHING JAZZY 2026",
+      "priceText": "from ¥10,500"
+    },
+    {
+      "id": "bluenotetok:2026-08-16:peter-erskine-dr-um-steps-into-the-weather-featuring-mike-ma",
+      "clubId": "bluenotetok",
+      "title": "PETER ERSKINE \"Dr. Um\" -Steps Into The Weather- featuring MIKE MAINIERI with JOHN BEASLEY, BOB SHEPPARD & MATTHEW GARRISON",
+      "date": "2026-08-16",
+      "sets": [
+        "16:30",
+        "19:30"
+      ],
+      "url": "https://www.bluenote.co.jp/jp/artists/peter-erskine/",
+      "details": "スーパー・ドラマーによるオールスター・プロジェクト ウェザー・リポート、ステップス・アヘッドの伝説が蘇る",
+      "personnel": [
+        {
+          "name": "Peter Erskine",
+          "instrument": "drums"
+        },
+        {
+          "name": "Mike Mainieri",
+          "instrument": "vibraphone"
+        },
+        {
+          "name": "John Beasley",
+          "instrument": "piano"
+        },
+        {
+          "name": "Bob Sheppard",
+          "instrument": "sax"
+        },
+        {
+          "name": "Matthew Garrison",
+          "instrument": "bass"
+        }
+      ],
+      "priceText": "¥11,000"
+    },
+    {
+      "id": "cottonclubtok:2026-08-16:lakecia-benjamin",
+      "clubId": "cottonclubtok",
+      "title": "LAKECIA BENJAMIN",
+      "date": "2026-08-16",
+      "sets": [
+        "16:30"
+      ],
+      "url": "https://www.cottonclubjapan.co.jp/jp/sp/artists/lakecia-benjamin-260816/",
+      "details": "ニューヨーク発の気鋭サックス奏者が登場 新作『We Dream』の世界をカルテットで描き出す",
+      "personnel": null,
+      "priceText": "¥8,800"
     },
     {
       "id": "introtok:2026-08-16:",
@@ -6674,28 +8396,6 @@
       "priceText": null
     },
     {
-      "id": "bluenotetok:2026-08-16:peter-erskine-dr-um-steps-into-the-weather-featuring-mike-ma",
-      "clubId": "bluenotetok",
-      "title": "PETER ERSKINE \"Dr. Um\" -Steps Into The Weather- featuring MIKE MAINIERI with JOHN BEASLEY, BOB SHEPPARD & MATTHEW GARRISON",
-      "date": "2026-08-16",
-      "sets": [],
-      "url": "https://www.bluenote.co.jp/jp/artists/schedule/",
-      "details": "スーパー・ドラマーによるオールスター・プロジェクト ウェザー・リポート、ステップス・アヘッドの伝説が蘇る",
-      "personnel": null,
-      "priceText": "¥11,000"
-    },
-    {
-      "id": "cottonclubtok:2026-08-16:lakecia-benjamin",
-      "clubId": "cottonclubtok",
-      "title": "LAKECIA BENJAMIN",
-      "date": "2026-08-16",
-      "sets": [],
-      "url": "https://www.cottonclubjapan.co.jp/jp/sp/artists/",
-      "details": "ニューヨーク発の気鋭サックス奏者が登場 新作『We Dream』の世界をカルテットで描き出す",
-      "personnel": null,
-      "priceText": "¥8,800"
-    },
-    {
       "id": "sometimetok:2026-08-16:",
       "clubId": "sometimetok",
       "title": "近藤 和彦",
@@ -6722,6 +8422,110 @@
         }
       ],
       "priceText": "¥3,000"
+    },
+    {
+      "id": "cottonclubtok:2026-08-17:lakecia-benjamin",
+      "clubId": "cottonclubtok",
+      "title": "LAKECIA BENJAMIN",
+      "date": "2026-08-17",
+      "sets": [
+        "16:30"
+      ],
+      "url": "https://www.cottonclubjapan.co.jp/jp/sp/artists/lakecia-benjamin-260816/",
+      "details": "ニューヨーク発の気鋭サックス奏者が登場 新作『We Dream』の世界をカルテットで描き出す",
+      "personnel": null,
+      "priceText": "¥8,800"
+    },
+    {
+      "id": "bluenotetok:2026-08-17:blue-note-tokyo-all-star-jazz-orchestra-directed-by-eric-miy",
+      "clubId": "bluenotetok",
+      "title": "BLUE NOTE TOKYO ALL-STAR JAZZ ORCHESTRA directed by ERIC MIYASHIRO with special guests PETER ERSKINE & MIKE MAINIERI",
+      "date": "2026-08-17",
+      "sets": [
+        "18:00",
+        "20:30"
+      ],
+      "url": "https://www.bluenote.co.jp/jp/artists/peter-erskine-bnt-all-star-jazz-orchestra/",
+      "details": "ウェザー・リポート、ステップス・アヘッドの伝説 レジェンドとジャズ・オーケストラによる豪華共演",
+      "personnel": [
+        {
+          "name": "Eric Miyashiro",
+          "instrument": "trumpet, conductor"
+        },
+        {
+          "name": "Masato Honda",
+          "instrument": "sax"
+        },
+        {
+          "name": "Osamu Koike",
+          "instrument": "sax"
+        },
+        {
+          "name": "Aoi Murakoshi",
+          "instrument": "sax"
+        },
+        {
+          "name": "Yu Kuga",
+          "instrument": "sax"
+        },
+        {
+          "name": "Kei Suzuki",
+          "instrument": "sax"
+        },
+        {
+          "name": "Yusuke Nakano",
+          "instrument": "trumpet"
+        },
+        {
+          "name": "Ryusuke Kanke",
+          "instrument": "trumpet"
+        },
+        {
+          "name": "Chihiro Yamazaki",
+          "instrument": "trumpet"
+        },
+        {
+          "name": "Riki Miyashiro",
+          "instrument": "trumpet"
+        },
+        {
+          "name": "Eijiro Nakagawa",
+          "instrument": "trombone"
+        },
+        {
+          "name": "Amane Takai",
+          "instrument": "trombone"
+        },
+        {
+          "name": "Haru Igarashi",
+          "instrument": "trombone"
+        },
+        {
+          "name": "Mizuki Ogura",
+          "instrument": "trombone"
+        },
+        {
+          "name": "Takana Miyamoto",
+          "instrument": "piano"
+        },
+        {
+          "name": "Ryu Kawamura",
+          "instrument": "bass"
+        },
+        {
+          "name": "Senri Kawaguchi",
+          "instrument": "drums"
+        },
+        {
+          "name": "Peter Erskine",
+          "instrument": "drums"
+        },
+        {
+          "name": "Mike Mainieri",
+          "instrument": "vibraphone"
+        }
+      ],
+      "priceText": "¥12,500"
     },
     {
       "id": "pitinn:2026-08-17:featuring",
@@ -6759,28 +8563,6 @@
       "priceText": null
     },
     {
-      "id": "bluenotetok:2026-08-17:blue-note-tokyo-all-star-jazz-orchestra-directed-by-eric-miy",
-      "clubId": "bluenotetok",
-      "title": "BLUE NOTE TOKYO ALL-STAR JAZZ ORCHESTRA directed by ERIC MIYASHIRO with special guests PETER ERSKINE & MIKE MAINIERI",
-      "date": "2026-08-17",
-      "sets": [],
-      "url": "https://www.bluenote.co.jp/jp/artists/schedule/",
-      "details": "ウェザー・リポート、ステップス・アヘッドの伝説 レジェンドとジャズ・オーケストラによる豪華共演",
-      "personnel": null,
-      "priceText": "¥12,500"
-    },
-    {
-      "id": "cottonclubtok:2026-08-17:lakecia-benjamin",
-      "clubId": "cottonclubtok",
-      "title": "LAKECIA BENJAMIN",
-      "date": "2026-08-17",
-      "sets": [],
-      "url": "https://www.cottonclubjapan.co.jp/jp/sp/artists/",
-      "details": "ニューヨーク発の気鋭サックス奏者が登場 新作『We Dream』の世界をカルテットで描き出す",
-      "personnel": null,
-      "priceText": "¥8,800"
-    },
-    {
       "id": "sometimetok:2026-08-17:",
       "clubId": "sometimetok",
       "title": "山本 剛",
@@ -6805,6 +8587,20 @@
       "priceText": "¥3,500"
     },
     {
+      "id": "billboardtok:2026-08-18:omarion",
+      "clubId": "billboardtok",
+      "title": "Omarion",
+      "date": "2026-08-18",
+      "sets": [
+        "17:30",
+        "20:30"
+      ],
+      "url": "https://www.billboard-live.com/schedules?shop=tokyo",
+      "details": null,
+      "personnel": null,
+      "priceText": "from ¥18,900"
+    },
+    {
       "id": "introtok:2026-08-18:",
       "clubId": "introtok",
       "title": "練習ジャムセッション",
@@ -6817,6 +8613,19 @@
       "personnel": null,
       "titleAlt": "Practice Jam Session",
       "priceText": null
+    },
+    {
+      "id": "cottonclubtok:2026-08-18:4th-album-the-silent-mask",
+      "clubId": "cottonclubtok",
+      "title": "平倉初音 4th Album \"The Silent Mask\" 発売記念ライヴ",
+      "date": "2026-08-18",
+      "sets": [
+        "19:00"
+      ],
+      "url": "https://www.cottonclubjapan.co.jp/jp/sp/artists/hatsune-hirakura-260818/",
+      "details": "気鋭ピアニスト、平倉初音が初登場！ 新作『The Silent Mask』リリース・ライヴ",
+      "personnel": null,
+      "priceText": "¥6,500"
     },
     {
       "id": "alfie:2026-08-18:",
@@ -6885,17 +8694,6 @@
       "priceText": null
     },
     {
-      "id": "cottonclubtok:2026-08-18:4th-album-the-silent-mask",
-      "clubId": "cottonclubtok",
-      "title": "平倉初音 4th Album \"The Silent Mask\" 発売記念ライヴ",
-      "date": "2026-08-18",
-      "sets": [],
-      "url": "https://www.cottonclubjapan.co.jp/jp/sp/artists/",
-      "details": "気鋭ピアニスト、平倉初音が初登場！ 新作『The Silent Mask』リリース・ライヴ",
-      "personnel": null,
-      "priceText": "¥6,500"
-    },
-    {
       "id": "sometimetok:2026-08-18:cd-plays-organ-live",
       "clubId": "sometimetok",
       "title": "CD “Plays Organ”発売記念LIVE!! 大石 学",
@@ -6905,6 +8703,33 @@
       "details": null,
       "personnel": null,
       "priceText": "¥3,000"
+    },
+    {
+      "id": "bluenotetok:2026-08-19:carlos-kanno-sings-with-tropical-jazz-big-band",
+      "clubId": "bluenotetok",
+      "title": "CARLOS KANNO sings with TROPICAL JAZZ BIG BAND",
+      "date": "2026-08-19",
+      "sets": [
+        "18:00",
+        "20:30"
+      ],
+      "url": "https://www.bluenote.co.jp/jp/artists/nettai-jazz-gakudan/",
+      "details": "“灼熱のビッグバンド”が贈る夏の陣 ヴォーカルをフィーチャーしたホット＆メロウ・ライヴ",
+      "personnel": null,
+      "priceText": "¥8,000"
+    },
+    {
+      "id": "cottonclubtok:2026-08-19:nicole-zuraitis-quartet",
+      "clubId": "cottonclubtok",
+      "title": "NICOLE ZURAITIS QUARTET",
+      "date": "2026-08-19",
+      "sets": [
+        "18:00"
+      ],
+      "url": "https://www.cottonclubjapan.co.jp/jp/sp/artists/nicole-zuraitis-260819/",
+      "details": "NY発！グラミー受賞の気鋭シンガーが初登場 心をつかむ歌声と最新アルバムの世界をライヴで",
+      "personnel": null,
+      "priceText": "¥8,800"
     },
     {
       "id": "introtok:2026-08-19:",
@@ -6978,7 +8803,7 @@
           "instrument": "vocals"
         },
         {
-          "name": "Berkman",
+          "name": "李 祥太",
           "instrument": "piano"
         },
         {
@@ -6991,28 +8816,6 @@
         }
       ],
       "priceText": null
-    },
-    {
-      "id": "bluenotetok:2026-08-19:carlos-kanno-sings-with-tropical-jazz-big-band",
-      "clubId": "bluenotetok",
-      "title": "CARLOS KANNO sings with TROPICAL JAZZ BIG BAND",
-      "date": "2026-08-19",
-      "sets": [],
-      "url": "https://www.bluenote.co.jp/jp/artists/schedule/",
-      "details": "“灼熱のビッグバンド”が贈る夏の陣 ヴォーカルをフィーチャーしたホット＆メロウ・ライヴ",
-      "personnel": null,
-      "priceText": "¥8,000"
-    },
-    {
-      "id": "cottonclubtok:2026-08-19:nicole-zuraitis-quartet",
-      "clubId": "cottonclubtok",
-      "title": "NICOLE ZURAITIS QUARTET",
-      "date": "2026-08-19",
-      "sets": [],
-      "url": "https://www.cottonclubjapan.co.jp/jp/sp/artists/",
-      "details": "NY発！グラミー受賞の気鋭シンガーが初登場 心をつかむ歌声と最新アルバムの世界をライヴで",
-      "personnel": null,
-      "priceText": "¥8,800"
     },
     {
       "id": "sometimetok:2026-08-19:",
@@ -7037,6 +8840,47 @@
         }
       ],
       "priceText": "¥3,000"
+    },
+    {
+      "id": "billboardtok:2026-08-20:ms-ooja",
+      "clubId": "billboardtok",
+      "title": "Ms.OOJA",
+      "date": "2026-08-20",
+      "sets": [
+        "17:30",
+        "20:30"
+      ],
+      "url": "https://www.billboard-live.com/schedules?shop=tokyo",
+      "details": null,
+      "personnel": null,
+      "priceText": "from ¥8,400"
+    },
+    {
+      "id": "bluenotetok:2026-08-20:fox-capture-plan-re-frame-15th-anniversary-vol-02-day-01-str",
+      "clubId": "bluenotetok",
+      "title": "fox capture plan RE:FRAME -15th Anniversary- Vol.02 Day 01 : String Ensemble",
+      "date": "2026-08-20",
+      "sets": [
+        "18:00",
+        "20:30"
+      ],
+      "url": "https://www.bluenote.co.jp/jp/artists/fox-capture-plan/",
+      "details": "結成15周年を迎えたピアノトリオが登場 異なる編成を味わう二夜連続のアニバーサリー・ライヴ",
+      "personnel": null,
+      "priceText": "¥7,500"
+    },
+    {
+      "id": "cottonclubtok:2026-08-20:nicole-zuraitis-quartet",
+      "clubId": "cottonclubtok",
+      "title": "NICOLE ZURAITIS QUARTET",
+      "date": "2026-08-20",
+      "sets": [
+        "18:00"
+      ],
+      "url": "https://www.cottonclubjapan.co.jp/jp/sp/artists/nicole-zuraitis-260819/",
+      "details": "NY発！グラミー受賞の気鋭シンガーが初登場 心をつかむ歌声と最新アルバムの世界をライヴで",
+      "personnel": null,
+      "priceText": "¥8,800"
     },
     {
       "id": "introtok:2026-08-20:",
@@ -7117,28 +8961,6 @@
       "priceText": null
     },
     {
-      "id": "bluenotetok:2026-08-20:fox-capture-plan-re-frame-15th-anniversary-vol-02-day-01-str",
-      "clubId": "bluenotetok",
-      "title": "fox capture plan RE:FRAME -15th Anniversary- Vol.02 Day 01 : String Ensemble",
-      "date": "2026-08-20",
-      "sets": [],
-      "url": "https://www.bluenote.co.jp/jp/artists/schedule/",
-      "details": "結成15周年を迎えたピアノトリオが登場 異なる編成を味わう二夜連続のアニバーサリー・ライヴ",
-      "personnel": null,
-      "priceText": "¥7,500"
-    },
-    {
-      "id": "cottonclubtok:2026-08-20:nicole-zuraitis-quartet",
-      "clubId": "cottonclubtok",
-      "title": "NICOLE ZURAITIS QUARTET",
-      "date": "2026-08-20",
-      "sets": [],
-      "url": "https://www.cottonclubjapan.co.jp/jp/sp/artists/",
-      "details": "NY発！グラミー受賞の気鋭シンガーが初登場 心をつかむ歌声と最新アルバムの世界をライヴで",
-      "personnel": null,
-      "priceText": "¥8,800"
-    },
-    {
       "id": "sometimetok:2026-08-20:",
       "clubId": "sometimetok",
       "title": "なかよしワクワクセッションバンド",
@@ -7167,9 +8989,50 @@
       "priceText": "¥10,000"
     },
     {
+      "id": "billboardtok:2026-08-21:ms-ooja",
+      "clubId": "billboardtok",
+      "title": "Ms.OOJA",
+      "date": "2026-08-21",
+      "sets": [
+        "17:30",
+        "20:30"
+      ],
+      "url": "https://www.billboard-live.com/schedules?shop=tokyo",
+      "details": null,
+      "personnel": null,
+      "priceText": "from ¥8,400"
+    },
+    {
+      "id": "bluenotetok:2026-08-21:akiko-yano-trio-featuring-will-lee-chris-parker",
+      "clubId": "bluenotetok",
+      "title": "AKIKO YANO TRIO featuring WILL LEE & CHRIS PARKER",
+      "date": "2026-08-21",
+      "sets": [
+        "18:00",
+        "20:30"
+      ],
+      "url": "https://www.bluenote.co.jp/jp/artists/akiko-yano/",
+      "details": "今年はソロ・デビュー50周年！ 黄金トリオが贈る夏の風物詩ライヴ",
+      "personnel": null,
+      "priceText": "¥12,000"
+    },
+    {
+      "id": "cottonclubtok:2026-08-21:keith-jarrett-the-k-ln-concert-reimagined",
+      "clubId": "cottonclubtok",
+      "title": "山口ちなみ Keith Jarrett \"The K?ln Concert\" Reimagined",
+      "date": "2026-08-21",
+      "sets": [
+        "18:00"
+      ],
+      "url": "https://www.cottonclubjapan.co.jp/jp/sp/artists/chinami-yamaguchi-260821/",
+      "details": "キース・ジャレットの歴史的名盤を新たな視点で紐解く ピアニスト・山口ちなみが贈るスペシャル・ステージ",
+      "personnel": null,
+      "priceText": "¥6,000"
+    },
+    {
       "id": "alfie:2026-08-21:",
       "clubId": "alfie",
-      "title": "古山雄太",
+      "title": "古山雄大",
       "date": "2026-08-21",
       "sets": [
         "19:15"
@@ -7178,7 +9041,7 @@
       "details": null,
       "personnel": [
         {
-          "name": "古山雄太",
+          "name": "古山雄大",
           "instrument": "drums"
         },
         {
@@ -7228,28 +9091,6 @@
       "priceText": null
     },
     {
-      "id": "bluenotetok:2026-08-21:akiko-yano-trio-featuring-will-lee-chris-parker",
-      "clubId": "bluenotetok",
-      "title": "AKIKO YANO TRIO featuring WILL LEE & CHRIS PARKER",
-      "date": "2026-08-21",
-      "sets": [],
-      "url": "https://www.bluenote.co.jp/jp/artists/schedule/",
-      "details": "今年はソロ・デビュー50周年！ 黄金トリオが贈る夏の風物詩ライヴ",
-      "personnel": null,
-      "priceText": "¥12,000"
-    },
-    {
-      "id": "cottonclubtok:2026-08-21:keith-jarrett-the-k-ln-concert-reimagined",
-      "clubId": "cottonclubtok",
-      "title": "山口ちなみ Keith Jarrett \"The K?ln Concert\" Reimagined",
-      "date": "2026-08-21",
-      "sets": [],
-      "url": "https://www.cottonclubjapan.co.jp/jp/sp/artists/",
-      "details": "キース・ジャレットの歴史的名盤を新たな視点で紐解く ピアニスト・山口ちなみが贈るスペシャル・ステージ",
-      "personnel": null,
-      "priceText": "¥6,000"
-    },
-    {
       "id": "sometimetok:2026-08-21:",
       "clubId": "sometimetok",
       "title": "佐藤 春樹",
@@ -7280,6 +9121,33 @@
         }
       ],
       "priceText": "¥3,500"
+    },
+    {
+      "id": "cottonclubtok:2026-08-22:style72-standard-2026-coffee-break",
+      "clubId": "cottonclubtok",
+      "title": "米倉利紀 sTYle72 standard. 2026 -coffee BREAK",
+      "date": "2026-08-22",
+      "sets": [
+        "15:30"
+      ],
+      "url": "https://www.cottonclubjapan.co.jp/jp/sp/artists/toshinori-yonekura-260822/",
+      "details": "J-R&B界を代表する実力派シンガー 円熟の歌声と豊かな表現力で魅了するステージ",
+      "personnel": null,
+      "priceText": "¥9,500"
+    },
+    {
+      "id": "bluenotetok:2026-08-22:yoshiko-kishino-special-quintet-live-blue-note-tokyo",
+      "clubId": "bluenotetok",
+      "title": "YOSHIKO KISHINO Special Quintet -Live @ Blue Note Tokyo-",
+      "date": "2026-08-22",
+      "sets": [
+        "16:30",
+        "19:30"
+      ],
+      "url": "https://www.bluenote.co.jp/jp/artists/yoshiko-kishino/",
+      "details": "美しく力強く輝いた30年の歩み “木住野ワールド”を堪能するスペシャル・ライヴ",
+      "personnel": null,
+      "priceText": "¥8,000"
     },
     {
       "id": "introtok:2026-08-22:10",
@@ -7354,28 +9222,6 @@
       "priceText": null
     },
     {
-      "id": "bluenotetok:2026-08-22:yoshiko-kishino-special-quintet-live-blue-note-tokyo",
-      "clubId": "bluenotetok",
-      "title": "YOSHIKO KISHINO Special Quintet -Live @ Blue Note Tokyo-",
-      "date": "2026-08-22",
-      "sets": [],
-      "url": "https://www.bluenote.co.jp/jp/artists/schedule/",
-      "details": "美しく力強く輝いた30年の歩み “木住野ワールド”を堪能するスペシャル・ライヴ",
-      "personnel": null,
-      "priceText": "¥8,000"
-    },
-    {
-      "id": "cottonclubtok:2026-08-22:style72-standard-2026-coffee-break",
-      "clubId": "cottonclubtok",
-      "title": "米倉利紀 sTYle72 standard. 2026 -coffee BREAK",
-      "date": "2026-08-22",
-      "sets": [],
-      "url": "https://www.cottonclubjapan.co.jp/jp/sp/artists/",
-      "details": "J-R&B界を代表する実力派シンガー 円熟の歌声と豊かな表現力で魅了するステージ",
-      "personnel": null,
-      "priceText": "¥9,500"
-    },
-    {
       "id": "sometimetok:2026-08-22:",
       "clubId": "sometimetok",
       "title": "山中 一毅",
@@ -7398,6 +9244,33 @@
         }
       ],
       "priceText": "¥3,000"
+    },
+    {
+      "id": "cottonclubtok:2026-08-23:style72-standard-2026-coffee-break",
+      "clubId": "cottonclubtok",
+      "title": "米倉利紀 sTYle72 standard. 2026 -coffee BREAK",
+      "date": "2026-08-23",
+      "sets": [
+        "15:30"
+      ],
+      "url": "https://www.cottonclubjapan.co.jp/jp/sp/artists/toshinori-yonekura-260822/",
+      "details": "J-R&B界を代表する実力派シンガー 円熟の歌声と豊かな表現力で魅了するステージ",
+      "personnel": null,
+      "priceText": "¥9,500"
+    },
+    {
+      "id": "bluenotetok:2026-08-23:akiko-yano-trio-featuring-will-lee-chris-parker",
+      "clubId": "bluenotetok",
+      "title": "AKIKO YANO TRIO featuring WILL LEE & CHRIS PARKER",
+      "date": "2026-08-23",
+      "sets": [
+        "16:30",
+        "19:30"
+      ],
+      "url": "https://www.bluenote.co.jp/jp/artists/akiko-yano/",
+      "details": "今年はソロ・デビュー50周年！ 黄金トリオが贈る夏の風物詩ライヴ",
+      "personnel": null,
+      "priceText": "¥12,000"
     },
     {
       "id": "introtok:2026-08-23:",
@@ -7456,28 +9329,6 @@
       "priceText": null
     },
     {
-      "id": "bluenotetok:2026-08-23:akiko-yano-trio-featuring-will-lee-chris-parker",
-      "clubId": "bluenotetok",
-      "title": "AKIKO YANO TRIO featuring WILL LEE & CHRIS PARKER",
-      "date": "2026-08-23",
-      "sets": [],
-      "url": "https://www.bluenote.co.jp/jp/artists/schedule/",
-      "details": "今年はソロ・デビュー50周年！ 黄金トリオが贈る夏の風物詩ライヴ",
-      "personnel": null,
-      "priceText": "¥12,000"
-    },
-    {
-      "id": "cottonclubtok:2026-08-23:style72-standard-2026-coffee-break",
-      "clubId": "cottonclubtok",
-      "title": "米倉利紀 sTYle72 standard. 2026 -coffee BREAK",
-      "date": "2026-08-23",
-      "sets": [],
-      "url": "https://www.cottonclubjapan.co.jp/jp/sp/artists/",
-      "details": "J-R&B界を代表する実力派シンガー 円熟の歌声と豊かな表現力で魅了するステージ",
-      "personnel": null,
-      "priceText": "¥9,500"
-    },
-    {
       "id": "sometimetok:2026-08-23:",
       "clubId": "sometimetok",
       "title": "清水 秀子",
@@ -7506,23 +9357,15 @@
       "priceText": "¥3,000"
     },
     {
-      "id": "pitinn:2026-08-24:",
-      "clubId": "pitinn",
-      "title": "夏休み",
-      "date": "2026-08-24",
-      "sets": [],
-      "url": "http://pit-inn.com/artist_live_info/260824off/",
-      "details": null,
-      "personnel": null,
-      "priceText": null
-    },
-    {
       "id": "bluenotetok:2026-08-24:akiko-yano-trio-featuring-will-lee-chris-parker",
       "clubId": "bluenotetok",
       "title": "AKIKO YANO TRIO featuring WILL LEE & CHRIS PARKER",
       "date": "2026-08-24",
-      "sets": [],
-      "url": "https://www.bluenote.co.jp/jp/artists/schedule/",
+      "sets": [
+        "18:00",
+        "20:30"
+      ],
+      "url": "https://www.bluenote.co.jp/jp/artists/akiko-yano/",
       "details": "今年はソロ・デビュー50周年！ 黄金トリオが贈る夏の風物詩ライヴ",
       "personnel": null,
       "priceText": "¥12,000"
@@ -7532,11 +9375,24 @@
       "clubId": "cottonclubtok",
       "title": "AI FURUSATO meets MASATO HONDA",
       "date": "2026-08-24",
-      "sets": [],
-      "url": "https://www.cottonclubjapan.co.jp/jp/sp/artists/",
+      "sets": [
+        "18:30"
+      ],
+      "url": "https://www.cottonclubjapan.co.jp/jp/sp/artists/ai-furusato-masato-honda-260824/",
       "details": "世代を超え、感性が響き合う Ai Furusatoと本田雅人による一夜限りのデュオライヴ",
       "personnel": null,
       "priceText": "¥6,500"
+    },
+    {
+      "id": "pitinn:2026-08-24:",
+      "clubId": "pitinn",
+      "title": "夏休み",
+      "date": "2026-08-24",
+      "sets": [],
+      "url": "http://pit-inn.com/artist_live_info/260824off/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
     },
     {
       "id": "sometimetok:2026-08-24:",
@@ -7566,6 +9422,20 @@
         }
       ],
       "priceText": "¥3,000"
+    },
+    {
+      "id": "bluenotetok:2026-08-25:monday-michiru-special-summer-live-2026",
+      "clubId": "bluenotetok",
+      "title": "MONDAY MICHIRU Special Summer Live 2026",
+      "date": "2026-08-25",
+      "sets": [
+        "18:00",
+        "20:30"
+      ],
+      "url": "https://www.bluenote.co.jp/jp/artists/monday-michiru/",
+      "details": "NYと東京を繋ぐ唯一無二のヴォーカリスト 実力派ミュージシャンと魅せるスペシャル・ライヴ",
+      "personnel": null,
+      "priceText": "¥8,000"
     },
     {
       "id": "introtok:2026-08-25:",
@@ -7623,17 +9493,6 @@
       "priceText": null
     },
     {
-      "id": "bluenotetok:2026-08-25:monday-michiru-special-summer-live-2026",
-      "clubId": "bluenotetok",
-      "title": "MONDAY MICHIRU Special Summer Live 2026",
-      "date": "2026-08-25",
-      "sets": [],
-      "url": "https://www.bluenote.co.jp/jp/artists/schedule/",
-      "details": "NYと東京を繋ぐ唯一無二のヴォーカリスト 実力派ミュージシャンと魅せるスペシャル・ライヴ",
-      "personnel": null,
-      "priceText": "¥8,000"
-    },
-    {
       "id": "sometimetok:2026-08-25:live",
       "clubId": "sometimetok",
       "title": "故セシル・モンローの誕生日に贈る追悼&友情LIVE 秋山",
@@ -7664,6 +9523,20 @@
         }
       ],
       "priceText": "¥3,500"
+    },
+    {
+      "id": "bluenotetok:2026-08-26:akiko-yano-trio-featuring-will-lee-chris-parker",
+      "clubId": "bluenotetok",
+      "title": "AKIKO YANO TRIO featuring WILL LEE & CHRIS PARKER",
+      "date": "2026-08-26",
+      "sets": [
+        "18:00",
+        "20:30"
+      ],
+      "url": "https://www.bluenote.co.jp/jp/artists/akiko-yano/",
+      "details": "今年はソロ・デビュー50周年！ 黄金トリオが贈る夏の風物詩ライヴ",
+      "personnel": null,
+      "priceText": "¥12,000"
     },
     {
       "id": "introtok:2026-08-26:",
@@ -7705,17 +9578,6 @@
       "priceText": null
     },
     {
-      "id": "bluenotetok:2026-08-26:akiko-yano-trio-featuring-will-lee-chris-parker",
-      "clubId": "bluenotetok",
-      "title": "AKIKO YANO TRIO featuring WILL LEE & CHRIS PARKER",
-      "date": "2026-08-26",
-      "sets": [],
-      "url": "https://www.bluenote.co.jp/jp/artists/schedule/",
-      "details": "今年はソロ・デビュー50周年！ 黄金トリオが贈る夏の風物詩ライヴ",
-      "personnel": null,
-      "priceText": "¥12,000"
-    },
-    {
       "id": "sometimetok:2026-08-26:",
       "clubId": "sometimetok",
       "title": "紗理",
@@ -7742,6 +9604,20 @@
         }
       ],
       "priceText": "¥3,000"
+    },
+    {
+      "id": "bluenotetok:2026-08-27:akiko-yano-trio-featuring-will-lee-chris-parker",
+      "clubId": "bluenotetok",
+      "title": "AKIKO YANO TRIO featuring WILL LEE & CHRIS PARKER",
+      "date": "2026-08-27",
+      "sets": [
+        "18:00",
+        "20:30"
+      ],
+      "url": "https://www.bluenote.co.jp/jp/artists/akiko-yano/",
+      "details": "今年はソロ・デビュー50周年！ 黄金トリオが贈る夏の風物詩ライヴ",
+      "personnel": null,
+      "priceText": "¥12,000"
     },
     {
       "id": "introtok:2026-08-27:",
@@ -7811,17 +9687,6 @@
       "priceText": null
     },
     {
-      "id": "bluenotetok:2026-08-27:akiko-yano-trio-featuring-will-lee-chris-parker",
-      "clubId": "bluenotetok",
-      "title": "AKIKO YANO TRIO featuring WILL LEE & CHRIS PARKER",
-      "date": "2026-08-27",
-      "sets": [],
-      "url": "https://www.bluenote.co.jp/jp/artists/schedule/",
-      "details": "今年はソロ・デビュー50周年！ 黄金トリオが贈る夏の風物詩ライヴ",
-      "personnel": null,
-      "priceText": "¥12,000"
-    },
-    {
       "id": "sometimetok:2026-08-27:",
       "clubId": "sometimetok",
       "title": "大村 亘",
@@ -7844,6 +9709,33 @@
         }
       ],
       "priceText": "¥3,000"
+    },
+    {
+      "id": "bluenotetok:2026-08-28:ayatake-ezaki-with-guest-kei-matsumaru-2026-japan-tour-tokyo",
+      "clubId": "bluenotetok",
+      "title": "AYATAKE EZAKI with guest KEI MATSUMARU 2026 Japan Tour - Tokyo",
+      "date": "2026-08-28",
+      "sets": [
+        "18:00",
+        "20:30"
+      ],
+      "url": "https://www.bluenote.co.jp/jp/artists/ayatake-ezaki/",
+      "details": "全国47都道府県を巡るツアーを展開中 待望のブルーノート東京2DAYSが決定",
+      "personnel": null,
+      "priceText": "¥8,000"
+    },
+    {
+      "id": "cottonclubtok:2026-08-28:kohhy6",
+      "clubId": "cottonclubtok",
+      "title": "小比類巻かほる Kohhy6",
+      "date": "2026-08-28",
+      "sets": [
+        "18:00"
+      ],
+      "url": "https://www.cottonclubjapan.co.jp/jp/sp/artists/kahoru-kohiruimaki-260828/",
+      "details": "深化を遂げたソウルフル・ヴォイスが響く 最新作『Kohhy6』を冠した真夏のプレミアム・ライヴ",
+      "personnel": null,
+      "priceText": "¥8,000"
     },
     {
       "id": "alfie:2026-08-28:",
@@ -7912,28 +9804,6 @@
       "priceText": null
     },
     {
-      "id": "bluenotetok:2026-08-28:ayatake-ezaki-with-guest-kei-matsumaru-2026-japan-tour-tokyo",
-      "clubId": "bluenotetok",
-      "title": "AYATAKE EZAKI with guest KEI MATSUMARU 2026 Japan Tour - Tokyo",
-      "date": "2026-08-28",
-      "sets": [],
-      "url": "https://www.bluenote.co.jp/jp/artists/schedule/",
-      "details": "全国47都道府県を巡るツアーを展開中 待望のブルーノート東京2DAYSが決定",
-      "personnel": null,
-      "priceText": "¥8,000"
-    },
-    {
-      "id": "cottonclubtok:2026-08-28:kohhy6",
-      "clubId": "cottonclubtok",
-      "title": "小比類巻かほる Kohhy6",
-      "date": "2026-08-28",
-      "sets": [],
-      "url": "https://www.cottonclubjapan.co.jp/jp/sp/artists/",
-      "details": "深化を遂げたソウルフル・ヴォイスが響く 最新作『Kohhy6』を冠した真夏のプレミアム・ライヴ",
-      "personnel": null,
-      "priceText": "¥8,000"
-    },
-    {
       "id": "sometimetok:2026-08-28:",
       "clubId": "sometimetok",
       "title": "松島 啓之",
@@ -7960,6 +9830,33 @@
         }
       ],
       "priceText": "¥3,000"
+    },
+    {
+      "id": "bluenotetok:2026-08-29:ayatake-ezaki-with-guest-kei-matsumaru-2026-japan-tour-tokyo",
+      "clubId": "bluenotetok",
+      "title": "AYATAKE EZAKI with guest KEI MATSUMARU 2026 Japan Tour - Tokyo",
+      "date": "2026-08-29",
+      "sets": [
+        "16:30",
+        "19:30"
+      ],
+      "url": "https://www.bluenote.co.jp/jp/artists/ayatake-ezaki/",
+      "details": "全国47都道府県を巡るツアーを展開中 待望のブルーノート東京2DAYSが決定",
+      "personnel": null,
+      "priceText": "¥8,000"
+    },
+    {
+      "id": "cottonclubtok:2026-08-29:kohhy6",
+      "clubId": "cottonclubtok",
+      "title": "小比類巻かほる Kohhy6",
+      "date": "2026-08-29",
+      "sets": [
+        "18:00"
+      ],
+      "url": "https://www.cottonclubjapan.co.jp/jp/sp/artists/kahoru-kohiruimaki-260828/",
+      "details": "深化を遂げたソウルフル・ヴォイスが響く 最新作『Kohhy6』を冠した真夏のプレミアム・ライヴ",
+      "personnel": null,
+      "priceText": "¥8,000"
     },
     {
       "id": "introtok:2026-08-29:10",
@@ -8044,28 +9941,6 @@
       "priceText": null
     },
     {
-      "id": "bluenotetok:2026-08-29:ayatake-ezaki-with-guest-kei-matsumaru-2026-japan-tour-tokyo",
-      "clubId": "bluenotetok",
-      "title": "AYATAKE EZAKI with guest KEI MATSUMARU 2026 Japan Tour - Tokyo",
-      "date": "2026-08-29",
-      "sets": [],
-      "url": "https://www.bluenote.co.jp/jp/artists/schedule/",
-      "details": "全国47都道府県を巡るツアーを展開中 待望のブルーノート東京2DAYSが決定",
-      "personnel": null,
-      "priceText": "¥8,000"
-    },
-    {
-      "id": "cottonclubtok:2026-08-29:kohhy6",
-      "clubId": "cottonclubtok",
-      "title": "小比類巻かほる Kohhy6",
-      "date": "2026-08-29",
-      "sets": [],
-      "url": "https://www.cottonclubjapan.co.jp/jp/sp/artists/",
-      "details": "深化を遂げたソウルフル・ヴォイスが響く 最新作『Kohhy6』を冠した真夏のプレミアム・ライヴ",
-      "personnel": null,
-      "priceText": "¥8,000"
-    },
-    {
       "id": "sometimetok:2026-08-29:",
       "clubId": "sometimetok",
       "title": "鈴木 道子",
@@ -8088,6 +9963,33 @@
         }
       ],
       "priceText": "¥3,000"
+    },
+    {
+      "id": "cottonclubtok:2026-08-30:live-concert-kei-vol-1",
+      "clubId": "cottonclubtok",
+      "title": "音月桂 LIVE CONCERT “KEI” vol.1",
+      "date": "2026-08-30",
+      "sets": [
+        "15:30"
+      ],
+      "url": "https://www.cottonclubjapan.co.jp/jp/sp/artists/kei-otozuki-260830/",
+      "details": "元宝塚歌劇団雪組トップスターが初登場！ 親密なクラブ空間で魅せるプレミアム・ライヴ",
+      "personnel": null,
+      "priceText": "¥12,000"
+    },
+    {
+      "id": "bluenotetok:2026-08-30:mary-halvorson-s-amaryllis-sextet",
+      "clubId": "bluenotetok",
+      "title": "MARY HALVORSON’s AMARYLLIS SEXTET",
+      "date": "2026-08-30",
+      "sets": [
+        "16:30",
+        "19:30"
+      ],
+      "url": "https://www.bluenote.co.jp/jp/artists/mary-halvorson/",
+      "details": "ダウンビート誌最優秀ギタリストに９年連続で選出 現代最重要ギタリストが待望の初登場",
+      "personnel": null,
+      "priceText": "¥8,800"
     },
     {
       "id": "introtok:2026-08-30:",
@@ -8156,28 +10058,6 @@
       "priceText": null
     },
     {
-      "id": "bluenotetok:2026-08-30:mary-halvorson-s-amaryllis-sextet",
-      "clubId": "bluenotetok",
-      "title": "MARY HALVORSON’s AMARYLLIS SEXTET",
-      "date": "2026-08-30",
-      "sets": [],
-      "url": "https://www.bluenote.co.jp/jp/artists/schedule/",
-      "details": "ダウンビート誌最優秀ギタリストに９年連続で選出 現代最重要ギタリストが待望の初登場",
-      "personnel": null,
-      "priceText": "¥8,800"
-    },
-    {
-      "id": "cottonclubtok:2026-08-30:live-concert-kei-vol-1",
-      "clubId": "cottonclubtok",
-      "title": "音月桂 LIVE CONCERT “KEI” vol.1",
-      "date": "2026-08-30",
-      "sets": [],
-      "url": "https://www.cottonclubjapan.co.jp/jp/sp/artists/",
-      "details": "元宝塚歌劇団雪組トップスターが初登場！ 親密なクラブ空間で魅せるプレミアム・ライヴ",
-      "personnel": null,
-      "priceText": "¥12,000"
-    },
-    {
       "id": "sometimetok:2026-08-30:",
       "clubId": "sometimetok",
       "title": "竹内 直",
@@ -8235,6 +10115,20 @@
       "priceText": "¥2,500"
     },
     {
+      "id": "bluenotetok:2026-08-31:mary-halvorson-s-amaryllis-sextet",
+      "clubId": "bluenotetok",
+      "title": "MARY HALVORSON’s AMARYLLIS SEXTET",
+      "date": "2026-08-31",
+      "sets": [
+        "18:00",
+        "20:30"
+      ],
+      "url": "https://www.bluenote.co.jp/jp/artists/mary-halvorson/",
+      "details": "ダウンビート誌最優秀ギタリストに９年連続で選出 現代最重要ギタリストが待望の初登場",
+      "personnel": null,
+      "priceText": "¥8,800"
+    },
+    {
       "id": "pitinn:2026-08-31:10",
       "clubId": "pitinn",
       "title": "＜紅山彦＞第10弾！",
@@ -8260,17 +10154,6 @@
         }
       ],
       "priceText": null
-    },
-    {
-      "id": "bluenotetok:2026-08-31:mary-halvorson-s-amaryllis-sextet",
-      "clubId": "bluenotetok",
-      "title": "MARY HALVORSON’s AMARYLLIS SEXTET",
-      "date": "2026-08-31",
-      "sets": [],
-      "url": "https://www.bluenote.co.jp/jp/artists/schedule/",
-      "details": "ダウンビート誌最優秀ギタリストに９年連続で選出 現代最重要ギタリストが待望の初登場",
-      "personnel": null,
-      "priceText": "¥8,800"
     },
     {
       "id": "sometimetok:2026-08-31:megasameta",
@@ -8403,6 +10286,34 @@
       "clubId": "introtok",
       "title": "練習ジャムセッション",
       "date": "2026-09-10",
+      "sets": [
+        "18:30"
+      ],
+      "url": "https://jazzspot.intro.co.jp/",
+      "details": "Bring your horn. Tomorrow’s Tokyo jazz leaders sharpening each other, nightly.",
+      "personnel": null,
+      "titleAlt": "Practice Jam Session",
+      "priceText": null
+    },
+    {
+      "id": "introtok:2026-09-12:10",
+      "clubId": "introtok",
+      "title": "10時間オールナイトジャム",
+      "date": "2026-09-12",
+      "sets": [
+        "18:30"
+      ],
+      "url": "https://jazzspot.intro.co.jp/",
+      "details": "Saturday institution: 6:30 PM to 4:30 AM, straight through.",
+      "personnel": null,
+      "titleAlt": "10-Hour All-Night Jam",
+      "priceText": null
+    },
+    {
+      "id": "introtok:2026-09-13:",
+      "clubId": "introtok",
+      "title": "練習ジャムセッション",
+      "date": "2026-09-13",
       "sets": [
         "18:30"
       ],

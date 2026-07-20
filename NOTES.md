@@ -214,7 +214,7 @@ card forever.
 
 Tests: `node crawler/test.mjs` (fixture-based, zero-dep, ~134 groups) and
 `node web/test-ui.mjs` (Playwright against the built app + real data
-files, 21 tests). Both entry points are thin aggregators since 2026-07-20:
+files, 22 tests). Both entry points are thin aggregators since 2026-07-20:
 crawler suites live in crawler/tests/ (one per city plus shared.mjs for
 lib/merge/enrichment; each also runs standalone, e.g. `node
 crawler/tests/chi.mjs`), UI suites in web/tests/ (desktop-basics, chips,

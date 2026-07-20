@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-18T21:27:47.068Z",
+  "generatedAt": "2026-07-20T22:50:24.479Z",
   "city": "sf",
   "clubs": [
     {
@@ -346,37 +346,6 @@
       "priceText": null
     },
     {
-      "id": "blackcat:2026-07-17:ben-sherman-quartet-debut-residency",
-      "clubId": "blackcat",
-      "title": "Ben Sherman Quartet Debut Residency",
-      "date": "2026-07-17",
-      "sets": [
-        "19:00",
-        "21:30"
-      ],
-      "url": "https://blackcatsf.turntabletickets.com/shows/11920/?date=2026-07-17",
-      "details": null,
-      "personnel": [
-        {
-          "name": "Ben Sherman",
-          "instrument": "tenor saxophone"
-        },
-        {
-          "name": "Roman Goron",
-          "instrument": "piano"
-        },
-        {
-          "name": "Daniel Song",
-          "instrument": "bass"
-        },
-        {
-          "name": "Isaiah Bravo",
-          "instrument": "drums"
-        }
-      ],
-      "priceText": "$15-55"
-    },
-    {
       "id": "keys:2026-07-17:kenny-washington-quartet",
       "clubId": "keys",
       "title": "Kenny Washington Quartet",
@@ -403,51 +372,6 @@
       "priceText": null
     },
     {
-      "id": "sfjazz:2026-07-18:steven-bernstein-s-sexmob",
-      "clubId": "sfjazz",
-      "title": "Steven Bernstein's Sexmob",
-      "date": "2026-07-18",
-      "sets": [
-        "19:00",
-        "20:30"
-      ],
-      "url": "https://www.sfjazz.org/tickets/productions/summer-2026/steven-bernsteins-sexmob/",
-      "details": "Joe Henderson Lab",
-      "personnel": null,
-      "priceText": null
-    },
-    {
-      "id": "blackcat:2026-07-18:ben-sherman-quartet-debut-residency",
-      "clubId": "blackcat",
-      "title": "Ben Sherman Quartet Debut Residency",
-      "date": "2026-07-18",
-      "sets": [
-        "19:00",
-        "21:30"
-      ],
-      "url": "https://blackcatsf.turntabletickets.com/shows/11920/?date=2026-07-18",
-      "details": null,
-      "personnel": [
-        {
-          "name": "Ben Sherman",
-          "instrument": "tenor saxophone"
-        },
-        {
-          "name": "Roman Goron",
-          "instrument": "piano"
-        },
-        {
-          "name": "Daniel Song",
-          "instrument": "bass"
-        },
-        {
-          "name": "Isaiah Bravo",
-          "instrument": "drums"
-        }
-      ],
-      "priceText": "$15-55"
-    },
-    {
       "id": "keys:2026-07-18:clairdee",
       "clubId": "keys",
       "title": "Clairdee",
@@ -471,62 +395,6 @@
           "instrument": "guitar"
         }
       ],
-      "priceText": null
-    },
-    {
-      "id": "sfjazz:2026-07-18:lettuce",
-      "clubId": "sfjazz",
-      "title": "Lettuce",
-      "date": "2026-07-18",
-      "sets": [
-        "19:30"
-      ],
-      "url": "https://www.sfjazz.org/tickets/productions/summer-2026/lettuce/",
-      "details": "Miner Auditorium",
-      "personnel": null,
-      "priceText": null
-    },
-    {
-      "id": "mrtipples:2026-07-18:adam-theis-s-jazz-mafia-reimagied",
-      "clubId": "mrtipples",
-      "title": "Adam Theis’s Jazz Mafia Reimagied",
-      "date": "2026-07-18",
-      "sets": [
-        "19:30"
-      ],
-      "url": "https://mrtipplessf.com/calendar/adam-theiss-jazz-mafia-reimagied/",
-      "details": null,
-      "personnel": [
-        {
-          "name": "Jesse Levitt",
-          "instrument": "alto sax"
-        },
-        {
-          "name": "Tommy Occhiuto",
-          "instrument": "tenor sax"
-        },
-        {
-          "name": "Dan Zemelman",
-          "instrument": "keys"
-        },
-        {
-          "name": "Sam Bevan",
-          "instrument": "upright bass"
-        }
-      ],
-      "priceText": "$15-$30"
-    },
-    {
-      "id": "yoshis:2026-07-18:greg-adams-east-bay-soul",
-      "clubId": "yoshis",
-      "title": "GREG ADAMS & EAST BAY SOUL",
-      "date": "2026-07-18",
-      "sets": [
-        "19:30"
-      ],
-      "url": "https://yoshis.com/events/calendar",
-      "details": null,
-      "personnel": null,
       "priceText": null
     },
     {
@@ -556,19 +424,6 @@
       "priceText": null
     },
     {
-      "id": "mrtipples:2026-07-18:steve-lucky-s-hammond-cheese",
-      "clubId": "mrtipples",
-      "title": "Steve Lucky’s Hammond Cheese",
-      "date": "2026-07-18",
-      "sets": [
-        "22:30"
-      ],
-      "url": "https://mrtipplessf.com/calendar/steve-luckys-hammond-cheese-2/",
-      "details": "Carmen Getit | Guitar & Vocals Kamrin Ortiz | Tenor Saxophone Tim Bulkley – Drums Steve Lucky | Organ Bio: Steve Lucky’s HAMMOND CHEESE COMBO This isn’t your everyday organ combo sandwich. Oh yeah, it’s got a lot of the same tasty ingredients you’ve tried and liked before. Like the groovy B3 sound,",
-      "personnel": null,
-      "priceText": "$15-$30"
-    },
-    {
       "id": "keys:2026-07-19:suzanna-smith",
       "clubId": "keys",
       "title": "Suzanna Smith",
@@ -579,33 +434,6 @@
       ],
       "url": "https://keysjazzbistro.com/event/suzanna-smith-12/",
       "details": null,
-      "personnel": null,
-      "priceText": null
-    },
-    {
-      "id": "sfjazz:2026-07-19:steven-bernstein-s-sexmob",
-      "clubId": "sfjazz",
-      "title": "Steven Bernstein's Sexmob",
-      "date": "2026-07-19",
-      "sets": [
-        "18:00",
-        "19:30"
-      ],
-      "url": "https://www.sfjazz.org/tickets/productions/summer-2026/steven-bernsteins-sexmob/",
-      "details": "Joe Henderson Lab",
-      "personnel": null,
-      "priceText": null
-    },
-    {
-      "id": "sfjazz:2026-07-19:lettuce",
-      "clubId": "sfjazz",
-      "title": "Lettuce",
-      "date": "2026-07-19",
-      "sets": [
-        "19:00"
-      ],
-      "url": "https://www.sfjazz.org/tickets/productions/summer-2026/lettuce/",
-      "details": "Miner Auditorium",
       "personnel": null,
       "priceText": null
     },
@@ -639,19 +467,6 @@
         }
       ],
       "priceText": "$15-45"
-    },
-    {
-      "id": "mrtipples:2026-07-19:confluence",
-      "clubId": "mrtipples",
-      "title": "Confluence",
-      "date": "2026-07-19",
-      "sets": [
-        "19:45"
-      ],
-      "url": "https://mrtipplessf.com/calendar/confluence-2/",
-      "details": "Matt Zebley | Sax Jody Ferber | Cello Bob Sneider | Guitar Mark Ferber | Drums Alan Ferber | Trombone",
-      "personnel": null,
-      "priceText": "$15-$30"
     },
     {
       "id": "yoshis:2026-07-20:music-monday-love-vibes",
@@ -711,8 +526,7 @@
       "title": "Noel Jewkes",
       "date": "2026-07-22",
       "sets": [
-        "19:00",
-        "21:00"
+        "19:00"
       ],
       "url": "https://keysjazzbistro.com/event/noel-jewkes-5/",
       "details": null,
@@ -741,8 +555,25 @@
         "20:45"
       ],
       "url": "https://mrtipplessf.com/calendar/april-varner-quintet-2/",
-      "details": "William Hill III | Piano Aaron Matson | Guitar Eytan Schillinger-Hyman | Bass Max Marsillo | Drums “NYC Award-Winning Jazz Vocalist, April Varner, makes her debut at Mr. Tipple’s! She was awarded the 2023 Winner of the International Ella Fitzgerald Jazz Vocal Competition, 2024 Honorable Mention Awar",
-      "personnel": null,
+      "details": null,
+      "personnel": [
+        {
+          "name": "William Hill III",
+          "instrument": "piano"
+        },
+        {
+          "name": "Aaron Matson",
+          "instrument": "guitar"
+        },
+        {
+          "name": "Eytan Schillinger-Hyman",
+          "instrument": "bass"
+        },
+        {
+          "name": "Max Marsillo",
+          "instrument": "drums"
+        }
+      ],
       "priceText": "$15-$30"
     },
     {
@@ -839,8 +670,29 @@
         "20:45"
       ],
       "url": "https://mrtipplessf.com/calendar/patrick-wolff-quartet-2/",
-      "details": "Mike Olmos | Trumpet Keith Saunders | Piano Eric Markowitz | Bass Mark Ferber | Drums Patrick Wolff | Tenor An exciting band with a big sound, this group of some of SF’s finest has been playing together for over 9 years, focusing on original compositions and hard bop classics from Horace Silver, Ken",
-      "personnel": null,
+      "details": null,
+      "personnel": [
+        {
+          "name": "Mike Olmos",
+          "instrument": "trumpet"
+        },
+        {
+          "name": "Keith Saunders",
+          "instrument": "piano"
+        },
+        {
+          "name": "Eric Markowitz",
+          "instrument": "bass"
+        },
+        {
+          "name": "Mark Ferber",
+          "instrument": "drums"
+        },
+        {
+          "name": "Patrick Wolff",
+          "instrument": "tenor"
+        }
+      ],
       "priceText": "$15-$20"
     },
     {
@@ -910,8 +762,25 @@
         "19:30"
       ],
       "url": "https://mrtipplessf.com/calendar/rob-woodcock-quintet-2/",
-      "details": "Henry Hung | Trumpet Charlie Gurke | Bari Sax Dave Gibbons | Piano Rob Woodcock | Bass Omar Aran | Drums Bio: The Rob Woodcock Quintet is a dynamic and polished jazz group that has been playing around the Bay Area since 2021. They released their debut album “ GoGo7 ” in 2023 and are regulars at venu",
-      "personnel": null,
+      "details": null,
+      "personnel": [
+        {
+          "name": "Henry Hung",
+          "instrument": "trumpet"
+        },
+        {
+          "name": "Dave Gibbons",
+          "instrument": "piano"
+        },
+        {
+          "name": "Rob Woodcock",
+          "instrument": "bass"
+        },
+        {
+          "name": "Omar Aran",
+          "instrument": "drums"
+        }
+      ],
       "priceText": "$15-$30"
     },
     {
@@ -949,8 +818,29 @@
         "22:30"
       ],
       "url": "https://mrtipplessf.com/calendar/armen-krakirian-quintet-2/",
-      "details": "Armen Krakirian | Trumpet Carl Schultz | Saxophone Michael Potter | Piano Alan Jones | Bass John MacDonald | Drums Armen Krakirian is an accomplished trumpeter based in the Bay Area, California. Holding a degree in Jazz Trumpet Performance from Oberlin Conservatory (2023), Armen’s musical journey ha",
-      "personnel": null,
+      "details": null,
+      "personnel": [
+        {
+          "name": "Armen Krakirian",
+          "instrument": "trumpet"
+        },
+        {
+          "name": "Carl Schultz",
+          "instrument": "saxophone"
+        },
+        {
+          "name": "Michael Potter",
+          "instrument": "piano"
+        },
+        {
+          "name": "Alan Jones",
+          "instrument": "bass"
+        },
+        {
+          "name": "John MacDonald",
+          "instrument": "drums"
+        }
+      ],
       "priceText": "$15-$30"
     },
     {
@@ -1020,8 +910,21 @@
         "19:30"
       ],
       "url": "https://mrtipplessf.com/calendar/bennet-paster-trio-3/",
-      "details": "Bennett Paster | Piano Josh Thurston Milgrom | Bass Jason Lewis | Drums As the world around us continues to grow ever more complex, Bennett Paster looks to music as an antidote: something to settle, to soothe, to smooth the wrinkles of our modern lives. His latest album, Radiance, reflects the resul",
-      "personnel": null,
+      "details": null,
+      "personnel": [
+        {
+          "name": "Bennett Paster",
+          "instrument": "piano"
+        },
+        {
+          "name": "Josh Thurston Milgrom",
+          "instrument": "bass"
+        },
+        {
+          "name": "Jason Lewis",
+          "instrument": "drums"
+        }
+      ],
       "priceText": "$15-$30"
     },
     {
@@ -1085,8 +988,25 @@
         "22:30"
       ],
       "url": "https://mrtipplessf.com/calendar/freddie-bryant-and-kaleidoscope-west/",
-      "details": "Rico Jones | Saxophone Doug Miller | Bass Sylvia Cuenca | Drums Freddie Bryant | Guitar",
-      "personnel": null,
+      "details": null,
+      "personnel": [
+        {
+          "name": "Rico Jones",
+          "instrument": "saxophone"
+        },
+        {
+          "name": "Doug Miller",
+          "instrument": "bass"
+        },
+        {
+          "name": "Sylvia Cuenca",
+          "instrument": "drums"
+        },
+        {
+          "name": "Freddie Bryant",
+          "instrument": "guitar"
+        }
+      ],
       "priceText": "$15-$30"
     },
     {
@@ -1157,8 +1077,17 @@
         "19:45"
       ],
       "url": "https://mrtipplessf.com/calendar/skylar-tang-quintet-3/",
-      "details": "Morgan Harrison | Keys Chili Corder | Guitar | Drums | Bass",
-      "personnel": null,
+      "details": null,
+      "personnel": [
+        {
+          "name": "Morgan Harrison",
+          "instrument": "keys"
+        },
+        {
+          "name": "Chili Corder",
+          "instrument": "guitar"
+        }
+      ],
       "priceText": "$15-$20"
     },
     {
@@ -1243,8 +1172,17 @@
         "20:45"
       ],
       "url": "https://mrtipplessf.com/calendar/nadav-beary-trio-2/",
-      "details": "Michael potter | Piano Aidan Macarthy | Bass Nadav Beary | Drums",
-      "personnel": null,
+      "details": null,
+      "personnel": [
+        {
+          "name": "Aidan Macarthy",
+          "instrument": "bass"
+        },
+        {
+          "name": "Nadav Beary",
+          "instrument": "drums"
+        }
+      ],
       "priceText": "$15-$20"
     },
     {
@@ -1337,8 +1275,29 @@
         "20:45"
       ],
       "url": "https://mrtipplessf.com/calendar/sylvia-cuenca-quintet-ft-rico-jones/",
-      "details": "Rico Jones | Tenor Sax Joel Behrman | Trumpet Matt Clark | Piano Essiet Essiet | Bass Sylvia Cuenca | Drums",
-      "personnel": null,
+      "details": null,
+      "personnel": [
+        {
+          "name": "Rico Jones",
+          "instrument": "tenor sax"
+        },
+        {
+          "name": "Joel Behrman",
+          "instrument": "trumpet"
+        },
+        {
+          "name": "Matt Clark",
+          "instrument": "piano"
+        },
+        {
+          "name": "Essiet Essiet",
+          "instrument": "bass"
+        },
+        {
+          "name": "Sylvia Cuenca",
+          "instrument": "drums"
+        }
+      ],
       "priceText": "$15-$20"
     },
     {
@@ -1430,8 +1389,25 @@
         "19:30"
       ],
       "url": "https://mrtipplessf.com/calendar/sam-bevan-quartet-3/",
-      "details": "James Mahone | Tenor Howard Wiley | Tenor Lorca Hart | Drums Sam Bevan | Bass",
-      "personnel": null,
+      "details": null,
+      "personnel": [
+        {
+          "name": "James Mahone",
+          "instrument": "tenor"
+        },
+        {
+          "name": "Howard Wiley",
+          "instrument": "tenor"
+        },
+        {
+          "name": "Lorca Hart",
+          "instrument": "drums"
+        },
+        {
+          "name": "Sam Bevan",
+          "instrument": "bass"
+        }
+      ],
       "priceText": "$15-$30"
     },
     {
@@ -1562,8 +1538,21 @@
         "19:30"
       ],
       "url": "https://mrtipplessf.com/calendar/pedro-jose-pastrana-trio-2/",
-      "details": "Ayla Dávila | Bass Colin Douglas | Drums Pedro José Pastrana | Cuatro Bio: Pedro José Pastrana presents his latest album, “Lo Que Nos Llevamos”. With this new project, he shares original compositions that capture his current relationship with Puerto Rico from the distance. Supported by his trusted p",
-      "personnel": null,
+      "details": null,
+      "personnel": [
+        {
+          "name": "Ayla Dávila",
+          "instrument": "bass"
+        },
+        {
+          "name": "Colin Douglas",
+          "instrument": "drums"
+        },
+        {
+          "name": "Pedro José Pastrana",
+          "instrument": "cuatro"
+        }
+      ],
       "priceText": "$15-$30"
     },
     {
@@ -1588,8 +1577,29 @@
         "22:30"
       ],
       "url": "https://mrtipplessf.com/calendar/arnie-sainz-quintet-3/",
-      "details": "Alistair Johnston| Tenor Saxophone Robert Papacica | Guitar Jared Beckstead | Bass Malachi Whitson | Drums Arnie Sainz | Piano Bio: Arnie Sainz is a pianist, composer, and educator based in New York City. Drawing inspiration from his firm roots in the San Francisco Bay Area, Arnie’s voice spans ense",
-      "personnel": null,
+      "details": null,
+      "personnel": [
+        {
+          "name": "Alistair Johnston",
+          "instrument": "tenor saxophone"
+        },
+        {
+          "name": "Robert Papacica",
+          "instrument": "guitar"
+        },
+        {
+          "name": "Jared Beckstead",
+          "instrument": "bass"
+        },
+        {
+          "name": "Micheal Mitchell",
+          "instrument": "drums"
+        },
+        {
+          "name": "Arnie Sainz",
+          "instrument": "piano"
+        }
+      ],
       "priceText": "$15-$30"
     },
     {
@@ -1655,8 +1665,21 @@
         "19:45"
       ],
       "url": "https://mrtipplessf.com/calendar/zach-adleman-quartet-2/",
-      "details": "Andrew Stephens l Trumpet Brahm Sasner | Piano Nico Martinez | Bass Zach Adleman | Drums Bio: Hailing from Montclair, New Jersey, drummer Zach Adleman has performed at Carnegie Hall and the 57th Annual Grammy Awards After Parties alongside jazz luminaries Wynton Marsalis and Christian McBride. He ho",
-      "personnel": null,
+      "details": null,
+      "personnel": [
+        {
+          "name": "Brahm Sasner",
+          "instrument": "piano"
+        },
+        {
+          "name": "Nico Martinez",
+          "instrument": "bass"
+        },
+        {
+          "name": "Zach Adleman",
+          "instrument": "drums"
+        }
+      ],
       "priceText": "$15-$20"
     },
     {
@@ -1790,8 +1813,25 @@
         "20:15"
       ],
       "url": "https://mrtipplessf.com/calendar/billy-edwards-quartet-2/",
-      "details": "Rico Jones | Tenor Joe Warner | Piano Jamal Ramirez | Drums Billy Edwards | Bass",
-      "personnel": null,
+      "details": null,
+      "personnel": [
+        {
+          "name": "Rico Jones",
+          "instrument": "tenor"
+        },
+        {
+          "name": "Joe Warner",
+          "instrument": "piano"
+        },
+        {
+          "name": "Jamal Ramirez",
+          "instrument": "drums"
+        },
+        {
+          "name": "Billy Edwards",
+          "instrument": "bass"
+        }
+      ],
       "priceText": "$15-$20"
     },
     {
@@ -1884,8 +1924,25 @@
         "19:30"
       ],
       "url": "https://mrtipplessf.com/calendar/akira-tana-trio-with-guest-javon-jackson-2/",
-      "details": "Akira Tana | Drums Gary Brown | Bass Glen Pearson | Piano Javon Jackson | Tenor",
-      "personnel": null,
+      "details": null,
+      "personnel": [
+        {
+          "name": "Akira Tana",
+          "instrument": "drums"
+        },
+        {
+          "name": "Gary Brown",
+          "instrument": "bass"
+        },
+        {
+          "name": "Glen Pearson",
+          "instrument": "piano"
+        },
+        {
+          "name": "Javon Jackson",
+          "instrument": "tenor"
+        }
+      ],
       "priceText": "$15-$30"
     },
     {
@@ -1923,8 +1980,25 @@
         "22:30"
       ],
       "url": "https://mrtipplessf.com/calendar/dayramir-gonzalez-quartet-2/",
-      "details": "Dayramir Gonzalez | Piano Tony Austin | Drums Tiago Gonzalez | Bass Morocho Gavida | Percussion",
-      "personnel": null,
+      "details": null,
+      "personnel": [
+        {
+          "name": "Dayramir Gonzalez",
+          "instrument": "piano"
+        },
+        {
+          "name": "Tony Austin",
+          "instrument": "drums"
+        },
+        {
+          "name": "Tiago Gonzalez",
+          "instrument": "bass"
+        },
+        {
+          "name": "Morocho Gavida",
+          "instrument": "percussion"
+        }
+      ],
       "priceText": "$15-$30"
     },
     {
@@ -1963,8 +2037,17 @@
         "19:30"
       ],
       "url": "https://mrtipplessf.com/calendar/kay-kostopoulos-album-release-2/",
-      "details": "John DiMartino | Piano Noel Jewkes | Reeds Kay Kostopoulos | Vocals Bio: CD Release Concert: All This Is Possible: Black Olive in the Big Apple. Kay’s upcoming release features some of the finest on the NYC jazz scene. Arranged by Grammy-nominated pianist John DiMartino and San Francisco’s own tenor",
-      "personnel": null,
+      "details": null,
+      "personnel": [
+        {
+          "name": "John DiMartino",
+          "instrument": "piano"
+        },
+        {
+          "name": "Reeds Kay Kostopoulos",
+          "instrument": "vocals"
+        }
+      ],
       "priceText": "$15-$30"
     },
     {
@@ -2002,8 +2085,25 @@
         "22:30"
       ],
       "url": "https://mrtipplessf.com/calendar/mike-zilber-quartet-2/",
-      "details": "Peter Horvath | Piano Jason Lewis | Drums Josh Thurston-Milgrom | Bass Mike Zelber | Sax",
-      "personnel": null,
+      "details": null,
+      "personnel": [
+        {
+          "name": "Peter Horvath",
+          "instrument": "piano"
+        },
+        {
+          "name": "Jason Lewis",
+          "instrument": "drums"
+        },
+        {
+          "name": "Josh Thurston-Milgrom",
+          "instrument": "bass"
+        },
+        {
+          "name": "Mike Zelber",
+          "instrument": "sax"
+        }
+      ],
       "priceText": "$15-$30"
     },
     {
@@ -2069,8 +2169,25 @@
         "19:45"
       ],
       "url": "https://mrtipplessf.com/calendar/john-santos-quartet-with-special-guest-mj-santos-3/",
-      "details": "Saul Sierra Bass Marco Diaz | Trumpet MJ Santos | Keys Ahkeel Mestayer | Congas John Santos | Timbales & Bongos",
-      "personnel": null,
+      "details": null,
+      "personnel": [
+        {
+          "name": "Marco Diaz",
+          "instrument": "trumpet"
+        },
+        {
+          "name": "MJ Santos",
+          "instrument": "keys"
+        },
+        {
+          "name": "Ahkeel Mestayer",
+          "instrument": "congas"
+        },
+        {
+          "name": "John Santos",
+          "instrument": "timbales & bongos"
+        }
+      ],
       "priceText": "$15-$40"
     },
     {
@@ -2113,6 +2230,20 @@
       "priceText": "$15-45"
     },
     {
+      "id": "keys:2026-08-12:ron-vincent-quintet",
+      "clubId": "keys",
+      "title": "Ron Vincent Quintet",
+      "date": "2026-08-12",
+      "sets": [
+        "19:00",
+        "21:00"
+      ],
+      "url": "https://keysjazzbistro.com/event/ron-vincent-quintet/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
       "id": "yoshis:2026-08-12:rotimi-with-red-lotus-host-phoenyx-rose",
       "clubId": "yoshis",
       "title": "ROTIMI WITH RED LOTUS & HOST PHOENYX ROSE",
@@ -2134,8 +2265,21 @@
         "20:45"
       ],
       "url": "https://mrtipplessf.com/calendar/jeff-denson-trio-3/",
-      "details": "Jeff Denson | Bass & Vocals Frank Martin | Piano Mike Mitchell | Drums Modern Songbook — Award-winning bassist, vocalist, and composer Jeff Denson brings a fresh, genre-blurring set of original arrangements spanning Bonnie Raitt, Bill Withers, Peter Gabriel, Joni Mitchell, and Jeff Buckley, alongsid",
-      "personnel": null,
+      "details": null,
+      "personnel": [
+        {
+          "name": "Jeff Denson",
+          "instrument": "bass & vocals"
+        },
+        {
+          "name": "Frank Martin",
+          "instrument": "piano"
+        },
+        {
+          "name": "Mike Mitchell",
+          "instrument": "drums"
+        }
+      ],
       "priceText": "$15-$20"
     },
     {
@@ -2179,6 +2323,20 @@
       "priceText": "$15-45"
     },
     {
+      "id": "keys:2026-08-13:fog-city-swing",
+      "clubId": "keys",
+      "title": "Fog City Swing",
+      "date": "2026-08-13",
+      "sets": [
+        "19:00",
+        "21:00"
+      ],
+      "url": "https://keysjazzbistro.com/event/fog-city-swing-10/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
       "id": "sfjazz:2026-08-13:take-6",
       "clubId": "sfjazz",
       "title": "Take 6",
@@ -2213,8 +2371,17 @@
         "20:45"
       ],
       "url": "https://mrtipplessf.com/calendar/motoko-honda-quartet-2/",
-      "details": "Motoko Honda | Piano/Composition Cory Wright | Multi-woodwind Matt Small | Bass Jordan Glenn | Drums Bio: “The music of pianist and composer Motoko Honda is to mainstream jazz what Brahms’s music was to the neatly packaged forms of the Classical period.” — Phillip Greenlief, Art Forum , Live at Cali",
-      "personnel": null,
+      "details": null,
+      "personnel": [
+        {
+          "name": "Multi-woodwind Matt Small",
+          "instrument": "bass"
+        },
+        {
+          "name": "Jordan Glenn",
+          "instrument": "drums"
+        }
+      ],
       "priceText": "$15-$20"
     },
     {
@@ -2247,6 +2414,19 @@
         }
       ],
       "priceText": "$15-55"
+    },
+    {
+      "id": "keys:2026-08-14:emily-day-cosmo-alleycats",
+      "clubId": "keys",
+      "title": "“Emily Day & Cosmo Alleycats”",
+      "date": "2026-08-14",
+      "sets": [
+        "19:00"
+      ],
+      "url": "https://keysjazzbistro.com/event/emily-day-cosmo-alleycats-6/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
     },
     {
       "id": "sfjazz:2026-08-14:take-6",
@@ -2288,6 +2468,19 @@
       "priceText": null
     },
     {
+      "id": "keys:2026-08-14:janice-maxie-reid-a-birthday-celebration",
+      "clubId": "keys",
+      "title": "Janice Maxie Reid- A Birthday Celebration",
+      "date": "2026-08-14",
+      "sets": [
+        "21:00"
+      ],
+      "url": "https://keysjazzbistro.com/event/janice-maxie-reid-a-birthday-celebration/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
       "id": "mrtipples:2026-08-14:john-brothers-piano-company",
       "clubId": "mrtipples",
       "title": "John Brothers Piano Company",
@@ -2296,8 +2489,25 @@
         "22:30"
       ],
       "url": "https://mrtipplessf.com/calendar/john-brothers-piano-company-2/",
-      "details": "🎹 John Boomer | Piano & Clarinet 🎷 Gerrard Ramm | Saxophone 🎻 Kent Kessinger | Bass 🥁 Jimi Marks | Drums",
-      "personnel": null,
+      "details": null,
+      "personnel": [
+        {
+          "name": "John Boomer",
+          "instrument": "piano & clarinet"
+        },
+        {
+          "name": "Gerrard Ramm",
+          "instrument": "saxophone"
+        },
+        {
+          "name": "Kent Kessinger",
+          "instrument": "bass"
+        },
+        {
+          "name": "Jimi Marks",
+          "instrument": "drums"
+        }
+      ],
       "priceText": "$15-$30"
     },
     {
@@ -2332,6 +2542,20 @@
       "priceText": "$15-55"
     },
     {
+      "id": "keys:2026-08-15:marcus-shelby",
+      "clubId": "keys",
+      "title": "Marcus Shelby",
+      "date": "2026-08-15",
+      "sets": [
+        "19:00",
+        "21:00"
+      ],
+      "url": "https://keysjazzbistro.com/event/marcus-shelby/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
       "id": "sfjazz:2026-08-15:take-6",
       "clubId": "sfjazz",
       "title": "Take 6",
@@ -2353,8 +2577,25 @@
         "19:30"
       ],
       "url": "https://mrtipplessf.com/calendar/dann-zinn-quartet-2/",
-      "details": "Frank Martin | Piano Jason Lewis | Drums Dan Parenti | Bass Dann Zinn | Sax Bio: Dann Zinn is a true game changer, taking jazz in bold new directions. A world-class saxophonist and flutist, he is renowned as a passionate soloist and accomplished composer-arranger. Hailed as “inventive” and “distinct",
-      "personnel": null,
+      "details": null,
+      "personnel": [
+        {
+          "name": "Frank Martin",
+          "instrument": "piano"
+        },
+        {
+          "name": "Jason Lewis",
+          "instrument": "drums"
+        },
+        {
+          "name": "Dan Parenti",
+          "instrument": "bass"
+        },
+        {
+          "name": "Dann Zinn",
+          "instrument": "sax"
+        }
+      ],
       "priceText": "$15-$30"
     },
     {
@@ -2371,6 +2612,19 @@
       "priceText": null
     },
     {
+      "id": "keys:2026-08-15:late-set-simon-rowe-organ-trio",
+      "clubId": "keys",
+      "title": "Late Set: Simon Rowe Organ Trio",
+      "date": "2026-08-15",
+      "sets": [
+        "22:30"
+      ],
+      "url": "https://keysjazzbistro.com/event/late-set-simon-rowe-organ-trio-60/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
       "id": "mrtipples:2026-08-15:the-ray-obiedo-group",
       "clubId": "mrtipples",
       "title": "The Ray Obiedo Group",
@@ -2382,6 +2636,20 @@
       "details": null,
       "personnel": null,
       "priceText": "$15-$30"
+    },
+    {
+      "id": "keys:2026-08-16:lara-louise",
+      "clubId": "keys",
+      "title": "Lara Louise",
+      "date": "2026-08-16",
+      "sets": [
+        "17:00",
+        "19:00"
+      ],
+      "url": "https://keysjazzbistro.com/event/lara-louise-5/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
     },
     {
       "id": "sfjazz:2026-08-16:take-6",
@@ -2436,8 +2704,25 @@
         "19:45"
       ],
       "url": "https://mrtipplessf.com/calendar/vicki-burns-2/",
-      "details": "John Di Martino | Piano Sam Bevan | Bass Tim Bulkley | Drums Vicki Burns | Vocals Bio: Vicki Burns has been performing steadily almost since the moment she arrived in New York from San Francisco in 2009, where she worked regularly at legendary North Beach clubs like Enrico’s, Pearl’s and The Purple",
-      "personnel": null,
+      "details": null,
+      "personnel": [
+        {
+          "name": "John Di Martino",
+          "instrument": "piano"
+        },
+        {
+          "name": "Sam Bevan",
+          "instrument": "bass"
+        },
+        {
+          "name": "Tim Bulkley",
+          "instrument": "drums"
+        },
+        {
+          "name": "Vicki Burns",
+          "instrument": "vocals"
+        }
+      ],
       "priceText": "$15-$20"
     },
     {
@@ -2522,8 +2807,25 @@
         "20:45"
       ],
       "url": "https://mrtipplessf.com/calendar/sam-rudin-quartet-2/",
-      "details": "Sam Rudin | Piano Charles McNeal | Saxophone Essiet Essiet | Bass Jeremy Steinkoler | Drums Bio: With the rhythmic intensity of an entire band, Sam Rudin can evoke the spirit of Fats Waller, Oscar Peterson, Mose Allison, and Jerry Lee Lewis…sometimes all at the same time. . His earliest renown was a",
-      "personnel": null,
+      "details": null,
+      "personnel": [
+        {
+          "name": "Sam Rudin",
+          "instrument": "piano"
+        },
+        {
+          "name": "Charles McNeal",
+          "instrument": "saxophone"
+        },
+        {
+          "name": "Essiet Essiet",
+          "instrument": "bass"
+        },
+        {
+          "name": "Jeremy Steinkoler",
+          "instrument": "drums"
+        }
+      ],
       "priceText": "$15-$20"
     },
     {
@@ -2558,6 +2860,20 @@
       "priceText": "$15-45"
     },
     {
+      "id": "keys:2026-08-20:new-york-pianist-bill-o-connell-s-trio-featuring-bassist-lin",
+      "clubId": "keys",
+      "title": "New York Pianist Bill O’Connell’s Trio Featuring Bassist Lincoln Goines",
+      "date": "2026-08-20",
+      "sets": [
+        "19:00",
+        "21:00"
+      ],
+      "url": "https://keysjazzbistro.com/event/new-york-pianist-bill-oconnells-trio-featuring-bassist-lincoln-goines/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
       "id": "mrtipples:2026-08-20:paul-mehling-s-le-jazz-hot",
       "clubId": "mrtipples",
       "title": "Paul Mehling’s Le Jazz Hot",
@@ -2566,8 +2882,21 @@
         "20:45"
       ],
       "url": "https://mrtipplessf.com/calendar/paul-mehlings-le-jazz-hot-2/",
-      "details": "Paul Mehling | Guitar & Vocals Evan Price | Violin Dexter Williams | Bass Jordan Samuels | Rhythm Guitar",
-      "personnel": null,
+      "details": null,
+      "personnel": [
+        {
+          "name": "Paul Mehling",
+          "instrument": "guitar & vocals"
+        },
+        {
+          "name": "Evan Price",
+          "instrument": "violin"
+        },
+        {
+          "name": "Dexter Williams",
+          "instrument": "bass"
+        }
+      ],
       "priceText": "$15-$20"
     },
     {
@@ -2602,6 +2931,19 @@
       "priceText": "$20-55"
     },
     {
+      "id": "keys:2026-08-21:kenny-washington-quartet",
+      "clubId": "keys",
+      "title": "Kenny Washington Quartet",
+      "date": "2026-08-21",
+      "sets": [
+        "19:00"
+      ],
+      "url": "https://keysjazzbistro.com/event/kenny-washington-quartet-10/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
       "id": "mrtipples:2026-08-21:ron-vincent-quartet",
       "clubId": "mrtipples",
       "title": "Ron Vincent Quartet",
@@ -2610,8 +2952,25 @@
         "19:30"
       ],
       "url": "https://mrtipplessf.com/calendar/ron-vincent-quartet-2/",
-      "details": "Bruce Williamson | Alto Sax Ben Stolorow | Piano Peter Barshay | Bass Ron Vincent | Drums",
-      "personnel": null,
+      "details": null,
+      "personnel": [
+        {
+          "name": "Bruce Williamson",
+          "instrument": "alto sax"
+        },
+        {
+          "name": "Ben Stolorow",
+          "instrument": "piano"
+        },
+        {
+          "name": "Peter Barshay",
+          "instrument": "bass"
+        },
+        {
+          "name": "Ron Vincent",
+          "instrument": "drums"
+        }
+      ],
       "priceText": "$15-$30"
     },
     {
@@ -2641,6 +3000,19 @@
       "priceText": null
     },
     {
+      "id": "keys:2026-08-21:tony-lindsay",
+      "clubId": "keys",
+      "title": "Tony Lindsay",
+      "date": "2026-08-21",
+      "sets": [
+        "21:00"
+      ],
+      "url": "https://keysjazzbistro.com/event/tony-lindsay-17/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
       "id": "mrtipples:2026-08-21:kutting-korners",
       "clubId": "mrtipples",
       "title": "Kutting Korners",
@@ -2649,8 +3021,33 @@
         "22:30"
       ],
       "url": "https://mrtipplessf.com/calendar/kutting-korners-2/",
-      "details": "Max Ehrhardt | Trumpet Gus Hurteau | Vibraphone Richard Howell | Tenor Saxophone Hannah Mayer | Piano Isaac Coyle | Bass Miles Turk | Drums",
-      "personnel": null,
+      "details": null,
+      "personnel": [
+        {
+          "name": "Max Ehrhardt",
+          "instrument": "trumpet"
+        },
+        {
+          "name": "Gus Hurteau",
+          "instrument": "vibraphone"
+        },
+        {
+          "name": "Richard Howell",
+          "instrument": "tenor saxophone"
+        },
+        {
+          "name": "Hannah Mayer",
+          "instrument": "piano"
+        },
+        {
+          "name": "Isaac Coyle",
+          "instrument": "bass"
+        },
+        {
+          "name": "Miles Turk",
+          "instrument": "drums"
+        }
+      ],
       "priceText": "$15-$30"
     },
     {
@@ -2685,6 +3082,20 @@
       "priceText": "$20-55"
     },
     {
+      "id": "keys:2026-08-22:jazz-mafia-retrospective-25-years-of-music",
+      "clubId": "keys",
+      "title": "Jazz Mafia Retrospective: 25+ Years of Music",
+      "date": "2026-08-22",
+      "sets": [
+        "19:00",
+        "21:00"
+      ],
+      "url": "https://keysjazzbistro.com/event/jazz-mafia-retrospective-25-years-of-music/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
       "id": "mrtipples:2026-08-22:tim-lin-quartet",
       "clubId": "mrtipples",
       "title": "Tim Lin Quartet",
@@ -2693,9 +3104,39 @@
         "19:30"
       ],
       "url": "https://mrtipplessf.com/calendar/tim-lin-quartet-2/",
-      "details": "Charles Chen | Piano Essiet Essiet | Bass Brian Fishler | Drums Tim Lin | Tenor Bio: Tim Lin is a Taiwanese-American saxophonist currently living in New York originally from the San Francisco Bay Area. Lin has released four albums: ‘Romance in Formosa’ (2022), ‘Empathy’ (2023), ‘Birdwatching’ (2024)",
-      "personnel": null,
+      "details": null,
+      "personnel": [
+        {
+          "name": "Charles Chen",
+          "instrument": "piano"
+        },
+        {
+          "name": "Essiet Essiet",
+          "instrument": "bass"
+        },
+        {
+          "name": "Brian Fishler",
+          "instrument": "drums"
+        },
+        {
+          "name": "Tim Lin",
+          "instrument": "tenor"
+        }
+      ],
       "priceText": "$15-$30"
+    },
+    {
+      "id": "keys:2026-08-22:late-set-simon-rowe-organ-trio",
+      "clubId": "keys",
+      "title": "Late Set: Simon Rowe Organ Trio",
+      "date": "2026-08-22",
+      "sets": [
+        "22:30"
+      ],
+      "url": "https://keysjazzbistro.com/event/late-set-simon-rowe-organ-trio-61/",
+      "details": null,
+      "personnel": null,
+      "priceText": null
     },
     {
       "id": "mrtipples:2026-08-22:ohana-collective",
@@ -2706,8 +3147,21 @@
         "22:30"
       ],
       "url": "https://mrtipplessf.com/calendar/ohana-collective-2/",
-      "details": "Nate Gilbreath | Trombone Nicolaus Gelin | Trumpet Mwanzi Harriott | Tuitar Miles Turk | Trums Alan Jones | Bass",
-      "personnel": null,
+      "details": null,
+      "personnel": [
+        {
+          "name": "Nate Gilbreath",
+          "instrument": "trombone"
+        },
+        {
+          "name": "Nicolaus Gelin",
+          "instrument": "trumpet"
+        },
+        {
+          "name": "Trums Alan Jones",
+          "instrument": "bass"
+        }
+      ],
       "priceText": "$15-$30"
     },
     {
@@ -2777,8 +3231,29 @@
         "19:45"
       ],
       "url": "https://mrtipplessf.com/calendar/jessica-king-and-her-quartet-2/",
-      "details": "Mikiya Matsuda | Bass Marceline Keene | Guitar Adam Shulman | Piano Kamrin Ortiz | Sax Jessica King | Vocals",
-      "personnel": null,
+      "details": null,
+      "personnel": [
+        {
+          "name": "Mikiya Matsuda",
+          "instrument": "bass"
+        },
+        {
+          "name": "Marceline Keene",
+          "instrument": "guitar"
+        },
+        {
+          "name": "Adam Shulman",
+          "instrument": "piano"
+        },
+        {
+          "name": "Kamrin Ortiz",
+          "instrument": "sax"
+        },
+        {
+          "name": "Jessica King",
+          "instrument": "vocals"
+        }
+      ],
       "priceText": "$15-$20"
     },
     {
@@ -2842,8 +3317,29 @@
         "20:45"
       ],
       "url": "https://mrtipplessf.com/calendar/gage-and-gold-2/",
-      "details": "Jackie Gage | Vocals Shamilah Ivory | Voclas Scott Keller | Vocals Meredith McHenry | Vocals Dana Salzman | Piano J.Paul Macklin | Drumset Kevin Goldberg | Bass",
-      "personnel": null,
+      "details": null,
+      "personnel": [
+        {
+          "name": "Jackie Gage",
+          "instrument": "vocals"
+        },
+        {
+          "name": "Voclas Scott Keller",
+          "instrument": "vocals"
+        },
+        {
+          "name": "Meredith McHenry",
+          "instrument": "vocals"
+        },
+        {
+          "name": "Dana Salzman",
+          "instrument": "piano"
+        },
+        {
+          "name": "Drumset Kevin Goldberg",
+          "instrument": "bass"
+        }
+      ],
       "priceText": "$15-$20"
     },
     {
@@ -2899,8 +3395,21 @@
         "20:45"
       ],
       "url": "https://mrtipplessf.com/calendar/adam-shulman-organ-trio-2/",
-      "details": "Adam Shulman | Organ Jack Riordan | Guitar Andre Sumelius | Drums",
-      "personnel": null,
+      "details": null,
+      "personnel": [
+        {
+          "name": "Adam Shulman",
+          "instrument": "organ"
+        },
+        {
+          "name": "Jack Riordan",
+          "instrument": "guitar"
+        },
+        {
+          "name": "Andre Sumelius",
+          "instrument": "drums"
+        }
+      ],
       "priceText": "$15-$20"
     },
     {
@@ -3096,8 +3605,17 @@
         "19:30"
       ],
       "url": "https://mrtipplessf.com/calendar/roger-glenn-organ-trio-2/",
-      "details": "Roger Glenn | Vibes, Flute, Sax Wayne De La Cruz | Hammond B3 organ Mark Lee | Drums Bio: The Roger Glenn Jazz Organ Trio brings the soulful tradition of the classic Hammond B-3 jazz organ trio to life with swing, groove, and deep improvisation. Master multi-instrumentalist Roger Glenn —on flute, sa",
-      "personnel": null,
+      "details": null,
+      "personnel": [
+        {
+          "name": "Roger Glenn",
+          "instrument": "vibes, flute, sax"
+        },
+        {
+          "name": "Mark Lee",
+          "instrument": "drums"
+        }
+      ],
       "priceText": "$15-$20"
     },
     {
@@ -3253,8 +3771,29 @@
         "19:45"
       ],
       "url": "https://mrtipplessf.com/calendar/mose-def-the-music-of-mose-allison-2/",
-      "details": "Kymry Esainko | Piano Joe Kyle | Bass Randy Odell | Drums Tom Griesser | Sax Dean Mermell | Vocals Mose Def : The Music of Mose Allison Mose Def was born when Flower Piano co-creator Dean Mermell wanted someone to play a Mose Allison tribute at the event, but then decided he wanted to do it himself.",
-      "personnel": null,
+      "details": null,
+      "personnel": [
+        {
+          "name": "Kymry Esainko",
+          "instrument": "piano"
+        },
+        {
+          "name": "Joe Kyle",
+          "instrument": "bass"
+        },
+        {
+          "name": "Randy Odell",
+          "instrument": "drums"
+        },
+        {
+          "name": "Tom Griesser",
+          "instrument": "sax"
+        },
+        {
+          "name": "Dean Mermell",
+          "instrument": "vocals"
+        }
+      ],
       "priceText": "$15-$20"
     },
     {
@@ -3331,8 +3870,25 @@
         "20:45"
       ],
       "url": "https://mrtipplessf.com/calendar/naama-2/",
-      "details": "Charles Chen | Piano Nico Martinez | Bass Brian Fishler | Drums Naama | Voice Bio: Naama Sings Songs From The Road Step into an intimate evening of classic jazz with vocalist Naama, whose elegant sound and expressive storytelling have made her a standout voice in the New York jazz scene. Inspired by",
-      "personnel": null,
+      "details": null,
+      "personnel": [
+        {
+          "name": "Charles Chen",
+          "instrument": "piano"
+        },
+        {
+          "name": "Nico Martinez",
+          "instrument": "bass"
+        },
+        {
+          "name": "Brian Fishler",
+          "instrument": "drums"
+        },
+        {
+          "name": "Naama",
+          "instrument": "voice"
+        }
+      ],
       "priceText": "$15-$20"
     },
     {
@@ -3384,8 +3940,25 @@
         "20:45"
       ],
       "url": "https://mrtipplessf.com/calendar/george-cole-quartet-george-meets-django-2/",
-      "details": "Val Cole | Guitar and Vocals Anton Patzner | Violin Fred Randolph | Bass George Cole | Guitar Bio: George Cole Quartet – George Meets DjangoThe George Cole Quartet brings the spirit of Django Reinhardt to life in an intimate evening of jazz manouche and original compositions. BAMMIE Award-winning gu",
-      "personnel": null,
+      "details": null,
+      "personnel": [
+        {
+          "name": "Val Cole",
+          "instrument": "guitar and vocals"
+        },
+        {
+          "name": "Anton Patzner",
+          "instrument": "violin"
+        },
+        {
+          "name": "Fred Randolph",
+          "instrument": "bass"
+        },
+        {
+          "name": "George Cole",
+          "instrument": "guitar"
+        }
+      ],
       "priceText": "$15-$20"
     },
     {
@@ -3463,8 +4036,21 @@
         "22:30"
       ],
       "url": "https://mrtipplessf.com/calendar/charles-unger-experience-2/",
-      "details": "Charles Unger | Sax Sue Crossman | Piano Joe Nemzer| Bass Tony “Steamroller” Coleman | Drums",
-      "personnel": null,
+      "details": null,
+      "personnel": [
+        {
+          "name": "Charles Unger",
+          "instrument": "sax"
+        },
+        {
+          "name": "Sue Crossman",
+          "instrument": "piano"
+        },
+        {
+          "name": "Tony “Steamroller” Coleman",
+          "instrument": "drums"
+        }
+      ],
       "priceText": "$15-$30"
     },
     {
@@ -3503,8 +4089,25 @@
         "19:30"
       ],
       "url": "https://mrtipplessf.com/calendar/arman-sangalang-quartet-2/",
-      "details": "Arman Sangalang | Tenor Sax Adam Astrup | Guitar Nico Martinez | Bass Malachi Whitson | Drums",
-      "personnel": null,
+      "details": null,
+      "personnel": [
+        {
+          "name": "Arman Sangalang",
+          "instrument": "tenor sax"
+        },
+        {
+          "name": "Adam Astrup",
+          "instrument": "guitar"
+        },
+        {
+          "name": "Nico Martinez",
+          "instrument": "bass"
+        },
+        {
+          "name": "Malachi Whitson",
+          "instrument": "drums"
+        }
+      ],
       "priceText": "$15-$30"
     },
     {
@@ -3622,8 +4225,29 @@
         "20:45"
       ],
       "url": "https://mrtipplessf.com/calendar/lisa-mezzacappa-quintet-2/",
-      "details": "Aaron Bennett | Tenor Sax Mark Clifford | Vibraphone Brett Carson | Piano Lisa Mezzacappa | Bass Jordan Glenn | Drums Bio: Adventurous original music by Mezzacappa and arrangements of rare classics by Herbie Nichols, Geri Allen, Arthur Blythe, Ornette Clmean, Carla Bley, Charles Mingus, and others.",
-      "personnel": null,
+      "details": null,
+      "personnel": [
+        {
+          "name": "Aaron Bennett",
+          "instrument": "tenor sax"
+        },
+        {
+          "name": "Mark Clifford",
+          "instrument": "vibraphone"
+        },
+        {
+          "name": "Brett Carson",
+          "instrument": "piano"
+        },
+        {
+          "name": "Lisa Mezzacappa",
+          "instrument": "bass"
+        },
+        {
+          "name": "Jordan Glenn",
+          "instrument": "drums"
+        }
+      ],
       "priceText": "$15-$20"
     },
     {
@@ -3654,6 +4278,19 @@
       "priceText": null
     },
     {
+      "id": "mrtipples:2026-09-18:richard-howell-s-sudden-changes",
+      "clubId": "mrtipples",
+      "title": "Richard Howell’s Sudden Changes",
+      "date": "2026-09-18",
+      "sets": [
+        "22:30"
+      ],
+      "url": "https://mrtipplessf.com/calendar/richard-howells-sudden-changes-8/",
+      "details": null,
+      "personnel": null,
+      "priceText": "$15-$30"
+    },
+    {
       "id": "yoshis:2026-09-19:mohini-dey",
       "clubId": "yoshis",
       "title": "MOHINI DEY",
@@ -3667,9 +4304,9 @@
       "priceText": null
     },
     {
-      "id": "yoshis:2026-09-21:the-gens-throwback-gospel-music-experience",
+      "id": "yoshis:2026-09-21:music-monday-the-throwback-series",
       "clubId": "yoshis",
-      "title": "THE GENS: THROWBACK GOSPEL MUSIC EXPERIENCE",
+      "title": "MUSIC MONDAY: THE THROWBACK SERIES",
       "date": "2026-09-21",
       "sets": [
         "20:00"

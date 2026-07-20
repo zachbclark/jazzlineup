@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-18T21:28:43.837Z",
+  "generatedAt": "2026-07-20T22:51:24.880Z",
   "city": "par",
   "clubs": [
     {
@@ -285,102 +285,6 @@
       "priceText": null
     },
     {
-      "id": "duc:2026-07-18:the-brooks",
-      "clubId": "duc",
-      "title": "The Brooks",
-      "date": "2026-07-18",
-      "sets": [
-        "19:30",
-        "22:00"
-      ],
-      "url": "https://ducdeslombards.com/fr/l-agenda/brooks-0",
-      "details": "FUNK",
-      "personnel": [
-        {
-          "name": "Alan Prater",
-          "instrument": "voix"
-        },
-        {
-          "name": "Alexandre Lapointe",
-          "instrument": "basse"
-        },
-        {
-          "name": "Endrick Tremblay",
-          "instrument": "guitare & voix"
-        },
-        {
-          "name": "Dan Thouin",
-          "instrument": "claviers"
-        },
-        {
-          "name": "Tristan Forget Brisson",
-          "instrument": "percussions & voix"
-        },
-        {
-          "name": "Andy King",
-          "instrument": "trompette"
-        },
-        {
-          "name": "Dominic Cloutier",
-          "instrument": "batterie"
-        }
-      ],
-      "priceText": null
-    },
-    {
-      "id": "riv38:2026-07-18:sarah-king-quartet",
-      "clubId": "riv38",
-      "title": "Sarah King Quartet",
-      "date": "2026-07-18",
-      "sets": [
-        "19:30",
-        "21:30"
-      ],
-      "url": "https://38riv.com/concerts/sarah-king-quartet",
-      "details": null,
-      "personnel": [
-        {
-          "name": "Sarah King",
-          "instrument": "voix"
-        },
-        {
-          "name": "Clement Trimouille",
-          "instrument": "guitare"
-        },
-        {
-          "name": "Kim Baiunco",
-          "instrument": "contrebasse"
-        }
-      ],
-      "priceText": null
-    },
-    {
-      "id": "sunside:2026-07-18:sabato-di-costanzo-quartet-invitent-harry-allen",
-      "clubId": "sunside",
-      "title": "Sabato & Di Costanzo Quartet invitent Harry Allen",
-      "date": "2026-07-18",
-      "sets": [
-        "20:30"
-      ],
-      "url": "https://www.sunset-sunside.com/concert/sabato-di-costanzo-quartet-invitent-harry-allen/",
-      "details": "Harry Allen a joué dans les festivals et les clubs les plus prestigieux du monde entier aux côtés avec Ray Brown, Hank Jones, Scott Hamilton, Harry ‘Sweets’ Edison, Kenny Burrell, Herb Ellis, John Pizzarelli, Bucky Pizzarelli, Gus Johnson, Jeff Hamilton, Terry Gibbs, Warren Vache… Il a également enr",
-      "personnel": null,
-      "priceText": "25,00&euro; à 30,00&euro;"
-    },
-    {
-      "id": "sunset:2026-07-18:eric-alexander-jazz-syndicate",
-      "clubId": "sunset",
-      "title": "Eric Alexander Jazz Syndicate",
-      "date": "2026-07-18",
-      "sets": [
-        "21:30"
-      ],
-      "url": "https://www.sunset-sunside.com/concert/eric-alexander-jazz-syndicate-2/",
-      "details": "Eric Alexander est un maître du saxophone ténor basé à New York. Il a été l’élève de Harold Mabern et de Joe Lovano. Son jeu n’est pas sans évoquer celui des légendes du bebop, à l’instar de John Coltrane, Sonny Rollins et George Coleman… Il revient au Sunset avec un quintet de killer et sera notamm",
-      "personnel": null,
-      "priceText": "30,00&euro; à 35,00&euro;"
-    },
-    {
       "id": "caveau:2026-07-18:michel-pastre-swing-band",
       "clubId": "caveau",
       "title": "Michel Pastre Swing Band",
@@ -391,111 +295,6 @@
       "url": "https://www.caveaudelahuchette.fr/1/concerts_juillet_2026_1483430.html",
       "details": null,
       "personnel": null,
-      "priceText": null
-    },
-    {
-      "id": "riv38:2026-07-18:zoot-late-sessions",
-      "clubId": "riv38",
-      "title": "Zoot ‘late’ sessions",
-      "date": "2026-07-18",
-      "sets": [
-        "23:00"
-      ],
-      "url": "https://38riv.com/concerts/zoot-late-sessions-44",
-      "details": null,
-      "personnel": null,
-      "late": true,
-      "priceText": null
-    },
-    {
-      "id": "duc:2026-07-18:jam-du-duc",
-      "clubId": "duc",
-      "title": "JAM DU DUC",
-      "date": "2026-07-18",
-      "sets": [
-        "23:30"
-      ],
-      "url": "https://ducdeslombards.com/fr/l-agenda/jam-du-duc-paul-morvan-16",
-      "details": null,
-      "personnel": [
-        {
-          "name": "Paul Morvan",
-          "instrument": "batterie"
-        },
-        {
-          "name": "Fabien Mary",
-          "instrument": "trompette"
-        },
-        {
-          "name": "Gabriel Sauzay",
-          "instrument": "contrebasse"
-        }
-      ],
-      "late": true,
-      "priceText": null
-    },
-    {
-      "id": "riv38:2026-07-18:jam-session-jazz-zoot",
-      "clubId": "riv38",
-      "title": "Jam session jazz — Zoot",
-      "date": "2026-07-18",
-      "sets": [
-        "23:59"
-      ],
-      "url": "https://38riv.com/concerts/jam-session-jazz-zoot-44",
-      "details": null,
-      "personnel": null,
-      "late": true,
-      "priceText": null
-    },
-    {
-      "id": "riv38:2026-07-19:simonelli-daussat",
-      "clubId": "riv38",
-      "title": "Simonelli & Daussat",
-      "date": "2026-07-19",
-      "sets": [
-        "15:00",
-        "17:00"
-      ],
-      "url": "https://38riv.com/concerts/simonelli-daussat",
-      "details": null,
-      "personnel": [
-        {
-          "name": "Vincent Simonelli",
-          "instrument": "guitare"
-        },
-        {
-          "name": "Samy Daussat",
-          "instrument": "guitare"
-        },
-        {
-          "name": "John Dufossé",
-          "instrument": "contrebasse"
-        }
-      ],
-      "priceText": null
-    },
-    {
-      "id": "riv38:2026-07-19:eric-s-va-daniel-zimmermann",
-      "clubId": "riv38",
-      "title": "Eric Séva & Daniel Zimmermann",
-      "date": "2026-07-19",
-      "sets": [
-        "19:30",
-        "21:30"
-      ],
-      "url": "https://38riv.com/concerts/eric-seva-daniel-zimmermann-1",
-      "details": null,
-      "personnel": [
-        {
-          "name": "Eric Séva",
-          "instrument": "saxophone baryton"
-        },
-        {
-          "name": "Daniel Zimmermann",
-          "instrument": "trombone"
-        }
-      ],
       "priceText": null
     },
     {
@@ -588,17 +387,6 @@
       "priceText": null
     },
     {
-      "id": "newmorning:2026-07-20:immanuel-wilkins-quartet",
-      "clubId": "newmorning",
-      "title": "Immanuel Wilkins Quartet",
-      "date": "2026-07-20",
-      "sets": [],
-      "url": "https://www.newmorning.com/20260720-7717-45-ans-du-new-immanuel-wilkins-quartet.html",
-      "details": null,
-      "personnel": null,
-      "priceText": null
-    },
-    {
       "id": "duc:2026-07-21:th-odore-kuzma-trio",
       "clubId": "duc",
       "title": "Théodore Kuzma Trio",
@@ -635,7 +423,20 @@
       ],
       "url": "https://www.sunset-sunside.com/concert/xavier-thollard-trio/",
       "details": "Après « ostinatos » en piano solo, le pianiste Xavier Thollard revient en trio avec un répertoire explosif. Entre pop, musique classique et standards de jazz, les influences multiples convergent vers une musique singulière, riche en rythmes subtils et en nombreuses interactions.",
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Xavier Thollard",
+          "instrument": "piano"
+        },
+        {
+          "name": "Yann Phayphet",
+          "instrument": "c.basse"
+        },
+        {
+          "name": "Simon Bernier",
+          "instrument": "batterie"
+        }
+      ],
       "priceText": "15,00&euro; à 25,00&euro;"
     },
     {
@@ -675,7 +476,24 @@
       ],
       "url": "https://www.sunset-sunside.com/concert/quartet-geminiani-sears-flouzat-bortone/",
       "details": "Parage : se dit en Anglais ancien de deux personnes de condition égale obéissant au même souverain. C’est un groupe de musiciens artisans, dévoués en particulier au rythme, après des années passées à New York. La musique, composée par les quatre membres du groupe, naît souvent de la puissance émotio",
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Francesco Geminiani",
+          "instrument": "sax"
+        },
+        {
+          "name": "Richard Sears",
+          "instrument": "piano"
+        },
+        {
+          "name": "Matteo Bortone",
+          "instrument": "c.basse"
+        },
+        {
+          "name": "Guilhem Flouzat",
+          "instrument": "batterie"
+        }
+      ],
       "priceText": "15,00&euro; à 25,00&euro;"
     },
     {
@@ -746,7 +564,24 @@
       ],
       "url": "https://www.sunset-sunside.com/concert/ed-brown-samba-jazz-quartet/",
       "details": "Ed Brown propose un concert entre jazz, samba-jazz et musique brésilienne, porté par l’improvisation, l’élégance harmonique et une approche acoustique sensible du répertoire brésilien et des standards de jazz.",
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Ed Brown",
+          "instrument": "voix"
+        },
+        {
+          "name": "Alvar Benhamou",
+          "instrument": "piano"
+        },
+        {
+          "name": "Matis Cesaroni",
+          "instrument": "c.basse"
+        },
+        {
+          "name": "Isaías Alves",
+          "instrument": "batterie"
+        }
+      ],
       "priceText": "15,00&euro; à 25,00&euro;"
     },
     {
@@ -875,6 +710,44 @@
       "priceText": null
     },
     {
+      "id": "newmorning:2026-07-23:kenny-garrett",
+      "clubId": "newmorning",
+      "title": "Kenny Garrett",
+      "date": "2026-07-23",
+      "sets": [
+        "20:30"
+      ],
+      "url": "https://www.newmorning.com/20260723-7711-45-ans-du-new-kenny-garrett.html",
+      "details": null,
+      "personnel": [
+        {
+          "name": "Kenny Garrett",
+          "instrument": "claviers, saxophone alto"
+        },
+        {
+          "name": "Rudy Bird",
+          "instrument": "percussions"
+        },
+        {
+          "name": "Corcoran Holt",
+          "instrument": "basse"
+        },
+        {
+          "name": "Melvis Santa Estevez",
+          "instrument": "voix"
+        },
+        {
+          "name": "Ronald Bruner Jr.",
+          "instrument": "batterie"
+        },
+        {
+          "name": "Keith Brown",
+          "instrument": "claviers, piano"
+        }
+      ],
+      "priceText": "32€"
+    },
+    {
       "id": "sunside:2026-07-23:joey-calderazzo-trio-le-pianiste-de-branford-marsalis",
       "clubId": "sunside",
       "title": "Joey Calderazzo Trio (le pianiste de Branford Marsalis)",
@@ -912,17 +785,6 @@
       "details": null,
       "personnel": null,
       "late": true,
-      "priceText": null
-    },
-    {
-      "id": "newmorning:2026-07-23:kenny-garrett",
-      "clubId": "newmorning",
-      "title": "Kenny Garrett",
-      "date": "2026-07-23",
-      "sets": [],
-      "url": "https://www.newmorning.com/20260723-7711-45-ans-du-new-kenny-garrett.html",
-      "details": null,
-      "personnel": null,
       "priceText": null
     },
     {
@@ -990,6 +852,44 @@
         }
       ],
       "priceText": null
+    },
+    {
+      "id": "newmorning:2026-07-24:kenny-garrett",
+      "clubId": "newmorning",
+      "title": "Kenny Garrett",
+      "date": "2026-07-24",
+      "sets": [
+        "20:30"
+      ],
+      "url": "https://www.newmorning.com/20260724-7712-45-ans-du-new-kenny-garrett.html",
+      "details": null,
+      "personnel": [
+        {
+          "name": "Kenny Garrett",
+          "instrument": "claviers, saxophone alto"
+        },
+        {
+          "name": "Rudy Bird",
+          "instrument": "percussions"
+        },
+        {
+          "name": "Corcoran Holt",
+          "instrument": "basse"
+        },
+        {
+          "name": "Melvis Santa Estevez",
+          "instrument": "voix"
+        },
+        {
+          "name": "Ronald Bruner Jr.",
+          "instrument": "batterie"
+        },
+        {
+          "name": "Keith Brown",
+          "instrument": "claviers, piano"
+        }
+      ],
+      "priceText": "32€"
     },
     {
       "id": "caveau:2026-07-24:tijn-trommelen-the-jazz-cats",
@@ -1070,17 +970,6 @@
       "details": null,
       "personnel": null,
       "late": true,
-      "priceText": null
-    },
-    {
-      "id": "newmorning:2026-07-24:kenny-garrett",
-      "clubId": "newmorning",
-      "title": "Kenny Garrett",
-      "date": "2026-07-24",
-      "sets": [],
-      "url": "https://www.newmorning.com/20260724-7712-45-ans-du-new-kenny-garrett.html",
-      "details": null,
-      "personnel": null,
       "priceText": null
     },
     {
@@ -1410,6 +1299,48 @@
       "priceText": null
     },
     {
+      "id": "newmorning:2026-07-27:aldorande-collettivo-immaginario",
+      "clubId": "newmorning",
+      "title": "Aldorande + Collettivo Immaginario",
+      "date": "2026-07-27",
+      "sets": [
+        "20:30"
+      ],
+      "url": "https://www.newmorning.com/20260727-7751-collettivo-immaginario-aldorande.html",
+      "details": null,
+      "personnel": [
+        {
+          "name": "Florian Pellissier",
+          "instrument": "claviers"
+        },
+        {
+          "name": "Virgile Raffaëlli",
+          "instrument": "basse"
+        },
+        {
+          "name": "Mathieu Edouard",
+          "instrument": "batterie"
+        },
+        {
+          "name": "Erwan Loeffel",
+          "instrument": "percussions"
+        },
+        {
+          "name": "Tommaso Cappellato",
+          "instrument": "batterie"
+        },
+        {
+          "name": "Nicolò Masetto",
+          "instrument": "basse"
+        },
+        {
+          "name": "Alberto Lincetto",
+          "instrument": "claviers"
+        }
+      ],
+      "priceText": "21€"
+    },
+    {
       "id": "sunside:2026-07-27:hommage-cedar-walton-avec-les-blakettes-jam",
       "clubId": "sunside",
       "title": "Hommage à Cedar Walton avec Les Blakettes + jam",
@@ -1431,17 +1362,6 @@
         "21:30"
       ],
       "url": "https://www.caveaudelahuchette.fr/1/concerts_juillet_2026_1483430.html",
-      "details": null,
-      "personnel": null,
-      "priceText": null
-    },
-    {
-      "id": "newmorning:2026-07-27:aldorande-collettivo-immaginario",
-      "clubId": "newmorning",
-      "title": "Aldorande + Collettivo Immaginario",
-      "date": "2026-07-27",
-      "sets": [],
-      "url": "https://www.newmorning.com/20260727-7751-collettivo-immaginario-aldorande.html",
       "details": null,
       "personnel": null,
       "priceText": null
@@ -1531,6 +1451,19 @@
       "priceText": "10,00&euro; à 20,00&euro;"
     },
     {
+      "id": "newmorning:2026-07-28:rog",
+      "clubId": "newmorning",
+      "title": "Rogê",
+      "date": "2026-07-28",
+      "sets": [
+        "20:30"
+      ],
+      "url": "https://www.newmorning.com/20260728-7725-45-ans-du-new-roge.html",
+      "details": null,
+      "personnel": null,
+      "priceText": "27€"
+    },
+    {
       "id": "sunside:2026-07-28:hernan-jacinto-trio-pr-sente-gardel",
       "clubId": "sunside",
       "title": "Hernan Jacinto Trio présente Gardel",
@@ -1571,17 +1504,6 @@
       "priceText": null
     },
     {
-      "id": "newmorning:2026-07-28:rog",
-      "clubId": "newmorning",
-      "title": "Rogê",
-      "date": "2026-07-28",
-      "sets": [],
-      "url": "https://www.newmorning.com/20260728-7725-45-ans-du-new-roge.html",
-      "details": null,
-      "personnel": null,
-      "priceText": null
-    },
-    {
       "id": "duc:2026-07-29:snorre-kirk-european-quartet",
       "clubId": "duc",
       "title": "Snorre Kirk European Quartet",
@@ -1607,6 +1529,63 @@
         }
       ],
       "priceText": null
+    },
+    {
+      "id": "riv38:2026-07-29:3-nights-with-estelle-perrault",
+      "clubId": "riv38",
+      "title": "3 nights with Estelle Perrault",
+      "date": "2026-07-29",
+      "sets": [
+        "19:30",
+        "21:30"
+      ],
+      "url": "https://38riv.com/concerts/3-nights-estelle-perrault-1",
+      "details": null,
+      "personnel": [
+        {
+          "name": "Estelle Perrault",
+          "instrument": "voix"
+        },
+        {
+          "name": "Gianluca Figliola",
+          "instrument": "guitare"
+        },
+        {
+          "name": "Gabriel Sauzay",
+          "instrument": "contrebasse"
+        }
+      ],
+      "priceText": null
+    },
+    {
+      "id": "newmorning:2026-07-29:veronica-swift",
+      "clubId": "newmorning",
+      "title": "Veronica Swift",
+      "date": "2026-07-29",
+      "sets": [
+        "20:30"
+      ],
+      "url": "https://www.newmorning.com/20260729-7722-45-ans-du-new-veronica-swift.html",
+      "details": null,
+      "personnel": [
+        {
+          "name": "Veronica Swift",
+          "instrument": "voix"
+        },
+        {
+          "name": "Mathis Picard",
+          "instrument": "piano"
+        },
+        {
+          "name": "Brian Viglione",
+          "instrument": "batterie"
+        },
+        {
+          "name": "Jack Tustin",
+          "instrument": "basse"
+        }
+      ],
+      "priceText": "27€"
     },
     {
       "id": "sunside:2026-07-29:anne-sila-alex-terrier-quintet",
@@ -1635,14 +1614,17 @@
       "priceText": null
     },
     {
-      "id": "newmorning:2026-07-29:veronica-swift",
-      "clubId": "newmorning",
-      "title": "Veronica Swift",
+      "id": "riv38:2026-07-29:jam-session-blues-lemmy-s-tribe",
+      "clubId": "riv38",
+      "title": "Jam session blues · Lemmy’s Tribe",
       "date": "2026-07-29",
-      "sets": [],
-      "url": "https://www.newmorning.com/20260729-7722-45-ans-du-new-veronica-swift.html",
+      "sets": [
+        "23:00"
+      ],
+      "url": "https://38riv.com/concerts/jam-session-blues-lemmys-tribe-3",
       "details": null,
       "personnel": null,
+      "late": true,
       "priceText": null
     },
     {
@@ -1673,6 +1655,83 @@
       "priceText": null
     },
     {
+      "id": "riv38:2026-07-30:carte-blanche-jeanne-michard",
+      "clubId": "riv38",
+      "title": "Carte blanche à Jeanne Michard",
+      "date": "2026-07-30",
+      "sets": [
+        "19:30",
+        "21:30"
+      ],
+      "url": "https://38riv.com/concerts/carte-blanche-jeanne-michard-2",
+      "details": null,
+      "personnel": [
+        {
+          "name": "Jeanne Michard",
+          "instrument": "saxophone ténor"
+        },
+        {
+          "name": "Rozann Bézier",
+          "instrument": "trombone"
+        },
+        {
+          "name": "Guillaume Marsault",
+          "instrument": "batterie"
+        }
+      ],
+      "priceText": null
+    },
+    {
+      "id": "newmorning:2026-07-30:the-blackbyrds",
+      "clubId": "newmorning",
+      "title": "The Blackbyrds",
+      "date": "2026-07-30",
+      "sets": [
+        "20:30"
+      ],
+      "url": "https://www.newmorning.com/20260730-7750-45-ans-du-new-the-blackbyrds.html",
+      "details": null,
+      "personnel": [
+        {
+          "name": "Keith Killgo",
+          "instrument": "batterie, voix"
+        },
+        {
+          "name": "Joe Hall",
+          "instrument": "basse"
+        },
+        {
+          "name": "Roberto Villeda",
+          "instrument": "claviers"
+        },
+        {
+          "name": "Charles Wright",
+          "instrument": "guitare"
+        },
+        {
+          "name": "Sean Anthony",
+          "instrument": "percussions"
+        },
+        {
+          "name": "Thad Wilson",
+          "instrument": "trompette"
+        },
+        {
+          "name": "Marshall Keys",
+          "instrument": "saxophone"
+        },
+        {
+          "name": "Paul Spires",
+          "instrument": "voix"
+        },
+        {
+          "name": "Dominique Toney",
+          "instrument": "voix"
+        }
+      ],
+      "priceText": "30€"
+    },
+    {
       "id": "sunside:2026-07-30:anne-sila-alex-terrier-quintet",
       "clubId": "sunside",
       "title": "Anne Sila & Alex Terrier Quintet",
@@ -1699,14 +1758,17 @@
       "priceText": null
     },
     {
-      "id": "newmorning:2026-07-30:the-blackbyrds",
-      "clubId": "newmorning",
-      "title": "The Blackbyrds",
+      "id": "riv38:2026-07-30:jam-session-jazz-sol-ne-cairoli",
+      "clubId": "riv38",
+      "title": "Jam session jazz — Solène Cairoli",
       "date": "2026-07-30",
-      "sets": [],
-      "url": "https://www.newmorning.com/20260730-7750-45-ans-du-new-the-blackbyrds.html",
+      "sets": [
+        "23:00"
+      ],
+      "url": "https://38riv.com/concerts/jam-session-jazz-solene-cairoli-44",
       "details": null,
       "personnel": null,
+      "late": true,
       "priceText": null
     },
     {
@@ -1761,6 +1823,91 @@
       "priceText": null
     },
     {
+      "id": "riv38:2026-07-31:bjorn-ingelstam",
+      "clubId": "riv38",
+      "title": "Bjorn Ingelstam",
+      "date": "2026-07-31",
+      "sets": [
+        "19:30",
+        "21:30"
+      ],
+      "url": "https://38riv.com/concerts/bjorn-ingelstam",
+      "details": null,
+      "personnel": [
+        {
+          "name": "Bjorn Ingelstam",
+          "instrument": "trompette, voix"
+        },
+        {
+          "name": "Franck Amsallem",
+          "instrument": "piano"
+        },
+        {
+          "name": "Viktor Nyberg",
+          "instrument": "contrebasse"
+        },
+        {
+          "name": "Rasmus Blixt",
+          "instrument": "batterie"
+        }
+      ],
+      "priceText": null
+    },
+    {
+      "id": "newmorning:2026-07-31:echoes-of",
+      "clubId": "newmorning",
+      "title": "Echoes Of",
+      "date": "2026-07-31",
+      "sets": [
+        "20:30"
+      ],
+      "url": "https://www.newmorning.com/20260731-7724-echoes-of.html",
+      "details": null,
+      "personnel": [
+        {
+          "name": "Carel Cléril",
+          "instrument": "basse"
+        },
+        {
+          "name": "Jeeb's Paliès",
+          "instrument": "batterie"
+        },
+        {
+          "name": "Emilien Gillan",
+          "instrument": "guitare"
+        },
+        {
+          "name": "Kevin le Bellec",
+          "instrument": "guitare"
+        },
+        {
+          "name": "Eli Frot",
+          "instrument": "claviers"
+        },
+        {
+          "name": "Paul de Remusat",
+          "instrument": "saxophone"
+        },
+        {
+          "name": "Sebastien Betancur",
+          "instrument": "percussions"
+        },
+        {
+          "name": "Roman Didier",
+          "instrument": "trompette"
+        },
+        {
+          "name": "Malca",
+          "instrument": "voix"
+        },
+        {
+          "name": "Indy Eka",
+          "instrument": "voix"
+        }
+      ],
+      "priceText": "20€"
+    },
+    {
       "id": "sunside:2026-07-31:eric-le-lann-quartet-ft-laurent-de-wilde",
       "clubId": "sunside",
       "title": "Eric Le Lann Quartet ft. Laurent de Wilde",
@@ -1811,17 +1958,6 @@
         }
       ],
       "late": true,
-      "priceText": null
-    },
-    {
-      "id": "newmorning:2026-07-31:echoes-of",
-      "clubId": "newmorning",
-      "title": "Echoes Of",
-      "date": "2026-07-31",
-      "sets": [],
-      "url": "https://www.newmorning.com/20260731-7724-echoes-of.html",
-      "details": null,
-      "personnel": null,
       "priceText": null
     },
     {
@@ -2158,7 +2294,7 @@
         "21:00"
       ],
       "url": "https://www.sunset-sunside.com/concert/dexter-goldberg-trio-2/",
-      "details": "Avec un tel prénom, Dexter Goldberg pouvait-il échapper à un destin de jazzman ? Dexter Goldberg est l’un des pianistes “parmi les plus prometteurs de la nouvelle génération du jazz français” d’après Télérama. Qui dirait pourtant, à observer son jeu brillant, qu’il n’est venu au piano qu’à l’âge de",
+      "details": "Avec un tel prénom, pouvait-il échapper à un destin de jazzman ? Salué par Télérama comme l’un des pianistes les plus prometteurs de la nouvelle génération du jazz hexagonal, Dexter Goldberg s’impose aujourd’hui comme une figure incontournable. Avec son album Caliboudja, sacré « Choc » Jazz Magazine",
       "personnel": null,
       "priceText": "18,00&euro; à 28,00&euro;"
     },
@@ -3045,7 +3181,7 @@
         "20:00"
       ],
       "url": "https://www.balblomet.fr/evenement/lucas-debargue/edate/2026-09-10",
-      "details": null,
+      "details": "Concert de présentation du nouvel album GERSHWIN VARIATIONS de Lucas Debargue (sortie officielle chez SONY le 11 septembre 2026).",
       "personnel": null,
       "priceText": null
     },
@@ -3089,6 +3225,41 @@
       "priceText": "15,00&euro; à 25,00&euro;"
     },
     {
+      "id": "duc:2026-09-11:angela-grey-let-s-face-the-music-dance",
+      "clubId": "duc",
+      "title": "Angela Grey: Let's Face the Music & Dance",
+      "date": "2026-09-11",
+      "sets": [
+        "19:30",
+        "22:00"
+      ],
+      "url": "https://ducdeslombards.com/fr/l-agenda/angela-grey-let-s-face-music-dance",
+      "details": "VOCAL",
+      "personnel": [
+        {
+          "name": "Angela Grey",
+          "instrument": "voix"
+        },
+        {
+          "name": "Jorge Vistel",
+          "instrument": "trompette"
+        },
+        {
+          "name": "Julia Perminova",
+          "instrument": "piano"
+        },
+        {
+          "name": "Solène Cairoli",
+          "instrument": "contrebasse"
+        },
+        {
+          "name": "Malte Arndal",
+          "instrument": "batterie"
+        }
+      ],
+      "priceText": null
+    },
+    {
       "id": "balblomet:2026-09-11:paul-lay-baptiste-herbin-tea-for-two",
       "clubId": "balblomet",
       "title": "PAUL LAY & BAPTISTE HERBIN – TEA FOR TWO",
@@ -3097,8 +3268,17 @@
         "20:00"
       ],
       "url": "https://www.balblomet.fr/evenement/paul-lay-et-baptiste-herbin/edate/2026-09-11",
-      "details": null,
-      "personnel": null,
+      "details": "Tea for Two réunit deux figures exceptionnelles du jazz français, le pianiste Paul Lay et le saxophoniste Baptiste Herbin, autour d’un dialogue aussi complice qu’audacieux. En duo, ils revisitent de grands standards autour de l’héritage de Duke Ellington et Billy Strayhorn.",
+      "personnel": [
+        {
+          "name": "Paul Lay",
+          "instrument": "piano"
+        },
+        {
+          "name": "Baptiste Herbin",
+          "instrument": "saxophone"
+        }
+      ],
       "priceText": null
     },
     {
@@ -3162,9 +3342,47 @@
         "20:00"
       ],
       "url": "https://www.balblomet.fr/evenement/melissa-lesnie/edate/2026-09-12",
+      "details": "Scott Fitzgerald pose le point final à Gatsby Le Magnifique » non aux États-Unis mais sur la Côte d’Azur en 1924, parfumant son chef-d’œuvre d’élégance et de nostalgie alors que le ‘Jazz Age’ (expression qu’il consacre déjà dans un autre ouvrage deux ans plus tôt) venait de naître. Un siècle après s",
+      "personnel": [
+        {
+          "name": "Melissa Lesnie",
+          "instrument": "chant"
+        },
+        {
+          "name": "Mathieu Meyer",
+          "instrument": "piano"
+        },
+        {
+          "name": "Pablo Lopez",
+          "instrument": "guitare / banjo"
+        },
+        {
+          "name": "Garry Nayah",
+          "instrument": "contrebasse"
+        },
+        {
+          "name": "Hippolyte Fevre",
+          "instrument": "trompette"
+        },
+        {
+          "name": "TBD",
+          "instrument": "saxophone"
+        }
+      ],
+      "priceText": null
+    },
+    {
+      "id": "newmorning:2026-09-12:nik-west",
+      "clubId": "newmorning",
+      "title": "Nik West",
+      "date": "2026-09-12",
+      "sets": [
+        "20:30"
+      ],
+      "url": "https://www.newmorning.com/20260912-7739-45-ans-du-new-nik-west.html",
       "details": null,
       "personnel": null,
-      "priceText": null
+      "priceText": "28€"
     },
     {
       "id": "sunside:2026-09-12:etienne-gu-reau-trio",
@@ -3180,17 +3398,6 @@
       "priceText": "25,00&euro; à 30,00&euro;"
     },
     {
-      "id": "newmorning:2026-09-12:nik-west",
-      "clubId": "newmorning",
-      "title": "Nik West",
-      "date": "2026-09-12",
-      "sets": [],
-      "url": "https://www.newmorning.com/20260912-7739-45-ans-du-new-nik-west.html",
-      "details": null,
-      "personnel": null,
-      "priceText": null
-    },
-    {
       "id": "sunside:2026-09-13:hommage-ray-charles-avec-big-dez-jam-blues",
       "clubId": "sunside",
       "title": "HOMMAGE À RAY CHARLES avec Big Dez + Jam blues",
@@ -3201,6 +3408,41 @@
       "url": "https://www.sunset-sunside.com/concert/hommage-a-ray-charles-avec-big-dez-jam-blues-2/",
       "details": "C’est le retour de la Jam Blues au Sunside ! La Jam session est le rendez-vous indispensable pour un club de jazz digne de ce nom ! C’est la rencontre entre musiciens réputés et jeunes talents. Ce sont des moments uniques où se fabriquent les groupes et les artistes de demain. C’est l’interaction sa",
       "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "duc:2026-09-14:estelle-perrault-quintet",
+      "clubId": "duc",
+      "title": "Estelle Perrault Quintet",
+      "date": "2026-09-14",
+      "sets": [
+        "19:30",
+        "22:00"
+      ],
+      "url": "https://ducdeslombards.com/fr/l-agenda/estelle-perrault-quintet-promises",
+      "details": "VOCAL",
+      "personnel": [
+        {
+          "name": "Estelle Perrault",
+          "instrument": "voix"
+        },
+        {
+          "name": "Rob Clearfield",
+          "instrument": "piano"
+        },
+        {
+          "name": "Samuel F'hima",
+          "instrument": "contrebasse"
+        },
+        {
+          "name": "Théo Moutou",
+          "instrument": "batterie"
+        },
+        {
+          "name": "Melvin Marquez",
+          "instrument": "sax ténor"
+        }
+      ],
       "priceText": null
     },
     {
@@ -3256,7 +3498,7 @@
         "20:00"
       ],
       "url": "https://www.balblomet.fr/evenement/orchestre-du-bal-blomet-3-2/edate/2026-09-15",
-      "details": null,
+      "details": "Sam Ghezzi – chant et saxophone, Joë Santoni – chant et guitare, Julien Ecrepont, Jérôme Etcheberry, Pablo Castillo : trompettes, Pepjin Mouwen, Nicolas Montier, Prokhor Burlak : saxophones, Benoît de Flamesnil, Rudolph Stengel : trombones, Pascal Mucci : batterie, Mathieu Meyer : piano, Pablo Burch",
       "personnel": null,
       "priceText": null
     },
@@ -3339,8 +3581,33 @@
         "20:00"
       ],
       "url": "https://www.balblomet.fr/evenement/stephane-kerecki-liberation-songs-2/edate/2026-09-16",
-      "details": null,
-      "personnel": null,
+      "details": "Avec Liberation Songs , Stéphane Kerecki prolonge l’héritage du jazz engagé de Charlie Haden. En revisitant des chants de lutte comme We Shall Overcome ou The People United Will Never Be Defeated, il éclaire notre époque marquée par crises et inégalités. Plus qu’un hommage, l’album affirme le pouvoi",
+      "personnel": [
+        {
+          "name": "Enzo Carniel",
+          "instrument": "piano"
+        },
+        {
+          "name": "Federico Casagrande",
+          "instrument": "guitare"
+        },
+        {
+          "name": "Fabrice Moreau",
+          "instrument": "batterie"
+        },
+        {
+          "name": "Sté phane Kerecki",
+          "instrument": "contrebasse"
+        },
+        {
+          "name": "Airelle Besson",
+          "instrument": "trompette"
+        },
+        {
+          "name": "Émile Parisien",
+          "instrument": "saxophone soprano"
+        }
+      ],
       "priceText": null
     },
     {
@@ -3401,6 +3668,19 @@
       "priceText": null
     },
     {
+      "id": "sunside:2026-09-17:sof-a-levin-quintet-de-piazzolla-nos-jours",
+      "clubId": "sunside",
+      "title": "Sofía Levin Quintet «de Piazzolla à nos jours»",
+      "date": "2026-09-17",
+      "sets": [
+        "19:30"
+      ],
+      "url": "https://www.sunset-sunside.com/concert/sofia-levin-quintet-de-piazzolla-a-nos-jours/",
+      "details": "Française, argentine et vénézuélienne, Sofía Levín présente De Piazzolla à nos jours, un programme qui relie l’œuvre fondatrice d’Astor Piazzolla aux voix du tango d’aujourd’hui — dont ses propres compositions. Portée par une voix profonde et sincère, alliant maîtrise technique et sensibilité, elle",
+      "personnel": null,
+      "priceText": "15,00&euro; à 25,00&euro;"
+    },
+    {
       "id": "balblomet:2026-09-17:les-1001-nuits-du-jazz-pop-jazz",
       "clubId": "balblomet",
       "title": "LES 1001 NUITS DU JAZZ – POP & JAZZ",
@@ -3409,20 +3689,86 @@
         "20:00"
       ],
       "url": "https://www.balblomet.fr/evenement/1001-nuits-pop-and-jazz/edate/2026-09-17",
-      "details": null,
-      "personnel": null,
+      "details": "Les 1001 NUITS DU JAZZ retracent en musique, 2 fois par mois et à travers 1001 grandes soirée-concerts, les différentes étapes de l’épopée du jazz dans le cadre historique du Bal Blomet. Chacune d’entre elles est rythmée par des présentations d’artistes, de standards, d’épisodes ou de notions musico",
+      "personnel": [
+        {
+          "name": "Julia Richard",
+          "instrument": "basse et chant"
+        },
+        {
+          "name": "Johan Farjot",
+          "instrument": "piano"
+        },
+        {
+          "name": "Julie Saury",
+          "instrument": "batterie"
+        }
+      ],
       "priceText": null
+    },
+    {
+      "id": "sunset:2026-09-17:jfc-power-trio",
+      "clubId": "sunset",
+      "title": "JFC Power Trio",
+      "date": "2026-09-17",
+      "sets": [
+        "20:30"
+      ],
+      "url": "https://www.sunset-sunside.com/concert/jfc-power-trio/",
+      "details": "JFC POWER TRIO est un groupe londonien composé de 3 musiciens de la scène internationale :Julian Burdock (guitare/harmonica chant) du groupe 24PESOS, Francesco Mendolia (batterie) du groupe Incognito, Chicco Allotta (clavier chant) du groupe Incognito. Venez découvrir ce trio dont le son est une exp",
+      "personnel": null,
+      "priceText": "15,00&euro; à 25,00&euro;"
     },
     {
       "id": "newmorning:2026-09-17:fred-alie",
       "clubId": "newmorning",
       "title": "Fred Alie",
       "date": "2026-09-17",
-      "sets": [],
+      "sets": [
+        "20:30"
+      ],
       "url": "https://www.newmorning.com/20260917-7732-fred-alie.html",
       "details": null,
+      "personnel": [
+        {
+          "name": "Fred Alie",
+          "instrument": "guitare, voix"
+        },
+        {
+          "name": "Jean-Philippe Fanfant",
+          "instrument": "batterie"
+        },
+        {
+          "name": "Marco Araya",
+          "instrument": "guitare, voix"
+        },
+        {
+          "name": "Thierry Vaton",
+          "instrument": "claviers, voix"
+        },
+        {
+          "name": "Pierre-Michel \"Bago\" Balthazar",
+          "instrument": "percussions, voix"
+        },
+        {
+          "name": "Rody Cereyon",
+          "instrument": "basse"
+        }
+      ],
+      "priceText": "0€"
+    },
+    {
+      "id": "sunside:2026-09-17:bruno-dozzi",
+      "clubId": "sunside",
+      "title": "Bruno Dozzi",
+      "date": "2026-09-17",
+      "sets": [
+        "21:30"
+      ],
+      "url": "https://www.sunset-sunside.com/concert/bruno-dozzi/",
+      "details": "L’album de Bruno Dozzi rassemble des souvenirs, des liens et des hommages à des proches qui ont marqué son parcours. À travers des styles variés (samba, jazz, choro), chaque morceau devient un geste de gratitude et de mémoire. Plus qu’un disque,c’est une collection d’affections transformées en musiq",
       "personnel": null,
-      "priceText": null
+      "priceText": "15,00&euro; à 25,00&euro;"
     },
     {
       "id": "duc:2026-09-18:bria-skonberg",
@@ -3464,20 +3810,102 @@
         "20:00"
       ],
       "url": "https://www.balblomet.fr/evenement/tina-turner-memory/edate/2026-09-18",
-      "details": null,
-      "personnel": null,
+      "details": "Proud Mary , The Best, Goldeneye … les musiques de Tina Turner , icône du rock et de la soul, dans un spectacle intense et rempli d’émotions …",
+      "personnel": [
+        {
+          "name": "Kissia San",
+          "instrument": "chant"
+        },
+        {
+          "name": "Pierre Schmidt",
+          "instrument": "guitare"
+        },
+        {
+          "name": "Paul Sany",
+          "instrument": "clavier"
+        },
+        {
+          "name": "Toma Milteau",
+          "instrument": "batterie"
+        },
+        {
+          "name": "Max Darmon",
+          "instrument": "basse"
+        }
+      ],
       "priceText": null
+    },
+    {
+      "id": "sunset:2026-09-18:titi-robin",
+      "clubId": "sunset",
+      "title": "Titi Robin",
+      "date": "2026-09-18",
+      "sets": [
+        "20:30"
+      ],
+      "url": "https://www.sunset-sunside.com/concert/titi-robin/",
+      "details": "Titi Robin présente ici une nouvelle formation instrumentale, de culture radicalement modale et polyrythmique. « La réunion musicale que constitue ce quatuor vise pour moi une forme d’idéal abandon en confiance entre des solistes qui, de par leurs parcours et leur approches esthétiques du discours i",
+      "personnel": null,
+      "priceText": "25,00&euro; à 35,00&euro;"
     },
     {
       "id": "newmorning:2026-09-18:le-la-olivesi",
       "clubId": "newmorning",
       "title": "Leïla Olivesi",
       "date": "2026-09-18",
-      "sets": [],
+      "sets": [
+        "20:30"
+      ],
       "url": "https://www.newmorning.com/20260918-7753-leila-olivesi.html",
       "details": null,
+      "personnel": [
+        {
+          "name": "Leïla Olivesi",
+          "instrument": "piano"
+        },
+        {
+          "name": "Jean-Charles Richard",
+          "instrument": "saxophone baryton, saxophone soprano"
+        },
+        {
+          "name": "Donald Kontomanou",
+          "instrument": "batterie"
+        },
+        {
+          "name": "Yoni Zelnik",
+          "instrument": "contrebasse"
+        },
+        {
+          "name": "Adrien Sanchez",
+          "instrument": "saxophone ténor"
+        },
+        {
+          "name": "Quentin Ghomari",
+          "instrument": "trompette"
+        },
+        {
+          "name": "Baptiste Herbin",
+          "instrument": "saxophone alto"
+        },
+        {
+          "name": "Manu Codjia",
+          "instrument": "guitare"
+        }
+      ],
+      "priceText": "26€"
+    },
+    {
+      "id": "sunside:2026-09-18:michele-hendricks-sara-lazarus-tribute-to-jon-hendricks",
+      "clubId": "sunside",
+      "title": "Michele Hendricks & Sara Lazarus « tribute to Jon Hendricks »",
+      "date": "2026-09-18",
+      "sets": [
+        "21:30"
+      ],
+      "url": "https://www.sunset-sunside.com/concert/sara-lazarus-michele-hendricks-quintet-2/",
+      "details": "À l’affiche de cette soirée exceptionnelle, deux voix féminines incontournables, qui ne sont pas sans point commun : Sara Lazarus et Michele Hendricks. Toutes deux Américaines ayant fait de la France leur terre d’élection ; toutes deux ancrées dans la grande tradition du jazz. La première a remporté",
       "personnel": null,
-      "priceText": null
+      "priceText": "25,00&euro; à 35,00&euro;"
     },
     {
       "id": "balblomet:2026-09-19:the-roaring-cats-django-louis-armstrong-swing-legends",
@@ -3488,8 +3916,41 @@
         "20:00"
       ],
       "url": "https://www.balblomet.fr/evenement/the-roaring-cats-2-2/edate/2026-09-19",
-      "details": null,
-      "personnel": null,
+      "details": "Roaring Cats est un groupe de jazz swing/hot fondé à Amsterdam en 2018 par Sam Ghezzi et Davor Stehlik. Au cours de ces années, le groupe, qui a commencé comme un quartet, s’est développé en un petit orchestre comprenant la section de cuivres.",
+      "personnel": [
+        {
+          "name": "Sam Ghezzi",
+          "instrument": "chant, tenor saxophone,"
+        },
+        {
+          "name": "Duved Dunayevsky",
+          "instrument": "guitare"
+        },
+        {
+          "name": "Coos Zwagerman",
+          "instrument": "trompette"
+        },
+        {
+          "name": "Joan Codina",
+          "instrument": "trombone"
+        },
+        {
+          "name": "Oscar Ployart Wetche",
+          "instrument": "piano"
+        },
+        {
+          "name": "Davor Stehlik",
+          "instrument": "banjo"
+        },
+        {
+          "name": "Tomek van Leeuwen",
+          "instrument": "contrebasse"
+        },
+        {
+          "name": "Joe Crotch",
+          "instrument": "batterie"
+        }
+      ],
       "priceText": null
     },
     {
@@ -3497,11 +3958,34 @@
       "clubId": "newmorning",
       "title": "Mamas Gun",
       "date": "2026-09-19",
-      "sets": [],
+      "sets": [
+        "20:30"
+      ],
       "url": "https://www.newmorning.com/20260919-7706-mamas-gun.html",
       "details": null,
-      "personnel": null,
-      "priceText": null
+      "personnel": [
+        {
+          "name": "Andy Platts",
+          "instrument": "guitare, voix"
+        },
+        {
+          "name": "David Oliver",
+          "instrument": "claviers"
+        },
+        {
+          "name": "Chris Booth",
+          "instrument": "batterie"
+        },
+        {
+          "name": "Terry Lewis",
+          "instrument": "guitare"
+        },
+        {
+          "name": "Cameron Dawson",
+          "instrument": "basse"
+        }
+      ],
+      "priceText": "27€"
     },
     {
       "id": "duc:2026-09-21:naama-sings-songs-from-the-road",
@@ -3539,21 +4023,89 @@
       "clubId": "newmorning",
       "title": "Seule(s) en scène",
       "date": "2026-09-21",
-      "sets": [],
+      "sets": [
+        "20:30"
+      ],
       "url": "https://www.newmorning.com/20260921-7785-seule-s-en-scene.html",
       "details": null,
       "personnel": null,
-      "priceText": null
+      "priceText": "6.2€"
     },
     {
       "id": "newmorning:2026-09-22:jazz-icons-100-miles-davis-john-coltrane-oscar-brown-more",
       "clubId": "newmorning",
       "title": "Jazz Icons 100 : Miles Davis, John Coltrane, Oscar Brown & more",
       "date": "2026-09-22",
-      "sets": [],
+      "sets": [
+        "20:30"
+      ],
       "url": "https://www.newmorning.com/20260922-7779-jazz-icons-100-miles-davis-john-coltrane-oscar-brown-more.html",
       "details": null,
-      "personnel": null,
+      "personnel": [
+        {
+          "name": "Tai Allen",
+          "instrument": "voix"
+        },
+        {
+          "name": "Reg Wyns",
+          "instrument": "voix"
+        },
+        {
+          "name": "Emanuel Ruffler",
+          "instrument": "piano"
+        },
+        {
+          "name": "John Lander",
+          "instrument": "basse, claviers"
+        },
+        {
+          "name": "Dominique Ruben",
+          "instrument": "batterie"
+        },
+        {
+          "name": "Célia Faussart",
+          "instrument": "voix"
+        },
+        {
+          "name": "Mike Ladd",
+          "instrument": "voix"
+        }
+      ],
+      "priceText": "23€"
+    },
+    {
+      "id": "duc:2026-09-23:c-cile-brocas",
+      "clubId": "duc",
+      "title": "CÉCILE BROCAS",
+      "date": "2026-09-23",
+      "sets": [
+        "19:30",
+        "22:00"
+      ],
+      "url": "https://ducdeslombards.com/fr/l-agenda/cecile-brocas-was-dream-0",
+      "details": "VOCAL",
+      "personnel": [
+        {
+          "name": "Cécile Brocas",
+          "instrument": "voix"
+        },
+        {
+          "name": "Fred Nardin",
+          "instrument": "piano"
+        },
+        {
+          "name": "Baptiste Herbin",
+          "instrument": "saxophone"
+        },
+        {
+          "name": "Fabien Marcoz",
+          "instrument": "contrebasse"
+        },
+        {
+          "name": "Romain Sarron",
+          "instrument": "batterie"
+        }
+      ],
       "priceText": null
     },
     {
@@ -3565,8 +4117,21 @@
         "20:00"
       ],
       "url": "https://www.balblomet.fr/evenement/mama-shakers-2/edate/2026-09-23",
-      "details": null,
-      "personnel": null,
+      "details": "Accrochez vos perruques : MAMA SHAKERS c’est une bourrasque de swing qui vient décoiffer un public jamais assez prévenu!",
+      "personnel": [
+        {
+          "name": "Rémi Oswald",
+          "instrument": "banjo, chant"
+        },
+        {
+          "name": "Baptiste Hec",
+          "instrument": "guitare, chant"
+        },
+        {
+          "name": "Gabriel Seyer",
+          "instrument": "contrebasse, chant"
+        }
+      ],
       "priceText": null
     },
     {
@@ -3574,11 +4139,34 @@
       "clubId": "newmorning",
       "title": "Persian Jazz Night",
       "date": "2026-09-23",
-      "sets": [],
+      "sets": [
+        "20:30"
+      ],
       "url": "https://www.newmorning.com/20260923-7777-saazbuzz-jazz-festival-persian-jazz-night.html",
       "details": null,
-      "personnel": null,
-      "priceText": null
+      "personnel": [
+        {
+          "name": "Amir Darabi",
+          "instrument": "piano"
+        },
+        {
+          "name": "Mahya Hamedi",
+          "instrument": "voix"
+        },
+        {
+          "name": "Shayan Fathi",
+          "instrument": "batterie"
+        },
+        {
+          "name": "Majid Salari",
+          "instrument": "voix"
+        },
+        {
+          "name": "Chris Jennings",
+          "instrument": "contrebasse"
+        }
+      ],
+      "priceText": "0€"
     },
     {
       "id": "duc:2026-09-24:ruthie-foster",
@@ -3603,7 +4191,7 @@
         "20:00"
       ],
       "url": "https://www.balblomet.fr/evenement/amelchenko-jazz-mag/edate/2026-09-24",
-      "details": null,
+      "details": "Copyright 2026 Le Bal Blomet | Tous droits réservés | Mentions légales | Galerie photo",
       "personnel": null,
       "priceText": null
     },
@@ -3612,11 +4200,13 @@
       "clubId": "newmorning",
       "title": "Kamilya Jubran & Werner Hasler - Lynn Adib",
       "date": "2026-09-24",
-      "sets": [],
+      "sets": [
+        "20:30"
+      ],
       "url": "https://www.newmorning.com/20260924-7778-saazbuzz-jazz-festival-kamilya-jubran-werner-hasler-lynn-adib.html",
       "details": null,
       "personnel": null,
-      "priceText": null
+      "priceText": "0€"
     },
     {
       "id": "duc:2026-09-25:obradovic-tixier-duo",
@@ -3646,11 +4236,13 @@
       "clubId": "newmorning",
       "title": "Black Milk",
       "date": "2026-09-25",
-      "sets": [],
+      "sets": [
+        "20:30"
+      ],
       "url": "https://www.newmorning.com/20260925-7738-black-milk.html",
       "details": null,
       "personnel": null,
-      "priceText": null
+      "priceText": "26€"
     },
     {
       "id": "duc:2026-09-26:frode-kjekstad-eric-alexander-quartet",
@@ -3789,8 +4381,25 @@
         "20:00"
       ],
       "url": "https://www.balblomet.fr/evenement/paris-soul-connection-sept-2026/edate/2026-09-30",
-      "details": null,
-      "personnel": null,
+      "details": "The Paris Soul Connexion est né de la rencontre entre la jeune garde du Rhythm’n’Blues et trois piliers du groupe culte Captain Mercier. Objectif : faire vivre le répertoire inoubliable des voix mythiques de Otis Redding, Aretha Franklin, Wilson Pickett, Sam & Dave … Sur scène, la performance est",
+      "personnel": [
+        {
+          "name": "Emilie Hedou",
+          "instrument": "chant"
+        },
+        {
+          "name": "Lemmy Feuvray",
+          "instrument": "guitare"
+        },
+        {
+          "name": "Claude Egea",
+          "instrument": "trompette"
+        },
+        {
+          "name": "André Charlier",
+          "instrument": "batterie"
+        }
+      ],
       "priceText": null
     },
     {
@@ -3798,11 +4407,34 @@
       "clubId": "newmorning",
       "title": "Henri Texier Trio",
       "date": "2026-09-30",
-      "sets": [],
+      "sets": [
+        "20:30"
+      ],
       "url": "https://www.newmorning.com/20260930-7747-henri-texier-trio.html",
       "details": null,
-      "personnel": null,
-      "priceText": null
+      "personnel": [
+        {
+          "name": "Henri Texier",
+          "instrument": "contrebasse"
+        },
+        {
+          "name": "Gautier Garrigue",
+          "instrument": "batterie"
+        },
+        {
+          "name": "Sebastien Texier",
+          "instrument": "clarinette, clarinette alto, saxophone alto"
+        },
+        {
+          "name": "Bojan Zulfikarpasic",
+          "instrument": "claviers"
+        },
+        {
+          "name": "Sylvain Rifflet",
+          "instrument": "clarinette, saxophone"
+        }
+      ],
+      "priceText": "0€"
     },
     {
       "id": "duc:2026-10-01:baptiste-herbin-fred-nardin-4tet",
@@ -3844,8 +4476,17 @@
         "20:00"
       ],
       "url": "https://www.balblomet.fr/evenement/1001-nuits-esoteric-magic-jazz/edate/2026-10-01",
-      "details": null,
-      "personnel": null,
+      "details": "Les 1001 NUITS DU JAZZ retracent en musique, 2 fois par mois et à travers 1001 grandes soirée-concerts, les différentes étapes de l’épopée du jazz dans le cadre historique du Bal Blomet. Chacune d’entre elles est rythmée par des présentations d’artistes, de standards, d’épisodes ou de notions musico",
+      "personnel": [
+        {
+          "name": "Johan Farjot",
+          "instrument": "piano"
+        },
+        {
+          "name": "Raphaël Imbert",
+          "instrument": "saxophones"
+        }
+      ],
       "priceText": null
     },
     {
@@ -3853,11 +4494,30 @@
       "clubId": "newmorning",
       "title": "Mario Canonge",
       "date": "2026-10-01",
-      "sets": [],
+      "sets": [
+        "20:30"
+      ],
       "url": "https://www.newmorning.com/20261001-7764-mario-canonge.html",
       "details": null,
-      "personnel": null,
-      "priceText": null
+      "personnel": [
+        {
+          "name": "Mario Canonge",
+          "instrument": "piano"
+        },
+        {
+          "name": "Michel Alibo",
+          "instrument": "basse"
+        },
+        {
+          "name": "Arnaud Dolmen",
+          "instrument": "batterie"
+        },
+        {
+          "name": "Godwin Louis",
+          "instrument": "saxophone alto"
+        }
+      ],
+      "priceText": "0€"
     },
     {
       "id": "balblomet:2026-10-02:baptiste-trotignon-trio-art-is-simple",
@@ -3868,8 +4528,21 @@
         "20:00"
       ],
       "url": "https://www.balblomet.fr/evenement/baptiste-trotignon-oct-2026/edate/2026-10-02",
-      "details": null,
-      "personnel": null,
+      "details": "Après avoir brillamment exploré les contrées de la pop-song anglaise avec « Brexit Music », raflé doublement des Victoires du Jazz avec le festif groupe PianoForte, ou encore partagé l’aventure avec le très poétique Arthur Teboul, Baptiste Trotignon fait son grand retour discographique avec s",
+      "personnel": [
+        {
+          "name": "Baptiste Trotignon",
+          "instrument": "piano"
+        },
+        {
+          "name": "TBD",
+          "instrument": "contrebasse"
+        },
+        {
+          "name": "TBD",
+          "instrument": "batterie"
+        }
+      ],
       "priceText": null
     },
     {
@@ -3877,11 +4550,13 @@
       "clubId": "newmorning",
       "title": "Thee Sinseers",
       "date": "2026-10-02",
-      "sets": [],
+      "sets": [
+        "20:30"
+      ],
       "url": "https://www.newmorning.com/20261002-7735-thee-sinseers.html",
       "details": null,
       "personnel": null,
-      "priceText": null
+      "priceText": "26€"
     },
     {
       "id": "balblomet:2026-10-03:baptiste-trotignon-trio-art-is-simple",
@@ -3892,9 +4567,60 @@
         "20:00"
       ],
       "url": "https://www.balblomet.fr/evenement/baptiste-trotignon-oct-2026-2/edate/2026-10-03",
-      "details": null,
-      "personnel": null,
+      "details": "Après avoir brillamment exploré les contrées de la pop-song anglaise avec « Brexit Music », raflé doublement des Victoires du Jazz avec le festif groupe PianoForte, ou encore partagé l’aventure avec le très poétique Arthur Teboul, Baptiste Trotignon fait son grand retour discographique avec s",
+      "personnel": [
+        {
+          "name": "Baptiste Trotignon",
+          "instrument": "piano"
+        },
+        {
+          "name": "TBD",
+          "instrument": "contrebasse"
+        },
+        {
+          "name": "TBD",
+          "instrument": "batterie"
+        }
+      ],
       "priceText": null
+    },
+    {
+      "id": "newmorning:2026-10-05:justin-hicks-feat-marvin-sewell-kyle-miles-morley-feat-chris",
+      "clubId": "newmorning",
+      "title": "Justin Hicks feat. Marvin Sewell & Kyle Miles + Morley feat. Chris Bruce & Yuval Lion",
+      "date": "2026-10-05",
+      "sets": [
+        "20:00"
+      ],
+      "url": "https://www.newmorning.com/20261005-7743-morley-feat-chris-bruce-yuval-lion-justin-hicks-feat-marvin-sewell-kyle-miles.html",
+      "details": null,
+      "personnel": [
+        {
+          "name": "Justin Hicks",
+          "instrument": "claviers, voix"
+        },
+        {
+          "name": "Marvin Sewell",
+          "instrument": "guitare"
+        },
+        {
+          "name": "Kyle Miles",
+          "instrument": "basse"
+        },
+        {
+          "name": "Morley",
+          "instrument": "voix"
+        },
+        {
+          "name": "Chris Bruce",
+          "instrument": "guitare"
+        },
+        {
+          "name": "Yuval Lion",
+          "instrument": "batterie"
+        }
+      ],
+      "priceText": "0€"
     },
     {
       "id": "balblomet:2026-10-05:natalie-dessay-chante-nougaro",
@@ -3905,19 +4631,25 @@
         "20:00"
       ],
       "url": "https://www.balblomet.fr/evenement/natalie-dessay-chante-nougaro-oct-26-lundi/edate/2026-10-05",
-      "details": null,
-      "personnel": null,
-      "priceText": null
-    },
-    {
-      "id": "newmorning:2026-10-05:justin-hicks-feat-marvin-sewell-kyle-miles-morley-feat-chris",
-      "clubId": "newmorning",
-      "title": "Justin Hicks feat. Marvin Sewell & Kyle Miles + Morley feat. Chris Bruce & Yuval Lion",
-      "date": "2026-10-05",
-      "sets": [],
-      "url": "https://www.newmorning.com/20261005-7743-morley-feat-chris-bruce-yuval-lion-justin-hicks-feat-marvin-sewell-kyle-miles.html",
-      "details": null,
-      "personnel": null,
+      "details": "Claude Nougaro avait choisi la chanson populaire et la poésie comme terrain de jeux. Mais il a conservé une capacité à incarner les mots en musique et un sens de l’emphase hors norme ! C’est probablement pour cette raison qu’entendre aujourd’hui la divine Natalie Dessay, reprendre les chansons du di",
+      "personnel": [
+        {
+          "name": "Natalie Dessay",
+          "instrument": "chant"
+        },
+        {
+          "name": "Nicolas Montazaud",
+          "instrument": "batterie"
+        },
+        {
+          "name": "Sylvain Gontard",
+          "instrument": "trompette"
+        },
+        {
+          "name": "Benoit Dunoyer de Segonzac",
+          "instrument": "contrebasse"
+        }
+      ],
       "priceText": null
     },
     {
@@ -3943,8 +4675,25 @@
         "20:00"
       ],
       "url": "https://www.balblomet.fr/evenement/natalie-dessay-chante-nougaro-oct-26/edate/2026-10-06",
-      "details": null,
-      "personnel": null,
+      "details": "Claude Nougaro avait choisi la chanson populaire et la poésie comme terrain de jeux. Mais il a conservé une capacité à incarner les mots en musique et un sens de l’emphase hors norme ! C’est probablement pour cette raison qu’entendre aujourd’hui la divine Natalie Dessay, reprendre les chansons du di",
+      "personnel": [
+        {
+          "name": "Natalie Dessay",
+          "instrument": "chant"
+        },
+        {
+          "name": "Nicolas Montazaud",
+          "instrument": "batterie"
+        },
+        {
+          "name": "Sylvain Gontard",
+          "instrument": "trompette"
+        },
+        {
+          "name": "Benoit Dunoyer de Segonzac",
+          "instrument": "contrebasse"
+        }
+      ],
       "priceText": null
     },
     {
@@ -3955,8 +4704,21 @@
       "sets": [],
       "url": "https://www.newmorning.com/20261006-7749-45-ans-du-new-monty-alexander.html",
       "details": null,
-      "personnel": null,
-      "priceText": null
+      "personnel": [
+        {
+          "name": "Monty Alexander",
+          "instrument": "piano"
+        },
+        {
+          "name": "Lorin Cohen",
+          "instrument": "contrebasse"
+        },
+        {
+          "name": "Jason Brown",
+          "instrument": "batterie"
+        }
+      ],
+      "priceText": "34€"
     },
     {
       "id": "duc:2026-10-07:kassa-overall",
@@ -3981,8 +4743,25 @@
         "20:00"
       ],
       "url": "https://www.balblomet.fr/evenement/natalie-dessay-chante-nougaro-oct-26-2/edate/2026-10-07",
-      "details": null,
-      "personnel": null,
+      "details": "Claude Nougaro avait choisi la chanson populaire et la poésie comme terrain de jeux. Mais il a conservé une capacité à incarner les mots en musique et un sens de l’emphase hors norme ! C’est probablement pour cette raison qu’entendre aujourd’hui la divine Natalie Dessay, reprendre les chansons du di",
+      "personnel": [
+        {
+          "name": "Natalie Dessay",
+          "instrument": "chant"
+        },
+        {
+          "name": "Nicolas Montazaud",
+          "instrument": "batterie"
+        },
+        {
+          "name": "Sylvain Gontard",
+          "instrument": "trompette"
+        },
+        {
+          "name": "Benoit Dunoyer de Segonzac",
+          "instrument": "contrebasse"
+        }
+      ],
       "priceText": null
     },
     {
@@ -3990,11 +4769,34 @@
       "clubId": "newmorning",
       "title": "Michel Alibo",
       "date": "2026-10-07",
-      "sets": [],
+      "sets": [
+        "20:30"
+      ],
       "url": "https://www.newmorning.com/20261007-7761-michel-alibo.html",
       "details": null,
-      "personnel": null,
-      "priceText": null
+      "personnel": [
+        {
+          "name": "Michel Alibo",
+          "instrument": "basse, contrebasse"
+        },
+        {
+          "name": "Laurent-Emmanuel \"Tilo\" Bertholo",
+          "instrument": "batterie"
+        },
+        {
+          "name": "Xavier Belin",
+          "instrument": "piano"
+        },
+        {
+          "name": "Ralph Lavital",
+          "instrument": "guitare"
+        },
+        {
+          "name": "Mélodie Spartacus",
+          "instrument": "flute"
+        }
+      ],
+      "priceText": "0€"
     },
     {
       "id": "balblomet:2026-10-08:natalie-dessay-chante-nougaro",
@@ -4005,8 +4807,25 @@
         "20:00"
       ],
       "url": "https://www.balblomet.fr/evenement/natalie-dessay-chante-nougaro-oct-26-2-2/edate/2026-10-08",
-      "details": null,
-      "personnel": null,
+      "details": "Claude Nougaro avait choisi la chanson populaire et la poésie comme terrain de jeux. Mais il a conservé une capacité à incarner les mots en musique et un sens de l’emphase hors norme ! C’est probablement pour cette raison qu’entendre aujourd’hui la divine Natalie Dessay, reprendre les chansons du di",
+      "personnel": [
+        {
+          "name": "Natalie Dessay",
+          "instrument": "chant"
+        },
+        {
+          "name": "Nicolas Montazaud",
+          "instrument": "batterie"
+        },
+        {
+          "name": "Sylvain Gontard",
+          "instrument": "trompette"
+        },
+        {
+          "name": "Benoit Dunoyer de Segonzac",
+          "instrument": "contrebasse"
+        }
+      ],
       "priceText": null
     },
     {
@@ -4017,8 +4836,17 @@
       "sets": [],
       "url": "https://www.newmorning.com/20261008-7730-guinga-yamandu-costa.html",
       "details": null,
-      "personnel": null,
-      "priceText": null
+      "personnel": [
+        {
+          "name": "Yamandu Costa",
+          "instrument": "guitare"
+        },
+        {
+          "name": "Guinga",
+          "instrument": "guitare"
+        }
+      ],
+      "priceText": "31€"
     },
     {
       "id": "balblomet:2026-10-09:natalie-dessay-chante-nougaro",
@@ -4029,8 +4857,25 @@
         "20:00"
       ],
       "url": "https://www.balblomet.fr/evenement/natalie-dessay-chante-nougaro-oct-26-2-2-2/edate/2026-10-09",
-      "details": null,
-      "personnel": null,
+      "details": "Claude Nougaro avait choisi la chanson populaire et la poésie comme terrain de jeux. Mais il a conservé une capacité à incarner les mots en musique et un sens de l’emphase hors norme ! C’est probablement pour cette raison qu’entendre aujourd’hui la divine Natalie Dessay, reprendre les chansons du di",
+      "personnel": [
+        {
+          "name": "Natalie Dessay",
+          "instrument": "chant"
+        },
+        {
+          "name": "Nicolas Montazaud",
+          "instrument": "batterie"
+        },
+        {
+          "name": "Sylvain Gontard",
+          "instrument": "trompette"
+        },
+        {
+          "name": "Benoit Dunoyer de Segonzac",
+          "instrument": "contrebasse"
+        }
+      ],
       "priceText": null
     },
     {
@@ -4038,11 +4883,66 @@
       "clubId": "newmorning",
       "title": "Tribute To Pupy Y Los Que Son Son",
       "date": "2026-10-09",
-      "sets": [],
+      "sets": [
+        "20:30"
+      ],
       "url": "https://www.newmorning.com/20261009-7731-tribute-to-pupy-y-los-que-son-son.html",
       "details": null,
-      "personnel": null,
-      "priceText": null
+      "personnel": [
+        {
+          "name": "Peter Barriz",
+          "instrument": "voix"
+        },
+        {
+          "name": "César Cardona",
+          "instrument": "voix"
+        },
+        {
+          "name": "Aude Publes Garcia",
+          "instrument": "voix"
+        },
+        {
+          "name": "Félix Boucaud",
+          "instrument": "basse, contrebasse"
+        },
+        {
+          "name": "Christophe Renard",
+          "instrument": "piano"
+        },
+        {
+          "name": "Alan Chimpen Olarte",
+          "instrument": "timbales"
+        },
+        {
+          "name": "Conrado Ferrin",
+          "instrument": "congas"
+        },
+        {
+          "name": "Ivan Dorroman",
+          "instrument": "timbales"
+        },
+        {
+          "name": "Jean-Baptiste Baldazza",
+          "instrument": "batterie"
+        },
+        {
+          "name": "Alex Welmane",
+          "instrument": "trompette"
+        },
+        {
+          "name": "Adonis Llerena",
+          "instrument": "trompette"
+        },
+        {
+          "name": "Klennder Rosales",
+          "instrument": "trombone"
+        },
+        {
+          "name": "Pierre Leblanc",
+          "instrument": "trombone"
+        }
+      ],
+      "priceText": "18€"
     },
     {
       "id": "balblomet:2026-10-10:natalie-dessay-chante-nougaro",
@@ -4053,8 +4953,25 @@
         "20:00"
       ],
       "url": "https://www.balblomet.fr/evenement/natalie-dessay-chante-nougaro-oct-26-samedi/edate/2026-10-10",
-      "details": null,
-      "personnel": null,
+      "details": "Claude Nougaro avait choisi la chanson populaire et la poésie comme terrain de jeux. Mais il a conservé une capacité à incarner les mots en musique et un sens de l’emphase hors norme ! C’est probablement pour cette raison qu’entendre aujourd’hui la divine Natalie Dessay, reprendre les chansons du di",
+      "personnel": [
+        {
+          "name": "Natalie Dessay",
+          "instrument": "chant"
+        },
+        {
+          "name": "Nicolas Montazaud",
+          "instrument": "batterie"
+        },
+        {
+          "name": "Sylvain Gontard",
+          "instrument": "trompette"
+        },
+        {
+          "name": "Benoit Dunoyer de Segonzac",
+          "instrument": "contrebasse"
+        }
+      ],
       "priceText": null
     },
     {
@@ -4062,11 +4979,66 @@
       "clubId": "newmorning",
       "title": "FELA DAY, Hommage à Fela Kuti",
       "date": "2026-10-10",
-      "sets": [],
+      "sets": [
+        "20:30"
+      ],
       "url": "https://www.newmorning.com/20261010-7773-fela-day-hommage-a-fela-kuti.html",
       "details": null,
-      "personnel": null,
-      "priceText": null
+      "personnel": [
+        {
+          "name": "Kiala Nzavotunga",
+          "instrument": "guitare, voix"
+        },
+        {
+          "name": "Nazaire Bello",
+          "instrument": "voix"
+        },
+        {
+          "name": "Mario Orsinet",
+          "instrument": "batterie"
+        },
+        {
+          "name": "Kyekyeku",
+          "instrument": "guitare, voix"
+        },
+        {
+          "name": "Franck Biyong",
+          "instrument": "guitare, voix"
+        },
+        {
+          "name": "Frankie Ntoh Song",
+          "instrument": "claviers"
+        },
+        {
+          "name": "Pierre Marie Humeau",
+          "instrument": "trompette"
+        },
+        {
+          "name": "Yannick Cognet",
+          "instrument": "saxophone"
+        },
+        {
+          "name": "Julien Duchet",
+          "instrument": "saxophone"
+        },
+        {
+          "name": "Patrick Gorce",
+          "instrument": "congas"
+        },
+        {
+          "name": "Myriam Betty",
+          "instrument": "voix"
+        },
+        {
+          "name": "Dj Ness Afro",
+          "instrument": "d.j."
+        },
+        {
+          "name": "Nebil Mannai",
+          "instrument": "voix"
+        }
+      ],
+      "priceText": "25€"
     },
     {
       "id": "newmorning:2026-10-12:lowdown-brass-band",
@@ -4099,8 +5071,21 @@
         "20:00"
       ],
       "url": "https://www.balblomet.fr/evenement/bluesmississippi/edate/2026-10-14",
-      "details": null,
-      "personnel": null,
+      "details": "Les 1001 NUITS DU JAZZ retracent en musique, 2 fois par mois et à travers 1001 grandes soirée-concerts, les différentes étapes de l’épopée du jazz dans le cadre historique du Bal Blomet. Chacune d’entre elles est rythmée par des présentations d’artistes, de standards, d’épisodes ou de notions musico",
+      "personnel": [
+        {
+          "name": "Hugh Coltman",
+          "instrument": "chant"
+        },
+        {
+          "name": "Hugo Lippi",
+          "instrument": "guitare"
+        },
+        {
+          "name": "Johan Farjot",
+          "instrument": "piano"
+        }
+      ],
       "priceText": null
     },
     {
@@ -4112,7 +5097,7 @@
         "20:00"
       ],
       "url": "https://www.balblomet.fr/evenement/stefan-filey-jazz-mag/edate/2026-10-15",
-      "details": null,
+      "details": "TRIBUTE TO WAYNE SHORTER BY STEFAN FILEY – LES CONCERTS JAZZ MAGAZINE - Le Bal Blomet",
       "personnel": null,
       "priceText": null
     },
@@ -4175,8 +5160,33 @@
         "20:00"
       ],
       "url": "https://www.balblomet.fr/evenement/pianoman-2/edate/2026-10-17",
-      "details": null,
-      "personnel": null,
+      "details": "Après le succès du premier Piano Man au Bal Blomet, Dominique Fillon revient avec un nouveau voyage musical, cette fois au cœur de la pop française.",
+      "personnel": [
+        {
+          "name": "Dominique Fillon",
+          "instrument": "piano"
+        },
+        {
+          "name": "Sylvain Gontard",
+          "instrument": "trompette"
+        },
+        {
+          "name": "Ninon Hot",
+          "instrument": "voix"
+        },
+        {
+          "name": "Elliot",
+          "instrument": "voix"
+        },
+        {
+          "name": "Damian Nueva",
+          "instrument": "contrebasse"
+        },
+        {
+          "name": "Jeff Ludovicus",
+          "instrument": "batterie"
+        }
+      ],
       "priceText": null
     },
     {
@@ -4210,7 +5220,7 @@
         "20:00"
       ],
       "url": "https://www.balblomet.fr/evenement/obb/edate/2026-10-20",
-      "details": null,
+      "details": "Sam Ghezzi – chant et saxophone, Joë Santoni – chant et guitare, Julien Ecrepont, Jérôme Etcheberry, Pablo Castillo : trompettes, Pepjin Mouwen, Nicolas Montier, Prokhor Burlak : saxophones, Benoît de Flamesnil, Rudolph Stengel : trombones, Pascal Mucci : batterie, Mathieu Meyer : piano, Pablo Burch",
       "personnel": null,
       "priceText": null
     },
@@ -4245,7 +5255,7 @@
         "20:00"
       ],
       "url": "https://www.balblomet.fr/evenement/powell-jazz-mag/edate/2026-10-22",
-      "details": null,
+      "details": "Copyright 2026 Le Bal Blomet | Tous droits réservés | Mentions légales | Galerie photo",
       "personnel": null,
       "priceText": null
     },

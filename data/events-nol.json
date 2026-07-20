@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-18T21:35:08.489Z",
+  "generatedAt": "2026-07-20T22:52:15.896Z",
   "city": "nol",
   "clubs": [
     {
@@ -12,7 +12,7 @@
       "borough": null,
       "timezone": "America/Chicago",
       "neighborhood": "Frenchmen St",
-      "color": "#e05a4e"
+      "color": "#c357b5"
     },
     {
       "id": "preservationhall",
@@ -72,7 +72,7 @@
       "borough": null,
       "timezone": "America/Chicago",
       "neighborhood": "Uptown",
-      "color": "#b06ad9"
+      "color": "#e0524e"
     },
     {
       "id": "fritzels",
@@ -84,66 +84,11 @@
       "borough": null,
       "timezone": "America/Chicago",
       "neighborhood": "French Quarter",
-      "color": "#d9b45a"
+      "color": "#8a5a3a"
     }
   ],
   "errors": [],
   "events": [
-    {
-      "id": "snugharbor:2026-07-17:chris-thomas-king-trio",
-      "clubId": "snugharbor",
-      "title": "Chris Thomas King Trio",
-      "date": "2026-07-17",
-      "sets": [
-        "19:30",
-        "21:30"
-      ],
-      "url": "https://snugjazz.com/tm-event/chris-thomas-king-trio/",
-      "details": null,
-      "personnel": null,
-      "priceText": null
-    },
-    {
-      "id": "snugharbor:2026-07-18:grayson-brockamp-s-wildlife-duo",
-      "clubId": "snugharbor",
-      "title": "Grayson Brockamp's Wildlife Duo",
-      "date": "2026-07-18",
-      "sets": [
-        "16:30"
-      ],
-      "url": "https://snugjazz.com/tm-event/grayson-brockamps-wildlife-trio/",
-      "details": null,
-      "personnel": null,
-      "priceText": null
-    },
-    {
-      "id": "preservationhall:2026-07-18:nightly-sets-at-preservation-hall",
-      "clubId": "preservationhall",
-      "title": "Nightly Sets at Preservation Hall",
-      "date": "2026-07-18",
-      "sets": [
-        "17:00",
-        "18:30",
-        "20:00"
-      ],
-      "url": "https://www.preservationhall.com/calendar/",
-      "details": "Three 45-minute sets by the Hall’s rotating collective. 726 St. Peter, cash bar none, magic since 1961.",
-      "personnel": null,
-      "priceText": null
-    },
-    {
-      "id": "dbanola:2026-07-18:dana-abbott",
-      "clubId": "dbanola",
-      "title": "Dana Abbott",
-      "date": "2026-07-18",
-      "sets": [
-        "18:00"
-      ],
-      "url": "https://www.dbaneworleans.com/shows",
-      "details": null,
-      "personnel": null,
-      "priceText": null
-    },
     {
       "id": "bluenile:2026-07-18:the-caesar-brothers-funkbox",
       "clubId": "bluenile",
@@ -153,33 +98,6 @@
         "18:30"
       ],
       "url": "https://www.bluenilelive.com/calendar-tickets-/289k47nb6ss9dp4-9a64g-chr5m-wpxw8-flk9y-pzapz-996kl-z63dl-s6f8f-hh4xm-adz4s-sjsey-g389b-572tr-4rcfc-6trbw-3ss3t-l627x-6wcxf-3nz8k-s999y-49pys-r8jyl-9m362-4xek7-8wsrn-w8pct-d9x82-fb5rl",
-      "details": null,
-      "personnel": null,
-      "priceText": null
-    },
-    {
-      "id": "snugharbor:2026-07-18:jason-marsalis-plays-brian-wilson-the-beach-boys",
-      "clubId": "snugharbor",
-      "title": "Jason Marsalis plays Brian Wilson & the Beach Boys",
-      "date": "2026-07-18",
-      "sets": [
-        "19:30",
-        "21:30"
-      ],
-      "url": "https://snugjazz.com/tm-event/jason-marsalis-tribute-to-brian-wilson-the-beach-boys/",
-      "details": null,
-      "personnel": null,
-      "priceText": null
-    },
-    {
-      "id": "mapleleaf:2026-07-18:soul-brass-band",
-      "clubId": "mapleleaf",
-      "title": "Soul Brass Band",
-      "date": "2026-07-18",
-      "sets": [
-        "20:00"
-      ],
-      "url": "https://www.mapleleafbar.com/event-details/soul-brass-band",
       "details": null,
       "personnel": null,
       "priceText": null
@@ -198,56 +116,6 @@
       "priceText": null
     },
     {
-      "id": "dbanola:2026-07-18:colin-davis-night-people",
-      "clubId": "dbanola",
-      "title": "Colin Davis & Night People",
-      "date": "2026-07-18",
-      "sets": [
-        "22:00"
-      ],
-      "url": "https://www.dbaneworleans.com/shows",
-      "details": null,
-      "personnel": null,
-      "priceText": null
-    },
-    {
-      "id": "fritzels:2026-07-18:traditional-jazz-at-fritzel-s",
-      "clubId": "fritzels",
-      "title": "Traditional Jazz at Fritzel’s",
-      "date": "2026-07-18",
-      "sets": [],
-      "url": "https://fritzelsjazz.com/",
-      "details": "House trad players nightly from early afternoon till late, since 1969. 21+.",
-      "personnel": null,
-      "priceText": null
-    },
-    {
-      "id": "dbanola:2026-07-19:the-jump-hounds",
-      "clubId": "dbanola",
-      "title": "The Jump Hounds",
-      "date": "2026-07-19",
-      "sets": [
-        "09:30"
-      ],
-      "url": "https://www.dbaneworleans.com/shows",
-      "details": null,
-      "personnel": null,
-      "priceText": null
-    },
-    {
-      "id": "spottedcat:2026-07-19:jacky-blaire-the-hot-biscuits",
-      "clubId": "spottedcat",
-      "title": "Jacky Blaire & The Hot Biscuits",
-      "date": "2026-07-19",
-      "sets": [
-        "14:00"
-      ],
-      "url": "https://www.spottedcatmusicclub.com/calendar",
-      "details": null,
-      "personnel": null,
-      "priceText": null
-    },
-    {
       "id": "snugharbor:2026-07-19:tom-hook-wendell-brunious",
       "clubId": "snugharbor",
       "title": "Tom Hook & Wendell Brunious",
@@ -261,42 +129,15 @@
       "priceText": null
     },
     {
-      "id": "preservationhall:2026-07-19:nightly-sets-at-preservation-hall",
-      "clubId": "preservationhall",
-      "title": "Nightly Sets at Preservation Hall",
+      "id": "snugharbor:2026-07-19:stanton-moore-trio",
+      "clubId": "snugharbor",
+      "title": "Stanton Moore Trio",
       "date": "2026-07-19",
       "sets": [
-        "17:00",
-        "18:30",
-        "20:00"
+        "19:30",
+        "21:30"
       ],
-      "url": "https://www.preservationhall.com/calendar/",
-      "details": "Three 45-minute sets by the Hall’s rotating collective. 726 St. Peter, cash bar none, magic since 1961.",
-      "personnel": null,
-      "priceText": null
-    },
-    {
-      "id": "dbanola:2026-07-19:paradise-jazz-band",
-      "clubId": "dbanola",
-      "title": "Paradise Jazz Band",
-      "date": "2026-07-19",
-      "sets": [
-        "18:00"
-      ],
-      "url": "https://www.dbaneworleans.com/shows",
-      "details": null,
-      "personnel": null,
-      "priceText": null
-    },
-    {
-      "id": "mapleleaf:2026-07-19:kjd-keiko-june-donald",
-      "clubId": "mapleleaf",
-      "title": "KJD - Keiko, June, & Donald",
-      "date": "2026-07-19",
-      "sets": [
-        "20:00"
-      ],
-      "url": "https://www.mapleleafbar.com/event-details/kjd-keiko-june-donald",
+      "url": "https://snugjazz.com/tm-event/stanton-moore-trio/",
       "details": null,
       "personnel": null,
       "priceText": null
@@ -311,30 +152,6 @@
       ],
       "url": "https://www.bluenilelive.com/calendar-tickets-/crz3mtnyjlmsdmx-5k75k-9sskg-xd836-nfzjp",
       "details": null,
-      "personnel": null,
-      "priceText": null
-    },
-    {
-      "id": "spottedcat:2026-07-19:pat-casey-the-new-sound",
-      "clubId": "spottedcat",
-      "title": "Pat Casey & The New Sound",
-      "date": "2026-07-19",
-      "sets": [
-        "21:00"
-      ],
-      "url": "https://www.spottedcatmusicclub.com/calendar",
-      "details": null,
-      "personnel": null,
-      "priceText": null
-    },
-    {
-      "id": "fritzels:2026-07-19:traditional-jazz-at-fritzel-s",
-      "clubId": "fritzels",
-      "title": "Traditional Jazz at Fritzel’s",
-      "date": "2026-07-19",
-      "sets": [],
-      "url": "https://fritzelsjazz.com/",
-      "details": "House trad players nightly from early afternoon till late, since 1969. 21+.",
       "personnel": null,
       "priceText": null
     },
@@ -401,6 +218,20 @@
         "18:00"
       ],
       "url": "https://www.spottedcatmusicclub.com/calendar",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "snugharbor:2026-07-20:charmaine-neville-band",
+      "clubId": "snugharbor",
+      "title": "Charmaine Neville Band",
+      "date": "2026-07-20",
+      "sets": [
+        "19:30",
+        "21:30"
+      ],
+      "url": "https://snugjazz.com/tm-event/charmaine-neville-band-9/",
       "details": null,
       "personnel": null,
       "priceText": null
@@ -479,6 +310,19 @@
         "19:00"
       ],
       "url": "https://www.mapleleafbar.com/event-details/leaf-closed-28",
+      "details": null,
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "snugharbor:2026-07-21:zo-euml-de-priester",
+      "clubId": "snugharbor",
+      "title": "Zo&euml; de Priester",
+      "date": "2026-07-21",
+      "sets": [
+        "19:30"
+      ],
+      "url": "https://snugjazz.com/tm-event/zoe-de-priester/",
       "details": null,
       "personnel": null,
       "priceText": null
@@ -2711,6 +2555,58 @@
       "clubId": "fritzels",
       "title": "Traditional Jazz at Fritzel’s",
       "date": "2026-09-11",
+      "sets": [],
+      "url": "https://fritzelsjazz.com/",
+      "details": "House trad players nightly from early afternoon till late, since 1969. 21+.",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "preservationhall:2026-09-12:nightly-sets-at-preservation-hall",
+      "clubId": "preservationhall",
+      "title": "Nightly Sets at Preservation Hall",
+      "date": "2026-09-12",
+      "sets": [
+        "17:00",
+        "18:30",
+        "20:00"
+      ],
+      "url": "https://www.preservationhall.com/calendar/",
+      "details": "Three 45-minute sets by the Hall’s rotating collective. 726 St. Peter, cash bar none, magic since 1961.",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "fritzels:2026-09-12:traditional-jazz-at-fritzel-s",
+      "clubId": "fritzels",
+      "title": "Traditional Jazz at Fritzel’s",
+      "date": "2026-09-12",
+      "sets": [],
+      "url": "https://fritzelsjazz.com/",
+      "details": "House trad players nightly from early afternoon till late, since 1969. 21+.",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "preservationhall:2026-09-13:nightly-sets-at-preservation-hall",
+      "clubId": "preservationhall",
+      "title": "Nightly Sets at Preservation Hall",
+      "date": "2026-09-13",
+      "sets": [
+        "17:00",
+        "18:30",
+        "20:00"
+      ],
+      "url": "https://www.preservationhall.com/calendar/",
+      "details": "Three 45-minute sets by the Hall’s rotating collective. 726 St. Peter, cash bar none, magic since 1961.",
+      "personnel": null,
+      "priceText": null
+    },
+    {
+      "id": "fritzels:2026-09-13:traditional-jazz-at-fritzel-s",
+      "clubId": "fritzels",
+      "title": "Traditional Jazz at Fritzel’s",
+      "date": "2026-09-13",
       "sets": [],
       "url": "https://fritzelsjazz.com/",
       "details": "House trad players nightly from early afternoon till late, since 1969. 21+.",
