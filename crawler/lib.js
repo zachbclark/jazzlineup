@@ -243,7 +243,7 @@ const INSTRUMENTS = new Set([
   'saxophone', 'saxophones', 'sax', 'alto', 'tenor', 'soprano', 'baritone',
   'trumpet', 'flugelhorn', 'cornet', 'trombone', 'tuba', 'euphonium', 'horn',
   'voice', 'vocals', 'vocal', 'vibraphone', 'vibes', 'marimba', 'organ',
-  'flute', 'clarinet', 'oboe', 'bassoon', 'cello', 'violin', 'viola', 'strings',
+  'flute', 'piccolo', 'clarinet', 'oboe', 'bassoon', 'cello', 'violin', 'viola', 'strings',
   'percussion', 'harmonica', 'accordion', 'banjo', 'mandolin', 'harp', 'oud',
   'synth', 'synthesizer', 'electronics', 'turntables', 'dj', 'composer',
   'conductor', 'arranger', 'leader', 'electric', 'acoustic', 'upright', 'double',
@@ -427,7 +427,9 @@ export function lastNameRun(text) {
   const tokens = cleanText(text).split(/\s+/).filter(Boolean);
   let start = tokens.length;
   for (let i = tokens.length - 1; i >= 0; i--) {
-    if (/^[A-Z(“"']/.test(tokens[i]) && !isInstrumentWord(tokens[i]) && !NAME_CONNECTOR_RE.test(tokens[i])) start = i;
+    // a token ending in a colon is a label ("Line-up:", "Personnel:"),
+    // never part of a name — it capitalizes like one (Vortex, 2026-07-20)
+    if (/^[A-Z(“"']/.test(tokens[i]) && !/[:：]$/.test(tokens[i]) && !isInstrumentWord(tokens[i]) && !NAME_CONNECTOR_RE.test(tokens[i])) start = i;
     else break;
   }
   const run = tokens.slice(start).join(' ');
