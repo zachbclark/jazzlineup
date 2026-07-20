@@ -245,7 +245,11 @@ export default function App() {
     <div className="app">
       <header className="topbar">
         <div className="brand">
-          <span className="brand-note">&#9835;</span> Jazz<span className="brand-accent">Lineup</span>
+          {/* real link, not onClick: middle-click/new-tab work, and a real
+              navigation resets search/params/drawer with no edge cases */}
+          <a className="brand-link" href={'/' + citySlug(city)} aria-label="Jazz Lineup home">
+            <span className="brand-note">&#9835;</span> Jazz<span className="brand-accent">Lineup</span>
+          </a>
           <CitySwitcher city={city} onChange={changeCity} />
         </div>
         <SearchBox query={query} onChange={setQuery} />

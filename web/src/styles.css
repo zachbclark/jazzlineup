@@ -28,6 +28,7 @@ button { font: inherit; cursor: pointer; }
 }
 .brand-note { color: var(--accent); }
 .brand-accent { color: var(--accent); }
+.brand-link { color: inherit; text-decoration: none; }
 .brand-nyc { color: var(--muted); font-weight: 300; }
 /* The city is part of the wordmark: "Jazz Lineup NYC" in the brand serif,
    gold, with an always-on caret — a control, not a label. (It was an 11px
@@ -165,7 +166,16 @@ button { font: inherit; cursor: pointer; }
 }
 .chip-reset { border-style: dashed; opacity: 0.4; font-size: 12.5px; }
 .chip-reset:hover { opacity: 0.9; color: var(--text); }
-.chip-all.on { border-color: var(--accent); color: var(--accent); }
+/* "All clubs" is a control, not a venue: never dimmed, bright text with a
+   dashed border while it's an offer (same grammar as .chip-reset), solid
+   gold when it's the state, and a beat of space before the venue list. */
+.chip-all {
+  opacity: 1; margin-right: 6px;
+  border-style: dashed; border-color: var(--muted);
+  color: var(--text);
+}
+.chip-all:hover { border-color: var(--accent); }
+.chip-all.on { border-style: solid; border-color: var(--accent); color: var(--accent); }
 .dot { width: 9px; height: 9px; border-radius: 50%; display: inline-block; }
 
 /* month grid */
