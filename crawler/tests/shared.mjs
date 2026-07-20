@@ -39,6 +39,19 @@ ok('personnel: parses rosters, strips promo, rejects prose', () => {
   assert.deepEqual(pw[3], { name: 'Willie Martinez', instrument: 'drums' });
 });
 
+ok('personnel: "Line-up:" label never joins a name; piccolo is an instrument', () => {
+  // real Vortex ICS description shape (Gareth Lockrane Quintet, 2026-07-20):
+  // the old parser shipped "Line-up: Gareth Lockrane" and "Piccolo Tom Cawley"
+  const p = parsePersonnel(
+    'Line-up: Gareth Lockrane - flute, alto flute, bass flute, Piccolo ' +
+    'Tom Cawley - piano Mike Outram - guitar Conor Chaplin - bass James Maddren - drums'
+  );
+  assert.equal(p.length, 5);
+  assert.deepEqual(p[0], { name: 'Gareth Lockrane', instrument: 'flute, alto flute, bass flute, piccolo' });
+  assert.deepEqual(p[1], { name: 'Tom Cawley', instrument: 'piano' });
+  assert.deepEqual(p[4], { name: 'James Maddren', instrument: 'drums' });
+});
+
 ok('personnel: survives makeEvent end-to-end (jazzgallery)', () => {
   const fixture = JSON.stringify({ upcoming: [{
     title: 'Test Band', startDate: 1784156400605, endDate: 1784156400605,
