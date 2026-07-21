@@ -49,6 +49,19 @@ fresher than a checked-in snapshot ever was. Local crawls overwrite the
 same files freely. The Lambda never touches repo data (it reads/writes
 S3 directly), and the CDK stack bundles only web/dist + crawler/.
 
+HISTORICAL ARCHIVE (PARAMOUNT per Zach 2026-07-20: "it is SOO hard to
+find past jazz shows"): every Lambda crawl also writes each city file to
+archive/<city>/<UTC date>.json in the same bucket — the day's last crawl
+wins the key. The live feeds trim past events; the archive is the ONLY
+place the gigography (dated, personnel-resolved lineups) survives, and
+it cannot be backfilled — protect it. Never lifecycle-expire archive/*,
+never let a "cleanup" touch it. Publicly fetchable like the feeds
+(jazzlineup.com/archive/nyc/2026-07-21.json). Query the corpus with
+DuckDB or Athena straight off S3; an artist-history feature or the
+Athena analytics project (Brian) can build on it later. Recording
+begins with the first post-merge crawl (2026-07-20); earlier history is
+gone, which is exactly why the archive exists.
+
 Manual Lambda invoke (--cli-read-timeout 0: the full crawl outlives the
 CLI's 60s default, which "errors" while the Lambda finishes fine):
 
@@ -323,6 +336,12 @@ New city 404s / stale JSON (CloudFront cached the HTML fallback):
 
 Traffic: CloudFront console -> distribution -> Monitoring tab (us-east-1;
 data lags a few hours, an empty chart right after launch is normal).
+
+Browse the historical archive (see the data section for what it is):
+
+    BUCKET=$(aws cloudformation describe-stacks --stack-name JazzLineup --query "Stacks[0].Outputs[?OutputKey=='BucketName'].OutputValue" --output text)
+    aws s3 ls s3://$BUCKET/archive/nyc/          # one dated snapshot per day
+    curl -s https://jazzlineup.com/archive/nyc/2026-07-21.json | head -c 300
 
 ## Data feed policy (external users)
 
