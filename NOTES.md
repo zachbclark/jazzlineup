@@ -178,10 +178,29 @@ _turntable, _wixevents, _fr (French dates).
   New School, Red Pavillion, Sour Mouse, Birds, SEEDS, Ibeam, Iridium.
 - Ethan Iverson's do-the-gig venue list (old but trusted, cross-referenced
   2026-07-18): The Stone, Iridium, SEEDS and Ibeam appear on BOTH his list
-  and the NYCJR shortlist — that's the ranked top of NYC Tier 2. Still-alive
-  candidates from his list we don't track: Minton's, Room 623, Cleopatra's
-  Needle, Tomi Jazz, Soapbox Gallery, The Owl. (Mezzrow looked like a gap
-  at first read but is already tracked — smalls.js serves both rooms.)
+  and the NYCJR shortlist — that's the ranked top of NYC Tier 2. (Mezzrow
+  looked like a gap at first read but is already tracked — smalls.js
+  serves both rooms.)
+- NYC EXPANSION 2026-07-20: The Stone + SEEDS + Ibeam SHIPPED (see the
+  registry for the parsing notes: Stone's lexicon-free roster parser and
+  residency-titled generics, SEEDS' seeds.calendar Tockify feed, Ibeam's
+  "upcoming"-not-"items" Squarespace blog with the program in the post
+  body). Verification VERDICTS from the same session, so nobody re-recons:
+  Swing 46 CLOSED (site hours all say CLOSED, last calendar entry Dec
+  2023). Minton's has NO web presence (mintonsharlem.com is a casino-spam
+  domain squat — do not trust it; mintonsplayhouse.com dead; verify the
+  room's status in person before any seed). Ginny's Supper Club: site is a
+  splash page; music lives on redroosterharlem.com/music-schedule with no
+  parseable feed found; looks brunch-led — curation call deferred.
+  Soapbox Gallery DORMANT (Squarespace events collection empty across
+  months). Still-unverified candidates: Room 623, Tomi Jazz, The Owl,
+  Cleopatra's Needle (site alive, no calendar tech on homepage), Gin
+  Fizz, Scholes Street Studio, Bushwick Public House, 11th Street Bar,
+  Halyard's, NYC Baha'i Center. Arturo's is ACTIVE nightly with no
+  published calendar — a generator venue like Wally's, good follow-up.
+  Curation calls for Zach: Knickerbocker, Cafe Carlyle, Saint Peter's.
+  Iridium is next up and needs the jazz-filter treatment (Wix + TicketWeb;
+  books blues/rock/tribute alongside jazz — Gold-Diggers precedent).
 
 ## Frontend conventions
 
@@ -262,7 +281,7 @@ the site never breaks from one venue's outage.
 Everyday dev (repo root):
 
     npm run data:pull              # fetch prod feeds into data/ (gitignored; do this first on a fresh clone)
-    node crawler/test.mjs          # parser tests (135 groups as of the piccolo fix)
+    node crawler/test.mjs          # parser tests (138 groups as of the Stone/SEEDS/Ibeam batch)
     node web/test-ui.mjs           # browser UI tests (needs Playwright + data:pull)
     node crawler/index.js          # full crawl, writes data/events-*.json
     node crawler/index.js --city nol   # one city (nyc la chi sf bos par lon tok nol ber)

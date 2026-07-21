@@ -867,3 +867,93 @@ ok('ny92: seed carries halls, rosters, prices; past dates drop; off-season is em
   // off-season: far-future today -> no events, and that's the designed shape
   assert.deepEqual(ny92Seed(new Date('2026-09-01T12:00:00Z')), []);
 });
+
+// --- The Stone (hand-built calendar.php, residency banners) ---------------------
+import { parse as stoneParse, parseRoster as stoneRoster } from '../clubs/stone.js';
+ok('stone: span runs -> events; residencies name generic titles; lexicon-free rosters', () => {
+  // the avant instrument list is unbounded — ajaeng must survive without
+  // being in INSTRUMENTS, and the "special guest" tail must not fake a player
+  assert.deepEqual(stoneRoster('Shoko Nagai (piano, electronics) Yoona Kim (ajaeng, electronic ajaeng) and a special guest'), [
+    { name: 'Shoko Nagai', instrument: 'piano, electronics' },
+    { name: 'Yoona Kim', instrument: 'ajaeng, electronic ajaeng' },
+  ]);
+  const html = `
+  <div style="border:solid 1px white;">
+  <span class="bannertime">THE STONE RESIDENCIES<br></span>
+  <span class="bannertitle">YOONA KIM<br></span>
+  <span class="bannercurator">JULY 15-18<br></span>
+  </div>
+  <span class="date">7/17 Friday <span class="volunteer"></span></span><br>
+  <span class="time">8:30 pm<br></span>
+  <span class="calendarname">TRIO<br></span>
+  <span class="text">Chris Corsano (drums) Joe Morris (guitar) Yoona Kim (ajaeng)<br></span>
+  <span class="description"></span>
+  <div style="border:solid 1px white;">
+  <span class="bannertime">THE STONE RESIDENCIES<br></span>
+  <span class="bannertitle">LARRY OCHS<br></span>
+  <span class="bannercurator">JULY 22-25<br></span>
+  </div>
+  <span class="date">7/22 Wednesday <span class="volunteer"></span></span><br>
+  <span class="time">8:30 pm<br></span>
+  <span class="calendarname">TRIO<br></span>
+  <span class="text">Larry Ochs (saxes) Joe Morris (bass) Michael Wimberly (drums)<br></span>
+  <span class="date">7/23 Thursday <span class="volunteer"></span></span><br>
+  <span class="time">8:30 pm<br></span>
+  <span class="calendarname">SPECTRAL<br></span>
+  <span class="text">Larry Ochs (saxes) Dave Rempis (alto sax) Darren Johnston (trumpet)<br></span>`;
+  const evs = stoneParse(html, TODAY); // Mon Jul 13 2026
+  assert.equal(evs.length, 3);
+  assert.equal(evs[0].date, '2026-07-17');
+  assert.deepEqual(evs[0].sets, ['20:30']);
+  assert.equal(evs[0].title, 'Yoona Kim Trio', 'generic TRIO takes the residency name');
+  assert.equal(evs[0].details, null, 'residency already in the title');
+  assert.equal(evs[0].personnel.length, 3);
+  assert.deepEqual(evs[0].personnel[2], { name: 'Yoona Kim', instrument: 'ajaeng' });
+  assert.equal(evs[1].title, 'Larry Ochs Trio', 'banner switches the residency');
+  assert.equal(evs[2].title, 'SPECTRAL', 'real act names pass through');
+  assert.equal(evs[2].details, 'Larry Ochs residency');
+});
+
+// --- SEEDS (Tockify, shared pattern with World Stage) ---------------------------
+import { parse as seedsParse } from '../clubs/seeds.js';
+ok('seeds: tockify events -> NY dates; dash rosters; TBA lineup falls back to details', () => {
+  const ms1 = new Date('2026-07-25T19:30:00-04:00').getTime();
+  const ms2 = new Date('2026-07-26T20:00:00-04:00').getTime();
+  const fixture = JSON.stringify({ events: [
+    { eid: { uid: '195' }, when: { start: { millis: ms1, tzid: 'America/New_York' } },
+      content: { summary: { text: 'Joel Ross Residency' },
+        description: { text: 'Joel Ross - Vibraphone, Synths Line up to be announced soon' } } },
+    { eid: { uid: '201' }, when: { start: { millis: ms2, tzid: 'America/New_York' } },
+      content: { summary: { text: 'My Trio (Tim Watson, Yvonne Rogers, Jon Starks)' },
+        description: { text: 'Tim Watson - Guitar/Sound Design Yvonne Rogers - Synths/Piano Jon Starks - Drums/Electronics' } } },
+  ]});
+  const evs = seedsParse(fixture);
+  assert.equal(evs.length, 2);
+  assert.equal(evs[0].date, '2026-07-25');
+  assert.deepEqual(evs[0].sets, ['19:30']);
+  assert.equal(evs[0].personnel, null, 'one-player run is not a roster');
+  assert.match(evs[0].details, /Joel Ross - Vibraphone/);
+  assert.match(evs[0].url, /tockify\.com\/seeds\.calendar\/detail\/195\//);
+  assert.equal(evs[1].personnel.length, 3, 'slash-compound credits must roster up');
+  assert.deepEqual(evs[1].personnel[0], { name: 'Tim Watson', instrument: 'guitar/sound design' });
+});
+
+// --- Ibeam (Squarespace blog "upcoming"; program lives in the post body) --------
+import { parse as ibeamParse } from '../clubs/ibeam.js';
+ok('ibeam: body yields per-set times, line rosters, and price; past posts drop', () => {
+  const body = '<p>7 pm</p><p>Kris Gruda - Guitar</p><p>Evan Crane - Bass</p><p>Kevin Shea - Drums</p>'
+    + '<p>8 pm</p><p>Jonathan Reisin - Sax</p><p>Luke Stewart - Bass</p><p>Tomas Fujiwara - Drums</p><p>$20</p>';
+  const fixture = JSON.stringify({ upcoming: [
+    { title: 'UNSCRIPTED SOUNDSCAPES', startDate: new Date('2026-07-25T19:00:00-04:00').getTime(),
+      fullUrl: '/home/2026/7/25/unscripted-soundscapes', body },
+    { title: 'Old Show', startDate: new Date('2026-06-01T20:00:00-04:00').getTime(), fullUrl: '/home/old', body: '' },
+  ]});
+  const evs = ibeamParse(fixture, new Date(2026, 6, 15));
+  assert.equal(evs.length, 1, 'past post filtered');
+  assert.equal(evs[0].date, '2026-07-25');
+  assert.deepEqual(evs[0].sets, ['19:00', '20:00'], 'bare "N pm" lines are the sets');
+  assert.equal(evs[0].personnel.length, 6, 'both bands roster up');
+  assert.deepEqual(evs[0].personnel[5], { name: 'Tomas Fujiwara', instrument: 'drums' });
+  assert.equal(evs[0].priceText, '$20');
+  assert.equal(evs[0].url, 'https://ibeambrooklyn.com/home/2026/7/25/unscripted-soundscapes');
+});

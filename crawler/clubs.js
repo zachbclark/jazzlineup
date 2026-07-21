@@ -396,6 +396,48 @@ export const CLUBS = [
     color: '#e8a0b8', // Sunday-dress parlor rose — audit-cleared
     module: './clubs/marjorie.js',
   },
+  {
+    id: 'stone',
+    name: 'The Stone',
+    shortName: 'The Stone',
+    url: 'http://thestonenyc.com/calendar.php',
+    address: 'The New School Glass Box Theatre, 55 W 13th St, New York, NY 10011',
+    city: 'nyc',
+    borough: 'manhattan',
+    timezone: 'America/New_York',
+    neighborhood: 'Greenwich Village',
+    color: '#9c9c9c', // deliberately austere gray: their site has been black-and-white since 2005, and it reads as brand
+    module: './clubs/stone.js',
+    // Residency seasons take breaks (August, holidays); a dark calendar
+    // between seasons is normal, not a broken parser.
+    emptyOk: true,
+  },
+  {
+    id: 'seeds',
+    name: 'SEEDS Brooklyn',
+    shortName: 'SEEDS',
+    url: 'https://seedsbrooklyn.org/calendar/',
+    address: '617 Vanderbilt Ave, Brooklyn, NY 11238',
+    city: 'nyc',
+    borough: 'brooklyn',
+    timezone: 'America/New_York',
+    neighborhood: 'Prospect Heights',
+    color: '#d38600', // their site accent (dominant non-gray hex on seedsbrooklyn.org)
+    module: './clubs/seeds.js',
+  },
+  {
+    id: 'ibeam',
+    name: 'Ibeam Brooklyn',
+    shortName: 'Ibeam',
+    url: 'https://ibeambrooklyn.com/home',
+    address: '168 7th St, Brooklyn, NY 11215',
+    city: 'nyc',
+    borough: 'brooklyn',
+    timezone: 'America/New_York',
+    neighborhood: 'Gowanus',
+    color: '#ffd42a', // steel-beam caution yellow — quick read, verify with extractor
+    module: './clubs/ibeam.js',
+  },
 
   // ---------------------------------------------------------------- LA ----
   {

@@ -39,6 +39,18 @@ ok('personnel: parses rosters, strips promo, rejects prose', () => {
   assert.deepEqual(pw[3], { name: 'Willie Martinez', instrument: 'drums' });
 });
 
+ok('personnel: slash-compounds, two-word credits, and plurals parse (SEEDS)', () => {
+  // real SEEDS description — the old parser dropped all three players because
+  // "Guitar/Sound" is one token, "Sound Design" is two words, "Synths" plural
+  const p = parsePersonnel('Tim Watson - Guitar/Sound Design Yvonne Rogers - Synths/Piano Jon Starks - Drums/Electronics');
+  assert.equal(p.length, 3);
+  assert.deepEqual(p[0], { name: 'Tim Watson', instrument: 'guitar/sound design' });
+  assert.deepEqual(p[1], { name: 'Yvonne Rogers', instrument: 'synths/piano' });
+  assert.deepEqual(p[2], { name: 'Jon Starks', instrument: 'drums/electronics' });
+  // prose still rejected: nothing about looser tokens may admit sentences
+  assert.deepEqual(parsePersonnel('A night of sound design - come early Doors - 7pm'), []);
+});
+
 ok('personnel: "Line-up:" label never joins a name; piccolo is an instrument', () => {
   // real Vortex ICS description shape (Gareth Lockrane Quintet, 2026-07-20):
   // the old parser shipped "Line-up: Gareth Lockrane" and "Piccolo Tom Cawley"

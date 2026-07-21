@@ -257,15 +257,31 @@ const INSTRUMENTS = new Set([
   'ukulele', 'kora', 'balafon', 'ngoni', 'cuatro', 'tres', 'cavaquinho',
   'bandoneon', 'fiddle', 'melodica', 'congas', 'bongos', 'timbales',
   'washboard', 'tabla',
+  'gayageum', 'ajaeng', // Korean zithers, at home in the NYC improv rooms (SEEDS, The Stone)
   // German (Berlin rosters: "Anna Schmidt - Schlagzeug"); umlauts are
   // NFD-stripped before lookup (flöte -> flote), transliterations included
   'schlagzeug', 'kontrabass', 'posaune', 'trompete', 'gitarre', 'klavier',
   'saxophon', 'saxofon', 'gesang', 'stimme', 'geige', 'bratsche',
   'flote', 'floete', 'querflote', 'querfloete', 'klarinette', 'orgel',
   'tasten', 'fluegelhorn', 'ebass', 'keyb',
+  'saxes', // "Larry Ochs (saxes)" — irregular plural, strip-s can't derive it
 ]);
-export const isInstrumentWord = (w) =>
-  INSTRUMENTS.has(String(w).normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase().replace(/[^a-z]/g, ''));
+const normWord = (w) =>
+  String(w).normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase().replace(/[^a-z]/g, '');
+// plural fallback: "synths" -> "synth" (drums/keys/vibes are already listed)
+export const isInstrumentWord = (w) => {
+  const n = normWord(w);
+  return INSTRUMENTS.has(n) || INSTRUMENTS.has(n.replace(/s$/, ''));
+};
+
+// Multi-word credits the modern scene uses; single-word lexicon can't hold
+// them ("Tim Watson - Guitar/Sound Design", the SEEDS founding case).
+const INSTRUMENT_PHRASES = new Set(['sound design', 'spoken word', 'live electronics']);
+export const isInstrumentPhrase = (phrase) => {
+  const words = String(phrase).split(/\s+/).filter(Boolean);
+  if (!words.length) return false;
+  return INSTRUMENT_PHRASES.has(words.map(normWord).join(' ')) || words.every(isInstrumentWord);
+};
 
 // --- Japanese rosters --------------------------------------------------------
 // Tokyo listings write personnel as run-on Name(Abbr) pairs, in either paren
@@ -339,12 +355,26 @@ export function parsePersonnel(text) {
   let name = lastNameRun(parts[0]);
   for (let i = 1; i < parts.length; i++) {
     const tokens = parts[i].split(/\s+/);
-    // Leading tokens that are instrument-ish belong to the current player...
+    // Leading tokens that are instrument-ish belong to the current player.
+    // A token may be a slash-compound ("Guitar/Sound Design" tokenizes as
+    // "Guitar/Sound" + "Design") and credits may span two tokens — try
+    // isInstrumentPhrase before giving up on a token (SEEDS, 2026-07-20).
     const instr = [];
     let j = 0;
-    while (j < tokens.length && (isInstrumentWord(tokens[j]) || /^(?:&|and|\/|,)$/i.test(tokens[j]))) {
-      instr.push(tokens[j]);
-      j++;
+    while (j < tokens.length) {
+      const t = tokens[j];
+      if (isInstrumentWord(t) || /^(?:&|and|\/|,)$/i.test(t)) { instr.push(t); j++; continue; }
+      const comps = t.split('/').filter(Boolean);
+      const next = tokens[j + 1];
+      // slash-compound whose last component starts a two-word phrase:
+      // "Guitar/Sound" + "Design" -> guitar + "sound design"
+      if (next && comps.slice(0, -1).every(isInstrumentWord)
+          && isInstrumentPhrase(`${comps[comps.length - 1]} ${next}`)) {
+        instr.push(t, next); j += 2; continue;
+      }
+      // plain slash-compound: "Synths/Piano", "Drums/Electronics"
+      if (comps.length > 1 && comps.every(isInstrumentPhrase)) { instr.push(t); j++; continue; }
+      break;
     }
     // ...minus trailing glue: "bass, and Willie Martinez" leaves "bass," +
     // "and" in the run — both belong to the SEAM, not the instrument
@@ -375,9 +405,12 @@ export function personnelFromLines(text) {
     const m = line.trim().match(/^(.{2,45}?)\s*[-–—:,]\s*(.{2,40})$/);
     if (!m) continue;
     const instr = m[2].trim();
-    const words = instr.split(/[\s,/&]+/).filter(Boolean);
-    if (!words.length) continue;
-    if (!words.every((w) => isInstrumentWord(w) || /^(?:et|and)$/i.test(w))) continue;
+    // validate per phrase (split on ,/&) so multi-word credits pass whole:
+    // "Guitar/Sound Design" -> guitar + sound design (SEEDS, 2026-07-20)
+    const okPhrase = (p) => isInstrumentPhrase(p)
+      || p.split(/\s+/).every((w) => isInstrumentWord(w) || /^(?:et|and)$/i.test(w));
+    const phrases = instr.split(/[,/&]+/).map((p) => p.trim()).filter(Boolean);
+    if (!phrases.length || !phrases.every(okPhrase)) continue;
     personnel.push({ name: cleanText(m[1]), instrument: cleanText(instr.toLowerCase()) });
   }
   return personnel.length >= 2 ? personnel : [];
