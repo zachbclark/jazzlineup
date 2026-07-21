@@ -54,6 +54,19 @@ export const handler = async (event) => {
     await writeJson(key, out);
     if (city === 'nyc') await writeJson('events.json', out); // legacy alias
 
+    // Historical archive (PARAMOUNT — Zach, 2026-07-20): the live key is
+    // overwritten every crawl and trims past events, so every crawl also
+    // lands on a dated key: archive/<city>/<UTC date>.json. Later runs the
+    // same day overwrite it — the day's last snapshot wins. ~250KB x 10
+    // cities x 365 days is under 1GB/yr; query it later with DuckDB/Athena
+    // straight off S3. An archive failure never fails the crawl: the live
+    // site write above already succeeded.
+    try {
+      await writeJson(`archive/${city}/${new Date().toISOString().slice(0, 10)}.json`, out);
+    } catch (err) {
+      console.error(`[${city}] archive write failed (live write succeeded):`, err.message);
+    }
+
     summary[city] = {
       events: out.events.length,
       fresh: result.freshCount,
