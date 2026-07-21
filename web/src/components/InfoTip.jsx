@@ -30,6 +30,7 @@ export default function InfoTip() {
           <h4>Tips</h4>
           <p>Search any musician. Sideman gigs count too.</p>
           <p>Tap a venue chip to see just that club. Tap more to add them.</p>
+          <p>Save picks makes a selection yours. My clubs brings it back.</p>
           <p>Drag chips to reorder them. Press and hold first on a phone.</p>
           <p>Your order and picks are remembered on this device.</p>
         </div>

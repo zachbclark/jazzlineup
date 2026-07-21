@@ -10,7 +10,7 @@ import React, { useEffect, useLayoutEffect, useRef } from 'react';
 // The parent owns the order; we report moves via onReorder(dragId, targetId,
 // placeAfter), then onReorderEnd() once on drop (that's when it persists).
 export default function FilterBar({
-  clubs, active, onToggle, onAll,
+  clubs, active, saved, onToggle, onAll, onMine, onSaveMine,
   onReorder, onReorderEnd, hasCustomOrder, onResetOrder,
 }) {
   const barRef = useRef(null);
@@ -148,6 +148,19 @@ export default function FilterBar({
       <button className={'chip chip-all' + (active === null ? ' on' : '')} onClick={onAll}>
         All clubs
       </button>
+      {saved?.length > 0 && (
+        <button
+          className={'chip chip-mine' + (active !== null && active.size === saved.length && saved.every((id) => active.has(id)) ? ' on' : '')}
+          onClick={onMine}
+        >
+          My clubs
+        </button>
+      )}
+      {active !== null && !(saved && active.size === saved.length && saved.every((id) => active.has(id))) && (
+        <button className="chip chip-save" onClick={onSaveMine}>
+          Save picks
+        </button>
+      )}
       {clubs.map((c) => {
         const on = active === null || active.has(c.id);
         return (

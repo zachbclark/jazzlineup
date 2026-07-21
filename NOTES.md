@@ -225,7 +225,15 @@ First-visit whisper "← choose your city" shows once (jl.cityhint flag).
 ⓘ tips popover in the header documents the hidden features.
 
 Chips: first click solo-selects, further clicks add, deselecting the last
-returns to All. Drag-to-reorder with FLIP glide (mouse: 6px threshold;
+returns to All. Selection is a SESSION VIEW (2026-07-20): it lives in
+memory + the ?venues= URL mirror and never writes storage — casual
+browsing can't clobber anything. "Save picks" (dashed control chip,
+appears when the view differs from the saved set) writes jl.mine.<city>;
+"My clubs" applies it and is the landing view when it exists ("most use
+possible" — Zach). Legacy jl.active.<city> keys (the pre-Save-picks
+auto-persisted selection) are adopted as the initial My clubs on load.
+Control-chip grammar: dashed = offer, solid gold = active view.
+Drag-to-reorder with FLIP glide (mouse: 6px threshold;
 touch: 300ms press-and-hold). FLIP animates ONLY during active drag — any
 other layout change snaps (animating borough switches made chips slide
 like furniture). Mobile: chips wrap, collapsed to ~2 lines behind a real
@@ -239,8 +247,9 @@ upcoming-only rule. Esc clears. Mobile search box must stay full-width in
 the has-query state (a specificity slip once made the clear × slide on
 blur).
 
-localStorage keys: jl.city, jl.active.<city>, jl.order.<city>.<scope>,
-jl.cityhint. All optional; the app works with storage blocked.
+localStorage keys: jl.city, jl.mine.<city> (My clubs; jl.active.<city> is
+its read-only legacy fallback), jl.order.<city>.<scope>, jl.cityhint.
+All optional; the app works with storage blocked.
 
 Footer: updated-ago, counts, gold tip jar (ko-fi.com/jazzlineup — the
 footer's ONLY gold), suggest-a-venue mailto (zachbclark+jazzlineup@

@@ -166,16 +166,17 @@ button { font: inherit; cursor: pointer; }
 }
 .chip-reset { border-style: dashed; opacity: 0.4; font-size: 12.5px; }
 .chip-reset:hover { opacity: 0.9; color: var(--text); }
-/* "All clubs" is a control, not a venue: never dimmed, bright text with a
-   dashed border while it's an offer (same grammar as .chip-reset), solid
-   gold when it's the state, and a beat of space before the venue list. */
-.chip-all {
+/* "All clubs" and "My clubs" are controls, not venues: never dimmed, bright
+   text with a dashed border while they're offers (same grammar as
+   .chip-reset), solid gold for the active view, and a beat of space before
+   the venue list. My clubs only renders once saved picks exist. */
+.chip-all, .chip-mine, .chip-save {
   opacity: 1; margin-right: 6px;
   border-style: dashed; border-color: var(--muted);
   color: var(--text);
 }
-.chip-all:hover { border-color: var(--accent); }
-.chip-all.on { border-style: solid; border-color: var(--accent); color: var(--accent); }
+.chip-all:hover, .chip-mine:hover, .chip-save:hover { border-color: var(--accent); }
+.chip-all.on, .chip-mine.on { border-style: solid; border-color: var(--accent); color: var(--accent); }
 .dot { width: 9px; height: 9px; border-radius: 50%; display: inline-block; }
 
 /* month grid */
