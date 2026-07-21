@@ -10,13 +10,15 @@ export default async function run({ pd }) {
     const initial = await count();
     const allClubs = await clubCount();
     // first click: exclusive select
-    await pd.click('.chip:not(.chip-all)');
+    await pd.click('.chip:not(.chip-all):not(.chip-mine):not(.chip-save)');
     await pd.waitForTimeout(250);
     assert.equal(await clubCount(), 1, 'first click must select only that club');
     const solo = await count();
     assert.ok(solo > 0 && solo < initial, `count should be one club's shows: ${solo}`);
-    // second click on another chip: additive
-    await pd.click('.chip:not(.chip-all):nth-of-type(3)');
+    // second click on another chip: additive. nth-of-type counts ALL sibling
+    // buttons and the Save picks offer appeared after the first pick, so
+    // venue2 is now the 4th button (All, Save picks, venue1, venue2).
+    await pd.click('.chip:not(.chip-all):not(.chip-mine):not(.chip-save):nth-of-type(4)');
     await pd.waitForTimeout(250);
     assert.equal(await clubCount(), 2, 'second click must add');
     assert.ok(await count() > solo, 'adding a club must add shows');
@@ -30,10 +32,10 @@ export default async function run({ pd }) {
   await test('deselecting the last selected club returns to All', async () => {
     const clubCount = async () => Number((await pd.textContent('.foot')).match(/across (\d+) clubs/)[1]);
     const allClubs = await clubCount();
-    await pd.click('.chip:not(.chip-all)'); // only this club
+    await pd.click('.chip:not(.chip-all):not(.chip-mine):not(.chip-save)'); // only this club
     await pd.waitForTimeout(250);
     assert.equal(await clubCount(), 1);
-    await pd.click('.chip:not(.chip-all)'); // deselect the last one -> all
+    await pd.click('.chip:not(.chip-all):not(.chip-mine):not(.chip-save)'); // deselect the last one -> all
     await pd.waitForTimeout(250);
     assert.equal(await clubCount(), allClubs, 'empty selection should flow back to All');
   });
@@ -46,9 +48,9 @@ export default async function run({ pd }) {
 
   await test('drag a chip to reorder; order persists in localStorage + reload', async () => {
     const chipNames = async () =>
-      Promise.all((await pd.$$('.chip:not(.chip-all)')).map((c) => c.textContent()));
+      Promise.all((await pd.$$('.chip:not(.chip-all):not(.chip-mine):not(.chip-save)')).map((c) => c.textContent()));
     const before = await chipNames();
-    const chips = await pd.$$('.chip:not(.chip-all)');
+    const chips = await pd.$$('.chip:not(.chip-all):not(.chip-mine):not(.chip-save)');
     const a = await chips[0].boundingBox();
     const b = await chips[2].boundingBox();
     await pd.mouse.move(a.x + a.width / 2, a.y + a.height / 2);
@@ -79,22 +81,78 @@ export default async function run({ pd }) {
     await pd.waitForTimeout(600);
   });
 
-  await test('chip selection persists across reload (saved off stays off)', async () => {
+  await test('selection is a session view: URL restores it, storage never written', async () => {
     const count = async () => Number((await pd.textContent('.foot')).match(/(\d+) shows/)[1]);
     const initial = await count();
-    await pd.click('.chip:not(.chip-all)'); // toggle first venue off
+    await pd.click('.chip:not(.chip-all):not(.chip-mine):not(.chip-save)');
     await pd.waitForTimeout(250);
-    const toggled = await count();
-    assert.ok(toggled < initial, 'toggle did not reduce count');
+    const solo = await count();
+    assert.ok(solo < initial, 'solo select did not narrow');
     await pd.reload({ waitUntil: 'networkidle' });
     await pd.waitForTimeout(600);
-    assert.equal(await count(), toggled, 'saved selection did not survive reload');
-    const saved = await pd.evaluate(() => localStorage.getItem('jl.active.nyc'));
-    assert.ok(saved && JSON.parse(saved).length > 0, 'selection not in localStorage');
-    await pd.click('.chip:not(.chip-all)'); // toggle back on -> null -> key removed
+    assert.equal(await count(), solo, 'view must survive reload via the ?venues= mirror');
+    const stored = await pd.evaluate(() => ({
+      mine: localStorage.getItem('jl.mine.nyc'), legacy: localStorage.getItem('jl.active.nyc'),
+    }));
+    assert.deepEqual(stored, { mine: null, legacy: null }, 'casual selection must never write storage');
+    await pd.click('.chip-all');
     await pd.waitForTimeout(250);
     assert.equal(await count(), initial);
-    const cleared = await pd.evaluate(() => localStorage.getItem('jl.active.nyc'));
-    assert.equal(cleared, null, 'all-on selection should clear the storage key');
+  });
+
+  await test('Save picks makes the selection durable; casual toggles never touch it', async () => {
+    const clubCount = async () => Number((await pd.textContent('.foot')).match(/across (\d+) clubs/)[1]);
+    const allClubs = await clubCount();
+    await pd.click('.chip:not(.chip-all):not(.chip-mine):not(.chip-save)'); // solo pick
+    await pd.waitForTimeout(250);
+    assert.ok(await pd.$('.chip-save'), 'Save picks offer appears with a selection');
+    await pd.click('.chip-save');
+    await pd.waitForTimeout(250);
+    assert.equal(await pd.$('.chip-save'), null, 'offer retires once saved');
+    assert.ok(await pd.$('.chip-mine.on'), 'My clubs lights as the active view');
+    let mine = await pd.evaluate(() => JSON.parse(localStorage.getItem('jl.mine.nyc')));
+    assert.equal(mine.length, 1);
+    // casual browsing on top: add a second club — My clubs must not move
+    const others = await pd.$$('.chip:not(.chip-all):not(.chip-mine):not(.chip-save)');
+    await others[1].click();
+    await pd.waitForTimeout(250);
+    assert.ok(await pd.$('.chip-save'), 'a differing view re-offers saving');
+    mine = await pd.evaluate(() => JSON.parse(localStorage.getItem('jl.mine.nyc')));
+    assert.equal(mine.length, 1, 'casual toggle must not rewrite My clubs');
+    await pd.click('.chip-mine');
+    await pd.waitForTimeout(250);
+    assert.equal(await clubCount(), 1, 'My clubs returns to the saved pick');
+    await pd.click('.chip-all');
+    await pd.waitForTimeout(250);
+    assert.ok(await pd.$('.chip-mine'), 'picks survive browsing All');
+    // hygiene: All view first (URL param already dropped), then clear picks
+    await pd.evaluate(() => localStorage.removeItem('jl.mine.nyc'));
+    await pd.reload({ waitUntil: 'networkidle' });
+    await pd.waitForTimeout(600);
+    assert.equal(await clubCount(), allClubs, 'pristine all-on state restored');
+  });
+
+  await test('legacy jl.active picks are adopted as My clubs on load', async () => {
+    const clubCount = async () => Number((await pd.textContent('.foot')).match(/across (\d+) clubs/)[1]);
+    const allClubs = await clubCount();
+    await pd.evaluate(async () => {
+      const d = await (await fetch('/events-nyc.json')).json();
+      localStorage.setItem('jl.active.nyc', JSON.stringify(d.clubs.slice(0, 2).map((c) => c.id)));
+      localStorage.removeItem('jl.mine.nyc');
+    });
+    await pd.reload({ waitUntil: 'networkidle' });
+    await pd.waitForTimeout(600);
+    assert.ok(await pd.$('.chip-mine.on'), 'legacy picks open as the My clubs view');
+    assert.equal(await clubCount(), 2, 'both legacy clubs selected');
+    // hygiene: back to All (drops ?venues=), clear both keys, pristine reload
+    await pd.click('.chip-all');
+    await pd.waitForTimeout(250);
+    await pd.evaluate(() => {
+      localStorage.removeItem('jl.active.nyc');
+      localStorage.removeItem('jl.mine.nyc');
+    });
+    await pd.reload({ waitUntil: 'networkidle' });
+    await pd.waitForTimeout(600);
+    assert.equal(await clubCount(), allClubs);
   });
 }

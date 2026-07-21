@@ -26,7 +26,8 @@ export default function App() {
   const [events, setEvents] = useState([]);
   const [generatedAt, setGeneratedAt] = useState(null);
   const [error, setError] = useState(null);
-  const [active, setActive] = useState(null); // null = all clubs; else Set of ids
+  const [active, setActive] = useState(null); // null = all clubs; else Set of ids (the current VIEW)
+  const [savedClubs, setSavedClubs] = useState(null); // "my clubs": last real selection, survives browsing All
   const [borough, setBorough] = useState(null); // null = all boroughs
   const [order, setOrder] = useState(null); // saved chip order (array of ids) per city
   const [query, setQuery] = useState(''); // artist search
@@ -71,14 +72,21 @@ export default function App() {
         const linkedVenues = routeRef.current.venues;
         routeRef.current.venues = null;
         const validVenues = (linkedVenues ?? []).filter((id) => d.clubs.some((c) => c.id === id));
+        // "My clubs" = the explicitly saved set (jl.mine). Legacy jl.active
+        // keys (the pre-Save-picks auto-persisted selection) are adopted as
+        // the initial My clubs so nobody loses their picks on upgrade.
+        let mine = null;
+        try {
+          mine = JSON.parse(localStorage.getItem(`jl.mine.${city}`))
+              ?? JSON.parse(localStorage.getItem(`jl.active.${city}`));
+          if (!Array.isArray(mine) || !mine.length) mine = null;
+        } catch { mine = null; /* storage blocked: the app works without it */ }
+        setSavedClubs(mine);
+        // view priority: shared link, then your clubs, then everything
         if (validVenues.length && validVenues.length < d.clubs.length) {
           setActive(new Set(validVenues));
         } else {
-          // restore this city's saved chip selection (null = everything on)
-          try {
-            const saved = JSON.parse(localStorage.getItem(`jl.active.${city}`));
-            setActive(Array.isArray(saved) ? new Set(saved) : null);
-          } catch { setActive(null); }
+          setActive(mine ? new Set(mine) : null);
         }
       })
       .catch((e) => setError(String(e.message ?? e)));
@@ -121,9 +129,15 @@ export default function App() {
     } catch { setOrder(null); }
   }, [orderKey]); // eslint-disable-line react-hooks/exhaustive-deps
 
-  const persistActive = (val) => {
-    if (val === null) localStorage.removeItem(`jl.active.${city}`);
-    else localStorage.setItem(`jl.active.${city}`, JSON.stringify([...val]));
+  // Chip selection is a SESSION VIEW: it lives in memory and the ?venues=
+  // URL mirror (refresh-safe, shareable) and never writes storage. "My
+  // clubs" only changes on the explicit Save picks tap — browsing tonight's
+  // one-off filter can never clobber the curated set.
+  const saveMine = () => {
+    if (active === null) return;
+    const arr = [...active];
+    localStorage.setItem(`jl.mine.${city}`, JSON.stringify(arr));
+    setSavedClubs(arr);
   };
 
   const clubById = useMemo(() => Object.fromEntries(clubs.map((c) => [c.id, c])), [clubs]);
@@ -236,7 +250,6 @@ export default function App() {
         if (next.has(id)) next.delete(id); else next.add(id);
         result = (next.size === 0 || next.size === clubs.length) ? null : next;
       }
-      persistActive(result);
       return result;
     });
   };
@@ -283,16 +296,18 @@ export default function App() {
       {!searching && <FilterBar
         clubs={scopedClubs}
         active={active}
+        saved={savedClubs}
         onToggle={toggleClub}
         onReorder={reorderClub}
         onReorderEnd={persistOrder}
         hasCustomOrder={order !== null}
         onResetOrder={resetOrder}
-        // "All clubs" is a reset: everything back on
-        onAll={() => {
-          persistActive(null);
-          setActive(null);
-        }}
+        // "All clubs" is a VIEW, not a reset: the saved picks survive it
+        onAll={() => setActive(null)}
+        // "My clubs" returns to the saved picks
+        onMine={() => savedClubs?.length && setActive(new Set(savedClubs))}
+        // "Save picks" snapshots the current selection as My clubs
+        onSaveMine={saveMine}
       />}
 
       {error && <div className="error">Couldn&rsquo;t load shows: {error}</div>}
