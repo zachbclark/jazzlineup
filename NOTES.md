@@ -8,13 +8,19 @@ venues, ~2,700 upcoming events. Read this before touching crawlers.
 
 ## What this site is
 
-Jazz Lineup curates jazz EVENTS, not jazz venues. The bar for a venue:
-"would a jazz fan plan their week around this room's calendar." Legacy
-institutions (Vanguard, Blue Note, Ronnie Scott's, Yoshi's, Baked Potato)
-are included wholesale — everything they book. Mixed-genre rooms are
-included but filtered to their jazz nights; showing 5 real jazz shows beats
-padding to 11 (the Gold-Diggers precedent). Rooms where jazz is one night a
-quarter: no.
+Jazz Lineup lists SHOWS, not venues (reframed by Zach 2026-07-26: the
+old bar was "would a jazz fan plan their week around this room's
+calendar," which is venue-centric and wrong). A room earns a crawler if
+it books shows a jazz fan would want to see — the musicians you love
+play rooms you'd never think to check, especially in LA. Jazz clubs are
+included wholesale — everything they book. Mixed-genre rooms are
+filtered to their jazz nights; showing 3 real shows beats padding (the
+Gold-Diggers precedent, now also Garcia's). Even a room with one great
+jazz night a quarter can earn a filtered module — that one night is the
+point. Consequence: the known-artist net (_jazzartists.js) is the main
+recall lever; every name added improves every filtered venue at once.
+City Winery Boston (once rejected as too-rarely-jazz) deserves a second
+look under this bar.
 
 Standing directives from Zach, in order:
 1. NYC takes priority. Always.
@@ -25,6 +31,11 @@ Standing directives from Zach, in order:
    "personnel is very important for me to show."
 5. Crawls may take as long as they need if they get the data.
 6. Give an assessment BEFORE implementing anything nontrivial.
+7. NO AI-STYLE LANGUAGE anywhere public (2026-07-26): no corporate "we",
+   no marketing cadence, no clever constructions. Short plain sentences,
+   Zach's casual register. Read it out loud; if it sounds like a press
+   release or a chatbot, rewrite. PR descriptions: three plain lines max.
+   Full rule in CLAUDE.md.
 
 ## Architecture in one breath
 
@@ -464,6 +475,15 @@ latin-jazz + blues, numeric dd.mm.yyyy dates, title-keyword rescue over
 the full list). Colors all site-verified via dominant-color extraction
 except Donau115 (monochrome site, assigned green). Four of six venues
 carry personnel. A-Trane leads the chips.
+
+GARCIA'S CHICAGO ADDED 2026-07-26 (chi's 10th room; requested by the
+site's first paying ko-fi supporter, $20). Jerry Garcia-inspired West
+Loop supper club; mostly jam/Dead/aftershows, so keyword + artist-net
+filter, BLUES KEPT for this room (Chicago; Bobby Rush at a listening
+room belongs). WordPress custom theme, /shows server-renders gct-event-*
+blocks; list dates have no year but the Ticketmaster hrefs carry
+-MM-DD-YYYY — trust those over inferYear. 3 of 64 listings passed at
+launch (Charlie Hunter Trio, Bobby Rush, LowDown Brass Band).
 
 CHIP COLOR VERIFICATION (mechanical task, any session): registry colors
 whose comment cites a real brand hex are verified; comments saying "quick
