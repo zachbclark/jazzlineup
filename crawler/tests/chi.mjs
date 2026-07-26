@@ -204,3 +204,34 @@ ok('space: jazz genre only, SPACE venue only, local times pass through', () => {
 });
 
 // ============================================================ San Francisco ======
+
+// --- Garcia's (WordPress gct-* show list, jazz/blues filtered) -------------------
+import { parse as garParse } from '../clubs/garcias.js';
+ok('garcias: keyword+artist filter, TM-slug year, Show time to 24h, openers kept', () => {
+  const item = (date, title, tagline, meta, slug, tm) => `
+  <div class="gct-event-item clearfix ">
+    <div class="gct-event-date-time"><div class="gct-event-date">${date}</div></div>
+    <div class="gct-event-info">
+      <h3 class="gct-event-title">${title}</h3>
+      <div class="gct-event-tagline">${tagline}<div class="gct-event-meta">${meta}</div></div>
+      <div class="gct-event-buttons">
+        <a href="https://garciaschicago.live/garcias-events/${slug}">Info</a>
+        <a class="gct-event-ticket-btn onsale" href="https://www.ticketmaster.com/${tm}/event/X1">Tickets</a>
+      </div>
+    </div>
+  </div>`;
+  const html = item('Jul 26', 'Bobby Rush', "With opening act Lil&#8217; Ed &amp; The Blues Imperials", 'Doors 6:00PM / Show 7:00PM', 'bobby-rush', 'bobby-rush-chicago-illinois-07-26-2026')
+    + item('Jul 29', 'Bella Kay &#8211; Official Lollapalooza Aftershow', 'With opening act Claire Rosinkranz', 'Doors 8:00PM / Show 9:00PM', 'bella-kay', 'bella-kay-chicago-illinois-07-29-2026')
+    + item('Jan 9', 'Charlie Hunter Trio', '', 'Doors 6:30PM / Show 8:00PM', 'charlie-hunter', 'charlie-hunter-chicago-illinois-01-09-2027');
+  const evs = garParse(html, TODAY);
+  assert.equal(evs.length, 2, 'aftershow pop filtered out');
+  assert.equal(evs[0].title, 'Bobby Rush');
+  assert.equal(evs[0].date, '2026-07-26');
+  assert.deepEqual(evs[0].sets, ['19:00']);
+  assert.match(evs[0].details, /Blues Imperials/);
+  assert.ok(!/Doors/.test(evs[0].details), 'meta line cut from details');
+  assert.match(evs[0].url, /garcias-events\/bobby-rush/);
+  assert.equal(evs[1].title, 'Charlie Hunter Trio');
+  assert.equal(evs[1].date, '2027-01-09', 'year from the Ticketmaster slug, not inferYear');
+  assert.deepEqual(evs[1].sets, ['20:00']);
+});

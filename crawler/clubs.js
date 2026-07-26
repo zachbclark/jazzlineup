@@ -767,6 +767,19 @@ export const CLUBS = [
     color: '#3fb8af', // cocktail-glass teal behind the record bins — audit-cleared
     module: './clubs/dorians.js',
   },
+  {
+    id: 'garcias',
+    name: "Garcia's Chicago",
+    shortName: "Garcia's",
+    url: 'https://garciaschicago.live',
+    address: '950 W Fulton Market, Chicago, IL 60607',
+    city: 'chi',
+    borough: null,
+    timezone: 'America/Chicago',
+    neighborhood: 'West Loop',
+    color: '#e07038', // their burnt-orange brand #902900, lifted for the black bg
+    module: './clubs/garcias.js',
+  },
 
   // ----------------------------------------------------- San Francisco ----
   {
