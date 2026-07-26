@@ -3,11 +3,16 @@
 // with BUCKET set in the environment.
 import { S3Client, GetObjectCommand, PutObjectCommand } from '@aws-sdk/client-s3';
 import { CloudWatchClient, PutMetricDataCommand } from '@aws-sdk/client-cloudwatch';
+import { SNSClient, PublishCommand } from '@aws-sdk/client-sns';
 import { runCrawl, buildOutput, cities } from './run.js';
+import { venueStats, detectAnomalies } from './anomaly.mjs';
+import { CLUBS } from './clubs.js';
 
 const s3 = new S3Client({});
 const cw = new CloudWatchClient({});
+const sns = new SNSClient({});
 const BUCKET = process.env.BUCKET;
+const ALERTS_TOPIC = process.env.ALERTS_TOPIC_ARN;
 
 async function readJson(key) {
   try {
@@ -42,6 +47,12 @@ export const handler = async (event) => {
   const targets = requested ?? cities();
 
   const summary = {};
+  // silent-rot detection: per-venue baselines persist in crawl-stats.json,
+  // anomalies collect into ONE digest email at the end (see anomaly.mjs)
+  let anomalyState = (await readJson('crawl-stats.json')) ?? {};
+  const digest = [];
+  const todayIso = new Date().toISOString().slice(0, 10);
+  const emptyOkIds = new Set(CLUBS.filter((c) => c.emptyOk).map((c) => c.id));
   for (const city of targets) {
     const key = `events-${city}.json`;
     const previous = (await readJson(key)) ?? (city === 'nyc' ? await readJson('events.json') : null);
@@ -67,12 +78,42 @@ export const handler = async (event) => {
       console.error(`[${city}] archive write failed (live write succeeded):`, err.message);
     }
 
+    // judge only clubs that refreshed this run — kept clubs are hard
+    // failures and the drift alarm's problem; never fail the crawl for this
+    try {
+      const { state, alerts } = detectAnomalies({
+        stats: venueStats(out.events, todayIso),
+        freshClubIds: result.crawledClubIds ?? [],
+        emptyOkIds, prev: anomalyState, todayIso,
+      });
+      anomalyState = state;
+      digest.push(...alerts.map((a) => `[${city}] ${a.clubId}: ${a.reasons.join('; ')}`));
+    } catch (err) {
+      console.error(`[${city}] anomaly detection failed (crawl unaffected):`, err.message);
+    }
+
     summary[city] = {
       events: out.events.length,
       fresh: result.freshCount,
       kept: result.keptCount,
       errors: result.errors,
     };
+  }
+
+  try {
+    await writeJson('crawl-stats.json', anomalyState);
+    if (digest.length && ALERTS_TOPIC) {
+      await sns.send(new PublishCommand({
+        TopicArn: ALERTS_TOPIC,
+        Subject: `Jazz Lineup crawler: ${digest.length} venue(s) look wrong`,
+        Message: `Silent-rot digest for ${todayIso} (each venue anomalous for 2+ consecutive crawls; one line per club per day):\n\n`
+          + digest.join('\n')
+          + `\n\nHard failures (module crashes, 0 events) alarm separately via the CloudWatch drift metric. Parsing runbook: NOTES.md crawler sections.`,
+      }));
+      console.log(`anomaly digest sent: ${digest.length} venue(s)`);
+    }
+  } catch (err) {
+    console.error('anomaly state/digest write failed (crawl succeeded):', err.message);
   }
   console.log(JSON.stringify(summary));
   const errorCount = Object.values(summary).reduce((n, s) => n + s.errors.length, 0);

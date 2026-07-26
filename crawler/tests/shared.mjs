@@ -102,6 +102,7 @@ ok('merge: zero events = suspect, failures keep previous, dedupe + sort', () => 
   assert.equal(out.errors.length, 2);
   assert.ok(out.errors.some((e) => /0 events/.test(e)));
   assert.ok(out.errors.some((e) => /site down/.test(e)));
+  assert.deepEqual(out.crawledClubIds, ['a'], 'only freshly-crawled clubs listed (anomaly detector input)');
 });
 
 ok('merge: emptyOk modules may return 0 events without going suspect', () => {
@@ -259,4 +260,69 @@ ok('personnelFromLines: comma-separated rosters parse; prose commas stay out', (
   assert.deepEqual(personnelFromLines('grabbing the respect of jazz legends like Sonny Stitt, and Chet Baker'), []);
   assert.deepEqual(personnelFromLines('Table Seating: $30.00 - $65.00\nBar Seating: $30.00 - $65.00'), []);
   assert.deepEqual(personnelFromLines('FRIDAY, JUL 17, 2026 7:00PM\nOakland, CA'), []);
+});
+
+// --- Silent-rot anomaly detector (2026-07-20: "guard against crawling changes") --
+// Hard failures feed the CloudWatch drift alarm; this catches the venue that
+// still "works" while quietly shrinking (the Vanguard U+2011 class of bug).
+import { venueStats, detectAnomalies } from '../anomaly.mjs';
+const mkShows = (clubId, n, { future = true, pers = true } = {}) =>
+  Array.from({ length: n }, (_, i) => ({
+    clubId,
+    date: future ? `2026-08-0${(i % 8) + 1}` : '2026-07-01',
+    personnel: pers ? [{ name: 'X', instrument: 'sax' }] : null,
+  }));
+
+ok('anomaly: collapse alerts after 2 consecutive crawls, once per day, recovers silently', () => {
+  const today = '2026-07-20';
+  const run = (n, prev, day = today) => detectAnomalies({
+    stats: venueStats(mkShows('smoke', n), day), freshClubIds: ['smoke'], prev, todayIso: day,
+  });
+  let r = run(40);            // baseline crawl 1
+  r = run(40, r.state);       // baseline crawl 2
+  assert.equal(r.alerts.length, 0, 'healthy venue stays quiet');
+  assert.ok(r.state.clubs.smoke.hi >= 40, 'high-water learned');
+  r = run(6, r.state);        // collapse, crawl 1
+  assert.equal(r.alerts.length, 0, 'one bad crawl could be a site hiccup');
+  r = run(6, r.state);        // collapse, crawl 2 -> digest
+  assert.equal(r.alerts.length, 1);
+  assert.match(r.alerts[0].reasons[0], /events 6 vs usual ~(39|40)/); // baseline decays ~3%/crawl
+  r = run(6, r.state);        // same day again -> suppressed
+  assert.equal(r.alerts.length, 0, 'one digest line per club per day');
+  r = run(6, r.state, '2026-07-21'); // still broken tomorrow -> remind
+  assert.equal(r.alerts.length, 1);
+  r = run(40, r.state, '2026-07-21'); // recovery
+  assert.equal(r.alerts.length, 0);
+  assert.equal(r.state.clubs.smoke.streak, 0, 'recovery resets the streak');
+});
+
+ok('anomaly: personnel collapse and no-future rot alert; emptyOk and tiny venues exempt', () => {
+  const today = '2026-07-20';
+  const step = (events, ids, prev, extra = {}) => detectAnomalies({
+    stats: venueStats(events, today), freshClubIds: ids, prev, todayIso: today, ...extra,
+  });
+  // personnel coverage collapse at steady event counts
+  let r = step(mkShows('vortex', 10), ['vortex']);
+  r = step(mkShows('vortex', 10), ['vortex'], r.state);
+  r = step(mkShows('vortex', 10, { pers: false }), ['vortex'], r.state);
+  r = step(mkShows('vortex', 10, { pers: false }), ['vortex'], r.state);
+  assert.equal(r.alerts.length, 1);
+  assert.match(r.alerts[0].reasons[0], /personnel 0% vs usual ~(9\d|100)%/); // decay again
+  // a calendar with no future events is rot even if the count looks healthy
+  r = step(mkShows('django', 40), ['django']);
+  r = step(mkShows('django', 40, { future: false }), ['django'], r.state);
+  r = step(mkShows('django', 40, { future: false }), ['django'], r.state);
+  assert.equal(r.alerts.length, 1);
+  assert.equal(r.alerts[0].reasons[0], 'no future events');
+  // seasonal venues (emptyOk) may go dark without a digest line
+  const eo = { emptyOkIds: new Set(['ny92']) };
+  r = step(mkShows('ny92', 20), ['ny92'], undefined, eo);
+  r = step(mkShows('ny92', 1), ['ny92'], r.state, eo);
+  r = step(mkShows('ny92', 1), ['ny92'], r.state, eo);
+  assert.equal(r.alerts.length, 0, 'off-season is not rot');
+  // venues too small to judge stay quiet
+  r = step(mkShows('marjorie', 3), ['marjorie']);
+  r = step(mkShows('marjorie', 1), ['marjorie'], r.state);
+  r = step(mkShows('marjorie', 1), ['marjorie'], r.state);
+  assert.equal(r.alerts.length, 0, 'a 3-show room is noise, not signal');
 });

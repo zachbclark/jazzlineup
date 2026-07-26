@@ -298,6 +298,23 @@ Crawl failure model: per-venue try/catch; a failing venue reports in the
 Lambda summary's errors[] and keeps its previous events (kept count);
 the site never breaks from one venue's outage.
 
+SILENT-ROT DIGEST (2026-07-20, "guard against crawling changes"): hard
+failures feed the drift alarm, but a venue can still "work" while
+quietly shrinking (the Vanguard U+2011 week no alarm ever saw).
+crawler/anomaly.mjs judges every FRESHLY-crawled venue against decaying
+high-water baselines persisted in s3 crawl-stats.json: event-count
+collapse (<40% of usual), personnel-coverage collapse, no-future-events.
+Two consecutive anomalous crawls (~8h) earn ONE digest email line via
+the existing Alerts SNS topic — one line per club per day, never an
+alarm storm; recovery resets silently; emptyOk venues and rooms under 5
+events are exempt; seasonal shrink stops alerting by itself as the
+baseline decays. Detection lives in Lambda code because per-venue
+CloudWatch metrics would cost ~$0.30/mo each across 100+ venues. If a
+digest email names a venue, the fix is a parser session, not a config
+change. SMS was considered and skipped (US origination fees +
+registration); add an SNS SMS subscription later if email proves too
+slow.
+
 ## Command cheat sheet
 
 Everyday dev (repo root):
