@@ -139,6 +139,11 @@ class JazzLineupStack extends cdk.Stack {
     // Free tier covers all of this (3 dashboards, 10 alarms, email SNS).
     const alerts = new sns.Topic(this, 'Alerts', { displayName: 'jazzlineup alerts' });
     alerts.addSubscription(new snsSubs.EmailSubscription(ALERT_EMAIL));
+    // the crawler's silent-rot digest (anomaly.mjs) publishes here directly:
+    // per-venue CloudWatch metrics would cost ~$0.30/mo each across 100+
+    // venues, so detection lives in Lambda code and only one email leaves
+    alerts.grantPublish(crawler);
+    crawler.addEnvironment('ALERTS_TOPIC_ARN', alerts.topicArn);
 
     // Crawler failed twice in a row (~8h of stale data) -> email.
     const crawlerErrors = crawler.metricErrors({ period: cdk.Duration.hours(4), statistic: 'Sum' });

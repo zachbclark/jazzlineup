@@ -94,7 +94,13 @@ export function mergeCrawlResults(results, { previousEvents = [], targetIds, emp
     (a, b) => a.date.localeCompare(b.date) || sortTime(a).localeCompare(sortTime(b))
   );
 
-  return { events, errors, log, freshCount: fresh.length, keptCount: kept.length };
+  return {
+    events, errors, log,
+    freshCount: fresh.length, keptCount: kept.length,
+    // which clubs actually refreshed this run — the anomaly detector only
+    // judges fresh clubs (kept ones are the drift alarm's problem)
+    crawledClubIds: [...crawledClubIds],
+  };
 }
 
 export function buildOutput({ events, errors, city = null }) {
