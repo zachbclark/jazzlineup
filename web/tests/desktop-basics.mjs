@@ -70,6 +70,20 @@ export default async function run({ pd, errors }) {
     assert.ok(await pd.$('.grid'), 'calendar renders after home click');
   });
 
+  await test('big-city chip wall starts collapsed on desktop; strip expands it', async () => {
+    const bar = await pd.$('.filterbar.collapsible.collapsed');
+    assert.ok(bar, 'NYC (33 venues) should collapse on desktop');
+    assert.ok(await pd.$('.chips-toggle'), 'expand strip missing on desktop');
+    const h1 = await pd.$eval('.filterbar', (el) => el.clientHeight);
+    await pd.click('.chips-toggle');
+    await pd.waitForTimeout(250);
+    const h2 = await pd.$eval('.filterbar', (el) => el.clientHeight);
+    assert.ok(h2 > h1 * 1.5, `wall did not expand: ${h1} -> ${h2}`);
+    await pd.click('.chips-toggle');
+    await pd.waitForTimeout(250);
+    assert.equal(await pd.$eval('.filterbar', (el) => el.clientHeight), h1, 'did not collapse back');
+  });
+
   await test('clicking a day with events opens the inline drawer', async () => {
     // pick any cell with events that is not already open
     await pd.click('.cell.has-events:not(.open) .daynum');

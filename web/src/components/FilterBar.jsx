@@ -9,16 +9,17 @@ import React, { useEffect, useLayoutEffect, useRef } from 'react';
 //    to their new spots instead of teleporting
 // The parent owns the order; we report moves via onReorder(dragId, targetId,
 // placeAfter), then onReorderEnd() once on drop (that's when it persists).
-export default function FilterBar({
-  clubs, active, saved, onToggle, onAll, onMine, onSaveMine,
-  onReorder, onReorderEnd, hasCustomOrder, onResetOrder,
-}) {
+// The bar holds ONLY venue chips: the All / My clubs / Save controls live
+// in PicksBar on their own row (moved 2026-07-26).
+export default function FilterBar({ clubs, active, saved, onToggle, onStar, onReorder, onReorderEnd }) {
   const barRef = useRef(null);
   const drag = useRef({ id: null, el: null, active: false, sx: 0, sy: 0, timer: null, didDrag: false });
   const rects = useRef(new Map());
   const lastMoveAt = useRef(0); // cooldown: let each FLIP glide settle before the next reorder
-  // Mobile: chips wrap (no sideways scrolling); collapsed shows ~2 lines with
-  // an expand strip below. Desktop never collapses (CSS ignores the class).
+  // Chips wrap (no sideways scrolling); collapsed shows ~2 lines with an
+  // expand strip below. Mobile collapses always; desktop only for big
+  // cities (the NYC 33-chip wall), via the .collapsible class.
+  const collapsible = clubs.length >= 16;
   const [expanded, setExpanded] = React.useState(false);
   const [overflows, setOverflows] = React.useState(false);
 
@@ -144,25 +145,11 @@ export default function FilterBar({
 
   return (
     <>
-    <div className={'filterbar' + (expanded ? '' : ' collapsed')} ref={barRef}>
-      <button className={'chip chip-all' + (active === null ? ' on' : '')} onClick={onAll}>
-        All clubs
-      </button>
-      {saved?.length > 0 && (
-        <button
-          className={'chip chip-mine' + (active !== null && active.size === saved.length && saved.every((id) => active.has(id)) ? ' on' : '')}
-          onClick={onMine}
-        >
-          My clubs
-        </button>
-      )}
-      {active !== null && !(saved && active.size === saved.length && saved.every((id) => active.has(id))) && (
-        <button className="chip chip-save" onClick={onSaveMine}>
-          Save picks
-        </button>
-      )}
+    <div className={'filterbar' + (collapsible ? ' collapsible' : '') + (expanded ? '' : ' collapsed')} ref={barRef}>
       {clubs.map((c) => {
         const on = active === null || active.has(c.id);
+        const filtering = active !== null && active.has(c.id);
+        const starred = saved?.includes(c.id) ?? false;
         return (
           <button
             key={c.id}
@@ -180,15 +167,24 @@ export default function FilterBar({
           >
             <span className="dot" style={{ background: c.color }} />
             {c.shortName}
+            {/* the star shows only on chips you've tapped into a filter —
+                that's when "keep this?" is a live question. Tap it and the
+                club joins My clubs on the spot; no save step. */}
+            {filtering && (
+              <span
+                className={'chip-star' + (starred ? ' starred' : '')}
+                role="button"
+                aria-label={starred ? `Remove ${c.shortName} from My clubs` : `Add ${c.shortName} to My clubs`}
+                title={starred ? 'Remove from My clubs' : 'Add to My clubs'}
+                onPointerDown={(e) => e.stopPropagation()}
+                onClick={(e) => { e.stopPropagation(); onStar(c.id); }}
+              >
+                {starred ? '\u2605' : '\u2606'}
+              </span>
+            )}
           </button>
         );
       })}
-      {/* appears only once an order has been customized — otherwise invisible */}
-      {hasCustomOrder && (
-        <button className="chip chip-reset" onClick={onResetOrder} title="Reset venue order to default">
-          &#8634; default
-        </button>
-      )}
     </div>
     {(overflows || expanded) && (
       <button className="chips-toggle" onClick={() => setExpanded((v) => !v)}>

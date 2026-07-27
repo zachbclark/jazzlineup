@@ -6,6 +6,7 @@ import CitySwitcher from './components/CitySwitcher';
 import InfoTip from './components/InfoTip';
 import BoroughBar from './components/BoroughBar';
 import FilterBar from './components/FilterBar';
+import PicksBar from './components/PicksBar';
 import MonthGrid from './components/MonthGrid';
 import ListView from './components/ListView';
 
@@ -131,16 +132,24 @@ export default function App() {
 
   // Chip selection is a SESSION VIEW: it lives in memory and the ?venues=
   // URL mirror (refresh-safe, shareable) and never writes storage. "My
-  // clubs" only changes on the explicit Save picks tap — browsing tonight's
+  // clubs" only changes when a chip's star is tapped — browsing tonight's
   // one-off filter can never clobber the curated set.
-  const saveMine = () => {
-    if (active === null) return;
-    const arr = [...active];
-    localStorage.setItem(`jl.mine.${city}`, JSON.stringify(arr));
-    setSavedClubs(arr);
+  const toggleSaved = (id) => {
+    const wasMine = savedClubs != null && active !== null
+      && active.size === savedClubs.length && savedClubs.every((x) => active.has(x));
+    const next = savedClubs?.includes(id)
+      ? savedClubs.filter((x) => x !== id)
+      : [...(savedClubs ?? []), id];
+    if (next.length) localStorage.setItem(`jl.mine.${city}`, JSON.stringify(next));
+    else localStorage.removeItem(`jl.mine.${city}`);
+    setSavedClubs(next.length ? next : null);
+    // editing the set while looking at exactly the saved set keeps the
+    // view following your edits
+    if (wasMine) setActive(next.length ? new Set(next) : null);
   };
 
   const clubById = useMemo(() => Object.fromEntries(clubs.map((c) => [c.id, c])), [clubs]);
+
 
   // Saved chip order applies first (unknown/new clubs append in registry
   // order), then borough scope narrows, then the venue-chip set filters.
@@ -279,13 +288,17 @@ export default function App() {
       </header>
 
       {searching && (
-        <div className="search-summary">
+        <div className={'search-summary' + (!results.length && otherMatches.length ? ' redirecting' : '')}>
           {results.length
             ? <><strong>{results.length}</strong> show{results.length === 1 ? '' : 's'} across all {cityLabel} venues</>
-            : <>No matches in {cityLabel}</>}
+            : <>No matches in {cityLabel}{otherMatches.length ? ', but they\u2019re playing elsewhere:' : ''}</>}
           {otherMatches.map(({ city: oc, count }) => (
-            <button key={oc.id} className="other-city" onClick={() => changeCity(oc.id)}>
-              {count} in {oc.label} &rarr;
+            // when the current city came up empty, these ARE the result —
+            // full-size gold buttons, not a whisper (Zach, 2026-07-27)
+            <button key={oc.id}
+              className={'other-city' + (!results.length ? ' big' : '')}
+              onClick={() => changeCity(oc.id)}>
+              {count} show{count === 1 ? '' : 's'} in {oc.label} &rarr;
             </button>
           ))}
         </div>
@@ -293,21 +306,24 @@ export default function App() {
 
       {!searching && <BoroughBar boroughs={boroughs} borough={borough} onChange={setBorough} />}
 
+      {!searching && clubs.length > 0 && <PicksBar
+        active={active}
+        saved={savedClubs}
+        // two plain actions: show everything / show the starred clubs
+        onAll={() => setActive(null)}
+        onMine={() => savedClubs?.length && setActive(new Set(savedClubs))}
+        hasCustomOrder={order !== null}
+        onResetOrder={resetOrder}
+      />}
+
       {!searching && <FilterBar
         clubs={scopedClubs}
         active={active}
         saved={savedClubs}
         onToggle={toggleClub}
+        onStar={toggleSaved}
         onReorder={reorderClub}
         onReorderEnd={persistOrder}
-        hasCustomOrder={order !== null}
-        onResetOrder={resetOrder}
-        // "All clubs" is a VIEW, not a reset: the saved picks survive it
-        onAll={() => setActive(null)}
-        // "My clubs" returns to the saved picks
-        onMine={() => savedClubs?.length && setActive(new Set(savedClubs))}
-        // "Save picks" snapshots the current selection as My clubs
-        onSaveMine={saveMine}
       />}
 
       {error && <div className="error">Couldn&rsquo;t load shows: {error}</div>}
