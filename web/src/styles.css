@@ -155,7 +155,7 @@ button { font: inherit; cursor: pointer; }
 /* big cities (NYC's 33 chips) collapse everywhere; small cities collapse
    only on phones (the mobile block below). The expand strip is a real
    button on both. */
-.filterbar.collapsible.collapsed { max-height: 84px; overflow: hidden; }
+.filterbar.collapsible.collapsed { max-height: 84px; overflow: clip; }
 .chips-toggle {
   display: block; width: 100%; margin: 6px 0 14px;
   background: rgba(232, 180, 88, 0.06); color: var(--text);
@@ -389,7 +389,10 @@ button.cell { text-align: left; border: 1px solid var(--line); font: inherit; co
      venues felt weird — Zach 2026-07-15). Collapsed = first two lines; the
      slim strip below expands the full wrap in place. */
   .filterbar { margin-bottom: 4px; }
-  .filterbar.collapsed { max-height: 98px; overflow: hidden; }
+  /* mobile chips are taller (bigger tap targets + the star), and the
+     .collapsible desktop rule is more specific than the plain mobile one —
+     match its specificity here or NYC clips its second row mid-chip */
+  .filterbar.collapsed, .filterbar.collapsible.collapsed { max-height: 100px; overflow: clip; }
   /* chips-toggle is styled at base now (desktop collapses big cities too);
      it stays a real button, not a whisper (Zach, 2026-07-18) */
   .picks-row { flex-wrap: wrap; gap: 8px; }
