@@ -19,6 +19,7 @@ export default async function run({ pm, merrors }) {
   });
 
   await test('mobile: chip panel collapses to ~2 lines and expands in place', async () => {
+    assert.ok(await pm.$('.picks-row'), 'picks row must sit above the collapsed wall');
     const toggle = await pm.$('.chips-toggle');
     assert.ok(toggle, 'expand strip missing (24 venues must overflow 2 lines)');
     const h1 = await pm.$eval('.filterbar', (el) => el.clientHeight);

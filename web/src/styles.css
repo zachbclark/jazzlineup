@@ -99,6 +99,13 @@ button { font: inherit; cursor: pointer; }
   background: none; border: 1px solid var(--line); border-radius: 999px;
   color: var(--text); font-size: 12.5px; padding: 3px 12px; margin-left: 12px;
 }
+.other-city.big {
+  display: inline-flex; font-size: 15px; font-weight: 600;
+  color: var(--accent); border: 1px solid var(--accent); border-radius: 999px;
+  padding: 9px 18px; margin: 6px 8px 0 0; background: rgba(232, 180, 88, 0.08);
+}
+.other-city.big:hover { background: rgba(232, 180, 88, 0.16); }
+.search-summary.redirecting { display: block; }
 .search-summary .other-city:hover { border-color: var(--accent); color: var(--accent); }
 
 /* tips popover: quiet ⓘ, gold on hover; panel matches the city menu */
@@ -145,10 +152,20 @@ button { font: inherit; cursor: pointer; }
 
 /* filter chips */
 .filterbar { display: flex; flex-wrap: wrap; gap: 8px; margin: 6px 0 18px; }
-/* the expand strip is a phone affordance; desktop wraps fully, always */
-.chips-toggle { display: none; }
+/* big cities (NYC's 33 chips) collapse everywhere; small cities collapse
+   only on phones (the mobile block below). The expand strip is a real
+   button on both. */
+.filterbar.collapsible.collapsed { max-height: 84px; overflow: hidden; }
+.chips-toggle {
+  display: block; width: 100%; margin: 6px 0 14px;
+  background: rgba(232, 180, 88, 0.06); color: var(--text);
+  border: 1px solid var(--line); border-radius: 10px;
+  font-size: 13.5px; font-weight: 600; letter-spacing: 0.4px;
+  padding: 11px 0; text-align: center;
+}
+.chips-toggle:hover, .chips-toggle:active { border-color: var(--accent); color: var(--accent); }
 @media (min-width: 761px) {
-  .filterbar.collapsed { max-height: none; overflow: visible; }
+  .filterbar:not(.collapsible).collapsed { max-height: none; overflow: visible; }
 }
 .chip {
   display: inline-flex; align-items: center; gap: 7px;
@@ -164,19 +181,31 @@ button { font: inherit; cursor: pointer; }
   cursor: grabbing;
   transition: none; /* the FLIP glide belongs to the displaced chips, not this one */
 }
-.chip-reset { border-style: dashed; opacity: 0.4; font-size: 12.5px; }
-.chip-reset:hover { opacity: 0.9; color: var(--text); }
-/* "All clubs" and "My clubs" are controls, not venues: never dimmed, bright
-   text with a dashed border while they're offers (same grammar as
-   .chip-reset), solid gold for the active view, and a beat of space before
-   the venue list. My clubs only renders once saved picks exist. */
-.chip-all, .chip-mine, .chip-save {
-  opacity: 1; margin-right: 6px;
-  border-style: dashed; border-color: var(--muted);
-  color: var(--text);
+/* picks row: which SET of venues you're looking at. Lives above the chip
+   bar; same grammar as the header view-toggle (one pill, gold .on
+   segment). Custom is transient; ★ Save is the one gold invitation. */
+.picks-row { display: flex; align-items: center; gap: 10px; margin: 10px 0 2px; }
+.picks-btn {
+  background: transparent; color: var(--text);
+  border: 1px solid var(--line); border-radius: 999px;
+  padding: 6px 16px; font-size: 13px; font-weight: 500;
+  transition: all .15s ease;
 }
-.chip-all:hover, .chip-mine:hover, .chip-save:hover { border-color: var(--accent); }
-.chip-all.on, .chip-mine.on { border-style: solid; border-color: var(--accent); color: var(--accent); }
+.picks-btn:hover { border-color: var(--accent); color: var(--accent); }
+.picks-btn .picks-star { color: var(--accent); margin-right: 2px; transition: color .15s ease; }
+/* solid gold = you are here (the Calendar/List grammar) */
+.picks-btn.on {
+  background: var(--accent); border-color: var(--accent);
+  color: #14100a; font-weight: 600;
+  box-shadow: 0 0 14px rgba(232, 180, 88, 0.35);
+}
+.picks-btn.on .picks-star { color: #14100a; }
+/* the star on an active chip: tap to add the club to My clubs */
+.chip-star { margin-left: 2px; padding: 0 2px; color: var(--muted); font-size: 13px; cursor: pointer; }
+.chip-star:hover { color: var(--accent); text-shadow: 0 0 10px rgba(232, 180, 88, 0.7); }
+.chip-star.starred { color: var(--accent); }
+.order-reset { background: none; border: none; color: var(--muted); font-size: 12.5px; padding: 6px 2px; margin-left: auto; opacity: 0.7; }
+.order-reset:hover { opacity: 1; color: var(--text); }
 .dot { width: 9px; height: 9px; border-radius: 50%; display: inline-block; }
 
 /* month grid */
@@ -361,16 +390,12 @@ button.cell { text-align: left; border: 1px solid var(--line); font: inherit; co
      slim strip below expands the full wrap in place. */
   .filterbar { margin-bottom: 4px; }
   .filterbar.collapsed { max-height: 98px; overflow: hidden; }
-  /* a real button, not a whisper — "all 29 venues" as a slim text strip
-     was invisible to people (Zach, 2026-07-18) */
-  .chips-toggle {
-    display: block; width: 100%; margin: 6px 0 14px;
-    background: rgba(232, 180, 88, 0.06); color: var(--text);
-    border: 1px solid var(--line); border-radius: 10px;
-    font-size: 13.5px; font-weight: 600; letter-spacing: 0.4px;
-    padding: 11px 0; text-align: center;
-  }
-  .chips-toggle:active { border-color: var(--accent); color: var(--accent); }
+  /* chips-toggle is styled at base now (desktop collapses big cities too);
+     it stays a real button, not a whisper (Zach, 2026-07-18) */
+  .picks-row { flex-wrap: wrap; gap: 8px; }
+  .picks-btn { padding: 9px 16px; font-size: 14px; }
+  .chip-star { font-size: 16px; padding: 0 4px; }
+  .order-reset { display: none; } /* rare power feature; desktop only */
   .chip { padding: 10px 15px; font-size: 14px; }
   .borough-btn { padding: 8px 12px; font-size: 13px; } /* thumb-sized */
 

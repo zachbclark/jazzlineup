@@ -16,6 +16,45 @@ export const CLUBS = [
     module: './clubs/vanguard.js',
   },
   {
+    id: 'jazzgallery',
+    name: 'The Jazz Gallery',
+    shortName: 'Jazz Gallery',
+    url: 'https://jazzgallery.org',
+    address: '1158 Broadway, 5th Fl, New York, NY 10001',
+    city: 'nyc',
+    borough: 'manhattan',
+    timezone: 'America/New_York',
+    neighborhood: 'NoMad',
+    color: '#c96a4a', // their brand dark red #941100 shifted to rust (Vanguard owns red)
+    module: './clubs/jazzgallery.js',
+  },
+  {
+    id: 'jazzcultural',
+    name: 'Jazz Cultural Theater',
+    shortName: 'Jazz Cultural',
+    url: 'https://www.jazzcultural.com',
+    address: '184 W 10th St, New York, NY 10014',
+    city: 'nyc',
+    borough: 'manhattan',
+    timezone: 'America/New_York',
+    neighborhood: 'West Village',
+    color: '#3d55e0', // SmallsLive brand royal blue #1055c9 — indigo, clear of Blue Note
+    module: './clubs/smalls.js', // same SmallsLive feed as Smalls/Mezzrow
+  },
+  {
+    id: 'smoke',
+    name: 'Smoke Jazz Club',
+    shortName: 'Smoke',
+    url: 'https://www.smokejazz.com',
+    address: '2751 Broadway, New York, NY 10025',
+    city: 'nyc',
+    borough: 'manhattan',
+    timezone: 'America/New_York',
+    neighborhood: 'Upper West Side',
+    color: '#b83226', // their brand red #c51403 deepened to brick (Vanguard keeps bright red)
+    module: './clubs/smoke.js',
+  },
+  {
     id: 'bluenote',
     name: 'Blue Note',
     shortName: 'Blue Note',
@@ -68,19 +107,6 @@ export const CLUBS = [
     module: './clubs/birdland.js',
   },
   {
-    id: 'jazzgallery',
-    name: 'The Jazz Gallery',
-    shortName: 'Jazz Gallery',
-    url: 'https://jazzgallery.org',
-    address: '1158 Broadway, 5th Fl, New York, NY 10001',
-    city: 'nyc',
-    borough: 'manhattan',
-    timezone: 'America/New_York',
-    neighborhood: 'NoMad',
-    color: '#c96a4a', // their brand dark red #941100 shifted to rust (Vanguard owns red)
-    module: './clubs/jazzgallery.js',
-  },
-  {
     id: 'dizzys',
     name: "Dizzy's Club",
     shortName: "Dizzy's",
@@ -92,32 +118,6 @@ export const CLUBS = [
     neighborhood: 'Columbus Circle',
     color: '#ff8929', // the amber room + sunset, deepened clear of Mezzrow's gold
     module: './clubs/dizzys.js',
-  },
-  {
-    id: 'jazzcultural',
-    name: 'Jazz Cultural Theater',
-    shortName: 'Jazz Cultural',
-    url: 'https://www.jazzcultural.com',
-    address: '184 W 10th St, New York, NY 10014',
-    city: 'nyc',
-    borough: 'manhattan',
-    timezone: 'America/New_York',
-    neighborhood: 'West Village',
-    color: '#3d55e0', // SmallsLive brand royal blue #1055c9 — indigo, clear of Blue Note
-    module: './clubs/smalls.js', // same SmallsLive feed as Smalls/Mezzrow
-  },
-  {
-    id: 'smoke',
-    name: 'Smoke Jazz Club',
-    shortName: 'Smoke',
-    url: 'https://www.smokejazz.com',
-    address: '2751 Broadway, New York, NY 10025',
-    city: 'nyc',
-    borough: 'manhattan',
-    timezone: 'America/New_York',
-    neighborhood: 'Upper West Side',
-    color: '#b83226', // their brand red #c51403 deepened to brick (Vanguard keeps bright red)
-    module: './clubs/smoke.js',
   },
   {
     id: 'nublu',

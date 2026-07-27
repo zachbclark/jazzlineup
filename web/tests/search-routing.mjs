@@ -33,7 +33,7 @@ export default async function run({ pd, BASE }) {
 
   await test('borough filter narrows chips and counts, then clears', async () => {
     const count = async () => Number((await pd.textContent('.foot')).match(/(\d+) shows/)[1]);
-    const chips = async () => (await pd.$$('.chip:not(.chip-all):not(.chip-mine):not(.chip-save)')).length;
+    const chips = async () => (await pd.$$('.chip')).length;
     const bar = await pd.$('.borough-bar');
     assert.ok(bar, 'borough bar missing (needs 2+ boroughs in data)');
     const allShows = await count();
@@ -82,16 +82,17 @@ export default async function run({ pd, BASE }) {
     });
     await pd.goto(BASE + '/nyc?venues=' + ids.join(',') + ',bogusclub', { waitUntil: 'networkidle' });
     await pd.waitForTimeout(600);
-    const on = await pd.$$eval('.chip.on:not(.chip-all):not(.chip-mine)', (els) => els.map((e) => e.getAttribute('data-chip-id')));
+    const on = await pd.$$eval('.chip.on', (els) => els.map((e) => e.getAttribute('data-chip-id')));
     assert.deepEqual(on.sort(), ids.slice().sort(), 'linked venues not applied (bogus id should be ignored)');
     assert.equal(await pd.evaluate(() => localStorage.getItem('jl.mine.nyc')), null,
       'a shared link must not overwrite saved picks');
+    assert.ok(await pd.$('.chip-star'), 'shared-link chips carry stars, the way in to My clubs');
     // toggling a chip adjusts the session view: the URL follows, storage stays out of it
     await pd.click(`[data-chip-id="${ids[0]}"]`);
     await pd.waitForTimeout(300);
     const q = await pd.evaluate(() => window.location.search);
     assert.ok(q.includes('venues=' + ids[1]) && !q.includes(ids[0]), 'URL did not follow chip toggle: ' + q);
-    await pd.click('.chip-all');
+    await pd.click('.seg-all');
     await pd.waitForTimeout(300);
     assert.equal(await pd.evaluate(() => window.location.search), '', 'All state should drop the param');
     assert.equal(await pd.evaluate(() => localStorage.getItem('jl.mine.nyc')), null,
