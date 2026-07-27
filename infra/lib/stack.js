@@ -120,6 +120,10 @@ class JazzLineupStack extends cdk.Stack {
       environment: { BUCKET: bucket.bucketName },
       logRetention: logs.RetentionDays.TWO_WEEKS,
       description: 'Crawls NYC jazz club sites and writes events.json to S3',
+      // never two crawls at once: politeness to 100+ small club websites.
+      // Overeager manual invokes queue here and then hit the S3 start-lock
+      // in lambda.mjs, so a burst of invokes still means one real crawl.
+      reservedConcurrentExecutions: 1,
     });
     bucket.grantReadWrite(crawler);
     // the crawler emits a per-run "ProblemClubs" drift metric

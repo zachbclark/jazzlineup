@@ -36,7 +36,25 @@ async function writeJson(key, body) {
 // after adding or fixing a venue). No payload = full crawl (the 4h schedule
 // sends none). Unknown ids fail loudly — a typo must not silently crawl
 // nothing and report success.
+// Overlap guard: five eager manual invokes must mean ONE crawl, not five.
+// A start-marker in S3 acts as a short lock; runs that arrive while a
+// recent crawl is underway (or just finished) exit immediately. The 4h
+// schedule is far outside the window, so it never skips. Belt to the
+// braces of the Lambda's reservedConcurrentExecutions: 1 (stack.js) —
+// concurrency stops parallel runs, the lock stops queued-up reruns.
+const LOCK_KEY = 'crawl-lock.json';
+const LOCK_WINDOW_MS = 10 * 60 * 1000;
+
 export const handler = async (event) => {
+  const lock = await readJson(LOCK_KEY);
+  const now = Date.now();
+  if (lock?.startedAt && now - lock.startedAt < LOCK_WINDOW_MS && !event?.force) {
+    const ageMin = Math.round((now - lock.startedAt) / 60000);
+    console.log(`skip: a crawl started ${ageMin} min ago (pass {"force":true} to override)`);
+    return { skipped: true, reason: `crawl started ${ageMin} min ago` };
+  }
+  await writeJson(LOCK_KEY, { startedAt: now });
+
   const requested = event?.city ? [event.city].flat() : null;
   if (requested) {
     const unknown = requested.filter((c) => !cities().includes(c));
