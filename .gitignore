@@ -7,3 +7,4 @@ infra/cdk.out/
 .DS_Store
 cdk.out/
 NOTES-private.md
+PLAN.md
