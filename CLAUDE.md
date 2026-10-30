@@ -9,6 +9,10 @@ Also read NOTES-private.md if present (gitignored, exists only on Zach's
 machine): launch strategy, community plans, crawl workarounds, and the
 working-copy protocol for AI sessions live there.
 
+Also read PLAN.md if present (gitignored, Zach's machine only): the
+current work queue, in priority order. Check items off there as they
+ship. Long-term goals live in ROADMAP.md (public).
+
 VOICE (Zach, 2026-07-26): no AI-style language ANYWHERE public — site
 copy, README, PR descriptions, Reddit, emails. That means: no corporate
 "we", no em dashes, no marketing cadence, no "earns a crawler" style
