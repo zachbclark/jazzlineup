@@ -149,8 +149,9 @@ ok('sfjazz seed: valid shape, groups into set-merged events via the normal parse
   assert.ok(sfjSeed.every((e) => e.name && /^\d{4}-\d{2}-\d{2}T/.test(e.eventDate) && e.eventTypes));
   const evs = sfjParse(JSON.stringify(sfjSeed));
   assert.ok(evs.length >= 25, `grouped events thin: ${evs.length}`);
-  const cornish = evs.filter((e) => /paul cornish/i.test(e.title));
-  assert.equal(cornish.length, 2, 'Paul Cornish Trio: two nights');
-  assert.deepEqual(cornish[0].sets, ['19:00', '20:30'], 'two sets merged per night');
-  assert.equal(cornish[0].details, 'Joe Henderson Lab');
+  // shape checks, not specific shows: the seed is re-captured every few weeks
+  const lab = evs.filter((e) => e.details === 'Joe Henderson Lab' && e.sets.length >= 2);
+  assert.ok(lab.length >= 3, 'two-set Lab nights merge into one event with both sets');
+  assert.ok(lab.every((e) => e.sets.every((s) => /^\d{2}:\d{2}$/.test(s))), 'set times are HH:MM');
+  assert.equal(new Set(evs.map((e) => e.id)).size, evs.length, 'ids unique');
 });
