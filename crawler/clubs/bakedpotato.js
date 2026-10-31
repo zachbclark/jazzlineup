@@ -12,7 +12,7 @@
 // Yoshi's and Blue Note).
 import {
   fetchText, makeEvent, applyLateNight, normalizeTime, monthNum, isoDate,
-  htmlToText, cleanText, sleep, personnelFromLines,
+  htmlToText, cleanText, sleep, personnelFromLines, laDate,
 } from '../lib.js';
 import { enrichFromDetailPages } from './_enrichdetails.js';
 
@@ -62,6 +62,20 @@ export function parseDetailSets(html) {
   return { sets };
 }
 
+// ThunderTix went behind a Cloudflare challenge (Oct 2026; the main site's
+// own events API is locked, 401). Same pattern as SFJAZZ: try live, and if
+// page 1 is refused, fall back to the browser-saved seed. Detail pages are
+// blocked too, so the seed path skips enrichment and keeps any set times an
+// earlier crawl already found.
+export function seedEvents(seed, today = new Date(), previousEvents = []) {
+  const cutoff = laDate(today); // tonight in LA, not UTC (UTC rolls over at 5pm)
+  const prior = new Map(previousEvents.map((e) => [e.id, e]));
+  return seed
+    .filter((d) => d.date >= cutoff)
+    .map((d) => makeEvent(applyLateNight({ clubId: 'bakedpotato', ...d })))
+    .map((e) => (e.sets.length || !prior.get(e.id)?.sets?.length ? e : { ...e, sets: prior.get(e.id).sets }));
+}
+
 export async function crawl(ctx = {}) {
   const out = [];
   const seen = new Set();
@@ -75,7 +89,10 @@ export async function crawl(ctx = {}) {
         added++;
       }
     } catch (err) {
-      if (p === 1) throw err;
+      if (p === 1) {
+        const { SEED } = await import('./bakedpotato-seed.js');
+        return seedEvents(SEED, ctx.today ?? new Date(), ctx.previousEvents ?? []);
+      }
       break;
     }
     if (!added) break;
