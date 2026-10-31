@@ -134,9 +134,11 @@ button { font: inherit; cursor: pointer; }
 .info-menu p:last-child { margin-bottom: 0; }
 
 .view-toggle { display: flex; border: 1px solid var(--line); border-radius: 8px; overflow: hidden; }
-.view-toggle button {
+.view-toggle button, .view-toggle a {
   background: transparent; color: var(--muted); border: none; padding: 7px 16px;
+  font: inherit; text-decoration: none; cursor: pointer;
 }
+.view-toggle a:hover, .view-toggle button:not(.on):hover { color: var(--text); }
 .view-toggle button.on { background: var(--accent); color: #14100a; font-weight: 600; }
 .view-toggle .vt-icon { display: none; } /* icons are a phone affordance */
 
@@ -374,7 +376,7 @@ button.cell { text-align: left; border: 1px solid var(--line); font: inherit; co
   .topbar { flex-wrap: wrap; gap: 10px; }
   .brand { font-size: 21px; white-space: nowrap; }
   /* icon-only view toggle: keeps brand + toggle on one line even for NYC */
-  .view-toggle button { padding: 9px 15px; font-size: 17px; line-height: 1; }
+  .view-toggle button, .view-toggle a { padding: 9px 9px; font-size: 17px; line-height: 1; }
   .view-toggle .vt-label { display: none; }
   .view-toggle .vt-icon { display: inline; }
   /* the city badge earns a touch more presence */
@@ -433,3 +435,93 @@ button.cell { text-align: left; border: 1px solid var(--line); font: inherit; co
 .personnel.grouped { display: block; }
 .personnel.grouped .p-section { display: block; padding-left: 10px; line-height: 1.5; }
 .personnel.grouped .p-inst { display: inline-block; min-width: 90px; font-style: italic; }
+
+/* ---- Archive (/archive/<city>/...) ------------------------------------ */
+.archive-intro { color: var(--muted); font-size: 14px; margin: 6px 0 18px; }
+.archive-cols { display: grid; grid-template-columns: 300px minmax(0, 1fr); gap: 28px; align-items: start; }
+.archive-cal { position: sticky; top: 16px; background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: 12px; }
+.ac-nav { display: flex; align-items: center; justify-content: space-between; margin-bottom: 8px; font-size: 14px; }
+.ac-nav button, .an-head button {
+  background: none; border: 1px solid var(--line); color: var(--text); border-radius: 6px;
+  width: 30px; height: 28px; cursor: pointer; font-size: 15px;
+}
+.ac-nav button:disabled, .an-head button:disabled { opacity: 0.3; cursor: default; }
+.ac-nav button:not(:disabled):hover, .an-head button:not(:disabled):hover { border-color: var(--accent); color: var(--accent); }
+.ac-grid { display: grid; grid-template-columns: repeat(7, 1fr); gap: 3px; }
+.ac-wd { text-align: center; color: var(--muted); font-size: 11px; padding-bottom: 2px; }
+.ac-cell {
+  position: relative; aspect-ratio: 1 / 1; background: var(--panel-2); border: 1px solid transparent;
+  border-radius: 6px; color: var(--text); cursor: pointer; padding: 3px; display: flex; flex-direction: column;
+  align-items: flex-start; justify-content: space-between; font: inherit;
+}
+.ac-cell.blank { background: none; cursor: default; }
+.ac-cell.off { opacity: 0.25; cursor: default; }
+.ac-cell:not(.off):not(.blank):hover { border-color: var(--line); }
+.ac-cell.on { border-color: var(--accent); }
+.ac-num { font-size: 11px; color: var(--muted); }
+.ac-cell.on .ac-num { color: var(--accent); }
+.ac-dots { display: flex; flex-wrap: wrap; gap: 2px; }
+.ac-dots i { width: 5px; height: 5px; border-radius: 50%; display: block; }
+.ac-count { position: absolute; top: 3px; right: 4px; font-size: 9px; color: var(--muted); }
+.an-head { display: flex; align-items: center; gap: 12px; }
+.an-head h2 { font-family: 'Abril Fatface', Georgia, serif; font-weight: 400; font-size: 24px; margin: 0; flex: 1 1 auto; }
+.an-count { color: var(--muted); font-size: 13.5px; margin: 4px 0 10px; }
+.an-note { color: var(--muted); font-size: 12.5px; font-style: italic; margin-top: 14px; }
+.archive-row .row-title a { color: inherit; text-decoration: none; }
+.archive-row .row-title a:hover { color: var(--accent); }
+.ar-ext { font-size: 10px; color: var(--muted); }
+.ar-name { background: none; border: none; padding: 0; color: inherit; font: inherit; cursor: pointer; }
+.ar-name:hover, .ar-name.hl { color: var(--accent); }
+.status-tag { color: var(--accent); border-color: rgba(232, 180, 88, 0.4); }
+.archive-row.is-cancelled { opacity: 0.55; }
+.ar-replaced { display: block; color: var(--muted); font-size: 12px; font-style: italic; margin-top: 1px; }
+.ar-result { display: grid; grid-template-columns: 96px minmax(0, 1fr); align-items: baseline; }
+.ar-night {
+  background: none; border: none; color: var(--muted); font: inherit; font-size: 12.5px;
+  text-align: left; cursor: pointer; padding: 8px 0;
+}
+.ar-night:hover { color: var(--accent); }
+.archive-foot { color: var(--muted); font-size: 12px; margin-top: 40px; border-top: 1px solid var(--line); padding-top: 14px; }
+@media (max-width: 760px) {
+  .archive-cols { grid-template-columns: 1fr; gap: 16px; }
+  .archive-cal { position: static; }
+  .an-head h2 { font-size: 19px; }
+  .ar-result { grid-template-columns: 1fr; }
+  .ar-night { padding: 6px 10px 0; }
+}
+.archive .city-hint { display: none; } /* the first-visit whisper belongs to the live page */
+@media (max-width: 760px) {
+}
+/* live page -> archive */
+.foot-link { color: inherit; text-decoration: none; border-bottom: 1px dotted var(--line); }
+.foot-link:hover { color: var(--accent); }
+.beta-tag {
+  font-size: 9px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; color: var(--accent);
+  border: 1px solid rgba(232, 180, 88, 0.45); border-radius: 4px; padding: 1px 5px; margin-right: 8px; vertical-align: 2px;
+}
+.archive-through { white-space: nowrap; }
+/* archive density: thousands of past shows, so rows run tighter than the live list */
+.archive .archive-row { padding: 4px 8px; column-gap: 12px; grid-template-columns: 92px minmax(0, 1fr) auto; font-size: 14px; line-height: 1.3; }
+.archive .archive-row .badge { font-size: 9.5px; padding: 1px 6px; }
+.archive .archive-row .row-details, .archive .ar-replaced { font-size: 11.5px; margin-top: 0; }
+.archive .archive-row .row-sets { font-size: 12px; }
+.archive .archive-row .late-tag { font-size: 8px; padding: 0 4px; margin-right: 6px; }
+.archive .an-head h2 { font-size: 21px; }
+.archive .an-count { margin-bottom: 6px; }
+.archive .daygroup h3 { margin: 14px 0 4px; font-size: 13px; }
+.archive .ar-result { grid-template-columns: 84px minmax(0, 1fr); }
+.archive .ar-night { padding: 4px 0; font-size: 12px; }
+@media (max-width: 760px) {
+  /* one line per show where possible: time stays on the right, not its own row */
+  .archive .archive-row { grid-template-columns: 66px minmax(0, 1fr) auto; column-gap: 8px; padding: 5px 2px; font-size: 13.5px; }
+  .archive .archive-row .badge { font-size: 8.5px; padding: 1px 4px; }
+  .archive .archive-row .row-sets { font-size: 11px; text-align: right; grid-column: 3; grid-row: 1; justify-self: end; }
+  .archive .archive-row .row-sets .late-tag { display: block; margin: 0 0 2px auto; width: fit-content; }
+  /* compact calendar: short cells, count + dots only */
+  .archive .ac-cell { aspect-ratio: auto; height: 40px; }
+  .archive .ac-count { font-size: 8.5px; }
+  .archive .archive-cal { padding: 8px; }
+  .archive .ac-nav { margin-bottom: 4px; }
+  .archive .an-head h2 { font-size: 18px; }
+  .archive-intro { font-size: 13px; margin: 2px 0 12px; }
+}

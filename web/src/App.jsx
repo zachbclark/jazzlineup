@@ -42,7 +42,8 @@ export default function App() {
   const [urlDay, setUrlDay] = useState(sharedDate); // day drawer, mirrored to ?date=
   // Everyone lands on the calendar; today is pre-selected so tonight's
   // lineup shows in the day drawer immediately.
-  const [view, setView] = useState('month');
+  // ?view=list lets the archive's toggle land on the list view
+  const [view, setView] = useState(() => (new URLSearchParams(window.location.search).get('view') === 'list' ? 'list' : 'month'));
   const isMobile = useIsMobile();
   // synchronous (not an effect): time formatting must be right on the same
   // render that shows the new city's events
@@ -284,6 +285,10 @@ export default function App() {
             <span className="vt-icon" aria-hidden="true">&#9776;</span>
             <span className="vt-label">List</span>
           </button>
+          <a href={'/archive/' + citySlug(city)} aria-label="Archive of past shows">
+            <span className="vt-icon" aria-hidden="true">&#9719;</span>
+            <span className="vt-label">Archive</span>
+          </a>
         </div>
       </header>
 
@@ -353,6 +358,8 @@ export default function App() {
         )}
         <span className="foot-sep">&middot;</span>
         <span>{shownEvents.length} shows across {shownClubCount} clubs</span>
+        <span className="foot-sep">&middot;</span>
+        <a className="foot-link" href={'/archive/' + citySlug(city)}>past shows</a>
         <span className="foot-sep">&middot;</span>
         <a className="tip-jar" href={TIP_URL} target="_blank" rel="noreferrer"
           title="Enjoying the site? Buy me a drink.">
