@@ -967,3 +967,13 @@ ok('cellardog: fall-2026 month API shape (startDate nested in structuredContent)
   assert.equal(evs[0].date, '2026-11-02', '7:30pm NY on Nov 2');
   assert.deepEqual(evs[0].sets, ['19:30']);
 });
+
+import { monthUrl as lunMonthUrl } from '../clubs/lunatico.js';
+ok('lunatico: month-view URLs for this month + next, December rolls into January', () => {
+  const oct = new Date('2026-10-30T20:00:00Z');
+  assert.match(lunMonthUrl(0, oct), /format=json&month=october-2026&view=calendar$/);
+  assert.match(lunMonthUrl(1, oct), /month=november-2026/);
+  assert.match(lunMonthUrl(1, new Date('2026-12-15T20:00:00Z')), /month=january-2027/);
+  // 11pm Dec 31 in New York is already Jan 1 in UTC: still December's view
+  assert.match(lunMonthUrl(0, new Date('2027-01-01T04:00:00Z')), /month=december-2026/);
+});

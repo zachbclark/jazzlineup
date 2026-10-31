@@ -1,6 +1,9 @@
 // Bar LunÀtico — Squarespace; /calendar?format=json returns the events
 // collection as { items: [...] } with startDate epoch ms (includes a time,
 // though not always a meaningful one) + title + fullUrl + excerpt.
+// Since fall 2026 the calendar is a MONTH view: the plain URL returns only
+// the current month, so late in a month it looked nearly empty. Fetch this
+// month and next via &month=<name>-<year>&view=calendar.
 import { fetchText, makeEvent, htmlToText, nyDate, nyTime, stripPromo, parsePersonnel, applyLateNight, extractTimes } from '../lib.js';
 
 const BASE = 'https://www.barlunatico.com';
@@ -38,6 +41,26 @@ export function parse(jsonText, today = new Date()) {
   return events;
 }
 
+const MONTHS = ['january', 'february', 'march', 'april', 'may', 'june',
+  'july', 'august', 'september', 'october', 'november', 'december'];
+
+export function monthUrl(offset, today = new Date()) {
+  const [y, m] = nyDate(today).split('-').map(Number);
+  const d = new Date(Date.UTC(y, m - 1 + offset, 1));
+  return `${URL_}&month=${MONTHS[d.getUTCMonth()]}-${d.getUTCFullYear()}&view=calendar`;
+}
+
 export async function crawl() {
-  return parse(await fetchText(URL_, { headers: { accept: 'application/json' } }));
+  const seen = new Set();
+  const out = [];
+  for (const offset of [0, 1]) {
+    try {
+      for (const e of parse(await fetchText(monthUrl(offset), { headers: { accept: 'application/json' } }))) {
+        if (!seen.has(e.id)) { seen.add(e.id); out.push(e); }
+      }
+    } catch (err) {
+      if (offset === 0) throw err; // this month must work; next month is best-effort
+    }
+  }
+  return out;
 }
