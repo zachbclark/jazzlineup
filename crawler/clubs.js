@@ -175,7 +175,7 @@ export const CLUBS = [
     id: 'arthurs',
     name: "Arthur's Tavern",
     shortName: "Arthur's",
-    url: 'https://www.arthurstavernnyc.com',
+    url: 'https://arthurstavern.nyc',
     address: '57 Grove St, New York, NY 10014',
     city: 'nyc',
     borough: 'manhattan',
