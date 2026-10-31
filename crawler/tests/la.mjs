@@ -274,6 +274,28 @@ ok('bakedpotato: detail page performance times -> sets', () => {
   assert.deepEqual(bakedDetailSets(html), { sets: ['20:00', '22:00'] });
 });
 
+// --- Baked Potato seed fallback (ThunderTix behind Cloudflare, Oct 2026) ---------
+import { seedEvents as bakedSeedEvents } from '../clubs/bakedpotato.js';
+import { SEED as bakedSeed } from '../clubs/bakedpotato-seed.js';
+ok('bakedpotato seed: valid shape, past dropped, no TBA, prior set times reused', () => {
+  assert.ok(bakedSeed.length >= 20, `seed thin: ${bakedSeed.length}`);
+  assert.ok(bakedSeed.every((d) => d.title && /^\d{4}-\d{2}-\d{2}$/.test(d.date) && Array.isArray(d.sets)));
+  assert.ok(!bakedSeed.some((d) => /^tba$/i.test(d.title)), 'TBA placeholders stay out');
+  const all = bakedSeedEvents(bakedSeed, new Date('2000-01-01T12:00:00Z'));
+  assert.equal(all.length, bakedSeed.length);
+  assert.ok(all.every((e) => e.sets.every((s) => s >= '12:00')), 'no morning typo times');
+  assert.ok(!/[\u200B-\u200D\uFEFF\u00AD]/.test(JSON.stringify(all)), 'no invisible characters in names or titles');
+  assert.ok(!all.some((e) => /^\$\d/.test(e.details ?? '')), 'ticket-price lines are not show details');
+  assert.equal(new Set(all.map((e) => e.id)).size, all.length, 'ids unique');
+  const last = bakedSeed.at(-1).date;
+  assert.ok(bakedSeedEvents(bakedSeed, new Date(`${last}T12:00:00Z`)).every((e) => e.date >= last), 'past nights dropped');
+  const blank = all.find((e) => !e.sets.length);
+  if (blank) {
+    const reused = bakedSeedEvents(bakedSeed, new Date('2000-01-01T12:00:00Z'), [{ ...blank, sets: ['20:00', '22:00'] }]);
+    assert.deepEqual(reused.find((e) => e.id === blank.id).sets, ['20:00', '22:00'], 'earlier enriched sets survive');
+  }
+});
+
 // --- Lodge Room (Tessera eventObjects; jazz-filtered) ----------------------------------
 import { parse as lodgeParse } from '../clubs/lodgeroom.js';
 ok('lodgeroom: tessera blobs parse; jazz filter keeps keyword + known-artist hits only', () => {
