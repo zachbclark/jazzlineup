@@ -235,3 +235,11 @@ ok('garcias: keyword+artist filter, TM-slug year, Show time to 24h, openers kept
   assert.equal(evs[1].date, '2027-01-09', 'year from the Ticketmaster slug, not inferYear');
   assert.deepEqual(evs[1].sets, ['20:00']);
 });
+
+ok('jazzshowcase: fall-2026 month API shape (startDate nested in structuredContent)', () => {
+  const items = [{ structuredContent: { startDate: Date.UTC(2026, 10, 6, 2, 0) },
+    title: 'Some Quartet', fullUrl: '/nowplaying/some-quartet', excerpt: '' }];
+  const evs = jsParse(JSON.stringify(items));
+  assert.equal(evs.length, 1, 'nested startDate is read');
+  assert.equal(evs[0].date, '2026-11-05', '8pm Chicago on Nov 5');
+});

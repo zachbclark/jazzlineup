@@ -3,7 +3,7 @@
 //   GET /api/open/GetItemsByMonth?month=July-2026&collectionId=<id>
 // -> [{ title, startDate(epoch ms), fullUrl, excerpt … }]
 // Jazz nightly plus blues/funk nights; titles sometimes carry "(ends at 2am)".
-import { fetchText, makeEvent, htmlToText, nyDate, nyTime, stripPromo, applyLateNight } from '../lib.js';
+import { fetchText, makeEvent, htmlToText, nyDate, nyTime, stripPromo, applyLateNight, sqStartDate } from '../lib.js';
 
 const BASE = 'https://www.cellardog.net';
 const COLLECTION = '6890f9218a403c58f1d40c19';
@@ -20,15 +20,16 @@ export function parse(jsonText) {
   const items = JSON.parse(jsonText);
   const events = [];
   for (const it of Array.isArray(items) ? items : []) {
-    if (!it?.title || !it?.startDate) continue;
-    const time = nyTime(it.startDate);
+    const start = sqStartDate(it);
+    if (!it?.title || !start) continue;
+    const time = nyTime(start);
     const plausible = time >= '12:00' || time < '03:00';
     const title = String(it.title).replace(/\s*\((?:ends?|until|till)[^)]*\)\s*/gi, ' ').trim();
     const excerpt = stripPromo(htmlToText(it.excerpt ?? ''));
     events.push(makeEvent(applyLateNight({
       clubId: 'cellardog',
       title,
-      date: nyDate(it.startDate),
+      date: nyDate(start),
       sets: plausible ? [time] : [],
       url: it.fullUrl ? BASE + it.fullUrl : `${BASE}/new-music`,
       details: excerpt.slice(0, 300) || null,
