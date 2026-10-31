@@ -89,6 +89,24 @@ Partial runs skip the aggregate ProblemClubs metric on purpose — a subset
 reporting 0 would reset the ~24h drift alarm and mask a rotting venue in a
 city the run never touched (per-city dimensions still emit).
 
+ARCHIVE PAGE (beta, 2026-10-31): /archive/<city>[/YYYY-MM[-DD]][?q=name],
+reached from the Calendar | List | Archive toggle. It reads clean history
+files at /history/<city>/index.json, /history/<city>/YYYY-MM.json and
+/history/musicians.json, built by scripts/build-history.mjs from the raw
+archive (status per show: happened / cancelled / unconfirmed; title edits
+merged; bill swaps become "originally listed" notes). The builder runs ONLY
+on the Mac for now, so the live archive is frozen at its last upload until a
+daily history Lambda exists. Manual refresh:
+
+    BUCKET=$(aws cloudformation describe-stacks --stack-name JazzLineup --query "Stacks[0].Outputs[?OutputKey=='BucketName'].OutputValue" --output text)
+    aws s3 sync s3://$BUCKET/archive/ ~/jazzlineup-archive-backup/archive/
+    node scripts/build-history.mjs
+    aws s3 sync data/history s3://$BUCKET/history/ --content-type application/json --cache-control "public, max-age=3600"
+
+A missing history file comes back from CloudFront as index.html with a 200,
+so the page checks content-type. Main purpose (Zach): artist search across
+cities. Past shows carry no venue links (their pages are gone); no images.
+
 ## Crawler conventions
 
 Module contract: export `parse(input, ...)` as pure testable function(s) and

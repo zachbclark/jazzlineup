@@ -7,6 +7,7 @@ export default defineConfig({
     proxy: {
       '/api': 'http://localhost:3000',
       '/events': 'http://localhost:3000', // events.json + events-<city>.json
+      '/history': 'http://localhost:3000', // archive: data/history (build-history.mjs)
     },
   },
   build: {

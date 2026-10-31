@@ -52,6 +52,20 @@ const server = createServer(async (req, res) => {
     return sendJson(res, 200, await loadData(cityFile[1] ?? null));
   }
 
+  // Clean show history (scripts/build-history.mjs -> data/history). A missing
+  // file is a real 404 here; in production CloudFront answers missing paths
+  // with index.html, so the archive page checks the content-type too.
+  const histFile = url.pathname.match(/^\/history\/((?:[a-z]{2,10}\/)?[a-z0-9-]+\.json)$/);
+  if (histFile) {
+    try {
+      const body = await readFile(join(process.env.HISTORY_DIR ?? join(DATA_DIR, 'history'), histFile[1]));
+      res.writeHead(200, { 'content-type': 'application/json; charset=utf-8', 'cache-control': 'no-cache' });
+      return res.end(body);
+    } catch {
+      return sendJson(res, 404, { error: 'not found' });
+    }
+  }
+
   if (url.pathname === '/api/events') {
     const data = await loadData();
     let events = data.events;
