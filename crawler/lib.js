@@ -206,7 +206,9 @@ export function makeEvent(e) {
     sets: [...new Set((e.sets ?? []).filter(Boolean))].sort(),
     url: e.url ?? null,
     details: e.details ? cleanText(e.details).slice(0, 500) : null,
-    personnel: Array.isArray(e.personnel) && e.personnel.length ? e.personnel : null,
+    personnel: Array.isArray(e.personnel) && e.personnel.length
+      ? e.personnel.map((p) => ({ ...p, name: cleanText(p.name), instrument: cleanText(p.instrument ?? '').replace(/[,;]+$/, '') }))
+      : null,
     // "late" = shifted after-midnight start (applyLateNight) OR a same-day
     // start at 11pm or later — both wear the tag; only the former moves days.
     late: e.late === true || ((e.sets ?? []).slice().sort()[0] ?? '') >= '23:00' || undefined,
@@ -217,8 +219,11 @@ export function makeEvent(e) {
   };
 }
 
+// Zero-width and soft-hyphen characters are invisible but make identical
+// names compare different (Baked Potato, PizzaExpress); they never reach a slug.
+const INVISIBLE = /[\u200B-\u200D\u2060\uFEFF\u00AD]/g;
 export function cleanText(s) {
-  return decodeEntities(String(s)).replace(/\s+/g, ' ').trim();
+  return decodeEntities(String(s)).replace(INVISIBLE, '').replace(/\s+/g, ' ').trim();
 }
 
 // ASCII slugs keep every existing id stable. Titles with no Latin letters

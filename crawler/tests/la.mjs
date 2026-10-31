@@ -284,6 +284,8 @@ ok('bakedpotato seed: valid shape, past dropped, no TBA, prior set times reused'
   const all = bakedSeedEvents(bakedSeed, new Date('2000-01-01T12:00:00Z'));
   assert.equal(all.length, bakedSeed.length);
   assert.ok(all.every((e) => e.sets.every((s) => s >= '12:00')), 'no morning typo times');
+  assert.ok(!/[\u200B-\u200D\uFEFF\u00AD]/.test(JSON.stringify(all)), 'no invisible characters in names or titles');
+  assert.ok(!all.some((e) => /^\$\d/.test(e.details ?? '')), 'ticket-price lines are not show details');
   assert.equal(new Set(all.map((e) => e.id)).size, all.length, 'ids unique');
   const last = bakedSeed.at(-1).date;
   assert.ok(bakedSeedEvents(bakedSeed, new Date(`${last}T12:00:00Z`)).every((e) => e.date >= last), 'past nights dropped');

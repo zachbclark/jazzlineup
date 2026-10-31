@@ -39,7 +39,7 @@ export function parse(html) {
     const rosterNames = new Set(personnel.map((p) => p.name.toLowerCase()));
     const details = descText.split('\n')
       .map((l) => cleanText(l))
-      .find((l) => l.length > 12 && !rosterNames.has(l.split(/\s*[-–—]\s*/)[0].trim().toLowerCase()))
+      .find((l) => l.length > 12 && !/^\$\d/.test(l) && !rosterNames.has(l.split(/\s*[-–—]\s*/)[0].trim().toLowerCase()))
       ?.slice(0, 250) ?? null;
 
     const key = `${date}:${title.toLowerCase()}`;
