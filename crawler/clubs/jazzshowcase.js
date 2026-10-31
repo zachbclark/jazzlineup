@@ -6,7 +6,7 @@
 // night. No crumb/auth needed. All jazz — no filter.
 import {
   fetchText, makeEvent, htmlToText, chiDate, chiTime, stripPromo,
-  applyLateNight, extractTimes, parsePersonnel,
+  applyLateNight, extractTimes, parsePersonnel, sqStartDate,
 } from '../lib.js';
 
 const BASE = 'https://www.jazzshowcase.com';
@@ -22,8 +22,9 @@ export function parse(jsonText) {
   const items = JSON.parse(jsonText);
   const events = [];
   for (const it of Array.isArray(items) ? items : []) {
-    if (!it?.title || !it?.startDate) continue;
-    const startTime = chiTime(it.startDate);
+    const start = sqStartDate(it);
+    if (!it?.title || !start) continue;
+    const startTime = chiTime(start);
     const excerpt = htmlToText(it.excerpt ?? '');
     // Engagements usually play two sets ("8 PM & 10 PM" in the blurb);
     // prefer explicit times from the excerpt, fall back to the start time.
@@ -34,7 +35,7 @@ export function parse(jsonText) {
     events.push(makeEvent(applyLateNight({
       clubId: 'jazzshowcase',
       title: it.title,
-      date: chiDate(it.startDate),
+      date: chiDate(start),
       sets,
       url: it.fullUrl ? BASE + it.fullUrl : `${BASE}/calendar`,
       details: personnel.length ? null : stripPromo(excerpt).slice(0, 300) || null,

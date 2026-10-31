@@ -955,3 +955,15 @@ ok('ibeam: body yields per-set times, line rosters, and price; past posts drop',
   assert.equal(evs[0].priceText, '$20');
   assert.equal(evs[0].url, 'https://ibeambrooklyn.com/home/2026/7/25/unscripted-soundscapes');
 });
+
+// Squarespace moved startDate under structuredContent (fall 2026): Cellar Dog
+// and Jazz Showcase went to 0 events until both shapes were read.
+ok('cellardog: fall-2026 month API shape (startDate nested in structuredContent)', () => {
+  const items = [{ recordType: 12, structuredContent: { startDate: Date.UTC(2026, 10, 3, 0, 30), endDate: 0 },
+    title: ' Dan Aran Trio', fullUrl: '/new-music/dan-aran-trio', excerpt: '' }];
+  const evs = cdParse(JSON.stringify(items));
+  assert.equal(evs.length, 1, 'nested startDate is read');
+  assert.equal(evs[0].title, 'Dan Aran Trio');
+  assert.equal(evs[0].date, '2026-11-02', '7:30pm NY on Nov 2');
+  assert.deepEqual(evs[0].sets, ['19:30']);
+});

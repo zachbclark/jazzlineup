@@ -38,6 +38,14 @@ export async function fetchJson(url, opts = {}) {
 
 // --- HTML extraction (no DOM library; targeted and defensive) ---------------
 
+// Squarespace event items: startDate (epoch ms) used to sit at the top
+// level; in fall 2026 the month API (GetItemsByMonth) moved it under
+// structuredContent, which silently emptied Cellar Dog and Jazz Showcase.
+// Read either place.
+export function sqStartDate(it) {
+  return it?.startDate ?? it?.structuredContent?.startDate ?? null;
+}
+
 // Extract every <script type="application/ld+json"> block as parsed JSON,
 // flattening arrays and @graph containers.
 export function extractJsonLd(html) {
