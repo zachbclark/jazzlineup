@@ -436,6 +436,10 @@ stable class PREFIXES are matched; JP name in aria-label + EN tour title
 OSAKA IS NEARLY FREE: same pages — pass shop='OSAKA' + a new clubId to
 parse(). Personnel: five of seven venues publish nightly
 rosters — Tokyo launches with the best personnel coverage of any city.
+IDS 2026-10-30: slug() used to turn Japanese-only titles into '', so
+Tokyo ids ended in a bare colon and same-night shows overwrote each other
+(132 of 321). Those now slug with their own letters. One-time id change
+for exactly those shows; every ASCII id everywhere is unchanged.
 
 NEW ORLEANS SHIPPED 2026-07-19 (city id nol, slug /nola, 7 venues,
 America/Chicago). Snug Harbor (TicketWeb WP plugin like Birdland; one

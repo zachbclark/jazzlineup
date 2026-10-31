@@ -221,8 +221,16 @@ export function cleanText(s) {
   return decodeEntities(String(s)).replace(/\s+/g, ' ').trim();
 }
 
+// ASCII slugs keep every existing id stable. Titles with no Latin letters
+// at all (Japanese billing like 《福田重男トリオ》) used to slug to '', so two
+// shows on one night shared an id and one silently overwrote the other
+// (found 2026-10-30: 132 of 321 Tokyo shows). Those fall back to a slug
+// that keeps the original letters.
 export function slug(s) {
-  return cleanText(s).toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '').slice(0, 60);
+  const text = cleanText(s).toLowerCase();
+  const ascii = text.replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '').slice(0, 60);
+  if (ascii) return ascii;
+  return text.normalize('NFKC').replace(/[^\p{L}\p{N}]+/gu, '-').replace(/^-|-$/g, '').slice(0, 60);
 }
 
 // Read a fixture file if FIXTURES env var is set (used by tests), else fetch live.

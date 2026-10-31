@@ -326,3 +326,16 @@ ok('anomaly: personnel collapse and no-future rot alert; emptyOk and tiny venues
   r = step(mkShows('marjorie', 1), ['marjorie'], r.state);
   assert.equal(r.alerts.length, 0, 'a 3-show room is noise, not signal');
 });
+
+// --- slug: non-Latin titles get real ids (2026-10-30: 132 Tokyo shows had '') --
+import { slug as slugFn, makeEvent as mkEv } from '../lib.js';
+ok('slug: ASCII ids unchanged; Japanese-only titles keep their letters, no collisions', () => {
+  assert.equal(slugFn('Ethan Iverson Sextet'), 'ethan-iverson-sextet', 'existing ids stay the same');
+  assert.equal(slugFn('Café Society'), 'caf-society', 'mixed Latin titles keep the old ASCII slug');
+  assert.equal(slugFn('《福田重男トリオ》'), '福田重男トリオ');
+  const a = mkEv({ clubId: 'bodyandsoul', title: '《片倉真由子トリオ》', date: '2026-09-02' });
+  const b = mkEv({ clubId: 'bodyandsoul', title: '《福田重男トリオ》', date: '2026-09-02' });
+  assert.notEqual(a.id, b.id, 'two Japanese-titled shows on one night must not share an id');
+  assert.ok(!a.id.endsWith(':'), 'no empty slug');
+  assert.equal(slugFn('ｊａｚｚ　ｎｉｇｈｔ'), 'jazz-night', 'full-width Latin folds to plain ASCII');
+});
