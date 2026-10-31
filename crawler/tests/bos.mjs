@@ -44,6 +44,25 @@ ok('regattabar: seed merges same-title dates into sets (Coleman two-a-night)', (
   assert.ok(evs.every((e) => e.date >= '2026-08-01'), 'past seed rows dropped');
 });
 
+import { parse as rbParse } from '../clubs/regattabar.js';
+ok('regattabar: TicketWeb JSON-LD MusicEvents parse; same-night performances merge into sets', () => {
+  // shape from ticketweb.com/venue/regattabar-cambridge-ma/748814 (2026-10-30)
+  const ev = (name, startDate, id) => ({ '@context': 'http://schema.org', '@type': 'MusicEvent', name, startDate,
+    url: `https://www.ticketweb.com/event/x-regattabar-tickets/${id}`, location: { '@type': 'Place', name: 'Regattabar' } });
+  const html = `<script type="application/ld+json">${JSON.stringify([
+    ev('Joe Alterman Trio', '2026-11-05T19:00', '1'),
+    ev('Bill Charlap Trio with David Wong and Dennis Mackrel', '2026-11-13T19:00', '2'),
+    ev('Bill Charlap Trio with David Wong and Dennis Mackrel', '2026-11-13T21:30', '3'),
+    { '@type': 'Place', name: 'Regattabar' },
+  ])}</script>`;
+  const evs = rbParse(html);
+  assert.equal(evs.length, 2, 'the Place block is not a show; two performances = one show');
+  const charlap = evs.find((e) => /Charlap/.test(e.title));
+  assert.deepEqual(charlap.sets, ['19:00', '21:30']);
+  assert.equal(charlap.date, '2026-11-13');
+  assert.match(charlap.url, /ticketweb\.com\/event\/.+\/2$/, 'first performance link kept');
+});
+
 ok('lilypad: gcal links -> NY-time events; non-music filtered; late set shifts', () => {
   const amp = String.fromCharCode(38);
   const html = [
