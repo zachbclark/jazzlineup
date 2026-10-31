@@ -66,7 +66,9 @@ export default function ArchivePage() {
     setClock24(CITIES.find((c) => c.id === city)?.clock24);
     try { localStorage.setItem('jl.city', city); } catch {}
     setIndex(undefined); setMonthData(null); setAllMonths(null);
-    loadIndex(city).then((ix) => setIndex(ix));
+    let live = true; // a slow answer for the previous city must not land here
+    loadIndex(city).then((ix) => { if (live) setIndex(ix); });
+    return () => { live = false; };
   }, [city]);
 
   // which month and night are on screen
@@ -79,14 +81,18 @@ export default function ArchivePage() {
   useEffect(() => {
     if (!index || !month) return;
     setMonthData(null);
-    loadMonth(city, month).then((m) => setMonthData(m ?? { shows: [], gaps: [] }));
+    let live = true;
+    loadMonth(city, month).then((m) => { if (live) setMonthData(m ?? { shows: [], gaps: [] }); });
+    return () => { live = false; };
   }, [city, month, index]);
 
   // search loads every month of the city (small today: NYC is 4 months)
   useEffect(() => {
     if (!q || !index) return;
-    if (!allMonths) loadAllMonths(city, index).then(setAllMonths);
+    let live = true;
+    if (!allMonths) loadAllMonths(city, index).then((m) => { if (live) setAllMonths(m); });
     if (!musicians) loadMusicians().then(setMusicians);
+    return () => { live = false; };
   }, [q, city, index, allMonths, musicians]);
 
   const venues = useMemo(() => Object.fromEntries((index?.venues ?? []).map((v) => [v.id, v])), [index]);
