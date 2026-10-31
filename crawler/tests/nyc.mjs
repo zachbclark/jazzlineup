@@ -453,23 +453,21 @@ ok('cellardog: month items -> events, "(ends at 2am)" stripped', () => {
 
 // --- Arthur's Tavern ---------------------------------------------------------------------
 import { parse as atParse } from '../clubs/arthurs.js';
-ok("arthurs: weekly residencies generate dated events", () => {
-  const html = `
-  <h1>Performances</h1>
-  <p>MONDAYS Grove Street Stompers Dixieland Jazz Band (7pm - 10pm) Toni Menage (10pm)
-  TUESDAYS Yuka Mito Jazz Quartet (7pm - 9:30pm)
-  SATURDAYS Sweet Georgia Brown (10pm - 2:30am)</p>`;
-  const evs = atParse(html, TODAY); // Mon Jul 13
-  const mondays = evs.filter((e) => e.date === '2026-07-13');
-  assert.equal(mondays.length, 2, `expected 2 Monday acts, got ${mondays.length}`);
-  assert.match(mondays[0].title, /Grove Street Stompers/);
-  assert.deepEqual(mondays[0].sets, ['19:00'], 'range end is closing time, not a set');
-  assert.deepEqual(mondays[1].sets, ['22:00']);
-  const tue = evs.filter((e) => e.date === '2026-07-14');
-  assert.equal(tue.length, 1);
-  assert.match(tue[0].title, /Yuka Mito/);
-  // 3 weeks x (2 Mon + 1 Tue + 1 Sat) = 12
-  assert.equal(evs.length, 12);
+ok("arthurs: month-grid shortcode; date from link, time from display, entities decoded", () => {
+  // trimmed from arthurstavern.nyc/calendar-of-events/ (2026-10-30)
+  const html = `<div class='sub_calendar_item'><div class='date'><div class='date_box'>29</div><div class='date_name'>Thu</div></div><div class='events'> </div></div>
+  <div class='sub_calendar_item active'><div class='date'><div class='date_box'>30</div> <div class='date_name'>Fri</div> </div><div class='events'><a class='tooltip' href='https://arthurstavern.nyc/events/yuichi-hirakawa/?id=6973&date=2026-10-30&begin=17:00:00&endtime=18:30:00'><div class='event-title'>Yuichi Hirakawa Jazz Group</div> <div class='event-date'>05:00 pm</div> </a><hr><a class='tooltip' href='https://arthurstavern.nyc/events/rich-townsend-the-magnificent-nightrain/?id=9348&date=2026-10-30&begin=22:00:00&endtime=00:30:00'><div class='event-title'>Rich Townsend &amp; the Magnificent NighTrain</div> <div class='event-date'>07:00 pm</div> </a></div></div>
+  <div class='sub_calendar_item active'><div class='date'><div class='date_box'>31</div> <div class='date_name'>Sat</div> </div><div class='events'><a class='tooltip' href='https://arthurstavern.nyc/events/creole/?id=1&date=2026-10-31&begin=19:00:00'><div class='event-title'>The Creole Cookin&#8217; Jazz Band</div> <div class='event-date'>07:00 pm</div> </a><hr><a class='tooltip' href='https://arthurstavern.nyc/events/creole/?id=1&date=2026-10-31&begin=22:00:00'><div class='event-title'>The Creole Cookin&#8217; Jazz Band</div> <div class='event-date'>10:00 pm</div> </a></div></div>`;
+  const evs = atParse(html);
+  assert.equal(evs.length, 3, 'empty past days skipped; same act twice in a night = one show');
+  const rich = evs.find((e) => /Rich Townsend/.test(e.title));
+  assert.equal(rich.title, 'Rich Townsend & the Magnificent NighTrain');
+  assert.deepEqual(rich.sets, ['19:00'], 'displayed time wins over the link begin= (22:00)');
+  assert.equal(rich.date, '2026-10-30');
+  const creole = evs.find((e) => e.date === '2026-10-31');
+  assert.equal(creole.title, 'The Creole Cookin’ Jazz Band');
+  assert.deepEqual(creole.sets, ['19:00', '22:00'], 'two listings merge into two sets');
+  assert.match(evs[0].url, /^https:\/\/arthurstavern\.nyc\/events\/yuichi-hirakawa\/\?id=6973&date=2026-10-30/);
 });
 
 // --- Zinc Bar ---------------------------------------------------------------------------
