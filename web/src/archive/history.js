@@ -42,8 +42,15 @@ export function musicianKey(name) {
     .replace(/[^\p{L}\p{N}]+/gu, '-').replace(/^-|-$/g, '');
 }
 
+// folded text per show, built on first search and reused for every keystroke
+const hayCache = new WeakMap();
+
 export function showMatches(show, q, venueName) {
   if (!q) return false;
-  const hay = norm([show.title, show.titleAlt, venueName, ...show.lineup.map((p) => p.name)].join(' '));
+  let hay = hayCache.get(show);
+  if (hay === undefined) {
+    hay = norm([show.title, show.titleAlt, venueName, ...show.lineup.map((p) => p.name)].join(' '));
+    hayCache.set(show, hay);
+  }
   return hay.includes(q);
 }
