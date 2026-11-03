@@ -1,4 +1,4 @@
-import React, { useCallback, useEffect, useMemo, useState } from 'react';
+import React, { useCallback, useDeferredValue, useEffect, useMemo, useState } from 'react';
 import { CITIES, citySlug, setClock24, fmtSets } from '../api';
 import CitySwitcher from '../components/CitySwitcher';
 import SearchBox from '../components/SearchBox';
@@ -8,6 +8,7 @@ import { loadIndex, loadMonth, loadAllMonths, loadMusicians, norm, musicianKey, 
 // Its own page at /archive/<city>[/YYYY-MM[-DD]][?q=name]. The URL is the
 // only source of truth for what's on screen, so Back always works.
 const START = '2026-07-21';
+const RESULTS_PAGE = 100;
 const WEEKDAYS = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
 
 function parseRoute() {
@@ -96,6 +97,8 @@ export default function ArchivePage() {
   }, [q, city, index, allMonths, musicians]);
 
   const venues = useMemo(() => Object.fromEntries((index?.venues ?? []).map((v) => [v.id, v])), [index]);
+  // results trail the typing so the box never waits on drawing rows
+  const resultsQ = useDeferredValue(q);
 
   const setQuery = (v) => {
     setQueryState(v);
@@ -147,7 +150,7 @@ export default function ArchivePage() {
       {index === null && <div className="empty-list">Couldn&rsquo;t load the archive. Try again in a bit.</div>}
 
       {index && q && (
-        <SearchResults q={q} city={city} months={allMonths} musicians={musicians} venues={venues}
+        <SearchResults key={city + '|' + resultsQ} q={resultsQ} city={city} months={allMonths} musicians={musicians} venues={venues}
           onNight={pickNight} onName={searchName} onCity={(c) => navigate({ city: c })} />
       )}
 
@@ -303,11 +306,13 @@ function SearchResults({ q, city, months, musicians, venues, onNight, onName, on
   }, [months, nq, key, venues]);
   const who = musicians?.musicians?.find((m) => m.key === key);
   const elsewhere = who ? Object.entries(who.cities).filter(([c]) => c !== city) : [];
+  // one letter matches nearly every show; draw a page at a time
+  const [limit, setLimit] = useState(RESULTS_PAGE);
 
   if (!results) return <div className="empty-list">Searching the archive&hellip;</div>;
   const played = results.filter((s) => s.status !== 'cancelled');
   const groups = new Map();
-  for (const s of results) (groups.get(s.date.slice(0, 7)) ?? groups.set(s.date.slice(0, 7), []).get(s.date.slice(0, 7))).push(s);
+  for (const s of results.slice(0, limit)) (groups.get(s.date.slice(0, 7)) ?? groups.set(s.date.slice(0, 7), []).get(s.date.slice(0, 7))).push(s);
 
   return (
     <section className="archive-search">
@@ -330,6 +335,11 @@ function SearchResults({ q, city, months, musicians, venues, onNight, onName, on
           ))}
         </div>
       ))}
+      {results.length > limit && (
+        <button className="show-more-days" onClick={() => setLimit(limit + RESULTS_PAGE)}>
+          Show more ({results.length - limit} left)
+        </button>
+      )}
     </section>
   );
 }
