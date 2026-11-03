@@ -255,4 +255,27 @@ ok('duc: detail-page roster parses with French instrument names', () => {
   assert.ok(!p.some((x) => /réservez/i.test(x.name)));
 });
 
+// --- Le Piano Vache (MusicEvent JSON-LD on /en/) -----------------------------------
+import { parse as pvParse } from '../clubs/pianovache.js';
+ok('pianovache: gypsy jazz + blues kept, Irish session and one-offs dropped', () => {
+  const place = { '@type': 'Place', name: 'Le Piano Vache' };
+  const ld = JSON.stringify({ '@context': 'https://schema.org', '@graph': [
+    { '@type': 'BarOrPub', name: 'Le Piano Vache' },
+    { '@type': 'MusicEvent', name: 'Gypsy jazz concert at Le Piano Vache', startDate: '2026-11-02T21:00:00+01:00',
+      description: 'Gypsy jazz concert every Monday from 9 pm.', isAccessibleForFree: true, location: place },
+    { '@type': 'MusicEvent', name: 'Blues concert at Le Piano Vache', startDate: '2026-11-03T19:30:00+01:00',
+      performer: { '@type': 'MusicGroup', name: 'Sexy Blues Power' }, offers: { price: '0' }, location: place },
+    { '@type': 'MusicEvent', name: 'Irish Sunday Session at Le Piano Vache', startDate: '2026-11-08T17:00:00+01:00' },
+    { '@type': 'MusicEvent', name: 'Andi Val at Le Piano Vache', startDate: '2026-11-18T20:00:00+01:00',
+      description: 'Andi Val, on Wednesday 18 November from 8 pm.' },
+  ] });
+  const evs = pvParse(`<html><script type="application/ld+json">${ld}</script></html>`);
+  assert.deepStrictEqual(evs.map((e) => [e.date, e.title, e.sets[0], e.priceText]), [
+    ['2026-11-02', 'Gypsy jazz concert', '21:00', 'Free'],
+    ['2026-11-03', 'Sexy Blues Power', '19:30', 'Free'],
+  ]);
+  assert.strictEqual(evs[1].details, 'Blues concert');
+  assert.strictEqual(evs[0].personnel, null);
+});
+
 // ============================================================== London ======
