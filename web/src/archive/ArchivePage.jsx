@@ -2,7 +2,7 @@ import React, { useCallback, useDeferredValue, useEffect, useMemo, useState } fr
 import { CITIES, citySlug, setClock24, fmtSets } from '../api';
 import CitySwitcher from '../components/CitySwitcher';
 import SearchBox from '../components/SearchBox';
-import { loadIndex, loadMonth, loadAllMonths, loadMusicians, norm, musicianKey, showMatches } from './history';
+import { loadIndex, loadMonth, loadAllMonths, loadMusicians, norm, musicianKey, showMatches, groupRuns } from './history';
 
 // The archive: every past show since July 21, 2026, with who played.
 // Its own page at /archive/<city>[/YYYY-MM[-DD]][?q=name]. The URL is the
@@ -36,6 +36,9 @@ function formatRoute({ city, date, month, q }) {
 
 const longDate = (iso) => new Date(iso + 'T12:00:00Z').toLocaleDateString('en-US', { weekday: 'long', month: 'long', day: 'numeric', year: 'numeric', timeZone: 'UTC' });
 const shortDate = (iso) => new Date(iso + 'T12:00:00Z').toLocaleDateString('en-US', { weekday: 'short', month: 'short', day: 'numeric', timeZone: 'UTC' });
+// "Sep 9 to 13", "Aug 30 to Sep 2": a run's nights, first to last
+const monthDay = (iso) => new Date(iso + 'T12:00:00Z').toLocaleDateString('en-US', { month: 'short', day: 'numeric', timeZone: 'UTC' });
+const runLabel = (a, b) => (a.slice(0, 7) === b.slice(0, 7) ? `${monthDay(a)} to ${Number(b.slice(8))}` : `${monthDay(a)} to ${monthDay(b)}`);
 const monthName = (ym) => new Date(ym + '-15T12:00:00Z').toLocaleDateString('en-US', { month: 'long', year: 'numeric', timeZone: 'UTC' });
 const shiftMonth = (ym, n) => { const [y, m] = ym.split('-').map(Number); const d = new Date(Date.UTC(y, m - 1 + n, 1)); return d.toISOString().slice(0, 7); };
 const shiftDay = (iso, n) => new Date(Date.parse(iso + 'T12:00:00Z') + n * 864e5).toISOString().slice(0, 10);
@@ -142,8 +145,6 @@ export default function ArchivePage() {
       </header>
       <p className="archive-intro">
         <span className="beta-tag">beta</span>
-        Every show since July 21, 2026, with who played. Pick a night or search a musician.
-        {index?.throughDate && <span className="archive-through"> Updated through {shortDate(index.throughDate)}.</span>}
       </p>
 
       {index === undefined && <div className="empty-list">Loading the archive&hellip;</div>}
@@ -151,7 +152,7 @@ export default function ArchivePage() {
 
       {index && q && (
         <SearchResults key={city + '|' + resultsQ} q={resultsQ} city={city} months={allMonths} musicians={musicians} venues={venues}
-          onNight={pickNight} onName={searchName} onCity={(c) => navigate({ city: c })} />
+          onName={searchName} onCity={(c) => navigate({ city: c })} />
       )}
 
       {index && !q && (
@@ -164,9 +165,6 @@ export default function ArchivePage() {
         </div>
       )}
 
-      <footer className="archive-foot">
-        Shows are saved from each venue&rsquo;s own calendar every day. Lineups are as the venue listed them.
-      </footer>
     </div>
   );
 }
@@ -252,13 +250,38 @@ function NightView({ night, data, venues, first, last, onNight, onName, city }) 
   );
 }
 
-function ArchiveRow({ show, venue, onName, showDate = false, highlight = '' }) {
-  const hl = (name) => highlight && musicianKey(name) === highlight;
+// Phones: lineups of LINEUP_LONG+ names show the first LINEUP_SHOWN plus
+// "+N more" (birthday tributes list up to 25). Desktop shows everyone (the
+// CSS ignores .p-extra, .p-more and .p-more-sep there).
+const LINEUP_SHOWN = 6;
+const LINEUP_LONG = 9;
+
+function Lineup({ lineup, onName, lead = null }) {
+  const [allNames, setAllNames] = useState(false);
+  const cut = !allNames && lineup.length >= LINEUP_LONG;
+  const hidden = cut ? lineup.length - LINEUP_SHOWN : 0;
+  return (
+    <span className="row-details roster personnel">
+      {lead}
+      {lineup.map((p, i) => (
+        <span key={i} className={'p-member' + (cut && i >= LINEUP_SHOWN ? ' p-extra' : '')}>
+          <button className="ar-name" onClick={() => onName(p.name)}>{p.name}</button>
+          {p.instrument ? <> <span className="p-inst">{p.instrument.replace(/\bsaxophones?\b/g, 'sax')}</span></> : null}
+          {i < lineup.length - 1 && <span className="p-sep"> · </span>}
+        </span>
+      ))}
+      {hidden > 0 && <button className="p-more" onClick={() => setAllNames(true)}>+{hidden} more</button>}
+      {allNames && <><span className="p-sep p-more-sep">{'\u00a0· '}</span><button className="p-more" onClick={() => setAllNames(false)}>show less</button></>}
+    </span>
+  );
+}
+
+// One show on a night's page.
+function ArchiveRow({ show, venue, onName }) {
   return (
     <div className={'row archive-row' + (show.status === 'cancelled' ? ' is-cancelled' : '')}>
       <span className="badge" style={{ background: venue?.color ?? '#777' }}>{venue?.shortName ?? show.venueId}</span>
       <span className="row-title">
-        {showDate && <span className="ar-date">{shortDate(show.date)} · </span>}
         {/* no venue links on past shows: their event pages are usually gone.
             A saved copy (Internet Archive) link replaces this once captures exist. */}
         <span className="ar-title">{show.title}</span>
@@ -266,22 +289,11 @@ function ArchiveRow({ show, venue, onName, showDate = false, highlight = '' }) {
         {show.replaced?.length > 0 && (
           <span className="ar-replaced">originally listed: {show.replaced.join(', ')}</span>
         )}
-        {show.lineup.length > 0 && (
-          <span className="row-details roster personnel">
-            {show.lineup.map((p, i) => (
-              <span key={i} className="p-member">
-                <button className={'ar-name' + (hl(p.name) ? ' hl' : '')} onClick={() => onName(p.name)}>{p.name}</button>
-                {p.instrument ? <> <span className="p-inst">{p.instrument.replace(/\bsaxophones?\b/g, 'sax')}</span></> : null}
-                {i < show.lineup.length - 1 && <span className="p-sep"> · </span>}
-              </span>
-            ))}
-          </span>
-        )}
+        {show.lineup.length > 0 && <Lineup lineup={show.lineup} onName={onName} />}
       </span>
       <span className="row-sets">
-        {show.status === 'unconfirmed' && (
-          <span className="late-tag status-tag" title="Couldn't read this venue's site around this date, so it may not have happened.">unconfirmed</span>
-        )}
+        {/* 'unconfirmed' shows (venue crawler down that week) carry no tag
+            (Zach, 2026-11-03): most happened, and confirming them is planned */}
         {show.status === 'cancelled' && (
           <span className="late-tag status-tag" title="Came off the venue's calendar before the date.">cancelled</span>
         )}
@@ -292,7 +304,33 @@ function ArchiveRow({ show, venue, onName, showDate = false, highlight = '' }) {
   );
 }
 
-function SearchResults({ q, city, months, musicians, venues, onNight, onName, onCity }) {
+// One search result: a single night or a run of nights. Club, then date;
+// the title; then "with" everyone else. The searched musician is the
+// subject, so they're left out of their own lineup. No set times (Zach,
+// 2026-11-03: when, where, who with). Same row on desktop and phones.
+function SearchRow({ run, venue, onName, highlight }) {
+  const s = run.show;
+  // p.musician is the same key the search matched on
+  const others = s.lineup.filter((p) => !(highlight && (p.musician ?? musicianKey(p.name)) === highlight));
+  const partlyCancelled = run.cancelled > 0 && run.cancelled < run.dates.length;
+  return (
+    <div className={'sr' + (s.status === 'cancelled' ? ' is-cancelled' : '')}>
+      <div className="sr-top">
+        <span className="badge sr-badge" style={{ background: venue?.color ?? '#777' }}>{venue?.shortName ?? s.venueId}</span>
+        <span className="sr-date">{run.dates.length > 1 ? runLabel(run.first, run.last) : shortDate(run.first)}</span>
+        {s.status === 'cancelled' && <span className="late-tag status-tag">cancelled</span>}
+        {partlyCancelled && <span className="sr-note">{run.cancelled} cancelled</span>}
+      </div>
+      <div className="sr-title">{s.title}</div>
+      {/* outside the 2-line title clamp, so a long Japanese title can't hide it */}
+      {s.titleAlt && <div className="title-alt">{s.titleAlt}</div>}
+      {s.replaced?.length > 0 && <div className="ar-replaced">originally listed: {s.replaced.join(', ')}</div>}
+      {others.length > 0 && <div className="sr-with"><Lineup lineup={others} onName={onName} lead="with " /></div>}
+    </div>
+  );
+}
+
+function SearchResults({ q, city, months, musicians, venues, onName, onCity }) {
   const nq = norm(q);
   const key = musicianKey(q);
   const results = useMemo(() => {
@@ -306,13 +344,20 @@ function SearchResults({ q, city, months, musicians, venues, onNight, onName, on
   }, [months, nq, key, venues]);
   const who = musicians?.musicians?.find((m) => m.key === key);
   const elsewhere = who ? Object.entries(who.cities).filter(([c]) => c !== city) : [];
+  // a booking's nights fold into one row (groupRuns)
+  const runs = useMemo(() => (results ? groupRuns(results) : null), [results]);
   // one letter matches nearly every show; draw a page at a time
   const [limit, setLimit] = useState(RESULTS_PAGE);
 
   if (!results) return <div className="empty-list">Searching the archive&hellip;</div>;
   const played = results.filter((s) => s.status !== 'cancelled');
+  // a run files under the month of its last night (the list is newest first)
   const groups = new Map();
-  for (const s of results.slice(0, limit)) (groups.get(s.date.slice(0, 7)) ?? groups.set(s.date.slice(0, 7), []).get(s.date.slice(0, 7))).push(s);
+  for (const run of runs.slice(0, limit)) {
+    const ym = run.last.slice(0, 7);
+    if (!groups.has(ym)) groups.set(ym, []);
+    groups.get(ym).push(run);
+  }
 
   return (
     <section className="archive-search">
@@ -327,19 +372,17 @@ function SearchResults({ q, city, months, musicians, venues, onNight, onName, on
       {[...groups.entries()].map(([ym, list]) => (
         <div key={ym} className="daygroup">
           <h3>{monthName(ym)}</h3>
-          {list.map((s) => (
-            <div key={s.id} className="ar-result">
-              <button className="ar-night" onClick={() => onNight(s.date)}>{shortDate(s.date)}</button>
-              <ArchiveRow show={s} venue={venues[s.venueId]} onName={onName} highlight={key} />
-            </div>
+          {list.map((run) => (
+            <SearchRow key={run.id} run={run} venue={venues[run.show.venueId]} onName={onName} highlight={key} />
           ))}
         </div>
       ))}
-      {results.length > limit && (
+      {runs.length > limit && (
         <button className="show-more-days" onClick={() => setLimit(limit + RESULTS_PAGE)}>
-          Show more ({results.length - limit} left)
+          Show more
         </button>
       )}
     </section>
   );
 }
+
