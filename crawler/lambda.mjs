@@ -3,16 +3,15 @@
 // with BUCKET set in the environment.
 import { S3Client, GetObjectCommand, PutObjectCommand } from '@aws-sdk/client-s3';
 import { CloudWatchClient, PutMetricDataCommand } from '@aws-sdk/client-cloudwatch';
-import { SNSClient, PublishCommand } from '@aws-sdk/client-sns';
 import { runCrawl, buildOutput, cities } from './run.js';
 import { venueStats, detectAnomalies, detectDead } from './anomaly.mjs';
+import { venueEmail, shrinkEmail } from './alert-text.mjs';
+import { publishAlert } from './notify.mjs';
 import { CLUBS } from './clubs.js';
 
 const s3 = new S3Client({});
 const cw = new CloudWatchClient({});
-const sns = new SNSClient({});
 const BUCKET = process.env.BUCKET;
-const ALERTS_TOPIC = process.env.ALERTS_TOPIC_ARN;
 
 async function readJson(key) {
   try {
@@ -34,31 +33,35 @@ async function writeJson(key, body) {
 // Urgent alerts: dead venues, recoveries, archive write failures. One
 // message per crawl on the alerts topic (email today, SMS once Zach's
 // toll-free number is approved; NOTES.md, ALERTS). Never fails the crawl.
-async function sendUrgent(subject, lines) {
-  if (!ALERTS_TOPIC || !lines.length) return;
+// true if sent; the caller skips saving "already alerted" state on false,
+// so the next crawl tries the email again
+async function sendUrgent(email) {
+  if (!process.env.ALERTS_TOPIC_ARN) return true; // local run: nothing to send to
   try {
-    await sns.send(new PublishCommand({
-      TopicArn: ALERTS_TOPIC,
-      Subject: subject.slice(0, 100),
-      Message: lines.join('\n') + '\n\nRunbook: NOTES.md, ALERTS.',
-    }));
-    console.log(`urgent alert sent: ${lines.length} line(s)`);
+    await publishAlert(email);
+    console.log(`urgent alert sent: ${email.subject}`);
+    return true;
   } catch (err) {
-    console.error('urgent alert failed (crawl unaffected):', err.message);
+    console.error('alert email failed (crawl unaffected):', err.message);
+    return false;
   }
 }
 
 const CLUB_BY_ID = new Map(CLUBS.map((c) => [c.id, c]));
-const utc = (iso) => `${iso.slice(0, 10)} ${iso.slice(11, 16)} UTC`;
+const MODULE_VENUES = new Map();
+for (const c of CLUBS) MODULE_VENUES.set(c.module, (MODULE_VENUES.get(c.module) ?? 0) + 1);
+const venue = (clubId) => {
+  const club = CLUB_BY_ID.get(clubId);
+  return { club, name: club?.name ?? clubId, url: club?.url };
+};
 
-function deadLine(city, a, errors) {
-  const club = CLUB_BY_ID.get(a.clubId);
-  const name = club?.name ?? a.clubId;
-  if (a.kind === 'back') return `[${city}] ${name}: back, fresh shows again.`;
-  const err = errors.find((e) => club && e.startsWith(`${club.module}:`));
-  const why = err ? `Error: ${err}` : 'No error logged (its module returned shows for another venue).';
-  const still = a.kind === 'still' ? 'still ' : '';
-  return `[${city}] ${name}: ${still}no fresh shows for ${a.streak} crawls, since ${utc(a.since)}. ${why}`;
+// detectDead alert -> a venueEmail item (name, site, the module's error;
+// shared = its crawler also covers other venues, like Smalls + Mezzrow)
+function deadItem(city, a, errors) {
+  const { club, name, url } = venue(a.clubId);
+  const error = club ? errors.find((e) => e.startsWith(`${club.module}:`)) : undefined;
+  const shared = !!club && MODULE_VENUES.get(club.module) > 1;
+  return { kind: a.kind, city, name, url, since: a.since, streak: a.streak, error, shared };
 }
 
 // The event payload may narrow the crawl: {"city":"par"} or
@@ -78,7 +81,7 @@ const LOCK_WINDOW_MS = 10 * 60 * 1000;
 export const handler = async (event) => {
   // {"testAlert":true}: prove the alert path end to end, no crawl
   if (event?.testAlert) {
-    await sendUrgent('Jazz Lineup: test alert', ['Test alert. If you can read this, crawler alerts reach you.']);
+    await sendUrgent({ subject: 'Jazz Lineup: test alert', message: 'If you can read this, crawler alerts reach you. Nothing to do.' });
     return { testAlert: true };
   }
 
@@ -103,10 +106,10 @@ export const handler = async (event) => {
   const summary = {};
   // silent-rot detection: per-venue baselines persist in crawl-stats.json,
   // anomalies collect into ONE digest email at the end (see anomaly.mjs)
-  let anomalyState = (await readJson('crawl-stats.json')) ?? {};
+  const savedState = (await readJson('crawl-stats.json')) ?? {};
+  let anomalyState = savedState;
   const digest = [];
   const urgent = [];
-  const tally = { dead: 0, back: 0, archive: 0 };
   const todayIso = new Date().toISOString().slice(0, 10);
   const emptyOkIds = new Set(CLUBS.filter((c) => c.emptyOk).map((c) => c.id));
   for (const city of targets) {
@@ -132,8 +135,7 @@ export const handler = async (event) => {
       await writeJson(`archive/${city}/${new Date().toISOString().slice(0, 10)}.json`, out);
     } catch (err) {
       console.error(`[${city}] archive write failed (live write succeeded):`, err.message);
-      urgent.push(`[${city}] ARCHIVE WRITE FAILED: ${err.message}. Today's snapshot may be missing.`);
-      tally.archive++;
+      urgent.push({ kind: 'archive', city, error: err.message });
     }
 
     // dead venues: no fresh shows for 2+ crawls (the merge hides it by
@@ -145,16 +147,15 @@ export const handler = async (event) => {
         emptyOkIds, prev: anomalyState.dead ?? {}, now: new Date().toISOString(),
       });
       anomalyState = { ...anomalyState, dead };
-      for (const a of alerts) {
-        urgent.push(deadLine(city, a, result.errors));
-        tally[a.kind === 'back' ? 'back' : 'dead']++;
-      }
+      for (const a of alerts) urgent.push(deadItem(city, a, result.errors));
     } catch (err) {
+      // the check itself broke: say so, or venue problems go quiet
       console.error(`[${city}] dead-venue check failed (crawl unaffected):`, err.message);
+      urgent.push({ kind: 'check', check: 'dead', city, error: err.message });
     }
 
-    // judge only clubs that refreshed this run — kept clubs are hard
-    // failures and the drift alarm's problem; never fail the crawl for this
+    // judge only clubs that refreshed this run (kept clubs are the
+    // dead-venue check's job); never fail the crawl for this
     try {
       const { state, alerts } = detectAnomalies({
         stats: venueStats(out.events, todayIso),
@@ -162,9 +163,13 @@ export const handler = async (event) => {
         emptyOkIds, prev: anomalyState, todayIso,
       });
       anomalyState = { ...anomalyState, ...state }; // keep the `dead` key
-      digest.push(...alerts.map((a) => `[${city}] ${a.clubId}: ${a.reasons.join('; ')}`));
+      for (const a of alerts) {
+        const { name, url } = venue(a.clubId);
+        digest.push({ city, name, url, reasons: a.reasons });
+      }
     } catch (err) {
       console.error(`[${city}] anomaly detection failed (crawl unaffected):`, err.message);
+      urgent.push({ kind: 'check', check: 'shrink', city, error: err.message });
     }
 
     summary[city] = {
@@ -175,39 +180,29 @@ export const handler = async (event) => {
     };
   }
 
-  const parts = [
-    tally.archive && 'ARCHIVE WRITE FAILED',
-    tally.dead && `${tally.dead} venue${tally.dead === 1 ? '' : 's'} down`,
-    tally.back && `${tally.back} back`,
-  ].filter(Boolean);
-  await sendUrgent(`Jazz Lineup: ${parts.join(', ')}`, urgent);
-
+  // Send first, then save state. The state records "already alerted today",
+  // so if an email failed, put back that email's part of the previous state
+  // (dead -> the urgent email, clubs -> the digest): the next crawl
+  // recomputes those alerts and tries again, and the other email isn't resent.
+  if (urgent.length && !(await sendUrgent(venueEmail(urgent)))) {
+    anomalyState = { ...anomalyState, dead: savedState.dead ?? {} };
+  }
+  if (digest.length && !(await sendUrgent(shrinkEmail(digest)))) {
+    anomalyState = { ...anomalyState, clubs: savedState.clubs ?? {} };
+  }
   try {
     await writeJson('crawl-stats.json', anomalyState);
-    if (digest.length && ALERTS_TOPIC) {
-      await sns.send(new PublishCommand({
-        TopicArn: ALERTS_TOPIC,
-        Subject: `Jazz Lineup crawler: ${digest.length} venue(s) look wrong`,
-        Message: `Silent-rot digest for ${todayIso} (each venue anomalous for 2+ consecutive crawls; one line per club per day):\n\n`
-          + digest.join('\n')
-          + `\n\nHard failures (module crashes, 0 events) alarm separately via the CloudWatch drift metric. Parsing runbook: NOTES.md crawler sections.`,
-      }));
-      console.log(`anomaly digest sent: ${digest.length} venue(s)`);
-    }
   } catch (err) {
-    console.error('anomaly state/digest write failed (crawl succeeded):', err.message);
+    console.error('crawl-stats write failed (crawl succeeded):', err.message);
   }
   console.log(JSON.stringify(summary));
   const errorCount = Object.values(summary).reduce((n, s) => n + s.errors.length, 0);
   if (errorCount) console.error(`crawl completed with ${errorCount} club error(s)`);
 
-  // Per-crawl drift metric: how many club modules came back suspect/failed.
-  // The Lambda-level Errors alarm only sees total crashes; this catches one
-  // venue silently rotting while everything else stays green. Alarmed in the
-  // CDK stack when it stays >= 1 for ~24h; details are in this log group.
-  // On a PARTIAL run the aggregate metric is skipped: emitting 0 for a subset
-  // would reset the ~24h alarm clock and mask a rotting venue in a city the
-  // run never touched. Per-city dimensions are always safe to emit.
+  // Per-crawl count of failing club modules, charted on the dashboard (its
+  // ClubDrift alarm was dropped 2026-11-03; the dead-venue email names the
+  // venue). On a PARTIAL run the city-wide total is skipped, since a subset
+  // would chart a misleadingly low number. Per-city counts are always right.
   try {
     await cw.send(new PutMetricDataCommand({
       Namespace: 'JazzLineup',

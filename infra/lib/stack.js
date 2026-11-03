@@ -18,8 +18,8 @@ const events = require('aws-cdk-lib/aws-events');
 const targets = require('aws-cdk-lib/aws-events-targets');
 const logs = require('aws-cdk-lib/aws-logs');
 const cloudwatch = require('aws-cdk-lib/aws-cloudwatch');
-const iam = require('aws-cdk-lib/aws-iam');
 const cwActions = require('aws-cdk-lib/aws-cloudwatch-actions');
+const iam = require('aws-cdk-lib/aws-iam');
 const sns = require('aws-cdk-lib/aws-sns');
 const snsSubs = require('aws-cdk-lib/aws-sns-subscriptions');
 const budgets = require('aws-cdk-lib/aws-budgets');
@@ -162,8 +162,9 @@ class JazzLineupStack extends cdk.Stack {
       targets: [new targets.LambdaFunction(crawler, { retryAttempts: 1 })],
     });
 
-    // --- Monitoring: dashboard + email alarms --------------------------------
-    // Free tier covers all of this (3 dashboards, 10 alarms, email SNS).
+    // --- Monitoring: dashboard, alarms, alert emails ------------------------
+    // Free tier covers all of this (3 dashboards, 10 alarms, email SNS, the
+    // AlarmMail Lambda's few invocations). Alert wording: crawler/alert-text.mjs.
     const alerts = new sns.Topic(this, 'Alerts', { displayName: 'jazzlineup alerts' });
     alerts.addSubscription(new snsSubs.EmailSubscription(ALERT_EMAIL));
     // the crawler's silent-rot digest (anomaly.mjs) publishes here directly:
@@ -172,7 +173,11 @@ class JazzLineupStack extends cdk.Stack {
     alerts.grantPublish(crawler);
     crawler.addEnvironment('ALERTS_TOPIC_ARN', alerts.topicArn);
 
-    // Crawler failed twice in a row (~8h of stale data) -> email.
+    // Alarms don't email directly (CloudWatch's emails are unreadable). An
+    // EventBridge rule below hands every state change to the AlarmMail
+    // Lambda, which sends one plain-English email (crawler/alert-text.mjs).
+
+    // Crawler failed twice in a row (~8h of stale data).
     const crawlerErrors = crawler.metricErrors({ period: cdk.Duration.hours(4), statistic: 'Sum' });
     const crawlerAlarm = new cloudwatch.Alarm(this, 'CrawlerFailing', {
       metric: crawlerErrors,
@@ -182,12 +187,10 @@ class JazzLineupStack extends cdk.Stack {
       treatMissingData: cloudwatch.TreatMissingData.NOT_BREACHING,
       alarmDescription: 'jazzlineup crawler Lambda errored on 2 consecutive runs',
     });
-    crawlerAlarm.addAlarmAction(new cwActions.SnsAction(alerts));
 
     // Crawler hasn't run at all in 8h (schedule broken, Lambda deleted,
-    // account trouble) -> email, and again when it's running again. The
-    // crawler can't report its own absence, so missing data BREACHES here,
-    // the opposite of every other alarm.
+    // account trouble). The crawler can't report its own absence, so
+    // missing data BREACHES here, the opposite of every other alarm.
     const stoppedAlarm = new cloudwatch.Alarm(this, 'CrawlerStopped', {
       metric: crawler.metricInvocations({ period: cdk.Duration.hours(8), statistic: 'Sum' }),
       threshold: 1,
@@ -196,10 +199,8 @@ class JazzLineupStack extends cdk.Stack {
       treatMissingData: cloudwatch.TreatMissingData.BREACHING,
       alarmDescription: 'jazzlineup crawler has not run in 8 hours',
     });
-    stoppedAlarm.addAlarmAction(new cwActions.SnsAction(alerts));
-    stoppedAlarm.addOkAction(new cwActions.SnsAction(alerts));
 
-    // Site serving errors: >5% of requests 5xx for 15 min -> email.
+    // Site serving errors: >5% of requests 5xx for 15 min.
     const cfError5xx = distribution.metric5xxErrorRate({ period: cdk.Duration.minutes(5), statistic: 'Average' });
     const siteAlarm = new cloudwatch.Alarm(this, 'SiteErrors', {
       metric: cfError5xx,
@@ -209,25 +210,50 @@ class JazzLineupStack extends cdk.Stack {
       treatMissingData: cloudwatch.TreatMissingData.NOT_BREACHING,
       alarmDescription: 'jazzlineup.com is serving >5% 5xx responses',
     });
-    siteAlarm.addAlarmAction(new cwActions.SnsAction(alerts));
 
-    // A single club rotting for ~24h (6 crawls) -> email. Which club is in
-    // the Lambda logs; this only says "go look".
+    // The alarm translator: each state change of the three alarms above ->
+    // one plain email, including "back to normal" (OK) after an alarm.
+    const alarmMail = new lambda.Function(this, 'AlarmMail', {
+      runtime: lambda.Runtime.NODEJS_22_X,
+      handler: 'alarm-mail.handler',
+      code: lambda.Code.fromAsset(path.join(__dirname, '..', '..', 'crawler')),
+      timeout: cdk.Duration.seconds(30),
+      memorySize: 128,
+      logRetention: logs.RetentionDays.TWO_WEEKS,
+      description: 'Turns jazzlineup alarm state changes into plain-English alert emails',
+      environment: { ALERTS_TOPIC_ARN: alerts.topicArn },
+    });
+    alerts.grantPublish(alarmMail);
+
+    // Backstop for the translator itself: if AlarmMail errors, the alarms
+    // above go quiet, so this one emails DIRECTLY (raw AWS template, the one
+    // exception, since the plain path is what broke).
+    new cloudwatch.Alarm(this, 'AlarmMailFailing', {
+      metric: alarmMail.metricErrors({ period: cdk.Duration.hours(1), statistic: 'Sum' }),
+      threshold: 1,
+      evaluationPeriods: 1,
+      comparisonOperator: cloudwatch.ComparisonOperator.GREATER_THAN_OR_EQUAL_TO_THRESHOLD,
+      treatMissingData: cloudwatch.TreatMissingData.NOT_BREACHING,
+      alarmDescription: 'Jazz Lineup: the alert email translator (AlarmMail Lambda) is failing, so other alarm emails may not arrive. Check its logs in AWS.',
+    }).addAlarmAction(new cwActions.SnsAction(alerts));
+    new events.Rule(this, 'AlarmMailRule', {
+      eventPattern: {
+        source: ['aws.cloudwatch'],
+        detailType: ['CloudWatch Alarm State Change'],
+        resources: [crawlerAlarm.alarmArn, stoppedAlarm.alarmArn, siteAlarm.alarmArn],
+      },
+      targets: [new targets.LambdaFunction(alarmMail, { retryAttempts: 2 })],
+    });
+
+    // Per-crawl count of failing venues, charted on the dashboard. Its old
+    // ClubDrift alarm was dropped 2026-11-03: the crawler's dead-venue email
+    // names the venue, the alarm only said "go look".
     const problemClubs = new cloudwatch.Metric({
       namespace: 'JazzLineup',
       metricName: 'ProblemClubs',
       period: cdk.Duration.hours(4),
       statistic: 'Maximum',
     });
-    const driftAlarm = new cloudwatch.Alarm(this, 'ClubDrift', {
-      metric: problemClubs,
-      threshold: 1,
-      evaluationPeriods: 6,
-      comparisonOperator: cloudwatch.ComparisonOperator.GREATER_THAN_OR_EQUAL_TO_THRESHOLD,
-      treatMissingData: cloudwatch.TreatMissingData.NOT_BREACHING,
-      alarmDescription: 'A jazzlineup club crawler has been suspect/failing for ~24h — check the crawler logs for which venue',
-    });
-    driftAlarm.addAlarmAction(new cwActions.SnsAction(alerts));
 
     // One dashboard: visitor traffic on top, crawler health below.
     const dash = new cloudwatch.Dashboard(this, 'Dashboard', { dashboardName: 'jazzlineup' });
