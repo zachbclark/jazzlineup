@@ -157,7 +157,7 @@ export default function ArchivePage() {
 
       {index && !q && (
         <div className="archive-cols">
-          <ArchiveCalendar month={month} data={monthData} night={night} venues={venues}
+          <ArchiveCalendar month={month} data={monthData} night={night}
             first={index.firstDate ?? START} last={lastNight}
             onMonth={(ym) => navigate({ month: ym, date: null })} onNight={pickNight} />
           <NightView night={night} data={monthData} venues={venues} first={index.firstDate ?? START} last={lastNight}
@@ -169,7 +169,7 @@ export default function ArchivePage() {
   );
 }
 
-function ArchiveCalendar({ month, data, night, venues, first, last, onMonth, onNight }) {
+function ArchiveCalendar({ month, data, night, first, last, onMonth, onNight }) {
   if (!month) return null;
   const [y, m] = month.split('-').map(Number);
   const firstDow = new Date(Date.UTC(y, m - 1, 1)).getUTCDay();
@@ -187,15 +187,11 @@ function ArchiveCalendar({ month, data, night, venues, first, last, onMonth, onN
     const iso = `${month}-${String(d).padStart(2, '0')}`;
     const shows = byDay.get(iso) ?? [];
     const filed = iso >= first && last && iso <= last;
-    const dots = [...new Set(shows.map((s) => s.venueId))].slice(0, 6);
     cells.push(
       <button key={iso} className={'ac-cell' + (iso === night ? ' on' : '') + (filed ? '' : ' off')}
         disabled={!filed} onClick={() => onNight(iso)}
         aria-label={`${shortDate(iso)}: ${shows.length} shows`}>
         <span className="ac-num">{d}</span>
-        <span className="ac-dots">
-          {dots.map((v) => <i key={v} style={{ background: venues[v]?.color ?? '#777' }} />)}
-        </span>
         {shows.length > 0 && <span className="ac-count">{shows.length}</span>}
       </button>,
     );

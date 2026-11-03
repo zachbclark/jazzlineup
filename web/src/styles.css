@@ -473,8 +473,8 @@ button.cell { text-align: left; border: 1px solid var(--line); font: inherit; co
 .ac-cell.on { border-color: var(--accent); }
 .ac-num { font-size: 11px; color: var(--muted); }
 .ac-cell.on .ac-num { color: var(--accent); }
-.ac-dots { display: flex; flex-wrap: wrap; gap: 2px; }
-.ac-dots i { width: 5px; height: 5px; border-radius: 50%; display: block; }
+/* no venue dots: with ~25 venues a night, 6 colored dots said nothing (2026-11-03).
+   They could return for saved My clubs venues, where a dot would mean "yours played". */
 .ac-count { position: absolute; top: 3px; right: 4px; font-size: 9px; color: var(--muted); }
 .an-head { display: flex; align-items: center; gap: 12px; }
 .an-head h2 { font-family: 'Abril Fatface', Georgia, serif; font-weight: 400; font-size: 24px; margin: 0; flex: 1 1 auto; }
@@ -541,7 +541,7 @@ button.cell { text-align: left; border: 1px solid var(--line); font: inherit; co
   .archive .archive-row .row-sets .late-tag { display: block; margin: 0 0 2px auto; width: fit-content; }
   .archive .p-extra { display: none; }
   .archive .p-more, .archive .p-more-sep { display: inline; }
-  /* compact calendar: short cells, count + dots only */
+  /* compact calendar: short cells, day number + show count */
   .archive .ac-cell { aspect-ratio: auto; height: 40px; }
   .archive .ac-count { font-size: 8.5px; }
   .archive .archive-cal { padding: 8px; }
