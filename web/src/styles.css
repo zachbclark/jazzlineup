@@ -402,7 +402,10 @@ button.cell { text-align: left; border: 1px solid var(--line); font: inherit; co
   .chip-star { font-size: 16px; padding: 0 4px; }
   .order-reset { display: none; } /* rare power feature; desktop only */
   .chip { padding: 10px 15px; font-size: 14px; }
-  .borough-btn { padding: 8px 12px; font-size: 13px; } /* thumb-sized */
+  /* all five NYC tabs on one line down to 360px; wrap below that instead
+     of pushing Queens off the screen */
+  .borough-bar { justify-content: space-between; flex-wrap: wrap; }
+  .borough-btn { padding: 8px 5px; font-size: 12px; letter-spacing: 0.4px; } /* thumb-tall */
 
   /* compact month grid */
   .grid { gap: 3px; }
@@ -489,6 +492,7 @@ button.cell { text-align: left; border: 1px solid var(--line); font: inherit; co
   .ar-result { grid-template-columns: 1fr; }
   .ar-night { padding: 6px 10px 0; }
 }
+@media (max-width: 340px) { .city-hint { display: none; } } /* no room beside the brand */
 .archive .city-hint { display: none; } /* the first-visit whisper belongs to the live page */
 @media (max-width: 760px) {
 }
