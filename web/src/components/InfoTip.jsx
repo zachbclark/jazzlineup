@@ -28,11 +28,9 @@ export default function InfoTip() {
       {open && (
         <div className="info-menu">
           <h4>Tips</h4>
-          <p>Search any musician. Sideman gigs count too.</p>
-          <p>Tap a venue chip to see just that club. Tap more to add them.</p>
-          <p>Tap a club, then its star to add it to My clubs.</p>
-          <p>Drag chips to reorder them. Press and hold first on a phone.</p>
-          <p>Your order and picks are remembered on this device.</p>
+          <p>Search any musician. Sidemen count too.</p>
+          <p>Tap venues to filter. Star the ones you like.</p>
+          <p>Drag to reorder. On a phone, hold first.</p>
         </div>
       )}
     </span>

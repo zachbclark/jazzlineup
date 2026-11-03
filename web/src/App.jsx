@@ -17,8 +17,9 @@ const TIP_URL = 'https://ko-fi.com/jazzlineup';
 // scannable literal in the bundle (plus-alias: filterable, revocable)
 const contactHref = (cityLabel) => {
   const addr = ['zachbclark', 'jazzlineup'].join('+') + String.fromCharCode(64) + 'gmail.com';
-  const subject = 'Venue idea for Jazz Lineup';
-  const body = `Venue name:\nCity: ${cityLabel}\nWebsite:\n\nWhy it belongs on the lineup:\n`;
+  // one line to fill in; a form-shaped email reads like homework
+  const subject = `Venue idea (${cityLabel})`;
+  const body = 'Venue and a link:\n';
   return `mailto:${addr}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
 };
 
