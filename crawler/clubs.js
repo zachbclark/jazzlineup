@@ -1050,6 +1050,19 @@ export const CLUBS = [
     color: '#d8d3c0', // raw-concrete cream, true to the room — audit-cleared
     module: './clubs/cafeoto.js',
   },
+  {
+    id: 'downstairs180',
+    name: 'Downstairs at 180',
+    shortName: 'Downstairs 180',
+    url: 'https://downstairsat180.co.uk',
+    address: '180 St John St, London EC1V 4JY',
+    city: 'lon',
+    borough: null,
+    timezone: 'Europe/London',
+    neighborhood: 'Clerkenwell',
+    color: '#6cbf4a', // Clerkenwell green, the one hue London lacked
+    module: './clubs/downstairs180.js',
+  },
 
   // ------------------------------------------------------------ Boston ----
   {

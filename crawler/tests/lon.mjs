@@ -175,3 +175,24 @@ ok('club606: detail page yields music charge + description', () => {
   assert.match(d.details, /10-piece band led by bassist/);
   assert.deepEqual(d.personnel, []);
 });
+
+// --- Downstairs at 180 (Squarespace events JSON) ----------------------------------------
+import { parse as d180Parse } from '../clubs/downstairs180.js';
+ok('downstairs180: body start beats doors, cover price, lineup lines, style blocks ignored', () => {
+  const style = '<style>#block-abc { --opacity: 100%; transform: var(--block-transform); }</style>';
+  const json = { upcoming: [
+    { title: 'Down With It! Jam Session ', startDate: Date.parse('2026-11-03T19:30:00Z'), fullUrl: '/calendar/down-with-it',
+      body: `<p>8PM til close</p><p>£15 - Musicians Free</p><p>House Band:</p><p>Frida Ruiz-Berman - Vocals</p>
+        <p>Louis Brown - Drums</p>${style}<p>Book Now</p>` },
+    { title: ' ROOTS - With Pete Horsfall &amp; Joe Evans + Friends', startDate: Date.parse('2026-12-04T19:30:00Z'),
+      fullUrl: '/calendar/roots', body: '<p>8PM start</p><p>£15 Cover</p><p>Line Up TBC</p>' },
+  ] };
+  const [jam, roots] = d180Parse(json);
+  assert.equal(jam.date, '2026-11-03');
+  assert.deepEqual(jam.sets, ['20:00']);
+  assert.equal(jam.priceText, '£15');
+  assert.equal(jam.url, 'https://downstairsat180.co.uk/calendar/down-with-it');
+  assert.deepEqual(jam.personnel.map((p) => p.name), ['Frida Ruiz-Berman', 'Louis Brown']);
+  assert.equal(roots.title, 'ROOTS - With Pete Horsfall & Joe Evans + Friends');
+  assert.equal(roots.personnel, null);
+});

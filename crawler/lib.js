@@ -423,7 +423,10 @@ export function parsePersonnel(text) {
 export function personnelFromLines(text) {
   const personnel = [];
   for (const line of String(text).split('\n')) {
-    const m = line.trim().match(/^(.{2,45}?)\s*[-–—:,]\s*(.{2,40})$/);
+    // a spaced dash wins, so hyphenated names stay whole:
+    // "Frida Ruiz-Berman - Vocals" (Downstairs at 180, 2026-11-02)
+    const m = line.trim().match(/^(.{2,45}?)\s+[-–—]\s+(.{2,40})$/)
+      ?? line.trim().match(/^(.{2,45}?)\s*[-–—:,]\s*(.{2,40})$/);
     if (!m) continue;
     const instr = m[2].trim();
     // validate per phrase (split on ,/&) so multi-word credits pass whole:
