@@ -47,50 +47,81 @@ ok('pitinn: day_box blocks -> dated events with start time, roster, sold-out fla
   assert.match(evs[0].url, /260701kikuchi/);
 });
 
-ok('bluenotejp: rowspan runs fan out to each date; price + intro ride along', () => {
+ok('bluenotejp: month page gives each run\'s info URL (2026-11 redesign)', () => {
   const html = `
-  <div class="scheduleTable"><table class="later"><tr>
-    <td class="dayBox sat"><span class="day">1</span><span class="week">sat.</span></td>
-    <td class="scheduleBox" rowspan="2"><span class="twoColumnsType clearfix">
-      <span class="columnTxt"><span class="title">MASATO HONDA B.B.STATION -Big Band Night-</span></span></span></td>
-    </tr><tr><td class="dayBox sun"><span class="day">2</span><span class="week">sun.</span></td></tr></table>
-  <div class="priceBox"><div class="set"><span class="priceText">Music charge &yen;</span><span class="price">8,000</span></div></div>
-  <div class="details"><span class="intro">スター・サックス奏者率いるビッグバンド</span></div></div>`;
-  const evs = bntParse(html, 2026, 8);
-  assert.equal(evs.length, 2, 'two dates from the rowspan run');
-  assert.equal(evs[0].date, '2026-08-01');
-  assert.equal(evs[1].date, '2026-08-02');
+    <a href="https://reserve.bluenote.co.jp/reserve/schedule/exec/4000" class="c-schedule-list-card type-today"
+      data-schedule-modal-endpoint="https://reserve.bluenote.co.jp/reserve/schedule/read_event_info/4000">
+      <p class="c-schedule-list-card__title">KIEFER</p></a>
+    <div data-schedule-modal-endpoint="https://reserve.bluenote.co.jp/reserve/schedule/read_event_info/4000"></div>
+    <a data-schedule-modal-endpoint="https://reserve.bluenote.co.jp/reserve/schedule/read_event_info/4008">
+      <p class="c-schedule-list-card__title">KEIKO LEE BAND</p></a>`;
+  assert.deepEqual(bntMonth(html), [
+    'https://reserve.bluenote.co.jp/reserve/schedule/read_event_info/4000',
+    'https://reserve.bluenote.co.jp/reserve/schedule/read_event_info/4000',
+    'https://reserve.bluenote.co.jp/reserve/schedule/read_event_info/4008',
+  ], 'the page\'s own URLs; the crawler dedupes across both months');
+});
+
+ok('bluenotejp: run JSON -> one event per date, per-date sets, price, artist url', () => {
+  const info = {
+    basic_info: {
+      titles: { en_prefix: '', en_title: 'KIEFER', jp_title: 'キーファー', en_suffix: '★38thアニヴァーサリー' },
+      catchphrase: 'ブルーノート・デビュー作をリリースする\r\nLAジャズ・シーンの最重要人物が初登場',
+      music_charge_label: 'Music Charge ¥9,500',
+    },
+    schedule_list: [
+      { date_iso: '2026-11-01', stages: [{ label: '1st', start_time: '4:30pm' }, { label: '2nd', start_time: '7:30pm' }] },
+      { date_iso: '2026-11-02', stages: [{ label: '1st', start_time: '6:00pm' }, { label: '2nd', start_time: '8:30pm' }] },
+    ],
+    links: { detail_page_url: 'https://www.bluenote.co.jp/jp/artists/kiefer/' },
+  };
+  const evs = bntParse(info);
+  assert.deepEqual(evs.map((e) => [e.date, e.sets]), [
+    ['2026-11-01', ['16:30', '19:30']],
+    ['2026-11-02', ['18:00', '20:30']],
+  ]);
   assert.equal(evs[0].clubId, 'bluenotetok');
-  assert.equal(evs[0].priceText, '¥8,000');
-  assert.match(evs[0].details, /ビッグバンド/);
+  assert.equal(evs[0].title, 'KIEFER');
+  assert.equal(evs[0].titleAlt, 'キーファー');
+  assert.equal(evs[0].priceText, '¥9,500');
+  assert.equal(evs[0].url, 'https://www.bluenote.co.jp/jp/artists/kiefer/');
+  assert.match(evs[0].details, /^ブルーノート・デビュー作をリリースする LAジャズ/);
 });
 
-ok('bluenotejp: per-date seatings scope sets; artist link becomes the url', () => {
-  const html = `
-  <table class="later"><tr>
-    <td class="dayBox"><span class="day">23</span><span class="week">thu.</span></td>
-    <td class="scheduleBox" rowspan="3"><span class="columnTxt">
-      <a href="https://www.bluenote.co.jp/jp/artists/citrus-sun/"><span class="title">CITRUS SUN</span></a></span></td>
-    </tr><tr><td class="dayBox"><span class="day">24</span></td></tr>
-    <tr><td class="dayBox sat"><span class="day">25</span></td></tr></table>
-  <div class="priceBox"><span class="price">11,500</span></div>
-  <div class="details">
-    <span class="text">2026 7.23 thu. - 7.25 sat.</span>
-    <span class="text">7.23 thu., 7.24 fri.<br />
-　[1st]Open5:00pm Start6:00pm　[2nd]Open7:45pm Start8:30pm<br />
-7.25 sat.<br />
-　[1st]Open1:30pm Start2:30pm　[2nd]Open6:00pm Start7:00pm<br/></span>
-  </div>`;
-  const evs = bntParse(html, 2026, 7);
-  assert.equal(evs.length, 3);
-  assert.deepEqual(evs[0].sets, ['18:00', '20:30'], 'thu gets the weekday seatings');
-  assert.deepEqual(evs[1].sets, ['18:00', '20:30']);
-  assert.deepEqual(evs[2].sets, ['14:30', '19:00'], 'sat gets the matinee seatings');
-  assert.match(evs[0].url, /artists\/citrus-sun/);
+ok('cottonclub: <br/> in a title becomes a space', () => {
+  const evs = ccParse({
+    basic_info: { titles: { en_title: 'odol ONE-MAN LIVE 2026  <br/>at COTTON CLUB', jp_title: 'オドル' },
+      music_charge_label: 'Music Charge ¥6,600' },
+    schedule_list: [{ date_iso: '2026-11-01', stages: [{ start_time: '4:30pm' }, { start_time: '7:30pm' }] }],
+    links: { detail_page_url: 'https://www.cottonclubjapan.co.jp/jp/sp/artists/odol-261101/' },
+  });
+  assert.equal(evs[0].title, 'odol ONE-MAN LIVE 2026 at COTTON CLUB');
+  assert.equal(evs[0].clubId, 'cottonclubtok');
 });
 
-import { parseArtistPage as bntArtist, parseShowtimes as bntTimes } from '../clubs/_bluenotejp.js';
-ok('bluenotejp: artist-page MEMBER table -> roman roster; single seating line = fallback', () => {
+ok('bluenotejp: same title, same night, two runs -> one event with both sets', () => {
+  const run = (sets) => ccParse({ basic_info: { titles: { en_title: 'XMAS SPECIAL' } },
+    schedule_list: [{ date_iso: '2026-12-24', stages: sets.map((t) => ({ start_time: t })) }] });
+  const merged = bntMerge([run(['1:00pm']), run(['7:00pm', '9:30pm'])]);
+  assert.equal(merged.length, 1);
+  assert.deepEqual(merged[0].sets, ['13:00', '19:00', '21:30']);
+});
+
+ok('bluenotejp: full-width yen price; a date with no stages keeps the show, sets empty', () => {
+  const evs = ccParse({
+    basic_info: { titles: { en_title: 'TBA SPECIAL' }, music_charge_label: 'Music Charge ￥6,600 / ￥8,000' },
+    schedule_list: [{ date_iso: '2026-12-31', stages: [] }, { date_iso: '2027-01-01', stages: [{ start_time: 'TBA' }] }],
+  });
+  assert.deepEqual(evs.map((e) => [e.date, e.sets, e.priceText]), [
+    ['2026-12-31', [], '¥6,600'],
+    ['2027-01-01', [], '¥6,600'],
+  ]);
+  assert.equal(evs[0].url, 'https://www.cottonclubjapan.co.jp/jp/sp/artists/', 'no artist page -> site url');
+});
+
+import { parseArtistPage as bntArtist, parseMonth as bntMonth, mergeRuns as bntMerge } from '../clubs/_bluenotejp.js';
+import { parse as ccParse } from '../clubs/cottonclubtok.js';
+ok('bluenotejp: artist-page MEMBER table -> roman roster', () => {
   const html = `<h5><img alt="MEMBER"></h5><table>
     <tr><td class="pr20"><p>Simon Phillips(ds)</p></td><td><p>サイモン・フィリップス（ドラムス）</p></td></tr>
     <tr><td class="pr20"><p>Ernest Tibbs(b)</p></td><td><p>アーネスト・ティブス（ベース）</p></td></tr>
@@ -112,9 +143,6 @@ ok('bluenotejp: artist-page MEMBER table -> roman roster; single seating line = 
   assert.deepEqual(cc.personnel.map((p) => p.name),
     ['Joyce Moreno', 'Tutty Moreno', 'Rodolfo Stroeter', 'Helio Alves']);
   assert.equal(cc.personnel[0].instrument, 'vocals, guitar');
-
-  const t = bntTimes('[1st]Open5:00pm Start6:00pm　[2nd]Open7:45pm Start8:30pm');
-  assert.deepEqual(t.fallback, ['18:00', '20:30'], 'unscoped seating line covers the whole run');
 });
 
 ok('bodyandsoul: dated slugs, two-set times, inline roster, charge', () => {

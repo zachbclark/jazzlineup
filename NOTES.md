@@ -485,9 +485,12 @@ wrong); personnelFromJpRun in lib.js parses Name(Abbr) roster runs in both
 paren widths with a romaji-abbreviation instrument map. Venues: Pit Inn
 (http NOT https; /schedule + /next-schedule + /schedule-day day_box
 markup; rosters nightly; Start times; sold-out flag), Blue Note Tokyo +
-Cotton Club (shared _bluenotejp.js; reserve.<host>/reserve/schedule/move/
-YYYYMM; one table.later per run, rowspan fans dates; price + intro; NO set
-times in this view — detail enrichment is a future pass), Body & Soul
+Cotton Club (shared _bluenotejp.js; REDESIGNED ~2026-10-28, rebuilt
+11-02: reserve.<host>/reserve/schedule/move/YYYYMM lists run cards whose
+data-schedule-modal-endpoint is a read_event_info/<id> JSON with en/jp
+titles, music charge, and per-date set times; artist pages give rosters;
+any failed run fetch fails the venue so the merge keeps old shows and the
+dead-venue alert fires; months computed in JST), Body & Soul
 (WP /schedule; date lives in the /event/YYMMDD slug; 1st/2nd set times;
 rosters), Sometime (text-regular live.html + liveYYYYMM.html archives;
 full-width-paren rosters; matinees tagged 昼の部), Alfie (alfie.tokyo
