@@ -108,30 +108,6 @@ button { font: inherit; cursor: pointer; }
 .search-summary.redirecting { display: block; }
 .search-summary .other-city:hover { border-color: var(--accent); color: var(--accent); }
 
-/* tips popover: quiet ⓘ, gold on hover; panel matches the city menu */
-.info-tip { position: relative; display: inline-flex; align-items: center; }
-/* lives in the FOOTER (header placement shoved the view toggle around,
-   worst on mobile — Zach 2026-07-19); popover opens upward */
-.info-btn {
-  width: 22px; height: 22px; border-radius: 50%;
-  border: 1px solid var(--line); background: transparent; color: var(--muted);
-  font-family: Georgia, serif; font-style: italic; font-size: 12px; line-height: 1;
-  display: inline-flex; align-items: center; justify-content: center;
-}
-.info-btn:hover, .info-btn[aria-expanded="true"] { border-color: var(--accent); color: var(--accent); }
-.info-menu {
-  position: absolute; bottom: calc(100% + 8px); left: 0; z-index: 50;
-  width: 250px; max-width: calc(100vw - 40px);
-  background: var(--panel); border: 1px solid var(--line);
-  border-radius: 10px; padding: 12px 14px;
-  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.6);
-}
-.info-menu h4 {
-  margin: 0 0 8px; color: var(--accent);
-  font-size: 11px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase;
-}
-.info-menu p { margin: 0 0 8px; color: var(--text); font-size: 12.5px; line-height: 1.45; }
-.info-menu p:last-child { margin-bottom: 0; }
 
 .view-toggle { display: flex; border: 1px solid var(--line); border-radius: 8px; overflow: hidden; }
 .view-toggle button, .view-toggle a {

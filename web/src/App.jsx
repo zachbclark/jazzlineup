@@ -3,7 +3,6 @@ import { CITIES, fetchData, initialCity, initialRoute, todayIso, relTime, search
 import SearchBox from './components/SearchBox';
 import { useIsMobile } from './useIsMobile';
 import CitySwitcher from './components/CitySwitcher';
-import InfoTip from './components/InfoTip';
 import BoroughBar from './components/BoroughBar';
 import FilterBar from './components/FilterBar';
 import PicksBar from './components/PicksBar';
@@ -380,8 +379,6 @@ export default function App() {
           title="Know a club we're missing? Email me.">
           suggest a venue
         </a>
-        <span className="foot-sep">&middot;</span>
-        <InfoTip />
       </footer>
     </div>
   );

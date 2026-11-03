@@ -163,7 +163,7 @@ export default function FilterBar({ clubs, active, saved, onToggle, onStar, onRe
             } : undefined}
             onPointerDown={(e) => onDown(e, c.id)}
             onClick={() => onChipClick(c.id)}
-            title={`${c.name} — ${c.neighborhood}`}
+            title={`${c.name}, ${c.neighborhood}. Drag to reorder.`}
           >
             <span className="dot" style={{ background: c.color }} />
             {c.shortName}

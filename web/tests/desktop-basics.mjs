@@ -31,14 +31,11 @@ export default async function run({ pd, errors }) {
     assert.ok(Number(m[2]) >= 7, `expected 7+ clubs, got ${m[2]}`);
   });
 
-  await test('info tip opens, mentions drag reorder, closes on Escape', async () => {
-    await pd.click('.info-btn');
-    await pd.waitForTimeout(150);
-    const menu = await pd.textContent('.info-menu');
-    assert.match(menu, /Drag to reorder/);
-    await pd.keyboard.press('Escape');
-    await pd.waitForTimeout(150);
-    assert.equal(await pd.$('.info-menu'), null, 'Escape should close tips');
+  await test('no info button; venue chips carry the drag hint', async () => {
+    assert.equal(await pd.$('.info-btn'), null, 'info button was dropped 2026-11-02');
+    const tip = await pd.getAttribute('.chip[title]', 'title');
+    assert.match(tip, /Drag to reorder\.$/);
+    assert.ok(!tip.includes('—'), 'no em dashes in user copy');
   });
 
   await test('first-visit city hint shows once, dies on switcher touch', async () => {
