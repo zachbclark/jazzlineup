@@ -374,8 +374,16 @@ crawler/alert-text.mjs (tested in tests/shared.mjs):
 - alarmEmail(): alarms never email directly. An EventBridge rule
   (AlarmMailRule) sends every state change of the three alarms to the
   AlarmMail Lambda (crawler/alarm-mail.mjs), which emails the plain
-  version, including "back to normal". Transitions to or from
-  INSUFFICIENT_DATA (alarm startup, deploys) send nothing.
+  version, including "back to normal". Going TO INSUFFICIENT_DATA, or
+  INSUFFICIENT_DATA -> OK (alarm startup, deploys), sends nothing;
+  INSUFFICIENT_DATA -> ALARM still emails (a real problem found at startup).
+  Backstop: the AlarmMailFailing alarm emails DIRECTLY (raw AWS template)
+  if the translator itself errors.
+- shrinkEmail(): the silent-rot digest in plain words ("6 shows listed,
+  usually about 40").
+- If the dead-venue check itself crashes, the crawl emails "the
+  broken-venue check crashed" instead of going quiet.
+- All sends go through crawler/notify.mjs publishAlert().
 To add an alarm: create it in stack.js, add its ARN to AlarmMailRule's
 resources, and its wording to ALARMS in alert-text.mjs.
 

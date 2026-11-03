@@ -18,6 +18,7 @@ const events = require('aws-cdk-lib/aws-events');
 const targets = require('aws-cdk-lib/aws-events-targets');
 const logs = require('aws-cdk-lib/aws-logs');
 const cloudwatch = require('aws-cdk-lib/aws-cloudwatch');
+const cwActions = require('aws-cdk-lib/aws-cloudwatch-actions');
 const iam = require('aws-cdk-lib/aws-iam');
 const sns = require('aws-cdk-lib/aws-sns');
 const snsSubs = require('aws-cdk-lib/aws-sns-subscriptions');
@@ -161,8 +162,9 @@ class JazzLineupStack extends cdk.Stack {
       targets: [new targets.LambdaFunction(crawler, { retryAttempts: 1 })],
     });
 
-    // --- Monitoring: dashboard + email alarms --------------------------------
-    // Free tier covers all of this (3 dashboards, 10 alarms, email SNS).
+    // --- Monitoring: dashboard, alarms, alert emails ------------------------
+    // Free tier covers all of this (3 dashboards, 10 alarms, email SNS, the
+    // AlarmMail Lambda's few invocations). Alert wording: crawler/alert-text.mjs.
     const alerts = new sns.Topic(this, 'Alerts', { displayName: 'jazzlineup alerts' });
     alerts.addSubscription(new snsSubs.EmailSubscription(ALERT_EMAIL));
     // the crawler's silent-rot digest (anomaly.mjs) publishes here directly:
@@ -222,6 +224,18 @@ class JazzLineupStack extends cdk.Stack {
       environment: { ALERTS_TOPIC_ARN: alerts.topicArn },
     });
     alerts.grantPublish(alarmMail);
+
+    // Backstop for the translator itself: if AlarmMail errors, the alarms
+    // above go quiet, so this one emails DIRECTLY (raw AWS template, the one
+    // exception, since the plain path is what broke).
+    new cloudwatch.Alarm(this, 'AlarmMailFailing', {
+      metric: alarmMail.metricErrors({ period: cdk.Duration.hours(1), statistic: 'Sum' }),
+      threshold: 1,
+      evaluationPeriods: 1,
+      comparisonOperator: cloudwatch.ComparisonOperator.GREATER_THAN_OR_EQUAL_TO_THRESHOLD,
+      treatMissingData: cloudwatch.TreatMissingData.NOT_BREACHING,
+      alarmDescription: 'Jazz Lineup: the alert email translator (AlarmMail Lambda) is failing, so other alarm emails may not arrive. Check its logs in AWS.',
+    }).addAlarmAction(new cwActions.SnsAction(alerts));
     new events.Rule(this, 'AlarmMailRule', {
       eventPattern: {
         source: ['aws.cloudwatch'],
