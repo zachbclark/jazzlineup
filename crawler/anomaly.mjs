@@ -64,3 +64,42 @@ export function detectAnomalies({ stats, freshClubIds, emptyOkIds = new Set(), p
   }
   return { state: { clubs }, alerts };
 }
+
+// Dead-venue detector (2026-11-02). When a venue's crawl throws or comes back
+// empty, the merge keeps its old shows, so the site looks fine and the check
+// above never judges it (it only sees fresh clubs). This is per VENUE, not per
+// module, so a two-venue module (Smalls + Mezzrow) that returns shows for one
+// still flags the other.
+//
+// Rules: alert on the 2nd stale crawl in a row (one flaky fetch stays quiet),
+// then one reminder a day while it stays dead, then one "back" line when it
+// recovers. emptyOk venues are never dead.
+//
+// State shape: { [clubId]: {
+//   streak,   // consecutive crawls with no fresh shows
+//   since,    // ISO timestamp of the first stale crawl
+//   alerted,  // ISO date of the last alert line, null if never alerted
+// } }
+const DEAD_CONFIRM = 2;
+
+export function detectDead({ clubIds, freshClubIds, emptyOkIds = new Set(), prev = {}, now }) {
+  const day = now.slice(0, 10);
+  const fresh = new Set(freshClubIds);
+  const state = { ...prev };
+  const alerts = [];
+  for (const clubId of clubIds) {
+    const p = state[clubId];
+    if (fresh.has(clubId) || emptyOkIds.has(clubId)) {
+      if (p?.alerted) alerts.push({ clubId, kind: 'back', streak: p.streak, since: p.since });
+      delete state[clubId];
+      continue;
+    }
+    const next = { streak: (p?.streak ?? 0) + 1, since: p?.since ?? now, alerted: p?.alerted ?? null };
+    if (next.streak >= DEAD_CONFIRM && next.alerted !== day) {
+      alerts.push({ clubId, kind: next.alerted ? 'still' : 'dead', streak: next.streak, since: next.since });
+      next.alerted = day;
+    }
+    state[clubId] = next;
+  }
+  return { state, alerts };
+}

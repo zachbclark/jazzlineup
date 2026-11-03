@@ -5,7 +5,7 @@ import { S3Client, GetObjectCommand, PutObjectCommand } from '@aws-sdk/client-s3
 import { CloudWatchClient, PutMetricDataCommand } from '@aws-sdk/client-cloudwatch';
 import { SNSClient, PublishCommand } from '@aws-sdk/client-sns';
 import { runCrawl, buildOutput, cities } from './run.js';
-import { venueStats, detectAnomalies } from './anomaly.mjs';
+import { venueStats, detectAnomalies, detectDead } from './anomaly.mjs';
 import { CLUBS } from './clubs.js';
 
 const s3 = new S3Client({});
@@ -31,6 +31,36 @@ async function writeJson(key, body) {
   }));
 }
 
+// Urgent alerts: dead venues, recoveries, archive write failures. One
+// message per crawl on the alerts topic (email today, SMS once Zach's
+// toll-free number is approved; NOTES.md, ALERTS). Never fails the crawl.
+async function sendUrgent(subject, lines) {
+  if (!ALERTS_TOPIC || !lines.length) return;
+  try {
+    await sns.send(new PublishCommand({
+      TopicArn: ALERTS_TOPIC,
+      Subject: subject.slice(0, 100),
+      Message: lines.join('\n') + '\n\nRunbook: NOTES.md, ALERTS.',
+    }));
+    console.log(`urgent alert sent: ${lines.length} line(s)`);
+  } catch (err) {
+    console.error('urgent alert failed (crawl unaffected):', err.message);
+  }
+}
+
+const CLUB_BY_ID = new Map(CLUBS.map((c) => [c.id, c]));
+const utc = (iso) => `${iso.slice(0, 10)} ${iso.slice(11, 16)} UTC`;
+
+function deadLine(city, a, errors) {
+  const club = CLUB_BY_ID.get(a.clubId);
+  const name = club?.name ?? a.clubId;
+  if (a.kind === 'back') return `[${city}] ${name}: back, fresh shows again.`;
+  const err = errors.find((e) => club && e.startsWith(`${club.module}:`));
+  const why = err ? `Error: ${err}` : 'No error logged (its module returned shows for another venue).';
+  const still = a.kind === 'still' ? 'still ' : '';
+  return `[${city}] ${name}: ${still}no fresh shows for ${a.streak} crawls, since ${utc(a.since)}. ${why}`;
+}
+
 // The event payload may narrow the crawl: {"city":"par"} or
 // {"city":["par","ber"]} crawls just those cities (manual targeted refresh
 // after adding or fixing a venue). No payload = full crawl (the 4h schedule
@@ -46,6 +76,12 @@ const LOCK_KEY = 'crawl-lock.json';
 const LOCK_WINDOW_MS = 10 * 60 * 1000;
 
 export const handler = async (event) => {
+  // {"testAlert":true}: prove the alert path end to end, no crawl
+  if (event?.testAlert) {
+    await sendUrgent('Jazz Lineup: test alert', ['Test alert. If you can read this, crawler alerts reach you.']);
+    return { testAlert: true };
+  }
+
   const lock = await readJson(LOCK_KEY);
   const now = Date.now();
   if (lock?.startedAt && now - lock.startedAt < LOCK_WINDOW_MS && !event?.force) {
@@ -69,6 +105,8 @@ export const handler = async (event) => {
   // anomalies collect into ONE digest email at the end (see anomaly.mjs)
   let anomalyState = (await readJson('crawl-stats.json')) ?? {};
   const digest = [];
+  const urgent = [];
+  const tally = { dead: 0, back: 0, archive: 0 };
   const todayIso = new Date().toISOString().slice(0, 10);
   const emptyOkIds = new Set(CLUBS.filter((c) => c.emptyOk).map((c) => c.id));
   for (const city of targets) {
@@ -94,6 +132,25 @@ export const handler = async (event) => {
       await writeJson(`archive/${city}/${new Date().toISOString().slice(0, 10)}.json`, out);
     } catch (err) {
       console.error(`[${city}] archive write failed (live write succeeded):`, err.message);
+      urgent.push(`[${city}] ARCHIVE WRITE FAILED: ${err.message}. Today's snapshot may be missing.`);
+      tally.archive++;
+    }
+
+    // dead venues: no fresh shows for 2+ crawls (the merge hides it by
+    // keeping their old shows). State rides in crawl-stats.json under `dead`.
+    try {
+      const { state: dead, alerts } = detectDead({
+        clubIds: CLUBS.filter((c) => c.city === city).map((c) => c.id),
+        freshClubIds: result.crawledClubIds ?? [],
+        emptyOkIds, prev: anomalyState.dead ?? {}, now: new Date().toISOString(),
+      });
+      anomalyState = { ...anomalyState, dead };
+      for (const a of alerts) {
+        urgent.push(deadLine(city, a, result.errors));
+        tally[a.kind === 'back' ? 'back' : 'dead']++;
+      }
+    } catch (err) {
+      console.error(`[${city}] dead-venue check failed (crawl unaffected):`, err.message);
     }
 
     // judge only clubs that refreshed this run — kept clubs are hard
@@ -104,7 +161,7 @@ export const handler = async (event) => {
         freshClubIds: result.crawledClubIds ?? [],
         emptyOkIds, prev: anomalyState, todayIso,
       });
-      anomalyState = state;
+      anomalyState = { ...anomalyState, ...state }; // keep the `dead` key
       digest.push(...alerts.map((a) => `[${city}] ${a.clubId}: ${a.reasons.join('; ')}`));
     } catch (err) {
       console.error(`[${city}] anomaly detection failed (crawl unaffected):`, err.message);
@@ -117,6 +174,13 @@ export const handler = async (event) => {
       errors: result.errors,
     };
   }
+
+  const parts = [
+    tally.archive && 'ARCHIVE WRITE FAILED',
+    tally.dead && `${tally.dead} venue${tally.dead === 1 ? '' : 's'} down`,
+    tally.back && `${tally.back} back`,
+  ].filter(Boolean);
+  await sendUrgent(`Jazz Lineup: ${parts.join(', ')}`, urgent);
 
   try {
     await writeJson('crawl-stats.json', anomalyState);
