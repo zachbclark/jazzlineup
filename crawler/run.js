@@ -30,11 +30,16 @@ export async function runCrawl({ previousEvents = [], clubIds = null, city = nul
 
   const results = await Promise.allSettled(
     modules.map(async (mod) => {
-      const { crawl } = await import(mod);
       // ctx lets crawlers reuse expensive prior work (e.g. Smalls copies
       // band personnel from the previous crawl instead of re-fetching
       // hundreds of event pages every 4 hours)
-      return { mod, events: await crawl({ previousEvents }) };
+      try {
+        const { crawl } = await import(mod);
+        return { mod, events: await crawl({ previousEvents }) };
+      } catch (err) {
+        // name the module: a bare "fetch failed" can't be traced to a venue
+        throw new Error(`${mod}: ${err?.message ?? err}`);
+      }
     })
   );
 

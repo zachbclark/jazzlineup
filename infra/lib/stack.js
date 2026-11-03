@@ -142,7 +142,7 @@ class JazzLineupStack extends cdk.Stack {
       memorySize: 512,
       environment: { BUCKET: bucket.bucketName },
       logRetention: logs.RetentionDays.TWO_WEEKS,
-      description: 'Crawls NYC jazz club sites and writes events.json to S3',
+      description: 'Crawls jazz club calendars in every city, writes events-<city>.json and the archive to S3',
       // never two crawls at once: politeness to 100+ small club websites.
       // Overeager manual invokes queue here and then hit the S3 start-lock
       // in lambda.mjs, so a burst of invokes still means one real crawl.
@@ -183,6 +183,21 @@ class JazzLineupStack extends cdk.Stack {
       alarmDescription: 'jazzlineup crawler Lambda errored on 2 consecutive runs',
     });
     crawlerAlarm.addAlarmAction(new cwActions.SnsAction(alerts));
+
+    // Crawler hasn't run at all in 8h (schedule broken, Lambda deleted,
+    // account trouble) -> email, and again when it's running again. The
+    // crawler can't report its own absence, so missing data BREACHES here,
+    // the opposite of every other alarm.
+    const stoppedAlarm = new cloudwatch.Alarm(this, 'CrawlerStopped', {
+      metric: crawler.metricInvocations({ period: cdk.Duration.hours(8), statistic: 'Sum' }),
+      threshold: 1,
+      evaluationPeriods: 1,
+      comparisonOperator: cloudwatch.ComparisonOperator.LESS_THAN_THRESHOLD,
+      treatMissingData: cloudwatch.TreatMissingData.BREACHING,
+      alarmDescription: 'jazzlineup crawler has not run in 8 hours',
+    });
+    stoppedAlarm.addAlarmAction(new cwActions.SnsAction(alerts));
+    stoppedAlarm.addOkAction(new cwActions.SnsAction(alerts));
 
     // Site serving errors: >5% of requests 5xx for 15 min -> email.
     const cfError5xx = distribution.metric5xxErrorRate({ period: cdk.Duration.minutes(5), statistic: 'Average' });

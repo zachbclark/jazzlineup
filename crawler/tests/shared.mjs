@@ -346,3 +346,34 @@ ok('slug: ASCII ids unchanged; Japanese-only titles keep their letters, no colli
   assert.ok(!a.id.endsWith(':'), 'no empty slug');
   assert.equal(slugFn('ｊａｚｚ　ｎｉｇｈｔ'), 'jazz-night', 'full-width Latin folds to plain ASCII');
 });
+
+// --- Dead-venue detector (2026-11-02: alerts for venues the merge hides) --------
+import { detectDead } from '../anomaly.mjs';
+ok('dead: alert on 2nd stale crawl, once a day, reminder next day, one "back" line', () => {
+  const ids = ['smalls', 'mezzrow', 'jazz92ny'];
+  const emptyOkIds = new Set(['jazz92ny']);
+  const step = (fresh, prev, now) => detectDead({ clubIds: ids, freshClubIds: fresh, emptyOkIds, prev, now });
+  // shared module: smalls.js returned Smalls shows but none for Mezzrow
+  let r = step(['smalls'], {}, '2026-11-02T08:00:00Z');
+  assert.deepEqual(r.alerts, [], 'one stale crawl could be a hiccup');
+  assert.equal(r.state.mezzrow.streak, 1);
+  assert.ok(!r.state.jazz92ny, 'seasonal venue is never dead');
+  r = step(['smalls'], r.state, '2026-11-02T12:00:00Z');
+  assert.deepEqual(r.alerts, [{ clubId: 'mezzrow', kind: 'dead', streak: 2, since: '2026-11-02T08:00:00Z' }]);
+  r = step(['smalls'], r.state, '2026-11-02T16:00:00Z');
+  assert.deepEqual(r.alerts, [], 'once per day');
+  r = step(['smalls'], r.state, '2026-11-03T00:00:00Z');
+  assert.equal(r.alerts[0].kind, 'still');
+  assert.equal(r.alerts[0].streak, 4);
+  r = step(['smalls', 'mezzrow'], r.state, '2026-11-03T04:00:00Z');
+  assert.deepEqual(r.alerts.map((a) => [a.clubId, a.kind]), [['mezzrow', 'back']]);
+  assert.ok(!r.state.mezzrow, 'state resets on recovery');
+});
+
+ok('dead: a one-crawl blip recovers silently; other cities\' state is left alone', () => {
+  const prev = { vanguard: { streak: 1, since: '2026-11-02T08:00:00Z', alerted: null }, ronnies: { streak: 5, since: 'x', alerted: '2026-11-01' } };
+  const r = detectDead({ clubIds: ['vanguard'], freshClubIds: ['vanguard'], prev, now: '2026-11-02T12:00:00Z' });
+  assert.deepEqual(r.alerts, [], 'never alerted, so no "back" line');
+  assert.ok(!r.state.vanguard);
+  assert.deepEqual(r.state.ronnies, prev.ronnies, 'London state untouched by an NYC run');
+});

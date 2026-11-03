@@ -344,6 +344,57 @@ change. SMS was considered and skipped (US origination fees +
 registration); add an SNS SMS subscription later if email proves too
 slow.
 
+ALERTS (2026-11-02). Everything goes to the Alerts SNS topic, which emails
+Zach. FOUND 2026-11-02: the topic had NO subscribers, so every alarm and
+digest since July went nowhere. Resubscribed by hand. Check it's still
+there now and then:
+
+    aws sns list-subscriptions-by-topic --topic-arn <Alerts topic ARN>
+
+What emails you:
+- Dead venue: no fresh shows for 2 crawls in a row (~4h), named, with the
+  module's error. One reminder a day while it stays dead, one "back" line
+  when it recovers. Per venue, so a two-venue module (Smalls + Mezzrow)
+  still flags the empty one. emptyOk venues never alert. Logic in
+  anomaly.mjs detectDead(), state in crawl-stats.json under `dead`.
+- Archive write failed for a city.
+- CrawlerStopped alarm: the Lambda hasn't run in 8h. Missing data counts
+  as breaching. It also emails when it's back to OK (and once on first
+  deploy).
+- The older ones: CrawlerFailing, SiteErrors, ClubDrift, and the
+  silent-rot digest above.
+All urgent lines from one crawl go out as ONE email.
+
+Errors now carry the module path ("./clubs/sometime.js: fetch failed"),
+so the unnamed "fetch failed" lines are gone.
+
+Test the whole path without crawling:
+
+    aws lambda invoke --cli-binary-format raw-in-base64-out --payload '{"testAlert":true}' --function-name $FN /tmp/out.json
+
+A venue that posts late (Sista's Place, Ibeam) will alert as dead while
+its calendar is empty. That's honest: the alert says "returned 0 events".
+If a room is seasonal or often empty, mark it emptyOk in clubs.js.
+
+Texts: planned. Zach is registering a US toll-free number in AWS End
+User Messaging SMS. When approved, add an SMS subscription to the Alerts
+topic and nothing else changes. A status page (/status, per-venue fresh
+or stale) is next after alerts.
+
+ARCHIVE PROTECTION (2026-11-02, PRs #40, #42). The archive is the one
+thing that can't be redone, so it has three copies:
+- Site bucket archive/: bucket is RETAIN (survives a cdk destroy),
+  auto-delete off, versioned. Overwritten or deleted files keep their old
+  version for 90 days. Current files never expire.
+- ArchiveVault bucket: S3 replication copies every archive/ write here
+  (deletes are NOT copied). Object Lock GOVERNANCE, 10 years, Glacier IR.
+  Nothing can change or delete it without an admin bypassing the lock.
+  Backfilled 2026-11-02 with all 1,050 earlier files.
+- ~/jazzlineup-archive-backup on Zach's Mac, the only copy outside AWS.
+  Refresh: aws s3 sync s3://$BUCKET/archive/ ~/jazzlineup-archive-backup/archive/
+Cost is cents a month. Gap: a stolen admin login could bypass governance
+mode. Compliance mode or a separate AWS account would close it.
+
 ## Command cheat sheet
 
 Everyday dev (repo root):
