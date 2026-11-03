@@ -957,6 +957,19 @@ export const CLUBS = [
     color: '#e86fa8', // Marais rose — audit-cleared
     module: './clubs/riv38.js',
   },
+  {
+    id: 'pianovache',
+    name: 'Le Piano Vache',
+    shortName: 'Piano Vache',
+    url: 'https://lepianovache.com',
+    address: '8 rue Laplace, 75005 Paris',
+    city: 'par',
+    borough: null,
+    timezone: 'Europe/Paris',
+    neighborhood: 'Quartier Latin',
+    color: '#5470e8', // piano-key cobalt, clear of Sunside's sky blue
+    module: './clubs/pianovache.js',
+  },
 
   // -------------------------------------------------------------- London ----
   {
