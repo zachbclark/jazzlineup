@@ -33,11 +33,15 @@ class JazzLineupStack extends cdk.Stack {
     super(scope, id, props);
 
     // --- S3: one private bucket for the site build + events.json ------------
+    // It also holds archive/, the only copy of the show history, so the
+    // bucket outlives the stack and every overwrite or delete keeps the old
+    // version for 90 days.
     const bucket = new s3.Bucket(this, 'SiteBucket', {
       blockPublicAccess: s3.BlockPublicAccess.BLOCK_ALL,
       encryption: s3.BucketEncryption.S3_MANAGED,
-      removalPolicy: cdk.RemovalPolicy.DESTROY, // personal project: cdk destroy cleans up
-      autoDeleteObjects: true,
+      versioned: true,
+      lifecycleRules: [{ noncurrentVersionExpiration: cdk.Duration.days(90) }],
+      removalPolicy: cdk.RemovalPolicy.RETAIN,
     });
 
     // --- TLS certificate (validated via a CNAME you add at Cloudflare) ------
