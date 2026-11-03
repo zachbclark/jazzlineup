@@ -377,3 +377,51 @@ ok('dead: a one-crawl blip recovers silently; other cities\' state is left alone
   assert.ok(!r.state.vanguard);
   assert.deepEqual(r.state.ronnies, prev.ronnies, 'London state untouched by an NYC run');
 });
+
+// --- Plain-English alert emails (2026-11-03: "information I can understand and act on")
+import { etTime, explainError, venueEmail, alarmEmail } from '../alert-text.mjs';
+ok('alert text: Eastern times, error causes in words', () => {
+  assert.equal(etTime('2026-11-03T06:42:00Z'), 'Nov 3, 1:42am ET');
+  assert.equal(etTime('2026-07-20T00:05:00Z'), 'Jul 19, 8:05pm ET', 'EDT in summer');
+  assert.match(explainError('./clubs/bodyandsoul.js: returned 0 events (markup change?)').cause, /changed their website/);
+  assert.match(explainError('./clubs/constellation.js: GET https://x/ -> 403').cause, /blocking us/);
+  assert.match(explainError('./clubs/laphil.js: GET https://x/feed -> 404').cause, /page moved/);
+  assert.match(explainError('./clubs/sometimetok.js: fetch failed').cause, /down or slow/);
+  assert.match(explainError(undefined).what, /other venue on this page/);
+});
+
+ok('alert text: one dead venue reads as a plain email with what to do', () => {
+  const { subject, message } = venueEmail([{
+    kind: 'dead', city: 'tok', name: 'Blue Note Tokyo', url: 'https://www.bluenote.co.jp',
+    since: '2026-11-03T06:42:00Z', streak: 2, error: './clubs/bluenotetok.js: returned 0 events (markup change? keeping previous data)',
+  }]);
+  assert.equal(subject, 'Jazz Lineup: Blue Note Tokyo stopped updating');
+  assert.match(message, /^Blue Note Tokyo \(tok\) has had no new shows for 2 crawls, since Nov 3, 1:42am ET\./);
+  assert.match(message, /Likely cause: they changed their website\. The crawler needs a fix\./);
+  assert.match(message, /Their site: https:\/\/www\.bluenote\.co\.jp/);
+  assert.ok(!/UTC|arn:|—/.test(message), 'no UTC, AWS ids, or em dashes');
+});
+
+ok('alert text: several items in one crawl -> one email, archive first, counted subject', () => {
+  const { subject, message } = venueEmail([
+    { kind: 'back', city: 'nyc', name: 'Smalls' },
+    { kind: 'dead', city: 'par', name: 'Duc des Lombards', since: '2026-11-03T06:42:00Z', streak: 2, error: 'x: returned 0 events' },
+    { kind: 'dead', city: 'la', name: 'LA Phil', since: '2026-11-03T06:42:00Z', streak: 2, error: 'x: GET y -> 404' },
+    { kind: 'archive', city: 'nyc', error: 'AccessDenied' },
+  ]);
+  assert.equal(subject, 'Jazz Lineup: archive didn\'t save, 2 venues stopped updating, 1 venue back');
+  assert.match(message, /^Today's archive didn't save for nyc\./);
+  assert.match(message, /Smalls \(nyc\) is updating again\. Nothing to do\.$/);
+});
+
+ok('alert text: alarms translate; startup transitions send nothing', () => {
+  const ev = (name, from, to) => ({ time: '2026-11-03T09:06:00Z', detail: {
+    alarmName: `JazzLineup-${name}AE1706FE-kGHmKuYLGZl2`,
+    state: { value: to, timestamp: '2026-11-03T09:06:00Z' }, previousState: { value: from } } });
+  assert.equal(alarmEmail(ev('CrawlerStopped', 'INSUFFICIENT_DATA', 'OK')), null, 'the deploy-time email Zach got');
+  const down = alarmEmail(ev('CrawlerStopped', 'OK', 'ALARM'));
+  assert.equal(down.subject, 'Jazz Lineup: the crawler hasn\'t run in 8 hours');
+  assert.match(down.message, /since about Nov 2, 8:06pm ET/);
+  assert.equal(alarmEmail(ev('CrawlerStopped', 'ALARM', 'OK')).subject, 'Jazz Lineup: the crawler is running again');
+  assert.equal(alarmEmail(ev('SiteErrors', 'OK', 'ALARM')).subject, 'Jazz Lineup: the site is erroring');
+});

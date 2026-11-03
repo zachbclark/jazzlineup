@@ -359,11 +359,25 @@ What emails you:
   anomaly.mjs detectDead(), state in crawl-stats.json under `dead`.
 - Archive write failed for a city.
 - CrawlerStopped alarm: the Lambda hasn't run in 8h. Missing data counts
-  as breaching. It also emails when it's back to OK (and once on first
-  deploy).
-- The older ones: CrawlerFailing, SiteErrors, ClubDrift, and the
-  silent-rot digest above.
+  as breaching.
+- CrawlerFailing and SiteErrors alarms, and the silent-rot digest above.
+  ClubDrift was DELETED 2026-11-03 (the dead-venue email replaces it).
 All urgent lines from one crawl go out as ONE email.
+
+READABLE EMAILS (2026-11-03, Zach: "information I can understand and act
+on"). Every email: plain subject, what happened, likely cause, what to do,
+Eastern times, no AWS ids or alarm codes. Wording lives in one pure file,
+crawler/alert-text.mjs (tested in tests/shared.mjs):
+- venueEmail(): dead / still dead / back / archive items from one crawl.
+  explainError() maps raw errors to words (0 shows = site changed, 403 =
+  blocking us, 404 = page moved, fetch failed = down or slow).
+- alarmEmail(): alarms never email directly. An EventBridge rule
+  (AlarmMailRule) sends every state change of the three alarms to the
+  AlarmMail Lambda (crawler/alarm-mail.mjs), which emails the plain
+  version, including "back to normal". Transitions to or from
+  INSUFFICIENT_DATA (alarm startup, deploys) send nothing.
+To add an alarm: create it in stack.js, add its ARN to AlarmMailRule's
+resources, and its wording to ALARMS in alert-text.mjs.
 
 Errors now carry the module path ("./clubs/sometime.js: fetch failed"),
 so the unnamed "fetch failed" lines are gone.

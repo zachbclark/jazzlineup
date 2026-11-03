@@ -6,6 +6,7 @@ import { CloudWatchClient, PutMetricDataCommand } from '@aws-sdk/client-cloudwat
 import { SNSClient, PublishCommand } from '@aws-sdk/client-sns';
 import { runCrawl, buildOutput, cities } from './run.js';
 import { venueStats, detectAnomalies, detectDead } from './anomaly.mjs';
+import { venueEmail } from './alert-text.mjs';
 import { CLUBS } from './clubs.js';
 
 const s3 = new S3Client({});
@@ -34,31 +35,23 @@ async function writeJson(key, body) {
 // Urgent alerts: dead venues, recoveries, archive write failures. One
 // message per crawl on the alerts topic (email today, SMS once Zach's
 // toll-free number is approved; NOTES.md, ALERTS). Never fails the crawl.
-async function sendUrgent(subject, lines) {
-  if (!ALERTS_TOPIC || !lines.length) return;
+async function sendUrgent({ subject, message }) {
+  if (!ALERTS_TOPIC) return;
   try {
-    await sns.send(new PublishCommand({
-      TopicArn: ALERTS_TOPIC,
-      Subject: subject.slice(0, 100),
-      Message: lines.join('\n') + '\n\nRunbook: NOTES.md, ALERTS.',
-    }));
-    console.log(`urgent alert sent: ${lines.length} line(s)`);
+    await sns.send(new PublishCommand({ TopicArn: ALERTS_TOPIC, Subject: subject.slice(0, 100), Message: message }));
+    console.log(`urgent alert sent: ${subject}`);
   } catch (err) {
     console.error('urgent alert failed (crawl unaffected):', err.message);
   }
 }
 
 const CLUB_BY_ID = new Map(CLUBS.map((c) => [c.id, c]));
-const utc = (iso) => `${iso.slice(0, 10)} ${iso.slice(11, 16)} UTC`;
 
-function deadLine(city, a, errors) {
+// detectDead alert -> a venueEmail item (name, site, the module's error)
+function deadItem(city, a, errors) {
   const club = CLUB_BY_ID.get(a.clubId);
-  const name = club?.name ?? a.clubId;
-  if (a.kind === 'back') return `[${city}] ${name}: back, fresh shows again.`;
-  const err = errors.find((e) => club && e.startsWith(`${club.module}:`));
-  const why = err ? `Error: ${err}` : 'No error logged (its module returned shows for another venue).';
-  const still = a.kind === 'still' ? 'still ' : '';
-  return `[${city}] ${name}: ${still}no fresh shows for ${a.streak} crawls, since ${utc(a.since)}. ${why}`;
+  const error = club ? errors.find((e) => e.startsWith(`${club.module}:`)) : undefined;
+  return { kind: a.kind, city, name: club?.name ?? a.clubId, url: club?.url, since: a.since, streak: a.streak, error };
 }
 
 // The event payload may narrow the crawl: {"city":"par"} or
@@ -78,7 +71,7 @@ const LOCK_WINDOW_MS = 10 * 60 * 1000;
 export const handler = async (event) => {
   // {"testAlert":true}: prove the alert path end to end, no crawl
   if (event?.testAlert) {
-    await sendUrgent('Jazz Lineup: test alert', ['Test alert. If you can read this, crawler alerts reach you.']);
+    await sendUrgent({ subject: 'Jazz Lineup: test alert', message: 'If you can read this, crawler alerts reach you. Nothing to do.' });
     return { testAlert: true };
   }
 
@@ -106,7 +99,6 @@ export const handler = async (event) => {
   let anomalyState = (await readJson('crawl-stats.json')) ?? {};
   const digest = [];
   const urgent = [];
-  const tally = { dead: 0, back: 0, archive: 0 };
   const todayIso = new Date().toISOString().slice(0, 10);
   const emptyOkIds = new Set(CLUBS.filter((c) => c.emptyOk).map((c) => c.id));
   for (const city of targets) {
@@ -132,8 +124,7 @@ export const handler = async (event) => {
       await writeJson(`archive/${city}/${new Date().toISOString().slice(0, 10)}.json`, out);
     } catch (err) {
       console.error(`[${city}] archive write failed (live write succeeded):`, err.message);
-      urgent.push(`[${city}] ARCHIVE WRITE FAILED: ${err.message}. Today's snapshot may be missing.`);
-      tally.archive++;
+      urgent.push({ kind: 'archive', city, error: err.message });
     }
 
     // dead venues: no fresh shows for 2+ crawls (the merge hides it by
@@ -145,10 +136,7 @@ export const handler = async (event) => {
         emptyOkIds, prev: anomalyState.dead ?? {}, now: new Date().toISOString(),
       });
       anomalyState = { ...anomalyState, dead };
-      for (const a of alerts) {
-        urgent.push(deadLine(city, a, result.errors));
-        tally[a.kind === 'back' ? 'back' : 'dead']++;
-      }
+      for (const a of alerts) urgent.push(deadItem(city, a, result.errors));
     } catch (err) {
       console.error(`[${city}] dead-venue check failed (crawl unaffected):`, err.message);
     }
@@ -175,12 +163,7 @@ export const handler = async (event) => {
     };
   }
 
-  const parts = [
-    tally.archive && 'ARCHIVE WRITE FAILED',
-    tally.dead && `${tally.dead} venue${tally.dead === 1 ? '' : 's'} down`,
-    tally.back && `${tally.back} back`,
-  ].filter(Boolean);
-  await sendUrgent(`Jazz Lineup: ${parts.join(', ')}`, urgent);
+  if (urgent.length) await sendUrgent(venueEmail(urgent));
 
   try {
     await writeJson('crawl-stats.json', anomalyState);
