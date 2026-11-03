@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useLayoutEffect, useRef, useState } from 'react';
 
 // ⓘ in the header: the home for features nobody would otherwise discover
 // (drag-to-reorder above all). Popover matches the city menu; closes on
@@ -6,6 +6,19 @@ import React, { useEffect, useRef, useState } from 'react';
 export default function InfoTip() {
   const [open, setOpen] = useState(false);
   const ref = useRef(null);
+  const menuRef = useRef(null);
+
+  // the footer wraps differently at every phone width, so the button moves;
+  // nudge the panel back inside the screen before it paints
+  useLayoutEffect(() => {
+    const m = menuRef.current;
+    if (!m) return;
+    const r = m.getBoundingClientRect();
+    const pad = 12;
+    const shift = r.right > innerWidth - pad ? innerWidth - pad - r.right
+      : r.left < pad ? pad - r.left : 0;
+    if (shift) m.style.transform = `translateX(${Math.round(shift)}px)`;
+  }, [open]);
 
   useEffect(() => {
     const onDoc = (e) => { if (ref.current && !ref.current.contains(e.target)) setOpen(false); };
@@ -26,13 +39,12 @@ export default function InfoTip() {
         i
       </button>
       {open && (
-        <div className="info-menu">
+        <div className="info-menu" ref={menuRef}>
           <h4>Tips</h4>
-          <p>Search any musician. Sideman gigs count too.</p>
-          <p>Tap a venue chip to see just that club. Tap more to add them.</p>
-          <p>Tap a club, then its star to add it to My clubs.</p>
-          <p>Drag chips to reorder them. Press and hold first on a phone.</p>
-          <p>Your order and picks are remembered on this device.</p>
+          <p><b>Search</b> Any musician, leader or band member.</p>
+          <p><b>Save</b> Tap a venue, then &#9733;.</p>
+          <p><b>Reorder</b> Drag venues. Hold first on mobile.</p>
+          <p><b>Archive</b> Every past show since July 2026.</p>
         </div>
       )}
     </span>

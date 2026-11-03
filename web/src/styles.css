@@ -132,6 +132,8 @@ button { font: inherit; cursor: pointer; }
 }
 .info-menu p { margin: 0 0 8px; color: var(--text); font-size: 12.5px; line-height: 1.45; }
 .info-menu p:last-child { margin-bottom: 0; }
+/* label column + text column; wrapped text stays in its column */
+.info-menu p { display: grid; grid-template-columns: 64px 1fr; }
 
 .view-toggle { display: flex; border: 1px solid var(--line); border-radius: 8px; overflow: hidden; }
 .view-toggle button, .view-toggle a {
@@ -372,7 +374,6 @@ button.cell { text-align: left; border: 1px solid var(--line); font: inherit; co
 @media (max-width: 760px) {
   body { font-size: 16px; } /* >=16px inputs/text prevents iOS auto-zoom */
   .app { padding: 14px 12px 32px; }
-
   .topbar { flex-wrap: wrap; gap: 10px; }
   .brand { font-size: 21px; white-space: nowrap; }
   /* icon-only view toggle: keeps brand + toggle on one line even for NYC */

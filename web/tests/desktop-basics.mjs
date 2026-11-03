@@ -35,7 +35,7 @@ export default async function run({ pd, errors }) {
     await pd.click('.info-btn');
     await pd.waitForTimeout(150);
     const menu = await pd.textContent('.info-menu');
-    assert.match(menu, /Drag chips to reorder/);
+    assert.match(menu, /Drag venues\. Hold first on mobile\./);
     await pd.keyboard.press('Escape');
     await pd.waitForTimeout(150);
     assert.equal(await pd.$('.info-menu'), null, 'Escape should close tips');
