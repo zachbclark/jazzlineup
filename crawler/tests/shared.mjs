@@ -262,6 +262,13 @@ ok('personnelFromLines: comma-separated rosters parse; prose commas stay out', (
   assert.deepEqual(personnelFromLines('FRIDAY, JUL 17, 2026 7:00PM\nOakland, CA'), []);
 });
 
+ok('personnelFromLines: hyphenated names split at the spaced dash', () => {
+  assert.deepEqual(personnelFromLines('Frida Ruiz-Berman - Vocals\nJean-Paul Smith – piano'), [
+    { name: 'Frida Ruiz-Berman', instrument: 'vocals' },
+    { name: 'Jean-Paul Smith', instrument: 'piano' },
+  ]);
+});
+
 // --- Silent-rot anomaly detector (2026-07-20: "guard against crawling changes") --
 // Hard failures feed the CloudWatch drift alarm; this catches the venue that
 // still "works" while quietly shrinking (the Vanguard U+2011 class of bug).
