@@ -47,7 +47,7 @@ ok('pitinn: day_box blocks -> dated events with start time, roster, sold-out fla
   assert.match(evs[0].url, /260701kikuchi/);
 });
 
-ok('bluenotejp: month page lists each run once (2026-11 redesign)', () => {
+ok('bluenotejp: month page gives each run\'s info URL (2026-11 redesign)', () => {
   const html = `
     <a href="https://reserve.bluenote.co.jp/reserve/schedule/exec/4000" class="c-schedule-list-card type-today"
       data-schedule-modal-endpoint="https://reserve.bluenote.co.jp/reserve/schedule/read_event_info/4000">
@@ -55,7 +55,11 @@ ok('bluenotejp: month page lists each run once (2026-11 redesign)', () => {
     <div data-schedule-modal-endpoint="https://reserve.bluenote.co.jp/reserve/schedule/read_event_info/4000"></div>
     <a data-schedule-modal-endpoint="https://reserve.bluenote.co.jp/reserve/schedule/read_event_info/4008">
       <p class="c-schedule-list-card__title">KEIKO LEE BAND</p></a>`;
-  assert.deepEqual(bntMonth(html), ['4000', '4008']);
+  assert.deepEqual(bntMonth(html), [
+    'https://reserve.bluenote.co.jp/reserve/schedule/read_event_info/4000',
+    'https://reserve.bluenote.co.jp/reserve/schedule/read_event_info/4000',
+    'https://reserve.bluenote.co.jp/reserve/schedule/read_event_info/4008',
+  ], 'the page\'s own URLs; the crawler dedupes across both months');
 });
 
 ok('bluenotejp: run JSON -> one event per date, per-date sets, price, artist url', () => {
@@ -71,7 +75,7 @@ ok('bluenotejp: run JSON -> one event per date, per-date sets, price, artist url
     ],
     links: { detail_page_url: 'https://www.bluenote.co.jp/jp/artists/kiefer/' },
   };
-  const evs = bntParse(JSON.stringify(info));
+  const evs = bntParse(info);
   assert.deepEqual(evs.map((e) => [e.date, e.sets]), [
     ['2026-11-01', ['16:30', '19:30']],
     ['2026-11-02', ['18:00', '20:30']],
@@ -95,7 +99,27 @@ ok('cottonclub: <br/> in a title becomes a space', () => {
   assert.equal(evs[0].clubId, 'cottonclubtok');
 });
 
-import { parseArtistPage as bntArtist, parseMonth as bntMonth } from '../clubs/_bluenotejp.js';
+ok('bluenotejp: same title, same night, two runs -> one event with both sets', () => {
+  const run = (sets) => ccParse({ basic_info: { titles: { en_title: 'XMAS SPECIAL' } },
+    schedule_list: [{ date_iso: '2026-12-24', stages: sets.map((t) => ({ start_time: t })) }] });
+  const merged = bntMerge([run(['1:00pm']), run(['7:00pm', '9:30pm'])]);
+  assert.equal(merged.length, 1);
+  assert.deepEqual(merged[0].sets, ['13:00', '19:00', '21:30']);
+});
+
+ok('bluenotejp: full-width yen price; a date with no stages keeps the show, sets empty', () => {
+  const evs = ccParse({
+    basic_info: { titles: { en_title: 'TBA SPECIAL' }, music_charge_label: 'Music Charge ￥6,600 / ￥8,000' },
+    schedule_list: [{ date_iso: '2026-12-31', stages: [] }, { date_iso: '2027-01-01', stages: [{ start_time: 'TBA' }] }],
+  });
+  assert.deepEqual(evs.map((e) => [e.date, e.sets, e.priceText]), [
+    ['2026-12-31', [], '¥6,600'],
+    ['2027-01-01', [], '¥6,600'],
+  ]);
+  assert.equal(evs[0].url, 'https://www.cottonclubjapan.co.jp/jp/sp/artists/', 'no artist page -> site url');
+});
+
+import { parseArtistPage as bntArtist, parseMonth as bntMonth, mergeRuns as bntMerge } from '../clubs/_bluenotejp.js';
 import { parse as ccParse } from '../clubs/cottonclubtok.js';
 ok('bluenotejp: artist-page MEMBER table -> roman roster', () => {
   const html = `<h5><img alt="MEMBER"></h5><table>
@@ -119,7 +143,6 @@ ok('bluenotejp: artist-page MEMBER table -> roman roster', () => {
   assert.deepEqual(cc.personnel.map((p) => p.name),
     ['Joyce Moreno', 'Tutty Moreno', 'Rodolfo Stroeter', 'Helio Alves']);
   assert.equal(cc.personnel[0].instrument, 'vocals, guitar');
-
 });
 
 ok('bodyandsoul: dated slugs, two-set times, inline roster, charge', () => {

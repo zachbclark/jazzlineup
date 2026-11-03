@@ -3,7 +3,7 @@
 // Legacy-institution policy: include everything they book (Zach 2026-07-19).
 import { parseEventInfo, makeBlueNoteJpCrawler } from './_bluenotejp.js';
 
-// one show-run's read_event_info JSON -> events
+// one show-run's read_event_info JSON (parsed) -> events
 export function parse(info) {
   return parseEventInfo(info, 'bluenotetok', 'https://www.bluenote.co.jp/jp/artists/schedule/');
 }

@@ -4,7 +4,7 @@
 // pop, and kayōkyoku royalty too.
 import { parseEventInfo, makeBlueNoteJpCrawler } from './_bluenotejp.js';
 
-// one show-run's read_event_info JSON -> events
+// one show-run's read_event_info JSON (parsed) -> events
 export function parse(info) {
   return parseEventInfo(info, 'cottonclubtok', 'https://www.cottonclubjapan.co.jp/jp/sp/artists/');
 }

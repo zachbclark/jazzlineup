@@ -16,12 +16,15 @@
 //       links: { detail_page_url: "https://www.bluenote.co.jp/jp/artists/kiefer/" } }
 // Titles can carry <br/> ("odol ONE-MAN LIVE 2026 <br/>at COTTON CLUB").
 // A run that spans two months shows up in both month lists; one fetch each.
+// Any failed run fetch fails the whole crawl, so the merge keeps the
+// previous shows and the dead-venue alert names it, instead of a partial
+// list quietly passing as fresh.
 //
 // Each run's artist page has the MEMBER roster ("Simon Phillips(ds)") that
 // personnelFromJpRun parses; fetched via detail enrichment, one page per run.
 import {
-  fetchText, makeEvent, htmlToText, cleanText, sleep, normalizeTime,
-  personnelFromJpRun,
+  fetchText, fetchJson, makeEvent, htmlToText, cleanText, sleep, normalizeTime,
+  personnelFromJpRun, jpDate,
 } from '../lib.js';
 import { applyRomaji } from './_jpromaji.js';
 import { enrichFromDetailPages } from './_enrichdetails.js';
@@ -43,24 +46,24 @@ export function parseArtistPage(html) {
   return personnel.length ? { personnel } : null;
 }
 
-// Month page -> the show-run ids it lists, in page order.
+// Month page -> each show-run's info URL, as the page gives it, in order.
 export function parseMonth(html) {
-  const ids = [...String(html).matchAll(/read_event_info\/(\d+)/g)].map((m) => m[1]);
-  return [...new Set(ids)];
+  return [...String(html).matchAll(/data-schedule-modal-endpoint="([^"]*read_event_info\/\d+)"/g)]
+    .map((m) => m[1]);
 }
 
 const oneLine = (s) => cleanText(htmlToText(String(s ?? '')).replace(/\s*\n\s*/g, ' '));
 
-// One show-run's JSON -> one event per date.
-export function parseEventInfo(info, clubId, siteUrl) {
-  const data = typeof info === 'string' ? JSON.parse(info) : info;
+// One show-run's info JSON -> one event per date.
+export function parseEventInfo(data, clubId, siteUrl) {
   const t = data?.basic_info?.titles ?? {};
   const en = oneLine(`${t.en_prefix ?? ''} ${t.en_title ?? ''}`);
   const jp = oneLine(`${t.jp_prefix ?? ''} ${t.jp_title ?? ''}`);
   const title = en || jp;
   if (!title) return [];
   const titleAlt = en ? (jp && jp !== en ? jp : undefined) : (applyRomaji(jp) ?? undefined);
-  const price = (String(data.basic_info?.music_charge_label ?? '').match(/¥\s?[\d,]+/) ?? [])[0];
+  // half- or full-width yen ("¥9,500" / "￥9,500"); first price if several
+  const price = (String(data.basic_info?.music_charge_label ?? '').match(/[¥￥]\s?([\d,]+)/) ?? [])[1];
   const details = oneLine(data.basic_info?.catchphrase).slice(0, 200) || null;
   const url = data.links?.detail_page_url || siteUrl;
   const events = [];
@@ -74,41 +77,46 @@ export function parseEventInfo(info, clubId, siteUrl) {
       sets: (day.stages ?? []).map((s) => normalizeTime(s.start_time)).filter(Boolean),
       url,
       details,
-      priceText: price ? price.replace(/\s/g, '') : null,
+      priceText: price ? `¥${price}` : null,
     }));
   }
   return events;
 }
 
+// Events from every run -> one per id. Two runs with the same title on the
+// same night (matinee + evening listed separately) become one event with
+// both runs' sets.
+export function mergeRuns(eventLists) {
+  const byId = new Map();
+  for (const ev of eventLists.flat()) {
+    const prev = byId.get(ev.id);
+    if (prev) prev.sets = [...new Set([...prev.sets, ...ev.sets])].sort();
+    else byId.set(ev.id, { ...ev, sets: [...ev.sets] });
+  }
+  return [...byId.values()];
+}
+
 export function makeBlueNoteJpCrawler({ clubId, host, siteUrl }) {
   return async function crawl(ctx = {}) {
-    const now = new Date();
-    const ids = [];
+    // this month and next in Tokyo time (UTC is 9h behind on the 1st)
+    const [y, m] = jpDate(Date.now()).split('-').map(Number);
+    const infoUrls = new Set();
     for (let i = 0; i < 2; i++) {
-      const d = new Date(now.getFullYear(), now.getMonth() + i, 1);
-      const ym = `${d.getFullYear()}${String(d.getMonth() + 1).padStart(2, '0')}`;
+      const d = new Date(Date.UTC(y, m - 1 + i, 1));
+      const ym = `${d.getUTCFullYear()}${String(d.getUTCMonth() + 1).padStart(2, '0')}`;
       try {
-        for (const id of parseMonth(await fetchText(`https://${host}/reserve/schedule/move/${ym}`))) {
-          if (!ids.includes(id)) ids.push(id);
-        }
+        for (const url of parseMonth(await fetchText(`https://${host}/reserve/schedule/move/${ym}`))) infoUrls.add(url);
       } catch (err) {
         if (i === 0) throw err;
       }
       await sleep(400);
     }
-    const events = [];
-    const seen = new Set();
-    for (const id of ids) {
-      try {
-        const info = await fetchText(`https://${host}/reserve/schedule/read_event_info/${id}`);
-        for (const ev of parseEventInfo(info, clubId, siteUrl)) {
-          if (seen.has(ev.id)) continue;
-          seen.add(ev.id);
-          events.push(ev);
-        }
-      } catch { /* one bad run never sinks the venue */ }
+    const runs = [];
+    for (const url of infoUrls) {
+      runs.push(parseEventInfo(await fetchJson(url), clubId, siteUrl));
       await sleep(300);
     }
+    const events = mergeRuns(runs);
     // rosters live on the artist pages; a run's dates share one page/fetch
     await enrichFromDetailPages(events.filter((e) => e.url !== siteUrl), ctx, {
       fields: ['personnel'],
