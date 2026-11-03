@@ -3,6 +3,7 @@ import { CITIES, fetchData, initialCity, initialRoute, todayIso, relTime, search
 import SearchBox from './components/SearchBox';
 import { useIsMobile } from './useIsMobile';
 import CitySwitcher from './components/CitySwitcher';
+import InfoTip from './components/InfoTip';
 import BoroughBar from './components/BoroughBar';
 import FilterBar from './components/FilterBar';
 import PicksBar from './components/PicksBar';
@@ -16,9 +17,8 @@ const TIP_URL = 'https://ko-fi.com/jazzlineup';
 // scannable literal in the bundle (plus-alias: filterable, revocable)
 const contactHref = (cityLabel) => {
   const addr = ['zachbclark', 'jazzlineup'].join('+') + String.fromCharCode(64) + 'gmail.com';
-  // one line to fill in; a form-shaped email reads like homework
-  const subject = `Venue idea (${cityLabel})`;
-  const body = 'Venue and a link:\n';
+  const subject = `Venue suggestion (${cityLabel})`;
+  const body = 'Venue name and website:\n\nHow often is there live jazz?\n';
   return `mailto:${addr}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
 };
 
@@ -379,6 +379,8 @@ export default function App() {
           title="Know a club we're missing? Email me.">
           suggest a venue
         </a>
+        <span className="foot-sep">&middot;</span>
+        <InfoTip />
       </footer>
     </div>
   );
