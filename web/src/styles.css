@@ -402,10 +402,17 @@ button.cell { text-align: left; border: 1px solid var(--line); font: inherit; co
   .chip-star { font-size: 16px; padding: 0 4px; }
   .order-reset { display: none; } /* rare power feature; desktop only */
   .chip { padding: 10px 15px; font-size: 14px; }
-  /* all five NYC tabs on one line down to 360px; wrap below that instead
-     of pushing Queens off the screen */
-  .borough-bar { justify-content: space-between; flex-wrap: wrap; }
-  .borough-btn { padding: 8px 5px; font-size: 12px; letter-spacing: 0.4px; } /* thumb-tall */
+  .borough-btn { padding: 8px 12px; font-size: 13px; flex: none; } /* thumb-sized */
+  /* NYC's five tabs don't fit a phone at this size: the row swipes on its
+     own (the page never scrolls sideways) and fades whichever edge hides
+     a tab. BoroughBar.jsx sets more-left / more-right. */
+  .borough-bar { overflow-x: auto; scrollbar-width: none; overscroll-behavior-x: contain; }
+  .borough-bar::-webkit-scrollbar { display: none; }
+  .borough-bar.more-right { mask-image: linear-gradient(to right, #000 calc(100% - 36px), transparent); }
+  .borough-bar.more-left { mask-image: linear-gradient(to right, transparent, #000 36px); }
+  .borough-bar.more-left.more-right {
+    mask-image: linear-gradient(to right, transparent, #000 36px, #000 calc(100% - 36px), transparent);
+  }
 
   /* compact month grid */
   .grid { gap: 3px; }
