@@ -32,8 +32,21 @@ class JazzLineupStack extends cdk.Stack {
   constructor(scope, id, props) {
     super(scope, id, props);
 
+    // --- S3: archive vault, the long-term copy of the show history ----------
+    // Every archive/ write in the site bucket is copied here by S3 itself.
+    // Object Lock (governance) means nothing here can be changed or deleted
+    // for 10 years without an admin explicitly bypassing the lock. Deletes
+    // in the site bucket are never copied over.
+    const vault = new s3.Bucket(this, 'ArchiveVault', {
+      blockPublicAccess: s3.BlockPublicAccess.BLOCK_ALL,
+      encryption: s3.BucketEncryption.S3_MANAGED,
+      versioned: true,
+      objectLockDefaultRetention: s3.ObjectLockRetention.governance(cdk.Duration.days(3650)),
+      removalPolicy: cdk.RemovalPolicy.RETAIN,
+    });
+
     // --- S3: one private bucket for the site build + events.json ------------
-    // It also holds archive/, the only copy of the show history, so the
+    // It also holds archive/, the live copy of the show history, so the
     // bucket outlives the stack and every overwrite or delete keeps the old
     // version for 90 days.
     const bucket = new s3.Bucket(this, 'SiteBucket', {
@@ -42,6 +55,12 @@ class JazzLineupStack extends cdk.Stack {
       versioned: true,
       lifecycleRules: [{ noncurrentVersionExpiration: cdk.Duration.days(90) }],
       removalPolicy: cdk.RemovalPolicy.RETAIN,
+      replicationRules: [{
+        destination: vault,
+        priority: 0,
+        filter: { prefix: 'archive/' },
+        storageClass: s3.StorageClass.GLACIER_INSTANT_RETRIEVAL, // ~5x cheaper, still instant to read
+      }],
     });
 
     // --- TLS certificate (validated via a CNAME you add at Cloudflare) ------
@@ -301,6 +320,7 @@ class JazzLineupStack extends cdk.Stack {
       description: 'Invoke manually: aws lambda invoke --function-name <this> /tmp/out.json',
     });
     new cdk.CfnOutput(this, 'BucketName', { value: bucket.bucketName });
+    new cdk.CfnOutput(this, 'ArchiveVaultName', { value: vault.bucketName });
   }
 }
 
