@@ -256,6 +256,15 @@ function NightView({ night, data, venues, first, last, onNight, onName, city }) 
 const LINEUP_SHOWN = 6;
 const LINEUP_LONG = 9;
 
+function Member({ p, onName }) {
+  return (
+    <>
+      <button className="ar-name" onClick={() => onName(p.name)}>{p.name}</button>
+      {p.instrument ? <> <span className="p-inst">{p.instrument.replace(/\bsaxophones?\b/g, 'sax')}</span></> : null}
+    </>
+  );
+}
+
 function Lineup({ lineup, onName, lead = null }) {
   const [allNames, setAllNames] = useState(false);
   const cut = !allNames && lineup.length >= LINEUP_LONG;
@@ -265,8 +274,7 @@ function Lineup({ lineup, onName, lead = null }) {
       {lead}
       {lineup.map((p, i) => (
         <span key={i} className={'p-member' + (cut && i >= LINEUP_SHOWN ? ' p-extra' : '')}>
-          <button className="ar-name" onClick={() => onName(p.name)}>{p.name}</button>
-          {p.instrument ? <> <span className="p-inst">{p.instrument.replace(/\bsaxophones?\b/g, 'sax')}</span></> : null}
+          <Member p={p} onName={onName} />
           {i < lineup.length - 1 && <span className="p-sep"> · </span>}
         </span>
       ))}
@@ -305,13 +313,27 @@ function ArchiveRow({ show, venue, onName }) {
 }
 
 // One search result: a single night or a run of nights. Club, then date;
-// the title; then "with" everyone else. The searched musician is the
-// subject, so they're left out of their own lineup. No set times (Zach,
-// 2026-11-03: when, where, who with). Same row on desktop and phones.
-function SearchRow({ run, venue, onName, highlight }) {
+// the title; then the searched musician and instrument, "with" everyone
+// else. When the search names someone in the lineup, they lead the line
+// (Zach, 2026-11-04: leaving them out was confusing), so "+N more" can't
+// hide them. No set times (Zach, 2026-11-03: when, where, who with). Same
+// row on desktop and phones.
+function SearchRow({ run, venue, onName, highlight, q }) {
   const s = run.show;
-  // p.musician is the same key the search matched on
-  const others = s.lineup.filter((p) => !(highlight && (p.musician ?? musicianKey(p.name)) === highlight));
+  // p.musician is the same key the search matched on. A part name counts at
+  // a word start ("clayton", "steve dav"; "ron" isn't Aaron), from 2
+  // characters so Tokyo's 2-kanji surnames work and one letter reorders no one.
+  const me = [], others = [];
+  for (const p of s.lineup) {
+    const hit = (highlight && (p.musician ?? musicianKey(p.name)) === highlight)
+      || (q.length >= 2 && (' ' + norm(p.name)).includes(' ' + q));
+    (hit ? me : others).push(p);
+  }
+  const lead = me.length > 0
+    ? <>{me.map((p, i) => (
+        <span key={i} className="p-me">{i > 0 && <span className="p-sep"> · </span>}<Member p={p} onName={onName} /></span>
+      ))}{others.length > 0 && ' with '}</>
+    : 'with ';
   const partlyCancelled = run.cancelled > 0 && run.cancelled < run.dates.length;
   return (
     <div className={'sr' + (s.status === 'cancelled' ? ' is-cancelled' : '')}>
@@ -325,7 +347,7 @@ function SearchRow({ run, venue, onName, highlight }) {
       {/* outside the 2-line title clamp, so a long Japanese title can't hide it */}
       {s.titleAlt && <div className="title-alt">{s.titleAlt}</div>}
       {s.replaced?.length > 0 && <div className="ar-replaced">originally listed: {s.replaced.join(', ')}</div>}
-      {others.length > 0 && <div className="sr-with"><Lineup lineup={others} onName={onName} lead="with " /></div>}
+      {s.lineup.length > 0 && <div className="sr-with"><Lineup lineup={others} onName={onName} lead={lead} /></div>}
     </div>
   );
 }
@@ -373,7 +395,7 @@ function SearchResults({ q, city, months, musicians, venues, onName, onCity }) {
         <div key={ym} className="daygroup">
           <h3>{monthName(ym)}</h3>
           {list.map((run) => (
-            <SearchRow key={run.id} run={run} venue={venues[run.show.venueId]} onName={onName} highlight={key} />
+            <SearchRow key={run.id} run={run} venue={venues[run.show.venueId]} onName={onName} highlight={key} q={nq} />
           ))}
         </div>
       ))}

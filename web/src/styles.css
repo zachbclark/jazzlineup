@@ -505,6 +505,7 @@ button.cell { text-align: left; border: 1px solid var(--line); font: inherit; co
 }
 .sr-with { margin-top: 2px; }
 .sr-with .row-details { font-size: 11.5px; line-height: 1.5; color: var(--muted); }
+.sr-with .p-me .ar-name { color: var(--text); }
 .sr .ar-replaced { font-size: 11.5px; }
 .sr.is-cancelled { opacity: 0.55; }
 /* long lineups: cut to "+N more" on phones only (Lineup) */
