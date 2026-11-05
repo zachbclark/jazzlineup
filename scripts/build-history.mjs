@@ -197,6 +197,7 @@ function buildCity(city) {
 // --- write ----------------------------------------------------------------------
 const cities = readdirSync(FROM).filter((c) => existsSync(join(FROM, c)) && !c.startsWith('.')).sort();
 const musicians = new Map();
+const played = []; // [city, show], for title credits below
 const generatedAt = new Date().toISOString();
 const report = [];
 for (const city of cities) {
@@ -220,16 +221,47 @@ for (const city of cities) {
   }));
   for (const s of shows) {
     if (s.status === 'cancelled') continue;
+    played.push([city, s]);
+    // once per show: Dizzy's lists a week's band on every night, so one
+    // musician can appear 4 times in a lineup (Geoffrey Keezer)
+    const counted = new Set();
     for (const p of s.lineup) {
       const m = musicians.get(p.musician) ?? { key: p.musician, names: new Map(), shows: 0, cities: {}, last: '' };
       m.names.set(p.name, (m.names.get(p.name) ?? 0) + 1);
+      musicians.set(p.musician, m);
+      if (counted.has(p.musician)) continue;
+      counted.add(p.musician);
       m.shows++; m.cities[city] = (m.cities[city] ?? 0) + 1;
       if (s.date > m.last) m.last = s.date;
-      musicians.set(p.musician, m);
     }
   }
   const c = (st) => shows.filter((s) => s.status === st).length;
   report.push(`${city.padEnd(4)} ${String(shows.length).padStart(6)} shows  happened ${c('happened')}  cancelled ${c('cancelled')}  unconfirmed ${c('unconfirmed')}  merged ${shows.reduce((n, s) => n + s.formerIds.length, 0)}  through ${today}`);
+}
+// Title credits: many venues name the band only in the title ("Billy Mohler
+// Trio with Joe La Barbera & Mark Turner") and the show has no lineup. A
+// known musician's full name in a title counts too, so the archive's "2 in
+// LA" links find them (Zach, 2026-11-05). Names are 2-4 whole words; one word
+// would match too much. A name right after "music of", "tribute to",
+// "celebrating" etc. is who's honored, not who plays. A stopgap until those
+// venues' lineups are read. The archive page matches titles the same way.
+const HONORED = new Set(['of', 'to', 'for', 'celebrating', 'honoring', 'remembering', 'salutes', 'saluting', 'plays', 'play', 'playing', 'sings']);
+for (const [city, s] of played) {
+  const titleWords = musicianKey(s.title).split('-');
+  const listed = new Set(s.lineup.map((p) => p.musician));
+  const found = new Set();
+  for (let i = 0; i < titleWords.length; i++) {
+    if (HONORED.has(titleWords[i - 1])) continue;
+    for (let n = 2; n <= 4 && i + n <= titleWords.length; n++) {
+      const k = titleWords.slice(i, i + n).join('-');
+      if (musicians.has(k) && !listed.has(k)) found.add(k);
+    }
+  }
+  for (const k of found) {
+    const m = musicians.get(k);
+    m.shows++; m.cities[city] = (m.cities[city] ?? 0) + 1;
+    if (s.date > m.last) m.last = s.date;
+  }
 }
 // display name: the most common spelling, preferring mixed case over ALL CAPS
 const pick = (names) => [...names.entries()].sort((a, b) => (/[a-z]/.test(b[0]) - /[a-z]/.test(a[0])) || b[1] - a[1])[0][0];

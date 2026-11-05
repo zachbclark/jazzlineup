@@ -2,7 +2,7 @@ import React, { useCallback, useDeferredValue, useEffect, useMemo, useState } fr
 import { CITIES, citySlug, setClock24, fmtSets } from '../api';
 import CitySwitcher from '../components/CitySwitcher';
 import SearchBox from '../components/SearchBox';
-import { loadIndex, loadMonth, loadAllMonths, loadMusicians, norm, musicianKey, showMatches, groupRuns } from './history';
+import { loadIndex, loadMonth, loadAllMonths, loadMusicians, norm, musicianKey, showMatches, titleNames, groupRuns } from './history';
 
 // The archive: every past show since July 21, 2026, with who played.
 // Its own page at /archive/<city>[/YYYY-MM[-DD]][?q=name]. The URL is the
@@ -66,10 +66,17 @@ export default function ArchivePage() {
     return () => window.removeEventListener('popstate', onPop);
   }, []);
 
+  // A new city drops the old city's data in the same render. Clearing it in
+  // the effect below was too late: "2 in LA" first drew NYC's results
+  // under an LA heading ("14 shows in LA").
+  const [dataCity, setDataCity] = useState(city);
+  if (dataCity !== city) {
+    setDataCity(city); setIndex(undefined); setMonthData(null); setAllMonths(null);
+  }
+
   useEffect(() => {
     setClock24(CITIES.find((c) => c.id === city)?.clock24);
     try { localStorage.setItem('jl.city', city); } catch {}
-    setIndex(undefined); setMonthData(null); setAllMonths(null);
     let live = true; // a slow answer for the previous city must not land here
     loadIndex(city).then((ix) => { if (live) setIndex(ix); });
     return () => { live = false; };
@@ -359,7 +366,7 @@ function SearchResults({ q, city, months, musicians, venues, onName, onCity }) {
     if (!months) return null;
     const out = [];
     for (const m of months) for (const s of m.shows) {
-      const byKey = s.lineup.some((p) => p.musician === key);
+      const byKey = s.lineup.some((p) => p.musician === key) || titleNames(s, key);
       if (byKey || showMatches(s, nq, venues[s.venueId]?.name)) out.push(s);
     }
     return out.sort((a, b) => b.date.localeCompare(a.date));
