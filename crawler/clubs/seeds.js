@@ -3,7 +3,7 @@
 // same public API as The World Stage:
 //   GET https://tockify.com/api/ngevent?max=60&calname=seeds.calendar
 // Descriptions carry dash rosters ("Joel Ross - Vibraphone, Synths ...").
-import { fetchText, makeEvent, htmlToText, nyDate, nyTime, stripPromo, parsePersonnel, applyLateNight } from '../lib.js';
+import { fetchText, makeEvent, htmlToText, nyDate, nyTime, stripPromo, parsePersonnel, leaderFromLines, applyLateNight } from '../lib.js';
 
 const API = 'https://tockify.com/api/ngevent?max=60&calname=seeds.calendar';
 const SITE = 'https://seedsbrooklyn.org/calendar/';
@@ -17,7 +17,9 @@ export function parse(jsonText) {
     if (!ms || !title) continue;
     const time = nyTime(ms);
     const desc = htmlToText(ev.content?.description?.text ?? '');
-    const personnel = parsePersonnel(desc);
+    // leader-only listings too: "Dion Kerr - Bass" for "Dion Kerr duo"
+    const roster = parsePersonnel(desc);
+    const personnel = roster.length ? roster : leaderFromLines(desc, title);
     events.push(makeEvent(applyLateNight({
       clubId: 'seeds',
       title,
