@@ -183,7 +183,7 @@ ok('artist net: known names rescue keyword-less titles at keyword-filtered venue
 
 // --- Shared detail enrichment (2026-07-16: "personnel is very important") -------------
 import { enrichFromDetailPages, pickPages } from '../clubs/_enrichdetails.js';
-import { personnelFromLines, personnelFromStrongTags, leaderFromLines } from '../lib.js';
+import { personnelFromLines, personnelFromStrongTags, leaderFromLines, personnelFromSections } from '../lib.js';
 ok('enrich: reuses prior crawl by id, fetches only whats missing, never overwrites', async () => {
   const events = [
     { id: 'pocket:2026-07-20:a', date: '2026-07-20', url: 'https://x/a', personnel: null },
@@ -316,6 +316,15 @@ ok('roster parsers: review cases from 2026-11-05 stay fixed', () => {
   assert.deepEqual(parsePersonnel('Rudy Royston - original tunes Ben Street - bass'), [], '"tunes" is a strict-parser credit only');
   assert.deepEqual(r(parsePersonnel('The quartet —with guests Joe Martin -bass Gilad Hekselman -guitar')),
     ['Joe Martin: bass', 'Gilad Hekselman: guitar'], 'a dash aside is not a seam');
+});
+
+ok('personnelFromSections: big-band rosters by section; prose ends a section', () => {
+  const text = '"Quote about a wall of sound." - Roy Hargrove\nSAXOPHONE\nBruce Williams\nMark Gross\nTRUMPET\nNathan Eklund\n'
+    + 'BASS\nRon Carter\nRHYTHM SECTION\nTom Guarna - guitar\nDanton Boller -bass\nOriginally started in the rehearsal space that became The Jazz Gallery.\nWill Hill';
+  assert.deepEqual(personnelFromSections(text).map((p) => p.name + ': ' + p.instrument), [
+    'Bruce Williams: saxophone', 'Mark Gross: saxophone', 'Nathan Eklund: trumpet', 'Ron Carter: bass', 'Tom Guarna: guitar', 'Danton Boller: bass',
+  ]);
+  assert.deepEqual(personnelFromSections('Nathan Eklund\nFreddie Hendrix'), [], 'names with no heading are not a roster');
 });
 
 // --- Silent-rot anomaly detector (2026-07-20: "guard against crawling changes") --
