@@ -116,15 +116,15 @@ export function searchNorm(s) {
     .toLowerCase();
 }
 
-// Does an event match the query? Checks title, personnel names, details
-// (several venues carry rosters as plain detail text), and the club name.
+// Does an event match the query? Checks title, personnel names, and the club
+// name. Not details: bios name-drop players who aren't on the gig (Chris
+// Potter -> a Ricardo Grilli show, 2026-11-05).
 export function eventMatches(e, normQuery, clubById) {
   if (!normQuery) return true;
   if (searchNorm(e.title).includes(normQuery)) return true;
   if (e.titleAlt && searchNorm(e.titleAlt).includes(normQuery)) return true;
   if (e.personnel?.some((p) => searchNorm(p.name).includes(normQuery)
     || (p.nameAlt && searchNorm(p.nameAlt).includes(normQuery)))) return true;
-  if (e.details && searchNorm(e.details).includes(normQuery)) return true;
   const club = clubById?.[e.clubId];
   if (club && searchNorm(club.name).includes(normQuery)) return true;
   return false;

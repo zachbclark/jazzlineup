@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 
-// Artist search — matches titles, personnel rosters, details, and club
+// Artist search — matches titles, personnel rosters, and club
 // names across the whole city (chip/borough filters don't constrain it:
 // "where is Mark Turner playing" should never depend on filter state).
 export default function SearchBox({ query, onChange }) {

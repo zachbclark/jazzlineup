@@ -90,9 +90,9 @@ function MonthGrid({ events, clubById, cursor, onCursor, today, compact = false,
                       <span className="row-title">
                         {e.title}
                         {e.titleAlt && <span className="title-alt">{e.titleAlt}</span>}
-                        {e.personnel?.length
-                          ? <span className="row-details roster"><Personnel personnel={e.personnel} /></span>
-                          : e.details && <span className="row-details prose">{e.details}</span>}
+                        {/* band members or nothing: details are mostly bios, room names and
+                            door times (Zach, 2026-11-05). The data and API keep them. */}
+                        {e.personnel?.length > 0 && <span className="row-details roster"><Personnel personnel={e.personnel} /></span>}
                       </span>
                       <span className="row-sets">
                   {e.late && <span className="late-tag">late</span>}

@@ -290,11 +290,6 @@ button { font: inherit; cursor: pointer; }
 }
 .row-title { flex: 1 1 auto; }
 .row-details { display: block; color: var(--muted); font-size: 12px; margin-top: 1px; }
-/* free-text descriptions stay short; rosters (curated) never clamp */
-.row-details.prose {
-  display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;
-  overflow: hidden;
-}
 .row-sets { flex: 0 0 auto; color: var(--muted); font-variant-numeric: tabular-nums; font-size: 13px; }
 .late-tag {
   font-size: 9px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase;

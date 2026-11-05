@@ -268,8 +268,14 @@ other layout change snaps (animating borough switches made chips slide
 like furniture). Mobile: chips wrap, collapsed to ~2 lines behind a real
 "Show all N venues" button (was a whisper strip nobody saw).
 
+Rows: the line under the title is band members or nothing (Zach,
+2026-11-05). Event details (bios, room names, door times) stay in the data
+and the API but never show in a row. A roster hiding in details is a crawler
+bug: parse it into personnel.
+
 Search: city-wide, ignores chip/borough filters, matches titles + personnel
-+ details + club names, UPCOMING ONLY (data files keep a few past days for
++ club names (not details: bios name-drop people who aren't on the gig),
+UPCOMING ONLY (data files keep a few past days for
 merge continuity; counting them showed "2 shows" above an empty list).
 Cross-city pills check other cities' feeds during search, same
 upcoming-only rule. Esc clears. Mobile search box must stay full-width in
