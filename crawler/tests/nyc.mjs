@@ -117,6 +117,25 @@ ok('smalls: event-page band block parses into personnel', () => {
 });
 
 // --- Village Vanguard ----------------------------------------------------------
+ok('vanguard: bolded roster with night swaps (Ethan Iverson Sextet, Nov 2026)', () => {
+  // real markup: dashes as &#8211;, a dash inside the nights note
+  const html = `<h2>Ethan Iverson Sextet</h2>
+  <h3>November 3 &#8209; November 8</h3>
+  <div class="event-short-description">
+  <h4><strong>Ethan Iverson</strong> &#8211; Piano</h4>
+  <h4><strong>Skylar Tang</strong> &#8211; Trumpet (Tuesday &#8211; Friday)</h4>
+  <h4><strong>Jason Palmer</strong> &#8211; Trumpet (Saturday &amp; Sunday)</h4>
+  <h4><strong>Jacob Garchik</strong> &#8211; Trombone</h4>
+  </div><a href="https://vv.squadup.com/artists/ethan-iverson-sextet">TICKETS</a>`;
+  const [ev] = vvParse(html, new Date(2026, 10, 2));
+  assert.deepEqual(ev.personnel, [
+    { name: 'Ethan Iverson', instrument: 'piano' },
+    { name: 'Skylar Tang', instrument: 'trumpet (Tue-Fri)' },
+    { name: 'Jason Palmer', instrument: 'trumpet (Sat & Sun)' },
+    { name: 'Jacob Garchik', instrument: 'trombone' },
+  ], 'no player named "Friday) Jason Palmer"');
+});
+
 ok('vanguard: expands run + generates VJO Mondays', () => {
   const html = `
   <h2>VANGUARD JAZZ ORCHESTRA</h2>
