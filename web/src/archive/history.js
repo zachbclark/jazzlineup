@@ -87,6 +87,18 @@ export function groupRuns(shows) {
   }).sort((a, b) => b.last.localeCompare(a.last));
 }
 
+// A musician's key inside the title's key, at word breaks, the way
+// build-history finds title credits, so a "2 in LA" link lands on its shows
+// ("Jean Michel Pilc" finds "Jean-Michel Pilc Trio"). Tribute titles still
+// match here (plain search finds them anyway), so a link can undercount.
+const titleKeyCache = new WeakMap();
+export function titleNames(show, key) {
+  if (!key) return false;
+  let t = titleKeyCache.get(show);
+  if (t === undefined) { t = '-' + musicianKey(show.title) + '-'; titleKeyCache.set(show, t); }
+  return t.includes('-' + key + '-');
+}
+
 export function showMatches(show, q, venueName) {
   if (!q) return false;
   let hay = hayCache.get(show);
