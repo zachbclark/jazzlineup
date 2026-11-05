@@ -513,14 +513,17 @@ export function leaderFromLines(text, title) {
 // commas can stay INSIDE multi-instrument lists, and the ", and" seam before
 // the last player plus trailing periods get trimmed instead of shipping to
 // the UI as "bass, and" / "drums." chips.
-export function personnelFromStrongTags(html) {
+export function personnelFromStrongTags(raw) {
+  // entities first: the Vanguard writes its dashes as "&#8211;". < and >
+  // stay encoded so text can't turn into tags.
+  const html = String(raw).replace(/&(?:#\d+|#x[0-9a-f]+|[a-z]+);/gi, (e) => (/^&(?:lt|gt);$/i.test(e) ? e : decodeEntities(e)));
   const found = [];
   // "<b>Name</b> - bass", and in Barbès prose "<b>Name</b> on alto sax" and
   // "<b>Name</b> (piano)" (2026-11-05: those bands showed as bios). Letters
   // touching the tag belong to the name: "V<b>innie Sperrazza</b>",
   // "<b>JP Schlegelmil</b>ch" (hand-edited Barbès markup).
   const res = [
-    /(\p{L}*)<(strong|b)\b[^>]*>([^<]{2,45}?)<\/\2>(\p{L}*)(?:\s*[-–—:]|\s*on\s)\s*([^<(]{2,80})/giu,
+    /(\p{L}*)<(strong|b)\b[^>]*>([^<]{2,45}?)<\/\2>(\p{L}*)(?:\s*[-–—:]|\s*on\s)\s*([^<(]{2,80})(?:\(([^()<]{2,40})\))?/giu,
     /(\p{L}*)<(strong|b)\b[^>]*>([^<]{2,45}?)<\/\2>(\p{L}*)\s*\(([^()<]{2,40})\)/giu,
   ];
   for (const re of res) for (const m of String(html).matchAll(re)) found.push(m);
@@ -544,10 +547,16 @@ export function personnelFromStrongTags(html) {
     if (!words.every((w) => isInstrumentWord(w) || isCreditWord(w) || /^(?:et|and)$/i.test(w))) continue;
     if (seen.has(name.toLowerCase())) continue;
     seen.add(name.toLowerCase());
-    personnel.push({ name, instrument: instr.toLowerCase() });
+    // which nights a player is on: "Trumpet (Tuesday – Friday)" (Vanguard
+    // residencies swap players mid-week) -> "trumpet (Tue-Fri)"
+    const nights = m[6] && DAY_RE.test(m[6])
+      ? ' (' + cleanText(m[6]).replace(DAY_RE, (d) => d.slice(0, 3)).replace(/\s*[-–—]\s*/g, '-') + ')'
+      : '';
+    personnel.push({ name, instrument: instr.toLowerCase() + nights });
   }
   return personnel.length >= 2 ? personnel : [];
 }
+const DAY_RE = /\b(?:mon|tues?|wed(?:nes)?|thu(?:rs)?|fri|sat(?:ur)?|sun)(?:day)?s?\b/gi;
 
 // From trailing text, take the final run of capitalized-ish tokens (a name).
 // Connector words never join a name: "With Daria Grace" is Daria Grace.

@@ -4,7 +4,7 @@
 // Sets are 8:00 PM & 10:00 PM nightly (house standard, confirmed via ticketing).
 import {
   fetchText, makeEvent, htmlToText, monthNum, inferYear, isoDate,
-  parsePersonnel, stripPromo,
+  parsePersonnel, personnelFromStrongTags, stripPromo,
 } from '../lib.js';
 
 const URL_ = 'https://villagevanguard.com/';
@@ -33,7 +33,10 @@ export function parse(html, today = new Date()) {
     const tixM = section.match(/href="(https?:\/\/vv\.squadup\.com[^"]*)"/);
     const url = tixM ? tixM[1].split('?')[0] : URL_;
     const blurb = htmlToText(section).match(/^([\s\S]{0,300}?)(?:TICKETS|$)/)?.[1]?.trim() ?? '';
-    const personnel = parsePersonnel(blurb);
+    // bolded names first: their exact edges keep "Trumpet (Tuesday – Friday)"
+    // from splitting into a player named "Friday) Jason Palmer" (Nov 2026)
+    const strong = personnelFromStrongTags(section);
+    const personnel = strong.length ? strong : parsePersonnel(blurb);
     const details = personnel.length ? null : stripPromo(blurb).slice(0, 300) || null;
 
     if (/vanguard jazz orchestra/i.test(title) || /every monday/i.test(section)) {
