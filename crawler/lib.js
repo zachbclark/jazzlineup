@@ -489,6 +489,40 @@ export function personnelFromLines(text, { min = 2 } = {}) {
   return personnel.length >= min ? personnel : [];
 }
 
+// Big-band rosters listed by section (Roy Hargrove Big Band, Jazz Gallery):
+//   SAXOPHONE / Bruce Williams / Mark Gross / TRUMPET / Nathan Eklund / ...
+//   RHYTHM SECTION / Tom Guarna - guitar / Will Hill - piano
+// A heading is a short ALL-CAPS line of instrument words (or "rhythm
+// section", which names no instrument); names under it take its instrument,
+// and "Name - instrument" lines count anywhere. Any other line ends the
+// section, so prose after the roster never joins it.
+const SECTION_WORDS = new Set(['rhythm', 'section', 'brass', 'reeds', 'horns', 'woodwinds']);
+export function personnelFromSections(text) {
+  const personnel = [];
+  const seen = new Set();
+  let section; // undefined = not in a roster, null = heading with no instrument
+  for (const raw of String(text).split('\n')) {
+    const l = cleanText(raw);
+    if (!l) continue;
+    const words = l.split(/\s+/);
+    if (l === l.toUpperCase() && /\p{Lu}/u.test(l) && words.length <= 3
+        && words.every((w) => isInstrumentWord(w) || SECTION_WORDS.has(normWord(w)))) {
+      // the heading as written: "BASS", "DRUMS" and "SAXOPHONES" all read fine
+      section = words.every((w) => isInstrumentWord(w)) ? l.toLowerCase() : null;
+      continue;
+    }
+    if (section === undefined) continue;
+    const [lined] = personnelFromLines(l, { min: 1 });
+    const p = lined ?? (section && words.length >= 2 && words.length <= 4 && !/\d/.test(l) && looksLikeName(l)
+      ? { name: l, instrument: section } : null);
+    if (!p) { section = undefined; continue; }
+    if (seen.has(p.name.toLowerCase())) continue;
+    seen.add(p.name.toLowerCase());
+    personnel.push(p);
+  }
+  return personnel.length >= 2 ? personnel : [];
+}
+
 // A leader-only listing ("SYLVIE COURVOISIER - Piano", "Dion Kerr - Bass"):
 // one roster line counts when that name is also in the show's title, which
 // a stray prose line never is. [] otherwise.

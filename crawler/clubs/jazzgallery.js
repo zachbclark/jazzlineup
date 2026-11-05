@@ -2,7 +2,7 @@
 // events collection as JSON. Cleanest source of the bunch.
 import {
   fetchText, makeEvent, extractTimes, htmlToText, isoDate,
-  parsePersonnel, stripPromo,
+  parsePersonnel, personnelFromSections, stripPromo,
 } from '../lib.js';
 
 const URL_ = 'https://jazzgallery.org/calendar?format=json';
@@ -39,7 +39,12 @@ export function parse(jsonText) {
     // "7pm + 9pm": the second time carries pm; ensure the first does too (handled above).
 
     // Structured band roster; when it parses, details would only duplicate it.
-    const personnel = parsePersonnel(excerpt);
+    // The excerpt usually holds the roster. When it doesn't, the full page
+    // body may: the Roy Hargrove Big Band lists its 17 players by section
+    // there, and the excerpt just says "Sets at 7pm + 9pm" (Nov 2026).
+    const roster = parsePersonnel(excerpt);
+    const personnel = roster.length ? roster
+      : personnelFromSections(htmlToText(String(it.body ?? '').replace(/<style[\s\S]*?<\/style>/gi, '')));
     const details = personnel.length
       ? null
       : stripPromo(excerpt).replace(/\bsets? at [^.]*$/i, '').slice(0, 400) || null;
