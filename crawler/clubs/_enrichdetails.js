@@ -15,6 +15,21 @@ import { fetchText, sleep } from '../lib.js';
 
 const missing = (v) => v == null || (Array.isArray(v) && v.length === 0);
 
+// A page with no roster yet stays "missing", so it's fetched again every
+// crawl. Nearest-first alone let the same few clog the cap forever while
+// later shows were never looked at (Sunside: 9 of 131 lineups, New Morning:
+// 30 shows never fetched, 2026-11-05). So half the cap still goes to the
+// nearest shows and the other half walks the rest of the queue, a different
+// slice each 4-hour crawl, until every show has had a look.
+export function pickPages(keys, maxPages, now = Date.now()) {
+  if (keys.length <= maxPages) return keys;
+  const near = Math.ceil(maxPages / 2);
+  const rest = keys.slice(near);
+  const n = maxPages - near;
+  const start = (Math.floor(now / (4 * 3600e3)) * n) % rest.length;
+  return [...keys.slice(0, near), ...Array.from({ length: n }, (_, i) => rest[(start + i) % rest.length])];
+}
+
 export async function enrichFromDetailPages(events, ctx, {
   fields = ['personnel'],
   alsoFill = [],
@@ -26,6 +41,7 @@ export async function enrichFromDetailPages(events, ctx, {
   // Events that share a page get ONE fetch. Default: the full URL. Django
   // overrides to strip ?selected_date so a residency's dates dedupe.
   urlKey = (url) => url,
+  now = Date.now(), // injectable for tests: picks this crawl's slice
 } = {}) {
   const fillFields = [...fields, ...alsoFill];
   const prior = new Map((ctx?.previousEvents ?? []).map((e) => [e.id, e]));
@@ -43,7 +59,7 @@ export async function enrichFromDetailPages(events, ctx, {
       .sort((a, b) => a.date.localeCompare(b.date))
       .map((e) => e.url)
   )];
-  const keys = [...new Set(urls.map(urlKey))].slice(0, maxPages);
+  const keys = pickPages([...new Set(urls.map(urlKey))], maxPages, now);
   const fetchUrlByKey = new Map();
   for (const u of urls) {
     const k = urlKey(u);

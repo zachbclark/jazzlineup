@@ -267,6 +267,9 @@ const INSTRUMENTS = new Set([
   'flute', 'piccolo', 'clarinet', 'oboe', 'bassoon', 'cello', 'violin', 'viola', 'strings',
   'percussion', 'harmonica', 'accordion', 'banjo', 'mandolin', 'harp', 'oud',
   'synth', 'synthesizer', 'electronics', 'turntables', 'dj', 'composer',
+  'drum', 'maracas', 'whistle', 'tambora', 'tambor', 'llamador', // Lunatico rosters
+  'hardanger', 'ewi', // Close Up, Lunatico credits
+  'composition', 'sampler', 'reed', 'dx', // Jazz Gallery credits ("-composition, piano, samplers, DX7"; digits are stripped)
   'conductor', 'arranger', 'leader', 'electric', 'acoustic', 'upright', 'double',
   // French (Paris rosters: "Ferenc Nemeth - Batterie"); accents are stripped
   // before lookup so flûte matches 'flute'
@@ -295,9 +298,17 @@ export const isInstrumentWord = (w) => {
   return INSTRUMENTS.has(n) || INSTRUMENTS.has(n.replace(/s$/, ''));
 };
 
+// Credit words too common in prose for the shared list (parsePersonnel would
+// eat "- original tunes"), accepted only by the strict roster parsers, where
+// a whole line or a bold name vouches for them: "drums and tunes", "vocals
+// & effects", "Amplified Washboard".
+const CREDIT_WORDS = new Set(['tunes', 'effects', 'amplified']);
+const isCreditWord = (w) => CREDIT_WORDS.has(normWord(w));
+
 // Multi-word credits the modern scene uses; single-word lexicon can't hold
 // them ("Tim Watson - Guitar/Sound Design", the SEEDS founding case).
-const INSTRUMENT_PHRASES = new Set(['sound design', 'spoken word', 'live electronics']);
+const INSTRUMENT_PHRASES = new Set(['sound design', 'spoken word', 'live electronics',
+  'tambor alegre', 'talking drum', 'lead voice', 'lead vocals', 'pedal steel', 'lap steel', 'tap dance']);
 export const isInstrumentPhrase = (phrase) => {
   const words = String(phrase).split(/\s+/).filter(Boolean);
   if (!words.length) return false;
@@ -366,6 +377,11 @@ export function stripPromo(text) {
 export function parsePersonnel(text) {
   const t = stripPromo(String(text))
     .replace(/\bsets? at [^.]*$/i, '') // trailing "Sets at 7pm + 9pm ET"
+    // "Joe Martin -bass Gilad Hekselman -guitar" (Jazz Gallery): a dash
+    // spaced only before is a seam too, when an instrument follows, so a
+    // prose aside ("quartet —with guests") isn't split. Hyphenated names
+    // have no space before the dash, so "Vincent-Brown" stays whole.
+    .replace(/(\s)([-–—])(\p{L}[\p{L}.]*)/gu, (m, sp, dash, w) => (isInstrumentWord(w) ? `${sp}${dash} ${w}` : m))
     .trim();
   // Split on dashes (or pipes — Mr. Tipple's writes "Carmen Getit | Guitar")
   // that have whitespace on both sides (name/instrument seams).
@@ -420,24 +436,72 @@ export function parsePersonnel(text) {
 // instrument words, so prose lines with dashes or commas ("Sonny Stitt,
 // and Chet Baker", "Table Seating: $30.00 - $65.00") never produce fake
 // players.
-export function personnelFromLines(text) {
+// A prose sentence can look like "Name, instruments": "Jacob also plays
+// accordion, tenor horn, and tuba." (Close Up). Real names don't mix
+// capitalized words with plain lowercase ones, apart from particles (de,
+// van, da). All-lowercase names pass: some venues write them that way.
+const NAME_PARTICLES = new Set(['de', 'da', 'do', 'dos', 'das', 'di', 'del', 'della', 'du', 'des', 'la', 'le', 'van', 'von', 'der', 'den', 'ter', 'y', 'e', 'al', 'el', 'bin', 'ibn', 'st']);
+function looksLikeName(name) {
+  // one-letter bits are typos ("Marcello Carell i"), not prose
+  const words = name.split(/\s+/).filter((w) => /^\p{L}{2}/u.test(w) && !NAME_PARTICLES.has(w.toLowerCase()));
+  const lower = words.filter((w) => /^\p{Ll}/u.test(w));
+  return lower.length === 0 || lower.length === words.length;
+}
+
+// min: callers that can vouch for a lone player (their name is in the show
+// title) pass 1; otherwise one matching line could be stray prose.
+export function personnelFromLines(text, { min = 2 } = {}) {
   const personnel = [];
+  const seen = new Set();
   for (const line of String(text).split('\n')) {
     // a spaced dash wins, so hyphenated names stay whole:
-    // "Frida Ruiz-Berman - Vocals" (Downstairs at 180, 2026-11-02)
-    const m = line.trim().match(/^(.{2,45}?)\s+[-–—]\s+(.{2,40})$/)
-      ?? line.trim().match(/^(.{2,45}?)\s*[-–—:,]\s*(.{2,40})$/);
+    // "Frida Ruiz-Berman - Vocals" (Downstairs at 180, 2026-11-02).
+    // Lunatico also writes "Name ~ keys" and "Name (keys)", Barbès "Name • bass",
+    // Baked Potato "REGGIE HAMILTON ...BASS" / "Karen Landau …Vocals".
+    // Brackets go before the comma seam: "Robin MacMillan (percussion, vocals)".
+    const l = line.trim();
+    const m = l.match(/^(.{2,45}?)\s+[-–—~•]\s+(.{2,40})$/)
+      ?? l.match(/^([^()]{2,45}?)\s*\(([^()]{2,40})\)$/)
+      ?? l.match(/^(.{2,45}?)\s*(?:[-–—:,~]|…|\.{2,})\s*(.{2,40})$/);
     if (!m) continue;
     const instr = m[2].trim();
     // validate per phrase (split on ,/&) so multi-word credits pass whole:
     // "Guitar/Sound Design" -> guitar + sound design (SEEDS, 2026-07-20)
     const okPhrase = (p) => isInstrumentPhrase(p)
-      || p.split(/\s+/).every((w) => isInstrumentWord(w) || /^(?:et|and)$/i.test(w));
+      || p.split(/\s+/).every((w) => isInstrumentWord(w) || isCreditWord(w) || /^(?:et|and)$/i.test(w));
     const phrases = instr.split(/[,/&]+/).map((p) => p.trim()).filter(Boolean);
-    if (!phrases.length || !phrases.every(okPhrase)) continue;
-    personnel.push({ name: cleanText(m[1]), instrument: cleanText(instr.toLowerCase()) });
+    // the first credit must be an instrument; a short one we don't know
+    // after it ("alto sax, ewi", "violin, Hardanger") is dropped instead of
+    // costing the player (2026-11-05: three real players were lost that
+    // way). A long or numbered one means prose: "drums, this Friday at 8".
+    if (!phrases.length || !okPhrase(phrases[0])) continue;
+    if (phrases.some((p) => !okPhrase(p) && (/\d/.test(p) || p.split(/\s+/).length > 2))) continue;
+    const known = phrases.filter(okPhrase);
+    const instrument = known.length === phrases.length ? cleanText(instr.toLowerCase()) : known.join(', ').toLowerCase();
+    // "Jay Jennings (from Snarky Puppy) ...TRUMPET" (Baked Potato): the
+    // aside isn't part of the name
+    const name = cleanText(m[1].replace(/\s*\([^()]*\)/g, ''));
+    if (!looksLikeName(name) || /[()]/.test(name)) continue;
+    if (seen.has(name.toLowerCase())) continue; // rosters pasted twice (Lunatico)
+    seen.add(name.toLowerCase());
+    personnel.push({ name, instrument });
   }
-  return personnel.length >= 2 ? personnel : [];
+  return personnel.length >= min ? personnel : [];
+}
+
+// A leader-only listing ("SYLVIE COURVOISIER - Piano", "Dion Kerr - Bass"):
+// one roster line counts when that name is also in the show's title, which
+// a stray prose line never is. [] otherwise.
+// The name needs 2+ words: "Joe - tenor" under "Joe Lovano Quartet" could
+// be anyone. Keys aren't cut at 60 like slug(), so a leader late in a long
+// title still matches.
+const nameKey = (s) => cleanText(s ?? '').normalize('NFKD').replace(/[̀-ͯ]/g, '').toLowerCase()
+  .replace(/[^\p{L}\p{N}]+/gu, '-').replace(/^-|-$/g, '');
+export function leaderFromLines(text, title) {
+  const [one] = personnelFromLines(text, { min: 1 });
+  const key = one && nameKey(one.name);
+  if (!key || !key.includes('-')) return [];
+  return ('-' + nameKey(title) + '-').includes('-' + key + '-') ? [one] : [];
 }
 
 // Parse rosters where the source HTML bolds the names — Barbès' ViewCy
@@ -450,18 +514,36 @@ export function personnelFromLines(text) {
 // the last player plus trailing periods get trimmed instead of shipping to
 // the UI as "bass, and" / "drums." chips.
 export function personnelFromStrongTags(html) {
+  const found = [];
+  // "<b>Name</b> - bass", and in Barbès prose "<b>Name</b> on alto sax" and
+  // "<b>Name</b> (piano)" (2026-11-05: those bands showed as bios). Letters
+  // touching the tag belong to the name: "V<b>innie Sperrazza</b>",
+  // "<b>JP Schlegelmil</b>ch" (hand-edited Barbès markup).
+  const res = [
+    /(\p{L}*)<(strong|b)\b[^>]*>([^<]{2,45}?)<\/\2>(\p{L}*)(?:\s*[-–—:]|\s*on\s)\s*([^<(]{2,80})/giu,
+    /(\p{L}*)<(strong|b)\b[^>]*>([^<]{2,45}?)<\/\2>(\p{L}*)\s*\(([^()<]{2,40})\)/giu,
+  ];
+  for (const re of res) for (const m of String(html).matchAll(re)) found.push(m);
+  found.sort((a, b) => a.index - b.index);
   const personnel = [];
-  const re = /<(strong|b)\b[^>]*>([^<]{2,45}?)<\/\1>\s*[-–—:]\s*([^<]{2,80})/gi;
-  let m;
-  while ((m = re.exec(String(html)))) {
-    const name = cleanText(m[2]).replace(/[،,;:.]+$/, '');
-    const instr = cleanText(m[3])
+  const seen = new Set();
+  for (const m of found) {
+    // glue only letters the tag text actually touches: "with<b> Eric</b>"
+    // keeps "with" out of the name
+    const pre = /^\p{L}/u.test(m[3]) ? m[1] : '';
+    const post = /\p{L}$/u.test(m[3]) ? m[4] : '';
+    const name = cleanText(pre + m[3] + post).replace(/[،,;:.]+$/, '');
+    // ...and letters touching the NEXT tag are the next name's ("sax, V<b>innie")
+    const nextIsName = /^<(?:strong|b)\b/i.test(String(html).slice(m.index + m[0].length));
+    const instr = cleanText(nextIsName ? m[5].replace(/\p{L}+$/u, '') : m[5])
       .replace(/[,;.\s]+$/, '')      // trailing ", " before the next bolded name
-      .replace(/[,;\s]+and$/i, '')   // the ", and" seam
+      .replace(/[,;\s]+(?:and|&)$/i, '') // the ", and" / " &" seam
       .replace(/[,;.\s]+$/, '');     // period after the last player
     const words = instr.split(/[\s,/&]+/).filter(Boolean);
     if (!name || !words.length) continue;
-    if (!words.every((w) => isInstrumentWord(w) || /^(?:et|and)$/i.test(w))) continue;
+    if (!words.every((w) => isInstrumentWord(w) || isCreditWord(w) || /^(?:et|and)$/i.test(w))) continue;
+    if (seen.has(name.toLowerCase())) continue;
+    seen.add(name.toLowerCase());
     personnel.push({ name, instrument: instr.toLowerCase() });
   }
   return personnel.length >= 2 ? personnel : [];

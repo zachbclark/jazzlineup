@@ -28,6 +28,21 @@ ok('jazzgallery: expands 2-day run, parses sets from excerpt', () => {
   assert.match(evs[0].url, /jazzgallery\.org\/calendar\/miles-okazaki/);
 });
 
+ok('jazzgallery: "Name -instrument" rosters (no space after the dash) become personnel', () => {
+  const fixture = JSON.stringify({ upcoming: [{
+    title: 'Jonathan Paik', startDate: 1784156400605, endDate: 1784156400605, fullUrl: '/calendar/paik',
+    excerpt: 'Jonathan Paik -composition, piano, samplers Henry Paul -samplers, DX7 Alana Amore Colvin -guitar Adriel Vincent-Brown - drums',
+  }] });
+  const [ev] = jgParse(fixture);
+  assert.deepEqual(ev.personnel.map((p) => [p.name, p.instrument]), [
+    ['Jonathan Paik', 'composition, piano, samplers'],
+    ['Henry Paul', 'samplers, dx7'],
+    ['Alana Amore Colvin', 'guitar'],
+    ['Adriel Vincent-Brown', 'drums'],
+  ], 'hyphenated names stay whole');
+  assert.equal(ev.details, null, 'the roster replaces the details text');
+});
+
 // --- Smalls / Mezzrow ----------------------------------------------------------
 ok('smalls: parses day/venue/event template', () => {
   const tpl = `
@@ -326,6 +341,25 @@ ok('lunatico: *** promo blocks stripped, TWO SETS times mined', () => {
   assert.match(evs[0].details, /improvised/);
 });
 
+ok('lunatico: one-player-per-line rosters (~, comma, parens) become personnel', () => {
+  const mk = (title, body) => ({
+    title, startDate: new Date('2026-11-20T21:00:00-05:00').getTime(), fullUrl: '/calendar/x',
+    excerpt: '<p><strong>***TWO SETS: 9PM &amp; 10:15PM***</strong><br><br>A beloved staple. Come and get it!<br><br>' + body + '<br><br>Long bio follows here about the leader.</p>',
+  });
+  const evs = luParse(JSON.stringify({ items: [
+    mk('Anant', 'Anant Pradhan ~ saxophones<br>Larry McDonald ~ congas<br>Anant Pradhan ~ saxophones'),
+    mk('Pedro', 'Sami Merdinian, violin<br>Rodrigo Avalos, bandoneón<br>Pedro Giraudo, bass'),
+    mk('Delights', 'Robin MacMillan (percussion)<br>Adron (guitar/voice/whistle)'),
+    mk('La Manga', 'Daniela Serna ~ Tambor Alegre/ voice<br>Mamoudou Konaté ~ Talking Drum'),
+  ] }), new Date(2026, 10, 15));
+  const roster = (e) => e.personnel.map((p) => p.name + ': ' + p.instrument);
+  assert.deepEqual(roster(evs[0]), ['Anant Pradhan: saxophones', 'Larry McDonald: congas'], 'pasted-twice player once');
+  assert.deepEqual(roster(evs[1]), ['Sami Merdinian: violin', 'Rodrigo Avalos: bandoneón', 'Pedro Giraudo: bass']);
+  assert.deepEqual(roster(evs[2]), ['Robin MacMillan: percussion', 'Adron: guitar/voice/whistle']);
+  assert.deepEqual(roster(evs[3]), ['Daniela Serna: tambor alegre/ voice', 'Mamoudou Konaté: talking drum']);
+  assert.equal(evs[0].details, null, 'the roster replaces the blurb');
+});
+
 // --- Jazz Cultural (via the Smalls feed) ----------------------------------------------
 ok('smalls feed: jazzcultural venue now included', () => {
   const tpl = `
@@ -401,6 +435,34 @@ ok('viewcy: bolded-name roster parses clean (Pre-War Ponies, found by Zach 2026-
     { name: 'Jim Whitney', instrument: 'bass' },
     { name: 'Willie Martinez', instrument: 'drums' },
   ]);
+});
+
+ok('viewcy: Barbès prose rosters ("on alto sax", "(piano)", split tags) and lone Close Up leaders', () => {
+  const course = (name, description) => ({
+    name, url: 'https://www.viewcy.com/event/x', description,
+    events: [{ name, starts_at: '2026-11-16T00:00:00.000Z', book_url: 'https://www.viewcy.com/event/x' }],
+  });
+  const evs = barbesParse(JSON.stringify({ data: [
+    // real descriptions, Nov 2026
+    course('DIRTY DESMONDS', '<div><strong>DIRTY DESMONDS </strong>(formerly <strong>Pakula Surprise</strong>) is a trio with <strong>Eric Pakula</strong> on alto sax,<strong> Blake&nbsp; Lindberg </strong>on drums and <strong>Nick Cudahy</strong> on bass.&nbsp;</div>'),
+    course('SONELIUS SMITH', '<div><strong>Sonelius Smith</strong> (piano) and <strong>Adam Kahan</strong> (bass) and special guests</div>'),
+    course('SUN TIGER', '<div>With <strong>Daniel Hass </strong>(cello); V<strong>innie Sperrazza </strong>(drums) and <strong>Sean Moran</strong> - guitar</div>'),
+    course('SANDA WEIGL', '<div><strong>Shoko Nagai</strong> - piano, accordion &amp; <strong>Satoshi Takeishi</strong> - percussion/drums</div>'),
+    course('LAFAYETTE GILCHRIST', '<div><strong>LAFAYETTE GILCHRIST</strong> plays the music of <strong>Monk</strong> - so much so that it swings.</div>'),
+  ] }));
+  const roster = (t) => (evs.find((e) => e.title === t).personnel ?? []).map((p) => p.name + ': ' + p.instrument);
+  assert.deepEqual(roster('DIRTY DESMONDS'), ['Eric Pakula: alto sax', 'Blake Lindberg: drums', 'Nick Cudahy: bass']);
+  assert.deepEqual(roster('SONELIUS SMITH'), ['Sonelius Smith: piano', 'Adam Kahan: bass']);
+  assert.deepEqual(roster('SUN TIGER'), ['Daniel Hass: cello', 'Vinnie Sperrazza: drums', 'Sean Moran: guitar'], 'letters outside the tag join the name');
+  assert.deepEqual(roster('SANDA WEIGL'), ['Shoko Nagai: piano, accordion', 'Satoshi Takeishi: percussion/drums'], 'the " &" seam is trimmed');
+  assert.deepEqual(roster('LAFAYETTE GILCHRIST'), [], 'bold names in a bio are not a roster');
+
+  const cu = closeupParse(JSON.stringify({ data: [
+    course('SYLVIE COURVOISIER', '<div>Sets at 7:30PM &amp; 9:00PM<br><br>SYLVIE COURVOISIER - Piano<br>Pianist-composer Sylvie Courvoisier, a Brooklyn-based native of Switzerland.</div>'),
+    course('PETER EVANS - CRAIG TABORN', '<div>Sets at 7:30<br><br>Kayvon Gordon - Drums<br>Peter Evans is a composer.</div>'),
+  ] }));
+  assert.deepEqual(cu[0].personnel, [{ name: 'SYLVIE COURVOISIER', instrument: 'piano' }], 'a lone leader named in the title counts');
+  assert.equal(cu[1].personnel, null, 'a lone line not matching the title does not');
 });
 
 // --- The Django ---------------------------------------------------------------------
@@ -934,6 +996,17 @@ ok('seeds: tockify events -> NY dates; dash rosters; TBA lineup falls back to de
   assert.match(evs[0].url, /tockify\.com\/seeds\.calendar\/detail\/195\//);
   assert.equal(evs[1].personnel.length, 3, 'slash-compound credits must roster up');
   assert.deepEqual(evs[1].personnel[0], { name: 'Tim Watson', instrument: 'guitar/sound design' });
+});
+
+ok('seeds: a leader-only listing counts when the leader is in the title', () => {
+  const ms = new Date('2026-11-07T20:00:00-05:00').getTime();
+  const ev = (title, text) => ({ eid: { uid: '1' }, when: { start: { millis: ms } }, content: { summary: { text: title }, description: { text } } });
+  const evs = seedsParse(JSON.stringify({ events: [
+    ev('Dion Kerr duo with Andi Kerr', 'Dion Kerr - Bass'),
+    ev('Late Night Session', 'Dion Kerr - Bass'),
+  ] }));
+  assert.deepEqual(evs[0].personnel, [{ name: 'Dion Kerr', instrument: 'bass' }]);
+  assert.equal(evs[1].personnel, null, 'a lone name that is not in the title stays details');
 });
 
 // --- Ibeam (Squarespace blog "upcoming"; program lives in the post body) --------

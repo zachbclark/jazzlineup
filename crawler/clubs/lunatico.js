@@ -4,7 +4,7 @@
 // Since fall 2026 the calendar is a MONTH view: the plain URL returns only
 // the current month, so late in a month it looked nearly empty. Fetch this
 // month and next via &month=<name>-<year>&view=calendar.
-import { fetchText, makeEvent, htmlToText, nyDate, nyTime, stripPromo, parsePersonnel, applyLateNight, extractTimes } from '../lib.js';
+import { fetchText, makeEvent, htmlToText, nyDate, nyTime, stripPromo, parsePersonnel, personnelFromLines, applyLateNight, extractTimes } from '../lib.js';
 
 const BASE = 'https://www.barlunatico.com';
 const URL_ = `${BASE}/calendar?format=json`;
@@ -27,7 +27,10 @@ export function parse(jsonText, today = new Date()) {
     const setsBlock = excerptRaw.match(/\*{2,}\s*TWO SETS[^*]*\*{2,}/i)?.[0] ?? '';
     const minedSets = extractTimes(setsBlock);
     const excerpt = excerptRaw.replace(/\*{2,}[^*]*\*{2,}/g, ' ').replace(/\*+/g, ' ');
-    const personnel = parsePersonnel(excerpt);
+    // rosters sit one player per line: "Anant Pradhan ~ saxophones",
+    // "Sami Merdinian, violin", "Andrew Dorsett (keys)"
+    const lines = personnelFromLines(excerpt);
+    const personnel = lines.length ? lines : parsePersonnel(excerpt);
     events.push(makeEvent(applyLateNight({
       clubId: 'lunatico',
       title: it.title,

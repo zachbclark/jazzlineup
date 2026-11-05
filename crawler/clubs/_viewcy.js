@@ -7,7 +7,7 @@
 // One "course" per show; events[] carries the actual date(s)/set(s).
 import {
   makeEvent, htmlToText, nyDate, nyTime, applyLateNight, stripPromo,
-  parsePersonnel, personnelFromStrongTags,
+  parsePersonnel, personnelFromStrongTags, personnelFromLines, leaderFromLines,
 } from '../lib.js';
 
 // "Artist Name - Set 2" / "Artist (late set)" -> base title for set-merging.
@@ -20,9 +20,13 @@ export function parseViewcy(jsonText, clubId, fallbackUrl) {
   const grouped = new Map(); // `${date}:${slugish title}` -> draft
   for (const course of j.data ?? []) {
     const desc = htmlToText(course.description ?? '');
-    // bolded-name rosters first (exact boundaries), dash-run prose second
+    // bolded-name rosters first (exact boundaries), then one player per
+    // line ("Yuhan Su • vibraphone"), then dash-run prose
     const strong = personnelFromStrongTags(course.description ?? '');
-    const personnel = strong.length ? strong : parsePersonnel(desc);
+    const lines = strong.length ? [] : personnelFromLines(desc);
+    let personnel = strong.length ? strong : lines.length ? lines : parsePersonnel(desc);
+    // leader-only listings ("SYLVIE COURVOISIER - Piano", Close Up)
+    if (!personnel.length) personnel = leaderFromLines(desc, course.name);
     for (const ev of course.events ?? []) {
       if (!ev?.starts_at) continue;
       const date = nyDate(ev.starts_at);

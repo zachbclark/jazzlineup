@@ -182,8 +182,8 @@ ok('artist net: known names rescue keyword-less titles at keyword-filtered venue
 });
 
 // --- Shared detail enrichment (2026-07-16: "personnel is very important") -------------
-import { enrichFromDetailPages } from '../clubs/_enrichdetails.js';
-import { personnelFromLines } from '../lib.js';
+import { enrichFromDetailPages, pickPages } from '../clubs/_enrichdetails.js';
+import { personnelFromLines, personnelFromStrongTags, leaderFromLines } from '../lib.js';
 ok('enrich: reuses prior crawl by id, fetches only whats missing, never overwrites', async () => {
   const events = [
     { id: 'pocket:2026-07-20:a', date: '2026-07-20', url: 'https://x/a', personnel: null },
@@ -230,6 +230,19 @@ ok('enrich: urlKey dedupes residency dates into one fetch, result fans back out'
   assert.equal(events[1].personnel[1].name, 'Pete Van Nostrand', 'second night filled from same page');
 });
 
+ok('enrich: half the cap goes to the nearest shows, the rest rotates through the queue', () => {
+  const keys = Array.from({ length: 12 }, (_, i) => 'p' + i); // nearest first
+  const slot = 4 * 3600e3;
+  const crawls = [0, 1, 2, 3, 4].map((k) => pickPages(keys, 5, k * slot)); // 9 left, 2 slots: 5 crawls
+  for (const got of crawls) {
+    assert.deepEqual(got.slice(0, 3), ['p0', 'p1', 'p2'], 'nearest 3 every crawl');
+    assert.equal(new Set(got).size, 5, 'no page twice in one crawl');
+  }
+  const seen = new Set(crawls.flat());
+  assert.equal(seen.size, 12, 'every page gets a look within a few crawls');
+  assert.deepEqual(pickPages(keys.slice(0, 4), 5, 0), ['p0', 'p1', 'p2', 'p3'], 'under the cap: all of them');
+});
+
 ok('enrich: alsoFill rides along on a fetch but never triggers one (New Morning)', async () => {
   // roster present but no time yet -> must NOT refetch just to chase the time
   const events = [
@@ -267,6 +280,42 @@ ok('personnelFromLines: hyphenated names split at the spaced dash', () => {
     { name: 'Frida Ruiz-Berman', instrument: 'vocals' },
     { name: 'Jean-Paul Smith', instrument: 'piano' },
   ]);
+});
+
+ok('personnelFromLines: more seams (~, •, parens, ellipsis) and no lost players (2026-11-05)', () => {
+  const roster = (t, o) => personnelFromLines(t, o).map((p) => p.name + ': ' + p.instrument);
+  assert.deepEqual(roster('Anant Pradhan ~ saxophones\nYuhan Su • vibraphone\nAndrew Dorsett (keys)\nREGGIE HAMILTON ...BASS\nKaren Landau …Vocals/Guitar'),
+    ['Anant Pradhan: saxophones', 'Yuhan Su: vibraphone', 'Andrew Dorsett: keys', 'REGGIE HAMILTON: bass', 'Karen Landau: vocals/guitar']);
+  // a credit we don't know after a real instrument keeps the player
+  assert.deepEqual(roster('Caroline Davis - alto sax\nAlfredo Colon - alto sax, ondes martenot'),
+    ['Caroline Davis: alto sax', 'Alfredo Colon: alto sax']);
+  // asides and repeats
+  assert.deepEqual(roster('Jay Jennings (from Snarky Puppy) ...TRUMPET\nJohn Davis - drums\nJohn Davis - drums'),
+    ['Jay Jennings: trumpet', 'John Davis: drums']);
+  // prose that looks like "Name, instruments" stays out; particles and lowercase names stay in
+  assert.deepEqual(roster('Jacob also plays accordion, tenor horn, and tuba.\nLaurent de Wilde - piano\ntim ries - saxophone'),
+    ['Laurent de Wilde: piano', 'tim ries: saxophone']);
+  // one player only when the caller vouches for it
+  assert.deepEqual(roster('Big Dez - guitare et chant'), []);
+  assert.deepEqual(roster('Big Dez - guitare et chant', { min: 1 }), ['Big Dez: guitare et chant']);
+});
+
+ok('roster parsers: review cases from 2026-11-05 stay fixed', () => {
+  const r = (list) => list.map((p) => p.name + ': ' + p.instrument);
+  assert.deepEqual(r(personnelFromLines('Robin MacMillan (percussion, vocals)\nAdron (guitar, voice)')),
+    ['Robin MacMillan: percussion, vocals', 'Adron: guitar, voice'], 'brackets beat the comma seam');
+  assert.deepEqual(r(personnelFromLines('Bob Jones - drums, this Friday at 8\nAl Green - piano\nMax Roach - drums')),
+    ['Al Green: piano', 'Max Roach: drums'], 'a long or numbered extra credit is prose');
+  assert.deepEqual(r(personnelFromLines('JOHN DAVIS - drums\nJohn Davis - drums\nAl Foster - drums')),
+    ['JOHN DAVIS: drums', 'Al Foster: drums'], 'repeats ignore case');
+  assert.deepEqual(r(personnelFromStrongTags('trio with<strong> Eric Pakula</strong> on alto sax, V<strong>innie Sperrazza </strong>(drums) and <strong>Sean Moran</strong> - guitar</div>')),
+    ['Eric Pakula: alto sax', 'Vinnie Sperrazza: drums', 'Sean Moran: guitar'], 'only letters touching the tag text glue on');
+  assert.deepEqual(r(leaderFromLines('Joe Lovano - tenor', 'An Evening at the Village Vanguard Celebrating the Music of Joe Lovano')),
+    ['Joe Lovano: tenor'], 'long titles are not cut off');
+  assert.deepEqual(leaderFromLines('Joe - tenor', 'Joe Lovano Quartet'), [], 'a one-word name is not a leader');
+  assert.deepEqual(parsePersonnel('Rudy Royston - original tunes Ben Street - bass'), [], '"tunes" is a strict-parser credit only');
+  assert.deepEqual(r(parsePersonnel('The quartet —with guests Joe Martin -bass Gilad Hekselman -guitar')),
+    ['Joe Martin: bass', 'Gilad Hekselman: guitar'], 'a dash aside is not a seam');
 });
 
 // --- Silent-rot anomaly detector (2026-07-20: "guard against crawling changes") --

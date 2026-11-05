@@ -65,6 +65,9 @@ class=col-container>`;
   ]);
   // pages without the block (festivals, private events) must not fake a roster
   assert.equal(ssDetail('<div class="texte"><p>Concert exceptionnel</p></div>'), null);
+  // solo / leader-only shows: the block is all roster, so one player counts
+  assert.deepEqual(ssDetail('<div class="artistes"><p>Big Dez  - guitare et chant </p></div>').personnel,
+    [{ name: 'Big Dez', instrument: 'guitare et chant' }]);
 });
 
 // --- New Morning (JSON-LD agenda) ------------------------------------------------------

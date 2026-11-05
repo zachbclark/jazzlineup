@@ -25,10 +25,13 @@ export function parse(jsonText) {
 // NOTE the UNQUOTED class attr — that's what their server sends non-browsers
 // (the Blue Note quote-style lesson); accept quoted too. personnelFromLines
 // handles the line-per-player shape; 'cbasse' is in the instrument lexicon.
+// The block holds nothing but the roster, so a lone player counts: solo and
+// leader-only shows ("Fayçal Salhi - oud") were all coming back empty
+// (2026-11-05: 9 of 131 shows had a lineup).
 export function parseDetail(html) {
   const m = String(html).match(/<div[^>]*class=["']?artistes["']?[^>]*>([\s\S]*?)<\/div>/i);
   if (!m) return null;
-  const personnel = personnelFromLines(htmlToText(m[1]));
+  const personnel = personnelFromLines(htmlToText(m[1]), { min: 1 });
   return personnel.length ? { personnel } : null;
 }
 

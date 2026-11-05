@@ -268,6 +268,29 @@ ok('bakedpotato: event_box blocks -> events with h3-roster personnel', () => {
   assert.match(evs[1].details, /improvised music/);
 });
 
+ok('bakedpotato: "NAME ...INSTRUMENT" rosters (ellipsis seams, asides dropped)', () => {
+  // real Nov 2026 lines; these shows were showing their first roster line as a blurb
+  const html = `<header>calendar</header>
+  <div class="panel panel-default event_box"><div class="event_details"><article>
+    <div class="title-description"><div class="row event_title"><h1>HAZY JANE</h1>
+      <div class="event_date"> Saturday November 21, 2026 </div></div>
+      <div class="event_description"><h3>Karen Landau …Vocals/Guitar</h3><h3>Michael Landau …Guitar</h3>
+      <h3>Folk Party Hang..</h3></div></article></div>
+    <a class="btn buy_tickets_button" href="/events/270370">Buy tickets</a></div>
+  <div class="panel panel-default event_box"><div class="event_details"><article>
+    <div class="title-description"><div class="row event_title"><h1>DANNY JANKLOW</h1>
+      <div class="event_date"> Sunday November 22, 2026 </div></div>
+      <div class="event_description"><h3>Jay Jennings (from Snarky Puppy) ...TRUMPET</h3><h3>JOHN DAVIS ..DRUMS</h3></div></article></div>
+    <a class="btn buy_tickets_button" href="/events/270371">Buy tickets</a></div>`;
+  const evs = bakedParse(html);
+  const show = (t) => evs.find((e) => e.title === t);
+  assert.deepEqual(show('HAZY JANE').personnel, [
+    { name: 'Karen Landau', instrument: 'vocals/guitar' },
+    { name: 'Michael Landau', instrument: 'guitar' },
+  ]);
+  assert.deepEqual(show('DANNY JANKLOW').personnel.map((p) => p.name), ['Jay Jennings', 'JOHN DAVIS']);
+});
+
 ok('bakedpotato: detail page performance times -> sets', () => {
   const html = `<div>Thursday, July 16, 2026 - 08:00 PM PDT</div>
     <div>Thursday, July 16, 2026 - 10:00 PM PDT</div>`;
