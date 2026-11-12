@@ -22,25 +22,13 @@ const GLOWS = [
   ['steady', 'Steady glow'],
   ['swell', 'Glow + cascade'],
 ];
-const GAPS = [['12', 'Again every 12s'], ['25', 'Again every 25s'], ['60', 'Again every minute']];
+const GAPS = [['5', 'Nonstop'], ['10', 'Again every 10s'], ['25', 'Again every 25s'], ['60', 'Again every minute']];
 
-// wordmark fonts (Playfair is jazzin.nyc's, so it's left out)
-const FONTS = [
-  ['Abril (today)', null],
-  ['DM Serif Display', 'DM+Serif+Display'],
-  ['Fraunces', 'Fraunces:opsz,wght@144,800'],
-];
-
-const TOGGLES = [
-  ['case', 'Normal-case labels', 'no spaced-out ALL CAPS on tabs, days, headings'],
-  ['round', 'Round buttons', 'pill-shaped toggles and arrows'],
-];
-
-// One soft swell of light per letter, ~2.4s long, with a small dip near
+// One soft swell of light per letter, ~2.6s long, with a small dip near
 // the top (the flicker). The rest of the period is quiet, which is how the
 // cascade waits between runs.
 function swellFrames(period) {
-  const s = (2.4 / period) * 100;
+  const s = (Math.min(2.6, period - 1) / period) * 100;
   const at = (f) => `${(s * f).toFixed(2)}%`;
   return `@keyframes lab-swell-${period} { 0% { --g: 0; } ${at(0.38)} { --g: .8; } ${at(0.48)} { --g: .6; } ${at(0.6)} { --g: 1; } ${at(1)}, 100% { --g: 0; } }`;
 }
@@ -53,19 +41,14 @@ html[data-lab-glow] .brand-note, html[data-lab-glow] .brand-accent { text-shadow
    and 0 on "Jazz", which warms toward gold as the wave passes. */
 @property --g { syntax: '<number>'; inherits: false; initial-value: 0; }
 .lab-l { display: inline-block; white-space: pre; --g: 0;
-  color: color-mix(in srgb, color-mix(in srgb, var(--accent) 55%, #fff8e8) calc(var(--g) * 50%), var(--lab-base));
-  text-shadow: 0 0 calc(3px + 5px * var(--g)) color-mix(in srgb, var(--accent) calc((var(--r) * 60 + var(--g) * 40) * 1%), transparent),
-    0 0 calc(14px + 14px * var(--g)) color-mix(in srgb, var(--accent) calc((var(--r) * 35 + var(--g) * 40) * 1%), transparent); }
+  color: color-mix(in srgb, color-mix(in srgb, var(--accent) 30%, #fffaf0) calc(var(--g) * 100%), var(--lab-base));
+  text-shadow: 0 0 calc(3px + 9px * var(--g)) color-mix(in srgb, var(--accent) calc((var(--r) * 60 + var(--g) * 40) * 1%), transparent),
+    0 0 calc(14px + 30px * var(--g)) color-mix(in srgb, var(--accent) calc((var(--r) * 35 + var(--g) * 65) * 1%), transparent),
+    0 0 calc(64px * var(--g)) color-mix(in srgb, var(--accent) calc(var(--g) * 60%), transparent); }
 html[data-lab-glow=swell] .lab-l { animation: var(--lab-swell-name) var(--lab-swell-time) ease-in-out infinite; animation-delay: calc(500ms + var(--i) * 130ms); }
 ${GAPS.map(([g]) => `html[data-lab-gap="${g}"] { --lab-swell-name: lab-swell-${g}; --lab-swell-time: ${g}s; }`).join('\n')}
 ${GAPS.map(([g]) => swellFrames(Number(g))).join('\n')}
 @media (prefers-reduced-motion: reduce) { html[data-lab-glow] .lab-l { animation: none !important; } }
-html[data-lab-case] .city-hint, html[data-lab-case] .borough-btn, html[data-lab-case] .dow,
-html[data-lab-case] .daypanel h3, html[data-lab-case] .daygroup h3 { text-transform: none !important; letter-spacing: 0 !important; }
-html[data-lab-case] .borough-btn, html[data-lab-case] .daypanel h3, html[data-lab-case] .daygroup h3 { font-size: 14px !important; font-weight: 600 !important; }
-html[data-lab-round] .view-toggle, html[data-lab-round] .monthnav button, html[data-lab-round] .chips-toggle,
-html[data-lab-round] .borough-btn { border-radius: 999px !important; }
-html[data-lab-font] .brand { font-family: var(--lab-font), Georgia, serif !important; }
 .style-lab { position: fixed; right: 12px; bottom: 12px; z-index: 9999; width: 240px; max-height: calc(100vh - 24px); overflow-y: auto;
   padding: 10px 12px; background: rgba(0, 0, 0, 0.88); border: 1px solid #444; border-radius: 10px; color: #eee; font: 12.5px/1.4 -apple-system, sans-serif; }
 .style-lab.closed { width: auto; }
@@ -73,11 +56,8 @@ html[data-lab-font] .brand { font-family: var(--lab-font), Georgia, serif !impor
 .style-lab .sw { display: grid; grid-template-columns: repeat(5, 1fr); gap: 6px; margin: 8px 0 2px; }
 .style-lab .sw button { height: 24px; border-radius: 5px; border: 2px solid transparent; cursor: pointer; padding: 0; }
 .style-lab .sw button.on { border-color: #fff; }
-.style-lab label { display: block; margin: 5px 0; cursor: pointer; }
-.style-lab small { color: #999; display: block; margin-left: 20px; }
 .style-lab select { width: 100%; margin: 4px 0 6px; }
 .style-lab .now { color: #aaa; margin: 0 0 8px; }
-.style-lab summary { cursor: pointer; color: #aaa; margin: 4px 0; }
 `;
 
 // The cascade needs one span per letter. React owns the real wordmark, so
@@ -122,32 +102,17 @@ function StyleLab() {
   const saved = load();
   const [open, setOpen] = useState(saved.open ?? true);
   const [accent, setAccent] = useState(GOLDS.some(([, c]) => c === saved.accent) ? saved.accent : '#e8b458');
-  const [font, setFont] = useState(FONTS.some(([, f]) => f === saved.font) ? saved.font : null);
-  const [on, setOn] = useState(saved.on ?? {});
   const [glow, setGlow] = useState(pick(GLOWS, saved.glow, 'off'));
-  const [gap, setGap] = useState(pick(GAPS, saved.gap, '25'));
+  const [gap, setGap] = useState(pick(GAPS, saved.gap, '10'));
 
   useEffect(() => {
     const root = document.documentElement;
     root.style.setProperty('--accent', accent);
-    for (const [k] of TOGGLES) {
-      if (on[k]) root.dataset[`lab${k[0].toUpperCase()}${k.slice(1)}`] = '';
-      else delete root.dataset[`lab${k[0].toUpperCase()}${k.slice(1)}`];
-    }
-    if (font) {
-      const id = 'lab-font-' + font;
-      if (!document.getElementById(id)) {
-        const l = Object.assign(document.createElement('link'), { id, rel: 'stylesheet', href: `https://fonts.googleapis.com/css2?family=${font}&display=swap` });
-        document.head.appendChild(l);
-      }
-      root.style.setProperty('--lab-font', `'${font.split(':')[0].replace(/\+/g, ' ')}'`);
-      root.dataset.labFont = '';
-    } else delete root.dataset.labFont;
     if (glow !== 'off') root.dataset.labGlow = glow;
     else delete root.dataset.labGlow;
     root.dataset.labGap = gap;
-    try { localStorage.setItem(KEY, JSON.stringify({ open, accent, font, on, glow, gap })); } catch {}
-  }, [accent, font, on, open, glow, gap]);
+    try { localStorage.setItem(KEY, JSON.stringify({ open, accent, glow, gap })); } catch {}
+  }, [accent, open, glow, gap]);
 
   // build the letter copy when the cascade is picked (again shortly after,
   // in case the wordmark rendered after the lab mounted); a new gap
@@ -178,19 +143,7 @@ function StyleLab() {
           {GAPS.map(([v, n]) => <option key={v} value={v}>{n}</option>)}
         </select>
       )}
-      <details>
-        <summary>Buttons and fonts</summary>
-        {TOGGLES.map(([k, label, hint]) => (
-          <label key={k}>
-            <input type="checkbox" checked={!!on[k]} onChange={(e) => setOn({ ...on, [k]: e.target.checked })} /> {label}
-            <small>{hint}</small>
-          </label>
-        ))}
-        <select value={font ?? ''} onChange={(e) => setFont(e.target.value || null)}>
-          {FONTS.map(([n, f]) => <option key={n} value={f ?? ''}>Wordmark: {n}</option>)}
-        </select>
-      </details>
-      <button onClick={() => { setAccent('#e8b458'); setFont(null); setOn({}); setGlow('off'); setGap('25'); }}>Reset to today</button>
+      <button onClick={() => { setAccent('#e8b458'); setGlow('off'); setGap('10'); }}>Reset to today</button>
     </div>
   );
 }
