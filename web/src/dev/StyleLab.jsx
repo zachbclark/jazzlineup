@@ -39,8 +39,11 @@ const GLOWS = [
   ['steady', 'Steady glow'],
   ['breathe', 'Slow breathing glow'],
   ['flicker', 'Flickers on, then steady'],
-  ['drift', 'Whole site drifts gold to copper'],
+  ['drift', 'Drift: gold, honey, copper'],
+  ['driftWide', 'Drift wide: gold, amber, copper, rose'],
 ];
+
+const SPEEDS = [['8s', 'Fast (8s loop)'], ['20s', 'Medium (20s loop)'], ['40s', 'Slow (40s loop)']];
 
 const CSS = `
 html[data-lab-glow] .brand-note, html[data-lab-glow] .brand-accent {
@@ -52,8 +55,10 @@ html[data-lab-glow=flicker] .brand-note, html[data-lab-glow=flicker] .brand-acce
   0%, 8%, 14%, 30%, 34% { opacity: .25; text-shadow: none; }
   6%, 11%, 18%, 32%, 100% { opacity: 1; } }
 @property --accent { syntax: '<color>'; inherits: true; initial-value: #e8b458; }
-html[data-lab-glow=drift] { animation: lab-drift 40s ease-in-out infinite; }
+html[data-lab-glow=drift] { animation: lab-drift var(--lab-speed, 20s) ease-in-out infinite; }
+html[data-lab-glow=driftWide] { animation: lab-drift-wide var(--lab-speed, 20s) ease-in-out infinite; }
 @keyframes lab-drift { 0%, 100% { --accent: #e8b458; } 33% { --accent: #f0a640; } 66% { --accent: #d48a5e; } }
+@keyframes lab-drift-wide { 0%, 100% { --accent: #e8b458; } 25% { --accent: #f28c28; } 50% { --accent: #cf6f4a; } 75% { --accent: #e39a9a; } }
 @media (prefers-reduced-motion: reduce) { html[data-lab-glow] *, html[data-lab-glow] { animation: none !important; } }
 html[data-lab-case] .city-hint, html[data-lab-case] .borough-btn, html[data-lab-case] .dow,
 html[data-lab-case] .daypanel h3, html[data-lab-case] .daygroup h3 { text-transform: none !important; letter-spacing: 0 !important; }
@@ -85,6 +90,7 @@ function StyleLab() {
   const [font, setFont] = useState(saved.font ?? null);
   const [on, setOn] = useState(saved.on ?? {});
   const [glow, setGlow] = useState(saved.glow ?? 'off');
+  const [speed, setSpeed] = useState(saved.speed ?? '20s');
 
   useEffect(() => {
     const root = document.documentElement;
@@ -104,8 +110,9 @@ function StyleLab() {
     } else delete root.dataset.labFont;
     if (glow !== 'off') root.dataset.labGlow = glow;
     else delete root.dataset.labGlow;
-    try { localStorage.setItem(KEY, JSON.stringify({ open, accent, font, on, glow })); } catch {}
-  }, [accent, font, on, open, glow]);
+    root.style.setProperty('--lab-speed', speed);
+    try { localStorage.setItem(KEY, JSON.stringify({ open, accent, font, on, glow, speed })); } catch {}
+  }, [accent, font, on, open, glow, speed]);
 
   if (!open) return <div className="style-lab closed"><h4 onClick={() => setOpen(true)}>Style lab</h4></div>;
   const name = ACCENTS.find(([, c]) => c === accent)?.[0] ?? 'Custom';
@@ -133,7 +140,12 @@ function StyleLab() {
       <select value={glow} onChange={(e) => setGlow(e.target.value)}>
         {GLOWS.map(([v, n]) => <option key={v} value={v}>{n}</option>)}
       </select>
-      <button onClick={() => { setAccent('#e8b458'); setFont(null); setOn({}); setGlow('off'); }}>Reset to today</button>
+      {glow.startsWith('drift') && (
+        <select value={speed} onChange={(e) => setSpeed(e.target.value)}>
+          {SPEEDS.map(([v, n]) => <option key={v} value={v}>{n}</option>)}
+        </select>
+      )}
+      <button onClick={() => { setAccent('#e8b458'); setFont(null); setOn({}); setGlow('off'); setSpeed('20s'); }}>Reset to today</button>
     </div>
   );
 }
