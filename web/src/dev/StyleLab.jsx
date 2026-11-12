@@ -32,7 +32,29 @@ const TOGGLES = [
   ['sansMonth', 'Sans month title', '"November 2026" without the serif'],
 ];
 
+// neon ideas (Zach, 2026-11-11): the glow sits on the gold parts of the
+// wordmark only; "drift" slides the whole accent through the warm family.
+const GLOWS = [
+  ['off', 'No glow (today)'],
+  ['steady', 'Steady glow'],
+  ['breathe', 'Slow breathing glow'],
+  ['flicker', 'Flickers on, then steady'],
+  ['drift', 'Whole site drifts gold to copper'],
+];
+
 const CSS = `
+html[data-lab-glow] .brand-note, html[data-lab-glow] .brand-accent {
+  text-shadow: 0 0 4px color-mix(in srgb, var(--accent) 80%, transparent), 0 0 16px color-mix(in srgb, var(--accent) 45%, transparent); }
+html[data-lab-glow=breathe] .brand-note, html[data-lab-glow=breathe] .brand-accent { animation: lab-breathe 4s ease-in-out infinite; }
+html[data-lab-glow=flicker] .brand-note, html[data-lab-glow=flicker] .brand-accent { animation: lab-flicker 1.8s linear 1 both; }
+@keyframes lab-breathe { 50% { text-shadow: 0 0 2px color-mix(in srgb, var(--accent) 50%, transparent), 0 0 6px color-mix(in srgb, var(--accent) 20%, transparent); } }
+@keyframes lab-flicker {
+  0%, 8%, 14%, 30%, 34% { opacity: .25; text-shadow: none; }
+  6%, 11%, 18%, 32%, 100% { opacity: 1; } }
+@property --accent { syntax: '<color>'; inherits: true; initial-value: #e8b458; }
+html[data-lab-glow=drift] { animation: lab-drift 40s ease-in-out infinite; }
+@keyframes lab-drift { 0%, 100% { --accent: #e8b458; } 33% { --accent: #f0a640; } 66% { --accent: #d48a5e; } }
+@media (prefers-reduced-motion: reduce) { html[data-lab-glow] *, html[data-lab-glow] { animation: none !important; } }
 html[data-lab-case] .city-hint, html[data-lab-case] .borough-btn, html[data-lab-case] .dow,
 html[data-lab-case] .daypanel h3, html[data-lab-case] .daygroup h3 { text-transform: none !important; letter-spacing: 0 !important; }
 html[data-lab-case] .borough-btn, html[data-lab-case] .daypanel h3, html[data-lab-case] .daygroup h3 { font-size: 14px !important; font-weight: 600 !important; }
@@ -62,6 +84,7 @@ function StyleLab() {
   const [accent, setAccent] = useState(saved.accent ?? '#e8b458');
   const [font, setFont] = useState(saved.font ?? null);
   const [on, setOn] = useState(saved.on ?? {});
+  const [glow, setGlow] = useState(saved.glow ?? 'off');
 
   useEffect(() => {
     const root = document.documentElement;
@@ -79,8 +102,10 @@ function StyleLab() {
       root.style.setProperty('--lab-font', `'${font.split(':')[0].replace(/\+/g, ' ')}'`);
       root.dataset.labFont = '';
     } else delete root.dataset.labFont;
-    try { localStorage.setItem(KEY, JSON.stringify({ open, accent, font, on })); } catch {}
-  }, [accent, font, on, open]);
+    if (glow !== 'off') root.dataset.labGlow = glow;
+    else delete root.dataset.labGlow;
+    try { localStorage.setItem(KEY, JSON.stringify({ open, accent, font, on, glow })); } catch {}
+  }, [accent, font, on, open, glow]);
 
   if (!open) return <div className="style-lab closed"><h4 onClick={() => setOpen(true)}>Style lab</h4></div>;
   const name = ACCENTS.find(([, c]) => c === accent)?.[0] ?? 'Custom';
@@ -104,7 +129,11 @@ function StyleLab() {
       <select value={font ?? ''} onChange={(e) => setFont(e.target.value || null)}>
         {FONTS.map(([n, f]) => <option key={n} value={f ?? ''}>{n}</option>)}
       </select>
-      <button onClick={() => { setAccent('#e8b458'); setFont(null); setOn({}); }}>Reset to today</button>
+      <div>Neon</div>
+      <select value={glow} onChange={(e) => setGlow(e.target.value)}>
+        {GLOWS.map(([v, n]) => <option key={v} value={v}>{n}</option>)}
+      </select>
+      <button onClick={() => { setAccent('#e8b458'); setFont(null); setOn({}); setGlow('off'); }}>Reset to today</button>
     </div>
   );
 }
