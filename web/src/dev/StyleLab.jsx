@@ -20,17 +20,24 @@ const GOLDS = [
 const GLOWS = [
   ['off', 'No glow (today)'],
   ['steady', 'Steady glow'],
-  ['swell', 'Glow + cascade'],
+  ['letters', 'Glow + letter cascade'],
+  ['swell', 'Glow + soft wave'],
 ];
 const GAPS = [['5', 'Nonstop'], ['10', 'Again every 10s'], ['25', 'Again every 25s'], ['60', 'Again every minute']];
 
-// One soft swell of light per letter, ~2.6s long, with a small dip near
-// the top (the flicker). The rest of the period is quiet, which is how the
-// cascade waits between runs.
-function swellFrames(period) {
-  const s = (Math.min(2.6, period - 1) / period) * 100;
+// One flare of light per letter, with a small dip near the top (the
+// flicker). The rest of the period is quiet, which is how the cascade
+// waits between runs. "letters" is quick and tight so one letter at a time
+// lights up; "swell" (soft wave) is long and overlaps its neighbors.
+const SHAPES = {
+  letters: { len: 0.55, pts: [[0.22, 1], [0.38, 0.5], [0.5, 1]] },
+  swell: { len: 2.6, pts: [[0.38, 0.8], [0.48, 0.6], [0.6, 1]] },
+};
+function flareFrames(kind, period) {
+  const { len, pts } = SHAPES[kind];
+  const s = (Math.min(len, period - 1) / period) * 100;
   const at = (f) => `${(s * f).toFixed(2)}%`;
-  return `@keyframes lab-swell-${period} { 0% { --g: 0; } ${at(0.38)} { --g: .8; } ${at(0.48)} { --g: .6; } ${at(0.6)} { --g: 1; } ${at(1)}, 100% { --g: 0; } }`;
+  return `@keyframes lab-${kind}-${period} { 0% { --g: 0; } ${pts.map(([f, g]) => `${at(f)} { --g: ${g}; }`).join(' ')} ${at(1)}, 100% { --g: 0; } }`;
 }
 
 const mix = (n) => `color-mix(in srgb, var(--accent) ${n}%, transparent)`;
@@ -38,16 +45,22 @@ const CSS = `
 html[data-lab-glow] .brand-note, html[data-lab-glow] .brand-accent { text-shadow: 0 0 4px ${mix(80)}, 0 0 16px ${mix(45)}; }
 /* each letter's glow is one number, --g (0 to 1), so the browser can ease
    it smoothly. --r is 1 on the gold letters (they keep a resting glow)
-   and 0 on "Jazz", which warms toward gold as the wave passes. */
+   and 0 on "Jazz", which flashes gold as the cascade passes. */
 @property --g { syntax: '<number>'; inherits: false; initial-value: 0; }
 .lab-l { display: inline-block; white-space: pre; --g: 0;
-  color: color-mix(in srgb, color-mix(in srgb, var(--accent) 30%, #fffaf0) calc(var(--g) * 100%), var(--lab-base));
+  color: color-mix(in srgb, var(--lab-peak) calc(var(--g) * 100%), var(--lab-base));
   text-shadow: 0 0 calc(3px + 9px * var(--g)) color-mix(in srgb, var(--accent) calc((var(--r) * 60 + var(--g) * 40) * 1%), transparent),
     0 0 calc(14px + 30px * var(--g)) color-mix(in srgb, var(--accent) calc((var(--r) * 35 + var(--g) * 65) * 1%), transparent),
     0 0 calc(64px * var(--g)) color-mix(in srgb, var(--accent) calc(var(--g) * 60%), transparent); }
-html[data-lab-glow=swell] .lab-l { animation: var(--lab-swell-name) var(--lab-swell-time) ease-in-out infinite; animation-delay: calc(500ms + var(--i) * 130ms); }
-${GAPS.map(([g]) => `html[data-lab-gap="${g}"] { --lab-swell-name: lab-swell-${g}; --lab-swell-time: ${g}s; }`).join('\n')}
-${GAPS.map(([g]) => swellFrames(Number(g))).join('\n')}
+/* letter cascade: tight glow that stays on its own letter */
+html[data-lab-glow=letters] .lab-l {
+  text-shadow: 0 0 calc(3px + 2px * var(--g)) color-mix(in srgb, var(--accent) calc((var(--r) * 60 + var(--g) * 40) * 1%), transparent),
+    0 0 calc(12px - 2px * var(--g)) color-mix(in srgb, var(--accent) calc((var(--r) * 35 + var(--g) * 55) * 1%), transparent); }
+html[data-lab-glow=letters] .lab-l, html[data-lab-glow=swell] .lab-l {
+  animation: var(--lab-flare) var(--lab-time) ease-in-out infinite; animation-delay: calc(500ms + var(--i) * var(--lab-step)); }
+html[data-lab-glow=letters] { --lab-step: 150ms; }
+html[data-lab-glow=swell] { --lab-step: 130ms; }
+${['letters', 'swell'].flatMap((k) => GAPS.map(([g]) => `html[data-lab-glow=${k}][data-lab-gap="${g}"] { --lab-flare: lab-${k}-${g}; --lab-time: ${g}s; }\n${flareFrames(k, Number(g))}`)).join('\n')}
 @media (prefers-reduced-motion: reduce) { html[data-lab-glow] .lab-l { animation: none !important; } }
 .style-lab { position: fixed; right: 12px; bottom: 12px; z-index: 9999; width: 240px; max-height: calc(100vh - 24px); overflow-y: auto;
   padding: 10px 12px; background: rgba(0, 0, 0, 0.88); border: 1px solid #444; border-radius: 10px; color: #eee; font: 12.5px/1.4 -apple-system, sans-serif; }
@@ -83,6 +96,8 @@ function setCascade(enabled) {
         s.style.setProperty('--i', i++);
         s.style.setProperty('--r', gold ? 1 : 0);
         s.style.setProperty('--lab-base', gold ? 'var(--accent)' : 'var(--text)');
+        // the flash: gold letters go white-hot, cream letters ("Jazz") go gold
+        s.style.setProperty('--lab-peak', gold ? 'color-mix(in srgb, var(--accent) 30%, #fffaf0)' : 'color-mix(in srgb, var(--accent) 85%, #fff)');
         frag.append(s);
       }
       t.replaceWith(frag);
@@ -118,7 +133,7 @@ function StyleLab() {
   // in case the wordmark rendered after the lab mounted); a new gap
   // rebuilds it so the first run replays
   useEffect(() => {
-    const cascade = glow === 'swell';
+    const cascade = glow === 'letters' || glow === 'swell';
     setCascade(cascade);
     const t = setTimeout(() => setCascade(cascade), 400);
     return () => clearTimeout(t);
@@ -138,7 +153,7 @@ function StyleLab() {
       <select value={glow} onChange={(e) => setGlow(e.target.value)}>
         {GLOWS.map(([v, n]) => <option key={v} value={v}>{n}</option>)}
       </select>
-      {glow === 'swell' && (
+      {(glow === 'letters' || glow === 'swell') && (
         <select value={gap} onChange={(e) => setGap(e.target.value)}>
           {GAPS.map(([v, n]) => <option key={v} value={v}>{n}</option>)}
         </select>
