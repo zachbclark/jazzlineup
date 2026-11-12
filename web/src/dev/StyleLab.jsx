@@ -1,147 +1,88 @@
 import React, { useEffect, useState } from 'react';
 import { createRoot } from 'react-dom/client';
 
-// Local-only style lab (Zach, 2026-11-11): try accent colors and a few
-// button/label styles on the real site. main.jsx loads it only on
-// localhost after a visit with ?lab, so jazzlineup.com never downloads it.
-// Choices are just CSS variables and data attributes on <html>; nothing
-// here is saved anywhere but this browser.
+// Local-only style lab (Zach, 2026-11-11): try the wordmark glow and a few
+// gold shades on the real site. main.jsx loads it only on localhost after
+// a visit with ?lab, so jazzlineup.com never downloads it. Choices are just
+// CSS variables and data attributes on <html>, saved in this browser only.
+//
+// Kept small on purpose (Zach: "too much color"): the venue chips are the
+// site's color, so the accent stays gold and the glow is the one extra.
 
 const GOLDS = [
   ['Gold (today)', '#e8b458'],
   ['Champagne', '#e8d2a2'],
-  ['Pale gold', '#eedc9a'],
   ['Honey', '#f0a640'],
-  ['Marigold', '#f6a821'],
-  ['Saffron', '#f4c13d'],
-  ['Amber', '#ffbf00'],
-  ['Brass', '#c8a951'],
   ['Antique', '#c9aa70'],
-  ['Bronze', '#cd7f32'],
-  ['Copper', '#d48a5e'],
   ['Rose gold', '#e2a487'],
-  ['jazzin.nyc', '#c8923a'],
 ];
-// colors real neon tubes come in
-const NEONS = [
-  ['Warm white', '#fff1d6'],
-  ['Tangerine', '#ff9a3c'],
-  ['Neon red', '#ff4f4f'],
-  ['Coral', '#ff7f6e'],
-  ['Hot pink', '#ff6fae'],
-  ['Orchid', '#e07be0'],
-  ['Violet', '#b48cff'],
-  ['Ice blue', '#8fd3ff'],
-  ['Electric blue', '#4fb3ff'],
-  ['Teal', '#4fd1c5'],
-  ['Mint', '#7af0b0'],
-  ['Lime', '#c6f36b'],
+
+const GLOWS = [
+  ['off', 'No glow (today)'],
+  ['steady', 'Steady glow'],
+  ['swell', 'Glow + cascade'],
 ];
-const ACCENTS = [...GOLDS, ...NEONS];
+const GAPS = [['12', 'Again every 12s'], ['25', 'Again every 25s'], ['60', 'Again every minute']];
 
 // wordmark fonts (Playfair is jazzin.nyc's, so it's left out)
 const FONTS = [
   ['Abril (today)', null],
   ['DM Serif Display', 'DM+Serif+Display'],
   ['Fraunces', 'Fraunces:opsz,wght@144,800'],
-  ['Archivo Black', 'Archivo+Black'],
 ];
 
 const TOGGLES = [
   ['case', 'Normal-case labels', 'no spaced-out ALL CAPS on tabs, days, headings'],
   ['round', 'Round buttons', 'pill-shaped toggles and arrows'],
-  ['sansMonth', 'Sans month title', '"November 2026" without the serif'],
 ];
-
-// neon ideas (Zach, 2026-11-11). Glow is on the wordmark only; drift
-// slides the whole accent (every gold thing) through a set of colors.
-const GLOWS = [
-  ['off', 'No glow (today)'],
-  ['steady', 'Steady glow'],
-  ['breathe', 'Slow breathing glow'],
-  ['flicker', 'Flickers on, then steady'],
-  ['swell', 'Cascade: once on load, then every so often'],
-  ['wave', 'Cascade: soft wave, nonstop'],
-  ['lightUp', 'Cascade: letters switch on one by one'],
-];
-const GAPS = [['12', 'Again every 12s'], ['25', 'Again every 25s'], ['60', 'Again every minute']];
-const DRIFTS = [
-  ['off', 'No drift (today)'],
-  ['warm', 'Warm: gold, honey, copper'],
-  ['wide', 'Wide: gold, amber, copper, rose'],
-  ['sunset', 'Sunset: gold, tangerine, coral, hot pink'],
-  ['neon', 'Neon sign: gold, hot pink, violet, ice blue'],
-];
-const SPEEDS = [['8s', 'Fast (8s loop)'], ['20s', 'Medium (20s loop)'], ['40s', 'Slow (40s loop)']];
 
 // One soft swell of light per letter, ~2.4s long, with a small dip near
-// the top (the "flicker"). The rest of the period is quiet, which is how
-// the cascade waits between runs.
-function swellFrames(name, period) {
+// the top (the flicker). The rest of the period is quiet, which is how the
+// cascade waits between runs.
+function swellFrames(period) {
   const s = (2.4 / period) * 100;
   const at = (f) => `${(s * f).toFixed(2)}%`;
-  return `@keyframes lab-swell-${name} { 0% { --g: 0; } ${at(0.38)} { --g: .8; } ${at(0.48)} { --g: .6; } ${at(0.6)} { --g: 1; } ${at(1)}, 100% { --g: 0; } }`;
+  return `@keyframes lab-swell-${period} { 0% { --g: 0; } ${at(0.38)} { --g: .8; } ${at(0.48)} { --g: .6; } ${at(0.6)} { --g: 1; } ${at(1)}, 100% { --g: 0; } }`;
 }
 
 const mix = (n) => `color-mix(in srgb, var(--accent) ${n}%, transparent)`;
 const CSS = `
 html[data-lab-glow] .brand-note, html[data-lab-glow] .brand-accent { text-shadow: 0 0 4px ${mix(80)}, 0 0 16px ${mix(45)}; }
-html[data-lab-glow=breathe] .brand-note, html[data-lab-glow=breathe] .brand-accent { animation: lab-breathe 4s ease-in-out infinite; }
-html[data-lab-glow=flicker] .brand-note, html[data-lab-glow=flicker] .brand-accent { animation: lab-flicker 1.8s linear 1 both; }
-@keyframes lab-breathe { 50% { text-shadow: 0 0 2px ${mix(50)}, 0 0 6px ${mix(20)}; } }
-@keyframes lab-flicker {
-  0%, 8%, 14%, 30%, 34% { opacity: .25; text-shadow: none; }
-  6%, 11%, 18%, 32%, 100% { opacity: 1; } }
 /* each letter's glow is one number, --g (0 to 1), so the browser can ease
-   it smoothly instead of jumping between shadow lists. --r is 1 on the
-   gold letters (they keep a resting glow) and 0 on "Jazz". */
+   it smoothly. --r is 1 on the gold letters (they keep a resting glow)
+   and 0 on "Jazz", which warms toward gold as the wave passes. */
 @property --g { syntax: '<number>'; inherits: false; initial-value: 0; }
 .lab-l { display: inline-block; white-space: pre; --g: 0;
   color: color-mix(in srgb, color-mix(in srgb, var(--accent) 55%, #fff8e8) calc(var(--g) * 50%), var(--lab-base));
   text-shadow: 0 0 calc(3px + 5px * var(--g)) color-mix(in srgb, var(--accent) calc((var(--r) * 60 + var(--g) * 40) * 1%), transparent),
     0 0 calc(14px + 14px * var(--g)) color-mix(in srgb, var(--accent) calc((var(--r) * 35 + var(--g) * 40) * 1%), transparent); }
-html[data-lab-glow=wave] .lab-l { animation: lab-swell-wave 4.5s ease-in-out infinite; animation-delay: calc(var(--i) * 130ms); }
 html[data-lab-glow=swell] .lab-l { animation: var(--lab-swell-name) var(--lab-swell-time) ease-in-out infinite; animation-delay: calc(500ms + var(--i) * 130ms); }
 ${GAPS.map(([g]) => `html[data-lab-gap="${g}"] { --lab-swell-name: lab-swell-${g}; --lab-swell-time: ${g}s; }`).join('\n')}
-${swellFrames('wave', 4.5)}
-${GAPS.map(([g]) => swellFrames(g, Number(g))).join('\n')}
-html[data-lab-glow=lightUp] .lab-l { animation: lab-light-up 1.1s ease-in-out 1 both; animation-delay: calc(300ms + var(--i) * 140ms); }
-@keyframes lab-light-up { 0% { opacity: .1; --g: 0; } 40% { opacity: .55; --g: .4; } 52% { opacity: .8; --g: .9; } 62% { opacity: .65; --g: .6; } 78% { opacity: 1; --g: .7; } 100% { opacity: 1; --g: 0; } }
-@property --accent { syntax: '<color>'; inherits: true; initial-value: #e8b458; }
-html[data-lab-drift] { animation: var(--lab-drift-name) var(--lab-speed, 20s) ease-in-out infinite; }
-html[data-lab-drift=warm] { --lab-drift-name: lab-drift-warm; }
-html[data-lab-drift=wide] { --lab-drift-name: lab-drift-wide; }
-html[data-lab-drift=sunset] { --lab-drift-name: lab-drift-sunset; }
-html[data-lab-drift=neon] { --lab-drift-name: lab-drift-neon; }
-@keyframes lab-drift-warm { 0%, 100% { --accent: #e8b458; } 33% { --accent: #f0a640; } 66% { --accent: #d48a5e; } }
-@keyframes lab-drift-wide { 0%, 100% { --accent: #e8b458; } 25% { --accent: #f28c28; } 50% { --accent: #cf6f4a; } 75% { --accent: #e39a9a; } }
-@keyframes lab-drift-sunset { 0%, 100% { --accent: #e8b458; } 25% { --accent: #ff9a3c; } 50% { --accent: #ff7f6e; } 75% { --accent: #ff6fae; } }
-@keyframes lab-drift-neon { 0%, 100% { --accent: #e8b458; } 25% { --accent: #ff6fae; } 50% { --accent: #b48cff; } 75% { --accent: #8fd3ff; } }
-@media (prefers-reduced-motion: reduce) { html[data-lab-glow] *, html[data-lab-drift] { animation: none !important; } }
+${GAPS.map(([g]) => swellFrames(Number(g))).join('\n')}
+@media (prefers-reduced-motion: reduce) { html[data-lab-glow] .lab-l { animation: none !important; } }
 html[data-lab-case] .city-hint, html[data-lab-case] .borough-btn, html[data-lab-case] .dow,
 html[data-lab-case] .daypanel h3, html[data-lab-case] .daygroup h3 { text-transform: none !important; letter-spacing: 0 !important; }
 html[data-lab-case] .borough-btn, html[data-lab-case] .daypanel h3, html[data-lab-case] .daygroup h3 { font-size: 14px !important; font-weight: 600 !important; }
 html[data-lab-round] .view-toggle, html[data-lab-round] .monthnav button, html[data-lab-round] .chips-toggle,
 html[data-lab-round] .borough-btn { border-radius: 999px !important; }
-html[data-lab-sans-month] .monthnav h2 { font-family: inherit !important; font-weight: 700 !important; letter-spacing: 0 !important; }
 html[data-lab-font] .brand { font-family: var(--lab-font), Georgia, serif !important; }
-.style-lab { position: fixed; right: 12px; bottom: 12px; z-index: 9999; width: 260px; max-height: calc(100vh - 24px); overflow-y: auto;
+.style-lab { position: fixed; right: 12px; bottom: 12px; z-index: 9999; width: 240px; max-height: calc(100vh - 24px); overflow-y: auto;
   padding: 10px 12px; background: rgba(0, 0, 0, 0.88); border: 1px solid #444; border-radius: 10px; color: #eee; font: 12.5px/1.4 -apple-system, sans-serif; }
 .style-lab.closed { width: auto; }
 .style-lab h4 { margin: 0; font-size: 12.5px; cursor: pointer; }
-.style-lab h5 { margin: 8px 0 0; font-size: 11px; color: #aaa; font-weight: 600; }
-.style-lab .sw { display: grid; grid-template-columns: repeat(6, 1fr); gap: 5px; margin: 5px 0; }
+.style-lab .sw { display: grid; grid-template-columns: repeat(5, 1fr); gap: 6px; margin: 8px 0 2px; }
 .style-lab .sw button { height: 24px; border-radius: 5px; border: 2px solid transparent; cursor: pointer; padding: 0; }
 .style-lab .sw button.on { border-color: #fff; }
 .style-lab label { display: block; margin: 5px 0; cursor: pointer; }
 .style-lab small { color: #999; display: block; margin-left: 20px; }
-.style-lab select, .style-lab input[type=color] { width: 100%; margin: 4px 0 6px; }
-.style-lab .now { color: #aaa; margin: 2px 0 6px; }
+.style-lab select { width: 100%; margin: 4px 0 6px; }
+.style-lab .now { color: #aaa; margin: 0 0 8px; }
+.style-lab summary { cursor: pointer; color: #aaa; margin: 4px 0; }
 `;
 
-// The cascades need one span per letter. React owns the real wordmark, so
+// The cascade needs one span per letter. React owns the real wordmark, so
 // the lab hides it and shows a split-up copy instead (lab only; the real
-// version would render the spans in App.jsx).
+// version would render the spans in App.jsx and ArchivePage.jsx).
 function setCascade(enabled) {
   document.querySelectorAll('.lab-clone').forEach((c) => c.remove());
   document.querySelectorAll('.brand-link').forEach((a) => { a.style.display = ''; });
@@ -175,17 +116,16 @@ function setCascade(enabled) {
 
 const KEY = 'jl.lab';
 const load = () => { try { return JSON.parse(localStorage.getItem(KEY)) ?? {}; } catch { return {}; } };
+const pick = (list, v, dflt) => (list.some(([x]) => x === v) ? v : dflt);
 
 function StyleLab() {
   const saved = load();
   const [open, setOpen] = useState(saved.open ?? true);
-  const [accent, setAccent] = useState(saved.accent ?? '#e8b458');
-  const [font, setFont] = useState(saved.font ?? null);
+  const [accent, setAccent] = useState(GOLDS.some(([, c]) => c === saved.accent) ? saved.accent : '#e8b458');
+  const [font, setFont] = useState(FONTS.some(([, f]) => f === saved.font) ? saved.font : null);
   const [on, setOn] = useState(saved.on ?? {});
-  const [glow, setGlow] = useState(GLOWS.some(([v]) => v === saved.glow) ? saved.glow : 'off');
-  const [drift, setDrift] = useState(DRIFTS.some(([v]) => v === saved.drift) ? saved.drift : 'off');
-  const [speed, setSpeed] = useState(saved.speed ?? '20s');
-  const [gap, setGap] = useState(GAPS.some(([v]) => v === saved.gap) ? saved.gap : '25');
+  const [glow, setGlow] = useState(pick(GLOWS, saved.glow, 'off'));
+  const [gap, setGap] = useState(pick(GAPS, saved.gap, '25'));
 
   useEffect(() => {
     const root = document.documentElement;
@@ -205,42 +145,31 @@ function StyleLab() {
     } else delete root.dataset.labFont;
     if (glow !== 'off') root.dataset.labGlow = glow;
     else delete root.dataset.labGlow;
-    if (drift !== 'off') root.dataset.labDrift = drift;
-    else delete root.dataset.labDrift;
-    root.style.setProperty('--lab-speed', speed);
     root.dataset.labGap = gap;
-    try { localStorage.setItem(KEY, JSON.stringify({ open, accent, font, on, glow, drift, speed, gap })); } catch {}
-  }, [accent, font, on, open, glow, drift, speed, gap]);
+    try { localStorage.setItem(KEY, JSON.stringify({ open, accent, font, on, glow, gap })); } catch {}
+  }, [accent, font, on, open, glow, gap]);
 
-  // build the letter copy when a cascade is picked (again shortly after,
-  // in case the wordmark rendered after the lab mounted). Switching between
-  // the two cascades rebuilds it so the switch-on replays.
+  // build the letter copy when the cascade is picked (again shortly after,
+  // in case the wordmark rendered after the lab mounted); a new gap
+  // rebuilds it so the first run replays
   useEffect(() => {
-    const cascade = ['wave', 'swell', 'lightUp'].includes(glow);
+    const cascade = glow === 'swell';
     setCascade(cascade);
     const t = setTimeout(() => setCascade(cascade), 400);
     return () => clearTimeout(t);
   }, [glow, gap]);
 
   if (!open) return <div className="style-lab closed"><h4 onClick={() => setOpen(true)}>Style lab</h4></div>;
-  const name = ACCENTS.find(([, c]) => c === accent)?.[0] ?? 'Custom';
-  const swatches = (list) => (
-    <div className="sw">
-      {list.map(([n, c]) => (
-        <button key={c} title={`${n} ${c}`} className={c === accent ? 'on' : ''} style={{ background: c }} onClick={() => setAccent(c)} />
-      ))}
-    </div>
-  );
+  const name = GOLDS.find(([, c]) => c === accent)?.[0];
   return (
     <div className="style-lab">
       <h4 onClick={() => setOpen(false)}>Style lab (hide)</h4>
-      <h5>Golds and metals</h5>
-      {swatches(GOLDS)}
-      <h5>Neon sign colors</h5>
-      {swatches(NEONS)}
-      <div className="now">{name} {accent}</div>
-      <input type="color" value={accent} onChange={(e) => setAccent(e.target.value)} />
-      <div>Glow</div>
+      <div className="sw">
+        {GOLDS.map(([n, c]) => (
+          <button key={c} title={n} className={c === accent ? 'on' : ''} style={{ background: c }} onClick={() => setAccent(c)} />
+        ))}
+      </div>
+      <div className="now">{name}</div>
       <select value={glow} onChange={(e) => setGlow(e.target.value)}>
         {GLOWS.map(([v, n]) => <option key={v} value={v}>{n}</option>)}
       </select>
@@ -249,26 +178,19 @@ function StyleLab() {
           {GAPS.map(([v, n]) => <option key={v} value={v}>{n}</option>)}
         </select>
       )}
-      <div>Color drift</div>
-      <select value={drift} onChange={(e) => setDrift(e.target.value)}>
-        {DRIFTS.map(([v, n]) => <option key={v} value={v}>{n}</option>)}
-      </select>
-      {drift !== 'off' && (
-        <select value={speed} onChange={(e) => setSpeed(e.target.value)}>
-          {SPEEDS.map(([v, n]) => <option key={v} value={v}>{n}</option>)}
+      <details>
+        <summary>Buttons and fonts</summary>
+        {TOGGLES.map(([k, label, hint]) => (
+          <label key={k}>
+            <input type="checkbox" checked={!!on[k]} onChange={(e) => setOn({ ...on, [k]: e.target.checked })} /> {label}
+            <small>{hint}</small>
+          </label>
+        ))}
+        <select value={font ?? ''} onChange={(e) => setFont(e.target.value || null)}>
+          {FONTS.map(([n, f]) => <option key={n} value={f ?? ''}>Wordmark: {n}</option>)}
         </select>
-      )}
-      {TOGGLES.map(([k, label, hint]) => (
-        <label key={k}>
-          <input type="checkbox" checked={!!on[k]} onChange={(e) => setOn({ ...on, [k]: e.target.checked })} /> {label}
-          <small>{hint}</small>
-        </label>
-      ))}
-      <div>Wordmark</div>
-      <select value={font ?? ''} onChange={(e) => setFont(e.target.value || null)}>
-        {FONTS.map(([n, f]) => <option key={n} value={f ?? ''}>{n}</option>)}
-      </select>
-      <button onClick={() => { setAccent('#e8b458'); setFont(null); setOn({}); setGlow('off'); setDrift('off'); setSpeed('20s'); setGap('25'); }}>Reset to today</button>
+      </details>
+      <button onClick={() => { setAccent('#e8b458'); setFont(null); setOn({}); setGlow('off'); setGap('25'); }}>Reset to today</button>
     </div>
   );
 }
