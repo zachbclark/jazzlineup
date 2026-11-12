@@ -60,9 +60,11 @@ const GLOWS = [
   ['steady', 'Steady glow'],
   ['breathe', 'Slow breathing glow'],
   ['flicker', 'Flickers on, then steady'],
-  ['wave', 'Cascade: light runs across the letters'],
+  ['swell', 'Cascade: once on load, then every so often'],
+  ['wave', 'Cascade: soft wave, nonstop'],
   ['lightUp', 'Cascade: letters switch on one by one'],
 ];
+const GAPS = [['12', 'Again every 12s'], ['25', 'Again every 25s'], ['60', 'Again every minute']];
 const DRIFTS = [
   ['off', 'No drift (today)'],
   ['warm', 'Warm: gold, honey, copper'],
@@ -71,6 +73,15 @@ const DRIFTS = [
   ['neon', 'Neon sign: gold, hot pink, violet, ice blue'],
 ];
 const SPEEDS = [['8s', 'Fast (8s loop)'], ['20s', 'Medium (20s loop)'], ['40s', 'Slow (40s loop)']];
+
+// One soft swell of light per letter, ~2.4s long, with a small dip near
+// the top (the "flicker"). The rest of the period is quiet, which is how
+// the cascade waits between runs.
+function swellFrames(name, period) {
+  const s = (2.4 / period) * 100;
+  const at = (f) => `${(s * f).toFixed(2)}%`;
+  return `@keyframes lab-swell-${name} { 0% { --g: 0; } ${at(0.38)} { --g: .8; } ${at(0.48)} { --g: .6; } ${at(0.6)} { --g: 1; } ${at(1)}, 100% { --g: 0; } }`;
+}
 
 const mix = (n) => `color-mix(in srgb, var(--accent) ${n}%, transparent)`;
 const CSS = `
@@ -81,11 +92,21 @@ html[data-lab-glow=flicker] .brand-note, html[data-lab-glow=flicker] .brand-acce
 @keyframes lab-flicker {
   0%, 8%, 14%, 30%, 34% { opacity: .25; text-shadow: none; }
   6%, 11%, 18%, 32%, 100% { opacity: 1; } }
-html[data-lab-glow=wave] .lab-l { animation: lab-wave 3.5s ease-in-out infinite; animation-delay: calc(var(--i) * 90ms); }
-@keyframes lab-wave { 9% { color: color-mix(in srgb, var(--accent) 70%, white); text-shadow: 0 0 6px var(--accent), 0 0 18px var(--accent), 0 0 34px ${mix(60)}; } 22% { } }
-html[data-lab-glow=lightUp] .lab-l { animation: lab-light-up .5s linear 1 both; animation-delay: calc(300ms + var(--i) * 160ms); }
-@keyframes lab-light-up { 0%, 40% { opacity: .12; text-shadow: none; } 50% { opacity: 1; } 62% { opacity: .3; } 100% { opacity: 1; } }
-.lab-l { display: inline-block; white-space: pre; }
+/* each letter's glow is one number, --g (0 to 1), so the browser can ease
+   it smoothly instead of jumping between shadow lists. --r is 1 on the
+   gold letters (they keep a resting glow) and 0 on "Jazz". */
+@property --g { syntax: '<number>'; inherits: false; initial-value: 0; }
+.lab-l { display: inline-block; white-space: pre; --g: 0;
+  color: color-mix(in srgb, color-mix(in srgb, var(--accent) 55%, #fff8e8) calc(var(--g) * 50%), var(--lab-base));
+  text-shadow: 0 0 calc(3px + 5px * var(--g)) color-mix(in srgb, var(--accent) calc((var(--r) * 60 + var(--g) * 40) * 1%), transparent),
+    0 0 calc(14px + 14px * var(--g)) color-mix(in srgb, var(--accent) calc((var(--r) * 35 + var(--g) * 40) * 1%), transparent); }
+html[data-lab-glow=wave] .lab-l { animation: lab-swell-wave 4.5s ease-in-out infinite; animation-delay: calc(var(--i) * 130ms); }
+html[data-lab-glow=swell] .lab-l { animation: var(--lab-swell-name) var(--lab-swell-time) ease-in-out infinite; animation-delay: calc(500ms + var(--i) * 130ms); }
+${GAPS.map(([g]) => `html[data-lab-gap="${g}"] { --lab-swell-name: lab-swell-${g}; --lab-swell-time: ${g}s; }`).join('\n')}
+${swellFrames('wave', 4.5)}
+${GAPS.map(([g]) => swellFrames(g, Number(g))).join('\n')}
+html[data-lab-glow=lightUp] .lab-l { animation: lab-light-up 1.1s ease-in-out 1 both; animation-delay: calc(300ms + var(--i) * 140ms); }
+@keyframes lab-light-up { 0% { opacity: .1; --g: 0; } 40% { opacity: .55; --g: .4; } 52% { opacity: .8; --g: .9; } 62% { opacity: .65; --g: .6; } 78% { opacity: 1; --g: .7; } 100% { opacity: 1; --g: 0; } }
 @property --accent { syntax: '<color>'; inherits: true; initial-value: #e8b458; }
 html[data-lab-drift] { animation: var(--lab-drift-name) var(--lab-speed, 20s) ease-in-out infinite; }
 html[data-lab-drift=warm] { --lab-drift-name: lab-drift-warm; }
@@ -133,11 +154,14 @@ function setCascade(enabled) {
     const texts = [];
     while (walker.nextNode()) texts.push(walker.currentNode);
     for (const t of texts) {
+      const gold = !!t.parentElement.closest('.brand-note, .brand-accent');
       const frag = document.createDocumentFragment();
       for (const ch of t.textContent) {
         if (ch === ' ') { frag.append(' '); continue; }
         const s = Object.assign(document.createElement('span'), { className: 'lab-l', textContent: ch });
         s.style.setProperty('--i', i++);
+        s.style.setProperty('--r', gold ? 1 : 0);
+        s.style.setProperty('--lab-base', gold ? 'var(--accent)' : 'var(--text)');
         frag.append(s);
       }
       t.replaceWith(frag);
@@ -161,6 +185,7 @@ function StyleLab() {
   const [glow, setGlow] = useState(GLOWS.some(([v]) => v === saved.glow) ? saved.glow : 'off');
   const [drift, setDrift] = useState(DRIFTS.some(([v]) => v === saved.drift) ? saved.drift : 'off');
   const [speed, setSpeed] = useState(saved.speed ?? '20s');
+  const [gap, setGap] = useState(GAPS.some(([v]) => v === saved.gap) ? saved.gap : '25');
 
   useEffect(() => {
     const root = document.documentElement;
@@ -183,18 +208,19 @@ function StyleLab() {
     if (drift !== 'off') root.dataset.labDrift = drift;
     else delete root.dataset.labDrift;
     root.style.setProperty('--lab-speed', speed);
-    try { localStorage.setItem(KEY, JSON.stringify({ open, accent, font, on, glow, drift, speed })); } catch {}
-  }, [accent, font, on, open, glow, drift, speed]);
+    root.dataset.labGap = gap;
+    try { localStorage.setItem(KEY, JSON.stringify({ open, accent, font, on, glow, drift, speed, gap })); } catch {}
+  }, [accent, font, on, open, glow, drift, speed, gap]);
 
   // build the letter copy when a cascade is picked (again shortly after,
   // in case the wordmark rendered after the lab mounted). Switching between
   // the two cascades rebuilds it so the switch-on replays.
   useEffect(() => {
-    const cascade = glow === 'wave' || glow === 'lightUp';
+    const cascade = ['wave', 'swell', 'lightUp'].includes(glow);
     setCascade(cascade);
     const t = setTimeout(() => setCascade(cascade), 400);
     return () => clearTimeout(t);
-  }, [glow]);
+  }, [glow, gap]);
 
   if (!open) return <div className="style-lab closed"><h4 onClick={() => setOpen(true)}>Style lab</h4></div>;
   const name = ACCENTS.find(([, c]) => c === accent)?.[0] ?? 'Custom';
@@ -218,6 +244,11 @@ function StyleLab() {
       <select value={glow} onChange={(e) => setGlow(e.target.value)}>
         {GLOWS.map(([v, n]) => <option key={v} value={v}>{n}</option>)}
       </select>
+      {glow === 'swell' && (
+        <select value={gap} onChange={(e) => setGap(e.target.value)}>
+          {GAPS.map(([v, n]) => <option key={v} value={v}>{n}</option>)}
+        </select>
+      )}
       <div>Color drift</div>
       <select value={drift} onChange={(e) => setDrift(e.target.value)}>
         {DRIFTS.map(([v, n]) => <option key={v} value={v}>{n}</option>)}
@@ -237,7 +268,7 @@ function StyleLab() {
       <select value={font ?? ''} onChange={(e) => setFont(e.target.value || null)}>
         {FONTS.map(([n, f]) => <option key={n} value={f ?? ''}>{n}</option>)}
       </select>
-      <button onClick={() => { setAccent('#e8b458'); setFont(null); setOn({}); setGlow('off'); setDrift('off'); setSpeed('20s'); }}>Reset to today</button>
+      <button onClick={() => { setAccent('#e8b458'); setFont(null); setOn({}); setGlow('off'); setDrift('off'); setSpeed('20s'); setGap('25'); }}>Reset to today</button>
     </div>
   );
 }
